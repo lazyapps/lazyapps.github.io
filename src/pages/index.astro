@@ -1,0 +1,296 @@
+---
+const SITE = 'https://lazyapps.com';
+import '$assets/s/site.css';
+import gsapUrl from '$assets/vendor/gsap.min.js?url';
+import scrollTriggerUrl from '$assets/vendor/ScrollTrigger.min.js?url';
+import customEaseUrl from '$assets/vendor/CustomEase.min.js?url';
+import splitTextUrl from '$assets/vendor/SplitText.min.js?url';
+import logoRevealUrl from '$assets/s/logo-reveal-loader.js?url';
+import siteJsUrl from '$assets/s/site.js?url';
+import yiyanIconUrl from '$assets/img/yiyan-icon.png?url';
+import xvdlIconUrl from '$assets/img/xvdl-icon.png?url';
+import opengraphUrl from '$assets/img/opengraph.png?url';
+import showcaseUrl from '$assets/img/yiyan-showcase.png?url';
+import inUseUrl from '$assets/img/xvdl-in-use.png?url';
+import appChmateUrl from '$assets/img/app-chmate.jpg?url';
+import appCiaUrl from '$assets/img/app-cia.jpg?url';
+import appYifanUrl from '$assets/img/app-yifan.jpg?url';
+import appFondfontUrl from '$assets/img/app-fondfont.jpg?url';
+---
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>lazyapps — Independent software since 2009</title>
+<meta name="description" content="Independent software for Mac, iPhone, and iPad. Six apps, maintained by lazyapps since 2009. No data collected.">
+<meta name="theme-color" content="#f8f8f6">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="lazyapps">
+<meta property="og:title" content="lazyapps — Independent software since 2009">
+<meta property="og:description" content="Independent software for Mac, iPhone, and iPad. Maintained by lazyapps since 2009.">
+<meta property="og:url" content="https://lazyapps.com/">
+<meta property="og:image" content={`${SITE}${opengraphUrl}`}>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2064%2064%22%3E%3Crect%20width%3D%2264%22%20height%3D%2264%22%20rx%3D%2215%22%20fill%3D%22%23171717%22%2F%3E%3Cpath%20fill%3D%22%23f8f8f6%22%20d%3D%22M20%2013h12v33h17v10H20z%22%2F%3E%3Ccircle%20cx%3D%2245%22%20cy%3D%2219%22%20r%3D%225%22%20fill%3D%22%23ff6846%22%2F%3E%3C%2Fsvg%3E">
+
+<script is:inline>
+document.documentElement.classList.remove('no-js');
+setTimeout(function(){
+  document.documentElement.classList.add('is-loaded');
+  var l = document.getElementById('loader');
+  if (l) l.remove();
+}, 6000);
+</script>
+<style is:inline>
+.deck{padding-top:clamp(32px,4.5vw,72px);padding-bottom:clamp(40px,5vw,80px)}
+.card{
+  position:relative;display:block;
+  background:var(--fill);color:var(--fg,var(--ink));
+  border:1px solid rgba(23,23,23,.08);border-radius:var(--r-card);
+  padding:clamp(20px,2.4vw,34px);
+  margin-top:-8px;
+  transition:border-color .2s linear;
+}
+.card:first-child{margin-top:0}
+.card--c1{--fill:var(--c1)}
+.card--c2{--fill:var(--c2)}
+.card--c3{--fill:var(--c3)}
+.card--c4{--fill:var(--c4)}
+.card--c5{--fill:var(--c5)}
+.card--c6{--fill:var(--c6);--fg:#f8f8f6}
+.card:nth-child(odd){transform:rotate(-2deg)}
+.card:nth-child(even){transform:rotate(2deg)}
+.card:hover{border-color:rgba(23,23,23,.4)}
+.card--ink{border-color:rgba(248,248,246,.12)}
+.card--ink:hover{border-color:rgba(248,248,246,.45)}
+.card__grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.85fr);gap:clamp(18px,2.4vw,40px);align-items:center;padding-top:1.5rem}
+.card__title{font-size:clamp(34px,4.6vw,64px)}
+.card__tag{position:absolute;z-index:2;top:clamp(16px,2vw,26px);right:clamp(18px,2.2vw,30px);
+  font:400 .6875rem/1.4 var(--mono);text-transform:uppercase;letter-spacing:.09em;opacity:.62}
+.card__p{margin-top:.875rem;font-size:1rem;max-width:32em;line-height:1.7}
+.card__foot{margin-top:1.5rem;display:flex;align-items:center;gap:1.25rem;flex-wrap:wrap}
+.card__icon{width:clamp(40px,4vw,58px);height:auto;border-radius:24%;flex:none}
+.card__go{display:inline-flex;align-items:center;gap:.45em;font:600 .9375rem/1 var(--sans)}
+.card__shots{display:grid;gap:.5rem;grid-auto-flow:column;justify-items:end;align-items:center}
+.card__shots img{border-radius:8px;max-height:clamp(150px,17vw,250px);width:auto;object-fit:contain}
+@media (max-width:860px){
+  .card__grid{grid-template-columns:1fr}
+  .card__shots{grid-auto-flow:row;justify-items:start}
+}
+</style>
+</head>
+
+<body>
+
+
+<div class="grain" data-grain-animate="true"></div>
+
+
+<div data-load-wrap class="loader" id="loader" aria-hidden="true">
+  <div data-load-bg class="loader__bg">
+    <div data-load-progress class="loader__bg-bar"></div>
+  </div>
+  <div data-load-container class="loader__container">
+    <div class="loader__logo-wrap">
+      <div class="loader__logo-item is--base">
+        <span class="loader__logo-img" lang="en">LAZYAPPS</span>
+      </div>
+      <div data-load-logo class="loader__logo-item is--top">
+        <span class="loader__logo-img" lang="en">LAZYAPPS</span>
+      </div>
+    </div>
+    <div class="loader__text-wrap">
+      <span data-load-text data-load-reset class="loader__text-el" lang="en">Independent software</span>
+      <span data-load-text data-load-reset class="loader__text-el" lang="en">Since 2009</span>
+    </div>
+  </div>
+</div>
+
+<main>
+
+  
+  <section class="hero wrap">
+<h2 class="wordmark dsp">lazyapps<i></i></h2>
+
+    <div class="hero__pitch" data-reveal-group data-stagger="110" data-distance="1.2em" data-start="top 92%">
+      <div>
+        <h1 class="hero__h1 dsp">Independent software since 2009.</h1>
+        <p class="hero__sub">Independent software for Mac, iPhone, and iPad. Maintained by lazyapps since 2009.</p>
+      </div>
+      <div class="hero__side">
+        <ul class="hero__trust">
+          <li>
+            
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M22 3.5H2V17H22V3.5Z" stroke="currentColor" stroke-miterlimit="10"/><path d="M6.5 20H17.5" stroke="currentColor" stroke-miterlimit="10"/><path d="M12 17V20" stroke="currentColor" stroke-miterlimit="10"/></svg>
+            macOS · iPhone · iPad · Safari
+          </li>
+          <li>
+            
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M20.5 10.5H3.5V21.5H20.5V10.5Z" stroke="currentColor"/><path d="M12 14.5V17" stroke="currentColor"/><path d="M18 10.5V8C18 6.4087 17.3679 4.88258 16.2426 3.75736C15.1174 2.63214 13.5913 2 12 2C10.4087 2 8.88258 2.63214 7.75736 3.75736C6.63214 4.88258 6 6.4087 6 8V10.5" stroke="currentColor"/></svg>
+            No data collected
+          </li>
+        </ul>
+      </div>
+    </div>
+
+  </section>
+
+  
+  <section class="deck wrap" id="deck">
+    <div data-reveal-group data-stagger="140" data-distance="2.1em" data-start="top 88%">
+
+      <article class="card card--c1" id="yiyan">
+        <p class="card__tag">macOS 15+ · English learning</p>
+        <div class="card__grid">
+          <div>
+            <h3 class="card__title dsp"><span class="zh" lang="zh">《绎言》</span> YiYan</h3>
+            <p class="card__p">See how messages you write in Pi, Claude Code, and Codex can be expressed in natural English, with focused notes to learn from.</p>
+            <div class="card__foot">
+              <img class="card__icon" src={yiyanIconUrl} alt="">
+              <a data-hover href="/yiyan/" class="card__go"><span data-underline-link class="underline-link">YiYan details</span> ↗</a>
+            </div>
+          </div>
+          <div class="card__shots">
+            <img src={showcaseUrl} alt="YiYan learning record on macOS">
+          </div>
+        </div>
+      </article>
+
+      <article class="card card--c2">
+        <p class="card__tag">macOS · Safari extension</p>
+        <div class="card__grid">
+          <div>
+            <h3 class="card__title dsp">XVDL</h3>
+            <p class="card__p">Adds a download control to X videos and saves the best available MP4 through Safari.</p>
+            <div class="card__foot">
+              <img class="card__icon" src={xvdlIconUrl} alt="">
+              <a data-hover href="/xvdl/" class="card__go"><span data-underline-link class="underline-link">XVDL details</span> ↗</a>
+            </div>
+          </div>
+          <div class="card__shots">
+            <img src={inUseUrl} alt="XVDL download control in an X video post">
+          </div>
+        </div>
+      </article>
+
+      <article class="card card--c3">
+        <p class="card__tag">iPhone &amp; iPad · Since 2009</p>
+        <div class="card__grid">
+          <div>
+            <h3 class="card__title dsp">CHMate+</h3>
+            <p class="card__p">Read and organize EPUB and CHM documents on iPhone and iPad.</p>
+            <div class="card__foot">
+              <a data-hover href="https://apps.apple.com/us/app/chmate-epub-chm-reader/id324516521?uo=4" class="card__go"><span data-underline-link class="underline-link">View on App Store</span> ↗</a>
+            </div>
+          </div>
+          <div class="card__shots">
+            <img src={appChmateUrl} alt="CHMate+ on iPhone">
+          </div>
+        </div>
+      </article>
+
+      <article class="card card--c4">
+        <p class="card__tag">iPhone &amp; iPad · Since 2011</p>
+        <div class="card__grid">
+          <div>
+            <h3 class="card__title dsp">The CIA World Factbook</h3>
+            <p class="card__p">Country profiles, maps, flags, and reference data, available offline.</p>
+            <div class="card__foot">
+              <a data-hover href="https://apps.apple.com/us/app/the-cia-world-factbook/id412637620?uo=4" class="card__go"><span data-underline-link class="underline-link">View on App Store</span> ↗</a>
+            </div>
+          </div>
+          <div class="card__shots">
+            <img src={appCiaUrl} alt="The CIA World Factbook on iPhone">
+          </div>
+        </div>
+      </article>
+
+      <article class="card card--c5">
+        <p class="card__tag">iPhone &amp; iPad · Since 2012</p>
+        <div class="card__grid">
+          <div>
+            <h3 class="card__title dsp"><span class="zh" lang="zh">《一饭》</span></h3>
+            <p class="card__p">A native Fanfou client for timelines, mentions, messages, favorites, and photos.</p>
+            <div class="card__foot">
+              <a data-hover href="https://apps.apple.com/us/app/%E4%B8%80%E9%A5%AD-%E5%B2%81%E9%9D%99%E9%A5%AD%E5%90%A6%E5%AE%A2%E6%88%B7%E7%AB%AF/id541110403?uo=4" class="card__go"><span data-underline-link class="underline-link">View on App Store</span> ↗</a>
+            </div>
+          </div>
+          <div class="card__shots">
+            <img src={appYifanUrl} alt="一饭 on iPhone">
+          </div>
+        </div>
+      </article>
+
+      <article class="card card--ink card--c6">
+        <p class="card__tag">iPhone &amp; iPad · Since 2014</p>
+        <div class="card__grid">
+          <div>
+            <h3 class="card__title dsp">FondFont</h3>
+            <p class="card__p">Install TTF, TTC, and OTF fonts for use in iPhone and iPad apps.</p>
+            <div class="card__foot">
+              <a data-hover href="https://apps.apple.com/us/app/fondfont-install-system-fonts/id842109099?uo=4" class="card__go"><span data-underline-link class="underline-link">View on App Store</span> ↗</a>
+            </div>
+          </div>
+          <div class="card__shots">
+            <img src={appFondfontUrl} alt="FondFont on iPhone">
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="wrap">
+
+  
+  <section class="qa">
+    <div>
+      <p class="qa__q">Who makes this?</p>
+      <p class="qa__a">One independent developer. Independent software for Mac, iPhone, and iPad, maintained by lazyapps since 2009.</p>
+    </div>
+    <div>
+      <p class="qa__q">What do you collect?</p>
+      <p class="qa__a">Nothing. We don't collect, use, disclose, transfer, and store your personal information in our private servers or other own services. <a data-hover href="/privacy.en.html"><span data-underline-link class="underline-link">Privacy</span></a></p>
+    </div>
+    <div>
+      <p class="qa__q">Where do I get them?</p>
+      <p class="qa__a">The App Store for iPhone and iPad. Homebrew for the Mac apps — <a data-hover href="/xvdl/"><span data-underline-link class="underline-link">XVDL</span></a> and <a data-hover href="/yiyan/"><span data-underline-link class="underline-link">YiYan</span></a>.</p>
+    </div>
+  </section>
+
+  
+  <div class="base">
+    <p class="mono">© 2026 lazyapps</p>
+    <nav class="mono">
+      <a data-hover href="mailto:lazyapps.feedback@gmail.com"><span data-underline-link class="underline-link">Contact</span></a>
+      <a data-hover href="/privacy.en.html"><span data-underline-link class="underline-link">Privacy</span></a>
+      <a data-hover href="/privacy.zh.html"><span data-underline-link class="underline-link" lang="zh">中文</span></a>
+    </nav>
+  </div>
+
+</footer>
+
+<script is:inline src={gsapUrl}>
+
+</script>
+<script is:inline src={scrollTriggerUrl}>
+
+</script>
+<script is:inline src={customEaseUrl}>
+
+</script>
+<script is:inline src={splitTextUrl}>
+
+</script>
+
+<script is:inline src={logoRevealUrl}>
+
+</script>
+<script is:inline src={siteJsUrl}>
+
+</script>
+
+</body>
+</html>

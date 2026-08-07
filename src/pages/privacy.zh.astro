@@ -1,0 +1,274 @@
+---
+import '$assets/s/site.css';
+import gsapUrl from '$assets/vendor/gsap.min.js?url';
+import scrollTriggerUrl from '$assets/vendor/ScrollTrigger.min.js?url';
+import customEaseUrl from '$assets/vendor/CustomEase.min.js?url';
+import siteJsUrl from '$assets/s/site.js?url';
+import yiyanIconUrl from '$assets/img/yiyan-icon.png?url';
+import xvdlIconUrl from '$assets/img/xvdl-icon.png?url';
+import opengraphUrl from '$assets/img/opengraph.png?url';
+---
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>lazyapps: 隐私条款</title>
+<meta name="description" content="lazyapps 出品的 iOS 应用程序隐私条款。">
+<meta name="theme-color" content="#f8f8f6">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="lazyapps">
+<meta property="og:title" content="lazyapps: 隐私条款">
+<meta property="og:description" content="lazyapps 出品的 iOS 应用程序隐私条款。">
+<meta property="og:url" content="https://lazyapps.com/privacy.zh.html">
+<meta property="og:image" content="https://lazyapps.com/i/opengraph.png">
+<meta property="og:locale" content="zh_CN">
+<link rel="alternate" hreflang="zh" href="https://lazyapps.com/privacy.zh.html">
+<link rel="alternate" hreflang="en" href="https://lazyapps.com/privacy.en.html">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2064%2064%22%3E%3Crect%20width%3D%2264%22%20height%3D%2264%22%20rx%3D%2215%22%20fill%3D%22%23171717%22%2F%3E%3Cpath%20fill%3D%22%23f8f8f6%22%20d%3D%22M20%2013h12v33h17v10H20z%22%2F%3E%3Ccircle%20cx%3D%2245%22%20cy%3D%2219%22%20r%3D%225%22%20fill%3D%22%23ff6846%22%2F%3E%3C%2Fsvg%3E">
+
+<style is:inline>
+section.doc.wrap{padding-top:clamp(32px,5vw,72px)}
+.doc__h1{margin-top:clamp(28px,4vw,56px);font-size:clamp(52px,13vw,196px)}
+.doc__p{margin-top:clamp(18px,2.2vw,32px);font-size:1.0625rem;color:var(--muted);max-width:30em;line-height:1.85}
+.doc__p strong{color:var(--ink);font-weight:600}
+.lang{margin-top:clamp(22px,2.6vw,38px)}
+.doc__side{margin-top:clamp(18px,2vw,28px)}
+.doc__side ul{margin:0;padding:0;list-style:none;display:grid;gap:.5rem}
+.doc__side li{display:flex;align-items:center;gap:.6em;font-size:.8125rem;color:var(--muted);line-height:1.6}
+.doc__side svg{width:14px;height:14px;color:var(--accent);flex:none}
+
+.deck{padding-top:clamp(36px,5vw,80px)}
+.card{
+  position:relative;display:block;
+  background:var(--fill);color:var(--fg,var(--ink));
+  border:1px solid rgba(23,23,23,.08);border-radius:var(--r-card);
+  padding:clamp(22px,2.6vw,40px);
+  margin-top:-8px;
+  transition:border-color .2s linear;
+}
+.card:first-child{margin-top:0}
+.card--c1{--fill:var(--c1)}
+.card--c2{--fill:var(--c2)}
+.card--c3{--fill:var(--c3)}
+.card--c4{--fill:var(--c4)}
+.card--c5{--fill:var(--c5)}
+.card--c6{--fill:var(--c6);--fg:#f8f8f6}
+.card:nth-child(odd){transform:rotate(-2deg)}
+.card:nth-child(even){transform:rotate(2deg)}
+.card:hover{border-color:rgba(23,23,23,.4)}
+.card--ink{border-color:rgba(248,248,246,.12)}
+.card--ink:hover{border-color:rgba(248,248,246,.45)}
+.card__title{font-size:clamp(26px,3.4vw,48px)}
+.card__p{margin-top:1.125rem;font-size:1.0625rem;line-height:1.85;max-width:34em}
+.card__p strong{font-weight:600}
+
+.band{padding-top:clamp(48px,6vw,96px)}
+.band__head{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;padding-bottom:.75rem;border-bottom:1px solid var(--line)}
+.band__h2{margin-top:clamp(20px,2.6vw,40px);font-size:clamp(26px,3.8vw,54px);max-width:18em}
+.band__row{margin-top:clamp(24px,3vw,44px);display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.75rem}
+.band__cell{
+  border:1px solid rgba(23,23,23,.1);border-radius:var(--r-card);
+  padding:clamp(18px,2vw,28px);display:grid;gap:.75rem;align-content:start;
+}
+.band__cell:nth-child(1){background:var(--c4)}
+.band__cell:nth-child(2){background:#fff}
+.band__cell:nth-child(3){background:var(--c4)}
+.band__icon{width:clamp(40px,4vw,54px);height:auto;border-radius:24%}
+.band__cell svg{width:clamp(34px,3.4vw,46px);height:clamp(34px,3.4vw,46px);color:var(--accent)}
+.band__cell h3{font:600 1.0625rem/1.4 var(--sans)}
+.band__cell p{font-size:.9375rem;color:#4b4b4b;line-height:1.8}
+.band__cell .mono{font-size:.625rem}
+@media (max-width:860px){.band__row{grid-template-columns:1fr}}
+
+.next{margin-top:clamp(56px,6.5vw,132px)}
+.next__plate--wide{max-width:280px}
+</style>
+</head>
+
+<body>
+
+
+<div class="grain" data-grain-animate="true"></div>
+
+<main>
+
+  
+  <section class="doc wrap">
+    <div class="topbar">
+      <nav class="mono topbar__nav" aria-label="主导航">
+        <a data-hover href="/" class="topbar__home" aria-label="首页"><span aria-hidden="true" class="topbar__home-dot"></span></a>
+      </nav>
+      
+      <div class="topbar__app">
+        <h2 class="dsp" lang="en">lazyapps<i></i></h2>
+      </div>
+    </div>
+
+    <div data-reveal-group data-stagger="110" data-distance="1.2em" data-start="top 94%">
+      <h1 class="doc__h1 dsp"><span class="zh">隐私条款</span></h1>
+      <p class="doc__p">感谢下载<strong>lazyapps 出品的应用程序</strong>。在您使用 <strong>lazyapps 出品的应用程序</strong>之前，您需要仔细阅读本服务条款，以保障双方的权利。</p>
+
+      
+      <div class="lang" role="group" aria-label="语言">
+        <span class="button-023 button-023--sm" aria-current="page">
+          <span class="button-023__bg">
+            <span style="--index: 0;" class="button-023__bg-inner is--first"></span>
+            <span style="--index: 1;" class="button-023__bg-inner is--second"></span>
+          </span>
+          <span class="button-023__inner">
+            <span class="button-023__text is--first">中文</span>
+            <span aria-hidden="true" class="button-023__text is--second">中文</span>
+          </span>
+        </span>
+        <a data-hover href="/privacy.en.html" class="button-023 button-023--ghost button-023--sm" lang="en">
+          <span class="button-023__bg">
+            <span style="--index: 0;" class="button-023__bg-inner is--first"></span>
+            <span style="--index: 1;" class="button-023__bg-inner is--second"></span>
+          </span>
+          <span class="button-023__inner">
+            <span class="button-023__text is--first">English</span>
+            <span aria-hidden="true" class="button-023__text is--second">English</span>
+          </span>
+        </a>
+      </div>
+
+        <div class="doc__side">
+          <ul>
+            <li>
+              
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M20.5 10.5H3.5V21.5H20.5V10.5Z" stroke="currentColor"/><path d="M12 14.5V17" stroke="currentColor"/><path d="M18 10.5V8C18 6.4087 17.3679 4.88258 16.2426 3.75736C15.1174 2.63214 13.5913 2 12 2C10.4087 2 8.88258 2.63214 7.75736 3.75736C6.63214 4.88258 6 6.4087 6 8V10.5" stroke="currentColor"/></svg>
+              目前没有收集用户的任何信息
+            </li>
+            <li>
+              
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M18.6 18C19.7498 18.0003 20.8541 17.5505 21.6764 16.7468C22.4988 15.9432 22.9739 14.8495 23 13.7C23 12.5331 22.5364 11.4139 21.7113 10.5887C20.8861 9.76358 19.767 9.30001 18.6 9.30001H18.1C17.648 8.04348 16.8201 6.95665 15.7286 6.18728C14.6372 5.41792 13.3353 5.00337 12 5.00001C10.6747 4.99456 9.38148 5.4072 8.30426 6.17921C7.22704 6.95121 6.42072 8.04327 6 9.30001H5.4C4.23305 9.30001 3.11389 9.76358 2.28873 10.5887C1.46357 11.4139 1 12.5331 1 13.7C1.02613 14.8495 1.50121 15.9432 2.32356 16.7468C3.1459 17.5505 4.25017 18.0003 5.4 18H18.6Z" stroke="currentColor" stroke-miterlimit="10"/></svg>
+              没有自己的服务器
+            </li>
+            <li>
+              
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-miterlimit="10"/><path d="M12 6V12L16 15" stroke="currentColor" stroke-miterlimit="10"/></svg>
+              独立开发，始于 2009 年
+            </li>
+          </ul>
+        </div>
+    </div>
+  </section>
+
+  
+  <section class="deck wrap">
+    <div data-reveal-group data-stagger="140" data-distance="2.1em" data-start="top 88%">
+
+      <article class="card card--c4">
+        <h2 class="card__title dsp"><span class="zh">简介</span></h2>
+        <p class="card__p">本服务条款包括变更、数据、隐私等相关声明。如果您不同意本条款，则无权使用我们的服务。一旦使用 <strong>lazyapps 出品的应用程序</strong>，即被视为对本条款的全部认可。</p>
+      </article>
+
+      <article class="card card--c5">
+        <h2 class="card__title dsp"><span class="zh">条款变更</span></h2>
+        <p class="card__p">由于我们的服务可能发生变化，相关法律也可能发生变化，本条款将可能变更。部分条款变更是即时生效的，您可以在我们的网站上阅读最新版本。如果您不同意新的条款，请立即终止使用<strong>lazyapps 出品的应用程序</strong>。如果您在条款变更后继续使用<strong>lazyapps 出品的应用程序</strong>，即被视为您同意新条款的全部内容。</p>
+      </article>
+
+      <article class="card card--c3">
+        <h2 class="card__title dsp"><span class="zh">数据存储</span></h2>
+        <p class="card__p"><strong>lazyapps 出品的应用程序</strong>的大部分数据都存在用户的设备上，有些数据视情况而定，可能会存储于苹果的服务器上，<strong>lazyapps 出品的应用程序</strong>本身没有而且也不会将用户数据上传到自己的服务器上。</p>
+      </article>
+
+      <article class="card card--c1">
+        <h2 class="card__title dsp"><span class="zh">隐私声明</span></h2>
+        <p class="card__p"><strong>lazyapps 出品的应用程序</strong>没有服务器也不会存储用户数据，我们无法知道您的隐私。</p>
+      </article>
+
+      <article class="card card--c2">
+        <h2 class="card__title dsp"><span class="zh">信息收集</span></h2>
+        <p class="card__p"><strong>lazyapps 出品的应用程序</strong>目前没有收集用户的任何信息。</p>
+      </article>
+
+      <article class="card card--ink card--c6">
+        <h2 class="card__title dsp"><span class="zh">免责声明</span></h2>
+        <p class="card__p">任何使用<strong>lazyapps 出品的应用程序</strong>产生的内容，我们对其合法性概不负责，也不承担法律责任。由于各种风险的存在，<strong>lazyapps 出品的应用程序</strong>也不能保证不中断产品。对因网络、通信、设备、系统等技术问题导致的产品不能使用，<strong>lazyapps 出品的应用程序</strong>不承担任何法律责任。</p>
+      </article>
+
+    </div>
+  </section>
+
+  
+  <section class="band wrap" data-reveal-group data-stagger="120" data-distance="1.4em" data-start="top 86%">
+    <div class="band__head">
+      <h2 class="mono">覆盖范围</h2>
+      <p class="mono">Indie iOS apps since 2009</p>
+    </div>
+    <h2 class="band__h2 dsp"><span class="zh">每一款应用，同一份条款。</span></h2>
+    <div class="band__row">
+      <a class="band__cell" data-hover href="/yiyan/">
+        <img class="band__icon" src={yiyanIconUrl} alt="">
+        <p class="mono">macOS 15+ · 英语学习</p>
+        <h3><span data-underline-link class="underline-link">《绎言》 YiYan</span></h3>
+        <p>学习记录先存在这台 Mac 上。只有在你开启 iCloud 同步后，才会存入你的个人 iCloud。</p>
+      </a>
+      <a class="band__cell" data-hover href="/xvdl/">
+        <img class="band__icon" src={xvdlIconUrl} alt="">
+        <p class="mono">macOS · Safari 扩展</p>
+        <h3><span data-underline-link class="underline-link">XVDL</span></h3>
+        <p>视频直接存进你的下载文件夹，不经过我们，也不上传任何媒体或元数据。</p>
+      </a>
+      <a class="band__cell" data-hover href="/">
+        
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M11.8898 3.87137L12.5021 2.81313C12.88 2.15174 13.7228 1.92875 14.3842 2.30669C15.0456 2.68463 15.2686 3.52744 14.8907 4.18884L8.991 14.4008H13.258C14.6412 14.4008 15.416 16.026 14.8151 17.1523H2.30521C1.54176 17.1523 0.929497 16.54 0.929497 15.7765C0.929497 15.0131 1.54176 14.4008 2.30521 14.4008H5.81251L10.3025 6.61901L8.90029 4.18506C8.52235 3.52367 8.74534 2.68841 9.40673 2.30291C10.0681 1.92497 10.9034 2.14796 11.2889 2.80936L11.8898 3.87137ZM6.58351 18.5695L5.26071 20.8636C4.88277 21.525 4.03996 21.748 3.37856 21.3701C2.71716 20.9921 2.49418 20.1493 2.87212 19.4879L3.85477 17.7872C4.96592 17.4433 5.8692 17.7078 6.58351 18.5695ZM17.9747 14.4084H21.5538C22.3172 14.4084 22.9295 15.0207 22.9295 15.7841C22.9295 16.5475 22.3172 17.1598 21.5538 17.1598H19.5658L20.9075 19.4879C21.2854 20.1493 21.0625 20.9846 20.4011 21.3701C19.7397 21.748 18.9044 21.525 18.5189 20.8636C16.2588 16.9444 14.5619 14.0116 13.4356 12.0576C12.2829 10.0696 13.1068 8.07409 13.9194 7.39757C14.8226 8.94713 16.1719 11.2866 17.9747 14.4084Z" fill="currentColor"/></svg>
+        <p class="mono">iPhone · iPad · Mac</p>
+        <h3><span data-underline-link class="underline-link">App Store 上另外四款</span></h3>
+        <p>CHMate+ 始于 2009 年、The CIA World Factbook 始于 2011 年、《一饭》始于 2012 年、FondFont 始于 2014 年。</p>
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="wrap">
+
+  
+  <section class="next" data-reveal-group data-stagger="110" data-distance="1.4em" data-start="top 90%">
+    <img class="next__plate next__plate--wide" src={opengraphUrl} alt="lazyapps 应用一览">
+    <h2 class="next__q dsp"><span class="zh">感谢您读完本条款。</span></h2>
+    <div class="next__act">
+      <a data-hover href="mailto:lazyapps.feedback@gmail.com" class="button-023 button-023--square">
+        <span class="button-023__bg">
+          <span style="--index: 0;" class="button-023__bg-inner is--first"></span>
+          <span style="--index: 1;" class="button-023__bg-inner is--second"></span>
+        </span>
+        <span class="button-023__inner">
+          <span class="button-023__text is--first">联系我们</span>
+          <span aria-hidden="true" class="button-023__text is--second">联系我们</span>
+        </span>
+      </a>
+    </div>
+  </section>
+
+  
+  <div class="base">
+    <p class="mono" lang="en">© 2026 lazyapps</p>
+    <nav class="mono">
+      <a data-hover href="/" lang="en"><span data-underline-link class="underline-link">lazyapps</span></a>
+      <a data-hover href="/xvdl/" lang="en"><span data-underline-link class="underline-link">XVDL</span></a>
+      <a data-hover href="mailto:lazyapps.feedback@gmail.com"><span data-underline-link class="underline-link">联系</span></a>
+      <a data-hover href="/privacy.en.html" lang="en"><span data-underline-link class="underline-link">English</span></a>
+    </nav>
+  </div>
+
+</footer>
+
+<script is:inline src={gsapUrl}>
+
+</script>
+<script is:inline src={scrollTriggerUrl}>
+
+</script>
+<script is:inline src={customEaseUrl}>
+
+</script>
+<script is:inline src={siteJsUrl}>
+
+</script>
+
+</body>
+</html>

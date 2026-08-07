@@ -1,0 +1,384 @@
+---
+const SITE = 'https://lazyapps.com';
+import '$assets/s/site.css';
+import gsapUrl from '$assets/vendor/gsap.min.js?url';
+import scrollTriggerUrl from '$assets/vendor/ScrollTrigger.min.js?url';
+import customEaseUrl from '$assets/vendor/CustomEase.min.js?url';
+import splitTextUrl from '$assets/vendor/SplitText.min.js?url';
+import logoRevealUrl from '$assets/s/logo-reveal-loader.js?url';
+import siteJsUrl from '$assets/s/site.js?url';
+import iconLargeUrl from '$assets/img/xvdl-icon-large.png?url';
+import iconUrl from '$assets/img/xvdl-icon.png?url';
+import inUseUrl from '$assets/img/xvdl-in-use.png?url';
+---
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>XVDL — Safari video downloader for X/Twitter</title>
+<meta name="description" content="XVDL adds one download button to X/Twitter videos and saves available MP4 files directly to your Downloads folder. No URL copying, paste-in service, or media upload.">
+<meta name="theme-color" content="#f8f8f6">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="lazyapps">
+<meta property="og:title" content="XVDL — Safari video downloader for X/Twitter">
+<meta property="og:description" content="Save the video. Stay in Safari. The file goes to your Mac, not through us.">
+<meta property="og:url" content="https://lazyapps.com/xvdl/">
+<meta property="og:image" content={`${SITE}${inUseUrl}`}>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2064%2064%22%3E%3Crect%20width%3D%2264%22%20height%3D%2264%22%20rx%3D%2215%22%20fill%3D%22%23171717%22%2F%3E%3Cpath%20fill%3D%22%23f8f8f6%22%20d%3D%22M20%2013h12v33h17v10H20z%22%2F%3E%3Ccircle%20cx%3D%2245%22%20cy%3D%2219%22%20r%3D%225%22%20fill%3D%22%23ff6846%22%2F%3E%3C%2Fsvg%3E">
+
+<script is:inline>
+document.documentElement.classList.remove('no-js');
+setTimeout(function(){
+  document.documentElement.classList.add('is-loaded');
+  var l = document.getElementById('loader');
+  if (l) l.remove();
+}, 6000);
+</script>
+<style is:inline>
+section.phero.wrap{padding-top:clamp(32px,5vw,72px);--h1-size:clamp(38px,6.2vw,96px)}
+.phero__h1{margin-top:clamp(28px,4vw,64px);font-size:var(--h1-size);max-width:calc(14 * var(--h1-size))}
+.phero__sub{margin-top:clamp(18px,2.2vw,32px);font-size:1.0625rem;color:var(--muted);max-width:calc(14 * var(--h1-size))}
+.phero__cta{margin-top:clamp(22px,2.6vw,38px);display:flex;gap:.75rem;flex-wrap:wrap}
+.phero__trust{margin-top:clamp(18px,2vw,28px);display:grid;gap:.5rem;margin-bottom:0;padding:0;list-style:none}
+.phero__trust li{display:flex;align-items:center;gap:.6em;font:400 .6875rem/1.4 var(--mono);letter-spacing:.09em;text-transform:uppercase;color:var(--muted)}
+.phero__trust svg{width:14px;height:14px;color:var(--accent);flex:none}
+
+.shot{
+  margin-top:clamp(28px,4vw,60px);
+  border:1px solid rgba(23,23,23,.1);border-radius:var(--r-card);
+  background:#fff;overflow:hidden;
+}
+.shot img{width:100%}
+
+.deck{padding-top:clamp(40px,5.5vw,88px);padding-bottom:clamp(32px,4vw,64px)}
+.card{
+  position:relative;display:block;
+  background:var(--fill);color:var(--fg,var(--ink));
+  border:1px solid rgba(23,23,23,.08);border-radius:var(--r-card);
+  padding:clamp(20px,2.4vw,34px);
+  margin-top:-8px;
+  transition:border-color .2s linear;
+}
+.card:first-child{margin-top:0}
+.card--c1{--fill:var(--c1)}
+.card--c2{--fill:var(--c2)}
+.card--c3{--fill:var(--c3)}
+.card--c4{--fill:var(--c4)}
+.card--c5{--fill:var(--c5)}
+.card--c6{--fill:var(--c6);--fg:#f8f8f6}
+.card:nth-child(odd){transform:rotate(-2deg)}
+.card:nth-child(even){transform:rotate(2deg)}
+.card:hover{border-color:rgba(23,23,23,.4)}
+.card--ink{border-color:rgba(248,248,246,.12)}
+.card--ink:hover{border-color:rgba(248,248,246,.45)}
+.card__tag{position:absolute;z-index:2;top:clamp(16px,2vw,26px);right:clamp(18px,2.2vw,30px);
+  font:400 .6875rem/1.4 var(--mono);text-transform:uppercase;letter-spacing:.09em;opacity:.62}
+.card__grid{display:grid;grid-template-columns:minmax(0,.82fr) minmax(0,1.18fr);gap:clamp(18px,2.6vw,44px);align-items:start;padding-top:1.5rem}
+.card__title{font-size:clamp(26px,3.4vw,46px)}
+.card__body{display:grid;gap:clamp(14px,1.6vw,22px)}
+.card__p{font-size:1rem;line-height:1.7}
+.card__steps{margin:0;padding:0;list-style:none;display:grid;gap:.625rem}
+.card__steps li{display:flex;gap:.7em;font-size:1rem;line-height:1.7}
+.card__steps svg{width:15px;height:15px;flex:none;margin-top:.4em}
+@media (max-width:860px){.card__grid{grid-template-columns:1fr}}
+
+.brew{
+  margin-top:.5rem;
+  border:1px solid rgba(23,23,23,.12);border-radius:12px;
+  background:var(--ink);color:var(--paper);
+  padding:clamp(16px,2vw,26px);display:grid;gap:.75rem;max-width:38em;
+}
+.brew__head{display:flex;justify-content:space-between;align-items:baseline;gap:1rem}
+.brew__head>span{font:400 .6875rem/1.4 var(--mono);text-transform:uppercase;letter-spacing:.09em;opacity:.6}
+.brew pre{
+  margin:0;font:400 .875rem/1.9 var(--mono);letter-spacing:0;
+  white-space:pre-wrap;word-break:break-all;
+}
+.brew pre .p{opacity:.45}
+.brew__head h4{color:inherit;opacity:.75}
+.shot__cap{margin-top:1rem}
+.next__plate.next__plate--icon{max-width:120px;border-radius:24%;border:none}
+
+.band{padding-top:clamp(40px,5.5vw,88px)}
+.band__top{display:grid;grid-template-columns:auto minmax(0,1fr);gap:clamp(20px,3vw,44px);align-items:center}
+.band__mark{width:clamp(64px,7vw,104px);border-radius:22%}
+.band__h2{font-size:clamp(30px,4.2vw,58px);max-width:18em}
+.band__lead{margin-top:1rem;color:var(--muted);font-size:1rem;max-width:38em}
+.band__row{margin-top:clamp(28px,3.5vw,52px);display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.75rem}
+.band__cell{
+  border:1px solid rgba(23,23,23,.1);border-radius:var(--r-card);
+  padding:clamp(18px,2vw,28px);display:grid;gap:.75rem;align-content:start;
+}
+.band__cell:nth-child(1){background:var(--c4)}
+.band__cell:nth-child(2){background:#fff}
+.band__cell:nth-child(3){background:var(--c4)}
+.band__cell svg{width:20px;height:20px;color:var(--accent)}
+.band__cell h3{font:600 1rem/1.3 var(--sans)}
+.band__cell p{font-size:.9375rem;color:#4b4b4b;line-height:1.7}
+@media (max-width:860px){.band__top{grid-template-columns:1fr}.band__row{grid-template-columns:1fr}}
+</style>
+</head>
+
+<body>
+
+
+<div class="grain" data-grain-animate="true"></div>
+
+
+<div data-load-wrap class="loader" id="loader" aria-hidden="true">
+  <div data-load-bg class="loader__bg">
+    <div data-load-progress class="loader__bg-bar"></div>
+  </div>
+  <div data-load-container class="loader__container">
+    <div class="loader__logo-wrap">
+      <div class="loader__logo-item is--base">
+        <span class="loader__logo-img" lang="en">XVDL</span>
+      </div>
+      <div data-load-logo class="loader__logo-item is--top">
+        <span class="loader__logo-img" lang="en">XVDL</span>
+      </div>
+    </div>
+    <div class="loader__text-wrap">
+      <span data-load-text data-load-reset class="loader__text-el" lang="en">Independent software</span>
+      <span data-load-text data-load-reset class="loader__text-el" lang="en">Since 2009</span>
+    </div>
+  </div>
+</div>
+
+<main>
+
+  
+  <section class="phero wrap">
+    <div class="topbar">
+      <nav class="mono topbar__nav" aria-label="Primary">
+        <a data-hover href="/" class="topbar__home" aria-label="Home"><span aria-hidden="true" class="topbar__home-dot"></span></a>
+      </nav>
+      <div class="topbar__app">
+        <img src={iconLargeUrl} alt="">
+        <h2 class="dsp">XVDL</h2>
+      </div>
+    </div>
+
+    <div data-reveal-group data-stagger="110" data-distance="1.2em" data-start="top 94%">
+      <h1 class="phero__h1 dsp">Save the video. Stay in Safari.</h1>
+      <p class="phero__sub">XVDL adds one download button to X/Twitter videos and saves available MP4 files directly to your Downloads folder. No URL copying, paste-in service, or media upload.</p>
+          <div class="phero__cta">
+            <a data-hover href="#install" class="button-023">
+              <span class="button-023__bg">
+                <span style="--index: 0;" class="button-023__bg-inner is--first"></span>
+                <span style="--index: 1;" class="button-023__bg-inner is--second"></span>
+              </span>
+              <span class="button-023__inner">
+                <span class="button-023__text is--first">Download XVDL</span>
+                <span aria-hidden="true" class="button-023__text is--second">Download XVDL</span>
+              </span>
+            </a>
+            <a data-hover href="https://github.com/cxa/xvdl/releases" class="button-023 button-023--ghost">
+              <span class="button-023__bg">
+                <span style="--index: 0;" class="button-023__bg-inner is--first"></span>
+                <span style="--index: 1;" class="button-023__bg-inner is--second"></span>
+              </span>
+              <span class="button-023__inner">
+                <span class="button-023__text is--first">GitHub Releases</span>
+                <span aria-hidden="true" class="button-023__text is--second">GitHub Releases</span>
+              </span>
+            </a>
+          </div>
+          <ul class="phero__trust">
+            <li>
+              
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 11.5L12 17.5L18 11.5" stroke="currentColor" stroke-miterlimit="10"/><path d="M12 17.5V2.5" stroke="currentColor" stroke-miterlimit="10"/><path d="M3 21H21" stroke="currentColor" stroke-miterlimit="10"/></svg>
+              Straight to your Downloads folder
+            </li>
+            <li>
+              
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M22 3.5H2V17H22V3.5Z" stroke="currentColor" stroke-miterlimit="10"/><path d="M6.5 20H17.5" stroke="currentColor" stroke-miterlimit="10"/><path d="M12 17V20" stroke="currentColor" stroke-miterlimit="10"/></svg>
+              macOS · Safari
+            </li>
+            <li>
+              
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M20.5 10.5H3.5V21.5H20.5V10.5Z" stroke="currentColor"/><path d="M12 14.5V17" stroke="currentColor"/><path d="M18 10.5V8C18 6.4087 17.3679 4.88258 16.2426 3.75736C15.1174 2.63214 13.5913 2 12 2C10.4087 2 8.88258 2.63214 7.75736 3.75736C6.63214 4.88258 6 6.4087 6 8V10.5" stroke="currentColor"/></svg>
+              No data collected
+            </li>
+          </ul>
+
+      <div class="shot">
+        <img src={inUseUrl} alt="The XVDL download control on an X video post">
+      </div>
+      <p class="mono shot__cap">The button appears when the post exposes a downloadable MP4 variant.</p>
+    </div>
+  </section>
+
+  
+  <section class="deck wrap" id="install">
+    <div data-reveal-group data-stagger="140" data-distance="2.1em" data-start="top 88%">
+
+      <article class="card card--c1">
+        <p class="card__tag">Recommended</p>
+        <div class="card__grid">
+          <h3 class="card__title dsp">Install with Homebrew</h3>
+          <div class="card__body">
+          <p class="card__p">Copy all three lines, paste them into Terminal, then open XVDL once.</p>
+          <div class="brew">
+            <div class="brew__head">
+              <h4 class="mono">Terminal</h4>
+              <span>Homebrew</span>
+            </div>
+            <pre><span class="p">$</span> brew tap cxa/xvdl https://github.com/cxa/xvdl
+<span class="p">$</span> brew install --cask xvdl
+<span class="p">$</span> open -a XVDL</pre>
+          </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="card card--c3">
+        <p class="card__tag">GitHub Releases</p>
+        <div class="card__grid">
+          <h3 class="card__title dsp">Or place the app yourself</h3>
+          <div class="card__body">
+          <ul class="card__steps">
+            <li>
+              
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M4 11.5L10 17.5L21 6.5" stroke="currentColor" stroke-miterlimit="10"/></svg>
+              <span>Download the latest macOS ZIP from <a data-hover href="https://github.com/cxa/xvdl/releases"><span data-underline-link class="underline-link">GitHub Releases</span></a>.</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M4 11.5L10 17.5L21 6.5" stroke="currentColor" stroke-miterlimit="10"/></svg>
+              <span>Unzip it and move XVDL.app to Applications.</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M4 11.5L10 17.5L21 6.5" stroke="currentColor" stroke-miterlimit="10"/></svg>
+              <span>Open XVDL once before enabling the extension.</span>
+            </li>
+          </ul>
+          </div>
+        </div>
+      </article>
+
+      <article class="card card--c4">
+        <p class="card__tag">Set it up once</p>
+        <div class="card__grid">
+          <h3 class="card__title dsp">Enable it in Safari</h3>
+          <div class="card__body">
+          <ul class="card__steps">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M4 11.5L10 17.5L21 6.5" stroke="currentColor" stroke-miterlimit="10"/></svg>
+              <span><b>Open XVDL.</b> Launch the app once after installation. Its only window links directly to Safari’s extension preferences.</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M4 11.5L10 17.5L21 6.5" stroke="currentColor" stroke-miterlimit="10"/></svg>
+              <span><b>Safari → Settings → Extensions.</b> Select XVDL and turn it on for this Safari profile.</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M4 11.5L10 17.5L21 6.5" stroke="currentColor" stroke-miterlimit="10"/></svg>
+              <span><b>Website access.</b> Set <code>x.com</code> and <code>twitter.com</code> to Allow.</span>
+            </li>
+          </ul>
+          <p class="card__p">Return to a post. The XVDL button appears only when that post exposes a downloadable MP4 variant.</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="card card--ink card--c6">
+        <p class="card__tag">Add to Dock</p>
+        <div class="card__grid">
+          <h3 class="card__title dsp">Safari web apps too</h3>
+          <div class="card__body">
+          <p class="card__p">XVDL also works in Safari web apps created with Add to Dock. Open the web app, choose its name in the menu bar, then enable XVDL under Settings → Extensions and allow the same website access.</p>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  
+  <section class="band wrap" data-reveal-group data-stagger="120" data-distance="1.6em" data-start="top 84%">
+    <div class="band__top">
+      <img class="band__mark" src={iconUrl} alt="">
+      <div>
+        <h2 class="band__h2 dsp">The file goes to your Mac, not through us.</h2>
+        <p class="band__lead">XVDL does not collect, store, sell, or transmit user data. It does not upload downloaded media or video metadata to a server.</p>
+      </div>
+    </div>
+    <div class="band__row">
+      <div class="band__cell">
+        
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor"/><path d="M12 22C14.2091 22 16 17.5228 16 12C16 6.47715 14.2091 2 12 2C9.79086 2 8 6.47715 8 12C8 17.5228 9.79086 22 12 22Z" stroke="currentColor"/><path d="M2 12H22" stroke="currentColor"/><path d="M20 18C17.4703 16.937 14.743 16.4256 12 16.5C9.25702 16.4256 6.52971 16.937 4 18" stroke="currentColor"/><path d="M4 6C6.52971 7.06302 9.25702 7.57439 12 7.5C14.743 7.57439 17.4703 7.06302 20 6" stroke="currentColor"/></svg>
+        <h3>Reads</h3>
+        <p>Supported X/Twitter pages and their media hosts, only to find available MP4 variants.</p>
+      </div>
+      <div class="band__cell">
+        
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M18.6 18C19.7498 18.0003 20.8541 17.5505 21.6764 16.7468C22.4988 15.9432 22.9739 14.8495 23 13.7C23 12.5331 22.5364 11.4139 21.7113 10.5887C20.8861 9.76358 19.767 9.30001 18.6 9.30001H18.1C17.648 8.04348 16.8201 6.95665 15.7286 6.18728C14.6372 5.41792 13.3353 5.00337 12 5.00001C10.6747 4.99456 9.38148 5.4072 8.30426 6.17921C7.22704 6.95121 6.42072 8.04327 6 9.30001H5.4C4.23305 9.30001 3.11389 9.76358 2.28873 10.5887C1.46357 11.4139 1 12.5331 1 13.7C1.02613 14.8495 1.50121 15.9432 2.32356 16.7468C3.1459 17.5505 4.25017 18.0003 5.4 18H18.6Z" stroke="currentColor" stroke-miterlimit="10"/></svg>
+        <h3>Sends</h3>
+        <p>No analytics, download history, or media uploads.</p>
+      </div>
+      <div class="band__cell">
+        
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M20.5 10.5H3.5V21.5H20.5V10.5Z" stroke="currentColor"/><path d="M12 14.5V17" stroke="currentColor"/><path d="M18 10.5V8C18 6.4087 17.3679 4.88258 16.2426 3.75736C15.1174 2.63214 13.5913 2 12 2C10.4087 2 8.88258 2.63214 7.75736 3.75736C6.63214 4.88258 6 6.4087 6 8V10.5" stroke="currentColor"/></svg>
+        <h3>You decide</h3>
+        <p>Only save videos you own, have permission to download, or are otherwise authorized to keep.</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="wrap">
+
+  
+  <section class="next" data-reveal-group data-stagger="110" data-distance="1.4em" data-start="top 88%">
+    <img class="next__plate next__plate--icon" src={iconLargeUrl} alt="">
+    <h2 class="next__q dsp">Stay in Safari.</h2>
+    <div class="next__act">
+      <a data-hover href="#install" class="button-023 button-023--square">
+        <span class="button-023__bg">
+          <span style="--index: 0;" class="button-023__bg-inner is--first"></span>
+          <span style="--index: 1;" class="button-023__bg-inner is--second"></span>
+        </span>
+        <span class="button-023__inner">
+          <span class="button-023__text is--first">Download XVDL</span>
+          <span aria-hidden="true" class="button-023__text is--second">Download XVDL</span>
+        </span>
+      </a>
+    </div>
+  </section>
+
+  
+  <div class="base">
+    <p class="mono">© 2026 lazyapps</p>
+    <nav class="mono">
+      <a data-hover href="/"><span data-underline-link class="underline-link">lazyapps</span></a>
+      <a data-hover href="https://github.com/cxa/xvdl"><span data-underline-link class="underline-link">Source</span></a>
+      <a data-hover href="mailto:lazyapps.feedback@gmail.com"><span data-underline-link class="underline-link">Contact</span></a>
+      <a data-hover href="/privacy.en.html"><span data-underline-link class="underline-link">Privacy</span></a>
+    </nav>
+  </div>
+
+</footer>
+
+<script is:inline src={gsapUrl}>
+
+</script>
+<script is:inline src={scrollTriggerUrl}>
+
+</script>
+<script is:inline src={customEaseUrl}>
+
+</script>
+<script is:inline src={splitTextUrl}>
+
+</script>
+
+<script is:inline src={logoRevealUrl}>
+
+</script>
+<script is:inline src={siteJsUrl}>
+
+</script>
+
+</body>
+</html>

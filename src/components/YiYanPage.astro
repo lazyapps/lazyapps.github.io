@@ -1,0 +1,491 @@
+---
+interface Props {
+  t: any;
+  isRoot: boolean;
+}
+
+const { t, isRoot } = Astro.props;
+
+const SITE = 'https://lazyapps.com';
+import '$assets/s/site.css';
+import gsapUrl from '$assets/vendor/gsap.min.js?url';
+import scrollTriggerUrl from '$assets/vendor/ScrollTrigger.min.js?url';
+import customEaseUrl from '$assets/vendor/CustomEase.min.js?url';
+import splitTextUrl from '$assets/vendor/SplitText.min.js?url';
+import logoRevealUrl from '$assets/s/logo-reveal-loader.js?url';
+import siteJsUrl from '$assets/s/site.js?url';
+import yiyanIconUrl from '$assets/img/yiyan-icon.png?url';
+import showcaseUrl from '$assets/img/yiyan-showcase.png?url';
+import showcaseDetailUrl from '$assets/img/yiyan-showcase-detail.png?url';
+const ALTS = [
+  ['zh-Hans', 'yiyan/'],
+  ['en', 'yiyan/en/'],
+  ['zh-Hant', 'yiyan/zh-hant/'],
+  ['es', 'yiyan/es/'],
+  ['pt-BR', 'yiyan/pt-br/'],
+  ['fr', 'yiyan/fr/'],
+  ['de', 'yiyan/de/'],
+  ['ja', 'yiyan/ja/'],
+  ['ko', 'yiyan/ko/'],
+  ['ru', 'yiyan/ru/'],
+  ['ar', 'yiyan/ar/'],
+  ['hi', 'yiyan/hi/'],
+  ['x-default', 'yiyan/en/'],
+];
+
+const OPTIONS = [
+  ['zh-Hans', '/yiyan/', 'zh-Hans', '简体中文'],
+  ['en', '/yiyan/en/', 'en', 'English'],
+  ['zh-Hant', '/yiyan/zh-hant/', 'zh-Hant', '繁體中文'],
+  ['es', '/yiyan/es/', 'es', 'Español'],
+  ['pt-BR', '/yiyan/pt-br/', 'pt-BR', 'Português'],
+  ['fr', '/yiyan/fr/', 'fr', 'Français'],
+  ['de', '/yiyan/de/', 'de', 'Deutsch'],
+  ['ja', '/yiyan/ja/', 'ja', '日本語'],
+  ['ko', '/yiyan/ko/', 'ko', '한국어'],
+  ['ru', '/yiyan/ru/', 'ru', 'Русский'],
+  ['ar', '/yiyan/ar/', 'ar', 'العربية'],
+  ['hi', '/yiyan/hi/', 'hi', 'हिन्दी'],
+];
+
+const ICO_GLOBE = '<svg class="locale__globe" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor"/><path d="M12 22C14.2091 22 16 17.5228 16 12C16 6.47715 14.2091 2 12 2C9.79086 2 8 6.47715 8 12C8 17.5228 9.79086 22 12 22Z" stroke="currentColor"/><path d="M2 12H22" stroke="currentColor"/><path d="M20 18C17.4703 16.937 14.743 16.4256 12 16.5C9.25702 16.4256 6.52971 16.937 4 18" stroke="currentColor"/><path d="M4 6C6.52971 7.06302 9.25702 7.57439 12 7.5C14.743 7.57439 17.4703 7.06302 20 6" stroke="currentColor"/></svg>';
+const ICO_CHEV = '<svg class="locale__chev" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M5 9L12 16L19 9" stroke="currentColor" stroke-miterlimit="10"/></svg>';
+const ICO_TRUST = [
+  '<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor"/><path d="M8 12L11 15L16 10" stroke="currentColor" stroke-miterlimit="10"/></svg>',
+  '<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 7L1 12L6 17" stroke="currentColor" stroke-miterlimit="10"/><path d="M18 17L23 12L18 7" stroke="currentColor" stroke-miterlimit="10"/><path d="M8.5 20L15.5 4" stroke="currentColor" stroke-miterlimit="10"/></svg>',
+  '<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M11.5 6V12.5L16.5 15" stroke="currentColor"/><path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor"/></svg>',
+];
+
+const REDIRECT_SCRIPT = `  (() => {
+    var routes = {
+      en: "/yiyan/en/",
+      "zh-hant": "/yiyan/zh-hant/",
+      es: "/yiyan/es/",
+      "pt-br": "/yiyan/pt-br/",
+      fr: "/yiyan/fr/",
+      de: "/yiyan/de/",
+      ja: "/yiyan/ja/",
+      ko: "/yiyan/ko/",
+      ru: "/yiyan/ru/",
+      ar: "/yiyan/ar/",
+      hi: "/yiyan/hi/",
+    };
+
+    function routeFor(language) {
+      if (typeof language !== "string") return null;
+
+      var tag = language.trim().toLowerCase().replace(/_/g, "-");
+      if (!tag) return null;
+
+      if (/^zh-(?:hant|tw|hk|mo)(?:-|$)/.test(tag)) {
+        return routes["zh-hant"];
+      }
+
+      if (/^zh(?:-|$)/.test(tag)) {
+        return "";
+      }
+
+      if (/^pt(?:-|$)/.test(tag)) {
+        return routes["pt-br"];
+      }
+
+      var base = tag.split("-")[0];
+      return  Object.hasOwn(routes, base)
+        ? routes[base]
+        : null;
+    }
+
+    var target = null;
+
+    try {
+      target = routeFor(window.localStorage.getItem("yiyan.locale"));
+    } catch (_storageError) {
+    }
+
+    if (target === null) {
+      try {
+        var languages = Array.isArray(navigator.languages)
+          ? navigator.languages
+          : [navigator.language];
+
+        for (var index = 0; index < languages.length; index += 1) {
+          target = routeFor(languages[index]);
+          if (target !== null) break;
+        }
+      } catch (_languageError) {
+      }
+    }
+
+    if (target === null) target = routes.en;
+    if (!target) return;
+
+    window.location.replace(
+      target + window.location.search + window.location.hash,
+    );
+  })();`;
+
+const optionsHtml = OPTIONS.map(
+  ([locale, value, lang, label]) =>
+    `<option value="${value}" data-locale="${locale}" lang="${lang}"${value === t.selectedUrl ? ' selected' : ''}>${label}</option>`,
+).join('\n          ');
+
+const ctaButtons = t.cta.slice(0, 2).map((label, i) => {
+  if (!label) return '';
+  const cls = i === 0 ? 'button-023' : i === 1 ? 'button-023 button-023--ghost' : 'button-023 button-023--square';
+  const href = i === 0 ? 'https://github.com/cxa/yiyan/releases' : i === 1 ? '#iphone' : 'https://github.com/cxa/yiyan';
+  return `<a data-hover href="${href}" class="${cls}">
+              <span class="button-023__bg">
+                <span style="--index: 0;" class="button-023__bg-inner is--first"></span>
+                <span style="--index: 1;" class="button-023__bg-inner is--second"></span>
+              </span>
+              <span class="button-023__inner">
+                <span class="button-023__text is--first">${label}</span>
+                <span aria-hidden="true" class="button-023__text is--second">${label}</span>
+              </span>
+            </a>`;
+}).join('\n');
+---
+
+<!doctype html>
+<html lang={t.htmlLang} dir={t.htmlDir} class="no-js" data-trust={t.cssTrust}>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>{t.title}</title>
+<meta name="description" content={t.description}>
+<meta name="theme-color" content="#f8f8f6">
+<link rel="canonical" href={t.canonical}>
+{ALTS.map(([hreflang, path]) => <link rel="alternate" hreflang={hreflang} href={`${SITE}/${path}`} />)}
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="lazyapps">
+<meta property="og:title" content={t.ogTitle}>
+<meta property="og:description" content={t.ogDesc}>
+<meta property="og:url" content={t.ogUrl}>
+<meta property="og:image" content={`${SITE}${showcaseUrl}`}>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2064%2064%22%3E%3Crect%20width%3D%2264%22%20height%3D%2264%22%20rx%3D%2215%22%20fill%3D%22%23171717%22%2F%3E%3Cpath%20fill%3D%22%23f8f8f6%22%20d%3D%22M20%2013h12v33h17v10H20z%22%2F%3E%3Ccircle%20cx%3D%2245%22%20cy%3D%2219%22%20r%3D%225%22%20fill%3D%22%23ff6846%22%2F%3E%3C%2Fsvg%3E">
+{isRoot && <script is:inline data-language-redirect set:html={REDIRECT_SCRIPT} />}
+<script is:inline>
+document.documentElement.classList.remove('no-js');
+setTimeout(()=> {
+  document.documentElement.classList.add('is-loaded');
+  var l = document.getElementById('loader');
+  if (l) l.remove();
+}, 6000);
+</script>
+<style is:inline>
+section.phero.wrap{padding-top:clamp(32px,5vw,72px);--h1-size:clamp(38px,6.2vw,96px)}
+.phero__h1{margin-top:clamp(28px,4vw,64px);font-size:var(--h1-size);max-width:calc(14 * var(--h1-size))}
+.phero__sub{margin-top:clamp(18px,2.2vw,32px);font-size:1.0625rem;color:var(--muted);max-width:calc(14 * var(--h1-size))}
+.phero__cta{margin-top:clamp(22px,2.6vw,38px);display:flex;gap:.75rem;flex-wrap:wrap}
+.phero__trust{margin-top:clamp(18px,2vw,28px);display:grid;gap:.5rem;margin-bottom:0;padding:0;list-style:none}
+.phero__trust li{display:flex;align-items:center;gap:.6em;color:var(--muted)}
+html[data-trust=latin] .phero__trust li{font:400 .6875rem/1.4 var(--mono);letter-spacing:.09em;text-transform:uppercase}
+html[data-trust=cjk] .phero__trust li{font:400 .75rem/1.5 var(--mono);letter-spacing:0}
+.phero__trust svg{width:14px;height:14px;color:var(--accent);flex:none}
+
+.shot{
+  margin-top:clamp(28px,4vw,60px);
+  border:1px solid rgba(23,23,23,.1);border-radius:var(--r-card);
+  background:#fff;overflow:hidden;
+}
+.shot img{width:100%}
+
+.deck{padding-top:clamp(40px,5.5vw,88px);padding-bottom:clamp(32px,4vw,64px)}
+.card{
+  position:relative;display:block;
+  background:var(--fill);color:var(--fg,var(--ink));
+  border:1px solid rgba(23,23,23,.08);border-radius:var(--r-card);
+  padding:clamp(20px,2.4vw,34px);
+  margin-top:-8px;
+  transition:border-color .2s linear;
+}
+.card:first-child{margin-top:0}
+.card--c1{--fill:var(--c1)}
+.card--c2{--fill:var(--c2)}
+.card--c3{--fill:var(--c3)}
+.card--c4{--fill:var(--c4)}
+    .card--c5{--fill:var(--c5)}
+    .card--c6{--fill:var(--c6);--fg:#f8f8f6}
+.card:nth-child(odd){transform:rotate(-2deg)}
+.card:nth-child(even){transform:rotate(2deg)}
+.card:hover{border-color:rgba(23,23,23,.4)}
+.card__tag{position:absolute;z-index:2;top:clamp(16px,2vw,26px);right:clamp(18px,2.2vw,30px);
+  font:400 .6875rem/1.4 var(--mono);text-transform:uppercase;letter-spacing:.09em;opacity:.62}
+.card__grid{display:grid;grid-template-columns:minmax(0,.82fr) minmax(0,1.18fr);gap:clamp(18px,2.6vw,44px);align-items:start;padding-top:1.5rem}
+.card__title{font-size:clamp(26px,3.4vw,46px)}
+.card__p{font-size:1.0625rem;line-height:1.85}
+@media (max-width:860px){.card__grid{grid-template-columns:1fr}}
+
+.pair{padding-top:clamp(40px,5.5vw,88px)}
+.pair__head{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;padding-bottom:.75rem;border-bottom:1px solid var(--line)}
+.pair__h2{margin-top:clamp(20px,2.6vw,40px);font-size:clamp(28px,4.2vw,60px);max-width:16em}
+.pair__grid{margin-top:clamp(24px,3vw,44px);display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(14px,1.6vw,22px)}
+.pair__cell{
+  border:1px solid rgba(23,23,23,.1);border-radius:var(--r-card);
+  padding:clamp(18px,2.2vw,30px);display:grid;gap:.875rem;align-content:start;
+}
+.pair__cell--src{background:#fff}
+.pair__cell--out{background:var(--c4)}
+.pair__cell p.line{font-size:1.0625rem;line-height:1.75}
+.pair__cell b{font-weight:600}
+.pair__why{
+  margin-top:clamp(14px,1.6vw,22px);
+  border:1px solid rgba(23,23,23,.1);border-radius:var(--r-card);
+  background:#fff;padding:clamp(18px,2.2vw,30px);display:grid;gap:.75rem;
+}
+.pair__reuse{display:flex;gap:.5rem;flex-wrap:wrap}
+.pair__reuse code{
+  font:400 .8125rem/1 var(--mono);background:var(--c4);
+  border-radius:999px;padding:.6em .9em;direction:ltr;
+}
+@media (max-width:860px){.pair__grid{grid-template-columns:1fr}}
+
+.bounds{padding-top:clamp(40px,5.5vw,88px)}
+.bounds__head{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;padding-bottom:.75rem;border-bottom:1px solid var(--line)}
+.bounds__h2{margin-top:clamp(20px,2.6vw,40px);font-size:clamp(26px,3.8vw,54px);max-width:16em}
+.bounds__grid{margin-top:clamp(24px,3vw,44px);display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(20px,3vw,48px)}
+.bounds__q{color:var(--muted);font-size:.9375rem}
+.bounds__a{margin-top:.5rem;font-size:.9375rem;line-height:1.75}
+.bounds__a a{font-weight:600;color:var(--accent)}
+.bounds__note{margin-top:1.25rem}
+.next__plate.next__plate--icon{max-width:120px;border-radius:24%;border:none}
+.brew__head h3{font-size:clamp(20px,2.2vw,30px)}
+@media (max-width:860px){.bounds__grid{grid-template-columns:1fr}}
+
+.brew{
+  margin-top:clamp(28px,3.5vw,56px);
+  border:1px solid rgba(23,23,23,.12);border-radius:var(--r-card);
+  background:var(--ink);color:var(--paper);
+  padding:clamp(20px,2.4vw,34px);display:grid;gap:1rem;
+}
+.brew__head{display:flex;justify-content:space-between;align-items:baseline;gap:1rem}
+.brew__head>span{font:400 .6875rem/1.4 var(--mono);text-transform:uppercase;letter-spacing:.09em;opacity:.6}
+.brew pre{
+  margin:0;font:400 .875rem/1.9 var(--mono);letter-spacing:0;
+  white-space:pre-wrap;word-break:break-all;
+}
+.brew pre .p{opacity:.45}
+</style>
+</head>
+
+<body>
+
+
+<div class="grain" data-grain-animate="true"></div>
+
+
+<div data-load-wrap class="loader" id="loader" aria-hidden="true">
+  <div data-load-bg class="loader__bg">
+    <div data-load-progress class="loader__bg-bar"></div>
+  </div>
+  <div data-load-container class="loader__container">
+    <div class="loader__logo-wrap">
+      <div class="loader__logo-item is--base">
+        <span class="loader__logo-img" lang="en">{t.loaderLogo}</span>
+      </div>
+      <div data-load-logo class="loader__logo-item is--top">
+        <span class="loader__logo-img" lang="en">{t.loaderLogo}</span>
+      </div>
+    </div>
+    <div class="loader__text-wrap">
+      <span data-load-text data-load-reset class="loader__text-el" lang="en">Independent software</span>
+      <span data-load-text data-load-reset class="loader__text-el" lang="en">Since 2009</span>
+    </div>
+  </div>
+</div>
+
+<main>
+
+  <section class="phero wrap">
+    <div class="topbar">
+      <nav class="mono topbar__nav" aria-label={t.navAria}>
+        <a data-hover href="/" class="topbar__home" aria-label={t.homeAria}><span aria-hidden="true" class="topbar__home-dot"></span></a>
+      </nav>
+      <div class="topbar__app">
+        <img src={yiyanIconUrl} alt="">
+        <h2 class="dsp" lang={t.appTitleAttrs ? 'en' : undefined}><Fragment set:html={t.appTitle} /></h2>
+      </div>
+
+      <div class="locale">
+
+        <Fragment set:html={ICO_GLOBE} />
+        <span class="locale__now" aria-hidden="true">{t.localeNow}</span>
+
+        <Fragment set:html={ICO_CHEV} />
+        <select data-locale-select aria-label={t.selectAria}>
+          <Fragment set:html={optionsHtml} />
+        </select>
+      </div>
+    </div>
+
+    <div data-reveal-group data-stagger="110" data-distance="1.2em" data-start="top 94%">
+      <h1 class="phero__h1 dsp"><Fragment set:html={t.h1} /></h1>
+      <p class="phero__sub"><Fragment set:html={t.sub} /></p>
+      {t.cta[0] && <div class="phero__cta">
+      <Fragment set:html={ctaButtons} />
+      </div>}
+      <ul class="phero__trust">
+        {t.trust.map((text, i) => <li>
+          <Fragment set:html={ICO_TRUST[i]} />
+          {text}
+        </li>)}
+      </ul>
+
+      <div class="shot">
+        <img src={showcaseUrl} alt={t.shotAltMain}>
+      </div>
+    </div>
+  </section>
+
+  <section class="deck wrap">
+    <div data-reveal-group data-stagger="140" data-distance="2.1em" data-start="top 88%">
+
+      {t.cards.map((card, i) => <article class={`card card--c${i + 1}`}>
+        <p class="card__tag" lang={card.tagLang ? 'en' : undefined}><Fragment set:html={card.tag} /></p>
+        <div class="card__grid">
+          <h3 class="card__title dsp"><Fragment set:html={card.title} /></h3>
+          <p class="card__p"><Fragment set:html={card.p} /></p>
+        </div>
+      </article>)}
+
+    </div>
+  </section>
+
+  <section class="pair wrap" data-reveal-group data-stagger="120" data-distance="1.4em" data-start="top 86%">
+    <div class="pair__head">
+      <h2 class="mono"><Fragment set:html={t.pair.headA} /></h2>
+      <p class="mono"><Fragment set:html={t.pair.headB} /></p>
+    </div>
+    <h2 class="pair__h2 dsp"><Fragment set:html={t.pair.h2} /></h2>
+    <div class="pair__grid">
+      <div class="pair__cell pair__cell--src">
+        <Fragment set:html={t.pair.cellSrc} />
+      </div>
+      <div class="pair__cell pair__cell--out">
+        <Fragment set:html={t.pair.cellOut} />
+      </div>
+    </div>
+    {t.pair.whyHtml !== '' && <div class="pair__why">
+      <Fragment set:html={t.pair.whyHtml} />
+    </div>}
+  </section>
+
+  <section class="pair wrap" id="iphone" data-reveal-group data-stagger="120" data-distance="1.4em" data-start="top 86%">
+    <div class="pair__head">
+      <h2 class="mono"><Fragment set:html={t.iphone.headA} /></h2>
+      <p class="mono"><Fragment set:html={t.iphone.headB} /></p>
+    </div>
+    <h2 class="pair__h2 dsp"><Fragment set:html={t.iphone.h2} /></h2>
+    <div class="pair__grid">
+      <div class="pair__cell pair__cell--src">
+        <Fragment set:html={t.iphone.cellSrc} />
+      </div>
+      <div class="pair__cell pair__cell--out">
+        <Fragment set:html={t.iphone.cellOut} />
+      </div>
+    </div>
+    {t.iphone.whyHtml !== '' && <div class="pair__why">
+      <Fragment set:html={t.iphone.whyHtml} />
+    </div>}
+    <div class="shot">
+      <img src={showcaseDetailUrl} alt={t.shotAltDetail}>
+    </div>
+  </section>
+
+  <section class="bounds wrap" data-reveal-group data-stagger="120" data-distance="1.4em" data-start="top 86%">
+    <div class="bounds__head">
+      <h2 class="mono"><Fragment set:html={t.bounds.headA} /></h2>
+      <p class="mono"><Fragment set:html={t.bounds.headB} /></p>
+    </div>
+    <h2 class="bounds__h2 dsp"><Fragment set:html={t.bounds.h2} /></h2>
+    <p class="phero__sub bounds__note"><Fragment set:html={t.bounds.note} /></p>
+    <div class="bounds__grid">
+      {t.bounds.items.map((item) => <div>
+        <p class="bounds__q"><Fragment set:html={item.q} /></p>
+        <p class="bounds__a"><Fragment set:html={item.a} /></p>
+      </div>)}
+    </div>
+  </section>
+
+</main>
+
+<footer class="wrap">
+
+  <section class="next" id="brew" data-reveal-group data-stagger="110" data-distance="1.4em" data-start="top 88%">
+    <img class="next__plate next__plate--icon" src={yiyanIconUrl} alt={t.next.imgAlt}>
+    <h2 class="next__q dsp"><Fragment set:html={t.next.q} /></h2>
+    <div class="next__act">
+      <a data-hover href="https://github.com/cxa/yiyan" class="button-023 button-023--square">
+        <span class="button-023__bg">
+          <span style="--index: 0;" class="button-023__bg-inner is--first"></span>
+          <span style="--index: 1;" class="button-023__bg-inner is--second"></span>
+        </span>
+        <span class="button-023__inner">
+          <span class="button-023__text is--first">{t.cta[2]}</span>
+          <span aria-hidden="true" class="button-023__text is--second">{t.cta[2]}</span>
+        </span>
+      </a>
+    </div>
+  </section>
+
+  <div class="brew" data-reveal-group data-stagger="100" data-distance="1.2em" data-start="top 94%">
+    <div class="brew__head">
+      <h3 class="dsp"><Fragment set:html={t.brew.h3} /></h3>
+      <span><Fragment set:html={t.brew.label} /></span>
+    </div>
+    <pre dir="ltr"><Fragment set:html={t.brew.install} /></pre>
+    <p class="bounds__a"><Fragment set:html={t.brew.p} /></p>
+  </div>
+
+  <div class="base">
+    <p class="mono" lang="en">© 2026 lazyapps</p>
+    <nav class="mono">
+      <Fragment set:html={t.footer.join('\n      ')} />
+    </nav>
+  </div>
+
+</footer>
+
+<script is:inline src={gsapUrl}>
+
+</script>
+<script is:inline src={scrollTriggerUrl}>
+
+</script>
+<script is:inline src={customEaseUrl}>
+
+</script>
+<script is:inline src={splitTextUrl}>
+
+</script>
+
+<script is:inline src={logoRevealUrl}>
+
+</script>
+<script is:inline src={siteJsUrl}>
+
+</script>
+
+<script is:inline>
+(() => {
+  var select = document.querySelector("[data-locale-select]");
+  if (!select) return;
+
+  select.addEventListener("change", () => {
+    var option = select.options[select.selectedIndex];
+    if (!option) return;
+
+    try {
+      window.localStorage.setItem("yiyan.locale", option.getAttribute("data-locale"));
+    } catch (_storageError) {
+    }
+
+    var target = option.value;
+    if (!target) return;
+    window.location.href = target + window.location.search + window.location.hash;
+  });
+})();
+</script>
+
+</body>
+</html>
