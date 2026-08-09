@@ -1,6 +1,6 @@
 ---
 const SITE = 'https://lazyapps.com';
-import '$assets/s/site.css';
+import siteCssUrl from '$assets/s/site.css?url';
 import gsapUrl from '$assets/vendor/gsap.min.js?url';
 import scrollTriggerUrl from '$assets/vendor/ScrollTrigger.min.js?url';
 import customEaseUrl from '$assets/vendor/CustomEase.min.js?url';
@@ -33,6 +33,7 @@ import appFondfontUrl from '$assets/img/app-fondfont.jpg?url';
 <meta property="og:url" content="https://lazyapps.com/">
 <meta property="og:image" content={`${SITE}${opengraphUrl}`}>
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2064%2064%22%3E%3Crect%20width%3D%2264%22%20height%3D%2264%22%20rx%3D%2215%22%20fill%3D%22%23171717%22%2F%3E%3Cpath%20fill%3D%22%23f8f8f6%22%20d%3D%22M20%2013h12v33h17v10H20z%22%2F%3E%3Ccircle%20cx%3D%2245%22%20cy%3D%2219%22%20r%3D%225%22%20fill%3D%22%23ff6846%22%2F%3E%3C%2Fsvg%3E">
+<link rel="stylesheet" href={siteCssUrl}>
 
 <script is:inline>
 document.documentElement.classList.remove('no-js');
