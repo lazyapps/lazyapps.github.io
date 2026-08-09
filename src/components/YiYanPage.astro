@@ -159,7 +159,7 @@ const optionsHtml = OPTIONS.map(
 const ctaButtons = t.cta.slice(0, 2).map((label, i) => {
   if (!label) return '';
   const cls = i === 0 ? 'button-023' : i === 1 ? 'button-023 button-023--ghost' : 'button-023 button-023--square';
-  const href = i === 0 ? 'https://github.com/cxa/yiyan/releases' : i === 1 ? '#iphone' : 'https://github.com/cxa/yiyan';
+  const href = i === 0 ? 'https://github.com/cxa/yiyan/releases' : i === 1 ? t.iphone.ctaUrl : 'https://github.com/cxa/yiyan';
   return `<a data-hover href="${href}" class="${cls}">
               <span class="button-023__bg">
                 <span style="--index: 0;" class="button-023__bg-inner is--first"></span>
