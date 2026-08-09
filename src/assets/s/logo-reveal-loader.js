@@ -26,7 +26,7 @@ function initLogoRevealLoader() {
     .to(container, { autoAlpha: 0, duration: 0.5 })
     .to(progressBar, { scaleX: 0, transformOrigin: 'right center', duration: 0.5 }, '<')
     .add('hideContent', '<')
-    .to(bg, { yPercent: -101, duration: 1 }, 'hideContent')
+    .to(bg, { yPercent: -101, duration: 0.45 }, 'hideContent')
     .set(wrap, { display: 'none' });
 
   if (resetTargets.length) {

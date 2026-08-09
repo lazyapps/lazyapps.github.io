@@ -24,7 +24,8 @@ import appFondfontUrl from '$assets/img/app-fondfont.jpg?url';
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>lazyapps — Independent software since 2009</title>
 <meta name="description" content="Independent software for Mac, iPhone, and iPad. Six apps, maintained by lazyapps since 2009. No data collected.">
-<meta name="theme-color" content="#f8f8f6">
+<meta name="theme-color" content="#171717" data-page-color="#e8e8e6">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#171717" data-page-color="#e8e8e6">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="lazyapps">
 <meta property="og:title" content="lazyapps — Independent software since 2009">
@@ -36,9 +37,13 @@ import appFondfontUrl from '$assets/img/app-fondfont.jpg?url';
 <script is:inline>
 document.documentElement.classList.remove('no-js');
 setTimeout(function(){
+  document.documentElement.classList.add('is-page-theme');
   document.documentElement.classList.add('is-loaded');
   var l = document.getElementById('loader');
   if (l) l.remove();
+  document.querySelectorAll('meta[name="theme-color"][data-page-color]').forEach(function(meta){
+    meta.setAttribute('content', meta.getAttribute('data-page-color'));
+  });
 }, 6000);
 </script>
 <style is:inline>

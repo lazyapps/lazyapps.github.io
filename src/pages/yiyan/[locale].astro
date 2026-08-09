@@ -10,4 +10,4 @@ export function getStaticPaths() {
 
 const t = YIYAN_LOCALES[Astro.params.locale];
 ---
-<YiYanPage t={t} isRoot={false} />
+<YiYanPage t={t} isRoot={false} code={Astro.params.locale} />

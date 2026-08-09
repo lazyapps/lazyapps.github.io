@@ -18,7 +18,8 @@ import inUseUrl from '$assets/img/xvdl-in-use.png?url';
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>XVDL — Safari video downloader for X/Twitter</title>
 <meta name="description" content="XVDL adds one download button to X/Twitter videos and saves available MP4 files directly to your Downloads folder. No URL copying, paste-in service, or media upload.">
-<meta name="theme-color" content="#f8f8f6">
+<meta name="theme-color" content="#171717" data-page-color="#e8e8e6">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#171717" data-page-color="#e8e8e6">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="lazyapps">
 <meta property="og:title" content="XVDL — Safari video downloader for X/Twitter">
@@ -30,9 +31,13 @@ import inUseUrl from '$assets/img/xvdl-in-use.png?url';
 <script is:inline>
 document.documentElement.classList.remove('no-js');
 setTimeout(function(){
+  document.documentElement.classList.add('is-page-theme');
   document.documentElement.classList.add('is-loaded');
   var l = document.getElementById('loader');
   if (l) l.remove();
+  document.querySelectorAll('meta[name="theme-color"][data-page-color]').forEach(function(meta){
+    meta.setAttribute('content', meta.getAttribute('data-page-color'));
+  });
 }, 6000);
 </script>
 <style is:inline>
