@@ -3,10 +3,10 @@ export const YIYAN_LOCALES = {
   "": {
     "htmlLang": "zh-Hans",
     "title": "绎言 YiYan — 地道英语，边蹬边学",
-    "description": "自动捕捉你在 Pi、Claude Code 或 Codex 里的输入，给出更自然的英语表达，再讲清楚为什么这样说。Mac 上积累，通过 iCloud 同步到 iPhone。",
+    "description": "自动捕捉你在 Pi、Claude Code、Codex 或 OpenCode 里的输入，给出更自然的英语表达，再讲清楚为什么这样说。Mac 上积累，通过 iCloud 同步到 iPhone。",
     "canonical": "https://lazyapps.com/yiyan/",
     "ogTitle": "绎言 YiYan — 地道英语，边蹬边学",
-    "ogDesc": "自动捕捉你在 Pi、Claude Code 或 Codex 里的输入，给出更自然的英语表达，再讲清楚为什么这样说。",
+    "ogDesc": "自动捕捉你在 Pi、Claude Code、Codex 或 OpenCode 里的输入，给出更自然的英语表达，再讲清楚为什么这样说。",
     "ogUrl": "https://lazyapps.com/yiyan/",
     "navAria": "主导航",
     "homeAria": "首页",
@@ -17,7 +17,7 @@ export const YIYAN_LOCALES = {
     "selectAria": "切换语言",
     "selectedUrl": "/yiyan/",
     "h1": "<span class=\"zh\">地道英语，边蹬边学</span>",
-    "sub": "自动捕捉你在 Pi、Claude Code 或 Codex 里的输入，给出更自然的英语表达，再讲清楚为什么这样说。在 Mac 上积累，通过 iCloud 同步到 iPhone，离开电脑也能继续复习。",
+    "sub": "自动捕捉你在 Pi、Claude Code、Codex 或 OpenCode 里的输入，给出更自然的英语表达，再讲清楚为什么这样说。在 Mac 上积累，通过 iCloud 同步到 iPhone，离开电脑也能继续复习。",
     "cta": [
       "下载 Mac 版",
       "iPhone 公开测试版",
@@ -33,7 +33,7 @@ export const YIYAN_LOCALES = {
     "shotAltDetail": "一条绎言学习记录：原话、自然英语与重点笔记",
     "cards": [
       {
-        "tag": "Pi · Claude Code · Codex",
+        "tag": "Pi · Claude Code · Codex · OpenCode",
         "tagLang": true,
         "title": "<span class=\"zh\">照常输入</span>",
         "p": "中文、英文、夹着说都行。你的原请求会先正常发送，不需要等待英语结果。"
@@ -100,7 +100,7 @@ export const YIYAN_LOCALES = {
       "headA": "边界说清楚",
       "headB": "只留下学习所需的内容",
       "h2": "<span class=\"zh\">只处理运行期间新增的用户消息。</span>",
-      "note": "绎言不会安装进 Pi、Claude Code 或 Codex，也不会更改它们的设置。",
+      "note": "绎言不会安装进 Pi、Claude Code、Codex 或 OpenCode，也不会更改它们的设置。",
       "items": [
         {
           "q": "什么会成为学习记录？",
@@ -120,7 +120,7 @@ export const YIYAN_LOCALES = {
         },
         {
           "q": "需要再配置一套模型吗？",
-          "a": "不需要。自然英语和学习笔记由你刚才使用的 Pi、Claude Code 或 Codex 生成；绎言不带自己的模型或 API 凭据。"
+          "a": "不需要。自然英语和学习笔记由你刚才使用的 Pi、Claude Code、Codex 或 OpenCode 生成；绎言不带自己的模型或 API 凭据。"
         },
         {
           "q": "和其他应用什么关系？",
@@ -136,12 +136,11 @@ export const YIYAN_LOCALES = {
       "h3": "<span class=\"zh\">两行装好</span>",
       "label": "Homebrew",
       "install": "<span class=\"p\">$</span> brew tap cxa/yiyan https://github.com/cxa/yiyan\n<span class=\"p\">$</span> brew install --cask cxa/yiyan/yiyan",
-      "p": "装好绎言，继续像平时一样使用 Pi、Claude Code 或 Codex。下一条有学习价值的新消息，会自动成为你的第一条学习记录。"
+      "p": "装好绎言，继续像平时一样使用 Pi、Claude Code、Codex 或 OpenCode。下一条有学习价值的新消息，会自动成为你的第一条学习记录。"
     },
     "footer": [
       "<a data-hover href=\"/\" lang=\"en\"><span data-underline-link class=\"underline-link\">lazyapps</span></a>",
       "<a data-hover href=\"mailto:lazyapps.feedback@gmail.com\"><span data-underline-link class=\"underline-link\">联系</span></a>",
-      "<a data-hover href=\"/privacy.zh.html\"><span data-underline-link class=\"underline-link\">隐私</span></a>",
       "<a data-hover href=\"/privacy.en.html\" lang=\"en\"><span data-underline-link class=\"underline-link\">English</span></a>"
     ]
   },
@@ -149,10 +148,10 @@ export const YIYAN_LOCALES = {
     "htmlLang": "ar",
     "htmlDir": "rtl",
     "title": "YiYan — إنجليزية طبيعية تتعلمها أثناء العمل",
-    "description": "يلتقط YiYan ما تكتبه في Pi أو Claude Code أو Codex، ويعطيك صياغة إنجليزية أطبع، ويشرح لماذا تُقال هكذا. يتجمّع على الـMac ويتزامن إلى الـiPhone عبر iCloud.",
+    "description": "يلتقط YiYan ما تكتبه في Pi أو Claude Code أو Codex أو OpenCode، ويعطيك صياغة إنجليزية أطبع، ويشرح لماذا تُقال هكذا. يتجمّع على الـMac ويتزامن إلى الـiPhone عبر iCloud.",
     "canonical": "https://lazyapps.com/yiyan/ar/",
     "ogTitle": "YiYan — إنجليزية طبيعية تتعلمها أثناء العمل",
-    "ogDesc": "يلتقط YiYan ما تكتبه في Pi أو Claude Code أو Codex، ويعطيك صياغة إنجليزية أطبع، ويشرح لماذا تُقال هكذا.",
+    "ogDesc": "يلتقط YiYan ما تكتبه في Pi أو Claude Code أو Codex أو OpenCode، ويعطيك صياغة إنجليزية أطبع، ويشرح لماذا تُقال هكذا.",
     "ogUrl": "https://lazyapps.com/yiyan/ar/",
     "navAria": "التنقل الرئيسي",
     "homeAria": "الرئيسية",
@@ -163,7 +162,7 @@ export const YIYAN_LOCALES = {
     "selectAria": "تغيير اللغة",
     "selectedUrl": "/yiyan/ar/",
     "h1": "إنجليزية طبيعية، تتعلمها أثناء العمل",
-    "sub": "يلتقط YiYan ما تكتبه في Pi أو Claude Code أو Codex، ويعطيك صياغة إنجليزية أطبع، ويشرح لماذا تُقال هكذا. ما يتجمّع على الـMac يصل إلى الـiPhone عبر iCloud، فتواصل المراجعة بعيدًا عن المكتب.",
+    "sub": "يلتقط YiYan ما تكتبه في Pi أو Claude Code أو Codex أو OpenCode، ويعطيك صياغة إنجليزية أطبع، ويشرح لماذا تُقال هكذا. ما يتجمّع على الـMac يصل إلى الـiPhone عبر iCloud، فتواصل المراجعة بعيدًا عن المكتب.",
     "cta": [
       "تنزيل نسخة Mac",
       "نسخة iPhone التجريبية",
@@ -179,7 +178,7 @@ export const YIYAN_LOCALES = {
     "shotAltDetail": "سجل واحد من YiYan: الجملة الأصلية والإنجليزية الطبيعية والملاحظات",
     "cards": [
       {
-        "tag": "Pi · Claude Code · Codex",
+        "tag": "Pi · Claude Code · Codex · OpenCode",
         "tagLang": true,
         "title": "اكتب كما تفعل عادة",
         "p": "بلغتك أو بالإنجليزية أو بخلط الاثنين، كل ذلك مقبول. طلبك الأصلي يُرسل أولًا، فلا تنتظر الإنجليزية."
@@ -246,7 +245,7 @@ export const YIYAN_LOCALES = {
       "headA": "حدود مذكورة بوضوح",
       "headB": "لا يبقى إلا ما يلزم للتعلّم",
       "h2": "لا يتعامل إلا مع الرسائل الجديدة أثناء تشغيله.",
-      "note": "لا يُثبَّت YiYan داخل Pi أو Claude Code أو Codex، ولا يغيّر إعداداتها.",
+      "note": "لا يُثبَّت YiYan داخل Pi أو Claude Code أو Codex أو OpenCode، ولا يغيّر إعداداتها.",
       "items": [
         {
           "q": "ما الذي يصير سجلًا؟",
@@ -266,7 +265,7 @@ export const YIYAN_LOCALES = {
         },
         {
           "q": "هل أحتاج نموذجًا آخر؟",
-          "a": "لا. الإنجليزية الطبيعية والملاحظات يولّدها Pi أو Claude Code أو Codex الذي كنت تستخدمه؛ ولا يحمل YiYan نموذجًا ولا بيانات اعتماد API خاصة به."
+          "a": "لا. الإنجليزية الطبيعية والملاحظات يولّدها Pi أو Claude Code أو Codex أو OpenCode الذي كنت تستخدمه؛ ولا يحمل YiYan نموذجًا ولا بيانات اعتماد API خاصة به."
         },
         {
           "q": "وما علاقته ببقية التطبيقات؟",
@@ -282,22 +281,21 @@ export const YIYAN_LOCALES = {
       "h3": "سطران للتثبيت",
       "label": "Homebrew",
       "install": "<span class=\"p\">$</span> brew tap cxa/yiyan https://github.com/cxa/yiyan\n<span class=\"p\">$</span> brew install --cask cxa/yiyan/yiyan",
-      "p": "ثبّت YiYan وواصل استخدام Pi أو Claude Code أو Codex كما كنت. أول رسالة جديدة تستحق التعلّم ستصير سجلك الأول."
+      "p": "ثبّت YiYan وواصل استخدام Pi أو Claude Code أو Codex أو OpenCode كما كنت. أول رسالة جديدة تستحق التعلّم ستصير سجلك الأول."
     },
     "footer": [
       "<a data-hover href=\"/\" lang=\"en\"><span data-underline-link class=\"underline-link\">lazyapps</span></a>",
       "<a data-hover href=\"mailto:lazyapps.feedback@gmail.com\"><span data-underline-link class=\"underline-link\">اتصال</span></a>",
-      "<a data-hover href=\"/privacy.en.html\"><span data-underline-link class=\"underline-link\">الخصوصية</span></a>",
-      "<a data-hover href=\"/privacy.zh.html\" lang=\"zh\"><span data-underline-link class=\"underline-link\">中文</span></a>"
+      "<a data-hover href=\"/privacy.en.html\"><span data-underline-link class=\"underline-link\">الخصوصية</span></a>"
     ]
   },
   "de": {
     "htmlLang": "de",
     "title": "YiYan — Natürliches Englisch, nebenbei gelernt",
-    "description": "YiYan greift auf, was du in Pi, Claude Code oder Codex schreibst, liefert eine natürlichere englische Fassung und erklärt, warum man es so sagt. Sammeln auf dem Mac, per iCloud zum iPhone.",
+    "description": "YiYan greift auf, was du in Pi, Claude Code, Codex oder OpenCode schreibst, liefert eine natürlichere englische Fassung und erklärt, warum man es so sagt. Sammeln auf dem Mac, per iCloud zum iPhone.",
     "canonical": "https://lazyapps.com/yiyan/de/",
     "ogTitle": "YiYan — Natürliches Englisch, nebenbei gelernt",
-    "ogDesc": "YiYan greift auf, was du in Pi, Claude Code oder Codex schreibst, liefert eine natürlichere englische Fassung und erklärt, warum man es so sagt.",
+    "ogDesc": "YiYan greift auf, was du in Pi, Claude Code, Codex oder OpenCode schreibst, liefert eine natürlichere englische Fassung und erklärt, warum man es so sagt.",
     "ogUrl": "https://lazyapps.com/yiyan/de/",
     "navAria": "Hauptnavigation",
     "homeAria": "Start",
@@ -308,7 +306,7 @@ export const YIYAN_LOCALES = {
     "selectAria": "Sprache wechseln",
     "selectedUrl": "/yiyan/de/",
     "h1": "Natürliches Englisch, nebenbei gelernt",
-    "sub": "YiYan greift auf, was du in Pi, Claude Code oder Codex schreibst, liefert eine natürlichere englische Fassung und erklärt, warum man es so sagt. Was auf dem Mac zusammenkommt, landet per iCloud auf dem iPhone – Wiederholen geht auch ohne Schreibtisch.",
+    "sub": "YiYan greift auf, was du in Pi, Claude Code, Codex oder OpenCode schreibst, liefert eine natürlichere englische Fassung und erklärt, warum man es so sagt. Was auf dem Mac zusammenkommt, landet per iCloud auf dem iPhone – Wiederholen geht auch ohne Schreibtisch.",
     "cta": [
       "Für Mac laden",
       "iPhone-Beta",
@@ -324,7 +322,7 @@ export const YIYAN_LOCALES = {
     "shotAltDetail": "Ein YiYan-Eintrag: Originalsatz, natürliches Englisch und die wichtigsten Notizen",
     "cards": [
       {
-        "tag": "Pi · Claude Code · Codex",
+        "tag": "Pi · Claude Code · Codex · OpenCode",
         "tagLang": true,
         "title": "Schreib wie immer",
         "p": "In deiner Sprache, auf Englisch oder gemischt – alles geht. Deine ursprüngliche Anfrage geht zuerst raus, du wartest nie auf das Englische."
@@ -391,7 +389,7 @@ export const YIYAN_LOCALES = {
       "headA": "Grenzen, klar benannt",
       "headB": "Nur das, was zum Lernen nötig ist",
       "h2": "Nur neue Nachrichten, die du im laufenden Betrieb sendest.",
-      "note": "YiYan installiert sich nicht in Pi, Claude Code oder Codex und ändert deren Einstellungen nie.",
+      "note": "YiYan installiert sich nicht in Pi, Claude Code, Codex oder OpenCode und ändert deren Einstellungen nie.",
       "items": [
         {
           "q": "Was wird zum Eintrag?",
@@ -411,7 +409,7 @@ export const YIYAN_LOCALES = {
         },
         {
           "q": "Brauche ich ein weiteres Modell?",
-          "a": "Nein. Das natürliche Englisch und die Notizen kommen von dem Pi, Claude Code oder Codex, das du eben benutzt hast; YiYan bringt kein eigenes Modell und keine API-Zugangsdaten mit."
+          "a": "Nein. Das natürliche Englisch und die Notizen kommen von dem Pi, Claude Code, Codex oder OpenCode, das du eben benutzt hast; YiYan bringt kein eigenes Modell und keine API-Zugangsdaten mit."
         },
         {
           "q": "Wie hängt das mit dem Rest zusammen?",
@@ -427,22 +425,21 @@ export const YIYAN_LOCALES = {
       "h3": "Zwei Zeilen, fertig",
       "label": "Homebrew",
       "install": "<span class=\"p\">$</span> brew tap cxa/yiyan https://github.com/cxa/yiyan\n<span class=\"p\">$</span> brew install --cask cxa/yiyan/yiyan",
-      "p": "Installiere YiYan und nutze Pi, Claude Code oder Codex weiter wie bisher. Die nächste Nachricht, aus der sich etwas lernen lässt, wird dein erster Eintrag."
+      "p": "Installiere YiYan und nutze Pi, Claude Code, Codex oder OpenCode weiter wie bisher. Die nächste Nachricht, aus der sich etwas lernen lässt, wird dein erster Eintrag."
     },
     "footer": [
       "<a data-hover href=\"/\" lang=\"en\"><span data-underline-link class=\"underline-link\">lazyapps</span></a>",
       "<a data-hover href=\"mailto:lazyapps.feedback@gmail.com\"><span data-underline-link class=\"underline-link\">Kontakt</span></a>",
-      "<a data-hover href=\"/privacy.en.html\"><span data-underline-link class=\"underline-link\">Datenschutz</span></a>",
-      "<a data-hover href=\"/privacy.zh.html\" lang=\"zh\"><span data-underline-link class=\"underline-link\">中文</span></a>"
+      "<a data-hover href=\"/privacy.en.html\"><span data-underline-link class=\"underline-link\">Datenschutz</span></a>"
     ]
   },
   "en": {
     "htmlLang": "en",
     "title": "YiYan — Natural English, picked up as you go",
-    "description": "YiYan quietly picks up what you type in Pi, Claude Code or Codex, gives you a more natural English version, and explains why it reads that way. Build it up on Mac, sync to iPhone over iCloud.",
+    "description": "YiYan quietly picks up what you type in Pi, Claude Code, Codex or OpenCode, gives you a more natural English version, and explains why it reads that way. Build it up on Mac, sync to iPhone over iCloud.",
     "canonical": "https://lazyapps.com/yiyan/en/",
     "ogTitle": "YiYan — Natural English, picked up as you go",
-    "ogDesc": "YiYan quietly picks up what you type in Pi, Claude Code or Codex, gives you a more natural English version, and explains why it reads that way.",
+    "ogDesc": "YiYan quietly picks up what you type in Pi, Claude Code, Codex or OpenCode, gives you a more natural English version, and explains why it reads that way.",
     "ogUrl": "https://lazyapps.com/yiyan/en/",
     "navAria": "Main navigation",
     "homeAria": "Home",
@@ -453,7 +450,7 @@ export const YIYAN_LOCALES = {
     "selectAria": "Change language",
     "selectedUrl": "/yiyan/en/",
     "h1": "Natural English, picked up as you go",
-    "sub": "YiYan quietly picks up what you type in Pi, Claude Code or Codex, gives you a more natural English version, and explains why it reads that way. Everything you collect on Mac syncs to iPhone over iCloud, so you can keep reviewing away from your desk.",
+    "sub": "YiYan quietly picks up what you type in Pi, Claude Code, Codex or OpenCode, gives you a more natural English version, and explains why it reads that way. Everything you collect on Mac syncs to iPhone over iCloud, so you can keep reviewing away from your desk.",
     "cta": [
       "Download for Mac",
       "iPhone public beta",
@@ -469,7 +466,7 @@ export const YIYAN_LOCALES = {
     "shotAltDetail": "One YiYan entry: the original wording, the natural English, and the key notes",
     "cards": [
       {
-        "tag": "Pi · Claude Code · Codex",
+        "tag": "Pi · Claude Code · Codex · OpenCode",
         "tagLang": true,
         "title": "Type as usual",
         "p": "Your own language, English, or a mix of both — all fine. Your original request goes out first, so you never wait on the English."
@@ -536,7 +533,7 @@ export const YIYAN_LOCALES = {
       "headA": "Boundaries, stated plainly",
       "headB": "Only what learning needs",
       "h2": "Only new messages you send while it is running.",
-      "note": "YiYan does not install itself into Pi, Claude Code or Codex, and never changes their settings.",
+      "note": "YiYan does not install itself into Pi, Claude Code, Codex or OpenCode, and never changes their settings.",
       "items": [
         {
           "q": "What becomes an entry?",
@@ -556,7 +553,7 @@ export const YIYAN_LOCALES = {
         },
         {
           "q": "Do I need another model?",
-          "a": "No. The natural English and the notes come from the Pi, Claude Code or Codex you were just using; YiYan ships no model and no API credentials of its own."
+          "a": "No. The natural English and the notes come from the Pi, Claude Code, Codex or OpenCode you were just using; YiYan ships no model and no API credentials of its own."
         },
         {
           "q": "How does it relate to the rest?",
@@ -572,22 +569,21 @@ export const YIYAN_LOCALES = {
       "h3": "Two lines to install",
       "label": "Homebrew",
       "install": "<span class=\"p\">$</span> brew tap cxa/yiyan https://github.com/cxa/yiyan\n<span class=\"p\">$</span> brew install --cask cxa/yiyan/yiyan",
-      "p": "Install YiYan and keep using Pi, Claude Code or Codex exactly as before. The next message worth learning from becomes your first entry."
+      "p": "Install YiYan and keep using Pi, Claude Code, Codex or OpenCode exactly as before. The next message worth learning from becomes your first entry."
     },
     "footer": [
       "<a data-hover href=\"/\" lang=\"en\"><span data-underline-link class=\"underline-link\">lazyapps</span></a>",
       "<a data-hover href=\"mailto:lazyapps.feedback@gmail.com\"><span data-underline-link class=\"underline-link\">Contact</span></a>",
-      "<a data-hover href=\"/privacy.en.html\"><span data-underline-link class=\"underline-link\">Privacy</span></a>",
-      "<a data-hover href=\"/privacy.zh.html\" lang=\"zh\"><span data-underline-link class=\"underline-link\">中文</span></a>"
+      "<a data-hover href=\"/privacy.en.html\"><span data-underline-link class=\"underline-link\">Privacy</span></a>"
     ]
   },
   "es": {
     "htmlLang": "es",
     "title": "YiYan — Inglés natural, aprendido sobre la marcha",
-    "description": "YiYan recoge lo que escribes en Pi, Claude Code o Codex, te da una versión en inglés más natural y explica por qué se dice así. Se acumula en el Mac y se sincroniza al iPhone por iCloud.",
+    "description": "YiYan recoge lo que escribes en Pi, Claude Code, Codex u OpenCode, te da una versión en inglés más natural y explica por qué se dice así. Se acumula en el Mac y se sincroniza al iPhone por iCloud.",
     "canonical": "https://lazyapps.com/yiyan/es/",
     "ogTitle": "YiYan — Inglés natural, aprendido sobre la marcha",
-    "ogDesc": "YiYan recoge lo que escribes en Pi, Claude Code o Codex, te da una versión en inglés más natural y explica por qué se dice así.",
+    "ogDesc": "YiYan recoge lo que escribes en Pi, Claude Code, Codex u OpenCode, te da una versión en inglés más natural y explica por qué se dice así.",
     "ogUrl": "https://lazyapps.com/yiyan/es/",
     "navAria": "Navegación principal",
     "homeAria": "Inicio",
@@ -598,7 +594,7 @@ export const YIYAN_LOCALES = {
     "selectAria": "Cambiar de idioma",
     "selectedUrl": "/yiyan/es/",
     "h1": "Inglés natural, aprendido sobre la marcha",
-    "sub": "YiYan recoge lo que escribes en Pi, Claude Code o Codex, te da una versión en inglés más natural y explica por qué se dice así. Lo que reúnes en el Mac se sincroniza al iPhone por iCloud, para seguir repasando lejos del escritorio.",
+    "sub": "YiYan recoge lo que escribes en Pi, Claude Code, Codex u OpenCode, te da una versión en inglés más natural y explica por qué se dice así. Lo que reúnes en el Mac se sincroniza al iPhone por iCloud, para seguir repasando lejos del escritorio.",
     "cta": [
       "Descargar para Mac",
       "Beta pública para iPhone",
@@ -614,7 +610,7 @@ export const YIYAN_LOCALES = {
     "shotAltDetail": "Un registro de YiYan: la frase original, el inglés natural y las notas clave",
     "cards": [
       {
-        "tag": "Pi · Claude Code · Codex",
+        "tag": "Pi · Claude Code · Codex · OpenCode",
         "tagLang": true,
         "title": "Escribe como siempre",
         "p": "En tu idioma, en inglés o mezclando los dos: todo vale. Tu petición original sale primero, así que nunca esperas por el inglés."
@@ -681,7 +677,7 @@ export const YIYAN_LOCALES = {
       "headA": "Los límites, dichos claro",
       "headB": "Solo lo que el aprendizaje necesita",
       "h2": "Solo los mensajes nuevos que envías mientras está en marcha.",
-      "note": "YiYan no se instala dentro de Pi, Claude Code ni Codex, y nunca cambia sus ajustes.",
+      "note": "YiYan no se instala dentro de Pi, Claude Code, Codex ni OpenCode, y nunca cambia sus ajustes.",
       "items": [
         {
           "q": "¿Qué se convierte en registro?",
@@ -701,7 +697,7 @@ export const YIYAN_LOCALES = {
         },
         {
           "q": "¿Hace falta otro modelo?",
-          "a": "No. El inglés natural y las notas los genera el Pi, Claude Code o Codex que acabas de usar; YiYan no trae modelo ni credenciales de API propias."
+          "a": "No. El inglés natural y las notas los genera el Pi, Claude Code, Codex u OpenCode que acabas de usar; YiYan no trae modelo ni credenciales de API propias."
         },
         {
           "q": "¿Y su relación con lo demás?",
@@ -717,22 +713,21 @@ export const YIYAN_LOCALES = {
       "h3": "Dos líneas y listo",
       "label": "Homebrew",
       "install": "<span class=\"p\">$</span> brew tap cxa/yiyan https://github.com/cxa/yiyan\n<span class=\"p\">$</span> brew install --cask cxa/yiyan/yiyan",
-      "p": "Instala YiYan y sigue usando Pi, Claude Code o Codex igual que antes. El próximo mensaje del que valga la pena aprender será tu primer registro."
+      "p": "Instala YiYan y sigue usando Pi, Claude Code, Codex u OpenCode igual que antes. El próximo mensaje del que valga la pena aprender será tu primer registro."
     },
     "footer": [
       "<a data-hover href=\"/\" lang=\"en\"><span data-underline-link class=\"underline-link\">lazyapps</span></a>",
       "<a data-hover href=\"mailto:lazyapps.feedback@gmail.com\"><span data-underline-link class=\"underline-link\">Contacto</span></a>",
-      "<a data-hover href=\"/privacy.en.html\"><span data-underline-link class=\"underline-link\">Privacidad</span></a>",
-      "<a data-hover href=\"/privacy.zh.html\" lang=\"zh\"><span data-underline-link class=\"underline-link\">中文</span></a>"
+      "<a data-hover href=\"/privacy.en.html\"><span data-underline-link class=\"underline-link\">Privacidad</span></a>"
     ]
   },
   "fr": {
     "htmlLang": "fr",
     "title": "YiYan — Un anglais naturel, appris en chemin",
-    "description": "YiYan récupère ce que vous écrivez dans Pi, Claude Code ou Codex, en propose une version anglaise plus naturelle et explique pourquoi on le dit ainsi. Tout s accumule sur le Mac et se synchronise vers l iPhone via iCloud.",
+    "description": "YiYan récupère ce que vous écrivez dans Pi, Claude Code, Codex ou OpenCode, en propose une version anglaise plus naturelle et explique pourquoi on le dit ainsi. Tout s accumule sur le Mac et se synchronise vers l iPhone via iCloud.",
     "canonical": "https://lazyapps.com/yiyan/fr/",
     "ogTitle": "YiYan — Un anglais naturel, appris en chemin",
-    "ogDesc": "YiYan récupère ce que vous écrivez dans Pi, Claude Code ou Codex, en propose une version anglaise plus naturelle et explique pourquoi on le dit ainsi.",
+    "ogDesc": "YiYan récupère ce que vous écrivez dans Pi, Claude Code, Codex ou OpenCode, en propose une version anglaise plus naturelle et explique pourquoi on le dit ainsi.",
     "ogUrl": "https://lazyapps.com/yiyan/fr/",
     "navAria": "Navigation principale",
     "homeAria": "Accueil",
@@ -743,7 +738,7 @@ export const YIYAN_LOCALES = {
     "selectAria": "Changer de langue",
     "selectedUrl": "/yiyan/fr/",
     "h1": "Un anglais naturel, appris en chemin",
-    "sub": "YiYan récupère ce que vous écrivez dans Pi, Claude Code ou Codex, en propose une version anglaise plus naturelle et explique pourquoi on le dit ainsi. Ce que vous accumulez sur le Mac rejoint l’iPhone via iCloud : la révision continue loin du bureau.",
+    "sub": "YiYan récupère ce que vous écrivez dans Pi, Claude Code, Codex ou OpenCode, en propose une version anglaise plus naturelle et explique pourquoi on le dit ainsi. Ce que vous accumulez sur le Mac rejoint l’iPhone via iCloud : la révision continue loin du bureau.",
     "cta": [
       "Télécharger pour Mac",
       "Bêta publique iPhone",
@@ -759,7 +754,7 @@ export const YIYAN_LOCALES = {
     "shotAltDetail": "Une fiche YiYan : la phrase d’origine, l’anglais naturel et les notes clés",
     "cards": [
       {
-        "tag": "Pi · Claude Code · Codex",
+        "tag": "Pi · Claude Code · Codex · OpenCode",
         "tagLang": true,
         "title": "Écrivez comme d’habitude",
         "p": "Dans votre langue, en anglais ou en mélangeant les deux : tout passe. Votre requête d’origine part en premier, vous n’attendez jamais l’anglais."
@@ -826,7 +821,7 @@ export const YIYAN_LOCALES = {
       "headA": "Les limites, dites clairement",
       "headB": "Rien que le nécessaire à l’apprentissage",
       "h2": "Seuls les messages que vous envoyez pendant son exécution.",
-      "note": "YiYan ne s’installe pas dans Pi, Claude Code ou Codex et ne modifie jamais leurs réglages.",
+      "note": "YiYan ne s’installe pas dans Pi, Claude Code, Codex ou OpenCode et ne modifie jamais leurs réglages.",
       "items": [
         {
           "q": "Qu’est-ce qui devient une fiche ?",
@@ -846,7 +841,7 @@ export const YIYAN_LOCALES = {
         },
         {
           "q": "Faut-il un autre modèle ?",
-          "a": "Non. L’anglais naturel et les notes viennent du Pi, Claude Code ou Codex que vous veniez d’utiliser ; YiYan n’embarque ni modèle ni identifiants d’API."
+          "a": "Non. L’anglais naturel et les notes viennent du Pi, Claude Code, Codex ou OpenCode que vous veniez d’utiliser ; YiYan n’embarque ni modèle ni identifiants d’API."
         },
         {
           "q": "Quel rapport avec le reste ?",
@@ -862,22 +857,21 @@ export const YIYAN_LOCALES = {
       "h3": "Deux lignes et c’est installé",
       "label": "Homebrew",
       "install": "<span class=\"p\">$</span> brew tap cxa/yiyan https://github.com/cxa/yiyan\n<span class=\"p\">$</span> brew install --cask cxa/yiyan/yiyan",
-      "p": "Installez YiYan et continuez à utiliser Pi, Claude Code ou Codex exactement comme avant. Le prochain message dont il y a quelque chose à apprendre deviendra votre première fiche."
+      "p": "Installez YiYan et continuez à utiliser Pi, Claude Code, Codex ou OpenCode exactement comme avant. Le prochain message dont il y a quelque chose à apprendre deviendra votre première fiche."
     },
     "footer": [
       "<a data-hover href=\"/\" lang=\"en\"><span data-underline-link class=\"underline-link\">lazyapps</span></a>",
       "<a data-hover href=\"mailto:lazyapps.feedback@gmail.com\"><span data-underline-link class=\"underline-link\">Contact</span></a>",
-      "<a data-hover href=\"/privacy.en.html\"><span data-underline-link class=\"underline-link\">Confidentialité</span></a>",
-      "<a data-hover href=\"/privacy.zh.html\" lang=\"zh\"><span data-underline-link class=\"underline-link\">中文</span></a>"
+      "<a data-hover href=\"/privacy.en.html\"><span data-underline-link class=\"underline-link\">Confidentialité</span></a>"
     ]
   },
   "hi": {
     "htmlLang": "hi",
     "title": "YiYan — सहज अंग्रेज़ी, काम के साथ-साथ",
-    "description": "YiYan वही उठाता है जो आप Pi, Claude Code या Codex में लिखते हैं, उसका ज़्यादा सहज अंग्रेज़ी रूप देता है और बताता है कि ऐसा क्यों कहा जाता है। Mac पर जमा होता है, iCloud से iPhone तक पहुँचता है।",
+    "description": "YiYan वही उठाता है जो आप Pi, Claude Code, Codex या OpenCode में लिखते हैं, उसका ज़्यादा सहज अंग्रेज़ी रूप देता है और बताता है कि ऐसा क्यों कहा जाता है। Mac पर जमा होता है, iCloud से iPhone तक पहुँचता है।",
     "canonical": "https://lazyapps.com/yiyan/hi/",
     "ogTitle": "YiYan — सहज अंग्रेज़ी, काम के साथ-साथ",
-    "ogDesc": "YiYan वही उठाता है जो आप Pi, Claude Code या Codex में लिखते हैं, उसका ज़्यादा सहज अंग्रेज़ी रूप देता है और बताता है कि ऐसा क्यों कहा जाता है।",
+    "ogDesc": "YiYan वही उठाता है जो आप Pi, Claude Code, Codex या OpenCode में लिखते हैं, उसका ज़्यादा सहज अंग्रेज़ी रूप देता है और बताता है कि ऐसा क्यों कहा जाता है।",
     "ogUrl": "https://lazyapps.com/yiyan/hi/",
     "navAria": "मुख्य नेविगेशन",
     "homeAria": "मुख्य पृष्ठ",
@@ -888,7 +882,7 @@ export const YIYAN_LOCALES = {
     "selectAria": "भाषा बदलें",
     "selectedUrl": "/yiyan/hi/",
     "h1": "सहज अंग्रेज़ी, काम के साथ-साथ",
-    "sub": "YiYan वही उठाता है जो आप Pi, Claude Code या Codex में लिखते हैं, उसका ज़्यादा सहज अंग्रेज़ी रूप देता है और बताता है कि ऐसा क्यों कहा जाता है। Mac पर जो जमा होता है वह iCloud से iPhone पहुँच जाता है, इसलिए मेज़ से दूर भी दोहराना चलता रहता है।",
+    "sub": "YiYan वही उठाता है जो आप Pi, Claude Code, Codex या OpenCode में लिखते हैं, उसका ज़्यादा सहज अंग्रेज़ी रूप देता है और बताता है कि ऐसा क्यों कहा जाता है। Mac पर जो जमा होता है वह iCloud से iPhone पहुँच जाता है, इसलिए मेज़ से दूर भी दोहराना चलता रहता है।",
     "cta": [
       "Mac के लिए डाउनलोड",
       "iPhone सार्वजनिक बीटा",
@@ -904,7 +898,7 @@ export const YIYAN_LOCALES = {
     "shotAltDetail": "YiYan का एक रिकॉर्ड: मूल वाक्य, सहज अंग्रेज़ी और मुख्य नोट",
     "cards": [
       {
-        "tag": "Pi · Claude Code · Codex",
+        "tag": "Pi · Claude Code · Codex · OpenCode",
         "tagLang": true,
         "title": "जैसे लिखते हैं, वैसे लिखें",
         "p": "अपनी भाषा में, अंग्रेज़ी में, या दोनों मिलाकर — सब चलेगा। आपका मूल अनुरोध पहले चला जाता है, अंग्रेज़ी के लिए रुकना नहीं पड़ता।"
@@ -971,7 +965,7 @@ export const YIYAN_LOCALES = {
       "headA": "सीमाएँ साफ़-साफ़",
       "headB": "सीखने भर का ही रखा जाता है",
       "h2": "चलते समय आए नए संदेश ही लिए जाते हैं।",
-      "note": "YiYan न Pi, Claude Code या Codex के भीतर स्थापित होता है, न उनकी सेटिंग बदलता है।",
+      "note": "YiYan न Pi, Claude Code, Codex या OpenCode के भीतर स्थापित होता है, न उनकी सेटिंग बदलता है।",
       "items": [
         {
           "q": "रिकॉर्ड क्या बनता है?",
@@ -991,7 +985,7 @@ export const YIYAN_LOCALES = {
         },
         {
           "q": "कोई और मॉडल चाहिए?",
-          "a": "नहीं। सहज अंग्रेज़ी और नोट वही Pi, Claude Code या Codex बनाता है जिसे आप अभी इस्तेमाल कर रहे थे; YiYan अपना कोई मॉडल या API प्रमाण नहीं रखता।"
+          "a": "नहीं। सहज अंग्रेज़ी और नोट वही Pi, Claude Code, Codex या OpenCode बनाता है जिसे आप अभी इस्तेमाल कर रहे थे; YiYan अपना कोई मॉडल या API प्रमाण नहीं रखता।"
         },
         {
           "q": "बाकी ऐप्स से रिश्ता?",
@@ -1007,22 +1001,21 @@ export const YIYAN_LOCALES = {
       "h3": "दो पंक्तियों में तैयार",
       "label": "Homebrew",
       "install": "<span class=\"p\">$</span> brew tap cxa/yiyan https://github.com/cxa/yiyan\n<span class=\"p\">$</span> brew install --cask cxa/yiyan/yiyan",
-      "p": "YiYan लगाइए और Pi, Claude Code या Codex पहले की तरह इस्तेमाल करते रहिए। सीखने लायक अगला संदेश ही आपका पहला रिकॉर्ड बन जाएगा।"
+      "p": "YiYan लगाइए और Pi, Claude Code, Codex या OpenCode पहले की तरह इस्तेमाल करते रहिए। सीखने लायक अगला संदेश ही आपका पहला रिकॉर्ड बन जाएगा।"
     },
     "footer": [
       "<a data-hover href=\"/\" lang=\"en\"><span data-underline-link class=\"underline-link\">lazyapps</span></a>",
       "<a data-hover href=\"mailto:lazyapps.feedback@gmail.com\"><span data-underline-link class=\"underline-link\">संपर्क</span></a>",
-      "<a data-hover href=\"/privacy.en.html\"><span data-underline-link class=\"underline-link\">गोपनीयता</span></a>",
-      "<a data-hover href=\"/privacy.zh.html\" lang=\"zh\"><span data-underline-link class=\"underline-link\">中文</span></a>"
+      "<a data-hover href=\"/privacy.en.html\"><span data-underline-link class=\"underline-link\">गोपनीयता</span></a>"
     ]
   },
   "ja": {
     "htmlLang": "ja",
     "title": "YiYan — 手を止めずに、自然な英語",
-    "description": "Pi、Claude Code、Codex に打ち込んだ文章をそのまま拾い、より自然な英語の言い方と、なぜそう言うのかを返します。Mac にたまった記録は iCloud で iPhone へ。",
+    "description": "Pi、Claude Code、Codex、OpenCode に打ち込んだ文章をそのまま拾い、より自然な英語の言い方と、なぜそう言うのかを返します。Mac にたまった記録は iCloud で iPhone へ。",
     "canonical": "https://lazyapps.com/yiyan/ja/",
     "ogTitle": "YiYan — 手を止めずに、自然な英語",
-    "ogDesc": "Pi、Claude Code、Codex に打ち込んだ文章をそのまま拾い、より自然な英語の言い方と、なぜそう言うのかを返します。",
+    "ogDesc": "Pi、Claude Code、Codex、OpenCode に打ち込んだ文章をそのまま拾い、より自然な英語の言い方と、なぜそう言うのかを返します。",
     "ogUrl": "https://lazyapps.com/yiyan/ja/",
     "navAria": "メインナビゲーション",
     "homeAria": "ホーム",
@@ -1033,7 +1026,7 @@ export const YIYAN_LOCALES = {
     "selectAria": "言語を切り替える",
     "selectedUrl": "/yiyan/ja/",
     "h1": "手を止めずに、<wbr>自然な英語",
-    "sub": "Pi、Claude Code、Codex に打ち込んだ文章をそのまま拾い、より自然な英語の言い方と、なぜそう言うのかを返します。Mac にたまった記録は iCloud で iPhone に同期され、机を離れても復習を続けられます。",
+    "sub": "Pi、Claude Code、Codex、OpenCode に打ち込んだ文章をそのまま拾い、より自然な英語の言い方と、なぜそう言うのかを返します。Mac にたまった記録は iCloud で iPhone に同期され、机を離れても復習を続けられます。",
     "cta": [
       "Mac 版をダウンロード",
       "iPhone 版パブリックベータ",
@@ -1049,7 +1042,7 @@ export const YIYAN_LOCALES = {
     "shotAltDetail": "YiYan の学習記録 1 件：元の文、自然な英語、要点メモ",
     "cards": [
       {
-        "tag": "Pi · Claude Code · Codex",
+        "tag": "Pi · Claude Code · Codex · OpenCode",
         "tagLang": true,
         "title": "いつもどおり<wbr>入力",
         "p": "母語でも英語でも、混ぜても構いません。元のリクエストが先に送られるので、英語を待つ必要はありません。"
@@ -1116,7 +1109,7 @@ export const YIYAN_LOCALES = {
       "headA": "境界をはっきり書く",
       "headB": "学習に必要なものだけ残す",
       "h2": "扱うのは、<wbr>動作中に届いた<wbr>新しいメッセージだけ。",
-      "note": "YiYan は Pi、Claude Code、Codex の中に入り込むことはなく、それらの設定も変更しません。",
+      "note": "YiYan は Pi、Claude Code、Codex、OpenCode の中に入り込むことはなく、それらの設定も変更しません。",
       "items": [
         {
           "q": "何が学習記録になりますか？",
@@ -1136,7 +1129,7 @@ export const YIYAN_LOCALES = {
         },
         {
           "q": "別にモデルを用意しますか？",
-          "a": "不要です。自然な英語とメモは、いま使っていた Pi、Claude Code、Codex が生成します。YiYan 自身はモデルも API 認証情報も持ちません。"
+          "a": "不要です。自然な英語とメモは、いま使っていた Pi、Claude Code、Codex、OpenCode が生成します。YiYan 自身はモデルも API 認証情報も持ちません。"
         },
         {
           "q": "ほかのアプリとの関係は？",
@@ -1152,22 +1145,21 @@ export const YIYAN_LOCALES = {
       "h3": "2 行で導入",
       "label": "Homebrew",
       "install": "<span class=\"p\">$</span> brew tap cxa/yiyan https://github.com/cxa/yiyan\n<span class=\"p\">$</span> brew install --cask cxa/yiyan/yiyan",
-      "p": "YiYan を入れたら、Pi、Claude Code、Codex はこれまでどおりに使ってください。次に届く学ぶ価値のあるメッセージが、最初の学習記録になります。"
+      "p": "YiYan を入れたら、Pi、Claude Code、Codex、OpenCode はこれまでどおりに使ってください。次に届く学ぶ価値のあるメッセージが、最初の学習記録になります。"
     },
     "footer": [
       "<a data-hover href=\"/\" lang=\"en\"><span data-underline-link class=\"underline-link\">lazyapps</span></a>",
       "<a data-hover href=\"mailto:lazyapps.feedback@gmail.com\"><span data-underline-link class=\"underline-link\">問い合わせ</span></a>",
-      "<a data-hover href=\"/privacy.en.html\"><span data-underline-link class=\"underline-link\">プライバシー</span></a>",
-      "<a data-hover href=\"/privacy.zh.html\" lang=\"zh\"><span data-underline-link class=\"underline-link\">中文</span></a>"
+      "<a data-hover href=\"/privacy.en.html\"><span data-underline-link class=\"underline-link\">プライバシー</span></a>"
     ]
   },
   "ko": {
     "htmlLang": "ko",
     "title": "YiYan — 손을 멈추지 않고, 자연스러운 영어",
-    "description": "Pi, Claude Code, Codex에 입력한 문장을 그대로 받아 더 자연스러운 영어 표현과 그렇게 말하는 이유를 알려줍니다. Mac에 모인 기록은 iCloud로 iPhone까지.",
+    "description": "Pi, Claude Code, Codex, OpenCode에 입력한 문장을 그대로 받아 더 자연스러운 영어 표현과 그렇게 말하는 이유를 알려줍니다. Mac에 모인 기록은 iCloud로 iPhone까지.",
     "canonical": "https://lazyapps.com/yiyan/ko/",
     "ogTitle": "YiYan — 손을 멈추지 않고, 자연스러운 영어",
-    "ogDesc": "Pi, Claude Code, Codex에 입력한 문장을 그대로 받아 더 자연스러운 영어 표현과 그렇게 말하는 이유를 알려줍니다.",
+    "ogDesc": "Pi, Claude Code, Codex, OpenCode에 입력한 문장을 그대로 받아 더 자연스러운 영어 표현과 그렇게 말하는 이유를 알려줍니다.",
     "ogUrl": "https://lazyapps.com/yiyan/ko/",
     "navAria": "주요 내비게이션",
     "homeAria": "홈",
@@ -1178,7 +1170,7 @@ export const YIYAN_LOCALES = {
     "selectAria": "언어 변경",
     "selectedUrl": "/yiyan/ko/",
     "h1": "손을 멈추지 않고, 자연스러운 영어",
-    "sub": "Pi, Claude Code, Codex에 입력한 문장을 그대로 받아 더 자연스러운 영어 표현과 그렇게 말하는 이유를 알려줍니다. Mac에 모인 기록은 iCloud로 iPhone에 동기화되어, 책상을 떠나도 복습을 이어갈 수 있습니다.",
+    "sub": "Pi, Claude Code, Codex, OpenCode에 입력한 문장을 그대로 받아 더 자연스러운 영어 표현과 그렇게 말하는 이유를 알려줍니다. Mac에 모인 기록은 iCloud로 iPhone에 동기화되어, 책상을 떠나도 복습을 이어갈 수 있습니다.",
     "cta": [
       "Mac 버전 다운로드",
       "iPhone 공개 베타",
@@ -1194,7 +1186,7 @@ export const YIYAN_LOCALES = {
     "shotAltDetail": "YiYan 학습 기록 하나: 원래 문장, 자연스러운 영어, 핵심 메모",
     "cards": [
       {
-        "tag": "Pi · Claude Code · Codex",
+        "tag": "Pi · Claude Code · Codex · OpenCode",
         "tagLang": true,
         "title": "평소처럼 입력",
         "p": "모국어든 영어든 섞어 써도 괜찮습니다. 원래 요청이 먼저 전송되므로 영어를 기다릴 필요가 없습니다."
@@ -1261,7 +1253,7 @@ export const YIYAN_LOCALES = {
       "headA": "경계를 분명히",
       "headB": "학습에 필요한 것만 남김",
       "h2": "실행 중에 새로 보낸 메시지만 다룹니다.",
-      "note": "YiYan은 Pi, Claude Code, Codex 안에 설치되지 않고, 그 설정도 바꾸지 않습니다.",
+      "note": "YiYan은 Pi, Claude Code, Codex, OpenCode 안에 설치되지 않고, 그 설정도 바꾸지 않습니다.",
       "items": [
         {
           "q": "무엇이 학습 기록이 되나요?",
@@ -1281,7 +1273,7 @@ export const YIYAN_LOCALES = {
         },
         {
           "q": "모델을 따로 준비해야 하나요?",
-          "a": "아닙니다. 자연스러운 영어와 메모는 방금 쓰던 Pi, Claude Code, Codex가 만듭니다. YiYan은 자체 모델도 API 자격 증명도 갖고 있지 않습니다."
+          "a": "아닙니다. 자연스러운 영어와 메모는 방금 쓰던 Pi, Claude Code, Codex, OpenCode가 만듭니다. YiYan은 자체 모델도 API 자격 증명도 갖고 있지 않습니다."
         },
         {
           "q": "다른 앱과는 어떤 관계인가요?",
@@ -1297,22 +1289,21 @@ export const YIYAN_LOCALES = {
       "h3": "두 줄로 설치",
       "label": "Homebrew",
       "install": "<span class=\"p\">$</span> brew tap cxa/yiyan https://github.com/cxa/yiyan\n<span class=\"p\">$</span> brew install --cask cxa/yiyan/yiyan",
-      "p": "YiYan을 설치한 뒤에도 Pi, Claude Code, Codex는 평소처럼 쓰면 됩니다. 다음에 배울 만한 메시지가 첫 학습 기록이 됩니다."
+      "p": "YiYan을 설치한 뒤에도 Pi, Claude Code, Codex, OpenCode는 평소처럼 쓰면 됩니다. 다음에 배울 만한 메시지가 첫 학습 기록이 됩니다."
     },
     "footer": [
       "<a data-hover href=\"/\" lang=\"en\"><span data-underline-link class=\"underline-link\">lazyapps</span></a>",
       "<a data-hover href=\"mailto:lazyapps.feedback@gmail.com\"><span data-underline-link class=\"underline-link\">문의</span></a>",
-      "<a data-hover href=\"/privacy.en.html\"><span data-underline-link class=\"underline-link\">개인정보</span></a>",
-      "<a data-hover href=\"/privacy.zh.html\" lang=\"zh\"><span data-underline-link class=\"underline-link\">中文</span></a>"
+      "<a data-hover href=\"/privacy.en.html\"><span data-underline-link class=\"underline-link\">개인정보</span></a>"
     ]
   },
   "pt-br": {
     "htmlLang": "pt-BR",
     "title": "YiYan — Inglês natural, aprendido no caminho",
-    "description": "O YiYan recolhe o que você escreve no Pi, no Claude Code ou no Codex, devolve uma versão em inglês mais natural e explica por que se diz assim. Acumula no Mac e sincroniza para o iPhone pelo iCloud.",
+    "description": "O YiYan recolhe o que você escreve no Pi, no Claude Code, no Codex ou no OpenCode, devolve uma versão em inglês mais natural e explica por que se diz assim. Acumula no Mac e sincroniza para o iPhone pelo iCloud.",
     "canonical": "https://lazyapps.com/yiyan/pt-br/",
     "ogTitle": "YiYan — Inglês natural, aprendido no caminho",
-    "ogDesc": "O YiYan recolhe o que você escreve no Pi, no Claude Code ou no Codex, devolve uma versão em inglês mais natural e explica por que se diz assim.",
+    "ogDesc": "O YiYan recolhe o que você escreve no Pi, no Claude Code, no Codex ou no OpenCode, devolve uma versão em inglês mais natural e explica por que se diz assim.",
     "ogUrl": "https://lazyapps.com/yiyan/pt-br/",
     "navAria": "Navegação principal",
     "homeAria": "Início",
@@ -1323,7 +1314,7 @@ export const YIYAN_LOCALES = {
     "selectAria": "Mudar de idioma",
     "selectedUrl": "/yiyan/pt-br/",
     "h1": "Inglês natural, aprendido no caminho",
-    "sub": "O YiYan recolhe o que você escreve no Pi, no Claude Code ou no Codex, devolve uma versão em inglês mais natural e explica por que se diz assim. O que você junta no Mac sincroniza para o iPhone pelo iCloud, para continuar revisando longe da mesa.",
+    "sub": "O YiYan recolhe o que você escreve no Pi, no Claude Code, no Codex ou no OpenCode, devolve uma versão em inglês mais natural e explica por que se diz assim. O que você junta no Mac sincroniza para o iPhone pelo iCloud, para continuar revisando longe da mesa.",
     "cta": [
       "Baixar para Mac",
       "Beta pública para iPhone",
@@ -1339,7 +1330,7 @@ export const YIYAN_LOCALES = {
     "shotAltDetail": "Um registro do YiYan: a frase original, o inglês natural e as notas principais",
     "cards": [
       {
-        "tag": "Pi · Claude Code · Codex",
+        "tag": "Pi · Claude Code · Codex · OpenCode",
         "tagLang": true,
         "title": "Escreva como sempre",
         "p": "No seu idioma, em inglês ou misturando os dois — tudo serve. Seu pedido original sai primeiro, então você nunca espera pelo inglês."
@@ -1406,7 +1397,7 @@ export const YIYAN_LOCALES = {
       "headA": "Os limites, ditos com clareza",
       "headB": "Só o que o aprendizado exige",
       "h2": "Só as mensagens novas que você envia enquanto ele roda.",
-      "note": "O YiYan não se instala dentro do Pi, do Claude Code ou do Codex, e nunca altera as configurações deles.",
+      "note": "O YiYan não se instala dentro do Pi, do Claude Code, do Codex ou do OpenCode, e nunca altera as configurações deles.",
       "items": [
         {
           "q": "O que vira registro?",
@@ -1426,7 +1417,7 @@ export const YIYAN_LOCALES = {
         },
         {
           "q": "Preciso de outro modelo?",
-          "a": "Não. O inglês natural e as notas vêm do Pi, do Claude Code ou do Codex que você acabou de usar; o YiYan não traz modelo nem credenciais de API próprias."
+          "a": "Não. O inglês natural e as notas vêm do Pi, do Claude Code, do Codex ou do OpenCode que você acabou de usar; o YiYan não traz modelo nem credenciais de API próprias."
         },
         {
           "q": "Qual a relação com o resto?",
@@ -1442,22 +1433,21 @@ export const YIYAN_LOCALES = {
       "h3": "Duas linhas e pronto",
       "label": "Homebrew",
       "install": "<span class=\"p\">$</span> brew tap cxa/yiyan https://github.com/cxa/yiyan\n<span class=\"p\">$</span> brew install --cask cxa/yiyan/yiyan",
-      "p": "Instale o YiYan e siga usando Pi, Claude Code ou Codex exatamente como antes. A próxima mensagem que valha aprender será seu primeiro registro."
+      "p": "Instale o YiYan e siga usando Pi, Claude Code, Codex ou OpenCode exatamente como antes. A próxima mensagem que valha aprender será seu primeiro registro."
     },
     "footer": [
       "<a data-hover href=\"/\" lang=\"en\"><span data-underline-link class=\"underline-link\">lazyapps</span></a>",
       "<a data-hover href=\"mailto:lazyapps.feedback@gmail.com\"><span data-underline-link class=\"underline-link\">Contato</span></a>",
-      "<a data-hover href=\"/privacy.en.html\"><span data-underline-link class=\"underline-link\">Privacidade</span></a>",
-      "<a data-hover href=\"/privacy.zh.html\" lang=\"zh\"><span data-underline-link class=\"underline-link\">中文</span></a>"
+      "<a data-hover href=\"/privacy.en.html\"><span data-underline-link class=\"underline-link\">Privacidade</span></a>"
     ]
   },
   "ru": {
     "htmlLang": "ru",
     "title": "YiYan — естественный английский, по ходу дела",
-    "description": "YiYan подхватывает то, что вы пишете в Pi, Claude Code или Codex, предлагает более естественный английский вариант и объясняет, почему так говорят. Копится на Mac, синхронизируется на iPhone через iCloud.",
+    "description": "YiYan подхватывает то, что вы пишете в Pi, Claude Code, Codex или OpenCode, предлагает более естественный английский вариант и объясняет, почему так говорят. Копится на Mac, синхронизируется на iPhone через iCloud.",
     "canonical": "https://lazyapps.com/yiyan/ru/",
     "ogTitle": "YiYan — естественный английский, по ходу дела",
-    "ogDesc": "YiYan подхватывает то, что вы пишете в Pi, Claude Code или Codex, предлагает более естественный английский вариант и объясняет, почему так говорят.",
+    "ogDesc": "YiYan подхватывает то, что вы пишете в Pi, Claude Code, Codex или OpenCode, предлагает более естественный английский вариант и объясняет, почему так говорят.",
     "ogUrl": "https://lazyapps.com/yiyan/ru/",
     "navAria": "Основная навигация",
     "homeAria": "Главная",
@@ -1468,7 +1458,7 @@ export const YIYAN_LOCALES = {
     "selectAria": "Сменить язык",
     "selectedUrl": "/yiyan/ru/",
     "h1": "Естественный английский, по ходу дела",
-    "sub": "YiYan подхватывает то, что вы пишете в Pi, Claude Code или Codex, предлагает более естественный английский вариант и объясняет, почему так говорят. Накопленное на Mac уходит на iPhone через iCloud — повторять можно и вдали от стола.",
+    "sub": "YiYan подхватывает то, что вы пишете в Pi, Claude Code, Codex или OpenCode, предлагает более естественный английский вариант и объясняет, почему так говорят. Накопленное на Mac уходит на iPhone через iCloud — повторять можно и вдали от стола.",
     "cta": [
       "Скачать для Mac",
       "Открытая бета для iPhone",
@@ -1484,7 +1474,7 @@ export const YIYAN_LOCALES = {
     "shotAltDetail": "Одна запись YiYan: исходная фраза, естественный английский и заметки",
     "cards": [
       {
-        "tag": "Pi · Claude Code · Codex",
+        "tag": "Pi · Claude Code · Codex · OpenCode",
         "tagLang": true,
         "title": "Пишите как обычно",
         "p": "На своём языке, по-английски или смешивая — годится всё. Исходный запрос уходит первым, английского ждать не нужно."
@@ -1551,7 +1541,7 @@ export const YIYAN_LOCALES = {
       "headA": "Границы, сказанные прямо",
       "headB": "Только то, что нужно для учёбы",
       "h2": "Только новые сообщения, отправленные при работающем приложении.",
-      "note": "YiYan не устанавливается внутрь Pi, Claude Code или Codex и никогда не меняет их настройки.",
+      "note": "YiYan не устанавливается внутрь Pi, Claude Code, Codex или OpenCode и никогда не меняет их настройки.",
       "items": [
         {
           "q": "Что становится записью?",
@@ -1571,7 +1561,7 @@ export const YIYAN_LOCALES = {
         },
         {
           "q": "Нужна ли отдельная модель?",
-          "a": "Нет. Естественный английский и заметки делает тот же Pi, Claude Code или Codex, которым вы только что пользовались; у YiYan нет своей модели и своих ключей API."
+          "a": "Нет. Естественный английский и заметки делает тот же Pi, Claude Code, Codex или OpenCode, которым вы только что пользовались; у YiYan нет своей модели и своих ключей API."
         },
         {
           "q": "Как это связано с остальным?",
@@ -1587,22 +1577,21 @@ export const YIYAN_LOCALES = {
       "h3": "Две строки — и готово",
       "label": "Homebrew",
       "install": "<span class=\"p\">$</span> brew tap cxa/yiyan https://github.com/cxa/yiyan\n<span class=\"p\">$</span> brew install --cask cxa/yiyan/yiyan",
-      "p": "Установите YiYan и продолжайте пользоваться Pi, Claude Code или Codex как раньше. Первое же сообщение, из которого есть чему учиться, станет вашей первой записью."
+      "p": "Установите YiYan и продолжайте пользоваться Pi, Claude Code, Codex или OpenCode как раньше. Первое же сообщение, из которого есть чему учиться, станет вашей первой записью."
     },
     "footer": [
       "<a data-hover href=\"/\" lang=\"en\"><span data-underline-link class=\"underline-link\">lazyapps</span></a>",
       "<a data-hover href=\"mailto:lazyapps.feedback@gmail.com\"><span data-underline-link class=\"underline-link\">Связаться</span></a>",
-      "<a data-hover href=\"/privacy.en.html\"><span data-underline-link class=\"underline-link\">Приватность</span></a>",
-      "<a data-hover href=\"/privacy.zh.html\" lang=\"zh\"><span data-underline-link class=\"underline-link\">中文</span></a>"
+      "<a data-hover href=\"/privacy.en.html\"><span data-underline-link class=\"underline-link\">Приватность</span></a>"
     ]
   },
   "zh-hant": {
     "htmlLang": "zh-Hant",
     "title": "繹言 YiYan — 地道英語，邊蹬邊學",
-    "description": "自動擷取你在 Pi、Claude Code 或 Codex 裡的輸入，給出更自然的英語說法，再講清楚為什麼這樣說。Mac 上累積，透過 iCloud 同步到 iPhone。",
+    "description": "自動擷取你在 Pi、Claude Code、Codex 或 OpenCode 裡的輸入，給出更自然的英語說法，再講清楚為什麼這樣說。Mac 上累積，透過 iCloud 同步到 iPhone。",
     "canonical": "https://lazyapps.com/yiyan/zh-hant/",
     "ogTitle": "繹言 YiYan — 地道英語，邊蹬邊學",
-    "ogDesc": "自動擷取你在 Pi、Claude Code 或 Codex 裡的輸入，給出更自然的英語說法，再講清楚為什麼這樣說。",
+    "ogDesc": "自動擷取你在 Pi、Claude Code、Codex 或 OpenCode 裡的輸入，給出更自然的英語說法，再講清楚為什麼這樣說。",
     "ogUrl": "https://lazyapps.com/yiyan/zh-hant/",
     "navAria": "主導覽",
     "homeAria": "首頁",
@@ -1613,7 +1602,7 @@ export const YIYAN_LOCALES = {
     "selectAria": "切換語言",
     "selectedUrl": "/yiyan/zh-hant/",
     "h1": "<span class=\"zh\">地道英語，邊蹬邊學</span>",
-    "sub": "自動擷取你在 Pi、Claude Code 或 Codex 裡的輸入，給出更自然的英語說法，再講清楚為什麼這樣說。在 Mac 上累積，透過 iCloud 同步到 iPhone，離開電腦也能繼續複習。",
+    "sub": "自動擷取你在 Pi、Claude Code、Codex 或 OpenCode 裡的輸入，給出更自然的英語說法，再講清楚為什麼這樣說。在 Mac 上累積，透過 iCloud 同步到 iPhone，離開電腦也能繼續複習。",
     "cta": [
       "下載 Mac 版",
       "iPhone 公開測試版",
@@ -1629,7 +1618,7 @@ export const YIYAN_LOCALES = {
     "shotAltDetail": "一條繹言學習記錄：原話、自然英語與重點筆記",
     "cards": [
       {
-        "tag": "Pi · Claude Code · Codex",
+        "tag": "Pi · Claude Code · Codex · OpenCode",
         "tagLang": true,
         "title": "<span class=\"zh\">照常輸入</span>",
         "p": "中文、英文、夾著說都行。你的原請求會先正常送出，不需要等英語結果。"
@@ -1696,7 +1685,7 @@ export const YIYAN_LOCALES = {
       "headA": "邊界說清楚",
       "headB": "只留下學習所需的內容",
       "h2": "<span class=\"zh\">只處理執行期間新增的使用者訊息。</span>",
-      "note": "繹言不會安裝進 Pi、Claude Code 或 Codex，也不會更改它們的設定。",
+      "note": "繹言不會安裝進 Pi、Claude Code、Codex 或 OpenCode，也不會更改它們的設定。",
       "items": [
         {
           "q": "什麼會成為學習記錄？",
@@ -1716,7 +1705,7 @@ export const YIYAN_LOCALES = {
         },
         {
           "q": "需要再設定一套模型嗎？",
-          "a": "不需要。自然英語和學習筆記由你剛才使用的 Pi、Claude Code 或 Codex 產生；繹言不帶自己的模型或 API 憑證。"
+          "a": "不需要。自然英語和學習筆記由你剛才使用的 Pi、Claude Code、Codex 或 OpenCode 產生；繹言不帶自己的模型或 API 憑證。"
         },
         {
           "q": "和其他應用什麼關係？",
@@ -1732,12 +1721,11 @@ export const YIYAN_LOCALES = {
       "h3": "<span class=\"zh\">兩行裝好</span>",
       "label": "Homebrew",
       "install": "<span class=\"p\">$</span> brew tap cxa/yiyan https://github.com/cxa/yiyan\n<span class=\"p\">$</span> brew install --cask cxa/yiyan/yiyan",
-      "p": "裝好繹言，繼續像平時一樣使用 Pi、Claude Code 或 Codex。下一條有學習價值的新訊息，會自動成為你的第一條學習記錄。"
+      "p": "裝好繹言，繼續像平時一樣使用 Pi、Claude Code、Codex 或 OpenCode。下一條有學習價值的新訊息，會自動成為你的第一條學習記錄。"
     },
     "footer": [
       "<a data-hover href=\"/\" lang=\"en\"><span data-underline-link class=\"underline-link\">lazyapps</span></a>",
       "<a data-hover href=\"mailto:lazyapps.feedback@gmail.com\"><span data-underline-link class=\"underline-link\">聯絡</span></a>",
-      "<a data-hover href=\"/privacy.zh.html\"><span data-underline-link class=\"underline-link\">隱私</span></a>",
       "<a data-hover href=\"/privacy.en.html\" lang=\"en\"><span data-underline-link class=\"underline-link\">English</span></a>"
     ]
   }
