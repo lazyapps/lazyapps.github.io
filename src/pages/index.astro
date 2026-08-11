@@ -79,6 +79,7 @@ setTimeout(function(){
 .card__go{display:inline-flex;align-items:center;gap:.45em;font:600 .9375rem/1 var(--sans)}
 .card__shots{display:grid;gap:.5rem;grid-auto-flow:column;justify-items:end;align-items:center}
 .card__shots img{border-radius:8px;max-height:clamp(150px,17vw,250px);width:auto;object-fit:contain}
+.card__shots .card__app-icon{border-radius:24%}
 @media (max-width:860px){
   .card__grid{grid-template-columns:1fr}
   .card__shots{grid-auto-flow:row;justify-items:start}
@@ -190,7 +191,7 @@ setTimeout(function(){
             </div>
           </div>
           <div class="card__shots">
-            <img src={appChmateUrl} alt="CHMate+ on iPhone">
+            <img class="card__app-icon" src={appChmateUrl} alt="CHMate+ on iPhone">
           </div>
         </div>
       </article>
@@ -206,7 +207,7 @@ setTimeout(function(){
             </div>
           </div>
           <div class="card__shots">
-            <img src={appCiaUrl} alt="The CIA World Factbook on iPhone">
+            <img class="card__app-icon" src={appCiaUrl} alt="The CIA World Factbook on iPhone">
           </div>
         </div>
       </article>
@@ -222,7 +223,7 @@ setTimeout(function(){
             </div>
           </div>
           <div class="card__shots">
-            <img src={appYifanUrl} alt="一饭 on iPhone">
+            <img class="card__app-icon" src={appYifanUrl} alt="一饭 on iPhone">
           </div>
         </div>
       </article>
@@ -238,7 +239,7 @@ setTimeout(function(){
             </div>
           </div>
           <div class="card__shots">
-            <img src={appFondfontUrl} alt="FondFont on iPhone">
+            <img class="card__app-icon" src={appFondfontUrl} alt="FondFont on iPhone">
           </div>
         </div>
       </article>
