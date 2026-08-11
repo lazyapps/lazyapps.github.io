@@ -2,6 +2,7 @@
 // Extracts every translated slot from the existing yi pages and emits an i18n module.
 import { readFileSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
+import { YIYAN_FEATURE_COPY } from '../src/i18n/yiyan-feature-copy.mjs';
 
 const ROOT = join(import.meta.dirname, '..');
 const PAGES = process.env.YIYAN_PAGES ?? '/tmp/opencode/baseline/yiyan';
@@ -138,6 +139,14 @@ for (const [code, d] of Object.entries(DATA)) {
 if (bad.length) {
   console.error('STRUCTURE MISMATCH:', bad.join('\n'));
   process.exit(1);
+}
+
+for (const [code, copy] of Object.entries(YIYAN_FEATURE_COPY)) {
+  const { cards, ...fields } = copy;
+  Object.assign(DATA[code], fields);
+  cards.forEach((card, index) => {
+    Object.assign(DATA[code].cards[index], card);
+  });
 }
 
 const OPEN_CODE_REPLACEMENTS = [

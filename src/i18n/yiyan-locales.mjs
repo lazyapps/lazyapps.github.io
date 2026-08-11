@@ -3,10 +3,10 @@ export const YIYAN_LOCALES = {
   "": {
     "htmlLang": "zh-Hans",
     "title": "绎言 YiYan — 地道英语，边蹬边学",
-    "description": "自动捕捉你在 Pi、Claude Code、Codex 或 OpenCode 里的输入，给出更自然的英语表达，再讲清楚为什么这样说。Mac 上积累，通过 iCloud 同步到 iPhone。",
+    "description": "自动捕捉你在 Pi、Claude Code、Codex 或 OpenCode 里的输入，也可直接输入或润色当前输入框；给出更自然的英语表达和重点笔记。Mac 上积累，通过 iCloud 同步到 iPhone。",
     "canonical": "https://lazyapps.com/yiyan/",
     "ogTitle": "绎言 YiYan — 地道英语，边蹬边学",
-    "ogDesc": "自动捕捉你在 Pi、Claude Code、Codex 或 OpenCode 里的输入，给出更自然的英语表达，再讲清楚为什么这样说。",
+    "ogDesc": "自动捕捉你在 Pi、Claude Code、Codex 或 OpenCode 里的输入，也可直接输入或润色当前输入框；给出更自然的英语表达和重点笔记。",
     "ogUrl": "https://lazyapps.com/yiyan/",
     "navAria": "主导航",
     "homeAria": "首页",
@@ -17,7 +17,7 @@ export const YIYAN_LOCALES = {
     "selectAria": "切换语言",
     "selectedUrl": "/yiyan/",
     "h1": "<span class=\"zh\">地道英语，边蹬边学</span>",
-    "sub": "自动捕捉你在 Pi、Claude Code、Codex 或 OpenCode 里的输入，给出更自然的英语表达，再讲清楚为什么这样说。在 Mac 上积累，通过 iCloud 同步到 iPhone，离开电脑也能继续复习。",
+    "sub": "照常在 Pi、Claude Code、Codex 或 OpenCode 里工作，或直接输入一段文字；需要时还可以从菜单栏或快捷键润色当前输入框。绎言会自动复用本机可用的语言助手，给出更自然的英语表达和重点笔记；记录可通过 iCloud 同步到 iPhone。",
     "cta": [
       "下载 Mac 版",
       "iPhone 公开测试版",
@@ -25,8 +25,8 @@ export const YIYAN_LOCALES = {
     ],
     "trust": [
       "原请求照常发送",
-      "无需另配模型或 API",
-      "学习记录按日期整理"
+      "当前输入可随时润色",
+      "无需另配模型或 API"
     ],
     "cssTrust": "cjk",
     "shotAltMain": "绎言在 macOS 上的学习记录界面",
@@ -35,20 +35,20 @@ export const YIYAN_LOCALES = {
       {
         "tag": "Pi · Claude Code · Codex · OpenCode",
         "tagLang": true,
-        "title": "<span class=\"zh\">照常输入</span>",
-        "p": "中文、英文、夹着说都行。你的原请求会先正常发送，不需要等待英语结果。"
+        "title": "<span class=\"zh\">照常输入，也可直接写</span>",
+        "p": "中文、英文、夹着说都行。在支持的工具里照常输入，或在绎言主界面直接写；原请求会先正常发送，主动输入则清楚标记为“我”。"
       },
       {
-        "tag": "当前工作不被打断",
+        "tag": "快捷键 · 系统服务 · 菜单栏",
         "tagLang": false,
-        "title": "<span class=\"zh\">正事继续执行</span>",
-        "p": "绎言不会改写或延迟当前请求，也不会把学习结果塞回正在进行的对话。"
+        "title": "<span class=\"zh\">润色当前输入框</span>",
+        "p": "选中一段就原位替换；没有选中时会保留原文，再把结果隔开追加。无需离开正在使用的应用。"
       },
       {
-        "tag": "无需另配模型或 API",
+        "tag": "自动复用本机可用助手",
         "tagLang": false,
-        "title": "<span class=\"zh\">后台补一版自然英语</span>",
-        "p": "绎言让你刚才使用的工具处理同一句话，在保留原意和语气的前提下，给出一版更符合语境的表达。"
+        "title": "<span class=\"zh\">不用重复配置</span>",
+        "p": "绎言会找到最近成功或当前已登录且可用的语言助手。处理时，菜单栏图标会安静提示进度。"
       },
       {
         "tag": "每天真实说过的话，就是练习",
@@ -148,10 +148,10 @@ export const YIYAN_LOCALES = {
     "htmlLang": "ar",
     "htmlDir": "rtl",
     "title": "YiYan — إنجليزية طبيعية تتعلمها أثناء العمل",
-    "description": "يلتقط YiYan ما تكتبه في Pi أو Claude Code أو Codex أو OpenCode، ويعطيك صياغة إنجليزية أطبع، ويشرح لماذا تُقال هكذا. يتجمّع على الـMac ويتزامن إلى الـiPhone عبر iCloud.",
+    "description": "يلتقط YiYan ما تكتبه في Pi أو Claude Code أو Codex أو OpenCode، ويتيح لك أيضًا إدخال النص مباشرة أو تنقيح الحقل الذي تعمل فيه. يعيد إنجليزية طبيعية وملاحظات مركّزة، ثم يزامن تعلّمك من Mac إلى iPhone عبر iCloud.",
     "canonical": "https://lazyapps.com/yiyan/ar/",
     "ogTitle": "YiYan — إنجليزية طبيعية تتعلمها أثناء العمل",
-    "ogDesc": "يلتقط YiYan ما تكتبه في Pi أو Claude Code أو Codex أو OpenCode، ويعطيك صياغة إنجليزية أطبع، ويشرح لماذا تُقال هكذا.",
+    "ogDesc": "يلتقط YiYan ما تكتبه في Pi أو Claude Code أو Codex أو OpenCode، ويتيح لك إدخال النص مباشرة أو تنقيح الحقل الحالي، ثم يعيد إنجليزية طبيعية وملاحظات مركّزة.",
     "ogUrl": "https://lazyapps.com/yiyan/ar/",
     "navAria": "التنقل الرئيسي",
     "homeAria": "الرئيسية",
@@ -162,7 +162,7 @@ export const YIYAN_LOCALES = {
     "selectAria": "تغيير اللغة",
     "selectedUrl": "/yiyan/ar/",
     "h1": "إنجليزية طبيعية، تتعلمها أثناء العمل",
-    "sub": "يلتقط YiYan ما تكتبه في Pi أو Claude Code أو Codex أو OpenCode، ويعطيك صياغة إنجليزية أطبع، ويشرح لماذا تُقال هكذا. ما يتجمّع على الـMac يصل إلى الـiPhone عبر iCloud، فتواصل المراجعة بعيدًا عن المكتب.",
+    "sub": "واصل العمل في Pi أو Claude Code أو Codex أو OpenCode، أو اكتب مباشرة في YiYan، أو نقّح حقل الإدخال الحالي من اختصار أو شريط القوائم. يعيد YiYan استخدام مساعد متاح ومسجّل الدخول على Mac ليقدّم إنجليزية طبيعية وملاحظات مركّزة، وتصل سجلاتك إلى iPhone عبر iCloud.",
     "cta": [
       "تنزيل نسخة Mac",
       "نسخة iPhone التجريبية",
@@ -170,8 +170,8 @@ export const YIYAN_LOCALES = {
     ],
     "trust": [
       "طلبك يُرسل كما هو",
-      "لا حاجة إلى نموذج أو API إضافي",
-      "السجلات مرتبة بالتاريخ"
+      "نقّح حقل الإدخال الحالي",
+      "لا حاجة إلى نموذج أو API إضافي"
     ],
     "cssTrust": "cjk",
     "shotAltMain": "سجل التعلّم في YiYan على macOS",
@@ -180,20 +180,20 @@ export const YIYAN_LOCALES = {
       {
         "tag": "Pi · Claude Code · Codex · OpenCode",
         "tagLang": true,
-        "title": "اكتب كما تفعل عادة",
-        "p": "بلغتك أو بالإنجليزية أو بخلط الاثنين، كل ذلك مقبول. طلبك الأصلي يُرسل أولًا، فلا تنتظر الإنجليزية."
+        "title": "اكتب كالمعتاد — أو مباشرة",
+        "p": "اكتب كالمعتاد في الأدوات المدعومة، أو أدخل النص مباشرة في YiYan. يُرسل طلبك الأصلي أولًا، وتظهر المدخلات المباشرة بوضوح تحت اسم «أنا»."
       },
       {
-        "tag": "عملك الحالي لا يتوقف",
+        "tag": "اختصار · الخدمات · شريط القوائم",
         "tagLang": false,
-        "title": "المهم يمضي في طريقه",
-        "p": "لا يعيد YiYan صياغة الطلب الذي أرسلته للتو ولا يؤخره، ولا يُعيد نتائجه إلى المحادثة الجارية."
+        "title": "نقّح الحقل أمامك",
+        "p": "حدّد النص ليُستبدل في مكانه. من دون تحديد، يحتفظ YiYan بالأصل ويضيف النسخة المنقّحة، من غير أن تغادر التطبيق الذي تستخدمه."
       },
       {
-        "tag": "لا نموذج ولا API إضافي",
+        "tag": "يعيد استخدام مساعد متاح",
         "tagLang": false,
-        "title": "صياغة طبيعية في الخلفية",
-        "p": "يمرّر YiYan الجملة نفسها إلى الأداة التي كنت تستخدمها، فيعود بصياغة تناسب السياق مع الحفاظ على المعنى والنبرة."
+        "title": "لا إعداد متكرر",
+        "p": "يعثر YiYan على آخر مساعد نجح أو على مساعد متاح ومسجّل الدخول على Mac. ويعرض رمز شريط القوائم بهدوء أن التنقيح جارٍ."
       },
       {
         "tag": "ما قلته فعلًا هو التمرين",
@@ -292,10 +292,10 @@ export const YIYAN_LOCALES = {
   "de": {
     "htmlLang": "de",
     "title": "YiYan — Natürliches Englisch, nebenbei gelernt",
-    "description": "YiYan greift auf, was du in Pi, Claude Code, Codex oder OpenCode schreibst, liefert eine natürlichere englische Fassung und erklärt, warum man es so sagt. Sammeln auf dem Mac, per iCloud zum iPhone.",
+    "description": "YiYan greift auf, was du in Pi, Claude Code, Codex oder OpenCode schreibst, lässt dich aber auch Text direkt eingeben oder das aktive Eingabefeld verfeinern. Du erhältst natürliches Englisch und gezielte Hinweise; per iCloud geht dein Lernverlauf vom Mac aufs iPhone.",
     "canonical": "https://lazyapps.com/yiyan/de/",
     "ogTitle": "YiYan — Natürliches Englisch, nebenbei gelernt",
-    "ogDesc": "YiYan greift auf, was du in Pi, Claude Code, Codex oder OpenCode schreibst, liefert eine natürlichere englische Fassung und erklärt, warum man es so sagt.",
+    "ogDesc": "YiYan greift auf, was du in Pi, Claude Code, Codex oder OpenCode schreibst, lässt dich Text direkt eingeben oder das aktive Feld verfeinern und liefert natürliches Englisch mit gezielten Hinweisen.",
     "ogUrl": "https://lazyapps.com/yiyan/de/",
     "navAria": "Hauptnavigation",
     "homeAria": "Start",
@@ -306,7 +306,7 @@ export const YIYAN_LOCALES = {
     "selectAria": "Sprache wechseln",
     "selectedUrl": "/yiyan/de/",
     "h1": "Natürliches Englisch, nebenbei gelernt",
-    "sub": "YiYan greift auf, was du in Pi, Claude Code, Codex oder OpenCode schreibst, liefert eine natürlichere englische Fassung und erklärt, warum man es so sagt. Was auf dem Mac zusammenkommt, landet per iCloud auf dem iPhone – Wiederholen geht auch ohne Schreibtisch.",
+    "sub": "Arbeite in Pi, Claude Code, Codex oder OpenCode weiter, schreibe direkt in YiYan oder verfeinere das aktive Eingabefeld per Kurzbefehl oder Menüleiste. YiYan nutzt einen verfügbaren, angemeldeten Assistenten auf deinem Mac für natürliches Englisch und gezielte Hinweise; dein Verlauf erreicht per iCloud das iPhone.",
     "cta": [
       "Für Mac laden",
       "iPhone-Beta",
@@ -314,8 +314,8 @@ export const YIYAN_LOCALES = {
     ],
     "trust": [
       "Deine Anfrage geht wie immer raus",
-      "Kein zweites Modell, keine API",
-      "Einträge nach Datum sortiert"
+      "Das aktive Feld direkt verfeinern",
+      "Kein zweites Modell, keine API"
     ],
     "cssTrust": "latin",
     "shotAltMain": "Das Lernprotokoll von YiYan auf macOS",
@@ -324,20 +324,20 @@ export const YIYAN_LOCALES = {
       {
         "tag": "Pi · Claude Code · Codex · OpenCode",
         "tagLang": true,
-        "title": "Schreib wie immer",
-        "p": "In deiner Sprache, auf Englisch oder gemischt – alles geht. Deine ursprüngliche Anfrage geht zuerst raus, du wartest nie auf das Englische."
+        "title": "Wie immer schreiben – oder direkt",
+        "p": "Schreibe wie gewohnt in den unterstützten Werkzeugen oder direkt in YiYan. Deine ursprüngliche Anfrage geht zuerst raus; direkte Eingaben sind klar als „Ich“ gekennzeichnet."
       },
       {
-        "tag": "Deine Arbeit wird nicht unterbrochen",
+        "tag": "Kurzbefehl · Dienste · Menüleiste",
         "tagLang": false,
-        "title": "Das Eigentliche läuft weiter",
-        "p": "YiYan schreibt die gerade gesendete Anfrage nicht um und verzögert sie nicht, und schiebt seine Ergebnisse nie in das laufende Gespräch zurück."
+        "title": "Das aktive Feld verfeinern",
+        "p": "Markierter Text wird an Ort und Stelle ersetzt. Ohne Auswahl bleibt das Original stehen und die überarbeitete Fassung wird angehängt – ohne die gerade verwendete App zu verlassen."
       },
       {
-        "tag": "Kein zweites Modell, keine API",
+        "tag": "Nutzt einen verfügbaren Assistenten",
         "tagLang": false,
-        "title": "Eine natürliche Fassung, im Hintergrund",
-        "p": "YiYan gibt denselben Satz an das Werkzeug weiter, das du eben benutzt hast, und bekommt eine Formulierung zurück, die in den Kontext passt – Sinn und Ton bleiben."
+        "title": "Keine Einrichtung doppelt",
+        "p": "YiYan findet den zuletzt erfolgreichen oder einen aktuell angemeldeten, verfügbaren Assistenten auf deinem Mac. Das Symbol in der Menüleiste zeigt dezent, wenn die Bearbeitung läuft."
       },
       {
         "tag": "Was du wirklich gesagt hast, ist die Übung",
@@ -436,10 +436,10 @@ export const YIYAN_LOCALES = {
   "en": {
     "htmlLang": "en",
     "title": "YiYan — Natural English, picked up as you go",
-    "description": "YiYan quietly picks up what you type in Pi, Claude Code, Codex or OpenCode, gives you a more natural English version, and explains why it reads that way. Build it up on Mac, sync to iPhone over iCloud.",
+    "description": "YiYan quietly picks up what you type in Pi, Claude Code, Codex or OpenCode, or lets you write directly and refine the field in front of you. It returns natural English and focused notes, then syncs your learning from Mac to iPhone over iCloud.",
     "canonical": "https://lazyapps.com/yiyan/en/",
     "ogTitle": "YiYan — Natural English, picked up as you go",
-    "ogDesc": "YiYan quietly picks up what you type in Pi, Claude Code, Codex or OpenCode, gives you a more natural English version, and explains why it reads that way.",
+    "ogDesc": "YiYan picks up what you type in Pi, Claude Code, Codex or OpenCode, lets you write directly or refine the field in front of you, and returns natural English with focused notes.",
     "ogUrl": "https://lazyapps.com/yiyan/en/",
     "navAria": "Main navigation",
     "homeAria": "Home",
@@ -450,7 +450,7 @@ export const YIYAN_LOCALES = {
     "selectAria": "Change language",
     "selectedUrl": "/yiyan/en/",
     "h1": "Natural English, picked up as you go",
-    "sub": "YiYan quietly picks up what you type in Pi, Claude Code, Codex or OpenCode, gives you a more natural English version, and explains why it reads that way. Everything you collect on Mac syncs to iPhone over iCloud, so you can keep reviewing away from your desk.",
+    "sub": "Keep working in Pi, Claude Code, Codex or OpenCode, type directly into YiYan, or refine the field in front of you from a shortcut or the menu bar. YiYan reuses an available signed-in assistant on your Mac to return natural English and focused notes, with your history available on iPhone through iCloud.",
     "cta": [
       "Download for Mac",
       "iPhone public beta",
@@ -458,8 +458,8 @@ export const YIYAN_LOCALES = {
     ],
     "trust": [
       "Your request is sent as usual",
-      "No extra model or API to set up",
-      "Entries filed by date"
+      "Refine the field you are in",
+      "No extra model or API to set up"
     ],
     "cssTrust": "latin",
     "shotAltMain": "The YiYan learning log on macOS",
@@ -468,20 +468,20 @@ export const YIYAN_LOCALES = {
       {
         "tag": "Pi · Claude Code · Codex · OpenCode",
         "tagLang": true,
-        "title": "Type as usual",
-        "p": "Your own language, English, or a mix of both — all fine. Your original request goes out first, so you never wait on the English."
+        "title": "Type as usual — or directly",
+        "p": "Write as usual in a supported tool, or type straight into YiYan. Your original request goes out first; direct entries are clearly marked as Me."
       },
       {
-        "tag": "Your work is never interrupted",
+        "tag": "Shortcut · Services · Menu bar",
         "tagLang": false,
-        "title": "The real work keeps running",
-        "p": "YiYan never rewrites or delays the request you just sent, and never pushes its results back into the conversation you are having."
+        "title": "Refine the field in front of you",
+        "p": "Select text to replace it in place. With no selection, YiYan keeps the original and appends the refined version, without taking you out of the app you are using."
       },
       {
-        "tag": "No extra model or API",
+        "tag": "Reuses an available assistant",
         "tagLang": false,
-        "title": "A natural version, in the background",
-        "p": "YiYan hands the same sentence to the tool you were just using, and gets back wording that fits the context while keeping your meaning and tone."
+        "title": "No setup to repeat",
+        "p": "YiYan finds the most recently successful or currently available signed-in assistant on your Mac. Its menu-bar mark quietly shows when refinement is underway."
       },
       {
         "tag": "What you really said is the practice",
@@ -580,10 +580,10 @@ export const YIYAN_LOCALES = {
   "es": {
     "htmlLang": "es",
     "title": "YiYan — Inglés natural, aprendido sobre la marcha",
-    "description": "YiYan recoge lo que escribes en Pi, Claude Code, Codex u OpenCode, te da una versión en inglés más natural y explica por qué se dice así. Se acumula en el Mac y se sincroniza al iPhone por iCloud.",
+    "description": "YiYan recoge lo que escribes en Pi, Claude Code, Codex u OpenCode, y también te deja introducir texto directamente o pulir el campo que tienes delante. Devuelve un inglés natural y notas concretas, y sincroniza tu aprendizaje del Mac al iPhone por iCloud.",
     "canonical": "https://lazyapps.com/yiyan/es/",
     "ogTitle": "YiYan — Inglés natural, aprendido sobre la marcha",
-    "ogDesc": "YiYan recoge lo que escribes en Pi, Claude Code, Codex u OpenCode, te da una versión en inglés más natural y explica por qué se dice así.",
+    "ogDesc": "YiYan recoge lo que escribes en Pi, Claude Code, Codex u OpenCode, te deja introducir texto directamente o pulir el campo actual y devuelve un inglés natural con notas concretas.",
     "ogUrl": "https://lazyapps.com/yiyan/es/",
     "navAria": "Navegación principal",
     "homeAria": "Inicio",
@@ -594,7 +594,7 @@ export const YIYAN_LOCALES = {
     "selectAria": "Cambiar de idioma",
     "selectedUrl": "/yiyan/es/",
     "h1": "Inglés natural, aprendido sobre la marcha",
-    "sub": "YiYan recoge lo que escribes en Pi, Claude Code, Codex u OpenCode, te da una versión en inglés más natural y explica por qué se dice así. Lo que reúnes en el Mac se sincroniza al iPhone por iCloud, para seguir repasando lejos del escritorio.",
+    "sub": "Sigue trabajando en Pi, Claude Code, Codex u OpenCode, escribe directamente en YiYan o pule el campo actual desde un atajo o la barra de menús. YiYan reutiliza un asistente disponible con sesión iniciada en tu Mac para devolver inglés natural y notas concretas; tu historial llega al iPhone por iCloud.",
     "cta": [
       "Descargar para Mac",
       "Beta pública para iPhone",
@@ -602,8 +602,8 @@ export const YIYAN_LOCALES = {
     ],
     "trust": [
       "Tu petición se envía igual que siempre",
-      "Sin otro modelo ni API que configurar",
-      "Registros ordenados por fecha"
+      "Pule el campo que estás usando",
+      "Sin otro modelo ni API que configurar"
     ],
     "cssTrust": "latin",
     "shotAltMain": "El registro de aprendizaje de YiYan en macOS",
@@ -612,20 +612,20 @@ export const YIYAN_LOCALES = {
       {
         "tag": "Pi · Claude Code · Codex · OpenCode",
         "tagLang": true,
-        "title": "Escribe como siempre",
-        "p": "En tu idioma, en inglés o mezclando los dos: todo vale. Tu petición original sale primero, así que nunca esperas por el inglés."
+        "title": "Escribe como siempre — o directamente",
+        "p": "Escribe como siempre en una herramienta compatible o directamente en YiYan. Tu petición original sale primero; las entradas directas quedan marcadas claramente como Yo."
       },
       {
-        "tag": "Tu trabajo no se interrumpe",
+        "tag": "Atajo · Servicios · Barra de menús",
         "tagLang": false,
-        "title": "Lo importante sigue su curso",
-        "p": "YiYan no reescribe ni retrasa la petición que acabas de enviar, y nunca devuelve sus resultados a la conversación en marcha."
+        "title": "Pule el campo que tienes delante",
+        "p": "Selecciona texto para sustituirlo en el mismo sitio. Sin selección, YiYan conserva el original y añade la versión pulida, sin sacarte de la aplicación que estás usando."
       },
       {
-        "tag": "Sin otro modelo ni API",
+        "tag": "Reutiliza un asistente disponible",
         "tagLang": false,
-        "title": "Una versión natural, en segundo plano",
-        "p": "YiYan pasa la misma frase a la herramienta que acabas de usar y recibe una redacción que encaja en el contexto sin cambiar tu intención ni tu tono."
+        "title": "Sin repetir la configuración",
+        "p": "YiYan encuentra el asistente que funcionó más recientemente o uno disponible con sesión iniciada en tu Mac. El icono de la barra de menús indica con discreción que está trabajando."
       },
       {
         "tag": "Lo que dijiste de verdad es la práctica",
@@ -724,10 +724,10 @@ export const YIYAN_LOCALES = {
   "fr": {
     "htmlLang": "fr",
     "title": "YiYan — Un anglais naturel, appris en chemin",
-    "description": "YiYan récupère ce que vous écrivez dans Pi, Claude Code, Codex ou OpenCode, en propose une version anglaise plus naturelle et explique pourquoi on le dit ainsi. Tout s accumule sur le Mac et se synchronise vers l iPhone via iCloud.",
+    "description": "YiYan récupère ce que vous écrivez dans Pi, Claude Code, Codex ou OpenCode, et vous permet aussi de saisir du texte directement ou d’affiner le champ actif. Il renvoie un anglais naturel et des notes ciblées, puis synchronise votre apprentissage du Mac vers l’iPhone via iCloud.",
     "canonical": "https://lazyapps.com/yiyan/fr/",
     "ogTitle": "YiYan — Un anglais naturel, appris en chemin",
-    "ogDesc": "YiYan récupère ce que vous écrivez dans Pi, Claude Code, Codex ou OpenCode, en propose une version anglaise plus naturelle et explique pourquoi on le dit ainsi.",
+    "ogDesc": "YiYan récupère ce que vous écrivez dans Pi, Claude Code, Codex ou OpenCode, permet la saisie directe ou l’amélioration du champ actif et renvoie un anglais naturel avec des notes ciblées.",
     "ogUrl": "https://lazyapps.com/yiyan/fr/",
     "navAria": "Navigation principale",
     "homeAria": "Accueil",
@@ -738,7 +738,7 @@ export const YIYAN_LOCALES = {
     "selectAria": "Changer de langue",
     "selectedUrl": "/yiyan/fr/",
     "h1": "Un anglais naturel, appris en chemin",
-    "sub": "YiYan récupère ce que vous écrivez dans Pi, Claude Code, Codex ou OpenCode, en propose une version anglaise plus naturelle et explique pourquoi on le dit ainsi. Ce que vous accumulez sur le Mac rejoint l’iPhone via iCloud : la révision continue loin du bureau.",
+    "sub": "Continuez dans Pi, Claude Code, Codex ou OpenCode, écrivez directement dans YiYan ou affinez le champ actif avec un raccourci ou la barre des menus. YiYan réutilise un assistant disponible et connecté sur votre Mac pour produire un anglais naturel et des notes ciblées ; votre historique rejoint l’iPhone via iCloud.",
     "cta": [
       "Télécharger pour Mac",
       "Bêta publique iPhone",
@@ -746,8 +746,8 @@ export const YIYAN_LOCALES = {
     ],
     "trust": [
       "Votre requête part comme d’habitude",
-      "Aucun modèle ni API à configurer",
-      "Fiches classées par date"
+      "Affinez le champ que vous utilisez",
+      "Aucun modèle ni API à configurer"
     ],
     "cssTrust": "latin",
     "shotAltMain": "Le journal d’apprentissage de YiYan sur macOS",
@@ -756,20 +756,20 @@ export const YIYAN_LOCALES = {
       {
         "tag": "Pi · Claude Code · Codex · OpenCode",
         "tagLang": true,
-        "title": "Écrivez comme d’habitude",
-        "p": "Dans votre langue, en anglais ou en mélangeant les deux : tout passe. Votre requête d’origine part en premier, vous n’attendez jamais l’anglais."
+        "title": "Écrivez comme d’habitude — ou directement",
+        "p": "Écrivez comme toujours dans un outil compatible, ou directement dans YiYan. Votre requête d’origine part en premier ; les saisies directes sont clairement marquées « Moi »."
       },
       {
-        "tag": "Votre travail n’est pas interrompu",
+        "tag": "Raccourci · Services · Barre des menus",
         "tagLang": false,
-        "title": "L’essentiel continue de tourner",
-        "p": "YiYan ne réécrit ni ne retarde la requête que vous venez d’envoyer, et ne renvoie jamais ses résultats dans la conversation en cours."
+        "title": "Affinez le champ devant vous",
+        "p": "Sélectionnez du texte pour le remplacer sur place. Sans sélection, YiYan conserve l’original et ajoute la version affinée, sans vous faire quitter l’application utilisée."
       },
       {
-        "tag": "Aucun modèle ni API en plus",
+        "tag": "Réutilise un assistant disponible",
         "tagLang": false,
-        "title": "Une version naturelle, en arrière-plan",
-        "p": "YiYan confie la même phrase à l’outil que vous veniez d’utiliser et récupère une formulation adaptée au contexte, sans toucher au sens ni au ton."
+        "title": "Aucun réglage à refaire",
+        "p": "YiYan retrouve l’assistant utilisé avec succès le plus récemment, ou un assistant disponible et connecté sur votre Mac. Son icône dans la barre des menus indique discrètement qu’il travaille."
       },
       {
         "tag": "Ce que vous avez vraiment dit devient l’exercice",
@@ -868,10 +868,10 @@ export const YIYAN_LOCALES = {
   "hi": {
     "htmlLang": "hi",
     "title": "YiYan — सहज अंग्रेज़ी, काम के साथ-साथ",
-    "description": "YiYan वही उठाता है जो आप Pi, Claude Code, Codex या OpenCode में लिखते हैं, उसका ज़्यादा सहज अंग्रेज़ी रूप देता है और बताता है कि ऐसा क्यों कहा जाता है। Mac पर जमा होता है, iCloud से iPhone तक पहुँचता है।",
+    "description": "YiYan Pi, Claude Code, Codex या OpenCode में आपके लिखे पाठ को उठा लेता है, और आपको सीधे लिखने या सामने वाले इनपुट फ़ील्ड को निखारने भी देता है। यह सहज अंग्रेज़ी और केंद्रित नोट देता है, फिर Mac से iPhone तक आपकी सीख को iCloud से सिंक करता है।",
     "canonical": "https://lazyapps.com/yiyan/hi/",
     "ogTitle": "YiYan — सहज अंग्रेज़ी, काम के साथ-साथ",
-    "ogDesc": "YiYan वही उठाता है जो आप Pi, Claude Code, Codex या OpenCode में लिखते हैं, उसका ज़्यादा सहज अंग्रेज़ी रूप देता है और बताता है कि ऐसा क्यों कहा जाता है।",
+    "ogDesc": "YiYan Pi, Claude Code, Codex या OpenCode में आपके लिखे पाठ को उठाता है, सीधे लिखने या मौजूदा फ़ील्ड को निखारने देता है और सहज अंग्रेज़ी के साथ केंद्रित नोट देता है।",
     "ogUrl": "https://lazyapps.com/yiyan/hi/",
     "navAria": "मुख्य नेविगेशन",
     "homeAria": "मुख्य पृष्ठ",
@@ -882,7 +882,7 @@ export const YIYAN_LOCALES = {
     "selectAria": "भाषा बदलें",
     "selectedUrl": "/yiyan/hi/",
     "h1": "सहज अंग्रेज़ी, काम के साथ-साथ",
-    "sub": "YiYan वही उठाता है जो आप Pi, Claude Code, Codex या OpenCode में लिखते हैं, उसका ज़्यादा सहज अंग्रेज़ी रूप देता है और बताता है कि ऐसा क्यों कहा जाता है। Mac पर जो जमा होता है वह iCloud से iPhone पहुँच जाता है, इसलिए मेज़ से दूर भी दोहराना चलता रहता है।",
+    "sub": "Pi, Claude Code, Codex या OpenCode में काम करते रहें, YiYan में सीधे लिखें, या शॉर्टकट अथवा मेनू बार से मौजूदा इनपुट फ़ील्ड को निखारें। YiYan आपके Mac पर उपलब्ध, साइन-इन किए सहायक को दोबारा इस्तेमाल करके सहज अंग्रेज़ी और केंद्रित नोट देता है; आपका इतिहास iCloud से iPhone तक पहुँचता है।",
     "cta": [
       "Mac के लिए डाउनलोड",
       "iPhone सार्वजनिक बीटा",
@@ -890,8 +890,8 @@ export const YIYAN_LOCALES = {
     ],
     "trust": [
       "आपका मूल अनुरोध वैसे ही जाता है",
-      "अलग मॉडल या API की ज़रूरत नहीं",
-      "रिकॉर्ड तारीख़ से क्रम में"
+      "मौजूदा इनपुट को वहीं निखारें",
+      "अलग मॉडल या API की ज़रूरत नहीं"
     ],
     "cssTrust": "cjk",
     "shotAltMain": "macOS पर YiYan का अध्ययन रिकॉर्ड",
@@ -900,20 +900,20 @@ export const YIYAN_LOCALES = {
       {
         "tag": "Pi · Claude Code · Codex · OpenCode",
         "tagLang": true,
-        "title": "जैसे लिखते हैं, वैसे लिखें",
-        "p": "अपनी भाषा में, अंग्रेज़ी में, या दोनों मिलाकर — सब चलेगा। आपका मूल अनुरोध पहले चला जाता है, अंग्रेज़ी के लिए रुकना नहीं पड़ता।"
+        "title": "हमेशा की तरह — या सीधे लिखें",
+        "p": "समर्थित टूल में हमेशा की तरह लिखें, या सीधे YiYan में। आपका मूल अनुरोध पहले चला जाता है; सीधे लिखी प्रविष्टियाँ साफ़ तौर पर “मैं” के नाम से दिखती हैं।"
       },
       {
-        "tag": "चल रहा काम रुकता नहीं",
+        "tag": "शॉर्टकट · सेवाएँ · मेनू बार",
         "tagLang": false,
-        "title": "असली काम चलता रहता है",
-        "p": "YiYan आपके अभी भेजे अनुरोध को न बदलता है न रोकता है, और अपने नतीजे चल रही बातचीत में वापस नहीं डालता।"
+        "title": "सामने वाले फ़ील्ड को निखारें",
+        "p": "चुने हुए पाठ को उसी जगह बदलें। कुछ न चुना हो तो YiYan मूल पाठ रखता है और निखरा रूप अंत में जोड़ता है, इसलिए मौजूदा ऐप छोड़ना नहीं पड़ता।"
       },
       {
-        "tag": "अलग मॉडल या API नहीं",
+        "tag": "उपलब्ध सहायक को फिर इस्तेमाल करता है",
         "tagLang": false,
-        "title": "सहज अंग्रेज़ी, पीछे-पीछे तैयार",
-        "p": "YiYan वही वाक्य उस औज़ार को देता है जिसे आप अभी इस्तेमाल कर रहे थे, और अर्थ तथा लहज़ा बचाकर संदर्भ में बैठने वाली भाषा लौटाता है।"
+        "title": "सेटअप दोहराने की ज़रूरत नहीं",
+        "p": "YiYan सबसे हाल में सफल रहे या अभी उपलब्ध और साइन-इन सहायक को ढूँढता है। काम चलते समय मेनू बार का चिह्न हल्के से प्रगति दिखाता है।"
       },
       {
         "tag": "जो आपने असल में कहा, वही अभ्यास है",
@@ -1012,10 +1012,10 @@ export const YIYAN_LOCALES = {
   "ja": {
     "htmlLang": "ja",
     "title": "YiYan — 手を止めずに、自然な英語",
-    "description": "Pi、Claude Code、Codex、OpenCode に打ち込んだ文章をそのまま拾い、より自然な英語の言い方と、なぜそう言うのかを返します。Mac にたまった記録は iCloud で iPhone へ。",
+    "description": "Pi、Claude Code、Codex、OpenCode への入力を自動で拾うほか、YiYan に直接書いたり、いま開いている入力欄をその場で整えたりできます。自然な英語と要点メモを返し、Mac の学習記録は iCloud で iPhone へ同期します。",
     "canonical": "https://lazyapps.com/yiyan/ja/",
     "ogTitle": "YiYan — 手を止めずに、自然な英語",
-    "ogDesc": "Pi、Claude Code、Codex、OpenCode に打ち込んだ文章をそのまま拾い、より自然な英語の言い方と、なぜそう言うのかを返します。",
+    "ogDesc": "Pi、Claude Code、Codex、OpenCode への入力を拾い、YiYan への直接入力や現在の入力欄の書き直しにも対応。自然な英語と要点メモを返します。",
     "ogUrl": "https://lazyapps.com/yiyan/ja/",
     "navAria": "メインナビゲーション",
     "homeAria": "ホーム",
@@ -1026,7 +1026,7 @@ export const YIYAN_LOCALES = {
     "selectAria": "言語を切り替える",
     "selectedUrl": "/yiyan/ja/",
     "h1": "手を止めずに、<wbr>自然な英語",
-    "sub": "Pi、Claude Code、Codex、OpenCode に打ち込んだ文章をそのまま拾い、より自然な英語の言い方と、なぜそう言うのかを返します。Mac にたまった記録は iCloud で iPhone に同期され、机を離れても復習を続けられます。",
+    "sub": "Pi、Claude Code、Codex、OpenCode でいつもどおり作業する、YiYan に直接書く、またはショートカットやメニューバーから現在の入力欄を整える。YiYan は Mac で利用可能なログイン済みアシスタントをそのまま使い、自然な英語と要点メモを返します。記録は iCloud で iPhone にも届きます。",
     "cta": [
       "Mac 版をダウンロード",
       "iPhone 版パブリックベータ",
@@ -1034,8 +1034,8 @@ export const YIYAN_LOCALES = {
     ],
     "trust": [
       "元のリクエストはそのまま送信",
-      "別のモデルや API は不要",
-      "学習記録は日付順に整理"
+      "現在の入力欄をその場で整える",
+      "別のモデルや API は不要"
     ],
     "cssTrust": "cjk",
     "shotAltMain": "macOS 上の YiYan の学習記録画面",
@@ -1044,20 +1044,20 @@ export const YIYAN_LOCALES = {
       {
         "tag": "Pi · Claude Code · Codex · OpenCode",
         "tagLang": true,
-        "title": "いつもどおり<wbr>入力",
-        "p": "母語でも英語でも、混ぜても構いません。元のリクエストが先に送られるので、英語を待つ必要はありません。"
+        "title": "いつもどおり、または直接入力",
+        "p": "対応ツールでいつもどおり入力するか、YiYan に直接書きます。元のリクエストは先に送信され、直接入力した記録には「自分」と明記されます。"
       },
       {
-        "tag": "いまの作業は中断しない",
+        "tag": "ショートカット · サービス · メニューバー",
         "tagLang": false,
-        "title": "本題は<wbr>そのまま進む",
-        "p": "YiYan は送ったばかりのリクエストを書き換えたり遅らせたりせず、結果を進行中の会話に差し戻すこともしません。"
+        "title": "いまの入力欄をその場で整える",
+        "p": "選択部分はその場で置き換えます。選択がなければ原文を残し、整えた文を追記。使っているアプリを離れる必要はありません。"
       },
       {
-        "tag": "別のモデルや API は不要",
+        "tag": "利用可能なアシスタントを再利用",
         "tagLang": false,
-        "title": "自然な英語を<wbr>裏で用意",
-        "p": "いま使っていたツールに同じ一文を渡し、意味と語調を保ったまま、文脈に合う言い方を受け取ります。"
+        "title": "設定をやり直さない",
+        "p": "YiYan は直近で成功したもの、または現在ログイン済みで利用可能なアシスタントを Mac 上で見つけます。処理中はメニューバーの印が控えめに知らせます。"
       },
       {
         "tag": "実際に言ったことが、そのまま練習になる",
@@ -1156,10 +1156,10 @@ export const YIYAN_LOCALES = {
   "ko": {
     "htmlLang": "ko",
     "title": "YiYan — 손을 멈추지 않고, 자연스러운 영어",
-    "description": "Pi, Claude Code, Codex, OpenCode에 입력한 문장을 그대로 받아 더 자연스러운 영어 표현과 그렇게 말하는 이유를 알려줍니다. Mac에 모인 기록은 iCloud로 iPhone까지.",
+    "description": "YiYan은 Pi, Claude Code, Codex, OpenCode에 입력한 내용을 자동으로 가져오며, 직접 글을 쓰거나 지금 보고 있는 입력창을 다듬을 수도 있습니다. 자연스러운 영어와 핵심 메모를 돌려주고, Mac의 학습 기록은 iCloud로 iPhone에 동기화합니다.",
     "canonical": "https://lazyapps.com/yiyan/ko/",
     "ogTitle": "YiYan — 손을 멈추지 않고, 자연스러운 영어",
-    "ogDesc": "Pi, Claude Code, Codex, OpenCode에 입력한 문장을 그대로 받아 더 자연스러운 영어 표현과 그렇게 말하는 이유를 알려줍니다.",
+    "ogDesc": "Pi, Claude Code, Codex, OpenCode의 입력을 가져오고, 직접 입력하거나 현재 입력창을 다듬을 수 있으며, 자연스러운 영어와 핵심 메모를 제공합니다.",
     "ogUrl": "https://lazyapps.com/yiyan/ko/",
     "navAria": "주요 내비게이션",
     "homeAria": "홈",
@@ -1170,7 +1170,7 @@ export const YIYAN_LOCALES = {
     "selectAria": "언어 변경",
     "selectedUrl": "/yiyan/ko/",
     "h1": "손을 멈추지 않고, 자연스러운 영어",
-    "sub": "Pi, Claude Code, Codex, OpenCode에 입력한 문장을 그대로 받아 더 자연스러운 영어 표현과 그렇게 말하는 이유를 알려줍니다. Mac에 모인 기록은 iCloud로 iPhone에 동기화되어, 책상을 떠나도 복습을 이어갈 수 있습니다.",
+    "sub": "Pi, Claude Code, Codex, OpenCode에서 평소처럼 작업하거나 YiYan에 직접 쓰고, 단축키나 메뉴 막대에서 현재 입력창을 다듬을 수도 있습니다. YiYan은 Mac에서 로그인되어 사용 가능한 도우미를 그대로 활용해 자연스러운 영어와 핵심 메모를 만들며, 기록은 iCloud로 iPhone에도 이어집니다.",
     "cta": [
       "Mac 버전 다운로드",
       "iPhone 공개 베타",
@@ -1178,8 +1178,8 @@ export const YIYAN_LOCALES = {
     ],
     "trust": [
       "원래 요청은 그대로 전송",
-      "별도의 모델이나 API 불필요",
-      "학습 기록은 날짜순 정리"
+      "현재 입력창을 바로 다듬기",
+      "별도의 모델이나 API 불필요"
     ],
     "cssTrust": "cjk",
     "shotAltMain": "macOS의 YiYan 학습 기록 화면",
@@ -1188,20 +1188,20 @@ export const YIYAN_LOCALES = {
       {
         "tag": "Pi · Claude Code · Codex · OpenCode",
         "tagLang": true,
-        "title": "평소처럼 입력",
-        "p": "모국어든 영어든 섞어 써도 괜찮습니다. 원래 요청이 먼저 전송되므로 영어를 기다릴 필요가 없습니다."
+        "title": "평소처럼, 또는 직접 입력",
+        "p": "지원하는 도구에서 평소처럼 쓰거나 YiYan에 바로 입력하세요. 원래 요청은 먼저 전송되고, 직접 입력한 기록에는 “나”라고 명확히 표시됩니다."
       },
       {
-        "tag": "지금 하던 일은 끊기지 않음",
+        "tag": "단축키 · 서비스 · 메뉴 막대",
         "tagLang": false,
-        "title": "본래 작업은 계속 진행",
-        "p": "YiYan은 방금 보낸 요청을 고치거나 늦추지 않고, 결과를 진행 중인 대화에 되돌려 넣지도 않습니다."
+        "title": "지금 입력창을 바로 다듬기",
+        "p": "선택한 글은 그 자리에서 바꿉니다. 선택하지 않았다면 원문을 남기고 다듬은 문장을 뒤에 추가하므로, 사용 중인 앱을 떠날 필요가 없습니다."
       },
       {
-        "tag": "별도의 모델이나 API 불필요",
+        "tag": "사용 가능한 도우미 재활용",
         "tagLang": false,
-        "title": "자연스러운 영어를 뒤에서 준비",
-        "p": "방금 쓰던 도구에 같은 문장을 넘겨, 뜻과 말투를 지키면서 맥락에 맞는 표현을 받아옵니다."
+        "title": "설정을 다시 하지 않아도",
+        "p": "YiYan은 최근 성공했거나 현재 로그인되어 사용 가능한 도우미를 Mac에서 찾습니다. 작업 중에는 메뉴 막대 아이콘이 조용히 진행 상태를 알려줍니다."
       },
       {
         "tag": "실제로 한 말이 그대로 연습",
@@ -1300,10 +1300,10 @@ export const YIYAN_LOCALES = {
   "pt-br": {
     "htmlLang": "pt-BR",
     "title": "YiYan — Inglês natural, aprendido no caminho",
-    "description": "O YiYan recolhe o que você escreve no Pi, no Claude Code, no Codex ou no OpenCode, devolve uma versão em inglês mais natural e explica por que se diz assim. Acumula no Mac e sincroniza para o iPhone pelo iCloud.",
+    "description": "O YiYan recolhe o que você escreve no Pi, Claude Code, Codex ou OpenCode, e também permite digitar diretamente ou lapidar o campo que está à sua frente. Ele devolve um inglês natural e notas objetivas, e sincroniza seu aprendizado do Mac para o iPhone pelo iCloud.",
     "canonical": "https://lazyapps.com/yiyan/pt-br/",
     "ogTitle": "YiYan — Inglês natural, aprendido no caminho",
-    "ogDesc": "O YiYan recolhe o que você escreve no Pi, no Claude Code, no Codex ou no OpenCode, devolve uma versão em inglês mais natural e explica por que se diz assim.",
+    "ogDesc": "O YiYan recolhe o que você escreve no Pi, Claude Code, Codex ou OpenCode, permite digitar diretamente ou lapidar o campo atual e devolve um inglês natural com notas objetivas.",
     "ogUrl": "https://lazyapps.com/yiyan/pt-br/",
     "navAria": "Navegação principal",
     "homeAria": "Início",
@@ -1314,7 +1314,7 @@ export const YIYAN_LOCALES = {
     "selectAria": "Mudar de idioma",
     "selectedUrl": "/yiyan/pt-br/",
     "h1": "Inglês natural, aprendido no caminho",
-    "sub": "O YiYan recolhe o que você escreve no Pi, no Claude Code, no Codex ou no OpenCode, devolve uma versão em inglês mais natural e explica por que se diz assim. O que você junta no Mac sincroniza para o iPhone pelo iCloud, para continuar revisando longe da mesa.",
+    "sub": "Continue trabalhando no Pi, Claude Code, Codex ou OpenCode, escreva diretamente no YiYan ou lapide o campo atual por um atalho ou pela barra de menus. O YiYan reutiliza um assistente disponível e conectado no Mac para devolver inglês natural e notas objetivas; seu histórico chega ao iPhone pelo iCloud.",
     "cta": [
       "Baixar para Mac",
       "Beta pública para iPhone",
@@ -1322,8 +1322,8 @@ export const YIYAN_LOCALES = {
     ],
     "trust": [
       "Seu pedido sai como sempre",
-      "Sem outro modelo ou API para configurar",
-      "Registros organizados por data"
+      "Lapide o campo que está usando",
+      "Sem outro modelo ou API para configurar"
     ],
     "cssTrust": "latin",
     "shotAltMain": "O registro de aprendizado do YiYan no macOS",
@@ -1332,20 +1332,20 @@ export const YIYAN_LOCALES = {
       {
         "tag": "Pi · Claude Code · Codex · OpenCode",
         "tagLang": true,
-        "title": "Escreva como sempre",
-        "p": "No seu idioma, em inglês ou misturando os dois — tudo serve. Seu pedido original sai primeiro, então você nunca espera pelo inglês."
+        "title": "Escreva como sempre — ou diretamente",
+        "p": "Escreva como sempre em uma ferramenta compatível ou direto no YiYan. Seu pedido original sai primeiro; entradas diretas ficam claramente marcadas como Eu."
       },
       {
-        "tag": "Seu trabalho não é interrompido",
+        "tag": "Atalho · Serviços · Barra de menus",
         "tagLang": false,
-        "title": "O que importa continua rodando",
-        "p": "O YiYan não reescreve nem atrasa o pedido que você acabou de enviar, e nunca joga o resultado de volta na conversa em andamento."
+        "title": "Lapide o campo à sua frente",
+        "p": "Selecione um texto para substituí-lo no mesmo lugar. Sem seleção, o YiYan mantém o original e acrescenta a versão lapidada, sem tirar você do aplicativo em uso."
       },
       {
-        "tag": "Sem outro modelo ou API",
+        "tag": "Reutiliza um assistente disponível",
         "tagLang": false,
-        "title": "Uma versão natural, em segundo plano",
-        "p": "O YiYan entrega a mesma frase à ferramenta que você acabou de usar e recebe uma redação que cabe no contexto, preservando sentido e tom."
+        "title": "Sem repetir a configuração",
+        "p": "O YiYan encontra o assistente usado com sucesso mais recentemente ou um que esteja disponível e conectado no Mac. O ícone na barra de menus mostra com discrição quando ele está trabalhando."
       },
       {
         "tag": "O que você realmente disse é o exercício",
@@ -1444,10 +1444,10 @@ export const YIYAN_LOCALES = {
   "ru": {
     "htmlLang": "ru",
     "title": "YiYan — естественный английский, по ходу дела",
-    "description": "YiYan подхватывает то, что вы пишете в Pi, Claude Code, Codex или OpenCode, предлагает более естественный английский вариант и объясняет, почему так говорят. Копится на Mac, синхронизируется на iPhone через iCloud.",
+    "description": "YiYan подхватывает то, что вы пишете в Pi, Claude Code, Codex или OpenCode, а также позволяет ввести текст напрямую или улучшить текущее поле ввода. Он возвращает естественный английский и точные заметки, а затем синхронизирует обучение с Mac на iPhone через iCloud.",
     "canonical": "https://lazyapps.com/yiyan/ru/",
     "ogTitle": "YiYan — естественный английский, по ходу дела",
-    "ogDesc": "YiYan подхватывает то, что вы пишете в Pi, Claude Code, Codex или OpenCode, предлагает более естественный английский вариант и объясняет, почему так говорят.",
+    "ogDesc": "YiYan подхватывает текст из Pi, Claude Code, Codex или OpenCode, позволяет вводить его напрямую или улучшать текущее поле и возвращает естественный английский с точными заметками.",
     "ogUrl": "https://lazyapps.com/yiyan/ru/",
     "navAria": "Основная навигация",
     "homeAria": "Главная",
@@ -1458,7 +1458,7 @@ export const YIYAN_LOCALES = {
     "selectAria": "Сменить язык",
     "selectedUrl": "/yiyan/ru/",
     "h1": "Естественный английский, по ходу дела",
-    "sub": "YiYan подхватывает то, что вы пишете в Pi, Claude Code, Codex или OpenCode, предлагает более естественный английский вариант и объясняет, почему так говорят. Накопленное на Mac уходит на iPhone через iCloud — повторять можно и вдали от стола.",
+    "sub": "Продолжайте работать в Pi, Claude Code, Codex или OpenCode, пишите прямо в YiYan или улучшайте текущее поле через сочетание клавиш либо строку меню. YiYan повторно использует доступного помощника, в которого вы вошли на Mac, и возвращает естественный английский с точными заметками; история доступна на iPhone через iCloud.",
     "cta": [
       "Скачать для Mac",
       "Открытая бета для iPhone",
@@ -1466,8 +1466,8 @@ export const YIYAN_LOCALES = {
     ],
     "trust": [
       "Исходный запрос уходит как обычно",
-      "Ни второй модели, ни API",
-      "Записи разложены по датам"
+      "Улучшайте текущее поле на месте",
+      "Ни второй модели, ни API"
     ],
     "cssTrust": "latin",
     "shotAltMain": "Журнал занятий YiYan в macOS",
@@ -1476,20 +1476,20 @@ export const YIYAN_LOCALES = {
       {
         "tag": "Pi · Claude Code · Codex · OpenCode",
         "tagLang": true,
-        "title": "Пишите как обычно",
-        "p": "На своём языке, по-английски или смешивая — годится всё. Исходный запрос уходит первым, английского ждать не нужно."
+        "title": "Пишите как обычно — или напрямую",
+        "p": "Пишите как всегда в поддерживаемом инструменте или прямо в YiYan. Исходный запрос уходит первым, а прямые записи ясно отмечены как «Я»."
       },
       {
-        "tag": "Текущая работа не прерывается",
+        "tag": "Сочетание клавиш · Службы · Строка меню",
         "tagLang": false,
-        "title": "Главное продолжает идти",
-        "p": "YiYan не переписывает и не задерживает только что отправленный запрос и никогда не возвращает свой результат в идущий разговор."
+        "title": "Улучшайте текущее поле",
+        "p": "Выделенный текст заменяется на месте. Если ничего не выделено, YiYan сохраняет оригинал и добавляет улучшенную версию, не уводя вас из текущего приложения."
       },
       {
-        "tag": "Ни второй модели, ни API",
+        "tag": "Повторно использует доступного помощника",
         "tagLang": false,
-        "title": "Естественный вариант — в фоне",
-        "p": "YiYan передаёт ту же фразу инструменту, которым вы только что пользовались, и получает формулировку под контекст, сохраняя смысл и тон."
+        "title": "Без повторной настройки",
+        "p": "YiYan находит последнего успешно использованного либо доступного помощника, в которого выполнен вход на Mac. Значок в строке меню ненавязчиво показывает, что идёт обработка."
       },
       {
         "tag": "Практика — то, что вы правда сказали",
@@ -1588,10 +1588,10 @@ export const YIYAN_LOCALES = {
   "zh-hant": {
     "htmlLang": "zh-Hant",
     "title": "繹言 YiYan — 地道英語，邊蹬邊學",
-    "description": "自動擷取你在 Pi、Claude Code、Codex 或 OpenCode 裡的輸入，給出更自然的英語說法，再講清楚為什麼這樣說。Mac 上累積，透過 iCloud 同步到 iPhone。",
+    "description": "自動擷取你在 Pi、Claude Code、Codex 或 OpenCode 裡的輸入，也可直接輸入或潤飾目前的輸入框；給出更自然的英語說法和重點筆記。Mac 上累積，透過 iCloud 同步到 iPhone。",
     "canonical": "https://lazyapps.com/yiyan/zh-hant/",
     "ogTitle": "繹言 YiYan — 地道英語，邊蹬邊學",
-    "ogDesc": "自動擷取你在 Pi、Claude Code、Codex 或 OpenCode 裡的輸入，給出更自然的英語說法，再講清楚為什麼這樣說。",
+    "ogDesc": "自動擷取你在 Pi、Claude Code、Codex 或 OpenCode 裡的輸入，也可直接輸入或潤飾目前的輸入框；給出更自然的英語說法和重點筆記。",
     "ogUrl": "https://lazyapps.com/yiyan/zh-hant/",
     "navAria": "主導覽",
     "homeAria": "首頁",
@@ -1602,7 +1602,7 @@ export const YIYAN_LOCALES = {
     "selectAria": "切換語言",
     "selectedUrl": "/yiyan/zh-hant/",
     "h1": "<span class=\"zh\">地道英語，邊蹬邊學</span>",
-    "sub": "自動擷取你在 Pi、Claude Code、Codex 或 OpenCode 裡的輸入，給出更自然的英語說法，再講清楚為什麼這樣說。在 Mac 上累積，透過 iCloud 同步到 iPhone，離開電腦也能繼續複習。",
+    "sub": "照常在 Pi、Claude Code、Codex 或 OpenCode 裡工作，或直接輸入一段文字；需要時還可以從選單列或快速鍵潤飾目前的輸入框。繹言會自動沿用本機可用的語言助理，給出更自然的英語說法和重點筆記；記錄可透過 iCloud 同步到 iPhone。",
     "cta": [
       "下載 Mac 版",
       "iPhone 公開測試版",
@@ -1610,8 +1610,8 @@ export const YIYAN_LOCALES = {
     ],
     "trust": [
       "原請求照常送出",
-      "無需另外設定模型或 API",
-      "學習記錄依日期整理"
+      "目前輸入可隨時潤飾",
+      "無需另外設定模型或 API"
     ],
     "cssTrust": "cjk",
     "shotAltMain": "繹言在 macOS 上的學習記錄介面",
@@ -1620,20 +1620,20 @@ export const YIYAN_LOCALES = {
       {
         "tag": "Pi · Claude Code · Codex · OpenCode",
         "tagLang": true,
-        "title": "<span class=\"zh\">照常輸入</span>",
-        "p": "中文、英文、夾著說都行。你的原請求會先正常送出，不需要等英語結果。"
+        "title": "<span class=\"zh\">照常輸入，也可直接寫</span>",
+        "p": "中文、英文、夾著說都行。在支援的工具裡照常輸入，或在繹言主介面直接寫；原請求會先正常送出，主動輸入則清楚標記為「我」。"
       },
       {
-        "tag": "當前工作不被打斷",
+        "tag": "快速鍵 · 系統服務 · 選單列",
         "tagLang": false,
-        "title": "<span class=\"zh\">正事繼續執行</span>",
-        "p": "繹言不會改寫或延遲當前請求，也不會把學習結果塞回正在進行的對話。"
+        "title": "<span class=\"zh\">潤飾目前的輸入框</span>",
+        "p": "選取一段就原地取代；沒有選取時會保留原文，再把結果分隔後附加。無需離開正在使用的應用程式。"
       },
       {
-        "tag": "無需另外設定模型或 API",
+        "tag": "自動沿用本機可用助理",
         "tagLang": false,
-        "title": "<span class=\"zh\">背景補一版自然英語</span>",
-        "p": "繹言讓你剛才使用的工具處理同一句話，在保留原意和語氣的前提下，給出一版更符合語境的說法。"
+        "title": "<span class=\"zh\">不用重複設定</span>",
+        "p": "繹言會找到最近成功或目前已登入且可用的語言助理。處理時，選單列圖示會安靜提示進度。"
       },
       {
         "tag": "每天真的說過的話，就是練習",
