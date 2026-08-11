@@ -44,6 +44,8 @@ const SHOWCASE_MAP = {
   'zh-hant': zhHantShowcase,
 };
 const showCaseUrl = SHOWCASE_MAP[code] ?? showcaseUrl;
+const heroVideoCode = code || 'zh-hans';
+const heroVideoUrl = `/v/yiyan/hero-${heroVideoCode}-v1.mp4`;
 const ALTS = [
   ['zh-Hans', 'yiyan/'],
   ['en', 'yiyan/en/'],
@@ -222,6 +224,7 @@ html[data-trust=cjk] .phero__trust li{font:400 .75rem/1.5 var(--mono);letter-spa
   background:#fff;overflow:hidden;
 }
 .shot img{width:100%}
+.shot__video{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;background:#171721}
 
 .deck{padding-top:clamp(40px,5.5vw,88px);padding-bottom:clamp(32px,4vw,64px)}
 .card{
@@ -353,6 +356,24 @@ html[data-trust=cjk] .phero__trust li{font:400 .75rem/1.5 var(--mono);letter-spa
 
     <div data-reveal-group data-stagger="110" data-distance="1.2em" data-start="top 94%">
       <h1 class="phero__h1 dsp"><Fragment set:html={t.h1} /></h1>
+
+      <div class="shot">
+        <video
+          class="shot__video"
+          data-yiyan-hero-video
+          aria-label={t.shotAltMain}
+          poster={showCaseUrl}
+          preload="metadata"
+          muted
+          loop
+          playsinline
+          controls
+        >
+          <source src={heroVideoUrl} type="video/mp4">
+          <img src={showCaseUrl} alt={t.shotAltMain}>
+        </video>
+      </div>
+
       <p class="phero__sub"><Fragment set:html={t.sub} /></p>
       {t.cta[0] && <div class="phero__cta">
       <Fragment set:html={ctaButtons} />
@@ -363,10 +384,6 @@ html[data-trust=cjk] .phero__trust li{font:400 .75rem/1.5 var(--mono);letter-spa
           {text}
         </li>)}
       </ul>
-
-      <div class="shot">
-        <img src={showCaseUrl} alt={t.shotAltMain}>
-      </div>
     </div>
   </section>
 
@@ -517,6 +534,35 @@ html[data-trust=cjk] .phero__trust li{font:400 .75rem/1.5 var(--mono);letter-spa
     if (!target) return;
     window.location.href = target + window.location.search + window.location.hash;
   });
+})();
+</script>
+
+<script is:inline>
+(() => {
+  var video = document.querySelector("[data-yiyan-hero-video]");
+  if (!video) return;
+
+  var motion = window.matchMedia("(prefers-reduced-motion: reduce)");
+  var isVisible = true;
+
+  function syncPlayback() {
+    if (motion.matches || !isVisible || document.hidden) {
+      video.pause();
+      return;
+    }
+
+    video.play().catch(() => {});
+  }
+
+  var observer = new IntersectionObserver((entries) => {
+    isVisible = entries[0]?.isIntersecting ?? false;
+    syncPlayback();
+  }, { threshold: 0.2 });
+
+  observer.observe(video);
+  document.addEventListener("visibilitychange", syncPlayback);
+  motion.addEventListener?.("change", syncPlayback);
+  syncPlayback();
 })();
 </script>
 
