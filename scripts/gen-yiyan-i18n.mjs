@@ -1,8 +1,10 @@
 #!/usr/bin/env node
-// Extracts every translated slot from the existing yi pages and emits an i18n module.
-import { readFileSync, writeFileSync } from 'node:fs';
+// Extracts every translated slot from existing YiYan pages and emits an i18n module.
+// When the page archive is unavailable, it refreshes the current locale data in place.
+import { existsSync, readFileSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { YIYAN_FEATURE_COPY } from '../src/i18n/yiyan-feature-copy.mjs';
+import { YIYAN_LOCALES as EXISTING_YIYAN_LOCALES } from '../src/i18n/yiyan-locales.mjs';
 
 const ROOT = join(import.meta.dirname, '..');
 const PAGES = process.env.YIYAN_PAGES ?? '/tmp/opencode/baseline/yiyan';
@@ -125,10 +127,12 @@ function extract(html) {
   return out;
 }
 
-const DATA = {};
-DATA[''] = extract(readFileSync(join(PAGES, `index${PAGE_EXT}`), 'utf8'));
-for (const code of ['ar', 'de', 'en', 'es', 'fr', 'hi', 'ja', 'ko', 'pt-br', 'ru', 'zh-hant']) {
-  DATA[code] = extract(readFileSync(join(PAGES, code, `index${PAGE_EXT}`), 'utf8'));
+const DATA = existsSync(PAGES) ? {} : structuredClone(EXISTING_YIYAN_LOCALES);
+if (existsSync(PAGES)) {
+  DATA[''] = extract(readFileSync(join(PAGES, `index${PAGE_EXT}`), 'utf8'));
+  for (const code of ['ar', 'de', 'en', 'es', 'fr', 'hi', 'ja', 'ko', 'pt-br', 'ru', 'zh-hant']) {
+    DATA[code] = extract(readFileSync(join(PAGES, code, `index${PAGE_EXT}`), 'utf8'));
+  }
 }
 
 const bad = [];
@@ -166,12 +170,40 @@ const OPEN_CODE_REPLACEMENTS = [
   ['Pi · Claude Code · Codex', 'Pi · Claude Code · Codex · OpenCode'],
 ];
 
+const ANTIGRAVITY_REPLACEMENTS = [
+  ['no Pi, no Claude Code, no Codex ou no OpenCode', 'no Pi, no Claude Code, no Codex, no OpenCode ou no Antigravity'],
+  ['do Pi, do Claude Code, do Codex ou do OpenCode', 'do Pi, do Claude Code, do Codex, do OpenCode ou do Antigravity'],
+  ['Pi、Claude Code、Codex 或 OpenCode', 'Pi、Claude Code、Codex、OpenCode 或 Antigravity'],
+  ['Pi أو Claude Code أو Codex أو OpenCode', 'Pi أو Claude Code أو Codex أو OpenCode أو Antigravity'],
+  ['Pi, Claude Code, Codex oder OpenCode', 'Pi, Claude Code, Codex, OpenCode oder Antigravity'],
+  ['Pi, Claude Code, Codex or OpenCode', 'Pi, Claude Code, Codex, OpenCode, or Antigravity'],
+  ['Pi, Claude Code, Codex u OpenCode', 'Pi, Claude Code, Codex, OpenCode o Antigravity'],
+  ['Pi, Claude Code, Codex ni OpenCode', 'Pi, Claude Code, Codex, OpenCode ni Antigravity'],
+  ['Pi, Claude Code, Codex ou OpenCode', 'Pi, Claude Code, Codex, OpenCode ou Antigravity'],
+  ['Pi, Claude Code या Codex या OpenCode', 'Pi, Claude Code, Codex, OpenCode या Antigravity'],
+  ['Pi, Claude Code, Codex या OpenCode', 'Pi, Claude Code, Codex, OpenCode या Antigravity'],
+  ['Pi、Claude Code、Codex、OpenCode', 'Pi、Claude Code、Codex、OpenCode、Antigravity'],
+  ['Pi, Claude Code, Codex или OpenCode', 'Pi, Claude Code, Codex, OpenCode или Antigravity'],
+  ['Pi · Claude Code · Codex · OpenCode', 'Pi · Claude Code · Codex · OpenCode · Antigravity'],
+  ['Pi, Claude Code, Codex, OpenCode', 'Pi, Claude Code, Codex, OpenCode, Antigravity'],
+];
+
 const TESTFLIGHT_URL = 'https://testflight.apple.com/join/cbnauaKB';
 
 function addOpenCode(value) {
   if (value.includes('OpenCode')) return value;
 
   for (const [before, after] of OPEN_CODE_REPLACEMENTS) {
+    if (value.includes(before)) return value.replaceAll(before, after);
+  }
+
+  return value;
+}
+
+function addAntigravity(value) {
+  if (value.includes('Antigravity')) return value;
+
+  for (const [before, after] of ANTIGRAVITY_REPLACEMENTS) {
     if (value.includes(before)) return value.replaceAll(before, after);
   }
 
@@ -193,7 +225,9 @@ export const YIYAN_LOCALES = ${JSON.stringify(stripBookMarks(DATA), null, 2)};
 
 function stripBookMarks(value) {
   if (typeof value === 'string') {
-    return addOpenCode(updateTestFlightUrl(value.replace(/[《》]/g, '')));
+    return addAntigravity(
+      addOpenCode(updateTestFlightUrl(value.replace(/[《》]/g, ''))),
+    );
   }
   if (Array.isArray(value)) return value.map(stripBookMarks);
   if (value && typeof value === 'object') {

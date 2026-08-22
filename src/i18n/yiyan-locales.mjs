@@ -3,10 +3,10 @@ export const YIYAN_LOCALES = {
   "": {
     "htmlLang": "zh-Hans",
     "title": "绎言 YiYan — 地道英语，边蹬边学",
-    "description": "自动捕捉你在 Pi、Claude Code、Codex 或 OpenCode 里的输入，也可直接输入或润色当前输入框；给出更自然的英语表达和重点笔记。Mac 上积累，通过 iCloud 同步到 iPhone。",
+    "description": "自动捕捉你在 Pi、Claude Code、Codex、OpenCode 或 Antigravity 里的输入，也可直接输入或润色当前输入框；给出更自然的英语表达和重点笔记。Mac 上积累，通过 iCloud 同步到 iPhone。",
     "canonical": "https://lazyapps.com/yiyan/",
     "ogTitle": "绎言 YiYan — 地道英语，边蹬边学",
-    "ogDesc": "自动捕捉你在 Pi、Claude Code、Codex 或 OpenCode 里的输入，也可直接输入或润色当前输入框；给出更自然的英语表达和重点笔记。",
+    "ogDesc": "自动捕捉你在 Pi、Claude Code、Codex、OpenCode 或 Antigravity 里的输入，也可直接输入或润色当前输入框；给出更自然的英语表达和重点笔记。",
     "ogUrl": "https://lazyapps.com/yiyan/",
     "navAria": "主导航",
     "homeAria": "首页",
@@ -17,7 +17,7 @@ export const YIYAN_LOCALES = {
     "selectAria": "切换语言",
     "selectedUrl": "/yiyan/",
     "h1": "<span class=\"zh\">地道英语，边蹬边学</span>",
-    "sub": "照常在 Pi、Claude Code、Codex 或 OpenCode 里工作，或直接输入一段文字；需要时还可以从菜单栏或快捷键润色当前输入框。绎言会自动复用本机可用的语言助手，给出更自然的英语表达和重点笔记；记录可通过 iCloud 同步到 iPhone。",
+    "sub": "照常在 Pi、Claude Code、Codex、OpenCode 或 Antigravity 里工作，或直接输入一段文字；需要时还可以从菜单栏或快捷键润色当前输入框。绎言会自动复用本机可用的语言助手，给出更自然的英语表达和重点笔记；记录可通过 iCloud 同步到 iPhone。",
     "cta": [
       "下载 Mac 版",
       "iPhone 公开测试版",
@@ -33,7 +33,7 @@ export const YIYAN_LOCALES = {
     "shotAltDetail": "一条绎言学习记录：原话、自然英语与重点笔记",
     "cards": [
       {
-        "tag": "Pi · Claude Code · Codex · OpenCode",
+        "tag": "Pi · Claude Code · Codex · OpenCode · Antigravity",
         "tagLang": true,
         "title": "<span class=\"zh\">照常输入，也可直接写</span>",
         "p": "中文、英文、夹着说都行。在支持的工具里照常输入，或在绎言主界面直接写；原请求会先正常发送，主动输入则清楚标记为“我”。"
@@ -100,7 +100,7 @@ export const YIYAN_LOCALES = {
       "headA": "边界说清楚",
       "headB": "只留下学习所需的内容",
       "h2": "<span class=\"zh\">只处理运行期间新增的用户消息。</span>",
-      "note": "绎言不会安装进 Pi、Claude Code、Codex 或 OpenCode，也不会更改它们的设置。",
+      "note": "绎言不会安装进 Pi、Claude Code、Codex、OpenCode 或 Antigravity，也不会更改它们的设置。",
       "items": [
         {
           "q": "什么会成为学习记录？",
@@ -120,7 +120,7 @@ export const YIYAN_LOCALES = {
         },
         {
           "q": "需要再配置一套模型吗？",
-          "a": "不需要。自然英语和学习笔记由你刚才使用的 Pi、Claude Code、Codex 或 OpenCode 生成；绎言不带自己的模型或 API 凭据。"
+          "a": "不需要。自然英语和学习笔记由你刚才使用的 Pi、Claude Code、Codex、OpenCode 或 Antigravity 生成；绎言不带自己的模型或 API 凭据。"
         },
         {
           "q": "和其他应用什么关系？",
@@ -136,7 +136,7 @@ export const YIYAN_LOCALES = {
       "h3": "<span class=\"zh\">两行装好</span>",
       "label": "Homebrew",
       "install": "<span class=\"p\">$</span> brew tap cxa/yiyan https://github.com/cxa/yiyan\n<span class=\"p\">$</span> brew install --cask cxa/yiyan/yiyan",
-      "p": "装好绎言，继续像平时一样使用 Pi、Claude Code、Codex 或 OpenCode。下一条有学习价值的新消息，会自动成为你的第一条学习记录。"
+      "p": "装好绎言，继续像平时一样使用 Pi、Claude Code、Codex、OpenCode 或 Antigravity。下一条有学习价值的新消息，会自动成为你的第一条学习记录。"
     },
     "footer": [
       "<a data-hover href=\"/\" lang=\"en\"><span data-underline-link class=\"underline-link\">lazyapps</span></a>",
@@ -148,10 +148,10 @@ export const YIYAN_LOCALES = {
     "htmlLang": "ar",
     "htmlDir": "rtl",
     "title": "YiYan — إنجليزية طبيعية تتعلمها أثناء العمل",
-    "description": "يلتقط YiYan ما تكتبه في Pi أو Claude Code أو Codex أو OpenCode، ويتيح لك أيضًا إدخال النص مباشرة أو تنقيح الحقل الذي تعمل فيه. يعيد إنجليزية طبيعية وملاحظات مركّزة، ثم يزامن تعلّمك من Mac إلى iPhone عبر iCloud.",
+    "description": "يلتقط YiYan ما تكتبه في Pi أو Claude Code أو Codex أو OpenCode أو Antigravity، ويتيح لك أيضًا إدخال النص مباشرة أو تنقيح الحقل الذي تعمل فيه. يعيد إنجليزية طبيعية وملاحظات مركّزة، ثم يزامن تعلّمك من Mac إلى iPhone عبر iCloud.",
     "canonical": "https://lazyapps.com/yiyan/ar/",
     "ogTitle": "YiYan — إنجليزية طبيعية تتعلمها أثناء العمل",
-    "ogDesc": "يلتقط YiYan ما تكتبه في Pi أو Claude Code أو Codex أو OpenCode، ويتيح لك إدخال النص مباشرة أو تنقيح الحقل الحالي، ثم يعيد إنجليزية طبيعية وملاحظات مركّزة.",
+    "ogDesc": "يلتقط YiYan ما تكتبه في Pi أو Claude Code أو Codex أو OpenCode أو Antigravity، ويتيح لك إدخال النص مباشرة أو تنقيح الحقل الحالي، ثم يعيد إنجليزية طبيعية وملاحظات مركّزة.",
     "ogUrl": "https://lazyapps.com/yiyan/ar/",
     "navAria": "التنقل الرئيسي",
     "homeAria": "الرئيسية",
@@ -162,7 +162,7 @@ export const YIYAN_LOCALES = {
     "selectAria": "تغيير اللغة",
     "selectedUrl": "/yiyan/ar/",
     "h1": "إنجليزية طبيعية، تتعلمها أثناء العمل",
-    "sub": "واصل العمل في Pi أو Claude Code أو Codex أو OpenCode، أو اكتب مباشرة في YiYan، أو نقّح حقل الإدخال الحالي من اختصار أو شريط القوائم. يعيد YiYan استخدام مساعد متاح ومسجّل الدخول على Mac ليقدّم إنجليزية طبيعية وملاحظات مركّزة، وتصل سجلاتك إلى iPhone عبر iCloud.",
+    "sub": "واصل العمل في Pi أو Claude Code أو Codex أو OpenCode أو Antigravity، أو اكتب مباشرة في YiYan، أو نقّح حقل الإدخال الحالي من اختصار أو شريط القوائم. يعيد YiYan استخدام مساعد متاح ومسجّل الدخول على Mac ليقدّم إنجليزية طبيعية وملاحظات مركّزة، وتصل سجلاتك إلى iPhone عبر iCloud.",
     "cta": [
       "تنزيل نسخة Mac",
       "نسخة iPhone التجريبية",
@@ -178,7 +178,7 @@ export const YIYAN_LOCALES = {
     "shotAltDetail": "سجل واحد من YiYan: الجملة الأصلية والإنجليزية الطبيعية والملاحظات",
     "cards": [
       {
-        "tag": "Pi · Claude Code · Codex · OpenCode",
+        "tag": "Pi · Claude Code · Codex · OpenCode · Antigravity",
         "tagLang": true,
         "title": "اكتب كالمعتاد — أو مباشرة",
         "p": "اكتب كالمعتاد في الأدوات المدعومة، أو أدخل النص مباشرة في YiYan. يُرسل طلبك الأصلي أولًا، وتظهر المدخلات المباشرة بوضوح تحت اسم «أنا»."
@@ -245,7 +245,7 @@ export const YIYAN_LOCALES = {
       "headA": "حدود مذكورة بوضوح",
       "headB": "لا يبقى إلا ما يلزم للتعلّم",
       "h2": "لا يتعامل إلا مع الرسائل الجديدة أثناء تشغيله.",
-      "note": "لا يُثبَّت YiYan داخل Pi أو Claude Code أو Codex أو OpenCode، ولا يغيّر إعداداتها.",
+      "note": "لا يُثبَّت YiYan داخل Pi أو Claude Code أو Codex أو OpenCode أو Antigravity، ولا يغيّر إعداداتها.",
       "items": [
         {
           "q": "ما الذي يصير سجلًا؟",
@@ -265,7 +265,7 @@ export const YIYAN_LOCALES = {
         },
         {
           "q": "هل أحتاج نموذجًا آخر؟",
-          "a": "لا. الإنجليزية الطبيعية والملاحظات يولّدها Pi أو Claude Code أو Codex أو OpenCode الذي كنت تستخدمه؛ ولا يحمل YiYan نموذجًا ولا بيانات اعتماد API خاصة به."
+          "a": "لا. الإنجليزية الطبيعية والملاحظات يولّدها Pi أو Claude Code أو Codex أو OpenCode أو Antigravity الذي كنت تستخدمه؛ ولا يحمل YiYan نموذجًا ولا بيانات اعتماد API خاصة به."
         },
         {
           "q": "وما علاقته ببقية التطبيقات؟",
@@ -281,7 +281,7 @@ export const YIYAN_LOCALES = {
       "h3": "سطران للتثبيت",
       "label": "Homebrew",
       "install": "<span class=\"p\">$</span> brew tap cxa/yiyan https://github.com/cxa/yiyan\n<span class=\"p\">$</span> brew install --cask cxa/yiyan/yiyan",
-      "p": "ثبّت YiYan وواصل استخدام Pi أو Claude Code أو Codex أو OpenCode كما كنت. أول رسالة جديدة تستحق التعلّم ستصير سجلك الأول."
+      "p": "ثبّت YiYan وواصل استخدام Pi أو Claude Code أو Codex أو OpenCode أو Antigravity كما كنت. أول رسالة جديدة تستحق التعلّم ستصير سجلك الأول."
     },
     "footer": [
       "<a data-hover href=\"/\" lang=\"en\"><span data-underline-link class=\"underline-link\">lazyapps</span></a>",
@@ -292,10 +292,10 @@ export const YIYAN_LOCALES = {
   "de": {
     "htmlLang": "de",
     "title": "YiYan — Natürliches Englisch, nebenbei gelernt",
-    "description": "YiYan greift auf, was du in Pi, Claude Code, Codex oder OpenCode schreibst, lässt dich aber auch Text direkt eingeben oder das aktive Eingabefeld verfeinern. Du erhältst natürliches Englisch und gezielte Hinweise; per iCloud geht dein Lernverlauf vom Mac aufs iPhone.",
+    "description": "YiYan greift auf, was du in Pi, Claude Code, Codex, OpenCode oder Antigravity schreibst, lässt dich aber auch Text direkt eingeben oder das aktive Eingabefeld verfeinern. Du erhältst natürliches Englisch und gezielte Hinweise; per iCloud geht dein Lernverlauf vom Mac aufs iPhone.",
     "canonical": "https://lazyapps.com/yiyan/de/",
     "ogTitle": "YiYan — Natürliches Englisch, nebenbei gelernt",
-    "ogDesc": "YiYan greift auf, was du in Pi, Claude Code, Codex oder OpenCode schreibst, lässt dich Text direkt eingeben oder das aktive Feld verfeinern und liefert natürliches Englisch mit gezielten Hinweisen.",
+    "ogDesc": "YiYan greift auf, was du in Pi, Claude Code, Codex, OpenCode oder Antigravity schreibst, lässt dich Text direkt eingeben oder das aktive Feld verfeinern und liefert natürliches Englisch mit gezielten Hinweisen.",
     "ogUrl": "https://lazyapps.com/yiyan/de/",
     "navAria": "Hauptnavigation",
     "homeAria": "Start",
@@ -306,7 +306,7 @@ export const YIYAN_LOCALES = {
     "selectAria": "Sprache wechseln",
     "selectedUrl": "/yiyan/de/",
     "h1": "Natürliches Englisch, nebenbei gelernt",
-    "sub": "Arbeite in Pi, Claude Code, Codex oder OpenCode weiter, schreibe direkt in YiYan oder verfeinere das aktive Eingabefeld per Kurzbefehl oder Menüleiste. YiYan nutzt einen verfügbaren, angemeldeten Assistenten auf deinem Mac für natürliches Englisch und gezielte Hinweise; dein Verlauf erreicht per iCloud das iPhone.",
+    "sub": "Arbeite in Pi, Claude Code, Codex, OpenCode oder Antigravity weiter, schreibe direkt in YiYan oder verfeinere das aktive Eingabefeld per Kurzbefehl oder Menüleiste. YiYan nutzt einen verfügbaren, angemeldeten Assistenten auf deinem Mac für natürliches Englisch und gezielte Hinweise; dein Verlauf erreicht per iCloud das iPhone.",
     "cta": [
       "Für Mac laden",
       "iPhone-Beta",
@@ -322,7 +322,7 @@ export const YIYAN_LOCALES = {
     "shotAltDetail": "Ein YiYan-Eintrag: Originalsatz, natürliches Englisch und die wichtigsten Notizen",
     "cards": [
       {
-        "tag": "Pi · Claude Code · Codex · OpenCode",
+        "tag": "Pi · Claude Code · Codex · OpenCode · Antigravity",
         "tagLang": true,
         "title": "Wie immer schreiben – oder direkt",
         "p": "Schreibe wie gewohnt in den unterstützten Werkzeugen oder direkt in YiYan. Deine ursprüngliche Anfrage geht zuerst raus; direkte Eingaben sind klar als „Ich“ gekennzeichnet."
@@ -389,7 +389,7 @@ export const YIYAN_LOCALES = {
       "headA": "Grenzen, klar benannt",
       "headB": "Nur das, was zum Lernen nötig ist",
       "h2": "Nur neue Nachrichten, die du im laufenden Betrieb sendest.",
-      "note": "YiYan installiert sich nicht in Pi, Claude Code, Codex oder OpenCode und ändert deren Einstellungen nie.",
+      "note": "YiYan installiert sich nicht in Pi, Claude Code, Codex, OpenCode oder Antigravity und ändert deren Einstellungen nie.",
       "items": [
         {
           "q": "Was wird zum Eintrag?",
@@ -409,7 +409,7 @@ export const YIYAN_LOCALES = {
         },
         {
           "q": "Brauche ich ein weiteres Modell?",
-          "a": "Nein. Das natürliche Englisch und die Notizen kommen von dem Pi, Claude Code, Codex oder OpenCode, das du eben benutzt hast; YiYan bringt kein eigenes Modell und keine API-Zugangsdaten mit."
+          "a": "Nein. Das natürliche Englisch und die Notizen kommen von dem Pi, Claude Code, Codex, OpenCode oder Antigravity, das du eben benutzt hast; YiYan bringt kein eigenes Modell und keine API-Zugangsdaten mit."
         },
         {
           "q": "Wie hängt das mit dem Rest zusammen?",
@@ -425,7 +425,7 @@ export const YIYAN_LOCALES = {
       "h3": "Zwei Zeilen, fertig",
       "label": "Homebrew",
       "install": "<span class=\"p\">$</span> brew tap cxa/yiyan https://github.com/cxa/yiyan\n<span class=\"p\">$</span> brew install --cask cxa/yiyan/yiyan",
-      "p": "Installiere YiYan und nutze Pi, Claude Code, Codex oder OpenCode weiter wie bisher. Die nächste Nachricht, aus der sich etwas lernen lässt, wird dein erster Eintrag."
+      "p": "Installiere YiYan und nutze Pi, Claude Code, Codex, OpenCode oder Antigravity weiter wie bisher. Die nächste Nachricht, aus der sich etwas lernen lässt, wird dein erster Eintrag."
     },
     "footer": [
       "<a data-hover href=\"/\" lang=\"en\"><span data-underline-link class=\"underline-link\">lazyapps</span></a>",
@@ -436,10 +436,10 @@ export const YIYAN_LOCALES = {
   "en": {
     "htmlLang": "en",
     "title": "YiYan — Natural English, picked up as you go",
-    "description": "YiYan quietly picks up what you type in Pi, Claude Code, Codex or OpenCode, or lets you write directly and refine the field in front of you. It returns natural English and focused notes, then syncs your learning from Mac to iPhone over iCloud.",
+    "description": "YiYan quietly picks up what you type in Pi, Claude Code, Codex, OpenCode, or Antigravity, or lets you write directly and refine the field in front of you. It returns natural English and focused notes, then syncs your learning from Mac to iPhone over iCloud.",
     "canonical": "https://lazyapps.com/yiyan/en/",
     "ogTitle": "YiYan — Natural English, picked up as you go",
-    "ogDesc": "YiYan picks up what you type in Pi, Claude Code, Codex or OpenCode, lets you write directly or refine the field in front of you, and returns natural English with focused notes.",
+    "ogDesc": "YiYan picks up what you type in Pi, Claude Code, Codex, OpenCode, or Antigravity, lets you write directly or refine the field in front of you, and returns natural English with focused notes.",
     "ogUrl": "https://lazyapps.com/yiyan/en/",
     "navAria": "Main navigation",
     "homeAria": "Home",
@@ -450,7 +450,7 @@ export const YIYAN_LOCALES = {
     "selectAria": "Change language",
     "selectedUrl": "/yiyan/en/",
     "h1": "Natural English, picked up as you go",
-    "sub": "Keep working in Pi, Claude Code, Codex or OpenCode, type directly into YiYan, or refine the field in front of you from a shortcut or the menu bar. YiYan reuses an available signed-in assistant on your Mac to return natural English and focused notes, with your history available on iPhone through iCloud.",
+    "sub": "Keep working in Pi, Claude Code, Codex, OpenCode, or Antigravity, type directly into YiYan, or refine the field in front of you from a shortcut or the menu bar. YiYan reuses an available signed-in assistant on your Mac to return natural English and focused notes, with your history available on iPhone through iCloud.",
     "cta": [
       "Download for Mac",
       "iPhone public beta",
@@ -466,7 +466,7 @@ export const YIYAN_LOCALES = {
     "shotAltDetail": "One YiYan entry: the original wording, the natural English, and the key notes",
     "cards": [
       {
-        "tag": "Pi · Claude Code · Codex · OpenCode",
+        "tag": "Pi · Claude Code · Codex · OpenCode · Antigravity",
         "tagLang": true,
         "title": "Type as usual — or directly",
         "p": "Write as usual in a supported tool, or type straight into YiYan. Your original request goes out first; direct entries are clearly marked as Me."
@@ -533,7 +533,7 @@ export const YIYAN_LOCALES = {
       "headA": "Boundaries, stated plainly",
       "headB": "Only what learning needs",
       "h2": "Only new messages you send while it is running.",
-      "note": "YiYan does not install itself into Pi, Claude Code, Codex or OpenCode, and never changes their settings.",
+      "note": "YiYan does not install itself into Pi, Claude Code, Codex, OpenCode, or Antigravity, and never changes their settings.",
       "items": [
         {
           "q": "What becomes an entry?",
@@ -553,7 +553,7 @@ export const YIYAN_LOCALES = {
         },
         {
           "q": "Do I need another model?",
-          "a": "No. The natural English and the notes come from the Pi, Claude Code, Codex or OpenCode you were just using; YiYan ships no model and no API credentials of its own."
+          "a": "No. The natural English and the notes come from the Pi, Claude Code, Codex, OpenCode, or Antigravity you were just using; YiYan ships no model and no API credentials of its own."
         },
         {
           "q": "How does it relate to the rest?",
@@ -569,7 +569,7 @@ export const YIYAN_LOCALES = {
       "h3": "Two lines to install",
       "label": "Homebrew",
       "install": "<span class=\"p\">$</span> brew tap cxa/yiyan https://github.com/cxa/yiyan\n<span class=\"p\">$</span> brew install --cask cxa/yiyan/yiyan",
-      "p": "Install YiYan and keep using Pi, Claude Code, Codex or OpenCode exactly as before. The next message worth learning from becomes your first entry."
+      "p": "Install YiYan and keep using Pi, Claude Code, Codex, OpenCode, or Antigravity exactly as before. The next message worth learning from becomes your first entry."
     },
     "footer": [
       "<a data-hover href=\"/\" lang=\"en\"><span data-underline-link class=\"underline-link\">lazyapps</span></a>",
@@ -580,10 +580,10 @@ export const YIYAN_LOCALES = {
   "es": {
     "htmlLang": "es",
     "title": "YiYan — Inglés natural, aprendido sobre la marcha",
-    "description": "YiYan recoge lo que escribes en Pi, Claude Code, Codex u OpenCode, y también te deja introducir texto directamente o pulir el campo que tienes delante. Devuelve un inglés natural y notas concretas, y sincroniza tu aprendizaje del Mac al iPhone por iCloud.",
+    "description": "YiYan recoge lo que escribes en Pi, Claude Code, Codex, OpenCode o Antigravity, y también te deja introducir texto directamente o pulir el campo que tienes delante. Devuelve un inglés natural y notas concretas, y sincroniza tu aprendizaje del Mac al iPhone por iCloud.",
     "canonical": "https://lazyapps.com/yiyan/es/",
     "ogTitle": "YiYan — Inglés natural, aprendido sobre la marcha",
-    "ogDesc": "YiYan recoge lo que escribes en Pi, Claude Code, Codex u OpenCode, te deja introducir texto directamente o pulir el campo actual y devuelve un inglés natural con notas concretas.",
+    "ogDesc": "YiYan recoge lo que escribes en Pi, Claude Code, Codex, OpenCode o Antigravity, te deja introducir texto directamente o pulir el campo actual y devuelve un inglés natural con notas concretas.",
     "ogUrl": "https://lazyapps.com/yiyan/es/",
     "navAria": "Navegación principal",
     "homeAria": "Inicio",
@@ -594,7 +594,7 @@ export const YIYAN_LOCALES = {
     "selectAria": "Cambiar de idioma",
     "selectedUrl": "/yiyan/es/",
     "h1": "Inglés natural, aprendido sobre la marcha",
-    "sub": "Sigue trabajando en Pi, Claude Code, Codex u OpenCode, escribe directamente en YiYan o pule el campo actual desde un atajo o la barra de menús. YiYan reutiliza un asistente disponible con sesión iniciada en tu Mac para devolver inglés natural y notas concretas; tu historial llega al iPhone por iCloud.",
+    "sub": "Sigue trabajando en Pi, Claude Code, Codex, OpenCode o Antigravity, escribe directamente en YiYan o pule el campo actual desde un atajo o la barra de menús. YiYan reutiliza un asistente disponible con sesión iniciada en tu Mac para devolver inglés natural y notas concretas; tu historial llega al iPhone por iCloud.",
     "cta": [
       "Descargar para Mac",
       "Beta pública para iPhone",
@@ -610,7 +610,7 @@ export const YIYAN_LOCALES = {
     "shotAltDetail": "Un registro de YiYan: la frase original, el inglés natural y las notas clave",
     "cards": [
       {
-        "tag": "Pi · Claude Code · Codex · OpenCode",
+        "tag": "Pi · Claude Code · Codex · OpenCode · Antigravity",
         "tagLang": true,
         "title": "Escribe como siempre — o directamente",
         "p": "Escribe como siempre en una herramienta compatible o directamente en YiYan. Tu petición original sale primero; las entradas directas quedan marcadas claramente como Yo."
@@ -677,7 +677,7 @@ export const YIYAN_LOCALES = {
       "headA": "Los límites, dichos claro",
       "headB": "Solo lo que el aprendizaje necesita",
       "h2": "Solo los mensajes nuevos que envías mientras está en marcha.",
-      "note": "YiYan no se instala dentro de Pi, Claude Code, Codex ni OpenCode, y nunca cambia sus ajustes.",
+      "note": "YiYan no se instala dentro de Pi, Claude Code, Codex, OpenCode ni Antigravity, y nunca cambia sus ajustes.",
       "items": [
         {
           "q": "¿Qué se convierte en registro?",
@@ -697,7 +697,7 @@ export const YIYAN_LOCALES = {
         },
         {
           "q": "¿Hace falta otro modelo?",
-          "a": "No. El inglés natural y las notas los genera el Pi, Claude Code, Codex u OpenCode que acabas de usar; YiYan no trae modelo ni credenciales de API propias."
+          "a": "No. El inglés natural y las notas los genera el Pi, Claude Code, Codex, OpenCode o Antigravity que acabas de usar; YiYan no trae modelo ni credenciales de API propias."
         },
         {
           "q": "¿Y su relación con lo demás?",
@@ -713,7 +713,7 @@ export const YIYAN_LOCALES = {
       "h3": "Dos líneas y listo",
       "label": "Homebrew",
       "install": "<span class=\"p\">$</span> brew tap cxa/yiyan https://github.com/cxa/yiyan\n<span class=\"p\">$</span> brew install --cask cxa/yiyan/yiyan",
-      "p": "Instala YiYan y sigue usando Pi, Claude Code, Codex u OpenCode igual que antes. El próximo mensaje del que valga la pena aprender será tu primer registro."
+      "p": "Instala YiYan y sigue usando Pi, Claude Code, Codex, OpenCode o Antigravity igual que antes. El próximo mensaje del que valga la pena aprender será tu primer registro."
     },
     "footer": [
       "<a data-hover href=\"/\" lang=\"en\"><span data-underline-link class=\"underline-link\">lazyapps</span></a>",
@@ -724,10 +724,10 @@ export const YIYAN_LOCALES = {
   "fr": {
     "htmlLang": "fr",
     "title": "YiYan — Un anglais naturel, appris en chemin",
-    "description": "YiYan récupère ce que vous écrivez dans Pi, Claude Code, Codex ou OpenCode, et vous permet aussi de saisir du texte directement ou d’affiner le champ actif. Il renvoie un anglais naturel et des notes ciblées, puis synchronise votre apprentissage du Mac vers l’iPhone via iCloud.",
+    "description": "YiYan récupère ce que vous écrivez dans Pi, Claude Code, Codex, OpenCode ou Antigravity, et vous permet aussi de saisir du texte directement ou d’affiner le champ actif. Il renvoie un anglais naturel et des notes ciblées, puis synchronise votre apprentissage du Mac vers l’iPhone via iCloud.",
     "canonical": "https://lazyapps.com/yiyan/fr/",
     "ogTitle": "YiYan — Un anglais naturel, appris en chemin",
-    "ogDesc": "YiYan récupère ce que vous écrivez dans Pi, Claude Code, Codex ou OpenCode, permet la saisie directe ou l’amélioration du champ actif et renvoie un anglais naturel avec des notes ciblées.",
+    "ogDesc": "YiYan récupère ce que vous écrivez dans Pi, Claude Code, Codex, OpenCode ou Antigravity, permet la saisie directe ou l’amélioration du champ actif et renvoie un anglais naturel avec des notes ciblées.",
     "ogUrl": "https://lazyapps.com/yiyan/fr/",
     "navAria": "Navigation principale",
     "homeAria": "Accueil",
@@ -738,7 +738,7 @@ export const YIYAN_LOCALES = {
     "selectAria": "Changer de langue",
     "selectedUrl": "/yiyan/fr/",
     "h1": "Un anglais naturel, appris en chemin",
-    "sub": "Continuez dans Pi, Claude Code, Codex ou OpenCode, écrivez directement dans YiYan ou affinez le champ actif avec un raccourci ou la barre des menus. YiYan réutilise un assistant disponible et connecté sur votre Mac pour produire un anglais naturel et des notes ciblées ; votre historique rejoint l’iPhone via iCloud.",
+    "sub": "Continuez dans Pi, Claude Code, Codex, OpenCode ou Antigravity, écrivez directement dans YiYan ou affinez le champ actif avec un raccourci ou la barre des menus. YiYan réutilise un assistant disponible et connecté sur votre Mac pour produire un anglais naturel et des notes ciblées ; votre historique rejoint l’iPhone via iCloud.",
     "cta": [
       "Télécharger pour Mac",
       "Bêta publique iPhone",
@@ -754,7 +754,7 @@ export const YIYAN_LOCALES = {
     "shotAltDetail": "Une fiche YiYan : la phrase d’origine, l’anglais naturel et les notes clés",
     "cards": [
       {
-        "tag": "Pi · Claude Code · Codex · OpenCode",
+        "tag": "Pi · Claude Code · Codex · OpenCode · Antigravity",
         "tagLang": true,
         "title": "Écrivez comme d’habitude — ou directement",
         "p": "Écrivez comme toujours dans un outil compatible, ou directement dans YiYan. Votre requête d’origine part en premier ; les saisies directes sont clairement marquées « Moi »."
@@ -821,7 +821,7 @@ export const YIYAN_LOCALES = {
       "headA": "Les limites, dites clairement",
       "headB": "Rien que le nécessaire à l’apprentissage",
       "h2": "Seuls les messages que vous envoyez pendant son exécution.",
-      "note": "YiYan ne s’installe pas dans Pi, Claude Code, Codex ou OpenCode et ne modifie jamais leurs réglages.",
+      "note": "YiYan ne s’installe pas dans Pi, Claude Code, Codex, OpenCode ou Antigravity et ne modifie jamais leurs réglages.",
       "items": [
         {
           "q": "Qu’est-ce qui devient une fiche ?",
@@ -841,7 +841,7 @@ export const YIYAN_LOCALES = {
         },
         {
           "q": "Faut-il un autre modèle ?",
-          "a": "Non. L’anglais naturel et les notes viennent du Pi, Claude Code, Codex ou OpenCode que vous veniez d’utiliser ; YiYan n’embarque ni modèle ni identifiants d’API."
+          "a": "Non. L’anglais naturel et les notes viennent du Pi, Claude Code, Codex, OpenCode ou Antigravity que vous veniez d’utiliser ; YiYan n’embarque ni modèle ni identifiants d’API."
         },
         {
           "q": "Quel rapport avec le reste ?",
@@ -857,7 +857,7 @@ export const YIYAN_LOCALES = {
       "h3": "Deux lignes et c’est installé",
       "label": "Homebrew",
       "install": "<span class=\"p\">$</span> brew tap cxa/yiyan https://github.com/cxa/yiyan\n<span class=\"p\">$</span> brew install --cask cxa/yiyan/yiyan",
-      "p": "Installez YiYan et continuez à utiliser Pi, Claude Code, Codex ou OpenCode exactement comme avant. Le prochain message dont il y a quelque chose à apprendre deviendra votre première fiche."
+      "p": "Installez YiYan et continuez à utiliser Pi, Claude Code, Codex, OpenCode ou Antigravity exactement comme avant. Le prochain message dont il y a quelque chose à apprendre deviendra votre première fiche."
     },
     "footer": [
       "<a data-hover href=\"/\" lang=\"en\"><span data-underline-link class=\"underline-link\">lazyapps</span></a>",
@@ -868,10 +868,10 @@ export const YIYAN_LOCALES = {
   "hi": {
     "htmlLang": "hi",
     "title": "YiYan — सहज अंग्रेज़ी, काम के साथ-साथ",
-    "description": "YiYan Pi, Claude Code, Codex या OpenCode में आपके लिखे पाठ को उठा लेता है, और आपको सीधे लिखने या सामने वाले इनपुट फ़ील्ड को निखारने भी देता है। यह सहज अंग्रेज़ी और केंद्रित नोट देता है, फिर Mac से iPhone तक आपकी सीख को iCloud से सिंक करता है।",
+    "description": "YiYan Pi, Claude Code, Codex, OpenCode या Antigravity में आपके लिखे पाठ को उठा लेता है, और आपको सीधे लिखने या सामने वाले इनपुट फ़ील्ड को निखारने भी देता है। यह सहज अंग्रेज़ी और केंद्रित नोट देता है, फिर Mac से iPhone तक आपकी सीख को iCloud से सिंक करता है।",
     "canonical": "https://lazyapps.com/yiyan/hi/",
     "ogTitle": "YiYan — सहज अंग्रेज़ी, काम के साथ-साथ",
-    "ogDesc": "YiYan Pi, Claude Code, Codex या OpenCode में आपके लिखे पाठ को उठाता है, सीधे लिखने या मौजूदा फ़ील्ड को निखारने देता है और सहज अंग्रेज़ी के साथ केंद्रित नोट देता है।",
+    "ogDesc": "YiYan Pi, Claude Code, Codex, OpenCode या Antigravity में आपके लिखे पाठ को उठाता है, सीधे लिखने या मौजूदा फ़ील्ड को निखारने देता है और सहज अंग्रेज़ी के साथ केंद्रित नोट देता है।",
     "ogUrl": "https://lazyapps.com/yiyan/hi/",
     "navAria": "मुख्य नेविगेशन",
     "homeAria": "मुख्य पृष्ठ",
@@ -882,7 +882,7 @@ export const YIYAN_LOCALES = {
     "selectAria": "भाषा बदलें",
     "selectedUrl": "/yiyan/hi/",
     "h1": "सहज अंग्रेज़ी, काम के साथ-साथ",
-    "sub": "Pi, Claude Code, Codex या OpenCode में काम करते रहें, YiYan में सीधे लिखें, या शॉर्टकट अथवा मेनू बार से मौजूदा इनपुट फ़ील्ड को निखारें। YiYan आपके Mac पर उपलब्ध, साइन-इन किए सहायक को दोबारा इस्तेमाल करके सहज अंग्रेज़ी और केंद्रित नोट देता है; आपका इतिहास iCloud से iPhone तक पहुँचता है।",
+    "sub": "Pi, Claude Code, Codex, OpenCode या Antigravity में काम करते रहें, YiYan में सीधे लिखें, या शॉर्टकट अथवा मेनू बार से मौजूदा इनपुट फ़ील्ड को निखारें। YiYan आपके Mac पर उपलब्ध, साइन-इन किए सहायक को दोबारा इस्तेमाल करके सहज अंग्रेज़ी और केंद्रित नोट देता है; आपका इतिहास iCloud से iPhone तक पहुँचता है।",
     "cta": [
       "Mac के लिए डाउनलोड",
       "iPhone सार्वजनिक बीटा",
@@ -898,7 +898,7 @@ export const YIYAN_LOCALES = {
     "shotAltDetail": "YiYan का एक रिकॉर्ड: मूल वाक्य, सहज अंग्रेज़ी और मुख्य नोट",
     "cards": [
       {
-        "tag": "Pi · Claude Code · Codex · OpenCode",
+        "tag": "Pi · Claude Code · Codex · OpenCode · Antigravity",
         "tagLang": true,
         "title": "हमेशा की तरह — या सीधे लिखें",
         "p": "समर्थित टूल में हमेशा की तरह लिखें, या सीधे YiYan में। आपका मूल अनुरोध पहले चला जाता है; सीधे लिखी प्रविष्टियाँ साफ़ तौर पर “मैं” के नाम से दिखती हैं।"
@@ -965,7 +965,7 @@ export const YIYAN_LOCALES = {
       "headA": "सीमाएँ साफ़-साफ़",
       "headB": "सीखने भर का ही रखा जाता है",
       "h2": "चलते समय आए नए संदेश ही लिए जाते हैं।",
-      "note": "YiYan न Pi, Claude Code, Codex या OpenCode के भीतर स्थापित होता है, न उनकी सेटिंग बदलता है।",
+      "note": "YiYan न Pi, Claude Code, Codex, OpenCode या Antigravity के भीतर स्थापित होता है, न उनकी सेटिंग बदलता है।",
       "items": [
         {
           "q": "रिकॉर्ड क्या बनता है?",
@@ -985,7 +985,7 @@ export const YIYAN_LOCALES = {
         },
         {
           "q": "कोई और मॉडल चाहिए?",
-          "a": "नहीं। सहज अंग्रेज़ी और नोट वही Pi, Claude Code, Codex या OpenCode बनाता है जिसे आप अभी इस्तेमाल कर रहे थे; YiYan अपना कोई मॉडल या API प्रमाण नहीं रखता।"
+          "a": "नहीं। सहज अंग्रेज़ी और नोट वही Pi, Claude Code, Codex, OpenCode या Antigravity बनाता है जिसे आप अभी इस्तेमाल कर रहे थे; YiYan अपना कोई मॉडल या API प्रमाण नहीं रखता।"
         },
         {
           "q": "बाकी ऐप्स से रिश्ता?",
@@ -1001,7 +1001,7 @@ export const YIYAN_LOCALES = {
       "h3": "दो पंक्तियों में तैयार",
       "label": "Homebrew",
       "install": "<span class=\"p\">$</span> brew tap cxa/yiyan https://github.com/cxa/yiyan\n<span class=\"p\">$</span> brew install --cask cxa/yiyan/yiyan",
-      "p": "YiYan लगाइए और Pi, Claude Code, Codex या OpenCode पहले की तरह इस्तेमाल करते रहिए। सीखने लायक अगला संदेश ही आपका पहला रिकॉर्ड बन जाएगा।"
+      "p": "YiYan लगाइए और Pi, Claude Code, Codex, OpenCode या Antigravity पहले की तरह इस्तेमाल करते रहिए। सीखने लायक अगला संदेश ही आपका पहला रिकॉर्ड बन जाएगा।"
     },
     "footer": [
       "<a data-hover href=\"/\" lang=\"en\"><span data-underline-link class=\"underline-link\">lazyapps</span></a>",
@@ -1012,10 +1012,10 @@ export const YIYAN_LOCALES = {
   "ja": {
     "htmlLang": "ja",
     "title": "YiYan — 手を止めずに、自然な英語",
-    "description": "Pi、Claude Code、Codex、OpenCode への入力を自動で拾うほか、YiYan に直接書いたり、いま開いている入力欄をその場で整えたりできます。自然な英語と要点メモを返し、Mac の学習記録は iCloud で iPhone へ同期します。",
+    "description": "Pi、Claude Code、Codex、OpenCode、Antigravity への入力を自動で拾うほか、YiYan に直接書いたり、いま開いている入力欄をその場で整えたりできます。自然な英語と要点メモを返し、Mac の学習記録は iCloud で iPhone へ同期します。",
     "canonical": "https://lazyapps.com/yiyan/ja/",
     "ogTitle": "YiYan — 手を止めずに、自然な英語",
-    "ogDesc": "Pi、Claude Code、Codex、OpenCode への入力を拾い、YiYan への直接入力や現在の入力欄の書き直しにも対応。自然な英語と要点メモを返します。",
+    "ogDesc": "Pi、Claude Code、Codex、OpenCode、Antigravity への入力を拾い、YiYan への直接入力や現在の入力欄の書き直しにも対応。自然な英語と要点メモを返します。",
     "ogUrl": "https://lazyapps.com/yiyan/ja/",
     "navAria": "メインナビゲーション",
     "homeAria": "ホーム",
@@ -1026,7 +1026,7 @@ export const YIYAN_LOCALES = {
     "selectAria": "言語を切り替える",
     "selectedUrl": "/yiyan/ja/",
     "h1": "手を止めずに、<wbr>自然な英語",
-    "sub": "Pi、Claude Code、Codex、OpenCode でいつもどおり作業する、YiYan に直接書く、またはショートカットやメニューバーから現在の入力欄を整える。YiYan は Mac で利用可能なログイン済みアシスタントをそのまま使い、自然な英語と要点メモを返します。記録は iCloud で iPhone にも届きます。",
+    "sub": "Pi、Claude Code、Codex、OpenCode、Antigravity でいつもどおり作業する、YiYan に直接書く、またはショートカットやメニューバーから現在の入力欄を整える。YiYan は Mac で利用可能なログイン済みアシスタントをそのまま使い、自然な英語と要点メモを返します。記録は iCloud で iPhone にも届きます。",
     "cta": [
       "Mac 版をダウンロード",
       "iPhone 版パブリックベータ",
@@ -1042,7 +1042,7 @@ export const YIYAN_LOCALES = {
     "shotAltDetail": "YiYan の学習記録 1 件：元の文、自然な英語、要点メモ",
     "cards": [
       {
-        "tag": "Pi · Claude Code · Codex · OpenCode",
+        "tag": "Pi · Claude Code · Codex · OpenCode · Antigravity",
         "tagLang": true,
         "title": "いつもどおり、または直接入力",
         "p": "対応ツールでいつもどおり入力するか、YiYan に直接書きます。元のリクエストは先に送信され、直接入力した記録には「自分」と明記されます。"
@@ -1109,7 +1109,7 @@ export const YIYAN_LOCALES = {
       "headA": "境界をはっきり書く",
       "headB": "学習に必要なものだけ残す",
       "h2": "扱うのは、<wbr>動作中に届いた<wbr>新しいメッセージだけ。",
-      "note": "YiYan は Pi、Claude Code、Codex、OpenCode の中に入り込むことはなく、それらの設定も変更しません。",
+      "note": "YiYan は Pi、Claude Code、Codex、OpenCode、Antigravity の中に入り込むことはなく、それらの設定も変更しません。",
       "items": [
         {
           "q": "何が学習記録になりますか？",
@@ -1129,7 +1129,7 @@ export const YIYAN_LOCALES = {
         },
         {
           "q": "別にモデルを用意しますか？",
-          "a": "不要です。自然な英語とメモは、いま使っていた Pi、Claude Code、Codex、OpenCode が生成します。YiYan 自身はモデルも API 認証情報も持ちません。"
+          "a": "不要です。自然な英語とメモは、いま使っていた Pi、Claude Code、Codex、OpenCode、Antigravity が生成します。YiYan 自身はモデルも API 認証情報も持ちません。"
         },
         {
           "q": "ほかのアプリとの関係は？",
@@ -1145,7 +1145,7 @@ export const YIYAN_LOCALES = {
       "h3": "2 行で導入",
       "label": "Homebrew",
       "install": "<span class=\"p\">$</span> brew tap cxa/yiyan https://github.com/cxa/yiyan\n<span class=\"p\">$</span> brew install --cask cxa/yiyan/yiyan",
-      "p": "YiYan を入れたら、Pi、Claude Code、Codex、OpenCode はこれまでどおりに使ってください。次に届く学ぶ価値のあるメッセージが、最初の学習記録になります。"
+      "p": "YiYan を入れたら、Pi、Claude Code、Codex、OpenCode、Antigravity はこれまでどおりに使ってください。次に届く学ぶ価値のあるメッセージが、最初の学習記録になります。"
     },
     "footer": [
       "<a data-hover href=\"/\" lang=\"en\"><span data-underline-link class=\"underline-link\">lazyapps</span></a>",
@@ -1156,10 +1156,10 @@ export const YIYAN_LOCALES = {
   "ko": {
     "htmlLang": "ko",
     "title": "YiYan — 손을 멈추지 않고, 자연스러운 영어",
-    "description": "YiYan은 Pi, Claude Code, Codex, OpenCode에 입력한 내용을 자동으로 가져오며, 직접 글을 쓰거나 지금 보고 있는 입력창을 다듬을 수도 있습니다. 자연스러운 영어와 핵심 메모를 돌려주고, Mac의 학습 기록은 iCloud로 iPhone에 동기화합니다.",
+    "description": "YiYan은 Pi, Claude Code, Codex, OpenCode, Antigravity에 입력한 내용을 자동으로 가져오며, 직접 글을 쓰거나 지금 보고 있는 입력창을 다듬을 수도 있습니다. 자연스러운 영어와 핵심 메모를 돌려주고, Mac의 학습 기록은 iCloud로 iPhone에 동기화합니다.",
     "canonical": "https://lazyapps.com/yiyan/ko/",
     "ogTitle": "YiYan — 손을 멈추지 않고, 자연스러운 영어",
-    "ogDesc": "Pi, Claude Code, Codex, OpenCode의 입력을 가져오고, 직접 입력하거나 현재 입력창을 다듬을 수 있으며, 자연스러운 영어와 핵심 메모를 제공합니다.",
+    "ogDesc": "Pi, Claude Code, Codex, OpenCode, Antigravity의 입력을 가져오고, 직접 입력하거나 현재 입력창을 다듬을 수 있으며, 자연스러운 영어와 핵심 메모를 제공합니다.",
     "ogUrl": "https://lazyapps.com/yiyan/ko/",
     "navAria": "주요 내비게이션",
     "homeAria": "홈",
@@ -1170,7 +1170,7 @@ export const YIYAN_LOCALES = {
     "selectAria": "언어 변경",
     "selectedUrl": "/yiyan/ko/",
     "h1": "손을 멈추지 않고, 자연스러운 영어",
-    "sub": "Pi, Claude Code, Codex, OpenCode에서 평소처럼 작업하거나 YiYan에 직접 쓰고, 단축키나 메뉴 막대에서 현재 입력창을 다듬을 수도 있습니다. YiYan은 Mac에서 로그인되어 사용 가능한 도우미를 그대로 활용해 자연스러운 영어와 핵심 메모를 만들며, 기록은 iCloud로 iPhone에도 이어집니다.",
+    "sub": "Pi, Claude Code, Codex, OpenCode, Antigravity에서 평소처럼 작업하거나 YiYan에 직접 쓰고, 단축키나 메뉴 막대에서 현재 입력창을 다듬을 수도 있습니다. YiYan은 Mac에서 로그인되어 사용 가능한 도우미를 그대로 활용해 자연스러운 영어와 핵심 메모를 만들며, 기록은 iCloud로 iPhone에도 이어집니다.",
     "cta": [
       "Mac 버전 다운로드",
       "iPhone 공개 베타",
@@ -1186,7 +1186,7 @@ export const YIYAN_LOCALES = {
     "shotAltDetail": "YiYan 학습 기록 하나: 원래 문장, 자연스러운 영어, 핵심 메모",
     "cards": [
       {
-        "tag": "Pi · Claude Code · Codex · OpenCode",
+        "tag": "Pi · Claude Code · Codex · OpenCode · Antigravity",
         "tagLang": true,
         "title": "평소처럼, 또는 직접 입력",
         "p": "지원하는 도구에서 평소처럼 쓰거나 YiYan에 바로 입력하세요. 원래 요청은 먼저 전송되고, 직접 입력한 기록에는 “나”라고 명확히 표시됩니다."
@@ -1253,7 +1253,7 @@ export const YIYAN_LOCALES = {
       "headA": "경계를 분명히",
       "headB": "학습에 필요한 것만 남김",
       "h2": "실행 중에 새로 보낸 메시지만 다룹니다.",
-      "note": "YiYan은 Pi, Claude Code, Codex, OpenCode 안에 설치되지 않고, 그 설정도 바꾸지 않습니다.",
+      "note": "YiYan은 Pi, Claude Code, Codex, OpenCode, Antigravity 안에 설치되지 않고, 그 설정도 바꾸지 않습니다.",
       "items": [
         {
           "q": "무엇이 학습 기록이 되나요?",
@@ -1273,7 +1273,7 @@ export const YIYAN_LOCALES = {
         },
         {
           "q": "모델을 따로 준비해야 하나요?",
-          "a": "아닙니다. 자연스러운 영어와 메모는 방금 쓰던 Pi, Claude Code, Codex, OpenCode가 만듭니다. YiYan은 자체 모델도 API 자격 증명도 갖고 있지 않습니다."
+          "a": "아닙니다. 자연스러운 영어와 메모는 방금 쓰던 Pi, Claude Code, Codex, OpenCode, Antigravity가 만듭니다. YiYan은 자체 모델도 API 자격 증명도 갖고 있지 않습니다."
         },
         {
           "q": "다른 앱과는 어떤 관계인가요?",
@@ -1289,7 +1289,7 @@ export const YIYAN_LOCALES = {
       "h3": "두 줄로 설치",
       "label": "Homebrew",
       "install": "<span class=\"p\">$</span> brew tap cxa/yiyan https://github.com/cxa/yiyan\n<span class=\"p\">$</span> brew install --cask cxa/yiyan/yiyan",
-      "p": "YiYan을 설치한 뒤에도 Pi, Claude Code, Codex, OpenCode는 평소처럼 쓰면 됩니다. 다음에 배울 만한 메시지가 첫 학습 기록이 됩니다."
+      "p": "YiYan을 설치한 뒤에도 Pi, Claude Code, Codex, OpenCode, Antigravity는 평소처럼 쓰면 됩니다. 다음에 배울 만한 메시지가 첫 학습 기록이 됩니다."
     },
     "footer": [
       "<a data-hover href=\"/\" lang=\"en\"><span data-underline-link class=\"underline-link\">lazyapps</span></a>",
@@ -1300,10 +1300,10 @@ export const YIYAN_LOCALES = {
   "pt-br": {
     "htmlLang": "pt-BR",
     "title": "YiYan — Inglês natural, aprendido no caminho",
-    "description": "O YiYan recolhe o que você escreve no Pi, Claude Code, Codex ou OpenCode, e também permite digitar diretamente ou lapidar o campo que está à sua frente. Ele devolve um inglês natural e notas objetivas, e sincroniza seu aprendizado do Mac para o iPhone pelo iCloud.",
+    "description": "O YiYan recolhe o que você escreve no Pi, Claude Code, Codex, OpenCode ou Antigravity, e também permite digitar diretamente ou lapidar o campo que está à sua frente. Ele devolve um inglês natural e notas objetivas, e sincroniza seu aprendizado do Mac para o iPhone pelo iCloud.",
     "canonical": "https://lazyapps.com/yiyan/pt-br/",
     "ogTitle": "YiYan — Inglês natural, aprendido no caminho",
-    "ogDesc": "O YiYan recolhe o que você escreve no Pi, Claude Code, Codex ou OpenCode, permite digitar diretamente ou lapidar o campo atual e devolve um inglês natural com notas objetivas.",
+    "ogDesc": "O YiYan recolhe o que você escreve no Pi, Claude Code, Codex, OpenCode ou Antigravity, permite digitar diretamente ou lapidar o campo atual e devolve um inglês natural com notas objetivas.",
     "ogUrl": "https://lazyapps.com/yiyan/pt-br/",
     "navAria": "Navegação principal",
     "homeAria": "Início",
@@ -1314,7 +1314,7 @@ export const YIYAN_LOCALES = {
     "selectAria": "Mudar de idioma",
     "selectedUrl": "/yiyan/pt-br/",
     "h1": "Inglês natural, aprendido no caminho",
-    "sub": "Continue trabalhando no Pi, Claude Code, Codex ou OpenCode, escreva diretamente no YiYan ou lapide o campo atual por um atalho ou pela barra de menus. O YiYan reutiliza um assistente disponível e conectado no Mac para devolver inglês natural e notas objetivas; seu histórico chega ao iPhone pelo iCloud.",
+    "sub": "Continue trabalhando no Pi, Claude Code, Codex, OpenCode ou Antigravity, escreva diretamente no YiYan ou lapide o campo atual por um atalho ou pela barra de menus. O YiYan reutiliza um assistente disponível e conectado no Mac para devolver inglês natural e notas objetivas; seu histórico chega ao iPhone pelo iCloud.",
     "cta": [
       "Baixar para Mac",
       "Beta pública para iPhone",
@@ -1330,7 +1330,7 @@ export const YIYAN_LOCALES = {
     "shotAltDetail": "Um registro do YiYan: a frase original, o inglês natural e as notas principais",
     "cards": [
       {
-        "tag": "Pi · Claude Code · Codex · OpenCode",
+        "tag": "Pi · Claude Code · Codex · OpenCode · Antigravity",
         "tagLang": true,
         "title": "Escreva como sempre — ou diretamente",
         "p": "Escreva como sempre em uma ferramenta compatível ou direto no YiYan. Seu pedido original sai primeiro; entradas diretas ficam claramente marcadas como Eu."
@@ -1397,7 +1397,7 @@ export const YIYAN_LOCALES = {
       "headA": "Os limites, ditos com clareza",
       "headB": "Só o que o aprendizado exige",
       "h2": "Só as mensagens novas que você envia enquanto ele roda.",
-      "note": "O YiYan não se instala dentro do Pi, do Claude Code, do Codex ou do OpenCode, e nunca altera as configurações deles.",
+      "note": "O YiYan não se instala dentro do Pi, do Claude Code, do Codex, do OpenCode ou do Antigravity, e nunca altera as configurações deles.",
       "items": [
         {
           "q": "O que vira registro?",
@@ -1417,7 +1417,7 @@ export const YIYAN_LOCALES = {
         },
         {
           "q": "Preciso de outro modelo?",
-          "a": "Não. O inglês natural e as notas vêm do Pi, do Claude Code, do Codex ou do OpenCode que você acabou de usar; o YiYan não traz modelo nem credenciais de API próprias."
+          "a": "Não. O inglês natural e as notas vêm do Pi, do Claude Code, do Codex, do OpenCode ou do Antigravity que você acabou de usar; o YiYan não traz modelo nem credenciais de API próprias."
         },
         {
           "q": "Qual a relação com o resto?",
@@ -1433,7 +1433,7 @@ export const YIYAN_LOCALES = {
       "h3": "Duas linhas e pronto",
       "label": "Homebrew",
       "install": "<span class=\"p\">$</span> brew tap cxa/yiyan https://github.com/cxa/yiyan\n<span class=\"p\">$</span> brew install --cask cxa/yiyan/yiyan",
-      "p": "Instale o YiYan e siga usando Pi, Claude Code, Codex ou OpenCode exatamente como antes. A próxima mensagem que valha aprender será seu primeiro registro."
+      "p": "Instale o YiYan e siga usando Pi, Claude Code, Codex, OpenCode ou Antigravity exatamente como antes. A próxima mensagem que valha aprender será seu primeiro registro."
     },
     "footer": [
       "<a data-hover href=\"/\" lang=\"en\"><span data-underline-link class=\"underline-link\">lazyapps</span></a>",
@@ -1444,10 +1444,10 @@ export const YIYAN_LOCALES = {
   "ru": {
     "htmlLang": "ru",
     "title": "YiYan — естественный английский, по ходу дела",
-    "description": "YiYan подхватывает то, что вы пишете в Pi, Claude Code, Codex или OpenCode, а также позволяет ввести текст напрямую или улучшить текущее поле ввода. Он возвращает естественный английский и точные заметки, а затем синхронизирует обучение с Mac на iPhone через iCloud.",
+    "description": "YiYan подхватывает то, что вы пишете в Pi, Claude Code, Codex, OpenCode или Antigravity, а также позволяет ввести текст напрямую или улучшить текущее поле ввода. Он возвращает естественный английский и точные заметки, а затем синхронизирует обучение с Mac на iPhone через iCloud.",
     "canonical": "https://lazyapps.com/yiyan/ru/",
     "ogTitle": "YiYan — естественный английский, по ходу дела",
-    "ogDesc": "YiYan подхватывает текст из Pi, Claude Code, Codex или OpenCode, позволяет вводить его напрямую или улучшать текущее поле и возвращает естественный английский с точными заметками.",
+    "ogDesc": "YiYan подхватывает текст из Pi, Claude Code, Codex, OpenCode или Antigravity, позволяет вводить его напрямую или улучшать текущее поле и возвращает естественный английский с точными заметками.",
     "ogUrl": "https://lazyapps.com/yiyan/ru/",
     "navAria": "Основная навигация",
     "homeAria": "Главная",
@@ -1458,7 +1458,7 @@ export const YIYAN_LOCALES = {
     "selectAria": "Сменить язык",
     "selectedUrl": "/yiyan/ru/",
     "h1": "Естественный английский, по ходу дела",
-    "sub": "Продолжайте работать в Pi, Claude Code, Codex или OpenCode, пишите прямо в YiYan или улучшайте текущее поле через сочетание клавиш либо строку меню. YiYan повторно использует доступного помощника, в которого вы вошли на Mac, и возвращает естественный английский с точными заметками; история доступна на iPhone через iCloud.",
+    "sub": "Продолжайте работать в Pi, Claude Code, Codex, OpenCode или Antigravity, пишите прямо в YiYan или улучшайте текущее поле через сочетание клавиш либо строку меню. YiYan повторно использует доступного помощника, в которого вы вошли на Mac, и возвращает естественный английский с точными заметками; история доступна на iPhone через iCloud.",
     "cta": [
       "Скачать для Mac",
       "Открытая бета для iPhone",
@@ -1474,7 +1474,7 @@ export const YIYAN_LOCALES = {
     "shotAltDetail": "Одна запись YiYan: исходная фраза, естественный английский и заметки",
     "cards": [
       {
-        "tag": "Pi · Claude Code · Codex · OpenCode",
+        "tag": "Pi · Claude Code · Codex · OpenCode · Antigravity",
         "tagLang": true,
         "title": "Пишите как обычно — или напрямую",
         "p": "Пишите как всегда в поддерживаемом инструменте или прямо в YiYan. Исходный запрос уходит первым, а прямые записи ясно отмечены как «Я»."
@@ -1541,7 +1541,7 @@ export const YIYAN_LOCALES = {
       "headA": "Границы, сказанные прямо",
       "headB": "Только то, что нужно для учёбы",
       "h2": "Только новые сообщения, отправленные при работающем приложении.",
-      "note": "YiYan не устанавливается внутрь Pi, Claude Code, Codex или OpenCode и никогда не меняет их настройки.",
+      "note": "YiYan не устанавливается внутрь Pi, Claude Code, Codex, OpenCode или Antigravity и никогда не меняет их настройки.",
       "items": [
         {
           "q": "Что становится записью?",
@@ -1561,7 +1561,7 @@ export const YIYAN_LOCALES = {
         },
         {
           "q": "Нужна ли отдельная модель?",
-          "a": "Нет. Естественный английский и заметки делает тот же Pi, Claude Code, Codex или OpenCode, которым вы только что пользовались; у YiYan нет своей модели и своих ключей API."
+          "a": "Нет. Естественный английский и заметки делает тот же Pi, Claude Code, Codex, OpenCode или Antigravity, которым вы только что пользовались; у YiYan нет своей модели и своих ключей API."
         },
         {
           "q": "Как это связано с остальным?",
@@ -1577,7 +1577,7 @@ export const YIYAN_LOCALES = {
       "h3": "Две строки — и готово",
       "label": "Homebrew",
       "install": "<span class=\"p\">$</span> brew tap cxa/yiyan https://github.com/cxa/yiyan\n<span class=\"p\">$</span> brew install --cask cxa/yiyan/yiyan",
-      "p": "Установите YiYan и продолжайте пользоваться Pi, Claude Code, Codex или OpenCode как раньше. Первое же сообщение, из которого есть чему учиться, станет вашей первой записью."
+      "p": "Установите YiYan и продолжайте пользоваться Pi, Claude Code, Codex, OpenCode или Antigravity как раньше. Первое же сообщение, из которого есть чему учиться, станет вашей первой записью."
     },
     "footer": [
       "<a data-hover href=\"/\" lang=\"en\"><span data-underline-link class=\"underline-link\">lazyapps</span></a>",
@@ -1588,10 +1588,10 @@ export const YIYAN_LOCALES = {
   "zh-hant": {
     "htmlLang": "zh-Hant",
     "title": "繹言 YiYan — 地道英語，邊蹬邊學",
-    "description": "自動擷取你在 Pi、Claude Code、Codex 或 OpenCode 裡的輸入，也可直接輸入或潤飾目前的輸入框；給出更自然的英語說法和重點筆記。Mac 上累積，透過 iCloud 同步到 iPhone。",
+    "description": "自動擷取你在 Pi、Claude Code、Codex、OpenCode 或 Antigravity 裡的輸入，也可直接輸入或潤飾目前的輸入框；給出更自然的英語說法和重點筆記。Mac 上累積，透過 iCloud 同步到 iPhone。",
     "canonical": "https://lazyapps.com/yiyan/zh-hant/",
     "ogTitle": "繹言 YiYan — 地道英語，邊蹬邊學",
-    "ogDesc": "自動擷取你在 Pi、Claude Code、Codex 或 OpenCode 裡的輸入，也可直接輸入或潤飾目前的輸入框；給出更自然的英語說法和重點筆記。",
+    "ogDesc": "自動擷取你在 Pi、Claude Code、Codex、OpenCode 或 Antigravity 裡的輸入，也可直接輸入或潤飾目前的輸入框；給出更自然的英語說法和重點筆記。",
     "ogUrl": "https://lazyapps.com/yiyan/zh-hant/",
     "navAria": "主導覽",
     "homeAria": "首頁",
@@ -1602,7 +1602,7 @@ export const YIYAN_LOCALES = {
     "selectAria": "切換語言",
     "selectedUrl": "/yiyan/zh-hant/",
     "h1": "<span class=\"zh\">地道英語，邊蹬邊學</span>",
-    "sub": "照常在 Pi、Claude Code、Codex 或 OpenCode 裡工作，或直接輸入一段文字；需要時還可以從選單列或快速鍵潤飾目前的輸入框。繹言會自動沿用本機可用的語言助理，給出更自然的英語說法和重點筆記；記錄可透過 iCloud 同步到 iPhone。",
+    "sub": "照常在 Pi、Claude Code、Codex、OpenCode 或 Antigravity 裡工作，或直接輸入一段文字；需要時還可以從選單列或快速鍵潤飾目前的輸入框。繹言會自動沿用本機可用的語言助理，給出更自然的英語說法和重點筆記；記錄可透過 iCloud 同步到 iPhone。",
     "cta": [
       "下載 Mac 版",
       "iPhone 公開測試版",
@@ -1618,7 +1618,7 @@ export const YIYAN_LOCALES = {
     "shotAltDetail": "一條繹言學習記錄：原話、自然英語與重點筆記",
     "cards": [
       {
-        "tag": "Pi · Claude Code · Codex · OpenCode",
+        "tag": "Pi · Claude Code · Codex · OpenCode · Antigravity",
         "tagLang": true,
         "title": "<span class=\"zh\">照常輸入，也可直接寫</span>",
         "p": "中文、英文、夾著說都行。在支援的工具裡照常輸入，或在繹言主介面直接寫；原請求會先正常送出，主動輸入則清楚標記為「我」。"
@@ -1685,7 +1685,7 @@ export const YIYAN_LOCALES = {
       "headA": "邊界說清楚",
       "headB": "只留下學習所需的內容",
       "h2": "<span class=\"zh\">只處理執行期間新增的使用者訊息。</span>",
-      "note": "繹言不會安裝進 Pi、Claude Code、Codex 或 OpenCode，也不會更改它們的設定。",
+      "note": "繹言不會安裝進 Pi、Claude Code、Codex、OpenCode 或 Antigravity，也不會更改它們的設定。",
       "items": [
         {
           "q": "什麼會成為學習記錄？",
@@ -1705,7 +1705,7 @@ export const YIYAN_LOCALES = {
         },
         {
           "q": "需要再設定一套模型嗎？",
-          "a": "不需要。自然英語和學習筆記由你剛才使用的 Pi、Claude Code、Codex 或 OpenCode 產生；繹言不帶自己的模型或 API 憑證。"
+          "a": "不需要。自然英語和學習筆記由你剛才使用的 Pi、Claude Code、Codex、OpenCode 或 Antigravity 產生；繹言不帶自己的模型或 API 憑證。"
         },
         {
           "q": "和其他應用什麼關係？",
@@ -1721,7 +1721,7 @@ export const YIYAN_LOCALES = {
       "h3": "<span class=\"zh\">兩行裝好</span>",
       "label": "Homebrew",
       "install": "<span class=\"p\">$</span> brew tap cxa/yiyan https://github.com/cxa/yiyan\n<span class=\"p\">$</span> brew install --cask cxa/yiyan/yiyan",
-      "p": "裝好繹言，繼續像平時一樣使用 Pi、Claude Code、Codex 或 OpenCode。下一條有學習價值的新訊息，會自動成為你的第一條學習記錄。"
+      "p": "裝好繹言，繼續像平時一樣使用 Pi、Claude Code、Codex、OpenCode 或 Antigravity。下一條有學習價值的新訊息，會自動成為你的第一條學習記錄。"
     },
     "footer": [
       "<a data-hover href=\"/\" lang=\"en\"><span data-underline-link class=\"underline-link\">lazyapps</span></a>",
