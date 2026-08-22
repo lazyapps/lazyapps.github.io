@@ -1,5 +1,6 @@
 ---
 const SITE = 'https://lazyapps.com';
+import SocialMeta from '../../components/SocialMeta.astro';
 import siteCssUrl from '$assets/s/site.css?url';
 import gsapUrl from '$assets/vendor/gsap.min.js?url';
 import scrollTriggerUrl from '$assets/vendor/ScrollTrigger.min.js?url';
@@ -10,6 +11,7 @@ import siteJsUrl from '$assets/s/site.js?url';
 import iconLargeUrl from '$assets/img/xvdl-icon-large.png?url';
 import iconUrl from '$assets/img/xvdl-icon.png?url';
 import inUseUrl from '$assets/img/xvdl-in-use.png?url';
+import xvdlOpengraphUrl from '$assets/img/xvdl-opengraph.png?url';
 ---
 <!doctype html>
 <html lang="en" class="no-js">
@@ -20,12 +22,16 @@ import inUseUrl from '$assets/img/xvdl-in-use.png?url';
 <meta name="description" content="XVDL adds one download button to X/Twitter videos and saves available MP4 files directly to your Downloads folder. No URL copying, paste-in service, or media upload.">
 <meta name="theme-color" content="#171717" data-page-color="#e8e8e6">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#171717" data-page-color="#e8e8e6">
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="lazyapps">
-<meta property="og:title" content="XVDL — Safari video downloader for X/Twitter">
-<meta property="og:description" content="Save the video. Stay in Safari. The file goes to your Mac, not through us.">
-<meta property="og:url" content="https://lazyapps.com/xvdl/">
-<meta property="og:image" content={`${SITE}${inUseUrl}`}>
+<SocialMeta
+  title="XVDL — Safari video downloader for X/Twitter"
+  description="Save the video. Stay in Safari. The file goes to your Mac, not through us."
+  url={`${SITE}/xvdl/`}
+  image={`${SITE}${xvdlOpengraphUrl}`}
+  imageAlt="XVDL — Save the video. Stay in Safari."
+  imageWidth={1200}
+  imageHeight={630}
+  locale="en_US"
+/>
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2064%2064%22%3E%3Crect%20width%3D%2264%22%20height%3D%2264%22%20rx%3D%2215%22%20fill%3D%22%23171717%22%2F%3E%3Cpath%20fill%3D%22%23f8f8f6%22%20d%3D%22M20%2013h12v33h17v10H20z%22%2F%3E%3Ccircle%20cx%3D%2245%22%20cy%3D%2219%22%20r%3D%225%22%20fill%3D%22%23ff6846%22%2F%3E%3C%2Fsvg%3E">
 <link rel="stylesheet" href={siteCssUrl}>
 

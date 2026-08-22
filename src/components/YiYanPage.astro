@@ -7,6 +7,7 @@ interface Props {
 const { t, isRoot, code = '' } = Astro.props;
 
 const SITE = 'https://lazyapps.com';
+import SocialMeta from './SocialMeta.astro';
 import siteCssUrl from '$assets/s/site.css?url';
 import gsapUrl from '$assets/vendor/gsap.min.js?url';
 import scrollTriggerUrl from '$assets/vendor/ScrollTrigger.min.js?url';
@@ -15,6 +16,18 @@ import splitTextUrl from '$assets/vendor/SplitText.min.js?url';
 import logoRevealUrl from '$assets/s/logo-reveal-loader.js?url';
 import siteJsUrl from '$assets/s/site.js?url';
 import yiyanIconUrl from '$assets/img/yiyan-icon.png?url';
+import yiyanOpengraphUrl from '$assets/img/yiyan-opengraph.png?url';
+import yiyanOpengraphArUrl from '$assets/img/yiyan-opengraph-ar.png?url';
+import yiyanOpengraphDeUrl from '$assets/img/yiyan-opengraph-de.png?url';
+import yiyanOpengraphEnUrl from '$assets/img/yiyan-opengraph-en.png?url';
+import yiyanOpengraphEsUrl from '$assets/img/yiyan-opengraph-es.png?url';
+import yiyanOpengraphFrUrl from '$assets/img/yiyan-opengraph-fr.png?url';
+import yiyanOpengraphHiUrl from '$assets/img/yiyan-opengraph-hi.png?url';
+import yiyanOpengraphJaUrl from '$assets/img/yiyan-opengraph-ja.png?url';
+import yiyanOpengraphKoUrl from '$assets/img/yiyan-opengraph-ko.png?url';
+import yiyanOpengraphPtBrUrl from '$assets/img/yiyan-opengraph-pt-br.png?url';
+import yiyanOpengraphRuUrl from '$assets/img/yiyan-opengraph-ru.png?url';
+import yiyanOpengraphZhHantUrl from '$assets/img/yiyan-opengraph-zh-hant.png?url';
 import showcaseUrl from '$assets/img/yiyan-showcase.png?url';
 import showcaseDetailUrl from '$assets/img/yiyan-showcase-detail.png?url';
 import arShowcase from '$assets/img/yiyan/ar/yiyan-showcase.png?url';
@@ -44,6 +57,36 @@ const SHOWCASE_MAP = {
   'zh-hant': zhHantShowcase,
 };
 const showCaseUrl = SHOWCASE_MAP[code] ?? showcaseUrl;
+const OPENGRAPH_MAP = {
+  '': yiyanOpengraphUrl,
+  ar: yiyanOpengraphArUrl,
+  de: yiyanOpengraphDeUrl,
+  en: yiyanOpengraphEnUrl,
+  es: yiyanOpengraphEsUrl,
+  fr: yiyanOpengraphFrUrl,
+  hi: yiyanOpengraphHiUrl,
+  ja: yiyanOpengraphJaUrl,
+  ko: yiyanOpengraphKoUrl,
+  'pt-br': yiyanOpengraphPtBrUrl,
+  ru: yiyanOpengraphRuUrl,
+  'zh-hant': yiyanOpengraphZhHantUrl,
+};
+const opengraphUrl = OPENGRAPH_MAP[code] ?? yiyanOpengraphEnUrl;
+const OG_LOCALE_MAP = {
+  '': 'zh_CN',
+  ar: 'ar_AR',
+  de: 'de_DE',
+  en: 'en_US',
+  es: 'es_ES',
+  fr: 'fr_FR',
+  hi: 'hi_IN',
+  ja: 'ja_JP',
+  ko: 'ko_KR',
+  'pt-br': 'pt_BR',
+  ru: 'ru_RU',
+  'zh-hant': 'zh_TW',
+};
+const ogLocale = OG_LOCALE_MAP[code] ?? 'en_US';
 const heroVideoCode = code || 'zh-hans';
 const heroVideoUrl = `/v/yiyan/hero-${heroVideoCode}-v1.mp4`;
 const ALTS = [
@@ -184,14 +227,17 @@ const ctaButtons = t.cta.slice(0, 2).map((label, i) => {
 <meta name="description" content={t.description}>
 <meta name="theme-color" content="#171717" data-page-color="#e8e8e6">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#171717" data-page-color="#e8e8e6">
-<link rel="canonical" href={t.canonical}>
 {ALTS.map(([hreflang, path]) => <link rel="alternate" hreflang={hreflang} href={`${SITE}/${path}`} />)}
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="lazyapps">
-<meta property="og:title" content={t.ogTitle}>
-<meta property="og:description" content={t.ogDesc}>
-<meta property="og:url" content={t.ogUrl}>
-<meta property="og:image" content={`${SITE}${showCaseUrl}`}>
+<SocialMeta
+  title={t.ogTitle}
+  description={t.ogDesc}
+  url={t.canonical}
+  image={`${SITE}${opengraphUrl}`}
+  imageAlt={t.ogTitle}
+  imageWidth={1200}
+  imageHeight={630}
+  locale={ogLocale}
+/>
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2064%2064%22%3E%3Crect%20width%3D%2264%22%20height%3D%2264%22%20rx%3D%2215%22%20fill%3D%22%23171717%22%2F%3E%3Cpath%20fill%3D%22%23f8f8f6%22%20d%3D%22M20%2013h12v33h17v10H20z%22%2F%3E%3Ccircle%20cx%3D%2245%22%20cy%3D%2219%22%20r%3D%225%22%20fill%3D%22%23ff6846%22%2F%3E%3C%2Fsvg%3E">
 <link rel="stylesheet" href={siteCssUrl}>
 {isRoot && <script is:inline data-language-redirect set:html={REDIRECT_SCRIPT} />}
