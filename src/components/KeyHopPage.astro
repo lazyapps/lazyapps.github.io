@@ -35,6 +35,20 @@ const releaseUrl = 'https://github.com/cxa/keyhop/releases';
 const notesUrl = 'https://github.com/cxa/keyhop/blob/main/RELEASE_NOTES.md';
 const layoutLabel = t.layoutAria ?? 'Keyboard layout';
 const modifierLabel = t.modifierAria ?? 'Leader modifier';
+const localeShort = {
+  '': '简',
+  'zh-hant': '繁',
+  en: 'EN',
+  es: 'ES',
+  'pt-br': 'PT',
+  fr: 'FR',
+  de: 'DE',
+  ja: 'JA',
+  ko: 'KO',
+  ru: 'RU',
+  ar: 'AR',
+  hi: 'HI',
+}[code] ?? 'EN';
 const demoApps = [
   ['Safari', safariIconUrl],
   ['Chrome', chromeIconUrl],
@@ -157,7 +171,7 @@ const socialImageUrl = {
       --c4:oklch(0.800 0.083 300);
     }
     p,dd{text-wrap:pretty}
-    section.phero.wrap{padding-top:clamp(32px,5vw,72px);--h1-size:clamp(38px,6.2vw,96px)}
+    section.phero.wrap{padding-top:clamp(8px,1.5vw,18px);--h1-size:clamp(38px,6.2vw,96px)}
     .topbar__app img{width:auto;height:1.375rem;border-radius:0}
     .phero__h1{margin:clamp(28px,4vw,64px) auto 0;font-size:var(--h1-size);max-width:calc(13 * var(--h1-size));text-align:center;text-wrap:balance}
     .phero__h1 .hero-title-pairs{display:flex;flex-wrap:wrap;justify-content:center;column-gap:1em;line-height:1.08}
@@ -247,6 +261,7 @@ const socialImageUrl = {
         <div class="locale">
           <svg class="locale__globe" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20Z" stroke="currentColor"/><path d="M12 22c2.2 0 4-4.5 4-10S14.2 2 12 2 8 6.5 8 12s1.8 10 4 10ZM2 12h20M4 6c5.3 2.2 10.7 2.2 16 0M4 18c5.3-2.2 10.7-2.2 16 0" stroke="currentColor"/></svg>
           <span class="locale__now" aria-hidden="true">{t.localeNow}</span>
+          <span class="locale__short" aria-hidden="true">{localeShort}</span>
           <svg class="locale__chev" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m5 9 7 7 7-7" stroke="currentColor"/></svg>
           <select name="locale" data-locale-select aria-label={t.selectAria}><Fragment set:html={optionsHtml} /></select>
         </div>

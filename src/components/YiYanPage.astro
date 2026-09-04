@@ -2,6 +2,7 @@
 interface Props {
   t: any;
   isRoot: boolean;
+  code: string;
 }
 
 const { t, isRoot, code = '' } = Astro.props;
@@ -70,6 +71,20 @@ const OG_LOCALE_MAP = {
 const ogLocale = OG_LOCALE_MAP[code] ?? 'en_US';
 const heroVideoCode = code || 'zh-hans';
 const heroVideoUrl = `/v/yiyan/hero-${heroVideoCode}-v1.mp4`;
+const localeShort = {
+  '': '简',
+  'zh-hant': '繁',
+  en: 'EN',
+  es: 'ES',
+  'pt-br': 'PT',
+  fr: 'FR',
+  de: 'DE',
+  ja: 'JA',
+  ko: 'KO',
+  ru: 'RU',
+  ar: 'AR',
+  hi: 'HI',
+}[code] ?? 'EN';
 const ALTS = [
   ['zh-Hans', 'yiyan/'],
   ['en', 'yiyan/en/'],
@@ -235,7 +250,7 @@ setTimeout(()=> {
 }, 6000);
 </script>
 <style is:inline>
-section.phero.wrap{padding-top:clamp(32px,5vw,72px);--h1-size:clamp(38px,6.2vw,96px)}
+section.phero.wrap{padding-top:clamp(8px,1.5vw,18px);--h1-size:clamp(38px,6.2vw,96px)}
 .phero__h1{margin-top:clamp(28px,4vw,64px);font-size:var(--h1-size);max-width:calc(14 * var(--h1-size))}
 .phero__sub{margin-top:clamp(18px,2.2vw,32px);font-size:1.0625rem;color:var(--muted);max-width:calc(14 * var(--h1-size))}
 .phero__cta{margin-top:clamp(22px,2.6vw,38px);display:flex;gap:.75rem;flex-wrap:wrap}
@@ -373,6 +388,7 @@ html[data-trust=cjk] .phero__trust li{font:400 .75rem/1.5 var(--mono);letter-spa
 
         <Fragment set:html={ICO_GLOBE} />
         <span class="locale__now" aria-hidden="true">{t.localeNow}</span>
+        <span class="locale__short" aria-hidden="true">{localeShort}</span>
 
         <Fragment set:html={ICO_CHEV} />
         <select data-locale-select aria-label={t.selectAria}>
