@@ -1,5 +1,8 @@
 export const YIYAN_FEATURE_COPY = {
   '': {
+    title: '绎言 YiYan — 地道英语，边用边学',
+    ogTitle: '绎言 YiYan — 地道英语，边用边学',
+    h1: '<span class="zh">地道英语，边用边学</span>',
     description: '自动捕捉你在 Pi、Claude Code、Codex、OpenCode 或 Antigravity 里的输入，也可直接输入或润色当前输入框；给出更自然的英语表达和重点笔记。Mac 上积累，通过 iCloud 同步到 iPhone。',
     ogDesc: '自动捕捉你在 Pi、Claude Code、Codex、OpenCode 或 Antigravity 里的输入，也可直接输入或润色当前输入框；给出更自然的英语表达和重点笔记。',
     sub: '照常在 Pi、Claude Code、Codex、OpenCode 或 Antigravity 里工作，或直接输入一段文字；需要时还可以从菜单栏或快捷键润色当前输入框。绎言会自动复用本机可用的语言助手，给出更自然的英语表达和重点笔记；记录可通过 iCloud 同步到 iPhone。',
@@ -260,6 +263,9 @@ export const YIYAN_FEATURE_COPY = {
     ],
   },
   ru: {
+    title: 'YiYan — Естественный английский по ходу дела',
+    ogTitle: 'YiYan — Естественный английский по ходу дела',
+    h1: 'Естественный английский по ходу дела',
     description: 'YiYan подхватывает то, что вы пишете в Pi, Claude Code, Codex, OpenCode или Antigravity, а также позволяет ввести текст напрямую или улучшить текущее поле ввода. Он возвращает естественный английский и точные заметки, а затем синхронизирует обучение с Mac на iPhone через iCloud.',
     ogDesc: 'YiYan подхватывает текст из Pi, Claude Code, Codex, OpenCode или Antigravity, позволяет вводить его напрямую или улучшать текущее поле и возвращает естественный английский с точными заметками.',
     sub: 'Продолжайте работать в Pi, Claude Code, Codex, OpenCode или Antigravity, пишите прямо в YiYan или улучшайте текущее поле через сочетание клавиш либо строку меню. YiYan повторно использует доступного помощника, в которого вы вошли на Mac, и возвращает естественный английский с точными заметками; история доступна на iPhone через iCloud.',
@@ -286,6 +292,9 @@ export const YIYAN_FEATURE_COPY = {
     ],
   },
   'zh-hant': {
+    title: '繹言 YiYan — 道地英語，邊用邊學',
+    ogTitle: '繹言 YiYan — 道地英語，邊用邊學',
+    h1: '<span class="zh">道地英語，邊用邊學</span>',
     description: '自動擷取你在 Pi、Claude Code、Codex、OpenCode 或 Antigravity 裡的輸入，也可直接輸入或潤飾目前的輸入框；給出更自然的英語說法和重點筆記。Mac 上累積，透過 iCloud 同步到 iPhone。',
     ogDesc: '自動擷取你在 Pi、Claude Code、Codex、OpenCode 或 Antigravity 裡的輸入，也可直接輸入或潤飾目前的輸入框；給出更自然的英語說法和重點筆記。',
     sub: '照常在 Pi、Claude Code、Codex、OpenCode 或 Antigravity 裡工作，或直接輸入一段文字；需要時還可以從選單列或快速鍵潤飾目前的輸入框。繹言會自動沿用本機可用的語言助理，給出更自然的英語說法和重點筆記；記錄可透過 iCloud 同步到 iPhone。',

@@ -2,10 +2,10 @@
 export const YIYAN_LOCALES = {
   "": {
     "htmlLang": "zh-Hans",
-    "title": "绎言 YiYan — 地道英语，边蹬边学",
+    "title": "绎言 YiYan — 地道英语，边用边学",
     "description": "自动捕捉你在 Pi、Claude Code、Codex、OpenCode 或 Antigravity 里的输入，也可直接输入或润色当前输入框；给出更自然的英语表达和重点笔记。Mac 上积累，通过 iCloud 同步到 iPhone。",
     "canonical": "https://lazyapps.com/yiyan/",
-    "ogTitle": "绎言 YiYan — 地道英语，边蹬边学",
+    "ogTitle": "绎言 YiYan — 地道英语，边用边学",
     "ogDesc": "自动捕捉你在 Pi、Claude Code、Codex、OpenCode 或 Antigravity 里的输入，也可直接输入或润色当前输入框；给出更自然的英语表达和重点笔记。",
     "ogUrl": "https://lazyapps.com/yiyan/",
     "navAria": "主导航",
@@ -16,7 +16,7 @@ export const YIYAN_LOCALES = {
     "localeNow": "简体中文",
     "selectAria": "切换语言",
     "selectedUrl": "/yiyan/",
-    "h1": "<span class=\"zh\">地道英语，边蹬边学</span>",
+    "h1": "<span class=\"zh\">地道英语，边用边学</span>",
     "sub": "照常在 Pi、Claude Code、Codex、OpenCode 或 Antigravity 里工作，或直接输入一段文字；需要时还可以从菜单栏或快捷键润色当前输入框。绎言会自动复用本机可用的语言助手，给出更自然的英语表达和重点笔记；记录可通过 iCloud 同步到 iPhone。",
     "cta": [
       "下载 Mac 版",
@@ -1443,10 +1443,10 @@ export const YIYAN_LOCALES = {
   },
   "ru": {
     "htmlLang": "ru",
-    "title": "YiYan — естественный английский, по ходу дела",
+    "title": "YiYan — Естественный английский по ходу дела",
     "description": "YiYan подхватывает то, что вы пишете в Pi, Claude Code, Codex, OpenCode или Antigravity, а также позволяет ввести текст напрямую или улучшить текущее поле ввода. Он возвращает естественный английский и точные заметки, а затем синхронизирует обучение с Mac на iPhone через iCloud.",
     "canonical": "https://lazyapps.com/yiyan/ru/",
-    "ogTitle": "YiYan — естественный английский, по ходу дела",
+    "ogTitle": "YiYan — Естественный английский по ходу дела",
     "ogDesc": "YiYan подхватывает текст из Pi, Claude Code, Codex, OpenCode или Antigravity, позволяет вводить его напрямую или улучшать текущее поле и возвращает естественный английский с точными заметками.",
     "ogUrl": "https://lazyapps.com/yiyan/ru/",
     "navAria": "Основная навигация",
@@ -1457,7 +1457,7 @@ export const YIYAN_LOCALES = {
     "localeNow": "Русский",
     "selectAria": "Сменить язык",
     "selectedUrl": "/yiyan/ru/",
-    "h1": "Естественный английский, по ходу дела",
+    "h1": "Естественный английский по ходу дела",
     "sub": "Продолжайте работать в Pi, Claude Code, Codex, OpenCode или Antigravity, пишите прямо в YiYan или улучшайте текущее поле через сочетание клавиш либо строку меню. YiYan повторно использует доступного помощника, в которого вы вошли на Mac, и возвращает естественный английский с точными заметками; история доступна на iPhone через iCloud.",
     "cta": [
       "Скачать для Mac",
@@ -1587,10 +1587,10 @@ export const YIYAN_LOCALES = {
   },
   "zh-hant": {
     "htmlLang": "zh-Hant",
-    "title": "繹言 YiYan — 地道英語，邊蹬邊學",
+    "title": "繹言 YiYan — 道地英語，邊用邊學",
     "description": "自動擷取你在 Pi、Claude Code、Codex、OpenCode 或 Antigravity 裡的輸入，也可直接輸入或潤飾目前的輸入框；給出更自然的英語說法和重點筆記。Mac 上累積，透過 iCloud 同步到 iPhone。",
     "canonical": "https://lazyapps.com/yiyan/zh-hant/",
-    "ogTitle": "繹言 YiYan — 地道英語，邊蹬邊學",
+    "ogTitle": "繹言 YiYan — 道地英語，邊用邊學",
     "ogDesc": "自動擷取你在 Pi、Claude Code、Codex、OpenCode 或 Antigravity 裡的輸入，也可直接輸入或潤飾目前的輸入框；給出更自然的英語說法和重點筆記。",
     "ogUrl": "https://lazyapps.com/yiyan/zh-hant/",
     "navAria": "主導覽",
@@ -1601,7 +1601,7 @@ export const YIYAN_LOCALES = {
     "localeNow": "繁體中文",
     "selectAria": "切換語言",
     "selectedUrl": "/yiyan/zh-hant/",
-    "h1": "<span class=\"zh\">地道英語，邊蹬邊學</span>",
+    "h1": "<span class=\"zh\">道地英語，邊用邊學</span>",
     "sub": "照常在 Pi、Claude Code、Codex、OpenCode 或 Antigravity 裡工作，或直接輸入一段文字；需要時還可以從選單列或快速鍵潤飾目前的輸入框。繹言會自動沿用本機可用的語言助理，給出更自然的英語說法和重點筆記；記錄可透過 iCloud 同步到 iPhone。",
     "cta": [
       "下載 Mac 版",
