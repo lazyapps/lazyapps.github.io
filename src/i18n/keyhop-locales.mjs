@@ -37,7 +37,7 @@ export const KEYHOP_LOCALES = {
       },
     ],
     compare: {
-      h2: '<span class="zh">不再猜 App 排在第几个。</span>',
+      h2: '<span class="zh">不再猜 App 排在第几个</span>',
       beforeLabel: 'Command-Tab',
       before: 'App 按最近使用顺序排列；每次切换，目标位置都可能不同。',
       afterLabel: '飞键',
@@ -45,12 +45,12 @@ export const KEYHOP_LOCALES = {
       why: '飞键认的是主键行上的物理位置。记住手指的位置，就能直接到达 App。',
     },
     setup: {
-      h2: '<span class="zh">第一次打开，跟着引导就能设好。</span>',
+      h2: '<span class="zh">第一次打开，跟着引导就能设好</span>',
       first: '选一个触发键，再把至少一个 App 放到主键行。',
       second: '按提示授予辅助功能权限。完成后，飞键就会留在菜单栏。',
     },
     bounds: {
-      h2: '<span class="zh">它只负责切换 App。</span>',
+      h2: '<span class="zh">它只负责切换 App</span>',
       note: '窗口、空间和你的输入，都不在飞键的工作范围内。',
       items: [
         ['按下 App 位置后会怎样？', 'App 正在运行就切换，未运行就由 macOS 启动；已在最前方则什么也不做。'],
@@ -92,24 +92,24 @@ export const KEYHOP_LOCALES = {
     gestureAria: 'Double-tap and release Command, then press a home-row position to switch to or launch its app',
     cards: [
       {
-        title: 'Keep your apps close.',
+        title: 'Keep your apps close',
         p: 'Bind up to ten apps to fixed physical positions on the home row.',
       },
       {
-        title: 'Skip the app switcher.',
+        title: 'Skip the app switcher',
         p: 'Double-tap and release your Leader, then press a position. KeyHop switches to a running app or asks macOS to launch it.',
       },
       {
-        title: 'Set a comfortable rhythm.',
+        title: 'Set a comfortable rhythm',
         p: 'Choose a double-tap interval from 150 to 600 ms and test it in Settings.',
       },
       {
-        title: 'Lives in the menu bar.',
+        title: 'Lives in the menu bar',
         p: 'KeyHop stays out of the Dock. Bindings save immediately, and you can pause it or launch it at login.',
       },
     ],
     compare: {
-      h2: 'Stop chasing the recent-app order.',
+      h2: 'Stop chasing the recent-app order',
       beforeLabel: 'Command-Tab',
       before: 'Apps move whenever the recent-use order changes.',
       afterLabel: 'KeyHop',
@@ -117,12 +117,12 @@ export const KEYHOP_LOCALES = {
       why: 'KeyHop uses physical home-row positions. Once your fingers know the positions, your apps are always within reach.',
     },
     setup: {
-      h2: 'Set it up on first launch.',
+      h2: 'Set it up on first launch',
       first: 'Choose Command, Option, Control, or Shift, then bind at least one app to the home row.',
       second: 'Grant Accessibility access when prompted. KeyHop then stays ready in the menu bar.',
     },
     bounds: {
-      h2: 'KeyHop switches apps. That’s all.',
+      h2: 'KeyHop switches apps. That’s all',
       note: 'It does not manage windows or keep a record of what you type.',
       items: [
         ['What happens when I press an app position?', 'KeyHop switches to a running app or asks macOS to launch it. If the app is already frontmost, nothing happens.'],
@@ -133,7 +133,7 @@ export const KEYHOP_LOCALES = {
         ['Which Macs are supported?', 'Apple silicon Macs running macOS 26. KeyHop is Developer ID signed and Apple-notarized, and is distributed outside the Mac App Store.'],
       ],
     },
-    next: 'Put your favorite apps on the home row.',
+    next: 'Put your favorite apps on the home row',
     brew: {
       h3: 'Install with Homebrew',
       install: '<span class="p">$</span> brew tap cxa/keyhop https://github.com/cxa/keyhop\n<span class="p">$</span> brew install --cask cxa/keyhop/keyhop',
@@ -169,7 +169,7 @@ export const KEYHOP_LOCALES = {
       { title: '<span class="zh">只在選單列待命</span>', p: '不占 Dock；綁定會立即儲存，可隨時暫停，也可設為登入時啟動。' },
     ],
     compare: {
-      h2: '<span class="zh">不用再猜 App 排在第幾個。</span>',
+      h2: '<span class="zh">不用再猜 App 排在第幾個</span>',
       beforeLabel: 'Command-Tab',
       before: 'App 依最近使用順序排列；每次切換，目標位置都可能不同。',
       afterLabel: '飛鍵',
@@ -177,12 +177,12 @@ export const KEYHOP_LOCALES = {
       why: '飛鍵辨識的是主鍵列上的物理位置。手指記住位置，就能直接到達 App。',
     },
     setup: {
-      h2: '<span class="zh">第一次開啟，跟著引導就能設好。</span>',
+      h2: '<span class="zh">第一次開啟，跟著引導就能設好</span>',
       first: '選一個觸發鍵，再把至少一個 App 放到主鍵列。',
       second: '依提示授予輔助使用權限。完成後，飛鍵就會留在選單列。',
     },
     bounds: {
-      h2: '<span class="zh">它只負責切換 App。</span>',
+      h2: '<span class="zh">它只負責切換 App</span>',
       note: '視窗、空間和你的輸入，都不在飛鍵的工作範圍內。',
       items: [
         ['按下 App 位置後會怎樣？', 'App 正在執行就切換，未執行就由 macOS 啟動；已在最前方則不動作。'],
@@ -223,13 +223,13 @@ export const KEYHOP_LOCALES = {
     cta: ['Descargar DMG', 'Notas de la versión'],
     gestureAria: 'Pulsa Command dos veces, suelta y pulsa una posición de la fila de inicio para cambiar a la app correspondiente o abrirla',
     cards: [
-      { title: 'Tus apps, al alcance de los dedos.', p: 'Asigna hasta diez apps a posiciones físicas fijas de la fila de inicio.' },
-      { title: 'Sin abrir el selector de apps.', p: 'Pulsa dos veces y suelta la tecla líder; después, pulsa una posición. KeyHop cambia a la app si está abierta o pide a macOS que la abra.' },
-      { title: 'Ajusta el ritmo.', p: 'Elige un intervalo de doble pulsación entre 150 y 600 ms y pruébalo en Ajustes.' },
-      { title: 'Listo en la barra de menús.', p: 'KeyHop no aparece en el Dock. Las asignaciones se guardan al instante; puedes pausarlo o abrirlo al iniciar sesión.' },
+      { title: 'Tus apps, al alcance de los dedos', p: 'Asigna hasta diez apps a posiciones físicas fijas de la fila de inicio.' },
+      { title: 'Sin abrir el selector de apps', p: 'Pulsa dos veces y suelta la tecla líder; después, pulsa una posición. KeyHop cambia a la app si está abierta o pide a macOS que la abra.' },
+      { title: 'Ajusta el ritmo', p: 'Elige un intervalo de doble pulsación entre 150 y 600 ms y pruébalo en Ajustes.' },
+      { title: 'Listo en la barra de menús', p: 'KeyHop no aparece en el Dock. Las asignaciones se guardan al instante; puedes pausarlo o abrirlo al iniciar sesión.' },
     ],
     compare: {
-      h2: 'Deja de perseguir el orden de apps recientes.',
+      h2: 'Deja de perseguir el orden de apps recientes',
       beforeLabel: 'Command-Tab',
       before: 'Las apps cambian de posición cada vez que cambia el orden de uso reciente.',
       afterLabel: 'KeyHop',
@@ -237,12 +237,12 @@ export const KEYHOP_LOCALES = {
       why: 'KeyHop usa posiciones físicas de la fila de inicio. Cuando tus dedos las recuerdan, tus apps siempre están a mano.',
     },
     setup: {
-      h2: 'Configúralo al abrirlo por primera vez.',
+      h2: 'Configúralo al abrirlo por primera vez',
       first: 'Elige Command, Option, Control o Shift y asigna al menos una app a la fila de inicio.',
       second: 'Concede acceso de Accesibilidad cuando se te pida. KeyHop quedará listo en la barra de menús.',
     },
     bounds: {
-      h2: 'KeyHop cambia de app. Nada más.',
+      h2: 'KeyHop cambia de app. Nada más',
       note: 'No gestiona ventanas ni guarda un historial de lo que escribes.',
       items: [
         ['¿Qué ocurre al pulsar la posición de una app?', 'KeyHop cambia a la app si está abierta o pide a macOS que la abra. Si ya está en primer plano, no hace nada.'],
@@ -283,13 +283,13 @@ export const KEYHOP_LOCALES = {
     cta: ['Baixar DMG', 'Notas da versão'],
     gestureAria: 'Pressione Command duas vezes, solte e pressione uma posição da fileira principal para alternar ou abrir o app correspondente',
     cards: [
-      { title: 'Seus apps ao alcance dos dedos.', p: 'Vincule até dez apps a posições físicas fixas da fileira principal.' },
-      { title: 'Sem abrir o seletor de apps.', p: 'Pressione e solte duas vezes a tecla Líder; depois, pressione uma posição. O KeyHop alterna para um app aberto ou pede ao macOS para iniciá-lo.' },
-      { title: 'Ajuste o ritmo.', p: 'Escolha um intervalo de toque duplo entre 150 e 600 ms e teste nos Ajustes.' },
-      { title: 'Pronto na barra de menus.', p: 'O KeyHop não aparece no Dock. Os vínculos são salvos na hora; você pode pausá-lo ou iniciá-lo ao entrar.' },
+      { title: 'Seus apps ao alcance dos dedos', p: 'Vincule até dez apps a posições físicas fixas da fileira principal.' },
+      { title: 'Sem abrir o seletor de apps', p: 'Pressione e solte duas vezes a tecla Líder; depois, pressione uma posição. O KeyHop alterna para um app aberto ou pede ao macOS para iniciá-lo.' },
+      { title: 'Ajuste o ritmo', p: 'Escolha um intervalo de toque duplo entre 150 e 600 ms e teste nos Ajustes.' },
+      { title: 'Pronto na barra de menus', p: 'O KeyHop não aparece no Dock. Os vínculos são salvos na hora; você pode pausá-lo ou iniciá-lo ao entrar.' },
     ],
     compare: {
-      h2: 'Pare de procurar na ordem dos apps recentes.',
+      h2: 'Pare de procurar na ordem dos apps recentes',
       beforeLabel: 'Command-Tab',
       before: 'Os apps mudam de posição sempre que a ordem de uso recente muda.',
       afterLabel: 'KeyHop',
@@ -297,12 +297,12 @@ export const KEYHOP_LOCALES = {
       why: 'O KeyHop usa posições físicas da fileira principal. Quando seus dedos aprendem as posições, seus apps ficam sempre à mão.',
     },
     setup: {
-      h2: 'Configure na primeira abertura.',
+      h2: 'Configure na primeira abertura',
       first: 'Escolha Command, Option, Control ou Shift e vincule pelo menos um app à fileira principal.',
       second: 'Conceda acesso à Acessibilidade quando solicitado. O KeyHop ficará pronto na barra de menus.',
     },
     bounds: {
-      h2: 'O KeyHop alterna apps. Só isso.',
+      h2: 'O KeyHop alterna apps. Só isso',
       note: 'Ele não gerencia janelas nem guarda um histórico do que você digita.',
       items: [
         ['O que acontece ao pressionar a posição de um app?', 'O KeyHop alterna para o app se ele estiver aberto ou pede ao macOS para iniciá-lo. Se já estiver em primeiro plano, nada acontece.'],
@@ -343,13 +343,13 @@ export const KEYHOP_LOCALES = {
     cta: ['Télécharger le DMG', 'Notes de version'],
     gestureAria: 'Appuyez deux fois sur Command et relâchez, puis sur une position de la rangée de repos pour basculer vers l’app correspondante ou la lancer',
     cards: [
-      { title: 'Vos apps à portée de doigts.', p: 'Associez jusqu’à dix apps à des positions physiques fixes de la rangée de repos.' },
-      { title: 'Sans ouvrir le sélecteur d’apps.', p: 'Appuyez deux fois sur la touche Leader et relâchez-la, puis sur une position. KeyHop active l’app si elle est ouverte ou demande à macOS de la lancer.' },
-      { title: 'Réglez votre rythme.', p: 'Choisissez un intervalle de double appui entre 150 et 600 ms et testez-le dans Réglages.' },
-      { title: 'Prêt dans la barre des menus.', p: 'KeyHop reste hors du Dock. Les associations sont enregistrées immédiatement ; vous pouvez le mettre en pause ou le lancer à l’ouverture de session.' },
+      { title: 'Vos apps à portée de doigts', p: 'Associez jusqu’à dix apps à des positions physiques fixes de la rangée de repos.' },
+      { title: 'Sans ouvrir le sélecteur d’apps', p: 'Appuyez deux fois sur la touche Leader et relâchez-la, puis sur une position. KeyHop active l’app si elle est ouverte ou demande à macOS de la lancer.' },
+      { title: 'Réglez votre rythme', p: 'Choisissez un intervalle de double appui entre 150 et 600 ms et testez-le dans Réglages.' },
+      { title: 'Prêt dans la barre des menus', p: 'KeyHop reste hors du Dock. Les associations sont enregistrées immédiatement ; vous pouvez le mettre en pause ou le lancer à l’ouverture de session.' },
     ],
     compare: {
-      h2: 'Ne cherchez plus dans l’ordre des apps récentes.',
+      h2: 'Ne cherchez plus dans l’ordre des apps récentes',
       beforeLabel: 'Command-Tab',
       before: 'Les apps changent de place avec l’ordre d’utilisation récente.',
       afterLabel: 'KeyHop',
@@ -357,12 +357,12 @@ export const KEYHOP_LOCALES = {
       why: 'KeyHop utilise les positions physiques de la rangée de repos. Dès que vos doigts les connaissent, vos apps restent à portée de main.',
     },
     setup: {
-      h2: 'Configurez-le au premier lancement.',
+      h2: 'Configurez-le au premier lancement',
       first: 'Choisissez Command, Option, Control ou Shift, puis associez au moins une app à la rangée de repos.',
       second: 'Accordez l’accès aux fonctions d’accessibilité lorsque vous y êtes invité. KeyHop reste alors prêt dans la barre des menus.',
     },
     bounds: {
-      h2: 'KeyHop change d’app. Rien de plus.',
+      h2: 'KeyHop change d’app. Rien de plus',
       note: 'Il ne gère pas les fenêtres et ne conserve aucun historique de saisie.',
       items: [
         ['Que se passe-t-il quand j’appuie sur la position d’une app ?', 'KeyHop active l’app si elle est ouverte ou demande à macOS de la lancer. Si elle est déjà au premier plan, rien ne se passe.'],
@@ -403,13 +403,13 @@ export const KEYHOP_LOCALES = {
     cta: ['DMG laden', 'Versionshinweise'],
     gestureAria: 'Command zweimal drücken und loslassen, dann eine Position in der Grundreihe drücken, um zur zugehörigen App zu wechseln oder sie zu öffnen',
     cards: [
-      { title: 'Deine Apps liegen griffbereit.', p: 'Lege bis zu zehn Apps auf feste physische Positionen in der Grundreihe.' },
-      { title: 'Ohne App-Umschalter.', p: 'Drücke deine Leader-Taste zweimal und lasse sie los. Drücke dann eine Position. KeyHop wechselt zu einer laufenden App oder lässt sie von macOS öffnen.' },
-      { title: 'Stelle dein Tempo ein.', p: 'Wähle ein Doppeltipp-Intervall von 150 bis 600 ms und teste es in den Einstellungen.' },
-      { title: 'Bereit in der Menüleiste.', p: 'KeyHop bleibt aus dem Dock. Belegungen werden sofort gespeichert; du kannst KeyHop pausieren oder bei der Anmeldung starten.' },
+      { title: 'Deine Apps liegen griffbereit', p: 'Lege bis zu zehn Apps auf feste physische Positionen in der Grundreihe.' },
+      { title: 'Ohne App-Umschalter', p: 'Drücke deine Leader-Taste zweimal und lasse sie los. Drücke dann eine Position. KeyHop wechselt zu einer laufenden App oder lässt sie von macOS öffnen.' },
+      { title: 'Stelle dein Tempo ein', p: 'Wähle ein Doppeltipp-Intervall von 150 bis 600 ms und teste es in den Einstellungen.' },
+      { title: 'Bereit in der Menüleiste', p: 'KeyHop bleibt aus dem Dock. Belegungen werden sofort gespeichert; du kannst KeyHop pausieren oder bei der Anmeldung starten.' },
     ],
     compare: {
-      h2: 'Suche nicht länger in der Reihenfolge der letzten Apps.',
+      h2: 'Suche nicht länger in der Reihenfolge der letzten Apps',
       beforeLabel: 'Command-Tab',
       before: 'Apps wechseln ihren Platz, sobald sich die Reihenfolge der letzten Nutzung ändert.',
       afterLabel: 'KeyHop',
@@ -417,12 +417,12 @@ export const KEYHOP_LOCALES = {
       why: 'KeyHop verwendet physische Positionen in der Grundreihe. Sobald deine Finger sie kennen, sind deine Apps immer griffbereit.',
     },
     setup: {
-      h2: 'Beim ersten Start einrichten.',
+      h2: 'Beim ersten Start einrichten',
       first: 'Wähle Command, Option, Control oder Shift und lege mindestens eine App auf die Grundreihe.',
       second: 'Erlaube den Zugriff auf Bedienungshilfen, wenn du dazu aufgefordert wirst. Danach wartet KeyHop in der Menüleiste.',
     },
     bounds: {
-      h2: 'KeyHop wechselt Apps. Mehr nicht.',
+      h2: 'KeyHop wechselt Apps. Mehr nicht',
       note: 'Es verwaltet keine Fenster und speichert nicht, was du eingibst.',
       items: [
         ['Was passiert beim Drücken einer App-Position?', 'KeyHop wechselt zur App, wenn sie läuft, oder lässt sie von macOS öffnen. Ist sie bereits im Vordergrund, passiert nichts.'],
@@ -463,13 +463,13 @@ export const KEYHOP_LOCALES = {
     cta: ['DMGをダウンロード', 'リリースノート'],
     gestureAria: 'Commandを2回押して離し、ホームポジションの1か所を押して対応するアプリに切り替えるか起動する',
     cards: [
-      { title: 'よく使うアプリを指先に。', p: 'ホームポジション上の最大10か所に、アプリを1つずつ固定できます。' },
-      { title: 'アプリスイッチャーは不要。', p: 'リーダーキーを2回押して離し、位置を1つ押します。起動中なら切り替え、未起動ならmacOSが開きます。' },
-      { title: '押すテンポを調整。', p: '2回押しの間隔を150〜600ミリ秒から選び、設定画面ですぐに試せます。' },
-      { title: 'メニューバーで待機。', p: 'Dockには表示されません。割り当てはすぐに保存され、一時停止やログイン時の起動も選べます。' },
+      { title: 'よく使うアプリを指先に', p: 'ホームポジション上の最大10か所に、アプリを1つずつ固定できます。' },
+      { title: 'アプリスイッチャーは不要', p: 'リーダーキーを2回押して離し、位置を1つ押します。起動中なら切り替え、未起動ならmacOSが開きます。' },
+      { title: '押すテンポを調整', p: '2回押しの間隔を150〜600ミリ秒から選び、設定画面ですぐに試せます。' },
+      { title: 'メニューバーで待機', p: 'Dockには表示されません。割り当てはすぐに保存され、一時停止やログイン時の起動も選べます。' },
     ],
     compare: {
-      h2: '最近使った順を追いかけない。',
+      h2: '最近使った順を追いかけない',
       beforeLabel: 'Command-Tab',
       before: '最近使った順が変わるたびに、アプリの位置も変わります。',
       afterLabel: 'KeyHop',
@@ -477,12 +477,12 @@ export const KEYHOP_LOCALES = {
       why: 'KeyHopが使うのはホームポジション上の物理位置です。指が位置を覚えれば、アプリへすぐに移れます。',
     },
     setup: {
-      h2: '初回起動で設定できます。',
+      h2: '初回起動で設定できます',
       first: 'Command、Option、Control、Shiftからリーダーキーを選び、ホームポジションにアプリを1つ以上割り当てます。',
       second: '案内に従ってアクセシビリティを許可します。設定後はメニューバーで待機します。',
     },
     bounds: {
-      h2: 'KeyHopがするのはアプリの切り替えだけ。',
+      h2: 'KeyHopがするのはアプリの切り替えだけ',
       note: 'ウインドウを管理せず、入力履歴も保存しません。',
       items: [
         ['アプリの位置を押すとどうなりますか？', 'アプリが起動中なら切り替え、未起動ならmacOSが開きます。すでに最前面なら何もしません。'],
@@ -523,13 +523,13 @@ export const KEYHOP_LOCALES = {
     cta: ['DMG 다운로드', '릴리스 노트'],
     gestureAria: 'Command를 두 번 누르고 뗀 다음 홈 행의 위치를 눌러 해당 앱으로 전환하거나 실행하기',
     cards: [
-      { title: '자주 쓰는 앱을 손끝에.', p: '홈 행의 고정된 실제 위치 최대 10곳에 앱을 할당하세요.' },
-      { title: '앱 전환기 없이.', p: '리더 키를 두 번 누르고 뗀 다음 위치를 누르세요. 실행 중인 앱으로 전환하거나 macOS에 실행을 요청합니다.' },
-      { title: '누르는 간격을 조절하세요.', p: '두 번 누르기 간격을 150~600ms에서 선택하고 설정에서 바로 테스트할 수 있습니다.' },
-      { title: '메뉴 막대에서 대기합니다.', p: 'Dock에는 표시되지 않습니다. 앱 할당은 즉시 저장되며 일시 정지하거나 로그인 시 실행할 수 있습니다.' },
+      { title: '자주 쓰는 앱을 손끝에', p: '홈 행의 고정된 실제 위치 최대 10곳에 앱을 할당하세요.' },
+      { title: '앱 전환기 없이', p: '리더 키를 두 번 누르고 뗀 다음 위치를 누르세요. 실행 중인 앱으로 전환하거나 macOS에 실행을 요청합니다.' },
+      { title: '누르는 간격을 조절하세요', p: '두 번 누르기 간격을 150~600ms에서 선택하고 설정에서 바로 테스트할 수 있습니다.' },
+      { title: '메뉴 막대에서 대기합니다', p: 'Dock에는 표시되지 않습니다. 앱 할당은 즉시 저장되며 일시 정지하거나 로그인 시 실행할 수 있습니다.' },
     ],
     compare: {
-      h2: '최근 앱 순서를 더는 쫓지 마세요.',
+      h2: '최근 앱 순서를 더는 쫓지 마세요',
       beforeLabel: 'Command-Tab',
       before: '최근 사용 순서가 바뀔 때마다 앱 위치도 달라집니다.',
       afterLabel: 'KeyHop',
@@ -537,12 +537,12 @@ export const KEYHOP_LOCALES = {
       why: 'KeyHop은 홈 행의 실제 위치를 사용합니다. 손가락이 위치를 익히면 앱이 언제나 가까이 있습니다.',
     },
     setup: {
-      h2: '처음 실행할 때 설정하세요.',
+      h2: '처음 실행할 때 설정하세요',
       first: 'Command, Option, Control, Shift 중 리더 키를 선택하고 홈 행에 앱을 하나 이상 할당하세요.',
       second: '안내에 따라 손쉬운 사용 접근 권한을 허용하세요. 설정이 끝나면 메뉴 막대에서 대기합니다.',
     },
     bounds: {
-      h2: 'KeyHop은 앱만 전환합니다.',
+      h2: 'KeyHop은 앱만 전환합니다',
       note: '윈도우를 관리하지 않고 입력 기록도 저장하지 않습니다.',
       items: [
         ['앱 위치를 누르면 어떻게 되나요?', '앱이 실행 중이면 전환하고, 아니면 macOS에 실행을 요청합니다. 이미 맨 앞에 있으면 아무 작업도 하지 않습니다.'],
@@ -583,13 +583,13 @@ export const KEYHOP_LOCALES = {
     cta: ['Скачать DMG', 'Примечания к выпуску'],
     gestureAria: 'Дважды нажать и отпустить Command, затем нажать позицию основного ряда, чтобы перейти к назначенному приложению или запустить его',
     cards: [
-      { title: 'Приложения всегда под рукой.', p: 'Закрепите до десяти приложений за фиксированными физическими позициями основного ряда.' },
-      { title: 'Без переключателя приложений.', p: 'Дважды нажмите и отпустите клавишу-лидер, затем нажмите позицию. KeyHop перейдёт к запущенному приложению или попросит macOS открыть его.' },
-      { title: 'Настройте удобный темп.', p: 'Выберите интервал двойного нажатия от 150 до 600 мс и проверьте его в настройках.' },
-      { title: 'Готов в строке меню.', p: 'KeyHop не занимает место в Dock. Назначения сохраняются сразу; работу можно приостановить или запускать KeyHop при входе.' },
+      { title: 'Приложения всегда под рукой', p: 'Закрепите до десяти приложений за фиксированными физическими позициями основного ряда.' },
+      { title: 'Без переключателя приложений', p: 'Дважды нажмите и отпустите клавишу-лидер, затем нажмите позицию. KeyHop перейдёт к запущенному приложению или попросит macOS открыть его.' },
+      { title: 'Настройте удобный темп', p: 'Выберите интервал двойного нажатия от 150 до 600 мс и проверьте его в настройках.' },
+      { title: 'Готов в строке меню', p: 'KeyHop не занимает место в Dock. Назначения сохраняются сразу; работу можно приостановить или запускать KeyHop при входе.' },
     ],
     compare: {
-      h2: 'Не ищите приложение в списке недавних.',
+      h2: 'Не ищите приложение в списке недавних',
       beforeLabel: 'Command-Tab',
       before: 'Позиции приложений меняются вместе с порядком недавнего использования.',
       afterLabel: 'KeyHop',
@@ -597,12 +597,12 @@ export const KEYHOP_LOCALES = {
       why: 'KeyHop использует физические позиции основного ряда. Когда пальцы запомнят их, приложения всегда будут под рукой.',
     },
     setup: {
-      h2: 'Настройте при первом запуске.',
+      h2: 'Настройте при первом запуске',
       first: 'Выберите Command, Option, Control или Shift и назначьте хотя бы одно приложение на основной ряд.',
       second: 'Разрешите Универсальный доступ по запросу. После этого KeyHop будет ждать в строке меню.',
     },
     bounds: {
-      h2: 'KeyHop только переключает приложения.',
+      h2: 'KeyHop только переключает приложения',
       note: 'Он не управляет окнами и не хранит историю ввода.',
       items: [
         ['Что произойдёт при нажатии позиции приложения?', 'KeyHop перейдёт к приложению, если оно запущено, или попросит macOS открыть его. Если оно уже на переднем плане, ничего не произойдёт.'],
@@ -644,13 +644,13 @@ export const KEYHOP_LOCALES = {
     cta: ['تنزيل DMG', 'ملاحظات الإصدار'],
     gestureAria: 'اضغط Command مرتين ثم اتركه واضغط موضعًا على الصف الأساسي للانتقال إلى التطبيق المقابل أو تشغيله',
     cards: [
-      { title: 'تطبيقاتك في متناول أصابعك.', p: 'اربط ما يصل إلى عشرة تطبيقات بمواضع فعلية ثابتة على الصف الأساسي.' },
-      { title: 'من دون فتح مبدّل التطبيقات.', p: 'اضغط مفتاح التفعيل مرتين ثم اتركه، واضغط موضعًا. ينتقل KeyHop إلى التطبيق إذا كان قيد التشغيل أو يطلب من macOS تشغيله.' },
-      { title: 'اضبط الإيقاع المناسب.', p: 'اختر فاصلًا للنقر المزدوج بين 150 و600 مللي ثانية واختبره في الإعدادات.' },
-      { title: 'جاهز في شريط القوائم.', p: 'لا يظهر KeyHop في Dock. تُحفظ الارتباطات فورًا، ويمكنك إيقافه مؤقتًا أو تشغيله عند تسجيل الدخول.' },
+      { title: 'تطبيقاتك في متناول أصابعك', p: 'اربط ما يصل إلى عشرة تطبيقات بمواضع فعلية ثابتة على الصف الأساسي.' },
+      { title: 'من دون فتح مبدّل التطبيقات', p: 'اضغط مفتاح التفعيل مرتين ثم اتركه، واضغط موضعًا. ينتقل KeyHop إلى التطبيق إذا كان قيد التشغيل أو يطلب من macOS تشغيله.' },
+      { title: 'اضبط الإيقاع المناسب', p: 'اختر فاصلًا للنقر المزدوج بين 150 و600 مللي ثانية واختبره في الإعدادات.' },
+      { title: 'جاهز في شريط القوائم', p: 'لا يظهر KeyHop في Dock. تُحفظ الارتباطات فورًا، ويمكنك إيقافه مؤقتًا أو تشغيله عند تسجيل الدخول.' },
     ],
     compare: {
-      h2: 'لا تبحث في ترتيب التطبيقات الأخيرة.',
+      h2: 'لا تبحث في ترتيب التطبيقات الأخيرة',
       beforeLabel: 'Command-Tab',
       before: 'تتغير مواضع التطبيقات كلما تغير ترتيب الاستخدام الأخير.',
       afterLabel: 'KeyHop',
@@ -658,12 +658,12 @@ export const KEYHOP_LOCALES = {
       why: 'يستخدم KeyHop المواضع الفعلية على الصف الأساسي. عندما تحفظها أصابعك، تبقى تطبيقاتك قريبة دائمًا.',
     },
     setup: {
-      h2: 'أكمل الإعداد عند التشغيل الأول.',
+      h2: 'أكمل الإعداد عند التشغيل الأول',
       first: 'اختر Command أو Option أو Control أو Shift، ثم اربط تطبيقًا واحدًا على الأقل بالصف الأساسي.',
       second: 'امنح إذن تسهيلات الاستخدام عند الطلب. بعدها يبقى KeyHop جاهزًا في شريط القوائم.',
     },
     bounds: {
-      h2: 'يبدّل KeyHop بين التطبيقات فقط.',
+      h2: 'يبدّل KeyHop بين التطبيقات فقط',
       note: 'لا يدير النوافذ ولا يحتفظ بسجل لما تكتبه.',
       items: [
         ['ماذا يحدث عند ضغط موضع تطبيق؟', 'ينتقل KeyHop إلى التطبيق إذا كان قيد التشغيل أو يطلب من macOS تشغيله. إذا كان في الواجهة بالفعل، فلن يحدث شيء.'],
@@ -704,13 +704,13 @@ export const KEYHOP_LOCALES = {
     cta: ['DMG डाउनलोड करें', 'रिलीज़ नोट्स'],
     gestureAria: 'Command को दो बार दबाकर छोड़ें, फिर होम रो की कोई जगह दबाकर उससे जुड़े ऐप पर जाएँ या उसे खोलें',
     cards: [
-      { title: 'ऐप आपकी उँगलियों के पास।', p: 'होम रो की अधिकतम दस तय भौतिक जगहों से ऐप जोड़ें।' },
-      { title: 'ऐप स्विचर खोलने की ज़रूरत नहीं।', p: 'लीडर कुंजी को दो बार दबाकर छोड़ें, फिर कोई जगह दबाएँ। KeyHop खुले ऐप पर जाता है या macOS से उसे खोलने को कहता है।' },
-      { title: 'अपनी रफ़्तार तय करें।', p: 'डबल-टैप अंतराल 150 से 600 ms के बीच चुनें और Settings में जाँचें।' },
-      { title: 'मेनू बार में तैयार।', p: 'KeyHop Dock में नहीं दिखता। असाइनमेंट तुरंत सेव होते हैं; आप इसे रोक सकते हैं या लॉगिन पर चला सकते हैं।' },
+      { title: 'ऐप आपकी उँगलियों के पास', p: 'होम रो की अधिकतम दस तय भौतिक जगहों से ऐप जोड़ें।' },
+      { title: 'ऐप स्विचर खोलने की ज़रूरत नहीं', p: 'लीडर कुंजी को दो बार दबाकर छोड़ें, फिर कोई जगह दबाएँ। KeyHop खुले ऐप पर जाता है या macOS से उसे खोलने को कहता है।' },
+      { title: 'अपनी रफ़्तार तय करें', p: 'डबल-टैप अंतराल 150 से 600 ms के बीच चुनें और Settings में जाँचें।' },
+      { title: 'मेनू बार में तैयार', p: 'KeyHop Dock में नहीं दिखता। असाइनमेंट तुरंत सेव होते हैं; आप इसे रोक सकते हैं या लॉगिन पर चला सकते हैं।' },
     ],
     compare: {
-      h2: 'हाल के ऐप के बदलते क्रम में ढूँढना बंद करें।',
+      h2: 'हाल के ऐप के बदलते क्रम में ढूँढना बंद करें',
       beforeLabel: 'Command-Tab',
       before: 'हाल में इस्तेमाल किए गए ऐप का क्रम बदलते ही उनकी जगह भी बदल जाती है।',
       afterLabel: 'KeyHop',
@@ -718,12 +718,12 @@ export const KEYHOP_LOCALES = {
       why: 'KeyHop होम रो की भौतिक जगहों का इस्तेमाल करता है। उँगलियाँ जगह याद कर लें तो ऐप हमेशा पास रहते हैं।',
     },
     setup: {
-      h2: 'पहली बार खोलते समय सेट अप करें।',
+      h2: 'पहली बार खोलते समय सेट अप करें',
       first: 'Command, Option, Control या Shift चुनें, फिर होम रो से कम से कम एक ऐप जोड़ें।',
       second: 'माँगे जाने पर Accessibility की अनुमति दें। इसके बाद KeyHop मेनू बार में तैयार रहता है।',
     },
     bounds: {
-      h2: 'KeyHop सिर्फ़ ऐप बदलता है।',
+      h2: 'KeyHop सिर्फ़ ऐप बदलता है',
       note: 'यह विंडो प्रबंधित नहीं करता और आपके टाइप किए हुए शब्दों का इतिहास नहीं रखता।',
       items: [
         ['ऐप की जगह दबाने पर क्या होता है?', 'ऐप खुला है तो KeyHop उस पर जाता है, नहीं तो macOS से उसे खोलने को कहता है। ऐप पहले से सामने हो तो कुछ नहीं होता।'],

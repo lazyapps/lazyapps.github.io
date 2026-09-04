@@ -60,7 +60,7 @@ export const YIYAN_LOCALES = {
     "pair": {
       "headA": "拿你真的说过的话来学",
       "headB": "意思没变，说法顺了",
-      "h2": "<span class=\"zh\">不是看不懂，是自己的话说不顺。</span>",
+      "h2": "<span class=\"zh\">不是看不懂，是自己的话说不顺</span>",
       "cellSrc": " <p class=\"mono\">你刚说的</p> <p class=\"line\">去掉装饰元素，突出重点，使用原装组件，不要自行发挥。</p> ",
       "cellOut": " <p class=\"mono\">英语里更自然的说法</p> <p class=\"line\" lang=\"en\" dir=\"ltr\">Remove the decorative elements, <b>keep the focus on the content</b>, and use the original components <b>as-is</b> instead of <b>adding your own spin</b>.</p> ",
       "whyHtml": " <p class=\"mono\">为什么这样说</p> <p class=\"line\">“keep the focus on…” 比直译 “highlight the key points” 更贴合设计反馈；“as-is” 表示按原样使用，“add your own spin” 则自然地表达了“自行发挥”。</p> <p class=\"mono\">下次可以直接用</p> <p class=\"pair__reuse\" lang=\"en\" dir=\"ltr\"><code>keep the focus on …</code><code>use … as-is</code><code>add your own spin</code></p> ",
@@ -82,7 +82,7 @@ export const YIYAN_LOCALES = {
     "iphone": {
       "headA": "iPhone 公开测试版",
       "headB": "通过 iCloud 同步",
-      "h2": "<span class=\"zh\">Mac 上积累，iPhone 上复习。</span>",
+      "h2": "<span class=\"zh\">Mac 上积累，iPhone 上复习</span>",
       "cellSrc": " <p class=\"line\">在 Mac 上完成的学习记录和收藏，会通过 iCloud 自动同步到 iPhone。离开电脑，也能按日期回看记录、听自然英语，随时复习收藏的内容。</p> <p><a data-hover href=\"https://testflight.apple.com/join/cbnauaKB\"><span data-underline-link class=\"underline-link\">通过 TestFlight 体验</span> ↗</a></p> ",
       "cellOut": " <p class=\"line\">初次使用前，请先在 Mac 版绎言的“设置”中开启 iCloud 同步，并确保 Mac 和 iPhone 登录同一个 Apple 账户。iPhone 版目前仍在公开测试，功能和体验会继续完善。</p> ",
       "whyHtml": "",
@@ -99,7 +99,7 @@ export const YIYAN_LOCALES = {
     "bounds": {
       "headA": "边界说清楚",
       "headB": "只留下学习所需的内容",
-      "h2": "<span class=\"zh\">只处理运行期间新增的用户消息。</span>",
+      "h2": "<span class=\"zh\">只处理运行期间新增的用户消息</span>",
       "note": "绎言不会安装进 Pi、Claude Code、Codex、OpenCode 或 Antigravity，也不会更改它们的设置。",
       "items": [
         {
@@ -130,7 +130,7 @@ export const YIYAN_LOCALES = {
     },
     "next": {
       "imgAlt": "",
-      "q": "<span class=\"zh\">从下一句话开始。</span>"
+      "q": "<span class=\"zh\">从下一句话开始</span>"
     },
     "brew": {
       "h3": "<span class=\"zh\">两行装好</span>",
@@ -205,7 +205,7 @@ export const YIYAN_LOCALES = {
     "pair": {
       "headA": "تعلَّم من كلامك أنت",
       "headB": "المعنى كما هو، والصياغة أسلس",
-      "h2": "الفهم سهل، والصعب أن تقولها بكلماتك.",
+      "h2": "الفهم سهل، والصعب أن تقولها بكلماتك",
       "cellSrc": " <p class=\"mono\">ما كتبته للتو</p> <p class=\"line\">احذف العناصر الزخرفية، وأبرِز الأهم، واستخدم المكوّنات الأصلية كما هي، ولا تضِف من عندك.</p> ",
       "cellOut": " <p class=\"mono\">الأطبع في الإنجليزية</p> <p class=\"line\" lang=\"en\" dir=\"ltr\">Remove the decorative elements, <b>keep the focus on the content</b>, and use the original components <b>as-is</b> instead of <b>adding your own spin</b>.</p> ",
       "whyHtml": " <p class=\"mono\">لماذا تُقال هكذا</p> <p class=\"line\">عبارة «keep the focus on…» أليق بملاحظات التصميم من الترجمة الحرفية «highlight the key points»، و«as-is» تعني الاستخدام كما هو، و«add your own spin» هي التعبير الأصيل عن الإضافة من عندك.</p> <p class=\"mono\">جاهزة للاستخدام في المرة القادمة</p> <p class=\"pair__reuse\" lang=\"en\" dir=\"ltr\"><code>keep the focus on …</code><code>use … as-is</code><code>add your own spin</code></p> ",
@@ -227,7 +227,7 @@ export const YIYAN_LOCALES = {
     "iphone": {
       "headA": "نسخة iPhone التجريبية",
       "headB": "مزامنة عبر iCloud",
-      "h2": "اجمعها على الـMac، وراجعها على الـiPhone.",
+      "h2": "اجمعها على الـMac، وراجعها على الـiPhone",
       "cellSrc": " <p class=\"line\">السجلات والمفضّلات التي تُنجزها على الـMac تصل إلى الـiPhone تلقائيًا عبر iCloud. بعيدًا عن الحاسوب يمكنك تصفّحها بالتاريخ، والاستماع إلى الإنجليزية الطبيعية، ومراجعة ما حفظته.</p> <p><a data-hover href=\"https://testflight.apple.com/join/cbnauaKB\"><span data-underline-link class=\"underline-link\">جرّبها عبر TestFlight</span> ↗</a></p> ",
       "cellOut": " <p class=\"line\">قبل الاستخدام الأول، شغّل مزامنة iCloud من إعدادات YiYan على الـMac، وتأكّد أن الـMac والـiPhone يستخدمان حساب Apple نفسه. نسخة الـiPhone لا تزال تجريبية عامة وتتحسّن باستمرار.</p> ",
       "whyHtml": "",
@@ -244,7 +244,7 @@ export const YIYAN_LOCALES = {
     "bounds": {
       "headA": "حدود مذكورة بوضوح",
       "headB": "لا يبقى إلا ما يلزم للتعلّم",
-      "h2": "لا يتعامل إلا مع الرسائل الجديدة أثناء تشغيله.",
+      "h2": "لا يتعامل إلا مع الرسائل الجديدة أثناء تشغيله",
       "note": "لا يُثبَّت YiYan داخل Pi أو Claude Code أو Codex أو OpenCode أو Antigravity، ولا يغيّر إعداداتها.",
       "items": [
         {
@@ -275,7 +275,7 @@ export const YIYAN_LOCALES = {
     },
     "next": {
       "imgAlt": "",
-      "q": "ابدأ من جملتك القادمة."
+      "q": "ابدأ من جملتك القادمة"
     },
     "brew": {
       "h3": "سطران للتثبيت",
@@ -349,7 +349,7 @@ export const YIYAN_LOCALES = {
     "pair": {
       "headA": "Lerne an dem, was du wirklich geschrieben hast",
       "headB": "Der Sinn bleibt, die Formulierung wird rund",
-      "h2": "Verstehen ist leicht. Es selbst sagen ist das Schwere.",
+      "h2": "Verstehen ist leicht. Es selbst sagen ist das Schwere",
       "cellSrc": " <p class=\"mono\">Was du eben geschrieben hast</p> <p class=\"line\">Entferne die dekorativen Elemente, stelle das Wesentliche heraus, verwende die Original-Komponenten und improvisiere nicht.</p> ",
       "cellOut": " <p class=\"mono\">Natürlicher auf Englisch</p> <p class=\"line\" lang=\"en\" dir=\"ltr\">Remove the decorative elements, <b>keep the focus on the content</b>, and use the original components <b>as-is</b> instead of <b>adding your own spin</b>.</p> ",
       "whyHtml": " <p class=\"mono\">Warum man es so sagt</p> <p class=\"line\">„keep the focus on…“ trifft Design-Feedback besser als das wörtliche „highlight the key points“; „as-is“ heißt unverändert übernehmen, und „add your own spin“ ist die native Wendung für improvisieren.</p> <p class=\"mono\">Nächstes Mal direkt nutzen</p> <p class=\"pair__reuse\" lang=\"en\" dir=\"ltr\"><code>keep the focus on …</code><code>use … as-is</code><code>add your own spin</code></p> ",
@@ -371,7 +371,7 @@ export const YIYAN_LOCALES = {
     "iphone": {
       "headA": "iPhone-Beta",
       "headB": "Über iCloud synchronisiert",
-      "h2": "Auf dem Mac sammeln, auf dem iPhone wiederholen.",
+      "h2": "Auf dem Mac sammeln, auf dem iPhone wiederholen",
       "cellSrc": " <p class=\"line\">Auf dem Mac fertiggestellte Einträge und Favoriten landen automatisch per iCloud auf dem iPhone. Auch ohne Rechner kannst du nach Datum blättern, das natürliche Englisch hören und Gespeichertes wiederholen.</p> <p><a data-hover href=\"https://testflight.apple.com/join/cbnauaKB\"><span data-underline-link class=\"underline-link\">Über TestFlight ausprobieren</span> ↗</a></p> ",
       "cellOut": " <p class=\"line\">Aktiviere vor dem ersten Start die iCloud-Synchronisierung in den Einstellungen von YiYan für Mac und achte darauf, dass Mac und iPhone im selben Apple-Account angemeldet sind. Die iPhone-Fassung ist weiterhin eine öffentliche Beta.</p> ",
       "whyHtml": "",
@@ -388,7 +388,7 @@ export const YIYAN_LOCALES = {
     "bounds": {
       "headA": "Grenzen, klar benannt",
       "headB": "Nur das, was zum Lernen nötig ist",
-      "h2": "Nur neue Nachrichten, die du im laufenden Betrieb sendest.",
+      "h2": "Nur neue Nachrichten, die du im laufenden Betrieb sendest",
       "note": "YiYan installiert sich nicht in Pi, Claude Code, Codex, OpenCode oder Antigravity und ändert deren Einstellungen nie.",
       "items": [
         {
@@ -419,7 +419,7 @@ export const YIYAN_LOCALES = {
     },
     "next": {
       "imgAlt": "",
-      "q": "Fang mit deinem nächsten Satz an."
+      "q": "Fang mit deinem nächsten Satz an"
     },
     "brew": {
       "h3": "Zwei Zeilen, fertig",
@@ -493,7 +493,7 @@ export const YIYAN_LOCALES = {
     "pair": {
       "headA": "Learn from what you actually wrote",
       "headB": "Same meaning, smoother wording",
-      "h2": "Understanding it is easy. Saying it your way is the hard part.",
+      "h2": "Understanding it is easy. Saying it your way is the hard part",
       "cellSrc": " <p class=\"mono\">What you just wrote</p> <p class=\"line\">Delete the decoration elements, make the key points prominent, use the original components, and do not play by yourself.</p> ",
       "cellOut": " <p class=\"mono\">A more natural way to say it</p> <p class=\"line\" lang=\"en\" dir=\"ltr\">Remove the decorative elements, <b>keep the focus on the content</b>, and use the original components <b>as-is</b> instead of <b>adding your own spin</b>.</p> ",
       "whyHtml": " <p class=\"mono\">Why it reads that way</p> <p class=\"line\">“keep the focus on…” lands better in design feedback than a literal “highlight the key points”; “as-is” says use it exactly as shipped, and “add your own spin” is how a native speaker names improvising.</p> <p class=\"mono\">Reuse it next time</p> <p class=\"pair__reuse\" lang=\"en\" dir=\"ltr\"><code>keep the focus on …</code><code>use … as-is</code><code>add your own spin</code></p> ",
@@ -515,7 +515,7 @@ export const YIYAN_LOCALES = {
     "iphone": {
       "headA": "iPhone public beta",
       "headB": "Synced over iCloud",
-      "h2": "Build it up on Mac, review it on iPhone.",
+      "h2": "Build it up on Mac, review it on iPhone",
       "cellSrc": " <p class=\"line\">Entries and favourites you finish on Mac sync to iPhone automatically over iCloud. Away from the computer you can still browse by date, listen to the natural English, and review anything you saved.</p> <p><a data-hover href=\"https://testflight.apple.com/join/cbnauaKB\"><span data-underline-link class=\"underline-link\">Try it on TestFlight</span> ↗</a></p> ",
       "cellOut": " <p class=\"line\">Before your first run, turn on iCloud sync in Settings in YiYan for Mac, and make sure Mac and iPhone are signed in to the same Apple Account. The iPhone version is still a public beta and keeps improving.</p> ",
       "whyHtml": "",
@@ -532,7 +532,7 @@ export const YIYAN_LOCALES = {
     "bounds": {
       "headA": "Boundaries, stated plainly",
       "headB": "Only what learning needs",
-      "h2": "Only new messages you send while it is running.",
+      "h2": "Only new messages you send while it is running",
       "note": "YiYan does not install itself into Pi, Claude Code, Codex, OpenCode, or Antigravity, and never changes their settings.",
       "items": [
         {
@@ -563,7 +563,7 @@ export const YIYAN_LOCALES = {
     },
     "next": {
       "imgAlt": "",
-      "q": "Start with your next sentence."
+      "q": "Start with your next sentence"
     },
     "brew": {
       "h3": "Two lines to install",
@@ -637,7 +637,7 @@ export const YIYAN_LOCALES = {
     "pair": {
       "headA": "Aprende de lo que escribiste de verdad",
       "headB": "El sentido intacto, la forma más fluida",
-      "h2": "Entenderlo es fácil; decirlo a tu manera es lo difícil.",
+      "h2": "Entenderlo es fácil; decirlo a tu manera es lo difícil",
       "cellSrc": " <p class=\"mono\">Lo que acabas de escribir</p> <p class=\"line\">Quita los elementos decorativos, destaca lo importante, usa los componentes originales y no improvises.</p> ",
       "cellOut": " <p class=\"mono\">Cómo suena más natural en inglés</p> <p class=\"line\" lang=\"en\" dir=\"ltr\">Remove the decorative elements, <b>keep the focus on the content</b>, and use the original components <b>as-is</b> instead of <b>adding your own spin</b>.</p> ",
       "whyHtml": " <p class=\"mono\">Por qué se dice así</p> <p class=\"line\">«keep the focus on…» funciona mejor en una crítica de diseño que el literal «highlight the key points»; «as-is» significa usarlo tal como viene, y «add your own spin» es la forma nativa de decir improvisar.</p> <p class=\"mono\">Para usar la próxima vez</p> <p class=\"pair__reuse\" lang=\"en\" dir=\"ltr\"><code>keep the focus on …</code><code>use … as-is</code><code>add your own spin</code></p> ",
@@ -659,7 +659,7 @@ export const YIYAN_LOCALES = {
     "iphone": {
       "headA": "Beta pública para iPhone",
       "headB": "Sincronizado por iCloud",
-      "h2": "Acumúlalo en el Mac, repásalo en el iPhone.",
+      "h2": "Acumúlalo en el Mac, repásalo en el iPhone",
       "cellSrc": " <p class=\"line\">Los registros y favoritos que terminas en el Mac llegan al iPhone automáticamente por iCloud. Lejos del ordenador puedes revisarlos por fecha, escuchar el inglés natural y repasar lo que guardaste.</p> <p><a data-hover href=\"https://testflight.apple.com/join/cbnauaKB\"><span data-underline-link class=\"underline-link\">Pruébalo en TestFlight</span> ↗</a></p> ",
       "cellOut": " <p class=\"line\">Antes del primer uso, activa la sincronización con iCloud en los ajustes de YiYan para Mac y comprueba que Mac y iPhone usan la misma cuenta de Apple. La versión para iPhone sigue en beta pública y seguirá mejorando.</p> ",
       "whyHtml": "",
@@ -676,7 +676,7 @@ export const YIYAN_LOCALES = {
     "bounds": {
       "headA": "Los límites, dichos claro",
       "headB": "Solo lo que el aprendizaje necesita",
-      "h2": "Solo los mensajes nuevos que envías mientras está en marcha.",
+      "h2": "Solo los mensajes nuevos que envías mientras está en marcha",
       "note": "YiYan no se instala dentro de Pi, Claude Code, Codex, OpenCode ni Antigravity, y nunca cambia sus ajustes.",
       "items": [
         {
@@ -707,7 +707,7 @@ export const YIYAN_LOCALES = {
     },
     "next": {
       "imgAlt": "",
-      "q": "Empieza por tu próxima frase."
+      "q": "Empieza por tu próxima frase"
     },
     "brew": {
       "h3": "Dos líneas y listo",
@@ -781,7 +781,7 @@ export const YIYAN_LOCALES = {
     "pair": {
       "headA": "Apprenez de ce que vous avez vraiment écrit",
       "headB": "Le sens intact, la formulation plus fluide",
-      "h2": "Comprendre est facile ; le dire à votre façon, beaucoup moins.",
+      "h2": "Comprendre est facile ; le dire à votre façon, beaucoup moins",
       "cellSrc": " <p class=\"mono\">Ce que vous venez d’écrire</p> <p class=\"line\">Supprime les éléments décoratifs, mets l’essentiel en avant, utilise les composants d’origine et n’improvise pas.</p> ",
       "cellOut": " <p class=\"mono\">La tournure plus naturelle en anglais</p> <p class=\"line\" lang=\"en\" dir=\"ltr\">Remove the decorative elements, <b>keep the focus on the content</b>, and use the original components <b>as-is</b> instead of <b>adding your own spin</b>.</p> ",
       "whyHtml": " <p class=\"mono\">Pourquoi on le dit ainsi</p> <p class=\"line\">« keep the focus on… » sonne plus juste dans un retour de design que le littéral « highlight the key points » ; « as-is » veut dire tel quel, et « add your own spin » est la façon native de dire improviser.</p> <p class=\"mono\">À réutiliser la prochaine fois</p> <p class=\"pair__reuse\" lang=\"en\" dir=\"ltr\"><code>keep the focus on …</code><code>use … as-is</code><code>add your own spin</code></p> ",
@@ -803,7 +803,7 @@ export const YIYAN_LOCALES = {
     "iphone": {
       "headA": "Bêta publique iPhone",
       "headB": "Synchronisé via iCloud",
-      "h2": "On accumule sur le Mac, on révise sur l’iPhone.",
+      "h2": "On accumule sur le Mac, on révise sur l’iPhone",
       "cellSrc": " <p class=\"line\">Les fiches et les favoris terminés sur le Mac arrivent automatiquement sur l’iPhone via iCloud. Loin de l’ordinateur, vous pouvez les parcourir par date, écouter l’anglais naturel et revoir ce que vous avez gardé.</p> <p><a data-hover href=\"https://testflight.apple.com/join/cbnauaKB\"><span data-underline-link class=\"underline-link\">Essayer via TestFlight</span> ↗</a></p> ",
       "cellOut": " <p class=\"line\">Avant la première utilisation, activez la synchronisation iCloud dans les réglages de YiYan pour Mac et vérifiez que le Mac et l’iPhone utilisent le même compte Apple. La version iPhone reste en bêta publique et continue d’évoluer.</p> ",
       "whyHtml": "",
@@ -820,7 +820,7 @@ export const YIYAN_LOCALES = {
     "bounds": {
       "headA": "Les limites, dites clairement",
       "headB": "Rien que le nécessaire à l’apprentissage",
-      "h2": "Seuls les messages que vous envoyez pendant son exécution.",
+      "h2": "Seuls les messages que vous envoyez pendant son exécution",
       "note": "YiYan ne s’installe pas dans Pi, Claude Code, Codex, OpenCode ou Antigravity et ne modifie jamais leurs réglages.",
       "items": [
         {
@@ -851,7 +851,7 @@ export const YIYAN_LOCALES = {
     },
     "next": {
       "imgAlt": "",
-      "q": "Commencez par votre prochaine phrase."
+      "q": "Commencez par votre prochaine phrase"
     },
     "brew": {
       "h3": "Deux lignes et c’est installé",
@@ -925,7 +925,7 @@ export const YIYAN_LOCALES = {
     "pair": {
       "headA": "अपने ही लिखे से सीखिए",
       "headB": "अर्थ वही, कहन सहज",
-      "h2": "समझना आसान है; अपनी बात कहना मुश्किल।",
+      "h2": "समझना आसान है; अपनी बात कहना मुश्किल",
       "cellSrc": " <p class=\"mono\">आपने अभी जो लिखा</p> <p class=\"line\">सजावटी तत्व हटा दो, ज़रूरी बात उभारो, मूल कंपोनेंट जैसे हैं वैसे इस्तेमाल करो, अपनी तरफ़ से कुछ न जोड़ो।</p> ",
       "cellOut": " <p class=\"mono\">अंग्रेज़ी में यह ज़्यादा सहज है</p> <p class=\"line\" lang=\"en\" dir=\"ltr\">Remove the decorative elements, <b>keep the focus on the content</b>, and use the original components <b>as-is</b> instead of <b>adding your own spin</b>.</p> ",
       "whyHtml": " <p class=\"mono\">ऐसा क्यों कहा जाता है</p> <p class=\"line\">डिज़ाइन पर टिप्पणी में “keep the focus on…” शब्दानुवाद “highlight the key points” से ज़्यादा जमता है; “as-is” का अर्थ है जैसा है वैसा ही रखना, और “add your own spin” अपनी तरफ़ से जोड़ने की सहज अंग्रेज़ी है।</p> <p class=\"mono\">अगली बार सीधे काम आएगा</p> <p class=\"pair__reuse\" lang=\"en\" dir=\"ltr\"><code>keep the focus on …</code><code>use … as-is</code><code>add your own spin</code></p> ",
@@ -947,7 +947,7 @@ export const YIYAN_LOCALES = {
     "iphone": {
       "headA": "iPhone सार्वजनिक बीटा",
       "headB": "iCloud से समन्वय",
-      "h2": "Mac पर जमा कीजिए, iPhone पर दोहराइए।",
+      "h2": "Mac पर जमा कीजिए, iPhone पर दोहराइए",
       "cellSrc": " <p class=\"line\">Mac पर पूरे हुए रिकॉर्ड और पसंदीदा iCloud के ज़रिये iPhone पर अपने आप पहुँच जाते हैं। कंप्यूटर से दूर भी आप तारीख़ से देख सकते हैं, सहज अंग्रेज़ी सुन सकते हैं और सहेजी चीज़ें दोहरा सकते हैं।</p> <p><a data-hover href=\"https://testflight.apple.com/join/cbnauaKB\"><span data-underline-link class=\"underline-link\">TestFlight पर आज़माएँ</span> ↗</a></p> ",
       "cellOut": " <p class=\"line\">पहली बार से पहले Mac वाले YiYan की सेटिंग्स में iCloud समन्वय चालू करें और देख लें कि Mac और iPhone एक ही Apple खाते में हैं। iPhone वाला रूप अभी सार्वजनिक बीटा में है और सुधरता रहेगा।</p> ",
       "whyHtml": "",
@@ -964,7 +964,7 @@ export const YIYAN_LOCALES = {
     "bounds": {
       "headA": "सीमाएँ साफ़-साफ़",
       "headB": "सीखने भर का ही रखा जाता है",
-      "h2": "चलते समय आए नए संदेश ही लिए जाते हैं।",
+      "h2": "चलते समय आए नए संदेश ही लिए जाते हैं",
       "note": "YiYan न Pi, Claude Code, Codex, OpenCode या Antigravity के भीतर स्थापित होता है, न उनकी सेटिंग बदलता है।",
       "items": [
         {
@@ -995,7 +995,7 @@ export const YIYAN_LOCALES = {
     },
     "next": {
       "imgAlt": "",
-      "q": "अगले वाक्य से शुरू कीजिए।"
+      "q": "अगले वाक्य से शुरू कीजिए"
     },
     "brew": {
       "h3": "दो पंक्तियों में तैयार",
@@ -1069,7 +1069,7 @@ export const YIYAN_LOCALES = {
     "pair": {
       "headA": "自分が実際に書いた文で学ぶ",
       "headB": "意味は変えず、言い方だけ整える",
-      "h2": "読めないのではなく、<wbr>自分の言葉が出てこない。",
+      "h2": "読めないのではなく、<wbr>自分の言葉が出てこない",
       "cellSrc": " <p class=\"mono\">いま書いた文</p> <p class=\"line\">装飾的な要素は削って、要点を目立たせて、元のコンポーネントをそのまま使って、勝手にアレンジしないで。</p> ",
       "cellOut": " <p class=\"mono\">英語ならこう言うほうが自然</p> <p class=\"line\" lang=\"en\" dir=\"ltr\">Remove the decorative elements, <b>keep the focus on the content</b>, and use the original components <b>as-is</b> instead of <b>adding your own spin</b>.</p> ",
       "whyHtml": " <p class=\"mono\">なぜそう言うのか</p> <p class=\"line\">「keep the focus on…」は直訳の「highlight the key points」よりデザインのフィードバックに馴染みます。「as-is」はそのまま使うこと、「add your own spin」は「勝手にアレンジする」に当たる自然な言い方です。</p> <p class=\"mono\">次はそのまま使える</p> <p class=\"pair__reuse\" lang=\"en\" dir=\"ltr\"><code>keep the focus on …</code><code>use … as-is</code><code>add your own spin</code></p> ",
@@ -1091,7 +1091,7 @@ export const YIYAN_LOCALES = {
     "iphone": {
       "headA": "iPhone 版パブリックベータ",
       "headB": "iCloud で同期",
-      "h2": "Mac でためて、<wbr>iPhone で復習。",
+      "h2": "Mac でためて、<wbr>iPhone で復習",
       "cellSrc": " <p class=\"line\">Mac で仕上がった学習記録とお気に入りは、iCloud 経由で iPhone に自動同期されます。パソコンを離れても日付順に読み返し、自然な英語を聞き、保存した内容をいつでも復習できます。</p> <p><a data-hover href=\"https://testflight.apple.com/join/cbnauaKB\"><span data-underline-link class=\"underline-link\">TestFlight で試す</span> ↗</a></p> ",
       "cellOut": " <p class=\"line\">初回の前に、Mac 版 YiYan の「設定」で iCloud 同期をオンにし、Mac と iPhone が同じ Apple アカウントであることを確認してください。iPhone 版はパブリックベータで、今後も改善が続きます。</p> ",
       "whyHtml": "",
@@ -1108,7 +1108,7 @@ export const YIYAN_LOCALES = {
     "bounds": {
       "headA": "境界をはっきり書く",
       "headB": "学習に必要なものだけ残す",
-      "h2": "扱うのは、<wbr>動作中に届いた<wbr>新しいメッセージだけ。",
+      "h2": "扱うのは、<wbr>動作中に届いた<wbr>新しいメッセージだけ",
       "note": "YiYan は Pi、Claude Code、Codex、OpenCode、Antigravity の中に入り込むことはなく、それらの設定も変更しません。",
       "items": [
         {
@@ -1139,7 +1139,7 @@ export const YIYAN_LOCALES = {
     },
     "next": {
       "imgAlt": "",
-      "q": "次の一文から始める。"
+      "q": "次の一文から始める"
     },
     "brew": {
       "h3": "2 行で導入",
@@ -1213,7 +1213,7 @@ export const YIYAN_LOCALES = {
     "pair": {
       "headA": "내가 실제로 쓴 말로 배우기",
       "headB": "뜻은 그대로, 표현만 매끄럽게",
-      "h2": "못 읽는 게 아니라, 내 말이 안 나오는 것.",
+      "h2": "못 읽는 게 아니라, 내 말이 안 나오는 것",
       "cellSrc": " <p class=\"mono\">방금 쓴 문장</p> <p class=\"line\">장식 요소는 빼고, 요점이 드러나게 하고, 원래 컴포넌트를 그대로 쓰고, 임의로 변형하지 마세요.</p> ",
       "cellOut": " <p class=\"mono\">영어로는 이렇게가 더 자연스럽습니다</p> <p class=\"line\" lang=\"en\" dir=\"ltr\">Remove the decorative elements, <b>keep the focus on the content</b>, and use the original components <b>as-is</b> instead of <b>adding your own spin</b>.</p> ",
       "whyHtml": " <p class=\"mono\">왜 그렇게 말하는가</p> <p class=\"line\">“keep the focus on…”은 직역인 “highlight the key points”보다 디자인 피드백에 잘 맞습니다. “as-is”는 있는 그대로 쓰라는 뜻이고, “add your own spin”은 임의로 변형한다는 말의 자연스러운 표현입니다.</p> <p class=\"mono\">다음에 바로 쓰기</p> <p class=\"pair__reuse\" lang=\"en\" dir=\"ltr\"><code>keep the focus on …</code><code>use … as-is</code><code>add your own spin</code></p> ",
@@ -1235,7 +1235,7 @@ export const YIYAN_LOCALES = {
     "iphone": {
       "headA": "iPhone 공개 베타",
       "headB": "iCloud로 동기화",
-      "h2": "Mac에서 모으고, iPhone에서 복습하고.",
+      "h2": "Mac에서 모으고, iPhone에서 복습하고",
       "cellSrc": " <p class=\"line\">Mac에서 완성된 학습 기록과 즐겨찾기는 iCloud를 통해 iPhone에 자동으로 동기화됩니다. 컴퓨터를 떠나서도 날짜순으로 다시 보고, 자연스러운 영어를 듣고, 저장한 내용을 복습할 수 있습니다.</p> <p><a data-hover href=\"https://testflight.apple.com/join/cbnauaKB\"><span data-underline-link class=\"underline-link\">TestFlight로 사용해 보기</span> ↗</a></p> ",
       "cellOut": " <p class=\"line\">처음 쓰기 전에 Mac용 YiYan의 설정에서 iCloud 동기화를 켜고, Mac과 iPhone이 같은 Apple 계정으로 로그인되어 있는지 확인하세요. iPhone 버전은 아직 공개 베타이며 계속 개선됩니다.</p> ",
       "whyHtml": "",
@@ -1252,7 +1252,7 @@ export const YIYAN_LOCALES = {
     "bounds": {
       "headA": "경계를 분명히",
       "headB": "학습에 필요한 것만 남김",
-      "h2": "실행 중에 새로 보낸 메시지만 다룹니다.",
+      "h2": "실행 중에 새로 보낸 메시지만 다룹니다",
       "note": "YiYan은 Pi, Claude Code, Codex, OpenCode, Antigravity 안에 설치되지 않고, 그 설정도 바꾸지 않습니다.",
       "items": [
         {
@@ -1283,7 +1283,7 @@ export const YIYAN_LOCALES = {
     },
     "next": {
       "imgAlt": "",
-      "q": "다음 문장부터 시작하세요."
+      "q": "다음 문장부터 시작하세요"
     },
     "brew": {
       "h3": "두 줄로 설치",
@@ -1357,7 +1357,7 @@ export const YIYAN_LOCALES = {
     "pair": {
       "headA": "Aprenda com o que você escreveu de verdade",
       "headB": "O sentido intacto, a forma mais fluida",
-      "h2": "Entender é fácil; dizer do seu jeito é a parte difícil.",
+      "h2": "Entender é fácil; dizer do seu jeito é a parte difícil",
       "cellSrc": " <p class=\"mono\">O que você acabou de escrever</p> <p class=\"line\">Remova os elementos decorativos, destaque o essencial, use os componentes originais e não improvise.</p> ",
       "cellOut": " <p class=\"mono\">Como soa mais natural em inglês</p> <p class=\"line\" lang=\"en\" dir=\"ltr\">Remove the decorative elements, <b>keep the focus on the content</b>, and use the original components <b>as-is</b> instead of <b>adding your own spin</b>.</p> ",
       "whyHtml": " <p class=\"mono\">Por que se diz assim</p> <p class=\"line\">“keep the focus on…” cai melhor num comentário de design do que o literal “highlight the key points”; “as-is” quer dizer usar exatamente como vem, e “add your own spin” é como um nativo chama improvisar.</p> <p class=\"mono\">Para usar na próxima</p> <p class=\"pair__reuse\" lang=\"en\" dir=\"ltr\"><code>keep the focus on …</code><code>use … as-is</code><code>add your own spin</code></p> ",
@@ -1379,7 +1379,7 @@ export const YIYAN_LOCALES = {
     "iphone": {
       "headA": "Beta pública para iPhone",
       "headB": "Sincronizado pelo iCloud",
-      "h2": "Acumule no Mac, revise no iPhone.",
+      "h2": "Acumule no Mac, revise no iPhone",
       "cellSrc": " <p class=\"line\">Os registros e favoritos que você conclui no Mac chegam ao iPhone automaticamente pelo iCloud. Longe do computador, ainda é possível revê-los por data, ouvir o inglês natural e revisar o que você salvou.</p> <p><a data-hover href=\"https://testflight.apple.com/join/cbnauaKB\"><span data-underline-link class=\"underline-link\">Experimente pelo TestFlight</span> ↗</a></p> ",
       "cellOut": " <p class=\"line\">Antes do primeiro uso, ative a sincronização com o iCloud nos ajustes do YiYan para Mac e confirme que Mac e iPhone usam a mesma conta Apple. A versão para iPhone segue em beta pública e continuará melhorando.</p> ",
       "whyHtml": "",
@@ -1396,7 +1396,7 @@ export const YIYAN_LOCALES = {
     "bounds": {
       "headA": "Os limites, ditos com clareza",
       "headB": "Só o que o aprendizado exige",
-      "h2": "Só as mensagens novas que você envia enquanto ele roda.",
+      "h2": "Só as mensagens novas que você envia enquanto ele roda",
       "note": "O YiYan não se instala dentro do Pi, do Claude Code, do Codex, do OpenCode ou do Antigravity, e nunca altera as configurações deles.",
       "items": [
         {
@@ -1427,7 +1427,7 @@ export const YIYAN_LOCALES = {
     },
     "next": {
       "imgAlt": "",
-      "q": "Comece pela sua próxima frase."
+      "q": "Comece pela sua próxima frase"
     },
     "brew": {
       "h3": "Duas linhas e pronto",
@@ -1501,7 +1501,7 @@ export const YIYAN_LOCALES = {
     "pair": {
       "headA": "Учитесь на том, что написали сами",
       "headB": "Смысл тот же, формулировка ровнее",
-      "h2": "Понять легко. Трудно сказать это своими словами.",
+      "h2": "Понять легко. Трудно сказать это своими словами",
       "cellSrc": " <p class=\"mono\">Что вы только что написали</p> <p class=\"line\">Убери декоративные элементы, выдели главное, используй исходные компоненты и не добавляй ничего от себя.</p> ",
       "cellOut": " <p class=\"mono\">По-английски естественнее так</p> <p class=\"line\" lang=\"en\" dir=\"ltr\">Remove the decorative elements, <b>keep the focus on the content</b>, and use the original components <b>as-is</b> instead of <b>adding your own spin</b>.</p> ",
       "whyHtml": " <p class=\"mono\">Почему так говорят</p> <p class=\"line\">«keep the focus on…» звучит уместнее в отзыве о дизайне, чем буквальное «highlight the key points»; «as-is» значит взять как есть, а «add your own spin» — это и есть носительское «добавлять своё».</p> <p class=\"mono\">Пригодится в следующий раз</p> <p class=\"pair__reuse\" lang=\"en\" dir=\"ltr\"><code>keep the focus on …</code><code>use … as-is</code><code>add your own spin</code></p> ",
@@ -1523,7 +1523,7 @@ export const YIYAN_LOCALES = {
     "iphone": {
       "headA": "Открытая бета для iPhone",
       "headB": "Синхронизация через iCloud",
-      "h2": "Копить на Mac, повторять на iPhone.",
+      "h2": "Копить на Mac, повторять на iPhone",
       "cellSrc": " <p class=\"line\">Записи и избранное, законченные на Mac, попадают на iPhone автоматически через iCloud. Вдали от компьютера их можно листать по датам, слушать естественный английский и повторять сохранённое.</p> <p><a data-hover href=\"https://testflight.apple.com/join/cbnauaKB\"><span data-underline-link class=\"underline-link\">Попробовать через TestFlight</span> ↗</a></p> ",
       "cellOut": " <p class=\"line\">Перед первым запуском включите синхронизацию с iCloud в настройках YiYan для Mac и убедитесь, что Mac и iPhone используют одну учётную запись Apple. Версия для iPhone пока в открытой бете и продолжает улучшаться.</p> ",
       "whyHtml": "",
@@ -1540,7 +1540,7 @@ export const YIYAN_LOCALES = {
     "bounds": {
       "headA": "Границы, сказанные прямо",
       "headB": "Только то, что нужно для учёбы",
-      "h2": "Только новые сообщения, отправленные при работающем приложении.",
+      "h2": "Только новые сообщения, отправленные при работающем приложении",
       "note": "YiYan не устанавливается внутрь Pi, Claude Code, Codex, OpenCode или Antigravity и никогда не меняет их настройки.",
       "items": [
         {
@@ -1571,7 +1571,7 @@ export const YIYAN_LOCALES = {
     },
     "next": {
       "imgAlt": "",
-      "q": "Начните со следующей фразы."
+      "q": "Начните со следующей фразы"
     },
     "brew": {
       "h3": "Две строки — и готово",
@@ -1645,7 +1645,7 @@ export const YIYAN_LOCALES = {
     "pair": {
       "headA": "拿你真的說過的話來學",
       "headB": "意思沒變，說法順了",
-      "h2": "<span class=\"zh\">不是看不懂，是自己的話說不順。</span>",
+      "h2": "<span class=\"zh\">不是看不懂，是自己的話說不順</span>",
       "cellSrc": " <p class=\"mono\">你剛說的</p> <p class=\"line\">去掉裝飾元素，突出重點，使用原裝元件，不要自行發揮。</p> ",
       "cellOut": " <p class=\"mono\">英語裡更自然的說法</p> <p class=\"line\" lang=\"en\" dir=\"ltr\">Remove the decorative elements, <b>keep the focus on the content</b>, and use the original components <b>as-is</b> instead of <b>adding your own spin</b>.</p> ",
       "whyHtml": " <p class=\"mono\">為什麼這樣說</p> <p class=\"line\">「keep the focus on…」比直譯的「highlight the key points」更貼近設計回饋；「as-is」表示照原樣使用，「add your own spin」則自然地表達了「自行發揮」。</p> <p class=\"mono\">下次可以直接用</p> <p class=\"pair__reuse\" lang=\"en\" dir=\"ltr\"><code>keep the focus on …</code><code>use … as-is</code><code>add your own spin</code></p> ",
@@ -1667,7 +1667,7 @@ export const YIYAN_LOCALES = {
     "iphone": {
       "headA": "iPhone 公開測試版",
       "headB": "透過 iCloud 同步",
-      "h2": "<span class=\"zh\">Mac 上累積，iPhone 上複習。</span>",
+      "h2": "<span class=\"zh\">Mac 上累積，iPhone 上複習</span>",
       "cellSrc": " <p class=\"line\">在 Mac 上完成的學習記錄和收藏，會透過 iCloud 自動同步到 iPhone。離開電腦，也能依日期回看記錄、聽自然英語，隨時複習收藏的內容。</p> <p><a data-hover href=\"https://testflight.apple.com/join/cbnauaKB\"><span data-underline-link class=\"underline-link\">透過 TestFlight 體驗</span> ↗</a></p> ",
       "cellOut": " <p class=\"line\">初次使用前，請先在 Mac 版繹言的「設定」中開啟 iCloud 同步，並確認 Mac 和 iPhone 登入同一個 Apple 帳戶。iPhone 版目前仍在公開測試，功能和體驗會繼續完善。</p> ",
       "whyHtml": "",
@@ -1684,7 +1684,7 @@ export const YIYAN_LOCALES = {
     "bounds": {
       "headA": "邊界說清楚",
       "headB": "只留下學習所需的內容",
-      "h2": "<span class=\"zh\">只處理執行期間新增的使用者訊息。</span>",
+      "h2": "<span class=\"zh\">只處理執行期間新增的使用者訊息</span>",
       "note": "繹言不會安裝進 Pi、Claude Code、Codex、OpenCode 或 Antigravity，也不會更改它們的設定。",
       "items": [
         {
@@ -1715,7 +1715,7 @@ export const YIYAN_LOCALES = {
     },
     "next": {
       "imgAlt": "",
-      "q": "<span class=\"zh\">從下一句話開始。</span>"
+      "q": "<span class=\"zh\">從下一句話開始</span>"
     },
     "brew": {
       "h3": "<span class=\"zh\">兩行裝好</span>",
