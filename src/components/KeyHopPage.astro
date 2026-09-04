@@ -187,7 +187,7 @@ const socialImageUrl = {
     .gesture__leader-key:first-child{animation:leader-first 1.8s linear infinite}.gesture__leader-key:last-child{animation:leader-second 1.8s linear infinite}
     .gesture__matrix{margin-top:clamp(28px,4vw,48px);margin-bottom:clamp(44px,5vw,58px);display:grid;grid-template-columns:repeat(10,minmax(0,1fr));gap:clamp(3px,.8vw,10px)}
     .gesture__binding{display:grid;justify-items:center;gap:clamp(7px,1.2vw,14px);min-width:0}
-    .gesture__app{display:block;width:clamp(25px,4.6vw,56px);aspect-ratio:1;object-fit:contain;opacity:.48;filter:saturate(.65);will-change:transform,opacity,filter}
+    .gesture__app{display:block;width:min(clamp(25px,4.6vw,56px),100%);aspect-ratio:1;object-fit:contain;opacity:.48;filter:saturate(.65);will-change:transform,opacity,filter}
     .gesture__controls{display:flex;align-items:center;justify-content:space-between;gap:1rem;margin-top:.75rem}
     .gesture__select{display:inline-grid;grid-template-columns:1fr 1.75rem;color:var(--ink)}
     .gesture__select select{grid-column:1/-1;grid-row:1;min-height:36px;appearance:none;border:1px solid rgba(23,23,23,.14);border-radius:999px;background:rgba(255,255,255,.56);color:inherit;padding:.4rem 2rem .4rem .75rem;font:500 .8125rem/1.2 var(--sans);cursor:pointer}
@@ -200,7 +200,16 @@ const socialImageUrl = {
     @keyframes leader-second{0%,25%,41%,100%{transform:scale(1);background:oklch(0.600 0.090 215 / .12);border-color:oklch(0.600 0.090 215 / .52)}33%{transform:scale(.9);background:oklch(0.600 0.090 215 / .32);border-color:var(--keyhop-cyan)}}
     @keyframes slot-press{0%,44%,66%,100%{transform:scale(1);background:transparent;border-color:rgba(255,255,255,.16)}54%{transform:scale(.86);background:oklch(0.600 0.220 300 / .32);border-color:var(--keyhop-violet)}}
     @keyframes app-launch{0%,50%,100%{opacity:.48;filter:saturate(.65);transform:translateY(0) scale(1)}64%,86%{opacity:1;filter:saturate(1);transform:translateY(-7px) scale(1.12)}}
-    @media (max-width:560px){.gesture{padding-inline:clamp(14px,4vw,24px)}.gesture__matrix{gap:3px}.gesture__binding{gap:7px}.gesture__slot{font-size:.625rem}}
+    @media (max-width:560px){
+      .gesture{padding-inline:clamp(14px,4vw,24px)}
+      .gesture__matrix{gap:3px}
+      .gesture__binding{gap:7px}
+      .gesture__slot{font-size:.625rem}
+      .gesture__controls{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.5rem}
+      .gesture__select{grid-template-columns:minmax(0,1fr) 1.35rem;width:100%;min-width:0}
+      .gesture__select select{width:100%;min-width:0;min-height:48px;padding-inline-start:.5rem;padding-inline-end:1.35rem;font-size:.9375rem}
+    }
+    @media (max-width:340px){.phero__h1 .hero-title-phrase{font-size:.96em}}
     @media (prefers-reduced-motion:reduce){.gesture__leader-key,.gesture__binding[data-active] .gesture__slot,.gesture__binding[data-active] .gesture__app{animation:none}.gesture__binding[data-active] .gesture__slot{background:oklch(0.600 0.220 300 / .32);border-color:var(--keyhop-violet)}.gesture__binding[data-active] .gesture__app{opacity:1;filter:saturate(1)}}
 
     .deck{padding-top:clamp(40px,5.5vw,88px);padding-bottom:clamp(32px,4vw,64px)}
@@ -229,9 +238,10 @@ const socialImageUrl = {
     @media (max-width:860px){.bounds__grid{grid-template-columns:1fr}}
 
     .next__plate.next__plate--icon{max-width:120px;border-radius:24%;border:none}
-    .brew{margin-top:clamp(28px,3.5vw,56px);border:1px solid rgba(23,23,23,.12);border-radius:var(--r-card);background:var(--ink);color:var(--paper);padding:clamp(20px,2.4vw,34px);display:grid;gap:1rem}
+    .brew{margin-top:clamp(28px,3.5vw,56px);border:1px solid rgba(23,23,23,.12);border-radius:var(--r-card);background:var(--ink);color:var(--paper);padding:clamp(20px,2.4vw,34px);display:grid;gap:1rem;min-width:0}
+    .brew>*{min-width:0}
     .brew pre{margin:0;font:400 .875rem/1.9 var(--mono);white-space:pre-wrap;word-break:break-all}.brew pre .p{opacity:.45}
-    .brew__download{text-decoration-line:underline;text-decoration-color:color-mix(in srgb,currentColor 48%,transparent);text-decoration-thickness:.0625em;text-underline-offset:.2em;text-decoration-skip-ink:auto}
+    .brew a.brew__download{white-space:normal;overflow-wrap:anywhere;text-decoration-line:underline;text-decoration-color:color-mix(in srgb,currentColor 48%,transparent);text-decoration-thickness:.0625em;text-underline-offset:.2em;text-decoration-skip-ink:auto}
     .brew__download:hover{text-decoration-color:currentColor}
   </style>
 </head>

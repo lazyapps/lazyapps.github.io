@@ -52,7 +52,6 @@ section.doc.wrap{padding-top:clamp(8px,1.5vw,18px)}
   border:1px solid rgba(23,23,23,.08);border-radius:var(--r-card);
   padding:clamp(22px,2.6vw,40px);
   margin-top:-8px;
-  transition:border-color .2s linear;
 }
 .card:first-child{margin-top:0}
 .card--c1{--fill:var(--c1)}
@@ -63,9 +62,7 @@ section.doc.wrap{padding-top:clamp(8px,1.5vw,18px)}
 .card--c6{--fill:var(--c6);--fg:#f8f8f6}
 .card:nth-child(odd){transform:rotate(-2deg)}
 .card:nth-child(even){transform:rotate(2deg)}
-.card:hover{border-color:rgba(23,23,23,.4)}
 .card--ink{border-color:rgba(248,248,246,.12)}
-.card--ink:hover{border-color:rgba(248,248,246,.45)}
 .card__title{font-size:clamp(26px,3.4vw,48px)}
 .card__p{margin-top:1.125rem;font-size:1.0625rem;line-height:1.85;max-width:34em}
 .card__p strong{font-weight:600}
@@ -88,7 +85,7 @@ section.doc.wrap{padding-top:clamp(8px,1.5vw,18px)}
 .band__cell p{font-size:.9375rem;color:#4b4b4b;line-height:1.8}
 .band__cell .mono{font-size:.625rem}
 @media (max-width:1020px){.band__row{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media (max-width:860px){.band__row{grid-template-columns:1fr}}
+@media (max-width:560px){.band__row{grid-template-columns:1fr}}
 
 .next{margin-top:clamp(56px,6.5vw,132px)}
 .next__plate--wide{max-width:280px}
@@ -143,7 +140,7 @@ section.doc.wrap{padding-top:clamp(8px,1.5vw,18px)}
       </div>
 
         <div class="doc__side">
-          <ul>
+          <ul role="list">
             <li>
               
               <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M20.5 10.5H3.5V21.5H20.5V10.5Z" stroke="currentColor"/><path d="M12 14.5V17" stroke="currentColor"/><path d="M18 10.5V8C18 6.4087 17.3679 4.88258 16.2426 3.75736C15.1174 2.63214 13.5913 2 12 2C10.4087 2 8.88258 2.63214 7.75736 3.75736C6.63214 4.88258 6 6.4087 6 8V10.5" stroke="currentColor"/></svg>

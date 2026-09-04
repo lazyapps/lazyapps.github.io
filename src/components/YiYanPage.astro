@@ -262,7 +262,7 @@ html[data-trust=cjk] .phero__trust li{font:400 .75rem/1.5 var(--mono);letter-spa
 
 .shot{
   margin-top:clamp(28px,4vw,60px);
-  border:1px solid rgba(23,23,23,.1);border-radius:24px;
+  outline:1px solid rgba(23,23,23,.1);outline-offset:-1px;border-radius:min(3vw,24px);
   background:#fff;overflow:hidden;
 }
 .shot img{width:100%}
@@ -275,7 +275,6 @@ html[data-trust=cjk] .phero__trust li{font:400 .75rem/1.5 var(--mono);letter-spa
   border:1px solid rgba(23,23,23,.08);border-radius:var(--r-card);
   padding:clamp(20px,2.4vw,34px);
   margin-top:-8px;
-  transition:border-color .2s linear;
 }
 .card:first-child{margin-top:0}
 .card--c1{--fill:var(--c1)}
@@ -286,7 +285,6 @@ html[data-trust=cjk] .phero__trust li{font:400 .75rem/1.5 var(--mono);letter-spa
     .card--c6{--fill:var(--c6);--fg:#f8f8f6}
 .card:nth-child(odd){transform:rotate(-2deg)}
 .card:nth-child(even){transform:rotate(2deg)}
-.card:hover{border-color:rgba(23,23,23,.4)}
 .card__tag{position:absolute;z-index:2;top:clamp(16px,2vw,26px);right:clamp(18px,2.2vw,30px);
   font:400 .6875rem/1.4 var(--mono);text-transform:uppercase;letter-spacing:.09em;opacity:.62}
 .card__grid{display:grid;grid-template-columns:minmax(0,.82fr) minmax(0,1.18fr);gap:clamp(18px,2.6vw,44px);align-items:start;padding-top:1.5rem}
@@ -304,7 +302,7 @@ html[data-trust=cjk] .phero__trust li{font:400 .75rem/1.5 var(--mono);letter-spa
 }
 .pair__cell--src{background:#fff}
 .pair__cell--out{background:var(--c4)}
-.pair__cell p.line{font-size:1.0625rem;line-height:1.75}
+.pair__cell p:not(.mono),.pair__why .line{font-size:1.0625rem;line-height:1.75}
 .pair__cell b{font-weight:600}
 .pair__why{
   margin-top:clamp(14px,1.6vw,22px);
@@ -329,6 +327,7 @@ html[data-trust=cjk] .phero__trust li{font:400 .75rem/1.5 var(--mono);letter-spa
 .next__plate.next__plate--icon{max-width:120px;border-radius:24%;border:none}
 .brew__head h3{font-size:clamp(20px,2.2vw,30px)}
 @media (max-width:860px){.bounds__grid{grid-template-columns:1fr}}
+@media (max-width:560px){.phero__trust li{font-size:.75rem}}
 
 .brew{
   margin-top:clamp(28px,3.5vw,56px);
@@ -391,7 +390,7 @@ html[data-trust=cjk] .phero__trust li{font:400 .75rem/1.5 var(--mono);letter-spa
         <span class="locale__short" aria-hidden="true">{localeShort}</span>
 
         <Fragment set:html={ICO_CHEV} />
-        <select data-locale-select aria-label={t.selectAria}>
+        <select name="locale" data-locale-select aria-label={t.selectAria}>
           <Fragment set:html={optionsHtml} />
         </select>
       </div>
@@ -421,7 +420,7 @@ html[data-trust=cjk] .phero__trust li{font:400 .75rem/1.5 var(--mono);letter-spa
       {t.cta[0] && <div class="phero__cta">
       <Fragment set:html={ctaButtons} />
       </div>}
-      <ul class="phero__trust">
+      <ul class="phero__trust" role="list">
         {t.trust.map((text, i) => <li>
           <Fragment set:html={ICO_TRUST[i]} />
           {text}
@@ -492,12 +491,12 @@ html[data-trust=cjk] .phero__trust li{font:400 .75rem/1.5 var(--mono);letter-spa
     </div>
     <h2 class="bounds__h2 dsp"><Fragment set:html={t.bounds.h2} /></h2>
     <p class="phero__sub bounds__note"><Fragment set:html={t.bounds.note} /></p>
-    <div class="bounds__grid">
+    <dl class="bounds__grid">
       {t.bounds.items.map((item) => <div>
-        <p class="bounds__q"><Fragment set:html={item.q} /></p>
-        <p class="bounds__a"><Fragment set:html={item.a} /></p>
+        <dt class="bounds__q"><Fragment set:html={item.q} /></dt>
+        <dd class="bounds__a"><Fragment set:html={item.a} /></dd>
       </div>)}
-    </div>
+    </dl>
   </section>
 
 </main>
