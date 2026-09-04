@@ -4,6 +4,7 @@ import gsapUrl from '$assets/vendor/gsap.min.js?url';
 import scrollTriggerUrl from '$assets/vendor/ScrollTrigger.min.js?url';
 import customEaseUrl from '$assets/vendor/CustomEase.min.js?url';
 import siteJsUrl from '$assets/s/site.js?url';
+import keyhopIconUrl from '$assets/img/keyhop-symbol.png?url';
 import yiyanIconUrl from '$assets/img/yiyan-icon.png?url';
 import xvdlIconUrl from '$assets/img/xvdl-icon.png?url';
 import opengraphUrl from '$assets/img/opengraph.png?url';
@@ -15,12 +16,12 @@ import SocialMeta from '../components/SocialMeta.astro';
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>lazyapps: privacy</title>
-<meta name="description" content="Privacy policy for lazyapps iOS apps.">
+<meta name="description" content="Privacy policy for lazyapps software.">
 <meta name="theme-color" content="#e8e8e6">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#e8e8e6">
 <SocialMeta
   title="lazyapps: privacy"
-  description="Privacy policy for lazyapps iOS apps."
+  description="Privacy policy for lazyapps software."
   url="https://lazyapps.com/privacy.en.html"
   image={`https://lazyapps.com${opengraphUrl}`}
   imageAlt="lazyapps — independent software since 2009"
@@ -71,7 +72,7 @@ section.doc.wrap{padding-top:clamp(32px,5vw,72px)}
 .band{padding-top:clamp(48px,6vw,96px)}
 .band__head{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;padding-bottom:.75rem;border-bottom:1px solid var(--line)}
 .band__h2{margin-top:clamp(20px,2.6vw,40px);font-size:clamp(26px,3.8vw,54px);max-width:18em}
-.band__row{margin-top:clamp(24px,3vw,44px);display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.75rem}
+.band__row{margin-top:clamp(24px,3vw,44px);display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:.75rem}
 .band__cell{
   border:1px solid rgba(23,23,23,.1);border-radius:var(--r-card);
   padding:clamp(18px,2vw,28px);display:grid;gap:.75rem;align-content:start;
@@ -79,11 +80,13 @@ section.doc.wrap{padding-top:clamp(32px,5vw,72px)}
 .band__cell:nth-child(1){background:var(--c4)}
 .band__cell:nth-child(2){background:#fff}
 .band__cell:nth-child(3){background:var(--c4)}
+.band__cell:nth-child(4){background:#fff}
 .band__icon{width:clamp(40px,4vw,54px);height:auto;border-radius:24%}
 .band__cell svg{width:clamp(34px,3.4vw,46px);height:clamp(34px,3.4vw,46px);color:var(--accent)}
 .band__cell h3{font:600 1.0625rem/1.3 var(--sans)}
 .band__cell p{font-size:.9375rem;color:#4b4b4b;line-height:1.7}
 .band__cell .mono{font-size:.625rem}
+@media (max-width:1020px){.band__row{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (max-width:860px){.band__row{grid-template-columns:1fr}}
 
 .next{margin-top:clamp(56px,6.5vw,132px)}
@@ -181,10 +184,16 @@ section.doc.wrap{padding-top:clamp(32px,5vw,72px)}
   <section class="band wrap" data-reveal-group data-stagger="120" data-distance="1.4em" data-start="top 86%">
     <div class="band__head">
       <h2 class="mono">Scope</h2>
-      <p class="mono">Indie iOS apps since 2009</p>
+      <p class="mono">Independent software since 2009</p>
     </div>
     <h2 class="band__h2 dsp">The same policy covers every app.</h2>
     <div class="band__row">
+      <a class="band__cell" data-hover href="/keyhop/">
+        <img class="band__icon" src={keyhopIconUrl} alt="">
+        <p class="mono">macOS 26+ · App switching</p>
+        <h3><span data-underline-link class="underline-link">KeyHop</span></h3>
+        <p>No keyboard content or history is recorded. KeyHop has no account, network access, or telemetry.</p>
+      </a>
       <a class="band__cell" data-hover href="/yiyan/">
         <img class="band__icon" src={yiyanIconUrl} alt="">
         <p class="mono">macOS 15+ · English learning</p>
@@ -234,6 +243,7 @@ section.doc.wrap{padding-top:clamp(32px,5vw,72px)}
     <p class="mono">© 2026 lazyapps</p>
     <nav class="mono">
       <a data-hover href="/"><span data-underline-link class="underline-link">lazyapps</span></a>
+      <a data-hover href="/keyhop/"><span data-underline-link class="underline-link">KeyHop</span></a>
       <a data-hover href="/xvdl/"><span data-underline-link class="underline-link">XVDL</span></a>
       <a data-hover href="mailto:lazyapps.feedback@gmail.com"><span data-underline-link class="underline-link">Contact</span></a>
     </nav>

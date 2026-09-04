@@ -17,16 +17,7 @@ import logoRevealUrl from '$assets/s/logo-reveal-loader.js?url';
 import siteJsUrl from '$assets/s/site.js?url';
 import yiyanIconUrl from '$assets/img/yiyan-icon.png?url';
 import yiyanOpengraphUrl from '$assets/img/yiyan-opengraph.png?url';
-import yiyanOpengraphArUrl from '$assets/img/yiyan-opengraph-ar.png?url';
-import yiyanOpengraphDeUrl from '$assets/img/yiyan-opengraph-de.png?url';
-import yiyanOpengraphEnUrl from '$assets/img/yiyan-opengraph-en.png?url';
-import yiyanOpengraphEsUrl from '$assets/img/yiyan-opengraph-es.png?url';
-import yiyanOpengraphFrUrl from '$assets/img/yiyan-opengraph-fr.png?url';
-import yiyanOpengraphHiUrl from '$assets/img/yiyan-opengraph-hi.png?url';
-import yiyanOpengraphJaUrl from '$assets/img/yiyan-opengraph-ja.png?url';
-import yiyanOpengraphKoUrl from '$assets/img/yiyan-opengraph-ko.png?url';
-import yiyanOpengraphPtBrUrl from '$assets/img/yiyan-opengraph-pt-br.png?url';
-import yiyanOpengraphRuUrl from '$assets/img/yiyan-opengraph-ru.png?url';
+import yiyanOpengraphSharedUrl from '$assets/img/yiyan-opengraph-shared.png?url';
 import yiyanOpengraphZhHantUrl from '$assets/img/yiyan-opengraph-zh-hant.png?url';
 import showcaseUrl from '$assets/img/yiyan-showcase.png?url';
 import showcaseDetailUrl from '$assets/img/yiyan-showcase-detail.png?url';
@@ -59,19 +50,9 @@ const SHOWCASE_MAP = {
 const showCaseUrl = SHOWCASE_MAP[code] ?? showcaseUrl;
 const OPENGRAPH_MAP = {
   '': yiyanOpengraphUrl,
-  ar: yiyanOpengraphArUrl,
-  de: yiyanOpengraphDeUrl,
-  en: yiyanOpengraphEnUrl,
-  es: yiyanOpengraphEsUrl,
-  fr: yiyanOpengraphFrUrl,
-  hi: yiyanOpengraphHiUrl,
-  ja: yiyanOpengraphJaUrl,
-  ko: yiyanOpengraphKoUrl,
-  'pt-br': yiyanOpengraphPtBrUrl,
-  ru: yiyanOpengraphRuUrl,
   'zh-hant': yiyanOpengraphZhHantUrl,
 };
-const opengraphUrl = OPENGRAPH_MAP[code] ?? yiyanOpengraphEnUrl;
+const opengraphUrl = OPENGRAPH_MAP[code] ?? yiyanOpengraphSharedUrl;
 const OG_LOCALE_MAP = {
   '': 'zh_CN',
   ar: 'ar_AR',

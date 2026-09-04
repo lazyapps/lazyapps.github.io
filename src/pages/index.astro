@@ -8,6 +8,7 @@ import customEaseUrl from '$assets/vendor/CustomEase.min.js?url';
 import splitTextUrl from '$assets/vendor/SplitText.min.js?url';
 import logoRevealUrl from '$assets/s/logo-reveal-loader.js?url';
 import siteJsUrl from '$assets/s/site.js?url';
+import keyhopIconUrl from '$assets/img/keyhop-symbol.png?url';
 import yiyanIconUrl from '$assets/img/yiyan-icon.png?url';
 import xvdlIconUrl from '$assets/img/xvdl-icon.png?url';
 import opengraphUrl from '$assets/img/opengraph.png?url';
@@ -24,7 +25,7 @@ import appFondfontUrl from '$assets/img/app-fondfont.jpg?url';
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>lazyapps — Independent software since 2009</title>
-<meta name="description" content="Independent software for Mac, iPhone, and iPad. Six apps, maintained by lazyapps since 2009. No data collected.">
+<meta name="description" content="Independent software for Mac, iPhone, and iPad. Seven apps, maintained by lazyapps since 2009. No data collected.">
 <meta name="theme-color" content="#171717" data-page-color="#e8e8e6">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#171717" data-page-color="#e8e8e6">
 <SocialMeta
@@ -69,6 +70,7 @@ setTimeout(function(){
 .card--c4{--fill:var(--c4)}
 .card--c5{--fill:var(--c5)}
 .card--c6{--fill:var(--c6);--fg:#f8f8f6}
+.card--keyhop{--fill:oklch(0.920 0.040 215)}
 .card:nth-child(odd){transform:rotate(-2deg)}
 .card:nth-child(even){transform:rotate(2deg)}
 .card:hover{border-color:rgba(23,23,23,.4)}
@@ -151,11 +153,28 @@ setTimeout(function(){
   <section class="deck wrap" id="deck">
     <div data-reveal-group data-stagger="140" data-distance="2.1em" data-start="top 88%">
 
+      <article class="card card--keyhop" id="keyhop">
+        <p class="card__tag">macOS 26+ · Apple silicon</p>
+        <div class="card__grid">
+          <div>
+            <h3 class="card__title dsp">KeyHop</h3>
+            <p class="card__p">Ten fixed home-row positions point to ten apps. Change the keyboard layout; the positions stay put.</p>
+            <div class="card__foot">
+              <img class="card__icon" src={keyhopIconUrl} alt="">
+              <a data-hover href="/keyhop/" class="card__go"><span data-underline-link class="underline-link">KeyHop details</span> ↗</a>
+            </div>
+          </div>
+          <div class="card__shots">
+            <img class="card__app-icon" src={keyhopIconUrl} alt="">
+          </div>
+        </div>
+      </article>
+
       <article class="card card--c1" id="yiyan">
         <p class="card__tag">macOS 15+ · English learning</p>
         <div class="card__grid">
           <div>
-            <h3 class="card__title dsp"><span class="zh" lang="zh">《绎言》</span> YiYan</h3>
+            <h3 class="card__title dsp">YiYan</h3>
             <p class="card__p">Turn messages from Pi, Claude Code, Codex, OpenCode, and Antigravity—or text you enter directly—into natural English and focused notes, then refine any input field when you need a polished version.</p>
             <div class="card__foot">
               <img class="card__icon" src={yiyanIconUrl} alt="">
@@ -268,7 +287,7 @@ setTimeout(function(){
     </div>
     <div>
       <p class="qa__q">Where do I get them?</p>
-      <p class="qa__a">The App Store for iPhone and iPad. Homebrew for the Mac apps — <a data-hover href="/xvdl/"><span data-underline-link class="underline-link">XVDL</span></a> and <a data-hover href="/yiyan/"><span data-underline-link class="underline-link">YiYan</span></a>.</p>
+      <p class="qa__a">The App Store for iPhone and iPad. Homebrew for the Mac apps — <a data-hover href="/keyhop/"><span data-underline-link class="underline-link">KeyHop</span></a>, <a data-hover href="/xvdl/"><span data-underline-link class="underline-link">XVDL</span></a>, and <a data-hover href="/yiyan/"><span data-underline-link class="underline-link">YiYan</span></a>.</p>
     </div>
   </section>
 

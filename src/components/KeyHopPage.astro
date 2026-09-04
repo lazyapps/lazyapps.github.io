@@ -1,0 +1,403 @@
+---
+interface Props {
+  t: any;
+  isRoot: boolean;
+  code: string;
+}
+
+const { t, isRoot, code } = Astro.props;
+const SITE = 'https://lazyapps.com';
+
+import SocialMeta from './SocialMeta.astro';
+import siteCssUrl from '$assets/s/site.css?url';
+import gsapUrl from '$assets/vendor/gsap.min.js?url';
+import scrollTriggerUrl from '$assets/vendor/ScrollTrigger.min.js?url';
+import customEaseUrl from '$assets/vendor/CustomEase.min.js?url';
+import splitTextUrl from '$assets/vendor/SplitText.min.js?url';
+import logoRevealUrl from '$assets/s/logo-reveal-loader.js?url';
+import siteJsUrl from '$assets/s/site.js?url';
+import keyhopIconUrl from '$assets/img/keyhop-symbol.png?url';
+import safariIconUrl from '$assets/img/keyhop/apps/safari.png?url';
+import chromeIconUrl from '$assets/img/keyhop/apps/chrome.png?url';
+import mailIconUrl from '$assets/img/keyhop/apps/mail.png?url';
+import messagesIconUrl from '$assets/img/keyhop/apps/messages.png?url';
+import calendarIconUrl from '$assets/img/keyhop/apps/calendar.png?url';
+import notesIconUrl from '$assets/img/keyhop/apps/notes.png?url';
+import xcodeIconUrl from '$assets/img/keyhop/apps/xcode.png?url';
+import figmaIconUrl from '$assets/img/keyhop/apps/figma.png?url';
+import telegramIconUrl from '$assets/img/keyhop/apps/telegram.png?url';
+import vlcIconUrl from '$assets/img/keyhop/apps/vlc.png?url';
+import keyhopOpengraphUrl from '$assets/img/keyhop-opengraph.png?url';
+import keyhopOpengraphSharedUrl from '$assets/img/keyhop-opengraph-shared.png?url';
+import keyhopOpengraphZhHantUrl from '$assets/img/keyhop-opengraph-zh-hant.png?url';
+
+const releaseUrl = 'https://github.com/cxa/keyhop/releases';
+const notesUrl = 'https://github.com/cxa/keyhop/blob/main/RELEASE_NOTES.md';
+const layoutLabel = t.layoutAria ?? 'Keyboard layout';
+const modifierLabel = t.modifierAria ?? 'Leader modifier';
+const demoApps = [
+  ['Safari', safariIconUrl],
+  ['Chrome', chromeIconUrl],
+  ['Mail', mailIconUrl],
+  ['Messages', messagesIconUrl],
+  ['Calendar', calendarIconUrl],
+  ['Notes', notesIconUrl],
+  ['Xcode', xcodeIconUrl],
+  ['Figma', figmaIconUrl],
+  ['Telegram', telegramIconUrl],
+  ['VLC', vlcIconUrl],
+];
+const options = [
+  ['zh-Hans', '/keyhop/', '简体中文'],
+  ['en', '/keyhop/en/', 'English'],
+  ['zh-Hant', '/keyhop/zh-hant/', '繁體中文'],
+  ['es', '/keyhop/es/', 'Español'],
+  ['pt-BR', '/keyhop/pt-br/', 'Português'],
+  ['fr', '/keyhop/fr/', 'Français'],
+  ['de', '/keyhop/de/', 'Deutsch'],
+  ['ja', '/keyhop/ja/', '日本語'],
+  ['ko', '/keyhop/ko/', '한국어'],
+  ['ru', '/keyhop/ru/', 'Русский'],
+  ['ar', '/keyhop/ar/', 'العربية'],
+  ['hi', '/keyhop/hi/', 'हिन्दी'],
+];
+const optionsHtml = options.map(([locale, value, label]) =>
+  `<option value="${value}" data-locale="${locale}" lang="${locale}"${value === t.selectedUrl ? ' selected' : ''}>${label}</option>`,
+).join('\n');
+
+const redirectScript = `(() => {
+  var routes = {
+    en: "/keyhop/en/", "zh-hant": "/keyhop/zh-hant/", es: "/keyhop/es/",
+    "pt-br": "/keyhop/pt-br/", fr: "/keyhop/fr/", de: "/keyhop/de/",
+    ja: "/keyhop/ja/", ko: "/keyhop/ko/", ru: "/keyhop/ru/",
+    ar: "/keyhop/ar/", hi: "/keyhop/hi/"
+  };
+  function routeFor(language) {
+    if (typeof language !== "string") return null;
+    var tag = language.trim().toLowerCase().replace(/_/g, "-");
+    if (!tag) return null;
+    if (/^zh-(?:hant|tw|hk|mo)(?:-|$)/.test(tag)) return routes["zh-hant"];
+    if (/^zh(?:-|$)/.test(tag)) return "";
+    if (/^pt(?:-|$)/.test(tag)) return routes["pt-br"];
+    var base = tag.split("-")[0];
+    return Object.hasOwn(routes, base) ? routes[base] : null;
+  }
+
+  var target = null;
+  try { target = routeFor(localStorage.getItem("keyhop.locale")); } catch (_storageError) {}
+  if (target === null) {
+    var languages = Array.isArray(navigator.languages) ? navigator.languages : [navigator.language];
+    for (var i = 0; i < languages.length; i += 1) {
+      target = routeFor(languages[i]);
+      if (target !== null) break;
+    }
+  }
+  if (target === null) target = "/keyhop/en/";
+  if (target) location.replace(target + location.search + location.hash);
+})();`;
+const alternates = [
+  ['zh-Hans', ''], ['en', 'en/'], ['zh-Hant', 'zh-hant/'], ['es', 'es/'],
+  ['pt-BR', 'pt-br/'], ['fr', 'fr/'], ['de', 'de/'], ['ja', 'ja/'],
+  ['ko', 'ko/'], ['ru', 'ru/'], ['ar', 'ar/'], ['hi', 'hi/'], ['x-default', 'en/'],
+];
+const ogLocales = {
+  '': 'zh_CN', en: 'en_US', 'zh-hant': 'zh_TW', es: 'es_ES', 'pt-br': 'pt_BR',
+  fr: 'fr_FR', de: 'de_DE', ja: 'ja_JP', ko: 'ko_KR', ru: 'ru_RU', ar: 'ar_AR', hi: 'hi_IN',
+};
+const socialImageUrl = {
+  '': keyhopOpengraphUrl,
+  'zh-hant': keyhopOpengraphZhHantUrl,
+}[code] ?? keyhopOpengraphSharedUrl;
+
+---
+
+<!doctype html>
+<html lang={t.htmlLang} dir={t.htmlDir ?? 'ltr'} class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <title>{t.title}</title>
+  <meta name="description" content={t.description}>
+  <meta name="theme-color" content="#171717" data-page-color="#e8e8e6">
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#171717" data-page-color="#e8e8e6">
+  {alternates.map(([hreflang, path]) => <link rel="alternate" hreflang={hreflang} href={`${SITE}/keyhop/${path}`} />)}
+  <SocialMeta
+    title={t.ogTitle}
+    description={t.ogDesc}
+    url={t.canonical}
+    image={`${SITE}${socialImageUrl}`}
+    imageAlt={t.ogTitle}
+    imageWidth={1200}
+    imageHeight={630}
+    locale={ogLocales[code] ?? 'en_US'}
+  />
+  <link rel="icon" type="image/png" href={keyhopIconUrl}>
+  <link rel="stylesheet" href={siteCssUrl}>
+  {isRoot && <script is:inline data-language-redirect set:html={redirectScript} />}
+  <script is:inline>
+    document.documentElement.classList.remove('no-js');
+    setTimeout(() => {
+      document.documentElement.classList.add('is-page-theme', 'is-loaded');
+      document.getElementById('loader')?.remove();
+      document.querySelectorAll('meta[name="theme-color"][data-page-color]').forEach((meta) => {
+        meta.setAttribute('content', meta.getAttribute('data-page-color'));
+      });
+    }, 6000);
+  </script>
+  <style is:inline>
+    :root{
+      --keyhop-cyan:oklch(0.600 0.090 215);
+      --keyhop-coral:oklch(0.600 0.207 25);
+      --keyhop-green:oklch(0.600 0.160 145);
+      --keyhop-violet:oklch(0.600 0.220 300);
+      --accent:var(--keyhop-violet);
+      --c1:oklch(0.800 0.099 215);
+      --c2:oklch(0.800 0.080 25);
+      --c3:oklch(0.800 0.176 145);
+      --c4:oklch(0.800 0.083 300);
+    }
+    p,dd{text-wrap:pretty}
+    section.phero.wrap{padding-top:clamp(32px,5vw,72px);--h1-size:clamp(38px,6.2vw,96px)}
+    .topbar__app img{width:auto;height:1.375rem;border-radius:0}
+    .phero__h1{margin:clamp(28px,4vw,64px) auto 0;font-size:var(--h1-size);max-width:calc(13 * var(--h1-size));text-align:center;text-wrap:balance}
+    .phero__h1 .hero-title-pairs{display:flex;flex-wrap:wrap;justify-content:center;column-gap:1em;line-height:1.08}
+    .phero__h1 .hero-title-phrase{position:relative;flex:none;white-space:nowrap;line-height:1.08}
+    .phero__h1 .hero-title-comma{position:absolute;inset-inline-start:100%;line-height:inherit}
+    .phero__sub{margin:clamp(18px,2.2vw,32px) auto 0;font-size:1rem;color:var(--muted);max-width:42rem;text-align:center}
+    .phero__sub:not(.bounds__note){text-wrap:balance}
+    .phero__cta{margin-top:clamp(22px,2.6vw,38px);display:flex;justify-content:center;gap:.75rem;flex-wrap:wrap}
+    .gesture-demo{margin-top:clamp(28px,4vw,60px)}
+    .gesture{position:relative;border-radius:min(2vw,24px);background:oklch(0.210 0.050 300);color:#fff;padding:clamp(24px,5vw,72px);overflow:hidden}
+    .gesture__leader{display:flex;align-items:center;justify-content:center;gap:clamp(8px,1.2vw,14px)}
+    .gesture__leader-key{display:grid;place-items:center;width:clamp(48px,6vw,72px);height:clamp(48px,6vw,72px);border:1px solid oklch(0.600 0.090 215 / .52);border-radius:min(1.2vw,14px);background:oklch(0.600 0.090 215 / .12);font:600 clamp(1rem,2vw,1.5rem)/1 var(--sans);will-change:transform,background-color,border-color}
+    .gesture__leader-key:first-child{animation:leader-first 1.8s linear infinite}.gesture__leader-key:last-child{animation:leader-second 1.8s linear infinite}
+    .gesture__matrix{margin-top:clamp(28px,4vw,48px);margin-bottom:clamp(44px,5vw,58px);display:grid;grid-template-columns:repeat(10,minmax(0,1fr));gap:clamp(3px,.8vw,10px)}
+    .gesture__binding{display:grid;justify-items:center;gap:clamp(7px,1.2vw,14px);min-width:0}
+    .gesture__app{display:block;width:clamp(25px,4.6vw,56px);aspect-ratio:1;object-fit:contain;opacity:.48;filter:saturate(.65);will-change:transform,opacity,filter}
+    .gesture__controls{display:flex;align-items:center;justify-content:space-between;gap:1rem;margin-top:.75rem}
+    .gesture__select{display:inline-grid;grid-template-columns:1fr 1.75rem;color:var(--ink)}
+    .gesture__select select{grid-column:1/-1;grid-row:1;min-height:36px;appearance:none;border:1px solid rgba(23,23,23,.14);border-radius:999px;background:rgba(255,255,255,.56);color:inherit;padding:.4rem 2rem .4rem .75rem;font:500 .8125rem/1.2 var(--sans);cursor:pointer}
+    .gesture__select--layout{color:var(--muted);opacity:.62}.gesture__select--layout select{border-color:transparent;background:transparent}
+    .gesture__chevron{pointer-events:none;grid-column:2;grid-row:1;place-self:center;width:8px;height:5px;color:currentColor}
+    .gesture__select select:focus-visible{outline:2px solid var(--keyhop-violet);outline-offset:2px}
+    .gesture__slot{display:grid;place-items:center;width:100%;aspect-ratio:1;border:1px solid rgba(255,255,255,.16);border-radius:min(.8vw,10px);font:500 clamp(.6875rem,1.4vw,1.125rem)/1 var(--mono);color:rgba(255,255,255,.72);will-change:transform,background-color,border-color}
+    .gesture__binding[data-active] .gesture__slot{animation:slot-press 1.8s linear both}.gesture__binding[data-active] .gesture__app{animation:app-launch 1.8s linear both}
+    @keyframes leader-first{0%,8%,24%,100%{transform:scale(1);background:oklch(0.600 0.090 215 / .12);border-color:oklch(0.600 0.090 215 / .52)}16%{transform:scale(.9);background:oklch(0.600 0.090 215 / .32);border-color:var(--keyhop-cyan)}}
+    @keyframes leader-second{0%,25%,41%,100%{transform:scale(1);background:oklch(0.600 0.090 215 / .12);border-color:oklch(0.600 0.090 215 / .52)}33%{transform:scale(.9);background:oklch(0.600 0.090 215 / .32);border-color:var(--keyhop-cyan)}}
+    @keyframes slot-press{0%,44%,66%,100%{transform:scale(1);background:transparent;border-color:rgba(255,255,255,.16)}54%{transform:scale(.86);background:oklch(0.600 0.220 300 / .32);border-color:var(--keyhop-violet)}}
+    @keyframes app-launch{0%,50%,100%{opacity:.48;filter:saturate(.65);transform:translateY(0) scale(1)}64%,86%{opacity:1;filter:saturate(1);transform:translateY(-7px) scale(1.12)}}
+    @media (max-width:560px){.gesture{padding-inline:clamp(14px,4vw,24px)}.gesture__matrix{gap:3px}.gesture__binding{gap:7px}.gesture__slot{font-size:.625rem}}
+    @media (prefers-reduced-motion:reduce){.gesture__leader-key,.gesture__binding[data-active] .gesture__slot,.gesture__binding[data-active] .gesture__app{animation:none}.gesture__binding[data-active] .gesture__slot{background:oklch(0.600 0.220 300 / .32);border-color:var(--keyhop-violet)}.gesture__binding[data-active] .gesture__app{opacity:1;filter:saturate(1)}}
+
+    .deck{padding-top:clamp(40px,5.5vw,88px);padding-bottom:clamp(32px,4vw,64px)}
+    .card{position:relative;background:var(--fill);color:var(--fg,var(--ink));border:1px solid rgba(23,23,23,.08);border-radius:var(--r-card);padding:clamp(20px,2.4vw,34px);margin-top:-8px}
+    .card:first-child{margin-top:0}.card:nth-child(1){--fill:var(--c1)}.card:nth-child(2){--fill:var(--c2)}.card:nth-child(3){--fill:var(--c3)}.card:nth-child(4){--fill:var(--c4)}
+    .card:nth-child(odd){transform:rotate(-2deg)}.card:nth-child(even){transform:rotate(2deg)}
+    .card__grid{display:grid;grid-template-columns:minmax(0,.82fr) minmax(0,1.18fr);gap:clamp(18px,2.6vw,44px);align-items:start}
+    .card__title{font-size:clamp(26px,3.4vw,46px);text-wrap:balance}.card__p{font-size:1.0625rem;line-height:1.85}
+    @media (max-width:860px){.card__grid{grid-template-columns:1fr}}
+
+    .pair{padding-top:clamp(40px,5.5vw,88px)}
+    .pair__h2,.bounds__h2{margin:0;font-size:clamp(28px,4.2vw,60px);max-width:16em}
+    .pair__grid{margin-top:clamp(24px,3vw,44px);display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(14px,1.6vw,22px)}
+    .pair__cell{border:1px solid rgba(23,23,23,.1);border-radius:var(--r-card);padding:clamp(18px,2.2vw,30px);display:grid;gap:.875rem;align-content:start}
+    .pair__cell--src{background:#fff}.pair__cell--out{background:var(--c4)}
+    .pair__cell dd,.pair__cell>p{margin:0;font-size:1.0625rem;line-height:1.75}
+    .pair__why{margin-top:clamp(14px,1.6vw,22px);border:1px solid rgba(23,23,23,.1);border-radius:var(--r-card);background:#fff;padding:clamp(18px,2.2vw,30px)}
+    .pair__why p:last-child{font-size:1.0625rem;line-height:1.75}
+    @media (max-width:860px){.pair__grid{grid-template-columns:1fr}}
+
+    .bounds{padding-top:clamp(40px,5.5vw,88px)}
+    .bounds__h2{font-size:clamp(26px,3.8vw,54px)}
+    .bounds__note{margin:1.25rem 0 0;text-align:start}
+    .bounds__grid{margin:clamp(24px,3vw,44px) 0 0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(20px,3vw,48px)}
+    .bounds__q{color:var(--muted);font-size:.9375rem}.bounds__a{margin:.5rem 0 0;font-size:.9375rem;line-height:1.75}
+    @media (max-width:860px){.bounds__grid{grid-template-columns:1fr}}
+
+    .next__plate.next__plate--icon{max-width:120px;border-radius:24%;border:none}
+    .brew{margin-top:clamp(28px,3.5vw,56px);border:1px solid rgba(23,23,23,.12);border-radius:var(--r-card);background:var(--ink);color:var(--paper);padding:clamp(20px,2.4vw,34px);display:grid;gap:1rem}
+    .brew pre{margin:0;font:400 .875rem/1.9 var(--mono);white-space:pre-wrap;word-break:break-all}.brew pre .p{opacity:.45}
+    .brew__download{text-decoration-line:underline;text-decoration-color:color-mix(in srgb,currentColor 48%,transparent);text-decoration-thickness:.0625em;text-underline-offset:.2em;text-decoration-skip-ink:auto}
+    .brew__download:hover{text-decoration-color:currentColor}
+  </style>
+</head>
+
+<body>
+  <div class="grain" data-grain-animate="true"></div>
+  <div data-load-wrap class="loader" id="loader" aria-hidden="true">
+    <div data-load-bg class="loader__bg"><div data-load-progress class="loader__bg-bar"></div></div>
+    <div data-load-container class="loader__container">
+      <div class="loader__logo-wrap">
+        <div class="loader__logo-item is--base"><span class="loader__logo-img" lang="en">KEYHOP</span></div>
+        <div data-load-logo class="loader__logo-item is--top"><span class="loader__logo-img" lang="en">KEYHOP</span></div>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <section class="phero wrap">
+      <div class="topbar">
+        <nav class="mono topbar__nav" aria-label={t.navAria}>
+          <a data-hover href="/" class="topbar__home" aria-label={t.homeAria}><span aria-hidden="true" class="topbar__home-dot"></span></a>
+        </nav>
+        <div class="topbar__app">
+          <img src={keyhopIconUrl} alt="">
+          <h2 class="dsp"><Fragment set:html={t.appTitle} /></h2>
+        </div>
+        <div class="locale">
+          <svg class="locale__globe" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20Z" stroke="currentColor"/><path d="M12 22c2.2 0 4-4.5 4-10S14.2 2 12 2 8 6.5 8 12s1.8 10 4 10ZM2 12h20M4 6c5.3 2.2 10.7 2.2 16 0M4 18c5.3-2.2 10.7-2.2 16 0" stroke="currentColor"/></svg>
+          <span class="locale__now" aria-hidden="true">{t.localeNow}</span>
+          <svg class="locale__chev" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m5 9 7 7 7-7" stroke="currentColor"/></svg>
+          <select name="locale" data-locale-select aria-label={t.selectAria}><Fragment set:html={optionsHtml} /></select>
+        </div>
+      </div>
+
+      <div data-reveal-group data-stagger="110" data-distance="1.2em" data-start="top 94%">
+        <h1 class="phero__h1 dsp"><Fragment set:html={t.h1} /></h1>
+        <div class="gesture-demo">
+          <div class="gesture" role="img" aria-label={t.gestureAria}>
+            <div class="gesture__leader" aria-hidden="true">
+              <span class="gesture__leader-key" data-demo-clock data-demo-leader>⌘</span>
+              <span class="gesture__leader-key" data-demo-leader>⌘</span>
+            </div>
+            <div class="gesture__matrix" aria-hidden="true">
+              {demoApps.map(([name, src], i) => <div class="gesture__binding" data-demo-binding data-active={i === 0 ? '' : undefined}>
+                <img class="gesture__app" src={src} alt={name}>
+                <span class="gesture__slot" data-layout-key>{['A','S','D','F','G','H','J','K','L',';'][i]}</span>
+              </div>)}
+            </div>
+          </div>
+          <div class="gesture__controls">
+            <span class="gesture__select">
+              <select name="leader-modifier" data-modifier-select aria-label={modifierLabel}>
+                <option value="command">⌘ Command</option>
+                <option value="option">⌥ Option</option>
+                <option value="control">⌃ Control</option>
+                <option value="shift">⇧ Shift</option>
+              </select>
+              <svg class="gesture__chevron" viewBox="0 0 8 5" fill="none" aria-hidden="true"><path d="M.5.5 4 4 7.5.5" stroke="currentColor" /></svg>
+            </span>
+            <span class="gesture__select gesture__select--layout">
+              <select id={`keyhop-layout-${code || 'zh'}`} name="keyboard-layout" data-layout-select aria-label={layoutLabel}>
+                <option value="qwerty">QWERTY</option>
+                <option value="dvorak">Dvorak</option>
+                <option value="colemak">Colemak</option>
+                <option value="azerty">AZERTY</option>
+                <option value="qwertz">QWERTZ</option>
+              </select>
+              <svg class="gesture__chevron" viewBox="0 0 8 5" fill="none" aria-hidden="true"><path d="M.5.5 4 4 7.5.5" stroke="currentColor" /></svg>
+            </span>
+          </div>
+        </div>
+        <p class="phero__sub"><Fragment set:html={t.sub} /></p>
+        <div class="phero__cta">
+          <a data-hover href={releaseUrl} class="button-023">
+            <span class="button-023__bg"><span style="--index:0" class="button-023__bg-inner is--first"></span><span style="--index:1" class="button-023__bg-inner is--second"></span></span>
+            <span class="button-023__inner"><span class="button-023__text is--first">{t.cta[0]}</span><span aria-hidden="true" class="button-023__text is--second">{t.cta[0]}</span></span>
+          </a>
+          <a data-hover href="#homebrew" class="button-023 button-023--ghost">
+            <span class="button-023__bg"><span style="--index:0" class="button-023__bg-inner is--first"></span><span style="--index:1" class="button-023__bg-inner is--second"></span></span>
+            <span class="button-023__inner"><span class="button-023__text is--first">Homebrew</span><span aria-hidden="true" class="button-023__text is--second">Homebrew</span></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <dl class="deck wrap" data-reveal-group data-stagger="140" data-distance="2.1em" data-start="top 88%">
+      {t.cards.map((card) => <div class="card">
+        <div class="card__grid"><dt class="card__title dsp"><Fragment set:html={card.title} /></dt><dd class="card__p"><Fragment set:html={card.p} /></dd></div>
+      </div>)}
+    </dl>
+
+    <section class="pair wrap" data-reveal-group data-stagger="120" data-distance="1.4em" data-start="top 86%">
+      <h2 class="pair__h2 dsp"><Fragment set:html={t.compare.h2} /></h2>
+      <dl class="pair__grid">
+        <div class="pair__cell pair__cell--src"><dt class="mono">{t.compare.beforeLabel}</dt><dd>{t.compare.before}</dd></div>
+        <div class="pair__cell pair__cell--out"><dt class="mono">{t.compare.afterLabel}</dt><dd>{t.compare.after}</dd></div>
+      </dl>
+      <div class="pair__why"><p>{t.compare.why}</p></div>
+    </section>
+
+    <section class="pair wrap" data-reveal-group data-stagger="120" data-distance="1.4em" data-start="top 86%">
+      <h2 class="pair__h2 dsp"><Fragment set:html={t.setup.h2} /></h2>
+      <div class="pair__grid">
+        <div class="pair__cell pair__cell--src"><p>{t.setup.first}</p></div>
+        <div class="pair__cell pair__cell--out"><p>{t.setup.second}</p></div>
+      </div>
+    </section>
+
+    <section class="bounds wrap" data-reveal-group data-stagger="120" data-distance="1.4em" data-start="top 86%">
+      <h2 class="bounds__h2 dsp"><Fragment set:html={t.bounds.h2} /></h2>
+      <p class="phero__sub bounds__note">{t.bounds.note}</p>
+      <dl class="bounds__grid">
+        {t.bounds.items.map(([q, a]) => <div><dt class="bounds__q">{q}</dt><dd class="bounds__a">{a}</dd></div>)}
+      </dl>
+    </section>
+  </main>
+
+  <footer class="wrap">
+    <section class="next" data-reveal-group data-stagger="110" data-distance="1.4em" data-start="top 88%">
+      <img class="next__plate next__plate--icon" src={keyhopIconUrl} alt="">
+      <h2 class="next__q dsp"><Fragment set:html={t.next} /></h2>
+      <div class="next__act"><a data-hover href={notesUrl} class="button-023 button-023--square">
+        <span class="button-023__bg"><span style="--index:0" class="button-023__bg-inner is--first"></span><span style="--index:1" class="button-023__bg-inner is--second"></span></span>
+        <span class="button-023__inner"><span class="button-023__text is--first">{t.cta[1]}</span><span aria-hidden="true" class="button-023__text is--second">{t.cta[1]}</span></span>
+      </a></div>
+    </section>
+    <div class="brew" id="homebrew" data-reveal-group data-stagger="100" data-distance="1.2em" data-start="top 94%">
+      <h3 class="dsp"><Fragment set:html={t.brew.h3} /></h3>
+      <pre dir="ltr"><Fragment set:html={t.brew.install} /></pre>
+      <p class="bounds__a">{t.brew.p} <a class="brew__download" href={releaseUrl}>{t.brew.dmg}</a>{t.brew.dmgEnd}</p>
+    </div>
+    <div class="base">
+      <p class="mono" lang="en">© 2026 lazyapps</p>
+      <nav class="mono">
+        <a data-hover href="/"><span data-underline-link class="underline-link">lazyapps</span></a>
+        <a data-hover href="mailto:lazyapps.feedback@gmail.com"><span data-underline-link class="underline-link">{t.footer[0]}</span></a>
+        <a data-hover href={code === '' ? '/privacy.zh.html' : '/privacy.en.html'}><span data-underline-link class="underline-link">{t.footer[1]}</span></a>
+        <a data-hover href={code === '' ? '/keyhop/en/' : '/keyhop/'} lang={code === '' ? 'en' : 'zh-Hans'}><span data-underline-link class="underline-link">{t.footer[2]}</span></a>
+      </nav>
+    </div>
+  </footer>
+
+  <script is:inline src={gsapUrl}></script>
+  <script is:inline src={scrollTriggerUrl}></script>
+  <script is:inline src={customEaseUrl}></script>
+  <script is:inline src={splitTextUrl}></script>
+  <script is:inline src={logoRevealUrl}></script>
+  <script is:inline src={siteJsUrl}></script>
+  <script is:inline>
+    const layouts = {
+      qwerty: ['A','S','D','F','G','H','J','K','L',';'],
+      dvorak: ['A','O','E','U','I','D','H','T','N','S'],
+      colemak: ['A','R','S','T','D','H','N','E','I','O'],
+      azerty: ['Q','S','D','F','G','H','J','K','L','M'],
+      qwertz: ['A','S','D','F','G','H','J','K','L','Ö'],
+    };
+    const layoutSelect = document.querySelector('[data-layout-select]');
+    layoutSelect?.addEventListener('change', (event) => {
+      const labels = layouts[event.currentTarget.value];
+      document.querySelectorAll('[data-layout-key]').forEach((key, index) => { key.textContent = labels[index]; });
+    });
+
+    const modifiers = { command: '⌘', option: '⌥', control: '⌃', shift: '⇧' };
+    document.querySelector('[data-modifier-select]')?.addEventListener('change', (event) => {
+      document.querySelectorAll('[data-demo-leader]').forEach((key) => { key.textContent = modifiers[event.currentTarget.value]; });
+    });
+
+    const bindings = [...document.querySelectorAll('[data-demo-binding]')];
+    let demoIndex = 0;
+    document.querySelector('[data-demo-clock]')?.addEventListener('animationiteration', () => {
+      bindings[demoIndex].removeAttribute('data-active');
+      demoIndex = (demoIndex + 1) % bindings.length;
+      bindings[demoIndex].setAttribute('data-active', '');
+    });
+
+    document.querySelector('[data-locale-select]')?.addEventListener('change', (event) => {
+      const option = event.currentTarget.selectedOptions[0];
+      try { localStorage.setItem('keyhop.locale', option.dataset.locale); } catch (_storageError) {}
+      location.href = option.value + location.search + location.hash;
+    });
+  </script>
+</body>
+</html>

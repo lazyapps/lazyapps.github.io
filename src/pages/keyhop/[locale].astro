@@ -1,0 +1,15 @@
+---
+import KeyHopPage from '../../components/KeyHopPage.astro';
+import { KEYHOP_LOCALES } from '../../i18n/keyhop-locales.mjs';
+
+export function getStaticPaths() {
+  return Object.keys(KEYHOP_LOCALES)
+    .filter((code) => code !== '')
+    .map((code) => ({ params: { locale: code } }));
+}
+
+const code = Astro.params.locale;
+const t = KEYHOP_LOCALES[code] ?? KEYHOP_LOCALES.en;
+---
+
+<KeyHopPage t={t} isRoot={false} code={code} />
