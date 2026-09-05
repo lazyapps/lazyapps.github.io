@@ -9,6 +9,7 @@ const { t, isRoot, code } = Astro.props;
 const SITE = 'https://lazyapps.com';
 
 import SocialMeta from './SocialMeta.astro';
+import SiteFooterBase from './SiteFooterBase.astro';
 import siteCssUrl from '$assets/s/site.css?url';
 import gsapUrl from '$assets/vendor/gsap.min.js?url';
 import scrollTriggerUrl from '$assets/vendor/ScrollTrigger.min.js?url';
@@ -374,15 +375,7 @@ const socialImageUrl = {
       <pre dir="ltr"><Fragment set:html={t.brew.install} /></pre>
       <p class="bounds__a">{t.brew.p} <a class="brew__download" href={releaseUrl}>{t.brew.dmg}</a>{t.brew.dmgEnd}</p>
     </div>
-    <div class="base">
-      <p class="mono" lang="en">© 2026 lazyapps</p>
-      <nav class="mono">
-        <a data-hover href="/"><span data-underline-link class="underline-link">lazyapps</span></a>
-        <a data-hover href="mailto:lazyapps.feedback@gmail.com"><span data-underline-link class="underline-link">{t.footer[0]}</span></a>
-        <a data-hover href={code === '' ? '/privacy.zh.html' : '/privacy.en.html'}><span data-underline-link class="underline-link">{t.footer[1]}</span></a>
-        <a data-hover href={code === '' ? '/keyhop/en/' : '/keyhop/'} lang={code === '' ? 'en' : 'zh-Hans'}><span data-underline-link class="underline-link">{t.footer[2]}</span></a>
-      </nav>
-    </div>
+    <SiteFooterBase />
   </footer>
 
   <script is:inline src={gsapUrl}></script>

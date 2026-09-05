@@ -1,6 +1,7 @@
 ---
 const SITE = 'https://lazyapps.com';
 import SocialMeta from '../../components/SocialMeta.astro';
+import SiteFooterBase from '../../components/SiteFooterBase.astro';
 import siteCssUrl from '$assets/s/site.css?url';
 import gsapUrl from '$assets/vendor/gsap.min.js?url';
 import scrollTriggerUrl from '$assets/vendor/ScrollTrigger.min.js?url';
@@ -358,15 +359,7 @@ section.phero.wrap{padding-top:clamp(8px,1.5vw,18px);--h1-size:clamp(38px,6.2vw,
   </section>
 
   
-  <div class="base">
-    <p class="mono">© 2026 lazyapps</p>
-    <nav class="mono">
-      <a data-hover href="/"><span data-underline-link class="underline-link">lazyapps</span></a>
-      <a data-hover href="https://github.com/cxa/xvdl"><span data-underline-link class="underline-link">Source</span></a>
-      <a data-hover href="mailto:lazyapps.feedback@gmail.com"><span data-underline-link class="underline-link">Contact</span></a>
-      <a data-hover href="/privacy.en.html"><span data-underline-link class="underline-link">Privacy</span></a>
-    </nav>
-  </div>
+  <SiteFooterBase />
 
 </footer>
 

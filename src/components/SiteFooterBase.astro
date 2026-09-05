@@ -1,0 +1,44 @@
+---
+interface Props {
+  class?: string;
+}
+
+const { class: className } = Astro.props;
+const classes = ['base', className].filter(Boolean).join(' ');
+---
+
+<div id="site-footer" class={classes} lang="en" dir="ltr">
+  <div class="base__legal">
+    <span class="base__sun" aria-hidden="true">
+      <svg class="base__face" width="64" height="64" viewBox="0 0 64 64" fill="none" focusable="false">
+        <path class="base__sun-rays" d="M32 3v5m0 48v5M3 32h5m48 0h5M11.5 11.5l3.5 3.5m34 34 3.5 3.5m-41 0L15 49m34-34 3.5-3.5" stroke="var(--sun-color)" stroke-width="3" stroke-linecap="round" />
+        <circle cx="32" cy="32" r="19.5" fill="var(--sun-color)" />
+        <path d="M23 30q3 3 6 0m6 0q3 3 6 0M28 39q4 3 8 0" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+      </svg>
+    </span>
+    <div class="base__identity">
+      <a href="/" class="base__wordmark" aria-label="lazyapps home">lazyapps</a>
+      <div class="base__meta">
+        <p class="base__copyright">© 2026</p>
+        <span aria-hidden="true">·</span>
+        <nav aria-label="Footer">
+          <a data-hover href="mailto:lazyapps.feedback@gmail.com"><span data-underline-link class="underline-link">Contact</span></a>
+        </nav>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  const sun = document.querySelector<HTMLElement>('.base__sun');
+  if (sun) {
+    let inView = false;
+    const updateAnimation = () => sun.toggleAttribute('data-animating', inView && !document.hidden);
+    const observer = new IntersectionObserver(([entry]) => {
+      inView = entry.isIntersecting;
+      updateAnimation();
+    });
+    observer.observe(sun);
+    document.addEventListener('visibilitychange', updateAnimation);
+  }
+</script>

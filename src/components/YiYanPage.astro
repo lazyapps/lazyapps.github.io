@@ -9,6 +9,7 @@ const { t, isRoot, code = '' } = Astro.props;
 
 const SITE = 'https://lazyapps.com';
 import SocialMeta from './SocialMeta.astro';
+import SiteFooterBase from './SiteFooterBase.astro';
 import siteCssUrl from '$assets/s/site.css?url';
 import gsapUrl from '$assets/vendor/gsap.min.js?url';
 import scrollTriggerUrl from '$assets/vendor/ScrollTrigger.min.js?url';
@@ -529,12 +530,7 @@ html[data-trust=cjk] .phero__trust li{font:400 .75rem/1.5 var(--mono);letter-spa
     <p class="bounds__a"><Fragment set:html={t.brew.p} /></p>
   </div>
 
-  <div class="base">
-    <p class="mono" lang="en">© 2026 lazyapps</p>
-    <nav class="mono">
-      <Fragment set:html={t.footer.join('\n      ')} />
-    </nav>
-  </div>
+  <SiteFooterBase />
 
 </footer>
 

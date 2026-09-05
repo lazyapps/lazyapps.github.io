@@ -9,6 +9,7 @@ import yiyanIconUrl from '$assets/img/yiyan-icon.png?url';
 import xvdlIconUrl from '$assets/img/xvdl-icon.png?url';
 import opengraphUrl from '$assets/img/opengraph.png?url';
 import SocialMeta from '../components/SocialMeta.astro';
+import SiteFooterBase from '../components/SiteFooterBase.astro';
 ---
 <!doctype html>
 <html lang="zh-Hans">
@@ -257,16 +258,7 @@ section.doc.wrap{padding-top:clamp(8px,1.5vw,18px)}
   </section>
 
   
-  <div class="base">
-    <p class="mono" lang="en">© 2026 lazyapps</p>
-    <nav class="mono">
-      <a data-hover href="/" lang="en"><span data-underline-link class="underline-link">lazyapps</span></a>
-      <a data-hover href="/keyhop/" lang="en"><span data-underline-link class="underline-link">KeyHop</span></a>
-      <a data-hover href="/xvdl/" lang="en"><span data-underline-link class="underline-link">XVDL</span></a>
-      <a data-hover href="mailto:lazyapps.feedback@gmail.com"><span data-underline-link class="underline-link">联系</span></a>
-      <a data-hover href="/privacy.en.html" lang="en"><span data-underline-link class="underline-link">English</span></a>
-    </nav>
-  </div>
+  <SiteFooterBase />
 
 </footer>
 
