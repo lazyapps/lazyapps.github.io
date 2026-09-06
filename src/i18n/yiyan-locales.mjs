@@ -130,7 +130,7 @@ export const YIYAN_LOCALES = {
     },
     "next": {
       "imgAlt": "",
-      "q": "<span class=\"zh\">从下一句话开始</span>"
+      "q": "<span class=\"zh\">把日常输入，变成英语练习</span>"
     },
     "brew": {
       "h3": "<span class=\"zh\">两行装好</span>",
@@ -275,7 +275,7 @@ export const YIYAN_LOCALES = {
     },
     "next": {
       "imgAlt": "",
-      "q": "ابدأ من جملتك القادمة"
+      "q": "حوّل ما تكتبه يوميًا إلى تدريب على الإنجليزية"
     },
     "brew": {
       "h3": "سطران للتثبيت",
@@ -419,7 +419,7 @@ export const YIYAN_LOCALES = {
     },
     "next": {
       "imgAlt": "",
-      "q": "Fang mit deinem nächsten Satz an"
+      "q": "Mach alltägliches Schreiben zur Englischübung"
     },
     "brew": {
       "h3": "Zwei Zeilen, fertig",
@@ -563,7 +563,7 @@ export const YIYAN_LOCALES = {
     },
     "next": {
       "imgAlt": "",
-      "q": "Start with your next sentence"
+      "q": "Turn everyday writing into English practice"
     },
     "brew": {
       "h3": "Two lines to install",
@@ -707,7 +707,7 @@ export const YIYAN_LOCALES = {
     },
     "next": {
       "imgAlt": "",
-      "q": "Empieza por tu próxima frase"
+      "q": "Convierte lo que escribes a diario en práctica de inglés"
     },
     "brew": {
       "h3": "Dos líneas y listo",
@@ -851,7 +851,7 @@ export const YIYAN_LOCALES = {
     },
     "next": {
       "imgAlt": "",
-      "q": "Commencez par votre prochaine phrase"
+      "q": "Faites de vos écrits quotidiens un exercice d’anglais"
     },
     "brew": {
       "h3": "Deux lignes et c’est installé",
@@ -995,7 +995,7 @@ export const YIYAN_LOCALES = {
     },
     "next": {
       "imgAlt": "",
-      "q": "अगले वाक्य से शुरू कीजिए"
+      "q": "रोज़ लिखे गए पाठ से अंग्रेज़ी का अभ्यास करें"
     },
     "brew": {
       "h3": "दो पंक्तियों में तैयार",
@@ -1139,7 +1139,7 @@ export const YIYAN_LOCALES = {
     },
     "next": {
       "imgAlt": "",
-      "q": "次の一文から始める"
+      "q": "日々の入力を英語の練習に"
     },
     "brew": {
       "h3": "2 行で導入",
@@ -1283,7 +1283,7 @@ export const YIYAN_LOCALES = {
     },
     "next": {
       "imgAlt": "",
-      "q": "다음 문장부터 시작하세요"
+      "q": "일상 속 글쓰기를 영어 연습으로"
     },
     "brew": {
       "h3": "두 줄로 설치",
@@ -1427,7 +1427,7 @@ export const YIYAN_LOCALES = {
     },
     "next": {
       "imgAlt": "",
-      "q": "Comece pela sua próxima frase"
+      "q": "Transforme o que você escreve em prática de inglês"
     },
     "brew": {
       "h3": "Duas linhas e pronto",
@@ -1571,7 +1571,7 @@ export const YIYAN_LOCALES = {
     },
     "next": {
       "imgAlt": "",
-      "q": "Начните со следующей фразы"
+      "q": "Превратите повседневные сообщения в практику английского"
     },
     "brew": {
       "h3": "Две строки — и готово",
@@ -1715,7 +1715,7 @@ export const YIYAN_LOCALES = {
     },
     "next": {
       "imgAlt": "",
-      "q": "<span class=\"zh\">從下一句話開始</span>"
+      "q": "<span class=\"zh\">把日常輸入，變成英語練習</span>"
     },
     "brew": {
       "h3": "<span class=\"zh\">兩行裝好</span>",

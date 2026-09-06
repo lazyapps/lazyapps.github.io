@@ -10,10 +10,11 @@ import splitTextUrl from '$assets/vendor/SplitText.min.js?url';
 import logoRevealUrl from '$assets/s/logo-reveal-loader.js?url';
 import siteJsUrl from '$assets/s/site.js?url';
 import keyhopIconUrl from '$assets/img/keyhop-symbol.png?url';
-import yiyanIconUrl from '$assets/img/yiyan-icon.png?url';
-import xvdlIconUrl from '$assets/img/xvdl-icon.png?url';
+import keyhopSettingsUrl from '$assets/img/keyhop-settings.png?url';
+import yiyanIconUrl from '$assets/img/yiyan-symbol.png?url';
+import xvdlIconUrl from '$assets/img/xvdl-symbol.svg?url';
 import opengraphUrl from '$assets/img/opengraph.png?url';
-import showcaseUrl from '$assets/img/yiyan-showcase.png?url';
+import showcaseUrl from '$assets/img/yiyan-learning-log.png?url';
 import inUseUrl from '$assets/img/xvdl-in-use.png?url';
 import appChmateUrl from '$assets/img/app-chmate.jpg?url';
 import appCiaUrl from '$assets/img/app-cia.jpg?url';
@@ -55,7 +56,7 @@ setTimeout(function(){
 }, 6000);
 </script>
 <style is:inline>
-.deck{padding-top:clamp(32px,4.5vw,72px);padding-bottom:clamp(40px,5vw,80px)}
+.deck{padding-top:clamp(28px,4vw,48px);padding-bottom:clamp(40px,5vw,80px)}
 .deck>[data-reveal-group]{
   display:grid;grid-template-columns:repeat(2,minmax(0,1fr));
   gap:clamp(16px,2vw,28px);align-items:stretch;
@@ -70,16 +71,15 @@ setTimeout(function(){
   transition:transform .32s cubic-bezier(.2,.8,.2,1);
 }
 .card--featured{grid-column:1/-1}
-.card--c1{--fill:var(--c1)}
-.card--c2{--fill:var(--c2)}
-.card--c3{--fill:var(--c3)}
-.card--c4{--fill:var(--c4)}
-.card--c5{--fill:var(--c5)}
-.card--c6{--fill:var(--c6);--fg:#f8f8f6}
-.card--keyhop{--fill:oklch(0.920 0.040 215)}
+.card--yiyan{--fill:oklch(0.9 0.152 95)}
+.card--xvdl{--fill:oklch(0.8 0.099 225)}
+.card--chmate{--fill:oklch(0.8 0.102 245)}
+.card--cia{--fill:oklch(0.8 0.176 145)}
+.card--yifan{--fill:oklch(0.8 0.1 160)}
+.card--fondfont{--fill:oklch(0.9 0.17 105)}
+.card--keyhop{--fill:oklch(0.8 0.083 300)}
 .card:nth-child(odd){--card-rotate:-1deg}
 .card:nth-child(even){--card-rotate:1deg}
-.card--ink{border-color:rgba(248,248,246,.12)}
 .card__tag{
   display:inline-flex;width:max-content;max-width:100%;margin-left:auto;
   padding:.375rem .625rem;border-radius:999px;
@@ -93,12 +93,19 @@ setTimeout(function(){
 }
 .card--compact .card__grid{grid-template-columns:minmax(0,1fr);padding-top:clamp(24px,3vw,40px)}
 .card__copy{display:flex;min-width:0;flex-direction:column;align-items:flex-start}
-.card__heading{display:flex;min-width:0;align-items:center;gap:clamp(12px,1.5vw,18px)}
-.card__title{max-width:14ch;font-size:clamp(34px,4.6vw,64px)}
-.card--compact .card__title{font-size:clamp(30px,3.2vw,44px)}
+.card__heading{display:flex;min-width:0;align-items:center;gap:clamp(8px,.8vw,10px);font:900 clamp(34px,4.6vw,64px)/1 var(--display-latin)}
+.card__title{font-size:inherit;text-box:trim-both cap alphabetic}
+.card--compact .card__heading{font-size:clamp(30px,3.2vw,44px)}
+.card--yifan .card__title{text-box:normal}
 .card__p{margin-top:1rem;max-width:34em;font-size:1rem;line-height:1.7}
 .card__foot{margin-top:auto;padding-top:clamp(20px,2.4vw,30px)}
-.card__icon{width:clamp(46px,4.4vw,62px);height:auto;border-radius:24%;flex:none}
+.card__icon{width:auto;height:1cap;border-radius:24%;flex:none}
+/* Whole iOS icons are 12% taller than the visible glyphs for optical balance. */
+.card--compact .card__icon{height:calc(.667em * 1.12)}
+.card--yifan .card__icon{height:calc(.934em * 1.12)}
+.card--featured .card__icon{border-radius:0}
+.card--keyhop .card__icon{height:1.286cap;margin-block:-.143cap}
+.card--yiyan .card__icon{height:1.647cap;margin-block-start:-.647cap}
 .card__go{
   display:inline-flex;min-height:44px;align-items:center;gap:.75rem;
   padding:.75rem .875rem .75rem 1rem;border-radius:999px;
@@ -117,11 +124,12 @@ setTimeout(function(){
   background:color-mix(in oklch,currentColor 6%,transparent);
   box-shadow:inset 0 0 0 1px color-mix(in oklch,currentColor 9%,transparent);
 }
-.card__shots img:not(.card__app-icon){
+.card__shots img{
   width:100%;height:100%;max-height:clamp(190px,22vw,320px);object-fit:cover;object-position:top;
   border-radius:min(1.2vw,8px);outline:1px solid color-mix(in oklch,currentColor 10%,transparent);outline-offset:-1px;
 }
-.card__shots .card__app-icon{width:clamp(104px,14vw,176px);height:auto;border-radius:24%}
+:is(.card--keyhop,.card--yiyan) .card__shots{aspect-ratio:auto}
+:is(.card--keyhop,.card--yiyan) .card__shots img{height:auto;max-height:none;object-fit:contain;outline:none}
 @media (hover:hover) and (pointer:fine){
   .card:has(.card__go:hover){z-index:4;transform:translateY(-6px) rotate(0)}
   .card:has(.card__go:active){transform:translateY(-2px) rotate(0) scale(.995)}
@@ -131,31 +139,22 @@ setTimeout(function(){
   .deck>[data-reveal-group]{grid-template-columns:minmax(0,1fr);gap:16px}
   .card--featured{grid-column:auto}
   .card__grid{grid-template-columns:minmax(0,1fr)}
-  .card--keyhop .card__grid{position:relative;grid-template-columns:minmax(0,1fr)}
-  .card--keyhop .card__heading{min-height:clamp(84px,24vw,112px);padding-right:clamp(100px,28vw,128px);align-items:flex-start}
-  .card--keyhop .card__shots{position:absolute;top:20px;right:0;width:clamp(84px,24vw,112px);aspect-ratio:1;padding:12px}
-  .card--keyhop .card__shots .card__app-icon{width:100%}
   .card__shots{aspect-ratio:16/9}
 }
 @media (max-width:560px){
-  .wordmark{margin-top:24px}
-  .deck{padding-top:28px}
   .card{border-radius:14px;padding:20px;transform:none}
   .card__tag{font-size:.6875rem}
   .card__grid,.card--compact .card__grid{padding-top:20px}
-  .card__heading{gap:12px}
-  .card__title{font-size:36px}
-  .card--compact .card__title{font-size:32px}
+  .card__heading{font-size:36px}
+  .card--compact .card__heading{font-size:32px}
   .card__p{font-size:1.0625rem;line-height:1.65}
   .card__foot{width:100%;padding-top:20px}
   .card__go{width:100%;min-height:48px;justify-content:space-between}
   .card__shots{padding:10px;border-radius:10px}
 }
 @media (max-width:360px){
-  .card--keyhop .card__heading{min-height:76px;padding-right:90px}
-  .card--keyhop .card__shots{width:76px}
-  .card__title{font-size:34px}
-  .card--compact .card__title{font-size:30px}
+  .card__heading{font-size:34px}
+  .card--compact .card__heading{font-size:30px}
 }
 </style>
 </head>
@@ -190,27 +189,12 @@ setTimeout(function(){
 
   
   <section class="hero wrap">
-<h2 class="wordmark dsp">lazyapps<i></i></h2>
+    <h1 class="hero__brand dsp">
+      <span class="wordmark">lazyapps<i aria-hidden="true"></i></span>
+    </h1>
 
-    <div class="hero__pitch" data-reveal-group data-stagger="110" data-distance="1.2em" data-start="top 92%">
-      <div>
-        <h1 class="hero__h1 dsp">Independent software since 2009</h1>
-        <p class="hero__sub">Small, focused tools for Mac, iPhone, and iPad. Local-first, free of tracking, and crafted for daily use.</p>
-      </div>
-      <div class="hero__side">
-        <ul class="hero__trust" role="list">
-          <li>
-            
-            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M22 3.5H2V17H22V3.5Z" stroke="currentColor" stroke-miterlimit="10"/><path d="M6.5 20H17.5" stroke="currentColor" stroke-miterlimit="10"/><path d="M12 17V20" stroke="currentColor" stroke-miterlimit="10"/></svg>
-            macOS · iPhone · iPad · Safari
-          </li>
-          <li>
-            
-            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M20.5 10.5H3.5V21.5H20.5V10.5Z" stroke="currentColor"/><path d="M12 14.5V17" stroke="currentColor"/><path d="M18 10.5V8C18 6.4087 17.3679 4.88258 16.2426 3.75736C15.1174 2.63214 13.5913 2 12 2C10.4087 2 8.88258 2.63214 7.75736 3.75736C6.63214 4.88258 6 6.4087 6 8V10.5" stroke="currentColor"/></svg>
-            No data collected
-          </li>
-        </ul>
-      </div>
+    <div data-reveal-group data-stagger="110" data-distance="1.2em" data-start="top 92%">
+      <p class="hero__sub">Small, focused tools for Mac, iPhone, and iPad. Local-first, free of tracking, and crafted for daily use.</p>
     </div>
 
   </section>
@@ -224,6 +208,7 @@ setTimeout(function(){
         <div class="card__grid">
           <div class="card__copy">
             <div class="card__heading">
+              <img class="card__icon" src={keyhopIconUrl} alt="">
               <h3 class="card__title dsp">KeyHop</h3>
             </div>
             <p class="card__p">Ten fixed home-row keys map to ten apps. Switch or launch with pure muscle memory—regardless of keyboard layout.</p>
@@ -232,12 +217,12 @@ setTimeout(function(){
             </div>
           </div>
           <div class="card__shots">
-            <img class="card__app-icon" src={keyhopIconUrl} alt="">
+            <img src={keyhopSettingsUrl} alt="KeyHop settings with leader-key selection and home-row app assignments" width="1944" height="1408">
           </div>
         </div>
       </article>
 
-      <article class="card card--featured card--c1" id="yiyan">
+      <article class="card card--featured card--yiyan" id="yiyan">
         <p class="card__tag">macOS 15+ · English learning</p>
         <div class="card__grid">
           <div class="card__copy">
@@ -251,12 +236,12 @@ setTimeout(function(){
             </div>
           </div>
           <div class="card__shots">
-            <img src={showcaseUrl} alt="YiYan learning log on macOS">
+            <img src={showcaseUrl} alt="YiYan learning log on macOS" width="1616" height="1388">
           </div>
         </div>
       </article>
 
-      <article class="card card--featured card--c2">
+      <article class="card card--featured card--xvdl">
         <p class="card__tag">macOS · Safari extension</p>
         <div class="card__grid">
           <div class="card__copy">
@@ -275,7 +260,7 @@ setTimeout(function(){
         </div>
       </article>
 
-      <article class="card card--compact card--c3">
+      <article class="card card--compact card--chmate">
         <p class="card__tag">iPhone &amp; iPad · Since 2009</p>
         <div class="card__grid">
           <div class="card__copy">
@@ -291,7 +276,7 @@ setTimeout(function(){
         </div>
       </article>
 
-      <article class="card card--compact card--c4">
+      <article class="card card--compact card--cia">
         <p class="card__tag">iPhone &amp; iPad · Since 2011</p>
         <div class="card__grid">
           <div class="card__copy">
@@ -307,13 +292,13 @@ setTimeout(function(){
         </div>
       </article>
 
-      <article class="card card--compact card--c5">
+      <article class="card card--compact card--yifan">
         <p class="card__tag">iPhone &amp; iPad · Since 2012</p>
         <div class="card__grid">
           <div class="card__copy">
             <div class="card__heading">
               <img class="card__icon" src={appYifanUrl} alt="">
-              <h3 class="card__title dsp"><span class="zh" lang="zh">《一饭》</span></h3>
+              <h3 class="card__title dsp"><span class="zh" lang="zh">一饭</span></h3>
             </div>
             <p class="card__p">A native Fanfou client for timelines, mentions, direct messages, favorites, and photos.</p>
             <div class="card__foot">
@@ -323,7 +308,7 @@ setTimeout(function(){
         </div>
       </article>
 
-      <article class="card card--compact card--ink card--c6">
+      <article class="card card--compact card--fondfont">
         <p class="card__tag">iPhone &amp; iPad · Since 2014</p>
         <div class="card__grid">
           <div class="card__copy">

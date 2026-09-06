@@ -235,7 +235,7 @@ const ctaButtons = t.cta.slice(0, 2).map((label, i) => {
   imageHeight={630}
   locale={ogLocale}
 />
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2064%2064%22%3E%3Crect%20width%3D%2264%22%20height%3D%2264%22%20rx%3D%2215%22%20fill%3D%22%23171717%22%2F%3E%3Cpath%20fill%3D%22%23f8f8f6%22%20d%3D%22M20%2013h12v33h17v10H20z%22%2F%3E%3Ccircle%20cx%3D%2245%22%20cy%3D%2219%22%20r%3D%225%22%20fill%3D%22%23ff6846%22%2F%3E%3C%2Fsvg%3E">
+<link rel="icon" type="image/png" href={yiyanIconUrl}>
 <link rel="stylesheet" href={siteCssUrl}>
 {isRoot && <script is:inline data-language-redirect set:html={REDIRECT_SCRIPT} />}
 <script is:inline>
@@ -251,6 +251,23 @@ setTimeout(()=> {
 }, 6000);
 </script>
 <style is:inline>
+:root{
+  --accent:oklch(0.55 0.214 25);
+  --c1:oklch(0.9 0.152 95);
+  --c2:oklch(0.72 0.17 32);
+  --c3:oklch(0.9 0.045 25);
+  --c4:oklch(0.96 0.015 25);
+  --c6:oklch(0.24 0.093 25);
+  --button-023-color-background:var(--accent);
+  --button-023-between-color-background:var(--c2);
+  --button-023-hover-color-background:var(--c1);
+}
+.button-023--ghost{
+  --button-023-color:var(--accent);
+  --button-023-hover-color-background:var(--c6);
+}
+.button-023--ghost .button-023__bg{box-shadow:inset 0 0 0 1px var(--accent)}
+.brew .bounds__a a{color:var(--c2)}
 section.phero.wrap{padding-top:clamp(8px,1.5vw,18px);--h1-size:clamp(38px,6.2vw,96px)}
 .phero__h1{margin-top:clamp(28px,4vw,64px);font-size:var(--h1-size);max-width:calc(14 * var(--h1-size))}
 .phero__sub{margin-top:clamp(18px,2.2vw,32px);font-size:1.0625rem;color:var(--muted);max-width:calc(14 * var(--h1-size))}

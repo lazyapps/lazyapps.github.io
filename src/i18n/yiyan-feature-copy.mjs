@@ -1,5 +1,6 @@
 export const YIYAN_FEATURE_COPY = {
   '': {
+    next: { imgAlt: '', q: '<span class="zh">把日常输入，变成英语练习</span>' },
     title: '绎言 YiYan — 地道英语，边用边学',
     ogTitle: '绎言 YiYan — 地道英语，边用边学',
     h1: '<span class="zh">地道英语，边用边学</span>',
@@ -29,6 +30,7 @@ export const YIYAN_FEATURE_COPY = {
     ],
   },
   ar: {
+    next: { imgAlt: '', q: 'حوّل ما تكتبه يوميًا إلى تدريب على الإنجليزية' },
     description: 'يلتقط YiYan ما تكتبه في Pi أو Claude Code أو Codex أو OpenCode أو Antigravity، ويتيح لك أيضًا إدخال النص مباشرة أو تنقيح الحقل الذي تعمل فيه. يعيد إنجليزية طبيعية وملاحظات مركّزة، ثم يزامن تعلّمك من Mac إلى iPhone عبر iCloud.',
     ogDesc: 'يلتقط YiYan ما تكتبه في Pi أو Claude Code أو Codex أو OpenCode أو Antigravity، ويتيح لك إدخال النص مباشرة أو تنقيح الحقل الحالي، ثم يعيد إنجليزية طبيعية وملاحظات مركّزة.',
     sub: 'واصل العمل في Pi أو Claude Code أو Codex أو OpenCode أو Antigravity، أو اكتب مباشرة في YiYan، أو نقّح حقل الإدخال الحالي من اختصار أو شريط القوائم. يعيد YiYan استخدام مساعد متاح ومسجّل الدخول على Mac ليقدّم إنجليزية طبيعية وملاحظات مركّزة، وتصل سجلاتك إلى iPhone عبر iCloud.',
@@ -55,6 +57,7 @@ export const YIYAN_FEATURE_COPY = {
     ],
   },
   de: {
+    next: { imgAlt: '', q: 'Mach alltägliches Schreiben zur Englischübung' },
     description: 'YiYan greift auf, was du in Pi, Claude Code, Codex, OpenCode oder Antigravity schreibst, lässt dich aber auch Text direkt eingeben oder das aktive Eingabefeld verfeinern. Du erhältst natürliches Englisch und gezielte Hinweise; per iCloud geht dein Lernverlauf vom Mac aufs iPhone.',
     ogDesc: 'YiYan greift auf, was du in Pi, Claude Code, Codex, OpenCode oder Antigravity schreibst, lässt dich Text direkt eingeben oder das aktive Feld verfeinern und liefert natürliches Englisch mit gezielten Hinweisen.',
     sub: 'Arbeite in Pi, Claude Code, Codex, OpenCode oder Antigravity weiter, schreibe direkt in YiYan oder verfeinere das aktive Eingabefeld per Kurzbefehl oder Menüleiste. YiYan nutzt einen verfügbaren, angemeldeten Assistenten auf deinem Mac für natürliches Englisch und gezielte Hinweise; dein Verlauf erreicht per iCloud das iPhone.',
@@ -81,6 +84,7 @@ export const YIYAN_FEATURE_COPY = {
     ],
   },
   en: {
+    next: { imgAlt: '', q: 'Turn everyday writing into English practice' },
     description: 'YiYan quietly picks up what you type in Pi, Claude Code, Codex, OpenCode, or Antigravity, or lets you write directly and refine the field in front of you. It returns natural English and focused notes, then syncs your learning from Mac to iPhone over iCloud.',
     ogDesc: 'YiYan picks up what you type in Pi, Claude Code, Codex, OpenCode, or Antigravity, lets you write directly or refine the field in front of you, and returns natural English with focused notes.',
     sub: 'Keep working in Pi, Claude Code, Codex, OpenCode, or Antigravity, type directly into YiYan, or refine the field in front of you from a shortcut or the menu bar. YiYan reuses an available signed-in assistant on your Mac to return natural English and focused notes, with your history available on iPhone through iCloud.',
@@ -107,6 +111,7 @@ export const YIYAN_FEATURE_COPY = {
     ],
   },
   es: {
+    next: { imgAlt: '', q: 'Convierte lo que escribes a diario en práctica de inglés' },
     description: 'YiYan recoge lo que escribes en Pi, Claude Code, Codex, OpenCode o Antigravity, y también te deja introducir texto directamente o pulir el campo que tienes delante. Devuelve un inglés natural y notas concretas, y sincroniza tu aprendizaje del Mac al iPhone por iCloud.',
     ogDesc: 'YiYan recoge lo que escribes en Pi, Claude Code, Codex, OpenCode o Antigravity, te deja introducir texto directamente o pulir el campo actual y devuelve un inglés natural con notas concretas.',
     sub: 'Sigue trabajando en Pi, Claude Code, Codex, OpenCode o Antigravity, escribe directamente en YiYan o pule el campo actual desde un atajo o la barra de menús. YiYan reutiliza un asistente disponible con sesión iniciada en tu Mac para devolver inglés natural y notas concretas; tu historial llega al iPhone por iCloud.',
@@ -133,6 +138,7 @@ export const YIYAN_FEATURE_COPY = {
     ],
   },
   fr: {
+    next: { imgAlt: '', q: 'Faites de vos écrits quotidiens un exercice d’anglais' },
     description: 'YiYan récupère ce que vous écrivez dans Pi, Claude Code, Codex, OpenCode ou Antigravity, et vous permet aussi de saisir du texte directement ou d’affiner le champ actif. Il renvoie un anglais naturel et des notes ciblées, puis synchronise votre apprentissage du Mac vers l’iPhone via iCloud.',
     ogDesc: 'YiYan récupère ce que vous écrivez dans Pi, Claude Code, Codex, OpenCode ou Antigravity, permet la saisie directe ou l’amélioration du champ actif et renvoie un anglais naturel avec des notes ciblées.',
     sub: 'Continuez dans Pi, Claude Code, Codex, OpenCode ou Antigravity, écrivez directement dans YiYan ou affinez le champ actif avec un raccourci ou la barre des menus. YiYan réutilise un assistant disponible et connecté sur votre Mac pour produire un anglais naturel et des notes ciblées ; votre historique rejoint l’iPhone via iCloud.',
@@ -159,6 +165,7 @@ export const YIYAN_FEATURE_COPY = {
     ],
   },
   hi: {
+    next: { imgAlt: '', q: 'रोज़ लिखे गए पाठ से अंग्रेज़ी का अभ्यास करें' },
     description: 'YiYan Pi, Claude Code, Codex, OpenCode या Antigravity में आपके लिखे पाठ को उठा लेता है, और आपको सीधे लिखने या सामने वाले इनपुट फ़ील्ड को निखारने भी देता है। यह सहज अंग्रेज़ी और केंद्रित नोट देता है, फिर Mac से iPhone तक आपकी सीख को iCloud से सिंक करता है।',
     ogDesc: 'YiYan Pi, Claude Code, Codex, OpenCode या Antigravity में आपके लिखे पाठ को उठाता है, सीधे लिखने या मौजूदा फ़ील्ड को निखारने देता है और सहज अंग्रेज़ी के साथ केंद्रित नोट देता है।',
     sub: 'Pi, Claude Code, Codex, OpenCode या Antigravity में काम करते रहें, YiYan में सीधे लिखें, या शॉर्टकट अथवा मेनू बार से मौजूदा इनपुट फ़ील्ड को निखारें। YiYan आपके Mac पर उपलब्ध, साइन-इन किए सहायक को दोबारा इस्तेमाल करके सहज अंग्रेज़ी और केंद्रित नोट देता है; आपका इतिहास iCloud से iPhone तक पहुँचता है।',
@@ -185,6 +192,7 @@ export const YIYAN_FEATURE_COPY = {
     ],
   },
   ja: {
+    next: { imgAlt: '', q: '日々の入力を英語の練習に' },
     description: 'Pi、Claude Code、Codex、OpenCode、Antigravity への入力を自動で拾うほか、YiYan に直接書いたり、いま開いている入力欄をその場で整えたりできます。自然な英語と要点メモを返し、Mac の学習記録は iCloud で iPhone へ同期します。',
     ogDesc: 'Pi、Claude Code、Codex、OpenCode、Antigravity への入力を拾い、YiYan への直接入力や現在の入力欄の書き直しにも対応。自然な英語と要点メモを返します。',
     sub: 'Pi、Claude Code、Codex、OpenCode、Antigravity でいつもどおり作業する、YiYan に直接書く、またはショートカットやメニューバーから現在の入力欄を整える。YiYan は Mac で利用可能なログイン済みアシスタントをそのまま使い、自然な英語と要点メモを返します。記録は iCloud で iPhone にも届きます。',
@@ -211,6 +219,7 @@ export const YIYAN_FEATURE_COPY = {
     ],
   },
   ko: {
+    next: { imgAlt: '', q: '일상 속 글쓰기를 영어 연습으로' },
     description: 'YiYan은 Pi, Claude Code, Codex, OpenCode, Antigravity에 입력한 내용을 자동으로 가져오며, 직접 글을 쓰거나 지금 보고 있는 입력창을 다듬을 수도 있습니다. 자연스러운 영어와 핵심 메모를 돌려주고, Mac의 학습 기록은 iCloud로 iPhone에 동기화합니다.',
     ogDesc: 'Pi, Claude Code, Codex, OpenCode, Antigravity의 입력을 가져오고, 직접 입력하거나 현재 입력창을 다듬을 수 있으며, 자연스러운 영어와 핵심 메모를 제공합니다.',
     sub: 'Pi, Claude Code, Codex, OpenCode, Antigravity에서 평소처럼 작업하거나 YiYan에 직접 쓰고, 단축키나 메뉴 막대에서 현재 입력창을 다듬을 수도 있습니다. YiYan은 Mac에서 로그인되어 사용 가능한 도우미를 그대로 활용해 자연스러운 영어와 핵심 메모를 만들며, 기록은 iCloud로 iPhone에도 이어집니다.',
@@ -237,6 +246,7 @@ export const YIYAN_FEATURE_COPY = {
     ],
   },
   'pt-br': {
+    next: { imgAlt: '', q: 'Transforme o que você escreve em prática de inglês' },
     description: 'O YiYan recolhe o que você escreve no Pi, Claude Code, Codex, OpenCode ou Antigravity, e também permite digitar diretamente ou lapidar o campo que está à sua frente. Ele devolve um inglês natural e notas objetivas, e sincroniza seu aprendizado do Mac para o iPhone pelo iCloud.',
     ogDesc: 'O YiYan recolhe o que você escreve no Pi, Claude Code, Codex, OpenCode ou Antigravity, permite digitar diretamente ou lapidar o campo atual e devolve um inglês natural com notas objetivas.',
     sub: 'Continue trabalhando no Pi, Claude Code, Codex, OpenCode ou Antigravity, escreva diretamente no YiYan ou lapide o campo atual por um atalho ou pela barra de menus. O YiYan reutiliza um assistente disponível e conectado no Mac para devolver inglês natural e notas objetivas; seu histórico chega ao iPhone pelo iCloud.',
@@ -263,6 +273,7 @@ export const YIYAN_FEATURE_COPY = {
     ],
   },
   ru: {
+    next: { imgAlt: '', q: 'Превратите повседневные сообщения в практику английского' },
     title: 'YiYan — Естественный английский по ходу дела',
     ogTitle: 'YiYan — Естественный английский по ходу дела',
     h1: 'Естественный английский по ходу дела',
@@ -292,6 +303,7 @@ export const YIYAN_FEATURE_COPY = {
     ],
   },
   'zh-hant': {
+    next: { imgAlt: '', q: '<span class="zh">把日常輸入，變成英語練習</span>' },
     title: '繹言 YiYan — 道地英語，邊用邊學',
     ogTitle: '繹言 YiYan — 道地英語，邊用邊學',
     h1: '<span class="zh">道地英語，邊用邊學</span>',
