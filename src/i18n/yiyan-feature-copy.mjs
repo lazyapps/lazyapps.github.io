@@ -1,9 +1,10 @@
+// 「边蹬边学」是固定品牌表述；繁体用「邊蹬邊學」。
 export const YIYAN_FEATURE_COPY = {
   '': {
     next: { imgAlt: '', q: '<span class="zh">把日常输入，变成英语练习</span>' },
-    title: '绎言 YiYan — 地道英语，边用边学',
-    ogTitle: '绎言 YiYan — 地道英语，边用边学',
-    h1: '<span class="zh">地道英语，边用边学</span>',
+    title: '绎言 YiYan — 地道英语，边蹬边学',
+    ogTitle: '绎言 YiYan — 地道英语，边蹬边学',
+    h1: '<span class="zh">地道英语，边蹬边学</span>',
     description: '自动捕捉你在 Pi、Claude Code、Codex、OpenCode 或 Antigravity 里的输入，也可直接输入或润色当前输入框；给出更自然的英语表达和重点笔记。Mac 上积累，通过 iCloud 同步到 iPhone。',
     ogDesc: '自动捕捉你在 Pi、Claude Code、Codex、OpenCode 或 Antigravity 里的输入，也可直接输入或润色当前输入框；给出更自然的英语表达和重点笔记。',
     sub: '照常在 Pi、Claude Code、Codex、OpenCode 或 Antigravity 里工作，或直接输入一段文字；需要时还可以从菜单栏或快捷键润色当前输入框。绎言会自动复用本机可用的语言助手，给出更自然的英语表达和重点笔记；记录可通过 iCloud 同步到 iPhone。',
@@ -304,9 +305,9 @@ export const YIYAN_FEATURE_COPY = {
   },
   'zh-hant': {
     next: { imgAlt: '', q: '<span class="zh">把日常輸入，變成英語練習</span>' },
-    title: '繹言 YiYan — 道地英語，邊用邊學',
-    ogTitle: '繹言 YiYan — 道地英語，邊用邊學',
-    h1: '<span class="zh">道地英語，邊用邊學</span>',
+    title: '繹言 YiYan — 道地英語，邊蹬邊學',
+    ogTitle: '繹言 YiYan — 道地英語，邊蹬邊學',
+    h1: '<span class="zh">道地英語，邊蹬邊學</span>',
     description: '自動擷取你在 Pi、Claude Code、Codex、OpenCode 或 Antigravity 裡的輸入，也可直接輸入或潤飾目前的輸入框；給出更自然的英語說法和重點筆記。Mac 上累積，透過 iCloud 同步到 iPhone。',
     ogDesc: '自動擷取你在 Pi、Claude Code、Codex、OpenCode 或 Antigravity 裡的輸入，也可直接輸入或潤飾目前的輸入框；給出更自然的英語說法和重點筆記。',
     sub: '照常在 Pi、Claude Code、Codex、OpenCode 或 Antigravity 裡工作，或直接輸入一段文字；需要時還可以從選單列或快速鍵潤飾目前的輸入框。繹言會自動沿用本機可用的語言助理，給出更自然的英語說法和重點筆記；記錄可透過 iCloud 同步到 iPhone。',

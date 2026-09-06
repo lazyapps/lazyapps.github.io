@@ -308,7 +308,10 @@ html[data-trust=cjk] .phero__trust li{font:400 .75rem/1.5 var(--mono);letter-spa
 .card__grid{display:grid;grid-template-columns:minmax(0,.82fr) minmax(0,1.18fr);gap:clamp(18px,2.6vw,44px);align-items:start;padding-top:1.5rem}
 .card__title{font-size:clamp(26px,3.4vw,46px)}
 .card__p{font-size:1.0625rem;line-height:1.85}
-@media (max-width:860px){.card__grid{grid-template-columns:1fr}}
+@media (max-width:860px){
+  .card__tag{position:static;text-align:end;text-wrap:balance}
+  .card__grid{grid-template-columns:1fr;padding-top:.75rem}
+}
 
 .pair{padding-top:clamp(40px,5.5vw,88px)}
 .pair__head{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;padding-bottom:.75rem;border-bottom:1px solid var(--line)}
@@ -451,7 +454,7 @@ html[data-trust=cjk] .phero__trust li{font:400 .75rem/1.5 var(--mono);letter-spa
     <div data-reveal-group data-stagger="140" data-distance="2.1em" data-start="top 88%">
 
       {t.cards.map((card, i) => <article class={`card card--c${i + 1}`}>
-        <p class="card__tag" lang={card.tagLang ? 'en' : undefined}><Fragment set:html={card.tag} /></p>
+        <p class="card__tag" lang={card.tagLang ? 'en' : undefined}><Fragment set:html={card.tag.replaceAll(' · ', '&nbsp;· ')} /></p>
         <div class="card__grid">
           <h3 class="card__title dsp"><Fragment set:html={card.title} /></h3>
           <p class="card__p"><Fragment set:html={card.p} /></p>
