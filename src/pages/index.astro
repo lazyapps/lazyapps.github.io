@@ -56,17 +56,17 @@ setTimeout(function(){
 }, 6000);
 </script>
 <style is:inline>
-.deck{padding-top:clamp(28px,4vw,48px);padding-bottom:clamp(40px,5vw,80px)}
+.deck{padding-top:clamp(28px,4vw,48px)}
 .deck>[data-reveal-group]{
   display:grid;grid-template-columns:repeat(2,minmax(0,1fr));
-  gap:clamp(16px,2vw,28px);align-items:stretch;
+  gap:var(--space-grid);align-items:stretch;
 }
 .card{
   --card-rotate:0deg;
   position:relative;isolation:isolate;display:flex;min-width:0;overflow:clip;flex-direction:column;
   background:var(--fill);color:var(--fg,var(--ink));
   border:1px solid rgba(23,23,23,.08);border-radius:var(--r-card);
-  padding:clamp(20px,2.4vw,34px);
+  padding:var(--space-card);
   transform:rotate(var(--card-rotate));transform-origin:center;
   transition:transform .32s cubic-bezier(.2,.8,.2,1);
 }
@@ -89,9 +89,9 @@ setTimeout(function(){
 }
 .card__grid{
   flex:1;display:grid;grid-template-columns:minmax(0,9fr) minmax(240px,8fr);
-  gap:clamp(20px,3vw,48px);align-items:stretch;padding-top:clamp(20px,2.4vw,32px);
+  gap:var(--space-grid);align-items:stretch;padding-top:var(--space-grid);
 }
-.card--compact .card__grid{grid-template-columns:minmax(0,1fr);padding-top:clamp(24px,3vw,40px)}
+.card--compact .card__grid{grid-template-columns:minmax(0,1fr)}
 .card__copy{display:flex;min-width:0;flex-direction:column;align-items:flex-start}
 .card__heading{display:flex;min-width:0;align-items:center;gap:clamp(8px,.8vw,10px);font:900 clamp(34px,4.6vw,64px)/1 var(--display-latin)}
 .card__title{font-size:inherit;text-box:trim-both cap alphabetic}
@@ -136,7 +136,7 @@ setTimeout(function(){
   .card:has(.card__go:hover) .card__go{background:color-mix(in oklch,currentColor 11%,transparent)}
 }
 @media (max-width:720px){
-  .deck>[data-reveal-group]{grid-template-columns:minmax(0,1fr);gap:16px}
+  .deck>[data-reveal-group]{grid-template-columns:minmax(0,1fr)}
   .card--featured{grid-column:auto}
   .card__grid{grid-template-columns:minmax(0,1fr)}
   .card__shots{aspect-ratio:16/9}
@@ -144,7 +144,6 @@ setTimeout(function(){
 @media (max-width:560px){
   .card{border-radius:14px;padding:20px;transform:none}
   .card__tag{font-size:.6875rem}
-  .card__grid,.card--compact .card__grid{padding-top:20px}
   .card__heading{font-size:36px}
   .card--compact .card__heading{font-size:32px}
   .card__p{font-size:1.0625rem;line-height:1.65}
