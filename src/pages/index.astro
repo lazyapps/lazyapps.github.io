@@ -85,6 +85,8 @@ setTimeout(function(){
 .card--cia{--fill:oklch(0.8 0.176 145)}
 .card--yifan{--fill:oklch(0.8 0.1 160)}
 .card--fondfont{--fill:oklch(0.9 0.17 105)}
+.card--shheep{--fill:#ffd4e5}
+.card--shheep .card__icon,.card--shheep .card__shots img{image-rendering:pixelated}
 .card--keyhop{--fill:oklch(0.8 0.083 300)}
 .card:nth-child(odd){--card-rotate:-1deg}
 .card:nth-child(even){--card-rotate:1deg}
@@ -209,6 +211,25 @@ setTimeout(function(){
   
   <section class="deck wrap" id="deck">
     <div data-reveal-group data-stagger="140" data-distance="2.1em" data-start="top 88%">
+
+      <article class="card card--featured card--shheep" id="shheep">
+        <p class="card__tag">Web · iPhone &amp; iPad</p>
+        <div class="card__grid">
+          <div class="card__copy">
+            <div class="card__heading">
+              <img class="card__icon" src="/shheep/assets/sprites/sheep_run1.png" alt="">
+              <h3 class="card__title dsp">Shheep</h3>
+            </div>
+            <p class="card__p">She can’t sleep. Hop over fences, duck under bats and count sheep in a tiny pixel dream. A fresh flock every night. Play right in your browser.</p>
+            <div class="card__foot">
+              <a data-hover href="/shheep/" class="card__go"><span>Play Shheep</span><span class="card__arrow" aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+          <div class="card__shots">
+            <img src="/shheep/preview.png" width="1050" height="560" alt="Shheep’s pixel bedroom, with a sleepy girl and a sheep-filled thought bubble">
+          </div>
+        </div>
+      </article>
 
       <article class="card card--featured card--keyhop" id="keyhop">
         <p class="card__tag">macOS 26+ · Apple silicon</p>

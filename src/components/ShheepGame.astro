@@ -1,0 +1,62 @@
+<!-- Generated game artifact. Edit the private web project and export again. -->
+<link rel="stylesheet" href="/shheep/game/game.8b8ea980de7e7b4a.css">
+<section class="shheep-game" aria-label="Play Shheep" data-state="loading">
+  <div class="game-toolbar">
+    <span class="game-night">Tonight’s flock</span>
+    <div class="game-tools">
+      <label class="game-language-label"><span class="sr-only">Game language</span>
+        <select class="game-language" disabled aria-label="Game language">
+          <option value="en">ENGLISH</option><option value="zh-Hans">简体中文</option><option value="zh-Hant">繁體中文</option><option value="ja">日本語</option><option value="ko">한국어</option><option value="es">ESPAÑOL</option><option value="pt-BR">PORTUGUÊS</option><option value="de">DEUTSCH</option><option value="fr">FRANÇAIS</option><option value="it">ITALIANO</option><option value="ru">РУССКИЙ</option>
+        </select>
+      </label>
+      <button type="button" class="game-sound" disabled aria-pressed="false" aria-label="Mute sound">Sound on</button>
+      <button type="button" class="game-pause" hidden aria-label="Pause game">Ⅱ</button>
+      <button type="button" class="game-expand" disabled aria-pressed="false">Expand ↗</button>
+    </div>
+  </div>
+  <div class="game-stage">
+    <canvas tabindex="0" aria-label="Shheep game. Space or up arrow to jump; down arrow to duck. P or Escape to pause." aria-describedby="game-instructions" width="1200" height="640"></canvas>
+    <div class="game-loading" role="status">Tucking in the pixels…</div>
+    <button type="button" class="game-start" hidden>TAP TO COUNT SHEEP</button>
+    <button type="button" class="game-resume" hidden>TAP TO RESUME</button>
+    <div class="game-result" hidden>
+      <h2 data-copy="WIDE AWAKE!">WIDE AWAKE!</h2>
+      <div class="game-result-card">
+        <p class="game-result-count"></p>
+        <p class="game-result-best"></p>
+        <button type="button" class="game-restart" data-copy="SHH... SLEEP">SHH... SLEEP</button>
+        <div class="game-result-actions">
+          <button type="button" class="game-records">Records</button>
+          <button type="button" class="game-share" data-copy="SHARE">SHARE</button>
+        </div>
+      </div>
+    </div>
+    <noscript><div class="game-noscript">Enable JavaScript to play Shheep. You can still explore the game below.</div></noscript>
+  </div>
+  <div class="game-controls">
+    <p id="game-instructions">Tap / <kbd>Space</kbd> to hop · Hold for height · Swipe down / <kbd>↓</kbd> to duck</p>
+    <div class="game-touch-controls">
+      <button type="button" class="game-hop" aria-label="Jump (hold for higher jump)">↑ Hop</button>
+      <button type="button" class="game-duck" aria-label="Duck (hold)">↓ Duck</button>
+    </div>
+  </div>
+  <p class="game-status sr-only" role="status" aria-live="polite"></p>
+  <dialog class="game-dialog" aria-labelledby="game-dialog-title">
+    <div class="game-dialog-head"><h2 id="game-dialog-title">Tonight’s flock</h2><button type="button" class="game-dialog-close" aria-label="Close dialog">×</button></div>
+    <div class="game-record-content" hidden>
+      <dl><div><dt>Tonight’s best</dt><dd class="record-tonight">0</dd></div><div><dt>All-time best</dt><dd class="record-best">0</dd></div><div><dt>Nights in a row</dt><dd class="record-streak">0</dd></div></dl>
+      <p>Saved in this browser. Game Center leaderboards, friend challenges and invitations are available in the iOS app.</p>
+    </div>
+    <div class="game-share-content" hidden>
+      <img class="game-share-preview" alt="Your Shheep good-night card" width="1080" height="1080">
+      <label for="shheep-share-text">Your good-night message</label>
+      <textarea id="shheep-share-text" readonly rows="6"></textarea>
+      <div class="game-share-actions"><a class="game-download" download="shheep-good-night.png">Save card</a><button type="button" class="game-copy">Copy message</button></div>
+      <p class="game-copy-status" role="status"></p>
+    </div>
+  </dialog>
+</section>
+
+
+
+<script is:inline type="module" src="/shheep/game/game.2e0bbfaca33411a1.js"></script>
