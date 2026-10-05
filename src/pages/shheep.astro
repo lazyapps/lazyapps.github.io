@@ -39,7 +39,7 @@ const storeURL = 'https://apps.apple.com/app/id6819031865';
       <h1 class="phero__h1 dsp" id="shheep-title">One more sheep.<br>A little more sleep.</h1>
       <p class="phero__sub">She can’t sleep. You know what to do.</p>
       <ShheepGame />
-      <p class="hero-caption mono">A little game, right here. No download needed.</p>
+      <p class="hero-caption">A little game, right here. No download needed.</p>
       <div class="phero__cta">
         <a href={storeURL} class="app-store-badge">
           <img src="/shheep/app-store-badge.svg" width="144" height="48" alt="Download on the App Store">
@@ -89,9 +89,8 @@ const storeURL = 'https://apps.apple.com/app/id6819031865';
         <span class="button-023__bg"><span style="--index:0" class="button-023__bg-inner is--first"></span><span style="--index:1" class="button-023__bg-inner is--second"></span></span>
         <span class="button-023__inner"><span class="button-023__text is--first">Back to the dream ↑</span><span aria-hidden="true" class="button-023__text is--second">Back to the dream ↑</span></span>
       </a></div>
-      <p class="footer-credits"><a href="/shheep/assets/MUSIC-CREDITS.md">Lullaby by cynicmusic · CC0</a><span aria-hidden="true"> · </span><a href="/privacy.en.html">Privacy</a></p>
-      <details class="licenses" id="licenses">
-        <summary>Licenses</summary>
+      <p class="footer-credits"><a href="/shheep/assets/MUSIC-CREDITS.md">Lullaby by cynicmusic · CC0</a><span aria-hidden="true"> · </span><a href="/privacy.en.html">Privacy</a><span aria-hidden="true"> · </span><button type="button" id="licenses-toggle" aria-expanded="false" aria-controls="licenses">Licenses</button></p>
+      <div class="licenses" id="licenses" hidden>
         <div class="licenses__content">
           <h3>Chromium Dino</h3>
           <p>Portions of Shheep’s game logic are adapted from Chromium’s Dino game. Copyright 2024 The Chromium Authors.</p>
@@ -100,10 +99,18 @@ const storeURL = 'https://apps.apple.com/app/id6819031865';
           <p>Pixel fonts are distributed under the SIL Open Font License: <a href="/shheep/assets/fonts/OFL.txt">Silkscreen</a>, <a href="/shheep/assets/fonts/FusionPixel-OFL.txt">Fusion Pixel</a>, and <a href="/shheep/assets/fonts/Tiny5-OFL.txt">Tiny5</a>.</p>
           <p>Happy Lullaby by cynicmusic is available under CC0. <a href="/shheep/assets/MUSIC-CREDITS.md">Music details</a>.</p>
         </div>
-      </details>
+      </div>
     </section>
     <SiteFooterBase />
   </footer>
+  <script is:inline>
+    document.getElementById('licenses-toggle').addEventListener('click', (event) => {
+      const button = event.currentTarget;
+      const expanded = button.getAttribute('aria-expanded') !== 'true';
+      button.setAttribute('aria-expanded', String(expanded));
+      document.getElementById('licenses').hidden = !expanded;
+    });
+  </script>
   <script is:inline src={gsapUrl}></script>
   <script is:inline src={scrollTriggerUrl}></script>
   <script is:inline src={customEaseUrl}></script>
@@ -118,7 +125,7 @@ const storeURL = 'https://apps.apple.com/app/id6819031865';
   .hero-how{justify-self:end;white-space:nowrap;font-size:10px}
   .phero__h1{margin:clamp(28px,4vw,56px) auto 0;font-size:clamp(48px,7.3vw,104px);text-align:center;max-width:11em}
   .phero__sub{margin:22px auto 0;font-size:1.0625rem;color:var(--muted);text-align:center;text-wrap:balance}
-  .hero-caption{margin:18px auto 0;text-align:center}
+  .hero-caption{margin:18px auto 0;font-family:var(--sans);text-align:center}
   .phero__cta{display:flex;justify-content:center;margin-top:24px}
   .app-store-badge{display:inline-block;border-radius:7px}
   .app-store-badge img{display:block;width:auto;height:48px}
@@ -143,9 +150,10 @@ const storeURL = 'https://apps.apple.com/app/id6819031865';
   .details__grid dt{font-weight:600;margin-bottom:10px;font-size:1.0625rem}.details__grid dd{font-size:.9375rem;line-height:1.8;color:var(--muted)}
   .shheep-footer{margin-top:var(--space-section)}.footer-sheep{width:94px;height:80px;image-rendering:pixelated;margin:0 auto 24px}
   .licenses{max-width:680px;margin:10px auto 0;color:var(--muted);font:13px/1.7 var(--sans);text-align:left}
-  .licenses summary{width:fit-content;margin-inline:auto;cursor:pointer;font-size:12px;text-underline-offset:3px}
-  .licenses summary:hover{text-decoration:underline}
-  .licenses summary:focus-visible{outline:2px solid var(--ink);outline-offset:5px;border-radius:2px}
+  .licenses[hidden]{display:none}
+  #licenses-toggle{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:pointer}
+  #licenses-toggle:hover{text-decoration:underline}
+  #licenses-toggle:focus-visible{outline:2px solid var(--ink);outline-offset:5px;border-radius:2px}
   .licenses__content{margin-top:20px;padding-top:20px;border-top:1px solid var(--line)}
   .licenses h3{font:600 14px/1.5 var(--sans);color:var(--ink);margin:0 0 10px}
   .licenses pre{white-space:pre-wrap;overflow-wrap:anywhere;font:inherit;margin:16px 0 24px}
