@@ -2,6 +2,7 @@
 import SocialMeta from '../components/SocialMeta.astro';
 import SiteFooterBase from '../components/SiteFooterBase.astro';
 import ShheepGame from '../components/ShheepGame.astro';
+import chromiumLicense from '../../public/shheep/assets/CHROMIUM-LICENSE.txt?raw';
 import siteCssUrl from '$assets/s/site.css?url';
 import gsapUrl from '$assets/vendor/gsap.min.js?url';
 import scrollTriggerUrl from '$assets/vendor/ScrollTrigger.min.js?url';
@@ -89,6 +90,17 @@ const storeURL = 'https://apps.apple.com/app/id6819031865';
         <span class="button-023__inner"><span class="button-023__text is--first">Back to the dream ↑</span><span aria-hidden="true" class="button-023__text is--second">Back to the dream ↑</span></span>
       </a></div>
       <p class="footer-credits"><a href="/shheep/assets/MUSIC-CREDITS.md">Lullaby by cynicmusic · CC0</a><span aria-hidden="true"> · </span><a href="/privacy.en.html">Privacy</a></p>
+      <details class="licenses" id="licenses">
+        <summary>Licenses</summary>
+        <div class="licenses__content">
+          <h3>Chromium Dino</h3>
+          <p>Portions of Shheep’s game logic are adapted from Chromium’s Dino game. Copyright 2024 The Chromium Authors.</p>
+          <pre>{chromiumLicense}</pre>
+          <h3>Fonts &amp; music</h3>
+          <p>Pixel fonts are distributed under the SIL Open Font License: <a href="/shheep/assets/fonts/OFL.txt">Silkscreen</a>, <a href="/shheep/assets/fonts/FusionPixel-OFL.txt">Fusion Pixel</a>, and <a href="/shheep/assets/fonts/Tiny5-OFL.txt">Tiny5</a>.</p>
+          <p>Happy Lullaby by cynicmusic is available under CC0. <a href="/shheep/assets/MUSIC-CREDITS.md">Music details</a>.</p>
+        </div>
+      </details>
     </section>
     <SiteFooterBase />
   </footer>
@@ -130,6 +142,15 @@ const storeURL = 'https://apps.apple.com/app/id6819031865';
   .details__grid{display:grid;grid-template-columns:1fr 1fr;gap:32px 48px;margin-top:36px}
   .details__grid dt{font-weight:600;margin-bottom:10px;font-size:1.0625rem}.details__grid dd{font-size:.9375rem;line-height:1.8;color:var(--muted)}
   .shheep-footer{margin-top:var(--space-section)}.footer-sheep{width:94px;height:80px;image-rendering:pixelated;margin:0 auto 24px}
+  .licenses{max-width:680px;margin:10px auto 0;color:var(--muted);font:13px/1.7 var(--sans);text-align:left}
+  .licenses summary{width:fit-content;margin-inline:auto;cursor:pointer;font-size:12px;text-underline-offset:3px}
+  .licenses summary:hover{text-decoration:underline}
+  .licenses summary:focus-visible{outline:2px solid var(--ink);outline-offset:5px;border-radius:2px}
+  .licenses__content{margin-top:20px;padding-top:20px;border-top:1px solid var(--line)}
+  .licenses h3{font:600 14px/1.5 var(--sans);color:var(--ink);margin:0 0 10px}
+  .licenses pre{white-space:pre-wrap;overflow-wrap:anywhere;font:inherit;margin:16px 0 24px}
+  .licenses__content p+p{margin-top:8px}
+  .licenses__content a{text-decoration:underline;text-underline-offset:3px}
   .footer-credits{font:11px/1.6 var(--mono);color:var(--muted);margin-top:28px;text-align:center}.footer-credits a:hover{text-decoration:underline}
   @media(max-width:700px){.dream-card__grid{grid-template-columns:1fr}.dream-card__scene{min-height:210px}.details__grid{grid-template-columns:1fr}.hero-how{display:none}.phero__h1{font-size:clamp(44px,9vw,66px)}.dream-card__scene--wake img{right:20%}}
 </style>
