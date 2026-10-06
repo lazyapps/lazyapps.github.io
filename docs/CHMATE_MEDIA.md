@@ -12,6 +12,21 @@ skips the loader and leaves the preview paused; without JavaScript, the loader i
 hidden and the native video has manual controls. The shared scripts restore the
 paper theme color after the reveal, with the same six-second fallback as KeyHop.
 
+## Open Graph
+
+All locales share `src/assets/img/chmate-opengraph-shared.png`, 1200 × 630.
+CHMate's product name does not change between locales. The symbol and wordmark
+fit inside the central 630 × 630 safe area, on the site's paper and grain.
+
+Run `python3 scripts/render-chmate-opengraph.py` with Pillow, fontTools,
+`rsvg-convert`, and Xcode's Icon Composer `ictool` installed. The script renders
+the unchanged original `AppIcon.icon` archived in `scripts/assets/chmate/` with
+the Default appearance and design generation 27. It removes the icon container
+using the original vector layers and their recorded positions as an alpha mask;
+the book keeps the renderer's original colors, lighting, and opaque interiors.
+The wordmark uses the site's Sofia Sans Extra Condensed at weight 900.
+A square proof is written to `/tmp/chmate-opengraph-square.png`.
+
 ## Independent layers
 
 The page no longer embeds the rectangular App Store composition or fades its

@@ -10,7 +10,7 @@ import logoRevealUrl from '$assets/s/logo-reveal-loader.js?url';
 import siteJsUrl from '$assets/s/site.js?url';
 import iconUrl from '$assets/img/app-chmate.jpg?url';
 import { CHMATE_LOCALES } from '../i18n/chmate-locales.mjs';
-import opengraphUrl from '$assets/img/opengraph.png?url';
+import opengraphUrl from '$assets/img/chmate-opengraph-shared.png?url';
 
 const appStoreUrl = 'https://apps.apple.com/app/id335157929';
 interface Props {
@@ -65,7 +65,7 @@ const redirectScript = `(() => {
       description={t.description}
       url={`https://lazyapps.com${t.selectedUrl}`}
       image={`https://lazyapps.com${opengraphUrl}`}
-      imageAlt="lazyapps — Independent software since 2009"
+      imageAlt="CHMate"
       imageWidth={1200}
       imageHeight={630}
       locale={t.ogLocale}

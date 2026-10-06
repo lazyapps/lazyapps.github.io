@@ -1,0 +1,215 @@
+{
+  "fill-specializations": [
+    {
+      "value": {
+        "linear-gradient": [
+          "display-p3:0.20211,0.36459,0.94593,1.00000",
+          "display-p3:0.32498,0.80877,0.94802,1.00000"
+        ]
+      }
+    },
+    {
+      "appearance": "dark",
+      "value": {
+        "linear-gradient": [
+          "display-p3:0.110016,0.241475,0.787691,1",
+          "display-p3:0.190827,0.665463,0.794134,1"
+        ]
+      }
+    }
+  ],
+  "groups": [
+    {
+      "layers": [
+        {
+          "glass": false,
+          "image-name": "page-shading.svg",
+          "name": "Page shading",
+          "position": {
+            "scale": 1,
+            "translation-in-points": [
+              0.4814999874830619,
+              0.3285000000000764
+            ]
+          },
+          "opacity-specializations": [
+            {
+              "value": 1
+            },
+            {
+              "appearance": "dark",
+              "value": 1
+            },
+            {
+              "appearance": "tinted",
+              "value": 0.9
+            }
+          ]
+        }
+      ],
+      "lighting": "individual",
+      "name": "Page shading",
+      "shadow": {
+        "kind": "neutral",
+        "opacity": 0
+      },
+      "specular": false,
+      "translucency": {
+        "enabled": false,
+        "value": 0
+      }
+    },
+    {
+      "layers": [
+        {
+          "glass": true,
+          "image-name": "top-paths.svg",
+          "name": "Pages",
+          "opacity-specializations": [
+            {
+              "value": 1
+            },
+            {
+              "appearance": "dark",
+              "value": 1
+            },
+            {
+              "appearance": "tinted",
+              "value": 1
+            }
+          ],
+          "position": {
+            "scale": 1,
+            "translation-in-points": [
+              0.4814999874830619,
+              0.3285000000000764
+            ]
+          },
+          "fill-specializations": [
+            {
+              "value": {
+                "solid": "gray:0.90,1"
+              }
+            }
+          ]
+        }
+      ],
+      "lighting": "individual",
+      "name": "Pages",
+      "shadow": {
+        "kind": "neutral",
+        "opacity": 0.45
+      },
+      "specular": false,
+      "translucency": {
+        "enabled": false,
+        "value": 0
+      }
+    },
+    {
+      "layers": [
+        {
+          "fill-specializations": [
+            {
+              "value": {
+                "linear-gradient": [
+                  "srgb:0.07,0.20,0.54,1",
+                  "srgb:0.10,0.34,0.70,1"
+                ]
+              }
+            },
+            {
+              "appearance": "dark",
+              "value": {
+                "linear-gradient": [
+                  "display-p3:0.146004,0.195463,0.309893,1",
+                  "display-p3:0.083799,0.133726,0.206170,1"
+                ]
+              }
+            },
+            {
+              "appearance": "tinted",
+              "value": {
+                "solid": "gray:0.50,1"
+              }
+            }
+          ],
+          "image-name": "bottom-paths.svg",
+          "name": "Cover",
+          "opacity-specializations": [
+            {
+              "value": 1
+            },
+            {
+              "appearance": "dark",
+              "value": 1
+            },
+            {
+              "appearance": "tinted",
+              "value": 1
+            }
+          ],
+          "position": {
+            "scale": 1,
+            "translation-in-points": [
+              0.14400000000000546,
+              47.75350000000003
+            ]
+          },
+          "glass-specializations": [
+            {
+              "value": true
+            },
+            {
+              "appearance": "dark",
+              "value": false
+            }
+          ]
+        }
+      ],
+      "lighting": "individual",
+      "name": "Cover",
+      "shadow-specializations": [
+        {
+          "value": {
+            "kind": "layer-color",
+            "opacity": 0.28
+          }
+        },
+        {
+          "appearance": "dark",
+          "value": {
+            "kind": "neutral",
+            "opacity": 0
+          }
+        }
+      ],
+      "translucency-specializations": [
+        {
+          "value": {
+            "enabled": false,
+            "value": 0
+          }
+        }
+      ],
+      "specular-specializations": [
+        {
+          "value": "inside"
+        },
+        {
+          "appearance": "dark",
+          "value": false
+        }
+      ]
+    }
+  ],
+  "supported-platforms": {
+    "circles": [
+      "watchOS"
+    ],
+    "squares": "shared"
+  },
+  "features": [
+    "specular-location"
+  ]
+}
