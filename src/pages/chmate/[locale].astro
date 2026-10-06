@@ -8,7 +8,7 @@ export function getStaticPaths() {
     .map((code) => ({ params: { locale: code } }));
 }
 
-const t = CHMATE_LOCALES[Astro.params.locale];
+const t = CHMATE_LOCALES[Astro.params.locale] ?? CHMATE_LOCALES.en;
 ---
 
 <CHMatePage t={t} isRoot={false} />

@@ -6,6 +6,12 @@ The root selects the saved `chmate.locale`, then browser languages, then English
 Explicit language routes do not redirect. Switching languages preserves query and
 hash. Portuguese uses `pt`; Brazilian Portuguese uses `pt-BR`.
 
+The page uses the same logo reveal loader as KeyHop, with the CHMate wordmark.
+Foreground playback waits for the shared loader's content handoff. Reduced motion
+skips the loader and leaves the preview paused; without JavaScript, the loader is
+hidden and the native video has manual controls. The shared scripts restore the
+paper theme color after the reveal, with the same six-second fallback as KeyHop.
+
 ## Independent layers
 
 The page no longer embeds the rectangular App Store composition or fades its

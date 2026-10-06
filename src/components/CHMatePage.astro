@@ -2,6 +2,12 @@
 import SocialMeta from './SocialMeta.astro';
 import SiteFooterBase from './SiteFooterBase.astro';
 import siteCssUrl from '$assets/s/site.css?url';
+import gsapUrl from '$assets/vendor/gsap.min.js?url';
+import scrollTriggerUrl from '$assets/vendor/ScrollTrigger.min.js?url';
+import customEaseUrl from '$assets/vendor/CustomEase.min.js?url';
+import splitTextUrl from '$assets/vendor/SplitText.min.js?url';
+import logoRevealUrl from '$assets/s/logo-reveal-loader.js?url';
+import siteJsUrl from '$assets/s/site.js?url';
 import iconUrl from '$assets/img/app-chmate.jpg?url';
 import { CHMATE_LOCALES } from '../i18n/chmate-locales.mjs';
 import opengraphUrl from '$assets/img/opengraph.png?url';
@@ -43,13 +49,14 @@ const redirectScript = `(() => {
 })();`;
 ---
 <!doctype html>
-<html lang={t.htmlLang} dir={t.htmlDir}>
+<html lang={t.htmlLang} dir={t.htmlDir} class="no-js">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
     <title>{t.title}</title>
     <meta name="description" content={t.description}>
-    <meta name="theme-color" content="#e8e8e6">
+    <meta name="theme-color" content="#171717" data-page-color="#e8e8e6">
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#171717" data-page-color="#e8e8e6">
     <meta name="apple-itunes-app" content="app-id=335157929">
     {locales.map((locale) => <link rel="alternate" hreflang={locale.htmlLang} href={`https://lazyapps.com${locale.selectedUrl}`} />)}
     <link rel="alternate" hreflang="x-default" href="https://lazyapps.com/chmate/en/">
@@ -66,12 +73,31 @@ const redirectScript = `(() => {
     <link rel="icon" href={iconUrl} type="image/jpeg">
     <link rel="stylesheet" href={siteCssUrl}>
     {isRoot && <script is:inline data-language-redirect set:html={redirectScript} />}
+    <script is:inline>
+      document.documentElement.classList.remove('no-js');
+      setTimeout(() => {
+        document.documentElement.classList.add('is-page-theme', 'is-loaded');
+        document.getElementById('loader')?.remove();
+        document.querySelectorAll('meta[name="theme-color"][data-page-color]').forEach((meta) => {
+          meta.setAttribute('content', meta.getAttribute('data-page-color'));
+        });
+      }, 6000);
+    </script>
   </head>
   <body>
     <div class="reading-backdrop" aria-hidden="true">
       <video data-chmate-backdrop poster="/v/chmate/daylight-landscape-v3.jpg" muted loop playsinline preload="none" tabindex="-1" disablepictureinpicture></video>
     </div>
     <div class="grain" data-grain-animate="true" aria-hidden="true"></div>
+    <div data-load-wrap class="loader" id="loader" aria-hidden="true">
+      <div data-load-bg class="loader__bg"><div data-load-progress class="loader__bg-bar"></div></div>
+      <div data-load-container class="loader__container">
+        <div class="loader__logo-wrap">
+          <div class="loader__logo-item is--base"><span class="loader__logo-img" lang="en">CHMATE</span></div>
+          <div data-load-logo class="loader__logo-item is--top"><span class="loader__logo-img" lang="en">CHMATE</span></div>
+        </div>
+      </div>
+    </div>
     <header class="wrap">
       <div class="topbar">
         <nav class="topbar__nav" aria-label={t.navAria}>
@@ -186,7 +212,7 @@ const redirectScript = `(() => {
 
             function syncPlayback() {
               if (switchingSource) return;
-              if (!inView || document.hidden) {
+              if (!inView || document.hidden || !document.documentElement.classList.contains('is-loaded')) {
                 pausePlayback();
               } else if (wantsPlayback) {
                 video.play().catch(() => {});
@@ -214,6 +240,12 @@ const redirectScript = `(() => {
               inView = entry.isIntersecting;
               syncPlayback();
             }, { threshold: 0.2 }).observe(video);
+            const pageLoadObserver = new MutationObserver(() => {
+              if (!document.documentElement.classList.contains('is-loaded')) return;
+              pageLoadObserver.disconnect();
+              syncPlayback();
+            });
+            pageLoadObserver.observe(document.documentElement, { attributes: true, attributeFilter: ['class'] });
             document.addEventListener('visibilitychange', syncPlayback);
             motion.addEventListener('change', () => {
               if (motion.matches) {
@@ -259,6 +291,12 @@ const redirectScript = `(() => {
         </div>
       </div>
     </footer>
+    <script is:inline src={gsapUrl}></script>
+    <script is:inline src={scrollTriggerUrl}></script>
+    <script is:inline src={customEaseUrl}></script>
+    <script is:inline src={splitTextUrl}></script>
+    <script is:inline src={logoRevealUrl}></script>
+    <script is:inline src={siteJsUrl}></script>
     <script>
       const select = document.querySelector<HTMLSelectElement>('[data-locale-select]');
       select?.addEventListener('change', () => {
