@@ -1,0 +1,361 @@
+---
+import SocialMeta from './SocialMeta.astro';
+import SiteFooterBase from './SiteFooterBase.astro';
+import siteCssUrl from '$assets/s/site.css?url';
+import iconUrl from '$assets/img/app-chmate.jpg?url';
+import { CHMATE_LOCALES } from '../i18n/chmate-locales.mjs';
+import opengraphUrl from '$assets/img/opengraph.png?url';
+
+const appStoreUrl = 'https://apps.apple.com/app/id335157929';
+interface Props {
+  t: (typeof CHMATE_LOCALES)[keyof typeof CHMATE_LOCALES];
+  isRoot: boolean;
+}
+const { t, isRoot } = Astro.props;
+const badges = import.meta.glob<string>('/src/assets/img/chmate/app-store-badge-*.svg', { eager: true, query: '?url', import: 'default' });
+const badgeUrl = badges[`/src/assets/img/chmate/app-store-badge-${t.badgeLocale}.svg`];
+const locales = Object.values(CHMATE_LOCALES);
+const routes = Object.fromEntries(locales.map((locale) => [locale.htmlLang.toLowerCase(), locale.htmlLang === 'zh-Hans' ? '' : locale.selectedUrl]));
+const redirectScript = `(() => {
+  const routes = ${JSON.stringify(routes)};
+  function routeFor(language) {
+    if (typeof language !== 'string') return null;
+    const tag = language.trim().toLowerCase().replace(/_/g, '-');
+    if (/^zh-(?:hant|tw|hk|mo)(?:-|$)/.test(tag)) return routes['zh-hant'];
+    if (/^zh(?:-|$)/.test(tag)) return '';
+    if (/^pt-br(?:-|$)/.test(tag)) return routes['pt-br'];
+    const base = tag.split('-')[0];
+    return Object.hasOwn(routes, base) ? routes[base] : null;
+  }
+  let target = null;
+  try { target = routeFor(localStorage.getItem('chmate.locale')); } catch (_storageError) {}
+  if (target === null) {
+    for (const language of navigator.languages ?? [navigator.language]) {
+      target = routeFor(language);
+      if (target !== null) break;
+    }
+  }
+  if (target === null) target = routes.en;
+  if (target) {
+    document.documentElement.dataset.languageRedirect = 'true';
+    location.replace(target + location.search + location.hash);
+  }
+})();`;
+---
+<!doctype html>
+<html lang={t.htmlLang} dir={t.htmlDir}>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+    <title>{t.title}</title>
+    <meta name="description" content={t.description}>
+    <meta name="theme-color" content="#e8e8e6">
+    <meta name="apple-itunes-app" content="app-id=335157929">
+    {locales.map((locale) => <link rel="alternate" hreflang={locale.htmlLang} href={`https://lazyapps.com${locale.selectedUrl}`} />)}
+    <link rel="alternate" hreflang="x-default" href="https://lazyapps.com/chmate/en/">
+    <SocialMeta
+      title={t.title}
+      description={t.description}
+      url={`https://lazyapps.com${t.selectedUrl}`}
+      image={`https://lazyapps.com${opengraphUrl}`}
+      imageAlt="lazyapps — Independent software since 2009"
+      imageWidth={1200}
+      imageHeight={630}
+      locale={t.ogLocale}
+    />
+    <link rel="icon" href={iconUrl} type="image/jpeg">
+    <link rel="stylesheet" href={siteCssUrl}>
+    {isRoot && <script is:inline data-language-redirect set:html={redirectScript} />}
+  </head>
+  <body>
+    <div class="reading-backdrop" aria-hidden="true">
+      <video data-chmate-backdrop poster="/v/chmate/daylight-landscape-v3.jpg" muted loop playsinline preload="none" tabindex="-1" disablepictureinpicture></video>
+    </div>
+    <div class="grain" data-grain-animate="true" aria-hidden="true"></div>
+    <header class="wrap">
+      <div class="topbar">
+        <nav class="topbar__nav" aria-label={t.navAria}>
+          <a href="/" class="topbar__home" aria-label={t.homeAria}><span aria-hidden="true" class="topbar__home-dot"></span></a>
+        </nav>
+        <a class="topbar__app" href={t.selectedUrl}>
+          <img src={iconUrl} alt="" width="26" height="26">
+          <span class="dsp" lang="en" dir="ltr">CHMate</span>
+        </a>
+        <div class="locale">
+          <svg class="locale__globe" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20Z" stroke="currentColor"/><path d="M12 22c2.2 0 4-4.5 4-10S14.2 2 12 2 8 6.5 8 12s1.8 10 4 10ZM2 12h20M4 6c5.3 2.2 10.7 2.2 16 0M4 18c5.3-2.2 10.7-2.2 16 0" stroke="currentColor"/></svg>
+          <span class="locale__now" aria-hidden="true">{t.localeNow}</span>
+          <span class="locale__short" aria-hidden="true">{t.localeShort}</span>
+          <svg class="locale__chev" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m5 9 7 7 7-7" stroke="currentColor"/></svg>
+          <select name="locale" data-locale-select aria-label={t.selectAria}>
+            {locales.map((locale) => <option value={locale.selectedUrl} data-locale={locale.htmlLang} lang={locale.htmlLang} selected={locale.selectedUrl === t.selectedUrl}>{locale.localeNow}</option>)}
+          </select>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="reading-hero wrap" aria-labelledby="hero-title">
+        <div class="reading-hero__copy">
+          <div class="reading-hero__heading">
+            <h1 class="dsp" id="hero-title">{t.headline.map((line, index) => <Fragment>{index > 0 && <br />}{line.replace(/[，、]$/, '')}{/[，、]$/.test(line) && <span class="headline__comma">{line.slice(-1)}</span>}</Fragment>)}</h1>
+          </div>
+          <p class="reading-hero__sub">{t.sub}</p>
+          <div class="download" id="download">
+            <a class="app-store-badge" href={appStoreUrl} aria-label={t.downloadLabel}>
+              <img src={badgeUrl} alt={t.badgeAlt} height="48">
+            </a>
+            <p class="download__note"><span>{t.freeNote}</span><span>{t.unlockNote}</span></p>
+          </div>
+        </div>
+
+        <figure class="preview" data-chmate-preview data-media-locale={t.mediaLocale} data-device="ipad">
+          <div class="preview__screen">
+            <video data-chmate-video hidden muted loop playsinline controls preload="metadata" aria-label={t.videoLabel}>
+              {t.videoFallback} <a href={appStoreUrl}>{t.storeLink}</a>
+            </video>
+            <noscript>
+              <video width="900" height="1200" poster={`/v/chmate/screen-ipad-${t.mediaLocale}-v2.jpg`} controls playsinline preload="none" aria-label={t.videoLabel}>
+                <source src={`/v/chmate/screen-ipad-${t.mediaLocale}-v2.mp4`} type="video/mp4">
+              </video>
+            </noscript>
+          </div>
+          <img class="preview__bezel" data-chmate-bezel hidden alt="" width="2300" height="3000">
+          <noscript><img class="preview__bezel" src="/v/chmate/bezel-ipad-v2.png" alt="" width="2300" height="3000"></noscript>
+        </figure>
+        <script is:inline>
+          (() => {
+            if (document.documentElement.dataset.languageRedirect) return;
+            const video = document.querySelector('[data-chmate-video]');
+            const preview = document.querySelector('[data-chmate-preview]');
+            const bezel = document.querySelector('[data-chmate-bezel]');
+            const backdrop = document.querySelector('[data-chmate-backdrop]');
+            const wideViewport = window.matchMedia('(min-width: 768px)');
+            const landscapeViewport = window.matchMedia('(min-aspect-ratio: 1/1)');
+            const motion = window.matchMedia('(prefers-reduced-motion: reduce)');
+            let wantsPlayback = !motion.matches;
+            let inView = false;
+            let switchingSource = false;
+            let resumeTime = 0;
+            let activeDevice;
+
+            video.muted = true;
+            video.hidden = false;
+
+            function updatePreview() {
+              const device = wideViewport.matches ? 'ipad' : 'iphone';
+              if (activeDevice === device) return;
+              if (!switchingSource) resumeTime = video.currentTime;
+              switchingSource = true;
+              pausePlayback();
+              activeDevice = device;
+              preview.dataset.device = device;
+              bezel.hidden = device !== 'ipad';
+              if (device === 'ipad') bezel.src = '/v/chmate/bezel-ipad-v2.png';
+              video.width = device === 'iphone' ? 664 : 900;
+              video.height = device === 'iphone' ? 1444 : 1200;
+              video.poster = `/v/chmate/screen-${device}-${preview.dataset.mediaLocale}-v2.jpg`;
+              video.src = `/v/chmate/screen-${device}-${preview.dataset.mediaLocale}-v2.mp4`;
+              video.load();
+            }
+
+            function pausePlayback() {
+              video.pause();
+              backdrop.pause();
+            }
+
+            function syncBackdrop() {
+              if (!video.paused && !switchingSource && video.readyState >= 3 && inView && !document.hidden && !motion.matches) {
+                if (!backdrop.getAttribute('src')) backdrop.src = backdropSource();
+                backdrop.play().catch(() => {});
+              } else {
+                backdrop.pause();
+              }
+            }
+
+            function backdropSource() {
+              return `/v/chmate/daylight-${landscapeViewport.matches ? 'landscape' : 'portrait'}-v3.mp4`;
+            }
+
+            function updateBackdrop() {
+              const source = backdropSource();
+              backdrop.poster = source.replace('.mp4', '.jpg');
+              if (backdrop.getAttribute('src') && backdrop.getAttribute('src') !== source) {
+                backdrop.src = source;
+              }
+            }
+
+            function syncPlayback() {
+              if (switchingSource) return;
+              if (!inView || document.hidden) {
+                pausePlayback();
+              } else if (wantsPlayback) {
+                video.play().catch(() => {});
+              }
+            }
+
+            backdrop.addEventListener('loadedmetadata', syncBackdrop);
+            video.addEventListener('play', () => { wantsPlayback = true; });
+            video.addEventListener('playing', syncBackdrop);
+            video.addEventListener('waiting', () => { backdrop.pause(); });
+            video.addEventListener('pause', () => {
+              backdrop.pause();
+              if (!switchingSource && inView && !document.hidden) wantsPlayback = false;
+            });
+            video.addEventListener('loadedmetadata', () => {
+              video.currentTime = Math.min(resumeTime, video.duration);
+              switchingSource = false;
+              syncPlayback();
+            });
+            wideViewport.addEventListener('change', updatePreview);
+            landscapeViewport.addEventListener('change', updateBackdrop);
+            updateBackdrop();
+            updatePreview();
+            new IntersectionObserver(([entry]) => {
+              inView = entry.isIntersecting;
+              syncPlayback();
+            }, { threshold: 0.2 }).observe(video);
+            document.addEventListener('visibilitychange', syncPlayback);
+            motion.addEventListener('change', () => {
+              if (motion.matches) {
+                wantsPlayback = false;
+                pausePlayback();
+              }
+            });
+          })();
+        </script>
+      </section>
+
+      <section class="reading-features wrap" aria-labelledby="features-title">
+        <div class="reading-features__heading">
+          <h2 class="dsp" id="features-title">{t.featuresTitle}</h2>
+        </div>
+        <dl class="reading-features__grid">
+          {t.cards.map(([title, copy]) => <div>
+            <dt class="dsp">{title}</dt>
+            <dd>{copy}</dd>
+          </div>)}
+        </dl>
+      </section>
+
+      <section class="reading-promise wrap" aria-labelledby="promise-title">
+        <div class="reading-promise__inner">
+          <div>
+            <h2 class="dsp" id="promise-title">{t.promiseLines.map((line, index) => <Fragment>{index > 0 && <br />}{line}</Fragment>)}</h2>
+          </div>
+          <div class="reading-promise__copy">
+            <p>{t.promiseCopy}</p>
+            <a class="text-link" href={appStoreUrl}>{t.getFree} <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="reading-footer wrap">
+      <div class="reading-footer__inner">
+        <SiteFooterBase />
+        <div class="reading-footer__notices">
+          <p>{t.musicCredit[0]} <a href="https://www.scottbuckley.com.au/library/solace/" lang="en" dir="ltr">“Solace” — Scott Buckley</a>{t.musicCredit[1]} <a href="https://creativecommons.org/licenses/by/4.0/" lang="en" dir="ltr">CC BY 4.0</a>{t.musicCredit[2]}</p>
+          <p>{t.trademark}</p>
+        </div>
+      </div>
+    </footer>
+    <script>
+      const select = document.querySelector<HTMLSelectElement>('[data-locale-select]');
+      select?.addEventListener('change', () => {
+        const option = select.selectedOptions[0];
+        try { localStorage.setItem('chmate.locale', option.dataset.locale); } catch (_storageError) {}
+        location.href = option.value + location.search + location.hash;
+      });
+    </script>
+  </body>
+</html>
+
+<style>
+  .locale__now, .locale__short, .locale select { font-family: var(--sans); }
+  header { padding-top: clamp(8px, 1.5vw, 18px); }
+  .reading-hero { display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr); align-items: center; gap: var(--space-grid); padding-top: clamp(28px, 4vw, 56px); }
+  .reading-hero__heading { overflow-x: clip; }
+  .reading-hero h1 { font-size: clamp(56px, 6.2vw, 96px); text-wrap: balance; overflow-wrap: anywhere; }
+  .headline__comma { display: inline-block; width: 0; line-height: inherit; white-space: nowrap; }
+  .reading-hero__sub { margin-top: clamp(18px, 2vw, 28px); color: var(--muted); font-size: 1.0625rem; line-height: 1.7; max-width: 48ch; }
+  .reading-hero__copy { container: hero-copy / inline-size; }
+  .download { display: flex; align-items: center; gap: 12px; margin-top: var(--space-grid); }
+  .app-store-badge { display: inline-block; flex-shrink: 0; padding: 12px; margin-inline-start: -12px; line-height: 0; }
+  .app-store-badge img { width: auto; height: 48px; }
+  .download__note { flex: 1; min-width: 0; max-width: 56ch; font-size: .7778rem; line-height: 1.5; color: var(--muted); }
+  .download__note span { display: block; line-height: inherit; white-space: nowrap; }
+  @container hero-copy (width < 400px) {
+    .download { gap: 4px; }
+    .app-store-badge { padding: 10px; margin-inline-start: -10px; }
+    .app-store-badge img { height: 40px; }
+    .download__note { font-size: 13px; }
+  }
+  body { --muted: #44443f; }
+  .reading-backdrop { position: fixed; inset: 0; z-index: -1; overflow: hidden; pointer-events: none; background: var(--paper); }
+  .reading-backdrop video { display: block; width: 100%; height: 100%; object-fit: cover; opacity: .26; }
+  .preview {
+    --preview-width: 2300; --preview-height: 3000;
+    --screen-left: 5.130435%; --screen-top: 4.133333%;
+    --screen-width: 89.73913%; --screen-height: 91.733333%;
+    --screen-mask: url('/v/chmate/screen-mask-ipad-v2.png');
+    position: relative; aspect-ratio: var(--preview-width) / var(--preview-height);
+    margin: 0; min-width: 0; justify-self: center;
+    width: min(100%, calc(max(100svh, 36rem) * var(--preview-width) / var(--preview-height)));
+  }
+  .preview__screen { position: absolute; inset: 0; -webkit-mask-image: var(--screen-mask); mask-image: var(--screen-mask); -webkit-mask-size: 100% 100%; mask-size: 100% 100%; -webkit-mask-repeat: no-repeat; mask-repeat: no-repeat; }
+  .preview video { position: absolute; left: var(--screen-left); top: var(--screen-top); width: var(--screen-width); height: var(--screen-height); display: block; background: transparent; outline: none; }
+  .preview video:fullscreen { position: static; width: 100%; height: 100%; object-fit: contain; background: #000; }
+  .preview__bezel { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; }
+  .preview video[hidden], .preview__bezel[hidden] { display: none; }
+  .reading-features { padding-top: var(--space-section); }
+  .reading-features__heading { border-top: 1px solid var(--line); padding-top: 32px; }
+  .reading-features h2 { font-size: clamp(28px, 4.2vw, 60px); }
+  .reading-features__grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--space-grid); margin-top: var(--space-grid); }
+  .reading-features__grid > div { padding: var(--space-card); border: 1px solid rgba(23, 23, 23, .08); border-radius: var(--r-card); background: oklch(0.8 0.102 245); transform: rotate(-1deg); }
+  .reading-features__grid > div:nth-child(2) { background: oklch(0.9 0.051 245); transform: rotate(1deg); }
+  .reading-features__grid > div:nth-child(3) { background: var(--c5); }
+  .reading-features dt { font-size: clamp(28px, 3.2vw, 44px); text-wrap: balance; }
+  .reading-features dd { margin-top: 1rem; font-size: 1rem; line-height: 1.7; max-width: 56ch; color: color-mix(in oklch, var(--ink) 85%, transparent); }
+  .reading-promise { padding-top: var(--space-section); }
+  .reading-promise__inner { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-grid); align-items: center; padding: var(--space-card); border: 1px solid rgba(248, 248, 246, .12); border-radius: var(--r-card); background: var(--ink); color: var(--paper); }
+  .reading-promise h2 { font-size: clamp(32px, 4vw, 52px); }
+  .reading-promise__copy p { font-size: 1rem; line-height: 1.7; max-width: 29em; }
+  .text-link { display: inline-flex; align-items: center; gap: .75rem; margin-top: var(--space-grid); padding: .75rem .875rem .75rem 1rem; min-height: 44px; border-radius: 999px; background: color-mix(in oklch, currentColor 7%, transparent); box-shadow: inset 0 0 0 1px color-mix(in oklch, currentColor 12%, transparent); font: 600 .9375rem/1 var(--sans); }
+  .text-link span { display: grid; width: 1.5rem; height: 1.5rem; place-items: center; border-radius: 50%; background: color-mix(in oklch, currentColor 9%, transparent); }
+  .text-link:hover { background: color-mix(in oklch, currentColor 11%, transparent); }
+  .reading-footer { padding-top: var(--space-section); }
+  .reading-footer__inner { display: grid; grid-template-columns: minmax(0, .7fr) minmax(0, 1.3fr); align-items: start; gap: var(--space-grid); border-top: 1px solid var(--line); padding-block: 28px 36px; }
+  .reading-footer :global(.base) { margin-top: 0; padding-bottom: 0; }
+  .reading-footer :global(.base__legal) { margin-inline: 0; }
+  .reading-footer__notices { display: grid; gap: 8px; color: var(--muted); font: 400 .6667rem/1.4 var(--sans); text-transform: uppercase; letter-spacing: .04em; }
+  .reading-footer__notices p { max-width: 68ch; line-height: inherit; }
+  .reading-footer__notices a { text-decoration: underline; text-decoration-color: color-mix(in srgb, currentColor 45%, transparent); text-underline-offset: .2em; }
+  .reading-footer__notices a:hover { text-decoration-color: currentColor; }
+  a:focus-visible, .preview:has(video:focus-visible) { outline: 2px solid var(--accent); outline-offset: 4px; border-radius: 4px; }
+  @media (prefers-reduced-motion: reduce) {
+    .grain { animation: none; }
+  }
+  @media (width < 768px) {
+    .reading-hero { grid-template-columns: 1fr; align-items: start; gap: 28px; padding-top: 24px; }
+    .reading-hero h1 { font-size: clamp(48px, 12vw, 72px); text-align: center; }
+    .reading-hero__sub { margin-top: 20px; font-size: 1rem; line-height: 1.6; }
+    .download { margin-top: 16px; }
+    .preview { width: 100%; aspect-ratio: auto; justify-self: left; }
+    .preview__screen { position: static; -webkit-mask-image: none; mask-image: none; }
+    .preview video { position: static; width: 100%; height: auto; }
+    .preview__bezel { display: none; }
+    .reading-features, .reading-promise { padding-top: 48px; }
+    .reading-features__heading { padding-top: 24px; }
+    .reading-features h2 { font-size: 36px; }
+    .reading-features__grid { grid-template-columns: 1fr; gap: 16px; margin-top: 24px; }
+    .reading-features__grid > div { transform: none; }
+    .reading-features__grid > div:nth-child(2) { transform: none; }
+    .reading-features dt { font-size: 32px; }
+    .reading-features dd { margin-top: 12px; font-size: 1rem; line-height: 1.65; }
+    .reading-promise__inner { grid-template-columns: 1fr; gap: 20px; }
+    .reading-promise__copy p { font-size: 1rem; line-height: 1.65; }
+    .text-link { width: 100%; justify-content: space-between; margin-top: 20px; }
+    .reading-footer { padding-top: 48px; }
+    .reading-footer__inner { grid-template-columns: 1fr; gap: 24px; padding-block: 24px 32px; }
+  }
+</style>
