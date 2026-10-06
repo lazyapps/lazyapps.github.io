@@ -12,12 +12,13 @@ import iconUrl from '$assets/img/app-chmate.jpg?url';
 import { CHMATE_LOCALES } from '../i18n/chmate-locales.mjs';
 import opengraphUrl from '$assets/img/chmate-opengraph-shared.png?url';
 
-const appStoreUrl = 'https://apps.apple.com/app/id335157929';
 interface Props {
   t: (typeof CHMATE_LOCALES)[keyof typeof CHMATE_LOCALES];
   isRoot: boolean;
 }
 const { t, isRoot } = Astro.props;
+const appStoreCampaign = `pt=259198&ct=lazyapps-${t.htmlLang.toLowerCase()}&mt=8`;
+const appStoreUrl = `https://apps.apple.com/app/apple-store/id335157929?${appStoreCampaign}`;
 const badges = import.meta.glob<string>('/src/assets/img/chmate/app-store-badge-*.svg', { eager: true, query: '?url', import: 'default' });
 const badgeUrl = badges[`/src/assets/img/chmate/app-store-badge-${t.badgeLocale}.svg`];
 const locales = Object.values(CHMATE_LOCALES);
@@ -57,7 +58,7 @@ const redirectScript = `(() => {
     <meta name="description" content={t.description}>
     <meta name="theme-color" content="#171717" data-page-color="#e8e8e6">
     <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#171717" data-page-color="#e8e8e6">
-    <meta name="apple-itunes-app" content="app-id=335157929">
+    <meta name="apple-itunes-app" content={`app-id=335157929, affiliate-data=${appStoreCampaign}`}>
     {locales.map((locale) => <link rel="alternate" hreflang={locale.htmlLang} href={`https://lazyapps.com${locale.selectedUrl}`} />)}
     <link rel="alternate" hreflang="x-default" href="https://lazyapps.com/chmate/en/">
     <SocialMeta

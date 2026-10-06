@@ -134,3 +134,25 @@ at its original 40 px height with 10 px clear space. The adjacent notes use 13 p
 type and a smaller gap. Localized notes are shortened to two non-wrapping lines:
 free reading and a one-time purchase. Full purchase details remain below.
 The CTA and Smart App Banner point to the free app, ID **335157929**.
+
+## App Store campaign attribution
+
+All localized download links reuse provider token **259198**, obtained from the
+Campaign Link generated in App Store Connect. Each page uses campaign token
+`lazyapps-{htmlLang}`, with the HTML language tag lowercased. For example, English
+uses `https://apps.apple.com/app/apple-store/id335157929?pt=259198&ct=lazyapps-en&mt=8`;
+Simplified Chinese uses `lazyapps-zh-hans`, Traditional Chinese `lazyapps-zh-hant`,
+and Brazilian Portuguese `lazyapps-pt-br`.
+The shared page component supplies the same page-specific parameters through the
+Smart App Banner's `affiliate-data`. Attribution identifies the page language at
+the time of download-link navigation, not the user's device language or territory.
+
+Campaign metrics appear in Analytics → Acquisition → Campaigns after at least
+24 hours and first-time downloads from five individual users for each campaign.
+Each metric also requires a minimum of five within the selected date range.
+Merely generating a link does not create a campaign row. Apple supports reusing
+the provider token and changing only the campaign token; there is no need to
+generate each localized link separately in App Store Connect.
+See Apple's [Campaign links](https://developer.apple.com/help/app-store-connect-analytics/acquisition/campaign-links/).
+Build output verifies the links and banner metadata; actual banner behavior and
+download attribution require Safari on an Apple device and subsequent analytics.
