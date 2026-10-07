@@ -1,0 +1,10 @@
+{
+  "mode": "built-in imagegen",
+  "references": ["app-globe-reference.png", "src/assets/img/world-book-icon.png"],
+  "generationPrompt": "app-globe-imagegen-prompt.txt",
+  "refinementPrompt": "app-globe-imagegen-refinement.txt",
+  "firstOutput": "/Users/realazy/.codex/generated_images/01a10f9e-2f2f-7852-99e9-0d8552c022df/exec-0f2ed866-31c0-49b2-ba7e-1d7ec42adc07.png",
+  "selectedOutput": "/Users/realazy/.codex/generated_images/01a10f9e-2f2f-7852-99e9-0d8552c022df/exec-e01d26cb-04fd-445a-9bb8-b584f7fd229a.png",
+  "savedAsset": "app-globe-start-v1.png",
+  "refinementReason": "Leave safe centered margins for both original native portrait ratios."
+}

@@ -1,0 +1,20 @@
+{
+  "dimensions": [
+    664,
+    1442
+  ],
+  "duration": 30.1,
+  "h3OpeningSeconds": 3.8,
+  "assemblySeconds": 1.6,
+  "settleSeconds": 0.4,
+  "presentationSeconds": 1,
+  "openingRevealSeconds": 0.8,
+  "artworkFinalZoom": 1.16,
+  "nativeStartSeconds": 3.0,
+  "sourceMotion": "/Users/realazy/Projects/Sites/lazyapps/scripts/assets/world-book/animation/grand-assembly-impact-v1.mkv",
+  "actualNativeScreens": "screen-iphone-en.mp4",
+  "nativeFraming": "Full canvas, original aspect ratio, no scale/crop/inset/captions",
+  "poster": "Unchanged native reader poster",
+  "music": "Summer Fun by Ahjay Stelino, Mixkit Stock Music Free License",
+  "motionIntent": "Accelerating H3 country collapse, one closure impulse, then radial illumination into native footage; all effects baked offline"
+}

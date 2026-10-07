@@ -1,0 +1,58 @@
+{
+  "model": "MiniMax-H3",
+  "engine": "/Users/realazy/tmp/h3.c/h3",
+  "command": [
+    "/Users/realazy/tmp/h3.c/h3",
+    "-d",
+    "/Users/realazy/.cache/huggingface/hub/models--MiniMaxAI--MiniMax-H3/snapshots/42ed227ee7df40d41602854ae760620d6eb651fe",
+    "-p",
+    "A grayscale alpha transition matte for a premium native app preview. Begin with the provided nearly-black first frame and finish at the provided completely white last frame. One large solid WHITE field enters smoothly from the LEFT edge and travels across the portrait frame toward the RIGHT, progressively replacing the black field. Its leading edge is an elegant gently curved vertical arc, bending only slightly as it flows. Acceleration and deceleration are smooth and unhurried. A narrow subtle feather along the moving edge, roughly two percent of the width; the regions behind and ahead of this edge remain perfectly solid white and solid black. The front always advances to the right, never reverses, never ripples, never pulses. By the final moment the frame is completely uniform white. Orthographic flat 2D composition, stationary camera. No texture, gray fog, shadows, lights, particles, glow, scenery, book or paper, UI, text, labels, colorful elements or objects. No flashes, no oscillation, no motion in black or white regions. This is a clean black-and-white moving reveal mask only, not a scene or a screenshot. No music or voice.",
+    "--width",
+    "704",
+    "--height",
+    "1280",
+    "--render-width",
+    "352",
+    "--render-height",
+    "640",
+    "--seconds",
+    "2.0",
+    "--steps",
+    "20",
+    "--layers",
+    "50",
+    "--reuse",
+    "2",
+    "--seed",
+    "10062028",
+    "--first-frame",
+    "/Users/realazy/Projects/Sites/lazyapps/scripts/assets/world-book/animation/page-transition-first.png",
+    "--profile",
+    "-o",
+    "/Users/realazy/Projects/Sites/lazyapps/scripts/assets/world-book/animation/page-transition-h3-v1.mp4",
+    "--last-frame",
+    "/Users/realazy/Projects/Sites/lazyapps/scripts/assets/world-book/animation/page-transition-last.png"
+  ],
+  "anchors": {
+    "first": {
+      "path": "/Users/realazy/Projects/Sites/lazyapps/scripts/assets/world-book/animation/page-transition-first.png",
+      "sha256": "c160e152282541a2eca4418c122f222a81f75afe5c67cec09840667331f33729"
+    },
+    "last": {
+      "path": "/Users/realazy/Projects/Sites/lazyapps/scripts/assets/world-book/animation/page-transition-last.png",
+      "sha256": "24ec4a727ba0529fd70df18c409c0ef4627f3c2d01410fe2e714bd35ef7cb707"
+    }
+  },
+  "requestedSeconds": 2.0,
+  "output": [
+    704,
+    1280
+  ],
+  "internal": [
+    352,
+    640
+  ],
+  "steps": 20,
+  "reuse": 2,
+  "layers": 50
+}

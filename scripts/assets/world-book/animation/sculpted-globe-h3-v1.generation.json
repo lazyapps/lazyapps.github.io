@@ -1,0 +1,52 @@
+{
+  "model": "MiniMax-H3",
+  "engine": "/Users/realazy/tmp/h3.c/h3",
+  "command": [
+    "/Users/realazy/tmp/h3.c/h3",
+    "-d",
+    "/Users/realazy/.cache/huggingface/hub/models--MiniMaxAI--MiniMax-H3/snapshots/42ed227ee7df40d41602854ae760620d6eb651fe",
+    "-p",
+    "An expressive cinematic World Book opening continuing this exact sculpted political globe. The azure-blue ocean remains one continuous perfectly spherical surface. Cream, mint, blush and pale-yellow enamel country plates retain their precise geography and coastlines. The few raised front-facing country edges settle smoothly into place in one graceful clockwise assembly wave, from Europe through the Middle East into Africa. This is a visibly dimensional event: tilted edges align and close their shadow gaps, and the fixed grazing light naturally glides across their changing angles. Only these small aligned edges move; countries do not fly away, scatter, deform or change color. The globe stays centered with its entire silhouette visible and safe dark margins. Keep the same Africa/Europe orientation, continuous blue oceans, richly sculptural satin country surfaces, luminous blue rim and dramatic side lighting. A quiet forward camera push of only four percent accompanies the single assembly event, always forward, with no lateral orbit or reversal; keep the whole globe inside the central seventy-five percent of the portrait width. Smooth ease-in and ease-out, energetic but composed, polished premium editorial 3D animation. No added light sweep, new props, books, paper, particles, stars, rings, UI, labels, text, glass, lens flares, flashes, pulsing, oscillation, teleporting tiles, invented countries or morphing coastlines. End on the assembled dimensional globe, ready to dissolve into the real app globe. No music or voice.",
+    "--width",
+    "704",
+    "--height",
+    "1280",
+    "--render-width",
+    "352",
+    "--render-height",
+    "640",
+    "--seconds",
+    "3.2",
+    "--steps",
+    "20",
+    "--layers",
+    "50",
+    "--reuse",
+    "2",
+    "--seed",
+    "10062029",
+    "--first-frame",
+    "/Users/realazy/Projects/Sites/lazyapps/scripts/assets/world-book/animation/sculpted-globe-start-v1.png",
+    "--profile",
+    "-o",
+    "/Users/realazy/Projects/Sites/lazyapps/scripts/assets/world-book/animation/sculpted-globe-h3-v1.mp4"
+  ],
+  "anchors": {
+    "first": {
+      "path": "/Users/realazy/Projects/Sites/lazyapps/scripts/assets/world-book/animation/sculpted-globe-start-v1.png",
+      "sha256": "32789df95595daaf50358a0c423a42c424af6f0ba76d4e84bbc9e7ab4b0deb1e"
+    }
+  },
+  "requestedSeconds": 3.2,
+  "output": [
+    704,
+    1280
+  ],
+  "internal": [
+    352,
+    640
+  ],
+  "steps": 20,
+  "reuse": 2,
+  "layers": 50
+}

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="388" height="388" viewBox="0 0 388 388">
+  <defs>
+    <radialGradient id="ocean" cx=".32" cy=".22" r=".92">
+      <stop offset="0" stop-color="#3F87FE"/>
+      <stop offset=".46" stop-color="#1A73FE"/>
+      <stop offset=".8" stop-color="#0360E4"/>
+      <stop offset="1" stop-color="#0354C7"/>
+    </radialGradient>
+  </defs>
+  <circle cx="194" cy="194" r="183" fill="url(#ocean)"/>
+</svg>

@@ -1,0 +1,9 @@
+{
+  "sourceH3": "scripts/assets/world-book/animation/grand-assembly-h3-v1.mp4",
+  "inspectedArrivalSeconds": 3.0,
+  "assemblySeconds": 1.6,
+  "frames": 48,
+  "fps": 30,
+  "interpolation": "Offline motion-compensated optical flow; no browser effect",
+  "editorialChange": "0.4 second anticipation, accelerating country travel, decisive arrival; omit generated static tail"
+}

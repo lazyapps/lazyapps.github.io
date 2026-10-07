@@ -1,0 +1,45 @@
+{
+  "dimensions": [
+    900,
+    1200
+  ],
+  "fps": 30,
+  "closure": {
+    "frames": 12,
+    "seconds": 0.4,
+    "alphaEndpoints": [
+      0,
+      0
+    ],
+    "maximumAlpha": 221
+  },
+  "openingReveal": {
+    "frames": 24,
+    "seconds": 0.8,
+    "maskEndpoints": [
+      0,
+      255
+    ],
+    "monotonicEveryPixel": true,
+    "glowEndpointsAlpha": [
+      0,
+      0
+    ],
+    "maximumGlowAlpha": 72
+  },
+  "themeReveal": {
+    "frames": 18,
+    "seconds": 0.6,
+    "maskEndpoints": [
+      0,
+      255
+    ],
+    "monotonicEveryPixel": true,
+    "glowEndpointsAlpha": [
+      0,
+      0
+    ],
+    "maximumGlowAlpha": 41
+  },
+  "runtime": "All layers baked into the one selected foreground H.264 movie"
+}

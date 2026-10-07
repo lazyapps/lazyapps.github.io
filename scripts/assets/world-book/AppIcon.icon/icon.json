@@ -1,0 +1,237 @@
+{
+  "features" : [
+    "refractivity",
+    "specular-location"
+  ],
+  "fill" : {
+    "linear-gradient" : [
+      "display-p3:0.10500,0.12500,0.18000,1.00000",
+      "display-p3:0.02500,0.03200,0.06000,1.00000"
+    ]
+  },
+  "groups" : [
+    {
+      "blend-mode" : "screen",
+      "blur-material" : 0,
+      "layers" : [
+        {
+          "glass" : true,
+          "image-name" : "Ocean-Sphere.svg",
+          "name" : "Clear glass globe",
+          "position" : {
+            "scale" : 1.67,
+            "translation-in-points" : [
+              0,
+              -52
+            ]
+          }
+        },
+        {
+          "blend-mode" : "plus-lighter",
+          "glass" : false,
+          "image-name" : "Globe-Glow.svg",
+          "name" : "Prismatic globe illumination",
+          "position" : {
+            "scale" : 1.67,
+            "translation-in-points" : [
+              0,
+              -52
+            ]
+          }
+        }
+      ],
+      "name" : "Refractive celestial lens",
+      "refractivity" : {
+        "depth" : 0.24,
+        "enabled" : true,
+        "strength" : 0.06
+      },
+      "shadow" : {
+        "kind" : "layer-color",
+        "opacity" : 0.22
+      },
+      "specular" : "inside",
+      "translucency" : {
+        "enabled" : false,
+        "value" : 0
+      }
+    },
+    {
+      "blend-mode" : "normal",
+      "blur-material" : 0,
+      "layers" : [
+        {
+          "fill-specializations" : [
+            {
+              "appearance" : "tinted",
+              "value" : "system-light"
+            }
+          ],
+          "glass" : true,
+          "image-name" : "Globe-Land.svg",
+          "name" : "Jade glass continents",
+          "position" : {
+            "scale" : 1.0199999999999998,
+            "translation-in-points" : [
+              0,
+              -52
+            ]
+          }
+        },
+        {
+          "glass" : false,
+          "image-name" : "Ocean-Color.svg",
+          "name" : "Blue ocean color",
+          "position" : {
+            "scale" : 1.67,
+            "translation-in-points" : [
+              0,
+              -52
+            ]
+          }
+        }
+      ],
+      "name" : "Jade continents and blue ocean",
+      "refractivity" : {
+        "depth" : 0.05,
+        "enabled" : true,
+        "strength" : 0.06
+      },
+      "shadow" : {
+        "kind" : "neutral",
+        "opacity" : 0
+      },
+      "specular" : "inside",
+      "translucency" : {
+        "enabled" : false,
+        "value" : 0
+      }
+    },
+    {
+      "blend-mode" : "screen",
+      "blur-material" : 0,
+      "layers" : [
+        {
+          "fill-specializations" : [
+            {
+              "value" : {
+                "linear-gradient" : [
+                  "display-p3:0.97000,0.98500,1.00000,0.80000",
+                  "display-p3:0.47000,0.62000,0.86000,0.26000"
+                ],
+                "orientation" : {
+                  "start" : {
+                    "x" : 0.5,
+                    "y" : 0.82
+                  },
+                  "stop" : {
+                    "x" : 0.5,
+                    "y" : 1.04
+                  }
+                }
+              }
+            },
+            {
+              "appearance" : "tinted",
+              "value" : "system-light"
+            }
+          ],
+          "glass" : true,
+          "hidden" : false,
+          "image-name" : "Open-Pages.svg",
+          "name" : "Open-Pages.svg",
+          "position" : {
+            "scale" : 1,
+            "translation-in-points" : [
+              2.012652226290661,
+              4.490325919370434
+            ]
+          }
+        },
+        {
+          "fill" : {
+            "linear-gradient" : [
+              "display-p3:0.72000,0.82000,1.00000,0.55000",
+              "display-p3:0.45000,0.38000,0.75000,0.12000"
+            ],
+            "orientation" : {
+              "start" : {
+                "x" : 0.5,
+                "y" : 0.82
+              },
+              "stop" : {
+                "x" : 0.5,
+                "y" : 1.04
+              }
+            }
+          },
+          "glass" : true,
+          "hidden" : false,
+          "image-name" : "Open-Cover.svg",
+          "name" : "Open-Cover.svg",
+          "position" : {
+            "scale" : 1,
+            "translation-in-points" : [
+              -3.6415315207705135e-14,
+              0
+            ]
+          }
+        }
+      ],
+      "name" : "Luminous glass pages",
+      "refractivity" : {
+        "depth" : 0.1,
+        "enabled" : true,
+        "strength" : 0.14
+      },
+      "shadow" : {
+        "kind" : "neutral",
+        "opacity" : 0.05
+      },
+      "specular" : "inside",
+      "translucency" : {
+        "enabled" : true,
+        "value" : 0.28
+      }
+    },
+    {
+      "blend-mode" : "screen",
+      "blur-material" : 0,
+      "layers" : [
+        {
+          "blend-mode" : "screen",
+          "glass" : false,
+          "image-name" : "Globe-Lightspill.svg",
+          "name" : "Soft light beneath globe"
+        },
+        {
+          "blend-mode" : "screen",
+          "glass" : false,
+          "image-name" : "Space-Background.svg",
+          "name" : "Distant stars and soft atmosphere"
+        }
+      ],
+      "name" : "Glass binding and reflected light",
+      "refractivity" : {
+        "depth" : 0.12,
+        "enabled" : true,
+        "strength" : 0.18
+      },
+      "shadow" : {
+        "kind" : "layer-color",
+        "opacity" : 0.08
+      },
+      "specular" : "inside",
+      "translucency" : {
+        "enabled" : true,
+        "value" : 0.32
+      }
+    }
+  ],
+  "supported-platforms" : {
+    "circles" : [
+      "watchOS"
+    ],
+    "squares" : "shared"
+  }
+}

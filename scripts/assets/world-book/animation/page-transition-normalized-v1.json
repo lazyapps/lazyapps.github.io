@@ -1,0 +1,118 @@
+{
+  "source": "scripts/assets/world-book/animation/page-transition-h3-v1.mp4",
+  "dimensions": [
+    704,
+    1280
+  ],
+  "duration": 0.7,
+  "fps": 30,
+  "exactEndpoints": true,
+  "pixelwiseMonotonic": true,
+  "frames": [
+    {
+      "frame": 0,
+      "mean": 0.0,
+      "featherFraction": 0.0
+    },
+    {
+      "frame": 1,
+      "mean": 6.2959206321022725,
+      "featherFraction": 0.0011208274147727273
+    },
+    {
+      "frame": 2,
+      "mean": 9.491060014204546,
+      "featherFraction": 0.0010753284801136363
+    },
+    {
+      "frame": 3,
+      "mean": 14.32413662997159,
+      "featherFraction": 0.0011396928267045454
+    },
+    {
+      "frame": 4,
+      "mean": 21.86908624822443,
+      "featherFraction": 0.0011285955255681819
+    },
+    {
+      "frame": 5,
+      "mean": 28.314015891335227,
+      "featherFraction": 0.001083096590909091
+    },
+    {
+      "frame": 6,
+      "mean": 36.20625110973011,
+      "featherFraction": 0.0010242808948863636
+    },
+    {
+      "frame": 7,
+      "mean": 43.928523393110794,
+      "featherFraction": 0.0010764382102272727
+    },
+    {
+      "frame": 8,
+      "mean": 55.55397727272727,
+      "featherFraction": 0.0010065252130681819
+    },
+    {
+      "frame": 9,
+      "mean": 65.87112482244318,
+      "featherFraction": 0.0010431463068181818
+    },
+    {
+      "frame": 10,
+      "mean": 80.36263205788352,
+      "featherFraction": 0.0011052911931818182
+    },
+    {
+      "frame": 11,
+      "mean": 91.8906904740767,
+      "featherFraction": 0.0010065252130681819
+    },
+    {
+      "frame": 12,
+      "mean": 104.67165083451705,
+      "featherFraction": 0.0011663263494318182
+    },
+    {
+      "frame": 13,
+      "mean": 122.74683393998579,
+      "featherFraction": 0.0009843306107954546
+    },
+    {
+      "frame": 14,
+      "mean": 138.01250554865058,
+      "featherFraction": 0.0010564630681818182
+    },
+    {
+      "frame": 15,
+      "mean": 154.4888039328835,
+      "featherFraction": 0.001192959872159091
+    },
+    {
+      "frame": 16,
+      "mean": 176.57435857599432,
+      "featherFraction": 0.0011607776988636364
+    },
+    {
+      "frame": 17,
+      "mean": 194.15025190873578,
+      "featherFraction": 0.0010919744318181818
+    },
+    {
+      "frame": 18,
+      "mean": 213.01177201704544,
+      "featherFraction": 0.0011807528409090908
+    },
+    {
+      "frame": 19,
+      "mean": 239.01263538707386,
+      "featherFraction": 0.0011474609375
+    },
+    {
+      "frame": 20,
+      "mean": 255.0,
+      "featherFraction": 0.0
+    }
+  ]
+}

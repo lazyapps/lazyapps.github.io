@@ -1,0 +1,20 @@
+{
+  "mode": "built-in imagegen",
+  "intent": "edit",
+  "originalReference": "sculpted-globe-start-v1.png",
+  "first": {
+    "asset": "grand-assembly-first-v1.png",
+    "source": "/Users/realazy/.codex/generated_images/01a10f9e-2f2f-7852-99e9-0d8552c022df/exec-adc37f7b-213d-4613-bac3-2c9dd245c61f.png",
+    "prompts": [
+      "grand-assembly-first-imagegen-prompt.txt",
+      "grand-assembly-first-refinement.txt",
+      "grand-assembly-first-framing.txt"
+    ]
+  },
+  "last": {
+    "asset": "grand-assembly-last-v1.png",
+    "source": "/Users/realazy/.codex/generated_images/01a10f9e-2f2f-7852-99e9-0d8552c022df/exec-7758d400-fee2-4df4-a10b-bb25276ba48b.png",
+    "prompt": "grand-assembly-last-imagegen-prompt.txt",
+    "reference": "grand-assembly-first-v1.png"
+  }
+}

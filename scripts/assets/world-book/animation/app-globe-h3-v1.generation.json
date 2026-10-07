@@ -1,0 +1,52 @@
+{
+  "model": "MiniMax-H3",
+  "engine": "/Users/realazy/tmp/h3.c/h3",
+  "command": [
+    "/Users/realazy/tmp/h3.c/h3",
+    "-d",
+    "/Users/realazy/.cache/huggingface/hub/models--MiniMaxAI--MiniMax-H3/snapshots/42ed227ee7df40d41602854ae760620d6eb651fe",
+    "-p",
+    "An elegant World Book app opening, continuing this exact illustrated political globe on its near-black charcoal background. The light sky-blue oceans and pastel cream, mint, blush and pale-yellow country regions remain faithful to the first frame. The globe rotates slowly in ONE continuous direction around its vertical axis by only about twelve degrees, revealing a little more of eastern Africa and the Middle East. Africa and Europe stay recognizable throughout. Keep the camera stationary and the complete sphere centered, at the same size, with ample dark space around it. Constant soft dimensional illumination; clean crisp geographic coastlines and thin country borders remain stable and intact. Each country keeps its exact shape and fill color. Scholarly, calm, premium native-app visual quality. Smooth modest constant motion, no zoom or camera arc, no reversals, no oscillation, no ping-pong, no size pulsing. No text or country labels, no UI, no book or paper, no additional props, no extra planets or stars, no atmospheric glow, no flashes, no lens flare, no changing colors, no morphing continents or texture drift, no music or voice. The black background stays uniform and still throughout. End with the same globe and composition, ready to dissolve into the actual app globe screen.",
+    "--width",
+    "704",
+    "--height",
+    "1280",
+    "--render-width",
+    "352",
+    "--render-height",
+    "640",
+    "--seconds",
+    "4",
+    "--steps",
+    "20",
+    "--layers",
+    "50",
+    "--reuse",
+    "2",
+    "--seed",
+    "10062027",
+    "--first-frame",
+    "/Users/realazy/Projects/Sites/lazyapps/scripts/assets/world-book/animation/app-globe-start-v1.png",
+    "--profile",
+    "-o",
+    "/Users/realazy/Projects/Sites/lazyapps/scripts/assets/world-book/animation/app-globe-h3-v1.mp4"
+  ],
+  "anchors": {
+    "first": {
+      "path": "/Users/realazy/Projects/Sites/lazyapps/scripts/assets/world-book/animation/app-globe-start-v1.png",
+      "sha256": "89a754a339f34f7dc761a3257c366cfcb8c680d22a937f1b63b8f20e7c34c5bb"
+    }
+  },
+  "requestedSeconds": 4,
+  "output": [
+    704,
+    1280
+  ],
+  "internal": [
+    352,
+    640
+  ],
+  "steps": 20,
+  "reuse": 2,
+  "layers": 50
+}

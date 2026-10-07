@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="388" height="388" viewBox="0 0 388 388">
+  <defs>
+    <clipPath id="orb"><circle cx="194" cy="194" r="183"/></clipPath>
+    <radialGradient id="blue" cx=".54" cy="1.08" r=".75">
+      <stop offset="0" stop-color="#E0FBFF" stop-opacity=".98"/>
+      <stop offset=".16" stop-color="#74CCFF" stop-opacity=".72"/>
+      <stop offset=".30" stop-color="#546AFF" stop-opacity=".36"/>
+      <stop offset=".54" stop-color="#494C88" stop-opacity=".06"/>
+      <stop offset="1" stop-color="#35365F" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="spectrum" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFD0A1" stop-opacity=".95"/>
+      <stop offset=".23" stop-color="#BDEBFF" stop-opacity=".34"/>
+      <stop offset=".5" stop-color="#A595FF" stop-opacity=".12"/>
+      <stop offset=".76" stop-color="#6878FF" stop-opacity=".55"/>
+      <stop offset=".90" stop-color="#59DEFF" stop-opacity=".94"/>
+      <stop offset="1" stop-color="#E6FBFF" stop-opacity="1"/>
+    </linearGradient>
+      <radialGradient id="bowl"><stop offset=".66" stop-color="#5468FF" stop-opacity="0"/><stop offset=".89" stop-color="#647DFF" stop-opacity=".36"/><stop offset=".96" stop-color="#64D7FF" stop-opacity=".70"/><stop offset="1" stop-color="#DAFAFF" stop-opacity=".96"/></radialGradient>
+    <linearGradient id="lower" x1="0" y1="0" x2="0" y2="1"><stop offset=".42" stop-color="black"/><stop offset=".72" stop-color="#AAAAAA"/><stop offset="1" stop-color="white"/></linearGradient>
+    <mask id="lower-mask"><rect width="388" height="388" fill="url(#lower)"/></mask>
+  </defs>
+  <g clip-path="url(#orb)">
+    <circle cx="194" cy="194" r="183" fill="url(#blue)" opacity=".6"/><circle cx="194" cy="194" r="183" fill="url(#bowl)" mask="url(#lower-mask)"/>
+    <circle cx="194" cy="194" r="182" fill="none" stroke="url(#spectrum)" stroke-width="3.2"/>
+  </g>
+</svg>

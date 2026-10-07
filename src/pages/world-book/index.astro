@@ -1,0 +1,400 @@
+---
+import SocialMeta from '../../components/SocialMeta.astro';
+import SiteFooterBase from '../../components/SiteFooterBase.astro';
+import siteCssUrl from '$assets/s/site.css?url';
+import gsapUrl from '$assets/vendor/gsap.min.js?url';
+import scrollTriggerUrl from '$assets/vendor/ScrollTrigger.min.js?url';
+import customEaseUrl from '$assets/vendor/CustomEase.min.js?url';
+import splitTextUrl from '$assets/vendor/SplitText.min.js?url';
+import logoRevealUrl from '$assets/s/logo-reveal-loader.js?url';
+import siteJsUrl from '$assets/s/site.js?url';
+import iconUrl from '$assets/img/world-book-icon.png?url';
+import opengraphUrl from '$assets/img/world-book-opengraph.png?url';
+import badgeUrl from '$assets/img/chmate/app-store-badge-en.svg?url';
+
+const appStoreCampaign = 'pt=259198&ct=lazyapps-en&mt=8';
+const appStoreUrl = `https://apps.apple.com/app/apple-store/id412637620?${appStoreCampaign}`;
+const t = {
+  htmlLang: 'en', htmlDir: 'ltr', ogLocale: 'en_US', selectedUrl: '/world-book/',
+  title: 'World Book — The world, ready to explore',
+  description: 'Explore 260+ countries and territories, spin a 3D globe, and compare global rankings. An independent world reference for iPhone and iPad. Buy once.',
+  navAria: 'Main navigation', homeAria: 'lazyapps home',
+  headline: ['The world,', 'ready to explore.'],
+  sub: 'Follow your curiosity across 260+ countries and territories. Spin the globe, read country profiles, and see how the world compares.',
+  downloadLabel: 'Get World Book on the App Store', badgeAlt: 'Download on the App Store',
+  purchaseNote: 'One-time purchase.', unlockNote: 'No ads or subscriptions.', mediaLocale: 'en',
+  videoLabel: 'World Book preview: globe, country profiles, rankings, and photos',
+  videoFallback: 'Your browser does not support this video.', storeLink: 'View World Book on the App Store',
+  featuresTitle: 'A world of knowledge, within reach.',
+  cards: [
+    ['Follow your curiosity.', 'Spin and zoom the interactive globe. Pick a flag to explore a country, from its geography and history to its people and economy.'],
+    ['Read wherever you are.', 'Country profiles, flags, rankings, locator maps, and the globe are ready offline. Photos and regional maps stay available after their first download.'],
+    ['Put facts in perspective.', 'Compare countries across 100+ rankings, from population to life expectancy. Explore interactive charts with reported values, dates, and ranks.'],
+  ],
+  promiseLines: ['Buy once.', 'Keep exploring.'],
+  promiseCopy: 'A reference book for your iPhone and iPad, with comfortable typography and four reading themes. One purchase, no in-app purchases, no subscriptions. No ads or tracking to interrupt your curiosity.',
+  getApp: 'Get World Book',
+};
+---
+<!doctype html>
+<html lang={t.htmlLang} dir={t.htmlDir} class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+    <title>{t.title}</title>
+    <meta name="description" content={t.description}>
+    <meta name="theme-color" content="#171717" data-page-color="#e8e8e6">
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#171717" data-page-color="#e8e8e6">
+    <meta name="apple-itunes-app" content={`app-id=412637620, affiliate-data=${appStoreCampaign}`}>
+    <SocialMeta
+      title={t.title}
+      description={t.description}
+      url={`https://lazyapps.com${t.selectedUrl}`}
+      image={`https://lazyapps.com${opengraphUrl}`}
+      imageAlt="World Book"
+      imageWidth={1200}
+      imageHeight={630}
+      locale={t.ogLocale}
+    />
+    <link rel="icon" href={iconUrl} type="image/png">
+    <link rel="stylesheet" href={siteCssUrl}>
+    <script is:inline>
+      document.documentElement.classList.remove('no-js');
+      setTimeout(() => {
+        document.documentElement.classList.add('is-page-theme', 'is-loaded');
+        document.getElementById('loader')?.remove();
+        document.querySelectorAll('meta[name="theme-color"][data-page-color]').forEach((meta) => {
+          meta.setAttribute('content', meta.getAttribute('data-page-color'));
+        });
+      }, 6000);
+    </script>
+  </head>
+  <body>
+    <div class="reading-backdrop" data-world-book-backdrop aria-hidden="true"><div class="reading-backdrop__map"></div></div>
+    <div class="grain" data-grain-animate="true" aria-hidden="true"></div>
+    <div data-load-wrap class="loader" id="loader" aria-hidden="true">
+      <div data-load-bg class="loader__bg"><div data-load-progress class="loader__bg-bar"></div></div>
+      <div data-load-container class="loader__container">
+        <div class="loader__logo-wrap">
+          <div class="loader__logo-item is--base"><span class="loader__logo-img" lang="en">WORLD BOOK</span></div>
+          <div data-load-logo class="loader__logo-item is--top"><span class="loader__logo-img" lang="en">WORLD BOOK</span></div>
+        </div>
+      </div>
+    </div>
+    <header class="wrap">
+      <div class="topbar">
+        <nav class="topbar__nav" aria-label={t.navAria}>
+          <a href="/" class="topbar__home" aria-label={t.homeAria}><span aria-hidden="true" class="topbar__home-dot"></span></a>
+        </nav>
+        <a class="topbar__app" href={t.selectedUrl}>
+          <img src={iconUrl} alt="" width="26" height="26">
+          <span class="dsp" lang="en" dir="ltr">World Book</span>
+        </a>
+      </div>
+    </header>
+
+    <main>
+      <section class="reading-hero wrap" aria-labelledby="hero-title">
+        <div class="reading-hero__copy">
+          <div class="reading-hero__heading">
+            <h1 class="dsp" id="hero-title">{t.headline.map((line, index) => <Fragment>{index > 0 && <br />}{line}</Fragment>)}</h1>
+          </div>
+          <div class="reading-hero__details">
+            <p class="reading-hero__sub">{t.sub}</p>
+            <div class="download" id="download">
+              <a class="app-store-badge" href={appStoreUrl} aria-label={t.downloadLabel}>
+                <img src={badgeUrl} alt={t.badgeAlt} height="48">
+              </a>
+              <p class="download__note"><span>{t.purchaseNote}</span><span>{t.unlockNote}</span></p>
+            </div>
+          </div>
+        </div>
+
+        <figure class="preview" data-world-book-preview data-media-locale={t.mediaLocale} data-device="ipad">
+          <div class="preview__screen">
+            <video data-world-book-video hidden muted loop playsinline controls preload="metadata" aria-label={t.videoLabel}>
+              {t.videoFallback} <a href={appStoreUrl}>{t.storeLink}</a>
+            </video>
+            <button class="preview__play" data-world-book-play hidden type="button" aria-label="Play World Book preview">
+              <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path fill="currentColor" d="M8 5v14l11-7z" /></svg>
+            </button>
+            <noscript>
+              <video class="preview__fallback-desktop" width="900" height="1200" poster={`/v/world-book/preview-ipad-${t.mediaLocale}-v7.jpg`} controls playsinline preload="none" aria-label={t.videoLabel}>
+                <source src={`/v/world-book/preview-ipad-${t.mediaLocale}-v7.mp4`} type="video/mp4">
+              </video>
+              <video class="preview__fallback-mobile" width="664" height="1442" poster={`/v/world-book/preview-iphone-${t.mediaLocale}-v7.jpg`} controls playsinline preload="none" aria-label={t.videoLabel}>
+                <source src={`/v/world-book/preview-iphone-${t.mediaLocale}-v7.mp4`} type="video/mp4">
+              </video>
+            </noscript>
+          </div>
+          <img class="preview__bezel" data-world-book-bezel hidden alt="" width="2300" height="3000">
+          <noscript><img class="preview__bezel" src="/v/world-book/bezel-ipad.png" alt="" width="2300" height="3000"></noscript>
+        </figure>
+        <script is:inline>
+          (() => {
+            const video = document.querySelector('[data-world-book-video]');
+            const preview = document.querySelector('[data-world-book-preview]');
+            const bezel = document.querySelector('[data-world-book-bezel]');
+            const playButton = document.querySelector('[data-world-book-play]');
+            const backdrop = document.querySelector('[data-world-book-backdrop]');
+            const wideViewport = window.matchMedia('(min-width: 768px)');
+            const motion = window.matchMedia('(prefers-reduced-motion: reduce)');
+            const conserveData = navigator.connection?.saveData === true;
+            let wantsPlayback = !motion.matches && !conserveData;
+            let inView = false;
+            let switchingSource = false;
+            let resumeTime = 0;
+            let activeDevice;
+            video.muted = true;
+            video.preload = motion.matches || conserveData ? 'none' : 'metadata';
+            video.hidden = false;
+
+            function updatePreview() {
+              const device = wideViewport.matches ? 'ipad' : 'iphone';
+              if (activeDevice === device) return;
+              if (!switchingSource) resumeTime = video.currentTime;
+              switchingSource = true;
+              pausePlayback();
+              activeDevice = device;
+              preview.dataset.device = device;
+              bezel.hidden = device !== 'ipad';
+              if (device === 'ipad') bezel.src = '/v/world-book/bezel-ipad.png';
+              video.width = device === 'iphone' ? 664 : 900;
+              video.height = device === 'iphone' ? 1442 : 1200;
+              video.poster = `/v/world-book/preview-${device}-${preview.dataset.mediaLocale}-v7.jpg`;
+              if ((motion.matches || conserveData) && !wantsPlayback) {
+                video.removeAttribute('src');
+                video.load();
+                switchingSource = false;
+                playButton.hidden = false;
+                return;
+              }
+              playButton.hidden = true;
+              video.src = previewSource();
+              video.load();
+            }
+
+            function previewSource() {
+              return `/v/world-book/preview-${activeDevice}-${preview.dataset.mediaLocale}-v7.mp4`;
+            }
+
+            playButton.addEventListener('click', () => {
+              wantsPlayback = true;
+              playButton.hidden = true;
+              if (!video.getAttribute('src')) {
+                switchingSource = true;
+                video.src = previewSource();
+                video.load();
+              }
+              video.play().catch(() => { playButton.hidden = false; });
+            });
+
+            function pausePlayback() {
+              video.pause();
+              setBackdropPlaying(false);
+            }
+
+            function setBackdropPlaying(playing) {
+              const value = String(playing);
+              if (backdrop.dataset.playing !== value) backdrop.dataset.playing = value;
+            }
+
+            function syncBackdrop() {
+              setBackdropPlaying(!video.paused && !switchingSource && video.readyState >= 3 && video.currentTime >= 3.8 && inView && !document.hidden && !motion.matches && !conserveData);
+            }
+
+            function syncPlayback() {
+              if (switchingSource) return;
+              if (!inView || document.hidden || !contentReady()) {
+                pausePlayback();
+              } else if (wantsPlayback) {
+                video.play().catch(() => { playButton.hidden = false; });
+              }
+            }
+
+            function contentReady() {
+              return document.documentElement.classList.contains('is-loaded') && !document.getElementById('loader');
+            }
+
+            video.addEventListener('play', () => { wantsPlayback = true; });
+            video.addEventListener('playing', syncBackdrop);
+            video.addEventListener('timeupdate', syncBackdrop);
+            video.addEventListener('loadeddata', syncPlayback);
+            video.addEventListener('waiting', () => { setBackdropPlaying(false); });
+            video.addEventListener('pause', () => {
+              setBackdropPlaying(false);
+              if (!switchingSource && inView && !document.hidden) wantsPlayback = false;
+            });
+            video.addEventListener('loadedmetadata', () => {
+              video.currentTime = Math.min(resumeTime, video.duration);
+              switchingSource = false;
+              syncPlayback();
+            });
+            wideViewport.addEventListener('change', updatePreview);
+            new ResizeObserver(() => {
+              backdrop.style.setProperty('--map-width', `${backdrop.getBoundingClientRect().height * 2}px`);
+            }).observe(backdrop);
+            updatePreview();
+            new IntersectionObserver(([entry]) => {
+              inView = entry.isIntersecting;
+              syncPlayback();
+            }, { threshold: 0.2 }).observe(video);
+            const pageLoadObserver = new MutationObserver(() => {
+              if (!contentReady()) return;
+              pageLoadObserver.disconnect();
+              syncPlayback();
+            });
+            pageLoadObserver.observe(document.documentElement, { attributes: true, attributeFilter: ['class'] });
+            pageLoadObserver.observe(document.body, { childList: true });
+            document.addEventListener('visibilitychange', syncPlayback);
+            motion.addEventListener('change', () => {
+              if (motion.matches) {
+                wantsPlayback = false;
+                pausePlayback();
+              }
+            });
+          })();
+        </script>
+      </section>
+
+      <section class="reading-features wrap" aria-labelledby="features-title">
+        <div class="reading-features__heading">
+          <h2 class="dsp" id="features-title">{t.featuresTitle}</h2>
+        </div>
+        <dl class="reading-features__grid">
+          {t.cards.map(([title, copy]) => <div>
+            <dt class="dsp">{title}</dt>
+            <dd>{copy}</dd>
+          </div>)}
+        </dl>
+      </section>
+
+      <section class="reading-promise wrap" aria-labelledby="promise-title">
+        <div class="reading-promise__inner">
+          <div>
+            <h2 class="dsp" id="promise-title">{t.promiseLines.map((line, index) => <Fragment>{index > 0 && <br />}{line}</Fragment>)}</h2>
+          </div>
+          <div class="reading-promise__copy">
+            <p>{t.promiseCopy}</p>
+            <a class="text-link" href={appStoreUrl}>{t.getApp} <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="reading-footer wrap">
+      <div class="reading-footer__inner">
+        <div class="reading-footer__notices">
+          <p>“Summer Fun” — <a href="https://mixkit.co/free-stock-music/tag/travel/">Ahjay Stelino</a>, <a href="https://mixkit.co/license/#musicFree">Mixkit Stock Music Free License</a>. Excerpt edited with fades and volume adjustment.</p>
+          <p>World Book is an independent reader of archived CIA World Factbook content, not affiliated with or endorsed by the CIA. Data is archival, not live; figures may refer to different years.</p>
+          <p>Decorative background artwork is AI-generated. App screens show the actual app.</p>
+          <p>Apple, the Apple logo, iPhone, and iPad are trademarks of Apple Inc. App Store is a service mark of Apple Inc.</p>
+        </div>
+        <SiteFooterBase />
+      </div>
+    </footer>
+    <script is:inline src={gsapUrl}></script>
+    <script is:inline src={scrollTriggerUrl}></script>
+    <script is:inline src={customEaseUrl}></script>
+    <script is:inline src={splitTextUrl}></script>
+    <script is:inline src={logoRevealUrl}></script>
+    <script is:inline src={siteJsUrl}></script>
+
+  </body>
+</html>
+
+<style>
+  header { padding-top: clamp(8px, 1.5vw, 18px); }
+  .reading-hero { display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr); align-items: center; gap: var(--space-grid); padding-top: clamp(28px, 4vw, 56px); }
+  .reading-hero__heading { overflow-x: clip; }
+  .reading-hero h1 { font-size: clamp(56px, 6.2vw, 96px); text-wrap: balance; overflow-wrap: anywhere; }
+  .reading-hero__sub { margin-top: clamp(18px, 2vw, 28px); color: var(--muted); font-size: 1.0625rem; line-height: 1.7; max-width: 48ch; }
+  .reading-hero__copy { min-width: 0; }
+  .reading-hero__details { container: hero-copy / inline-size; }
+  .download { display: flex; align-items: center; gap: 12px; margin-top: var(--space-grid); }
+  .app-store-badge { display: inline-block; flex-shrink: 0; padding: 12px; margin-inline-start: -12px; line-height: 0; }
+  .app-store-badge img { width: auto; height: 48px; }
+  .download__note { flex: 1; min-width: 0; max-width: 56ch; font-size: .7778rem; line-height: 1.5; color: var(--muted); }
+  .download__note span { display: block; line-height: inherit; white-space: nowrap; }
+  @container hero-copy (width < 400px) {
+    .download { gap: 4px; }
+    .app-store-badge { padding: 10px; margin-inline-start: -10px; }
+    .app-store-badge img { height: 40px; }
+    .download__note { font-size: 13px; }
+  }
+  body { --muted: #44443f; }
+  .reading-backdrop { position: fixed; inset: 0; z-index: -1; overflow: hidden; pointer-events: none; opacity: .18; }
+  .reading-backdrop__map { position: absolute; inset: 0 auto 0 0; width: calc(100% + var(--map-width, 200vh)); background: url('/v/world-book/flat-map-v1.jpg') repeat-x 0 center / auto 100%; animation: map-scroll 90s linear infinite paused; }
+  .reading-backdrop[data-playing="true"] .reading-backdrop__map { animation-play-state: running; }
+  @keyframes map-scroll { to { transform: translate3d(calc(-1 * var(--map-width, 200vh)), 0, 0); } }
+  .preview {
+    --preview-width: 2300; --preview-height: 3000;
+    --screen-left: 5.130435%; --screen-top: 4.133333%;
+    --screen-width: 89.73913%; --screen-height: 91.733333%;
+    --screen-mask: url('/v/world-book/screen-mask-ipad.png');
+    position: relative; aspect-ratio: var(--preview-width) / var(--preview-height);
+    margin: 0; min-width: 0; justify-self: center;
+    width: min(100%, calc(max(100svh, 36rem) * var(--preview-width) / var(--preview-height)));
+  }
+  .preview::before { content: ''; position: absolute; left: calc(var(--screen-left) - 1px); top: calc(var(--screen-top) - 1px); width: calc(var(--screen-width) + 2px); height: calc(var(--screen-height) + 2px); background: #000; }
+  .preview__screen { position: absolute; inset: 0; -webkit-mask-image: var(--screen-mask); mask-image: var(--screen-mask); -webkit-mask-size: 100% 100%; mask-size: 100% 100%; -webkit-mask-repeat: no-repeat; mask-repeat: no-repeat; }
+  .preview video { position: absolute; left: var(--screen-left); top: var(--screen-top); width: var(--screen-width); height: var(--screen-height); display: block; background: transparent; outline: none; }
+  .preview video:fullscreen { position: static; width: 100%; height: 100%; object-fit: contain; background: #000; }
+  .preview__bezel { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; }
+  .preview__play { position: absolute; left: 50%; top: 50%; z-index: 1; display: grid; place-items: center; width: 64px; height: 64px; padding: 0; border: 1px solid rgba(248, 248, 246, .4); border-radius: 50%; background: var(--ink); color: var(--paper); cursor: pointer; transform: translate(-50%, -50%); }
+  .preview__play[hidden] { display: none; }
+  .preview video[hidden], .preview__bezel[hidden], .preview video.preview__fallback-mobile { display: none; }
+  .reading-features { padding-top: var(--space-section); }
+  .reading-features__heading { border-top: 1px solid var(--line); padding-top: 32px; }
+  .reading-features h2 { font-size: clamp(28px, 4.2vw, 60px); }
+  .reading-features__grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--space-grid); margin-top: var(--space-grid); }
+  .reading-features__grid > div { padding: var(--space-card); border: 1px solid rgba(23, 23, 23, .08); border-radius: var(--r-card); background: oklch(0.8 0.12 155); transform: rotate(-1deg); }
+  .reading-features__grid > div:nth-child(2) { background: oklch(0.9 0.06 155); transform: rotate(1deg); }
+  .reading-features__grid > div:nth-child(3) { background: var(--c5); }
+  .reading-features dt { font-size: clamp(28px, 3.2vw, 44px); text-wrap: balance; }
+  .reading-features dd { margin-top: 1rem; font-size: 1rem; line-height: 1.7; max-width: 56ch; color: color-mix(in oklch, var(--ink) 85%, transparent); }
+  .reading-promise { padding-top: var(--space-section); }
+  .reading-promise__inner { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-grid); align-items: center; padding: var(--space-card); border: 1px solid rgba(248, 248, 246, .12); border-radius: var(--r-card); background: var(--ink); color: var(--paper); }
+  .reading-promise h2 { font-size: clamp(32px, 4vw, 52px); }
+  .reading-promise__copy p { font-size: 1rem; line-height: 1.7; max-width: 29em; }
+  .text-link { display: inline-flex; align-items: center; gap: .75rem; margin-top: var(--space-grid); padding: .75rem .875rem .75rem 1rem; min-height: 44px; border-radius: 999px; background: color-mix(in oklch, currentColor 7%, transparent); box-shadow: inset 0 0 0 1px color-mix(in oklch, currentColor 12%, transparent); font: 600 .9375rem/1 var(--sans); }
+  .text-link span { display: grid; width: 1.5rem; height: 1.5rem; place-items: center; border-radius: 50%; background: color-mix(in oklch, currentColor 9%, transparent); }
+  .text-link:hover { background: color-mix(in oklch, currentColor 11%, transparent); }
+  .reading-footer { padding-top: var(--space-section); }
+  .reading-footer__inner { border-top: 1px solid var(--line); padding-top: 28px; }
+  .reading-footer__notices { display: grid; gap: 8px; max-width: 68ch; margin-inline: auto; text-align: center; color: var(--muted); font: 400 .6667rem/1.4 var(--sans); text-transform: uppercase; letter-spacing: .04em; }
+  .reading-footer__notices p { max-width: 68ch; line-height: inherit; }
+  .reading-footer__notices a { text-decoration: underline; text-decoration-color: color-mix(in srgb, currentColor 45%, transparent); text-underline-offset: .2em; }
+  .reading-footer__notices a:hover { text-decoration-color: currentColor; }
+  a:focus-visible, .preview:has(video:focus-visible), .preview__play:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+  @media (prefers-reduced-motion: reduce) {
+    .grain, .reading-backdrop__map { animation: none; }
+  }
+  @media (width < 768px) {
+    .reading-hero { grid-template-columns: 1fr; align-items: start; gap: 28px; padding-top: 24px; }
+    .reading-hero h1 { font-size: clamp(48px, 12vw, 72px); text-align: center; }
+    .reading-hero__sub { margin-top: 20px; font-size: 1rem; line-height: 1.6; }
+    .download { margin-top: 16px; }
+    .reading-hero__copy { display: block; }
+    .preview { width: 100%; aspect-ratio: 664 / 1442; justify-self: left; }
+    .preview::before { display: none; }
+    .preview__screen { position: static; -webkit-mask-image: none; mask-image: none; }
+    .preview video { position: static; width: 100%; height: auto; }
+    .preview__bezel { display: none; }
+    .preview video.preview__fallback-desktop { display: none; }
+    .preview video.preview__fallback-mobile { display: block; }
+    .reading-features, .reading-promise { padding-top: 48px; }
+    .reading-features__heading { padding-top: 24px; }
+    .reading-features h2 { font-size: 36px; }
+    .reading-features__grid { grid-template-columns: 1fr; gap: 16px; margin-top: 24px; }
+    .reading-features__grid > div { transform: none; }
+    .reading-features__grid > div:nth-child(2) { transform: none; }
+    .reading-features dt { font-size: 32px; }
+    .reading-features dd { margin-top: 12px; font-size: 1rem; line-height: 1.65; }
+    .reading-promise__inner { grid-template-columns: 1fr; gap: 20px; }
+    .reading-promise__copy p { font-size: 1rem; line-height: 1.65; }
+    .text-link { width: 100%; justify-content: space-between; margin-top: 20px; }
+    .reading-footer { padding-top: 48px; }
+    .reading-footer__inner { padding-top: 24px; }
+  }
+</style>

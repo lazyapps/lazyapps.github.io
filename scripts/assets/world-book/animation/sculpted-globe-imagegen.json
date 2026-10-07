@@ -1,0 +1,10 @@
+{
+  "mode": "built-in imagegen",
+  "references": ["app-globe-reference.png", "src/assets/img/world-book-icon.png"],
+  "generationPrompt": "sculpted-globe-imagegen-prompt.txt",
+  "refinementPrompt": "sculpted-globe-imagegen-refinement.txt",
+  "firstOutput": "/Users/realazy/.codex/generated_images/01a10f9e-2f2f-7852-99e9-0d8552c022df/exec-d0228c54-9970-4135-ad47-fc9ee74e76f1.png",
+  "selectedOutput": "/Users/realazy/.codex/generated_images/01a10f9e-2f2f-7852-99e9-0d8552c022df/exec-79fee3e0-22fb-4e6f-8163-b92912b445b0.png",
+  "savedAsset": "sculpted-globe-start-v1.png",
+  "refinementReason": "Keep the dimensional globe and its light within both original native preview crops."
+}

@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <defs>
+    <radialGradient id="blue">
+      <stop offset="0" stop-color="#537BD5" stop-opacity=".34" />
+      <stop offset=".4" stop-color="#344B82" stop-opacity=".13" />
+      <stop offset="1" stop-color="#253653" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="violet">
+      <stop offset="0" stop-color="#8F74BF" stop-opacity=".24" />
+      <stop offset=".5" stop-color="#51446D" stop-opacity=".10" />
+      <stop offset="1" stop-color="#393449" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="star-glow">
+      <stop offset="0" stop-color="#D9E7FF" stop-opacity=".32" />
+      <stop offset=".2" stop-color="#D9E7FF" stop-opacity=".12" />
+      <stop offset="1" stop-color="#D9E7FF" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+  <ellipse cx="75" cy="620" rx="490" ry="460" fill="url(#blue)" />
+  <ellipse cx="835" cy="155" rx="470" ry="390" fill="url(#violet)" />
+  <g>
+    <circle cx="218" cy="128" r="13" fill="url(#star-glow)" />
+    <circle cx="585" cy="94" r="13" fill="url(#star-glow)" />
+    <circle cx="778" cy="110" r="13" fill="url(#star-glow)" />
+    <circle cx="145" cy="223" r="13" fill="url(#star-glow)" />
+    <circle cx="887" cy="327" r="13" fill="url(#star-glow)" />
+    <circle cx="77" cy="591" r="13" fill="url(#star-glow)" />
+    <circle cx="843" cy="744" r="13" fill="url(#star-glow)" />
+  </g>
+  <g fill="#D9E7FF">
+    <circle cx="218" cy="128" r="4" opacity=".95" />
+    <circle cx="323" cy="86" r="1.78" opacity="0.46" />
+    <circle cx="414" cy="127" r="2.10" opacity="0.68" />
+    <circle cx="585" cy="94" r="3.6" opacity=".95" />
+    <circle cx="672" cy="151" r="1.89" opacity="0.56" />
+    <circle cx="778" cy="110" r="3.6" opacity=".95" />
+    <circle cx="858" cy="198" r="2.31" opacity="0.70" />
+    <circle cx="145" cy="223" r="3.6" opacity=".95" />
+    <circle cx="246" cy="260" r="1.89" opacity="0.50" />
+    <circle cx="91" cy="342" r="2.52" opacity="0.64" />
+    <circle cx="887" cy="327" r="4" opacity=".95" />
+    <circle cx="944" cy="430" r="1.78" opacity="0.56" />
+    <circle cx="115" cy="493" r="2.21" opacity="0.70" />
+    <circle cx="77" cy="591" r="3.6" opacity=".95" />
+    <circle cx="923" cy="616" r="2.52" opacity="0.60" />
+    <circle cx="152" cy="716" r="1.89" opacity="0.52" />
+    <circle cx="843" cy="744" r="4" opacity=".95" />
+    <circle cx="906" cy="820" r="1.89" opacity="0.48" />
+    <circle cx="256" cy="823" r="2.31" opacity="0.64" />
+    <circle cx="701" cy="852" r="2.10" opacity="0.50" />
+    <circle cx="170" cy="92" r="1.3" opacity="0.32" />
+    <circle cx="270" cy="178" r="1.6" opacity="0.48" />
+    <circle cx="357" cy="128" r="1.8" opacity="0.58" />
+    <circle cx="467" cy="75" r="1.3" opacity="0.4" />
+    <circle cx="530" cy="136" r="1.6" opacity="0.32" />
+    <circle cx="717" cy="72" r="1.8" opacity="0.48" />
+    <circle cx="830" cy="165" r="1.3" opacity="0.58" />
+    <circle cx="930" cy="270" r="1.6" opacity="0.4" />
+    <circle cx="817" cy="283" r="1.8" opacity="0.32" />
+    <circle cx="948" cy="520" r="1.3" opacity="0.48" />
+    <circle cx="887" cy="530" r="1.6" opacity="0.58" />
+    <circle cx="871" cy="700" r="1.8" opacity="0.4" />
+    <circle cx="925" cy="735" r="1.3" opacity="0.32" />
+    <circle cx="783" cy="852" r="1.6" opacity="0.48" />
+    <circle cx="159" cy="824" r="1.8" opacity="0.58" />
+    <circle cx="79" cy="774" r="1.3" opacity="0.4" />
+    <circle cx="209" cy="748" r="1.6" opacity="0.32" />
+    <circle cx="58" cy="451" r="1.8" opacity="0.48" />
+    <circle cx="143" cy="402" r="1.3" opacity="0.58" />
+    <circle cx="206" cy="300" r="1.6" opacity="0.4" />
+    <circle cx="98" cy="263" r="1.8" opacity="0.32" />
+    <circle cx="346" cy="176" r="1.3" opacity="0.48" />
+    <circle cx="707" cy="210" r="1.6" opacity="0.58" />
+  </g>
+</svg>
