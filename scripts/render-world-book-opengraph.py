@@ -8,7 +8,7 @@ from xml.etree import ElementTree as ET
 
 from fontTools.ttLib import TTFont
 from fontTools.varLib.instancer import instantiateVariableFont
-from PIL import Image, ImageCms, ImageDraw, ImageFont
+from PIL import Image, ImageChops, ImageCms, ImageDraw, ImageFont
 
 SITE = Path(__file__).resolve().parents[1]
 ASSETS = SITE / 'src/assets'
@@ -57,6 +57,7 @@ def render_symbol(temporary):
     mask_png = subprocess.check_output(['rsvg-convert'], input=ET.tostring(mask_svg))
     mask = Image.open(BytesIO(mask_png)).getchannel('A')
     icon.resize((256, 256), Image.Resampling.LANCZOS).save(ASSETS / 'img/world-book-icon.png', optimize=True)
+    mask = ImageChops.multiply(mask, icon.getchannel('A'))
     icon.putalpha(mask)
     return icon.crop(mask.getbbox())
 

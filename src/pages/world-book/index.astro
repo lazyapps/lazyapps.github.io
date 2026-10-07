@@ -110,7 +110,7 @@ const t = {
           </div>
         </div>
 
-        <figure class="preview" data-world-book-preview data-media-locale={t.mediaLocale} data-device="ipad">
+        <figure class="preview" data-world-book-preview data-media-locale={t.mediaLocale} data-device="ipad" data-local-dev={import.meta.env.DEV ? 'true' : undefined}>
           <div class="preview__screen">
             <video data-world-book-video hidden muted loop playsinline controls preload="metadata" aria-label={t.videoLabel}>
               {t.videoFallback} <a href={appStoreUrl}>{t.storeLink}</a>
@@ -140,14 +140,27 @@ const t = {
             const wideViewport = window.matchMedia('(min-width: 768px)');
             const motion = window.matchMedia('(prefers-reduced-motion: reduce)');
             const conserveData = navigator.connection?.saveData === true;
-            let wantsPlayback = !motion.matches && !conserveData;
+            const localHost = ['localhost', '127.0.0.1', '[::1]'].includes(location.hostname);
+            const recording = preview.dataset.localDev === 'true' && localHost && new URLSearchParams(location.search).get('record') === '1';
+            let wantsPlayback = recording || !motion.matches && !conserveData;
             let inView = false;
             let switchingSource = false;
             let resumeTime = 0;
             let activeDevice;
-            video.muted = true;
-            video.preload = motion.matches || conserveData ? 'none' : 'metadata';
+            video.muted = !recording;
+            video.controls = !recording;
+            video.preload = recording ? 'auto' : motion.matches || conserveData ? 'none' : 'metadata';
             video.hidden = false;
+            if (recording) {
+              document.documentElement.dataset.worldBookRecording = 'true';
+              window.addEventListener('keydown', (event) => {
+                if (event.repeat || event.altKey || event.ctrlKey || event.metaKey || event.target.closest('input, textarea, select, button, a, [contenteditable="true"]')) return;
+                if (event.code === 'Escape') {
+                  wantsPlayback = false;
+                  pausePlayback();
+                }
+              });
+            }
 
             function updatePreview() {
               const device = wideViewport.matches ? 'ipad' : 'iphone';
@@ -162,7 +175,7 @@ const t = {
               video.width = device === 'iphone' ? 664 : 900;
               video.height = device === 'iphone' ? 1442 : 1200;
               video.poster = `/v/world-book/preview-${device}-${preview.dataset.mediaLocale}-v7.jpg`;
-              if ((motion.matches || conserveData) && !wantsPlayback) {
+              if (!recording && (motion.matches || conserveData) && !wantsPlayback) {
                 video.removeAttribute('src');
                 video.load();
                 switchingSource = false;
@@ -208,7 +221,7 @@ const t = {
               if (!inView || document.hidden || !contentReady()) {
                 pausePlayback();
               } else if (wantsPlayback) {
-                video.play().catch(() => { playButton.hidden = false; });
+                video.play().catch(() => { playButton.hidden = recording; });
               }
             }
 
@@ -304,6 +317,8 @@ const t = {
 </html>
 
 <style>
+  :global(html[data-world-book-recording="true"]), :global(html[data-world-book-recording="true"] *) { cursor: none !important; }
+  :global(html[data-world-book-recording="true"] astro-dev-toolbar) { display: none !important; }
   header { padding-top: clamp(8px, 1.5vw, 18px); }
   .reading-hero { display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr); align-items: center; gap: var(--space-grid); padding-top: clamp(28px, 4vw, 56px); }
   .reading-hero__heading { overflow-x: clip; }

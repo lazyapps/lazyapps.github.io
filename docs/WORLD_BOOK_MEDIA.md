@@ -197,7 +197,9 @@ The unchanged original `AppIcon.icon` is archived under `scripts/assets/world-bo
 `scripts/render-world-book-opengraph.py` uses Icon Composer's Default rendering,
 the original globe/book silhouette, and Sofia Sans Extra Condensed at weight 900.
 It excludes decorative stars/light spill from the alpha mask without changing
-the renderer's symbol colors or making the globe transparent. It writes the full
+the renderer's symbol colors or making the globe transparent. The silhouette mask
+is intersected with Icon Composer's alpha so the book's clipped outer edges stay
+transparent instead of exposing black pixels. It writes the full
 app icon, extracted symbol, and 1200 × 630 Open Graph image. The centered symbol
 and wordmark fit within the 630 × 630 safe square. Paper and noise match
 `docs/OPEN_GRAPH.md`. The square proof is `/tmp/world-book-opengraph-square.png`.
@@ -368,3 +370,69 @@ was removed after the user cancelled it, and normal entry is checked separately.
 The generated/native globe's differing geography/style during the brief reveal
 remains optional polish, accepted for this local creative preview. Frame and
 local Chromium checks do not prove every browser/GPU or continuous-motion quality.
+
+## Recording without a mouse
+
+Recording mode is available only in `astro dev` on `localhost`, `127.0.0.1` or
+`[::1]`. Production builds and `astro preview` ignore `record=1` and keep ordinary
+playback, controls and cursor behavior.
+
+Open `/world-book/?record=1` on that local dev server. After the wordmark loader finishes, the selected
+preview automatically starts from the beginning with sound. Astro's development
+toolbar, the page cursor and native video controls are hidden only on this URL.
+No Space shortcut is bound. Refresh the page for another take; Escape pauses.
+The movie loops automatically, including in recording mode.
+Keep the page focused and the preview in view; hidden/offscreen pauses remain.
+For mobile recording, position the preview before capturing it. The original
+phone/tablet movie and aspect ratio remain unchanged.
+
+The browser must permit autoplay with sound. This query does not bypass browser
+media permissions and does not silently fall back to muted recording. If audible
+autoplay is blocked, allow it for this site in the recording browser and reload;
+Synthetic JavaScript events do not grant that permission. Recording explicitly preloads
+only the selected movie even with SaveData/reduced-motion enabled. Ordinary URLs
+keep muted autoplay, native controls, looping and their accessibility/data
+preferences. Capturing system audio remains the recorder's job.
+
+The earlier recording version waited for Space; the user subsequently requested
+automatic entry playback. Its keyboard-triggered QA is historical. Current checks
+cover audible recording autoplay when permitted, ordinary muted playback and the
+development toolbar being hidden only in recording mode.
+
+For a recording browser that needs no interaction or persistent settings change:
+
+```sh
+python3 scripts/open-world-book-recording.py
+```
+
+This macOS helper starts installed Google Chrome in a separate temporary profile,
+using Chrome's documented `--autoplay-policy=no-user-gesture-required` flag and an
+app window without its address bar. It opens the local recording URL directly.
+Close/quit this temporary Chrome session after recording; the helper removes its
+profile when Chrome exits. The normal Chrome profile/settings are untouched.
+The local Astro dev server must already be running (default port 4330). An
+alternate loopback URL can be given with `--url`; the helper adds `record=1` and
+rejects remote hosts. Use the recorder's start delay and capture
+system audio. The in-app browser was observed to block unmuted entry playback;
+that browser's restriction cannot be overridden by this page's query string.
+
+Current verification: build passes; allowed recording entry starts unmuted without
+input, hides the real Astro dev-toolbar, and keeps ordinary URLs unchanged.
+Headless Chromium did not reproduce the in-app browser's autoplay rejection even
+with restrictive flags, so the rejection branch is checked with an explicit
+NotAllowedError stub instead; the actual in-app blocked state is observed through
+CUA. This distinguishes policy observation from deterministic error-path testing.
+A full installed, headful Chrome helper run independently confirms unmuted playback
+without input and hidden controls, then Browser.close/Chrome exit confirms the
+temporary profile is deleted. The optional remote-debugging transport was added by
+a test-only executable wrapper, not the production helper. The focused Astra
+review found no design blocker; its QA/lifecycle gaps are resolved by these checks.
+Records: `/tmp/lazyapps-world-book-record-auto-20261007/` and the corresponding
+`/tmp/lazyapps-world-book-record-auto-qa-20261007.*` files. Quit the temporary Chrome
+session if closing its app window leaves it running; cleanup waits for process exit.
+
+Local-only verification: the build passes; browser checks confirm local dev
+recording enables audible autoplay and hides the toolbar, ordinary dev URLs keep
+normal playback, and the production build served by `astro preview` ignores
+`record=1`. Space neither starts nor restarts playback. The helper rejects remote
+URLs. Records: `/tmp/lazyapps-world-book-record-dev-only-*-20261007.*`.
