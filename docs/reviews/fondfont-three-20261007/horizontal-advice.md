@@ -1,0 +1,3 @@
+Yes. For a fixed orthographic camera, projecting unchanged imagegen artwork onto native facade and roof geometry is sound; native geometry can retain correct depth, shadows, and the physical animation loop.
+
+**Enforce one invariant: artwork and native geometry share one locked projection, especially at the loading portal.** Finalize the camera first, then derive both surfaces’ UVs from the same world-to-image transform. Align the depicted opening, animated shutter, and cargo disappearance boundary precisely. An opaque interior backing works at the intended interior depth; misregistration makes cargo visibly vanish against a painted wall.

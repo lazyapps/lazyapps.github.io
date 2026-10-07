@@ -1,0 +1,24 @@
+{
+  "title": "Rigged and animated Cat",
+  "author": "JonasDichelle",
+  "source_url": "https://blendswap.com/blend/18519",
+  "original_package_url": "http://www.blendswap.com/blends/view/86110",
+  "license": "CC BY 3.0 Unported",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "downloaded_by": "user",
+  "source_blender_version": "2.77",
+  "converted_with": "Blender 5.2.2, disable-autoexec",
+  "sha256": {
+    "source.blend": "fda4b80f1a06e67a1cc04396b858085faa5cd9742f28d9bde9837aaeab2727fa",
+    "LICENSE.html": "cbf84d42693147ea5dc1d7b0ad82c2140bb680262523133c82da84995353e17e"
+  },
+  "public_asset": "public/v/fondfont/pets/cat-v1.glb",
+  "changes": [
+    "Removed Tail COPY_ROTATION and Spine PIVOT feedback constraints in derived copy",
+    "Native IK adapted for grounded walk/pivot and sole corrections, not the original unmodified Walk action",
+    "Original body surface subdivision 1, original packed coat painting retained",
+    "Original eye material color baked, original groom 1151 parent strands exported as 3D tapered strands",
+    "Groom bound with native evaluated triangle frames to retain local rotation and deformation",
+    "Meshopt compressed, 84 native evaluated morph poses"
+  ]
+}

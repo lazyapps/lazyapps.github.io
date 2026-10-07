@@ -1,10 +1,12 @@
 ---
 interface Props {
   class?: string;
+  locale?: string;
 }
 
-const { class: className } = Astro.props;
+const { class: className, locale = 'en' } = Astro.props;
 const classes = ['base', className].filter(Boolean).join(' ');
+const privacyUrl = locale.toLowerCase().startsWith('zh') ? '/privacy.zh.html' : '/privacy.en.html';
 ---
 
 <div id="site-footer" class={classes} lang="en" dir="ltr">
@@ -19,13 +21,14 @@ const classes = ['base', className].filter(Boolean).join(' ');
     <div class="base__identity">
       <div>
         <a href="/" class="base__wordmark" aria-label="lazyapps home">lazyapps</a>
-        <p class="base__tagline">Independent software since 2009</p>
       </div>
       <div class="base__meta">
         <p class="base__copyright">© 2026</p>
         <span aria-hidden="true">·</span>
         <nav aria-label="Footer">
           <a data-hover href="mailto:lazyapps.feedback@gmail.com"><span data-underline-link class="underline-link">Contact</span></a>
+          <span aria-hidden="true">·</span>
+          <a data-hover href={privacyUrl}><span data-underline-link class="underline-link">Privacy</span></a>
         </nav>
       </div>
     </div>

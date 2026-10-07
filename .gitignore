@@ -4,3 +4,29 @@ dist/
 npm-debug.log*
 .DS_Store
 .gstack/
+
+# Local production sources and experiments; publish reviewed web derivatives.
+__pycache__/
+*.py[cod]
+*.blend1
+/scripts/assets/fondfont/*
+!/scripts/assets/fondfont/README.md
+!/scripts/assets/fondfont/AppIcon.icon/
+!/scripts/assets/fondfont/brand-source.json
+!/scripts/assets/fondfont/install-screenshots.json
+!/scripts/assets/fondfont/install-screenshots-legacy.json
+!/scripts/assets/fondfont/optimized/
+!/scripts/assets/fondfont/pets/
+/scripts/assets/fondfont/pets/*
+!/scripts/assets/fondfont/pets/README.md
+!/scripts/assets/fondfont/pets/source-checksums.json
+!/scripts/assets/fondfont/pets/calico-cat/
+/scripts/assets/fondfont/pets/calico-cat/*
+!/scripts/assets/fondfont/pets/calico-cat/LICENSE.html
+!/scripts/assets/fondfont/pets/calico-cat/provenance.json
+
+# Review frame caches and tool logs remain local; retain reports and previews.
+/docs/reviews/**/frames*/
+/docs/reviews/**/*-frames*/
+/docs/reviews/**/*.ffconcat
+/docs/reviews/**/*.log

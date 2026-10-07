@@ -1,0 +1,9 @@
+Read-only final review. Do not explore the repository broadly or run builds. Read only these exact files and view these images. Return at most 250 words, material issues only.
+
+Task: FondFont Astro site now has a native Blender/Three.js looping truck scene and a four-step installation carousel. Latest user asks screenshot and caption right-aligned; prior asks real latest screenshots at 9:41/full status, more OFL fonts, short ASD-STE100-style procedures, no autoplay, accurate app-to-Settings handoff, responsive design. Creative artwork is unchanged imagegen output; real app UI must not be generated or retouched. No publishing or profile installation.
+
+Files: src/components/FondFontInstallGuide.astro; src/i18n/fondfont-install.mjs. Images: docs/reviews/fondfont-three-20261007/install-right-aligned-desktop.png; docs/reviews/fondfont-three-20261007/install-right-aligned-mobile.png; docs/reviews/fondfont-three-20261007/forklift-final-9.5.png. Capture manifest: scripts/assets/fondfont/install-capture-20261007/zh-hans/manifest.json.
+
+Context: Latest app source commit182d46a built2026-10-07. Four full native PNG states1206x2622 per locale; all7 locales being captured with same workflow,9 SIL OFL families each,3 selected. Literal Edit in app is source UI localization omission, so instruction matches it. Select screenshot intentionally shows already selected state. 09:41 comes directly from iOS statusbar override, no raster patch. Caption screenshot edges coincide at desktop1109px/mobile345px; caption text-align:right. Reducedmotion, keyboardtabs, swipe, noJS fallback implemented. Physical hero checks and TS pass.
+
+Decision question: Is there a material clarity/accessibility/visual defect that must be fixed before showing this deliverable to the user? Distinguish must-fix from preference. Do not demand a different creative direction or App Store marketing template; this is a website instructional carousel.

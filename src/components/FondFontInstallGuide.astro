@@ -1,0 +1,241 @@
+---
+import { FONDFONT_INSTALL } from '../i18n/fondfont-install.mjs';
+const { t } = Astro.props;
+const copy = FONDFONT_INSTALL[t.code];
+const images = ['select.png', 'guide.png', 'downloaded.png', 'profile.png'];
+---
+<section class="install-guide" aria-labelledby="install-title" data-install-guide>
+  <div class="intro">
+    <p class="eyebrow">{copy.eyebrow}</p>
+    <h2 id="install-title">{copy.title}</h2>
+    <p class="intro-copy">{copy.intro}</p>
+  </div>
+  <details class="prerequisite" open data-install-supplement>
+    <summary><h3>{copy.before}</h3><span class="disclosure-icon" aria-hidden="true">+</span></summary>
+    <div class="prerequisite-body"><p>{t.formatsNote}</p><p class="formats" lang="en">{['TTF', 'OTF', 'TTC', 'ZIP'].map(format => <span>{format}</span>)}</p></div>
+  </details>
+  <div class="walkthrough">
+    <div class="step-nav" aria-label={copy.nav} data-step-nav>
+      {copy.steps.map((step, i) => <button type="button" id={`install-tab-${i}`} data-install-tab={i} aria-controls={`install-panel-${i}`}>
+        <span class="step-number" aria-hidden="true">{i + 1}</span><span class="nav-copy"><span class="nav-title">{step.short}</span><span class="nav-title-small">{step.mobileShort}</span><span class="nav-description">{step.where}</span></span>
+      </button>)}
+    </div>
+    <div class="slides">
+      {copy.steps.map((step, i) => <section class="slide" id={`install-panel-${i}`} aria-labelledby={`install-heading-${i}`} data-install-panel>
+        <div class="slide-copy">
+          <p class="location">{step.where}</p>
+          <h3 id={`install-heading-${i}`}>{step.title}</h3>
+          <ol class="instruction">{step.actions.map(action => <li>{action}</li>)}</ol>
+          <div class="step-context"><p class="step-note">{step.note}</p>{step.recovery && <p class="recovery">{step.recovery}</p>}</div>
+        </div>
+        <figure>
+          <a class="screenshot" href={`/v/fondfont/install/${t.code}/${images[i]}`} aria-label={copy.zoom} data-install-zoom><img src={`/v/fondfont/install/${t.code}/${images[i]}`} alt={step.caption} width="1206" height="2622" loading="lazy" decoding="async"><span class="zoom-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M14 4h6v6M20 4l-7 7M10 20H4v-6M4 20l7-7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /></svg></span></a>
+          <figcaption><span class="shot-caption">{step.caption}</span><span class="zoom-caption" aria-hidden="true">{copy.zoom}</span></figcaption>
+        </figure>
+      </section>)}
+    </div>
+  </div>
+  <details class="after-install" open data-install-supplement><summary><h3>{copy.useTitle}</h3><span class="disclosure-icon" aria-hidden="true">+</span></summary><p>{copy.use}</p></details>
+  <dialog class="image-viewer" aria-label={copy.zoom} data-image-viewer>
+    <button class="viewer-close" type="button" aria-label={copy.close} data-viewer-close><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" /></svg></button>
+    <img class="viewer-image" alt="" data-viewer-image>
+    <p class="viewer-caption" data-viewer-caption></p>
+  </dialog>
+</section>
+<script>
+  document.querySelectorAll<HTMLElement>('[data-install-guide]').forEach(guide => {
+    const nav = guide.querySelector<HTMLElement>('[data-step-nav]')!;
+    const tabs = [...guide.querySelectorAll<HTMLButtonElement>('[data-install-tab]')];
+    const panels = [...guide.querySelectorAll<HTMLElement>('[data-install-panel]')];
+    const compact = matchMedia('(max-width: 767px)');
+    if (compact.matches) {
+      guide.querySelectorAll<HTMLDetailsElement>('[data-install-supplement]').forEach(details => details.open = false);
+    }
+    const viewer = guide.querySelector<HTMLDialogElement>('[data-image-viewer]')!;
+    const viewerImage = viewer.querySelector<HTMLImageElement>('[data-viewer-image]')!;
+    const viewerCaption = viewer.querySelector<HTMLElement>('[data-viewer-caption]')!;
+    let zoomTrigger: HTMLAnchorElement | null = null;
+    let selected = 0;
+
+    const update = (index: number) => {
+      selected = index;
+      tabs.forEach((tab, i) => {
+        tab.setAttribute('aria-selected', String(i === index));
+        tab.tabIndex = i === index ? 0 : -1;
+        panels[i].setAttribute('aria-hidden', String(i !== index));
+        panels[i].inert = i !== index;
+      });
+    };
+    const show = (index: number, focusTab = false) => {
+      index = Math.max(0, Math.min(tabs.length - 1, index));
+      update(index);
+      if (focusTab) tabs[index].focus({ preventScroll: true });
+    };
+
+    nav.setAttribute('role', 'tablist');
+    const updateOrientation = () => nav.setAttribute('aria-orientation', compact.matches ? 'horizontal' : 'vertical');
+    updateOrientation();
+    compact.addEventListener('change', updateOrientation);
+    tabs.forEach((tab, i) => {
+      tab.setAttribute('role', 'tab');
+      panels[i].setAttribute('role', 'tabpanel');
+      panels[i].setAttribute('aria-labelledby', tab.id);
+      panels[i].tabIndex = 0;
+      tab.addEventListener('click', () => show(i));
+    });
+    nav.addEventListener('keydown', event => {
+      let index = selected;
+      if (event.key === (compact.matches ? 'ArrowRight' : 'ArrowDown')) index = (selected + 1) % tabs.length;
+      else if (event.key === (compact.matches ? 'ArrowLeft' : 'ArrowUp')) index = (selected + tabs.length - 1) % tabs.length;
+      else if (event.key === 'Home') index = 0;
+      else if (event.key === 'End') index = tabs.length - 1;
+      else return;
+      event.preventDefault();
+      show(index, true);
+    });
+    guide.querySelectorAll<HTMLAnchorElement>('[data-install-zoom]').forEach(link => {
+      link.setAttribute('aria-haspopup', 'dialog');
+      link.addEventListener('click', event => {
+        if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+        event.preventDefault();
+        const image = link.querySelector<HTMLImageElement>('img')!;
+        zoomTrigger = link;
+        viewerImage.src = image.currentSrc || image.src;
+        viewerImage.alt = image.alt;
+        viewerCaption.textContent = image.alt;
+        viewer.showModal();
+      });
+    });
+    viewer.querySelector('[data-viewer-close]')!.addEventListener('click', () => viewer.close());
+    viewer.addEventListener('click', event => {
+      if (event.target === viewer) viewer.close();
+    });
+    viewer.addEventListener('close', () => zoomTrigger?.focus({ preventScroll: true }));
+    update(0);
+    guide.classList.add('is-enhanced');
+  });
+</script>
+<style>
+  .install-guide{--shot-width:240px;--shot-radius:31px;border-top:1px solid var(--line);padding-top:38px}
+  .intro{max-width:760px;margin-bottom:28px}
+  .eyebrow{font-size:13px;font-weight:600;letter-spacing:.06em;color:#a03548;margin-bottom:12px}
+  h2{font:500 clamp(28px,3vw,40px)/1.25 var(--sans);letter-spacing:-.04em;text-wrap:balance;max-width:none}
+  .intro-copy{font-size:16px;line-height:1.7;color:#706672;max-width:62ch;margin-top:14px}
+  .prerequisite{padding-block:18px;margin-bottom:28px;border-block:1px solid var(--line)}
+  summary{list-style:none;cursor:pointer}
+  summary::-webkit-details-marker{display:none}
+  summary:focus-visible{outline:2px solid #ac2e43;outline-offset:3px;border-radius:4px}
+  .disclosure-icon{display:none}
+  .prerequisite-body{display:flex;align-items:center;justify-content:space-between;gap:24px}
+  .prerequisite h3{font-size:15px;font-weight:500;line-height:1.6;margin:0}
+  .prerequisite p:not(.formats){font-size:14px;color:#706672;margin-top:2px}
+  .formats{display:flex;flex-wrap:wrap;gap:6px;flex:none;font:12px/1.5 var(--mono)}
+  .formats span{border:1px solid var(--line);border-radius:5px;padding:3px 8px}
+  .step-nav{display:none}
+  .is-enhanced .walkthrough{display:grid;grid-template-columns:minmax(0,1fr) 208px;gap:28px;align-items:start}
+  .is-enhanced .step-nav{display:grid;grid-column:2;grid-row:1;gap:6px}
+  button{font:inherit;color:inherit;cursor:pointer;border:0;background:transparent;touch-action:manipulation}
+  button:focus-visible,.slide:focus-visible{outline:2px solid #ac2e43;outline-offset:3px}
+  .step-nav button{position:relative;display:flex;align-items:flex-start;gap:12px;text-align:start;min-height:84px;padding:18px 14px;color:#756c78;border-radius:10px;font-size:14px;font-weight:500;line-height:1.45;transition:background-color .18s,color .18s;overflow-wrap:anywhere}
+  .step-nav button:hover{background:#eeedeb;color:#302735}
+  .step-nav button[aria-selected=true]{background:#f1e7e8;color:#82293e}
+  .step-number{display:grid;place-items:center;width:26px;height:26px;border-radius:50%;background:#504653;font:12px/1 var(--mono);font-variant-numeric:tabular-nums;flex:none;color:#fff}
+  [aria-selected=true] .step-number{background:#82293e;color:#fff}
+  .nav-copy{display:grid;gap:5px;min-width:0;padding-top:3px}
+  .nav-description{font-size:12px;line-height:1.5;font-weight:400;color:#70636b}
+  .nav-title-small{display:none}
+  .slide{display:grid;grid-template-columns:calc(var(--shot-width) + 32px) minmax(0,1fr);gap:28px 40px;align-items:start;padding:4px 0 0;min-width:0}
+  .slide+.slide{border-top:1px solid var(--line);margin-top:28px;padding-top:28px}
+  .slide-copy{grid-column:2;grid-row:1;min-width:0;padding-top:18px}
+  .location{font-size:12px;line-height:1.5;color:#82293e;font-weight:500;margin-bottom:12px}
+  .slide h3{font-size:clamp(25px,2.2vw,28px);font-weight:500;line-height:1.3;letter-spacing:-.035em;text-wrap:balance;max-width:none;margin:0}
+  .instruction{font-size:15px;line-height:1.75;margin:20px 0 0;padding-inline-start:0;list-style-position:outside;color:#504653}
+  .instruction li+li{margin-top:8px}
+  .instruction li::marker{color:#97818f;font-size:12px;font-variant-numeric:tabular-nums}
+  .step-note{font-size:13px;line-height:1.75;color:#786b78;border-inline-start:2px solid #cbbac1;padding-inline-start:12px;margin-top:24px;text-wrap:pretty}
+  .recovery{font-size:13px;line-height:1.75;color:#504653;margin-top:12px;text-wrap:pretty}
+  figure{grid-column:1;grid-row:1;margin:0;display:flex;align-items:center;flex-direction:column;gap:12px;min-width:0}
+  .screenshot{position:relative;display:block;padding:16px;background:#eeedeb;border-radius:calc(var(--shot-radius) + 16px);max-width:100%;cursor:zoom-in}
+  .zoom-icon{position:absolute;bottom:24px;right:24px;display:grid;place-items:center;width:28px;height:28px;border-radius:50%;background:#504653;color:#fff;box-shadow:0 2px 8px #0002}
+  .zoom-icon svg{width:16px;height:16px}
+  figure img{display:block;width:var(--shot-width);max-width:100%;height:auto;border-radius:var(--shot-radius);outline:1px solid rgb(0 0 0 / .1);box-shadow:0 8px 24px -12px rgb(0 0 0 / .16);background:#fff}
+  figcaption{font-size:11px;line-height:1.65;color:#786b78;text-align:center;max-width:var(--shot-width);text-wrap:pretty}
+  .zoom-caption{display:none}
+  .is-enhanced .slides{display:grid;grid-column:1;grid-row:1;min-width:0;border-inline-end:1px solid var(--line);padding-inline-end:28px}
+  .is-enhanced .slide{grid-area:1 / 1;border:0;margin:0;padding-top:4px}
+  .is-enhanced .slide[aria-hidden=true]{visibility:hidden;pointer-events:none}
+  .after-install{display:flow-root;margin-top:28px;padding-top:22px;border-top:1px solid var(--line);max-width:none}
+  .after-install summary{float:inline-start;width:208px}
+  .after-install h3{font-size:15px;font-weight:500;margin:0;line-height:1.7}
+  .after-install p{font-size:14px;line-height:1.75;color:#706672;text-wrap:pretty;margin-inline-start:236px}
+  .image-viewer{width:min(420px,calc(100vw - 24px));max-height:calc(100dvh - 24px);margin:auto;padding:16px;border:0;border-radius:24px;background:var(--paper);color:var(--ink);overflow:auto;overscroll-behavior:contain;box-shadow:0 20px 80px #0003}
+  .image-viewer::backdrop{background:rgb(23 23 23 / .55)}
+  .viewer-close{position:sticky;top:0;z-index:1;display:grid;place-items:center;width:40px;height:40px;margin:0 0 12px auto;border-radius:50%;background:#eeedeb}
+  .viewer-close svg{width:20px;height:20px}
+  .viewer-image{display:block;width:100%;height:auto;margin-inline:auto;border-radius:16px}
+  .viewer-caption{font-size:12px;line-height:1.6;text-align:center;color:#70636b;margin-top:12px}
+  @media(min-width:768px) and (max-width:1000px){
+    .install-guide{--shot-width:210px;--shot-radius:27px}
+    .is-enhanced .walkthrough{grid-template-columns:minmax(0,1fr) 172px;gap:20px}
+    .is-enhanced .slides{padding-inline-end:20px}
+    .slide{gap:20px 32px}
+    .step-nav button{padding-inline:12px;gap:9px}
+    .after-install summary{width:172px}
+    .after-install p{margin-inline-start:192px}
+  }
+  @media(max-width:767px){
+    .install-guide{--shot-width:100px;--shot-radius:13px;padding-top:20px}
+    .intro{margin-bottom:12px}
+    .eyebrow{font-size:11px;margin-bottom:6px}
+    h2{font-size:26px}
+    .intro-copy{font-size:14px;line-height:1.5;margin-top:8px}
+    .prerequisite{margin-bottom:14px;padding-block:6px}
+    summary{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:36px}
+    .disclosure-icon{display:block;font:18px/1 var(--mono);color:#70636b;flex:none}
+    details[open] .disclosure-icon{transform:rotate(45deg)}
+    .prerequisite h3{font-size:13px}
+    .prerequisite-body{align-items:flex-start;flex-direction:column;gap:8px;padding-bottom:8px}
+    .prerequisite p:not(.formats){font-size:13px;line-height:1.5}
+    .is-enhanced .walkthrough{display:block}
+    .is-enhanced .step-nav{grid-template-columns:repeat(4,minmax(0,1fr));gap:4px;margin-bottom:14px}
+    .step-nav button{align-items:center;gap:6px;font-size:12px;min-height:44px;padding:8px 6px;border-radius:8px}
+    .step-number{width:20px;height:20px;font-size:11px}
+    .nav-copy{padding-top:0}
+    .nav-title,.nav-description{display:none}
+    .nav-title-small{display:block;text-wrap:balance}
+    .is-enhanced .slides{border:0;padding:0}
+    .is-enhanced .slide[aria-hidden=true]{display:none}
+    .slide{grid-template-columns:112px minmax(0,1fr);grid-template-rows:auto auto 1fr auto;align-content:start;column-gap:28px;row-gap:8px;padding:0}
+    .slide-copy{display:contents}
+    .location{grid-column:2;grid-row:1;font-size:11px;margin:0}
+    .slide h3{grid-column:2;grid-row:2;font-size:20px;line-height:1.35}
+    .instruction{grid-column:2;grid-row:3;font-size:14px;line-height:1.55;margin:4px 0 0}
+    .instruction li+li{margin-top:6px}
+    .step-context{grid-column:1 / -1;grid-row:4;margin-top:4px}
+    .step-note{font-size:12px;line-height:1.6;margin:0}
+    .recovery{font-size:12px;line-height:1.6;margin-top:6px}
+    figure{grid-column:1;grid-row:1 / 4;align-self:start;gap:6px}
+    .screenshot{padding:6px;border-radius:calc(var(--shot-radius) + 6px)}
+    .zoom-icon{width:24px;height:24px;right:10px;bottom:10px}
+    .zoom-icon svg{width:14px;height:14px}
+    figcaption{font-size:11px}
+    .shot-caption{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+    .zoom-caption{display:block}
+    .after-install{margin-top:12px;padding-top:6px}
+    .after-install summary{float:none;width:auto}
+    .after-install h3{font-size:13px}
+    .after-install p{font-size:13px;line-height:1.6;margin:4px 0 0}
+  }
+  @media(min-width:480px) and (max-width:767px){
+    .install-guide{--shot-width:140px;--shot-radius:18px}
+    .slide{grid-template-columns:152px minmax(0,1fr);column-gap:32px}
+    .slide h3{font-size:24px}
+    .instruction{font-size:15px}
+  }
+  @media(max-width:359px){
+    .install-guide{--shot-width:76px;--shot-radius:10px}
+    .slide{grid-template-columns:88px minmax(0,1fr);column-gap:24px}
+    .step-nav button{flex-direction:column;gap:4px;padding:6px 4px;text-align:center}
+  }
+  @media(prefers-reduced-motion:reduce){button{transition:none}}
+</style>

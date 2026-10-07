@@ -1,0 +1,23 @@
+{
+  "model": "MiniMax-H3",
+  "referenceMode": "Built-in imagegen paired conceptual scenes",
+  "silent": true,
+  "sharedAcrossLocales": true,
+  "seconds": 4.75,
+  "playback": "One pass, final composition held; no looping or playback controls",
+  "scope": "Conceptual font file entering iOS font library, then that installed font becoming usable in document and presentation typography. This is not an app/OS recording and does not depict system UI font replacement.",
+  "sources": [
+    {
+      "path": "scripts/assets/fondfont/animation/v4/font-enters-work-h3.mp4",
+      "sha256": "e7c9ef20d0008596712fdad09489319a93084d1ceb8744af4ab62f6ec752ca56"
+    },
+    {
+      "path": "scripts/assets/fondfont/animation/v4/start-anchor.png",
+      "sha256": "46a9754958ef599f99df3ceb117097b37340c7fe7a317635e76c78148550b6c2"
+    },
+    {
+      "path": "scripts/assets/fondfont/animation/v4/end-anchor.png",
+      "sha256": "c1fcb3670e05b31dee8f92967a7093db63c39fa87a8253f551bf5504a39617dd"
+    }
+  ]
+}

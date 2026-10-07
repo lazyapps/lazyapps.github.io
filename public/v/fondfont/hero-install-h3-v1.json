@@ -1,0 +1,25 @@
+{
+  "model": "MiniMax-H3",
+  "duration": 7.5,
+  "fps": 24,
+  "silent": true,
+  "sharedAcrossLocales": true,
+  "illustration": true,
+  "description": "Font-file installation in the iOS library, followed by abstract document and presentation specimens. Not an operating-system or third-party app screen.",
+  "finishing": "H3 movement; green transfer signals graded to brand vermilion; exact iOS destination label; hold completed state; 0.5-second dissolve back to the start, without reversing installation.",
+  "sources": [
+    {
+      "path": "scripts/assets/fondfont/animation/transfer-h3-v1.mp4",
+      "sha256": "f7439a1f59297718e8dac1b73c7328b2461e99df02f960c3e15fa031366f808c"
+    },
+    {
+      "path": "scripts/assets/fondfont/animation/transfer-start-v1.png",
+      "sha256": "91e327ab0a2c4aa93f58e8645bbebbcb5bbd2534edeefece2528b7d2152e3235"
+    },
+    {
+      "path": "scripts/assets/fondfont/animation/transfer-end-v1.png",
+      "sha256": "506f19eff1151ec2a3b82f834d6e8886fc8a14bc391bb99ac544967b1f42a0df"
+    }
+  ],
+  "bytes": 235168
+}

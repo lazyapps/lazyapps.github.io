@@ -1,0 +1,142 @@
+[
+  {
+    "lang": "en",
+    "viewport": 320,
+    "heading": [
+      {
+        "text": "We don’t make fonts.",
+        "width": 280,
+        "scroll": 280,
+        "height": 39,
+        "font": "36.4px"
+      },
+      {
+        "text": "We just deliver yours.",
+        "width": 280,
+        "scroll": 280,
+        "height": 39,
+        "font": "36.4px"
+      }
+    ]
+  },
+  {
+    "lang": "zh-Hans",
+    "viewport": 320,
+    "heading": [
+      {
+        "text": "我们不生产字体，",
+        "width": 280,
+        "scroll": 280,
+        "height": 27,
+        "font": "25.2px"
+      },
+      {
+        "text": "我们只是字体的搬运工。",
+        "width": 280,
+        "scroll": 280,
+        "height": 27,
+        "font": "25.2px"
+      }
+    ]
+  },
+  {
+    "lang": "zh-Hant",
+    "viewport": 320,
+    "heading": [
+      {
+        "text": "我們不生產字體，",
+        "width": 280,
+        "scroll": 280,
+        "height": 27,
+        "font": "25.2px"
+      },
+      {
+        "text": "我們只是字體的搬運工。",
+        "width": 280,
+        "scroll": 280,
+        "height": 27,
+        "font": "25.2px"
+      }
+    ]
+  },
+  {
+    "lang": "ja",
+    "viewport": 320,
+    "heading": [
+      {
+        "text": "フォントはつくりません。",
+        "width": 280,
+        "scroll": 280,
+        "height": 24,
+        "font": "22.4px"
+      },
+      {
+        "text": "あなたのフォントを届けます。",
+        "width": 280,
+        "scroll": 280,
+        "height": 48,
+        "font": "22.4px"
+      }
+    ]
+  },
+  {
+    "lang": "ko",
+    "viewport": 320,
+    "heading": [
+      {
+        "text": "폰트는 만들지 않아요.",
+        "width": 280,
+        "scroll": 280,
+        "height": 27,
+        "font": "25.2px"
+      },
+      {
+        "text": "여러분의 폰트를 옮겨 드려요.",
+        "width": 280,
+        "scroll": 280,
+        "height": 54,
+        "font": "25.2px"
+      }
+    ]
+  },
+  {
+    "lang": "fr",
+    "viewport": 320,
+    "heading": [
+      {
+        "text": "On ne crée pas de polices.",
+        "width": 280,
+        "scroll": 280,
+        "height": 30,
+        "font": "28px"
+      },
+      {
+        "text": "On livre les vôtres.",
+        "width": 280,
+        "scroll": 280,
+        "height": 30,
+        "font": "28px"
+      }
+    ]
+  },
+  {
+    "lang": "de",
+    "viewport": 320,
+    "heading": [
+      {
+        "text": "Wir gestalten keine Schriften.",
+        "width": 280,
+        "scroll": 280,
+        "height": 30,
+        "font": "28px"
+      },
+      {
+        "text": "Wir bringen deine ans Ziel.",
+        "width": 280,
+        "scroll": 280,
+        "height": 30,
+        "font": "28px"
+      }
+    ]
+  }
+]

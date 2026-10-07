@@ -1,0 +1,7 @@
+Do not mark complete. Two material bugs remain:
+
+- **Navigation still deadlocks.** With `createGardenLife(2)`, both pets accumulate zero travel from 225 through 600 seconds, near `(3.767, 1.25)` and `(3.870, 1.66)`. The [yield logic](/Users/realazy/Projects/Sites/lazyapps/src/lib/fondfont/garden-life.mjs:79) repeatedly requests separation toward the blocked right boundary. Recovery must handle an infeasible yield direction and release/reassign turn priority. Add seed 2 to the progress regression.
+
+- **Direction changes snap planted paws.** At seed 47, 93.35 seconds, the cat switches from forward velocity −0.305 m/s to yielding velocity +0.300 m/s. [Clip selection](/Users/realazy/Projects/Sites/lazyapps/src/lib/fondfont/pet-animation.ts:28) immediately switches forward/backward clips at unrelated phases: its front-right paw jumps approximately **154 mm in one 60 Hz frame**, while remaining at contact height. Make recovery velocity continuous and preserve pose continuity across directional clip transitions.
+
+The exported-clip check passes, but its integrated section only checks finite matrices. Add actual runtime paw-contact and transition-continuity assertions; it currently misses this failure.

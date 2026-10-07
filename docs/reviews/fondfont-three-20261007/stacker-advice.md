@@ -1,0 +1,8 @@
+Yes—the replacement directly addresses both complaints. Enforce these constraints before treating it as mechanically sound:
+
+- **Validate full swept geometry.** Mast Z2.95 versus truck edge Z3.075 gives only 125 mm between reference positions. Mast thickness, carriage, hydraulic hardware, and movement clearance must fit; center-point separation is insufficient.
+- **Keep the fork withdrawal path open.** Any truck sideboard must be absent or lowered along that path. Lowering cargo over a wall does not establish that the forks can withdraw.
+- **Make telescoping physically explicit.** Carriage height reaches approximately Y1.807. The mast must extend to support it, clear the eave throughout lifting, and retract completely before either doorway crossing. Measure the 1.48 m retracted height from the ground, including the vehicle mounting height.
+- **Make the counterbalance credible.** A 1.05 m load center with 1.72 m forks demands substantial rear ballast and a convincing wheelbase. A tiny lightweight body carrying visibly dense lead cargo will still look physically implausible.
+- **Constrain the 80 mm release drop.** Forks must clear the pallet internally without intersecting the truck bed or floor. Transfer cargo ownership only after actual support contact; preserve its world position during handoff.
+- **Make cargo read as accumulated inventory.** Use recessed compartments, individual metal type blocks with small raised glyphs, case thickness, joinery, restrained wear, and tight stacking. Glyphs must belong to physical type blocks; large decorative letter faces would recreate the rejected display effect. All machinery silhouettes and depth must come from geometry.

@@ -1,0 +1,101 @@
+---
+import FondFontGlyphs from './FondFontGlyphs.astro';
+const { families, labels } = Astro.props;
+---
+<figure class="font-library-scene" data-fondfont-scene data-font-index="0" data-stage="shared" data-preview-src="/v/fondfont/hero-h3-v9.mp4" aria-label={labels.alt}>
+  <div class="shared-documents">
+    <img src="/v/fondfont/hero-h3-v9.jpg" width="768" height="480" alt="" fetchpriority="high">
+    <video data-preview-video hidden muted loop playsinline preload="none" aria-hidden="true"></video>
+  </div>
+  <svg class="library-diagram" viewBox="0 0 768 720" aria-hidden="true">
+    <defs>
+      <filter id="font-library-shadow" x="-10%" y="-25%" width="120%" height="150%"><feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#27251f" flood-opacity=".04" /></filter>
+    </defs>
+    <g class="owned-font">
+      <text class="diagram-note" x="96" y="22">{labels.owned}</text>
+      <rect class="font-file" x="96" y="34" width="576" height="74" rx="12" />
+      <path class="file-icon" d="M120 55h20l9 9v26h-29zM140 55v10h9M125 74h18M125 81h14" />
+      {families.map((family, i) => <g data-family={i}>
+        <text class="font-name" x="166" y="79">{family.label}</text>
+        <FondFontGlyphs specimen={family} x={496} y={50} width={144} height={48} />
+      </g>)}
+    </g>
+    <path class="install-flow" d="M384 112v98" />
+    <path class="install-flow install-flow--active" d="M384 112v98" pathLength="100" />
+    <g class="install-handoff">
+      <rect x="232" y="134" width="304" height="50" rx="25" />
+      <text class="install-label" x="384" y="167" text-anchor="middle">{labels.install}</text>
+      <text class="profile-label" x="384" y="167" text-anchor="middle">{labels.profile}</text>
+    </g>
+    <g class="system-library" filter="url(#font-library-shadow)">
+      <rect class="library-frame" x="64" y="212" width="640" height="151" rx="16" />
+      <text class="library-title" x="96" y="256">{labels.library}</text>
+      <text class="diagram-note" x="96" y="281">{labels.onDevice}</text>
+      <rect class="library-entry" x="88" y="296" width="592" height="48" rx="8" />
+      {families.map((family, i) => <g class="installed-font" data-family={i}>
+        <text class="font-name font-name--installed" x="108" y="328">{family.label}</text>
+        <FondFontGlyphs specimen={family} x={464} y={302} width={132} height={38} />
+      </g>)}
+      <path class="installed-check" d="m640 319 8 8 15-18" />
+    </g>
+    <path class="shared-path" d="M384 367v24H240q-16 0-16 16v9M384 391h104q16 0 16 16v39" />
+    <path class="shared-path shared-path--active" d="M384 367v24H240q-16 0-16 16v9M384 391h104q16 0 16 16v39" pathLength="100" />
+    <g class="app-results">
+      <text class="app-name" x="150" y="406" lang="en">Pages</text>
+      <text class="app-name" x="371" y="438" lang="en">Keynote</text>
+      {families.map((family, i) => <g class="document-type" data-family={i}>
+        <FondFontGlyphs specimen={family} x={173} y={470} width={130} height={44} />
+        <FondFontGlyphs specimen={family} x={173} y={532} width={130} height={35} class="body-specimen" />
+        <FondFontGlyphs specimen={family} x={173} y={580} width={130} height={35} class="body-specimen" />
+        <FondFontGlyphs specimen={family} x={396} y={491} width={202} height={68} />
+      </g>)}
+      <path class="document-lines" d="M176 625h122M176 635h98M398 578h178M398 588h132" />
+    </g>
+  </svg>
+  <figcaption class="font-source" lang="en">{families.map((family, i) => <span data-family={i}>{family.filename}</span>)}</figcaption>
+</figure>
+<style>
+  .font-library-scene{position:relative;aspect-ratio:768/720;width:100%;max-width:520px;min-width:0;margin:0;justify-self:center;color:var(--ink);container-type:inline-size}
+  .shared-documents{position:absolute;left:12.5%;top:49.166667%;width:75%;height:50%;mix-blend-mode:multiply}
+  .shared-documents img,.shared-documents video{position:absolute;inset:0;width:100%;height:100%;object-fit:contain}
+  [hidden]{display:none!important}
+  .library-diagram{position:relative;display:block;width:100%;height:auto;overflow:visible;font-family:var(--sans);fill:currentColor}
+  .diagram-note{font-size:22px;fill:#787873;font-weight:400}
+  .font-file{fill:#fdfdfb;stroke:#deded8;stroke-width:1.5}
+  .file-icon{fill:none;stroke:#79796f;stroke-width:1.6;stroke-linejoin:round;stroke-linecap:round}
+  .font-name{font-size:24px;font-weight:500}
+  .font-name--installed{font-size:22px}
+  .install-flow{fill:none;stroke:#d7d7cf;stroke-width:1.5}
+  .install-flow--active{stroke:var(--accent);stroke-dasharray:25 75;opacity:0;stroke-dashoffset:100;transition:stroke-dashoffset 1s ease,opacity .3s}
+  .install-handoff rect{fill:var(--paper);stroke:#deded8;stroke-width:1.5;transition:fill .3s,stroke .3s}
+  .install-handoff text{font-size:25px;font-weight:500}
+  .profile-label{display:none}
+  [data-stage="profile"] .profile-label{display:block}
+  [data-stage="profile"] .install-label{display:none}
+  .install-handoff text:lang(de){font-size:20px}
+  .install-handoff text:lang(ja){font-size:22px}
+  .install-handoff text:lang(fr){font-size:24px}
+  .library-frame{fill:#fdfdfb;stroke:#d7d7ce;stroke-width:1.5}
+  .library-title{font-size:30px;font-weight:600}
+  .library-entry{fill:#f2f2ed;stroke:none;transition:fill .4s}
+  .installed-check{fill:none;stroke:var(--accent);stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round}
+  .shared-path{fill:none;stroke:#d7d7ce;stroke-width:1.5}
+  .shared-path--active{stroke:var(--accent);stroke-dasharray:28 72;stroke-dashoffset:100;opacity:0;transition:stroke-dashoffset 1.1s ease,opacity .3s}
+  .app-name{font-size:25px;font-weight:500}
+  .document-type{transition:opacity .8s ease}
+  .body-specimen{opacity:.72}
+  .document-lines{fill:none;stroke:#a3a29a;stroke-width:2;opacity:.3}
+  .font-source{position:absolute;bottom:-5px;inset-inline:0;font:400 clamp(10px,2.6cqw,13px)/1.5 var(--mono);color:#787873;text-align:center;overflow-wrap:anywhere}
+  .font-source span{line-height:inherit}
+  [data-family]{display:none}
+  [data-font-index="0"] [data-family="0"],[data-font-index="1"] [data-family="1"],[data-font-index="2"] [data-family="2"]{display:block}
+  [data-stage="source"] .installed-font,[data-stage="profile"] .installed-font,[data-stage="install"] .installed-font{opacity:0}
+  [data-stage="source"] .installed-check,[data-stage="profile"] .installed-check,[data-stage="install"] .installed-check{opacity:0}
+  [data-stage="source"] .document-type,[data-stage="profile"] .document-type,[data-stage="install"] .document-type,[data-stage="registered"] .document-type,[data-stage="next"] .document-type{opacity:0}
+  [data-stage="profile"] .install-flow--active,[data-stage="install"] .install-flow--active{opacity:1;stroke-dashoffset:0}
+  [data-stage="install"] .install-handoff rect{fill:#f8ece6;stroke:var(--accent)}
+  [data-stage="registered"] .library-entry,[data-stage="shared"] .library-entry{fill:#f8ece6}
+  [data-stage="registered"] .shared-path--active,[data-stage="shared"] .shared-path--active{stroke-dashoffset:0;opacity:1}
+  @media(max-width:767px){.font-library-scene{aspect-ratio:672/728}.shared-documents{left:7.142857%;top:49.725275%;width:85.714286%;height:49.45055%}}
+  @media(prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>

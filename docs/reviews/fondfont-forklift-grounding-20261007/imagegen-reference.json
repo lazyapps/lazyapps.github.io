@@ -1,0 +1,12 @@
+{
+  "tool": "built-in image_gen",
+  "source": "/Users/realazy/.codex/generated_images/01a11388-c0cf-7332-9c7f-916d62408fdf/exec-a8e1d151-6ba4-4af7-99b7-49e12651e7a8.png",
+  "asset": "/Users/realazy/Projects/Sites/lazyapps/scripts/assets/fondfont/blender-v2/forklift-grounding-reference-v4.png",
+  "sha256": "bcd17e933b7177effd04d3ba19b26d3657983f338b21a87ed5e802ba35bc5f04",
+  "purpose": "Unmodified grounding/silhouette reference for native Blender v4. No generated image is pasted into the webpage.",
+  "prompt": "Use case: stylized-concept. Asset type: production modeling and lighting reference for an actual Blender/Three.js forklift, not a replacement image sprite. Image 1 is our actual webpage scene: the small forklift in front of left foundry currently looks floating, with two long dark fork tines resembling legs; wheels are unreadable and no convincing ground contact. Image 2 supplies approved forklift design/material aesthetic. Generate a refined close-up reference study of this compact plum-colored counterbalanced forklift grounded convincingly on pale warm courtyard paving. Use orthographic camera at 33 degrees elevation, looking mostly from front, with a small 12-degree turn to expose tire and low body depth. Forks lowered at safe driving height just above paving, visibly horizontal in world space, short thick tapered steel forks; four substantial black rubber tires with readable cream hubs/tread and strong tight contact occlusion, low squat chassis. No levitation. Show a second small side elevation study with all wheels resting at the same horizontal ground line. Accurate mechanics, exquisite physical miniature quality, natural soft sunlight from upper left but tight contact shadows immediately below tires. Keep forklift compact low roof, no text/logo. We will model native 3D from this reference. Do not include a page/UI, no fake photographic cutout, no decorative flourishes.",
+  "inputs": [
+    "docs/reviews/fondfont-forklift-perspective-20261007/after-empty-forklift-and-symbol.png",
+    "scripts/assets/fondfont/blender-v2/sit-down-forklift-reference-v2.png"
+  ]
+}

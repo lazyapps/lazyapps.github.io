@@ -1,0 +1,7 @@
+Yes. This addresses the root cause: the artwork’s implied interior and the truck’s actual ground plane occupy incompatible geometry. A floor covering the full truck route, real doorway surfaces, and a lintel that physically occludes the truck can make entry coherent without changing vehicle height. Closed sawtooth roof volumes also address the incorrect shadow geometry.
+
+**The single acceptance trap is projected alignment with the unchanged artwork.** Correct world geometry alone does not guarantee that the physical doorway matches the illustrated doorway under the fixed camera. Camera elevation makes depth affect screen height; simply transferring the old portal UVs onto a vertical back wall does not resolve that relationship automatically.
+
+Before accepting, check that the native **front threshold at Y=0 projects onto the illustrated sill**, and that the truck’s ground contact continues across it onto the interior floor throughout the route. Evaluate the sill at the doorway’s front depth, not at the back wall’s Z=-4.4. The real cutout and lintel must frame that same projected opening.
+
+If those do not align, the truck can still appear to descend through the building despite physically valid replacement geometry. Correct the proxy geometry and UV assignment—not the truck’s vertical position or a painted shadow.

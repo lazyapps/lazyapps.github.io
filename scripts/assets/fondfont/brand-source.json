@@ -1,0 +1,31 @@
+{
+  "source": "AppIcon.icon",
+  "sourceConfigSha256": "ca0f6588a6b4eae655021b81a5bf4da2425f18833bec0d1d3945bee1a92fc0cd",
+  "originalMasksSha256": {
+    "Bodoni-ff-Back.svg": "a343f0ad7fac34dd7755f1b8c67fbdfefa5c6a0afe96750086657e4fdc6b0ed1",
+    "Bodoni-ff-Front.svg": "26ac027e6b67359b6d17b953357bccaeaa711efb5fd1f65cfcc391810967c463"
+  },
+  "originalExport": "fondfont-icon.png: unmodified Icon Composer Default iOS export, 256px, generation 27",
+  "headerAndFavicon": "fondfont-web-icon.png: same original masks and native renderer, brighter front material for web",
+  "webMaterialAdjustments": {
+    "frontWhiteAlpha": [
+      0.55,
+      0.35
+    ],
+    "frontTranslucency": 0.12,
+    "frontShadowOpacity": 0.16
+  },
+  "flat": {
+    "ground": "#241d32",
+    "rear": "#ff0022",
+    "front": "#ffffff",
+    "geometry": "Original full 1024 canvas, original paths and transforms, rear then front",
+    "materials": "Opaque flat colors; no glass, gradient, reflections or generated artwork"
+  },
+  "cabPaint": {
+    "asset": "cab-symbol-paint-v3.svg",
+    "fill": "#fff6e9",
+    "background": "transparent",
+    "geometry": "Same original masks, transforms and full canvas; no background rectangle"
+  }
+}

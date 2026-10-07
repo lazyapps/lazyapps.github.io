@@ -1,0 +1,226 @@
+[
+  {
+    "locale": "zh-hans",
+    "step": 0,
+    "bottomNavigation": 0,
+    "height": 2622,
+    "source": "/v/fondfont/install/zh-hans/select.png",
+    "width": 1206
+  },
+  {
+    "locale": "zh-hans",
+    "step": 1,
+    "bottomNavigation": 0,
+    "height": 2622,
+    "source": "/v/fondfont/install/zh-hans/guide.png",
+    "width": 1206
+  },
+  {
+    "locale": "zh-hans",
+    "step": 2,
+    "bottomNavigation": 0,
+    "height": 2622,
+    "source": "/v/fondfont/install/zh-hans/downloaded.png",
+    "width": 1206
+  },
+  {
+    "locale": "zh-hans",
+    "step": 3,
+    "bottomNavigation": 0,
+    "height": 2622,
+    "source": "/v/fondfont/install/zh-hans/profile.png",
+    "width": 1206
+  },
+  {
+    "locale": "zh-hant",
+    "step": 0,
+    "bottomNavigation": 0,
+    "height": 2622,
+    "source": "/v/fondfont/install/zh-hant/select.png",
+    "width": 1206
+  },
+  {
+    "locale": "zh-hant",
+    "step": 1,
+    "bottomNavigation": 0,
+    "height": 2622,
+    "source": "/v/fondfont/install/zh-hant/guide.png",
+    "width": 1206
+  },
+  {
+    "locale": "zh-hant",
+    "step": 2,
+    "bottomNavigation": 0,
+    "height": 2622,
+    "source": "/v/fondfont/install/zh-hant/downloaded.png",
+    "width": 1206
+  },
+  {
+    "locale": "zh-hant",
+    "step": 3,
+    "bottomNavigation": 0,
+    "height": 2622,
+    "source": "/v/fondfont/install/zh-hant/profile.png",
+    "width": 1206
+  },
+  {
+    "locale": "en",
+    "step": 0,
+    "bottomNavigation": 0,
+    "height": 2622,
+    "source": "/v/fondfont/install/en/select.png",
+    "width": 1206
+  },
+  {
+    "locale": "en",
+    "step": 1,
+    "bottomNavigation": 0,
+    "height": 2622,
+    "source": "/v/fondfont/install/en/guide.png",
+    "width": 1206
+  },
+  {
+    "locale": "en",
+    "step": 2,
+    "bottomNavigation": 0,
+    "height": 2622,
+    "source": "/v/fondfont/install/en/downloaded.png",
+    "width": 1206
+  },
+  {
+    "locale": "en",
+    "step": 3,
+    "bottomNavigation": 0,
+    "height": 2622,
+    "source": "/v/fondfont/install/en/profile.png",
+    "width": 1206
+  },
+  {
+    "locale": "ja",
+    "step": 0,
+    "bottomNavigation": 0,
+    "height": 2622,
+    "source": "/v/fondfont/install/ja/select.png",
+    "width": 1206
+  },
+  {
+    "locale": "ja",
+    "step": 1,
+    "bottomNavigation": 0,
+    "height": 2622,
+    "source": "/v/fondfont/install/ja/guide.png",
+    "width": 1206
+  },
+  {
+    "locale": "ja",
+    "step": 2,
+    "bottomNavigation": 0,
+    "height": 2622,
+    "source": "/v/fondfont/install/ja/downloaded.png",
+    "width": 1206
+  },
+  {
+    "locale": "ja",
+    "step": 3,
+    "bottomNavigation": 0,
+    "height": 2622,
+    "source": "/v/fondfont/install/ja/profile.png",
+    "width": 1206
+  },
+  {
+    "locale": "ko",
+    "step": 0,
+    "bottomNavigation": 0,
+    "height": 2622,
+    "source": "/v/fondfont/install/ko/select.png",
+    "width": 1206
+  },
+  {
+    "locale": "ko",
+    "step": 1,
+    "bottomNavigation": 0,
+    "height": 2622,
+    "source": "/v/fondfont/install/ko/guide.png",
+    "width": 1206
+  },
+  {
+    "locale": "ko",
+    "step": 2,
+    "bottomNavigation": 0,
+    "height": 2622,
+    "source": "/v/fondfont/install/ko/downloaded.png",
+    "width": 1206
+  },
+  {
+    "locale": "ko",
+    "step": 3,
+    "bottomNavigation": 0,
+    "height": 2622,
+    "source": "/v/fondfont/install/ko/profile.png",
+    "width": 1206
+  },
+  {
+    "locale": "fr",
+    "step": 0,
+    "bottomNavigation": 0,
+    "height": 2622,
+    "source": "/v/fondfont/install/fr/select.png",
+    "width": 1206
+  },
+  {
+    "locale": "fr",
+    "step": 1,
+    "bottomNavigation": 0,
+    "height": 2622,
+    "source": "/v/fondfont/install/fr/guide.png",
+    "width": 1206
+  },
+  {
+    "locale": "fr",
+    "step": 2,
+    "bottomNavigation": 0,
+    "height": 2622,
+    "source": "/v/fondfont/install/fr/downloaded.png",
+    "width": 1206
+  },
+  {
+    "locale": "fr",
+    "step": 3,
+    "bottomNavigation": 0,
+    "height": 2622,
+    "source": "/v/fondfont/install/fr/profile.png",
+    "width": 1206
+  },
+  {
+    "locale": "de",
+    "step": 0,
+    "bottomNavigation": 0,
+    "height": 2622,
+    "source": "/v/fondfont/install/de/select.png",
+    "width": 1206
+  },
+  {
+    "locale": "de",
+    "step": 1,
+    "bottomNavigation": 0,
+    "height": 2622,
+    "source": "/v/fondfont/install/de/guide.png",
+    "width": 1206
+  },
+  {
+    "locale": "de",
+    "step": 2,
+    "bottomNavigation": 0,
+    "height": 2622,
+    "source": "/v/fondfont/install/de/downloaded.png",
+    "width": 1206
+  },
+  {
+    "locale": "de",
+    "step": 3,
+    "bottomNavigation": 0,
+    "height": 2622,
+    "source": "/v/fondfont/install/de/profile.png",
+    "width": 1206
+  }
+]

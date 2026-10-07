@@ -159,7 +159,8 @@ const redirectScript = `(() => {
             const wideViewport = window.matchMedia('(min-width: 768px)');
             const landscapeViewport = window.matchMedia('(min-aspect-ratio: 1/1)');
             const motion = window.matchMedia('(prefers-reduced-motion: reduce)');
-            let wantsPlayback = !motion.matches;
+            const saveData = navigator.connection?.saveData === true;
+            let wantsPlayback = !motion.matches && !saveData;
             let inView = false;
             let switchingSource = false;
             let resumeTime = 0;
@@ -191,7 +192,7 @@ const redirectScript = `(() => {
             }
 
             function syncBackdrop() {
-              if (!video.paused && !switchingSource && video.readyState >= 3 && inView && !document.hidden && !motion.matches) {
+              if (!video.paused && !switchingSource && video.readyState >= 3 && inView && !document.hidden && !motion.matches && !saveData) {
                 if (!backdrop.getAttribute('src')) backdrop.src = backdropSource();
                 backdrop.play().catch(() => {});
               } else {
@@ -262,7 +263,7 @@ const redirectScript = `(() => {
         <div class="reading-features__heading">
           <h2 class="dsp" id="features-title">{t.featuresTitle}</h2>
         </div>
-        <dl class="reading-features__grid">
+        <dl class="reading-features__grid" data-reveal-group data-stagger="70" data-distance="16px" data-start="top 90%">
           {t.cards.map(([title, copy]) => <div>
             <dt class="dsp">{title}</dt>
             <dd>{copy}</dd>
@@ -285,11 +286,11 @@ const redirectScript = `(() => {
 
     <footer class="reading-footer wrap">
       <div class="reading-footer__inner">
-        <SiteFooterBase />
         <div class="reading-footer__notices">
           <p>{t.musicCredit[0]} <a href="https://www.scottbuckley.com.au/library/solace/" lang="en" dir="ltr">“Solace” — Scott Buckley</a>{t.musicCredit[1]} <a href="https://creativecommons.org/licenses/by/4.0/" lang="en" dir="ltr">CC BY 4.0</a>{t.musicCredit[2]}</p>
           <p>{t.trademark}</p>
         </div>
+        <SiteFooterBase locale={t.htmlLang} />
       </div>
     </footer>
     <script is:inline src={gsapUrl}></script>
@@ -305,6 +306,7 @@ const redirectScript = `(() => {
         try { localStorage.setItem('chmate.locale', option.dataset.locale); } catch (_storageError) {}
         location.href = option.value + location.search + location.hash;
       });
+
     </script>
   </body>
 </html>
@@ -363,10 +365,8 @@ const redirectScript = `(() => {
   .text-link span { display: grid; width: 1.5rem; height: 1.5rem; place-items: center; border-radius: 50%; background: color-mix(in oklch, currentColor 9%, transparent); }
   .text-link:hover { background: color-mix(in oklch, currentColor 11%, transparent); }
   .reading-footer { padding-top: var(--space-section); }
-  .reading-footer__inner { display: grid; grid-template-columns: minmax(0, .7fr) minmax(0, 1.3fr); align-items: start; gap: var(--space-grid); border-top: 1px solid var(--line); padding-block: 28px 36px; }
-  .reading-footer :global(.base) { margin-top: 0; padding-bottom: 0; }
-  .reading-footer :global(.base__legal) { margin-inline: 0; }
-  .reading-footer__notices { display: grid; gap: 8px; color: var(--muted); font: 400 .6667rem/1.4 var(--sans); text-transform: uppercase; letter-spacing: .04em; }
+  .reading-footer__inner { border-top: 1px solid var(--line); padding-top: 28px; }
+  .reading-footer__notices { display: grid; gap: 8px; max-width: 68ch; margin-inline: auto; text-align: center; color: var(--muted); font: 400 .6667rem/1.4 var(--sans); text-transform: uppercase; letter-spacing: .04em; }
   .reading-footer__notices p { max-width: 68ch; line-height: inherit; }
   .reading-footer__notices a { text-decoration: underline; text-decoration-color: color-mix(in srgb, currentColor 45%, transparent); text-underline-offset: .2em; }
   .reading-footer__notices a:hover { text-decoration-color: currentColor; }
@@ -395,6 +395,6 @@ const redirectScript = `(() => {
     .reading-promise__copy p { font-size: 1rem; line-height: 1.65; }
     .text-link { width: 100%; justify-content: space-between; margin-top: 20px; }
     .reading-footer { padding-top: 48px; }
-    .reading-footer__inner { grid-template-columns: 1fr; gap: 24px; padding-block: 24px 32px; }
+    .reading-footer__inner { padding-top: 24px; }
   }
 </style>

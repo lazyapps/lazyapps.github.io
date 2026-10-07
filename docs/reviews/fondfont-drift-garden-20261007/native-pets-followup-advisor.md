@@ -1,0 +1,7 @@
+Do not accept yet. Both supplied checks pass, but three concrete action bugs remain. Reproductions use `createGardenLife(seed)`, sampled at `i / 60` from zero.
+
+- **Potty destination changes after its side is selected.** [garden-life.mjs:51](/Users/realazy/Projects/Sites/lazyapps/src/lib/fondfont/garden-life.mjs:51) redirects matching start/goal nodes even for potty trips. Seed **991**, dog at **57.8667s**: enters potty at **(1.663, 1.296)** with `pottySide=-1`, instead of the left corner near x=−2.9. Exempt potty destinations from this redirection.
+
+- **Stationary time falsely accumulates as blockage and cancels potty.** [garden-life.mjs:120](/Users/realazy/Projects/Sites/lazyapps/src/lib/fondfont/garden-life.mjs:120) increments `blocked` during intentional stillness; the collision fallback then immediately aborts the action. Seed **11**, cat: potty starts **145.1333s**, switches to watch at **145.85s**, only **0.7167s** later. Count blockage only when requested movement cannot progress.
+
+- **Play preempts unfinished potty.** [garden-life.mjs:74](/Users/realazy/Projects/Sites/lazyapps/src/lib/fondfont/garden-life.mjs:74) excludes paths but permits active potty states. Seed **991**, dog: potty starts **163.0667s**, changes to play at **167.5167s**, truncating its 5.4-second action to **4.45s**. Exclude potty and alignment from play eligibility.

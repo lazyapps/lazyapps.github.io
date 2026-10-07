@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="zh-Hans">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>FondFont · 两个动画方向</title>
+<style>
+  *{box-sizing:border-box}body{margin:0;background:#f8f8f6;color:#292c25;font:16px/1.6 system-ui,sans-serif}main{max-width:1440px;margin:auto;padding:32px}h1{font-size:24px;font-weight:500;margin:0 0 24px}.films{display:grid;grid-template-columns:1fr 1fr;gap:24px}figure{margin:0;min-width:0}figcaption{font-size:18px;margin-bottom:12px}video{display:block;width:100%;height:auto;border-radius:8px;background:#f8f8f6}a{color:inherit;text-underline-offset:4px;font-size:14px}p{margin:12px 0 0}@media(max-width:800px){main{padding:20px}.films{grid-template-columns:1fr;gap:28px}}
+</style>
+<main>
+  <h1>FondFont · 两个动画方向</h1>
+  <div class="films">
+    <figure><figcaption>1 · 活字小剧场</figcaption><video src="concept-playground-brush-v11.mp4" width="1152" height="720" autoplay muted loop playsinline preload="auto" aria-label="活字连锁倾倒，再反弹归位；安装进 iOS 字库后，马善政毛笔楷体同时用于 Pages 和 Keynote。"></video><p><a href="concept-playground-brush-v11.mp4" download>下载视频</a></p></figure>
+    <figure><figcaption>2 · 松间月光</figcaption><video src="concept-poetry-brush-v11.mp4" width="1152" height="720" autoplay muted loop playsinline preload="auto" aria-label="月亮穿过松枝间隙，照亮明月松间照；安装进 iOS 字库后，马善政毛笔楷体同时用于 Pages 和 Keynote。"></video><p><a href="concept-poetry-brush-v11.mp4" download>下载视频</a></p></figure>
+  </div>
+  <p style="margin-top:24px;font-size:14px;color:#73766b">H3 生成物件运动，真实字体轮廓与字形动画另行合成。Pages、Keynote 为概念排版。</p>
+</main>
+<script>
+ const movies=[...document.querySelectorAll('video')];
+ for(const movie of movies)movie.pause();
+ Promise.all(movies.map(movie=>movie.readyState>=3?Promise.resolve():new Promise(resolve=>movie.addEventListener('canplay',resolve,{once:true})))).then(()=>movies.forEach(movie=>movie.play().catch(()=>{})));
+ document.addEventListener('visibilitychange',()=>movies.forEach(movie=>document.hidden?movie.pause():movie.play().catch(()=>{})));
+</script>
+</html>

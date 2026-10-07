@@ -1,0 +1,2 @@
+- **Blockers: none found.** Sign off for the stated scope: lossless download reduction and a strongly differentiated second cat. Transport, asset-equivalence, release, and native-motion checks passed.
+- **Nonblocking follow-up:** [prepare-fondfont-hero.mjs](/Users/realazy/Projects/Sites/lazyapps/scripts/prepare-fondfont-hero.mjs:27) records PNG/WebP hashes without checking equivalence during builds. A future PNG edit could silently ship stale WebP. Run the existing asset-equivalence check in CI or reject stale derivatives. Current assets pass.

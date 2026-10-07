@@ -1,0 +1,9 @@
+{
+  "tool": "built-in image_gen",
+  "source": "/Users/realazy/.codex/generated_images/01a11388-c0cf-7332-9c7f-916d62408fdf/exec-61beedf2-1d0f-4d35-84c5-128dfce582e1.png",
+  "asset": "/Users/realazy/Projects/Sites/lazyapps/scripts/assets/fondfont/blender-v2/sit-down-forklift-reference-v2.png",
+  "sha256": "e974bbc9b75bfc582c0d3d3c5e475b7e1456b91e96b08eb4c2a22b8ba4372b71",
+  "purpose": "Unmodified four-view reference for native Blender model refinement; not raster-composited into webpage",
+  "prompt": "Use case: stylized-concept. Asset type: native Blender reconstruction reference sheet for a small luxury miniature web hero. Input image is the previous sit-down forklift design reference; preserve the burgundy body, red rear ballast, cream wheel rims and black operator cabin. Generate a refined physically plausible industrial electric counterbalance forklift in three views: front, exact side, front three-quarter at 33 degree elevation. Two SHORT 1.1m forged dark graphite steel L-shaped forks attached unmistakably to a broad cross carriage at their heels, with a connected squared load backrest. Fork length proportionate to a 1.2m wooden pallet. Mast channels and inner rails charcoal matte steel, slightly lighter worn rubbing tracks, NOT bright silver blades. Low mast stowed at guard roof height; compact realistic wheelbase and front tires, connected hydraulic cylinder/hoses/chains. Include a fourth small three-quarter view carrying a stack of three wooden letterpress type trays low above the ground: visible truck chassis, rear wheels and maroon ballast behind the load. No objects floating, no glow, no detached tines, no white vertical strips, no huge long swords. All machinery fully contained with margin, no scene cropping, no text labels. Clean transparent background. This is a visual construction reference, not a composite into the webpage.",
+  "input_reference": "scripts/assets/fondfont/blender-v2/sit-down-forklift-reference-v1.png"
+}

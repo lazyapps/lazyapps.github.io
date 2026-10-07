@@ -1,0 +1,23 @@
+FondFont hero — animal asset credits
+
+CAT
+Title: Rigged and animated Cat
+Author: JonasDichelle
+Source: https://blendswap.com/blend/18519
+Original package source URL: http://www.blendswap.com/blends/view/86110
+License: Creative Commons Attribution 3.0 Unported (CC BY 3.0)
+https://creativecommons.org/licenses/by/3.0/
+Original package license: calico-cat-original-LICENSE.html (in this directory)
+
+Adaptations by lazyapps: conversion from Blender 2.77 to a real-time GLB;
+two cyclic rig constraints removed in the derived copy; original native IK
+adapted for grounded walking, turning and planted-paw corrections; original
+combed parent hair converted into simplified 3D strands bound to evaluated
+skin triangle frames; original eye color graph baked; texture compression.
+Original body painting, animal surfaces and source groom are retained.
+Two instances share the original geometry and textures. The second instance
+uses a charcoal coat shader; its eyes and the original instance are unchanged.
+The web animation is an adaptation, not the unmodified authored Walk action.
+
+The cat adaptation is distributed under CC BY 3.0.
+No endorsement of FondFont or lazyapps by the original creators is implied.

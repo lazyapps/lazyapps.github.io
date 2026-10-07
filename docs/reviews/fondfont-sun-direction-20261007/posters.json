@@ -1,0 +1,65 @@
+[
+  {
+    "locale": "en",
+    "width": 2560,
+    "height": 854,
+    "shadowPerMeter": [
+      28.944444444444457,
+      14.56475599392178
+    ]
+  },
+  {
+    "locale": "zh-hans",
+    "width": 2560,
+    "height": 854,
+    "shadowPerMeter": [
+      28.944444444444457,
+      14.56475599392178
+    ]
+  },
+  {
+    "locale": "zh-hant",
+    "width": 2560,
+    "height": 854,
+    "shadowPerMeter": [
+      28.944444444444457,
+      14.56475599392178
+    ]
+  },
+  {
+    "locale": "ja",
+    "width": 2560,
+    "height": 854,
+    "shadowPerMeter": [
+      28.944444444444457,
+      14.56475599392178
+    ]
+  },
+  {
+    "locale": "ko",
+    "width": 2560,
+    "height": 854,
+    "shadowPerMeter": [
+      28.944444444444457,
+      14.56475599392178
+    ]
+  },
+  {
+    "locale": "fr",
+    "width": 2560,
+    "height": 854,
+    "shadowPerMeter": [
+      28.944444444444457,
+      14.56475599392178
+    ]
+  },
+  {
+    "locale": "de",
+    "width": 2560,
+    "height": 854,
+    "shadowPerMeter": [
+      28.944444444444457,
+      14.56475599392178
+    ]
+  }
+]

@@ -1,0 +1,51 @@
+[
+  {
+    "canvas": 2560,
+    "description": "A looping transport animation: the FondFont truck picks up a pallet of multilingual letters at an independent type foundry, unloads it into the iOS font library for compatible apps, then returns empty.",
+    "locale": "en",
+    "poster": 2560,
+    "ready": true
+  },
+  {
+    "canvas": 2560,
+    "description": "回环运输动画：爱装字体卡车从独立的铸字工厂装载多语言字模，运送并卸入 iOS 字体库，供兼容 App 使用，再空车返回。",
+    "locale": "zh-hans",
+    "poster": 2560,
+    "ready": true
+  },
+  {
+    "canvas": 2560,
+    "description": "循環運輸動畫：愛裝字體卡車從獨立的鑄字工廠裝載多語言字模，運送並卸入 iOS 字體庫，供相容 App 使用，再空車返回。",
+    "locale": "zh-hant",
+    "poster": 2560,
+    "ready": true
+  },
+  {
+    "canvas": 2560,
+    "description": "繰り返す配送アニメーション。フォンドフォントのトラックが独立した活字鋳造所で多言語の活字を積み込み、対応アプリで使える iOS フォントライブラリへ届け、空になって戻ります。",
+    "locale": "ja",
+    "poster": 2560,
+    "ready": true
+  },
+  {
+    "canvas": 2560,
+    "description": "반복되는 운송 애니메이션: 폰드폰트 트럭이 독립된 활자 주조소에서 다국어 활자를 싣고 호환 앱에서 사용할 수 있는 iOS 폰트 보관함에 내려놓은 뒤 빈 차로 돌아옵니다.",
+    "locale": "ko",
+    "poster": 2560,
+    "ready": true
+  },
+  {
+    "canvas": 2560,
+    "description": "Une animation de livraison en boucle : le camion FondFont charge une palette de caractères multilingues dans une fonderie indépendante, la livre à la bibliothèque de polices iOS pour les apps compatibles, puis revient à vide.",
+    "locale": "fr",
+    "poster": 2560,
+    "ready": true
+  },
+  {
+    "canvas": 2560,
+    "description": "Eine Transportschleife: Der FondFont-Lkw holt eine Palette mehrsprachiger Buchstaben bei einer unabhängigen Schriftgießerei ab, entlädt sie in der iOS-Schriftbibliothek für kompatible Apps und fährt leer zurück.",
+    "locale": "de",
+    "poster": 2560,
+    "ready": true
+  }
+]

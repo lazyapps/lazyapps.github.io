@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="zh-Hans">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>FondFont · 两个动画方向</title>
+<style>
+  *{box-sizing:border-box}body{margin:0;background:#f8f8f6;color:#292c25;font:16px/1.6 system-ui,sans-serif}main{max-width:1440px;margin:auto;padding:32px}h1{font-size:24px;font-weight:500;margin:0 0 24px}.films{display:grid;grid-template-columns:1fr 1fr;gap:24px}figure{margin:0;min-width:0}figcaption{font-size:18px;margin-bottom:12px}video{display:block;width:100%;height:auto;border-radius:8px;background:#f8f8f6}a{color:inherit;text-underline-offset:4px;font-size:14px}p{margin:12px 0 0}@media(max-width:800px){main{padding:20px}.films{grid-template-columns:1fr;gap:28px}}
+</style>
+<main>
+  <h1>FondFont · 两个动画方向</h1>
+  <div class="films">
+    <figure><figcaption>1 · 抢戏的「照」</figcaption><video src="concept-playground-brush-v12.mp4" width="1152" height="720" autoplay muted loop playsinline preload="auto" aria-label="保留活字多米诺开场；照突然跃起抢戏，其他字追赶它，最后形成大胆的诗句合影。"></video><p><a href="concept-playground-brush-v12.mp4" download>下载视频</a></p></figure>
+    <figure><figcaption>2 · 倒影出走</figcaption><video src="concept-poetry-brush-v12b.mp4" width="1152" height="720" autoplay muted loop playsinline preload="auto" aria-label="保留月球穿过松针的开场；水中月字的倒影先浮起，其他倒影跟随，成为前景竖排诗作。"></video><p><a href="concept-poetry-brush-v12b.mp4" download>下载视频</a></p></figure>
+  </div>
+  <p style="margin-top:24px;font-size:14px;color:#73766b">开场沿用 MiniMax H3 物件动效，字形表演以马善政真实轮廓合成。</p>
+</main>
+<script>
+ const movies=[...document.querySelectorAll('video')];
+ for(const movie of movies)movie.pause();
+ Promise.all(movies.map(movie=>movie.readyState>=3?Promise.resolve():new Promise(resolve=>movie.addEventListener('canplay',resolve,{once:true})))).then(()=>movies.forEach(movie=>movie.play().catch(()=>{})));
+ document.addEventListener('visibilitychange',()=>movies.forEach(movie=>document.hidden?movie.pause():movie.play().catch(()=>{})));
+</script>
+</html>

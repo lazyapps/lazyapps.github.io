@@ -1,0 +1,16 @@
+**Commit to the fixed-camera, imagegen-derived 2.5D revision.** It best addresses the stated objection: the user wanted convincing generated visual assets, and the procedural reconstruction discarded their quality. Nothing in the briefing requires an orbitable mesh world. Three.js can still provide meaningful loading, transport, and unloading animation.
+
+The crucial correction is that **“extract everything from one plate without reimagining” is a goal, not a reliable imagegen capability.** Independent edits can change perspective, proportions, lighting, and contact points. A shared source image does not guarantee compatible assets.
+
+Make these constraints explicit:
+
+- **Validate the master projection first.** “Orthographic miniature” in a prompt is insufficient. Check that the road, truck, warehouse, and gantries agree on ground-plane axes and verticals. Establish one world-to-image mapping and contact anchors. If the plate cannot support that mapping convincingly, fix it before extraction.
+- **Treat extraction as controlled compositing.** Preserve original visible pixels wherever possible. Generate missing surfaces and clean background regions deliberately, then check alignment against the master. Removing a truck reveals ground; lifting cargo reveals its supporting bed; separating a crane reveals previously hidden structure. Those surfaces must exist before animation.
+- **Design occlusion around the complete route.** A single foundry or warehouse cutout will fail when cargo passes behind a beam but in front of a wall. Split architecture into the necessary foreground masks and background surfaces; split truck bed, cargo, and retaining edges where required. Plan these relationships at loading, transit, and unloading positions.
+- **Keep the camera and actor orientation fixed.** No pointer parallax, camera movement, truck yaw, or cargo rotation that exposes an unavailable face. Translate actors through the shared projection with constant scale. Reversing the empty truck is a sound constraint.
+- **Separate moving objects from their shadows.** Baked ground shadows will slide with sprites or remain after departure. Provide clean ground and separate contact/cast-shadow treatment. For wheels, rotate a rectified face within the fixed projected wheel plane; keep tire silhouette and lighting stable. Spinning an elliptical cutout will immediately betray the construction.
+- **Make support convincing at pixel level.** Reuse the tested handoff logic, but recalibrate its anchors to the final artwork. Cable endpoints, spreader contacts, cargo bottoms, and truck-bed height must coincide. Correct timing cannot compensate for visibly disconnected contacts. Glyphs likewise need the projection of their metal faces.
+
+**Build one small proof before producing the full asset stack:** one gantry, one truck, one carrier, and one receiving position. Demonstrate lift, supported placement, truck travel, and unloading against the intended final artwork. Inspect the moments that reveal hidden surfaces and change occlusion.
+
+If that proof holds, expand the scene using the same projection and asset rules. Do not continue polishing the rejected procedural scene, and do not treat its prior review as approval of this revision. The new work earns sign-off through the finished composite in motion.

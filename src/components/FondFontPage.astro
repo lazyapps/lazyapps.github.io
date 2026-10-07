@@ -1,0 +1,175 @@
+---
+import SocialMeta from './SocialMeta.astro';
+import SiteFooterBase from './SiteFooterBase.astro';
+import FondFontAssetCredits from './FondFontAssetCredits.astro';
+import FondFontFactoryScene from './FondFontFactoryScene.astro';
+import FondFontInstallGuide from './FondFontInstallGuide.astro';
+import siteCssUrl from '$assets/s/site.css?url';
+import '$assets/s/fondfont-fonts.css';
+import appIconUrl from '$assets/img/fondfont-web-icon.png';
+import { FONDFONT_LOCALES, fondfontLocaleFor, fondfontPreferredLocale } from '../i18n/fondfont-locales.mjs';
+const { t, isRoot = false } = Astro.props;
+const locales = Object.values(FONDFONT_LOCALES);
+const campaign = `pt=259198&ct=lazyapps-${t.htmlLang.toLowerCase()}&mt=8`;
+const storeUrl = `https://apps.apple.com/app/apple-store/id842109099?${campaign}`;
+const badges = import.meta.glob<string>('/src/assets/img/chmate/app-store-badge-*.svg', { eager: true, query: '?url', import: 'default' });
+const badgeUrl = badges[`/src/assets/img/chmate/app-store-badge-${t.badgeLocale}.svg`];
+const ogImages = import.meta.glob<string>('/src/assets/img/fondfont-opengraph-*.png', { eager: true, query: '?url', import: 'default' });
+const ogUrl = ogImages[`/src/assets/img/fondfont-opengraph-${t.ogAsset}.png`];
+const redirect = `(() => {
+  const FONDFONT_LOCALES = ${JSON.stringify(Object.fromEntries(locales.map(l => [l.code, l.selectedUrl])))};
+  ${fondfontLocaleFor.toString()}
+  ${fondfontPreferredLocale.toString()}
+  let stored = null;
+  try { stored = localStorage.getItem('fondfont.locale'); } catch {}
+  const code = fondfontPreferredLocale(stored, navigator.languages?.length ? navigator.languages : [navigator.language]);
+  location.replace(FONDFONT_LOCALES[code] + location.search + location.hash);
+})();`;
+---
+<!doctype html>
+<html lang={t.htmlLang}>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>{t.title}</title>
+    <meta name="description" content={t.description}>
+    <meta name="theme-color" content="#f8f8f6">
+    <meta name="apple-itunes-app" content={`app-id=842109099, affiliate-data=${campaign}`}>
+    {locales.map(locale => <link rel="alternate" hreflang={locale.htmlLang} href={`https://lazyapps.com${locale.selectedUrl}`} />)}
+    <link rel="alternate" hreflang="x-default" href="https://lazyapps.com/fondfont/en/">
+    <SocialMeta title={t.title} description={t.description} url={`https://lazyapps.com${t.selectedUrl}`} image={`https://lazyapps.com${ogUrl}`} imageAlt={t.name} imageWidth={1200} imageHeight={630} locale={t.ogLocale} />
+    <link rel="icon" href={appIconUrl.src} type="image/png">
+    <link rel="stylesheet" href={siteCssUrl}>
+    {isRoot && <script is:inline set:html={redirect} />}
+  </head>
+  <body>
+    <a class="skip-link" href="#main">{t.skip}</a>
+    <header class="wrap">
+      <div class="topbar">
+        <nav class="topbar__nav" aria-label={t.homeAria}><a class="topbar__home" href="/" aria-label={t.homeAria}><span class="topbar__home-dot" data-nav-sun aria-hidden="true"><svg class="nav-sun-rays" width="32" height="32" viewBox="0 0 64 64" fill="none" focusable="false"><path d="M32 3v5m0 48v5M3 32h5m48 0h5M11.5 11.5l3.5 3.5m34 34 3.5 3.5m-41 0L15 49m34-34 3.5-3.5" stroke="currentColor" stroke-width="3" stroke-linecap="round" /></svg></span></a></nav>
+        <a class="topbar__app" href={t.selectedUrl}><img src={appIconUrl.src} alt="" width="32" height="32"><span class="dsp" lang={t.htmlLang}>{t.name}</span></a>
+        <div class="locale">
+          <svg class="locale__globe" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20Z" stroke="currentColor"/><path d="M12 22c2.2 0 4-4.5 4-10S14.2 2 12 2 8 6.5 8 12s1.8 10 4 10ZM2 12h20M4 6c5.3 2.2 10.7 2.2 16 0M4 18c5.3-2.2 10.7-2.2 16 0" stroke="currentColor"/></svg>
+          <span class="locale__now" aria-hidden="true">{t.localeNow}</span><span class="locale__short" aria-hidden="true">{t.localeShort}</span>
+          <svg class="locale__chev" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m5 9 7 7 7-7" stroke="currentColor"/></svg>
+          <select name="locale" data-fondfont-locale aria-label={t.selectAria}>
+            {locales.map(locale => <option value={locale.selectedUrl} data-locale={locale.code} lang={locale.htmlLang} selected={locale.code === t.code}>{locale.localeNow}</option>)}
+          </select>
+        </div>
+      </div>
+      <noscript><nav class="language-links" aria-label={t.selectAria}>{locales.map(locale => <a href={locale.selectedUrl} lang={locale.htmlLang} aria-current={locale.code === t.code ? 'page' : undefined}>{locale.localeNow}</a>)}</nav></noscript>
+    </header>
+    <main id="main">
+      <section class="font-hero wrap" aria-labelledby="hero-title">
+        <FondFontFactoryScene locale={t.code} />
+        <div class="font-hero__copy">
+          <h1 id="hero-title" class="dsp">{t.headline.map(line => <span>{line}</span>)}</h1>
+          <p class="hero-sub">{t.sub}</p>
+          <div class="download">
+            <a class="store-badge" href={storeUrl} aria-label={t.downloadLabel}><img src={badgeUrl} alt={t.badgeAlt} height="48" width="144"></a>
+          </div>
+        </div>
+      </section>
+      <div class="workflow wrap">
+        <FondFontInstallGuide t={t} />
+        <p class="font-privacy">{t.privacyCopy}</p>
+        <dl class="features">
+          {t.features.map(([title, body]) => <div class="feature"><dt>{title}</dt><dd>{body}</dd></div>)}
+        </dl>
+      </div>
+      <section class="faq wrap" aria-labelledby="faq-title">
+        <div><h2 id="faq-title" class="dsp section-title">{t.faqTitle}</h2></div>
+        <div class="questions">{t.faqs.map(([question, answer]) => <details><summary>{question}<span aria-hidden="true">+</span></summary><p>{answer}</p></details>)}</div>
+      </section>
+      <footer class="wrap">
+        <SiteFooterBase locale={t.htmlLang} />
+        <FondFontAssetCredits locale={t.code} />
+      </footer>
+    </main>
+    <script>
+      const select = document.querySelector<HTMLSelectElement>('[data-fondfont-locale]');
+      select?.addEventListener('change', () => {
+        const option = select.selectedOptions[0];
+        try { localStorage.setItem('fondfont.locale', option.dataset.locale ?? 'en'); } catch {}
+        location.assign(option.value + location.search + location.hash);
+      });
+      const sun = document.querySelector<HTMLElement>('[data-nav-sun]');
+      if (sun) {
+        let inView = false;
+        const updateAnimation = () => sun.toggleAttribute('data-animating', inView && !document.hidden);
+        new IntersectionObserver(([entry]) => {
+          inView = entry.isIntersecting;
+          updateAnimation();
+        }).observe(sun);
+        document.addEventListener('visibilitychange', updateAnimation);
+      }
+    </script>
+  </body>
+</html>
+<style>
+  :global(body){--accent:#ff293c;--ink:#302735;background:var(--paper);font-size:16px;line-height:1.65}
+  :global(a:focus-visible),button:focus-visible,summary:focus-visible{outline:2px solid var(--accent);outline-offset:5px}
+  .skip-link{position:fixed;left:24px;top:16px;transform:translateY(-200%);z-index:1000;background:var(--paper);padding:10px 16px}
+  .skip-link:focus{transform:none}
+  header{padding-top:clamp(8px,1.5vw,18px)}
+  .topbar__home-dot{position:relative;color:var(--accent)}
+  .topbar__app img{width:32px;height:32px}
+  .nav-sun-rays{position:absolute;inset:-11px;width:32px;height:32px;animation:nav-sun-turn 24s linear infinite paused;pointer-events:none}
+  .topbar__home-dot[data-animating] .nav-sun-rays{animation-play-state:running}
+  @keyframes nav-sun-turn{to{transform:rotate(360deg)}}
+  .locale__now,.locale__short,.locale select{font-family:var(--sans)}
+  @media(max-width:479px){.topbar__app .dsp:lang(ja){font-size:1rem}}
+  .language-links{display:flex;flex-wrap:wrap;gap:20px;padding-top:20px;font-size:14px}
+  .language-links [aria-current]{text-decoration:underline}
+  .font-hero{display:flex;flex-direction:column;align-items:center;padding-block:8px 72px}
+  .font-hero__copy{min-width:0;width:100%;max-width:850px;display:flex;flex-direction:column;align-items:center;gap:12px;text-align:center;container-type:inline-size;margin-top:-10px}
+  h1{font-size:min(64px,7.5cqw);width:100%;max-width:none;letter-spacing:-.045em}
+  h1 span{display:block;white-space:nowrap;line-height:1.02}
+  h1:lang(en){font-size:min(64px,7.5cqw)}
+  h1:lang(zh),h1:lang(ko){text-transform:none;font-size:min(54px,6.5cqw);letter-spacing:-.035em}
+  h1:lang(ja){text-transform:none;font-size:min(54px,6.7cqw);letter-spacing:-.035em}
+  .hero-sub{font-size:15px;line-height:1.7;max-width:66ch;color:#706672}
+  .download{padding-top:2px;line-height:0}
+  .store-badge{display:inline-flex;min-height:48px;transition:opacity .2s}
+  .store-badge:hover{opacity:.75}
+  .store-badge img{width:auto;height:48px}
+  .section-title{font-size:32px;padding-top:28px;border-top:1px solid var(--line);max-width:none}
+  .section-title:lang(zh),.section-title:lang(ja),.section-title:lang(ko){font-size:28px}
+  .font-privacy{font-size:15px;line-height:1.6;color:#686864;margin-top:20px}
+  .features{margin-top:24px;padding-top:20px;border-top:1px solid var(--line);display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:32px}
+  .feature{min-width:0}
+  .feature dt{font-size:18px;font-weight:500;line-height:1.4;margin-bottom:8px}
+  .feature dd{font-size:16px;line-height:1.6;color:#686864}
+  .faq{padding-block:32px 0}
+  .faq .section-title{font-size:26px;padding-top:24px;border:0}
+  .questions{margin-top:16px}
+  details{border-top:1px solid var(--line);padding-block:16px}
+  details:last-child{border-bottom:1px solid var(--line)}
+  summary{list-style:none;display:flex;gap:20px;justify-content:space-between;align-items:baseline;font-size:16px;font-weight:500;cursor:pointer}
+  summary::-webkit-details-marker{display:none}
+  summary span{font:400 22px/1 var(--mono);flex:none;transition:transform .2s;color:#686864}
+  details[open] summary span{transform:rotate(45deg)}
+  details p{font-size:16px;line-height:1.6;color:#686864;margin-top:12px;max-width:70ch}
+  @media(max-width:767px){
+    .font-hero{padding-block:8px 48px}
+    .font-hero__copy{gap:20px;margin-top:20px}
+    h1 span{line-height:1.08}
+    h1{font-size:min(64px,10cqw)}
+    h1:lang(en){font-size:min(64px,13cqw)}
+    h1:lang(zh),h1:lang(ko){font-size:min(48px,9cqw)}
+    h1:lang(ja){font-size:min(48px,8cqw)}
+    h1:lang(ja) span{white-space:normal;text-wrap:balance}
+    h1:lang(ko) span{white-space:normal;word-break:keep-all;text-wrap:balance}
+    .hero-sub{font-size:15px;max-width:42ch;line-height:1.8}
+
+    .section-title{font-size:28px;padding-top:24px}
+    .section-title:lang(zh),.section-title:lang(ja),.section-title:lang(ko){font-size:24px}
+    .features{grid-template-columns:1fr;gap:16px;margin-top:20px;padding-top:20px}
+    .feature dt{font-size:17px;margin-bottom:4px}
+    .font-privacy{margin-top:20px}
+    .faq{padding-top:24px}
+    .faq .section-title{font-size:24px;padding-top:0}
+    .questions{margin-top:16px}
+  }
+  @media(prefers-reduced-motion:reduce){.nav-sun-rays{animation:none}*{scroll-behavior:auto!important;transition:none!important}}
+</style>

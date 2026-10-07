@@ -1,0 +1,37 @@
+[
+  {
+    "code": "en",
+    "width": 2560,
+    "height": 854
+  },
+  {
+    "code": "zh-hans",
+    "width": 2560,
+    "height": 854
+  },
+  {
+    "code": "zh-hant",
+    "width": 2560,
+    "height": 854
+  },
+  {
+    "code": "ja",
+    "width": 2560,
+    "height": 854
+  },
+  {
+    "code": "ko",
+    "width": 2560,
+    "height": 854
+  },
+  {
+    "code": "fr",
+    "width": 2560,
+    "height": 854
+  },
+  {
+    "code": "de",
+    "width": 2560,
+    "height": 854
+  }
+]

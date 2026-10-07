@@ -27,6 +27,19 @@ the book keeps the renderer's original colors, lighting, and opaque interiors.
 The wordmark uses the site's Sofia Sans Extra Condensed at weight 900.
 A square proof is written to `/tmp/chmate-opengraph-square.png`.
 
+## Playback
+
+The preview uses the original localized native v2 captures and posters, with
+its original editing and soundtrack. There is no generated shelf illumination,
+replacement loop edit, or animated device entrance. Feature cards use the site's
+scroll reveal; the existing logo loader remains.
+
+One language/device video loads at a time. Both preview and original daylight
+background pause offscreen, while hidden, or when the user pauses the preview.
+Save-Data starts with manual playback and skips the background video.
+Reduced motion disables autoplay and page animations; manual playback remains
+available. No per-frame JavaScript, canvas or WebGL effects are used.
+
 ## Independent layers
 
 The page no longer embeds the rectangular App Store composition or fades its
@@ -44,8 +57,8 @@ edges. It combines three original layers:
 - **Device:** at least 768 px, the original transparent iPad bezel PNG,
   2300 × 3000, with no extra card, border, or blurred edge. Narrow layouts show
   the native iPhone video without a device frame.
-- **Screen:** localized native captures, exported without the baked background,
-  titles, or closing card. Screen position follows the bezel's original geometry:
+- **Screen:** localized native captures without
+  baked titles or a separate product closing card. Screen position follows the bezel's original geometry:
   iPhone `(72, 69, 1206, 2622)`; iPad `(118, 124, 2064, 2752)`. An alpha mask
   generated from the original grayscale screen mask clips only the actual screen
   opening. The bezel does not intercept pointer input.

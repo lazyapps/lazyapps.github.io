@@ -1,0 +1,10 @@
+---
+import FondFontPage from '../../components/FondFontPage.astro';
+import { FONDFONT_LOCALES } from '../../i18n/fondfont-locales.mjs';
+
+export function getStaticPaths() {
+  return Object.keys(FONDFONT_LOCALES).map(locale => ({ params: { locale } }));
+}
+const t = FONDFONT_LOCALES[Astro.params.locale] ?? FONDFONT_LOCALES.en;
+---
+<FondFontPage t={t} />

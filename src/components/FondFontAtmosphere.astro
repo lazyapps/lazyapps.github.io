@@ -1,0 +1,32 @@
+---
+import FondFontPoem from './FondFontPoem.astro';
+const { families } = Astro.props;
+---
+<div class="font-atmosphere" data-font-index="0" aria-hidden="true">
+  <svg data-font-field viewBox="0 0 1600 1100" preserveAspectRatio="none">
+    <defs>
+      <mask id="font-field-copy-mask">
+        <rect width="100%" height="100%" fill="white" />
+        <rect data-copy-cutout x="80" y="100" width="680" height="500" rx="28" fill="black" />
+        <rect data-device-cutout x="920" y="120" width="480" height="400" rx="24" fill="black" />
+      </mask>
+    </defs>
+    <g mask="url(#font-field-copy-mask)">
+      {families.map((family, i) => <g class="font-sample" data-font-sample={i} transform={`translate(${i === 0 ? 12 : 1280},${i === 0 ? 780 : i === 1 ? 80 : 880})`}>
+        <g class="font-sample__drift" style={`--phase:${-i * 9}s`}>
+          <FondFontPoem specimen={family} width={260} height={87} />
+        </g>
+      </g>)}
+    </g>
+  </svg>
+</div>
+<style>
+  .font-atmosphere{position:fixed;inset:0;z-index:-1;pointer-events:none;overflow:hidden}
+  .font-atmosphere>svg{display:block;width:100%;height:100%}
+  .font-sample{fill:#69675e;opacity:.035;transition:opacity 1.2s}
+  .font-sample__drift{animation:specimen-drift 32s var(--phase) ease-in-out infinite paused}
+  .font-atmosphere.is-moving .font-sample__drift{animation-play-state:running}
+  .font-atmosphere[data-font-index="0"] [data-font-sample="0"],.font-atmosphere[data-font-index="1"] [data-font-sample="1"],.font-atmosphere[data-font-index="2"] [data-font-sample="2"]{opacity:.055}
+  @keyframes specimen-drift{0%,100%{transform:translate(0,0)}50%{transform:translate(24px,-8px)}}
+  @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>

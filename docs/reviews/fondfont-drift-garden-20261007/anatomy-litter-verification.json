@@ -1,0 +1,49 @@
+{
+  "date": "2026-10-07",
+  "native_pet_rig": {
+    "skins": 2,
+    "bones": 40,
+    "clips": 22,
+    "sizeKiB": 1033,
+    "simulationSeconds": 1500,
+    "maxSupportingPawSlipMm": 0.65,
+    "soleClearanceMm": [
+      0.26,
+      0.74
+    ],
+    "minBodyUp": 0.9928
+  },
+  "forklift": {
+    "twoTrips": true,
+    "groundedWheels": 8,
+    "maxAxleTilt": 3.9e-16,
+    "maxContactErrorM": 2.4e-09
+  },
+  "leaf_litter": {
+    "simulationSeconds": 600,
+    "retainedLeaves": 119,
+    "wheelWakes": 291,
+    "checkedLandings": 291,
+    "landingDisplacementM": [
+      0.353,
+      1.492
+    ],
+    "maxAbsoluteHeightM": 0.366,
+    "persistent": true,
+    "randomKickDirection": true,
+    "remoteStillness": true,
+    "deterministicCadenceReplay": true
+  },
+  "posters": {
+    "locales": 7,
+    "width": 2560,
+    "height": 854
+  },
+  "productionBuild": {
+    "pages": 52,
+    "passed": true
+  },
+  "proof": "random-leaf-wake-final.png",
+  "latestFilm": "random-leaf-wake-final.mp4",
+  "advisor": "anatomy-litter-completion-advisor.md"
+}

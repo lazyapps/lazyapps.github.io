@@ -1,0 +1,8 @@
+Yes. The four-step sequence addresses the barrier, provided the Settings handoff becomes the clearest part of the section.
+
+- **Make step 3 explicit:** “Close the confirmation → tap Open Settings → return to Settings home → tap Profile Downloaded.” Its screenshot shows download confirmation inside FondFont; label it accordingly. The caption must explain the next action without implying Settings is pictured.
+- **Distinguish the two Install actions.** Use navigation labels such as “Choose fonts / Download profile / Open Settings / Install profile.” Users must understand that tapping Install inside FondFont does not finish installation.
+- **Keep screenshot claims exact.** Step 2 depicts the download guide; “Allow” belongs to the subsequent system prompt. Step 4 depicts profile installation. Preserve readable UI text alongside the intact screenshots.
+- **Keep navigation lightweight.** Four labeled steps and previous/next are sufficient. Swipe is supplementary; keyboard handling applies only while focus is within the carousel. Selecting a slide must not imply that its installation step is complete.
+- **Place help where it matters.** Put the eight-minute expiry guidance at the download/Settings handoff. Explain “unsigned” only in the context of the profile generated from the user’s selected fonts.
+- **Keep compatibility qualification prominent.** State that installed fonts work in compatible apps; avoid suggesting universal availability or system-font replacement. Keep importing as a brief prerequisite, not another competing walkthrough.

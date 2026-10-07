@@ -1,0 +1,65 @@
+[
+  {
+    "locale": "en",
+    "width": 2560,
+    "height": 854,
+    "bytes": 259068,
+    "model": [
+      "http://127.0.0.1:4332/v/fondfont/blender-v2/factory-truck-v14.glb"
+    ]
+  },
+  {
+    "locale": "zh-hans",
+    "width": 2560,
+    "height": 854,
+    "bytes": 257800,
+    "model": [
+      "http://127.0.0.1:4332/v/fondfont/blender-v2/factory-truck-v14.glb"
+    ]
+  },
+  {
+    "locale": "zh-hant",
+    "width": 2560,
+    "height": 854,
+    "bytes": 258022,
+    "model": [
+      "http://127.0.0.1:4332/v/fondfont/blender-v2/factory-truck-v14.glb"
+    ]
+  },
+  {
+    "locale": "ja",
+    "width": 2560,
+    "height": 854,
+    "bytes": 258454,
+    "model": [
+      "http://127.0.0.1:4332/v/fondfont/blender-v2/factory-truck-v14.glb"
+    ]
+  },
+  {
+    "locale": "ko",
+    "width": 2560,
+    "height": 854,
+    "bytes": 257558,
+    "model": [
+      "http://127.0.0.1:4332/v/fondfont/blender-v2/factory-truck-v14.glb"
+    ]
+  },
+  {
+    "locale": "fr",
+    "width": 2560,
+    "height": 854,
+    "bytes": 258688,
+    "model": [
+      "http://127.0.0.1:4332/v/fondfont/blender-v2/factory-truck-v14.glb"
+    ]
+  },
+  {
+    "locale": "de",
+    "width": 2560,
+    "height": 854,
+    "bytes": 258774,
+    "model": [
+      "http://127.0.0.1:4332/v/fondfont/blender-v2/factory-truck-v14.glb"
+    ]
+  }
+]

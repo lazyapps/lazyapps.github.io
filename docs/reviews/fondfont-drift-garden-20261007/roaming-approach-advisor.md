@@ -1,0 +1,5 @@
+The material flaw is relying on collision-triggered yielding to resolve encounters. A clockwise circuit prevents opposing traffic, but a pet pausing, following, or initiating play inside a bottleneck can still deadlock both agents. Reserve narrow sections before entry, prohibit discretionary pauses there, and give encounters deterministic right-of-way with a bounded recovery action. Interaction behaviors must defer to navigation clearance.
+
+Also validate the **swept capsule through translation and rotation**, not just its destination pose. With capped yaw and gradual braking, a geometrically valid waypoint path can still be impossible to follow without clipping obstacles. Account for stopping distance and turning clearance when choosing speed and accepting graph edges.
+
+The fixed-step simulation, seeded randomness, render interpolation, and distance-driven gait are otherwise a sound foundation.

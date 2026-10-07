@@ -1,0 +1,21 @@
+**Rebuild the cab with a reference-fitted, mirrored subdivision mesh whose edge loops follow the actual body panels and openings.** Keep the existing chassis and motion hierarchy. This is attainable in Blender through the existing Python pipeline and is the strongest route without an acquired donor.
+
+The proposed direction is correct, but **changing `SECTIONS` and enlarging the window cutters is insufficient**. The current cab already uses an explicit subdivision cage; its horizontal rounded rings produce the inflated roof and undifferentiated front surface. Projecting glass and attaching fascia components to that envelope preserves the underlying toy-like shape.
+
+Build a new control mesh around the roof perimeter, windshield opening, A-pillars, cowl, nose, door perimeter, and wheel opening. Give those boundaries deliberate support loops and cross-sections. Form actual recessed returns for the glazing, grille, and lamps. Keep separate manufactured parts, but fit their surrounding sheet metal to them. Retain this editable source; apply modifiers for export.
+
+Critical acceptance criteria:
+
+- **Reference registration comes first.** The current render uses a noticeably higher viewing angle than the reference’s main view. Match camera elevation, perspective, and framing before judging proportions. Use the large reference view as the primary target and the smaller views as consistency checks; they are generated illustrations, not guaranteed coherent engineering drawings. Aim for major silhouette and opening landmarks within roughly 2–3% of projected cab dimensions—a proposed review tolerance, not a measured result.
+
+- **The roof must lose its inflated crown.** Preserve a broad, shallow roof surface with tight perimeter transitions. Match the visible header band, A-pillar thickness, windshield rake, and cab rear contour together. Merely lifting the windshield into the existing rounded shoulder will create pinched upper corners.
+
+- **Glazing must occupy the reference’s share of the cab.** Sill `1.45` and header `2.22` are useful starting controls, not acceptance criteria. Match the opening’s width, height, corner radii, and relationship to the side window. Reposition the existing dashboard and interior accordingly: the dashboard currently sits around `1.56`, so lowering the glass alone risks exposing its underside or leaving much of the new opening obstructed.
+
+- **The entire lower front needs reconstruction.** Reproduce the reference’s shaped nose, tapered dark grille, stacked lamp clusters following the cab corners, and substantial wraparound bumper with recessed openings. The present thin silver bumper bar and rectangular grille cannot survive as the underlying forms. In an oblique clay render, housings must sit within formed recesses, with no visible mounting gap or unsupported protrusion. Reuse the unchanged imagegen optics only after their supporting geometry fits.
+
+- **Doors and arches must belong to the body.** Require one continuous closed door reveal, with consistent shallow depth and narrow width—not disconnected raised black curves. Form the front arch as a return from the surrounding body panel, including its transitions into the step and lower cab. The current constant-radius strip reads as a separate fender.
+
+- **Preserve the rig exactly and check swept clearance.** Keep all six wheel pivots, required attachment transforms, and the moving sidegate hierarchy. Verify tire clearance throughout steering and gate clearance throughout opening in the exported GLB. Passing the existing attachment and ground-contact checks alone does not establish those clearances.
+
+**Make a matched-camera clay comparison the gate before further texture or hardware work.** If the silhouette, glazing, nose, bumper, and arches still read differently at thumbnail size, the rebuild has not passed. I disagree with the earlier “deliver v11” recommendation under this briefing’s fidelity requirement: its remaining differences are structural and should block acceptance.

@@ -1,0 +1,288 @@
+{
+  "captured": "2026-10-07",
+  "processing": "Unchanged original native PNGs. No retouch, crop, resize, or generated UI.",
+  "sourceCommit": "182d46a96cbc476049df229a0313f2397e062e8f",
+  "version": "260923.0",
+  "records": [
+    {
+      "locale": "en",
+      "step": "select",
+      "source": "scripts/assets/fondfont/install-capture-20261007/en/select.png",
+      "output": "public/v/fondfont/install/en/select.png",
+      "captureManifest": "scripts/assets/fondfont/install-capture-20261007/en/manifest.json",
+      "sha256": "61aa5998078c45e10f413d164087dd66c6ae1ca2f571f963a49e1a276c91c8f5",
+      "width": 1206,
+      "height": 2622
+    },
+    {
+      "locale": "en",
+      "step": "guide",
+      "source": "scripts/assets/fondfont/install-capture-20261007/en/guide.png",
+      "output": "public/v/fondfont/install/en/guide.png",
+      "captureManifest": "scripts/assets/fondfont/install-capture-20261007/en/manifest.json",
+      "sha256": "f937add5e915c0bde9dc34a28c365a588440bcfea51d3c712013b6125b2349bb",
+      "width": 1206,
+      "height": 2622
+    },
+    {
+      "locale": "en",
+      "step": "downloaded",
+      "source": "scripts/assets/fondfont/install-capture-20261007/en/downloaded.png",
+      "output": "public/v/fondfont/install/en/downloaded.png",
+      "captureManifest": "scripts/assets/fondfont/install-capture-20261007/en/manifest.json",
+      "sha256": "1a274b9c1871501e00d152eada4a6fb666fa22bced7162fb1d1ab22bd896ed67",
+      "width": 1206,
+      "height": 2622
+    },
+    {
+      "locale": "en",
+      "step": "profile",
+      "source": "scripts/assets/fondfont/install-capture-20261007/en/profile.png",
+      "output": "public/v/fondfont/install/en/profile.png",
+      "captureManifest": "scripts/assets/fondfont/install-capture-20261007/en/manifest.json",
+      "sha256": "93ff8dddc96bedee2457c2226ebc498b0604f0218d7ad7011867e21a79b36a89",
+      "width": 1206,
+      "height": 2622
+    },
+    {
+      "locale": "zh-hans",
+      "step": "select",
+      "source": "scripts/assets/fondfont/install-capture-20261007/zh-hans/select.png",
+      "output": "public/v/fondfont/install/zh-hans/select.png",
+      "captureManifest": "scripts/assets/fondfont/install-capture-20261007/zh-hans/manifest.json",
+      "sha256": "6fe1d678265779a5e7c4ab99b494b6b46a42d781957143cf84ecf9219efab9f5",
+      "width": 1206,
+      "height": 2622
+    },
+    {
+      "locale": "zh-hans",
+      "step": "guide",
+      "source": "scripts/assets/fondfont/install-capture-20261007/zh-hans/guide.png",
+      "output": "public/v/fondfont/install/zh-hans/guide.png",
+      "captureManifest": "scripts/assets/fondfont/install-capture-20261007/zh-hans/manifest.json",
+      "sha256": "71b4731f72e40b1b1eeb930e965cb625f4195b4fdb2ae6e895d6bf452c6ccf6e",
+      "width": 1206,
+      "height": 2622
+    },
+    {
+      "locale": "zh-hans",
+      "step": "downloaded",
+      "source": "scripts/assets/fondfont/install-capture-20261007/zh-hans/downloaded.png",
+      "output": "public/v/fondfont/install/zh-hans/downloaded.png",
+      "captureManifest": "scripts/assets/fondfont/install-capture-20261007/zh-hans/manifest.json",
+      "sha256": "00683453ae3ee70ae092bd5ed480a767794c69c89100c18728acbe6cd312d3a4",
+      "width": 1206,
+      "height": 2622
+    },
+    {
+      "locale": "zh-hans",
+      "step": "profile",
+      "source": "scripts/assets/fondfont/install-capture-20261007/zh-hans/profile.png",
+      "output": "public/v/fondfont/install/zh-hans/profile.png",
+      "captureManifest": "scripts/assets/fondfont/install-capture-20261007/zh-hans/manifest.json",
+      "sha256": "d0495ffca3f7868b45b2093ebb59007b203d704657595814090d37a69c5cdced",
+      "width": 1206,
+      "height": 2622
+    },
+    {
+      "locale": "zh-hant",
+      "step": "select",
+      "source": "scripts/assets/fondfont/install-capture-20261007/zh-hant/select.png",
+      "output": "public/v/fondfont/install/zh-hant/select.png",
+      "captureManifest": "scripts/assets/fondfont/install-capture-20261007/zh-hant/manifest.json",
+      "sha256": "afea9da4f3d3dc1b95640128ff421e8e62e55708bc19fa7e12b08528d7b77072",
+      "width": 1206,
+      "height": 2622
+    },
+    {
+      "locale": "zh-hant",
+      "step": "guide",
+      "source": "scripts/assets/fondfont/install-capture-20261007/zh-hant/guide.png",
+      "output": "public/v/fondfont/install/zh-hant/guide.png",
+      "captureManifest": "scripts/assets/fondfont/install-capture-20261007/zh-hant/manifest.json",
+      "sha256": "d9a6d211dea794f100acf6fd97b9b238d0ad1d1b3ef3bac87bcdcc79f161212f",
+      "width": 1206,
+      "height": 2622
+    },
+    {
+      "locale": "zh-hant",
+      "step": "downloaded",
+      "source": "scripts/assets/fondfont/install-capture-20261007/zh-hant/downloaded.png",
+      "output": "public/v/fondfont/install/zh-hant/downloaded.png",
+      "captureManifest": "scripts/assets/fondfont/install-capture-20261007/zh-hant/manifest.json",
+      "sha256": "ad14ccb717f0259d77a8cfbc049198b6da5c45da387800d9be287b165add0218",
+      "width": 1206,
+      "height": 2622
+    },
+    {
+      "locale": "zh-hant",
+      "step": "profile",
+      "source": "scripts/assets/fondfont/install-capture-20261007/zh-hant/profile.png",
+      "output": "public/v/fondfont/install/zh-hant/profile.png",
+      "captureManifest": "scripts/assets/fondfont/install-capture-20261007/zh-hant/manifest.json",
+      "sha256": "58e6f01c35328b1d76c4d983c7bd0498e970a7505a190f8147c4becd4fac5775",
+      "width": 1206,
+      "height": 2622
+    },
+    {
+      "locale": "ja",
+      "step": "select",
+      "source": "scripts/assets/fondfont/install-capture-20261007/ja/select.png",
+      "output": "public/v/fondfont/install/ja/select.png",
+      "captureManifest": "scripts/assets/fondfont/install-capture-20261007/ja/manifest.json",
+      "sha256": "22e1342540ee43de1dea599f8f8d31c8e4af411cd7dd8ae3921da5488aedf91c",
+      "width": 1206,
+      "height": 2622
+    },
+    {
+      "locale": "ja",
+      "step": "guide",
+      "source": "scripts/assets/fondfont/install-capture-20261007/ja/guide.png",
+      "output": "public/v/fondfont/install/ja/guide.png",
+      "captureManifest": "scripts/assets/fondfont/install-capture-20261007/ja/manifest.json",
+      "sha256": "5118435beb0c76b01485afd5734b9dc315f5626211d21e0c90f95dcce706efd9",
+      "width": 1206,
+      "height": 2622
+    },
+    {
+      "locale": "ja",
+      "step": "downloaded",
+      "source": "scripts/assets/fondfont/install-capture-20261007/ja/downloaded.png",
+      "output": "public/v/fondfont/install/ja/downloaded.png",
+      "captureManifest": "scripts/assets/fondfont/install-capture-20261007/ja/manifest.json",
+      "sha256": "b4bdbe55760ad7b08b1208222f1de2c015dc14d7cecf077477158cbe07a5f342",
+      "width": 1206,
+      "height": 2622
+    },
+    {
+      "locale": "ja",
+      "step": "profile",
+      "source": "scripts/assets/fondfont/install-capture-20261007/ja/profile.png",
+      "output": "public/v/fondfont/install/ja/profile.png",
+      "captureManifest": "scripts/assets/fondfont/install-capture-20261007/ja/manifest.json",
+      "sha256": "4c80145d12fccad1062dd4f7f2d8c3e2c464db0dece30a101b1855b85837b000",
+      "width": 1206,
+      "height": 2622
+    },
+    {
+      "locale": "ko",
+      "step": "select",
+      "source": "scripts/assets/fondfont/install-capture-20261007/ko/select.png",
+      "output": "public/v/fondfont/install/ko/select.png",
+      "captureManifest": "scripts/assets/fondfont/install-capture-20261007/ko/manifest.json",
+      "sha256": "f1818343b1a471941219ecd95f248a66d826103ba4594728ce9711814d6dba5b",
+      "width": 1206,
+      "height": 2622
+    },
+    {
+      "locale": "ko",
+      "step": "guide",
+      "source": "scripts/assets/fondfont/install-capture-20261007/ko/guide.png",
+      "output": "public/v/fondfont/install/ko/guide.png",
+      "captureManifest": "scripts/assets/fondfont/install-capture-20261007/ko/manifest.json",
+      "sha256": "b75f46a5b2aec52c6d68c920fdf6e0384010ab474b61c8c0f4ed505e26246966",
+      "width": 1206,
+      "height": 2622
+    },
+    {
+      "locale": "ko",
+      "step": "downloaded",
+      "source": "scripts/assets/fondfont/install-capture-20261007/ko/downloaded.png",
+      "output": "public/v/fondfont/install/ko/downloaded.png",
+      "captureManifest": "scripts/assets/fondfont/install-capture-20261007/ko/manifest.json",
+      "sha256": "7e74514f44e53abf8be63af0d7b9cd0aa7082473a91583281a412f60f86f7d7a",
+      "width": 1206,
+      "height": 2622
+    },
+    {
+      "locale": "ko",
+      "step": "profile",
+      "source": "scripts/assets/fondfont/install-capture-20261007/ko/profile.png",
+      "output": "public/v/fondfont/install/ko/profile.png",
+      "captureManifest": "scripts/assets/fondfont/install-capture-20261007/ko/manifest.json",
+      "sha256": "0c1b4987f1a339a0dbc44a5dda135a75295b32f077266d58fe90a9e30788e176",
+      "width": 1206,
+      "height": 2622
+    },
+    {
+      "locale": "fr",
+      "step": "select",
+      "source": "scripts/assets/fondfont/install-capture-20261007/fr/select.png",
+      "output": "public/v/fondfont/install/fr/select.png",
+      "captureManifest": "scripts/assets/fondfont/install-capture-20261007/fr/manifest.json",
+      "sha256": "714813318b5a927078a7d0f415745de64f97972c7f08b6a0f7bbb3d6ed58d5ae",
+      "width": 1206,
+      "height": 2622
+    },
+    {
+      "locale": "fr",
+      "step": "guide",
+      "source": "scripts/assets/fondfont/install-capture-20261007/fr/guide.png",
+      "output": "public/v/fondfont/install/fr/guide.png",
+      "captureManifest": "scripts/assets/fondfont/install-capture-20261007/fr/manifest.json",
+      "sha256": "a4764bf8f9ffc9d67a08b7ca78123ecdd6f8add86d8bfa94c020ea180681e946",
+      "width": 1206,
+      "height": 2622
+    },
+    {
+      "locale": "fr",
+      "step": "downloaded",
+      "source": "scripts/assets/fondfont/install-capture-20261007/fr/downloaded.png",
+      "output": "public/v/fondfont/install/fr/downloaded.png",
+      "captureManifest": "scripts/assets/fondfont/install-capture-20261007/fr/manifest.json",
+      "sha256": "5fdecdf9de6064e2270b57ee684d7ddab5b19c7840d061301e4aad14f006c519",
+      "width": 1206,
+      "height": 2622
+    },
+    {
+      "locale": "fr",
+      "step": "profile",
+      "source": "scripts/assets/fondfont/install-capture-20261007/fr/profile.png",
+      "output": "public/v/fondfont/install/fr/profile.png",
+      "captureManifest": "scripts/assets/fondfont/install-capture-20261007/fr/manifest.json",
+      "sha256": "26d43bc15f39b970470affd8826a3c3bc79e232a47d57167da3534f64c083af3",
+      "width": 1206,
+      "height": 2622
+    },
+    {
+      "locale": "de",
+      "step": "select",
+      "source": "scripts/assets/fondfont/install-capture-20261007/de/select.png",
+      "output": "public/v/fondfont/install/de/select.png",
+      "captureManifest": "scripts/assets/fondfont/install-capture-20261007/de/manifest.json",
+      "sha256": "a80eee3f962f3e04ca29622336b61c7229b9d8c8156254eb724738ee8f945bd9",
+      "width": 1206,
+      "height": 2622
+    },
+    {
+      "locale": "de",
+      "step": "guide",
+      "source": "scripts/assets/fondfont/install-capture-20261007/de/guide.png",
+      "output": "public/v/fondfont/install/de/guide.png",
+      "captureManifest": "scripts/assets/fondfont/install-capture-20261007/de/manifest.json",
+      "sha256": "6a5d5392c04b72f32b1412bc5d521486efec9dcf5f59cc899207b2ea4c0e8082",
+      "width": 1206,
+      "height": 2622
+    },
+    {
+      "locale": "de",
+      "step": "downloaded",
+      "source": "scripts/assets/fondfont/install-capture-20261007/de/downloaded.png",
+      "output": "public/v/fondfont/install/de/downloaded.png",
+      "captureManifest": "scripts/assets/fondfont/install-capture-20261007/de/manifest.json",
+      "sha256": "8a3974e72138a8c6a5da5827e0592f1520fe273f3e619506b6c4404aff6e48d7",
+      "width": 1206,
+      "height": 2622
+    },
+    {
+      "locale": "de",
+      "step": "profile",
+      "source": "scripts/assets/fondfont/install-capture-20261007/de/profile.png",
+      "output": "public/v/fondfont/install/de/profile.png",
+      "captureManifest": "scripts/assets/fondfont/install-capture-20261007/de/manifest.json",
+      "sha256": "8761a01c90292b3e0a74a119fbfea7280de3252423ba2d3f3da669807969ea92",
+      "width": 1206,
+      "height": 2622
+    }
+  ]
+}

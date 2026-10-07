@@ -1,0 +1,23 @@
+**Yes—make Blender-authored GLB the primary route and stop investing in truck-heading sprites.** Real geometry directly resolves the recurring perspective, rotation, occlusion, and return-path problems. However, moving primitive construction into Blender will reproduce the coarse prototype. The decisive improvement must be art direction and modeling quality.
+
+Use this minimum pipeline, with each gate blocking further production:
+
+1. **Lock the composition and route.** Choose one reference, one camera, and a restrained material palette. Establish a rounded, physically traversable route with loading and unloading stops. Check truck clearance and rear-lane visibility before detailing. Reuse the existing motion logic where useful; discard route distortions introduced to fit the raster.
+
+2. **Finish one representative scene fragment.** Build the orange truck, one loaded pallet, and a foundry loading bay to final quality. Require convincing cab proportions, six wheels, wheel arches, recessed windows, headlights, grille, flatbed thickness, and selective bevels. Review a Blender still at the actual hero display size, then immediately export and reproduce it in Three. **Do not build the remaining scene until this browser fragment meets the reference’s visual standard.** A Blender-only beauty render does not pass.
+
+3. **Complete the assets with a small animation contract.** Preserve named roots, wheel spin pivots, separate front-wheel steering pivots, door hinges, crane joints, and cargo attachment anchors. Keep the editable `.blend` and a reproducible export script. Model anything affecting silhouette, contact, shadow, occlusion, or movement: truck, buildings and roof profiles, gantry, pallet, and raised glyphs. Use textures for brickwork, wood grain, restrained wear, and painted markings; individual bricks and invisible mechanical interiors are unnecessary.
+
+   Preserve imagegen for needed raster material imagery and concept references. Generated textures should avoid baked directional lighting. **Use real font outlines for cargo and real typesetting for all seven locales’ signs**, applied to modeled sign surfaces. Never generate lettering with imagegen.
+
+4. **Make the story a deterministic periodic pose.** Drive everything from one cycle clock, with explicit cargo ownership through foundry → crane → truck → warehouse. Match attachment transforms at handoffs so cargo cannot jump or slide. Derive heading from the route and wheel rotation from traveled distance. Replenish cargo inside genuinely occluded building space; keep the truck’s return and reload continuous. Test the cycle boundary for position, orientation, velocity, wheel appearance, crane pose, doors, and inventory—not merely truck position.
+
+5. **Accept the full browser scene only after two uninterrupted cycles.** Loading, outward travel, unloading, rear return, and reloading must be understandable without captions. Require stable proportions, grounded wheels, correct contact shadows, clean handoffs, readable localized signs, and no intersections or reset pops. Check desktop and mobile hero sizes, all seven locales, reduced motion, and loading fallback. Keep the animation above the headline/copy/CTA.
+
+The critical export risks are:
+
+- **Materials and lighting:** glTF carries supported material parameters, not arbitrary Blender shader graphs. Bake unsupported surface effects into textures; export evaluated modifiers and mesh-converted glyphs. Establish lighting, shadows, exposure, and tone mapping in Three early. [Blender glTF documentation](https://docs.blender.org/manual/en/dev/addons/scene_gltf2.html)
+- **Transforms:** verify scale, axis conversion, normals, hierarchy, and every pivot after export. Avoid negative scales and hierarchy flattening on animated assemblies; Blender constraints should not be runtime dependencies.
+- **Rendering cost and fidelity:** prefer opaque tinted windows initially; avoid relying on transmission, heavy postprocessing, or baked shadows beneath moving actors. Check texture color spaces and browser color management explicitly. [Three color management](https://threejs.org/manual/pages/color-management.html)
+
+The briefing lacks a target mobile device and loading budget. Set those before final acceptance. **The first deliverable should be the finished truck-and-loading-bay fragment running in Three; its quality determines whether this production approach is working.**

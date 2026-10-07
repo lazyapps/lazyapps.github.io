@@ -1,0 +1,391 @@
+{
+  "interaction": [
+    {
+      "active": "install-tab-3",
+      "nextDisabled": true,
+      "selected": "3",
+      "test": "End key"
+    },
+    {
+      "scroll": 2100.5,
+      "selected": "2",
+      "test": "Previous"
+    },
+    {
+      "prevDisabled": true,
+      "selected": "0",
+      "test": "Home key",
+      "visiblePanels": 1
+    },
+    {
+      "selected": "3",
+      "test": "ArrowLeft wraps"
+    }
+  ],
+  "responsive": [
+    {
+      "buttons": [
+        58,
+        58
+      ],
+      "contentInside": true,
+      "locale": "en",
+      "navInside": true,
+      "overflow": 0,
+      "selected": "3",
+      "stepCount": "Step 4 of 4",
+      "width": 320
+    },
+    {
+      "buttons": [
+        44,
+        44
+      ],
+      "contentInside": true,
+      "locale": "en",
+      "navInside": true,
+      "overflow": 0,
+      "selected": "3",
+      "stepCount": "Step 4 of 4",
+      "width": 390
+    },
+    {
+      "buttons": [
+        44,
+        44
+      ],
+      "contentInside": true,
+      "locale": "en",
+      "navInside": true,
+      "overflow": 0,
+      "selected": "3",
+      "stepCount": "Step 4 of 4",
+      "width": 768
+    },
+    {
+      "buttons": [
+        44,
+        44
+      ],
+      "contentInside": true,
+      "locale": "en",
+      "navInside": true,
+      "overflow": 0,
+      "selected": "3",
+      "stepCount": "Step 4 of 4",
+      "width": 1280
+    },
+    {
+      "buttons": [
+        62,
+        62
+      ],
+      "contentInside": true,
+      "locale": "zh-Hans",
+      "navInside": true,
+      "overflow": 0,
+      "selected": "3",
+      "stepCount": "第 4 步，共 4 步",
+      "width": 320
+    },
+    {
+      "buttons": [
+        44,
+        44
+      ],
+      "contentInside": true,
+      "locale": "zh-Hans",
+      "navInside": true,
+      "overflow": 0,
+      "selected": "3",
+      "stepCount": "第 4 步，共 4 步",
+      "width": 390
+    },
+    {
+      "buttons": [
+        44,
+        44
+      ],
+      "contentInside": true,
+      "locale": "zh-Hans",
+      "navInside": true,
+      "overflow": 0,
+      "selected": "3",
+      "stepCount": "第 4 步，共 4 步",
+      "width": 768
+    },
+    {
+      "buttons": [
+        44,
+        44
+      ],
+      "contentInside": true,
+      "locale": "zh-Hans",
+      "navInside": true,
+      "overflow": 0,
+      "selected": "3",
+      "stepCount": "第 4 步，共 4 步",
+      "width": 1280
+    },
+    {
+      "buttons": [
+        62,
+        62
+      ],
+      "contentInside": true,
+      "locale": "zh-Hant",
+      "navInside": true,
+      "overflow": 0,
+      "selected": "3",
+      "stepCount": "第 4 步，共 4 步",
+      "width": 320
+    },
+    {
+      "buttons": [
+        44,
+        44
+      ],
+      "contentInside": true,
+      "locale": "zh-Hant",
+      "navInside": true,
+      "overflow": 0,
+      "selected": "3",
+      "stepCount": "第 4 步，共 4 步",
+      "width": 390
+    },
+    {
+      "buttons": [
+        44,
+        44
+      ],
+      "contentInside": true,
+      "locale": "zh-Hant",
+      "navInside": true,
+      "overflow": 0,
+      "selected": "3",
+      "stepCount": "第 4 步，共 4 步",
+      "width": 768
+    },
+    {
+      "buttons": [
+        44,
+        44
+      ],
+      "contentInside": true,
+      "locale": "zh-Hant",
+      "navInside": true,
+      "overflow": 0,
+      "selected": "3",
+      "stepCount": "第 4 步，共 4 步",
+      "width": 1280
+    },
+    {
+      "buttons": [
+        44,
+        44
+      ],
+      "contentInside": true,
+      "locale": "ja",
+      "navInside": true,
+      "overflow": 0,
+      "selected": "3",
+      "stepCount": "手順 4 / 4",
+      "width": 320
+    },
+    {
+      "buttons": [
+        44,
+        44
+      ],
+      "contentInside": true,
+      "locale": "ja",
+      "navInside": true,
+      "overflow": 0,
+      "selected": "3",
+      "stepCount": "手順 4 / 4",
+      "width": 390
+    },
+    {
+      "buttons": [
+        44,
+        44
+      ],
+      "contentInside": true,
+      "locale": "ja",
+      "navInside": true,
+      "overflow": 0,
+      "selected": "3",
+      "stepCount": "手順 4 / 4",
+      "width": 768
+    },
+    {
+      "buttons": [
+        44,
+        44
+      ],
+      "contentInside": true,
+      "locale": "ja",
+      "navInside": true,
+      "overflow": 0,
+      "selected": "3",
+      "stepCount": "手順 4 / 4",
+      "width": 1280
+    },
+    {
+      "buttons": [
+        44,
+        44
+      ],
+      "contentInside": true,
+      "locale": "ko",
+      "navInside": true,
+      "overflow": 0,
+      "selected": "3",
+      "stepCount": "4 / 4단계",
+      "width": 320
+    },
+    {
+      "buttons": [
+        44,
+        44
+      ],
+      "contentInside": true,
+      "locale": "ko",
+      "navInside": true,
+      "overflow": 0,
+      "selected": "3",
+      "stepCount": "4 / 4단계",
+      "width": 390
+    },
+    {
+      "buttons": [
+        44,
+        44
+      ],
+      "contentInside": true,
+      "locale": "ko",
+      "navInside": true,
+      "overflow": 0,
+      "selected": "3",
+      "stepCount": "4 / 4단계",
+      "width": 768
+    },
+    {
+      "buttons": [
+        44,
+        44
+      ],
+      "contentInside": true,
+      "locale": "ko",
+      "navInside": true,
+      "overflow": 0,
+      "selected": "3",
+      "stepCount": "4 / 4단계",
+      "width": 1280
+    },
+    {
+      "buttons": [
+        44,
+        44
+      ],
+      "contentInside": true,
+      "locale": "fr",
+      "navInside": true,
+      "overflow": 0,
+      "selected": "3",
+      "stepCount": "Étape 4 sur 4",
+      "width": 320
+    },
+    {
+      "buttons": [
+        44,
+        44
+      ],
+      "contentInside": true,
+      "locale": "fr",
+      "navInside": true,
+      "overflow": 0,
+      "selected": "3",
+      "stepCount": "Étape 4 sur 4",
+      "width": 390
+    },
+    {
+      "buttons": [
+        44,
+        44
+      ],
+      "contentInside": true,
+      "locale": "fr",
+      "navInside": true,
+      "overflow": 0,
+      "selected": "3",
+      "stepCount": "Étape 4 sur 4",
+      "width": 768
+    },
+    {
+      "buttons": [
+        44,
+        44
+      ],
+      "contentInside": true,
+      "locale": "fr",
+      "navInside": true,
+      "overflow": 0,
+      "selected": "3",
+      "stepCount": "Étape 4 sur 4",
+      "width": 1280
+    },
+    {
+      "buttons": [
+        44,
+        44
+      ],
+      "contentInside": true,
+      "locale": "de",
+      "navInside": true,
+      "overflow": 0,
+      "selected": "3",
+      "stepCount": "Schritt 4 von 4",
+      "width": 320
+    },
+    {
+      "buttons": [
+        44,
+        44
+      ],
+      "contentInside": true,
+      "locale": "de",
+      "navInside": true,
+      "overflow": 0,
+      "selected": "3",
+      "stepCount": "Schritt 4 von 4",
+      "width": 390
+    },
+    {
+      "buttons": [
+        44,
+        44
+      ],
+      "contentInside": true,
+      "locale": "de",
+      "navInside": true,
+      "overflow": 0,
+      "selected": "3",
+      "stepCount": "Schritt 4 von 4",
+      "width": 768
+    },
+    {
+      "buttons": [
+        44,
+        44
+      ],
+      "contentInside": true,
+      "locale": "de",
+      "navInside": true,
+      "overflow": 0,
+      "selected": "3",
+      "stepCount": "Schritt 4 von 4",
+      "width": 1280
+    }
+  ]
+}

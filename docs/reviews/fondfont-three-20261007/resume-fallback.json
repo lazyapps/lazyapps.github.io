@@ -1,0 +1,79 @@
+[
+  {
+    "canvasOpacity": "0",
+    "locale": "en",
+    "overflow": 0,
+    "poster": [
+      2560,
+      854
+    ],
+    "posterOpacity": "1",
+    "ready": false
+  },
+  {
+    "canvasOpacity": "0",
+    "locale": "zh-hans",
+    "overflow": 0,
+    "poster": [
+      2560,
+      854
+    ],
+    "posterOpacity": "1",
+    "ready": false
+  },
+  {
+    "canvasOpacity": "0",
+    "locale": "zh-hant",
+    "overflow": 0,
+    "poster": [
+      2560,
+      854
+    ],
+    "posterOpacity": "1",
+    "ready": false
+  },
+  {
+    "canvasOpacity": "0",
+    "locale": "ja",
+    "overflow": 0,
+    "poster": [
+      2560,
+      854
+    ],
+    "posterOpacity": "1",
+    "ready": false
+  },
+  {
+    "canvasOpacity": "0",
+    "locale": "ko",
+    "overflow": 0,
+    "poster": [
+      2560,
+      854
+    ],
+    "posterOpacity": "1",
+    "ready": false
+  },
+  {
+    "canvasOpacity": "0",
+    "locale": "fr",
+    "overflow": 0,
+    "poster": [
+      2560,
+      854
+    ],
+    "posterOpacity": "1",
+    "ready": false
+  },
+  {
+    "canvasOpacity": "0",
+    "locale": "de",
+    "overflow": 0,
+    "poster": [
+      2560,
+      854
+    ],
+    "posterOpacity": "1",
+    "ready": false
+  }
+]

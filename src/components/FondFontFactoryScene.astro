@@ -1,0 +1,99 @@
+---
+import { FONDFONT_LOCALES } from '../i18n/fondfont-locales.mjs';
+const { locale } = Astro.props;
+const code = locale in FONDFONT_LOCALES ? locale : 'en';
+const content = {
+  en: { library:'FONT LIBRARY', foundry:'Type Foundry', alt:'A looping transport animation: the FondFont truck picks up a pallet of multilingual letters at an independent type foundry, unloads it into the iOS font library for compatible apps, then returns empty.' },
+  'zh-hans': { library:'字体库', foundry:'铸字工厂', alt:'回环运输动画：爱装字体卡车从独立的铸字工厂装载多语言字模，运送并卸入 iOS 字体库，供兼容 App 使用，再空车返回。' },
+  'zh-hant': { library:'字體庫', foundry:'鑄字工廠', alt:'循環運輸動畫：愛裝字體卡車從獨立的鑄字工廠裝載多語言字模，運送並卸入 iOS 字體庫，供相容 App 使用，再空車返回。' },
+  ja: { library:'フォントライブラリ', foundry:'活字鋳造所', alt:'繰り返す配送アニメーション。フォンドフォントのトラックが独立した活字鋳造所で多言語の活字を積み込み、対応アプリで使える iOS フォントライブラリへ届け、空になって戻ります。' },
+  ko: { library:'폰트 보관함', foundry:'활자 주조소', alt:'반복되는 운송 애니메이션: 폰드폰트 트럭이 독립된 활자 주조소에서 다국어 활자를 싣고 호환 앱에서 사용할 수 있는 iOS 폰트 보관함에 내려놓은 뒤 빈 차로 돌아옵니다.' },
+  fr: { library:'BIBLIOTHÈQUE DE POLICES', foundry:'Fonderie de caractères', alt:'Une animation de livraison en boucle : le camion FondFont charge une palette de caractères multilingues dans une fonderie indépendante, la livre à la bibliothèque de polices iOS pour les apps compatibles, puis revient à vide.' },
+  de: { library:'SCHRIFTBIBLIOTHEK', foundry:'Schriftgießerei', alt:'Eine Transportschleife: Der FondFont-Lkw holt eine Palette mehrsprachiger Buchstaben bei einer unabhängigen Schriftgießerei ab, entlädt sie in der iOS-Schriftbibliothek für kompatible Apps und fährt leer zurück.' },
+};
+const copy = { ...content[code as keyof typeof content], name: FONDFONT_LOCALES[code].name };
+---
+<figure class="font-factory" data-fondfont-scene data-locale={code} data-copy={JSON.stringify(copy)} aria-label={copy.alt}>
+  <div class="font-factory__stage">
+    <img class="font-factory__poster" src={`/v/fondfont/blender-v2/poster-${code}.webp`} alt="" width="2560" height="854" fetchpriority="high" decoding="async" />
+    <canvas aria-hidden="true"></canvas>
+    <div class="font-factory__smoke-blur" aria-hidden="true"></div>
+  </div>
+</figure>
+<script>
+  const host=document.querySelector<HTMLElement>('[data-fondfont-scene]');
+  if(host){
+    const controller=new AbortController();
+    const reduced=matchMedia('(prefers-reduced-motion: reduce)');
+    const saveData=(navigator as Navigator & {connection?:{saveData?:boolean}}).connection?.saveData===true;
+    let factory:Awaited<ReturnType<typeof import('../lib/fondfont/scene').createFontFactory>>=null;
+    let visible=false,loading=false,failed=false,frame=0,last=0,elapsed=0;
+    // Development-only deterministic shots use the same renderer and motion as production.
+    const shot=import.meta.env.DEV?new URLSearchParams(location.search).get('sceneTime'):null;
+    const staticTime=shot!==null&&Number.isFinite(Number(shot))?Number(shot):null;
+    const start=import.meta.env.DEV?new URLSearchParams(location.search).get('sceneStart'):null;
+    if(start!==null&&Number.isFinite(Number(start)))elapsed=Math.max(0,Number(start));
+    if(staticTime!==null||start!==null)host.classList.add('is-shot');
+    if(import.meta.env.DEV&&new URLSearchParams(location.search).has('scenePoster'))host.classList.add('is-export');
+    const atmosphere=document.querySelector<HTMLElement>('.font-atmosphere');
+    const active=()=>visible&&!document.hidden&&!saveData;
+    const moving=()=>active()&&!reduced.matches;
+    function tick(now:number){
+      frame=0;
+      if(!factory||!moving())return;
+      elapsed+=Math.max(0,Math.min((now-last)/1000,.05));last=now;
+      try{
+        factory.render(elapsed);frame=requestAnimationFrame(tick);
+      }catch{failed=true;factory.dispose();factory=null;return;}
+    }
+    async function update(){
+      atmosphere?.classList.toggle('is-moving',moving());
+      if(!active()){
+        cancelAnimationFrame(frame);frame=0;
+        if(factory&&saveData){factory.dispose();factory=null;}
+        return;
+      }
+      if(!factory&&!loading&&!failed){
+        loading=true;
+        try{
+          const {createFontFactory}=await import('../lib/fondfont/scene');
+          if(!active()||controller.signal.aborted)return;
+          factory=await createFontFactory(host!,JSON.parse(host!.dataset.copy!),controller.signal);
+          if(!active()){factory?.dispose();factory=null;return;}
+          if(factory&&staticTime!==null){factory.render(staticTime);return;}
+        }catch(error){failed=true;console.warn('FondFont scene unavailable; keeping the static artwork.',error);}
+        finally{loading=false;}
+      }
+      if(factory&&reduced.matches){cancelAnimationFrame(frame);frame=0;factory.render(staticTime??12.8);return;}
+      if(factory&&!frame&&staticTime===null){last=performance.now();frame=requestAnimationFrame(tick);}
+    }
+    const observer=new IntersectionObserver(([entry])=>{visible=entry.isIntersecting;void update();},{threshold:.05});
+    observer.observe(host);
+    reduced.addEventListener('change',()=>void update(),{signal:controller.signal});
+    document.addEventListener('visibilitychange',()=>void update(),{signal:controller.signal});
+    addEventListener('pagehide',(event)=>{
+      cancelAnimationFrame(frame);frame=0;
+      if(!event.persisted){controller.abort();observer.disconnect();factory?.dispose();}
+    },{signal:controller.signal});
+    addEventListener('pageshow',()=>void update(),{signal:controller.signal});
+  }
+</script>
+<style>
+  .font-factory{position:relative;min-width:0;width:100%;margin:0;isolation:isolate;container-type:inline-size}
+  .font-factory__stage{--road-scale:1;--road-width:calc(100cqw * var(--road-scale));position:relative;width:100vw;margin-left:calc(50% - 50vw);height:calc(clamp(310px,33vw,420px) * var(--road-scale));overflow-x:clip}
+  /* Outer road / straight span = 28.52 / 14.8. Use spare margins for the bends. */
+  @supports(height:calc(1px * (1px / 1px))){
+    .font-factory__stage{--road-scale:clamp(1,calc((100vw - 2 * var(--pad)) / 100cqw),1.927027027)}
+  }
+  canvas,.font-factory__poster{position:absolute;display:block}
+  canvas{left:0;top:calc(-1 * var(--sky-inset,0px));width:100%;height:calc(100% + var(--sky-inset,0px));pointer-events:none;opacity:0;transition:opacity .35s}
+  /* Full-canvas exports place the road across 1052 of 1280 CSS pixels. */
+  .font-factory__poster{left:50%;top:50%;width:calc(var(--road-width)/.821875);height:auto;max-width:none;transform:translate(-50%,-50%);transition:opacity .35s}
+  .is-ready canvas{opacity:1}
+  .is-export .font-factory__stage{--road-scale:1;height:auto;aspect-ratio:3/1}
+  .is-shot canvas,.is-shot .font-factory__poster{transition:none}
+  .is-ready .font-factory__poster{opacity:0}
+  .font-factory__smoke-blur{position:absolute;left:0;top:0;width:64px;height:86px;pointer-events:none;opacity:0;backdrop-filter:blur(2.4px);-webkit-backdrop-filter:blur(2.4px);mask-image:radial-gradient(ellipse,#000 0%,#0009 36%,transparent 72%);will-change:transform,opacity}
+  @media(max-width:767px){.font-factory__stage{--road-scale:1;height:clamp(180px,46.2vw,330px)}.is-export .font-factory__stage{height:auto}.font-factory{margin-inline:0}}
+  @media(prefers-reduced-motion:reduce){canvas,.font-factory__poster{transition:none}}
+</style>

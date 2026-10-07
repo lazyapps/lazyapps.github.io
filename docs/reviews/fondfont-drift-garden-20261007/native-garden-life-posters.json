@@ -1,0 +1,37 @@
+[
+  {
+    "locale": "en",
+    "width": 2560,
+    "height": 854
+  },
+  {
+    "locale": "zh-hans",
+    "width": 2560,
+    "height": 854
+  },
+  {
+    "locale": "zh-hant",
+    "width": 2560,
+    "height": 854
+  },
+  {
+    "locale": "ja",
+    "width": 2560,
+    "height": 854
+  },
+  {
+    "locale": "ko",
+    "width": 2560,
+    "height": 854
+  },
+  {
+    "locale": "fr",
+    "width": 2560,
+    "height": 854
+  },
+  {
+    "locale": "de",
+    "width": 2560,
+    "height": 854
+  }
+]

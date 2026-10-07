@@ -1,0 +1,62 @@
+[
+  {
+    "heap": 175495697,
+    "models": [
+      {
+        "decoded": 8068768,
+        "encoded": 8068768,
+        "end": 2299.600000023842,
+        "start": 2149.2000000476837,
+        "url": "http://127.0.0.1:4333/v/fondfont/blender-v2/factory-truck-v14.glb"
+      },
+      {
+        "decoded": 3791224,
+        "encoded": 3791224,
+        "end": 2262.100000023842,
+        "start": 2149.600000023842,
+        "url": "http://127.0.0.1:4333/v/fondfont/pets/cat-v1.glb"
+      }
+    ],
+    "readyMs": 7854.100000023842
+  },
+  {
+    "heap": 177694897,
+    "models": [
+      {
+        "decoded": 8068768,
+        "encoded": 8068768,
+        "end": 2174.5,
+        "start": 2043.399999976158,
+        "url": "http://127.0.0.1:4333/v/fondfont/blender-v2/factory-truck-v14.glb"
+      },
+      {
+        "decoded": 3791224,
+        "encoded": 3791224,
+        "end": 2147.2000000476837,
+        "start": 2043.899999976158,
+        "url": "http://127.0.0.1:4333/v/fondfont/pets/cat-v1.glb"
+      }
+    ],
+    "readyMs": 7901.5
+  },
+  {
+    "heap": 95303699,
+    "models": [
+      {
+        "decoded": 8068768,
+        "encoded": 8068768,
+        "end": 3473.899999976158,
+        "start": 3314.099999904633,
+        "url": "http://127.0.0.1:4333/v/fondfont/blender-v2/factory-truck-v14.glb"
+      },
+      {
+        "decoded": 3791224,
+        "encoded": 3791224,
+        "end": 3415.5,
+        "start": 3314.599999904633,
+        "url": "http://127.0.0.1:4333/v/fondfont/pets/cat-v1.glb"
+      }
+    ],
+    "readyMs": 9728.299999952316
+  }
+]

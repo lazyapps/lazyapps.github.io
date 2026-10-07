@@ -1,0 +1,34 @@
+{
+  "models": [
+    {
+      "name": "blender-v2/factory-truck-v14.glb",
+      "originalBytes": 8068768,
+      "downloadBytes": 5046909,
+      "originalSHA256": "1af5e1ef1d9c9e21c74b36877a0722f1bdee839719b439d5047bce82e8361fbb",
+      "gzipSHA256": "ce8216f3225c322a618ea57de57ac61fa1db5e9f3ef9d0e0ee9684c02dfd88e5"
+    },
+    {
+      "name": "pets/cat-v1.glb",
+      "originalBytes": 3791224,
+      "downloadBytes": 3032692,
+      "originalSHA256": "ef1c3974d9cf9e1cc1167ca6da00fecd6abcae37f59e4e2e2847fedc70439f8d",
+      "gzipSHA256": "5cc8943229c3e3120d6321118503774fa6d4cc0d4fc3003837ef8a20123ae329"
+    }
+  ],
+  "effects": [
+    {
+      "name": "wind-leaf-v1",
+      "originalBytes": 1703761,
+      "downloadBytes": 1014522,
+      "originalSHA256": "ea876f24f60eef1516a01b0e689554823211ad712f00b25516739040101f90a8",
+      "webpSHA256": "d400b54410c80da822262adb503e6eb84ad3af64788addc44ffee5c6ce9eb8ab"
+    },
+    {
+      "name": "drift-dust-v1",
+      "originalBytes": 660406,
+      "downloadBytes": 418826,
+      "originalSHA256": "9290d6354565bc1b22119dc4cabacb1b8d37249c48ca1c758746d95f4b1a78c6",
+      "webpSHA256": "8b5d8048f09fe57d198336b6f0c216c93f4e7aa06968af60fc54863d6cdaefb7"
+    }
+  ]
+}

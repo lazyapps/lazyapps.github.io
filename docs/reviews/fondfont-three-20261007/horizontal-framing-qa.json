@@ -1,0 +1,98 @@
+[
+  {
+    "document": 320,
+    "frame": {
+      "centerX": 160,
+      "contentWidth": 280,
+      "height": 278,
+      "offset": [
+        0,
+        0.5324595205067952
+      ],
+      "roadWidth": 700,
+      "width": 320
+    },
+    "ready": true,
+    "viewport": 320
+  },
+  {
+    "document": 390,
+    "frame": {
+      "centerX": 195,
+      "contentWidth": 350,
+      "height": 278,
+      "offset": [
+        0,
+        0.5324595205067952
+      ],
+      "roadWidth": 700.0000000000001,
+      "width": 390
+    },
+    "ready": true,
+    "viewport": 390
+  },
+  {
+    "document": 767,
+    "frame": {
+      "centerX": 383.5,
+      "contentWidth": 690,
+      "height": 330,
+      "offset": [
+        0,
+        0.5324595205067952
+      ],
+      "roadWidth": 700,
+      "width": 767
+    },
+    "ready": true,
+    "viewport": 767
+  },
+  {
+    "document": 1280,
+    "frame": {
+      "centerX": 640,
+      "contentWidth": 1052,
+      "height": 420,
+      "offset": [
+        0,
+        0.5324595205067952
+      ],
+      "roadWidth": 1052,
+      "width": 1280
+    },
+    "ready": true,
+    "viewport": 1280
+  },
+  {
+    "document": 1440,
+    "frame": {
+      "centerX": 720,
+      "contentWidth": 1036,
+      "height": 420,
+      "offset": [
+        0,
+        0.5324595205067952
+      ],
+      "roadWidth": 1035.9999999999998,
+      "width": 1440
+    },
+    "ready": true,
+    "viewport": 1440
+  },
+  {
+    "document": 1920,
+    "frame": {
+      "centerX": 960,
+      "contentWidth": 1004,
+      "height": 420,
+      "offset": [
+        0,
+        0.5324595205067952
+      ],
+      "roadWidth": 1004,
+      "width": 1920
+    },
+    "ready": true,
+    "viewport": 1920
+  }
+]

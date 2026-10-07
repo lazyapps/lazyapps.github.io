@@ -1,0 +1,26 @@
+{
+  "model": "MiniMax-H3",
+  "scene": "hero",
+  "sharedAcrossLocales": true,
+  "silent": true,
+  "seconds": 8.5,
+  "sources": [
+    {
+      "path": "scripts/assets/fondfont/animation/v2/hero-h3.mp4",
+      "sha256": "94a40ab759bdda7e505c33e3e0c6d316ab5cae0038e95e155dc505bb5aa49b59"
+    },
+    {
+      "path": "scripts/assets/fondfont/animation/v2/guide-screen.png",
+      "sha256": "a6cf0410a5d0bf2a1f68a7288741c12013b48b65ff3aaa3003fb611ac4db176c"
+    },
+    {
+      "path": "FondFont/AppStore/Preview/Remotion/public/v8-footage/c3-ios-install.mp4",
+      "sha256": "8a301c2a8ea01ffabd2a6537f46c738a36f99f58a2928c1534a37212dd08e665"
+    },
+    {
+      "path": "FondFont/AppStore/Preview/Remotion/public/v8-footage/c4-installed.mp4",
+      "sha256": "0d7363728f9aa399cbc2bb8c7544296bfd40d6f1956f09987d6bd9b2d9e242fe"
+    }
+  ],
+  "scope": "New H3 font-file handoff and paper specimens; authentic English FondFont guide and iOS Settings installation/confirmation recordings composited in the fixed screen. Specimens are illustrations, not external-app recordings."
+}

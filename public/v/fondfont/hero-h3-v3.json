@@ -1,0 +1,38 @@
+{
+  "model": "MiniMax-H3",
+  "referenceMode": "Built-in imagegen photographic reference",
+  "silent": true,
+  "sharedAcrossLocales": true,
+  "seconds": 9.0,
+  "sources": [
+    {
+      "path": "scripts/assets/fondfont/animation/v3/paper-material-h3.mp4",
+      "sha256": "5dc8300a7ee1eb156686d703e6c89364e9bdd49a22a60365a063011a8f585da5"
+    },
+    {
+      "path": "scripts/assets/fondfont/animation/v3/paper-reference-source.png",
+      "sha256": "057658a2ec06e052739db508d4194ac842da7572a7ea9d5b0f038d43a462e12b"
+    },
+    {
+      "path": "scripts/assets/fondfont/animation/v3/paper-anchor.png",
+      "sha256": "4dc0cd1b4d43e0d657d52818d754b6b7cb8bb4248f5b69d06fed60d0580193f3"
+    },
+    {
+      "path": "scripts/assets/fondfont/animation/v3/iphone-bezel.png",
+      "sha256": "cb7b20a551c4fd63e794e1dd08ab0096816a12e72d38503f36a242550f07264c"
+    },
+    {
+      "path": "FondFont/AppStore/Preview/Remotion/public/v8-footage/c2-sheet.mp4",
+      "sha256": "3e540a29279c4f9cd4616d9d7f882f608cd2df0293c067ec2c3a0550976ed198"
+    },
+    {
+      "path": "FondFont/AppStore/Preview/Remotion/public/v8-footage/c3-ios-install.mp4",
+      "sha256": "8a301c2a8ea01ffabd2a6537f46c738a36f99f58a2928c1534a37212dd08e665"
+    },
+    {
+      "path": "FondFont/AppStore/Preview/Remotion/public/v8-footage/c4-installed.mp4",
+      "sha256": "0d7363728f9aa399cbc2bb8c7544296bfd40d6f1956f09987d6bd9b2d9e242fe"
+    }
+  ],
+  "scope": "H3 supplies restrained photographic font-specimen material motion. The Apple bezel and native FondFont/iOS screen recordings are composited without generated interface text. Profile Installed is held as the dominant result."
+}

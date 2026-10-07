@@ -1,0 +1,29 @@
+---
+const { locale = 'en' } = Astro.props;
+const translations = {
+  en: ['3D asset credits', 'Adapted for web rendering and animation, with simplified fur and a charcoal coat for the second cat.', 'Full asset credits'],
+  'zh-hans': ['3D 素材署名', '已适配网页渲染和动画、简化毛发，并为第二只猫调整了炭灰色毛色。', '完整素材署名'],
+  'zh-hant': ['3D 素材署名', '已適配網頁繪製與動畫、簡化毛髮，並為第二隻貓調整了炭灰色毛色。', '完整素材署名'],
+  ja: ['3D 素材のクレジット', 'Web 表示とアニメーション用に調整し、毛を簡略化しています。2 匹目の猫の毛色をチャコールグレーに変更しています。', '素材のクレジット詳細'],
+  ko: ['3D 에셋 크레딧', '웹 렌더링과 애니메이션에 맞게 수정하고 털을 간소화했습니다. 두 번째 고양이는 차콜 그레이 털 색상으로 변경했습니다.', '전체 에셋 크레딧'],
+  fr: ['Crédits des modèles 3D', 'Adapté au rendu et à l’animation web, avec une fourrure simplifiée et un pelage gris anthracite pour le second chat.', 'Crédits complets'],
+  de: ['Quellen der 3D-Modelle', 'Für Webdarstellung und Animation angepasst, mit vereinfachtem Fell und anthrazitgrauer Fellfarbe für die zweite Katze.', 'Vollständige Quellenangaben'],
+};
+const [label, changes, full] = translations[locale] ?? translations.en;
+---
+<details class="asset-credits">
+  <summary>{label}</summary>
+  <div>
+    <p><a href="https://blendswap.com/blend/18519">Rigged and animated Cat</a> — JonasDichelle · <a href="https://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a></p>
+    <p>{changes} <a href="/v/fondfont/pets/CREDITS.txt">{full}</a></p>
+  </div>
+</details>
+<style>
+  .asset-credits{border:0;padding:0 0 24px;margin-inline:auto;max-width:70ch;text-align:center;color:var(--muted,#686864);font-size:12px;line-height:1.7}
+  summary{cursor:pointer;width:fit-content;margin-inline:auto;text-underline-offset:3px}
+  summary:hover{text-decoration:underline}
+  div{padding-top:8px;max-width:70ch}
+  p{margin:2px 0}
+  a{text-decoration:underline;text-underline-offset:3px}
+  summary:focus-visible,a:focus-visible{outline:2px solid var(--accent);outline-offset:4px}
+</style>

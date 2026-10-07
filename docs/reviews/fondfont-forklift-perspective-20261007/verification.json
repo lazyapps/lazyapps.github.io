@@ -1,0 +1,35 @@
+{
+  "date": "2026-10-07",
+  "runtimeModel": "factory-forklift-v3.glb",
+  "modelBytes": 7261080,
+  "camera": "unchanged frontal orthographic",
+  "maxLowTurnDegrees": 8.531,
+  "raisedTransferYawDegrees": 0,
+  "forkSpacingM": 0.68,
+  "emptyForkLengthM": 1.05,
+  "forkExtensionM": 0.35,
+  "wheelTrackM": 1.2,
+  "chassisWidthM": 1.04,
+  "cabSymbol": {
+    "source": "original AppIcon vector paths",
+    "background": "transparent",
+    "paint": "#fff6e9"
+  },
+  "tests": {
+    "nativeHierarchyReachAndWheelContact": true,
+    "physicalLoadingUnloadingClearance": true,
+    "targetedTypeScript": true,
+    "productionBuildPages": 52
+  },
+  "film": {
+    "file": "final-forklift-and-symbol.mp4",
+    "frames": 466,
+    "durationSeconds": 27.84
+  },
+  "localizedPosters": {
+    "count": 7,
+    "width": 2560,
+    "height": 854
+  },
+  "review": "completion-advisor.md"
+}

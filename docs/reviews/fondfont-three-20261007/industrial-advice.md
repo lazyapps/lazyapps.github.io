@@ -1,0 +1,9 @@
+**Proceed with this direction, but lock the working loading bay before generating either building.** The screenshot supports your diagnosis: the factory reads as three upright fins over a shutter; the warehouse’s gold entrance reads as retail; the forward columns and repeated horizontal stripes dominate both buildings. The proposed architecture and shorter cantilevers directly address those problems while preserving the horizontal composition and brand constraints.
+
+The major failure to prevent is **a convincing building illustration with cargo sliding through a painted doorway**. `fondfont-model-details.py` projects the existing warehouse image onto depth surfaces using hard-coded pixel boundaries. Matching yaw and elevation alone will not make a newly drawn doorway, floor and racks align with the moving pallet.
+
+Before generation, fix the portal dimensions, recessed floor, apron and shuttle travel against the existing cargo path. Specify those boundaries in the imagegen reference, then register the untouched generated image to corresponding geometry. The shuttle must visibly support and accompany the pallet at `DOCK=.345` through the threshold; shutters, shuttle and lifting equipment must remain independently movable. Check the shortened rails against the bridge’s full travel before declaring the rig unchanged.
+
+At the screenshot’s actual display size, prioritize a substantial factory window band beneath genuinely volumetric clerestories, and warehouse racks visibly recessed behind an industrial loading opening. Keep cantilever braces clear of those cues and the localized fascias. The iPhone should visibly form the warehouse roof slab.
+
+Judge the integrated result at three moments: suspended over the truck, resting on the shuttle, and halfway through the doorway. **Those frames must make support, clearance and occlusion immediately understandable.** That is what will resolve the unnatural transfer; architectural polish alone cannot.

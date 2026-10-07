@@ -1,0 +1,149 @@
+[
+  {
+    "locale": "en",
+    "source": "/Users/realazy/Projects/iOS/iOSFontInstaller/AppStore/Screenshots/public/screenshots/apple/iphone/en-US/04.png",
+    "output": "public/v/fondfont/install/en/select.png",
+    "sha256": "c43426c5ee84798a9596622dd81213a49825bd26cc70765b0f65d80d717f41a3",
+    "processing": "Unchanged original screenshot; displayed intact with CSS."
+  },
+  {
+    "locale": "en",
+    "source": "/Users/realazy/Projects/iOS/iOSFontInstaller/AppStore/Screenshots/public/screenshots/apple/iphone/en-US/06.png",
+    "output": "public/v/fondfont/install/en/downloaded.png",
+    "sha256": "e50784c3a15b31d06d3e1782bbfc09c54e198ad7fa31fa09596cd1c492351e88",
+    "processing": "Unchanged original screenshot; displayed intact with CSS."
+  },
+  {
+    "locale": "en",
+    "source": "/Users/realazy/Projects/iOS/iOSFontInstaller/AppStore/Screenshots/public/screenshots/apple/iphone/en-US/06-secondary.png",
+    "output": "public/v/fondfont/install/en/profile.png",
+    "sha256": "b433a6d9d194065311f9a770551575013b3a8aad8c9e38f526962cd83d90250d",
+    "processing": "Unchanged original screenshot; displayed intact with CSS."
+  },
+  {
+    "locale": "zh-hans",
+    "source": "/Users/realazy/Projects/iOS/iOSFontInstaller/AppStore/Screenshots/public/screenshots/apple/iphone/zh-Hans/04.png",
+    "output": "public/v/fondfont/install/zh-hans/select.png",
+    "sha256": "83213c7c02c4f5d70cbdd2a2076913a09a446e57d221ffd20b182a5f5e86fc2f",
+    "processing": "Unchanged original screenshot; displayed intact with CSS."
+  },
+  {
+    "locale": "zh-hans",
+    "source": "/Users/realazy/Projects/iOS/iOSFontInstaller/AppStore/Screenshots/public/screenshots/apple/iphone/zh-Hans/06.png",
+    "output": "public/v/fondfont/install/zh-hans/downloaded.png",
+    "sha256": "5b0ff9b7a268719a0a6cf843bdc42fd7d4fc7e1bfefeb5fe1fbdc320ad6223c4",
+    "processing": "Unchanged original screenshot; displayed intact with CSS."
+  },
+  {
+    "locale": "zh-hans",
+    "source": "/Users/realazy/Projects/iOS/iOSFontInstaller/AppStore/Screenshots/public/screenshots/apple/iphone/zh-Hans/06-secondary.png",
+    "output": "public/v/fondfont/install/zh-hans/profile.png",
+    "sha256": "23d68533e8eefef40f7d55053c673efce81ba9fcd09c85fb1d8673ba3aa588ef",
+    "processing": "Unchanged original screenshot; displayed intact with CSS."
+  },
+  {
+    "locale": "zh-hant",
+    "source": "/Users/realazy/Projects/iOS/iOSFontInstaller/AppStore/Screenshots/public/screenshots/apple/iphone/zh-Hant/04.png",
+    "output": "public/v/fondfont/install/zh-hant/select.png",
+    "sha256": "b39c99ddfa1299ab3bc1542e41a70fc1be6079cf94f1f48260f3fe113303ea52",
+    "processing": "Unchanged original screenshot; displayed intact with CSS."
+  },
+  {
+    "locale": "zh-hant",
+    "source": "/Users/realazy/Projects/iOS/iOSFontInstaller/AppStore/Screenshots/public/screenshots/apple/iphone/zh-Hant/06.png",
+    "output": "public/v/fondfont/install/zh-hant/downloaded.png",
+    "sha256": "c34f084d189a10af1b93ce85b9bb865a31ad80ca50e18c13e1712efa5ab9be62",
+    "processing": "Unchanged original screenshot; displayed intact with CSS."
+  },
+  {
+    "locale": "zh-hant",
+    "source": "/Users/realazy/Projects/iOS/iOSFontInstaller/AppStore/Screenshots/public/screenshots/apple/iphone/zh-Hant/06-secondary.png",
+    "output": "public/v/fondfont/install/zh-hant/profile.png",
+    "sha256": "6ffe6c23da018de34e8d78598d52308750f4cb597254e76722ab6cfce53e3e9a",
+    "processing": "Unchanged original screenshot; displayed intact with CSS."
+  },
+  {
+    "locale": "ja",
+    "source": "/Users/realazy/Projects/iOS/iOSFontInstaller/AppStore/Screenshots/public/screenshots/apple/iphone/ja/04.png",
+    "output": "public/v/fondfont/install/ja/select.png",
+    "sha256": "8760274ad06a86346c6a0ef7f2719192a1a73167e616659da22e3425e3d8364e",
+    "processing": "Unchanged original screenshot; displayed intact with CSS."
+  },
+  {
+    "locale": "ja",
+    "source": "/Users/realazy/Projects/iOS/iOSFontInstaller/AppStore/Screenshots/public/screenshots/apple/iphone/ja/06.png",
+    "output": "public/v/fondfont/install/ja/downloaded.png",
+    "sha256": "dc3b824b80489203032b0cc60bb10c73a28c2ad584713bce83fd77522764a4f0",
+    "processing": "Unchanged original screenshot; displayed intact with CSS."
+  },
+  {
+    "locale": "ja",
+    "source": "/Users/realazy/Projects/iOS/iOSFontInstaller/AppStore/Screenshots/public/screenshots/apple/iphone/ja/06-secondary.png",
+    "output": "public/v/fondfont/install/ja/profile.png",
+    "sha256": "fd5659b29dc100664fdcdbf5f4f33fa27e727c443fdb52cd390cb116956af3ac",
+    "processing": "Unchanged original screenshot; displayed intact with CSS."
+  },
+  {
+    "locale": "ko",
+    "source": "/Users/realazy/Projects/iOS/iOSFontInstaller/AppStore/Screenshots/public/screenshots/apple/iphone/ko/04.png",
+    "output": "public/v/fondfont/install/ko/select.png",
+    "sha256": "7baef64ca4766f36dd2a855b181619a781a477024dbd6b7a3cf411baccc58671",
+    "processing": "Unchanged original screenshot; displayed intact with CSS."
+  },
+  {
+    "locale": "ko",
+    "source": "/Users/realazy/Projects/iOS/iOSFontInstaller/AppStore/Screenshots/public/screenshots/apple/iphone/ko/06.png",
+    "output": "public/v/fondfont/install/ko/downloaded.png",
+    "sha256": "b7f4cfed5272588d9677f98c841b9545590427a83e3fef11310b71021358125f",
+    "processing": "Unchanged original screenshot; displayed intact with CSS."
+  },
+  {
+    "locale": "ko",
+    "source": "/Users/realazy/Projects/iOS/iOSFontInstaller/AppStore/Screenshots/public/screenshots/apple/iphone/ko/06-secondary.png",
+    "output": "public/v/fondfont/install/ko/profile.png",
+    "sha256": "46b123e3004afe92dca1649eeedafbfb1f76ef6316002dd8cba8145cfa1fdc9c",
+    "processing": "Unchanged original screenshot; displayed intact with CSS."
+  },
+  {
+    "locale": "fr",
+    "source": "/Users/realazy/Projects/iOS/iOSFontInstaller/AppStore/Screenshots/public/screenshots/apple/iphone/fr-FR/04.png",
+    "output": "public/v/fondfont/install/fr/select.png",
+    "sha256": "6b8569d95635dda30d95c751130cb3e16a53265c48741fedb2cf45776934a25d",
+    "processing": "Unchanged original screenshot; displayed intact with CSS."
+  },
+  {
+    "locale": "fr",
+    "source": "/Users/realazy/Projects/iOS/iOSFontInstaller/AppStore/Screenshots/public/screenshots/apple/iphone/fr-FR/06.png",
+    "output": "public/v/fondfont/install/fr/downloaded.png",
+    "sha256": "eb0cbf59f7c70fd6d2aeb295a29f1ea1fd14627162a0702aadc0e56dda75f194",
+    "processing": "Unchanged original screenshot; displayed intact with CSS."
+  },
+  {
+    "locale": "fr",
+    "source": "/Users/realazy/Projects/iOS/iOSFontInstaller/AppStore/Screenshots/public/screenshots/apple/iphone/fr-FR/06-secondary.png",
+    "output": "public/v/fondfont/install/fr/profile.png",
+    "sha256": "959c9bb4fc6291b54043bb58529de961794a5241e24b987eee3b290419c0c463",
+    "processing": "Unchanged original screenshot; displayed intact with CSS."
+  },
+  {
+    "locale": "de",
+    "source": "/Users/realazy/Projects/iOS/iOSFontInstaller/AppStore/Screenshots/public/screenshots/apple/iphone/de-DE/04.png",
+    "output": "public/v/fondfont/install/de/select.png",
+    "sha256": "721724c22caac137cf770ef948f31944774a99d06d88fabc6ec79ee2e7167596",
+    "processing": "Unchanged original screenshot; displayed intact with CSS."
+  },
+  {
+    "locale": "de",
+    "source": "/Users/realazy/Projects/iOS/iOSFontInstaller/AppStore/Screenshots/public/screenshots/apple/iphone/de-DE/06.png",
+    "output": "public/v/fondfont/install/de/downloaded.png",
+    "sha256": "4323a73e358cc9b64de81ffbb1a0728d371066be9860e988b7f7f90ec3387ac0",
+    "processing": "Unchanged original screenshot; displayed intact with CSS."
+  },
+  {
+    "locale": "de",
+    "source": "/Users/realazy/Projects/iOS/iOSFontInstaller/AppStore/Screenshots/public/screenshots/apple/iphone/de-DE/06-secondary.png",
+    "output": "public/v/fondfont/install/de/profile.png",
+    "sha256": "d4841c9fba9136ccaba4934303da59d846823dfe081ed251fd08b9598c5fdd9f",
+    "processing": "Unchanged original screenshot; displayed intact with CSS."
+  }
+]

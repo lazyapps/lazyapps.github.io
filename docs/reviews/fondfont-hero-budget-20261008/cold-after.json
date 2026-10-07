@@ -1,0 +1,200 @@
+[
+  {
+    "heap": 117122717,
+    "readyMs": 9694.700000047684,
+    "resources": [
+      {
+        "decoded": 206838,
+        "encoded": 206838,
+        "transfer": 207138,
+        "url": "http://127.0.0.1:4333/v/fondfont/blender-v2/poster-de.webp"
+      },
+      {
+        "decoded": 2649,
+        "encoded": 1334,
+        "transfer": 1634,
+        "url": "http://127.0.0.1:4333/_astro/FondFontFactoryScene.astro_astro_type_script_index_0_lang.BlmUqZbY.js"
+      },
+      {
+        "decoded": 738110,
+        "encoded": 192705,
+        "transfer": 193005,
+        "url": "http://127.0.0.1:4333/_astro/scene.C2ruUgHs.js"
+      },
+      {
+        "decoded": 8068768,
+        "encoded": 5046909,
+        "transfer": 5047209,
+        "url": "http://127.0.0.1:4333/v/fondfont/blender-v2/factory-truck-v14.glb.gz"
+      },
+      {
+        "decoded": 11416,
+        "encoded": 11416,
+        "transfer": 11716,
+        "url": "http://127.0.0.1:4333/v/fondfont/blender-v2/sign-de.woff"
+      },
+      {
+        "decoded": 2916,
+        "encoded": 2916,
+        "transfer": 3216,
+        "url": "http://127.0.0.1:4333/v/fondfont/blender-v2/roof-de.woff"
+      },
+      {
+        "decoded": 5299,
+        "encoded": 2302,
+        "transfer": 2602,
+        "url": "http://127.0.0.1:4333/v/fondfont/blender-v2/cab-symbol-paint-v3.svg"
+      },
+      {
+        "decoded": 3791224,
+        "encoded": 3032692,
+        "transfer": 3032992,
+        "url": "http://127.0.0.1:4333/v/fondfont/pets/cat-v1.glb.gz"
+      },
+      {
+        "decoded": 418826,
+        "encoded": 418826,
+        "transfer": 419126,
+        "url": "http://127.0.0.1:4333/v/fondfont/blender-v2/drift-dust-v1.webp"
+      },
+      {
+        "decoded": 1014522,
+        "encoded": 1014522,
+        "transfer": 1014822,
+        "url": "http://127.0.0.1:4333/v/fondfont/blender-v2/wind-leaf-v1.webp"
+      }
+    ]
+  },
+  {
+    "heap": 118604125,
+    "readyMs": 8013.599999904633,
+    "resources": [
+      {
+        "decoded": 206838,
+        "encoded": 206838,
+        "transfer": 207138,
+        "url": "http://127.0.0.1:4333/v/fondfont/blender-v2/poster-de.webp"
+      },
+      {
+        "decoded": 2649,
+        "encoded": 1334,
+        "transfer": 1634,
+        "url": "http://127.0.0.1:4333/_astro/FondFontFactoryScene.astro_astro_type_script_index_0_lang.BlmUqZbY.js"
+      },
+      {
+        "decoded": 738110,
+        "encoded": 192705,
+        "transfer": 193005,
+        "url": "http://127.0.0.1:4333/_astro/scene.C2ruUgHs.js"
+      },
+      {
+        "decoded": 8068768,
+        "encoded": 5046909,
+        "transfer": 5047209,
+        "url": "http://127.0.0.1:4333/v/fondfont/blender-v2/factory-truck-v14.glb.gz"
+      },
+      {
+        "decoded": 11416,
+        "encoded": 11416,
+        "transfer": 11716,
+        "url": "http://127.0.0.1:4333/v/fondfont/blender-v2/sign-de.woff"
+      },
+      {
+        "decoded": 2916,
+        "encoded": 2916,
+        "transfer": 3216,
+        "url": "http://127.0.0.1:4333/v/fondfont/blender-v2/roof-de.woff"
+      },
+      {
+        "decoded": 5299,
+        "encoded": 2302,
+        "transfer": 2602,
+        "url": "http://127.0.0.1:4333/v/fondfont/blender-v2/cab-symbol-paint-v3.svg"
+      },
+      {
+        "decoded": 3791224,
+        "encoded": 3032692,
+        "transfer": 3032992,
+        "url": "http://127.0.0.1:4333/v/fondfont/pets/cat-v1.glb.gz"
+      },
+      {
+        "decoded": 418826,
+        "encoded": 418826,
+        "transfer": 419126,
+        "url": "http://127.0.0.1:4333/v/fondfont/blender-v2/drift-dust-v1.webp"
+      },
+      {
+        "decoded": 1014522,
+        "encoded": 1014522,
+        "transfer": 1014822,
+        "url": "http://127.0.0.1:4333/v/fondfont/blender-v2/wind-leaf-v1.webp"
+      }
+    ]
+  },
+  {
+    "heap": 204259429,
+    "readyMs": 7587.900000095367,
+    "resources": [
+      {
+        "decoded": 206838,
+        "encoded": 206838,
+        "transfer": 207138,
+        "url": "http://127.0.0.1:4333/v/fondfont/blender-v2/poster-de.webp"
+      },
+      {
+        "decoded": 2649,
+        "encoded": 1334,
+        "transfer": 1634,
+        "url": "http://127.0.0.1:4333/_astro/FondFontFactoryScene.astro_astro_type_script_index_0_lang.BlmUqZbY.js"
+      },
+      {
+        "decoded": 738110,
+        "encoded": 192705,
+        "transfer": 193005,
+        "url": "http://127.0.0.1:4333/_astro/scene.C2ruUgHs.js"
+      },
+      {
+        "decoded": 11416,
+        "encoded": 11416,
+        "transfer": 11716,
+        "url": "http://127.0.0.1:4333/v/fondfont/blender-v2/sign-de.woff"
+      },
+      {
+        "decoded": 8068768,
+        "encoded": 5046909,
+        "transfer": 5047209,
+        "url": "http://127.0.0.1:4333/v/fondfont/blender-v2/factory-truck-v14.glb.gz"
+      },
+      {
+        "decoded": 2916,
+        "encoded": 2916,
+        "transfer": 3216,
+        "url": "http://127.0.0.1:4333/v/fondfont/blender-v2/roof-de.woff"
+      },
+      {
+        "decoded": 3791224,
+        "encoded": 3032692,
+        "transfer": 3032992,
+        "url": "http://127.0.0.1:4333/v/fondfont/pets/cat-v1.glb.gz"
+      },
+      {
+        "decoded": 418826,
+        "encoded": 418826,
+        "transfer": 419126,
+        "url": "http://127.0.0.1:4333/v/fondfont/blender-v2/drift-dust-v1.webp"
+      },
+      {
+        "decoded": 5299,
+        "encoded": 2302,
+        "transfer": 2602,
+        "url": "http://127.0.0.1:4333/v/fondfont/blender-v2/cab-symbol-paint-v3.svg"
+      },
+      {
+        "decoded": 1014522,
+        "encoded": 1014522,
+        "transfer": 1014822,
+        "url": "http://127.0.0.1:4333/v/fondfont/blender-v2/wind-leaf-v1.webp"
+      }
+    ]
+  }
+]

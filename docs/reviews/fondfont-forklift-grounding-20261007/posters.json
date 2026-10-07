@@ -1,0 +1,44 @@
+[
+  {
+    "locale": "en",
+    "width": 2560,
+    "height": 854,
+    "time": "12.800"
+  },
+  {
+    "locale": "zh-hans",
+    "width": 2560,
+    "height": 854,
+    "time": "12.800"
+  },
+  {
+    "locale": "zh-hant",
+    "width": 2560,
+    "height": 854,
+    "time": "12.800"
+  },
+  {
+    "locale": "ja",
+    "width": 2560,
+    "height": 854,
+    "time": "12.800"
+  },
+  {
+    "locale": "ko",
+    "width": 2560,
+    "height": 854,
+    "time": "12.800"
+  },
+  {
+    "locale": "fr",
+    "width": 2560,
+    "height": 854,
+    "time": "12.800"
+  },
+  {
+    "locale": "de",
+    "width": 2560,
+    "height": 854,
+    "time": "12.800"
+  }
+]

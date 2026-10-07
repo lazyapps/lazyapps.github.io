@@ -1,0 +1,26 @@
+[
+  {
+    "asset": "scripts/assets/fondfont/blender-v2/puppy-face-imagegen-v6.png",
+    "source": "/Users/realazy/.codex/generated_images/01a11578-6ed1-7e42-ba54-508b4dcd8fdf/exec-871ce9cf-c326-4c67-ad66-c0c8b884a620.png",
+    "sha256": "732c6d51af735ce254f8d782ef81f8e52d682c7d7ea5b790b66100132cd04cc5",
+    "unchanged": true,
+    "provider": "built-in image_gen",
+    "generated_in_thread": "01a11578-6ed1-7e42-ba54-508b4dcd8fdf"
+  },
+  {
+    "asset": "scripts/assets/fondfont/blender-v2/truck-precision-reference-v7.png",
+    "source": "/Users/realazy/.codex/generated_images/01a11578-6ed1-7e42-ba54-508b4dcd8fdf/exec-264ba98b-30ea-4388-bdb3-669e30a24a50.png",
+    "sha256": "86688d8df093d197017cf4c442851d83366091abf4b46318e8d4f94d0e22084e",
+    "unchanged": true,
+    "provider": "built-in image_gen",
+    "generated_in_thread": "01a11578-6ed1-7e42-ba54-508b4dcd8fdf"
+  },
+  {
+    "asset": "scripts/assets/fondfont/blender-v2/truck-headlamp-imagegen-v11.png",
+    "source": "/Users/realazy/.codex/generated_images/01a11388-c0cf-7332-9c7f-916d62408fdf/exec-a38ac28c-191b-4199-a9aa-745680889aa0.png",
+    "sha256": "840cad285596c6d4517cd22875f075f62aad9e9cd24c49e167591290330c416e",
+    "unchanged": true,
+    "provider": "built-in image_gen",
+    "generated_in_thread": "01a11388-c0cf-7332-9c7f-916d62408fdf"
+  }
+]

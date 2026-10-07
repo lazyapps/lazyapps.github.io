@@ -1,0 +1,15 @@
+{
+  "date": "2026-10-07",
+  "native_model_bytes": 8289056,
+  "typescript": "passed",
+  "motion_clearance_and_tire_patches": "passed at 10 ms sampling",
+  "projected_planting_building_separation": "passed, including complete full-image rectangles, chimney and maximum wind displacement",
+  "leaf_lifecycles": "passed for 120 seconds, finite above-ground poses and respawn opacity below renderer visibility threshold",
+  "gltf_root_uv": {"bottom_v": 1, "top_v": 0, "shader_mask": "(1-v)^2"},
+  "complete_recording": {"file": "natural-garden-complete-loop.mp4", "elapsed_start": 14.967, "elapsed_end": 57.983, "duration": 42.966667, "width": 1280, "height": 420},
+  "responsive": "390x844 mobile and 1280x720 desktop inspected",
+  "production_build": "52 pages passed; production browser rendering ready with no warnings/errors",
+  "localized_posters": "7 complete 2560x854 native canvas exports refreshed",
+  "advisor": "nature-completion-advisor.md found no material defect; requested full-cycle and mobile checks completed afterwards",
+  "artwork": "Complete original imagegen botanical PNGs retained unmodified. Full-image UVs; Blender mesh subdivision and vertex shader deformation only. Existing full original imagegen leaf reused without raster processing."
+}

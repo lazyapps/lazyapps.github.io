@@ -1,0 +1,20 @@
+{
+  "canvas": [
+    585,
+    378
+  ],
+  "meanFrameMs": 27.917500000000004,
+  "models": [
+    {
+      "encoded": 5046909,
+      "url": "http://127.0.0.1:4333/v/fondfont/blender-v2/factory-truck-v14.glb.gz"
+    },
+    {
+      "encoded": 3032692,
+      "url": "http://127.0.0.1:4333/v/fondfont/pets/cat-v1.glb.gz"
+    }
+  ],
+  "p95FrameMs": 41.69999999999891,
+  "readyMs": 10604.200000047684,
+  "width": 390
+}

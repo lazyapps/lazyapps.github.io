@@ -1,0 +1,243 @@
+{
+  "sourceProject": "FondFont / iOSFontInstaller",
+  "assets": [
+    {
+      "output": "preview-ipad-en.mp4",
+      "bytes": 145387,
+      "sources": [
+        {
+          "file": "Preview/Remotion/public/footage/ipad/en-US/04-select.mp4",
+          "sha256": "62e54c54a5b6bb4499f7badfb6e90bfeed755a5fb8a6c4eaa0d0e9ee3214ce59"
+        },
+        {
+          "file": "Preview/Remotion/public/footage/ipad/en-US/01-library.mp4",
+          "sha256": "0eca8a083fd976bc7580e7296337cc1a2afa863af546227763d0383b9bcd60ba"
+        }
+      ]
+    },
+    {
+      "output": "preview-iphone-en.mp4",
+      "bytes": 139580,
+      "sources": [
+        {
+          "file": "Preview/Remotion/public/footage/iphone/en-US/04-install.mp4",
+          "sha256": "84c26b37ef06f38176bfaa214d1fecdf09308ab50ae6deafaae5486988338484"
+        },
+        {
+          "file": "Preview/Remotion/public/footage/iphone/en-US/01-library.mp4",
+          "sha256": "0f5ea6b3cd1c26a343b1bb67aa68902fc1f091f7035a34ab2d1699fcc9d466c6"
+        }
+      ]
+    },
+    {
+      "output": "preview-ipad-zh-hans.mp4",
+      "bytes": 194626,
+      "sources": [
+        {
+          "file": "Preview/Remotion/public/footage/ipad/zh-Hans/04-select.mp4",
+          "sha256": "ee889620d7b6a461eddae994f51b929b03fa7694c6605e625b5ae7b3f1c8148f"
+        },
+        {
+          "file": "Preview/Remotion/public/footage/ipad/zh-Hans/01-library.mp4",
+          "sha256": "b21c3bb8b1d07a1dfccb87f201b885c6d12f00ee615a7d5cf476fbb6517469ed"
+        }
+      ]
+    },
+    {
+      "output": "preview-iphone-zh-hans.mp4",
+      "bytes": 151395,
+      "sources": [
+        {
+          "file": "Preview/Remotion/public/footage/iphone/zh-Hans/04-install.mp4",
+          "sha256": "2afb8de014e1545d4f308bd6afa45553b391c74ce9eb767eafbdbf12fa8e53ea"
+        },
+        {
+          "file": "Preview/Remotion/public/footage/iphone/zh-Hans/01-library.mp4",
+          "sha256": "6f7d3fceee6e626f16a3a893dd8ef8378a1a128cb0d50fc108e76a15c1010a73"
+        }
+      ]
+    },
+    {
+      "output": "preview-ipad-zh-hant.mp4",
+      "bytes": 146801,
+      "sources": [
+        {
+          "file": "Preview/Remotion/public/footage/ipad/zh-Hant/04-select.mp4",
+          "sha256": "3dc59df4008234b6df1dac6c380a72e36b98557ea1aa56d0be3ac3b57ece79c9"
+        },
+        {
+          "file": "Preview/Remotion/public/footage/ipad/zh-Hant/01-library.mp4",
+          "sha256": "19d7617a67cb34abbbc5250ffb18c78fc8511c3d382ca9cb42627267a70adfea"
+        }
+      ]
+    },
+    {
+      "output": "preview-iphone-zh-hant.mp4",
+      "bytes": 118333,
+      "sources": [
+        {
+          "file": "Preview/Remotion/public/footage/iphone/zh-Hant/04-install.mp4",
+          "sha256": "6e20da615c571df9b896a4ef446072984885c0254496cfabb382d163631f9c41"
+        },
+        {
+          "file": "Preview/Remotion/public/footage/iphone/zh-Hant/01-library.mp4",
+          "sha256": "47223df2a8b7503e49172ac100a1637157aad96213042babf3454da4a0c75f3a"
+        }
+      ]
+    },
+    {
+      "output": "preview-ipad-ja.mp4",
+      "bytes": 161354,
+      "sources": [
+        {
+          "file": "Preview/Remotion/public/footage/ipad/ja/04-select.mp4",
+          "sha256": "d48f948dad25ef11d3935d98a44308e54a013168c06b7933cbd0b7d7c9105fbe"
+        },
+        {
+          "file": "Preview/Remotion/public/footage/ipad/ja/01-library.mp4",
+          "sha256": "6c78ee7f607bc8a3e35e4eba7f07410052386eb55826af80603bba04d982858b"
+        }
+      ]
+    },
+    {
+      "output": "preview-iphone-ja.mp4",
+      "bytes": 150817,
+      "sources": [
+        {
+          "file": "Preview/Remotion/public/footage/iphone/ja/04-install.mp4",
+          "sha256": "efa07594cd6ea85e2d997a60ade66174093abf3ed456a7ff68c76288cbf46645"
+        },
+        {
+          "file": "Preview/Remotion/public/footage/iphone/ja/01-library.mp4",
+          "sha256": "272d542f3693297c1efb0398a64973199444022bdbca3faabd0c25e6e6008a1d"
+        }
+      ]
+    },
+    {
+      "output": "preview-ipad-ko.mp4",
+      "bytes": 168310,
+      "sources": [
+        {
+          "file": "Preview/Remotion/public/footage/ipad/ko/04-select.mp4",
+          "sha256": "ddf601b15391af01791b2cae453bb0e10e3862de1ba5b84335d96fd57428b06e"
+        },
+        {
+          "file": "Preview/Remotion/public/footage/ipad/ko/01-library.mp4",
+          "sha256": "7cb16a86a19889e302f82f7cd6c88ad2661b82e0d6307bb06dd1f7b8c0ddb1cb"
+        }
+      ]
+    },
+    {
+      "output": "preview-iphone-ko.mp4",
+      "bytes": 129836,
+      "sources": [
+        {
+          "file": "Preview/Remotion/public/footage/iphone/ko/04-install.mp4",
+          "sha256": "89b218a7ede96b7cad4f455efe5c74ab20ba135138413f134f4a616635631989"
+        },
+        {
+          "file": "Preview/Remotion/public/footage/iphone/ko/01-library.mp4",
+          "sha256": "cc14ce81332c2568a286aeaa0f68b81665efa95ea0f0f72007ea13a800aadad6"
+        }
+      ]
+    },
+    {
+      "output": "preview-ipad-fr.mp4",
+      "bytes": 183040,
+      "sources": [
+        {
+          "file": "Preview/Remotion/public/footage/ipad/fr-FR/04-select.mp4",
+          "sha256": "ac91e4ca27298e30b8770b387da9fca5e8d99ec8509e270e932a936824f4b9f1"
+        },
+        {
+          "file": "Preview/Remotion/public/footage/ipad/fr-FR/01-library.mp4",
+          "sha256": "44c62fdef3ac9c5a9a7420712497cfc2e38cbe34ccb9e5e8f5f6cb95ba9f5039"
+        }
+      ]
+    },
+    {
+      "output": "preview-iphone-fr.mp4",
+      "bytes": 145163,
+      "sources": [
+        {
+          "file": "Preview/Remotion/public/footage/iphone/fr-FR/04-install.mp4",
+          "sha256": "d6227d78d24a8b9fef23dc621250c0ffa05aa41211e40a84e1d15d54043a11a5"
+        },
+        {
+          "file": "Preview/Remotion/public/footage/iphone/fr-FR/01-library.mp4",
+          "sha256": "be9e23b23e1608f98f90818bdc390d1099c83cde827217956ae54adf849a249c"
+        }
+      ]
+    },
+    {
+      "output": "preview-ipad-de.mp4",
+      "bytes": 191144,
+      "sources": [
+        {
+          "file": "Preview/Remotion/public/footage/ipad/de-DE/04-select.mp4",
+          "sha256": "123e756dfc30ebfbee49f53d2f3bba8928cc3f536d4cf7d07292f0c178179082"
+        },
+        {
+          "file": "Preview/Remotion/public/footage/ipad/de-DE/01-library.mp4",
+          "sha256": "88261a43cebda1b2893ffa17eb241adfaa58f2ef452f2faac2f53953a29ccaf9"
+        }
+      ]
+    },
+    {
+      "output": "preview-iphone-de.mp4",
+      "bytes": 141359,
+      "sources": [
+        {
+          "file": "Preview/Remotion/public/footage/iphone/de-DE/04-install.mp4",
+          "sha256": "6fb356579f716ed649d655dc03e74ed98fe5a81539602c520832a819fc760ca2"
+        },
+        {
+          "file": "Preview/Remotion/public/footage/iphone/de-DE/01-library.mp4",
+          "sha256": "8e067edd674e2e24efc8916a83f2a0aa30a6a44190d8f7a7f0692a72f18a22d8"
+        }
+      ]
+    },
+    {
+      "output": "install-guide-en.jpg",
+      "source": "Preview/Remotion/public/footage/iphone/en-US/04-install.mp4",
+      "timeSeconds": 3,
+      "sha256": "84c26b37ef06f38176bfaa214d1fecdf09308ab50ae6deafaae5486988338484"
+    },
+    {
+      "output": "install-guide-zh-hans.jpg",
+      "source": "Preview/Remotion/public/footage/iphone/zh-Hans/04-install.mp4",
+      "timeSeconds": 3,
+      "sha256": "2afb8de014e1545d4f308bd6afa45553b391c74ce9eb767eafbdbf12fa8e53ea"
+    },
+    {
+      "output": "install-guide-zh-hant.jpg",
+      "source": "Preview/Remotion/public/footage/iphone/zh-Hant/04-install.mp4",
+      "timeSeconds": 3,
+      "sha256": "6e20da615c571df9b896a4ef446072984885c0254496cfabb382d163631f9c41"
+    },
+    {
+      "output": "install-guide-ja.jpg",
+      "source": "Preview/Remotion/public/footage/iphone/ja/04-install.mp4",
+      "timeSeconds": 3,
+      "sha256": "efa07594cd6ea85e2d997a60ade66174093abf3ed456a7ff68c76288cbf46645"
+    },
+    {
+      "output": "install-guide-ko.jpg",
+      "source": "Preview/Remotion/public/footage/iphone/ko/04-install.mp4",
+      "timeSeconds": 3,
+      "sha256": "89b218a7ede96b7cad4f455efe5c74ab20ba135138413f134f4a616635631989"
+    },
+    {
+      "output": "install-guide-fr.jpg",
+      "source": "Preview/Remotion/public/footage/iphone/fr-FR/04-install.mp4",
+      "timeSeconds": 3,
+      "sha256": "d6227d78d24a8b9fef23dc621250c0ffa05aa41211e40a84e1d15d54043a11a5"
+    },
+    {
+      "output": "install-guide-de.jpg",
+      "source": "Preview/Remotion/public/footage/iphone/de-DE/04-install.mp4",
+      "timeSeconds": 3,
+      "sha256": "6fb356579f716ed649d655dc03e74ed98fe5a81539602c520832a819fc760ca2"
+    }
+  ]
+}

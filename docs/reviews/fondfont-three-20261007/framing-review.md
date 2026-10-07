@@ -1,0 +1,5 @@
+One responsive framing issue should block completion:
+
+- **At 320px, the live canvas vertically clips the scene.** The [mobile stage](/Users/realazy/Projects/Sites/lazyapps/src/components/FondFontFactoryScene.astro:87) is only 228.6px tall, while the renderer’s 700px minimum road width produces approximately 246.8px of projected architecture height. Checking the actual GLB vertices confirms visible roof and lower-scene geometry extends beyond the canvas. The poster can extend vertically beyond the stage, so switching to WebGL also changes the crop. Give the mobile stage a minimum height covering the projected scene plus foliage, and verify both poster and live rendering at 320px. The supplied framing QA starts at 390px and misses this.
+
+The camera-space translation is correct and preserves orientation. The curb-inclusive road-width formula matches the actual mesh within 0.005px at desktop scale. No actionable slogan issue found.

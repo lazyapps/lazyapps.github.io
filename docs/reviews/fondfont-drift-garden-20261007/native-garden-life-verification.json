@@ -1,0 +1,69 @@
+{
+  "version": "2026-10-07-final-random-roaming",
+  "nativeAsset": {
+    "skins": 2,
+    "bones": 32,
+    "clips": 22,
+    "bytes": 555168
+  },
+  "navigation": {
+    "seeds": [
+      47,
+      11,
+      991,
+      2
+    ],
+    "secondsEach": 600,
+    "capsuleSweeps": true,
+    "perPetProgressEverySeconds": 45,
+    "correctPottyCorner": true,
+    "completePottyClip": true,
+    "bothCornersAcrossSeeds": true
+  },
+  "actualRig": {
+    "integratedSeconds": 1500,
+    "fps": 60,
+    "minimumBodyUp": 0.9928241148602952,
+    "maximumPawFrameDisplacementMeters": 0.04730759720791314,
+    "plantedNativeClipSampleSlipMm": 0.25
+  },
+  "browserVideoSeconds": 27.79745888710022,
+  "posters": [
+    {
+      "locale": "en",
+      "width": 2560,
+      "height": 854
+    },
+    {
+      "locale": "zh-hans",
+      "width": 2560,
+      "height": 854
+    },
+    {
+      "locale": "zh-hant",
+      "width": 2560,
+      "height": 854
+    },
+    {
+      "locale": "ja",
+      "width": 2560,
+      "height": 854
+    },
+    {
+      "locale": "ko",
+      "width": 2560,
+      "height": 854
+    },
+    {
+      "locale": "fr",
+      "width": 2560,
+      "height": 854
+    },
+    {
+      "locale": "de",
+      "width": 2560,
+      "height": 854
+    }
+  ],
+  "review": "native-pets-followup-advisor.md; all three material findings fixed and regression checks added"
+}

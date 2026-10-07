@@ -1,0 +1,6 @@
+---
+const { specimen, x = 0, y = 0, width = 640, height = 120, ...props } = Astro.props;
+---
+<svg x={x} y={y} width={width} height={height} viewBox={specimen.viewBox} preserveAspectRatio="xMidYMid meet" data-poem={specimen.phrase} data-typeface={specimen.family} {...props}>
+  <path d={specimen.d} />
+</svg>

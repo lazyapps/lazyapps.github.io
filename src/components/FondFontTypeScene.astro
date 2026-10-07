@@ -1,0 +1,84 @@
+---
+import FondFontPoem from './FondFontPoem.astro';
+const { families, labels } = Astro.props;
+---
+<figure class="type-scene" data-fondfont-scene data-font-index="0" data-stage="shared" aria-label={labels.alt}>
+  <svg class="type-composition" viewBox="0 0 768 640" aria-hidden="true">
+    <defs>
+      <filter id="type-paper-shadow" x="-15%" y="-15%" width="130%" height="140%"><feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#44413b" flood-opacity=".055" /></filter>
+    </defs>
+    <g class="poem-heading">
+      {families.map((family, i) => <g data-family={i}>
+        <text class="source-label" x="32" y="18">{labels.owned} · {family.label}</text>
+        <rect class="format-badge" x="680" y="-3" width="56" height="28" rx="5" />
+        <text class="format-label" x="708" y="17" text-anchor="middle">{family.filename.split('.').pop().toUpperCase()}</text>
+      </g>)}
+      {families.map((family, i) => <g data-family={i}><FondFontPoem specimen={family} x={36} y={30} width={696} height={146} /></g>)}
+      <text class="poem-attribution" x="384" y="203" text-anchor="middle">{families[0].attribution}</text>
+    </g>
+    <g class="font-index">
+      <path class="index-rule" d="M32 232h704M32 320h704" />
+      <text class="system-label" x="32" y="262">{labels.library}</text>
+      <text class="install-label" x="736" y="296" text-anchor="end">{labels.install}</text>
+      {families.map((family, i) => <g data-family={i}>
+        <text class="family-label" x="32" y="296">{family.label}</text>
+      </g>)}
+      <path class="library-check" d="m702 253 8 8 18-20" />
+      <path class="registration" d="M32 320h704" pathLength="100" />
+    </g>
+    <path class="connections" d="M198 320v39M543 320v39" pathLength="100" />
+    <g class="documents">
+      <g class="pages-sheet" filter="url(#type-paper-shadow)">
+        <path class="paper" d="M52 359h289v238H52z" />
+        <text class="app-label" x="78" y="389" lang="en">Pages</text>
+        <path class="paper-rule" d="M78 404h237" />
+        {families.map((family, i) => <g class="document-type" data-family={i}>
+          <FondFontPoem specimen={family} x={74} y={432} width={245} height={60} />
+          <FondFontPoem specimen={family} x={74} y={510} width={200} height={40} class="poem-body" />
+        </g>)}
+      </g>
+      <g class="keynote-sheet" filter="url(#type-paper-shadow)">
+        <path class="paper" d="M370 359h346v238H370z" />
+        <text class="app-label" x="396" y="389" lang="en">Keynote</text>
+        <path class="paper-rule" d="M396 404h294" />
+        {families.map((family, i) => <g class="document-type" data-family={i}>
+          <FondFontPoem specimen={family} x={391} y={457} width={304} height={87} />
+        </g>)}
+      </g>
+    </g>
+  </svg>
+</figure>
+<style>
+  .type-scene{width:100%;max-width:560px;min-width:0;margin:0;justify-self:center;color:var(--ink)}
+  .type-composition{width:100%;height:auto;display:block;overflow:visible;fill:currentColor;font-family:var(--sans)}
+  .poem-heading{transform-origin:384px 130px;transition:opacity .5s,transform 1.2s cubic-bezier(.2,.7,.2,1)}
+  .poem-attribution{font-size:21px;fill:#818078}
+  .source-label{font-size:22px;fill:#79766e}
+  .format-badge{fill:var(--paper);stroke:#d9d8d0;stroke-width:1}
+  .format-label{font:400 19px var(--mono);fill:#79766e}
+  .index-rule{fill:none;stroke:#d9d8d0;stroke-width:1}
+  .system-label{font-size:27px;font-weight:500}
+  .family-label{font-size:24px;fill:#67655e;transition:opacity .4s}
+  .install-label{font-size:23px;fill:#79766e;transition:fill .4s}
+  .install-label:lang(de){font-size:21px}
+  .library-check{fill:none;stroke:var(--accent);stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round;transition:opacity .4s}
+  .registration{fill:none;stroke:var(--accent);stroke-width:1.5;stroke-dasharray:100;stroke-dashoffset:0;transition:stroke-dashoffset .8s cubic-bezier(.2,.7,.2,1)}
+  .connections{fill:none;stroke:var(--accent);stroke-width:1.4;stroke-dasharray:100;stroke-dashoffset:0;opacity:.5;transition:stroke-dashoffset .6s ease}
+  .paper{fill:#fdfdfa;stroke:#dfded6;stroke-width:1}
+  .paper-rule{fill:none;stroke:#e4e3dc;stroke-width:1}
+  .app-label{font-size:25px;font-weight:500;fill:#78766e}
+  .documents{transition:opacity .5s}
+  .document-type{transition:opacity .7s,transform .9s cubic-bezier(.2,.7,.2,1)}
+  .poem-body{opacity:.5}
+  [data-family]{display:none}
+  [data-font-index="0"] [data-family="0"],[data-font-index="1"] [data-family="1"],[data-font-index="2"] [data-family="2"]{display:block}
+  [data-stage="source"] .library-check,[data-stage="install"] .library-check{opacity:0}
+  [data-stage="source"] .family-label,[data-stage="install"] .family-label{opacity:0}
+  [data-stage="source"] .registration{stroke-dashoffset:100}
+  [data-stage="source"] .connections,[data-stage="install"] .connections{stroke-dashoffset:100}
+  [data-stage="install"] .install-label{fill:var(--accent)}
+  [data-stage="source"] .document-type,[data-stage="install"] .document-type,[data-stage="registered"] .document-type{opacity:0;transform:translateY(8px)}
+  [data-stage="source"] .poem-heading{transform:translateY(8px)}
+  [data-stage="next"] .poem-heading,[data-stage="next"] .document-type,[data-stage="next"] .family-label{opacity:0}
+  @media(prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
