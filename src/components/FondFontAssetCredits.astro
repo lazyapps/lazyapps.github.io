@@ -11,19 +11,14 @@ const translations = {
 };
 const [label, changes, full] = translations[locale] ?? translations.en;
 ---
-<details class="asset-credits">
-  <summary>{label}</summary>
-  <div>
-    <p><a href="https://blendswap.com/blend/18519">Rigged and animated Cat</a> — JonasDichelle · <a href="https://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a></p>
-    <p>{changes} <a href="/v/fondfont/pets/CREDITS.txt">{full}</a></p>
-  </div>
-</details>
+<div class="asset-credits" aria-label={label}>
+  <p><a href="https://blendswap.com/blend/18519" lang="en" dir="ltr">Rigged and animated Cat</a> — JonasDichelle · <a href="https://creativecommons.org/licenses/by/3.0/" lang="en" dir="ltr">CC BY 3.0</a></p>
+  <p>{changes} <a href="/v/fondfont/pets/CREDITS.txt">{full}</a></p>
+</div>
 <style>
-  .asset-credits{border:0;padding:0 0 24px;margin-inline:auto;max-width:70ch;text-align:center;color:var(--muted,#686864);font-size:12px;line-height:1.7}
-  summary{cursor:pointer;width:fit-content;margin-inline:auto;text-underline-offset:3px}
-  summary:hover{text-decoration:underline}
-  div{padding-top:8px;max-width:70ch}
-  p{margin:2px 0}
-  a{text-decoration:underline;text-underline-offset:3px}
-  summary:focus-visible,a:focus-visible{outline:2px solid var(--accent);outline-offset:4px}
+  .asset-credits{display:grid;gap:8px;max-width:68ch;margin-inline:auto;text-align:center;color:var(--muted);font:400 .6667rem/1.4 var(--sans);text-transform:uppercase;letter-spacing:.04em}
+  p{margin:0;max-width:68ch;line-height:inherit}
+  a{text-decoration:underline;text-decoration-color:color-mix(in srgb,currentColor 45%,transparent);text-underline-offset:.2em}
+  a:hover{text-decoration-color:currentColor}
+  a:focus-visible{outline:2px solid var(--accent);outline-offset:4px}
 </style>
