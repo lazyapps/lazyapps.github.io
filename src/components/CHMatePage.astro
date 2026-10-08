@@ -1,7 +1,6 @@
 ---
 import SocialMeta from './SocialMeta.astro';
 import SoftwareApplication from './SoftwareApplication.astro';
-import LanguageLinks from './LanguageLinks.astro';
 import LanguagePicker from './LanguagePicker.astro';
 import SiteFooterBase from './SiteFooterBase.astro';
 import siteCssUrl from '$assets/s/site.css?url';
@@ -258,7 +257,6 @@ const locales = Object.values(CHMATE_LOCALES);
           <p>{t.musicCredit[0]} <a href="https://www.scottbuckley.com.au/library/solace/" lang="en" dir="ltr">“Solace” — Scott Buckley</a>{t.musicCredit[1]} <a href="https://creativecommons.org/licenses/by/4.0/" lang="en" dir="ltr">CC BY 4.0</a>{t.musicCredit[2]}</p>
           <p>{t.trademark}</p>
         </div>
-        <LanguageLinks label={t.selectAria} current={t.selectedUrl} links={locales.map(locale => ({ language: locale.htmlLang, url: locale.selectedUrl, label: locale.localeNow }))} />
         <SiteFooterBase locale={t.htmlLang} />
       </div>
     </footer>

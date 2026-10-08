@@ -9,7 +9,6 @@ const SITE = 'https://lazyapps.com';
 
 import SocialMeta from './SocialMeta.astro';
 import SoftwareApplication from './SoftwareApplication.astro';
-import LanguageLinks from './LanguageLinks.astro';
 import LanguagePicker from './LanguagePicker.astro';
 import SiteFooterBase from './SiteFooterBase.astro';
 import siteCssUrl from '$assets/s/site.css?url';
@@ -324,7 +323,6 @@ const socialImageUrl = {
       <pre dir="ltr"><Fragment set:html={t.brew.install} /></pre>
       <p class="bounds__a">{t.brew.p} <a class="brew__download" href={releaseUrl}>{t.brew.dmg}</a>{t.brew.dmgEnd}</p>
     </div>
-    <LanguageLinks label={t.selectAria} current={t.selectedUrl} links={options.map(([language, url, label]) => ({ language, url, label }))} />
     <SiteFooterBase locale={t.htmlLang} />
   </footer>
 

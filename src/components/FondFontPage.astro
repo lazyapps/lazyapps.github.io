@@ -1,7 +1,6 @@
 ---
 import SocialMeta from './SocialMeta.astro';
 import SoftwareApplication from './SoftwareApplication.astro';
-import LanguageLinks from './LanguageLinks.astro';
 import LanguagePicker from './LanguagePicker.astro';
 import SiteFooterBase from './SiteFooterBase.astro';
 import FondFontAssetCredits from './FondFontAssetCredits.astro';
@@ -70,7 +69,6 @@ const ogUrl = ogImages[`/src/assets/img/fondfont-opengraph-${t.ogAsset}.png`];
       </section>
       <footer class="font-footer wrap">
         <FondFontAssetCredits locale={t.code} />
-        <LanguageLinks label={t.selectAria} current={t.selectedUrl} links={locales.map(locale => ({ language: locale.htmlLang, url: locale.selectedUrl, label: locale.localeNow }))} />
         <SiteFooterBase locale={t.htmlLang} />
       </footer>
     </main>

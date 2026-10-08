@@ -66,10 +66,6 @@ for (const page of pages) {
       check(languageLinks.get(attr(option, 'lang')) === `${site}${attr(option, 'value')}`, 'Language picker option differs from hreflang');
       if (attr(option, 'selected') !== undefined) check(`${site}${attr(option, 'value')}` === page.canonical, 'Selected language differs from canonical');
     }
-    for (const [language, url] of languageLinks) {
-      if (language === 'x-default') continue;
-      check(page.nodes.some(node => node.tagName === 'a' && attr(node, 'href') === new URL(url).pathname && attr(node, 'hreflang') === language), `Missing crawlable language link: ${language}`);
-    }
   }
   for (const [language, url] of languageLinks) {
     const target = byUrl.get(url);
@@ -111,4 +107,4 @@ assert.equal(new Set(urls).size, urls.length, 'Duplicate sitemap URLs');
 assert.deepEqual([...urls].sort(), expected.sort(), 'Sitemap must contain exactly the indexable canonical pages');
 const robots = await readFile(join(dist, 'robots.txt'), 'utf8');
 assert(robots.includes(`Sitemap: ${site}/sitemap.xml`) && /^Allow: \/$/m.test(robots) && !/^Disallow: \/$/m.test(robots), 'robots.txt must permit crawling and declare sitemap');
-console.log(`SEO checks passed: ${pages.length} pages, ${urls.length} canonical sitemap URLs, reciprocal hreflang, language links, social assets, JSON-LD, internal links.`);
+console.log(`SEO checks passed: ${pages.length} pages, ${urls.length} canonical sitemap URLs, reciprocal hreflang, language pickers, social assets, JSON-LD, internal links.`);

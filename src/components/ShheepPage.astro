@@ -6,7 +6,6 @@ import StructuredData from './StructuredData.astro';
 import SiteFooterBase from './SiteFooterBase.astro';
 import ShheepGame from './ShheepGame.astro';
 import ShheepStoreBadge from './ShheepStoreBadge.astro';
-import LanguageLinks from './LanguageLinks.astro';
 import LanguagePicker from './LanguagePicker.astro';
 import { SHHEEP_LOCALES } from '../i18n/shheep-locales.mjs';
 import chromiumLicense from '../../public/shheep/assets/CHROMIUM-LICENSE.txt?raw';
@@ -157,7 +156,6 @@ const fontNotices = [
       </div>
       <noscript><p class="footer-credits">{t.licenses}: <a href="/shheep/assets/CHROMIUM-LICENSE.txt">Chromium</a>{fontNotices.map(font => <Fragment> · <a href={font.href}>{font.name}</a></Fragment>)}</p></noscript>
     </section>
-    <LanguageLinks label={t.chooseLanguage} current={t.selectedUrl} links={locales.map(locale => ({ language: locale.htmlLang, url: locale.selectedUrl, label: locale.localeNow }))} />
     <SiteFooterBase locale={t.htmlLang} />
   </footer>
   <script is:inline>

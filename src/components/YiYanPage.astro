@@ -9,7 +9,6 @@ const { t: original, code = '' } = Astro.props;
 const SITE = 'https://lazyapps.com';
 import SocialMeta from './SocialMeta.astro';
 import SoftwareApplication from './SoftwareApplication.astro';
-import LanguageLinks from './LanguageLinks.astro';
 import LanguagePicker from './LanguagePicker.astro';
 import SiteFooterBase from './SiteFooterBase.astro';
 import siteCssUrl from '$assets/s/site.css?url';
@@ -289,6 +288,12 @@ html[data-trust=cjk] .phero__trust li{font:400 .75rem/1.5 var(--mono);letter-spa
   white-space:pre-wrap;word-break:break-all;
 }
 .brew pre .p{opacity:.45}
+.yiyan-footer{margin-top:var(--space-section);border-top:1px solid var(--line);padding-top:28px}
+.yiyan-footer__notices{display:grid;gap:8px;max-width:68ch;margin-inline:auto;text-align:center;color:var(--muted);font:400 .6667rem/1.4 var(--sans);text-transform:uppercase;letter-spacing:.04em}
+.yiyan-footer__notices p{max-width:68ch;line-height:inherit}
+.yiyan-footer__notices a{text-decoration:underline;text-decoration-color:color-mix(in srgb,currentColor 45%,transparent);text-underline-offset:.2em}
+.yiyan-footer__notices a:hover{text-decoration-color:currentColor}
+@media (max-width:767px){.yiyan-footer{margin-top:48px;padding-top:24px}}
 </style>
 </head>
 
@@ -467,9 +472,12 @@ html[data-trust=cjk] .phero__trust li{font:400 .75rem/1.5 var(--mono);letter-spa
     <p class="bounds__a"><Fragment set:html={t.brew.p} /></p>
   </div>
 
-  <LanguageLinks label={t.selectAria} current={t.selectedUrl} links={OPTIONS.map(([language, url, , label]) => ({ language, url, label }))} />
-  <SiteFooterBase locale={t.htmlLang} />
-  <p class="bounds__a" lang="en" dir="ltr">Music: <a href="https://www.scottbuckley.com.au/library/a-kind-of-hope/">“A Kind Of Hope” by Scott Buckley</a> · <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> · Edited excerpt, volume and fades adjusted.</p>
+  <div class="yiyan-footer">
+    <div class="yiyan-footer__notices" lang="en" dir="ltr">
+      <p>Music: <a href="https://www.scottbuckley.com.au/library/a-kind-of-hope/">“A Kind Of Hope” by Scott Buckley</a> · <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> · Edited excerpt, volume and fades adjusted.</p>
+    </div>
+    <SiteFooterBase locale={t.htmlLang} />
+  </div>
 
 </footer>
 
