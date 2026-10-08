@@ -1,0 +1,134 @@
+{
+  "removed": [
+    "PetDogBody",
+    "PetDogBody_Garden life puppy cream",
+    "PetDogHead",
+    "PetDogHead_Garden life charcoal detail",
+    "PetDogHead_Garden life eyes",
+    "PetDogHead_Garden life puppy cream",
+    "PetDogHead_Garden life soft ivory",
+    "PetDogTail",
+    "PetDogTail_Garden life puppy cream",
+    "PetDogHipBL",
+    "PetDogHipBL_Garden life puppy cream",
+    "PetDogKneeBL",
+    "PetDogKneeBL_Garden life puppy cream",
+    "PetDogPawBL",
+    "PetDogPawBL_Garden life soft ivory",
+    "PetDogHipBR",
+    "PetDogHipBR_Garden life puppy cream",
+    "PetDogKneeBR",
+    "PetDogKneeBR_Garden life puppy cream",
+    "PetDogPawBR",
+    "PetDogPawBR_Garden life soft ivory",
+    "PetDogHipFL",
+    "PetDogHipFL_Garden life puppy cream",
+    "PetDogKneeFL",
+    "PetDogKneeFL_Garden life puppy cream",
+    "PetDogPawFL",
+    "PetDogPawFL_Garden life soft ivory",
+    "PetDogHipFR",
+    "PetDogHipFR_Garden life puppy cream",
+    "PetDogKneeFR",
+    "PetDogKneeFR_Garden life puppy cream",
+    "PetDogPawFR",
+    "PetDogPawFR_Garden life soft ivory",
+    "PetDog",
+    "PetCatBody",
+    "PetCatBody_Garden life kitten gray",
+    "PetCatHead",
+    "PetCatHead_Garden life ear blush",
+    "PetCatHead_Garden life eyes",
+    "PetCatHead_Garden life kitten gray",
+    "PetCatHead_Garden life soft ivory",
+    "PetCatTail",
+    "PetCatTail_Garden life kitten gray",
+    "PetCatHipBL",
+    "PetCatHipBL_Garden life kitten gray",
+    "PetCatKneeBL",
+    "PetCatKneeBL_Garden life kitten gray",
+    "PetCatPawBL",
+    "PetCatPawBL_Garden life kitten gray",
+    "PetCatHipBR",
+    "PetCatHipBR_Garden life kitten gray",
+    "PetCatKneeBR",
+    "PetCatKneeBR_Garden life kitten gray",
+    "PetCatPawBR",
+    "PetCatPawBR_Garden life kitten gray",
+    "PetCatHipFL",
+    "PetCatHipFL_Garden life kitten gray",
+    "PetCatKneeFL",
+    "PetCatKneeFL_Garden life kitten gray",
+    "PetCatPawFL",
+    "PetCatPawFL_Garden life kitten gray",
+    "PetCatHipFR",
+    "PetCatHipFR_Garden life kitten gray",
+    "PetCatKneeFR",
+    "PetCatKneeFR_Garden life kitten gray",
+    "PetCatPawFR",
+    "PetCatPawFR_Garden life kitten gray",
+    "PetCat",
+    "FoundryArt_imagegen industrial foundry alpha",
+    "FoundryArt",
+    "PhoneRoof_imagegen industrial warehouse alpha",
+    "PhoneRoof",
+    "Foundry chimney shadow volume",
+    "Foundry lintel",
+    "Foundry sawtooth roof 0",
+    "Foundry sawtooth roof 1",
+    "Foundry sawtooth roof 2",
+    "Foundry sawtooth roof 3",
+    "Foundry solid header",
+    "Foundry solid pier -3.3",
+    "Foundry solid pier 1.4851318944844123",
+    "Warehouse lintel",
+    "Warehouse solid header",
+    "Warehouse solid phone roof",
+    "Warehouse solid pier -3.3",
+    "Warehouse solid pier 1.3388888888888888"
+  ],
+  "shared": {
+    "type sorts": 78278,
+    "wheels": 0,
+    "drains": 9400,
+    "forklift bodies": 12456,
+    "butterfly wings": 0
+  },
+  "simplified": {
+    "type sorts": [
+      477018,
+      173380
+    ],
+    "wheels": [
+      50688,
+      15210
+    ],
+    "butterfly": [
+      46256,
+      4558
+    ],
+    "garden": [
+      145244,
+      67350
+    ]
+  },
+  "downscaled": [
+    [
+      "imagegen limestone trim",
+      256
+    ],
+    [
+      "imagegen oak",
+      512
+    ],
+    [
+      "imagegen FondFont red enamel",
+      256
+    ],
+    [
+      "imagegen plum enamel",
+      256
+    ]
+  ],
+  "triangles": 374320
+}

@@ -11,7 +11,7 @@ assert.equal(hash(source + 'source.blend'), 'fda4b80f1a06e67a1cc04396b858085faa5
 assert.equal(hash(source + 'LICENSE.html'), hash('public/v/fondfont/pets/calico-cat-original-LICENSE.html'));
 assert.ok(!existsSync(resolve(root,'public/v/fondfont/pets/dog-v3.glb')), 'retired dog is not distributed');
 assert.ok(!existsSync(resolve(root,'dist/v/fondfont/pets/dog-v3.glb')), 'retired dog is not deployed');
-for (const name of ['cat-v1.glb', 'cat-v1.glb.gz', 'CREDITS.txt', 'calico-cat-original-LICENSE.html']) {
+for (const name of ['cat-v2.glb', 'cat-v2.glb.gz', 'CREDITS.txt', 'calico-cat-original-LICENSE.html']) {
   assert.equal(hash('public/v/fondfont/pets/' + name), hash('dist/v/fondfont/pets/' + name), 'production asset matches reviewed source');
 }
 for (const locale of locales) {

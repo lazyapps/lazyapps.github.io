@@ -1,0 +1,18 @@
+total 7.69 MiB json 293 KiB
+images 10 3.14 MiB
+     584 KiB image/webp quiet-road
+     457 KiB image/webp oak
+     447 KiB image/webp oak-normal
+     438 KiB image/webp truck-headlamp-imagegen-v11
+     414 KiB image/webp stone-normal
+     397 KiB image/webp stone
+     338 KiB image/webp industrial-foundry-v1
+     128 KiB image/webp industrial-warehouse-blank-v2
+      11 KiB image/webp red-enamel
+       6 KiB image/webp plum-enamel
+meshes 311 nodes 462 materials 51 ext [
+  'EXT_meshopt_compression',
+  'EXT_texture_webp',
+  'KHR_materials_clearcoat',
+  'KHR_mesh_quantization'
+]

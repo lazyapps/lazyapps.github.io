@@ -29,10 +29,12 @@ for name, kind in [('Tail', 'COPY_ROTATION'), ('Spine', 'PIVOT')]:
             rig.pose.bones[name].constraints.remove(constraint)
 for bone in rig.pose.bones:
     bone.matrix_basis = Matrix.Identity(4)
+# Web budget (v2): bake the original cage without subdivision. At page scale the smooth-shaded
+# cage keeps the silhouette, and every one of the 84 morph targets shrinks with it.
 for obj in sources:
     for modifier in obj.modifiers:
         if modifier.type == 'SUBSURF':
-            modifier.levels = modifier.render_levels = 1
+            modifier.levels = modifier.render_levels = 0
 for system in body.particle_systems:
     system.settings.child_percent = system.settings.rendered_child_count = 0
 bpy.context.view_layer.update()
@@ -159,7 +161,10 @@ bvh = BVHTree.FromPolygons([Vector(p) for p in rest_body], triangles.tolist(), a
 evaluated.to_mesh_clear()
 vertices, faces, fur_uvs, bindings = [], [], [], []
 for system in body.evaluated_get(depsgraph).particle_systems:
-    for particle in system.particles:
+    for strand, particle in enumerate(system.particles):
+        # Web budget (v2): every other combed parent strand, evenly across the coat.
+        if strand % 2:
+            continue
         keys = [body.matrix_world @ key.co for key in particle.hair_keys]
         if len(keys) < 2 or (keys[-1]-keys[0]).length < .0002:
             continue
@@ -174,7 +179,7 @@ for system in body.evaluated_get(depsgraph).particle_systems:
         side.normalize()
         other = tangent.cross(side).normalized()
         start = len(vertices)
-        width = .009 if system.name == 'ParticleSystem' else .006
+        width = .011 if system.name == 'ParticleSystem' else .0075
         for point, radius in [(root, width), (middle, width*.55), (tip, .00025)]:
             for corner in range(3):
                 angle = corner*math.tau/3
@@ -322,9 +327,9 @@ root.select_set(True)
 for obj in exports:
     obj.select_set(True)
 bpy.context.view_layer.objects.active = root
-bpy.ops.wm.save_as_mainfile(filepath=str(OUT / 'cat-web-v1.blend'))
-bpy.ops.export_scene.gltf(filepath=str(OUT / 'cat-web-v1-raw.glb'), export_format='GLB', use_selection=True,
+bpy.ops.wm.save_as_mainfile(filepath=str(OUT / 'cat-web-v2.blend'))
+bpy.ops.export_scene.gltf(filepath=str(OUT / 'cat-web-v2-raw.glb'), export_format='GLB', use_selection=True,
     export_apply=False, export_cameras=False, export_lights=False, export_animations=False, export_extras=True,
     export_image_format='WEBP', export_image_quality=90, export_morph=True, export_morph_normal=False, export_morph_tangent=False)
-(OUT / 'cat-web-v1.json').write_text(json.dumps(metadata, indent=2))
+(OUT / 'cat-web-v2.json').write_text(json.dumps(metadata, indent=2))
 print('CALICO COMPLETE', metadata, flush=True)

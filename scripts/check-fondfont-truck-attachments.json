@@ -1,0 +1,164 @@
+{
+ "source": "public/v/fondfont/blender-v2/factory-building-v6.glb (retired 2026-10-08)",
+ "attachments": [
+  {
+   "name": "CabBadge1",
+   "parent": "Truck",
+   "translation": [
+    1.5999999046325684,
+    1.309999942779541,
+    0.8130002021789551
+   ]
+  },
+  {
+   "name": "CabBadge-1",
+   "parent": "Truck",
+   "translation": [
+    1.5999999046325684,
+    1.309999942779541,
+    -0.812999963760376
+   ]
+  },
+  {
+   "name": "CabRoofName",
+   "parent": "Truck",
+   "translation": [
+    1.5799999237060547,
+    2.309000015258789,
+    0
+   ]
+  },
+  {
+   "name": "FlatbedName",
+   "parent": "Truck",
+   "translation": [
+    -0.809999942779541,
+    1.0759999752044678,
+    0
+   ]
+  },
+  {
+   "name": "FleetBack",
+   "parent": "Truck",
+   "translation": [
+    -0.8000001907348633,
+    1.2400000095367432,
+    -0.9730000495910645
+   ]
+  },
+  {
+   "name": "FleetFront",
+   "parent": "Truck",
+   "translation": [
+    -0.8000001907348633,
+    1.2400000095367432,
+    0.9730000495910645
+   ]
+  },
+  {
+   "name": "LoadingSideGate",
+   "parent": "Truck",
+   "translation": [
+    0,
+    1.0199999809265137,
+    -1.0099999904632568
+   ]
+  },
+  {
+   "name": "RailNameFront",
+   "parent": "Truck",
+   "translation": [
+    -0.809999942779541,
+    1.4609999656677246,
+    0.9250001907348633
+   ]
+  },
+  {
+   "name": "Steer_1.62_1",
+   "parent": "Truck",
+   "translation": [
+    1.619999885559082,
+    0.4350000023841858,
+    0.880000114440918
+   ]
+  },
+  {
+   "name": "Wheel_1.62_1",
+   "parent": "Steer_1.62_1"
+  },
+  {
+   "name": "Steer_1.62_-1",
+   "parent": "Truck",
+   "translation": [
+    1.619999885559082,
+    0.4350000023841858,
+    -0.880000114440918
+   ]
+  },
+  {
+   "name": "Wheel_1.62_-1",
+   "parent": "Steer_1.62_-1"
+  },
+  {
+   "name": "Steer_-0.75_1",
+   "parent": "Truck",
+   "translation": [
+    -0.75,
+    0.4350000023841858,
+    0.880000114440918
+   ]
+  },
+  {
+   "name": "Wheel_-0.75_1",
+   "parent": "Steer_-0.75_1"
+  },
+  {
+   "name": "Steer_-0.75_-1",
+   "parent": "Truck",
+   "translation": [
+    -0.75,
+    0.4350000023841858,
+    -0.880000114440918
+   ]
+  },
+  {
+   "name": "Wheel_-0.75_-1",
+   "parent": "Steer_-0.75_-1"
+  },
+  {
+   "name": "Steer_-1.82_1",
+   "parent": "Truck",
+   "translation": [
+    -1.820000171661377,
+    0.4350000023841858,
+    0.880000114440918
+   ]
+  },
+  {
+   "name": "Wheel_-1.82_1",
+   "parent": "Steer_-1.82_1"
+  },
+  {
+   "name": "Steer_-1.82_-1",
+   "parent": "Truck",
+   "translation": [
+    -1.820000171661377,
+    0.4350000023841858,
+    -0.880000114440918
+   ]
+  },
+  {
+   "name": "Wheel_-1.82_-1",
+   "parent": "Steer_-1.82_-1"
+  },
+  {
+   "name": "TruckCargo",
+   "parent": "Truck",
+   "translation": [
+    -0.75,
+    1.0700000524520874,
+    0
+   ]
+  }
+ ]
+}

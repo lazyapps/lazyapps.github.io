@@ -5,15 +5,15 @@ import { WIND_X } from './nature.mjs';
 export function createChimneySmoke(origin:THREE.Vector3){
   const geometry=new THREE.BoxGeometry(2.4,3.4,1.4);
   geometry.translate(.7,1.7,0);
-  const uniforms={uTime:{value:0},uRay:{value:new THREE.Vector3()},uWind:{value:WIND_X}};
+  const uniforms={uTime:{value:0},uWind:{value:WIND_X}};
   const material=new THREE.ShaderMaterial({
     uniforms,transparent:true,depthWrite:false,toneMapped:false,
-    vertexShader:`varying vec3 vLocal;void main(){vLocal=position;gl_Position=projectionMatrix*modelViewMatrix*vec4(position,1.0);}`,
+    vertexShader:`varying vec3 vLocal;varying vec3 vWorld;void main(){vLocal=position;vWorld=(modelMatrix*vec4(position,1.0)).xyz;gl_Position=projectionMatrix*modelViewMatrix*vec4(position,1.0);}`,
     fragmentShader:`
       precision highp float;
       varying vec3 vLocal;
+      varying vec3 vWorld;
       uniform float uTime,uWind;
-      uniform vec3 uRay;
       float hash(vec3 p){return fract(sin(dot(p,vec3(127.1,311.7,74.7)))*43758.5453);}
       float noise(vec3 p){
         vec3 i=floor(p),f=fract(p);f=f*f*(3.0-2.0*f);
@@ -32,7 +32,8 @@ export function createChimneySmoke(origin:THREE.Vector3){
         return edge*(.1+.9*smoothstep(.25,.7,grain))*smoothstep(0.0,.16,p.y)*(1.0-smoothstep(.7,3.1,p.y));
       }
       void main(){
-        vec3 ray=normalize(uRay),p=vLocal+ray*.001;
+        // Per-pixel line of sight (the volume is translated, never rotated).
+        vec3 ray=normalize(vWorld-cameraPosition),p=vLocal+ray*.001;
         float alpha=0.0,light=0.0;
         for(int i=0;i<48;i++){
           if(p.x<-.5||p.x>1.9||p.y<0.0||p.y>3.4||abs(p.z)>.7)break;
@@ -47,5 +48,5 @@ export function createChimneySmoke(origin:THREE.Vector3){
   });
   const mesh=new THREE.Mesh(geometry,material);mesh.position.copy(origin);
   mesh.name='Volumetric chimney smoke';mesh.frustumCulled=false;
-  return{mesh,geometry,material,update(seconds:number,camera:THREE.Camera){uniforms.uTime.value=seconds;camera.getWorldDirection(uniforms.uRay.value);}};
+  return{mesh,geometry,material,update(seconds:number){uniforms.uTime.value=seconds;}};
 }

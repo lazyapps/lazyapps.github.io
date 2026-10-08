@@ -6,7 +6,7 @@ import {createStudioPetAnimator,createCatPair} from '../src/lib/fondfont/studio-
 import {createGardenLife} from '../src/lib/fondfont/garden-life.mjs';
 import {MeshoptDecoder} from 'three/addons/libs/meshopt_decoder.module.js';
 
-const assets={cat:'cat-v1'};
+const assets={cat:'cat-v2'};
 for(const kind of ['cat']){
   const path=new URL(`../public/v/fondfont/pets/${assets[kind]}.glb`,import.meta.url);
   const bytes=readFileSync(path),length=bytes.readUInt32LE(12);

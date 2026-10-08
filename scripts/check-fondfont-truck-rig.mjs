@@ -6,27 +6,21 @@ import { MeshoptDecoder } from 'three/addons/libs/meshopt_decoder.module.js';
 import { sampleMotion, wheelTravel, truckSteering, WHEEL_RADIUS, DURATION } from '../src/lib/fondfont/motion.mjs';
 
 function read(name) {
-  const bytes = readFileSync(new URL(`../public/v/fondfont/blender-v2/${name}.glb`, import.meta.url));
+  const bytes = readFileSync(new URL(`../public/v/fondfont/${name}.glb`, import.meta.url));
   return { bytes, json: JSON.parse(bytes.subarray(20, 20 + bytes.readUInt32LE(12))) };
 }
-const original = read('factory-building-v6').json;
-const { bytes, json } = read('factory-truck-v14');
-function descendants(gltf, index) {
-  return [index, ...(gltf.nodes[index].children ?? []).flatMap(i => descendants(gltf, i))];
-}
-const truckIndex = original.nodes.findIndex(n => n.name === 'Truck');
+const { bytes, json } = read('blender-v3/campus-v3');
+// Attachment baseline snapshotted from the retired factory-building-v6.glb.
+const baseline = JSON.parse(readFileSync(new URL('./check-fondfont-truck-attachments.json', import.meta.url))).attachments;
 let preserved = 0;
-for (const i of descendants(original, truckIndex)) {
-  const before = original.nodes[i];
-  if (before.mesh !== undefined || before.name === 'Truck') continue;
+for (const before of baseline) {
   const afterIndex = json.nodes.findIndex(n => n.name === before.name);
   assert.ok(afterIndex >= 0, `preserved attachment ${before.name}`);
   const after = json.nodes[afterIndex];
-  const parentBefore = original.nodes.find(n => n.children?.includes(i));
   const parentAfter = json.nodes.find(n => n.children?.includes(afterIndex));
-  assert.equal(parentAfter?.name, parentBefore?.name, `${before.name} parent`);
+  assert.equal(parentAfter?.name, before.parent, `${before.name} parent`);
   if (before.name === 'CabRoofName') {
-    assert.ok(Math.abs(after.translation[1] - 2.372) < .00001, 'paint sits above the new 2.365m roof');
+    assert.ok(Math.abs(after.translation[1] - 2.372) < .00001, 'paint sits above the 2.365m roof');
     assert.equal(after.translation[0], before.translation[0]);
     assert.equal(after.translation[2], before.translation[2]);
   } else for (const key of ['translation', 'rotation', 'scale', 'matrix']) {
@@ -36,11 +30,12 @@ for (const i of descendants(original, truckIndex)) {
 }
 assert.equal(preserved, 21);
 assert.equal(json.nodes.find(n => n.name === 'Truck').extras.wheel_radius, WHEEL_RADIUS);
-assert.ok(json.materials.some(m => m.name === 'Precision truck graphite gate'));
-assert.ok(json.materials.some(m => m.name === 'Precision truck clean automotive vermilion' && m.pbrMetallicRoughness.baseColorFactor[0] > .6 && m.pbrMetallicRoughness.baseColorFactor[1] < .04 && !m.pbrMetallicRoughness.baseColorTexture), 'plain red roof material survives window booleans');
-
-assert.ok(json.materials.some(m => m.name === 'imagegen truck precision lamp optics' && m.pbrMetallicRoughness.baseColorTexture), 'actual imagegen lamp image is embedded');
-assert.ok(!json.nodes.some(n => n.name === 'Cab editable quad cage'), 'editable source cage stays outside the web export');
+assert.equal(json.nodes.find(n => n.name === 'Truck').extras.truck_revision, 'modeled-v3');
+assert.ok(json.materials.some(m => m.name === 'v3 truck signal red' && m.pbrMetallicRoughness.baseColorFactor[0] > .6 && m.pbrMetallicRoughness.baseColorFactor[1] < .04 && !m.pbrMetallicRoughness.baseColorTexture), 'vivid plain signal-red paint under the roof mark');
+for (const name of ['v3 truck wheel face', 'v3 truck headlamp', 'v3 truck tail lamp', 'v3 truck grille'])
+  assert.ok(json.materials.some(m => m.name === name && m.pbrMetallicRoughness.baseColorTexture), `imagegen decal embedded: ${name}`);
+const tyreMeshes = new Set(json.nodes.filter(n => /^Wheel_.* tyre$/.test(n.name)).map(n => n.mesh));
+assert.equal(tyreMeshes.size, 1, 'all six wheels share one symmetric wheel mesh');
 
 // Decode actual exported tire geometry; source bitmap decoding belongs to browser checks.
 const length = bytes.readUInt32LE(12);
@@ -58,7 +53,7 @@ for (const x of [-1.82, -.75, 1.62]) for (const side of [-1, 1]) {
   const wheel = scene.getObjectByName(`Wheel_${x}_${side}`);
   const tires = [];
   wheel.traverse(o => {
-    if (o.isMesh && o.material.name === 'Precision truck soft tire rubber') tires.push(o);
+    if (o.isMesh && o.material.name === 'v3 truck tyre rubber') tires.push(o);
   });
   assert.ok(tires.length, 'each native wheel retains actual tire surfaces');
   wheels.push({ wheel, steer: scene.getObjectByName(`Steer_${x}_${side}`), x, side, tires });

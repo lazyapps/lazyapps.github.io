@@ -1,0 +1,22 @@
+total 2.47 MiB json 235 KiB
+images 13 0.47 MiB
+     118 KiB image/webp asphalt
+      93 KiB image/webp brick
+      63 KiB image/webp slate
+      58 KiB image/webp oak
+      45 KiB image/webp truck-headlamp
+      39 KiB image/webp concrete
+      31 KiB image/webp truck-wheel-face
+      12 KiB image/webp truck-taillight
+      11 KiB image/webp truck-grille
+       5 KiB image/webp stone
+       4 KiB image/webp cladding
+       0 KiB image/webp red-enamel
+       0 KiB image/webp plum-enamel
+meshes 146 nodes 385 materials 58 ext [
+  'EXT_meshopt_compression',
+  'EXT_texture_webp',
+  'KHR_materials_clearcoat',
+  'KHR_materials_emissive_strength',
+  'KHR_mesh_quantization'
+]

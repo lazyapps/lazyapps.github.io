@@ -2,7 +2,8 @@
 import { FONDFONT_INSTALL } from '../i18n/fondfont-install.mjs';
 const { t } = Astro.props;
 const copy = FONDFONT_INSTALL[t.code];
-const images = ['select.png', 'guide.png', 'downloaded.png', 'profile.png'];
+// Genuine captures as web WebP copies (prepare-fondfont-install-webp.py): 600 px inline, 1000 px in the zoom viewer.
+const images = ['select', 'guide', 'downloaded', 'profile'];
 ---
 <section class="install-guide" aria-labelledby="install-title" data-install-guide>
   <div class="intro">
@@ -29,7 +30,7 @@ const images = ['select.png', 'guide.png', 'downloaded.png', 'profile.png'];
           <div class="step-context"><p class="step-note">{step.note}</p>{step.recovery && <p class="recovery">{step.recovery}</p>}</div>
         </div>
         <figure>
-          <a class="screenshot" href={`/v/fondfont/install/${t.code}/${images[i]}`} aria-label={copy.zoom} data-install-zoom><img src={`/v/fondfont/install/${t.code}/${images[i]}`} alt={step.caption} width="1206" height="2622" loading="lazy" decoding="async"><span class="zoom-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M14 4h6v6M20 4l-7 7M10 20H4v-6M4 20l7-7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /></svg></span></a>
+          <a class="screenshot" href={`/v/fondfont/install/${t.code}/${images[i]}-1000.webp`} aria-label={copy.zoom} data-install-zoom><img src={`/v/fondfont/install/${t.code}/${images[i]}-600.webp`} alt={step.caption} width="600" height="1304" loading="lazy" decoding="async"><span class="zoom-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M14 4h6v6M20 4l-7 7M10 20H4v-6M4 20l7-7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /></svg></span></a>
           <figcaption><span class="shot-caption">{step.caption}</span><span class="zoom-caption" aria-hidden="true">{copy.zoom}</span></figcaption>
         </figure>
       </section>)}
@@ -100,7 +101,7 @@ const images = ['select.png', 'guide.png', 'downloaded.png', 'profile.png'];
         event.preventDefault();
         const image = link.querySelector<HTMLImageElement>('img')!;
         zoomTrigger = link;
-        viewerImage.src = image.currentSrc || image.src;
+        viewerImage.src = link.href;
         viewerImage.alt = image.alt;
         viewerCaption.textContent = image.alt;
         viewer.showModal();

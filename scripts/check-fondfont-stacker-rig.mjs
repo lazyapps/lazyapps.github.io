@@ -6,7 +6,7 @@ import {createStackerAnimator} from '../src/lib/fondfont/stacker-animation.ts';
 import {sampleMotion,DURATION} from '../src/lib/fondfont/motion.mjs';
 
 // Use the exported Blender hierarchy, including every local rest transform.
-const bytes=readFileSync(new URL('../public/v/fondfont/blender-v2/factory-truck-v14.glb',import.meta.url));
+const bytes=readFileSync(new URL('../public/v/fondfont/blender-v3/campus-v3.glb',import.meta.url));
 const gltf=JSON.parse(bytes.subarray(20,20+bytes.readUInt32LE(12)));
 const nodes=gltf.nodes.map(n=>{
   const o=new THREE.Object3D();o.name=n.name;o.userData=n.extras??{};

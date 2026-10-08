@@ -32,7 +32,7 @@ export function createCatPair(source:THREE.Object3D) {
 }
 
 export async function loadStudioPets(signal?:AbortSignal) {
-  const source = await loadModel('/v/fondfont/pets/cat-v1.glb',signal);
+  const source = await loadModel('/v/fondfont/pets/cat-v2.glb',signal);
   return createCatPair(source.scene);
 }
 

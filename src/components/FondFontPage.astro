@@ -6,7 +6,8 @@ import FondFontFactoryScene from './FondFontFactoryScene.astro';
 import FondFontInstallGuide from './FondFontInstallGuide.astro';
 import siteCssUrl from '$assets/s/site.css?url';
 import '$assets/s/fondfont-fonts.css';
-import appIconUrl from '$assets/img/fondfont-web-icon.png';
+import appIconUrl from '$assets/img/fondfont-web-icon-128.webp';
+import faviconUrl from '$assets/img/fondfont-web-icon-64.png';
 import { FONDFONT_LOCALES, fondfontLocaleFor, fondfontPreferredLocale } from '../i18n/fondfont-locales.mjs';
 const { t, isRoot = false } = Astro.props;
 const locales = Object.values(FONDFONT_LOCALES);
@@ -38,7 +39,7 @@ const redirect = `(() => {
     {locales.map(locale => <link rel="alternate" hreflang={locale.htmlLang} href={`https://lazyapps.com${locale.selectedUrl}`} />)}
     <link rel="alternate" hreflang="x-default" href="https://lazyapps.com/fondfont/en/">
     <SocialMeta title={t.title} description={t.description} url={`https://lazyapps.com${t.selectedUrl}`} image={`https://lazyapps.com${ogUrl}`} imageAlt={t.name} imageWidth={1200} imageHeight={630} locale={t.ogLocale} />
-    <link rel="icon" href={appIconUrl.src} type="image/png">
+    <link rel="icon" href={faviconUrl.src} type="image/png">
     <link rel="stylesheet" href={siteCssUrl}>
     {isRoot && <script is:inline set:html={redirect} />}
   </head>

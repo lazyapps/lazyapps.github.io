@@ -1,3 +1,4 @@
+// Retired native rig (not shipped since 2026-10-08); the GLB is kept locally under scripts/assets.
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
 import * as THREE from 'three';
@@ -5,7 +6,7 @@ import {GLTFLoader} from 'three/addons/loaders/GLTFLoader.js';
 import {MeshoptDecoder} from 'three/addons/libs/meshopt_decoder.module.js';
 import {createGardenLife} from '../src/lib/fondfont/garden-life.mjs';
 import {createPetAnimator} from '../src/lib/fondfont/pet-animation.ts';
-const bytes=readFileSync(new URL('../public/v/fondfont/blender-v2/garden-life-rig-v6.glb',import.meta.url));
+const bytes=readFileSync(new URL('./assets/fondfont/blender-v2/retired-public/garden-life-rig-v6.glb',import.meta.url));
 const gltf=JSON.parse(bytes.subarray(20,20+bytes.readUInt32LE(12)));
 assert.equal(gltf.skins.length,3,'both pets plus the separate imagegen head retain real skins');
 assert.equal(new Set(gltf.skins.flatMap(s=>s.joints)).size,42,'both pets retain wrist/hock joints');

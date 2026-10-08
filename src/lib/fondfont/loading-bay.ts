@@ -1,15 +1,24 @@
 import * as THREE from 'three';
 
-/** Keep the illustrated door and its native interior in the same orthographic sight plane. */
-export function installLoadingBayVisibility(model:THREE.Object3D,camera:THREE.Camera){
-  const sight=camera.getWorldDirection(new THREE.Vector3());
-  const upY=-sight.z,upZ=sight.y;
+/**
+ * Interior bays (and vehicles inside them) are drawn only where the line of sight from the
+ * lens passes through the door opening. Each fragment behind the door plane traces its
+ * own ray back to the camera, so the clip is exact for a perspective lens.
+ */
+export function installLoadingBayVisibility(model:THREE.Object3D){
   const portals=['Foundry','Warehouse'].map(name=>{
     const building=model.getObjectByName(name)!;
     const [left,right,height,z]=building.userData.loading_bay_portal as number[];
     return {building,left:left+building.position.x,right:right+building.position.x,height,z};
   });
-  const fragment=portals.map(p=>`if(vBayWorld.x>${p.left.toFixed(8)} && vBayWorld.x<${p.right.toFixed(8)} && vBayWorld.z<${p.z.toFixed(8)} && ${upY.toFixed(8)}*vBayWorld.y+${upZ.toFixed(8)}*vBayWorld.z>${(upY*p.height+upZ*p.z).toFixed(8)})discard;`).join('\n');
+  const fragment=portals.map(p=>{
+    const [l,r,h,z]=[p.left,p.right,p.height,p.z].map(v=>v.toFixed(8));
+    return `if(vBayWorld.x>${l} && vBayWorld.x<${r} && vBayWorld.z<${z}){
+      float bayT=(${z}-cameraPosition.z)/(vBayWorld.z-cameraPosition.z);
+      vec3 bayDoor=cameraPosition+bayT*(vBayWorld-cameraPosition);
+      if(bayDoor.y>${h} || bayDoor.x<${l} || bayDoor.x>${r})discard;
+    }`;
+  }).join('\n');
   const materials:THREE.Material[]=[];
   const apply=(o:THREE.Object3D)=>{
     if(!(o instanceof THREE.Mesh))return;

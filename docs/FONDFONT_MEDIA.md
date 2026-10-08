@@ -1279,3 +1279,57 @@ budget if JavaScript is not HTTP-compressed: 20.23 MB -> 10.48 MB. This is not
 a deployed CDN measurement or a speed/frame-rate claim. Details, raw controls,
 mobile emulation limits and motion evidence are in
 `docs/reviews/fondfont-hero-budget-20261008/findings.md`.
+
+## 2026-10-08 — campus v3: modeled buildings and truck from modeling-grade imagegen
+
+The hero scene now loads `public/v/fondfont/blender-v3/campus-v3.glb` (2.47 MiB,
+1.42 MB gzip; previously 7.69 MiB / 5.0 MB). The projected full-image building
+paintings and their shadow/occluder proxies are replaced by real models built from
+new Codex imagegen orthographic sheets. One orthographic camera now sees only real
+geometry, so building, vehicle and shadow perspective agree.
+
+- Imagegen sources, made for modeling: elevation and blueprint sheets
+  (foundry, warehouse, truck, forklift), seamless tiles (brick, slate, cladding,
+  asphalt, concrete) and truck decals (wheel face, headlamp, tail lamp, grille).
+  Originals, prompts and SHA-256 are in
+  `scripts/assets/fondfont/blender-v3/imagegen/provenance.json`. Web tiles come
+  from `scripts/prepare-fondfont-textures-v3.py`; that step resizes and repairs
+  wrap seams only.
+- Buildings: `scripts/fondfont-architecture-v3.py`. The phone roof sits flush on
+  the warehouse with a 6 cm overhang.
+- Truck: `scripts/fondfont-truck-v3.py`, rebuilt against the blueprint. All rig
+  pivots, the wheel radius, the deck height, the gate hinge and the label anchors
+  are unchanged. Six wheels share one mesh.
+- Assembly and size budget: `scripts/build-fondfont-campus-v3.py`, then
+  `scripts/compress-fondfont-campus-v3.sh` (gltf-transform dedup and meshopt;
+  node names are preserved).
+- The two legacy native pets are no longer shipped in the scene GLB. The runtime
+  already replaced them with the licensed studio pets.
+
+- Sixteen retired GLB and PNG files (about 93 MB) moved out of `public/v/fondfont/blender-v2/`
+  to the local `scripts/assets/fondfont/blender-v2/retired-public/`, so they are no longer
+  deployed. The truck attachment baseline lives in
+  `scripts/check-fondfont-truck-attachments.json`.
+
+- The camera is now a physical perspective lens (`src/lib/fondfont/campus-camera.ts`):
+  the same 33° view axis, 52 m from the target, with a vertical field of view solved per viewport (13–17° in the tested layouts).
+  The orthographic view had produced reverse-perspective roofs. The field of view
+  is solved so the projected curb matches the page road width. The page sun, the
+  loading-bay sight clip and the smoke ray-march all trace real per-pixel rays.
+
+- Warehouse roof: the phone slab has 20–28 cm eaves and a 26 cm titanium band. The
+  screen carries twelve classic glyphs for the current locale
+  (`src/lib/fondfont/roof-glyphs.ts`). Each glyph drifts with deterministic Brownian
+  motion and cycles through a pool of 5–7 licensed typefaces with cross-fades. The
+  pools are listed in `src/lib/fondfont/roof-fonts.json` and built by
+  `scripts/prepare-fondfont-roof-fonts.py`, which checks glyph coverage, subsets the
+  fonts and publishes their licences. The check is `scripts/check-fondfont-roof-glyphs.mjs`.
+
+- Download budget: cold page transfer is 3.47 MB (zh-hans desktop) and 3.52 MB
+  (en mobile), down from 9.59 MB and 7.17 MB. The changes:
+  - `cat-v2.glb`: unsubdivided cage, half the groom strands, all 84 morphs kept;
+  - web-sized lossy leaf and dust sprites (`prepare-fondfont-effects-v2.py`);
+  - WebP installation captures, 600 px and 1000 px (`prepare-fondfont-install-webp.py`);
+  - small header and favicon icons (`prepare-fondfont-icon-web.py`).
+
+Evidence, checks and size table: `docs/reviews/fondfont-campus-v3-20261008/findings.md`.

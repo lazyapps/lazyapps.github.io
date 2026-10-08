@@ -1,0 +1,436 @@
+{
+ "en": {
+  "glyphs": [
+   "A",
+   "Q",
+   "R",
+   "a",
+   "g",
+   "e",
+   "k",
+   "&",
+   "?",
+   "fi",
+   "ß",
+   "ft"
+  ],
+  "fonts": [
+   {
+    "file": "en-0.woff",
+    "name": "EB Garamond",
+    "source": "EBGaramond[wght].ttf",
+    "license": "/v/fondfont/fonts/licenses/EBGaramond[wght]-OFL.txt",
+    "sourceSHA256": "ef9512f92f6d579e5dc75af59a5a4b1b8b47d2eda89e00b954d44520e5369027"
+   },
+   {
+    "file": "en-1.woff",
+    "name": "Libre Baskerville",
+    "source": "LibreBaskerville[wght].ttf",
+    "license": "/v/fondfont/fonts/licenses/LibreBaskerville[wght]-OFL.txt",
+    "sourceSHA256": "05a95421961341c5b2556285e8415df9db27dab4f4abe22b446b3c6a8b916c5d"
+   },
+   {
+    "file": "en-2.woff",
+    "name": "Playfair Display",
+    "source": "PlayfairDisplay.ttf",
+    "license": "/v/fondfont/fonts/licenses/PlayfairDisplay-Variable-OFL.txt",
+    "sourceSHA256": "c40f2293766a503bc70cce9e512ef844a4ccb7cbcde792fe2ea31d191917d8d6"
+   },
+   {
+    "file": "en-3.woff",
+    "name": "Allura",
+    "source": "Allura-Regular.ttf",
+    "license": "/v/fondfont/fonts/licenses/Allura-Regular-OFL.txt",
+    "sourceSHA256": "9c142b2e515832c0dfc4ff8b8ea18f40314943bf937b72e2b23c4661bac14cc6"
+   },
+   {
+    "file": "en-4.woff",
+    "name": "DINish",
+    "source": "DINish-Regular.otf",
+    "license": "/v/fondfont/fonts/licenses/DINish-Regular-OFL.txt",
+    "sourceSHA256": "dc0099204c150db1208d1c61c66b46039c161290f8977b4e6e56005384d0e15c"
+   },
+   {
+    "file": "en-5.woff",
+    "name": "IBM Plex Mono",
+    "source": "IBMPlexMono-Regular.ttf",
+    "license": "/v/fondfont/fonts/licenses/IBMPlexMono-Regular-OFL.txt",
+    "sourceSHA256": "6a3412f058c7d8dfd9170c41e85ade48e5156ecb89356110ca57a0a27734af46"
+   },
+   {
+    "file": "en-6.woff",
+    "name": "Bebas Neue",
+    "source": "BebasNeue-Regular.ttf",
+    "license": "/v/fondfont/fonts/licenses/BebasNeue-Regular-OFL.txt",
+    "sourceSHA256": "08e4623805102d819f58601e46e345648846075e363b2ceb23313c2d1c83ec73"
+   }
+  ]
+ },
+ "fr": {
+  "glyphs": [
+   "A",
+   "Q",
+   "a",
+   "g",
+   "é",
+   "ç",
+   "è",
+   "à",
+   "ô",
+   "œ",
+   "Œ",
+   "&"
+  ],
+  "fonts": [
+   {
+    "file": "fr-0.woff",
+    "name": "EB Garamond",
+    "source": "EBGaramond[wght].ttf",
+    "license": "/v/fondfont/fonts/licenses/EBGaramond[wght]-OFL.txt",
+    "sourceSHA256": "ef9512f92f6d579e5dc75af59a5a4b1b8b47d2eda89e00b954d44520e5369027"
+   },
+   {
+    "file": "fr-1.woff",
+    "name": "Libre Baskerville",
+    "source": "LibreBaskerville[wght].ttf",
+    "license": "/v/fondfont/fonts/licenses/LibreBaskerville[wght]-OFL.txt",
+    "sourceSHA256": "05a95421961341c5b2556285e8415df9db27dab4f4abe22b446b3c6a8b916c5d"
+   },
+   {
+    "file": "fr-2.woff",
+    "name": "Playfair Display",
+    "source": "PlayfairDisplay.ttf",
+    "license": "/v/fondfont/fonts/licenses/PlayfairDisplay-Variable-OFL.txt",
+    "sourceSHA256": "c40f2293766a503bc70cce9e512ef844a4ccb7cbcde792fe2ea31d191917d8d6"
+   },
+   {
+    "file": "fr-3.woff",
+    "name": "Allura",
+    "source": "Allura-Regular.ttf",
+    "license": "/v/fondfont/fonts/licenses/Allura-Regular-OFL.txt",
+    "sourceSHA256": "9c142b2e515832c0dfc4ff8b8ea18f40314943bf937b72e2b23c4661bac14cc6"
+   },
+   {
+    "file": "fr-4.woff",
+    "name": "DINish",
+    "source": "DINish-Regular.otf",
+    "license": "/v/fondfont/fonts/licenses/DINish-Regular-OFL.txt",
+    "sourceSHA256": "dc0099204c150db1208d1c61c66b46039c161290f8977b4e6e56005384d0e15c"
+   },
+   {
+    "file": "fr-5.woff",
+    "name": "IBM Plex Mono",
+    "source": "IBMPlexMono-Regular.ttf",
+    "license": "/v/fondfont/fonts/licenses/IBMPlexMono-Regular-OFL.txt",
+    "sourceSHA256": "6a3412f058c7d8dfd9170c41e85ade48e5156ecb89356110ca57a0a27734af46"
+   },
+   {
+    "file": "fr-6.woff",
+    "name": "Bebas Neue",
+    "source": "BebasNeue-Regular.ttf",
+    "license": "/v/fondfont/fonts/licenses/BebasNeue-Regular-OFL.txt",
+    "sourceSHA256": "08e4623805102d819f58601e46e345648846075e363b2ceb23313c2d1c83ec73"
+   }
+  ]
+ },
+ "de": {
+  "glyphs": [
+   "A",
+   "Q",
+   "a",
+   "g",
+   "ß",
+   "ä",
+   "ö",
+   "ü",
+   "Ä",
+   "Ö",
+   "Ü",
+   "&"
+  ],
+  "fonts": [
+   {
+    "file": "de-0.woff",
+    "name": "EB Garamond",
+    "source": "EBGaramond[wght].ttf",
+    "license": "/v/fondfont/fonts/licenses/EBGaramond[wght]-OFL.txt",
+    "sourceSHA256": "ef9512f92f6d579e5dc75af59a5a4b1b8b47d2eda89e00b954d44520e5369027"
+   },
+   {
+    "file": "de-1.woff",
+    "name": "Libre Baskerville",
+    "source": "LibreBaskerville[wght].ttf",
+    "license": "/v/fondfont/fonts/licenses/LibreBaskerville[wght]-OFL.txt",
+    "sourceSHA256": "05a95421961341c5b2556285e8415df9db27dab4f4abe22b446b3c6a8b916c5d"
+   },
+   {
+    "file": "de-2.woff",
+    "name": "Playfair Display",
+    "source": "PlayfairDisplay.ttf",
+    "license": "/v/fondfont/fonts/licenses/PlayfairDisplay-Variable-OFL.txt",
+    "sourceSHA256": "c40f2293766a503bc70cce9e512ef844a4ccb7cbcde792fe2ea31d191917d8d6"
+   },
+   {
+    "file": "de-3.woff",
+    "name": "Allura",
+    "source": "Allura-Regular.ttf",
+    "license": "/v/fondfont/fonts/licenses/Allura-Regular-OFL.txt",
+    "sourceSHA256": "9c142b2e515832c0dfc4ff8b8ea18f40314943bf937b72e2b23c4661bac14cc6"
+   },
+   {
+    "file": "de-4.woff",
+    "name": "DINish",
+    "source": "DINish-Regular.otf",
+    "license": "/v/fondfont/fonts/licenses/DINish-Regular-OFL.txt",
+    "sourceSHA256": "dc0099204c150db1208d1c61c66b46039c161290f8977b4e6e56005384d0e15c"
+   },
+   {
+    "file": "de-5.woff",
+    "name": "IBM Plex Mono",
+    "source": "IBMPlexMono-Regular.ttf",
+    "license": "/v/fondfont/fonts/licenses/IBMPlexMono-Regular-OFL.txt",
+    "sourceSHA256": "6a3412f058c7d8dfd9170c41e85ade48e5156ecb89356110ca57a0a27734af46"
+   },
+   {
+    "file": "de-6.woff",
+    "name": "Bebas Neue",
+    "source": "BebasNeue-Regular.ttf",
+    "license": "/v/fondfont/fonts/licenses/BebasNeue-Regular-OFL.txt",
+    "sourceSHA256": "08e4623805102d819f58601e46e345648846075e363b2ceb23313c2d1c83ec73"
+   }
+  ]
+ },
+ "zh-hans": {
+  "glyphs": [
+   "永",
+   "字",
+   "爱",
+   "书",
+   "风",
+   "和",
+   "美",
+   "文",
+   "道",
+   "光",
+   "山",
+   "水"
+  ],
+  "fonts": [
+   {
+    "file": "zh-hans-0.woff",
+    "name": "Source Han Serif SC",
+    "source": "SourceHanSerifSC-Regular.otf",
+    "license": "/v/fondfont/fonts/licenses/SourceHanSerifSC-Regular-OFL.txt",
+    "sourceSHA256": "78aa7a328fd974df2d688c8a9fd74a33d8334dfa84ab24d9d11efb2ffc464117"
+   },
+   {
+    "file": "zh-hans-1.woff",
+    "name": "Ma Shan Zheng",
+    "source": "MaShanZheng-Regular.ttf",
+    "license": "/v/fondfont/fonts/licenses/MaShanZheng-Regular-OFL.txt",
+    "sourceSHA256": "6d2546bb189c732a8ca29af9e22457b152387d158aa459e4ac2ce1e51788b7fb"
+   },
+   {
+    "file": "zh-hans-2.woff",
+    "name": "ZCOOL KuaiLe",
+    "source": "ZCOOLKuaiLe-Regular.ttf",
+    "license": "/v/fondfont/fonts/licenses/ZCOOLKuaiLe-Regular-OFL.txt",
+    "sourceSHA256": "812a6fc1fe54b6d73a419245c32dfeba8aa33104d5be90d1cf6af082007cb71d"
+   },
+   {
+    "file": "zh-hans-3.woff",
+    "name": "WDXL Lubrifont SC",
+    "source": "WDXLLubrifontSC-Regular.ttf",
+    "license": "/v/fondfont/fonts/licenses/WDXLLubrifontSC-Regular-OFL.txt",
+    "sourceSHA256": "0134ed261d56aab8fa1860df677858c5d0d3ca899b2aa5430581c458a752e914"
+   },
+   {
+    "file": "zh-hans-4.woff",
+    "name": "Noto Sans SC",
+    "source": "NotoSansSC[wght].ttf",
+    "license": "/v/fondfont/fonts/licenses/notosanssc-OFL.txt",
+    "sourceSHA256": "a3041811a78c361b1de50f953c805e0244951c21c5bd412f7232ef0d899af0da"
+   },
+   {
+    "file": "zh-hans-5.woff",
+    "name": "LXGW WenKai TC",
+    "source": "LXGWWenKaiTC-Regular.ttf",
+    "license": "/v/fondfont/fonts/licenses/LXGWWenKaiTC-Regular-OFL.txt",
+    "sourceSHA256": "4fcc5aec11cbbf737b0cfab7b63796f7f280087a7a656b2f13342cd5e5318d95"
+   }
+  ]
+ },
+ "zh-hant": {
+  "glyphs": [
+   "永",
+   "龍",
+   "字",
+   "書",
+   "體",
+   "愛",
+   "風",
+   "雲",
+   "和",
+   "美",
+   "道",
+   "鶴"
+  ],
+  "fonts": [
+   {
+    "file": "zh-hant-0.woff",
+    "name": "Source Han Serif TC",
+    "source": "SourceHanSerifTC-Regular.otf",
+    "license": "/v/fondfont/fonts/licenses/SourceHanSerifTC-Regular-OFL.txt",
+    "sourceSHA256": "659c9606d8fda03372247b99ec5e5bbc5a034e06a70d80fb00546772c582d3e5"
+   },
+   {
+    "file": "zh-hant-1.woff",
+    "name": "LXGW WenKai TC",
+    "source": "LXGWWenKaiTC-Regular.ttf",
+    "license": "/v/fondfont/fonts/licenses/LXGWWenKaiTC-Regular-OFL.txt",
+    "sourceSHA256": "4fcc5aec11cbbf737b0cfab7b63796f7f280087a7a656b2f13342cd5e5318d95"
+   },
+   {
+    "file": "zh-hant-2.woff",
+    "name": "Huninn",
+    "source": "Huninn-Regular.ttf",
+    "license": "/v/fondfont/fonts/licenses/Huninn-Regular-OFL.txt",
+    "sourceSHA256": "1bd770a5ffc0c06723b567686f8b5db5abf9ab54227f3bbc4e6fd648f4698805"
+   },
+   {
+    "file": "zh-hant-3.woff",
+    "name": "Iansui",
+    "source": "Iansui-Regular.ttf",
+    "license": "/v/fondfont/fonts/licenses/Iansui-Regular-OFL.txt",
+    "sourceSHA256": "6e6340d80d618a42b48ade9370c34fa37a8210750c6fbc8efe65f23716538a2b"
+   },
+   {
+    "file": "zh-hant-4.woff",
+    "name": "Noto Sans TC",
+    "source": "NotoSansTC[wght].ttf",
+    "license": "/v/fondfont/fonts/licenses/notosanstc-OFL.txt",
+    "sourceSHA256": "864727d210d54f2537bbe23b3a839436c3992af72de9322af5270897246bd44f"
+   }
+  ]
+ },
+ "ja": {
+  "glyphs": [
+   "あ",
+   "い",
+   "ろ",
+   "は",
+   "ア",
+   "カ",
+   "永",
+   "字",
+   "の",
+   "書",
+   "和",
+   "夢"
+  ],
+  "fonts": [
+   {
+    "file": "ja-0.woff",
+    "name": "Source Han Serif",
+    "source": "SourceHanSerif-Regular.otf",
+    "license": "/v/fondfont/fonts/licenses/SourceHanSerif-Regular-OFL.txt",
+    "sourceSHA256": "066dfd35dbcb96f953ebd72eb182169c3cec6b7c0f18be22f1b6e3936ac6ac20"
+   },
+   {
+    "file": "ja-1.woff",
+    "name": "Yuji Syuku",
+    "source": "YujiSyuku-Regular.ttf",
+    "license": "/v/fondfont/fonts/licenses/yujisyuku-OFL.txt",
+    "sourceSHA256": "82728ebafc8c97391e2dab633414a806f344b8e4e2227d307179f07b548fca61"
+   },
+   {
+    "file": "ja-2.woff",
+    "name": "Kosugi Maru",
+    "source": "KosugiMaru-Regular.ttf",
+    "license": "/v/fondfont/fonts/licenses/KosugiMaru-Regular-Apache-2.0.txt",
+    "sourceSHA256": "4b8d0022c8dadd090ef67cd1f71f130714767af7806cba2eb4ebe4b0271c1d68"
+   },
+   {
+    "file": "ja-3.woff",
+    "name": "M PLUS Rounded 1c",
+    "source": "MPLUSRounded1c-Regular.ttf",
+    "license": "/v/fondfont/fonts/licenses/MPLUSRounded1c-Regular-license-metadata.pb",
+    "sourceSHA256": "b75708b53e45b06d17d470aeeca5b766e3d1b3999f03f13ec4eb863ca846c14c"
+   },
+   {
+    "file": "ja-4.woff",
+    "name": "Zen Maru Gothic",
+    "source": "ZenMaruGothic-Bold.ttf",
+    "license": "/v/fondfont/fonts/licenses/ZenMaruGothic-Bold-OFL.txt",
+    "sourceSHA256": "fe24426b9c8b5523a0146a8235c8674eccf0493af354a53ec895c3596d9eb745"
+   },
+   {
+    "file": "ja-5.woff",
+    "name": "Noto Sans JP",
+    "source": "NotoSansJP[wght].ttf",
+    "license": "/v/fondfont/fonts/licenses/notosansjp-OFL.txt",
+    "sourceSHA256": "c2f3b4d463500a2ddcd3849cded1fceeb9fd6d1c32e6cbecd568453ba50fc68f"
+   }
+  ]
+ },
+ "ko": {
+  "glyphs": [
+   "한",
+   "글",
+   "봄",
+   "가",
+   "나",
+   "다",
+   "꽃",
+   "빛",
+   "사",
+   "랑",
+   "별",
+   "길"
+  ],
+  "fonts": [
+   {
+    "file": "ko-0.woff",
+    "name": "Source Han Serif K",
+    "source": "SourceHanSerifK-Regular.otf",
+    "license": "/v/fondfont/fonts/licenses/SourceHanSerifK-Regular-OFL.txt",
+    "sourceSHA256": "04060f03c5e998bfce5bc46896bf996974a3b4186aa30c434f8d84ac98afb6db"
+   },
+   {
+    "file": "ko-1.woff",
+    "name": "Nanum Pen Script",
+    "source": "NanumPenScript-Regular.ttf",
+    "license": "/v/fondfont/fonts/licenses/nanumpenscript-OFL.txt",
+    "sourceSHA256": "6f0d1ab29c7894010dc88831fb7a0a51edb79136e450344183de5b1a8b52bd43"
+   },
+   {
+    "file": "ko-2.woff",
+    "name": "Jua",
+    "source": "Jua-Regular.ttf",
+    "license": "/v/fondfont/fonts/licenses/Jua-Regular-OFL.txt",
+    "sourceSHA256": "769677aef240bfc3b9965f2b50748075bff885e6c6992fc591a3fb268279f898"
+   },
+   {
+    "file": "ko-3.woff",
+    "name": "Dongle",
+    "source": "Dongle-Regular.ttf",
+    "license": "/v/fondfont/fonts/licenses/Dongle-Regular-OFL.txt",
+    "sourceSHA256": "2966e7a9d312a868e2b5477bf9a3e59b8ce16beb76e7e52305ab5897d1ce9741"
+   },
+   {
+    "file": "ko-4.woff",
+    "name": "Sunflower",
+    "source": "Sunflower-Medium.ttf",
+    "license": "/v/fondfont/fonts/licenses/Sunflower-Medium-OFL.txt",
+    "sourceSHA256": "6e216d6b2f77a850f6b73be25633d09e03385dfa63a3a632f9e7d83a90ea7f79"
+   },
+   {
+    "file": "ko-5.woff",
+    "name": "Noto Sans KR",
+    "source": "NotoSansKR[wght].ttf",
+    "license": "/v/fondfont/fonts/licenses/notosanskr-OFL.txt",
+    "sourceSHA256": "194018e6b2b293a7964f037b25c0249ce1418bc9ab3c971060a03aa57861e252"
+   }
+  ]
+ }
+}

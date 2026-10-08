@@ -1,34 +1,30 @@
 {
   "models": [
     {
-      "name": "blender-v2/factory-truck-v14.glb",
-      "originalBytes": 8068768,
-      "downloadBytes": 5046909,
-      "originalSHA256": "1af5e1ef1d9c9e21c74b36877a0722f1bdee839719b439d5047bce82e8361fbb",
-      "gzipSHA256": "ce8216f3225c322a618ea57de57ac61fa1db5e9f3ef9d0e0ee9684c02dfd88e5"
+      "name": "blender-v3/campus-v3.glb",
+      "originalBytes": 2584940,
+      "downloadBytes": 1423765,
+      "originalSHA256": "088b8caed55c59fc51c0650da2e48a28fd6786cb0064e93f83e7e3fbc503e968",
+      "gzipSHA256": "f36cac64876755ba91b995c212f780056445b185f0d1c754a8c4c6ea1a144c54"
     },
     {
-      "name": "pets/cat-v1.glb",
-      "originalBytes": 3791224,
-      "downloadBytes": 3032692,
-      "originalSHA256": "ef1c3974d9cf9e1cc1167ca6da00fecd6abcae37f59e4e2e2847fedc70439f8d",
-      "gzipSHA256": "5cc8943229c3e3120d6321118503774fa6d4cc0d4fc3003837ef8a20123ae329"
+      "name": "pets/cat-v2.glb",
+      "originalBytes": 1718500,
+      "downloadBytes": 1344971,
+      "originalSHA256": "8dd8ed78bf37c767892e8660cb0ce1d0f52d5b57089557854d7b62e1f464c0e7",
+      "gzipSHA256": "a98aa4a55e370071e52617ab804ae0ab5a7d46c0cd3d6c8b5dc2592ffa252cb9"
     }
   ],
   "effects": [
     {
-      "name": "wind-leaf-v1",
-      "originalBytes": 1703761,
-      "downloadBytes": 1014522,
-      "originalSHA256": "ea876f24f60eef1516a01b0e689554823211ad712f00b25516739040101f90a8",
-      "webpSHA256": "d400b54410c80da822262adb503e6eb84ad3af64788addc44ffee5c6ce9eb8ab"
+      "name": "wind-leaf-v2",
+      "downloadBytes": 11122,
+      "webpSHA256": "a43b521523f33a1d434e40711a62fb4d75bfe8d134e813e54cee9e1099e78ab0"
     },
     {
-      "name": "drift-dust-v1",
-      "originalBytes": 660406,
-      "downloadBytes": 418826,
-      "originalSHA256": "9290d6354565bc1b22119dc4cabacb1b8d37249c48ca1c758746d95f4b1a78c6",
-      "webpSHA256": "8b5d8048f09fe57d198336b6f0c216c93f4e7aa06968af60fc54863d6cdaefb7"
+      "name": "drift-dust-v2",
+      "downloadBytes": 30778,
+      "webpSHA256": "2021711c3c860b6b843ff7f717353c194508ce61c504d6240997e39de8a10a2c"
     }
   ]
 }

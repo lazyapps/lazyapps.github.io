@@ -88,14 +88,16 @@ for(const [start,end] of [[0,TIMING.loadLower[1]],[TIMING.unloadRaise[0],TIMING.
   }
 }
 console.log('FondFont: fork support, mast/door clearance, fork withdrawal, road contact, replenishment and two-cycle continuity passed.');
-const bytes=readFileSync(new URL('../public/v/fondfont/blender-v2/factory-truck-v14.glb',import.meta.url));
+const bytes=readFileSync(new URL('../public/v/fondfont/blender-v3/campus-v3.glb',import.meta.url));
 const gltf=JSON.parse(bytes.subarray(20,20+bytes.readUInt32LE(12)).toString());
-for(const name of ['Truck','TruckCargo','Cargo','SourceStacker','ReceiverStacker','SourceForks','ReceiverForks','SourceInnerMast','ReceiverInnerMast','SourcePiston','ReceiverPiston','SourceDoor','ReceiverDoor','FoundrySign','WarehouseSign','FoundryArt','CabRoofName','FlatbedName','RailNameFront','PhoneRoof','Garden','LoadingSideGate','PhoneScreenGlyph',...Array.from({length:3},(_,i)=>`TypeTray${i}`)])assert.ok(gltf.nodes.some(n=>n.name===name),`model preserves ${name}`);
+for(const name of ['Truck','TruckCargo','Cargo','SourceStacker','ReceiverStacker','SourceForks','ReceiverForks','SourceInnerMast','ReceiverInnerMast','SourcePiston','ReceiverPiston','SourceDoor','ReceiverDoor','FoundrySign','WarehouseSign','CabRoofName','FlatbedName','RailNameFront','Garden','LoadingSideGate','PhoneScreenGlyph',...Array.from({length:3},(_,i)=>`TypeTray${i}`)])assert.ok(gltf.nodes.some(n=>n.name===name),`model preserves ${name}`);
 for(const name of ['FoundryBadge','FoundryWordmark','SourceBridge','ReceiverBridge','SourceShuttle','ReceiverShuttle','RailNameBack'])assert.ok(!gltf.nodes.some(n=>n.name===name),`obsolete or conflicting geometry removed: ${name}`);
 for(const x of [-1.82,-.75,1.62])for(const side of [-1,1])for(const root of ['Wheel','Steer'])assert.ok(gltf.nodes.some(n=>n.name===`${root}_${x}_${side}`),'independent truck wheel pivots preserved');
 assert.ok(bytes.length<8*1024*1024,'compressed model remains under 8 MiB');
 assert.ok(!gltf.nodes.some(n=>n.name==='Architecture_imagegen limestone plinth'),'no visible rectangular land plinth');
-for(const name of ['imagegen FondFont red enamel','imagegen plum enamel','imagegen industrial foundry alpha','imagegen industrial warehouse alpha'])assert.ok(gltf.materials.some(m=>m.name===name),`original imagegen material survives: ${name}`);
+for(const name of ['imagegen FondFont red enamel','imagegen plum enamel','v3 brick','v3 slate','v3 ivory cladding','v3 asphalt','v3 truck wheel face','v3 truck headlamp'])assert.ok(gltf.materials.some(m=>m.name===name),`imagegen-derived material present: ${name}`);
+for(const name of ['FoundryArt','PhoneRoof','PetDog','PetCat'])assert.ok(!gltf.nodes.some(n=>n.name===name),`projected artwork and unused legacy pets are not shipped: ${name}`);
+assert.ok(!gltf.nodes.some(n=>['caster','occluder','artwork'].includes(n.extras?.architecture_role)),'modeled buildings cast their own shadows without proxy volumes');
 assert.ok(gltf.nodes.some(n=>n.name==='ChimneySmoke'),'native chimney emitter is preserved');
 assert.ok(gltf.nodes.some(n=>n.extras?.native_botanical),'real botanical mesh survives export and merging');
 for(const m of gltf.materials.filter(m=>m.name.startsWith('Botanical ')))assert.ok(!m.pbrMetallicRoughness?.baseColorTexture,'botanical surfaces are modeled materials, not image cards');
@@ -116,7 +118,7 @@ for(let t=0;t<120;t+=.02)for(let i=0;i<6;i++){
   if(Math.hypot(next.x-leaf.x,next.y-leaf.y,next.z-leaf.z)>.3)assert.ok(leaf.opacity===0&&next.opacity<.005,'leaf respawns are below the renderer visibility threshold');
 }
 console.log('Garden: full projected patches clear both buildings; ambient leaves fall and respawn invisibly over 120 seconds.');
-for(const species of ['Dog','Cat'])for(const part of ['','Body','Head','Tail',...['FL','FR','BL','BR'].flatMap(side=>['Hip','Knee','Paw'].map(joint=>joint+side))])assert.ok(gltf.nodes.some(n=>n.name==='Pet'+species+part),`native articulated ${species} ${part} remains editable`);
+// Legacy native pet meshes are no longer shipped: the runtime loads the licensed studio pets (check-fondfont-studio-pets.mjs).
 for(const name of ['Butterfly','ButterflyWingL','ButterflyWingR'])assert.ok(gltf.nodes.some(n=>n.name===name),`native butterfly hinge retained: ${name}`);
 for(const m of gltf.materials.filter(m=>m.name.startsWith('Garden life ')))assert.ok(!m.pbrMetallicRoughness?.baseColorTexture,'pets and butterflies use volumetric native geometry, no raster cards');
 const corners=new Set();

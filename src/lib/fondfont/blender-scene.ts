@@ -5,6 +5,8 @@ import { sampleLeaf } from './nature.mjs';
 import { createLeafLitter } from './leaf-litter.mjs';
 import { createStackerAnimator } from './stacker-animation';
 import { pageSunPosition } from './page-sun';
+import { createRoofGlyphs,roofFontFiles } from './roof-glyphs.ts';
+import { createCampusCamera,aimCamera,fitLens,rayToPlane,metresPerPixel,roadOutline } from './campus-camera.ts';
 import { installLoadingBayVisibility } from './loading-bay';
 import { createChimneySmoke } from './smoke';
 import { createStudioPetAnimator,loadStudioPets } from './studio-pet-animation';
@@ -17,6 +19,7 @@ import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
 
 type SceneCopy={foundry:string;library:string;name:string};
 const ROOT='/v/fondfont/blender-v2/';
+const CAMPUS='/v/fondfont/blender-v3/';
 class CampusAOPass extends GTAOPass{
   constructor(scene:THREE.Scene,camera:THREE.Camera,private alphaSurfaces:THREE.Object3D[]){super(scene,camera);}
   override render(...args:Parameters<GTAOPass['render']>){
@@ -38,26 +41,26 @@ export async function createBlenderFactory(host:HTMLElement,copy:SceneCopy,signa
   const key=new THREE.DirectionalLight(0xffffff,1.8);key.name='Page sun';key.target.position.set(0,0,0);key.castShadow=true;scene.add(key.target);
   const shadowSize=host.clientWidth<600?1024:2048;key.shadow.mapSize.set(shadowSize,shadowSize);Object.assign(key.shadow.camera,{left:-17,right:17,top:14,bottom:-14,near:1,far:50});
   key.shadow.radius=3;key.shadow.normalBias=.001;key.shadow.bias=-.00003;scene.add(key);
-  const camera=new THREE.OrthographicCamera(-12,12,8,-8,.1,100);
-  const cameraBase=new THREE.Vector3(0,19.25,28.7);
+  const camera=createCampusCamera();
   const cameraTarget=new THREE.Vector3(0,.25,ROAD-TURN_RADIUS);
-  camera.position.copy(cameraBase);camera.lookAt(cameraTarget);
+  aimCamera(camera,cameraTarget,()=>roadOutline());
   const code=host.dataset.locale??'zh-hans';
   const font=new FontFace(`FondFontModel-${code}`,`url(${ROOT}sign-${code}.woff)`,{weight:'100 900'});
-  const roofFont=new FontFace(`FondFontRoof-${code}`,`url(${ROOT}roof-${code}.woff)`);
+  // Every locale has a pool of licensed typefaces for the drifting roof glyphs.
+  const roofFonts=roofFontFiles(code).map((file,i)=>new FontFace(`FondFontRoof-${code}-${i}`,`url(${CAMPUS}roof/${file})`));
   let loadFailed=false;
   const [{scene:model},,brandTexture,,dustTexture,leafTexture,petRig]=await Promise.all([
-    loadModel(`${ROOT}factory-truck-v14.glb`,signal),
+    loadModel(`${CAMPUS}campus-v3.glb`,signal),
     font.load().then(f=>{if(!loadFailed&&!signal.aborted)document.fonts.add(f);}),
     new THREE.TextureLoader().loadAsync(`${ROOT}cab-symbol-paint-v3.svg`),
-    roofFont.load().then(f=>{if(!loadFailed&&!signal.aborted)document.fonts.add(f);}),
-    new THREE.TextureLoader().loadAsync(`${ROOT}drift-dust-v1.webp`),
-    new THREE.TextureLoader().loadAsync(`${ROOT}wind-leaf-v1.webp`),
+    Promise.all(roofFonts.map(face=>face.load())).then(faces=>{if(!loadFailed&&!signal.aborted)faces.forEach(f=>document.fonts.add(f));}),
+    new THREE.TextureLoader().loadAsync(`${ROOT}drift-dust-v2.webp`),
+    new THREE.TextureLoader().loadAsync(`${ROOT}wind-leaf-v2.webp`),
     loadStudioPets(signal),
-  ]).catch(error=>{loadFailed=true;env.dispose();renderer.dispose();document.fonts.delete(font);document.fonts.delete(roofFont);throw error;});
+  ]).catch(error=>{loadFailed=true;env.dispose();renderer.dispose();document.fonts.delete(font);roofFonts.forEach(f=>document.fonts.delete(f));throw error;});
   const geometrySet=new Set<THREE.BufferGeometry>(),materialSet=new Set<THREE.Material>(),textureSet=new Set<THREE.Texture>();
   for(const species of ['Dog','Cat']){
-    const old=model.getObjectByName('Pet'+species)!;
+    const old=model.getObjectByName('Pet'+species);if(!old)continue;
     old.traverse(o=>{if(o instanceof THREE.Mesh){geometrySet.add(o.geometry);for(const m of Array.isArray(o.material)?o.material:[o.material])materialSet.add(m);}});
     old.removeFromParent();
   }
@@ -108,34 +111,14 @@ export async function createBlenderFactory(host:HTMLElement,copy:SceneCopy,signa
       for(const value of Object.values(m))if(value instanceof THREE.Texture){textureSet.add(value);value.anisotropy=Math.min(8,renderer.capabilities.getMaxAnisotropy());}
     }
   });
-  const portalMaterials=installLoadingBayVisibility(model,camera);
+  const portalMaterials=installLoadingBayVisibility(model);
   for(const material of portalMaterials)materialSet.add(material);
   scene.add(model);
-  // Frame the projected campus, excluding planting and moving deliveries.
-  model.updateMatrixWorld(true);camera.updateMatrixWorld(true);
-  const campusBounds=new THREE.Box2(),point=new THREE.Vector3(),projectedPoint=new THREE.Vector2();
-  const viewMatrix=new THREE.Matrix4();
-  model.getObjectByName('Architecture')!.traverse(o=>{
-    if(!(o instanceof THREE.Mesh))return;
-    if(o.userData.architecture_role&&o.userData.architecture_role!=='artwork')return;
-    for(let parent:THREE.Object3D|null=o;parent;parent=parent.parent)if(parent.name==='Garden'||parent.userData.native_garden_life)return;
-    viewMatrix.multiplyMatrices(camera.matrixWorldInverse,o.matrixWorld);
-    const positions=o.geometry.getAttribute('position');
-    const uvs=o.geometry.getAttribute('uv');
-    for(let i=0;i<positions.count;i++){
-      const bounds=o.userData.image_bounds as number[]|undefined;
-      if(bounds&&(uvs.getX(i)<bounds[0]-.0001||uvs.getX(i)>bounds[2]+.0001||uvs.getY(i)<bounds[1]-.0001||uvs.getY(i)>bounds[3]+.0001))continue;
-      point.fromBufferAttribute(positions,i).applyMatrix4(viewMatrix);
-      campusBounds.expandByPoint(projectedPoint.set(point.x,point.y));
-    }
-  });
-  const projectedCenter=campusBounds.getCenter(new THREE.Vector2());
-  const framingOffset=new THREE.Vector3(projectedCenter.x,projectedCenter.y,0).applyQuaternion(camera.quaternion);
-  cameraBase.add(framingOffset);cameraTarget.add(framingOffset);
-  camera.position.copy(cameraBase);camera.lookAt(cameraTarget);camera.updateMatrixWorld(true);
+  // The lens is centred on the projected curb outline (see campus-camera.ts), as the page layout expects.
+  model.updateMatrixWorld(true);
   if(import.meta.env.DEV&&new URLSearchParams(location.search).has('petStudy')){
-    cameraTarget.set(0,.3,1.4);cameraBase.set(0,8,13);
-    camera.position.copy(cameraBase);camera.lookAt(cameraTarget);camera.zoom=5;camera.updateMatrixWorld(true);
+    cameraTarget.set(0,.3,1.4);
+    camera.position.set(0,8,13);camera.lookAt(cameraTarget);camera.zoom=5;camera.updateMatrixWorld(true);
   }
   const groundGeometry=new THREE.PlaneGeometry(200,200),groundMaterial=new THREE.ShadowMaterial({opacity:.34});
   const ground=new THREE.Mesh(groundGeometry,groundMaterial);ground.rotation.x=-Math.PI/2;ground.position.y=.001;ground.receiveShadow=true;scene.add(ground);geometrySet.add(groundGeometry);materialSet.add(groundMaterial);
@@ -162,8 +145,10 @@ export async function createBlenderFactory(host:HTMLElement,copy:SceneCopy,signa
   if(cabLogo)(cabLogo.material as THREE.MeshStandardMaterial).roughness=1;
   label('FlatbedName',copy.name,1.7,.36,'#352a3e',top);
   label('WarehouseSign',`iOS ${copy.library}`,librarySign.userData.width,librarySign.userData.height,'#fff0e4');
-  const roofGlyphs:Record<string,string>={en:'Ag Qq &','zh-hans':'永 字 爱','zh-hant':'永 龍 字',ja:'あ ア 永',ko:'한 글 봄',fr:'Ag Œœ é',de:'Ag ß Ää'};
-  label('PhoneScreenGlyph',roofGlyphs[code]??'Ag Qq &',4.35,1.3,'#352a3e',top,`"FondFontRoof-${code}"`,400);
+  // Fresh glyph arrangement and typeface rotation on every visit; deterministic shots use seed 47.
+  const roofSeed=host.classList.contains('is-shot')?47:Math.floor(Math.random()*100000);
+  const roofGlyphs=createRoofGlyphs(model.getObjectByName('PhoneScreenGlyph')!,code,roofFonts.map(f=>f.family),roofSeed);
+  textureSet.add(roofGlyphs.texture);roofGlyphs.materials.forEach(m=>materialSet.add(m));roofGlyphs.geometries.forEach(g=>geometrySet.add(g));
   dustTexture.colorSpace=THREE.SRGBColorSpace;textureSet.add(dustTexture);
   const dustAspect=dustTexture.image.width/dustTexture.image.height;
   const dust=Array.from({length:18},()=>{
@@ -191,7 +176,7 @@ export async function createBlenderFactory(host:HTMLElement,copy:SceneCopy,signa
   const smokeBlur=host.querySelector<HTMLElement>('.font-factory__smoke-blur');
   const gardenLife=createGardenLife(host.classList.contains('is-shot')?47:Math.floor(Math.random()*4294967296));
   const target=new THREE.WebGLRenderTarget(1,1,{type:THREE.HalfFloatType,samples:host.clientWidth<600?2:4});
-  const alphaSurfaces=[model.getObjectByName('PhoneRoof')!,model.getObjectByName('FoundryArt')!,smoke.mesh,...dust,...leaves,litterMesh];
+  const alphaSurfaces=[...['PhoneRoof','FoundryArt'].flatMap(name=>model.getObjectByName(name)??[]),roofGlyphs.group,smoke.mesh,...dust,...leaves,litterMesh];
   model.traverse(o=>{if(o.userData.architecture_role==='caster'||o.userData.architecture_role==='occluder')alphaSurfaces.push(o);});
   const composer=new EffectComposer(renderer,target),beauty=new RenderPass(scene,camera),ao=new CampusAOPass(scene,camera,alphaSurfaces),output=new OutputPass();
   // Convert straight color, then restore premultiplied alpha for the page backdrop.
@@ -202,13 +187,13 @@ export async function createBlenderFactory(host:HTMLElement,copy:SceneCopy,signa
   composer.addPass(beauty);composer.addPass(ao);composer.addPass(output);
   let disposed=false;
   let leafSkyLine=10,skyPixels=0,canvasWidth=1,canvasHeight=1;
-  function dispose(){if(disposed)return;disposed=true;resize.disconnect();petAnimator.dispose();litterMesh.dispose();host.classList.remove('is-ready');if(smokeBlur)smokeBlur.style.opacity='0';skeletonSet.forEach(s=>s.dispose());geometrySet.forEach(g=>g.dispose());materialSet.forEach(m=>m.dispose());textureSet.forEach(t=>t.dispose());env.dispose();key.shadow.dispose();ao.dispose();beauty.dispose();output.dispose();composer.dispose();renderer.dispose();document.fonts.delete(font);document.fonts.delete(roofFont);}
+  function dispose(){if(disposed)return;disposed=true;resize.disconnect();petAnimator.dispose();litterMesh.dispose();host.classList.remove('is-ready');if(smokeBlur)smokeBlur.style.opacity='0';skeletonSet.forEach(s=>s.dispose());geometrySet.forEach(g=>g.dispose());materialSet.forEach(m=>m.dispose());textureSet.forEach(t=>t.dispose());env.dispose();key.shadow.dispose();ao.dispose();beauty.dispose();output.dispose();composer.dispose();renderer.dispose();document.fonts.delete(font);roofFonts.forEach(f=>document.fonts.delete(f));}
   const pageSun=document.querySelector<HTMLElement>('[data-nav-sun]');
   let previousSun='';
   function syncSun(){
     if(!pageSun)return;
     const sun=pageSun.getBoundingClientRect(),canvas=renderer.domElement.getBoundingClientRect();
-    const signature=[sun.left,sun.top,sun.width,sun.height,canvas.left,canvas.top,canvas.width,canvas.height,camera.left,camera.top].join(',');
+    const signature=[sun.left,sun.top,sun.width,sun.height,canvas.left,canvas.top,canvas.width,canvas.height,camera.fov,camera.view?.offsetY].join(',');
     if(signature===previousSun)return;
     previousSun=signature;
     key.position.copy(pageSunPosition(camera,canvas,sun));
@@ -237,20 +222,20 @@ export async function createBlenderFactory(host:HTMLElement,copy:SceneCopy,signa
     const shadowSize=host.clientWidth<600?1024:2048;
     if(key.shadow.mapSize.x!==shadowSize){key.shadow.mapSize.set(shadowSize,shadowSize);key.shadow.map?.setSize(shadowSize,shadowSize);}
     renderer.setSize(w,totalHeight,false);composer.setSize(w,totalHeight);ao.setSize(Math.round(w*renderer.getPixelRatio()*.75),Math.round(totalHeight*renderer.getPixelRatio()*.75));
-    const aspect=w/h;
-    const cameraRight=new THREE.Vector3().setFromMatrixColumn(camera.matrixWorld,0);
-    const roadSpan=2*(TURN_X*Math.abs(cameraRight.x)+(TURN_RADIUS+2.06)*Math.hypot(cameraRight.x,cameraRight.z));
     const contentWidth=host.getBoundingClientRect().width;
     const poster=host.querySelector<HTMLElement>('.font-factory__poster')!;
     const roadWidth=poster.getBoundingClientRect().width*.821875;
-    const span=roadSpan*w/Math.max(roadWidth,1);
     previousSun='';
-    camera.left=-span/2;camera.right=span/2;camera.top=span/aspect/2+skyInset*span/w;camera.bottom=-span/aspect/2;camera.updateProjectionMatrix();
-    const up=new THREE.Vector3().setFromMatrixColumn(camera.matrixWorld,1);
+    fitLens(camera,roadWidth,w,h,skyInset);
+    // Leaves spawn on the ray through the pixel just above the logo, at the depth of the campus centre.
     const spawnPixel=(logo?.top??stageTop)-8-(stageTop-skyInset);
-    leafSkyLine=cameraTarget.dot(up)+camera.top-spawnPixel*span/w;
+    const spawn=rayToPlane(camera,0,1-2*spawnPixel/totalHeight,new THREE.Plane(new THREE.Vector3(0,0,1),-cameraTarget.z));
+    leafSkyLine=Math.cos(Math.atan2(19,29.5))*spawn.y-Math.sin(Math.atan2(19,29.5))*spawn.z;
     syncSun();
-    if(import.meta.env.DEV)host.dataset.sceneFrame=JSON.stringify({width:w,height:h,roadWidth:roadSpan/span*w,straightWidth:2*TURN_X*Math.abs(cameraRight.x)/span*w,contentWidth,centerX:w/2,offset:[projectedCenter.x,projectedCenter.y]});
+    if(import.meta.env.DEV){
+      const xs=roadOutline().map(p=>p.clone().project(camera).x);
+      host.dataset.sceneFrame=JSON.stringify({width:w,height:h,roadWidth:(Math.max(...xs)-Math.min(...xs))*w/2,contentWidth,centerX:w/2,fov:camera.fov,position:camera.position.toArray()});
+    }
   }
   const resize=new ResizeObserver(()=>{size();composer.render();});resize.observe(host);resize.observe(host.querySelector('.font-factory__stage')??host);
   if(pageSun)resize.observe(pageSun);
@@ -282,7 +267,7 @@ export async function createBlenderFactory(host:HTMLElement,copy:SceneCopy,signa
     }
     if(truckStudy){
       const offset=new THREE.Vector3(6,4.5,9).applyAxisAngle(new THREE.Vector3(0,1,0),truck.rotation.y);
-      cameraTarget.set(s.truck.x,1,s.truck.z);camera.position.copy(cameraTarget).add(offset);camera.lookAt(cameraTarget);camera.zoom=2.35;camera.updateProjectionMatrix();camera.updateMatrixWorld(true);syncSun();
+      cameraTarget.set(s.truck.x,1,s.truck.z);camera.position.copy(cameraTarget).add(offset);camera.lookAt(cameraTarget);camera.zoom=1.4;camera.updateProjectionMatrix();camera.updateMatrixWorld(true);syncSun();
     }
     if(import.meta.env.DEV)host.dataset.sceneTime=seconds.toFixed(3);
     dust.forEach((sprite,i)=>{
@@ -314,7 +299,7 @@ export async function createBlenderFactory(host:HTMLElement,copy:SceneCopy,signa
     });
     litterMesh.count=fallen.leaves.length;litterMesh.instanceMatrix.needsUpdate=true;
     if(import.meta.env.DEV)host.dataset.leafLitter=JSON.stringify({count:fallen.leaves.length,deck:fallen.deckCount,kicks:fallen.kickCount,airborne:fallen.leaves.filter(p=>p.airborne).length});
-    smoke.update(seconds,camera);
+    smoke.update(seconds);roofGlyphs.update(seconds);
     const life=gardenLife.sample(seconds);petAnimator.update(life,seconds);
     butterflies.forEach((butterfly,i)=>{
       const p=sampleButterfly(seconds,i);butterfly.position.set(p.x,p.y,p.z);butterfly.rotation.set(0,p.yaw,p.roll);butterfly.scale.setScalar(p.size);
@@ -322,7 +307,8 @@ export async function createBlenderFactory(host:HTMLElement,copy:SceneCopy,signa
     });
     if(smokeBlur){
       const h=2.7,p=smoke.mesh.position.clone().add(new THREE.Vector3(.13*h+.105*h*h+.07*h*Math.sin(h*2.7-seconds*.55),h,0)).project(camera);
-      const width=canvasWidth*(.08+.15*h)/(camera.right-camera.left)*3.8,height=width*1.45;
+      const world=smoke.mesh.position.clone().add(new THREE.Vector3(0,h,0));
+      const width=(.08+.15*h)/metresPerPixel(camera,world,canvasHeight)*3.8,height=width*1.45;
       smokeBlur.style.width=`${width}px`;smokeBlur.style.height=`${height}px`;
       smokeBlur.style.transform=`translate(${(p.x+1)*canvasWidth/2-width/2}px,${(1-p.y)*canvasHeight/2-skyPixels-height/2}px)`;
       smokeBlur.style.opacity=String(host.classList.contains('is-export')?0:.5+.15*Math.sin(seconds*.55));
