@@ -1333,3 +1333,13 @@ geometry, so building, vehicle and shadow perspective agree.
   - small header and favicon icons (`prepare-fondfont-icon-web.py`).
 
 Evidence, checks and size table: `docs/reviews/fondfont-campus-v3-20261008/findings.md`.
+
+### First-frame posters and loading — 2026-10-08
+
+Seven localized posters now show frame zero with the live roof glyph seed (47).
+The initial light is shared with the poster, then blends to the responsive page
+sun after the 200ms handoff; viewport-dependent smoke and leaves fade in with it.
+Reduced motion also uses frame zero. Visible scene initialization shows a prominent
+centered loader without visible text, cleared on readiness or failure. Save-data and
+no-JavaScript keep the poster without a spinner. Export settings and browser
+evidence: `docs/reviews/fondfont-hero-loading-20261008/findings.md`.

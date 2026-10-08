@@ -20,6 +20,8 @@ import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
 type SceneCopy={foundry:string;library:string;name:string};
 const ROOT='/v/fondfont/blender-v2/';
 const CAMPUS='/v/fondfont/blender-v3/';
+// Light from the full 1280px poster export; share it through the initial handoff.
+const POSTER_SUN=new THREE.Vector3(-17.675282317950803,18,-15.42424746850476);
 class CampusAOPass extends GTAOPass{
   constructor(scene:THREE.Scene,camera:THREE.Camera,private alphaSurfaces:THREE.Object3D[]){super(scene,camera);}
   override render(...args:Parameters<GTAOPass['render']>){
@@ -38,7 +40,7 @@ export async function createBlenderFactory(host:HTMLElement,copy:SceneCopy,signa
   const pmrem=new THREE.PMREMGenerator(renderer),room=new RoomEnvironment();
   const env=pmrem.fromScene(room,.06);scene.environment=env.texture;scene.environmentIntensity=.7;room.dispose();pmrem.dispose();
   scene.add(new THREE.HemisphereLight(0xffffff,0x787280,.72));
-  const key=new THREE.DirectionalLight(0xffffff,1.8);key.name='Page sun';key.target.position.set(0,0,0);key.castShadow=true;scene.add(key.target);
+  const key=new THREE.DirectionalLight(0xffffff,1.8);key.name='Page sun';key.position.copy(POSTER_SUN);key.target.position.set(0,0,0);key.castShadow=true;scene.add(key.target);
   const shadowSize=host.clientWidth<600?1024:2048;key.shadow.mapSize.set(shadowSize,shadowSize);Object.assign(key.shadow.camera,{left:-17,right:17,top:14,bottom:-14,near:1,far:50});
   key.shadow.radius=3;key.shadow.normalBias=.001;key.shadow.bias=-.00003;scene.add(key);
   const camera=createCampusCamera();
@@ -145,8 +147,8 @@ export async function createBlenderFactory(host:HTMLElement,copy:SceneCopy,signa
   if(cabLogo)(cabLogo.material as THREE.MeshStandardMaterial).roughness=1;
   label('FlatbedName',copy.name,1.7,.36,'#352a3e',top);
   label('WarehouseSign',`iOS ${copy.library}`,librarySign.userData.width,librarySign.userData.height,'#fff0e4');
-  // Fresh glyph arrangement and typeface rotation on every visit; deterministic shots use seed 47.
-  const roofSeed=host.classList.contains('is-shot')?47:Math.floor(Math.random()*100000);
+  // Match the localized poster's first frame, including glyph order and typefaces.
+  const roofSeed=47;
   const roofGlyphs=createRoofGlyphs(model.getObjectByName('PhoneScreenGlyph')!,code,roofFonts.map(f=>f.family),roofSeed);
   textureSet.add(roofGlyphs.texture);roofGlyphs.materials.forEach(m=>materialSet.add(m));roofGlyphs.geometries.forEach(g=>geometrySet.add(g));
   dustTexture.colorSpace=THREE.SRGBColorSpace;textureSet.add(dustTexture);
@@ -185,10 +187,11 @@ export async function createBlenderFactory(host:HTMLElement,copy:SceneCopy,signa
     .replace('gl_FragColor = sRGBTransferOETF( gl_FragColor );','gl_FragColor = sRGBTransferOETF( gl_FragColor ); gl_FragColor.rgb *= gl_FragColor.a;');
   ao.updateGtaoMaterial({radius:.5,distanceExponent:1.5,thickness:.8,samples:12});ao.blendIntensity=.32;
   composer.addPass(beauty);composer.addPass(ao);composer.addPass(output);
-  let disposed=false;
+  let disposed=false,renderTime=0;
   let leafSkyLine=10,skyPixels=0,canvasWidth=1,canvasHeight=1;
   function dispose(){if(disposed)return;disposed=true;resize.disconnect();petAnimator.dispose();litterMesh.dispose();host.classList.remove('is-ready');if(smokeBlur)smokeBlur.style.opacity='0';skeletonSet.forEach(s=>s.dispose());geometrySet.forEach(g=>g.dispose());materialSet.forEach(m=>m.dispose());textureSet.forEach(t=>t.dispose());env.dispose();key.shadow.dispose();ao.dispose();beauty.dispose();output.dispose();composer.dispose();renderer.dispose();document.fonts.delete(font);roofFonts.forEach(f=>document.fonts.delete(f));}
   const pageSun=document.querySelector<HTMLElement>('[data-nav-sun]');
+  const sunTarget=POSTER_SUN.clone();
   let previousSun='';
   function syncSun(){
     if(!pageSun)return;
@@ -196,18 +199,18 @@ export async function createBlenderFactory(host:HTMLElement,copy:SceneCopy,signa
     const signature=[sun.left,sun.top,sun.width,sun.height,canvas.left,canvas.top,canvas.width,canvas.height,camera.fov,camera.view?.offsetY].join(',');
     if(signature===previousSun)return;
     previousSun=signature;
-    key.position.copy(pageSunPosition(camera,canvas,sun));
-    key.shadow.camera.far=key.position.distanceTo(key.target.position)+30;
+    sunTarget.copy(pageSunPosition(camera,canvas,sun));
+    key.shadow.camera.far=Math.max(sunTarget.length(),POSTER_SUN.length())+30;
     key.shadow.camera.updateProjectionMatrix();
     if(import.meta.env.DEV){
       const pixel=(point:THREE.Vector3)=>{
         const p=point.project(camera);
         return [canvas.left+(p.x+1)*canvas.width/2,canvas.top+(1-p.y)*canvas.height/2];
       };
-      const bearing=key.position.clone();bearing.y=0;
+      const bearing=sunTarget.clone();bearing.y=0;
       const base=pixel(new THREE.Vector3());
-      const tip=pixel(new THREE.Vector3(-key.position.x/key.position.y,0,-key.position.z/key.position.y));
-      host.dataset.sceneSun=JSON.stringify({world:key.position.toArray(),icon:[sun.left+sun.width/2,sun.top+sun.height/2],groundBearing:pixel(bearing),base,shadowPerMeter:[tip[0]-base[0],tip[1]-base[1]],canvas:[canvas.left,canvas.top,canvas.width,canvas.height]});
+      const tip=pixel(new THREE.Vector3(-sunTarget.x/sunTarget.y,0,-sunTarget.z/sunTarget.y));
+      host.dataset.sceneSun=JSON.stringify({world:sunTarget.toArray(),icon:[sun.left+sun.width/2,sun.top+sun.height/2],groundBearing:pixel(bearing),base,shadowPerMeter:[tip[0]-base[0],tip[1]-base[1]],canvas:[canvas.left,canvas.top,canvas.width,canvas.height]});
     }
   }
   function size(){
@@ -237,7 +240,7 @@ export async function createBlenderFactory(host:HTMLElement,copy:SceneCopy,signa
       host.dataset.sceneFrame=JSON.stringify({width:w,height:h,roadWidth:(Math.max(...xs)-Math.min(...xs))*w/2,contentWidth,centerX:w/2,fov:camera.fov,position:camera.position.toArray()});
     }
   }
-  const resize=new ResizeObserver(()=>{size();composer.render();});resize.observe(host);resize.observe(host.querySelector('.font-factory__stage')??host);
+  const resize=new ResizeObserver(()=>{size();render(renderTime);});resize.observe(host);resize.observe(host.querySelector('.font-factory__stage')??host);
   if(pageSun)resize.observe(pageSun);
   const topbar=document.querySelector('.topbar');if(topbar)resize.observe(topbar);
   if(signal.aborted){dispose();return null;}
@@ -251,7 +254,11 @@ export async function createBlenderFactory(host:HTMLElement,copy:SceneCopy,signa
   }
   function render(seconds:number){
     if(disposed)return false;
+    renderTime=seconds;
     syncSun();
+    const sunlight=Math.max(0,Math.min(1,(seconds-.2)/.6));
+    const reveal=sunlight*sunlight*(3-2*sunlight);
+    key.position.lerpVectors(POSTER_SUN,sunTarget,reveal);
     const s=sampleMotion(seconds);
     {
       truck.position.set(s.truck.x,0,s.truck.z);truck.rotation.y=s.truck.angle+s.truck.drift;
@@ -281,10 +288,10 @@ export async function createBlenderFactory(host:HTMLElement,copy:SceneCopy,signa
     windTime.value=seconds;
     const fallen=litter.sample(seconds,leafSkyLine);
     leaves.forEach((leaf,i)=>{
-      const p=sampleLeaf(seconds,i,leafSkyLine);leaf.visible=p.opacity>.005&&!fallen.captured.has(p.id);
+      const p=sampleLeaf(seconds,i,leafSkyLine);leaf.visible=p.opacity*reveal>.005&&!fallen.captured.has(p.id);
       leaf.position.set(p.x,p.y,p.z);leaf.rotation.set(p.pitch,p.yaw,p.roll,'YXZ');
       leaf.scale.set(p.size*leafTexture.image.width/leafTexture.image.height,p.size,1);
-      (leaf.material as THREE.MeshBasicMaterial).opacity=p.opacity*.85;
+      (leaf.material as THREE.MeshBasicMaterial).opacity=p.opacity*.85*reveal;
     });
     if(fallen.leaves.length>litterCapacity){
       const previous=litterMesh;while(litterCapacity<fallen.leaves.length)litterCapacity*=2;
@@ -299,7 +306,8 @@ export async function createBlenderFactory(host:HTMLElement,copy:SceneCopy,signa
     });
     litterMesh.count=fallen.leaves.length;litterMesh.instanceMatrix.needsUpdate=true;
     if(import.meta.env.DEV)host.dataset.leafLitter=JSON.stringify({count:fallen.leaves.length,deck:fallen.deckCount,kicks:fallen.kickCount,airborne:fallen.leaves.filter(p=>p.airborne).length});
-    smoke.update(seconds);roofGlyphs.update(seconds);
+    // Sky extent varies by viewport; introduce its effects only after the poster handoff.
+    smoke.update(seconds,reveal);roofGlyphs.update(seconds);
     const life=gardenLife.sample(seconds);petAnimator.update(life,seconds);
     butterflies.forEach((butterfly,i)=>{
       const p=sampleButterfly(seconds,i);butterfly.position.set(p.x,p.y,p.z);butterfly.rotation.set(0,p.yaw,p.roll);butterfly.scale.setScalar(p.size);
@@ -311,7 +319,7 @@ export async function createBlenderFactory(host:HTMLElement,copy:SceneCopy,signa
       const width=(.08+.15*h)/metresPerPixel(camera,world,canvasHeight)*3.8,height=width*1.45;
       smokeBlur.style.width=`${width}px`;smokeBlur.style.height=`${height}px`;
       smokeBlur.style.transform=`translate(${(p.x+1)*canvasWidth/2-width/2}px,${(1-p.y)*canvasHeight/2-skyPixels-height/2}px)`;
-      smokeBlur.style.opacity=String(host.classList.contains('is-export')?0:.5+.15*Math.sin(seconds*.55));
+      smokeBlur.style.opacity=String(host.classList.contains('is-export')?0:(.5+.15*Math.sin(seconds*.55))*reveal);
     }
     composer.render();return true;
   }

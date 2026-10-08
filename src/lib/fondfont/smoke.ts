@@ -5,7 +5,7 @@ import { WIND_X } from './nature.mjs';
 export function createChimneySmoke(origin:THREE.Vector3){
   const geometry=new THREE.BoxGeometry(2.4,3.4,1.4);
   geometry.translate(.7,1.7,0);
-  const uniforms={uTime:{value:0},uWind:{value:WIND_X}};
+  const uniforms={uTime:{value:0},uWind:{value:WIND_X},uOpacity:{value:1}};
   const material=new THREE.ShaderMaterial({
     uniforms,transparent:true,depthWrite:false,toneMapped:false,
     vertexShader:`varying vec3 vLocal;varying vec3 vWorld;void main(){vLocal=position;vWorld=(modelMatrix*vec4(position,1.0)).xyz;gl_Position=projectionMatrix*modelViewMatrix*vec4(position,1.0);}`,
@@ -13,7 +13,7 @@ export function createChimneySmoke(origin:THREE.Vector3){
       precision highp float;
       varying vec3 vLocal;
       varying vec3 vWorld;
-      uniform float uTime,uWind;
+      uniform float uTime,uWind,uOpacity;
       float hash(vec3 p){return fract(sin(dot(p,vec3(127.1,311.7,74.7)))*43758.5453);}
       float noise(vec3 p){
         vec3 i=floor(p),f=fract(p);f=f*f*(3.0-2.0*f);
@@ -43,10 +43,10 @@ export function createChimneySmoke(origin:THREE.Vector3){
           p+=ray*.065;
         }
         if(alpha<.001)discard;
-        gl_FragColor=vec4(vec3(.18+.04*light/max(alpha,.001)),alpha*.85);
+        gl_FragColor=vec4(vec3(.18+.04*light/max(alpha,.001)),alpha*.85*uOpacity);
       }`,
   });
   const mesh=new THREE.Mesh(geometry,material);mesh.position.copy(origin);
   mesh.name='Volumetric chimney smoke';mesh.frustumCulled=false;
-  return{mesh,geometry,material,update(seconds:number){uniforms.uTime.value=seconds;}};
+  return{mesh,geometry,material,update(seconds:number,opacity=1){uniforms.uTime.value=seconds;uniforms.uOpacity.value=opacity;mesh.visible=opacity>0;}};
 }

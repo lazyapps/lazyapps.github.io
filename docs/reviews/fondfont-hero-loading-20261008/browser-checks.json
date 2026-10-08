@@ -1,0 +1,22 @@
+{
+  "passed": [
+    "slow loading",
+    "loading clears at first frame",
+    "desktop/mobile frame captures",
+    "failure fallback",
+    "reduced motion",
+    "saveData",
+    "no JS",
+    "animation clock starts at readiness"
+  ],
+  "productionPreview": "Passed loading, failure fallback, reduced motion, save-data and no-JavaScript at port 4334 after final build.",
+  "heldModelFirstVisibleTimeSeconds": 0.05,
+  "poster": {
+    "width": 2560,
+    "height": 854,
+    "sceneTimeSeconds": 0,
+    "roofSeed": 47,
+    "webpQuality": 80,
+    "alphaQuality": 100
+  }
+}

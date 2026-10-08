@@ -12,12 +12,24 @@ const content = {
   de: { library:'SCHRIFTBIBLIOTHEK', foundry:'Schriftgießerei', alt:'Eine Transportschleife: Der FondFont-Lkw holt eine Palette mehrsprachiger Buchstaben bei einer unabhängigen Schriftgießerei ab, entlädt sie in der iOS-Schriftbibliothek für kompatible Apps und fährt leer zurück.' },
 };
 const copy = { ...content[code as keyof typeof content], name: FONDFONT_LOCALES[code].name };
+const loadingLabel = {
+  en: 'Loading scene…', 'zh-hans': '场景加载中…', 'zh-hant': '場景載入中…',
+  ja: 'シーンを読み込み中…', ko: '장면 불러오는 중…', fr: 'Chargement de la scène…', de: 'Szene wird geladen…',
+}[code];
 ---
 <figure class="font-factory" data-fondfont-scene data-locale={code} data-copy={JSON.stringify(copy)} aria-label={copy.alt}>
   <div class="font-factory__stage">
     <img class="font-factory__poster" src={`/v/fondfont/blender-v2/poster-${code}.webp`} alt="" width="2560" height="854" fetchpriority="high" decoding="async" />
     <canvas aria-hidden="true"></canvas>
     <div class="font-factory__smoke-blur" aria-hidden="true"></div>
+    <div class="font-factory__loading" role="status" aria-label={loadingLabel}>
+      <svg viewBox="0 0 48 48" fill="none" aria-hidden="true" focusable="false">
+        <circle cx="24" cy="24" r="18" stroke="currentColor" stroke-width="3.5" />
+        <path d="m7.5 17 12 6m21-6-12 6M24 29v13" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" />
+        <circle cx="24" cy="24" r="5.5" fill="currentColor" />
+        <path class="font-factory__wheel-mark" d="M24 6v3" stroke-width="3.5" stroke-linecap="round" />
+      </svg>
+    </div>
   </div>
 </figure>
 <script>
@@ -38,6 +50,11 @@ const copy = { ...content[code as keyof typeof content], name: FONDFONT_LOCALES[
     const atmosphere=document.querySelector<HTMLElement>('.font-atmosphere');
     const active=()=>visible&&!document.hidden&&!saveData;
     const moving=()=>active()&&!reduced.matches;
+    function syncLoading(){
+      const pending=loading&&active();
+      host!.classList.toggle('is-loading',pending);
+      host!.setAttribute('aria-busy',String(pending));
+    }
     function tick(now:number){
       frame=0;
       if(!factory||!moving())return;
@@ -48,13 +65,14 @@ const copy = { ...content[code as keyof typeof content], name: FONDFONT_LOCALES[
     }
     async function update(){
       atmosphere?.classList.toggle('is-moving',moving());
+      syncLoading();
       if(!active()){
         cancelAnimationFrame(frame);frame=0;
         if(factory&&saveData){factory.dispose();factory=null;}
         return;
       }
       if(!factory&&!loading&&!failed){
-        loading=true;
+        loading=true;syncLoading();
         try{
           const {createFontFactory}=await import('../lib/fondfont/scene');
           if(!active()||controller.signal.aborted)return;
@@ -62,9 +80,9 @@ const copy = { ...content[code as keyof typeof content], name: FONDFONT_LOCALES[
           if(!active()){factory?.dispose();factory=null;return;}
           if(factory&&staticTime!==null){factory.render(staticTime);return;}
         }catch(error){failed=true;console.warn('FondFont scene unavailable; keeping the static artwork.',error);}
-        finally{loading=false;}
+        finally{loading=false;syncLoading();}
       }
-      if(factory&&reduced.matches){cancelAnimationFrame(frame);frame=0;factory.render(staticTime??12.8);return;}
+      if(factory&&reduced.matches){cancelAnimationFrame(frame);frame=0;factory.render(staticTime??0);return;}
       if(factory&&!frame&&staticTime===null){last=performance.now();frame=requestAnimationFrame(tick);}
     }
     const observer=new IntersectionObserver(([entry])=>{visible=entry.isIntersecting;void update();},{threshold:.05});
@@ -73,6 +91,7 @@ const copy = { ...content[code as keyof typeof content], name: FONDFONT_LOCALES[
     document.addEventListener('visibilitychange',()=>void update(),{signal:controller.signal});
     addEventListener('pagehide',(event)=>{
       cancelAnimationFrame(frame);frame=0;
+      host.classList.remove('is-loading');host.setAttribute('aria-busy','false');
       if(!event.persisted){controller.abort();observer.disconnect();factory?.dispose();}
     },{signal:controller.signal});
     addEventListener('pageshow',()=>void update(),{signal:controller.signal});
@@ -86,14 +105,20 @@ const copy = { ...content[code as keyof typeof content], name: FONDFONT_LOCALES[
     .font-factory__stage{--road-scale:clamp(1,calc((100vw - 2 * var(--pad)) / 100cqw),1.927027027)}
   }
   canvas,.font-factory__poster{position:absolute;display:block}
-  canvas{left:0;top:calc(-1 * var(--sky-inset,0px));width:100%;height:calc(100% + var(--sky-inset,0px));pointer-events:none;opacity:0;transition:opacity .35s}
+  canvas{left:0;top:calc(-1 * var(--sky-inset,0px));width:100%;height:calc(100% + var(--sky-inset,0px));pointer-events:none;opacity:0;transition:opacity .2s}
   /* Full-canvas exports place the road across 1052 of 1280 CSS pixels. */
-  .font-factory__poster{left:50%;top:50%;width:calc(var(--road-width)/.821875);height:auto;max-width:none;transform:translate(-50%,-50%);transition:opacity .35s}
+  .font-factory__poster{left:50%;top:50%;width:calc(var(--road-width)/.821875);height:auto;max-width:none;transform:translate(-50%,-50%);transition:opacity .2s}
   .is-ready canvas{opacity:1}
   .is-export .font-factory__stage{--road-scale:1;height:auto;aspect-ratio:3/1}
   .is-shot canvas,.is-shot .font-factory__poster{transition:none}
   .is-ready .font-factory__poster{opacity:0}
+  .font-factory__loading{position:absolute;left:50%;top:50%;display:grid;place-items:center;width:64px;height:64px;border-radius:50%;background:#f8f8f680;box-shadow:0 4px 24px #352a3e26;pointer-events:none;visibility:hidden;opacity:0;transform:translate(-50%,-50%)}
+  .is-loading:not(.is-ready) .font-factory__loading{visibility:visible;opacity:1}
+  .font-factory__loading svg{width:42px;height:42px;color:#352a3e}
+  .font-factory__wheel-mark{stroke:var(--accent)}
+  .is-loading .font-factory__loading svg{animation:scene-steering 1.6s cubic-bezier(.45,0,.55,1) infinite}
+  @keyframes scene-steering{0%,100%{transform:rotate(-40deg)}50%{transform:rotate(40deg)}}
   .font-factory__smoke-blur{position:absolute;left:0;top:0;width:64px;height:86px;pointer-events:none;opacity:0;backdrop-filter:blur(2.4px);-webkit-backdrop-filter:blur(2.4px);mask-image:radial-gradient(ellipse,#000 0%,#0009 36%,transparent 72%);will-change:transform,opacity}
   @media(max-width:767px){.font-factory__stage{--road-scale:1;height:clamp(180px,46.2vw,330px)}.is-export .font-factory__stage{height:auto}.font-factory{margin-inline:0}}
-  @media(prefers-reduced-motion:reduce){canvas,.font-factory__poster{transition:none}}
+  @media(prefers-reduced-motion:reduce){canvas,.font-factory__poster{transition:none}.is-loading .font-factory__loading svg{animation:none}}
 </style>
