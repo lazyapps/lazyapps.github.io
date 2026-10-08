@@ -600,11 +600,16 @@ a:not(.button-023):focus-visible{outline:2px solid var(--accent);outline-offset:
   text-transform: uppercase;
   letter-spacing: -.01em;
   line-height: 1;
+  text-box: trim-both cap alphabetic;
+  /* Rounded capitals extend beyond the cap-height trim. */
+  padding-block: .02em;
   font-size: clamp(3rem, 11vw, 8rem);
   white-space: nowrap;
 
+  /* Eight full bands and seven gaps keep both glyph edges visible. */
   background-image: repeating-linear-gradient(180deg,
-    var(--paper) 0 .055em, transparent .055em .085em);
+    var(--paper) 0 calc(100% * 2 / 23),
+    transparent calc(100% * 2 / 23) calc(100% * 3 / 23));
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
