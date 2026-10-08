@@ -9,3 +9,7 @@
 - Latin 标题与标题性短句统一使用网站 `.dsp` 字体：`Sofia Sans Extra Condensed`，字重 `900`，字距 `-0.01em`。
 - 只本地化实际变化的产品名；画面与文字相同的 locale 必须共用一份 shared 资产和默认映射，不复制逐语言图片。
 - 交付前同时检查完整横图和居中方形裁切，并运行项目构建。
+
+## Shheep
+
+Shheep 按游戏本身的可爱像素风制作，使用原版卧室、睡着的女孩与像素标题素材，替代默认的纸色背景和网站标题字体。保留 `1200 × 630` 尺寸及中央 `630 × 630` 安全区；使用 nearest-neighbor 整数倍缩放，不重画品牌资产。运行 `python3 scripts/render-shheep-opengraph.py` 可重建。

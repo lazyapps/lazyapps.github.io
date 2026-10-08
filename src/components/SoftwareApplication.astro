@@ -9,8 +9,9 @@ interface Props {
   operatingSystem: string;
   downloadUrl: string;
   image: string;
+  applicationCategory?: string;
 }
-const { name, description, url, language, operatingSystem, downloadUrl, image } = Astro.props;
+const { name, description, url, language, operatingSystem, downloadUrl, image, applicationCategory } = Astro.props;
 ---
 <StructuredData data={{
   '@context': 'https://schema.org',
@@ -23,5 +24,6 @@ const { name, description, url, language, operatingSystem, downloadUrl, image } 
   operatingSystem,
   downloadUrl,
   image,
+  applicationCategory,
   publisher: { '@type': 'Organization', name: 'lazyapps', url: 'https://lazyapps.com/' },
 }} />

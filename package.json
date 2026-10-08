@@ -5,6 +5,7 @@
   "private": true,
   "scripts": {
     "dev": "astro dev",
+    "record:shheep": "python3 scripts/open-world-book-recording.py --url http://127.0.0.1:4321/shheep/",
     "build": "node scripts/prepare-fondfont-hero.mjs && node scripts/check-fondfont-hero-assets.mjs && astro build && node scripts/postbuild.mjs && node scripts/check-seo.mjs && node scripts/check-shheep-artifacts.mjs",
     "check:seo": "node scripts/check-seo.mjs",
     "preview": "astro preview"

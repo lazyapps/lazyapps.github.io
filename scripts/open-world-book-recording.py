@@ -1,4 +1,4 @@
-"""Open an isolated Chrome recording window with audible autoplay enabled."""
+"""Open a local recording page in isolated Chrome with audible autoplay enabled."""
 import argparse
 from pathlib import Path
 import subprocess
@@ -19,7 +19,7 @@ def main():
     query = dict(parse_qsl(target.query))
     query['record'] = '1'
     url = urlunsplit(target._replace(query=urlencode(query)))
-    with tempfile.TemporaryDirectory(prefix='world-book-recording-') as profile:
+    with tempfile.TemporaryDirectory(prefix='lazyapps-recording-') as profile:
         print(f'Recording window: {url}', flush=True)
         print('Audible autoplay enabled for this temporary Chrome session. Close the window after recording.', flush=True)
         subprocess.run([

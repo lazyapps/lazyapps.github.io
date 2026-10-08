@@ -8,7 +8,7 @@ const pages = await readPages();
 assert(pages.length > 0, 'No built pages. Run npm run build first.');
 const byUrl = new Map(pages.map(page => [page.url, page]));
 const knownAliases = new Map([[`${site}/fondfont/`, `${site}/fondfont/en/`]]);
-const product = /\/(chmate|fondfont|keyhop|yiyan|world-book|xvdl)\//;
+const product = /\/(chmate|fondfont|keyhop|yiyan|world-book|xvdl|shheep)\//;
 const localizedProduct = /\/(chmate|fondfont|keyhop|yiyan)\//;
 const meta = (page, key) => page.metas.find(node => attr(node, 'name') === key || attr(node, 'property') === key);
 
@@ -52,9 +52,11 @@ for (const page of pages) {
 
   const jsonLd = page.nodes.filter(node => node.tagName === 'script' && attr(node, 'type') === 'application/ld+json').map(node => JSON.parse(text(node)));
   if (product.test(page.url)) {
-    const app = jsonLd.find(data => data['@type'] === 'SoftwareApplication');
+    const app = jsonLd.find(data => ['SoftwareApplication', 'WebApplication'].includes(data['@type']));
     check(app?.url === page.canonical && app?.inLanguage === page.language, 'App structured data does not match page');
-    check(app.name && app.description && app.operatingSystem && app.downloadUrl, 'Incomplete basic app metadata');
+    check(app.name && app.description && app.operatingSystem, 'Incomplete basic app metadata');
+    check(app['@type'] === 'WebApplication' ? app.browserRequirements : app.downloadUrl, 'Missing browser requirements or download URL');
+    if (page.url === `${site}/shheep/`) check(app.applicationCategory === 'GameApplication', 'Missing game application category');
     check(!app.aggregateRating && !app.review && !app.offers, 'Unverified ratings/reviews/offers');
   }
   if (page.url === `${site}/`) {

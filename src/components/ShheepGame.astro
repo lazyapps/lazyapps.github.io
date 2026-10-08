@@ -59,4 +59,11 @@
 
 
 
-<script is:inline type="module" src="/shheep/game/game.2e0bbfaca33411a1.js"></script>
+{import.meta.env.DEV ? (
+<script is:inline type="module">
+const local = ['localhost', '127.0.0.1', '[::1]'].includes(location.hostname);
+await import(local && new URLSearchParams(location.search).get('record') === '1' ? '/__dev/shheep-recording.js' : '/shheep/game/game.df48324fde1d3adb.js');
+</script>
+) : (
+<script is:inline type="module" src="/shheep/game/game.df48324fde1d3adb.js"></script>
+)}
