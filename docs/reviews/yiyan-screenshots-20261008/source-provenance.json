@@ -1,0 +1,18 @@
+[
+  {
+    "source": "/Users/realazy/Desktop/Screenshot 2026-10-08 at 23.32.26.png",
+    "output": "src/assets/img/yiyan-showcase.png",
+    "sha256": "3e2b352c55986a1123b3d2db50e7f15061a8d3b5dcde730661e8971c2b982d5e",
+    "operation": "byte-identical copy; original alpha and resolution preserved",
+    "built": "dist/_astro/yiyan-showcase.DVFgnNAQ.png",
+    "bytes": 500639
+  },
+  {
+    "source": "/Users/realazy/Desktop/Screenshot 2026-10-08 at 23.32.32.png",
+    "output": "src/assets/img/yiyan-showcase-detail.png",
+    "sha256": "94f15539bd6fe4a9ae3edc025e62dabe1b77b26f59f937f76c7e964e6d2fa9b2",
+    "operation": "byte-identical copy; original alpha and resolution preserved",
+    "built": "dist/_astro/yiyan-showcase-detail.CPOx_utF.png",
+    "bytes": 504408
+  }
+]

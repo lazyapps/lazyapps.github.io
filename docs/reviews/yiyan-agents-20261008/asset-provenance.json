@@ -1,0 +1,61 @@
+{
+  "anchors": [
+    {
+      "scene": "robots",
+      "original": "/Users/realazy/.codex/generated_images/01a11b96-a4d8-7671-8f80-4f45e5841c67/exec-a3005b85-195f-4061-bffe-0ba575177730.png",
+      "workspace": "scripts/assets/yiyan/marketing-v5/robots-anchor.png",
+      "sha256": "d7be94ddd5ae01dbbde2282988272ab7700d38d67c14c25af3d99320ba9a1931",
+      "generator": "built-in image_gen",
+      "references": [
+        "robot-brand-reference.png"
+      ]
+    },
+    {
+      "scene": "trump-chat",
+      "original": "/Users/realazy/.codex/generated_images/01a11b96-a4d8-7671-8f80-4f45e5841c67/exec-15d80372-1678-4810-afbc-d4404d4d1d41.png",
+      "workspace": "scripts/assets/yiyan/marketing-v5/trump-chat-anchor.png",
+      "sha256": "8e34e91c169982f984776e58d77e8c298c2fc215c5dbb527e98774b4a3f1a21a",
+      "generator": "built-in image_gen",
+      "references": [
+        "robots-anchor.png"
+      ]
+    },
+    {
+      "scene": "win",
+      "original": "/Users/realazy/.codex/generated_images/01a11b96-a4d8-7671-8f80-4f45e5841c67/exec-c945aa51-f414-4175-9a03-208adae96d79.png",
+      "workspace": "scripts/assets/yiyan/marketing-v5/win-anchor.png",
+      "sha256": "01470ffa399df0a003e0aeb38e3fd23ecf3d4c127bbbd5dd9b7f108ac1755034",
+      "generator": "built-in image_gen",
+      "references": [
+        "trump-chat-anchor.png"
+      ]
+    }
+  ],
+  "brand_badges": [
+    {
+      "name": "pi",
+      "path": "scripts/assets/yiyan/marketing-v5/brand/pi.png",
+      "sha256": "0217cc7feda737fcf0b70a4e097e90cc102a377a183fcecce435ce110c1576cf"
+    },
+    {
+      "name": "claude",
+      "path": "scripts/assets/yiyan/marketing-v5/brand/claude.png",
+      "sha256": "91fcddecce6f4d18448b309fb9ef3d8f3398df416ace07d827102b333a7efafe"
+    },
+    {
+      "name": "codex",
+      "path": "scripts/assets/yiyan/marketing-v5/brand/codex.png",
+      "sha256": "9a37fc62d4c4b0efba1a6706457e75069d8ef079abb6e2a78c55fb3dfd952ec6"
+    },
+    {
+      "name": "opencode",
+      "path": "scripts/assets/yiyan/marketing-v5/brand/opencode.png",
+      "sha256": "aa34092540de60c889610edfa3c25316e215f12d88af29cfba530d09aee7265c"
+    },
+    {
+      "name": "antigravity",
+      "path": "scripts/assets/yiyan/marketing-v5/brand/antigravity.png",
+      "sha256": "1544415feb415a222c55ab2c0fe2bbe00053dc6cae4036f5eef965db5befcb36"
+    }
+  ]
+}

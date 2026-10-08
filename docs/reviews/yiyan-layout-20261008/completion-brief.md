@@ -1,0 +1,5 @@
+User correction: restore original YiYan website style and typography/layout; only change content. This supersedes our earlier six-tile/folded-details design.
+
+Implemented: restored src/components/YiYanPage.astro from HEAD then changed content/media only. Inline CSS is byte-identical to HEAD. Original section order, four tilted cards, two comparison/iPhone two-column sections, six-item bounds grid, CTA/install/footer structure, loader and reveal effects restored. New localized feature copy is adapted into original data slots in frontmatter. v4 music film/poster, genuine new icon and author music credit retained (credit uses existing bounds__a class, no new CSS). Original files/data untouched. Expanded-list alignment is now naturally satisfied by original definition-list layout (global dd margin0).
+
+Please answer one concise question, read-only: does git diff of src/components/YiYanPage.astro still contain any unrequested style or layout changes versus HEAD? Only flag material violations of the user's correction; no optional design advice. Build and browser checks are handled by lead. Do not edit.

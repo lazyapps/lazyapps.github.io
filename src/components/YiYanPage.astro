@@ -4,7 +4,7 @@ interface Props {
   code: string;
 }
 
-const { t, code = '' } = Astro.props;
+const { t: original, code = '' } = Astro.props;
 
 const SITE = 'https://lazyapps.com';
 import SocialMeta from './SocialMeta.astro';
@@ -25,33 +25,9 @@ import yiyanOpengraphSharedUrl from '$assets/img/yiyan-opengraph-shared.png?url'
 import yiyanOpengraphZhHantUrl from '$assets/img/yiyan-opengraph-zh-hant.png?url';
 import showcaseUrl from '$assets/img/yiyan-showcase.png?url';
 import showcaseDetailUrl from '$assets/img/yiyan-showcase-detail.png?url';
-import arShowcase from '$assets/img/yiyan/ar/yiyan-showcase.png?url';
-import deShowcase from '$assets/img/yiyan/de/yiyan-showcase.png?url';
-import enShowcase from '$assets/img/yiyan/en/yiyan-showcase.png?url';
-import esShowcase from '$assets/img/yiyan/es/yiyan-showcase.png?url';
-import frShowcase from '$assets/img/yiyan/fr/yiyan-showcase.png?url';
-import hiShowcase from '$assets/img/yiyan/hi/yiyan-showcase.png?url';
-import jaShowcase from '$assets/img/yiyan/ja/yiyan-showcase.png?url';
-import koShowcase from '$assets/img/yiyan/ko/yiyan-showcase.png?url';
-import ptbrShowcase from '$assets/img/yiyan/pt-br/yiyan-showcase.png?url';
-import ruShowcase from '$assets/img/yiyan/ru/yiyan-showcase.png?url';
-import zhHantShowcase from '$assets/img/yiyan/zh-hant/yiyan-showcase.png?url';
+import shortCopy from '../i18n/yiyan-short-copy.json';
+import agentFilmCopy from '../i18n/yiyan-agent-film-copy.json';
 
-const SHOWCASE_MAP = {
-  '': showcaseUrl,
-  ar: arShowcase,
-  de: deShowcase,
-  en: enShowcase,
-  es: esShowcase,
-  fr: frShowcase,
-  hi: hiShowcase,
-  ja: jaShowcase,
-  ko: koShowcase,
-  'pt-br': ptbrShowcase,
-  ru: ruShowcase,
-  'zh-hant': zhHantShowcase,
-};
-const showCaseUrl = SHOWCASE_MAP[code] ?? showcaseUrl;
 const OPENGRAPH_MAP = {
   '': yiyanOpengraphUrl,
   'zh-hant': yiyanOpengraphZhHantUrl,
@@ -73,7 +49,44 @@ const OG_LOCALE_MAP = {
 };
 const ogLocale = OG_LOCALE_MAP[code] ?? 'en_US';
 const heroVideoCode = code || 'zh-hans';
-const heroVideoUrl = `/v/yiyan/hero-${heroVideoCode}-v1.mp4`;
+const heroVideoUrl = `/v/yiyan/hero-${heroVideoCode}-v5.mp4`;
+const heroVideoPoster = `/v/yiyan/hero-${heroVideoCode}-v5.jpg`;
+const copy = shortCopy[heroVideoCode as keyof typeof shortCopy];
+const heroVideoLabel = agentFilmCopy[heroVideoCode as keyof typeof agentFilmCopy].alt;
+const html = (text: string) => text.replaceAll('&', '&amp;').replaceAll('<', '&lt;').replaceAll('>', '&gt;').replaceAll('"', '&quot;');
+const heading = (text: string) => code === '' || code === 'zh-hant' ? `<span class="zh">${html(text)}</span>` : html(text);
+const t = {
+  ...original,
+  description: copy.sub,
+  ogDesc: copy.sub,
+  sub: html(copy.sub),
+  trust: copy.trust,
+  cards: [
+    { ...original.cards[0], title: heading(copy.cards[0][0]), p: html(copy.cards[0][1]) },
+    { ...original.cards[1], title: heading(copy.cards[1][0]), p: html(copy.cards[1][1]) },
+    { ...original.cards[3], title: heading(copy.cards[2][0]), p: html(`${copy.cards[2][1]} ${copy.cards[3][1]}`) },
+    { ...original.cards[3], tag: copy.trust[2], title: heading(copy.cards[4][0]), p: html(copy.cards[4][1]) },
+  ],
+  iphone: {
+    ...original.iphone,
+    headB: copy.sync,
+    cellSrc: `<p class="line">${html(copy.cards[5][1])}</p><p><a data-hover href="${original.iphone.ctaUrl}"><span data-underline-link class="underline-link">${html(original.cta[1])}</span> ↗</a></p>`,
+    cellOut: `<p class="line">${html(copy.details[0][1][2])}</p>`,
+  },
+  bounds: {
+    ...original.bounds,
+    h2: heading(copy.details[1][0]),
+    items: [
+      { q: html(copy.details[0][0]), a: html(copy.details[0][1].slice(0, 2).join(' ')) },
+      { q: html(copy.cards[1][0]), a: html(copy.details[2][1][0]) },
+      { q: html(copy.details[1][0]), a: html(copy.details[1][1].slice(0, 2).join(' ')) },
+      { q: html(copy.cards[2][0]), a: html(copy.details[1][1][2]) },
+      { q: html(copy.details[2][0]), a: html(copy.details[2][1][1]) },
+      { q: html(copy.cards[5][0]), a: html(copy.details[2][1][2]) },
+    ],
+  },
+  brew: { ...original.brew, p: html(copy.sub) },
+};
 const ALTS = [
   ['zh-Hans', 'yiyan/'],
   ['en', 'yiyan/en/'],
@@ -327,8 +340,8 @@ html[data-trust=cjk] .phero__trust li{font:400 .75rem/1.5 var(--mono);letter-spa
         <video
           class="shot__video"
           data-yiyan-hero-video
-          aria-label={t.shotAltMain}
-          poster={showCaseUrl}
+          aria-label={heroVideoLabel}
+          poster={heroVideoPoster}
           preload="metadata"
           muted
           loop
@@ -336,7 +349,7 @@ html[data-trust=cjk] .phero__trust li{font:400 .75rem/1.5 var(--mono);letter-spa
           controls
         >
           <source src={heroVideoUrl} type="video/mp4">
-          <img src={showCaseUrl} alt={t.shotAltMain}>
+          <img src={showcaseUrl} alt={copy.screenshots[0]}>
         </video>
       </div>
 
@@ -404,7 +417,8 @@ html[data-trust=cjk] .phero__trust li{font:400 .75rem/1.5 var(--mono);letter-spa
       <Fragment set:html={t.iphone.whyHtml} />
     </div>}
     <div class="shot">
-      <img src={showcaseDetailUrl} alt={t.shotAltDetail}>
+      <img src={showcaseUrl} alt={copy.screenshots[0]}>
+      <img src={showcaseDetailUrl} alt={copy.screenshots[1]}>
     </div>
   </section>
 
@@ -455,6 +469,7 @@ html[data-trust=cjk] .phero__trust li{font:400 .75rem/1.5 var(--mono);letter-spa
 
   <LanguageLinks label={t.selectAria} current={t.selectedUrl} links={OPTIONS.map(([language, url, , label]) => ({ language, url, label }))} />
   <SiteFooterBase locale={t.htmlLang} />
+  <p class="bounds__a" lang="en" dir="ltr">Music: <a href="https://www.scottbuckley.com.au/library/a-kind-of-hope/">“A Kind Of Hope” by Scott Buckley</a> · <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> · Edited excerpt, volume and fades adjusted.</p>
 
 </footer>
 

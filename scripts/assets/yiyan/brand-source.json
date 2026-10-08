@@ -1,0 +1,17 @@
+{
+  "source": "AppIcon.icon",
+  "documentSHA256": "983fe66969c3495cb12219c9644ce3e7859c85f8d40821fa4c0e021d26bc2ea3",
+  "visibleBounds": [
+    172,
+    176,
+    852,
+    848
+  ],
+  "bodyBounds": [
+    172,
+    440,
+    852,
+    848
+  ],
+  "note": "Native glass pixels in exact authored silhouettes; the sun is excluded from text-height alignment."
+}

@@ -1,0 +1,3 @@
+Make **one persistent sentence card carry the whole joke**. Keep the multilingual input visible as YiYan adds a clearly labeled “地道英语” card: “Let’s pick this up tomorrow.” Then move that exact card—with identical wording and styling—into the human’s speech bubble opposite Trump.
+
+Hold it through the thumbs-up, with “赢麻了” as the punchline. Trump only needs a brief reaction. This visual handoff makes **input → English feedback → real-life reuse** unmistakable and keeps the product’s payoff at the center, without explanatory narration.

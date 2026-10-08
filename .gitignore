@@ -31,3 +31,10 @@ __pycache__/
 /docs/reviews/**/*-frames*/
 /docs/reviews/**/*.ffconcat
 /docs/reviews/**/*.log
+
+# Archived YiYan H3 generation sources, native text plates and render caches.
+/scripts/assets/yiyan/marketing-v2/
+/scripts/assets/yiyan/marketing-v3/
+/scripts/assets/yiyan/marketing-v4/
+
+/scripts/assets/yiyan/marketing-v5/
