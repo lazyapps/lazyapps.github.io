@@ -1,5 +1,7 @@
 ---
 import SocialMeta from './SocialMeta.astro';
+import SoftwareApplication from './SoftwareApplication.astro';
+import LanguageLinks from './LanguageLinks.astro';
 import SiteFooterBase from './SiteFooterBase.astro';
 import siteCssUrl from '$assets/s/site.css?url';
 import gsapUrl from '$assets/vendor/gsap.min.js?url';
@@ -14,40 +16,13 @@ import opengraphUrl from '$assets/img/chmate-opengraph-shared.png?url';
 
 interface Props {
   t: (typeof CHMATE_LOCALES)[keyof typeof CHMATE_LOCALES];
-  isRoot: boolean;
 }
-const { t, isRoot } = Astro.props;
+const { t } = Astro.props;
 const appStoreCampaign = `pt=259198&ct=lazyapps-${t.htmlLang.toLowerCase()}&mt=8`;
 const appStoreUrl = `https://apps.apple.com/app/apple-store/id335157929?${appStoreCampaign}`;
 const badges = import.meta.glob<string>('/src/assets/img/chmate/app-store-badge-*.svg', { eager: true, query: '?url', import: 'default' });
 const badgeUrl = badges[`/src/assets/img/chmate/app-store-badge-${t.badgeLocale}.svg`];
 const locales = Object.values(CHMATE_LOCALES);
-const routes = Object.fromEntries(locales.map((locale) => [locale.htmlLang.toLowerCase(), locale.htmlLang === 'zh-Hans' ? '' : locale.selectedUrl]));
-const redirectScript = `(() => {
-  const routes = ${JSON.stringify(routes)};
-  function routeFor(language) {
-    if (typeof language !== 'string') return null;
-    const tag = language.trim().toLowerCase().replace(/_/g, '-');
-    if (/^zh-(?:hant|tw|hk|mo)(?:-|$)/.test(tag)) return routes['zh-hant'];
-    if (/^zh(?:-|$)/.test(tag)) return '';
-    if (/^pt-br(?:-|$)/.test(tag)) return routes['pt-br'];
-    const base = tag.split('-')[0];
-    return Object.hasOwn(routes, base) ? routes[base] : null;
-  }
-  let target = null;
-  try { target = routeFor(localStorage.getItem('chmate.locale')); } catch (_storageError) {}
-  if (target === null) {
-    for (const language of navigator.languages ?? [navigator.language]) {
-      target = routeFor(language);
-      if (target !== null) break;
-    }
-  }
-  if (target === null) target = routes.en;
-  if (target) {
-    document.documentElement.dataset.languageRedirect = 'true';
-    location.replace(target + location.search + location.hash);
-  }
-})();`;
 ---
 <!doctype html>
 <html lang={t.htmlLang} dir={t.htmlDir} class="no-js">
@@ -71,9 +46,9 @@ const redirectScript = `(() => {
       imageHeight={630}
       locale={t.ogLocale}
     />
+    <SoftwareApplication name="CHMate" description={t.description} url={`https://lazyapps.com${t.selectedUrl}`} language={t.htmlLang} operatingSystem="iOS, iPadOS" downloadUrl="https://apps.apple.com/app/id335157929" image={`https://lazyapps.com${iconUrl}`} />
     <link rel="icon" href={iconUrl} type="image/jpeg">
     <link rel="stylesheet" href={siteCssUrl}>
-    {isRoot && <script is:inline data-language-redirect set:html={redirectScript} />}
     <script is:inline>
       document.documentElement.classList.remove('no-js');
       setTimeout(() => {
@@ -290,6 +265,7 @@ const redirectScript = `(() => {
           <p>{t.musicCredit[0]} <a href="https://www.scottbuckley.com.au/library/solace/" lang="en" dir="ltr">“Solace” — Scott Buckley</a>{t.musicCredit[1]} <a href="https://creativecommons.org/licenses/by/4.0/" lang="en" dir="ltr">CC BY 4.0</a>{t.musicCredit[2]}</p>
           <p>{t.trademark}</p>
         </div>
+        <LanguageLinks label={t.selectAria} current={t.selectedUrl} links={locales.map(locale => ({ language: locale.htmlLang, url: locale.selectedUrl, label: locale.localeNow }))} />
         <SiteFooterBase locale={t.htmlLang} />
       </div>
     </footer>

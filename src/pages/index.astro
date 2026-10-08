@@ -1,6 +1,7 @@
 ---
 const SITE = 'https://lazyapps.com';
 import SocialMeta from '../components/SocialMeta.astro';
+import StructuredData from '../components/StructuredData.astro';
 import SiteFooterBase from '../components/SiteFooterBase.astro';
 import siteCssUrl from '$assets/s/site.css?url';
 import gsapUrl from '$assets/vendor/gsap.min.js?url';
@@ -26,12 +27,12 @@ import appFondfontUrl from '$assets/img/app-fondfont.jpg?url';
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>lazyapps — Independent software since 2009</title>
+<title>lazyapps — Independent apps for Mac, iPhone &amp; iPad</title>
 <meta name="description" content="Small, focused tools for Mac, iPhone, and iPad. Built with care, zero tracking, and maintained by lazyapps since 2009.">
 <meta name="theme-color" content="#171717" data-page-color="#e8e8e6">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#171717" data-page-color="#e8e8e6">
 <SocialMeta
-  title="lazyapps — Independent software since 2009"
+  title="lazyapps — Independent apps for Mac, iPhone & iPad"
   description="Small, focused tools for Mac, iPhone, and iPad. Built with care, zero tracking, and maintained by lazyapps since 2009."
   url={`${SITE}/`}
   image={`${SITE}${opengraphUrl}`}
@@ -40,6 +41,13 @@ import appFondfontUrl from '$assets/img/app-fondfont.jpg?url';
   imageHeight={630}
   locale="en_US"
 />
+<StructuredData data={{
+  '@context': 'https://schema.org',
+  '@graph': [
+    { '@type': 'WebSite', '@id': `${SITE}/#website`, url: `${SITE}/`, name: 'lazyapps', inLanguage: 'en', publisher: { '@id': `${SITE}/#organization` } },
+    { '@type': 'Organization', '@id': `${SITE}/#organization`, url: `${SITE}/`, name: 'lazyapps', foundingDate: '2009' },
+  ],
+}} />
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2064%2064%22%3E%3Crect%20width%3D%2264%22%20height%3D%2264%22%20rx%3D%2215%22%20fill%3D%22%23171717%22%2F%3E%3Cpath%20fill%3D%22%23f8f8f6%22%20d%3D%22M20%2013h12v33h17v10H20z%22%2F%3E%3Ccircle%20cx%3D%2245%22%20cy%3D%2219%22%20r%3D%225%22%20fill%3D%22%23ff6846%22%2F%3E%3C%2Fsvg%3E">
 <link rel="stylesheet" href={siteCssUrl}>
 
@@ -208,11 +216,11 @@ setTimeout(function(){
           <div class="card__copy">
             <div class="card__heading">
               <img class="card__icon" src={keyhopIconUrl} alt="">
-              <h3 class="card__title dsp">KeyHop</h3>
+              <h2 class="card__title dsp">KeyHop</h2>
             </div>
             <p class="card__p">Ten fixed home-row keys map to ten apps. Switch or launch with pure muscle memory—regardless of keyboard layout. Optionally sync your settings across Macs with iCloud.</p>
             <div class="card__foot">
-              <a data-hover href="/keyhop/" class="card__go"><span>Explore KeyHop</span><span class="card__arrow" aria-hidden="true">↗</span></a>
+              <a data-hover href="/keyhop/en/" class="card__go"><span>Explore KeyHop</span><span class="card__arrow" aria-hidden="true">↗</span></a>
             </div>
           </div>
           <div class="card__shots">
@@ -227,11 +235,11 @@ setTimeout(function(){
           <div class="card__copy">
             <div class="card__heading">
               <img class="card__icon" src={yiyanIconUrl} alt="">
-              <h3 class="card__title dsp">YiYan</h3>
+              <h2 class="card__title dsp">YiYan</h2>
             </div>
             <p class="card__p">Captures what you write in Pi, Claude Code, Codex, OpenCode, or Antigravity and returns natural English with focused notes—with in-place text polishing whenever you need it.</p>
             <div class="card__foot">
-              <a data-hover href="/yiyan/" class="card__go"><span>Explore YiYan</span><span class="card__arrow" aria-hidden="true">↗</span></a>
+              <a data-hover href="/yiyan/en/" class="card__go"><span>Explore YiYan</span><span class="card__arrow" aria-hidden="true">↗</span></a>
             </div>
           </div>
           <div class="card__shots">
@@ -246,7 +254,7 @@ setTimeout(function(){
           <div class="card__copy">
             <div class="card__heading">
               <img class="card__icon" src={xvdlIconUrl} alt="">
-              <h3 class="card__title dsp">XVDL</h3>
+              <h2 class="card__title dsp">XVDL</h2>
             </div>
             <p class="card__p">Adds a download button to X videos and saves the highest-quality available MP4 straight to Downloads in Safari.</p>
             <div class="card__foot">
@@ -265,11 +273,11 @@ setTimeout(function(){
           <div class="card__copy">
             <div class="card__heading">
               <img class="card__icon" src={appChmateUrl} alt="">
-              <h3 class="card__title dsp">CHMate</h3>
+              <h2 class="card__title dsp">CHMate</h2>
             </div>
             <p class="card__p">Keep EPUB and CHM documents organized and ready to read on iPhone and iPad.</p>
             <div class="card__foot">
-              <a data-hover href="/chmate" class="card__go"><span>Explore CHMate</span><span class="card__arrow" aria-hidden="true">↗</span></a>
+              <a data-hover href="/chmate/en/" class="card__go"><span>Explore CHMate</span><span class="card__arrow" aria-hidden="true">↗</span></a>
             </div>
           </div>
         </div>
@@ -281,7 +289,7 @@ setTimeout(function(){
           <div class="card__copy">
             <div class="card__heading">
               <img class="card__icon" src={worldBookIconUrl} alt="">
-              <h3 class="card__title dsp">World Book</h3>
+              <h2 class="card__title dsp">World Book</h2>
             </div>
             <p class="card__p">Explore country profiles, flags, and rankings offline. Spin the globe, compare countries, and download photos and maps to keep.</p>
             <div class="card__foot">
@@ -297,7 +305,7 @@ setTimeout(function(){
           <div class="card__copy">
             <div class="card__heading">
               <img class="card__icon" src={appYifanUrl} alt="">
-              <h3 class="card__title dsp"><span class="zh" lang="zh">一饭</span></h3>
+              <h2 class="card__title dsp"><span class="zh" lang="zh">一饭</span></h2>
             </div>
             <p class="card__p">A native Fanfou client for timelines, mentions, direct messages, favorites, and photos.</p>
             <div class="card__foot">
@@ -313,11 +321,11 @@ setTimeout(function(){
           <div class="card__copy">
             <div class="card__heading">
               <img class="card__icon" src={appFondfontUrl} alt="">
-              <h3 class="card__title dsp">FondFont</h3>
+              <h2 class="card__title dsp">FondFont</h2>
             </div>
             <p class="card__p">Install custom TTF, TTC, and OTF fonts for use in iPhone and iPad apps.</p>
             <div class="card__foot">
-              <a data-hover href="/fondfont" class="card__go"><span>Learn more</span><span class="card__arrow" aria-hidden="true">↗</span></a>
+              <a data-hover href="/fondfont/en/" class="card__go"><span>Learn more</span><span class="card__arrow" aria-hidden="true">↗</span></a>
             </div>
           </div>
         </div>
@@ -342,7 +350,7 @@ setTimeout(function(){
     </div>
     <div>
       <p class="qa__q">Where do I get them?</p>
-      <p class="qa__a">The App Store for iPhone and iPad. Homebrew and direct downloads for Mac apps—<a data-hover href="/keyhop/"><span data-underline-link class="underline-link">KeyHop</span></a>, <a data-hover href="/xvdl/"><span data-underline-link class="underline-link">XVDL</span></a>, and <a data-hover href="/yiyan/"><span data-underline-link class="underline-link">YiYan</span></a>.</p>
+      <p class="qa__a">The App Store for iPhone and iPad. Homebrew and direct downloads for Mac apps—<a data-hover href="/keyhop/en/"><span data-underline-link class="underline-link">KeyHop</span></a>, <a data-hover href="/xvdl/"><span data-underline-link class="underline-link">XVDL</span></a>, and <a data-hover href="/yiyan/en/"><span data-underline-link class="underline-link">YiYan</span></a>.</p>
     </div>
   </section>
 

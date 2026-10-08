@@ -1,0 +1,294 @@
+[
+  {
+    "product": "chmate",
+    "root": {
+      "path": "/chmate/",
+      "language": "zh-Hans",
+      "canonical": "https://lazyapps.com/chmate/",
+      "links": 15
+    },
+    "switched": {
+      "path": "/chmate/en/",
+      "search": "?seo=1",
+      "hash": "#download",
+      "language": "en"
+    }
+  },
+  {
+    "product": "keyhop",
+    "root": {
+      "path": "/keyhop/",
+      "language": "zh-Hans",
+      "canonical": "https://lazyapps.com/keyhop/",
+      "links": 12
+    },
+    "switched": {
+      "path": "/keyhop/en/",
+      "search": "?seo=1",
+      "hash": "#download",
+      "language": "en"
+    }
+  },
+  {
+    "product": "yiyan",
+    "root": {
+      "path": "/yiyan/",
+      "language": "zh-Hans",
+      "canonical": "https://lazyapps.com/yiyan/",
+      "links": 12
+    },
+    "switched": {
+      "path": "/yiyan/en/",
+      "search": "?seo=1",
+      "hash": "#download",
+      "language": "en"
+    }
+  },
+  {
+    "product": "fondfont",
+    "root": {
+      "path": "/fondfont/",
+      "language": "en",
+      "canonical": "https://lazyapps.com/fondfont/en/",
+      "links": 7
+    },
+    "switched": {
+      "path": "/fondfont/en/",
+      "search": "?seo=1",
+      "hash": "#download",
+      "language": "en"
+    }
+  },
+  {
+    "rtl": {
+      "path": "/chmate/ar/",
+      "dir": "rtl",
+      "overflow": false,
+      "links": 15
+    }
+  },
+  {
+    "product": "chmate",
+    "noJs": {
+      "path": "/chmate/",
+      "overflow": false,
+      "links": [
+        {
+          "href": "/chmate/",
+          "visible": true
+        },
+        {
+          "href": "/chmate/en/",
+          "visible": true
+        },
+        {
+          "href": "/chmate/zh-hant/",
+          "visible": true
+        },
+        {
+          "href": "/chmate/es/",
+          "visible": true
+        },
+        {
+          "href": "/chmate/pt-br/",
+          "visible": true
+        },
+        {
+          "href": "/chmate/pt/",
+          "visible": true
+        },
+        {
+          "href": "/chmate/fr/",
+          "visible": true
+        },
+        {
+          "href": "/chmate/de/",
+          "visible": true
+        },
+        {
+          "href": "/chmate/ja/",
+          "visible": true
+        },
+        {
+          "href": "/chmate/ko/",
+          "visible": true
+        },
+        {
+          "href": "/chmate/ar/",
+          "visible": true
+        },
+        {
+          "href": "/chmate/it/",
+          "visible": true
+        },
+        {
+          "href": "/chmate/id/",
+          "visible": true
+        },
+        {
+          "href": "/chmate/nl/",
+          "visible": true
+        },
+        {
+          "href": "/chmate/tr/",
+          "visible": true
+        }
+      ],
+      "summaryHeight": 49.125
+    }
+  },
+  {
+    "product": "keyhop",
+    "noJs": {
+      "path": "/keyhop/",
+      "overflow": false,
+      "links": [
+        {
+          "href": "/keyhop/",
+          "visible": true
+        },
+        {
+          "href": "/keyhop/en/",
+          "visible": true
+        },
+        {
+          "href": "/keyhop/zh-hant/",
+          "visible": true
+        },
+        {
+          "href": "/keyhop/es/",
+          "visible": true
+        },
+        {
+          "href": "/keyhop/pt-br/",
+          "visible": true
+        },
+        {
+          "href": "/keyhop/fr/",
+          "visible": true
+        },
+        {
+          "href": "/keyhop/de/",
+          "visible": true
+        },
+        {
+          "href": "/keyhop/ja/",
+          "visible": true
+        },
+        {
+          "href": "/keyhop/ko/",
+          "visible": true
+        },
+        {
+          "href": "/keyhop/ru/",
+          "visible": true
+        },
+        {
+          "href": "/keyhop/ar/",
+          "visible": true
+        },
+        {
+          "href": "/keyhop/hi/",
+          "visible": true
+        }
+      ],
+      "summaryHeight": 49.125
+    }
+  },
+  {
+    "product": "yiyan",
+    "noJs": {
+      "path": "/yiyan/",
+      "overflow": false,
+      "links": [
+        {
+          "href": "/yiyan/",
+          "visible": true
+        },
+        {
+          "href": "/yiyan/en/",
+          "visible": true
+        },
+        {
+          "href": "/yiyan/zh-hant/",
+          "visible": true
+        },
+        {
+          "href": "/yiyan/es/",
+          "visible": true
+        },
+        {
+          "href": "/yiyan/pt-br/",
+          "visible": true
+        },
+        {
+          "href": "/yiyan/fr/",
+          "visible": true
+        },
+        {
+          "href": "/yiyan/de/",
+          "visible": true
+        },
+        {
+          "href": "/yiyan/ja/",
+          "visible": true
+        },
+        {
+          "href": "/yiyan/ko/",
+          "visible": true
+        },
+        {
+          "href": "/yiyan/ru/",
+          "visible": true
+        },
+        {
+          "href": "/yiyan/ar/",
+          "visible": true
+        },
+        {
+          "href": "/yiyan/hi/",
+          "visible": true
+        }
+      ],
+      "summaryHeight": 49.125
+    }
+  },
+  {
+    "product": "fondfont",
+    "noJs": {
+      "path": "/fondfont/en/",
+      "overflow": false,
+      "links": [
+        {
+          "href": "/fondfont/en/",
+          "visible": true
+        },
+        {
+          "href": "/fondfont/zh-hans/",
+          "visible": true
+        },
+        {
+          "href": "/fondfont/zh-hant/",
+          "visible": true
+        },
+        {
+          "href": "/fondfont/ja/",
+          "visible": true
+        },
+        {
+          "href": "/fondfont/ko/",
+          "visible": true
+        },
+        {
+          "href": "/fondfont/fr/",
+          "visible": true
+        },
+        {
+          "href": "/fondfont/de/",
+          "visible": true
+        }
+      ],
+      "summaryHeight": 45.1875
+    }
+  }
+]

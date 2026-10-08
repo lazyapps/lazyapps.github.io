@@ -1,14 +1,15 @@
 ---
 interface Props {
   t: any;
-  isRoot: boolean;
   code: string;
 }
 
-const { t, isRoot, code } = Astro.props;
+const { t, code } = Astro.props;
 const SITE = 'https://lazyapps.com';
 
 import SocialMeta from './SocialMeta.astro';
+import SoftwareApplication from './SoftwareApplication.astro';
+import LanguageLinks from './LanguageLinks.astro';
 import SiteFooterBase from './SiteFooterBase.astro';
 import siteCssUrl from '$assets/s/site.css?url';
 import gsapUrl from '$assets/vendor/gsap.min.js?url';
@@ -80,36 +81,6 @@ const optionsHtml = options.map(([locale, value, label]) =>
   `<option value="${value}" data-locale="${locale}" lang="${locale}"${value === t.selectedUrl ? ' selected' : ''}>${label}</option>`,
 ).join('\n');
 
-const redirectScript = `(() => {
-  var routes = {
-    en: "/keyhop/en/", "zh-hant": "/keyhop/zh-hant/", es: "/keyhop/es/",
-    "pt-br": "/keyhop/pt-br/", fr: "/keyhop/fr/", de: "/keyhop/de/",
-    ja: "/keyhop/ja/", ko: "/keyhop/ko/", ru: "/keyhop/ru/",
-    ar: "/keyhop/ar/", hi: "/keyhop/hi/"
-  };
-  function routeFor(language) {
-    if (typeof language !== "string") return null;
-    var tag = language.trim().toLowerCase().replace(/_/g, "-");
-    if (!tag) return null;
-    if (/^zh-(?:hant|tw|hk|mo)(?:-|$)/.test(tag)) return routes["zh-hant"];
-    if (/^zh(?:-|$)/.test(tag)) return "";
-    if (/^pt(?:-|$)/.test(tag)) return routes["pt-br"];
-    var base = tag.split("-")[0];
-    return Object.hasOwn(routes, base) ? routes[base] : null;
-  }
-
-  var target = null;
-  try { target = routeFor(localStorage.getItem("keyhop.locale")); } catch (_storageError) {}
-  if (target === null) {
-    var languages = Array.isArray(navigator.languages) ? navigator.languages : [navigator.language];
-    for (var i = 0; i < languages.length; i += 1) {
-      target = routeFor(languages[i]);
-      if (target !== null) break;
-    }
-  }
-  if (target === null) target = "/keyhop/en/";
-  if (target) location.replace(target + location.search + location.hash);
-})();`;
 const alternates = [
   ['zh-Hans', ''], ['en', 'en/'], ['zh-Hant', 'zh-hant/'], ['es', 'es/'],
   ['pt-BR', 'pt-br/'], ['fr', 'fr/'], ['de', 'de/'], ['ja', 'ja/'],
@@ -146,9 +117,9 @@ const socialImageUrl = {
     imageHeight={630}
     locale={ogLocales[code] ?? 'en_US'}
   />
+  <SoftwareApplication name={t.title.split(' — ')[0]} description={t.description} url={t.canonical} language={t.htmlLang} operatingSystem="macOS" downloadUrl={releaseUrl} image={`${SITE}${keyhopIconUrl}`} />
   <link rel="icon" type="image/png" href={keyhopIconUrl}>
   <link rel="stylesheet" href={siteCssUrl}>
-  {isRoot && <script is:inline data-language-redirect set:html={redirectScript} />}
   <script is:inline>
     document.documentElement.classList.remove('no-js');
     setTimeout(() => {
@@ -375,6 +346,7 @@ const socialImageUrl = {
       <pre dir="ltr"><Fragment set:html={t.brew.install} /></pre>
       <p class="bounds__a">{t.brew.p} <a class="brew__download" href={releaseUrl}>{t.brew.dmg}</a>{t.brew.dmgEnd}</p>
     </div>
+    <LanguageLinks label={t.selectAria} current={t.selectedUrl} links={options.map(([language, url, label]) => ({ language, url, label }))} />
     <SiteFooterBase locale={t.htmlLang} />
   </footer>
 

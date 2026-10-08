@@ -1,14 +1,15 @@
 ---
 interface Props {
   t: any;
-  isRoot: boolean;
   code: string;
 }
 
-const { t, isRoot, code = '' } = Astro.props;
+const { t, code = '' } = Astro.props;
 
 const SITE = 'https://lazyapps.com';
 import SocialMeta from './SocialMeta.astro';
+import SoftwareApplication from './SoftwareApplication.astro';
+import LanguageLinks from './LanguageLinks.astro';
 import SiteFooterBase from './SiteFooterBase.astro';
 import siteCssUrl from '$assets/s/site.css?url';
 import gsapUrl from '$assets/vendor/gsap.min.js?url';
@@ -125,74 +126,6 @@ const ICO_TRUST = [
   '<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M11.5 6V12.5L16.5 15" stroke="currentColor"/><path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor"/></svg>',
 ];
 
-const REDIRECT_SCRIPT = `  (() => {
-    var routes = {
-      en: "/yiyan/en/",
-      "zh-hant": "/yiyan/zh-hant/",
-      es: "/yiyan/es/",
-      "pt-br": "/yiyan/pt-br/",
-      fr: "/yiyan/fr/",
-      de: "/yiyan/de/",
-      ja: "/yiyan/ja/",
-      ko: "/yiyan/ko/",
-      ru: "/yiyan/ru/",
-      ar: "/yiyan/ar/",
-      hi: "/yiyan/hi/",
-    };
-
-    function routeFor(language) {
-      if (typeof language !== "string") return null;
-
-      var tag = language.trim().toLowerCase().replace(/_/g, "-");
-      if (!tag) return null;
-
-      if (/^zh-(?:hant|tw|hk|mo)(?:-|$)/.test(tag)) {
-        return routes["zh-hant"];
-      }
-
-      if (/^zh(?:-|$)/.test(tag)) {
-        return "";
-      }
-
-      if (/^pt(?:-|$)/.test(tag)) {
-        return routes["pt-br"];
-      }
-
-      var base = tag.split("-")[0];
-      return  Object.hasOwn(routes, base)
-        ? routes[base]
-        : null;
-    }
-
-    var target = null;
-
-    try {
-      target = routeFor(window.localStorage.getItem("yiyan.locale"));
-    } catch (_storageError) {
-    }
-
-    if (target === null) {
-      try {
-        var languages = Array.isArray(navigator.languages)
-          ? navigator.languages
-          : [navigator.language];
-
-        for (var index = 0; index < languages.length; index += 1) {
-          target = routeFor(languages[index]);
-          if (target !== null) break;
-        }
-      } catch (_languageError) {
-      }
-    }
-
-    if (target === null) target = routes.en;
-    if (!target) return;
-
-    window.location.replace(
-      target + window.location.search + window.location.hash,
-    );
-  })();`;
-
 const optionsHtml = OPTIONS.map(
   ([locale, value, lang, label]) =>
     `<option value="${value}" data-locale="${locale}" lang="${lang}"${value === t.selectedUrl ? ' selected' : ''}>${label}</option>`,
@@ -235,9 +168,9 @@ const ctaButtons = t.cta.slice(0, 2).map((label, i) => {
   imageHeight={630}
   locale={ogLocale}
 />
+<SoftwareApplication name={t.title.split(' — ')[0]} description={t.description} url={t.canonical} language={t.htmlLang} operatingSystem="macOS, iOS" downloadUrl="https://github.com/cxa/yiyan/releases" image={`${SITE}${yiyanIconUrl}`} />
 <link rel="icon" type="image/png" href={yiyanIconUrl}>
 <link rel="stylesheet" href={siteCssUrl}>
-{isRoot && <script is:inline data-language-redirect set:html={REDIRECT_SCRIPT} />}
 <script is:inline>
 document.documentElement.classList.remove('no-js');
 setTimeout(()=> {
@@ -549,6 +482,7 @@ html[data-trust=cjk] .phero__trust li{font:400 .75rem/1.5 var(--mono);letter-spa
     <p class="bounds__a"><Fragment set:html={t.brew.p} /></p>
   </div>
 
+  <LanguageLinks label={t.selectAria} current={t.selectedUrl} links={OPTIONS.map(([language, url, , label]) => ({ language, url, label }))} />
   <SiteFooterBase locale={t.htmlLang} />
 
 </footer>

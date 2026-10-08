@@ -1,5 +1,7 @@
 ---
 import SocialMeta from './SocialMeta.astro';
+import SoftwareApplication from './SoftwareApplication.astro';
+import LanguageLinks from './LanguageLinks.astro';
 import SiteFooterBase from './SiteFooterBase.astro';
 import FondFontAssetCredits from './FondFontAssetCredits.astro';
 import FondFontFactoryScene from './FondFontFactoryScene.astro';
@@ -8,8 +10,8 @@ import siteCssUrl from '$assets/s/site.css?url';
 import '$assets/s/fondfont-fonts.css';
 import appIconUrl from '$assets/img/fondfont-web-icon-128.webp';
 import faviconUrl from '$assets/img/fondfont-web-icon-64.png';
-import { FONDFONT_LOCALES, fondfontLocaleFor, fondfontPreferredLocale } from '../i18n/fondfont-locales.mjs';
-const { t, isRoot = false } = Astro.props;
+import { FONDFONT_LOCALES } from '../i18n/fondfont-locales.mjs';
+const { t } = Astro.props;
 const locales = Object.values(FONDFONT_LOCALES);
 const campaign = `pt=259198&ct=lazyapps-${t.htmlLang.toLowerCase()}&mt=8`;
 const storeUrl = `https://apps.apple.com/app/apple-store/id842109099?${campaign}`;
@@ -17,15 +19,6 @@ const badges = import.meta.glob<string>('/src/assets/img/chmate/app-store-badge-
 const badgeUrl = badges[`/src/assets/img/chmate/app-store-badge-${t.badgeLocale}.svg`];
 const ogImages = import.meta.glob<string>('/src/assets/img/fondfont-opengraph-*.png', { eager: true, query: '?url', import: 'default' });
 const ogUrl = ogImages[`/src/assets/img/fondfont-opengraph-${t.ogAsset}.png`];
-const redirect = `(() => {
-  const FONDFONT_LOCALES = ${JSON.stringify(Object.fromEntries(locales.map(l => [l.code, l.selectedUrl])))};
-  ${fondfontLocaleFor.toString()}
-  ${fondfontPreferredLocale.toString()}
-  let stored = null;
-  try { stored = localStorage.getItem('fondfont.locale'); } catch {}
-  const code = fondfontPreferredLocale(stored, navigator.languages?.length ? navigator.languages : [navigator.language]);
-  location.replace(FONDFONT_LOCALES[code] + location.search + location.hash);
-})();`;
 ---
 <!doctype html>
 <html lang={t.htmlLang}>
@@ -39,9 +32,9 @@ const redirect = `(() => {
     {locales.map(locale => <link rel="alternate" hreflang={locale.htmlLang} href={`https://lazyapps.com${locale.selectedUrl}`} />)}
     <link rel="alternate" hreflang="x-default" href="https://lazyapps.com/fondfont/en/">
     <SocialMeta title={t.title} description={t.description} url={`https://lazyapps.com${t.selectedUrl}`} image={`https://lazyapps.com${ogUrl}`} imageAlt={t.name} imageWidth={1200} imageHeight={630} locale={t.ogLocale} />
+    <SoftwareApplication name={t.name} description={t.description} url={`https://lazyapps.com${t.selectedUrl}`} language={t.htmlLang} operatingSystem="iOS, iPadOS" downloadUrl="https://apps.apple.com/app/id842109099" image={`https://lazyapps.com${appIconUrl.src}`} />
     <link rel="icon" href={faviconUrl.src} type="image/png">
     <link rel="stylesheet" href={siteCssUrl}>
-    {isRoot && <script is:inline set:html={redirect} />}
   </head>
   <body>
     <a class="skip-link" href="#main">{t.skip}</a>
@@ -58,7 +51,6 @@ const redirect = `(() => {
           </select>
         </div>
       </div>
-      <noscript><nav class="language-links" aria-label={t.selectAria}>{locales.map(locale => <a href={locale.selectedUrl} lang={locale.htmlLang} aria-current={locale.code === t.code ? 'page' : undefined}>{locale.localeNow}</a>)}</nav></noscript>
     </header>
     <main id="main">
       <section class="font-hero wrap" aria-labelledby="hero-title">
@@ -84,6 +76,7 @@ const redirect = `(() => {
       </section>
       <footer class="font-footer wrap">
         <FondFontAssetCredits locale={t.code} />
+        <LanguageLinks label={t.selectAria} current={t.selectedUrl} links={locales.map(locale => ({ language: locale.htmlLang, url: locale.selectedUrl, label: locale.localeNow }))} />
         <SiteFooterBase locale={t.htmlLang} />
       </footer>
     </main>
@@ -120,8 +113,6 @@ const redirect = `(() => {
   @keyframes nav-sun-turn{to{transform:rotate(360deg)}}
   .locale__now,.locale__short,.locale select{font-family:var(--sans)}
   @media(max-width:479px){.topbar__app .dsp:lang(ja){font-size:1rem}}
-  .language-links{display:flex;flex-wrap:wrap;gap:20px;padding-top:20px;font-size:14px}
-  .language-links [aria-current]{text-decoration:underline}
   .font-hero{display:flex;flex-direction:column;align-items:center;padding-block:8px 72px}
   .font-hero__copy{min-width:0;width:100%;max-width:850px;display:flex;flex-direction:column;align-items:center;gap:12px;text-align:center;container-type:inline-size;margin-top:-10px}
   h1{font-size:min(64px,7.5cqw);width:100%;max-width:none;letter-spacing:-.045em}

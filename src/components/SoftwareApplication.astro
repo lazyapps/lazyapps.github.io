@@ -1,0 +1,27 @@
+---
+import StructuredData from './StructuredData.astro';
+
+interface Props {
+  name: string;
+  description: string;
+  url: string;
+  language: string;
+  operatingSystem: string;
+  downloadUrl: string;
+  image: string;
+}
+const { name, description, url, language, operatingSystem, downloadUrl, image } = Astro.props;
+---
+<StructuredData data={{
+  '@context': 'https://schema.org',
+  '@type': 'SoftwareApplication',
+  '@id': `${url}#app`,
+  name,
+  description,
+  url,
+  inLanguage: language,
+  operatingSystem,
+  downloadUrl,
+  image,
+  publisher: { '@type': 'Organization', name: 'lazyapps', url: 'https://lazyapps.com/' },
+}} />

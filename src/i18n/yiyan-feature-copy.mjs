@@ -2,10 +2,10 @@
 export const YIYAN_FEATURE_COPY = {
   '': {
     next: { imgAlt: '', q: '<span class="zh">把日常输入，变成英语练习</span>' },
-    title: '绎言 YiYan — 地道英语，边蹬边学',
+    title: '绎言 YiYan — Mac 英语润色与学习工具',
     ogTitle: '绎言 YiYan — 地道英语，边蹬边学',
     h1: '<span class="zh">地道英语，边蹬边学</span>',
-    description: '自动捕捉你在 Pi、Claude Code、Codex、OpenCode 或 Antigravity 里的输入，也可直接输入或润色当前输入框；给出更自然的英语表达和重点笔记。Mac 上积累，通过 iCloud 同步到 iPhone。',
+    description: '在 Mac 上将日常输入润色为地道英语，附重点笔记。支持 AI 编程工具、直接输入和当前输入框润色，学习记录通过 iCloud 同步到 iPhone。',
     ogDesc: '自动捕捉你在 Pi、Claude Code、Codex、OpenCode 或 Antigravity 里的输入，也可直接输入或润色当前输入框；给出更自然的英语表达和重点笔记。',
     sub: '照常在 Pi、Claude Code、Codex、OpenCode 或 Antigravity 里工作，或直接输入一段文字；需要时还可以从菜单栏或快捷键润色当前输入框。绎言会自动复用本机可用的语言助手，给出更自然的英语表达和重点笔记；记录可通过 iCloud 同步到 iPhone。',
     trust: [
@@ -85,8 +85,9 @@ export const YIYAN_FEATURE_COPY = {
     ],
   },
   en: {
+    title: 'YiYan — English Writing & Learning for Mac and iPhone',
     next: { imgAlt: '', q: 'Turn everyday writing into English practice' },
-    description: 'YiYan quietly picks up what you type in Pi, Claude Code, Codex, OpenCode, or Antigravity, or lets you write directly and refine the field in front of you. It returns natural English and focused notes, then syncs your learning from Mac to iPhone over iCloud.',
+    description: 'Refine everyday writing into natural English on Mac, with focused learning notes. Works with AI coding tools and syncs your learning to iPhone via iCloud.',
     ogDesc: 'YiYan picks up what you type in Pi, Claude Code, Codex, OpenCode, or Antigravity, lets you write directly or refine the field in front of you, and returns natural English with focused notes.',
     sub: 'Keep working in Pi, Claude Code, Codex, OpenCode, or Antigravity, type directly into YiYan, or refine the field in front of you from a shortcut or the menu bar. YiYan reuses an available signed-in assistant on your Mac to return natural English and focused notes, with your history available on iPhone through iCloud.',
     trust: [
@@ -305,10 +306,10 @@ export const YIYAN_FEATURE_COPY = {
   },
   'zh-hant': {
     next: { imgAlt: '', q: '<span class="zh">把日常輸入，變成英語練習</span>' },
-    title: '繹言 YiYan — 道地英語，邊蹬邊學',
+    title: '繹言 YiYan — Mac 英語潤飾與學習工具',
     ogTitle: '繹言 YiYan — 道地英語，邊蹬邊學',
     h1: '<span class="zh">道地英語，邊蹬邊學</span>',
-    description: '自動擷取你在 Pi、Claude Code、Codex、OpenCode 或 Antigravity 裡的輸入，也可直接輸入或潤飾目前的輸入框；給出更自然的英語說法和重點筆記。Mac 上累積，透過 iCloud 同步到 iPhone。',
+    description: '在 Mac 上將日常輸入潤飾為道地英語，附重點筆記。支援 AI 程式開發工具、直接輸入和目前輸入框潤飾，學習記錄透過 iCloud 同步到 iPhone。',
     ogDesc: '自動擷取你在 Pi、Claude Code、Codex、OpenCode 或 Antigravity 裡的輸入，也可直接輸入或潤飾目前的輸入框；給出更自然的英語說法和重點筆記。',
     sub: '照常在 Pi、Claude Code、Codex、OpenCode 或 Antigravity 裡工作，或直接輸入一段文字；需要時還可以從選單列或快速鍵潤飾目前的輸入框。繹言會自動沿用本機可用的語言助理，給出更自然的英語說法和重點筆記；記錄可透過 iCloud 同步到 iPhone。',
     trust: [

@@ -1,5 +1,6 @@
 ---
 import SocialMeta from '../../components/SocialMeta.astro';
+import SoftwareApplication from '../../components/SoftwareApplication.astro';
 import SiteFooterBase from '../../components/SiteFooterBase.astro';
 import siteCssUrl from '$assets/s/site.css?url';
 import gsapUrl from '$assets/vendor/gsap.min.js?url';
@@ -16,7 +17,7 @@ const appStoreCampaign = 'pt=259198&ct=lazyapps-en&mt=8';
 const appStoreUrl = `https://apps.apple.com/app/apple-store/id412637620?${appStoreCampaign}`;
 const t = {
   htmlLang: 'en', htmlDir: 'ltr', ogLocale: 'en_US', selectedUrl: '/world-book/',
-  title: 'World Book — The world, ready to explore',
+  title: 'World Book — Offline World Atlas for iPhone & iPad',
   description: 'Explore 260+ countries and territories, spin a 3D globe, and compare global rankings. An independent world reference for iPhone and iPad. Buy once.',
   navAria: 'Main navigation', homeAria: 'lazyapps home',
   headline: ['The world,', 'ready to explore.'],
@@ -56,6 +57,7 @@ const t = {
       imageHeight={630}
       locale={t.ogLocale}
     />
+    <SoftwareApplication name="World Book" description={t.description} url={`https://lazyapps.com${t.selectedUrl}`} language={t.htmlLang} operatingSystem="iOS, iPadOS" downloadUrl="https://apps.apple.com/app/id412637620" image={`https://lazyapps.com${iconUrl}`} />
     <link rel="icon" href={iconUrl} type="image/png">
     <link rel="stylesheet" href={siteCssUrl}>
     <script is:inline>

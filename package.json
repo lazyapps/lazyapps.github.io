@@ -5,7 +5,8 @@
   "private": true,
   "scripts": {
     "dev": "astro dev",
-    "build": "node scripts/prepare-fondfont-hero.mjs && node scripts/check-fondfont-hero-assets.mjs && astro build && node scripts/postbuild.mjs",
+    "build": "node scripts/prepare-fondfont-hero.mjs && node scripts/check-fondfont-hero-assets.mjs && astro build && node scripts/postbuild.mjs && node scripts/check-seo.mjs",
+    "check:seo": "node scripts/check-seo.mjs",
     "preview": "astro preview"
   },
   "dependencies": {
@@ -13,6 +14,7 @@
     "three": "^0.186.1"
   },
   "devDependencies": {
-    "@types/three": "^0.186.0"
+    "@types/three": "^0.186.0",
+    "parse5": "^7.3.0"
   }
 }

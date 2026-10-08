@@ -1,0 +1,7 @@
+{
+  "passed": [
+    "sitemap alias rejected",
+    "broken hreflang target rejected",
+    "unflattened privacy canonical rejected"
+  ]
+}

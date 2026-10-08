@@ -74,7 +74,7 @@ export const KEYHOP_LOCALES = {
   },
   en: {
     htmlLang: 'en',
-    title: 'KeyHop — Fast, muscle-memory app switching from your home row',
+    title: 'KeyHop — Home-row App Switcher for macOS',
     description: 'KeyHop binds up to ten apps to fixed home-row keys on macOS. Double-tap your Leader modifier and tap a key to switch or launch instantly.',
     canonical: 'https://lazyapps.com/keyhop/en/',
     ogTitle: 'KeyHop — Fast, muscle-memory app switching from your home row',
