@@ -1,0 +1,12 @@
+---
+import badge from '../../public/shheep/app-store-coming-soon.svg?raw';
+interface Props { label: string; description: string; }
+const { label, description } = Astro.props;
+const art = badge.replace(/<svg[^>]*>|<\/svg>|<title>[^<]*<\/title>/g, '').replace(/<g id="coming-soon-label">[\s\S]*?<\/g>/, '');
+---
+<span class="app-store-badge">
+  <svg xmlns="http://www.w3.org/2000/svg" width="144" height="48" viewBox="0 0 119.66407 40" role="img" aria-label={description}>
+    <g aria-hidden="true" set:html={art} />
+    <text aria-hidden="true" x="34" y="14" fill="#fff" font-family="Arial, sans-serif" font-size="8" textLength={label.length > 18 ? '75' : undefined} lengthAdjust="spacingAndGlyphs">{label}</text>
+  </svg>
+</span>

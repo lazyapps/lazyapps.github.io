@@ -1,10 +1,14 @@
 ---
-import SocialMeta from '../components/SocialMeta.astro';
-import StructuredData from '../components/StructuredData.astro';
+import SocialMeta from './SocialMeta.astro';
+import StructuredData from './StructuredData.astro';
 // App Store launch: restore the native app metadata and download badge below.
-// import SoftwareApplication from '../components/SoftwareApplication.astro';
-import SiteFooterBase from '../components/SiteFooterBase.astro';
-import ShheepGame from '../components/ShheepGame.astro';
+// import SoftwareApplication from './SoftwareApplication.astro';
+import SiteFooterBase from './SiteFooterBase.astro';
+import ShheepGame from './ShheepGame.astro';
+import ShheepStoreBadge from './ShheepStoreBadge.astro';
+import LanguageLinks from './LanguageLinks.astro';
+import LanguagePicker from './LanguagePicker.astro';
+import { SHHEEP_LOCALES } from '../i18n/shheep-locales.mjs';
 import chromiumLicense from '../../public/shheep/assets/CHROMIUM-LICENSE.txt?raw';
 import silkscreenLicense from '../../public/shheep/assets/fonts/OFL.txt?raw';
 import fusionPixelLicense from '../../public/shheep/assets/fonts/FusionPixel-OFL.txt?raw';
@@ -16,12 +20,14 @@ import customEaseUrl from '$assets/vendor/CustomEase.min.js?url';
 import splitTextUrl from '$assets/vendor/SplitText.min.js?url';
 import logoRevealUrl from '$assets/s/logo-reveal-loader.js?url';
 import siteJsUrl from '$assets/s/site.js?url';
+interface Props { t: (typeof SHHEEP_LOCALES)[keyof typeof SHHEEP_LOCALES]; }
+const { t } = Astro.props;
+const locales = Object.values(SHHEEP_LOCALES);
 const art = '/shheep/assets/sprites/';
-// const appStoreCampaign = 'pt=259198&ct=lazyapps-en&mt=8';
+// const appStoreCampaign = `pt=259198&ct=lazyapps-${t.htmlLang.toLowerCase()}&mt=8`;
 // const storeURL = `https://apps.apple.com/app/apple-store/id6819031865?${appStoreCampaign}`;
-const title = 'Shheep — Play the Cozy Pixel Sheep Game';
-const description = 'Hop over fences, duck under bats and count sheep in a cozy pixel dream. Play Shheep in your browser. Coming soon to iPhone and iPad.';
-const pageURL = 'https://lazyapps.com/shheep/';
+const { title, description } = t;
+const pageURL = `https://lazyapps.com${t.selectedUrl}`;
 const fontNotices = [
   { name: 'Silkscreen', license: silkscreenLicense, href: '/shheep/assets/fonts/OFL.txt' },
   { name: 'Fusion Pixel', license: fusionPixelLicense, href: '/shheep/assets/fonts/FusionPixel-OFL.txt' },
@@ -29,7 +35,7 @@ const fontNotices = [
 ].map(font => ({ ...font, copyright: font.license.split('\n').find(line => line.startsWith('Copyright')) }));
 ---
 <!doctype html>
-<html lang="en" class="no-js">
+<html lang={t.htmlLang} class="no-js">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
@@ -39,17 +45,20 @@ const fontNotices = [
   {/* <meta name="apple-itunes-app" content={`app-id=6819031865, affiliate-data=${appStoreCampaign}`}> */}
   <SocialMeta title={title} description={description}
     url={pageURL} image="https://lazyapps.com/shheep/opengraph.png"
-    imageAlt="Shheep’s pink pixel sheep wordmark above a sleeping girl in a cozy purple bedroom" imageWidth={1200} imageHeight={630} locale="en_US" />
+    imageAlt={t.imageAlt} imageWidth={1200} imageHeight={630} locale={t.ogLocale} />
+  {locales.map(locale => <link rel="alternate" hreflang={locale.htmlLang} href={`https://lazyapps.com${locale.selectedUrl}`} />)}
+  <link rel="alternate" hreflang="x-default" href="https://lazyapps.com/shheep/">
+  {locales.filter(locale => locale.htmlLang !== t.htmlLang).map(locale => <meta property="og:locale:alternate" content={locale.ogLocale} />)}
   {/* <SoftwareApplication name="Shheep" description={description} url={pageURL}
-    language="en" operatingSystem="iOS, iPadOS" applicationCategory="GameApplication"
+    language={t.htmlLang} operatingSystem="iOS, iPadOS" applicationCategory="GameApplication"
     downloadUrl={storeURL} image="https://lazyapps.com/shheep/opengraph.png" /> */}
   <StructuredData data={{
     '@context': 'https://schema.org',
     '@type': 'WebApplication',
     '@id': `${pageURL}#game`,
-    name: 'Shheep', description, url: pageURL, inLanguage: 'en',
+    name: 'Shheep', description, url: pageURL, inLanguage: t.htmlLang,
     applicationCategory: 'GameApplication', operatingSystem: 'Any',
-    browserRequirements: 'Requires JavaScript and HTML5 canvas support.',
+    browserRequirements: t.browserRequirements,
     image: 'https://lazyapps.com/shheep/opengraph.png',
     publisher: { '@type': 'Organization', name: 'lazyapps', url: 'https://lazyapps.com/' },
   }} />
@@ -67,7 +76,7 @@ const fontNotices = [
   </script>
 </head>
 <body>
-  <a class="skip-link" href="#how-to-play">Skip game to how to play</a>
+  <a class="skip-link" href="#how-to-play">{t.skip}</a>
   <div class="grain" aria-hidden="true"></div>
   <div data-load-wrap class="loader" id="loader" aria-hidden="true">
     <div data-load-bg class="loader__bg"><div data-load-progress class="loader__bg-bar"></div></div>
@@ -81,79 +90,75 @@ const fontNotices = [
   <main>
     <section class="phero wrap" aria-labelledby="shheep-title">
       <div class="topbar">
-        <nav class="mono topbar__nav" aria-label="Primary"><a href="/" class="topbar__home" aria-label="lazyapps home"><span aria-hidden="true" class="topbar__home-dot"></span></a></nav>
-        <div class="topbar__app"><img src={`${art}sheep_run1.png`} width="47" height="40" alt=""><span class="dsp">Shheep</span></div>
-        <a class="mono hero-how" href="#how-to-play">How to play ↘</a>
+        <nav class="mono topbar__nav" aria-label={t.home}><a href="/" class="topbar__home" aria-label={t.home}><span aria-hidden="true" class="topbar__home-dot"></span></a></nav>
+        <div class="topbar__app"><img src={`${art}sheep_run1.png`} width="47" height="40" alt=""><span class="dsp" lang="en">Shheep</span></div>
+        <LanguagePicker label={t.chooseLanguage} current={t.selectedUrl} storageKey="shheep.locale" options={locales.map(locale => ({ language: locale.htmlLang, url: locale.selectedUrl, label: locale.localeNow }))} />
       </div>
-      <h1 class="phero__h1 dsp" id="shheep-title"><span class="sr-only">Shheep — </span>One more sheep.<br>A little more sleep.</h1>
-      <p class="phero__sub">She can’t sleep. You know what to do.</p>
-      <ShheepGame />
+      <h1 class="phero__h1 dsp" id="shheep-title"><span class="sr-only">Shheep — </span>{t.headline[0]}<br>{t.headline[1]}</h1>
+      <div class="phero__intro"><p class="phero__sub">{t.sub}</p><a class="mono hero-how" href="#how-to-play">{t.howTo} ↘</a></div>
+      <ShheepGame language={t.htmlLang} />
       <div class="phero__cta">
         {/* <a href={storeURL} class="app-store-badge">
           <img src="/shheep/app-store-badge.svg" width="144" height="48" alt="Download on the App Store">
         </a> */}
-        <span class="app-store-badge">
-          <img src="/shheep/app-store-coming-soon.svg" width="144" height="48" alt="Coming soon on the App Store">
-        </span>
+        <ShheepStoreBadge label={t.comingSoon} description={t.badgeAlt} />
       </div>
     </section>
 
-    <section class="deck wrap" id="how-to-play" tabindex="-1" aria-label="How to play Shheep">
+    <section class="deck wrap" id="how-to-play" tabindex="-1" aria-label={t.howTo}>
       <div data-reveal-group data-stagger="140" data-distance="1.5em" data-start="top 92%">
         <article class="dream-card dream-card--pink">
           <div class="dream-card__grid">
-            <div><h2 class="dream-card__title dsp">Count sheep.<br>Keep her dreaming.</h2><p>Hop over a fence and she counts one more sheep. Hold a little longer to jump a little higher. When a bat flies by, duck down—or hop over it if it’s low.</p></div>
+            <div><h2 class="dream-card__title dsp">{t.cards[0][0][0]}<br>{t.cards[0][0][1]}</h2><p>{t.cards[0][1]}</p></div>
             <div class="dream-card__scene dream-card__scene--hop" aria-hidden="true"><img class="scene-star" src={`${art}fx_sparkle.png`} loading="lazy" alt=""><img class="scene-sheep" src={`${art}sheep_jump.png`} loading="lazy" alt=""><img class="scene-fence" src={`${art}fence_small1.png`} loading="lazy" alt=""><span class="scene-plus">+1</span><div class="scene-meadow"></div></div>
           </div>
         </article>
         <article class="dream-card dream-card--lilac">
           <div class="dream-card__grid">
-            <div><h2 class="dream-card__title dsp">Same night.<br>Same little flock.</h2><p>A new course for every night. Come back for the same fences and bats, try to count a few more, and keep your nightly streak going. Past midnight? It’s still the same night until noon.</p></div>
-            <div class="dream-card__scene dream-card__scene--night" aria-hidden="true"><img src={`${art}moon_crescent.png`} class="scene-moon" loading="lazy" alt=""><img src={`${art}cloudtown.png`} class="scene-town" loading="lazy" alt=""><img src={`${art}cloudsea_front.png`} class="scene-cloud" loading="lazy" alt=""><span class="scene-night">GOOD NIGHT</span></div>
+            <div><h2 class="dream-card__title dsp">{t.cards[1][0][0]}<br>{t.cards[1][0][1]}</h2><p>{t.cards[1][1]}</p></div>
+            <div class="dream-card__scene dream-card__scene--night" aria-hidden="true"><img src={`${art}moon_crescent.png`} class="scene-moon" loading="lazy" alt=""><img src={`${art}cloudtown.png`} class="scene-town" loading="lazy" alt=""><img src={`${art}cloudsea_front.png`} class="scene-cloud" loading="lazy" alt=""><span class="scene-night" lang="en">GOOD NIGHT</span></div>
           </div>
         </article>
         <article class="dream-card dream-card--ink">
           <div class="dream-card__grid">
-            <div><h2 class="dream-card__title dsp">Oops.<br>She’s wide awake.</h2><p>One bump and the dream falls apart. She cries. She pounds the bed. The bed loses. Tuck her back in and try again—or send a little good-night card with the sheep you counted.</p></div>
-            <div class="dream-card__scene dream-card__scene--wake" aria-hidden="true"><img src={`${art}bed_sob0.png`} loading="lazy" alt=""><span>WAAAH!</span></div>
+            <div><h2 class="dream-card__title dsp">{t.cards[2][0][0]}<br>{t.cards[2][0][1]}</h2><p>{t.cards[2][1]}</p></div>
+            <div class="dream-card__scene dream-card__scene--wake" aria-hidden="true"><img src={`${art}bed_sob0.png`} loading="lazy" alt=""><span lang="en">WAAAH!</span></div>
           </div>
         </article>
       </div>
     </section>
 
     <section class="details wrap" aria-labelledby="details-title">
-      <p class="mono">Small enough for one more try</p>
-      <h2 class="dsp" id="details-title">A tiny bedtime ritual.</h2>
+      <p class="mono">{t.smallEnough}</p>
+      <h2 class="dsp" id="details-title">{t.detailsTitle}</h2>
       <dl class="details__grid">
-        <div><dt>Made for a quiet moment</dt><dd>A pixel bedroom, a floating meadow and a looping lullaby. Sound starts when you play, and you can mute it whenever you like.</dd></div>
-        <div><dt>Play your way</dt><dd>Tap or press Space to hop; swipe down or hold ↓ to duck. Use the on-screen controls on a phone. P or Esc pauses; Expand gives the dream more room.</dd></div>
-        <div><dt>Eleven ways to say good night</dt><dd>English, 简体中文, 繁體中文, 日本語, 한국어, Español, Português, Deutsch, Français, Italiano and Русский. Choose your game language above.</dd></div>
-        <div><dt>Your flock stays with you</dt><dd>Web scores and streaks are saved in this browser. The iOS app adds Game Center leaderboards, friend challenges and invitations. Web and iOS records don’t sync.</dd></div>
+        {t.details.map(([heading, body]) => <div><dt>{heading}</dt><dd>{body}</dd></div>)}
       </dl>
     </section>
   </main>
   <footer class="wrap shheep-footer">
     <section class="next">
-      <img class="footer-sheep" src={`${art}sheep_blink.png`} width="47" height="40" loading="lazy" alt="A sleepy little sheep">
-      <h2 class="next__q dsp">Sleep can wait.<br>One more sheep?</h2>
+      <img class="footer-sheep" src={`${art}sheep_blink.png`} width="47" height="40" loading="lazy" alt={t.sheepAlt}>
+      <h2 class="next__q dsp">{t.closing[0]}<br>{t.closing[1]}</h2>
       <div class="next__act"><a href="#shheep-title" class="button-023 button-023--square">
         <span class="button-023__bg"><span style="--index:0" class="button-023__bg-inner is--first"></span><span style="--index:1" class="button-023__bg-inner is--second"></span></span>
-        <span class="button-023__inner"><span class="button-023__text is--first">Back to the dream ↑</span><span aria-hidden="true" class="button-023__text is--second">Back to the dream ↑</span></span>
+        <span class="button-023__inner"><span class="button-023__text is--first">{t.back} ↑</span><span aria-hidden="true" class="button-023__text is--second">{t.back} ↑</span></span>
       </a></div>
-      <p class="footer-credits"><a href="/shheep/assets/MUSIC-CREDITS.md">Happy Lullaby by cynicmusic · CC0</a><span aria-hidden="true"> · </span><button type="button" id="licenses-toggle" aria-expanded="false" aria-controls="licenses">Licenses</button></p>
+      <p class="footer-credits"><a href="/shheep/assets/MUSIC-CREDITS.md">{t.musicCredit}</a><span aria-hidden="true"> · </span><button type="button" id="licenses-toggle" aria-expanded="false" aria-controls="licenses">{t.licenses}</button></p>
       <div class="licenses" id="licenses" hidden>
         <div class="licenses__content">
           <h3>Chromium Dino</h3>
-          <p>Portions of Shheep’s game logic are adapted from Chromium’s Dino game.</p>
-          <pre>{chromiumLicense}</pre>
-          <h3>Fonts &amp; music</h3>
-          {fontNotices.map(font => <p><a href={font.href}>{font.name}</a> — SIL Open Font License 1.1.<br />{font.copyright}</p>)}
-          <p>Happy Lullaby (song17) by cynicmusic · CC0. <a href="/shheep/assets/MUSIC-CREDITS.md">Music details</a>.</p>
+          <p>{t.chromiumNote}</p>
+          <pre lang="en">{chromiumLicense}</pre>
+          <h3>{t.fontsMusic}</h3>
+          {fontNotices.map(font => <p><a href={font.href}>{font.name}</a> — <span lang="en">SIL Open Font License 1.1.<br />{font.copyright}</span></p>)}
+          <p>{t.musicCredit}. <a href="/shheep/assets/MUSIC-CREDITS.md">{t.musicDetails}</a>.</p>
         </div>
       </div>
-      <noscript><p class="footer-credits">Game licenses: <a href="/shheep/assets/CHROMIUM-LICENSE.txt">Chromium</a>{fontNotices.map(font => <Fragment> · <a href={font.href}>{font.name}</a></Fragment>)}</p></noscript>
+      <noscript><p class="footer-credits">{t.licenses}: <a href="/shheep/assets/CHROMIUM-LICENSE.txt">Chromium</a>{fontNotices.map(font => <Fragment> · <a href={font.href}>{font.name}</a></Fragment>)}</p></noscript>
     </section>
-    <SiteFooterBase />
+    <LanguageLinks label={t.chooseLanguage} current={t.selectedUrl} links={locales.map(locale => ({ language: locale.htmlLang, url: locale.selectedUrl, label: locale.localeNow }))} />
+    <SiteFooterBase locale={t.htmlLang} />
   </footer>
   <script is:inline>
     document.getElementById('licenses-toggle').addEventListener('click', (event) => {
@@ -163,6 +168,7 @@ const fontNotices = [
       document.getElementById('licenses').hidden = !expanded;
     });
   </script>
+
   <script is:inline src={gsapUrl}></script>
   <script is:inline src={scrollTriggerUrl}></script>
   <script is:inline src={customEaseUrl}></script>
@@ -180,19 +186,20 @@ const fontNotices = [
   .phero{padding-top:clamp(8px,1.5vw,18px)}
   .phero .topbar__app img{image-rendering:pixelated;object-fit:contain}
   .phero .topbar__app .dsp{font-size:30px}
-  .hero-how{justify-self:end;white-space:nowrap;font-size:10px}
-  .phero__h1{margin:clamp(28px,4vw,56px) auto 0;font-size:clamp(48px,7.3vw,104px);text-align:center;max-width:11em}
-  .phero__sub{margin:22px auto 0;font-size:1.0625rem;color:var(--muted);text-align:center;text-wrap:balance}
+  .hero-how{flex-shrink:0;white-space:nowrap;font-size:10px;min-height:44px;display:inline-flex;align-items:center}
+  .phero__intro{display:flex;align-items:center;justify-content:center;gap:18px;margin-top:22px}
+  .phero__h1{margin:clamp(28px,4vw,56px) auto 0;font-size:clamp(48px,7.3vw,104px);text-align:center;max-width:100%;overflow-wrap:anywhere;text-wrap:balance}
+  .phero__sub{min-width:0;margin:0;font-size:1.0625rem;color:var(--muted);text-align:center;text-wrap:balance}
   .phero__cta{display:flex;justify-content:center;margin-top:24px}
   .app-store-badge{display:inline-block;border-radius:7px}
-  .app-store-badge img{display:block;width:auto;height:48px}
+  .app-store-badge svg{display:block;width:auto;height:48px}
   .app-store-badge:focus-visible{outline:2px solid var(--ink);outline-offset:5px}
   .deck{padding-top:var(--space-section)}
   .dream-card{position:relative;padding:var(--space-card);background:var(--fill);border:1px solid #17171714;border-radius:var(--r-card);margin-top:-8px}
   .dream-card:nth-child(odd){transform:rotate(-2deg)}.dream-card:nth-child(even){transform:rotate(2deg)}
   .dream-card--pink{--fill:#ffd4e5}.dream-card--lilac{--fill:#d6c9ee}.dream-card--ink{--fill:#30263c;color:#fff5ed}
   .dream-card__grid{display:grid;grid-template-columns:1.1fr 1fr;align-items:center;gap:var(--space-grid)}
-  .dream-card__title{font-size:clamp(36px,4vw,60px);margin-bottom:20px}
+  .dream-card__title{overflow-wrap:anywhere;text-wrap:balance;font-size:clamp(36px,4vw,60px);margin-bottom:20px}
   .dream-card__grid p{font-size:1rem;line-height:1.85;max-width:31em}
   .dream-card__scene{position:relative;min-height:230px;overflow:hidden;image-rendering:pixelated}
   .dream-card__scene img{image-rendering:pixelated;position:absolute}
@@ -202,7 +209,7 @@ const fontNotices = [
   .scene-moon{width:68px;right:14%;top:0}.scene-town{width:100%;bottom:24px}.scene-cloud{width:100%;bottom:-4px;max-height:80px}
   .scene-night{position:absolute;left:7%;top:12%;font:15px ShheepLatin,var(--mono);color:#4a2e5e}
   .dream-card__scene--wake img{width:226px;right:10%;bottom:0}.dream-card__scene--wake span{position:absolute;left:12%;top:12%;color:#9ed1ff;font:22px ShheepLatin,var(--mono);transform:rotate(-8deg)}
-  .details{padding-top:var(--space-section)}.details>h2{font-size:clamp(38px,5vw,70px);margin-top:18px}
+  .details{padding-top:var(--space-section)}.details>h2{overflow-wrap:anywhere;font-size:clamp(38px,5vw,70px);margin-top:18px}
   .details__grid{display:grid;grid-template-columns:1fr 1fr;gap:32px 48px;margin-top:36px}
   .details__grid dt{font-weight:600;margin-bottom:10px;font-size:1.0625rem}.details__grid dd{font-size:.9375rem;line-height:1.8;color:var(--muted)}
   .shheep-footer{margin-top:var(--space-section)}.footer-sheep{width:94px;height:80px;image-rendering:pixelated;margin:0 auto 24px}
@@ -216,6 +223,8 @@ const fontNotices = [
   .licenses pre{white-space:pre-wrap;overflow-wrap:anywhere;font:inherit;margin:16px 0 24px}
   .licenses__content p+p{margin-top:8px}
   .licenses__content a{text-decoration:underline;text-underline-offset:3px}
+  .next__q{overflow-wrap:anywhere;text-wrap:balance}
   .footer-credits{grid-column:1/-1;justify-self:center;max-width:68ch;font:400 .6667rem/1.4 var(--sans);text-transform:uppercase;letter-spacing:.04em;color:var(--muted);margin-top:28px;text-align:center}.footer-credits a:hover{text-decoration:underline}
-  @media(max-width:700px){.dream-card__grid{grid-template-columns:1fr}.dream-card__scene{min-height:210px}.details__grid{grid-template-columns:1fr}.hero-how{display:none}.phero__h1{font-size:clamp(44px,9vw,66px)}.dream-card__scene--wake img{right:20%}}
+  @media(max-width:700px){.dream-card__grid{grid-template-columns:1fr}.dream-card__scene{min-height:210px}.details__grid{grid-template-columns:1fr}.phero__h1{font-size:clamp(44px,9vw,66px)}.dream-card__scene--wake img{right:20%}}
+  @media(max-width:560px){.phero__intro{flex-direction:column;gap:0}}
 </style>

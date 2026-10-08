@@ -10,6 +10,7 @@ const SITE = 'https://lazyapps.com';
 import SocialMeta from './SocialMeta.astro';
 import SoftwareApplication from './SoftwareApplication.astro';
 import LanguageLinks from './LanguageLinks.astro';
+import LanguagePicker from './LanguagePicker.astro';
 import SiteFooterBase from './SiteFooterBase.astro';
 import siteCssUrl from '$assets/s/site.css?url';
 import gsapUrl from '$assets/vendor/gsap.min.js?url';
@@ -73,20 +74,6 @@ const OG_LOCALE_MAP = {
 const ogLocale = OG_LOCALE_MAP[code] ?? 'en_US';
 const heroVideoCode = code || 'zh-hans';
 const heroVideoUrl = `/v/yiyan/hero-${heroVideoCode}-v1.mp4`;
-const localeShort = {
-  '': '简',
-  'zh-hant': '繁',
-  en: 'EN',
-  es: 'ES',
-  'pt-br': 'PT',
-  fr: 'FR',
-  de: 'DE',
-  ja: 'JA',
-  ko: 'KO',
-  ru: 'RU',
-  ar: 'AR',
-  hi: 'HI',
-}[code] ?? 'EN';
 const ALTS = [
   ['zh-Hans', 'yiyan/'],
   ['en', 'yiyan/en/'],
@@ -118,18 +105,12 @@ const OPTIONS = [
   ['hi', '/yiyan/hi/', 'hi', 'हिन्दी'],
 ];
 
-const ICO_GLOBE = '<svg class="locale__globe" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor"/><path d="M12 22C14.2091 22 16 17.5228 16 12C16 6.47715 14.2091 2 12 2C9.79086 2 8 6.47715 8 12C8 17.5228 9.79086 22 12 22Z" stroke="currentColor"/><path d="M2 12H22" stroke="currentColor"/><path d="M20 18C17.4703 16.937 14.743 16.4256 12 16.5C9.25702 16.4256 6.52971 16.937 4 18" stroke="currentColor"/><path d="M4 6C6.52971 7.06302 9.25702 7.57439 12 7.5C14.743 7.57439 17.4703 7.06302 20 6" stroke="currentColor"/></svg>';
-const ICO_CHEV = '<svg class="locale__chev" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M5 9L12 16L19 9" stroke="currentColor" stroke-miterlimit="10"/></svg>';
 const ICO_TRUST = [
   '<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor"/><path d="M8 12L11 15L16 10" stroke="currentColor" stroke-miterlimit="10"/></svg>',
   '<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 7L1 12L6 17" stroke="currentColor" stroke-miterlimit="10"/><path d="M18 17L23 12L18 7" stroke="currentColor" stroke-miterlimit="10"/><path d="M8.5 20L15.5 4" stroke="currentColor" stroke-miterlimit="10"/></svg>',
   '<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M11.5 6V12.5L16.5 15" stroke="currentColor"/><path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor"/></svg>',
 ];
 
-const optionsHtml = OPTIONS.map(
-  ([locale, value, lang, label]) =>
-    `<option value="${value}" data-locale="${locale}" lang="${lang}"${value === t.selectedUrl ? ' selected' : ''}>${label}</option>`,
-).join('\n          ');
 
 const ctaButtons = t.cta.slice(0, 2).map((label, i) => {
   if (!label) return '';
@@ -336,17 +317,7 @@ html[data-trust=cjk] .phero__trust li{font:400 .75rem/1.5 var(--mono);letter-spa
         <h2 class="dsp" lang={t.appTitleAttrs ? 'en' : undefined}><Fragment set:html={t.appTitle} /></h2>
       </div>
 
-      <div class="locale">
-
-        <Fragment set:html={ICO_GLOBE} />
-        <span class="locale__now" aria-hidden="true">{t.localeNow}</span>
-        <span class="locale__short" aria-hidden="true">{localeShort}</span>
-
-        <Fragment set:html={ICO_CHEV} />
-        <select name="locale" data-locale-select aria-label={t.selectAria}>
-          <Fragment set:html={optionsHtml} />
-        </select>
-      </div>
+      <LanguagePicker label={t.selectAria} current={t.selectedUrl} storageKey="yiyan.locale" options={OPTIONS.map(([language, url, , label]) => ({ language, url, label }))} />
     </div>
 
     <div data-reveal-group data-stagger="110" data-distance="1.2em" data-start="top 94%">
@@ -507,26 +478,7 @@ html[data-trust=cjk] .phero__trust li{font:400 .75rem/1.5 var(--mono);letter-spa
 
 </script>
 
-<script is:inline>
-(() => {
-  var select = document.querySelector("[data-locale-select]");
-  if (!select) return;
 
-  select.addEventListener("change", () => {
-    var option = select.options[select.selectedIndex];
-    if (!option) return;
-
-    try {
-      window.localStorage.setItem("yiyan.locale", option.getAttribute("data-locale"));
-    } catch (_storageError) {
-    }
-
-    var target = option.value;
-    if (!target) return;
-    window.location.href = target + window.location.search + window.location.hash;
-  });
-})();
-</script>
 
 <script is:inline>
 (() => {

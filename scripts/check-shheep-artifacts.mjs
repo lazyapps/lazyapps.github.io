@@ -7,7 +7,7 @@ for (const path of ['src/games/shheep', 'scripts/shheep', 'tests/shheep']) {
   if (existsSync(resolve(root, path))) throw Error(`Private game source must not be published: ${path}`);
 }
 const wrapper = readFileSync(resolve(root, 'src/components/ShheepGame.astro'), 'utf8');
-if (!wrapper.startsWith('<!-- Generated game artifact.')) throw Error('Use an exported game wrapper');
+if (!wrapper.startsWith('---\n// Generated game artifact.')) throw Error('Use an exported game wrapper');
 for (const base of ['public/shheep/game', 'dist/shheep/game']) {
   const files = readdirSync(resolve(root, base));
   if (files.length !== 2 || !files.some(f => f.endsWith('.js')) || !files.some(f => f.endsWith('.css'))) throw Error(`Unexpected game files in ${base}`);

@@ -18,13 +18,19 @@ This mode requires the private web project and its installed dependencies. The d
 
 Opening the URL directly also starts autoplay, but an ordinary browser may block music until a user gesture. The recording launcher enables audible autoplay only for its temporary Chrome session.
 
+## Game loading
+
+The game stage shows the existing pixel-bedroom preview immediately, with a sheep hop while sprites and fonts load. The loader has no visible text; its status remains available to screen readers. The preview and loader disappear only after the first canvas frame renders. Reduced-motion preferences disable the hop; a failed load retains the preview and offers a retry.
+
 ## Landing page and social sharing
 
 The landing page renders its title, description, canonical URL, OG/Twitter tags, app metadata and explanatory content as static HTML. The site build includes `/shheep/` in the canonical sitemap and checks its `WebApplication` data, including the `GameApplication` category.
 
-The native app is coming soon. The download badge, native app metadata and Safari Smart App Banner are commented out in `src/pages/shheep.astro`, ready to restore at launch. The saved App Store URL uses World Book's campaign parameters: `pt=259198&ct=lazyapps-en&mt=8`. The current CTA is an App Store badge labeled “Coming soon on the App Store” without a link, and search/social descriptions reflect the launch status.
+The native app is coming soon. The download badge, native app metadata and Safari Smart App Banner are commented out in `src/components/ShheepPage.astro`, ready to restore at launch. The saved App Store URL uses World Book's campaign parameters: `pt=259198&ct=lazyapps-{language}&mt=8`. The current CTA is an App Store badge labeled “Coming soon on the App Store” without a link, and search/social descriptions reflect the launch status.
 
-The page is English-only. The game's eleven selectable languages do not translate the landing page; localized SEO would require separate translated URLs and reciprocal hreflang links. See [Google's multilingual site guidance](https://developers.google.com/search/docs/specialty/international/managing-multi-regional-sites).
+The landing page covers all eleven native app languages: English, Simplified Chinese, Traditional Chinese, Japanese, Korean, Spanish, Brazilian Portuguese, German, French, Italian and Russian. English keeps `/shheep/`; the other ten have separate locale paths. Each page renders translated content, title, description, social image alt text and structured data, with a self canonical, reciprocal hreflang links and English x-default. All locale URLs appear in the sitemap. See [Google's localized-version guidance](https://developers.google.com/search/docs/specialty/international/localized-versions).
+
+`src/i18n/shheep-locales.mjs` owns landing-page copy. The exported game receives the page language on first load, including browser controls, loading errors and dialogs. Its language control can still change the game independently. `LanguagePicker.astro` shares appearance and navigation behavior across Shheep, CHMate, FondFont, KeyHop and YiYan; switching preserves query strings and anchors, with crawlable language links available in the footer.
 
 Structured data currently describes the playable browser game without inventing prices, ratings or reviews. It does not meet all requirements for Google's software-app rich result, which also requires offer and review/rating information. See [Google's software-app structured data requirements](https://developers.google.com/search/docs/appearance/structured-data/software-app).
 
@@ -32,4 +38,4 @@ Structured data currently describes the playable browser game without inventing 
 
 Browser checks covered 1280px desktop, 390px and 320px mobile layouts, game startup, license expansion, keyboard skip navigation, reduced-motion content visibility, missing images and console errors. With JavaScript disabled, the explanatory content, launch status and license links remain available. The canvas game requires JavaScript and visual interaction; these checks do not establish full screen-reader accessibility or real-user Core Web Vitals.
 
-The exported game JavaScript is approximately 780 KB uncompressed (263 KB gzip); changes to its loading behavior or game accessibility belong in the private web project, followed by a fresh export.
+The exported game JavaScript is approximately 910 KB uncompressed (303 KB gzip); changes to its loading behavior or game accessibility belong in the private web project, followed by a fresh export.

@@ -1,57 +1,69 @@
-<!-- Generated game artifact. Edit the private web project and export again. -->
-<link rel="stylesheet" href="/shheep/game/game.6c8507ed25a04e57.css">
-<section class="shheep-game" aria-label="Play Shheep" data-state="loading">
+---
+// Generated game artifact. Edit the private web project and export again.
+const { language = 'en' } = Astro.props;
+const copies = {"en":{"soundOn":"Sound on","soundOff":"Sound off","expand":"Expand ↗","collapse":"Close ↙","pause":"Pause game","resume":"Resume game","records":"Records","instructions":"Tap / Space to hop · Hold for height · Swipe down / ↓ to duck","hop":"↑ Hop","duck":"↓ Duck","languageLabel":"Game language","loading":"Loading…","loadError":"The dream could not load. Check your connection and try again.","retry":"Try again","noScript":"Enable JavaScript to play Shheep. You can still explore the game below.","closeDialog":"Close dialog","tonightBest":"Tonight’s best","allTimeBest":"All-time best","nightsInRow":"Nights in a row","recordNote":"Saved in this browser. Game Center leaderboards, friend challenges and invitations are available in the iOS app.","sharePreview":"Your Shheep good-night card","shareMessage":"Your good-night message","saveCard":"Save card","copyMessage":"Copy message","imageError":"The image could not be created. You can still copy your message.","copied":"Copied. Good night!","copyHint":"Select and copy the message above.","start":"TAP TO COUNT SHEEP","resumePrompt":"TAP TO RESUME","wideAwake":"WIDE AWAKE!","sleep":"SHH... SLEEP","share":"SHARE","goodNight":"GOOD NIGHT"},"zh-Hans":{"soundOn":"声音开","soundOff":"声音关","expand":"展开 ↗","collapse":"收起 ↙","pause":"暂停游戏","resume":"继续游戏","records":"本机成绩","instructions":"轻点 / 空格跳跃 · 按住跳更高 · 下滑 / ↓ 低头","hop":"↑ 跳跃","duck":"↓ 低头","languageLabel":"游戏语言","loading":"加载中…","loadError":"梦境加载失败，请检查网络连接后重试。","retry":"重试","noScript":"启用 JavaScript 即可玩 Shheep。你仍可浏览下方的游戏介绍。","closeDialog":"关闭对话框","tonightBest":"今晚最佳","allTimeBest":"历史最佳","nightsInRow":"连续夜晚","recordNote":"保存在当前浏览器中。iOS App 还提供 Game Center 排行榜、好友挑战和邀请。","sharePreview":"你的 Shheep 晚安卡片","shareMessage":"你的晚安寄语","saveCard":"保存卡片","copyMessage":"复制文字","imageError":"卡片生成失败，你仍可复制文字。","copied":"已复制，晚安！","copyHint":"选中并复制上方的文字。","start":"轻点数羊","resumePrompt":"轻点继续","wideAwake":"完全醒啦！","sleep":"嘘…睡吧","share":"分享","goodNight":"晚安"},"zh-Hant":{"soundOn":"聲音開","soundOff":"聲音關","expand":"展開 ↗","collapse":"收起 ↙","pause":"暫停遊戲","resume":"繼續遊戲","records":"本機成績","instructions":"輕點 / 空格跳躍 · 按住跳更高 · 下滑 / ↓ 低頭","hop":"↑ 跳躍","duck":"↓ 低頭","languageLabel":"遊戲語言","loading":"載入中…","loadError":"夢境載入失敗，請檢查網路連線後重試。","retry":"重試","noScript":"啟用 JavaScript 即可玩 Shheep。你仍可瀏覽下方的遊戲介紹。","closeDialog":"關閉對話框","tonightBest":"今晚最佳","allTimeBest":"歷史最佳","nightsInRow":"連續夜晚","recordNote":"儲存在目前的瀏覽器中。iOS App 還提供 Game Center 排行榜、好友挑戰和邀請。","sharePreview":"你的 Shheep 晚安卡片","shareMessage":"你的晚安寄語","saveCard":"儲存卡片","copyMessage":"複製文字","imageError":"卡片產生失敗，你仍可複製文字。","copied":"已複製，晚安！","copyHint":"選取並複製上方的文字。","start":"輕點數羊","resumePrompt":"輕點繼續","wideAwake":"完全醒啦！","sleep":"噓…睡吧","share":"分享","goodNight":"晚安"},"ja":{"soundOn":"音あり","soundOff":"音なし","expand":"拡大 ↗","collapse":"閉じる ↙","pause":"一時停止","resume":"再開","records":"この端末の記録","instructions":"タップ / スペースでジャンプ · 長押しで高く · 下スワイプ / ↓ でかがむ","hop":"↑ ジャンプ","duck":"↓ かがむ","languageLabel":"ゲームの言語","loading":"読み込み中…","loadError":"夢を読み込めませんでした。接続を確認して、もう一度お試しください。","retry":"もう一度試す","noScript":"Shheep を遊ぶには JavaScript を有効にしてください。下のゲーム紹介はそのままご覧いただけます。","closeDialog":"閉じる","tonightBest":"今夜のベスト","allTimeBest":"これまでのベスト","nightsInRow":"連続プレイ日数","recordNote":"このブラウザに保存されます。iOS 版では Game Center のランキング、友達へのチャレンジや招待も利用できます。","sharePreview":"あなたの Shheep おやすみカード","shareMessage":"おやすみのメッセージ","saveCard":"カードを保存","copyMessage":"文章をコピー","imageError":"画像を作成できませんでした。文章はコピーできます。","copied":"コピーしました。おやすみなさい！","copyHint":"上の文章を選択してコピーしてください。","start":"タップでひつじをかぞえよう","resumePrompt":"タップでつづける","wideAwake":"めが さめちゃった！","sleep":"しーっ…おやすみ","share":"シェア","goodNight":"おやすみ"},"ko":{"soundOn":"소리 켜짐","soundOff":"소리 꺼짐","expand":"확대 ↗","collapse":"닫기 ↙","pause":"일시 정지","resume":"계속하기","records":"이 기기 기록","instructions":"탭 / 스페이스로 점프 · 길게 눌러 높이 · 아래로 밀기 / ↓ 로 숙이기","hop":"↑ 점프","duck":"↓ 숙이기","languageLabel":"게임 언어","loading":"불러오는 중…","loadError":"꿈을 불러오지 못했어요. 연결을 확인하고 다시 시도하세요.","retry":"다시 시도","noScript":"Shheep을 플레이하려면 JavaScript를 켜세요. 아래 게임 소개는 계속 볼 수 있어요.","closeDialog":"창 닫기","tonightBest":"오늘 밤 최고 기록","allTimeBest":"전체 최고 기록","nightsInRow":"연속 플레이 일수","recordNote":"이 브라우저에 저장돼요. iOS 앱에서는 Game Center 순위표, 친구 도전과 초대도 이용할 수 있어요.","sharePreview":"나의 Shheep 굿나잇 카드","shareMessage":"굿나잇 메시지","saveCard":"카드 저장","copyMessage":"메시지 복사","imageError":"이미지를 만들지 못했어요. 메시지는 복사할 수 있어요.","copied":"복사했어요. 좋은 꿈 꾸세요!","copyHint":"위 메시지를 선택해 복사하세요.","start":"탭해서 양 세기","resumePrompt":"탭해서 계속하기","wideAwake":"잠이 다 깼어!","sleep":"쉿… 자자","share":"공유","goodNight":"잘 자"},"es":{"soundOn":"Sonido sí","soundOff":"Sonido no","expand":"Ampliar ↗","collapse":"Cerrar ↙","pause":"Pausar","resume":"Continuar","records":"Récords locales","instructions":"Toca / Espacio para saltar · Mantén para subir más · Desliza abajo / ↓ para agacharte","hop":"↑ Saltar","duck":"↓ Agacharse","languageLabel":"Idioma del juego","loading":"Cargando…","loadError":"No se pudo cargar el sueño. Revisa tu conexión y vuelve a intentarlo.","retry":"Reintentar","noScript":"Activa JavaScript para jugar a Shheep. Puedes seguir leyendo sobre el juego más abajo.","closeDialog":"Cerrar diálogo","tonightBest":"Mejor de esta noche","allTimeBest":"Mejor de siempre","nightsInRow":"Noches seguidas","recordNote":"Guardado en este navegador. La app para iOS ofrece clasificaciones de Game Center, retos e invitaciones a amigos.","sharePreview":"Tu tarjeta de buenas noches de Shheep","shareMessage":"Tu mensaje de buenas noches","saveCard":"Guardar tarjeta","copyMessage":"Copiar mensaje","imageError":"No se pudo crear la imagen. Puedes copiar el mensaje.","copied":"Copiado. ¡Buenas noches!","copyHint":"Selecciona y copia el mensaje de arriba.","start":"TOCA PARA CONTAR OVEJAS","resumePrompt":"TOCA PARA SEGUIR","wideAwake":"¡BIEN DESPIERTA!","sleep":"SHH, DUERME","share":"COMPARTIR","goodNight":"BUENAS NOCHES"},"pt-BR":{"soundOn":"Som ligado","soundOff":"Som desligado","expand":"Ampliar ↗","collapse":"Fechar ↙","pause":"Pausar","resume":"Continuar","records":"Recordes locais","instructions":"Toque / Espaço para pular · Segure para ir mais alto · Deslize para baixo / ↓ para abaixar","hop":"↑ Pular","duck":"↓ Abaixar","languageLabel":"Idioma do jogo","loading":"Carregando…","loadError":"Não foi possível carregar o sonho. Verifique sua conexão e tente de novo.","retry":"Tentar de novo","noScript":"Ative o JavaScript para jogar Shheep. Você ainda pode ler sobre o jogo abaixo.","closeDialog":"Fechar janela","tonightBest":"Melhor desta noite","allTimeBest":"Melhor de todos os tempos","nightsInRow":"Noites seguidas","recordNote":"Salvo neste navegador. O app para iOS oferece placares do Game Center, desafios e convites para amigos.","sharePreview":"Seu cartão de boa-noite do Shheep","shareMessage":"Sua mensagem de boa-noite","saveCard":"Salvar cartão","copyMessage":"Copiar mensagem","imageError":"Não foi possível criar a imagem. Você ainda pode copiar a mensagem.","copied":"Copiado. Boa noite!","copyHint":"Selecione e copie a mensagem acima.","start":"TOQUE PARA CONTAR OVELHAS","resumePrompt":"TOQUE PARA CONTINUAR","wideAwake":"ACORDOU DE VEZ!","sleep":"SHH... NANAR","share":"COMPARTILHAR","goodNight":"BOA NOITE"},"de":{"soundOn":"Ton an","soundOff":"Ton aus","expand":"Vergrößern ↗","collapse":"Schließen ↙","pause":"Pausieren","resume":"Fortsetzen","records":"Lokale Rekorde","instructions":"Tippen / Leertaste: springen · Halten: höher · Nach unten wischen / ↓: ducken","hop":"↑ Springen","duck":"↓ Ducken","languageLabel":"Spielsprache","loading":"Wird geladen…","loadError":"Der Traum konnte nicht geladen werden. Prüfe deine Verbindung und versuche es erneut.","retry":"Erneut versuchen","noScript":"Aktiviere JavaScript, um Shheep zu spielen. Die Spielbeschreibung unten bleibt verfügbar.","closeDialog":"Dialog schließen","tonightBest":"Bestwert dieser Nacht","allTimeBest":"Bester Wert insgesamt","nightsInRow":"Nächte in Folge","recordNote":"In diesem Browser gespeichert. Die iOS-App bietet Game-Center-Ranglisten, Freundschafts-Challenges und Einladungen.","sharePreview":"Deine Shheep-Gute-Nacht-Karte","shareMessage":"Deine Gute-Nacht-Nachricht","saveCard":"Karte speichern","copyMessage":"Nachricht kopieren","imageError":"Das Bild konnte nicht erstellt werden. Du kannst die Nachricht trotzdem kopieren.","copied":"Kopiert. Gute Nacht!","copyHint":"Markiere und kopiere die Nachricht oben.","start":"TIPPE ZUM SCHÄFCHENZÄHLEN","resumePrompt":"TIPPE ZUM WEITERSPIELEN","wideAwake":"HELLWACH!","sleep":"PST, SCHLAF","share":"TEILEN","goodNight":"GUTE NACHT"},"fr":{"soundOn":"Son activé","soundOff":"Son coupé","expand":"Agrandir ↗","collapse":"Fermer ↙","pause":"Mettre en pause","resume":"Reprendre","records":"Records locaux","instructions":"Toucher / Espace pour sauter · Maintenir pour monter · Glisser vers le bas / ↓ pour se baisser","hop":"↑ Sauter","duck":"↓ Se baisser","languageLabel":"Langue du jeu","loading":"Chargement…","loadError":"Le rêve n’a pas pu être chargé. Vérifiez votre connexion et réessayez.","retry":"Réessayer","noScript":"Activez JavaScript pour jouer à Shheep. La présentation du jeu reste accessible ci-dessous.","closeDialog":"Fermer la fenêtre","tonightBest":"Meilleur score de la nuit","allTimeBest":"Record absolu","nightsInRow":"Nuits consécutives","recordNote":"Enregistré dans ce navigateur. L’app iOS propose des classements Game Center, des défis entre amis et des invitations.","sharePreview":"Votre carte de bonne nuit Shheep","shareMessage":"Votre message de bonne nuit","saveCard":"Enregistrer la carte","copyMessage":"Copier le message","imageError":"L’image n’a pas pu être créée. Vous pouvez toujours copier le message.","copied":"Copié. Bonne nuit !","copyHint":"Sélectionnez et copiez le message ci-dessus.","start":"TOUCHE ET COMPTE LES MOUTONS","resumePrompt":"TOUCHE POUR REPRENDRE","wideAwake":"RÉVEILLÉE !","sleep":"CHUT... DODO","share":"PARTAGER","goodNight":"BONNE NUIT"},"it":{"soundOn":"Audio sì","soundOff":"Audio no","expand":"Espandi ↗","collapse":"Chiudi ↙","pause":"Pausa","resume":"Riprendi","records":"Record locali","instructions":"Tocca / Spazio per saltare · Tieni premuto per salire · Scorri in basso / ↓ per abbassarti","hop":"↑ Salta","duck":"↓ Abbassati","languageLabel":"Lingua del gioco","loading":"Caricamento…","loadError":"Non è stato possibile caricare il sogno. Controlla la connessione e riprova.","retry":"Riprova","noScript":"Attiva JavaScript per giocare a Shheep. Puoi comunque leggere la presentazione del gioco qui sotto.","closeDialog":"Chiudi finestra","tonightBest":"Migliore della notte","allTimeBest":"Record assoluto","nightsInRow":"Notti consecutive","recordNote":"Salvato in questo browser. L’app iOS offre classifiche Game Center, sfide e inviti agli amici.","sharePreview":"Il tuo biglietto della buonanotte Shheep","shareMessage":"Il tuo messaggio della buonanotte","saveCard":"Salva biglietto","copyMessage":"Copia messaggio","imageError":"Non è stato possibile creare l’immagine. Puoi comunque copiare il messaggio.","copied":"Copiato. Buonanotte!","copyHint":"Seleziona e copia il messaggio qui sopra.","start":"TOCCA PER CONTARE LE PECORE","resumePrompt":"TOCCA PER RIPRENDERE","wideAwake":"SVEGLISSIMA!","sleep":"SSH... NANNA","share":"CONDIVIDI","goodNight":"BUONANOTTE"},"ru":{"soundOn":"Звук вкл.","soundOff":"Звук выкл.","expand":"Развернуть ↗","collapse":"Свернуть ↙","pause":"Пауза","resume":"Продолжить","records":"Местные рекорды","instructions":"Касание / Пробел: прыжок · Удержание: выше · Смахни вниз / ↓: пригнись","hop":"↑ Прыжок","duck":"↓ Пригнуться","languageLabel":"Язык игры","loading":"Загрузка…","loadError":"Не удалось загрузить сон. Проверьте подключение и попробуйте снова.","retry":"Повторить","noScript":"Включите JavaScript, чтобы играть в Shheep. Описание игры ниже останется доступным.","closeDialog":"Закрыть окно","tonightBest":"Рекорд этой ночи","allTimeBest":"Рекорд за всё время","nightsInRow":"Ночей подряд","recordNote":"Сохранено в этом браузере. В приложении iOS доступны таблицы Game Center, вызовы друзьям и приглашения.","sharePreview":"Ваша открытка Shheep на ночь","shareMessage":"Ваше пожелание спокойной ночи","saveCard":"Сохранить открытку","copyMessage":"Скопировать текст","imageError":"Не удалось создать изображение. Вы можете скопировать текст.","copied":"Скопировано. Спокойной ночи!","copyHint":"Выделите и скопируйте текст выше.","start":"НАЖМИ И СЧИТАЙ ОВЕЦ","resumePrompt":"НАЖМИ, ЧТОБЫ ПРОДОЛЖИТЬ","wideAwake":"ПРОСНУЛАСЬ!","sleep":"ТСС... СПИ","share":"ПОДЕЛИТЬСЯ","goodNight":"СПОКОЙНОЙ НОЧИ"}};
+const copy = copies[language] ?? copies.en;
+---
+<link rel="stylesheet" href="/shheep/game/game.abb65f35a8c45a02.css">
+<section class="shheep-game" aria-label="Shheep" lang={language} data-language={language} data-state="loading">
   <div class="game-toolbar">
-    <span class="game-night">Tonight’s flock</span>
+    <span class="game-night">Shheep</span>
     <div class="game-tools">
-      <label class="game-language-label"><span class="sr-only">Game language</span>
-        <select class="game-language" disabled aria-label="Game language">
-          <option value="en">ENGLISH</option><option value="zh-Hans">简体中文</option><option value="zh-Hant">繁體中文</option><option value="ja">日本語</option><option value="ko">한국어</option><option value="es">ESPAÑOL</option><option value="pt-BR">PORTUGUÊS</option><option value="de">DEUTSCH</option><option value="fr">FRANÇAIS</option><option value="it">ITALIANO</option><option value="ru">РУССКИЙ</option>
+      <label class="game-language-label"><span class="sr-only" data-web-copy="languageLabel">{copy.languageLabel}</span>
+        <select class="game-language" disabled aria-label={copy.languageLabel}>
+          <option value="en" selected={language === "en"}>ENGLISH</option><option value="zh-Hans" selected={language === "zh-Hans"}>简体中文</option><option value="zh-Hant" selected={language === "zh-Hant"}>繁體中文</option><option value="ja" selected={language === "ja"}>日本語</option><option value="ko" selected={language === "ko"}>한국어</option><option value="es" selected={language === "es"}>ESPAÑOL</option><option value="pt-BR" selected={language === "pt-BR"}>PORTUGUÊS</option><option value="de" selected={language === "de"}>DEUTSCH</option><option value="fr" selected={language === "fr"}>FRANÇAIS</option><option value="it" selected={language === "it"}>ITALIANO</option><option value="ru" selected={language === "ru"}>РУССКИЙ</option>
         </select>
       </label>
-      <button type="button" class="game-sound" disabled aria-pressed="false" aria-label="Mute sound">Sound on</button>
-      <button type="button" class="game-pause" hidden aria-label="Pause game">Ⅱ</button>
-      <button type="button" class="game-expand" disabled aria-pressed="false">Expand ↗</button>
+      <button type="button" class="game-sound" disabled aria-pressed="false" aria-label={copy.soundOff}>{copy.soundOn}</button>
+      <button type="button" class="game-pause" hidden aria-label={copy.pause}>Ⅱ</button>
+      <button type="button" class="game-expand" disabled aria-pressed="false">{copy.expand}</button>
     </div>
   </div>
   <div class="game-stage">
-    <canvas tabindex="0" aria-label="Shheep game. Space or up arrow to jump; down arrow to duck. P or Escape to pause." aria-describedby="game-instructions" width="1200" height="640"></canvas>
-    <div class="game-loading" role="status">Tucking in the pixels…</div>
-    <button type="button" class="game-start" hidden>TAP TO COUNT SHEEP</button>
-    <button type="button" class="game-resume" hidden>TAP TO RESUME</button>
+    <img class="game-placeholder" src="/shheep/preview.png" width="1050" height="560" alt="" fetchpriority="high" decoding="async">
+    <canvas tabindex="-1" aria-label={copy.instructions} aria-describedby="game-instructions" width="1200" height="640"></canvas>
+    <div class="game-loading" role="status">
+      <div class="game-loading__flock" aria-hidden="true">
+        <img class="game-loading__fence" src="/shheep/assets/sprites/fence_small1.png" width="26" height="19" alt="">
+        <img class="game-loading__sheep" src="/shheep/assets/sprites/sheep_jump.png" width="94" height="80" alt="">
+      </div>
+      <div class="game-loading__copy"><p class="game-loading__message sr-only">{copy.loading}</p></div>
+    </div>
+    <button type="button" class="game-start" hidden>{copy.start}</button>
+    <button type="button" class="game-resume" hidden>{copy.resumePrompt}</button>
     <div class="game-result" hidden>
-      <h2 data-copy="WIDE AWAKE!">WIDE AWAKE!</h2>
+      <h2 data-copy="WIDE AWAKE!">{copy.wideAwake}</h2>
       <div class="game-result-card">
         <p class="game-result-count"></p>
         <p class="game-result-best"></p>
-        <button type="button" class="game-restart" data-copy="SHH... SLEEP">SHH... SLEEP</button>
+        <button type="button" class="game-restart" data-copy="SHH... SLEEP">{copy.sleep}</button>
         <div class="game-result-actions">
-          <button type="button" class="game-records">Records</button>
-          <button type="button" class="game-share" data-copy="SHARE">SHARE</button>
+          <button type="button" class="game-records">{copy.records}</button>
+          <button type="button" class="game-share" data-copy="SHARE">{copy.share}</button>
         </div>
       </div>
     </div>
-    <noscript><div class="game-noscript">Enable JavaScript to play Shheep. You can still explore the game below.</div></noscript>
+    <noscript><div class="game-noscript">{copy.noScript}</div></noscript>
   </div>
   <div class="game-controls">
-    <p id="game-instructions">Tap / <kbd>Space</kbd> to hop · Hold for height · Swipe down / <kbd>↓</kbd> to duck</p>
+    <p id="game-instructions">{copy.instructions}</p>
     <div class="game-touch-controls">
-      <button type="button" class="game-hop" aria-label="Jump (hold for higher jump)">↑ Hop</button>
-      <button type="button" class="game-duck" aria-label="Duck (hold)">↓ Duck</button>
+      <button type="button" class="game-hop" aria-label={copy.hop}>{copy.hop}</button>
+      <button type="button" class="game-duck" aria-label={copy.duck}>{copy.duck}</button>
     </div>
   </div>
   <p class="game-status sr-only" role="status" aria-live="polite"></p>
   <dialog class="game-dialog" aria-labelledby="game-dialog-title">
-    <div class="game-dialog-head"><h2 id="game-dialog-title">Tonight’s flock</h2><button type="button" class="game-dialog-close" aria-label="Close dialog">×</button></div>
+    <div class="game-dialog-head"><h2 id="game-dialog-title">{copy.records}</h2><button type="button" class="game-dialog-close" aria-label={copy.closeDialog}>×</button></div>
     <div class="game-record-content" hidden>
-      <dl><div><dt>Tonight’s best</dt><dd class="record-tonight">0</dd></div><div><dt>All-time best</dt><dd class="record-best">0</dd></div><div><dt>Nights in a row</dt><dd class="record-streak">0</dd></div></dl>
-      <p>Saved in this browser. Game Center leaderboards, friend challenges and invitations are available in the iOS app.</p>
+      <dl><div><dt data-web-copy="tonightBest">{copy.tonightBest}</dt><dd class="record-tonight">0</dd></div><div><dt data-web-copy="allTimeBest">{copy.allTimeBest}</dt><dd class="record-best">0</dd></div><div><dt data-web-copy="nightsInRow">{copy.nightsInRow}</dt><dd class="record-streak">0</dd></div></dl>
+      <p data-web-copy="recordNote">{copy.recordNote}</p>
     </div>
     <div class="game-share-content" hidden>
-      <img class="game-share-preview" alt="Your Shheep good-night card" width="1080" height="1080">
-      <label for="shheep-share-text">Your good-night message</label>
+      <img class="game-share-preview" alt={copy.sharePreview} width="1080" height="1080">
+      <label for="shheep-share-text" data-web-copy="shareMessage">{copy.shareMessage}</label>
       <textarea id="shheep-share-text" readonly rows="6"></textarea>
-      <div class="game-share-actions"><a class="game-download" download="shheep-good-night.png">Save card</a><button type="button" class="game-copy">Copy message</button></div>
+      <div class="game-share-actions"><a class="game-download" download="shheep-good-night.png" data-web-copy="saveCard">{copy.saveCard}</a><button type="button" class="game-copy" data-web-copy="copyMessage">{copy.copyMessage}</button></div>
       <p class="game-copy-status" role="status"></p>
     </div>
   </dialog>
@@ -62,8 +74,8 @@
 {import.meta.env.DEV ? (
 <script is:inline type="module">
 const local = ['localhost', '127.0.0.1', '[::1]'].includes(location.hostname);
-await import(local && new URLSearchParams(location.search).get('record') === '1' ? '/__dev/shheep-recording.js' : '/shheep/game/game.df48324fde1d3adb.js');
+await import(local && new URLSearchParams(location.search).get('record') === '1' ? '/__dev/shheep-recording.js' : '/shheep/game/game.561e0fbae4532c37.js');
 </script>
 ) : (
-<script is:inline type="module" src="/shheep/game/game.df48324fde1d3adb.js"></script>
+<script is:inline type="module" src="/shheep/game/game.561e0fbae4532c37.js"></script>
 )}

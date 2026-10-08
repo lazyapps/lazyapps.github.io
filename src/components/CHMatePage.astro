@@ -2,6 +2,7 @@
 import SocialMeta from './SocialMeta.astro';
 import SoftwareApplication from './SoftwareApplication.astro';
 import LanguageLinks from './LanguageLinks.astro';
+import LanguagePicker from './LanguagePicker.astro';
 import SiteFooterBase from './SiteFooterBase.astro';
 import siteCssUrl from '$assets/s/site.css?url';
 import gsapUrl from '$assets/vendor/gsap.min.js?url';
@@ -83,15 +84,7 @@ const locales = Object.values(CHMATE_LOCALES);
           <img src={iconUrl} alt="" width="26" height="26">
           <span class="dsp" lang="en" dir="ltr">CHMate</span>
         </a>
-        <div class="locale">
-          <svg class="locale__globe" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20Z" stroke="currentColor"/><path d="M12 22c2.2 0 4-4.5 4-10S14.2 2 12 2 8 6.5 8 12s1.8 10 4 10ZM2 12h20M4 6c5.3 2.2 10.7 2.2 16 0M4 18c5.3-2.2 10.7-2.2 16 0" stroke="currentColor"/></svg>
-          <span class="locale__now" aria-hidden="true">{t.localeNow}</span>
-          <span class="locale__short" aria-hidden="true">{t.localeShort}</span>
-          <svg class="locale__chev" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m5 9 7 7 7-7" stroke="currentColor"/></svg>
-          <select name="locale" data-locale-select aria-label={t.selectAria}>
-            {locales.map((locale) => <option value={locale.selectedUrl} data-locale={locale.htmlLang} lang={locale.htmlLang} selected={locale.selectedUrl === t.selectedUrl}>{locale.localeNow}</option>)}
-          </select>
-        </div>
+        <LanguagePicker label={t.selectAria} current={t.selectedUrl} storageKey="chmate.locale" options={locales.map(locale => ({ language: locale.htmlLang, url: locale.selectedUrl, label: locale.localeNow }))} />
       </div>
     </header>
 
@@ -275,20 +268,11 @@ const locales = Object.values(CHMATE_LOCALES);
     <script is:inline src={splitTextUrl}></script>
     <script is:inline src={logoRevealUrl}></script>
     <script is:inline src={siteJsUrl}></script>
-    <script>
-      const select = document.querySelector<HTMLSelectElement>('[data-locale-select]');
-      select?.addEventListener('change', () => {
-        const option = select.selectedOptions[0];
-        try { localStorage.setItem('chmate.locale', option.dataset.locale); } catch (_storageError) {}
-        location.href = option.value + location.search + location.hash;
-      });
 
-    </script>
   </body>
 </html>
 
 <style>
-  .locale__now, .locale__short, .locale select { font-family: var(--sans); }
   header { padding-top: clamp(8px, 1.5vw, 18px); }
   .reading-hero { display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr); align-items: center; gap: var(--space-grid); padding-top: clamp(28px, 4vw, 56px); }
   .reading-hero__heading { overflow-x: clip; }

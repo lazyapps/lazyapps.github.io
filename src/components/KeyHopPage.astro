@@ -10,6 +10,7 @@ const SITE = 'https://lazyapps.com';
 import SocialMeta from './SocialMeta.astro';
 import SoftwareApplication from './SoftwareApplication.astro';
 import LanguageLinks from './LanguageLinks.astro';
+import LanguagePicker from './LanguagePicker.astro';
 import SiteFooterBase from './SiteFooterBase.astro';
 import siteCssUrl from '$assets/s/site.css?url';
 import gsapUrl from '$assets/vendor/gsap.min.js?url';
@@ -37,20 +38,6 @@ const releaseUrl = 'https://github.com/cxa/keyhop/releases';
 const notesUrl = 'https://github.com/cxa/keyhop/blob/main/RELEASE_NOTES.md';
 const layoutLabel = t.layoutAria ?? 'Keyboard layout';
 const modifierLabel = t.modifierAria ?? 'Leader modifier';
-const localeShort = {
-  '': '简',
-  'zh-hant': '繁',
-  en: 'EN',
-  es: 'ES',
-  'pt-br': 'PT',
-  fr: 'FR',
-  de: 'DE',
-  ja: 'JA',
-  ko: 'KO',
-  ru: 'RU',
-  ar: 'AR',
-  hi: 'HI',
-}[code] ?? 'EN';
 const demoApps = [
   ['Safari', safariIconUrl],
   ['Chrome', chromeIconUrl],
@@ -77,9 +64,6 @@ const options = [
   ['ar', '/keyhop/ar/', 'العربية'],
   ['hi', '/keyhop/hi/', 'हिन्दी'],
 ];
-const optionsHtml = options.map(([locale, value, label]) =>
-  `<option value="${value}" data-locale="${locale}" lang="${locale}"${value === t.selectedUrl ? ' selected' : ''}>${label}</option>`,
-).join('\n');
 
 const alternates = [
   ['zh-Hans', ''], ['en', 'en/'], ['zh-Hant', 'zh-hant/'], ['es', 'es/'],
@@ -240,13 +224,7 @@ const socialImageUrl = {
           <img src={keyhopIconUrl} alt="">
           <h2 class="dsp"><Fragment set:html={t.appTitle} /></h2>
         </div>
-        <div class="locale">
-          <svg class="locale__globe" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20Z" stroke="currentColor"/><path d="M12 22c2.2 0 4-4.5 4-10S14.2 2 12 2 8 6.5 8 12s1.8 10 4 10ZM2 12h20M4 6c5.3 2.2 10.7 2.2 16 0M4 18c5.3-2.2 10.7-2.2 16 0" stroke="currentColor"/></svg>
-          <span class="locale__now" aria-hidden="true">{t.localeNow}</span>
-          <span class="locale__short" aria-hidden="true">{localeShort}</span>
-          <svg class="locale__chev" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m5 9 7 7 7-7" stroke="currentColor"/></svg>
-          <select name="locale" data-locale-select aria-label={t.selectAria}><Fragment set:html={optionsHtml} /></select>
-        </div>
+        <LanguagePicker label={t.selectAria} current={t.selectedUrl} storageKey="keyhop.locale" options={options.map(([language, url, label]) => ({ language, url, label }))} />
       </div>
 
       <div data-reveal-group data-stagger="110" data-distance="1.2em" data-start="top 94%">
@@ -383,11 +361,6 @@ const socialImageUrl = {
       bindings[demoIndex].setAttribute('data-active', '');
     });
 
-    document.querySelector('[data-locale-select]')?.addEventListener('change', (event) => {
-      const option = event.currentTarget.selectedOptions[0];
-      try { localStorage.setItem('keyhop.locale', option.dataset.locale); } catch (_storageError) {}
-      location.href = option.value + location.search + location.hash;
-    });
   </script>
 </body>
 </html>

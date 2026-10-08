@@ -1,0 +1,10 @@
+---
+import ShheepPage from '../../components/ShheepPage.astro';
+import { SHHEEP_LOCALES } from '../../i18n/shheep-locales.mjs';
+
+export function getStaticPaths() {
+  return Object.keys(SHHEEP_LOCALES).filter(locale => locale !== 'en').map(locale => ({ params: { locale } }));
+}
+const t = SHHEEP_LOCALES[Astro.params.locale];
+---
+<ShheepPage t={t} />

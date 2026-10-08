@@ -2,6 +2,7 @@
 import SocialMeta from './SocialMeta.astro';
 import SoftwareApplication from './SoftwareApplication.astro';
 import LanguageLinks from './LanguageLinks.astro';
+import LanguagePicker from './LanguagePicker.astro';
 import SiteFooterBase from './SiteFooterBase.astro';
 import FondFontAssetCredits from './FondFontAssetCredits.astro';
 import FondFontFactoryScene from './FondFontFactoryScene.astro';
@@ -42,14 +43,7 @@ const ogUrl = ogImages[`/src/assets/img/fondfont-opengraph-${t.ogAsset}.png`];
       <div class="topbar">
         <nav class="topbar__nav" aria-label={t.homeAria}><a class="topbar__home" href="/" aria-label={t.homeAria}><span class="topbar__home-dot" data-nav-sun aria-hidden="true"><svg class="nav-sun-rays" width="32" height="32" viewBox="0 0 64 64" fill="none" focusable="false"><path d="M32 3v5m0 48v5M3 32h5m48 0h5M11.5 11.5l3.5 3.5m34 34 3.5 3.5m-41 0L15 49m34-34 3.5-3.5" stroke="currentColor" stroke-width="3" stroke-linecap="round" /></svg></span></a></nav>
         <a class="topbar__app" href={t.selectedUrl}><img src={appIconUrl.src} alt="" width="32" height="32"><span class="dsp" lang={t.htmlLang}>{t.name}</span></a>
-        <div class="locale">
-          <svg class="locale__globe" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20Z" stroke="currentColor"/><path d="M12 22c2.2 0 4-4.5 4-10S14.2 2 12 2 8 6.5 8 12s1.8 10 4 10ZM2 12h20M4 6c5.3 2.2 10.7 2.2 16 0M4 18c5.3-2.2 10.7-2.2 16 0" stroke="currentColor"/></svg>
-          <span class="locale__now" aria-hidden="true">{t.localeNow}</span><span class="locale__short" aria-hidden="true">{t.localeShort}</span>
-          <svg class="locale__chev" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m5 9 7 7 7-7" stroke="currentColor"/></svg>
-          <select name="locale" data-fondfont-locale aria-label={t.selectAria}>
-            {locales.map(locale => <option value={locale.selectedUrl} data-locale={locale.code} lang={locale.htmlLang} selected={locale.code === t.code}>{locale.localeNow}</option>)}
-          </select>
-        </div>
+        <LanguagePicker label={t.selectAria} current={t.selectedUrl} storageKey="fondfont.locale" options={locales.map(locale => ({ language: locale.htmlLang, url: locale.selectedUrl, label: locale.localeNow, storageValue: locale.code }))} />
       </div>
     </header>
     <main id="main">
@@ -81,12 +75,6 @@ const ogUrl = ogImages[`/src/assets/img/fondfont-opengraph-${t.ogAsset}.png`];
       </footer>
     </main>
     <script>
-      const select = document.querySelector<HTMLSelectElement>('[data-fondfont-locale]');
-      select?.addEventListener('change', () => {
-        const option = select.selectedOptions[0];
-        try { localStorage.setItem('fondfont.locale', option.dataset.locale ?? 'en'); } catch {}
-        location.assign(option.value + location.search + location.hash);
-      });
       const sun = document.querySelector<HTMLElement>('[data-nav-sun]');
       if (sun) {
         let inView = false;
@@ -111,7 +99,6 @@ const ogUrl = ogImages[`/src/assets/img/fondfont-opengraph-${t.ogAsset}.png`];
   .nav-sun-rays{position:absolute;inset:-11px;width:32px;height:32px;animation:nav-sun-turn 24s linear infinite paused;pointer-events:none}
   .topbar__home-dot[data-animating] .nav-sun-rays{animation-play-state:running}
   @keyframes nav-sun-turn{to{transform:rotate(360deg)}}
-  .locale__now,.locale__short,.locale select{font-family:var(--sans)}
   @media(max-width:479px){.topbar__app .dsp:lang(ja){font-size:1rem}}
   .font-hero{display:flex;flex-direction:column;align-items:center;padding-block:8px 72px}
   .font-hero__copy{min-width:0;width:100%;max-width:850px;display:flex;flex-direction:column;align-items:center;gap:12px;text-align:center;container-type:inline-size;margin-top:-10px}
