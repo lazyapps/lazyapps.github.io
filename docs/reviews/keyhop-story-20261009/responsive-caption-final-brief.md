@@ -1,0 +1,7 @@
+Focused completion check: does final responsive caption implementation satisfy modestly larger mobile text without blocking apps or lower-right controls? Give <=150 words. No web browsing, full-repo exploration, or repeated builds needed. Inspect only KeyHopPage.astro caption CSS/markup/script, compositor caption removal, and listed proof.
+
+Approach consult responsive-caption-advice.md accepted: one shared clean v4 video/poster; 12native VTT tracks and48localized HTML captions. Four overlapping grid cells, inactive visibility:hidden retain tallest-cue height. Column minmax(0,1fr) prevents intrinsic overflow. Mobile<=640 font15px line-height1.35, panel4px8px, centeredregion width-112px; uses20px of lower scene whitespace then normalflow grows below it. Desktop overlay has original44/1280 font ratio. Existing24px mobile/44px desktop lower-right controls retained.
+
+Durable proof: caption-geometry-v4.json has240 boxes with no failures at320,390,640,641 and320double-font. caption-timing-v4.json checks0/4.99/5/9.99/10/12.69/12.7/14.99/0 againstonevisiblecue. responsive-caption-mobile-en.png confirms real mobile frame. routes-v4.json and tracks-v4.json verify all12locales. validation-v4.json confirms15s360framesH264AAC, full decode andhash. Final full build/SEO passed in build-responsive-captions-final.log. Native track hidden whenHTML enabled; nativecaptions default withoutJS. Reduced-motion/manual playback and restored desktop screenshot being checked now. No model inference changed.
+
+Only identify material blockers, if any. Read-only.

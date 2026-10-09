@@ -1,0 +1,16 @@
+{
+  "fontMobile": 15,
+  "previousAt350pxApprox": 12,
+  "geometryBoxes": 240,
+  "geometryFailures": 0,
+  "cueBoundaryChecks": 9,
+  "oneVisibleCue": true,
+  "reducedMotionInitialPausedAt0": true,
+  "reducedMotionManualPlayAndPause": true,
+  "nativeTrackHiddenDuringHTMLPlayback": true,
+  "posterHasNoBakedCaption": true,
+  "temporaryOverridesRestored": true,
+  "desktopVisualPassed": true,
+  "desktopCaptionBelowAppKeys": true,
+  "desktopControlsClear": true
+}

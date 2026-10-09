@@ -32,6 +32,12 @@ import vlcIconUrl from '$assets/img/keyhop/apps/vlc.png?url';
 import keyhopOpengraphUrl from '$assets/img/keyhop-opengraph.png?url';
 import keyhopOpengraphSharedUrl from '$assets/img/keyhop-opengraph-shared.png?url';
 import keyhopOpengraphZhHantUrl from '$assets/img/keyhop-opengraph-zh-hant.png?url';
+import filmCopy from '../i18n/keyhop-film-copy.json';
+
+const filmLocale = code === '' ? 'zh-hans' : code;
+const film = filmCopy[filmLocale];
+const heroVideoUrl = '/v/keyhop/hero-v4.mp4';
+const heroVideoPoster = '/v/keyhop/hero-v4.jpg';
 
 const releaseUrl = 'https://github.com/cxa/keyhop/releases';
 const notesUrl = 'https://github.com/cxa/keyhop/blob/main/RELEASE_NOTES.md';
@@ -135,8 +141,31 @@ const socialImageUrl = {
     .phero__sub{margin:clamp(18px,2.2vw,32px) auto 0;font-size:1rem;color:var(--muted);max-width:42rem;text-align:center}
     .phero__sub:not(.bounds__note){text-wrap:balance}
     .phero__cta{margin-top:clamp(22px,2.6vw,38px);display:flex;justify-content:center;gap:.75rem;flex-wrap:wrap}
-    .gesture-demo{margin-top:clamp(28px,4vw,60px)}
-    .gesture{position:relative;border-radius:min(2vw,24px);background:oklch(0.210 0.050 300);color:#fff;padding:clamp(24px,5vw,72px);overflow:hidden}
+    .hero-film{container-type:inline-size;position:relative;margin:clamp(24px,3vw,42px) 0 0;border-radius:min(2vw,24px);overflow:hidden;background:#f5e8dc}
+    .hero-film video{display:block;width:100%;aspect-ratio:16/9;object-fit:cover}
+    .hero-captions{position:absolute;inset-inline:70px;bottom:1.25cqw;display:grid;grid-template-columns:minmax(0,1fr);pointer-events:none}
+    .hero-captions[hidden]{display:none}
+    .hero-caption{grid-area:1/1;justify-self:center;align-self:end;width:max-content;max-width:100%;padding:.9375cqw 1.5625cqw;border-radius:.78125cqw;background:rgba(24,20,28,.71);color:#fff;font:400 3.4375cqw/1.2 var(--sans);text-align:center;text-wrap:balance;visibility:hidden}
+    .hero-caption[data-active]{visibility:visible}
+    .hero-controls{position:absolute;right:clamp(4px,1vw,12px);bottom:clamp(4px,1vw,12px);display:flex;gap:6px}
+    .hero-controls[hidden]{display:none}
+    .hero-controls button{display:grid;place-items:center;width:44px;height:44px;padding:0;border:0;border-radius:50%;background:rgba(24,20,28,.55);color:#fff;cursor:pointer}
+    .hero-controls button:hover{background:rgba(24,20,28,.75)}
+    .hero-controls button:focus-visible{outline:2px solid #fff;outline-offset:2px}
+    .hero-controls svg{width:18px;height:18px}
+    .hero-controls .icon-pause,.hero-controls .icon-muted{display:none}
+    .hero-controls [data-playing] .icon-play,.hero-controls [data-muted] .icon-sound{display:none}
+    .hero-controls [data-playing] .icon-pause,.hero-controls [data-muted] .icon-muted{display:block}
+    @media (max-width:640px){
+      .hero-captions{position:relative;inset:auto;bottom:auto;width:calc(100% - 112px);margin:-20px auto 8px}
+      .hero-caption{font-size:15px;line-height:1.35;padding:4px 8px;border-radius:5px}
+      .hero-controls{gap:2px}
+      .hero-controls button{width:24px;height:24px}
+      .hero-controls svg{width:14px;height:14px}
+    }
+    .card__demo{grid-column:1/-1;min-width:0}
+    .gesture-demo{margin-top:0}
+    .gesture{position:relative;border-radius:min(2vw,24px);background:oklch(0.210 0.050 300);color:#fff;padding:clamp(24px,3.2vw,44px);overflow:hidden}
     .gesture__leader{display:flex;align-items:center;justify-content:center;gap:clamp(8px,1.2vw,14px)}
     .gesture__leader-key{display:grid;place-items:center;width:clamp(48px,6vw,72px);height:clamp(48px,6vw,72px);border:1px solid oklch(0.600 0.090 215 / .52);border-radius:min(1.2vw,14px);background:oklch(0.600 0.090 215 / .12);font:600 clamp(1rem,2vw,1.5rem)/1 var(--sans);will-change:transform,background-color,border-color}
     .gesture__leader-key:first-child{animation:leader-first 1.8s linear infinite}.gesture__leader-key:last-child{animation:leader-second 1.8s linear infinite}
@@ -171,7 +200,7 @@ const socialImageUrl = {
     .card{position:relative;background:var(--fill);color:var(--fg,var(--ink));border:1px solid rgba(23,23,23,.08);border-radius:var(--r-card);padding:var(--space-card);margin-top:-8px}
     .card:first-child{margin-top:0}.card:nth-child(1){--fill:var(--c1)}.card:nth-child(2){--fill:var(--c2)}.card:nth-child(3){--fill:var(--c3)}.card:nth-child(4){--fill:var(--c4)}
     .card:nth-child(odd){transform:rotate(-2deg)}.card:nth-child(even){transform:rotate(2deg)}
-    .card__grid{display:grid;grid-template-columns:minmax(0,.82fr) minmax(0,1.18fr);gap:var(--space-grid);align-items:start}
+    .card__grid{display:grid;grid-template-columns:minmax(0,.82fr) minmax(0,1.18fr);column-gap:var(--space-grid);row-gap:clamp(24px,3vw,36px);align-items:start}
     .card__title{font-size:clamp(26px,3.4vw,46px);text-wrap:balance}.card__p{font-size:1.0625rem;line-height:1.85}
     @media (max-width:860px){.card__grid{grid-template-columns:1fr}}
 
@@ -198,6 +227,11 @@ const socialImageUrl = {
     .brew pre{margin:0;font:400 .875rem/1.9 var(--mono);white-space:pre-wrap;word-break:break-all}.brew pre .p{opacity:.45}
     .brew a.brew__download{white-space:normal;overflow-wrap:anywhere;text-decoration-line:underline;text-decoration-color:color-mix(in srgb,currentColor 48%,transparent);text-decoration-thickness:.0625em;text-underline-offset:.2em;text-decoration-skip-ink:auto}
     .brew__download:hover{text-decoration-color:currentColor}
+    .keyhop-footer__inner{margin-top:var(--space-grid);border-top:1px solid var(--line);padding-top:28px}
+    .keyhop-footer__notices{display:grid;gap:8px;max-width:68ch;margin-inline:auto;text-align:center;color:var(--muted);font:400 .6667rem/1.4 var(--sans);text-transform:uppercase;letter-spacing:.04em}
+    .keyhop-footer__notices p{max-width:68ch;line-height:inherit}
+    .keyhop-footer__notices a{text-decoration:underline;text-decoration-color:color-mix(in srgb,currentColor 45%,transparent);text-underline-offset:.2em}
+    .keyhop-footer__notices a:hover{text-decoration-color:currentColor}
   </style>
 </head>
 
@@ -228,41 +262,30 @@ const socialImageUrl = {
 
       <div data-reveal-group data-stagger="110" data-distance="1.2em" data-start="top 94%">
         <h1 class="phero__h1 dsp"><Fragment set:html={t.h1} /></h1>
-        <div class="gesture-demo">
-          <div class="gesture" role="img" aria-label={t.gestureAria}>
-            <div class="gesture__leader" aria-hidden="true">
-              <span class="gesture__leader-key" data-demo-clock data-demo-leader>⌥</span>
-              <span class="gesture__leader-key" data-demo-leader>⌥</span>
-            </div>
-            <div class="gesture__matrix" aria-hidden="true">
-              {demoApps.map(([name, src], i) => <div class="gesture__binding" data-demo-binding data-active={i === 0 ? '' : undefined}>
-                <img class="gesture__app" src={src} alt={name}>
-                <span class="gesture__slot" data-layout-key>{['A','S','D','F','G','H','J','K','L',';'][i]}</span>
-              </div>)}
-            </div>
+        <figure class="hero-film">
+          <video id="keyhop-story-video" data-keyhop-hero-video aria-label={film.label} poster={heroVideoPoster}
+            preload="metadata" muted loop playsinline controls>
+            <source src={heroVideoUrl} type="video/mp4">
+            <track kind="captions" src={`/v/keyhop/captions-${filmLocale}-v4.vtt`} srclang={t.htmlLang} label={t.htmlLang} default>
+            <img src={heroVideoPoster} alt={film.label}>
+          </video>
+          <div class="hero-captions" data-keyhop-captions aria-hidden="true" hidden>
+            {['chase', 'hop', 'flow', 'tagline'].map((key, index) => <span class="hero-caption" data-caption={key} data-active={index === 0 ? '' : undefined}>{film[key]}</span>)}
           </div>
-          <div class="gesture__controls">
-            <span class="gesture__select">
-              <select name="leader-modifier" data-modifier-select aria-label={modifierLabel}>
-                <option value="command">⌘ Command</option>
-                <option value="option" selected>⌥ Option</option>
-                <option value="control">⌃ Control</option>
-                <option value="shift">⇧ Shift</option>
-              </select>
-              <svg class="gesture__chevron" viewBox="0 0 8 5" fill="none" aria-hidden="true"><path d="M.5.5 4 4 7.5.5" stroke="currentColor" /></svg>
-            </span>
-            <span class="gesture__select gesture__select--layout">
-              <select id={`keyhop-layout-${code || 'zh'}`} name="keyboard-layout" data-layout-select aria-label={layoutLabel}>
-                <option value="qwerty">QWERTY</option>
-                <option value="dvorak">Dvorak</option>
-                <option value="colemak">Colemak</option>
-                <option value="azerty">AZERTY</option>
-                <option value="qwertz">QWERTZ</option>
-              </select>
-              <svg class="gesture__chevron" viewBox="0 0 8 5" fill="none" aria-hidden="true"><path d="M.5.5 4 4 7.5.5" stroke="currentColor" /></svg>
-            </span>
+          <div class="hero-controls" data-keyhop-video-controls hidden>
+            <button type="button" data-video-play data-play-label={film.play} data-pause-label={film.pause} aria-label={film.play} aria-controls="keyhop-story-video">
+              <svg class="icon-play" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M6 3.5v13l10-6.5Z"/></svg>
+              <svg class="icon-pause" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M5 3h3v14H5zm7 0h3v14h-3Z"/></svg>
+            </button>
+            <button type="button" data-video-sound data-sound-on-label={film.soundOn} data-sound-off-label={film.soundOff} aria-label={film.soundOn} aria-controls="keyhop-story-video" data-muted>
+              <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M3 7h3l4-3v12l-4-3H3Z"/>
+                <path class="icon-sound" d="M13 6a6 6 0 0 1 0 8m3-11a10 10 0 0 1 0 14"/>
+                <path class="icon-muted" d="m14 7 4 6m0-6-4 6"/>
+              </svg>
+            </button>
           </div>
-        </div>
+        </figure>
         <p class="phero__sub"><Fragment set:html={t.sub} /></p>
         <div class="phero__cta">
           <a data-hover href={releaseUrl} class="button-023">
@@ -278,8 +301,46 @@ const socialImageUrl = {
     </section>
 
     <dl class="deck wrap" data-reveal-group data-stagger="140" data-distance="2.1em" data-start="top 88%">
-      {t.cards.map((card) => <div class="card">
-        <div class="card__grid"><dt class="card__title dsp"><Fragment set:html={card.title} /></dt><dd class="card__p"><Fragment set:html={card.p} /></dd></div>
+      {t.cards.map((card, index) => <div class="card card__grid">
+        <dt class="card__title dsp"><Fragment set:html={card.title} /></dt>
+        <dd class="card__p"><Fragment set:html={card.p} /></dd>
+        {index === 0 && <dd class="card__demo">
+          <div class="gesture-demo" role="region" aria-label={t.gestureAria}>
+            <div class="gesture" role="img" aria-label={t.gestureAria}>
+              <div class="gesture__leader" aria-hidden="true">
+                <span class="gesture__leader-key" data-demo-clock data-demo-leader>⌥</span>
+                <span class="gesture__leader-key" data-demo-leader>⌥</span>
+              </div>
+              <div class="gesture__matrix" aria-hidden="true">
+                {demoApps.map(([name, src], i) => <div class="gesture__binding" data-demo-binding data-active={i === 0 ? '' : undefined}>
+                  <img class="gesture__app" src={src} alt={name}>
+                  <span class="gesture__slot" data-layout-key>{['A','S','D','F','G','H','J','K','L',';'][i]}</span>
+                </div>)}
+              </div>
+            </div>
+            <div class="gesture__controls">
+              <span class="gesture__select">
+                <select name="leader-modifier" data-modifier-select aria-label={modifierLabel}>
+                  <option value="command">⌘ Command</option>
+                  <option value="option" selected>⌥ Option</option>
+                  <option value="control">⌃ Control</option>
+                  <option value="shift">⇧ Shift</option>
+                </select>
+                <svg class="gesture__chevron" viewBox="0 0 8 5" fill="none" aria-hidden="true"><path d="M.5.5 4 4 7.5.5" stroke="currentColor" /></svg>
+              </span>
+              <span class="gesture__select gesture__select--layout">
+                <select id={`keyhop-layout-${code || 'zh'}`} name="keyboard-layout" data-layout-select aria-label={layoutLabel}>
+                  <option value="qwerty">QWERTY</option>
+                  <option value="dvorak">Dvorak</option>
+                  <option value="colemak">Colemak</option>
+                  <option value="azerty">AZERTY</option>
+                  <option value="qwertz">QWERTZ</option>
+                </select>
+                <svg class="gesture__chevron" viewBox="0 0 8 5" fill="none" aria-hidden="true"><path d="M.5.5 4 4 7.5.5" stroke="currentColor" /></svg>
+              </span>
+            </div>
+          </div>
+        </dd>}
       </div>)}
     </dl>
 
@@ -323,7 +384,12 @@ const socialImageUrl = {
       <pre dir="ltr"><Fragment set:html={t.brew.install} /></pre>
       <p class="bounds__a">{t.brew.p} <a class="brew__download" href={releaseUrl}>{t.brew.dmg}</a>{t.brew.dmgEnd}</p>
     </div>
-    <SiteFooterBase locale={t.htmlLang} />
+    <div class="keyhop-footer__inner">
+      <div class="keyhop-footer__notices">
+        <p>{film.musicLabel}: <a href="https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1400011" lang="en" dir="ltr">“Monkeys Spinning Monkeys” — Kevin MacLeod</a> · <a href="https://creativecommons.org/licenses/by/4.0/" lang="en" dir="ltr">CC BY 4.0</a> · {film.musicEdit}</p>
+      </div>
+      <SiteFooterBase locale={t.htmlLang} />
+    </div>
   </footer>
 
   <script is:inline src={gsapUrl}></script>
@@ -332,6 +398,82 @@ const socialImageUrl = {
   <script is:inline src={splitTextUrl}></script>
   <script is:inline src={logoRevealUrl}></script>
   <script is:inline src={siteJsUrl}></script>
+  <script is:inline>
+    (() => {
+      const video = document.querySelector('[data-keyhop-hero-video]');
+      if (!video) return;
+      const captions = document.querySelector('[data-keyhop-captions]');
+      const captionItems = captions.querySelectorAll('[data-caption]');
+      const nativeCaptions = video.textTracks[0];
+      nativeCaptions.mode = 'hidden';
+      captions.hidden = false;
+      function updateCaption() {
+        const time = video.currentTime;
+        const key = time < 5 ? 'chase' : time < 10 ? 'hop' : time < 12.7 ? 'flow' : 'tagline';
+        captionItems.forEach((caption) => caption.toggleAttribute('data-active', caption.dataset.caption === key));
+      }
+      nativeCaptions.addEventListener('cuechange', updateCaption);
+      ['timeupdate', 'seeked', 'loadedmetadata'].forEach((event) => video.addEventListener(event, updateCaption));
+      updateCaption();
+      const motion = window.matchMedia('(prefers-reduced-motion: reduce)');
+      const controls = document.querySelector('[data-keyhop-video-controls]');
+      const playButton = controls.querySelector('[data-video-play]');
+      const soundButton = controls.querySelector('[data-video-sound]');
+      video.controls = false;
+      controls.hidden = false;
+      let visible = false;
+      let userPaused = false;
+      let automaticPause = false;
+
+      function updateControls() {
+        playButton.setAttribute('aria-label', video.paused ? playButton.dataset.playLabel : playButton.dataset.pauseLabel);
+        playButton.toggleAttribute('data-playing', !video.paused);
+        soundButton.setAttribute('aria-label', video.muted ? soundButton.dataset.soundOnLabel : soundButton.dataset.soundOffLabel);
+        soundButton.toggleAttribute('data-muted', video.muted);
+      }
+      playButton.addEventListener('click', () => {
+        if (video.paused) video.play().catch(() => {});
+        else video.pause();
+      });
+      soundButton.addEventListener('click', () => { video.muted = !video.muted; });
+      video.addEventListener('volumechange', updateControls);
+
+      function syncPlayback() {
+        if (document.getElementById('loader')) return;
+        if (!visible || document.hidden || motion.matches) {
+          if (!video.paused) {
+            automaticPause = true;
+            video.pause();
+          }
+          return;
+        }
+        if (!userPaused) video.play().catch(() => {});
+      }
+
+      video.addEventListener('pause', () => {
+        if (automaticPause) automaticPause = false;
+        else userPaused = true;
+        updateControls();
+      });
+      video.addEventListener('play', () => { userPaused = false; updateControls(); });
+      updateControls();
+      new IntersectionObserver((entries) => {
+        visible = entries[0]?.isIntersecting ?? false;
+        syncPlayback();
+      }, { threshold: 0.2 }).observe(video);
+      document.addEventListener('visibilitychange', syncPlayback);
+      motion.addEventListener('change', syncPlayback);
+      if (document.getElementById('loader')) {
+        const loaderObserver = new MutationObserver(() => {
+          if (!document.getElementById('loader')) {
+            loaderObserver.disconnect();
+            syncPlayback();
+          }
+        });
+        loaderObserver.observe(document.body, { childList: true });
+      }
+    })();
+  </script>
   <script is:inline>
     const layouts = {
       qwerty: ['A','S','D','F','G','H','J','K','L',';'],

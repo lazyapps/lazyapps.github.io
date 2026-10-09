@@ -1,0 +1,86 @@
+[
+  {
+    "locale": "zh-hans",
+    "route": "dist/keyhop/index.html",
+    "sharedFilm": true,
+    "localizedHTML": true,
+    "nativeTrack": true
+  },
+  {
+    "locale": "en",
+    "route": "dist/keyhop/en/index.html",
+    "sharedFilm": true,
+    "localizedHTML": true,
+    "nativeTrack": true
+  },
+  {
+    "locale": "zh-hant",
+    "route": "dist/keyhop/zh-hant/index.html",
+    "sharedFilm": true,
+    "localizedHTML": true,
+    "nativeTrack": true
+  },
+  {
+    "locale": "es",
+    "route": "dist/keyhop/es/index.html",
+    "sharedFilm": true,
+    "localizedHTML": true,
+    "nativeTrack": true
+  },
+  {
+    "locale": "pt-br",
+    "route": "dist/keyhop/pt-br/index.html",
+    "sharedFilm": true,
+    "localizedHTML": true,
+    "nativeTrack": true
+  },
+  {
+    "locale": "fr",
+    "route": "dist/keyhop/fr/index.html",
+    "sharedFilm": true,
+    "localizedHTML": true,
+    "nativeTrack": true
+  },
+  {
+    "locale": "de",
+    "route": "dist/keyhop/de/index.html",
+    "sharedFilm": true,
+    "localizedHTML": true,
+    "nativeTrack": true
+  },
+  {
+    "locale": "ja",
+    "route": "dist/keyhop/ja/index.html",
+    "sharedFilm": true,
+    "localizedHTML": true,
+    "nativeTrack": true
+  },
+  {
+    "locale": "ko",
+    "route": "dist/keyhop/ko/index.html",
+    "sharedFilm": true,
+    "localizedHTML": true,
+    "nativeTrack": true
+  },
+  {
+    "locale": "ru",
+    "route": "dist/keyhop/ru/index.html",
+    "sharedFilm": true,
+    "localizedHTML": true,
+    "nativeTrack": true
+  },
+  {
+    "locale": "ar",
+    "route": "dist/keyhop/ar/index.html",
+    "sharedFilm": true,
+    "localizedHTML": true,
+    "nativeTrack": true
+  },
+  {
+    "locale": "hi",
+    "route": "dist/keyhop/hi/index.html",
+    "sharedFilm": true,
+    "localizedHTML": true,
+    "nativeTrack": true
+  }
+]

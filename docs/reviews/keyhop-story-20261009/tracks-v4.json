@@ -1,0 +1,62 @@
+[
+  {
+    "locale": "zh-hans",
+    "track": true,
+    "fourCaptions": true
+  },
+  {
+    "locale": "en",
+    "track": true,
+    "fourCaptions": true
+  },
+  {
+    "locale": "zh-hant",
+    "track": true,
+    "fourCaptions": true
+  },
+  {
+    "locale": "es",
+    "track": true,
+    "fourCaptions": true
+  },
+  {
+    "locale": "pt-br",
+    "track": true,
+    "fourCaptions": true
+  },
+  {
+    "locale": "fr",
+    "track": true,
+    "fourCaptions": true
+  },
+  {
+    "locale": "de",
+    "track": true,
+    "fourCaptions": true
+  },
+  {
+    "locale": "ja",
+    "track": true,
+    "fourCaptions": true
+  },
+  {
+    "locale": "ko",
+    "track": true,
+    "fourCaptions": true
+  },
+  {
+    "locale": "ru",
+    "track": true,
+    "fourCaptions": true
+  },
+  {
+    "locale": "ar",
+    "track": true,
+    "fourCaptions": true
+  },
+  {
+    "locale": "hi",
+    "track": true,
+    "fourCaptions": true
+  }
+]

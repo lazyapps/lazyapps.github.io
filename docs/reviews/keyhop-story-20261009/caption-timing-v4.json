@@ -1,0 +1,47 @@
+[
+  {
+    "cue": "chase",
+    "time": 0,
+    "visible": 1
+  },
+  {
+    "cue": "chase",
+    "time": 4.99,
+    "visible": 1
+  },
+  {
+    "cue": "hop",
+    "time": 5,
+    "visible": 1
+  },
+  {
+    "cue": "hop",
+    "time": 9.99,
+    "visible": 1
+  },
+  {
+    "cue": "flow",
+    "time": 10,
+    "visible": 1
+  },
+  {
+    "cue": "flow",
+    "time": 12.69,
+    "visible": 1
+  },
+  {
+    "cue": "tagline",
+    "time": 12.7,
+    "visible": 1
+  },
+  {
+    "cue": "tagline",
+    "time": 14.99,
+    "visible": 1
+  },
+  {
+    "cue": "chase",
+    "time": 0,
+    "visible": 1
+  }
+]

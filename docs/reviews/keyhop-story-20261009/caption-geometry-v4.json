@@ -1,0 +1,2962 @@
+[
+  {
+    "viewport": 320,
+    "checks": [
+      {
+        "boxes": [
+          {
+            "bottom": 472.1484375,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "chase",
+            "left": 89.15625,
+            "right": 230.84375,
+            "top": 443.8984375,
+            "within": true
+          },
+          {
+            "bottom": 472.1484375,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "hop",
+            "left": 76.1484375,
+            "right": 243.8515625,
+            "top": 443.8984375,
+            "within": true
+          },
+          {
+            "bottom": 472.1484375,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "flow",
+            "left": 84.5,
+            "right": 235.5,
+            "top": 443.8984375,
+            "within": true
+          },
+          {
+            "bottom": 472.1484375,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "tagline",
+            "left": 76.1484375,
+            "right": 243.8515625,
+            "top": 443.8984375,
+            "within": true
+          }
+        ],
+        "enlarged": false,
+        "font": "15px",
+        "height": 173.75,
+        "locale": "zh-hans",
+        "pass": true
+      },
+      {
+        "boxes": [
+          {
+            "bottom": 532.8984375,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "chase",
+            "left": 76,
+            "right": 244,
+            "top": 443.8984375,
+            "within": true
+          },
+          {
+            "bottom": 532.8984375,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "hop",
+            "left": 76,
+            "right": 244,
+            "top": 443.8984375,
+            "within": true
+          },
+          {
+            "bottom": 532.8984375,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "flow",
+            "left": 76,
+            "right": 244,
+            "top": 443.8984375,
+            "within": true
+          },
+          {
+            "bottom": 532.8984375,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "tagline",
+            "left": 76,
+            "right": 244,
+            "top": 443.8984375,
+            "within": true
+          }
+        ],
+        "enlarged": true,
+        "font": "30px",
+        "height": 234.5,
+        "locale": "zh-hans",
+        "pass": true
+      },
+      {
+        "boxes": [
+          {
+            "bottom": 390,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "chase",
+            "left": 76,
+            "right": 244,
+            "top": 341.5,
+            "within": true
+          },
+          {
+            "bottom": 390,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "hop",
+            "left": 76,
+            "right": 244,
+            "top": 341.5,
+            "within": true
+          },
+          {
+            "bottom": 390,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "flow",
+            "left": 76,
+            "right": 244,
+            "top": 341.5,
+            "within": true
+          },
+          {
+            "bottom": 390,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "tagline",
+            "left": 76,
+            "right": 244,
+            "top": 341.5,
+            "within": true
+          }
+        ],
+        "enlarged": false,
+        "font": "15px",
+        "height": 194,
+        "locale": "en",
+        "pass": true
+      },
+      {
+        "boxes": [
+          {
+            "bottom": 471,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "chase",
+            "left": 76,
+            "right": 244,
+            "top": 341.5,
+            "within": true
+          },
+          {
+            "bottom": 471,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "hop",
+            "left": 76,
+            "right": 244,
+            "top": 341.5,
+            "within": true
+          },
+          {
+            "bottom": 471,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "flow",
+            "left": 76,
+            "right": 244,
+            "top": 341.5,
+            "within": true
+          },
+          {
+            "bottom": 471,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "tagline",
+            "left": 76,
+            "right": 244,
+            "top": 341.5,
+            "within": true
+          }
+        ],
+        "enlarged": true,
+        "font": "30px",
+        "height": 275,
+        "locale": "en",
+        "pass": true
+      },
+      {
+        "boxes": [
+          {
+            "bottom": 472.1484375,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "chase",
+            "left": 89.15625,
+            "right": 230.84375,
+            "top": 443.8984375,
+            "within": true
+          },
+          {
+            "bottom": 472.1484375,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "hop",
+            "left": 76.1484375,
+            "right": 243.8515625,
+            "top": 443.8984375,
+            "within": true
+          },
+          {
+            "bottom": 472.1484375,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "flow",
+            "left": 84.5,
+            "right": 235.5,
+            "top": 443.8984375,
+            "within": true
+          },
+          {
+            "bottom": 472.1484375,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "tagline",
+            "left": 76.1484375,
+            "right": 243.8515625,
+            "top": 443.8984375,
+            "within": true
+          }
+        ],
+        "enlarged": false,
+        "font": "15px",
+        "height": 173.75,
+        "locale": "zh-hant",
+        "pass": true
+      },
+      {
+        "boxes": [
+          {
+            "bottom": 532.8984375,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "chase",
+            "left": 76,
+            "right": 244,
+            "top": 443.8984375,
+            "within": true
+          },
+          {
+            "bottom": 532.8984375,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "hop",
+            "left": 76,
+            "right": 244,
+            "top": 443.8984375,
+            "within": true
+          },
+          {
+            "bottom": 532.8984375,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "flow",
+            "left": 76,
+            "right": 244,
+            "top": 443.8984375,
+            "within": true
+          },
+          {
+            "bottom": 532.8984375,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "tagline",
+            "left": 76,
+            "right": 244,
+            "top": 443.8984375,
+            "within": true
+          }
+        ],
+        "enlarged": true,
+        "font": "30px",
+        "height": 234.5,
+        "locale": "zh-hant",
+        "pass": true
+      },
+      {
+        "boxes": [
+          {
+            "bottom": 390,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "chase",
+            "left": 76.1640625,
+            "right": 243.828125,
+            "top": 361.75,
+            "within": true
+          },
+          {
+            "bottom": 390,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "hop",
+            "left": 80.5703125,
+            "right": 239.421875,
+            "top": 361.75,
+            "within": true
+          },
+          {
+            "bottom": 390,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "flow",
+            "left": 76,
+            "right": 244,
+            "top": 341.5,
+            "within": true
+          },
+          {
+            "bottom": 390,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "tagline",
+            "left": 76,
+            "right": 244,
+            "top": 341.5,
+            "within": true
+          }
+        ],
+        "enlarged": false,
+        "font": "15px",
+        "height": 194,
+        "locale": "es",
+        "pass": true
+      },
+      {
+        "boxes": [
+          {
+            "bottom": 471,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "chase",
+            "left": 76,
+            "right": 244,
+            "top": 341.5,
+            "within": true
+          },
+          {
+            "bottom": 471,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "hop",
+            "left": 76,
+            "right": 244,
+            "top": 382,
+            "within": true
+          },
+          {
+            "bottom": 471,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "flow",
+            "left": 76,
+            "right": 244,
+            "top": 341.5,
+            "within": true
+          },
+          {
+            "bottom": 471,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "tagline",
+            "left": 76,
+            "right": 244,
+            "top": 341.5,
+            "within": true
+          }
+        ],
+        "enlarged": true,
+        "font": "30px",
+        "height": 275,
+        "locale": "es",
+        "pass": true
+      },
+      {
+        "boxes": [
+          {
+            "bottom": 390,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "chase",
+            "left": 90.5625,
+            "right": 229.4296875,
+            "top": 361.75,
+            "within": true
+          },
+          {
+            "bottom": 390,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "hop",
+            "left": 76,
+            "right": 244,
+            "top": 341.5,
+            "within": true
+          },
+          {
+            "bottom": 390,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "flow",
+            "left": 76,
+            "right": 244,
+            "top": 341.5,
+            "within": true
+          },
+          {
+            "bottom": 390,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "tagline",
+            "left": 76,
+            "right": 244,
+            "top": 341.5,
+            "within": true
+          }
+        ],
+        "enlarged": false,
+        "font": "15px",
+        "height": 194,
+        "locale": "pt-br",
+        "pass": true
+      },
+      {
+        "boxes": [
+          {
+            "bottom": 511.5,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "chase",
+            "left": 76,
+            "right": 244,
+            "top": 382,
+            "within": true
+          },
+          {
+            "bottom": 511.5,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "hop",
+            "left": 76,
+            "right": 244,
+            "top": 382,
+            "within": true
+          },
+          {
+            "bottom": 511.5,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "flow",
+            "left": 76,
+            "right": 244,
+            "top": 341.5,
+            "within": true
+          },
+          {
+            "bottom": 511.5,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "tagline",
+            "left": 76,
+            "right": 244,
+            "top": 382,
+            "within": true
+          }
+        ],
+        "enlarged": true,
+        "font": "30px",
+        "height": 315.5,
+        "locale": "pt-br",
+        "pass": true
+      },
+      {
+        "boxes": [
+          {
+            "bottom": 390,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "chase",
+            "left": 76,
+            "right": 244,
+            "top": 341.5,
+            "within": true
+          },
+          {
+            "bottom": 390,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "hop",
+            "left": 76,
+            "right": 244,
+            "top": 341.5,
+            "within": true
+          },
+          {
+            "bottom": 390,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "flow",
+            "left": 76,
+            "right": 244,
+            "top": 341.5,
+            "within": true
+          },
+          {
+            "bottom": 390,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "tagline",
+            "left": 76,
+            "right": 244,
+            "top": 341.5,
+            "within": true
+          }
+        ],
+        "enlarged": false,
+        "font": "15px",
+        "height": 194,
+        "locale": "fr",
+        "pass": true
+      },
+      {
+        "boxes": [
+          {
+            "bottom": 471,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "chase",
+            "left": 76,
+            "right": 244,
+            "top": 382,
+            "within": true
+          },
+          {
+            "bottom": 471,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "hop",
+            "left": 76,
+            "right": 244,
+            "top": 341.5,
+            "within": true
+          },
+          {
+            "bottom": 471,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "flow",
+            "left": 76,
+            "right": 244,
+            "top": 341.5,
+            "within": true
+          },
+          {
+            "bottom": 471,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "tagline",
+            "left": 76,
+            "right": 244,
+            "top": 341.5,
+            "within": true
+          }
+        ],
+        "enlarged": true,
+        "font": "30px",
+        "height": 275,
+        "locale": "fr",
+        "pass": true
+      },
+      {
+        "boxes": [
+          {
+            "bottom": 390,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "chase",
+            "left": 76,
+            "right": 244,
+            "top": 341.5,
+            "within": true
+          },
+          {
+            "bottom": 390,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "hop",
+            "left": 76,
+            "right": 244,
+            "top": 341.5,
+            "within": true
+          },
+          {
+            "bottom": 390,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "flow",
+            "left": 76,
+            "right": 244,
+            "top": 341.5,
+            "within": true
+          },
+          {
+            "bottom": 390,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "tagline",
+            "left": 76,
+            "right": 244,
+            "top": 341.5,
+            "within": true
+          }
+        ],
+        "enlarged": false,
+        "font": "15px",
+        "height": 194,
+        "locale": "de",
+        "pass": true
+      },
+      {
+        "boxes": [
+          {
+            "bottom": 471,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "chase",
+            "left": 76,
+            "right": 244,
+            "top": 341.5,
+            "within": true
+          },
+          {
+            "bottom": 471,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "hop",
+            "left": 76,
+            "right": 244,
+            "top": 341.5,
+            "within": true
+          },
+          {
+            "bottom": 471,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "flow",
+            "left": 76,
+            "right": 244,
+            "top": 341.5,
+            "within": true
+          },
+          {
+            "bottom": 471,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "tagline",
+            "left": 76,
+            "right": 244,
+            "top": 341.5,
+            "within": true
+          }
+        ],
+        "enlarged": true,
+        "font": "30px",
+        "height": 275,
+        "locale": "de",
+        "pass": true
+      },
+      {
+        "boxes": [
+          {
+            "bottom": 492.3984375,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "chase",
+            "left": 76,
+            "right": 244,
+            "top": 443.8984375,
+            "within": true
+          },
+          {
+            "bottom": 492.3984375,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "hop",
+            "left": 76,
+            "right": 244,
+            "top": 443.8984375,
+            "within": true
+          },
+          {
+            "bottom": 492.3984375,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "flow",
+            "left": 76,
+            "right": 244,
+            "top": 443.8984375,
+            "within": true
+          },
+          {
+            "bottom": 492.3984375,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "tagline",
+            "left": 76,
+            "right": 244,
+            "top": 443.8984375,
+            "within": true
+          }
+        ],
+        "enlarged": false,
+        "font": "15px",
+        "height": 194,
+        "locale": "ja",
+        "pass": true
+      },
+      {
+        "boxes": [
+          {
+            "bottom": 573.3984375,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "chase",
+            "left": 76,
+            "right": 244,
+            "top": 443.8984375,
+            "within": true
+          },
+          {
+            "bottom": 573.3984375,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "hop",
+            "left": 76,
+            "right": 244,
+            "top": 443.8984375,
+            "within": true
+          },
+          {
+            "bottom": 573.3984375,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "flow",
+            "left": 76,
+            "right": 244,
+            "top": 443.8984375,
+            "within": true
+          },
+          {
+            "bottom": 573.3984375,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "tagline",
+            "left": 76,
+            "right": 244,
+            "top": 443.8984375,
+            "within": true
+          }
+        ],
+        "enlarged": true,
+        "font": "30px",
+        "height": 275,
+        "locale": "ja",
+        "pass": true
+      },
+      {
+        "boxes": [
+          {
+            "bottom": 492.3984375,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "chase",
+            "left": 86.2890625,
+            "right": 233.703125,
+            "top": 464.1484375,
+            "within": true
+          },
+          {
+            "bottom": 492.3984375,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "hop",
+            "left": 79.0390625,
+            "right": 240.9609375,
+            "top": 464.1484375,
+            "within": true
+          },
+          {
+            "bottom": 492.3984375,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "flow",
+            "left": 83.4140625,
+            "right": 236.5859375,
+            "top": 464.1484375,
+            "within": true
+          },
+          {
+            "bottom": 492.3984375,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "tagline",
+            "left": 76,
+            "right": 244,
+            "top": 443.8984375,
+            "within": true
+          }
+        ],
+        "enlarged": false,
+        "font": "15px",
+        "height": 194,
+        "locale": "ko",
+        "pass": true
+      },
+      {
+        "boxes": [
+          {
+            "bottom": 573.3984375,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "chase",
+            "left": 76,
+            "right": 244,
+            "top": 484.3984375,
+            "within": true
+          },
+          {
+            "bottom": 573.3984375,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "hop",
+            "left": 76,
+            "right": 244,
+            "top": 443.8984375,
+            "within": true
+          },
+          {
+            "bottom": 573.3984375,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "flow",
+            "left": 76,
+            "right": 244,
+            "top": 484.3984375,
+            "within": true
+          },
+          {
+            "bottom": 573.3984375,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "tagline",
+            "left": 76,
+            "right": 244,
+            "top": 443.8984375,
+            "within": true
+          }
+        ],
+        "enlarged": true,
+        "font": "30px",
+        "height": 275,
+        "locale": "ko",
+        "pass": true
+      },
+      {
+        "boxes": [
+          {
+            "bottom": 421.7578125,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "chase",
+            "left": 76,
+            "right": 244,
+            "top": 373.2578125,
+            "within": true
+          },
+          {
+            "bottom": 421.7578125,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "hop",
+            "left": 76,
+            "right": 244,
+            "top": 353.0078125,
+            "within": true
+          },
+          {
+            "bottom": 421.7578125,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "flow",
+            "left": 76,
+            "right": 244,
+            "top": 373.2578125,
+            "within": true
+          },
+          {
+            "bottom": 421.7578125,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "tagline",
+            "left": 76,
+            "right": 244,
+            "top": 373.2578125,
+            "within": true
+          }
+        ],
+        "enlarged": false,
+        "font": "15px",
+        "height": 214.25,
+        "locale": "ru",
+        "pass": true
+      },
+      {
+        "boxes": [
+          {
+            "bottom": 523.0078125,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "chase",
+            "left": 76,
+            "right": 244,
+            "top": 393.5078125,
+            "within": true
+          },
+          {
+            "bottom": 523.0078125,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "hop",
+            "left": 76,
+            "right": 244,
+            "top": 353.0078125,
+            "within": true
+          },
+          {
+            "bottom": 523.0078125,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "flow",
+            "left": 76,
+            "right": 244,
+            "top": 393.5078125,
+            "within": true
+          },
+          {
+            "bottom": 523.0078125,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "tagline",
+            "left": 76,
+            "right": 244,
+            "top": 353.0078125,
+            "within": true
+          }
+        ],
+        "enlarged": true,
+        "font": "30px",
+        "height": 315.5,
+        "locale": "ru",
+        "pass": true
+      },
+      {
+        "boxes": [
+          {
+            "bottom": 446.53125,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "chase",
+            "left": 89.1796875,
+            "right": 230.8203125,
+            "top": 418.28125,
+            "within": true
+          },
+          {
+            "bottom": 446.53125,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "hop",
+            "left": 89.96875,
+            "right": 230.0390625,
+            "top": 418.28125,
+            "within": true
+          },
+          {
+            "bottom": 446.53125,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "flow",
+            "left": 82.3828125,
+            "right": 237.625,
+            "top": 418.28125,
+            "within": true
+          },
+          {
+            "bottom": 446.53125,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "tagline",
+            "left": 91.046875,
+            "right": 228.953125,
+            "top": 418.28125,
+            "within": true
+          }
+        ],
+        "enlarged": false,
+        "font": "15px",
+        "height": 173.75,
+        "locale": "ar",
+        "pass": true
+      },
+      {
+        "boxes": [
+          {
+            "bottom": 507.28125,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "chase",
+            "left": 76,
+            "right": 244,
+            "top": 418.28125,
+            "within": true
+          },
+          {
+            "bottom": 507.28125,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "hop",
+            "left": 76,
+            "right": 244,
+            "top": 418.28125,
+            "within": true
+          },
+          {
+            "bottom": 507.28125,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "flow",
+            "left": 76,
+            "right": 244,
+            "top": 418.28125,
+            "within": true
+          },
+          {
+            "bottom": 507.28125,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "tagline",
+            "left": 76,
+            "right": 244,
+            "top": 418.28125,
+            "within": true
+          }
+        ],
+        "enlarged": true,
+        "font": "30px",
+        "height": 234.5,
+        "locale": "ar",
+        "pass": true
+      },
+      {
+        "boxes": [
+          {
+            "bottom": 466.78125,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "chase",
+            "left": 103.84375,
+            "right": 216.1484375,
+            "top": 438.53125,
+            "within": true
+          },
+          {
+            "bottom": 466.78125,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "hop",
+            "left": 76.828125,
+            "right": 243.1640625,
+            "top": 438.53125,
+            "within": true
+          },
+          {
+            "bottom": 466.78125,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "flow",
+            "left": 76,
+            "right": 244,
+            "top": 418.28125,
+            "within": true
+          },
+          {
+            "bottom": 466.78125,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "tagline",
+            "left": 76,
+            "right": 244,
+            "top": 418.28125,
+            "within": true
+          }
+        ],
+        "enlarged": false,
+        "font": "15px",
+        "height": 194,
+        "locale": "hi",
+        "pass": true
+      },
+      {
+        "boxes": [
+          {
+            "bottom": 547.78125,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "chase",
+            "left": 76,
+            "right": 244,
+            "top": 458.78125,
+            "within": true
+          },
+          {
+            "bottom": 547.78125,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "hop",
+            "left": 76,
+            "right": 244,
+            "top": 418.28125,
+            "within": true
+          },
+          {
+            "bottom": 547.78125,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "flow",
+            "left": 76,
+            "right": 244,
+            "top": 418.28125,
+            "within": true
+          },
+          {
+            "bottom": 547.78125,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "tagline",
+            "left": 76,
+            "right": 244,
+            "top": 418.28125,
+            "within": true
+          }
+        ],
+        "enlarged": true,
+        "font": "30px",
+        "height": 275,
+        "locale": "hi",
+        "pass": true
+      }
+    ]
+  },
+  {
+    "viewport": 390,
+    "checks": [
+      {
+        "boxes": [
+          {
+            "bottom": 548.7109375,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "chase",
+            "left": 124.15625,
+            "right": 265.84375,
+            "top": 520.4609375,
+            "within": true
+          },
+          {
+            "bottom": 548.7109375,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "hop",
+            "left": 111.1484375,
+            "right": 278.8515625,
+            "top": 520.4609375,
+            "within": true
+          },
+          {
+            "bottom": 548.7109375,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "flow",
+            "left": 119.5,
+            "right": 270.5,
+            "top": 520.4609375,
+            "within": true
+          },
+          {
+            "bottom": 548.7109375,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "tagline",
+            "left": 111.1484375,
+            "right": 278.8515625,
+            "top": 520.4609375,
+            "within": true
+          }
+        ],
+        "enlarged": false,
+        "font": "15px",
+        "height": 213.125,
+        "locale": "zh-hans",
+        "pass": true
+      },
+      {
+        "boxes": [
+          {
+            "bottom": 427.125,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "chase",
+            "left": 106.9453125,
+            "right": 283.0546875,
+            "top": 398.875,
+            "within": true
+          },
+          {
+            "bottom": 427.125,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "hop",
+            "left": 88.5625,
+            "right": 301.4375,
+            "top": 398.875,
+            "within": true
+          },
+          {
+            "bottom": 427.125,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "flow",
+            "left": 106.3125,
+            "right": 283.6875,
+            "top": 398.875,
+            "within": true
+          },
+          {
+            "bottom": 427.125,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "tagline",
+            "left": 93.0234375,
+            "right": 296.9765625,
+            "top": 398.875,
+            "within": true
+          }
+        ],
+        "enlarged": false,
+        "font": "15px",
+        "height": 213.125,
+        "locale": "en",
+        "pass": true
+      },
+      {
+        "boxes": [
+          {
+            "bottom": 548.7109375,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "chase",
+            "left": 124.15625,
+            "right": 265.84375,
+            "top": 520.4609375,
+            "within": true
+          },
+          {
+            "bottom": 548.7109375,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "hop",
+            "left": 111.1484375,
+            "right": 278.8515625,
+            "top": 520.4609375,
+            "within": true
+          },
+          {
+            "bottom": 548.7109375,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "flow",
+            "left": 119.5,
+            "right": 270.5,
+            "top": 520.4609375,
+            "within": true
+          },
+          {
+            "bottom": 548.7109375,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "tagline",
+            "left": 111.1484375,
+            "right": 278.8515625,
+            "top": 520.4609375,
+            "within": true
+          }
+        ],
+        "enlarged": false,
+        "font": "15px",
+        "height": 213.125,
+        "locale": "zh-hant",
+        "pass": true
+      },
+      {
+        "boxes": [
+          {
+            "bottom": 447.375,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "chase",
+            "left": 111.1640625,
+            "right": 278.828125,
+            "top": 419.125,
+            "within": true
+          },
+          {
+            "bottom": 447.375,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "hop",
+            "left": 115.5703125,
+            "right": 274.421875,
+            "top": 419.125,
+            "within": true
+          },
+          {
+            "bottom": 447.375,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "flow",
+            "left": 97.7734375,
+            "right": 292.2265625,
+            "top": 419.125,
+            "within": true
+          },
+          {
+            "bottom": 447.375,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "tagline",
+            "left": 76,
+            "right": 314,
+            "top": 398.875,
+            "within": true
+          }
+        ],
+        "enlarged": false,
+        "font": "15px",
+        "height": 233.375,
+        "locale": "es",
+        "pass": true
+      },
+      {
+        "boxes": [
+          {
+            "bottom": 427.125,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "chase",
+            "left": 125.5625,
+            "right": 264.4296875,
+            "top": 398.875,
+            "within": true
+          },
+          {
+            "bottom": 427.125,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "hop",
+            "left": 108.609375,
+            "right": 281.390625,
+            "top": 398.875,
+            "within": true
+          },
+          {
+            "bottom": 427.125,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "flow",
+            "left": 78.953125,
+            "right": 311.046875,
+            "top": 398.875,
+            "within": true
+          },
+          {
+            "bottom": 427.125,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "tagline",
+            "left": 79.453125,
+            "right": 310.5390625,
+            "top": 398.875,
+            "within": true
+          }
+        ],
+        "enlarged": false,
+        "font": "15px",
+        "height": 213.125,
+        "locale": "pt-br",
+        "pass": true
+      },
+      {
+        "boxes": [
+          {
+            "bottom": 427.125,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "chase",
+            "left": 109.484375,
+            "right": 280.515625,
+            "top": 398.875,
+            "within": true
+          },
+          {
+            "bottom": 427.125,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "hop",
+            "left": 107.171875,
+            "right": 282.828125,
+            "top": 398.875,
+            "within": true
+          },
+          {
+            "bottom": 427.125,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "flow",
+            "left": 105.375,
+            "right": 284.6171875,
+            "top": 398.875,
+            "within": true
+          },
+          {
+            "bottom": 427.125,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "tagline",
+            "left": 87.734375,
+            "right": 302.265625,
+            "top": 398.875,
+            "within": true
+          }
+        ],
+        "enlarged": false,
+        "font": "15px",
+        "height": 213.125,
+        "locale": "fr",
+        "pass": true
+      },
+      {
+        "boxes": [
+          {
+            "bottom": 427.125,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "chase",
+            "left": 104.5234375,
+            "right": 285.4765625,
+            "top": 398.875,
+            "within": true
+          },
+          {
+            "bottom": 427.125,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "hop",
+            "left": 101.328125,
+            "right": 288.671875,
+            "top": 398.875,
+            "within": true
+          },
+          {
+            "bottom": 427.125,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "flow",
+            "left": 91.3828125,
+            "right": 298.609375,
+            "top": 398.875,
+            "within": true
+          },
+          {
+            "bottom": 427.125,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "tagline",
+            "left": 102.2734375,
+            "right": 287.7265625,
+            "top": 398.875,
+            "within": true
+          }
+        ],
+        "enlarged": false,
+        "font": "15px",
+        "height": 213.125,
+        "locale": "de",
+        "pass": true
+      },
+      {
+        "boxes": [
+          {
+            "bottom": 548.7109375,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "chase",
+            "left": 104.5,
+            "right": 285.5,
+            "top": 520.4609375,
+            "within": true
+          },
+          {
+            "bottom": 548.7109375,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "hop",
+            "left": 82,
+            "right": 308,
+            "top": 520.4609375,
+            "within": true
+          },
+          {
+            "bottom": 548.7109375,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "flow",
+            "left": 97,
+            "right": 293,
+            "top": 520.4609375,
+            "within": true
+          },
+          {
+            "bottom": 548.7109375,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "tagline",
+            "left": 82,
+            "right": 308,
+            "top": 520.4609375,
+            "within": true
+          }
+        ],
+        "enlarged": false,
+        "font": "15px",
+        "height": 213.125,
+        "locale": "ja",
+        "pass": true
+      },
+      {
+        "boxes": [
+          {
+            "bottom": 548.7109375,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "chase",
+            "left": 121.2890625,
+            "right": 268.703125,
+            "top": 520.4609375,
+            "within": true
+          },
+          {
+            "bottom": 548.7109375,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "hop",
+            "left": 114.0390625,
+            "right": 275.9609375,
+            "top": 520.4609375,
+            "within": true
+          },
+          {
+            "bottom": 548.7109375,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "flow",
+            "left": 118.4140625,
+            "right": 271.5859375,
+            "top": 520.4609375,
+            "within": true
+          },
+          {
+            "bottom": 548.7109375,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "tagline",
+            "left": 103.4453125,
+            "right": 286.546875,
+            "top": 520.4609375,
+            "within": true
+          }
+        ],
+        "enlarged": false,
+        "font": "15px",
+        "height": 213.125,
+        "locale": "ko",
+        "pass": true
+      },
+      {
+        "boxes": [
+          {
+            "bottom": 461.0390625,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "chase",
+            "left": 82.640625,
+            "right": 307.3515625,
+            "top": 432.7890625,
+            "within": true
+          },
+          {
+            "bottom": 461.0390625,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "hop",
+            "left": 76,
+            "right": 314,
+            "top": 412.5390625,
+            "within": true
+          },
+          {
+            "bottom": 461.0390625,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "flow",
+            "left": 79.421875,
+            "right": 310.578125,
+            "top": 432.7890625,
+            "within": true
+          },
+          {
+            "bottom": 461.0390625,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "tagline",
+            "left": 76,
+            "right": 314,
+            "top": 412.5390625,
+            "within": true
+          }
+        ],
+        "enlarged": false,
+        "font": "15px",
+        "height": 233.375,
+        "locale": "ru",
+        "pass": true
+      },
+      {
+        "boxes": [
+          {
+            "bottom": 518.3125,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "chase",
+            "left": 124.1796875,
+            "right": 265.8203125,
+            "top": 490.0625,
+            "within": true
+          },
+          {
+            "bottom": 518.3125,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "hop",
+            "left": 124.96875,
+            "right": 265.0390625,
+            "top": 490.0625,
+            "within": true
+          },
+          {
+            "bottom": 518.3125,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "flow",
+            "left": 117.3828125,
+            "right": 272.625,
+            "top": 490.0625,
+            "within": true
+          },
+          {
+            "bottom": 518.3125,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "tagline",
+            "left": 126.046875,
+            "right": 263.953125,
+            "top": 490.0625,
+            "within": true
+          }
+        ],
+        "enlarged": false,
+        "font": "15px",
+        "height": 213.125,
+        "locale": "ar",
+        "pass": true
+      },
+      {
+        "boxes": [
+          {
+            "bottom": 518.3125,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "chase",
+            "left": 138.84375,
+            "right": 251.1484375,
+            "top": 490.0625,
+            "within": true
+          },
+          {
+            "bottom": 518.3125,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "hop",
+            "left": 111.828125,
+            "right": 278.1640625,
+            "top": 490.0625,
+            "within": true
+          },
+          {
+            "bottom": 518.3125,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "flow",
+            "left": 108.8828125,
+            "right": 281.109375,
+            "top": 490.0625,
+            "within": true
+          },
+          {
+            "bottom": 518.3125,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "tagline",
+            "left": 98.2578125,
+            "right": 291.7421875,
+            "top": 490.0625,
+            "within": true
+          }
+        ],
+        "enlarged": false,
+        "font": "15px",
+        "height": 213.125,
+        "locale": "hi",
+        "pass": true
+      }
+    ]
+  },
+  {
+    "viewport": 640,
+    "checks": [
+      {
+        "boxes": [
+          {
+            "bottom": 589.4296875,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "chase",
+            "left": 249.15625,
+            "right": 390.84375,
+            "top": 561.1796875,
+            "within": true
+          },
+          {
+            "bottom": 589.4296875,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "hop",
+            "left": 236.1484375,
+            "right": 403.8515625,
+            "top": 561.1796875,
+            "within": true
+          },
+          {
+            "bottom": 589.4296875,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "flow",
+            "left": 244.5,
+            "right": 395.5,
+            "top": 561.1796875,
+            "within": true
+          },
+          {
+            "bottom": 589.4296875,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "tagline",
+            "left": 236.1484375,
+            "right": 403.8515625,
+            "top": 561.1796875,
+            "within": true
+          }
+        ],
+        "enlarged": false,
+        "font": "15px",
+        "height": 340.25,
+        "locale": "zh-hans",
+        "pass": true
+      },
+      {
+        "boxes": [
+          {
+            "bottom": 521.203125,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "chase",
+            "left": 231.9453125,
+            "right": 408.0546875,
+            "top": 492.953125,
+            "within": true
+          },
+          {
+            "bottom": 521.203125,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "hop",
+            "left": 213.5625,
+            "right": 426.4375,
+            "top": 492.953125,
+            "within": true
+          },
+          {
+            "bottom": 521.203125,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "flow",
+            "left": 231.3125,
+            "right": 408.6875,
+            "top": 492.953125,
+            "within": true
+          },
+          {
+            "bottom": 521.203125,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "tagline",
+            "left": 218.0234375,
+            "right": 421.9765625,
+            "top": 492.953125,
+            "within": true
+          }
+        ],
+        "enlarged": false,
+        "font": "15px",
+        "height": 340.25,
+        "locale": "en",
+        "pass": true
+      },
+      {
+        "boxes": [
+          {
+            "bottom": 589.4296875,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "chase",
+            "left": 249.15625,
+            "right": 390.84375,
+            "top": 561.1796875,
+            "within": true
+          },
+          {
+            "bottom": 589.4296875,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "hop",
+            "left": 236.1484375,
+            "right": 403.8515625,
+            "top": 561.1796875,
+            "within": true
+          },
+          {
+            "bottom": 589.4296875,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "flow",
+            "left": 244.5,
+            "right": 395.5,
+            "top": 561.1796875,
+            "within": true
+          },
+          {
+            "bottom": 589.4296875,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "tagline",
+            "left": 236.1484375,
+            "right": 403.8515625,
+            "top": 561.1796875,
+            "within": true
+          }
+        ],
+        "enlarged": false,
+        "font": "15px",
+        "height": 340.25,
+        "locale": "zh-hant",
+        "pass": true
+      },
+      {
+        "boxes": [
+          {
+            "bottom": 521.203125,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "chase",
+            "left": 236.1640625,
+            "right": 403.828125,
+            "top": 492.953125,
+            "within": true
+          },
+          {
+            "bottom": 521.203125,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "hop",
+            "left": 240.5703125,
+            "right": 399.421875,
+            "top": 492.953125,
+            "within": true
+          },
+          {
+            "bottom": 521.203125,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "flow",
+            "left": 222.7734375,
+            "right": 417.2265625,
+            "top": 492.953125,
+            "within": true
+          },
+          {
+            "bottom": 521.203125,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "tagline",
+            "left": 194.8828125,
+            "right": 445.1171875,
+            "top": 492.953125,
+            "within": true
+          }
+        ],
+        "enlarged": false,
+        "font": "15px",
+        "height": 340.25,
+        "locale": "es",
+        "pass": true
+      },
+      {
+        "boxes": [
+          {
+            "bottom": 521.203125,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "chase",
+            "left": 250.5625,
+            "right": 389.4296875,
+            "top": 492.953125,
+            "within": true
+          },
+          {
+            "bottom": 521.203125,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "hop",
+            "left": 233.609375,
+            "right": 406.390625,
+            "top": 492.953125,
+            "within": true
+          },
+          {
+            "bottom": 521.203125,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "flow",
+            "left": 203.953125,
+            "right": 436.046875,
+            "top": 492.953125,
+            "within": true
+          },
+          {
+            "bottom": 521.203125,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "tagline",
+            "left": 204.453125,
+            "right": 435.5390625,
+            "top": 492.953125,
+            "within": true
+          }
+        ],
+        "enlarged": false,
+        "font": "15px",
+        "height": 340.25,
+        "locale": "pt-br",
+        "pass": true
+      },
+      {
+        "boxes": [
+          {
+            "bottom": 521.203125,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "chase",
+            "left": 234.484375,
+            "right": 405.515625,
+            "top": 492.953125,
+            "within": true
+          },
+          {
+            "bottom": 521.203125,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "hop",
+            "left": 232.171875,
+            "right": 407.828125,
+            "top": 492.953125,
+            "within": true
+          },
+          {
+            "bottom": 521.203125,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "flow",
+            "left": 230.375,
+            "right": 409.6171875,
+            "top": 492.953125,
+            "within": true
+          },
+          {
+            "bottom": 521.203125,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "tagline",
+            "left": 212.734375,
+            "right": 427.265625,
+            "top": 492.953125,
+            "within": true
+          }
+        ],
+        "enlarged": false,
+        "font": "15px",
+        "height": 340.25,
+        "locale": "fr",
+        "pass": true
+      },
+      {
+        "boxes": [
+          {
+            "bottom": 521.203125,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "chase",
+            "left": 229.5234375,
+            "right": 410.4765625,
+            "top": 492.953125,
+            "within": true
+          },
+          {
+            "bottom": 521.203125,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "hop",
+            "left": 226.328125,
+            "right": 413.671875,
+            "top": 492.953125,
+            "within": true
+          },
+          {
+            "bottom": 521.203125,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "flow",
+            "left": 216.3828125,
+            "right": 423.609375,
+            "top": 492.953125,
+            "within": true
+          },
+          {
+            "bottom": 521.203125,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "tagline",
+            "left": 227.2734375,
+            "right": 412.7265625,
+            "top": 492.953125,
+            "within": true
+          }
+        ],
+        "enlarged": false,
+        "font": "15px",
+        "height": 340.25,
+        "locale": "de",
+        "pass": true
+      },
+      {
+        "boxes": [
+          {
+            "bottom": 589.4296875,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "chase",
+            "left": 229.5,
+            "right": 410.5,
+            "top": 561.1796875,
+            "within": true
+          },
+          {
+            "bottom": 589.4296875,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "hop",
+            "left": 207,
+            "right": 433,
+            "top": 561.1796875,
+            "within": true
+          },
+          {
+            "bottom": 589.4296875,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "flow",
+            "left": 222,
+            "right": 418,
+            "top": 561.1796875,
+            "within": true
+          },
+          {
+            "bottom": 589.4296875,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "tagline",
+            "left": 207,
+            "right": 433,
+            "top": 561.1796875,
+            "within": true
+          }
+        ],
+        "enlarged": false,
+        "font": "15px",
+        "height": 340.25,
+        "locale": "ja",
+        "pass": true
+      },
+      {
+        "boxes": [
+          {
+            "bottom": 589.4296875,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "chase",
+            "left": 246.2890625,
+            "right": 393.703125,
+            "top": 561.1796875,
+            "within": true
+          },
+          {
+            "bottom": 589.4296875,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "hop",
+            "left": 239.0390625,
+            "right": 400.9609375,
+            "top": 561.1796875,
+            "within": true
+          },
+          {
+            "bottom": 589.4296875,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "flow",
+            "left": 243.4140625,
+            "right": 396.5859375,
+            "top": 561.1796875,
+            "within": true
+          },
+          {
+            "bottom": 589.4296875,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "tagline",
+            "left": 228.4453125,
+            "right": 411.546875,
+            "top": 561.1796875,
+            "within": true
+          }
+        ],
+        "enlarged": false,
+        "font": "15px",
+        "height": 340.25,
+        "locale": "ko",
+        "pass": true
+      },
+      {
+        "boxes": [
+          {
+            "bottom": 530.71875,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "chase",
+            "left": 207.640625,
+            "right": 432.3515625,
+            "top": 502.46875,
+            "within": true
+          },
+          {
+            "bottom": 530.71875,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "hop",
+            "left": 178.0859375,
+            "right": 461.9140625,
+            "top": 502.46875,
+            "within": true
+          },
+          {
+            "bottom": 530.71875,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "flow",
+            "left": 204.421875,
+            "right": 435.578125,
+            "top": 502.46875,
+            "within": true
+          },
+          {
+            "bottom": 530.71875,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "tagline",
+            "left": 197.6484375,
+            "right": 442.34375,
+            "top": 502.46875,
+            "within": true
+          }
+        ],
+        "enlarged": false,
+        "font": "15px",
+        "height": 340.25,
+        "locale": "ru",
+        "pass": true
+      },
+      {
+        "boxes": [
+          {
+            "bottom": 602.53125,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "chase",
+            "left": 249.1796875,
+            "right": 390.8203125,
+            "top": 574.28125,
+            "within": true
+          },
+          {
+            "bottom": 602.53125,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "hop",
+            "left": 249.96875,
+            "right": 390.0390625,
+            "top": 574.28125,
+            "within": true
+          },
+          {
+            "bottom": 602.53125,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "flow",
+            "left": 242.3828125,
+            "right": 397.625,
+            "top": 574.28125,
+            "within": true
+          },
+          {
+            "bottom": 602.53125,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "tagline",
+            "left": 251.046875,
+            "right": 388.953125,
+            "top": 574.28125,
+            "within": true
+          }
+        ],
+        "enlarged": false,
+        "font": "15px",
+        "height": 340.25,
+        "locale": "ar",
+        "pass": true
+      },
+      {
+        "boxes": [
+          {
+            "bottom": 602.53125,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "chase",
+            "left": 263.84375,
+            "right": 376.1484375,
+            "top": 574.28125,
+            "within": true
+          },
+          {
+            "bottom": 602.53125,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "hop",
+            "left": 236.828125,
+            "right": 403.1640625,
+            "top": 574.28125,
+            "within": true
+          },
+          {
+            "bottom": 602.53125,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "flow",
+            "left": 233.8828125,
+            "right": 406.109375,
+            "top": 574.28125,
+            "within": true
+          },
+          {
+            "bottom": 602.53125,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "tagline",
+            "left": 223.2578125,
+            "right": 416.7421875,
+            "top": 574.28125,
+            "within": true
+          }
+        ],
+        "enlarged": false,
+        "font": "15px",
+        "height": 340.25,
+        "locale": "hi",
+        "pass": true
+      }
+    ]
+  },
+  {
+    "viewport": 641,
+    "checks": [
+      {
+        "boxes": [
+          {
+            "bottom": 574.7265625,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "chase",
+            "left": 229.4140625,
+            "right": 411.5859375,
+            "top": 540.125,
+            "within": true
+          },
+          {
+            "bottom": 574.7265625,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "hop",
+            "left": 211.984375,
+            "right": 429.0078125,
+            "top": 540.125,
+            "within": true
+          },
+          {
+            "bottom": 574.7265625,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "flow",
+            "left": 222.25,
+            "right": 418.7421875,
+            "top": 540.125,
+            "within": true
+          },
+          {
+            "bottom": 574.7265625,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "tagline",
+            "left": 211.984375,
+            "right": 429.0078125,
+            "top": 540.125,
+            "within": true
+          }
+        ],
+        "enlarged": false,
+        "font": "19.8312px",
+        "height": 324.5078125,
+        "locale": "zh-hans",
+        "pass": true
+      },
+      {
+        "boxes": [
+          {
+            "bottom": 506.390625,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "chase",
+            "left": 209.9140625,
+            "right": 431.0859375,
+            "top": 471.7890625,
+            "within": true
+          },
+          {
+            "bottom": 506.390625,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "hop",
+            "left": 187,
+            "right": 453.9921875,
+            "top": 471.7890625,
+            "within": true
+          },
+          {
+            "bottom": 506.390625,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "flow",
+            "left": 209.671875,
+            "right": 431.328125,
+            "top": 471.7890625,
+            "within": true
+          },
+          {
+            "bottom": 506.390625,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "tagline",
+            "left": 192.796875,
+            "right": 448.203125,
+            "top": 471.7890625,
+            "within": true
+          }
+        ],
+        "enlarged": false,
+        "font": "19.8312px",
+        "height": 324.5078125,
+        "locale": "en",
+        "pass": true
+      },
+      {
+        "boxes": [
+          {
+            "bottom": 574.7265625,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "chase",
+            "left": 229.4140625,
+            "right": 411.5859375,
+            "top": 540.125,
+            "within": true
+          },
+          {
+            "bottom": 574.7265625,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "hop",
+            "left": 211.984375,
+            "right": 429.0078125,
+            "top": 540.125,
+            "within": true
+          },
+          {
+            "bottom": 574.7265625,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "flow",
+            "left": 222.25,
+            "right": 418.7421875,
+            "top": 540.125,
+            "within": true
+          },
+          {
+            "bottom": 574.7265625,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "tagline",
+            "left": 211.984375,
+            "right": 429.0078125,
+            "top": 540.125,
+            "within": true
+          }
+        ],
+        "enlarged": false,
+        "font": "19.8312px",
+        "height": 324.5078125,
+        "locale": "zh-hant",
+        "pass": true
+      },
+      {
+        "boxes": [
+          {
+            "bottom": 506.390625,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "chase",
+            "left": 214.9453125,
+            "right": 426.046875,
+            "top": 471.7890625,
+            "within": true
+          },
+          {
+            "bottom": 506.390625,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "hop",
+            "left": 221.1796875,
+            "right": 419.8203125,
+            "top": 471.7890625,
+            "within": true
+          },
+          {
+            "bottom": 506.390625,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "flow",
+            "left": 198.8203125,
+            "right": 442.171875,
+            "top": 471.7890625,
+            "within": true
+          },
+          {
+            "bottom": 506.390625,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "tagline",
+            "left": 163.578125,
+            "right": 477.4140625,
+            "top": 471.7890625,
+            "within": true
+          }
+        ],
+        "enlarged": false,
+        "font": "19.8312px",
+        "height": 324.5078125,
+        "locale": "es",
+        "pass": true
+      },
+      {
+        "boxes": [
+          {
+            "bottom": 506.390625,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "chase",
+            "left": 233.2421875,
+            "right": 407.7578125,
+            "top": 471.7890625,
+            "within": true
+          },
+          {
+            "bottom": 506.390625,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "hop",
+            "left": 212.15625,
+            "right": 428.84375,
+            "top": 471.7890625,
+            "within": true
+          },
+          {
+            "bottom": 506.390625,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "flow",
+            "left": 174.671875,
+            "right": 466.3203125,
+            "top": 471.7890625,
+            "within": true
+          },
+          {
+            "bottom": 506.390625,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "tagline",
+            "left": 175.1015625,
+            "right": 465.8984375,
+            "top": 471.7890625,
+            "within": true
+          }
+        ],
+        "enlarged": false,
+        "font": "19.8312px",
+        "height": 324.5078125,
+        "locale": "pt-br",
+        "pass": true
+      },
+      {
+        "boxes": [
+          {
+            "bottom": 506.390625,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "chase",
+            "left": 213.8515625,
+            "right": 427.1484375,
+            "top": 471.7890625,
+            "within": true
+          },
+          {
+            "bottom": 506.390625,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "hop",
+            "left": 210.21875,
+            "right": 430.78125,
+            "top": 471.7890625,
+            "within": true
+          },
+          {
+            "bottom": 506.390625,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "flow",
+            "left": 208.703125,
+            "right": 432.2890625,
+            "top": 471.7890625,
+            "within": true
+          },
+          {
+            "bottom": 506.390625,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "tagline",
+            "left": 185.8359375,
+            "right": 455.1640625,
+            "top": 471.7890625,
+            "within": true
+          }
+        ],
+        "enlarged": false,
+        "font": "19.8312px",
+        "height": 324.5078125,
+        "locale": "fr",
+        "pass": true
+      },
+      {
+        "boxes": [
+          {
+            "bottom": 506.390625,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "chase",
+            "left": 207.203125,
+            "right": 433.7890625,
+            "top": 471.7890625,
+            "within": true
+          },
+          {
+            "bottom": 506.390625,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "hop",
+            "left": 203.140625,
+            "right": 437.8515625,
+            "top": 471.7890625,
+            "within": true
+          },
+          {
+            "bottom": 506.390625,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "flow",
+            "left": 190.9140625,
+            "right": 450.0859375,
+            "top": 471.7890625,
+            "within": true
+          },
+          {
+            "bottom": 506.390625,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "tagline",
+            "left": 204.2265625,
+            "right": 436.765625,
+            "top": 471.7890625,
+            "within": true
+          }
+        ],
+        "enlarged": false,
+        "font": "19.8312px",
+        "height": 324.5078125,
+        "locale": "de",
+        "pass": true
+      },
+      {
+        "boxes": [
+          {
+            "bottom": 574.7265625,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "chase",
+            "left": 202.421875,
+            "right": 438.5703125,
+            "top": 540.125,
+            "within": true
+          },
+          {
+            "bottom": 574.7265625,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "hop",
+            "left": 172.6796875,
+            "right": 468.3203125,
+            "top": 540.125,
+            "within": true
+          },
+          {
+            "bottom": 574.7265625,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "flow",
+            "left": 192.5078125,
+            "right": 448.484375,
+            "top": 540.125,
+            "within": true
+          },
+          {
+            "bottom": 574.7265625,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "tagline",
+            "left": 172.6796875,
+            "right": 468.3203125,
+            "top": 540.125,
+            "within": true
+          }
+        ],
+        "enlarged": false,
+        "font": "19.8312px",
+        "height": 324.5078125,
+        "locale": "ja",
+        "pass": true
+      },
+      {
+        "boxes": [
+          {
+            "bottom": 574.7265625,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "chase",
+            "left": 226.0078125,
+            "right": 414.9921875,
+            "top": 540.125,
+            "within": true
+          },
+          {
+            "bottom": 574.7265625,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "hop",
+            "left": 215.96875,
+            "right": 425.03125,
+            "top": 540.125,
+            "within": true
+          },
+          {
+            "bottom": 574.7265625,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "flow",
+            "left": 222.1015625,
+            "right": 418.8984375,
+            "top": 540.125,
+            "within": true
+          },
+          {
+            "bottom": 574.7265625,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "tagline",
+            "left": 202.5390625,
+            "right": 438.453125,
+            "top": 540.125,
+            "within": true
+          }
+        ],
+        "enlarged": false,
+        "font": "19.8312px",
+        "height": 324.5078125,
+        "locale": "ko",
+        "pass": true
+      },
+      {
+        "boxes": [
+          {
+            "bottom": 515.921875,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "chase",
+            "left": 178.203125,
+            "right": 462.7890625,
+            "top": 481.3203125,
+            "within": true
+          },
+          {
+            "bottom": 515.921875,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "hop",
+            "left": 140.5078125,
+            "right": 500.4921875,
+            "top": 481.3203125,
+            "within": true
+          },
+          {
+            "bottom": 515.921875,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "flow",
+            "left": 174.4296875,
+            "right": 466.5625,
+            "top": 481.3203125,
+            "within": true
+          },
+          {
+            "bottom": 515.921875,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "tagline",
+            "left": 165.671875,
+            "right": 475.328125,
+            "top": 481.3203125,
+            "within": true
+          }
+        ],
+        "enlarged": false,
+        "font": "19.8312px",
+        "height": 324.5078125,
+        "locale": "ru",
+        "pass": true
+      },
+      {
+        "boxes": [
+          {
+            "bottom": 587.8515625,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "chase",
+            "left": 228.4453125,
+            "right": 412.5546875,
+            "top": 553.25,
+            "within": true
+          },
+          {
+            "bottom": 587.8515625,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "hop",
+            "left": 229.484375,
+            "right": 411.5234375,
+            "top": 553.25,
+            "within": true
+          },
+          {
+            "bottom": 587.8515625,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "flow",
+            "left": 219.453125,
+            "right": 421.546875,
+            "top": 553.25,
+            "within": true
+          },
+          {
+            "bottom": 587.8515625,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "tagline",
+            "left": 230.9140625,
+            "right": 410.09375,
+            "top": 553.25,
+            "within": true
+          }
+        ],
+        "enlarged": false,
+        "font": "19.8312px",
+        "height": 324.5078125,
+        "locale": "ar",
+        "pass": true
+      },
+      {
+        "boxes": [
+          {
+            "bottom": 587.8515625,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "chase",
+            "left": 247.8359375,
+            "right": 393.1640625,
+            "top": 553.25,
+            "within": true
+          },
+          {
+            "bottom": 587.8515625,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "hop",
+            "left": 212.1171875,
+            "right": 428.875,
+            "top": 553.25,
+            "within": true
+          },
+          {
+            "bottom": 587.8515625,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "flow",
+            "left": 208.2265625,
+            "right": 432.7734375,
+            "top": 553.25,
+            "within": true
+          },
+          {
+            "bottom": 587.8515625,
+            "clearApps": true,
+            "clearButtons": true,
+            "key": "tagline",
+            "left": 194.171875,
+            "right": 446.8203125,
+            "top": 553.25,
+            "within": true
+          }
+        ],
+        "enlarged": false,
+        "font": "19.8312px",
+        "height": 324.5078125,
+        "locale": "hi",
+        "pass": true
+      }
+    ]
+  }
+]

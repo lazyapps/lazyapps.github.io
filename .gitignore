@@ -38,3 +38,8 @@ __pycache__/
 /scripts/assets/yiyan/marketing-v4/
 
 /scripts/assets/yiyan/marketing-v5/
+
+# Local KeyHop generation sources, render caches and superseded films.
+/scripts/assets/keyhop/story-v1/*
+!/scripts/assets/keyhop/story-v1/README.md
+/public/v/keyhop/hero-*-v3.*
