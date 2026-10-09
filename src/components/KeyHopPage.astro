@@ -231,8 +231,8 @@ const socialImageUrl = {
         <div class="gesture-demo">
           <div class="gesture" role="img" aria-label={t.gestureAria}>
             <div class="gesture__leader" aria-hidden="true">
-              <span class="gesture__leader-key" data-demo-clock data-demo-leader>⌘</span>
-              <span class="gesture__leader-key" data-demo-leader>⌘</span>
+              <span class="gesture__leader-key" data-demo-clock data-demo-leader>⌥</span>
+              <span class="gesture__leader-key" data-demo-leader>⌥</span>
             </div>
             <div class="gesture__matrix" aria-hidden="true">
               {demoApps.map(([name, src], i) => <div class="gesture__binding" data-demo-binding data-active={i === 0 ? '' : undefined}>
@@ -245,7 +245,7 @@ const socialImageUrl = {
             <span class="gesture__select">
               <select name="leader-modifier" data-modifier-select aria-label={modifierLabel}>
                 <option value="command">⌘ Command</option>
-                <option value="option">⌥ Option</option>
+                <option value="option" selected>⌥ Option</option>
                 <option value="control">⌃ Control</option>
                 <option value="shift">⇧ Shift</option>
               </select>

@@ -1,0 +1,98 @@
+[
+  {
+    "locale": "zh-hans",
+    "url": "https://lazyapps.com/keyhop/",
+    "faqs": 8,
+    "defaultLeader": "Option",
+    "renderedCopy": true,
+    "ogDescription": true
+  },
+  {
+    "locale": "en",
+    "url": "https://lazyapps.com/keyhop/en/",
+    "faqs": 8,
+    "defaultLeader": "Option",
+    "renderedCopy": true,
+    "ogDescription": true
+  },
+  {
+    "locale": "zh-hant",
+    "url": "https://lazyapps.com/keyhop/zh-hant/",
+    "faqs": 8,
+    "defaultLeader": "Option",
+    "renderedCopy": true,
+    "ogDescription": true
+  },
+  {
+    "locale": "es",
+    "url": "https://lazyapps.com/keyhop/es/",
+    "faqs": 8,
+    "defaultLeader": "Option",
+    "renderedCopy": true,
+    "ogDescription": true
+  },
+  {
+    "locale": "pt-br",
+    "url": "https://lazyapps.com/keyhop/pt-br/",
+    "faqs": 8,
+    "defaultLeader": "Option",
+    "renderedCopy": true,
+    "ogDescription": true
+  },
+  {
+    "locale": "fr",
+    "url": "https://lazyapps.com/keyhop/fr/",
+    "faqs": 8,
+    "defaultLeader": "Option",
+    "renderedCopy": true,
+    "ogDescription": true
+  },
+  {
+    "locale": "de",
+    "url": "https://lazyapps.com/keyhop/de/",
+    "faqs": 8,
+    "defaultLeader": "Option",
+    "renderedCopy": true,
+    "ogDescription": true
+  },
+  {
+    "locale": "ja",
+    "url": "https://lazyapps.com/keyhop/ja/",
+    "faqs": 8,
+    "defaultLeader": "Option",
+    "renderedCopy": true,
+    "ogDescription": true
+  },
+  {
+    "locale": "ko",
+    "url": "https://lazyapps.com/keyhop/ko/",
+    "faqs": 8,
+    "defaultLeader": "Option",
+    "renderedCopy": true,
+    "ogDescription": true
+  },
+  {
+    "locale": "ru",
+    "url": "https://lazyapps.com/keyhop/ru/",
+    "faqs": 8,
+    "defaultLeader": "Option",
+    "renderedCopy": true,
+    "ogDescription": true
+  },
+  {
+    "locale": "ar",
+    "url": "https://lazyapps.com/keyhop/ar/",
+    "faqs": 8,
+    "defaultLeader": "Option",
+    "renderedCopy": true,
+    "ogDescription": true
+  },
+  {
+    "locale": "hi",
+    "url": "https://lazyapps.com/keyhop/hi/",
+    "faqs": 8,
+    "defaultLeader": "Option",
+    "renderedCopy": true,
+    "ogDescription": true
+  }
+]
