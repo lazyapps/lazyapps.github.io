@@ -1,0 +1,40 @@
+{
+  "version": 3,
+  "viewportMobile": [
+    390,
+    844
+  ],
+  "viewportDesktop": [
+    1512,
+    942
+  ],
+  "checks": {
+    "localVideo15Seconds": true,
+    "mutedLoop": true,
+    "playPauseButtons": true,
+    "soundToggleLabels": true,
+    "controlsOutsideImage": true,
+    "noHorizontalOverflow": true,
+    "manualPausePersistsAfterScroll": true,
+    "offscreenAutomaticPauseAndResume": true,
+    "reducedMotionInitialPause": true,
+    "reducedMotionManualPlay": true,
+    "subtitleClearOfAllAppsAndKeyLabels": true,
+    "footerMatchesCHMate": true,
+    "all12Routes": true,
+    "all12EncodedContactSheets": true,
+    "fullMediaDecode": true,
+    "sha256Matches": true,
+    "buildAndSEO": true
+  },
+  "evidence": [
+    "mobile-v3.png",
+    "footer-v3.png",
+    "encoded-*-v3.jpg",
+    "validation-v3.json",
+    "routes-v3.json",
+    "build-v3.log",
+    "completion-v3-advice.md"
+  ],
+  "temporaryBrowserOverridesRestored": true
+}

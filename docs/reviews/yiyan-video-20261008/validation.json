@@ -1,0 +1,230 @@
+{
+  "media": [
+    {
+      "locale": "zh-hans",
+      "bytes": 1908933,
+      "duration": 25,
+      "dimensions": [
+        1280,
+        720
+      ],
+      "fps": 24,
+      "frames": 600,
+      "codec": "h264",
+      "pixelFormat": "yuv420p",
+      "audio": false,
+      "faststart": true,
+      "decode": "passed",
+      "sha256": "67d58494a2ba5756a2871d02eb216427c44847f0b6081d9630bfbb7c7a61d0c1"
+    },
+    {
+      "locale": "zh-hant",
+      "bytes": 1935841,
+      "duration": 25,
+      "dimensions": [
+        1280,
+        720
+      ],
+      "fps": 24,
+      "frames": 600,
+      "codec": "h264",
+      "pixelFormat": "yuv420p",
+      "audio": false,
+      "faststart": true,
+      "decode": "passed",
+      "sha256": "f331ac3a1272bf611d5a17236f245083b605e7abddd3cc3df2e23787e7f35813"
+    },
+    {
+      "locale": "en",
+      "bytes": 1911355,
+      "duration": 25,
+      "dimensions": [
+        1280,
+        720
+      ],
+      "fps": 24,
+      "frames": 600,
+      "codec": "h264",
+      "pixelFormat": "yuv420p",
+      "audio": false,
+      "faststart": true,
+      "decode": "passed",
+      "sha256": "cf6d0f9b4965a25eecd3bb1f86561568a68587dcf9d350191142974c7eb6a921"
+    },
+    {
+      "locale": "ja",
+      "bytes": 1942300,
+      "duration": 25,
+      "dimensions": [
+        1280,
+        720
+      ],
+      "fps": 24,
+      "frames": 600,
+      "codec": "h264",
+      "pixelFormat": "yuv420p",
+      "audio": false,
+      "faststart": true,
+      "decode": "passed",
+      "sha256": "b80be8c630abb0791411bdc44323ce0be39cd660d6ecd39a8944d71c072dd370"
+    },
+    {
+      "locale": "ko",
+      "bytes": 1911233,
+      "duration": 25,
+      "dimensions": [
+        1280,
+        720
+      ],
+      "fps": 24,
+      "frames": 600,
+      "codec": "h264",
+      "pixelFormat": "yuv420p",
+      "audio": false,
+      "faststart": true,
+      "decode": "passed",
+      "sha256": "d77e7ef5c6a7c4b1e87fe5f0f0615a8f0db35c6e254e5e5e94542a8fce8139ac"
+    },
+    {
+      "locale": "de",
+      "bytes": 1939199,
+      "duration": 25,
+      "dimensions": [
+        1280,
+        720
+      ],
+      "fps": 24,
+      "frames": 600,
+      "codec": "h264",
+      "pixelFormat": "yuv420p",
+      "audio": false,
+      "faststart": true,
+      "decode": "passed",
+      "sha256": "428d46ef029a3b6bdc610478e4cd741f8636d6cbf258ab93fdadfa900a80b770"
+    },
+    {
+      "locale": "fr",
+      "bytes": 1937741,
+      "duration": 25,
+      "dimensions": [
+        1280,
+        720
+      ],
+      "fps": 24,
+      "frames": 600,
+      "codec": "h264",
+      "pixelFormat": "yuv420p",
+      "audio": false,
+      "faststart": true,
+      "decode": "passed",
+      "sha256": "411ed9e6c277beef29d9256e1c93ac5c3f5d24b513dcf147be56e2934a6e0aed"
+    },
+    {
+      "locale": "es",
+      "bytes": 1929004,
+      "duration": 25,
+      "dimensions": [
+        1280,
+        720
+      ],
+      "fps": 24,
+      "frames": 600,
+      "codec": "h264",
+      "pixelFormat": "yuv420p",
+      "audio": false,
+      "faststart": true,
+      "decode": "passed",
+      "sha256": "22a97d5968b5b20e24297ebdc7ec9c755f32e5f1a19a01f858c20ce505cb5d86"
+    },
+    {
+      "locale": "pt-br",
+      "bytes": 1929597,
+      "duration": 25,
+      "dimensions": [
+        1280,
+        720
+      ],
+      "fps": 24,
+      "frames": 600,
+      "codec": "h264",
+      "pixelFormat": "yuv420p",
+      "audio": false,
+      "faststart": true,
+      "decode": "passed",
+      "sha256": "b3cdc65b3c623405e64803c9b45d430d0cbe085cf9162c7e16972c8c45d01296"
+    },
+    {
+      "locale": "ru",
+      "bytes": 1931462,
+      "duration": 25,
+      "dimensions": [
+        1280,
+        720
+      ],
+      "fps": 24,
+      "frames": 600,
+      "codec": "h264",
+      "pixelFormat": "yuv420p",
+      "audio": false,
+      "faststart": true,
+      "decode": "passed",
+      "sha256": "7c004faf8d5f2a37eb3bde1e616fe25264d3a61200dcb3d7dff0e4b22d2a0a1b"
+    },
+    {
+      "locale": "hi",
+      "bytes": 1918231,
+      "duration": 25,
+      "dimensions": [
+        1280,
+        720
+      ],
+      "fps": 24,
+      "frames": 600,
+      "codec": "h264",
+      "pixelFormat": "yuv420p",
+      "audio": false,
+      "faststart": true,
+      "decode": "passed",
+      "sha256": "d8fa3553fe9285fbc811084b277effffdeae238e16f154265d89327c7909ff6f"
+    },
+    {
+      "locale": "ar",
+      "bytes": 1898130,
+      "duration": 25,
+      "dimensions": [
+        1280,
+        720
+      ],
+      "fps": 24,
+      "frames": 600,
+      "codec": "h264",
+      "pixelFormat": "yuv420p",
+      "audio": false,
+      "faststart": true,
+      "decode": "passed",
+      "sha256": "49286e1193d2e89e68223be6c0bd71fa92446e56e3a5a792596f319032154d92"
+    }
+  ],
+  "build": "npm run build passed; SEO and existing artifact checks passed",
+  "browser": {
+    "url": "http://127.0.0.1:4324/yiyan/",
+    "source": "hero-zh-hans-v2.mp4",
+    "duration": 25,
+    "dimensions": [
+      1280,
+      720
+    ],
+    "readyState": 4,
+    "paused": false,
+    "error": null,
+    "viewport": "mobile",
+    "additionalChecks": [
+      "Chinese video at desktop breakpoint 1280x900",
+      "English localized video: 25 seconds, readyState 4, playing, no error",
+      "Viewport restored; Chinese local preview kept open"
+    ]
+  },
+  "mediaStatus": "12 locales passed all media and poster checks",
+  "builtRoutes": "All 12 localized pages reference matching v2 video and poster; built media hashes match public sources",
+  "advisor": "completion-advice.md: ready for user review, no material blockers"
+}

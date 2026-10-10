@@ -1,8 +1,12 @@
 ---
 const SITE = 'https://lazyapps.com';
+const title = 'XVDL — X Video Downloader for Safari on Mac';
+const description = 'Download videos from X in Safari on Mac. XVDL saves the highest-quality available MP4 to your Downloads folder, without copying links or using converter websites.';
 import SocialMeta from '../../components/SocialMeta.astro';
 import SoftwareApplication from '../../components/SoftwareApplication.astro';
+import SiteGrain from '../../components/SiteGrain.astro';
 import SiteFooterBase from '../../components/SiteFooterBase.astro';
+import SiteHeader from '../../components/SiteHeader.astro';
 import siteCssUrl from '$assets/s/site.css?url';
 import gsapUrl from '$assets/vendor/gsap.min.js?url';
 import scrollTriggerUrl from '$assets/vendor/ScrollTrigger.min.js?url';
@@ -19,13 +23,13 @@ import xvdlOpengraphUrl from '$assets/img/xvdl-opengraph.png?url';
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>XVDL — Safari video downloader for X</title>
-<meta name="description" content="Download videos directly on X in Safari. XVDL saves the highest-quality available MP4 straight to your Downloads folder—no link copying, converter websites, or media uploads.">
+<title>{title}</title>
+<meta name="description" content={description}>
 <meta name="theme-color" content="#171717" data-page-color="#e8e8e6">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#171717" data-page-color="#e8e8e6">
 <SocialMeta
-  title="XVDL — Safari video downloader for X"
-  description="Save X videos directly to your Mac in Safari. Straight to your Downloads folder—never through lazyapps servers."
+  title={title}
+  description={description}
   url={`${SITE}/xvdl/`}
   image={`${SITE}${xvdlOpengraphUrl}`}
   imageAlt="XVDL — Safari video downloader for X"
@@ -33,7 +37,7 @@ import xvdlOpengraphUrl from '$assets/img/xvdl-opengraph.png?url';
   imageHeight={630}
   locale="en_US"
 />
-<SoftwareApplication name="XVDL" description="Download videos directly on X in Safari. Save the highest-quality available MP4 straight to your Mac’s Downloads folder." url={`${SITE}/xvdl/`} language="en" operatingSystem="macOS" downloadUrl="https://github.com/cxa/xvdl/releases" image={`${SITE}${iconLargeUrl}`} />
+<SoftwareApplication name="XVDL" description={description} url={`${SITE}/xvdl/`} language="en" operatingSystem="macOS" downloadUrl="https://github.com/cxa/xvdl/releases" image={`${SITE}${iconLargeUrl}`} />
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2064%2064%22%3E%3Crect%20width%3D%2264%22%20height%3D%2264%22%20rx%3D%2215%22%20fill%3D%22%23171717%22%2F%3E%3Cpath%20fill%3D%22%23f8f8f6%22%20d%3D%22M20%2013h12v33h17v10H20z%22%2F%3E%3Ccircle%20cx%3D%2245%22%20cy%3D%2219%22%20r%3D%225%22%20fill%3D%22%23ff6846%22%2F%3E%3C%2Fsvg%3E">
 <link rel="stylesheet" href={siteCssUrl}>
 
@@ -122,7 +126,7 @@ section.phero.wrap{padding-top:clamp(8px,1.5vw,18px);--h1-size:clamp(38px,6.2vw,
 <body>
 
 
-<div class="grain" data-grain-animate="true"></div>
+<SiteGrain animated />
 
 
 <div data-load-wrap class="loader" id="loader" aria-hidden="true">
@@ -145,24 +149,17 @@ section.phero.wrap{padding-top:clamp(8px,1.5vw,18px);--h1-size:clamp(38px,6.2vw,
   </div>
 </div>
 
+<SiteHeader class="wrap" name="XVDL" icon={iconLargeUrl} />
+
 <main>
 
   
   <section class="phero wrap">
-    <div class="topbar">
-      <nav class="mono topbar__nav" aria-label="Primary">
-        <a data-hover href="/" class="topbar__home" aria-label="Home"><span aria-hidden="true" class="topbar__home-dot"></span></a>
-      </nav>
-      <div class="topbar__app">
-        <img src={iconLargeUrl} alt="">
-        <h2 class="dsp">XVDL</h2>
-      </div>
-    </div>
 
     <div data-reveal-group data-stagger="110" data-distance="1.2em" data-start="top 94%">
-      <h1 class="phero__h1 dsp">Save the video. Stay in Safari</h1>
+      <h1 class="phero__h1 dsp">Download X videos in Safari on Mac</h1>
       <div class="shot">
-        <img src={inUseUrl} width="1180" height="806" alt="The XVDL download button on an X video post">
+        <img src={inUseUrl} width="1463" height="1075" alt="The XVDL download button highlighted at the upper right of an X video post">
       </div>
       <p class="mono shot__cap">The download button appears when a post provides a downloadable MP4.</p>
       <p class="phero__sub">XVDL adds a download button to X video posts and saves the highest-quality available MP4 straight to your Downloads folder. No link copying, no external converter services, no media uploads.</p>
@@ -275,7 +272,7 @@ section.phero.wrap{padding-top:clamp(8px,1.5vw,18px);--h1-size:clamp(38px,6.2vw,
 
   
   <section class="bounds wrap" data-reveal-group data-stagger="120" data-distance="1.6em" data-start="top 84%">
-    <h2 class="bounds__h2 dsp">The file goes to your Mac, not through us</h2>
+    <h2 class="bounds__h2 dsp">MP4 downloads & privacy</h2>
     <p class="phero__sub bounds__note">XVDL does not collect, store, sell, or transmit personal data. It does not upload downloaded media or video metadata to lazyapps servers.</p>
     <dl class="bounds__grid">
       <div>
@@ -300,7 +297,7 @@ section.phero.wrap{padding-top:clamp(8px,1.5vw,18px);--h1-size:clamp(38px,6.2vw,
   
   <section class="next" data-reveal-group data-stagger="110" data-distance="1.4em" data-start="top 88%">
     <img class="next__plate next__plate--icon" src={iconLargeUrl} alt="">
-    <h2 class="next__q dsp">Stay in Safari</h2>
+    <h2 class="next__q dsp">Download XVDL</h2>
     <div class="next__act">
       <a data-hover href="#install" class="button-023 button-023--square">
         <span class="button-023__bg">
@@ -323,7 +320,7 @@ section.phero.wrap{padding-top:clamp(8px,1.5vw,18px);--h1-size:clamp(38px,6.2vw,
     <p class="bounds__a">On first launch, XVDL links you to Safari’s extension settings. Enable XVDL and allow access to x.com and twitter.com. <a class="brew__download" href="https://github.com/cxa/xvdl/releases">Prefer a direct download? Grab the latest macOS ZIP from GitHub Releases</a>.</p>
   </div>
 
-  <SiteFooterBase />
+  <SiteFooterBase pressKit="/xvdl/presskit/" />
 
 </footer>
 

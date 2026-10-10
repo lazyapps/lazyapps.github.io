@@ -1,0 +1,43 @@
+{
+  "languages": [
+    "en"
+  ],
+  "files": [
+    {
+      "path": "icon.png",
+      "contentLanguage": "und",
+      "width": 1024,
+      "height": 1024,
+      "format": "PNG",
+      "bytes": 195879,
+      "sha256": "ecaa6d45e15d544188350c8a25d62feeb820dde192f0e9aa537406f53810c45f"
+    },
+    {
+      "path": "safari-in-use.png",
+      "contentLanguage": "en",
+      "width": 1190,
+      "height": 874,
+      "format": "PNG",
+      "bytes": 666363,
+      "sha256": "280a32832e2dd8c85e622496bac0ea6d7b9a7d6afaf6810efba0c2cd0d552385"
+    },
+    {
+      "path": "safari-in-use-highlighted.png",
+      "contentLanguage": "en",
+      "width": 1463,
+      "height": 1075,
+      "format": "PNG",
+      "bytes": 1347577,
+      "sha256": "44b7f329e60f6c85a15af4e22f217dd9bc7a796ac364fa86eca5da0cde766169"
+    },
+    {
+      "path": "social-card.png",
+      "contentLanguage": "und",
+      "width": 1200,
+      "height": 630,
+      "format": "PNG",
+      "bytes": 68066,
+      "sha256": "0ffb2bfb1c8ddeb719902b7a4614ad092468d6a5e15b4b7adf1f4b8046ce9f0b"
+    }
+  ]
+}

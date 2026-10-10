@@ -1,0 +1,190 @@
+{
+  "chmate": {
+    "project": "iOS/CHMate Neue",
+    "original": "CHMate/AppIcon.icon",
+    "commit": "6d6bddab3a2b00f90e079349176dfb8f837c0623",
+    "source": "scripts/assets/chmate/AppIcon.icon",
+    "platform": "iOS",
+    "method": "Icon Composer Default export",
+    "output": "src/assets/img/chmate-icon.png",
+    "sourceHashes": {
+      "Assets/bottom-paths.svg": "83b56c17f45a7ca04ef1052b4d5beda1f238df74a5c1110b730efee58333042f",
+      "Assets/page-shading.svg": "0273018a88bd7df6db8f4ab4faccf0d20307376337d795bf56845d01b6cc4325",
+      "Assets/top-paths.svg": "a46e789b1379e93efd3b904b49f59278ab581444506e014fa739bcf0319a8b1b",
+      "icon.json": "738a281138d2f6d3dbe306c5b30ab3c10195bc1ba868c2df2cbabc21f23ef39e"
+    },
+    "outputSha256": "0650bac78fbcce9c5db9628659ec61ade1b30ce41283d138bc1b3d7044aac94a",
+    "size": [
+      1024,
+      1024
+    ],
+    "rendition": "Default",
+    "designGeneration": 27
+  },
+  "world-book": {
+    "project": "iOS/WorldABC",
+    "original": "AppIcon.icon",
+    "commit": "3d03915f9a5be8eb2834aa869d24a12b375d77af",
+    "source": "scripts/assets/world-book/AppIcon.icon",
+    "platform": "iOS",
+    "method": "Icon Composer Default export",
+    "output": "src/assets/img/world-book-icon.png",
+    "sourceHashes": {
+      "Assets/Globe-Glow.svg": "06a6359238707d8006ab4a11a3b273080acaa5da16eb629b9d71d88e46e9088f",
+      "Assets/Globe-Land.svg": "8320c1ddfc61eac8f5ba8ee30d60824f691ab1ca7f5ec3e099fa6e99c06041e2",
+      "Assets/Globe-Lightspill.svg": "0222b344e914a4cff153ba9af18af04e3a4c8ec6164a97831ef28b3ee6412a93",
+      "Assets/Ocean-Color.svg": "63de401d7a173118791e21b22f01095bcfeedd7b85cfec57b61988e9ebecd46e",
+      "Assets/Ocean-Sphere.svg": "8985760691226aa46cb5e47fed254f96860d281a717008fcae93937ec4b118ce",
+      "Assets/Open-Cover.svg": "82d98f8dcb74bf01cd2bd8cac69eef885b9806a736078d25f06a9abf1e82a0a2",
+      "Assets/Open-Pages.svg": "560a49eee5051425b65d22a96953a4e669b460292dc8edbdd69ee660f210b2b2",
+      "Assets/Space-Background.svg": "89c3a147f6ba7980be016fdfe4cd69f6c6e950ebb01ba587c503d4864f86febd",
+      "icon.json": "475a81dd311f44fd378efa91dd4e7bcd1312f32bacb100ed71451969e9827797"
+    },
+    "outputSha256": "1d89c17accc14746d520f6bcebe60a9025412cbacc3ad34944f48a531bd651bc",
+    "size": [
+      1024,
+      1024
+    ],
+    "rendition": "Default",
+    "designGeneration": 27
+  },
+  "fondfont": {
+    "project": "iOS/iOSFontInstaller",
+    "original": "iOSFontInstaller/AppIcon.icon",
+    "commit": "763cc3500ee101236e03ddbd7846dac1e0dcb2ad",
+    "source": "scripts/assets/fondfont/AppIcon.icon",
+    "platform": "iOS",
+    "method": "Icon Composer Default export",
+    "output": "src/assets/img/fondfont-icon.png",
+    "sourceHashes": {
+      "Assets/Background-Plane.svg": "b31a358c56886dc5d511c5a5325c2593a0281e4ab091806c3f7e5aad60846a96",
+      "Assets/Bodoni-ff-Back-Reflection.svg": "417a007a56d9dcd17105754c5759fe549d1967070ae283769a4c5b5f2585fb6a",
+      "Assets/Bodoni-ff-Back.svg": "a343f0ad7fac34dd7755f1b8c67fbdfefa5c6a0afe96750086657e4fdc6b0ed1",
+      "Assets/Bodoni-ff-Front-Reflection.svg": "148b006b0b209432e3c0fdf22ab992879323eae0a9524e9b5a04333ce9040adc",
+      "Assets/Bodoni-ff-Front.svg": "26ac027e6b67359b6d17b953357bccaeaa711efb5fd1f65cfcc391810967c463",
+      "icon.json": "ca0f6588a6b4eae655021b81a5bf4da2425f18833bec0d1d3945bee1a92fc0cd"
+    },
+    "outputSha256": "6450ebff5633c9758e6b8c3f1d169f875886dd8e0402555e72c716d49b3f2be6",
+    "size": [
+      1024,
+      1024
+    ],
+    "rendition": "Default",
+    "designGeneration": 27
+  },
+  "keyhop": {
+    "project": "_vibe/keyhop",
+    "original": "KeyHop/AppIcon.icon",
+    "commit": "1ff875df0abcc4bf7c67b30bbb3bad9441a5f34a",
+    "source": "scripts/assets/native-icons/keyhop/AppIcon.icon",
+    "platform": "macOS",
+    "method": "Icon Composer Default export",
+    "output": "src/assets/img/keyhop-icon.png",
+    "sourceHashes": {
+      "Assets/01-cyan-key.svg": "f8dfea7c1d97f045a4343babd3982ba2d16f519a56a1ec96bf56464801111edd",
+      "Assets/02-coral-key.svg": "aa89adb28876cb2000ce21617d5102ef89deb950383ea05eef53e1f71069239b",
+      "Assets/03-lime-key.svg": "a2fb40f3fb757bfbc4bd26f9f12aeda320743b01c1155b3adde52161e66c0356",
+      "Assets/04-spacebar.svg": "c6ebe0394adf1bbd291d9ec85ae3406fc82c901301a0107db57f260cd12bc54d",
+      "icon.json": "3342d73d0ceaee7ffdd773dad69d3fc5ac8c7bffa97c43e069dac3e9ef48992c"
+    },
+    "outputSha256": "8724b561ef2c8e923d0c00d9c1ccf1aec6389ed359c4046051e73a214443052f",
+    "size": [
+      1024,
+      1024
+    ],
+    "rendition": "Default",
+    "designGeneration": 27
+  },
+  "yiyan": {
+    "project": "_vibe/_yiyan",
+    "original": "AppIcon.icon",
+    "commit": "def94f50e048a6954bf466eecb934c2ccba5fe25",
+    "source": "scripts/assets/yiyan/AppIcon.icon",
+    "platform": "macOS",
+    "method": "Icon Composer Default export",
+    "output": "src/assets/img/yiyan-icon.png",
+    "sourceHashes": {
+      "Assets/05-sun-glow-dark.svg": "a30304b42abbfd24e38a673dd68d5b8ea8c9a01f41bd1c00b2208e7cfafd6ba4",
+      "Assets/05-sun-glow.svg": "8adcc4cafbd31cd24d4021433a051931880da975240e404451a67561a60ecf63",
+      "Assets/10-sun.svg": "a6bf04fbc90f2e8d4101ebd54291b1fbe683d045e81104146f72b18f206163ee",
+      "Assets/20-long-stroke.svg": "f7e112fba7a975328ac94157bc590948e07848bc5cd79810f439574b809f7cdc",
+      "Assets/30-short-stroke.svg": "e48997d2a2355ee1d5bd38e28d0725ceca1fce1b367c566f31c741f27b1593f3",
+      "Assets/40-mouth.svg": "25e27f68333adb04933b68b9c632973c7b214a784aeca8f9f0e5911f819f9f61",
+      "icon.json": "983fe66969c3495cb12219c9644ce3e7859c85f8d40821fa4c0e021d26bc2ea3"
+    },
+    "outputSha256": "00229f263d4823d0381f8e426a12a208cb847c515304527ac4d5fa17ad0a3e13",
+    "size": [
+      1024,
+      1024
+    ],
+    "rendition": "Default",
+    "designGeneration": 27
+  },
+  "shheep": {
+    "project": "_vibe/shheep",
+    "original": "Shheep/Resources/AppIcon.icon",
+    "commit": "b86226ea92fdb6494d8f5ddbd663c69dea8a2fbe",
+    "source": "scripts/assets/native-icons/shheep/AppIcon.icon",
+    "platform": "iOS",
+    "method": "Icon Composer Default export",
+    "output": "src/assets/img/shheep-icon.png",
+    "sourceHashes": {
+      "Assets/Fence.png": "3ac6a64758bebbac45a4c2879bc1f8c92047ba8def15a499de1b774eb5ffd279",
+      "Assets/FenceBow.png": "59982671bb480d798a279e67c20b10874abc17354386d8c14a342234b3af5b62",
+      "Assets/Moon.png": "e2624961c6ea6855e09dc9ff687470f27059139ec2fba3f87b9bb3fa30164936",
+      "Assets/NorthwestStar.png": "b20f020f8db6bf6451efd9a1671e80da2e49e45acf3c92a8d353899efa6a90ad",
+      "Assets/PixelSky.png": "23656ba561e1bc0bc0d58a5c644e183213b5eee93c56ef7c2908c1a9b9213eea",
+      "Assets/PixelSkyDark.png": "77c025bf3a216f1cb94630c735bde3f69fdd68798cd7593ede57cc9fced6768a",
+      "Assets/Sheep.png": "16f13c5085d4e247b4947ebef89191078d637f36c942be218d5006f4633c6580",
+      "Assets/SheepBow.png": "4f41df913a9bda5bbfbeb72cc9ec6fce58e052598cf32485a1aee2ea9ae256db",
+      "Assets/StarsAndHearts.png": "e40c036586eb2a16c644e46492da482fcfcc2c1cf2f934493135c0e7da99ddfe",
+      "icon.json": "f35faab8ae31a4b06eaadbe21983b5d92377fe727df22e5f0a3fa7451d7392af"
+    },
+    "outputSha256": "a5bec121e6e23f1e5819c526b20f79d82eee7e926537d5f12074860e8822a4f0",
+    "size": [
+      1024,
+      1024
+    ],
+    "rendition": "Default",
+    "designGeneration": 27
+  },
+  "yifan": {
+    "project": "ReactNative/yifan",
+    "original": "ios/yifan.icon",
+    "commit": "55f0a43051e13e8fcea4b79a8a355f6030d3541c",
+    "source": "scripts/assets/native-icons/yifan/AppIcon.icon",
+    "platform": "iOS",
+    "method": "Icon Composer Default export",
+    "output": "src/assets/img/yifan-icon.png",
+    "sourceHashes": {
+      "Assets/symbol.svg": "cfec2da654f613d3b88e3740410922b928302e5c159d0330a3170c00f0c2fa6f",
+      "icon.json": "9597db99e294071c0c2ff26a5a92107bec78618cf359f9dc6064480819166e59"
+    },
+    "outputSha256": "dce22ad7208dcd5f218c6b34d8ab7ac759c63ce29c8990ef45e49dd039a85c4f",
+    "size": [
+      1024,
+      1024
+    ],
+    "rendition": "Default",
+    "designGeneration": 27
+  },
+  "xvdl": {
+    "project": "_vibe/xvdl",
+    "original": "Safari/XVDL/XVDL/Assets.xcassets/AppIcon.appiconset/mac-icon-512@2x.png",
+    "commit": "4b0a8cfe4e7314d6c03a2887b1a22398359ed4c2",
+    "source": "scripts/assets/native-icons/xvdl/icon.png",
+    "platform": "macOS",
+    "method": "Original 512@2x AppIcon PNG, byte-for-byte",
+    "output": "src/assets/img/xvdl-icon.png",
+    "sourceHashes": {
+      "icon.png": "ecaa6d45e15d544188350c8a25d62feeb820dde192f0e9aa537406f53810c45f"
+    },
+    "outputSha256": "ecaa6d45e15d544188350c8a25d62feeb820dde192f0e9aa537406f53810c45f",
+    "size": [
+      1024,
+      1024
+    ],
+    "rendition": "Default",
+    "designGeneration": null
+  }
+}

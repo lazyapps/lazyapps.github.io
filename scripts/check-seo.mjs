@@ -9,8 +9,8 @@ const pages = await readPages();
 assert(pages.length > 0, 'No built pages. Run npm run build first.');
 const byUrl = new Map(pages.map(page => [page.url, page]));
 const knownAliases = new Map([[`${site}/fondfont/`, `${site}/fondfont/en/`]]);
-const product = /\/(chmate|fondfont|keyhop|yiyan|world-book|xvdl|shheep)\//;
-const localizedProduct = /\/(chmate|fondfont|keyhop|yiyan|shheep)\//;
+const product = /^\/(chmate|fondfont|keyhop|yiyan|world-book|xvdl|shheep)\/(?:[a-z]{2}(?:-[a-z]+)?\/)?$/;
+const localizedProduct = /^\/(chmate|fondfont|keyhop|yiyan|shheep)\/(?:[a-z]{2}(?:-[a-z]+)?\/)?$/;
 const meta = (page, key) => page.metas.find(node => attr(node, 'name') === key || attr(node, 'property') === key);
 const shheepLocales = Object.values(SHHEEP_LOCALES);
 assert.deepEqual(shheepLocales.map(locale => locale.htmlLang).sort(), ['en', 'zh-Hans', 'zh-Hant', 'ja', 'ko', 'es', 'pt-BR', 'de', 'fr', 'it', 'ru'].sort(), 'Shheep must cover all 11 app languages');
@@ -38,7 +38,7 @@ for (const page of pages) {
 
   const languageLinks = new Map(page.alternates.map(node => [attr(node, 'hreflang'), attr(node, 'href')]));
   check(languageLinks.size === page.alternates.length, 'Repeated hreflang');
-  if (page.url.startsWith(`${site}/shheep/`)) {
+  if (product.test(new URL(page.url).pathname) && page.url.startsWith(`${site}/shheep/`)) {
     const locale = shheepLocales.find(locale => `${site}${locale.selectedUrl}` === page.url);
     check(locale, 'Unexpected Shheep locale URL');
     check(page.language === locale.htmlLang, 'Incorrect Shheep page language');
@@ -54,7 +54,7 @@ for (const page of pages) {
     check(locale.headline.every(line => text(h1).includes(line)), 'Headline is not localized');
     for (const [, body] of [...locale.cards, ...locale.details]) check(page.html.includes(body.replaceAll('&', '&amp;')), 'Missing translated page content');
   }
-  if (localizedProduct.test(page.url)) {
+  if (localizedProduct.test(new URL(page.url).pathname)) {
     check(languageLinks.get(page.language) === page.canonical, 'Missing self hreflang');
     check(languageLinks.has('x-default'), 'Missing x-default');
     const pickers = page.nodes.filter(node => node.tagName === 'select' && attr(node, 'data-locale-picker') !== undefined);
@@ -78,12 +78,15 @@ for (const page of pages) {
   }
 
   const jsonLd = page.nodes.filter(node => node.tagName === 'script' && attr(node, 'type') === 'application/ld+json').map(node => JSON.parse(text(node)));
-  if (product.test(page.url)) {
+  if (product.test(new URL(page.url).pathname)) {
     const app = jsonLd.find(data => ['SoftwareApplication', 'WebApplication'].includes(data['@type']));
     check(app?.url === page.canonical && app?.inLanguage === page.language, 'App structured data does not match page');
     check(app.name && app.description && app.operatingSystem, 'Incomplete basic app metadata');
+    check(app.description === attr(meta(page, 'description'), 'content'), 'App description differs from page metadata');
+    check(attr(meta(page, 'og:description'), 'content') === app.description, 'OG description differs from app metadata');
+    check(attr(meta(page, 'og:title'), 'content') === text(titles[0]), 'OG title differs from page title');
     check(app['@type'] === 'WebApplication' ? app.browserRequirements : app.downloadUrl, 'Missing browser requirements or download URL');
-    if (page.url.startsWith(`${site}/shheep/`)) check(app.applicationCategory === 'GameApplication', 'Missing game application category');
+    if (product.test(new URL(page.url).pathname) && page.url.startsWith(`${site}/shheep/`)) check(app.applicationCategory === 'GameApplication', 'Missing game application category');
     check(!app.aggregateRating && !app.review && !app.offers, 'Unverified ratings/reviews/offers');
   }
   if (page.url === `${site}/`) {

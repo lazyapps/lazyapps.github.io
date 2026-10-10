@@ -10,6 +10,8 @@ const SITE = 'https://lazyapps.com';
 import SocialMeta from './SocialMeta.astro';
 import SoftwareApplication from './SoftwareApplication.astro';
 import LanguagePicker from './LanguagePicker.astro';
+import SiteHeader from './SiteHeader.astro';
+import SiteGrain from './SiteGrain.astro';
 import SiteFooterBase from './SiteFooterBase.astro';
 import siteCssUrl from '$assets/s/site.css?url';
 import gsapUrl from '$assets/vendor/gsap.min.js?url';
@@ -300,7 +302,7 @@ html[data-trust=cjk] .phero__trust li{font:400 .75rem/1.5 var(--mono);letter-spa
 <body>
 
 
-<div class="grain" data-grain-animate="true"></div>
+<SiteGrain animated />
 
 
 <div data-load-wrap class="loader" id="loader" aria-hidden="true">
@@ -323,20 +325,14 @@ html[data-trust=cjk] .phero__trust li{font:400 .75rem/1.5 var(--mono);letter-spa
   </div>
 </div>
 
+<SiteHeader class="wrap" name={t.appTitle.replace(/<[^>]*>/g, '')} icon={yiyanIconUrl} homeLabel={t.homeAria}>
+        <LanguagePicker label={t.selectAria} current={t.selectedUrl} storageKey="yiyan.locale" options={OPTIONS.map(([language, url, , label]) => ({ language, url, label }))} />
+      </SiteHeader>
+
 <main>
 
   <section class="phero wrap">
-    <div class="topbar">
-      <nav class="mono topbar__nav" aria-label={t.navAria}>
-        <a data-hover href="/" class="topbar__home" aria-label={t.homeAria}><span aria-hidden="true" class="topbar__home-dot"></span></a>
-      </nav>
-      <div class="topbar__app">
-        <img src={yiyanIconUrl} alt="">
-        <h2 class="dsp" lang={t.appTitleAttrs ? 'en' : undefined}><Fragment set:html={t.appTitle} /></h2>
-      </div>
 
-      <LanguagePicker label={t.selectAria} current={t.selectedUrl} storageKey="yiyan.locale" options={OPTIONS.map(([language, url, , label]) => ({ language, url, label }))} />
-    </div>
 
     <div data-reveal-group data-stagger="110" data-distance="1.2em" data-start="top 94%">
       <h1 class="phero__h1 dsp"><Fragment set:html={t.h1} /></h1>
@@ -386,10 +382,6 @@ html[data-trust=cjk] .phero__trust li{font:400 .75rem/1.5 var(--mono);letter-spa
   </section>
 
   <section class="pair wrap" data-reveal-group data-stagger="120" data-distance="1.4em" data-start="top 86%">
-    <div class="pair__head">
-      <h2 class="mono"><Fragment set:html={t.pair.headA} /></h2>
-      <p class="mono"><Fragment set:html={t.pair.headB} /></p>
-    </div>
     <h2 class="pair__h2 dsp"><Fragment set:html={t.pair.h2} /></h2>
     <div class="pair__grid">
       <div class="pair__cell pair__cell--src">
@@ -428,10 +420,6 @@ html[data-trust=cjk] .phero__trust li{font:400 .75rem/1.5 var(--mono);letter-spa
   </section>
 
   <section class="bounds wrap" data-reveal-group data-stagger="120" data-distance="1.4em" data-start="top 86%">
-    <div class="bounds__head">
-      <h2 class="mono"><Fragment set:html={t.bounds.headA} /></h2>
-      <p class="mono"><Fragment set:html={t.bounds.headB} /></p>
-    </div>
     <h2 class="bounds__h2 dsp"><Fragment set:html={t.bounds.h2} /></h2>
     <p class="phero__sub bounds__note"><Fragment set:html={t.bounds.note} /></p>
     <dl class="bounds__grid">
@@ -448,7 +436,6 @@ html[data-trust=cjk] .phero__trust li{font:400 .75rem/1.5 var(--mono);letter-spa
 
   <section class="next" id="brew" data-reveal-group data-stagger="110" data-distance="1.4em" data-start="top 88%">
     <img class="next__plate next__plate--icon" src={yiyanIconUrl} alt={t.next.imgAlt}>
-    <h2 class="next__q dsp"><Fragment set:html={t.next.q} /></h2>
     <div class="next__act">
       <a data-hover href="https://github.com/cxa/yiyan" class="button-023 button-023--square">
         <span class="button-023__bg">
@@ -476,7 +463,7 @@ html[data-trust=cjk] .phero__trust li{font:400 .75rem/1.5 var(--mono);letter-spa
     <div class="yiyan-footer__notices" lang="en" dir="ltr">
       <p>Music: <a href="https://www.scottbuckley.com.au/library/a-kind-of-hope/">“A Kind Of Hope” by Scott Buckley</a> · <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> · Edited excerpt, volume and fades adjusted.</p>
     </div>
-    <SiteFooterBase locale={t.htmlLang} />
+    <SiteFooterBase locale={t.htmlLang} pressKit="/yiyan/presskit/" />
   </div>
 
 </footer>

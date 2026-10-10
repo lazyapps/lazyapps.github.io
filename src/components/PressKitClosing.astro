@@ -1,0 +1,36 @@
+---
+interface Props { productName?: string; }
+const { productName } = Astro.props;
+---
+<aside class="press-closing">
+  {productName && <details class="press-usage">
+    <summary><span data-press-text="usageLabel">Using these materials</span></summary>
+    <div>
+      <p data-press-text="usage">For editorial coverage of this product. Preserve names, proportions and context; credit lazyapps and link to the product website. Third-party content and trademarks retain their respective rights; this kit grants no standalone reuse rights. Contact us for other uses.</p>
+    </div>
+  </details>}
+  <section class="press-contact" aria-labelledby="contact-title">
+    <h2 id="contact-title" data-press-text="mediaContact">Media contact</h2>
+    <a class="contact-link" href="mailto:lazyapps.feedback@gmail.com" dir="ltr">lazyapps.feedback@gmail.com <span aria-hidden="true">↗</span></a>
+  </section>
+</aside>
+<style>
+  .press-closing{margin-top:48px;border-top:1px solid var(--line);padding-top:28px}
+  .press-usage summary{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:48px;cursor:pointer;font-size:16px;font-weight:600;list-style:none}
+  .press-usage summary::-webkit-details-marker{display:none}
+  .press-usage summary::after{content:'+';font-size:24px;font-weight:400}
+  .press-usage[open] summary::after{content:'−'}
+  .press-usage>div{max-width:76ch;padding-block:12px 24px;font-size:14px;line-height:1.8;color:var(--muted);text-wrap:pretty}
+  .press-usage p+p{margin-top:16px}
+  .press-contact{display:flex;align-items:center;justify-content:space-between;gap:24px;padding-top:8px}
+  .press-usage+.press-contact{margin-top:24px}
+  .press-contact h2{font-size:28px;text-wrap:balance}
+  .press-contact h2 span{font-size:16px}
+  .contact-link{display:inline-flex;align-items:center;justify-content:space-between;gap:16px;min-height:48px;max-width:100%;padding:12px 16px;border-radius:999px;background:rgba(0,0,0,.07);box-shadow:inset 0 0 0 1px rgba(0,0,0,.12);font-size:14px;text-decoration:none;transition:background-color .18s ease,transform .18s ease}
+  .contact-link:active{transform:scale(.96)}
+  .contact-link:focus-visible,.press-usage summary:focus-visible{outline:2px solid var(--accent);outline-offset:4px}
+  @media(hover:hover) and (pointer:fine){.contact-link:hover{background:var(--accent)}}
+  @media(max-width:900px){.press-contact{flex-direction:column;align-items:start;gap:20px}}
+  @media(max-width:650px){.press-closing{margin-top:36px;padding-top:24px}.press-contact h2{font-size:26px}.contact-link{font-size:13px;gap:12px}}
+  @media(prefers-reduced-motion:reduce){.contact-link{transition:none}.contact-link:active{transform:none}}
+</style>

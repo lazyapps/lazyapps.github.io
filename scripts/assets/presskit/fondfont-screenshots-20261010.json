@@ -1,0 +1,58 @@
+[
+  {
+    "language": "en",
+    "source": "/Users/realazy/Projects/iOS/iOSFontInstaller/AppStore/Screenshots/public/screenshots/apple/iphone/en-US/04.png",
+    "output": "scripts/assets/presskit/fondfont-select-en.png",
+    "captured": "2026-10-10",
+    "sha256": "871e6550ffd5028ba3ee38e97290f2e1d12ee6dd7a8a0bd01d7927d1976d6cd3",
+    "operation": "byte-identical copy; current native multi-select UI; no retouching"
+  },
+  {
+    "language": "de",
+    "source": "/Users/realazy/Projects/iOS/iOSFontInstaller/AppStore/Screenshots/public/screenshots/apple/iphone/de-DE/04.png",
+    "output": "scripts/assets/presskit/fondfont-select-de.png",
+    "captured": "2026-10-10",
+    "sha256": "d9300fadf0b592ba73aa919364c036b1ce240721d1ab862548619e204414f7b5",
+    "operation": "byte-identical copy; current native multi-select UI; no retouching"
+  },
+  {
+    "language": "fr",
+    "source": "/Users/realazy/Projects/iOS/iOSFontInstaller/AppStore/Screenshots/public/screenshots/apple/iphone/fr-FR/04.png",
+    "output": "scripts/assets/presskit/fondfont-select-fr.png",
+    "captured": "2026-10-10",
+    "sha256": "d94e4766457cee9a7e4a80b1dbd8aca9bc7bbb96f80ba3e35431c57ae89d1d50",
+    "operation": "byte-identical copy; current native multi-select UI; no retouching"
+  },
+  {
+    "language": "ja",
+    "source": "/Users/realazy/Projects/iOS/iOSFontInstaller/AppStore/Screenshots/public/screenshots/apple/iphone/ja/04.png",
+    "output": "scripts/assets/presskit/fondfont-select-ja.png",
+    "captured": "2026-10-10",
+    "sha256": "7682567543a9cd35d04dab5f81d3d3b50542980fab5d2c888839f4ac7de5b722",
+    "operation": "byte-identical copy; current native multi-select UI; no retouching"
+  },
+  {
+    "language": "ko",
+    "source": "/Users/realazy/Projects/iOS/iOSFontInstaller/AppStore/Screenshots/public/screenshots/apple/iphone/ko/04.png",
+    "output": "scripts/assets/presskit/fondfont-select-ko.png",
+    "captured": "2026-10-10",
+    "sha256": "5b0d767ffd0cf81d2e83b2f59ec4d993f3475c02379dbd32cbe89c799e94cf52",
+    "operation": "byte-identical copy; current native multi-select UI; no retouching"
+  },
+  {
+    "language": "zh-hans",
+    "source": "/Users/realazy/Projects/iOS/iOSFontInstaller/AppStore/Screenshots/public/screenshots/apple/iphone/zh-Hans/04.png",
+    "output": "scripts/assets/presskit/fondfont-select-zh-hans.png",
+    "captured": "2026-10-10",
+    "sha256": "03d46083fd8d442e99d06c7f66ab6f8d4a17cc57340de489c0562e7e709a81c2",
+    "operation": "byte-identical copy; current native multi-select UI; no retouching"
+  },
+  {
+    "language": "zh-hant",
+    "source": "/Users/realazy/Projects/iOS/iOSFontInstaller/AppStore/Screenshots/public/screenshots/apple/iphone/zh-Hant/04.png",
+    "output": "scripts/assets/presskit/fondfont-select-zh-hant.png",
+    "captured": "2026-10-10",
+    "sha256": "6d35a81bbdb30b8aa81c410fa03474567551243b1d2662a6e19a5cedfd095c09",
+    "operation": "byte-identical copy; current native multi-select UI; no retouching"
+  }
+]

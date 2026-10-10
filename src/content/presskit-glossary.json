@@ -1,0 +1,745 @@
+{
+  "en": {
+    "name": "English",
+    "headings": [
+      "Press Kit",
+      "Website",
+      "Press Kit",
+      "Platform",
+      "Availability",
+      "Media contact",
+      "About the app",
+      "Official links",
+      "Images",
+      "Using these materials"
+    ],
+    "labels": {
+      "icon": "App icon",
+      "screenshot": "Screenshot",
+      "artwork": "Social sharing image",
+      "logo": "Wordmark"
+    },
+    "availability": {
+      "store": "Available on the App Store",
+      "mac": "Download for macOS",
+      "beta": "Mac download · iPhone TestFlight beta",
+      "web": "Play in browser · iOS coming soon"
+    },
+    "notes": {
+      "icon": "Original native App icon, 1024 × 1024 PNG. Original artwork, proportions and transparency preserved.",
+      "native": "Native interface preview in this language; unchanged pixels.",
+      "sharedEnglish": "Shared English interface screenshot; example settings do not indicate defaults.",
+      "artwork": "Promotional artwork, not an app screenshot.",
+      "logo": "Original transparent pixel wordmark; preserve pixel edges and proportions.",
+      "title": "Shared game title-screen preview; not active gameplay.",
+      "globe": "Frame from the English native iPad preview; unchanged pixels.",
+      "sharedEnglishCapture": "Shared English interface screenshot with example Chinese writing and English learning notes; original pixels are unchanged."
+    },
+    "usage": "For editorial coverage of this product. Preserve names, proportions and context; credit lazyapps and link to the product website. Third-party content and trademarks retain their respective rights; this kit grants no standalone reuse rights. Contact us for other uses.",
+    "links": {
+      "download": "Download / releases",
+      "source": "Source code",
+      "beta": "iPhone TestFlight beta",
+      "play": "Play in browser"
+    }
+  },
+  "zh-Hans": {
+    "name": "简体中文",
+    "headings": [
+      "媒体资料",
+      "产品网站",
+      "媒体资料页",
+      "平台",
+      "发布状态",
+      "媒体联系",
+      "产品简介",
+      "官方链接",
+      "图片素材",
+      "使用说明"
+    ],
+    "labels": {
+      "icon": "App 图标",
+      "screenshot": "界面截图",
+      "artwork": "社交分享图",
+      "logo": "文字标志"
+    },
+    "availability": {
+      "store": "已在 App Store 上架",
+      "mac": "提供 macOS 下载",
+      "beta": "Mac 下载 · iPhone TestFlight 测试版",
+      "web": "可在浏览器游玩 · iOS 即将推出"
+    },
+    "notes": {
+      "icon": "原版 App 图标，1024 × 1024 PNG。保留原版图案、比例与透明边角。",
+      "native": "对应语言的原生界面预览，像素保持原样。",
+      "sharedEnglish": "共享的英语界面截图，示例设置不代表默认设置。",
+      "artwork": "宣传图片，不是 App 界面截图。",
+      "logo": "原始透明像素文字标志，请保留像素边缘与比例。",
+      "title": "共享的游戏标题画面预览，不是实际游玩过程的截图。",
+      "globe": "从英语原生 iPad 预览提取的画面，像素保持原样。",
+      "sharedEnglishCapture": "共享英语界面截图，展示中文示例文字与英语学习笔记，保留原始像素。"
+    },
+    "usage": "这些素材用于介绍本产品的媒体报道。请保留名称、比例与产品语境，署名 lazyapps 并链接产品网站。第三方内容与商标保留各自权利；本资料包不授予其独立使用权。如需其他用途，请联系我们。",
+    "links": {
+      "download": "下载 / 发行版本",
+      "source": "源代码",
+      "beta": "iPhone TestFlight 测试版",
+      "play": "在浏览器中游玩"
+    }
+  },
+  "zh-Hant": {
+    "name": "繁體中文",
+    "headings": [
+      "媒體資料",
+      "產品網站",
+      "媒體資料頁",
+      "平台",
+      "發佈狀態",
+      "媒體聯絡",
+      "產品簡介",
+      "官方連結",
+      "圖片素材",
+      "使用說明"
+    ],
+    "labels": {
+      "icon": "App 圖示",
+      "screenshot": "介面截圖",
+      "artwork": "社群分享圖",
+      "logo": "文字標誌"
+    },
+    "availability": {
+      "store": "已在 App Store 上架",
+      "mac": "提供 macOS 下載",
+      "beta": "Mac 下載 · iPhone TestFlight 測試版",
+      "web": "可在瀏覽器遊玩 · iOS 即將推出"
+    },
+    "notes": {
+      "icon": "原版 App 圖示，1024 × 1024 PNG。保留原版圖案、比例與透明邊角。",
+      "native": "對應語言的原生介面預覽，像素保持原樣。",
+      "sharedEnglish": "共用的英語原生設定截圖，拍攝於 2026-10-10，展示目前 Debug 版本的快捷鍵地圖設定；視窗標題標示 Dev，App 綁定為示範範例。",
+      "artwork": "宣傳圖片，不是 App 介面截圖。",
+      "logo": "原始透明像素文字標誌，請保留像素邊緣與比例。",
+      "title": "共用的遊戲標題畫面預覽，不是實際遊玩過程的截圖。",
+      "globe": "從英語原生 iPad 預覽擷取的畫面，像素保持原樣。",
+      "sharedEnglishCapture": "共用英語介面截圖，展示中文範例文字與英語學習筆記，保留原始像素。"
+    },
+    "usage": "這些素材用於介紹本產品的媒體報導。請保留名稱、比例與產品語境，署名 lazyapps 並連結產品網站。第三方內容與商標保留各自權利；本資料包不授予其獨立使用權。如需其他用途，請聯絡我們。",
+    "links": {
+      "download": "下載 / 發行版本",
+      "source": "原始碼",
+      "beta": "iPhone TestFlight 測試版",
+      "play": "在瀏覽器中遊玩"
+    }
+  },
+  "de": {
+    "name": "Deutsch",
+    "headings": [
+      "Pressemappe",
+      "Produktwebsite",
+      "Pressemappe",
+      "Plattform",
+      "Verfügbarkeit",
+      "Pressekontakt",
+      "Über die App",
+      "Offizielle Links",
+      "Bilder",
+      "Nutzung der Materialien"
+    ],
+    "labels": {
+      "icon": "App-Symbol",
+      "screenshot": "Screenshot",
+      "artwork": "Bild für soziale Medien",
+      "logo": "Wortmarke"
+    },
+    "availability": {
+      "store": "Im App Store erhältlich",
+      "mac": "Download für macOS",
+      "beta": "Mac-Download · iPhone-TestFlight-Beta",
+      "web": "Im Browser spielen · iOS folgt"
+    },
+    "notes": {
+      "icon": "Originales App-Symbol, 1024 × 1024 PNG. Grafik, Proportionen und Transparenz unverändert.",
+      "native": "Native Vorschau der Oberfläche in dieser Sprache; unveränderte Pixel.",
+      "sharedEnglish": "Gemeinsamer nativer Screenshot der englischen Einstellungen vom 10.10.2026 mit der aktuellen Debug-Version und der App-Tastenkarte. Der Fenstertitel zeigt Dev; App-Zuordnungen dienen als Beispiele.",
+      "artwork": "Werbegrafik, kein App-Screenshot.",
+      "logo": "Originale transparente Pixel-Wortmarke; Pixelkanten und Proportionen erhalten.",
+      "title": "Gemeinsame Vorschau des Spiel-Titelbildschirms, kein aktives Spielgeschehen.",
+      "globe": "Bild aus der englischen nativen iPad-Vorschau; unveränderte Pixel.",
+      "sharedEnglishCapture": "Gemeinsamer Screenshot der englischen Oberfläche mit chinesischen Beispieltexten und englischen Lernnotizen; die Originalpixel sind unverändert."
+    },
+    "usage": "Für redaktionelle Berichte über dieses Produkt. Namen, Proportionen und Kontext erhalten; lazyapps nennen und auf die Produktwebsite verlinken. Rechte an Inhalten und Marken Dritter bleiben bestehen; dieses Paket erlaubt keine eigenständige Weiterverwendung. Für andere Nutzungen bitte Kontakt aufnehmen.",
+    "links": {
+      "download": "Download / Versionen",
+      "source": "Quellcode",
+      "beta": "iPhone-TestFlight-Beta",
+      "play": "Im Browser spielen"
+    }
+  },
+  "fr": {
+    "name": "Français",
+    "headings": [
+      "Dossier de presse",
+      "Site du produit",
+      "Dossier de presse",
+      "Plateforme",
+      "Disponibilité",
+      "Contact presse",
+      "À propos de l’app",
+      "Liens officiels",
+      "Images",
+      "Utilisation des éléments"
+    ],
+    "labels": {
+      "icon": "Icône de l’app",
+      "screenshot": "Capture d’écran",
+      "artwork": "Image pour les réseaux sociaux",
+      "logo": "Logotype"
+    },
+    "availability": {
+      "store": "Disponible sur l’App Store",
+      "mac": "Téléchargement pour macOS",
+      "beta": "Téléchargement Mac · bêta iPhone TestFlight",
+      "web": "Jouer dans le navigateur · iOS à venir"
+    },
+    "notes": {
+      "icon": "Icône native originale, PNG 1024 × 1024. Dessin, proportions et transparence préservés.",
+      "native": "Aperçu de l’interface native dans cette langue ; pixels inchangés.",
+      "sharedEnglish": "Capture native partagée des réglages en anglais du 10 octobre 2026, avec la carte des touches d’apps de la version Debug actuelle. Le titre indique Dev ; les associations sont des exemples.",
+      "artwork": "Visuel promotionnel, pas une capture d’écran de l’app.",
+      "logo": "Logotype pixelisé transparent d’origine ; conserver les contours et les proportions.",
+      "title": "Aperçu partagé de l’écran titre du jeu, pas une partie en cours.",
+      "globe": "Image de l’aperçu natif anglais sur iPad ; pixels inchangés.",
+      "sharedEnglishCapture": "Capture partagée de l’interface en anglais avec des exemples de textes chinois et des notes d’apprentissage de l’anglais ; pixels d’origine inchangés."
+    },
+    "usage": "Pour les articles présentant ce produit. Conserver les noms, proportions et contexte ; créditer lazyapps et ajouter un lien vers le site du produit. Les contenus et marques de tiers conservent leurs droits ; ce dossier n’autorise pas leur réutilisation séparée. Nous contacter pour tout autre usage.",
+    "links": {
+      "download": "Téléchargement / versions",
+      "source": "Code source",
+      "beta": "Bêta iPhone TestFlight",
+      "play": "Jouer dans le navigateur"
+    }
+  },
+  "es": {
+    "name": "Español",
+    "headings": [
+      "Kit de prensa",
+      "Sitio del producto",
+      "Kit de prensa",
+      "Plataforma",
+      "Disponibilidad",
+      "Contacto de prensa",
+      "Sobre la app",
+      "Enlaces oficiales",
+      "Imágenes",
+      "Uso de los materiales"
+    ],
+    "labels": {
+      "icon": "Icono de la app",
+      "screenshot": "Captura de pantalla",
+      "artwork": "Imagen para redes sociales",
+      "logo": "Logotipo"
+    },
+    "availability": {
+      "store": "Disponible en el App Store",
+      "mac": "Descarga para macOS",
+      "beta": "Descarga para Mac · beta de iPhone en TestFlight",
+      "web": "Juega en el navegador · iOS próximamente"
+    },
+    "notes": {
+      "icon": "Icono nativo original, PNG de 1024 × 1024. Conserva el diseño, las proporciones y la transparencia.",
+      "native": "Vista previa de la interfaz nativa en este idioma; píxeles sin modificar.",
+      "sharedEnglish": "Captura nativa compartida de los ajustes en inglés del 10 de octubre de 2026, con el mapa de teclas de apps de la versión Debug actual. El título indica Dev; las asignaciones son ejemplos.",
+      "artwork": "Imagen promocional, no una captura de la app.",
+      "logo": "Logotipo original de píxeles con transparencia; conservar bordes y proporciones.",
+      "title": "Vista previa compartida de la pantalla de título del juego, no de una partida activa.",
+      "globe": "Fotograma de la vista previa nativa en inglés en iPad; píxeles sin modificar.",
+      "sharedEnglishCapture": "Captura compartida de la interfaz en inglés con texto de ejemplo en chino y notas para aprender inglés; los píxeles originales no se han modificado."
+    },
+    "usage": "Para publicaciones sobre este producto. Conserva nombres, proporciones y contexto; menciona a lazyapps y enlaza al sitio del producto. El contenido y las marcas de terceros conservan sus derechos; este kit no permite reutilizarlos por separado. Contáctanos para otros usos.",
+    "links": {
+      "download": "Descarga / versiones",
+      "source": "Código fuente",
+      "beta": "Beta de iPhone en TestFlight",
+      "play": "Jugar en el navegador"
+    }
+  },
+  "pt-BR": {
+    "name": "Português (Brasil)",
+    "headings": [
+      "Kit de imprensa",
+      "Site do produto",
+      "Kit de imprensa",
+      "Plataforma",
+      "Disponibilidade",
+      "Contato de imprensa",
+      "Sobre o app",
+      "Links oficiais",
+      "Imagens",
+      "Uso dos materiais"
+    ],
+    "labels": {
+      "icon": "Ícone do app",
+      "screenshot": "Captura de tela",
+      "artwork": "Imagem para redes sociais",
+      "logo": "Logotipo"
+    },
+    "availability": {
+      "store": "Disponível na App Store",
+      "mac": "Download para macOS",
+      "beta": "Download para Mac · beta do iPhone no TestFlight",
+      "web": "Jogue no navegador · iOS em breve"
+    },
+    "notes": {
+      "icon": "Ícone nativo original, PNG 1024 × 1024. Arte, proporções e transparência preservadas.",
+      "native": "Prévia da interface nativa neste idioma; pixels sem alterações.",
+      "sharedEnglish": "Captura nativa compartilhada das configurações em inglês de 10 de outubro de 2026, com o mapa de teclas de apps da versão Debug atual. O título indica Dev; as atribuições são exemplos.",
+      "artwork": "Imagem promocional, não uma captura do app.",
+      "logo": "Logotipo original em pixels com transparência; preserve bordas e proporções.",
+      "title": "Prévia compartilhada da tela de título do jogo, não de uma partida em andamento.",
+      "globe": "Quadro da prévia nativa em inglês no iPad; pixels sem alterações.",
+      "sharedEnglishCapture": "Captura compartilhada da interface em inglês com exemplos de textos em chinês e notas de aprendizado de inglês; os pixels originais não foram alterados."
+    },
+    "usage": "Para publicações sobre este produto. Preserve nomes, proporções e contexto; dê crédito à lazyapps e inclua o site do produto. Conteúdos e marcas de terceiros mantêm seus direitos; este kit não autoriza reutilização separada. Entre em contato para outros usos.",
+    "links": {
+      "download": "Download / versões",
+      "source": "Código-fonte",
+      "beta": "Beta do iPhone no TestFlight",
+      "play": "Jogar no navegador"
+    }
+  },
+  "pt": {
+    "name": "Português (Portugal)",
+    "headings": [
+      "Kit de imprensa",
+      "Site do produto",
+      "Kit de imprensa",
+      "Plataforma",
+      "Disponibilidade",
+      "Contacto de imprensa",
+      "Sobre a aplicação",
+      "Ligações oficiais",
+      "Imagens",
+      "Utilização dos materiais"
+    ],
+    "labels": {
+      "icon": "Ícone da aplicação",
+      "screenshot": "Captura de ecrã",
+      "artwork": "Imagem para redes sociais",
+      "logo": "Logótipo"
+    },
+    "availability": {
+      "store": "Disponível na App Store",
+      "mac": "Transferência para macOS",
+      "beta": "Transferência para Mac · beta iPhone no TestFlight",
+      "web": "Jogar no navegador · iOS em breve"
+    },
+    "notes": {
+      "icon": "Ícone nativo original, PNG 1024 × 1024. Grafismo, proporções e transparência preservados.",
+      "native": "Pré-visualização da interface nativa neste idioma; píxeis inalterados.",
+      "sharedEnglish": "Captura partilhada da interface em inglês; as definições de exemplo não são as predefinidas.",
+      "artwork": "Imagem promocional, não uma captura da aplicação.",
+      "logo": "Logótipo original em píxeis com transparência; preserve contornos e proporções.",
+      "title": "Pré-visualização partilhada do ecrã de título do jogo, não de uma partida em curso.",
+      "globe": "Fotograma da pré-visualização nativa em inglês no iPad; píxeis inalterados."
+    },
+    "usage": "Para publicações sobre este produto. Preserve nomes, proporções e contexto; dê crédito à lazyapps e inclua o site do produto. Conteúdos e marcas de terceiros mantêm os respetivos direitos; este kit não autoriza a reutilização separada. Contacte-nos para outros usos.",
+    "links": {
+      "download": "Transferência / versões",
+      "source": "Código-fonte",
+      "beta": "Beta iPhone no TestFlight",
+      "play": "Jogar no navegador"
+    }
+  },
+  "it": {
+    "name": "Italiano",
+    "headings": [
+      "Kit stampa",
+      "Sito del prodotto",
+      "Kit stampa",
+      "Piattaforma",
+      "Disponibilità",
+      "Contatto stampa",
+      "Informazioni sull’app",
+      "Link ufficiali",
+      "Immagini",
+      "Uso dei materiali"
+    ],
+    "labels": {
+      "icon": "Icona dell’app",
+      "screenshot": "Schermata",
+      "artwork": "Immagine per i social",
+      "logo": "Logotipo"
+    },
+    "availability": {
+      "store": "Disponibile sull’App Store",
+      "mac": "Download per macOS",
+      "beta": "Download per Mac · beta iPhone su TestFlight",
+      "web": "Gioca nel browser · iOS in arrivo"
+    },
+    "notes": {
+      "icon": "Icona nativa originale, PNG 1024 × 1024. Grafica, proporzioni e trasparenza preservate.",
+      "native": "Anteprima dell’interfaccia nativa in questa lingua; pixel invariati.",
+      "sharedEnglish": "Schermata nativa condivisa delle impostazioni in inglese del 10 ottobre 2026, con la mappa dei tasti delle app della versione Debug attuale. Il titolo mostra Dev; le assegnazioni sono esempi.",
+      "artwork": "Immagine promozionale, non una schermata dell’app.",
+      "logo": "Logotipo originale in pixel con trasparenza; conserva bordi e proporzioni.",
+      "title": "Anteprima condivisa della schermata del titolo del gioco, non di una partita in corso.",
+      "globe": "Fotogramma dell’anteprima nativa inglese su iPad; pixel invariati."
+    },
+    "usage": "Per articoli dedicati a questo prodotto. Mantieni nomi, proporzioni e contesto; cita lazyapps e collega il sito del prodotto. I contenuti e i marchi di terzi conservano i rispettivi diritti; questo kit non ne autorizza il riutilizzo separato. Contattaci per altri usi.",
+    "links": {
+      "download": "Download / versioni",
+      "source": "Codice sorgente",
+      "beta": "Beta iPhone su TestFlight",
+      "play": "Gioca nel browser"
+    }
+  },
+  "ja": {
+    "name": "日本語",
+    "headings": [
+      "プレスキット",
+      "製品サイト",
+      "プレスキット",
+      "対応環境",
+      "提供状況",
+      "メディアお問い合わせ",
+      "アプリについて",
+      "公式リンク",
+      "画像素材",
+      "素材の使用について"
+    ],
+    "labels": {
+      "icon": "アプリアイコン",
+      "screenshot": "スクリーンショット",
+      "artwork": "SNS共有画像",
+      "logo": "ワードマーク"
+    },
+    "availability": {
+      "store": "App Store で公開中",
+      "mac": "macOS 向けダウンロード",
+      "beta": "Mac 向けダウンロード · iPhone TestFlight ベータ版",
+      "web": "ブラウザでプレイ可能 · iOS 版は近日公開"
+    },
+    "notes": {
+      "icon": "原版の App アイコン。1024 × 1024 PNG。図柄・比率・透明部分を保持。",
+      "native": "この言語のネイティブ画面プレビュー。ピクセルの変更はありません。",
+      "sharedEnglish": "2026年10月10日に撮影した共通の英語設定画面。現在のDebug版のアプリキーマップ設定を表示しています。ウィンドウタイトルにDevと記載され、アプリの割り当ては例です。",
+      "artwork": "宣伝用画像であり、アプリ画面のスクリーンショットではありません。",
+      "logo": "元の透過ピクセルワードマーク。輪郭と縦横比を保持してください。",
+      "title": "共通のゲームタイトル画面プレビュー。プレイ中の画面ではありません。",
+      "globe": "英語のネイティブ iPad プレビューから抽出したフレーム。ピクセルの変更はありません。",
+      "sharedEnglishCapture": "共通の英語画面スクリーンショット。中国語の例文と英語学習ノートを表示しています。元のピクセルは変更していません。"
+    },
+    "usage": "本製品を紹介する報道にご利用ください。名称、比率、製品の文脈を保持し、lazyapps のクレジットと製品サイトへのリンクを掲載してください。第三者のコンテンツや商標の権利は各権利者に帰属し、このキットはそれらの単独利用を許諾しません。他の用途はお問い合わせください。",
+    "links": {
+      "download": "ダウンロード / リリース",
+      "source": "ソースコード",
+      "beta": "iPhone TestFlight ベータ版",
+      "play": "ブラウザでプレイ"
+    }
+  },
+  "ko": {
+    "name": "한국어",
+    "headings": [
+      "프레스 키트",
+      "제품 웹사이트",
+      "프레스 키트",
+      "플랫폼",
+      "제공 상태",
+      "언론 문의",
+      "앱 소개",
+      "공식 링크",
+      "이미지 자료",
+      "자료 사용 안내"
+    ],
+    "labels": {
+      "icon": "앱 아이콘",
+      "screenshot": "스크린샷",
+      "artwork": "소셜 공유 이미지",
+      "logo": "워드마크"
+    },
+    "availability": {
+      "store": "App Store에서 제공 중",
+      "mac": "macOS 다운로드",
+      "beta": "Mac 다운로드 · iPhone TestFlight 베타",
+      "web": "브라우저에서 플레이 · iOS 출시 예정"
+    },
+    "notes": {
+      "icon": "원본 앱 아이콘, 1024 × 1024 PNG. 원본 그림, 비율, 투명 영역 유지.",
+      "native": "해당 언어의 네이티브 화면 미리보기이며 픽셀을 변경하지 않았습니다.",
+      "sharedEnglish": "2026년 10월 10일 촬영한 공통 영어 설정 화면으로, 현재 Debug 버전의 앱 키 맵 설정을 보여 줍니다. 창 제목에 Dev가 표시되며 앱 배정은 예시입니다.",
+      "artwork": "홍보 이미지로 앱 화면 스크린샷이 아닙니다.",
+      "logo": "원본 투명 픽셀 워드마크입니다. 픽셀 가장자리와 비율을 유지하세요.",
+      "title": "공통 게임 제목 화면 미리보기이며 실제 플레이 화면이 아닙니다.",
+      "globe": "영어 네이티브 iPad 미리보기에서 추출한 프레임으로 픽셀을 변경하지 않았습니다.",
+      "sharedEnglishCapture": "공유 영어 인터페이스 스크린샷으로, 중국어 예문과 영어 학습 노트를 보여 줍니다. 원본 픽셀은 변경하지 않았습니다."
+    },
+    "usage": "이 제품을 소개하는 보도에 사용하세요. 이름, 비율, 제품 맥락을 유지하고 lazyapps를 명시하며 제품 웹사이트를 링크하세요. 제3자 콘텐츠와 상표의 권리는 각 권리자에게 있으며 이 키트는 별도 재사용을 허용하지 않습니다. 다른 용도는 문의해 주세요.",
+    "links": {
+      "download": "다운로드 / 릴리스",
+      "source": "소스 코드",
+      "beta": "iPhone TestFlight 베타",
+      "play": "브라우저에서 플레이"
+    }
+  },
+  "ar": {
+    "name": "العربية",
+    "headings": [
+      "ملف صحفي",
+      "موقع المنتج",
+      "الملف الصحفي",
+      "المنصة",
+      "التوفر",
+      "التواصل الصحفي",
+      "حول التطبيق",
+      "روابط رسمية",
+      "الصور",
+      "استخدام المواد"
+    ],
+    "labels": {
+      "icon": "أيقونة التطبيق",
+      "screenshot": "لقطة شاشة",
+      "artwork": "صورة للمشاركة الاجتماعية",
+      "logo": "شعار نصي"
+    },
+    "availability": {
+      "store": "متوفر في App Store",
+      "mac": "تنزيل لنظام macOS",
+      "beta": "تنزيل Mac · نسخة iPhone التجريبية عبر TestFlight",
+      "web": "العب في المتصفح · إصدار iOS قريبًا"
+    },
+    "notes": {
+      "icon": "أيقونة التطبيق الأصلية بصيغة PNG بحجم 1024 × 1024. حُفظ الرسم والنسب والشفافية.",
+      "native": "معاينة للواجهة الأصلية بهذه اللغة دون تغيير البكسلات.",
+      "sharedEnglish": "لقطة مشتركة للواجهة الإنجليزية؛ إعدادات المثال ليست الإعدادات الافتراضية.",
+      "artwork": "صورة ترويجية وليست لقطة لواجهة التطبيق.",
+      "logo": "الشعار النصي الأصلي الشفاف بالبكسلات؛ حافظ على الحواف والنسب.",
+      "title": "معاينة مشتركة لشاشة عنوان اللعبة وليست لقطة أثناء اللعب.",
+      "globe": "إطار من معاينة iPad الأصلية بالإنجليزية دون تغيير البكسلات.",
+      "sharedEnglishCapture": "لقطة مشتركة للواجهة الإنجليزية تعرض كتابة صينية نموذجية وملاحظات لتعلّم الإنجليزية؛ البكسلات الأصلية دون تغيير."
+    },
+    "usage": "للتغطية الصحفية لهذا المنتج. حافظ على الأسماء والنسب والسياق، وانسب المواد إلى lazyapps واربط بموقع المنتج. تحتفظ محتويات وعلامات الأطراف الأخرى بحقوقها؛ لا يمنح هذا الملف إذنًا بإعادة استخدامها منفردة. تواصل معنا للاستخدامات الأخرى.",
+    "links": {
+      "download": "تنزيل / إصدارات",
+      "source": "الشيفرة المصدرية",
+      "beta": "نسخة iPhone التجريبية عبر TestFlight",
+      "play": "العب في المتصفح"
+    }
+  },
+  "id": {
+    "name": "Bahasa Indonesia",
+    "headings": [
+      "Kit pers",
+      "Situs produk",
+      "Kit pers",
+      "Platform",
+      "Ketersediaan",
+      "Kontak pers",
+      "Tentang aplikasi",
+      "Tautan resmi",
+      "Gambar",
+      "Penggunaan materi"
+    ],
+    "labels": {
+      "icon": "Ikon aplikasi",
+      "screenshot": "Tangkapan layar",
+      "artwork": "Gambar berbagi sosial",
+      "logo": "Logo teks"
+    },
+    "availability": {
+      "store": "Tersedia di App Store",
+      "mac": "Unduh untuk macOS",
+      "beta": "Unduhan Mac · beta iPhone melalui TestFlight",
+      "web": "Main di browser · iOS segera hadir"
+    },
+    "notes": {
+      "icon": "Ikon aplikasi asli, PNG 1024 × 1024. Gambar, proporsi, dan transparansi dipertahankan.",
+      "native": "Pratinjau antarmuka asli dalam bahasa ini; piksel tidak diubah.",
+      "sharedEnglish": "Tangkapan layar antarmuka Inggris yang digunakan bersama; pengaturan contoh bukan pengaturan bawaan.",
+      "artwork": "Gambar promosi, bukan tangkapan layar aplikasi.",
+      "logo": "Logo teks piksel transparan asli; pertahankan tepi dan proporsinya.",
+      "title": "Pratinjau layar judul game yang digunakan bersama, bukan permainan aktif.",
+      "globe": "Bingkai dari pratinjau asli iPad berbahasa Inggris; piksel tidak diubah."
+    },
+    "usage": "Untuk liputan tentang produk ini. Pertahankan nama, proporsi, dan konteks; cantumkan lazyapps dan tautkan situs produk. Konten dan merek pihak ketiga tetap memiliki hak masing-masing; kit ini tidak memberi izin penggunaan ulang secara terpisah. Hubungi kami untuk penggunaan lain.",
+    "links": {
+      "download": "Unduhan / rilis",
+      "source": "Kode sumber",
+      "beta": "Beta iPhone melalui TestFlight",
+      "play": "Main di browser"
+    }
+  },
+  "nl": {
+    "name": "Nederlands",
+    "headings": [
+      "Perskit",
+      "Productwebsite",
+      "Perskit",
+      "Platform",
+      "Beschikbaarheid",
+      "Perscontact",
+      "Over de app",
+      "Officiële links",
+      "Afbeeldingen",
+      "Gebruik van het materiaal"
+    ],
+    "labels": {
+      "icon": "App-icoon",
+      "screenshot": "Schermafbeelding",
+      "artwork": "Afbeelding voor sociale media",
+      "logo": "Woordmerk"
+    },
+    "availability": {
+      "store": "Beschikbaar in de App Store",
+      "mac": "Download voor macOS",
+      "beta": "Mac-download · iPhone-TestFlight-bèta",
+      "web": "Speel in de browser · iOS volgt"
+    },
+    "notes": {
+      "icon": "Origineel app-icoon, 1024 × 1024 PNG. Ontwerp, verhoudingen en transparantie behouden.",
+      "native": "Voorbeeld van de native interface in deze taal; pixels ongewijzigd.",
+      "sharedEnglish": "Gedeelde schermafbeelding van de Engelse interface; voorbeeldinstellingen zijn geen standaardinstellingen.",
+      "artwork": "Promotiebeeld, geen schermafbeelding van de app.",
+      "logo": "Origineel transparant pixelwoordmerk; behoud pixelranden en verhoudingen.",
+      "title": "Gedeeld voorbeeld van het titelscherm van het spel, geen actieve gameplay.",
+      "globe": "Beeld uit de Engelse native iPad-preview; pixels ongewijzigd."
+    },
+    "usage": "Voor redactionele berichtgeving over dit product. Behoud namen, verhoudingen en context; vermeld lazyapps en link naar de productwebsite. Inhoud en merken van derden behouden hun rechten; deze kit geeft geen toestemming voor afzonderlijk hergebruik. Neem contact op voor ander gebruik.",
+    "links": {
+      "download": "Download / versies",
+      "source": "Broncode",
+      "beta": "iPhone-TestFlight-bèta",
+      "play": "Speel in de browser"
+    }
+  },
+  "tr": {
+    "name": "Türkçe",
+    "headings": [
+      "Basın kiti",
+      "Ürün sitesi",
+      "Basın kiti",
+      "Platform",
+      "Kullanılabilirlik",
+      "Basın iletişimi",
+      "Uygulama hakkında",
+      "Resmî bağlantılar",
+      "Görseller",
+      "Materyallerin kullanımı"
+    ],
+    "labels": {
+      "icon": "Uygulama simgesi",
+      "screenshot": "Ekran görüntüsü",
+      "artwork": "Sosyal paylaşım görseli",
+      "logo": "Yazı logosu"
+    },
+    "availability": {
+      "store": "App Store’da mevcut",
+      "mac": "macOS için indir",
+      "beta": "Mac indirme · iPhone TestFlight beta",
+      "web": "Tarayıcıda oyna · iOS yakında"
+    },
+    "notes": {
+      "icon": "Orijinal uygulama simgesi, 1024 × 1024 PNG. Görsel, oranlar ve saydamlık korunmuştur.",
+      "native": "Bu dildeki özgün arayüz önizlemesi; pikseller değiştirilmemiştir.",
+      "sharedEnglish": "Ortak İngilizce arayüz ekran görüntüsü; örnek ayarlar varsayılan ayarlar değildir.",
+      "artwork": "Tanıtım görselidir, uygulama ekran görüntüsü değildir.",
+      "logo": "Özgün şeffaf piksel yazı logosu; kenarları ve oranları koruyun.",
+      "title": "Ortak oyun başlık ekranı önizlemesidir, aktif oynanış değildir.",
+      "globe": "İngilizce özgün iPad önizlemesinden bir kare; pikseller değiştirilmemiştir."
+    },
+    "usage": "Bu ürün hakkındaki haberler için sağlanır. Adları, oranları ve bağlamı koruyun; lazyapps’e atıf yapın ve ürün sitesine bağlantı verin. Üçüncü taraf içerik ve markaları kendi haklarını korur; bu kit ayrı yeniden kullanım izni vermez. Diğer kullanımlar için iletişime geçin.",
+    "links": {
+      "download": "İndirme / sürümler",
+      "source": "Kaynak kodu",
+      "beta": "iPhone TestFlight beta",
+      "play": "Tarayıcıda oyna"
+    }
+  },
+  "ru": {
+    "name": "Русский",
+    "headings": [
+      "Пресс-кит",
+      "Сайт продукта",
+      "Пресс-кит",
+      "Платформа",
+      "Доступность",
+      "Контакт для прессы",
+      "О приложении",
+      "Официальные ссылки",
+      "Изображения",
+      "Использование материалов"
+    ],
+    "labels": {
+      "icon": "Значок приложения",
+      "screenshot": "Снимок экрана",
+      "artwork": "Изображение для соцсетей",
+      "logo": "Текстовый логотип"
+    },
+    "availability": {
+      "store": "Доступно в App Store",
+      "mac": "Скачать для macOS",
+      "beta": "Загрузка для Mac · бета iPhone в TestFlight",
+      "web": "Играйте в браузере · iOS скоро"
+    },
+    "notes": {
+      "icon": "Оригинальная иконка приложения, PNG 1024 × 1024. Рисунок, пропорции и прозрачность сохранены.",
+      "native": "Предпросмотр нативного интерфейса на этом языке; пиксели не изменены.",
+      "sharedEnglish": "Общий снимок английского интерфейса; настройки в примере не являются настройками по умолчанию.",
+      "artwork": "Рекламное изображение, а не снимок экрана приложения.",
+      "logo": "Оригинальный прозрачный пиксельный логотип; сохраняйте границы пикселей и пропорции.",
+      "title": "Общий предпросмотр титульного экрана игры, а не активного игрового процесса.",
+      "globe": "Кадр английского нативного предпросмотра на iPad; пиксели не изменены.",
+      "sharedEnglishCapture": "Общий снимок английского интерфейса с примерами китайского текста и заметками для изучения английского; исходные пиксели не изменены."
+    },
+    "usage": "Для публикаций об этом продукте. Сохраняйте названия, пропорции и контекст; укажите lazyapps и ссылку на сайт продукта. Права на контент и товарные знаки третьих лиц сохраняются; этот комплект не разрешает их отдельное использование. Для других целей свяжитесь с нами.",
+    "links": {
+      "download": "Загрузка / версии",
+      "source": "Исходный код",
+      "beta": "Бета iPhone в TestFlight",
+      "play": "Играть в браузере"
+    }
+  },
+  "hi": {
+    "name": "हिन्दी",
+    "headings": [
+      "प्रेस किट",
+      "उत्पाद वेबसाइट",
+      "प्रेस किट",
+      "प्लैटफ़ॉर्म",
+      "उपलब्धता",
+      "प्रेस संपर्क",
+      "ऐप के बारे में",
+      "आधिकारिक लिंक",
+      "चित्र",
+      "सामग्री का उपयोग"
+    ],
+    "labels": {
+      "icon": "ऐप आइकन",
+      "screenshot": "स्क्रीनशॉट",
+      "artwork": "सोशल शेयरिंग चित्र",
+      "logo": "शब्दचिह्न"
+    },
+    "availability": {
+      "store": "App Store पर उपलब्ध",
+      "mac": "macOS के लिए डाउनलोड",
+      "beta": "Mac डाउनलोड · iPhone TestFlight बीटा",
+      "web": "ब्राउज़र में खेलें · iOS जल्द आ रहा है"
+    },
+    "notes": {
+      "icon": "मूल ऐप आइकन, 1024 × 1024 PNG। मूल चित्र, अनुपात और पारदर्शिता सुरक्षित हैं।",
+      "native": "इस भाषा में मूल ऐप इंटरफ़ेस का पूर्वावलोकन; पिक्सेल बदले नहीं गए हैं।",
+      "sharedEnglish": "साझा अंग्रेज़ी इंटरफ़ेस का स्क्रीनशॉट; उदाहरण की सेटिंग डिफ़ॉल्ट सेटिंग नहीं है।",
+      "artwork": "प्रचार चित्र है, ऐप का स्क्रीनशॉट नहीं।",
+      "logo": "मूल पारदर्शी पिक्सेल शब्दचिह्न; किनारे और अनुपात बनाए रखें।",
+      "title": "साझा गेम शीर्षक स्क्रीन का पूर्वावलोकन; सक्रिय गेमप्ले नहीं।",
+      "globe": "अंग्रेज़ी मूल iPad पूर्वावलोकन का फ़्रेम; पिक्सेल नहीं बदले गए हैं।",
+      "sharedEnglishCapture": "साझा अंग्रेज़ी इंटरफ़ेस का स्क्रीनशॉट, जिसमें उदाहरण के तौर पर चीनी लेखन और अंग्रेज़ी सीखने के नोट्स हैं; मूल पिक्सेल अपरिवर्तित हैं।"
+    },
+    "usage": "इस उत्पाद की समाचार कवरेज के लिए। नाम, अनुपात और संदर्भ बनाए रखें; lazyapps को श्रेय दें और उत्पाद वेबसाइट का लिंक जोड़ें। तृतीय पक्ष की सामग्री और ट्रेडमार्क के अधिकार उनके पास रहते हैं; यह किट उन्हें अलग से दोबारा इस्तेमाल करने की अनुमति नहीं देती। अन्य उपयोगों के लिए संपर्क करें।",
+    "links": {
+      "download": "डाउनलोड / रिलीज़",
+      "source": "स्रोत कोड",
+      "beta": "iPhone TestFlight बीटा",
+      "play": "ब्राउज़र में खेलें"
+    }
+  }
+}

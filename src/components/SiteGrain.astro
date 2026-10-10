@@ -1,0 +1,7 @@
+---
+interface Props {
+  animated?: boolean;
+}
+const { animated = false } = Astro.props;
+---
+<div class="grain" data-grain-animate={animated ? 'true' : undefined} aria-hidden="true"></div>

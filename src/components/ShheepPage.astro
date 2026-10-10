@@ -3,10 +3,13 @@ import SocialMeta from './SocialMeta.astro';
 import StructuredData from './StructuredData.astro';
 // App Store launch: restore the native app metadata and download badge below.
 // import SoftwareApplication from './SoftwareApplication.astro';
+import SiteGrain from './SiteGrain.astro';
 import SiteFooterBase from './SiteFooterBase.astro';
 import ShheepGame from './ShheepGame.astro';
 import ShheepStoreBadge from './ShheepStoreBadge.astro';
 import LanguagePicker from './LanguagePicker.astro';
+import appIconUrl from '$assets/img/shheep-icon.png?url';
+import SiteHeader from './SiteHeader.astro';
 import { SHHEEP_LOCALES } from '../i18n/shheep-locales.mjs';
 import chromiumLicense from '../../public/shheep/assets/CHROMIUM-LICENSE.txt?raw';
 import silkscreenLicense from '../../public/shheep/assets/fonts/OFL.txt?raw';
@@ -61,7 +64,7 @@ const fontNotices = [
     image: 'https://lazyapps.com/shheep/opengraph.png',
     publisher: { '@type': 'Organization', name: 'lazyapps', url: 'https://lazyapps.com/' },
   }} />
-  <link rel="icon" type="image/png" href={`${art}sheep_run1.png`}>
+  <link rel="icon" type="image/png" href={appIconUrl}>
   <link rel="stylesheet" href={siteCssUrl}>
   <script is:inline>
     document.documentElement.classList.remove('no-js');
@@ -76,7 +79,7 @@ const fontNotices = [
 </head>
 <body>
   <a class="skip-link" href="#how-to-play">{t.skip}</a>
-  <div class="grain" aria-hidden="true"></div>
+  <SiteGrain />
   <div data-load-wrap class="loader" id="loader" aria-hidden="true">
     <div data-load-bg class="loader__bg"><div data-load-progress class="loader__bg-bar"></div></div>
     <div data-load-container class="loader__container">
@@ -86,13 +89,13 @@ const fontNotices = [
       </div>
     </div>
   </div>
-  <main>
-    <section class="phero wrap" aria-labelledby="shheep-title">
-      <div class="topbar">
-        <nav class="mono topbar__nav" aria-label={t.home}><a href="/" class="topbar__home" aria-label={t.home}><span aria-hidden="true" class="topbar__home-dot"></span></a></nav>
-        <div class="topbar__app"><img src={`${art}sheep_run1.png`} width="47" height="40" alt=""><span class="dsp" lang="en">Shheep</span></div>
+  <SiteHeader class="wrap" name="Shheep" icon={appIconUrl} homeLabel={t.home}>
         <LanguagePicker label={t.chooseLanguage} current={t.selectedUrl} storageKey="shheep.locale" options={locales.map(locale => ({ language: locale.htmlLang, url: locale.selectedUrl, label: locale.localeNow }))} />
-      </div>
+      </SiteHeader>
+
+<main>
+    <section class="phero wrap" aria-labelledby="shheep-title">
+
       <h1 class="phero__h1 dsp" id="shheep-title"><span class="sr-only">Shheep — </span>{t.headline[0]}<br>{t.headline[1]}</h1>
       <div class="phero__intro"><p class="phero__sub">{t.sub}</p><a class="mono hero-how" href="#how-to-play">{t.howTo} ↘</a></div>
       <ShheepGame language={t.htmlLang} />
@@ -128,7 +131,6 @@ const fontNotices = [
     </section>
 
     <section class="details wrap" aria-labelledby="details-title">
-      <p class="mono">{t.smallEnough}</p>
       <h2 class="dsp" id="details-title">{t.detailsTitle}</h2>
       <dl class="details__grid">
         {t.details.map(([heading, body]) => <div><dt>{heading}</dt><dd>{body}</dd></div>)}
@@ -138,7 +140,6 @@ const fontNotices = [
   <footer class="wrap shheep-footer">
     <section class="next">
       <img class="footer-sheep" src={`${art}sheep_blink.png`} width="47" height="40" loading="lazy" alt={t.sheepAlt}>
-      <h2 class="next__q dsp">{t.closing[0]}<br>{t.closing[1]}</h2>
       <div class="next__act"><a href="#shheep-title" class="button-023 button-023--square">
         <span class="button-023__bg"><span style="--index:0" class="button-023__bg-inner is--first"></span><span style="--index:1" class="button-023__bg-inner is--second"></span></span>
         <span class="button-023__inner"><span class="button-023__text is--first">{t.back} ↑</span><span aria-hidden="true" class="button-023__text is--second">{t.back} ↑</span></span>
@@ -156,7 +157,7 @@ const fontNotices = [
       </div>
       <noscript><p class="footer-credits">{t.licenses}: <a href="/shheep/assets/CHROMIUM-LICENSE.txt">Chromium</a>{fontNotices.map(font => <Fragment> · <a href={font.href}>{font.name}</a></Fragment>)}</p></noscript>
     </section>
-    <SiteFooterBase locale={t.htmlLang} />
+    <SiteFooterBase locale={t.htmlLang} pressKit="/shheep/presskit/" />
   </footer>
   <script is:inline>
     document.getElementById('licenses-toggle').addEventListener('click', (event) => {
@@ -182,8 +183,6 @@ const fontNotices = [
   .skip-link{position:fixed;top:12px;left:12px;z-index:1000;padding:12px 18px;background:var(--ink);color:var(--paper);border-radius:8px;transform:translateY(calc(-100% - 24px))}
   .skip-link:focus{transform:translateY(0)}
   .phero{padding-top:clamp(8px,1.5vw,18px)}
-  .phero .topbar__app img{image-rendering:pixelated;object-fit:contain}
-  .phero .topbar__app .dsp{font-size:30px}
   .hero-how{flex-shrink:0;white-space:nowrap;font-size:10px;min-height:44px;display:inline-flex;align-items:center}
   .phero__intro{display:flex;align-items:center;justify-content:center;gap:18px;margin-top:22px}
   .phero__h1{margin:clamp(28px,4vw,56px) auto 0;font-size:clamp(48px,7.3vw,104px);text-align:center;max-width:100%;overflow-wrap:anywhere;text-wrap:balance}

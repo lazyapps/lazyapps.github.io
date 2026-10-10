@@ -4,23 +4,25 @@ interface Props {
   current: string;
   options: { language: string; url: string; label: string; storageValue?: string }[];
   storageKey?: string;
+  mode?: 'navigate' | 'hash';
 }
-const { label, current, options, storageKey } = Astro.props;
+const { label, current, options, storageKey, mode = 'navigate' } = Astro.props;
 const active = options.find(option => option.url === current)!;
 const shortLabels: Record<string, string> = { 'zh-Hans': '简', 'zh-Hant': '繁' };
 const short = shortLabels[active.language] ?? active.language.split('-')[0].toUpperCase();
 ---
-<div class="locale">
+<div class="locale" hidden={mode === 'hash'}>
   <svg class="locale__globe" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20Z" stroke="currentColor"/><path d="M12 22c2.2 0 4-4.5 4-10S14.2 2 12 2 8 6.5 8 12s1.8 10 4 10ZM2 12h20M4 6c5.3 2.2 10.7 2.2 16 0M4 18c5.3-2.2 10.7-2.2 16 0" stroke="currentColor"/></svg>
   <span class="locale__now" aria-hidden="true">{active.label}</span>
   <span class="locale__short" aria-hidden="true">{short}</span>
   <svg class="locale__chev" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m5 9 7 7 7-7" stroke="currentColor"/></svg>
-  <select name="locale" data-locale-picker data-storage-key={storageKey} aria-label={label}>
+  <select name="locale" data-locale-picker data-locale-mode={mode} data-storage-key={storageKey} aria-label={label}>
     {options.map(option => <option value={option.url} data-locale={option.storageValue ?? option.language} lang={option.language} dir="auto" selected={option.url === current}>{option.label}</option>)}
   </select>
 </div>
 <script>
   document.querySelectorAll<HTMLSelectElement>('[data-locale-picker]').forEach(select => {
+    if (select.dataset.localeMode === 'hash') return;
     select.addEventListener('change', () => {
       const option = select.selectedOptions[0];
       if (select.dataset.storageKey) {
@@ -31,7 +33,8 @@ const short = shortLabels[active.language] ?? active.language.split('-')[0].toUp
   });
 </script>
 <style>
-  .locale{position:relative;justify-self:end;display:flex;align-items:center;gap:.4em;min-width:0;color:var(--muted)}
+  .locale{position:relative;justify-self:end;display:flex;align-items:center;justify-content:flex-end;gap:.4em;min-width:48px;padding-inline-end:8px;color:var(--muted)}
+  .locale[hidden]{display:none}
   .locale__globe{width:17px;height:17px;color:var(--ink);flex:none}
   .locale__chev{width:12px;height:12px;flex:none;opacity:.65}
   .locale__now,.locale__short{color:var(--ink);font:400 .75rem/1.4 var(--sans);letter-spacing:0;white-space:nowrap}

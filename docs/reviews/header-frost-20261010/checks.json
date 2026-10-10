@@ -1,0 +1,22 @@
+{
+  "top": {
+    "background": "color(srgb 0.972549 0.972549 0.964706 / 0.78)",
+    "blur": "blur(16px)",
+    "border": "0px",
+    "sun": true,
+    "y": 0,
+    "z": "1100"
+  },
+  "scrolled": {
+    "background": "color(srgb 0.972549 0.972549 0.964706 / 0.78)",
+    "blur": "blur(16px)",
+    "top": 0,
+    "y": 1666,
+    "z": "1100"
+  },
+  "mobile": {
+    "blur": "blur(16px)",
+    "overflow": false,
+    "width": 390
+  }
+}

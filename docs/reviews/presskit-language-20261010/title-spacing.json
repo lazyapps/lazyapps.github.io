@@ -1,0 +1,941 @@
+{
+  "before": [
+    {
+      "children": [
+        {
+          "fontSize": "192px",
+          "lineHeight": "157.44px",
+          "text": "lazyapps "
+        },
+        {
+          "fontSize": "192px",
+          "lineHeight": "157.44px",
+          "text": "Press"
+        },
+        {
+          "fontSize": "192px",
+          "lineHeight": "157.44px",
+          "text": ""
+        },
+        {
+          "fontSize": "192px",
+          "lineHeight": "157.44px",
+          "text": "Kits"
+        },
+        {
+          "fontSize": "192px",
+          "lineHeight": "157.44px",
+          "text": "."
+        }
+      ],
+      "height": 314.875,
+      "language": "en",
+      "lineHeight": "157.44px"
+    },
+    {
+      "children": [
+        {
+          "fontSize": "102.4px",
+          "lineHeight": "107.52px",
+          "text": "lazyapps "
+        },
+        {
+          "fontSize": "102.4px",
+          "lineHeight": "189.44px",
+          "text": "媒体"
+        },
+        {
+          "fontSize": "102.4px",
+          "lineHeight": "189.44px",
+          "text": ""
+        },
+        {
+          "fontSize": "102.4px",
+          "lineHeight": "189.44px",
+          "text": "资料"
+        },
+        {
+          "fontSize": "102.4px",
+          "lineHeight": "189.44px",
+          "text": "."
+        }
+      ],
+      "height": 378.859375,
+      "language": "zh-Hans",
+      "lineHeight": "107.52px"
+    },
+    {
+      "children": [
+        {
+          "fontSize": "102.4px",
+          "lineHeight": "107.52px",
+          "text": "lazyapps "
+        },
+        {
+          "fontSize": "102.4px",
+          "lineHeight": "189.44px",
+          "text": "媒體"
+        },
+        {
+          "fontSize": "102.4px",
+          "lineHeight": "189.44px",
+          "text": ""
+        },
+        {
+          "fontSize": "102.4px",
+          "lineHeight": "189.44px",
+          "text": "資料"
+        },
+        {
+          "fontSize": "102.4px",
+          "lineHeight": "189.44px",
+          "text": "."
+        }
+      ],
+      "height": 378.859375,
+      "language": "zh-Hant",
+      "lineHeight": "107.52px"
+    },
+    {
+      "children": [
+        {
+          "fontSize": "102.4px",
+          "lineHeight": "107.52px",
+          "text": "lazyapps "
+        },
+        {
+          "fontSize": "102.4px",
+          "lineHeight": "189.44px",
+          "text": "プレス"
+        },
+        {
+          "fontSize": "102.4px",
+          "lineHeight": "189.44px",
+          "text": ""
+        },
+        {
+          "fontSize": "102.4px",
+          "lineHeight": "189.44px",
+          "text": "キット"
+        },
+        {
+          "fontSize": "102.4px",
+          "lineHeight": "189.44px",
+          "text": "."
+        }
+      ],
+      "height": 378.859375,
+      "language": "ja",
+      "lineHeight": "107.52px"
+    },
+    {
+      "children": [
+        {
+          "fontSize": "102.4px",
+          "lineHeight": "107.52px",
+          "text": "lazyapps "
+        },
+        {
+          "fontSize": "102.4px",
+          "lineHeight": "189.44px",
+          "text": "프레스"
+        },
+        {
+          "fontSize": "102.4px",
+          "lineHeight": "189.44px",
+          "text": ""
+        },
+        {
+          "fontSize": "102.4px",
+          "lineHeight": "189.44px",
+          "text": "키트"
+        },
+        {
+          "fontSize": "102.4px",
+          "lineHeight": "189.44px",
+          "text": "."
+        }
+      ],
+      "height": 378.859375,
+      "language": "ko",
+      "lineHeight": "107.52px"
+    },
+    {
+      "children": [
+        {
+          "fontSize": "102.4px",
+          "lineHeight": "107.52px",
+          "text": "lazyapps "
+        },
+        {
+          "fontSize": "102.4px",
+          "lineHeight": "184.32px",
+          "text": "ملفات"
+        },
+        {
+          "fontSize": "102.4px",
+          "lineHeight": "184.32px",
+          "text": ""
+        },
+        {
+          "fontSize": "102.4px",
+          "lineHeight": "184.32px",
+          "text": "صحفية"
+        },
+        {
+          "fontSize": "102.4px",
+          "lineHeight": "184.32px",
+          "text": "."
+        }
+      ],
+      "height": 368.625,
+      "language": "ar",
+      "lineHeight": "107.52px"
+    },
+    {
+      "children": [
+        {
+          "fontSize": "102.4px",
+          "lineHeight": "107.52px",
+          "text": "lazyapps "
+        },
+        {
+          "fontSize": "102.4px",
+          "lineHeight": "184.32px",
+          "text": "प्रेस"
+        },
+        {
+          "fontSize": "102.4px",
+          "lineHeight": "184.32px",
+          "text": ""
+        },
+        {
+          "fontSize": "102.4px",
+          "lineHeight": "184.32px",
+          "text": "किट"
+        },
+        {
+          "fontSize": "102.4px",
+          "lineHeight": "184.32px",
+          "text": "."
+        }
+      ],
+      "height": 368.625,
+      "language": "hi",
+      "lineHeight": "107.52px"
+    }
+  ],
+  "after": [
+    {
+      "children": [
+        {
+          "fontSize": "192px",
+          "lineHeight": "157.44px",
+          "text": "lazyapps "
+        },
+        {
+          "fontSize": "192px",
+          "lineHeight": "157.44px",
+          "text": "Press"
+        },
+        {
+          "fontSize": "192px",
+          "lineHeight": "157.44px",
+          "text": ""
+        },
+        {
+          "fontSize": "192px",
+          "lineHeight": "157.44px",
+          "text": "Kits"
+        },
+        {
+          "fontSize": "192px",
+          "lineHeight": "157.44px",
+          "text": "."
+        }
+      ],
+      "height": 314.875,
+      "language": "en",
+      "lineHeight": "157.44px",
+      "overflow": false
+    },
+    {
+      "children": [
+        {
+          "fontSize": "102.4px",
+          "lineHeight": "107.52px",
+          "text": "lazyapps "
+        },
+        {
+          "fontSize": "102.4px",
+          "lineHeight": "107.52px",
+          "text": "媒体"
+        },
+        {
+          "fontSize": "102.4px",
+          "lineHeight": "107.52px",
+          "text": ""
+        },
+        {
+          "fontSize": "102.4px",
+          "lineHeight": "107.52px",
+          "text": "资料"
+        },
+        {
+          "fontSize": "102.4px",
+          "lineHeight": "107.52px",
+          "text": "."
+        }
+      ],
+      "height": 215.03125,
+      "language": "zh-Hans",
+      "lineHeight": "107.52px",
+      "overflow": false
+    },
+    {
+      "children": [
+        {
+          "fontSize": "102.4px",
+          "lineHeight": "107.52px",
+          "text": "lazyapps "
+        },
+        {
+          "fontSize": "102.4px",
+          "lineHeight": "107.52px",
+          "text": "媒體"
+        },
+        {
+          "fontSize": "102.4px",
+          "lineHeight": "107.52px",
+          "text": ""
+        },
+        {
+          "fontSize": "102.4px",
+          "lineHeight": "107.52px",
+          "text": "資料"
+        },
+        {
+          "fontSize": "102.4px",
+          "lineHeight": "107.52px",
+          "text": "."
+        }
+      ],
+      "height": 215.03125,
+      "language": "zh-Hant",
+      "lineHeight": "107.52px",
+      "overflow": false
+    },
+    {
+      "children": [
+        {
+          "fontSize": "102.4px",
+          "lineHeight": "107.52px",
+          "text": "lazyapps "
+        },
+        {
+          "fontSize": "102.4px",
+          "lineHeight": "107.52px",
+          "text": "プレス"
+        },
+        {
+          "fontSize": "102.4px",
+          "lineHeight": "107.52px",
+          "text": ""
+        },
+        {
+          "fontSize": "102.4px",
+          "lineHeight": "107.52px",
+          "text": "キット"
+        },
+        {
+          "fontSize": "102.4px",
+          "lineHeight": "107.52px",
+          "text": "."
+        }
+      ],
+      "height": 215.03125,
+      "language": "ja",
+      "lineHeight": "107.52px",
+      "overflow": false
+    },
+    {
+      "children": [
+        {
+          "fontSize": "102.4px",
+          "lineHeight": "107.52px",
+          "text": "lazyapps "
+        },
+        {
+          "fontSize": "102.4px",
+          "lineHeight": "107.52px",
+          "text": "프레스"
+        },
+        {
+          "fontSize": "102.4px",
+          "lineHeight": "107.52px",
+          "text": ""
+        },
+        {
+          "fontSize": "102.4px",
+          "lineHeight": "107.52px",
+          "text": "키트"
+        },
+        {
+          "fontSize": "102.4px",
+          "lineHeight": "107.52px",
+          "text": "."
+        }
+      ],
+      "height": 215.03125,
+      "language": "ko",
+      "lineHeight": "107.52px",
+      "overflow": false
+    },
+    {
+      "children": [
+        {
+          "fontSize": "102.4px",
+          "lineHeight": "107.52px",
+          "text": "lazyapps "
+        },
+        {
+          "fontSize": "102.4px",
+          "lineHeight": "107.52px",
+          "text": "ملفات"
+        },
+        {
+          "fontSize": "102.4px",
+          "lineHeight": "107.52px",
+          "text": ""
+        },
+        {
+          "fontSize": "102.4px",
+          "lineHeight": "107.52px",
+          "text": "صحفية"
+        },
+        {
+          "fontSize": "102.4px",
+          "lineHeight": "107.52px",
+          "text": "."
+        }
+      ],
+      "height": 215.03125,
+      "language": "ar",
+      "lineHeight": "107.52px",
+      "overflow": false
+    },
+    {
+      "children": [
+        {
+          "fontSize": "102.4px",
+          "lineHeight": "107.52px",
+          "text": "lazyapps "
+        },
+        {
+          "fontSize": "102.4px",
+          "lineHeight": "107.52px",
+          "text": "प्रेस"
+        },
+        {
+          "fontSize": "102.4px",
+          "lineHeight": "107.52px",
+          "text": ""
+        },
+        {
+          "fontSize": "102.4px",
+          "lineHeight": "107.52px",
+          "text": "किट"
+        },
+        {
+          "fontSize": "102.4px",
+          "lineHeight": "107.52px",
+          "text": "."
+        }
+      ],
+      "height": 215.03125,
+      "language": "hi",
+      "lineHeight": "107.52px",
+      "overflow": false
+    }
+  ],
+  "responsive": [
+    {
+      "children": [
+        "72.16px",
+        "72.16px",
+        "72.16px",
+        "72.16px"
+      ],
+      "language": "en",
+      "lineHeight": "72.16px",
+      "overflow": false,
+      "width": 320
+    },
+    {
+      "children": [
+        "67.2px",
+        "67.2px",
+        "67.2px",
+        "67.2px"
+      ],
+      "language": "zh-Hans",
+      "lineHeight": "67.2px",
+      "overflow": false,
+      "width": 320
+    },
+    {
+      "children": [
+        "67.2px",
+        "67.2px",
+        "67.2px",
+        "67.2px"
+      ],
+      "language": "zh-Hant",
+      "lineHeight": "67.2px",
+      "overflow": false,
+      "width": 320
+    },
+    {
+      "children": [
+        "67.2px",
+        "67.2px",
+        "67.2px",
+        "67.2px"
+      ],
+      "language": "ja",
+      "lineHeight": "67.2px",
+      "overflow": false,
+      "width": 320
+    },
+    {
+      "children": [
+        "67.2px",
+        "67.2px",
+        "67.2px",
+        "67.2px"
+      ],
+      "language": "ko",
+      "lineHeight": "67.2px",
+      "overflow": false,
+      "width": 320
+    },
+    {
+      "children": [
+        "67.2px",
+        "67.2px",
+        "67.2px",
+        "67.2px"
+      ],
+      "language": "ar",
+      "lineHeight": "67.2px",
+      "overflow": false,
+      "width": 320
+    },
+    {
+      "children": [
+        "67.2px",
+        "67.2px",
+        "67.2px",
+        "67.2px"
+      ],
+      "language": "hi",
+      "lineHeight": "67.2px",
+      "overflow": false,
+      "width": 320
+    },
+    {
+      "children": [
+        "94.464px",
+        "94.464px",
+        "94.464px",
+        "94.464px"
+      ],
+      "language": "en",
+      "lineHeight": "94.464px",
+      "overflow": false,
+      "width": 768
+    },
+    {
+      "children": [
+        "67.2px",
+        "67.2px",
+        "67.2px",
+        "67.2px"
+      ],
+      "language": "zh-Hans",
+      "lineHeight": "67.2px",
+      "overflow": false,
+      "width": 768
+    },
+    {
+      "children": [
+        "67.2px",
+        "67.2px",
+        "67.2px",
+        "67.2px"
+      ],
+      "language": "zh-Hant",
+      "lineHeight": "67.2px",
+      "overflow": false,
+      "width": 768
+    },
+    {
+      "children": [
+        "67.2px",
+        "67.2px",
+        "67.2px",
+        "67.2px"
+      ],
+      "language": "ja",
+      "lineHeight": "67.2px",
+      "overflow": false,
+      "width": 768
+    },
+    {
+      "children": [
+        "67.2px",
+        "67.2px",
+        "67.2px",
+        "67.2px"
+      ],
+      "language": "ko",
+      "lineHeight": "67.2px",
+      "overflow": false,
+      "width": 768
+    },
+    {
+      "children": [
+        "67.2px",
+        "67.2px",
+        "67.2px",
+        "67.2px"
+      ],
+      "language": "ar",
+      "lineHeight": "67.2px",
+      "overflow": false,
+      "width": 768
+    },
+    {
+      "children": [
+        "67.2px",
+        "67.2px",
+        "67.2px",
+        "67.2px"
+      ],
+      "language": "hi",
+      "lineHeight": "67.2px",
+      "overflow": false,
+      "width": 768
+    }
+  ],
+  "products": [
+    {
+      "children": [
+        "28.56px",
+        "28.56px"
+      ],
+      "language": "zh-Hant",
+      "overflow": false,
+      "subtitleLineHeight": "28.56px",
+      "title": "CHMate媒體資料.",
+      "width": 320
+    },
+    {
+      "children": [
+        "23.8px",
+        "23.8px"
+      ],
+      "language": "en",
+      "overflow": false,
+      "subtitleLineHeight": "23.8px",
+      "title": "CHMatePress Kit.",
+      "width": 320
+    },
+    {
+      "children": [
+        "28.56px",
+        "28.56px"
+      ],
+      "language": "zh-Hant",
+      "overflow": false,
+      "subtitleLineHeight": "28.56px",
+      "title": "World Book媒體資料.",
+      "width": 320
+    },
+    {
+      "children": [
+        "23.8px",
+        "23.8px"
+      ],
+      "language": "en",
+      "overflow": false,
+      "subtitleLineHeight": "23.8px",
+      "title": "World BookPress Kit.",
+      "width": 320
+    },
+    {
+      "children": [
+        "28.56px",
+        "28.56px"
+      ],
+      "language": "zh-Hant",
+      "overflow": false,
+      "subtitleLineHeight": "28.56px",
+      "title": "愛裝字體 · FondFont媒體資料.",
+      "width": 320
+    },
+    {
+      "children": [
+        "23.8px",
+        "23.8px"
+      ],
+      "language": "en",
+      "overflow": false,
+      "subtitleLineHeight": "23.8px",
+      "title": "FondFontPress Kit.",
+      "width": 320
+    },
+    {
+      "children": [
+        "28.56px",
+        "28.56px"
+      ],
+      "language": "zh-Hant",
+      "overflow": false,
+      "subtitleLineHeight": "28.56px",
+      "title": "飛鍵 · KeyHop媒體資料.",
+      "width": 320
+    },
+    {
+      "children": [
+        "23.8px",
+        "23.8px"
+      ],
+      "language": "en",
+      "overflow": false,
+      "subtitleLineHeight": "23.8px",
+      "title": "KeyHopPress Kit.",
+      "width": 320
+    },
+    {
+      "children": [
+        "28.56px",
+        "28.56px"
+      ],
+      "language": "zh-Hant",
+      "overflow": false,
+      "subtitleLineHeight": "28.56px",
+      "title": "繹言 · YiYan媒體資料.",
+      "width": 320
+    },
+    {
+      "children": [
+        "23.8px",
+        "23.8px"
+      ],
+      "language": "en",
+      "overflow": false,
+      "subtitleLineHeight": "23.8px",
+      "title": "YiYanPress Kit.",
+      "width": 320
+    },
+    {
+      "children": [
+        "28.56px",
+        "28.56px"
+      ],
+      "language": "zh-Hant",
+      "overflow": false,
+      "subtitleLineHeight": "28.56px",
+      "title": "XVDL媒體資料.",
+      "width": 320
+    },
+    {
+      "children": [
+        "23.8px",
+        "23.8px"
+      ],
+      "language": "en",
+      "overflow": false,
+      "subtitleLineHeight": "23.8px",
+      "title": "XVDLPress Kit.",
+      "width": 320
+    },
+    {
+      "children": [
+        "28.56px",
+        "28.56px"
+      ],
+      "language": "zh-Hant",
+      "overflow": false,
+      "subtitleLineHeight": "28.56px",
+      "title": "Shheep媒體資料.",
+      "width": 320
+    },
+    {
+      "children": [
+        "23.8px",
+        "23.8px"
+      ],
+      "language": "en",
+      "overflow": false,
+      "subtitleLineHeight": "23.8px",
+      "title": "ShheepPress Kit.",
+      "width": 320
+    },
+    {
+      "children": [
+        "66.6624px",
+        "66.6624px"
+      ],
+      "language": "zh-Hant",
+      "overflow": false,
+      "subtitleLineHeight": "66.6624px",
+      "title": "CHMate媒體資料.",
+      "width": 1280
+    },
+    {
+      "children": [
+        "55.552px",
+        "55.552px"
+      ],
+      "language": "en",
+      "overflow": false,
+      "subtitleLineHeight": "55.552px",
+      "title": "CHMatePress Kit.",
+      "width": 1280
+    },
+    {
+      "children": [
+        "66.6624px",
+        "66.6624px"
+      ],
+      "language": "zh-Hant",
+      "overflow": false,
+      "subtitleLineHeight": "66.6624px",
+      "title": "World Book媒體資料.",
+      "width": 1280
+    },
+    {
+      "children": [
+        "55.552px",
+        "55.552px"
+      ],
+      "language": "en",
+      "overflow": false,
+      "subtitleLineHeight": "55.552px",
+      "title": "World BookPress Kit.",
+      "width": 1280
+    },
+    {
+      "children": [
+        "66.6624px",
+        "66.6624px"
+      ],
+      "language": "zh-Hant",
+      "overflow": false,
+      "subtitleLineHeight": "66.6624px",
+      "title": "愛裝字體 · FondFont媒體資料.",
+      "width": 1280
+    },
+    {
+      "children": [
+        "55.552px",
+        "55.552px"
+      ],
+      "language": "en",
+      "overflow": false,
+      "subtitleLineHeight": "55.552px",
+      "title": "FondFontPress Kit.",
+      "width": 1280
+    },
+    {
+      "children": [
+        "66.6624px",
+        "66.6624px"
+      ],
+      "language": "zh-Hant",
+      "overflow": false,
+      "subtitleLineHeight": "66.6624px",
+      "title": "飛鍵 · KeyHop媒體資料.",
+      "width": 1280
+    },
+    {
+      "children": [
+        "55.552px",
+        "55.552px"
+      ],
+      "language": "en",
+      "overflow": false,
+      "subtitleLineHeight": "55.552px",
+      "title": "KeyHopPress Kit.",
+      "width": 1280
+    },
+    {
+      "children": [
+        "66.6624px",
+        "66.6624px"
+      ],
+      "language": "zh-Hant",
+      "overflow": false,
+      "subtitleLineHeight": "66.6624px",
+      "title": "繹言 · YiYan媒體資料.",
+      "width": 1280
+    },
+    {
+      "children": [
+        "55.552px",
+        "55.552px"
+      ],
+      "language": "en",
+      "overflow": false,
+      "subtitleLineHeight": "55.552px",
+      "title": "YiYanPress Kit.",
+      "width": 1280
+    },
+    {
+      "children": [
+        "66.6624px",
+        "66.6624px"
+      ],
+      "language": "zh-Hant",
+      "overflow": false,
+      "subtitleLineHeight": "66.6624px",
+      "title": "XVDL媒體資料.",
+      "width": 1280
+    },
+    {
+      "children": [
+        "55.552px",
+        "55.552px"
+      ],
+      "language": "en",
+      "overflow": false,
+      "subtitleLineHeight": "55.552px",
+      "title": "XVDLPress Kit.",
+      "width": 1280
+    },
+    {
+      "children": [
+        "66.6624px",
+        "66.6624px"
+      ],
+      "language": "zh-Hant",
+      "overflow": false,
+      "subtitleLineHeight": "66.6624px",
+      "title": "Shheep媒體資料.",
+      "width": 1280
+    },
+    {
+      "children": [
+        "55.552px",
+        "55.552px"
+      ],
+      "language": "en",
+      "overflow": false,
+      "subtitleLineHeight": "55.552px",
+      "title": "ShheepPress Kit.",
+      "width": 1280
+    }
+  ]
+}

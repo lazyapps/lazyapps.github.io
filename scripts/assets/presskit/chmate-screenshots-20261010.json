@@ -1,0 +1,155 @@
+{
+  "verifiedOn": "2026-10-10",
+  "captures": [
+    {
+      "language": "ar",
+      "originalSource": "/Users/realazy/Projects/iOS/CHMate Neue/AppPreview/raw/ipad/locales/ar/reader-after-open.png",
+      "output": "scripts/assets/presskit/chmate-reading-ar.png",
+      "sha256": "a5527c08b8e9577c9110d197ab26b507b0f654d6cb056a010039d07941437af9",
+      "dimensions": [
+        2064,
+        2752
+      ]
+    },
+    {
+      "language": "de",
+      "originalSource": "/Users/realazy/Projects/iOS/CHMate Neue/AppPreview/raw/ipad/locales/de/reader-after-open.png",
+      "output": "scripts/assets/presskit/chmate-reading-de.png",
+      "sha256": "67bbff221f0216ead2e7f4e369e17ff6b78bce0317808fa3905457a05c4a82f9",
+      "dimensions": [
+        2064,
+        2752
+      ]
+    },
+    {
+      "language": "en",
+      "originalSource": "/Users/realazy/Projects/iOS/CHMate Neue/AppPreview/raw/ipad/locales/en/reader-after-open.png",
+      "output": "scripts/assets/presskit/chmate-reading-en.png",
+      "sha256": "0f905108787648e6b289a4f2e678e652af8fe543da1797d1e578bd8764d2dd35",
+      "dimensions": [
+        2064,
+        2752
+      ]
+    },
+    {
+      "language": "es",
+      "originalSource": "/Users/realazy/Projects/iOS/CHMate Neue/AppPreview/raw/ipad/locales/es/reader-after-open.png",
+      "output": "scripts/assets/presskit/chmate-reading-es.png",
+      "sha256": "42d7227f38b5626b57288c2cb3e302e344a9b4c84f9b47bc8a6f4a73e4674e34",
+      "dimensions": [
+        2064,
+        2752
+      ]
+    },
+    {
+      "language": "fr",
+      "originalSource": "/Users/realazy/Projects/iOS/CHMate Neue/AppPreview/raw/ipad/locales/fr/reader-after-open.png",
+      "output": "scripts/assets/presskit/chmate-reading-fr.png",
+      "sha256": "7ca5aef93753902722b8ede3c1a8152211eca2440d6b91ec7dc277a2e337e4fb",
+      "dimensions": [
+        2064,
+        2752
+      ]
+    },
+    {
+      "language": "id",
+      "originalSource": "/Users/realazy/Projects/iOS/CHMate Neue/AppPreview/raw/ipad/locales/id/reader-after-open.png",
+      "output": "scripts/assets/presskit/chmate-reading-id.png",
+      "sha256": "19afb78891364fda047d49f2e28f3eedd59d4fe80cbc1cdaeec6641b16614d84",
+      "dimensions": [
+        2064,
+        2752
+      ]
+    },
+    {
+      "language": "it",
+      "originalSource": "/Users/realazy/Projects/iOS/CHMate Neue/AppPreview/raw/ipad/locales/it/horizontal-sync-visible.png",
+      "output": "scripts/assets/presskit/chmate-reading-it.png",
+      "sha256": "fb5a57b6d53f295ac572ef2519e1f358c5b724387258d409ffe573ff28917a72",
+      "dimensions": [
+        2064,
+        2752
+      ]
+    },
+    {
+      "language": "ja",
+      "originalSource": "/Users/realazy/Projects/iOS/CHMate Neue/AppPreview/raw/ipad/locales/ja/reader-after-open.png",
+      "output": "scripts/assets/presskit/chmate-reading-ja.png",
+      "sha256": "cb17ea3c4e6001b540ef87cfd6f8d2b7bd1065cb2b612e244369fc9f4fc9ff80",
+      "dimensions": [
+        2064,
+        2752
+      ]
+    },
+    {
+      "language": "ko",
+      "originalSource": "/Users/realazy/Projects/iOS/CHMate Neue/AppPreview/raw/ipad/locales/ko/reader-after-open.png",
+      "output": "scripts/assets/presskit/chmate-reading-ko.png",
+      "sha256": "b4f9ff4f0b334d7bd6d022c8acf4812b6c597eec61ba72dc134f2ff8835b1f13",
+      "dimensions": [
+        2064,
+        2752
+      ]
+    },
+    {
+      "language": "nl",
+      "originalSource": "/Users/realazy/Projects/iOS/CHMate Neue/AppPreview/raw/ipad/locales/nl/reader-after-open.png",
+      "output": "scripts/assets/presskit/chmate-reading-nl.png",
+      "sha256": "99bad1a8c2e67288860a17472dfc06effa86a0906cbe788d0118c7d2646fb3f2",
+      "dimensions": [
+        2064,
+        2752
+      ]
+    },
+    {
+      "language": "pt",
+      "originalSource": "/Users/realazy/Projects/iOS/CHMate Neue/AppPreview/raw/ipad/locales/pt/reader-after-open.png",
+      "output": "scripts/assets/presskit/chmate-reading-pt.png",
+      "sha256": "98923a35ae380449f83ec236c0d39717350f10f745bf9ea96da0b20b4243bce4",
+      "dimensions": [
+        2064,
+        2752
+      ]
+    },
+    {
+      "language": "pt-BR",
+      "originalSource": "/Users/realazy/Projects/iOS/CHMate Neue/AppPreview/raw/ipad/locales/pt-BR/reader-after-open.png",
+      "output": "scripts/assets/presskit/chmate-reading-pt-br.png",
+      "sha256": "f720470155b9535329db81aa698d76dfd068af31aeb82f72e4e9f64a550587ba",
+      "dimensions": [
+        2064,
+        2752
+      ]
+    },
+    {
+      "language": "tr",
+      "originalSource": "/Users/realazy/Projects/iOS/CHMate Neue/AppPreview/raw/ipad/locales/tr/reader-after-open.png",
+      "output": "scripts/assets/presskit/chmate-reading-tr.png",
+      "sha256": "06c7c11128161c6bb139ddd6b9a620701c4a49171c217bd7105aaa6c46f2311b",
+      "dimensions": [
+        2064,
+        2752
+      ]
+    },
+    {
+      "language": "zh-Hans",
+      "originalSource": "/Users/realazy/Projects/iOS/CHMate Neue/AppPreview/raw/ipad/locales/zh-Hans/reader-after-open.png",
+      "output": "scripts/assets/presskit/chmate-reading-zh-hans.png",
+      "sha256": "95e2876b92d698b5767f3f201f62273d1830952ab6b6ab06a557bdb770f0506b",
+      "dimensions": [
+        2064,
+        2752
+      ]
+    },
+    {
+      "language": "zh-Hant",
+      "originalSource": "/Users/realazy/Projects/iOS/CHMate Neue/AppPreview/raw/ipad/locales/zh-Hant/reader-after-open.png",
+      "output": "scripts/assets/presskit/chmate-reading-zh-hant.png",
+      "sha256": "c3726a293969043d607ba17a63cab2e1d02b53104cca0c5f78d834c9c0983447",
+      "dimensions": [
+        2064,
+        2752
+      ]
+    }
+  ]
+}

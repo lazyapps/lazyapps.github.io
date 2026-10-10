@@ -1,0 +1,16 @@
+[
+  {
+    "download": "/Users/realazy/Downloads/chmate-presskit.zip",
+    "source": "public/presskit/chmate/chmate-presskit.zip",
+    "bytes": 4355573,
+    "sha256": "cb061d242d935f68e283fc8b2f8b8bf79e62b5299d57fca49364281fd23f13ab",
+    "exact": true
+  },
+  {
+    "download": "/Users/realazy/Downloads/README.md",
+    "source": "public/presskit/chmate/zh-Hans/README.md",
+    "bytes": 1803,
+    "sha256": "f5f43c70dd8933f7363ed99631bcf7d9fca03e60a4da93133f14066b71246372",
+    "exact": true
+  }
+]

@@ -1,0 +1,600 @@
+[
+  {
+    "slug": "chmate",
+    "name": "CHMate",
+    "platform": {
+      "en": "iPhone · iPad",
+      "zh": "iPhone · iPad"
+    },
+    "availability": {
+      "en": "Available on the App Store",
+      "zh": "已在 App Store 上架"
+    },
+    "summary": {
+      "en": "EPUB, CHM and MHT reader for iPhone and iPad, with search, highlights and notes.",
+      "zh": "iPhone 与 iPad 的 EPUB、CHM、MHT 阅读器，支持搜索、高亮与笔记。"
+    },
+    "description": {
+      "en": "Choose paper backgrounds or dark mode. Adjust fonts, line spacing and margins.\n\nSearch across chapters, highlight passages and add notes. Return to any marked passage.\n\nManage EPUB, CHM and MHT files in one library. Transfer books over local Wi-Fi and read offline.\n\nStart reading for free. If your library grows, a single in-app purchase unlocks an unlimited bookshelf forever.",
+      "zh": "选择纸张背景或深色模式，调整字体、行距和页边距。\n\n跨章节搜索，为段落添加高亮和笔记，随时返回标记的位置。\n\n在同一书架管理 EPUB、CHM 和 MHT 文件。通过本地 Wi-Fi 传书，离线阅读。\n\n免费开始阅读。藏书渐多时，一次应用内购买，即可永久解锁无限书架。"
+    },
+    "links": [
+      {
+        "label": {
+          "en": "App Store",
+          "zh": "App Store"
+        },
+        "url": "https://apps.apple.com/app/id335157929"
+      }
+    ],
+    "assets": [
+      {
+        "source": "src/assets/img/chmate-icon.png",
+        "filename": "icon.png",
+        "kind": "icon",
+        "label": {
+          "en": "App icon",
+          "zh": "App 图标"
+        },
+        "note": {
+          "en": "Original native App icon, 1024 × 1024 PNG. Preserves the app’s artwork, proportions and transparency.",
+          "zh": "原版 App 图标，1024 × 1024 PNG。保留原版图案、比例与透明边角。"
+        }
+      },
+      {
+        "source": "scripts/assets/presskit/chmate-reading-en.png",
+        "filename": "reading-ipad.png",
+        "kind": "screenshot",
+        "label": {
+          "en": "Reading on iPad · English",
+          "zh": "iPad 阅读画面 · 英语"
+        },
+        "note": {
+          "en": "Original full-resolution native iPad reading capture (2064 × 2752), verified against the current app preview sources on 2026-10-10; pixels are unchanged. Book excerpts are shown in reading context.",
+          "zh": "原始全分辨率 iPad 阅读截图（2064 × 2752），于 2026-10-10 核对当前 App 预览素材，保留原始像素。书籍摘录仅用于展示阅读语境。"
+        }
+      },
+      {
+        "source": "src/assets/img/chmate-opengraph-shared.png",
+        "filename": "social-card.png",
+        "kind": "artwork",
+        "label": {
+          "en": "Social sharing image",
+          "zh": "社交分享图"
+        },
+        "note": {
+          "en": "Existing 1200 × 630 promotional artwork, not an app screenshot.",
+          "zh": "现有 1200 × 630 宣传图片，不是 App 界面截图。"
+        }
+      }
+    ],
+    "names": {
+      "en": "CHMate",
+      "zh": "CHMate"
+    }
+  },
+  {
+    "slug": "world-book",
+    "name": "World Book",
+    "platform": {
+      "en": "iPhone · iPad",
+      "zh": "iPhone · iPad"
+    },
+    "availability": {
+      "en": "Available on the App Store",
+      "zh": "已在 App Store 上架"
+    },
+    "summary": {
+      "en": "Offline world atlas for iPhone and iPad, with country profiles, a 3D globe and rankings.",
+      "zh": "iPhone 与 iPad 离线世界地图集，可查国家资料、浏览 3D 地球和比较排名。"
+    },
+    "description": {
+      "en": "Browse geography, history, people and economy, and compare countries using interactive charts with reported values, dates and ranks. Profiles, flags, rankings, locator maps and the globe work offline. Photos and regional maps require an initial download. Choose from four reading themes. One-time purchase; no in-app purchases, subscriptions, ads or tracking. World Book reads archived CIA World Factbook data; it is not affiliated with or endorsed by the CIA. Data is not live, and figures may refer to different years.",
+      "zh": "查询地理、历史、人口与经济资料，通过交互图表比较各国的数据、记录日期和排名。国家资料、国旗、排名、定位地图与地球支持离线使用，照片和区域地图需先下载。提供四种阅读主题。一次购买，无应用内购买、订阅、广告或追踪。 World Book 读取存档的 CIA World Factbook 资料，与 CIA 无隶属或背书关系。数据不是实时更新，各项指标可能对应不同年份。"
+    },
+    "links": [
+      {
+        "label": {
+          "en": "App Store",
+          "zh": "App Store"
+        },
+        "url": "https://apps.apple.com/app/id412637620"
+      }
+    ],
+    "assets": [
+      {
+        "source": "src/assets/img/world-book-icon.png",
+        "filename": "icon.png",
+        "kind": "icon",
+        "label": {
+          "en": "App icon",
+          "zh": "App 图标"
+        },
+        "note": {
+          "en": "Original native App icon, 1024 × 1024 PNG. Preserves the app’s artwork, proportions and transparency.",
+          "zh": "原版 App 图标，1024 × 1024 PNG。保留原版图案、比例与透明边角。"
+        }
+      },
+      {
+        "source": "scripts/assets/presskit/world-book-globe.png",
+        "filename": "globe-ipad-en.png",
+        "kind": "screenshot",
+        "label": {
+          "en": "3D globe on iPad · English",
+          "zh": "iPad 3D 地球 · 英语"
+        },
+        "note": {
+          "en": "Original full-resolution native iPad globe capture (2064 × 2752), captured on 2026-10-10 from app version 261010.0 (470), including the current top navigation. No resizing, retouching or generated promotional artwork.",
+          "zh": "2026-10-10 从 App 版本 261010.0（470）拍摄的原始全分辨率 iPad 地球仪截图（2064 × 2752），展示当前顶部导航。未经缩放或修饰，不包含生成的宣传画面。"
+        }
+      },
+      {
+        "source": "src/assets/img/world-book-opengraph.png",
+        "filename": "social-card.png",
+        "kind": "artwork",
+        "label": {
+          "en": "Social sharing image",
+          "zh": "社交分享图"
+        },
+        "note": {
+          "en": "Existing 1200 × 630 promotional artwork, not an app screenshot.",
+          "zh": "现有 1200 × 630 宣传图片，不是 App 界面截图。"
+        }
+      }
+    ],
+    "names": {
+      "en": "World Book",
+      "zh": "World Book"
+    }
+  },
+  {
+    "slug": "fondfont",
+    "name": "FondFont · 爱装字体",
+    "platform": {
+      "en": "iPhone · iPad",
+      "zh": "iPhone · iPad"
+    },
+    "availability": {
+      "en": "Available on the App Store",
+      "zh": "已在 App Store 上架"
+    },
+    "summary": {
+      "en": "Install TTF, OTF and TTC fonts on iPhone and iPad for use in compatible apps.",
+      "zh": "在 iPhone 与 iPad 安装 TTF、OTF、TTC 字体，供兼容 App 使用。"
+    },
+    "description": {
+      "en": "Open your TTF, OTF, TTC, or ZIP files from where you already keep them.\n\nFondFont creates a profile on your device. Allow its download, then finish installation in Settings.\n\nChoose your installed fonts in compatible apps such as Pages, Keynote, Word and PowerPoint.\n\nFondFont creates profiles on your device. Your font files stay on your device. You do not need an account or subscription. It cannot change the iOS system font or add font support to other apps.",
+      "zh": "从日常存放字体的位置，打开 TTF、OTF、TTC 或 ZIP 文件。\n\n爱装字体在本机生成描述文件。允许下载后，前往「设置」完成安装。\n\n在支持 iOS 字体库的 App 中选择已安装字体，例如 Pages、Keynote、Word 和 PowerPoint。\n\n爱装字体在本机生成描述文件。字体文件不会上传。无需账号或订阅。 不能修改 iOS 系统字体，也不能让不支持字体库的 App 使用字体。"
+    },
+    "links": [
+      {
+        "label": {
+          "en": "App Store",
+          "zh": "App Store"
+        },
+        "url": "https://apps.apple.com/app/id842109099"
+      }
+    ],
+    "assets": [
+      {
+        "source": "src/assets/img/fondfont-icon.png",
+        "filename": "icon.png",
+        "kind": "icon",
+        "label": {
+          "en": "App icon",
+          "zh": "App 图标"
+        },
+        "note": {
+          "en": "Original native App icon, 1024 × 1024 PNG. Preserves the app’s artwork, proportions and transparency.",
+          "zh": "原版 App 图标，1024 × 1024 PNG。保留原版图案、比例与透明边角。"
+        }
+      },
+      {
+        "source": "scripts/assets/presskit/fondfont-select-en.png",
+        "filename": "font-selection-en.png",
+        "kind": "screenshot",
+        "label": {
+          "en": "Font selection · English",
+          "zh": "选择字体 · 英语"
+        },
+        "note": {
+          "en": "Original native capture from 2026-10-10, showing the current font-selection interface; no retouching. Font names shown in context do not grant rights to font files.",
+          "zh": "2026-10-10 拍摄的原始原生界面截图，展示当前字体选择界面，未经修饰。截图中的字体名称仅用于展示使用语境，不授予字体文件的使用权。"
+        }
+      },
+      {
+        "source": "scripts/assets/presskit/fondfont-select-zh-hans.png",
+        "filename": "font-selection-zh-hans.png",
+        "kind": "screenshot",
+        "label": {
+          "en": "Font selection · Simplified Chinese",
+          "zh": "选择字体 · 简体中文"
+        },
+        "note": {
+          "en": "Original native capture from 2026-10-10, showing the current font-selection interface; no retouching. Font names shown in context do not grant rights to font files.",
+          "zh": "2026-10-10 拍摄的原始原生界面截图，展示当前字体选择界面，未经修饰。截图中的字体名称仅用于展示使用语境，不授予字体文件的使用权。"
+        }
+      },
+      {
+        "source": "src/assets/img/fondfont-opengraph-shared.png",
+        "filename": "social-card.png",
+        "kind": "artwork",
+        "label": {
+          "en": "Social sharing image",
+          "zh": "社交分享图"
+        },
+        "note": {
+          "en": "Existing 1200 × 630 promotional artwork, not an app screenshot.",
+          "zh": "现有 1200 × 630 宣传图片，不是 App 界面截图。"
+        }
+      }
+    ],
+    "names": {
+      "en": "FondFont",
+      "zh": "爱装字体 · FondFont"
+    }
+  },
+  {
+    "slug": "keyhop",
+    "name": "KeyHop · 飞键",
+    "platform": {
+      "en": "macOS 26+ · Apple silicon",
+      "zh": "macOS 26 及以上 · Apple 芯片"
+    },
+    "availability": {
+      "en": "Download for macOS",
+      "zh": "提供 macOS 下载"
+    },
+    "summary": {
+      "en": "Switch to or launch Mac apps with fixed home-row keyboard shortcuts.",
+      "zh": "用固定的主键行快捷键切换或启动 Mac App。"
+    },
+    "description": {
+      "en": "Bind up to ten favorite apps to permanent physical keys on your home row. Optionally sync your settings across Macs with iCloud.\n\nDouble-tap your Leader to see a translucent map of your apps and keys. It stays until you choose an app or cancel. Once the keys feel familiar, hide the map in Settings and rely on muscle memory.\n\nAdjust the double-tap recognition window from 150 to 600 ms, with interactive testing in Settings.\n\nZero Dock footprint. Key assignments save immediately; pause shortcut detection or launch at login anytime.\n\nFixed keys take you straight to your apps, with a shortcut map you can hide. No window management or input recording.",
+      "zh": "主键行提供十个触手可及的物理键位，每个键位固定绑定一个 App，形成可靠的肌肉记忆。可选择开启 iCloud 同步，在多台 Mac 上沿用同一套设置。\n\n连按两次触发键，半透明面板便会显示 App 与键位对应，直到你选择应用或取消。记熟后也可以在设置中隐藏，凭肌肉记忆直达。\n\n连按判定间隔支持 150–600 毫秒调节，也能在设置面板里即时测试手感。\n\n不占 Dock 栏空间；按键映射即配即存，可随时一键暂停识别，亦支持开机自动启动。\n\n固定键位直达 App，配合可隐藏的快捷键映射；不管理窗口，也不记录输入内容。"
+    },
+    "links": [
+      {
+        "label": {
+          "en": "Download / releases",
+          "zh": "下载 / 发行版本"
+        },
+        "url": "https://github.com/cxa/keyhop/releases"
+      },
+      {
+        "label": {
+          "en": "Source code",
+          "zh": "源代码"
+        },
+        "url": "https://github.com/cxa/keyhop"
+      }
+    ],
+    "assets": [
+      {
+        "source": "src/assets/img/keyhop-icon.png",
+        "filename": "icon.png",
+        "kind": "icon",
+        "label": {
+          "en": "App icon",
+          "zh": "App 图标"
+        },
+        "note": {
+          "en": "Original native App icon, 1024 × 1024 PNG. Preserves the app’s artwork, proportions and transparency.",
+          "zh": "原版 App 图标，1024 × 1024 PNG。保留原版图案、比例与透明边角。"
+        }
+      },
+      {
+        "source": "scripts/assets/presskit/keyhop-settings-en.jpg",
+        "filename": "settings-en.jpg",
+        "kind": "screenshot",
+        "label": {
+          "en": "Settings · English",
+          "zh": "设置界面 · 英语"
+        },
+        "note": {
+          "en": "Original English native settings capture from 2026-10-10, built from the current app source. Includes app-key-map settings. This is a Debug preview, as indicated by “Dev” in the window title. Example app bindings are illustrative; Option is the default modifier. Third-party app icons belong to their respective owners.",
+          "zh": "2026-10-10 从当前 App 源码构建并拍摄的英语原生设置界面，包含快捷键地图设置。此为 Debug 预览，窗口标题中的 Dev 已标明。App 绑定为演示示例，默认修饰键为 Option；第三方 App 图标的权利属于各自权利人。"
+        }
+      },
+      {
+        "source": "src/assets/img/keyhop-opengraph-shared.png",
+        "filename": "social-card.png",
+        "kind": "artwork",
+        "label": {
+          "en": "Social sharing image",
+          "zh": "社交分享图"
+        },
+        "note": {
+          "en": "Existing 1200 × 630 promotional artwork, not an app screenshot.",
+          "zh": "现有 1200 × 630 宣传图片，不是 App 界面截图。"
+        }
+      }
+    ],
+    "names": {
+      "en": "KeyHop",
+      "zh": "飞键 · KeyHop"
+    }
+  },
+  {
+    "slug": "yiyan",
+    "name": "YiYan · 绎言",
+    "platform": {
+      "en": "Mac · iPhone",
+      "zh": "Mac · iPhone"
+    },
+    "availability": {
+      "en": "Mac download · iPhone TestFlight beta",
+      "zh": "Mac 下载 · iPhone TestFlight 测试版"
+    },
+    "summary": {
+      "en": "English text refinement on Mac, with explanations, examples and optional iPhone review.",
+      "zh": "Mac 英语润色工具，提供解释与例句，可选在 iPhone 上复习。"
+    },
+    "description": {
+      "en": "Capture new input from AI coding tools without interrupting your work. Type Chinese, English or both. Refine a selection or the current text field in another app. Focused notes and examples. Ask follow-up questions about a record on your Mac. US or UK English; natural, casual or professional. Choose the explanation language and keep your tone. Browse by date, bookmark, copy and reuse. Retry failures or delete records you no longer need. Optional iCloud sync · iPhone TestFlight beta. Read aloud, practise recall, set daily reminders or continue in an AI app.\n\nLocal records by default; you opt into iCloud. English generation still uses the selected AI service. Filters low-value input and redacts high-confidence secrets. Preserves code, paths and URLs. Mac follow-up chats stay local and are neither synced nor exported. Delete cloud data separately while keeping Mac records.",
+      "zh": "自动捕捉 AI 编程工具中的新输入，不打断手头的事。 直接写中文、英文或混合句；也能快捷润色其他 App 的选区或输入框。 重点笔记配例句。在 Mac 上围绕这条记录继续追问。 美式或英式，自然、轻松或专业；自选讲解语言，也可保留原有语气。 日历找回、收藏重点、复制复用；失败可重试，不需要的记录随时删。 可选 iCloud 同步 · iPhone TestFlight 测试版。朗读、记忆复习、每日提醒，也能转交 AI 继续问。\n\n记录默认本地保存；iCloud 同步由你开启。生成英语仍会使用所选 AI 服务。 过滤低价值输入，识别并遮盖高置信度密钥；代码、路径和网址保留原样。 Mac 追问仅存在本机，不同步、不导出。可单独删除云端数据，保留 Mac 记录。"
+    },
+    "links": [
+      {
+        "label": {
+          "en": "Mac download / releases",
+          "zh": "Mac 下载 / 发行版本"
+        },
+        "url": "https://github.com/cxa/yiyan/releases"
+      },
+      {
+        "label": {
+          "en": "iPhone TestFlight beta",
+          "zh": "iPhone TestFlight 测试版"
+        },
+        "url": "https://testflight.apple.com/join/cbnauaKB"
+      },
+      {
+        "label": {
+          "en": "Source code",
+          "zh": "源代码"
+        },
+        "url": "https://github.com/cxa/yiyan"
+      }
+    ],
+    "assets": [
+      {
+        "source": "src/assets/img/yiyan-icon.png",
+        "filename": "icon.png",
+        "kind": "icon",
+        "label": {
+          "en": "App icon",
+          "zh": "App 图标"
+        },
+        "note": {
+          "en": "Original native App icon, 1024 × 1024 PNG. Preserves the app’s artwork, proportions and transparency.",
+          "zh": "原版 App 图标，1024 × 1024 PNG。保留原版图案、比例与透明边角。"
+        }
+      },
+      {
+        "source": "src/assets/img/yiyan-showcase.png",
+        "filename": "learning-notes-en.png",
+        "kind": "screenshot",
+        "label": {
+          "en": "Learning notes · English",
+          "zh": "学习笔记 · 英语"
+        },
+        "note": {
+          "en": "Original native capture supplied by the developer on 2026-10-08, verified against the current app on 2026-10-10. Shared English interface with example Chinese writing and English learning notes; pixels are unchanged.",
+          "zh": "开发者于 2026-10-08 提供的原始原生截图，于 2026-10-10 核对当前 App。共享英语界面，展示中文示例文字与英语学习笔记，保留原始像素。"
+        }
+      },
+      {
+        "source": "src/assets/img/yiyan-showcase-detail.png",
+        "filename": "follow-up-en.png",
+        "kind": "screenshot",
+        "label": {
+          "en": "Learning notes · English",
+          "zh": "学习笔记 · 英语"
+        },
+        "note": {
+          "en": "Original native capture supplied by the developer on 2026-10-08, verified against the current app on 2026-10-10. Shared English interface with example Chinese writing and English learning notes; pixels are unchanged.",
+          "zh": "开发者于 2026-10-08 提供的原始原生截图，于 2026-10-10 核对当前 App。共享英语界面，展示中文示例文字与英语学习笔记，保留原始像素。"
+        }
+      },
+      {
+        "source": "src/assets/img/yiyan-opengraph-shared.png",
+        "filename": "social-card.png",
+        "kind": "artwork",
+        "label": {
+          "en": "Social sharing image",
+          "zh": "社交分享图"
+        },
+        "note": {
+          "en": "Existing 1200 × 630 promotional artwork, not an app screenshot.",
+          "zh": "现有 1200 × 630 宣传图片，不是 App 界面截图。"
+        }
+      }
+    ],
+    "names": {
+      "en": "YiYan",
+      "zh": "绎言 · YiYan"
+    }
+  },
+  {
+    "slug": "xvdl",
+    "name": "XVDL",
+    "platform": {
+      "en": "Mac · Safari",
+      "zh": "Mac · Safari"
+    },
+    "availability": {
+      "en": "Download for macOS",
+      "zh": "提供 macOS 下载"
+    },
+    "summary": {
+      "en": "Download X videos as MP4 files in Safari on Mac.",
+      "zh": "在 Mac Safari 中将 X 视频下载为 MP4 文件。"
+    },
+    "description": {
+      "en": "XVDL adds a download button when an X post provides a downloadable MP4. Save directly from Safari without copying links, opening converter websites or uploading media. It also supports Safari web apps saved with Add to Dock; enable the extension and website access in each web app’s settings.",
+      "zh": "当 X 帖子提供可下载的 MP4 时，XVDL 会显示下载按钮。直接在 Safari 中保存，无需复制链接、打开转换网站或上传媒体。也支持通过“添加到程序坞”保存的 Safari 网页 App；需在各网页 App 的设置中启用扩展并允许访问网站。"
+    },
+    "links": [
+      {
+        "label": {
+          "en": "Download / releases",
+          "zh": "下载 / 发行版本"
+        },
+        "url": "https://github.com/cxa/xvdl/releases"
+      },
+      {
+        "label": {
+          "en": "Source code",
+          "zh": "源代码"
+        },
+        "url": "https://github.com/cxa/xvdl"
+      }
+    ],
+    "assets": [
+      {
+        "source": "src/assets/img/xvdl-icon.png",
+        "filename": "icon.png",
+        "kind": "icon",
+        "label": {
+          "en": "App icon",
+          "zh": "App 图标"
+        },
+        "note": {
+          "en": "Original native App icon, 1024 × 1024 PNG. Preserves the app’s artwork, proportions and transparency.",
+          "zh": "原版 App 图标，1024 × 1024 PNG。保留原版图案、比例与透明边角。"
+        }
+      },
+      {
+        "source": "scripts/assets/presskit/xvdl-in-use-original.png",
+        "filename": "safari-in-use.png",
+        "kind": "screenshot",
+        "label": {
+          "en": "XVDL in Safari",
+          "zh": "Safari 中的 XVDL"
+        },
+        "note": {
+          "en": "Original screenshot supplied by the developer on 2026-10-10, showing XVDL's download button on an X video post. Pixels are unchanged. X content, marks and account imagery belong to their respective owners; no standalone reuse rights are granted.",
+          "zh": "开发者于 2026-10-10 提供的原始截图，展示 X 视频帖上的 XVDL 下载按钮。保留原始像素。X 上的内容、标志和账号图像的权利属于各自权利人，本资料包不授予其独立使用权。"
+        }
+      },
+      {
+        "source": "src/assets/img/xvdl-in-use.png",
+        "filename": "safari-in-use-highlighted.png",
+        "kind": "screenshot",
+        "label": {
+          "en": "Download button · highlighted",
+          "zh": "下载按钮 · 突出展示"
+        },
+        "note": {
+          "en": "Edited screenshot with a coral outline and subdued surrounding video to highlight the download button. Original capture: safari-in-use.png. X content, marks and account imagery belong to their respective owners; no standalone reuse rights are granted.",
+          "zh": "经过加工的截图，以珊瑚色轮廓和降低对比度的周围画面突出下载按钮。原始截图：safari-in-use.png。X 上的内容、标志和账号图像的权利属于各自权利人，本资料包不授予其独立使用权。"
+        }
+      },
+      {
+        "source": "src/assets/img/xvdl-opengraph.png",
+        "filename": "social-card.png",
+        "kind": "artwork",
+        "label": {
+          "en": "Social sharing image",
+          "zh": "社交分享图"
+        },
+        "note": {
+          "en": "Existing 1200 × 630 promotional artwork, not an app screenshot.",
+          "zh": "现有 1200 × 630 宣传图片，不是 App 界面截图。"
+        }
+      }
+    ],
+    "names": {
+      "en": "XVDL",
+      "zh": "XVDL"
+    }
+  },
+  {
+    "slug": "shheep",
+    "name": "Shheep",
+    "platform": {
+      "en": "Web · iPhone / iPad (coming soon)",
+      "zh": "网页 · iPhone / iPad（即将推出）"
+    },
+    "availability": {
+      "en": "Play in your browser · iOS coming soon",
+      "zh": "可在浏览器游玩 · iOS 即将推出"
+    },
+    "summary": {
+      "en": "A browser game: jump fences, dodge bats and count sheep on a new course each night.",
+      "zh": "浏览器数羊游戏：跳栅栏、躲蝙蝠，每晚挑战新路线。"
+    },
+    "description": {
+      "en": "Hop over a fence and she counts one more sheep. Hold a little longer to jump a little higher. When a bat flies by, duck down—or hop over it if it’s low.\n\nA new course for every night. Come back for the same fences and bats, try to count a few more, and keep your nightly streak going. Past midnight? It’s still the same night until noon.\n\nHit an obstacle and the run ends. Start again or share a good-night card showing the number of sheep you counted.\n\nWeb scores and streaks are saved in this browser. The iOS app adds Game Center leaderboards, friend challenges and invitations. Web and iOS records don’t sync.",
+      "zh": "跳过一道栅栏，她就多数一只羊。按住久一点，就能跳得高一点。蝙蝠飞来时低头躲过；飞得低的话，也可以跳过去。\n\n每晚都有新路线。回来挑战相同的栅栏和蝙蝠，试着多放过几只羊，让连续游玩的纪录延续下去。过了午夜？中午之前都算同一个夜晚。\n\n碰到障碍物后本局结束。可重新开始，也可把数羊成绩做成晚安卡片分享。\n\n网页版的成绩和连续游玩纪录保存在当前浏览器中。iOS App 还支持 Game Center 排行榜、好友挑战和邀请。网页版与 iOS 的纪录不会同步。"
+    },
+    "links": [
+      {
+        "label": {
+          "en": "Play in browser",
+          "zh": "在浏览器中游玩"
+        },
+        "url": "/shheep/"
+      }
+    ],
+    "assets": [
+      {
+        "source": "src/assets/img/shheep-icon.png",
+        "filename": "icon.png",
+        "kind": "icon",
+        "label": {
+          "en": "App icon",
+          "zh": "App 图标"
+        },
+        "note": {
+          "en": "Original native App icon, 1024 × 1024 PNG. Preserves the app’s artwork, proportions and transparency.",
+          "zh": "原版 App 图标，1024 × 1024 PNG。保留原版图案、比例与透明边角。"
+        }
+      },
+      {
+        "source": "public/shheep/assets/sprites/title.png",
+        "filename": "wordmark.png",
+        "kind": "logo",
+        "label": {
+          "en": "Pixel wordmark",
+          "zh": "像素文字标志"
+        },
+        "note": {
+          "en": "Original transparent pixel wordmark from the exported game assets. Preserve pixel edges and aspect ratio; this is a wordmark, not an app icon.",
+          "zh": "导出的游戏素材中的原始透明像素文字标志。请保留像素边缘与宽高比；这是一张文字标志，不是 App 图标。"
+        }
+      },
+      {
+        "source": "public/shheep/preview.png",
+        "filename": "bedroom-preview.png",
+        "kind": "screenshot",
+        "label": {
+          "en": "Game title screen",
+          "zh": "游戏标题画面"
+        },
+        "note": {
+          "en": "Existing game title-screen preview (1050 × 560), not an active gameplay screenshot.",
+          "zh": "现有游戏标题画面预览（1050 × 560），不是实际游玩过程的截图。"
+        }
+      },
+      {
+        "source": "public/shheep/opengraph.png",
+        "filename": "social-card.png",
+        "kind": "artwork",
+        "label": {
+          "en": "Social sharing image",
+          "zh": "社交分享图"
+        },
+        "note": {
+          "en": "Existing 1200 × 630 promotional artwork, not an app screenshot.",
+          "zh": "现有 1200 × 630 宣传图片，不是 App 界面截图。"
+        }
+      }
+    ],
+    "names": {
+      "en": "Shheep",
+      "zh": "Shheep"
+    }
+  }
+]

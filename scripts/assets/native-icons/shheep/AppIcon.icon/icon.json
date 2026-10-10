@@ -1,0 +1,189 @@
+{
+  "features": [
+    "refractivity",
+    "specular-location"
+  ],
+  "fill-specializations": [
+    {
+      "value": {
+        "linear-gradient": [
+          "srgb:0.40000,0.45000,0.85000,1.00000",
+          "srgb:0.97000,0.61000,0.77000,1.00000"
+        ]
+      }
+    },
+    {
+      "appearance": "dark",
+      "value": {
+        "linear-gradient": [
+          "srgb:0.12000,0.12000,0.27000,1.00000",
+          "srgb:0.27000,0.17000,0.35000,1.00000"
+        ]
+      }
+    },
+    {
+      "appearance": "tinted",
+      "value": "system-dark"
+    }
+  ],
+  "groups": [
+    {
+      "blur-material": 0,
+      "layers": [
+        {
+          "glass": true,
+          "image-name": "SheepBow.png",
+          "name": "Sheep bow \u00b7 original pink pixels"
+        },
+        {
+          "glass": true,
+          "image-name": "FenceBow.png",
+          "name": "Fence bow \u00b7 original pink pixels"
+        }
+      ],
+      "name": "01 \u00b7 Pink glass ribbons",
+      "refractivity": {
+        "enabled": true,
+        "strength": 0.18,
+        "depth": 0.16
+      },
+      "shadow": {
+        "kind": "neutral",
+        "opacity": 0.2
+      },
+      "specular": "inside",
+      "translucency": {
+        "enabled": true,
+        "value": 0.12
+      }
+    },
+    {
+      "blur-material": 0,
+      "layers": [
+        {
+          "glass": true,
+          "image-name": "Sheep.png",
+          "name": "Sheep \u00b7 original pixels"
+        }
+      ],
+      "lighting": "combined",
+      "name": "02 \u00b7 Sheep silhouette",
+      "refractivity": {
+        "depth": 0,
+        "enabled": false,
+        "strength": 0
+      },
+      "shadow": {
+        "kind": "neutral",
+        "opacity": 0.16
+      },
+      "specular": "outside",
+      "translucency": {
+        "enabled": true,
+        "value": 0
+      }
+    },
+    {
+      "blur-material": 0,
+      "layers": [
+        {
+          "glass": false,
+          "image-name": "Moon.png",
+          "name": "Moon \u00b7 inset for system mask",
+          "position": {
+            "scale": 0.8,
+            "translation-in-points": [
+              50,
+              -50
+            ]
+          }
+        },
+        {
+          "glass": true,
+          "image-name": "Fence.png",
+          "name": "Fence \u00b7 original pixels"
+        },
+        {
+          "glass": false,
+          "image-name": "StarsAndHearts.png",
+          "name": "Stars and hearts"
+        },
+        {
+          "glass": false,
+          "image-name": "NorthwestStar.png",
+          "name": "Northwest star \u00b7 inset for mask",
+          "position": {
+            "scale": 1,
+            "translation-in-points": [
+              55,
+              45
+            ]
+          }
+        }
+      ],
+      "name": "03 \u00b7 Moon, fence and stars",
+      "refractivity": {
+        "enabled": true,
+        "strength": 0.06,
+        "depth": 0.12
+      },
+      "shadow": {
+        "kind": "neutral",
+        "opacity": 0.16
+      },
+      "specular": "inside",
+      "translucency": {
+        "enabled": true,
+        "value": 0.08
+      },
+      "lighting": "combined"
+    },
+    {
+      "blur-material": 0,
+      "layers": [
+        {
+          "glass": false,
+          "image-name-specializations": [
+            {
+              "value": "PixelSky.png"
+            },
+            {
+              "appearance": "dark",
+              "value": "PixelSkyDark.png"
+            }
+          ],
+          "name": "Original pixel scenery",
+          "opacity-specializations": [
+            {
+              "value": 1
+            },
+            {
+              "appearance": "tinted",
+              "value": 0
+            }
+          ]
+        }
+      ],
+      "name": "04 \u00b7 Pixel twilight",
+      "refractivity": {
+        "depth": 0,
+        "enabled": false,
+        "strength": 0
+      },
+      "shadow": {
+        "kind": "neutral",
+        "opacity": 0
+      },
+      "specular": false,
+      "translucency": {
+        "enabled": true,
+        "value": 0
+      }
+    }
+  ],
+  "supported-platforms": {
+    "squares": [
+      "iOS"
+    ]
+  }
+}

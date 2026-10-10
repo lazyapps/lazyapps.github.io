@@ -1,12 +1,16 @@
 ---
+import '../assets/s/site-footer.css';
+import { languageHash } from '../i18n/presskit-language.mjs';
 interface Props {
   class?: string;
   locale?: string;
+  pressKit?: string;
 }
 
-const { class: className, locale = 'en' } = Astro.props;
+const { class: className, locale = 'en', pressKit = '/presskit/' } = Astro.props;
 const classes = ['base', className].filter(Boolean).join(' ');
 const privacyUrl = locale.toLowerCase().startsWith('zh') ? '/privacy.zh.html' : '/privacy.en.html';
+const pressKitUrl = pressKit.split('#')[0] + languageHash(locale === 'zh' ? 'zh-Hans' : locale);
 ---
 
 <div id="site-footer" class={classes} lang="en" dir="ltr">
@@ -20,15 +24,17 @@ const privacyUrl = locale.toLowerCase().startsWith('zh') ? '/privacy.zh.html' : 
     </span>
     <div class="base__identity">
       <div>
-        <a href="/" class="base__wordmark" aria-label="lazyapps home">lazyapps</a>
+        <a href="/" class="base__wordmark" aria-label="lazyapps home" data-press-home>lazyapps</a>
       </div>
       <div class="base__meta">
         <p class="base__copyright">© 2026</p>
         <span aria-hidden="true">·</span>
-        <nav aria-label="Footer">
-          <a data-hover href="mailto:lazyapps.feedback@gmail.com"><span data-underline-link class="underline-link">Contact</span></a>
+        <nav aria-label="Footer" data-press-footer-nav>
+          <a data-hover href="mailto:lazyapps.feedback@gmail.com"><span data-underline-link class="underline-link" data-press-text="contact">Contact</span></a>
           <span aria-hidden="true">·</span>
-          <a data-hover href={privacyUrl}><span data-underline-link class="underline-link">Privacy</span></a>
+          <a data-hover href={pressKitUrl} data-press-route={pressKit.split('#')[0]}><span data-underline-link class="underline-link" data-press-text="kit">Press Kit</span></a>
+          <span aria-hidden="true">·</span>
+          <a data-hover href={privacyUrl} data-press-privacy><span data-underline-link class="underline-link" data-press-text="privacy">Privacy</span></a>
         </nav>
       </div>
     </div>

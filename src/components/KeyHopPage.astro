@@ -10,6 +10,8 @@ const SITE = 'https://lazyapps.com';
 import SocialMeta from './SocialMeta.astro';
 import SoftwareApplication from './SoftwareApplication.astro';
 import LanguagePicker from './LanguagePicker.astro';
+import SiteHeader from './SiteHeader.astro';
+import SiteGrain from './SiteGrain.astro';
 import SiteFooterBase from './SiteFooterBase.astro';
 import siteCssUrl from '$assets/s/site.css?url';
 import gsapUrl from '$assets/vendor/gsap.min.js?url';
@@ -18,7 +20,7 @@ import customEaseUrl from '$assets/vendor/CustomEase.min.js?url';
 import splitTextUrl from '$assets/vendor/SplitText.min.js?url';
 import logoRevealUrl from '$assets/s/logo-reveal-loader.js?url';
 import siteJsUrl from '$assets/s/site.js?url';
-import keyhopIconUrl from '$assets/img/keyhop-symbol.png?url';
+import keyhopIconUrl from '$assets/img/keyhop-icon.png?url';
 import safariIconUrl from '$assets/img/keyhop/apps/safari.png?url';
 import chromeIconUrl from '$assets/img/keyhop/apps/chrome.png?url';
 import mailIconUrl from '$assets/img/keyhop/apps/mail.png?url';
@@ -133,7 +135,6 @@ const socialImageUrl = {
     }
     p,dd{text-wrap:pretty}
     section.phero.wrap{padding-top:clamp(8px,1.5vw,18px);--h1-size:clamp(38px,6.2vw,96px)}
-    .topbar__app img{width:auto;height:1.375rem;border-radius:0}
     .phero__h1{margin:clamp(28px,4vw,64px) auto 0;font-size:var(--h1-size);max-width:calc(13 * var(--h1-size));text-align:center;text-wrap:balance}
     .phero__h1 .hero-title-pairs{display:flex;flex-wrap:wrap;justify-content:center;column-gap:1em;line-height:1.08}
     .phero__h1 .hero-title-phrase{position:relative;flex:none;white-space:nowrap;line-height:1.08}
@@ -173,10 +174,9 @@ const socialImageUrl = {
     .gesture__binding{display:grid;justify-items:center;gap:clamp(7px,1.2vw,14px);min-width:0}
     .gesture__app{display:block;width:min(clamp(25px,4.6vw,56px),100%);aspect-ratio:1;object-fit:contain;opacity:.48;filter:saturate(.65);will-change:transform,opacity,filter}
     .gesture__controls{display:flex;align-items:center;justify-content:space-between;gap:1rem;margin-top:.75rem}
-    .gesture__select{display:inline-grid;grid-template-columns:1fr 1.75rem;color:var(--ink)}
-    .gesture__select select{grid-column:1/-1;grid-row:1;min-height:36px;appearance:none;border:1px solid rgba(23,23,23,.14);border-radius:999px;background:rgba(255,255,255,.56);color:inherit;padding:.4rem 2rem .4rem .75rem;font:500 .8125rem/1.2 var(--sans);cursor:pointer}
+    .gesture__select{display:inline-grid;grid-template-columns:minmax(0,1fr);color:var(--ink)}
+    .gesture__select select{min-height:40px;appearance:none;border:1px solid rgba(23,23,23,.14);border-radius:999px;background:rgba(255,255,255,.56);color:inherit;padding-block:.4rem;padding-inline-start:.75rem;font:500 .8125rem/1.2 var(--sans);cursor:pointer}
     .gesture__select--layout{color:var(--muted);opacity:.62}.gesture__select--layout select{border-color:transparent;background:transparent}
-    .gesture__chevron{pointer-events:none;grid-column:2;grid-row:1;place-self:center;width:8px;height:5px;color:currentColor}
     .gesture__select select:focus-visible{outline:2px solid var(--keyhop-violet);outline-offset:2px}
     .gesture__slot{display:grid;place-items:center;width:100%;aspect-ratio:1;border:1px solid rgba(255,255,255,.16);border-radius:min(.8vw,10px);font:500 clamp(.6875rem,1.4vw,1.125rem)/1 var(--mono);color:rgba(255,255,255,.72);will-change:transform,background-color,border-color}
     .gesture__binding[data-active] .gesture__slot{animation:slot-press 1.8s linear both}.gesture__binding[data-active] .gesture__app{animation:app-launch 1.8s linear both}
@@ -190,8 +190,8 @@ const socialImageUrl = {
       .gesture__binding{gap:7px}
       .gesture__slot{font-size:.625rem}
       .gesture__controls{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.5rem}
-      .gesture__select{grid-template-columns:minmax(0,1fr) 1.35rem;width:100%;min-width:0}
-      .gesture__select select{width:100%;min-width:0;min-height:48px;padding-inline-start:.5rem;padding-inline-end:1.35rem;font-size:.9375rem}
+      .gesture__select{width:100%;min-width:0}
+      .gesture__select select{width:100%;min-width:0;min-height:48px;padding-inline-start:.5rem;font-size:.9375rem}
     }
     @media (max-width:340px){.phero__h1 .hero-title-phrase{font-size:.96em}}
     @media (prefers-reduced-motion:reduce){.gesture__leader-key,.gesture__binding[data-active] .gesture__slot,.gesture__binding[data-active] .gesture__app{animation:none}.gesture__binding[data-active] .gesture__slot{background:oklch(0.600 0.220 300 / .32);border-color:var(--keyhop-violet)}.gesture__binding[data-active] .gesture__app{opacity:1;filter:saturate(1)}}
@@ -236,7 +236,7 @@ const socialImageUrl = {
 </head>
 
 <body>
-  <div class="grain" data-grain-animate="true"></div>
+  <SiteGrain animated />
   <div data-load-wrap class="loader" id="loader" aria-hidden="true">
     <div data-load-bg class="loader__bg"><div data-load-progress class="loader__bg-bar"></div></div>
     <div data-load-container class="loader__container">
@@ -247,18 +247,13 @@ const socialImageUrl = {
     </div>
   </div>
 
-  <main>
-    <section class="phero wrap">
-      <div class="topbar">
-        <nav class="mono topbar__nav" aria-label={t.navAria}>
-          <a data-hover href="/" class="topbar__home" aria-label={t.homeAria}><span aria-hidden="true" class="topbar__home-dot"></span></a>
-        </nav>
-        <div class="topbar__app">
-          <img src={keyhopIconUrl} alt="">
-          <h2 class="dsp"><Fragment set:html={t.appTitle} /></h2>
-        </div>
+  <SiteHeader class="wrap" name={t.appTitle.replace(/<[^>]*>/g, '')} icon={keyhopIconUrl} homeLabel={t.homeAria}>
         <LanguagePicker label={t.selectAria} current={t.selectedUrl} storageKey="keyhop.locale" options={options.map(([language, url, label]) => ({ language, url, label }))} />
-      </div>
+      </SiteHeader>
+
+<main>
+    <section class="phero wrap">
+
 
       <div data-reveal-group data-stagger="110" data-distance="1.2em" data-start="top 94%">
         <h1 class="phero__h1 dsp"><Fragment set:html={t.h1} /></h1>
@@ -326,7 +321,6 @@ const socialImageUrl = {
                   <option value="control">⌃ Control</option>
                   <option value="shift">⇧ Shift</option>
                 </select>
-                <svg class="gesture__chevron" viewBox="0 0 8 5" fill="none" aria-hidden="true"><path d="M.5.5 4 4 7.5.5" stroke="currentColor" /></svg>
               </span>
               <span class="gesture__select gesture__select--layout">
                 <select id={`keyhop-layout-${code || 'zh'}`} name="keyboard-layout" data-layout-select aria-label={layoutLabel}>
@@ -336,7 +330,6 @@ const socialImageUrl = {
                   <option value="azerty">AZERTY</option>
                   <option value="qwertz">QWERTZ</option>
                 </select>
-                <svg class="gesture__chevron" viewBox="0 0 8 5" fill="none" aria-hidden="true"><path d="M.5.5 4 4 7.5.5" stroke="currentColor" /></svg>
               </span>
             </div>
           </div>
@@ -373,7 +366,6 @@ const socialImageUrl = {
   <footer class="wrap">
     <section class="next" data-reveal-group data-stagger="110" data-distance="1.4em" data-start="top 88%">
       <img class="next__plate next__plate--icon" src={keyhopIconUrl} alt="">
-      <h2 class="next__q dsp"><Fragment set:html={t.next} /></h2>
       <div class="next__act"><a data-hover href={notesUrl} class="button-023 button-023--square">
         <span class="button-023__bg"><span style="--index:0" class="button-023__bg-inner is--first"></span><span style="--index:1" class="button-023__bg-inner is--second"></span></span>
         <span class="button-023__inner"><span class="button-023__text is--first">{t.cta[1]}</span><span aria-hidden="true" class="button-023__text is--second">{t.cta[1]}</span></span>
@@ -388,7 +380,7 @@ const socialImageUrl = {
       <div class="keyhop-footer__notices">
         <p>{film.musicLabel}: <a href="https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1400011" lang="en" dir="ltr">“Monkeys Spinning Monkeys” — Kevin MacLeod</a> · <a href="https://creativecommons.org/licenses/by/4.0/" lang="en" dir="ltr">CC BY 4.0</a> · {film.musicEdit}</p>
       </div>
-      <SiteFooterBase locale={t.htmlLang} />
+      <SiteFooterBase locale={t.htmlLang} pressKit="/keyhop/presskit/" />
     </div>
   </footer>
 

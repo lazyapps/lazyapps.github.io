@@ -1,0 +1,14 @@
+{
+  "zh-hans": {"brand":"绎言", "before":"昨天", "after":"今天", "quote":"我们明天接着聊。", "closing":"把说过的话，\n变成自己的英语。", "alt":"昨天写下的一句话，今天在朋友告别时用英语说出来。"},
+  "zh-hant": {"brand":"繹言", "before":"昨天", "after":"今天", "quote":"我們明天接著聊。", "closing":"把說過的話，\n變成自己的英語。", "alt":"昨天寫下的一句話，今天和朋友道別時用英語說出來。"},
+  "en": {"brand":"YiYan", "before":"Yesterday", "after":"Today", "quote":"Let's continue the talk tomorrow.", "closing":"Your words today.\nYour English tomorrow.", "alt":"A sentence written yesterday becomes English used in a goodbye with a friend today."},
+  "ja": {"brand":"YiYan", "before":"昨日", "after":"今日", "quote":"この話、明日また続けよう。", "closing":"自分の言葉から、\n自分の英語へ。", "alt":"昨日書いた一言を、今日は友人との別れ際に英語で伝える。"},
+  "ko": {"brand":"YiYan", "before":"어제", "after":"오늘", "quote":"우리 내일 이어서 얘기하자.", "closing":"내가 했던 말이\n나의 영어가 되도록.", "alt":"어제 쓴 한 문장을 오늘 친구와 헤어지며 영어로 말합니다."},
+  "de": {"brand":"YiYan", "before":"Gestern", "after":"Heute", "quote":"Reden wir morgen weiter.", "closing":"Deine Worte heute.\nDein Englisch morgen.", "alt":"Ein Satz von gestern wird heute beim Abschied von einer Freundin auf Englisch verwendet."},
+  "fr": {"brand":"YiYan", "before":"Hier", "after":"Aujourd’hui", "quote":"On reprend cette discussion demain.", "closing":"Vos mots aujourd’hui.\nVotre anglais demain.", "alt":"Une phrase écrite hier devient de l’anglais utilisé aujourd’hui en disant au revoir à une amie."},
+  "es": {"brand":"YiYan", "before":"Ayer", "after":"Hoy", "quote":"Mañana seguimos hablando.", "closing":"Tus palabras de hoy.\nTu inglés de mañana.", "alt":"Una frase escrita ayer se usa hoy en inglés al despedirse de una amiga."},
+  "pt-br": {"brand":"YiYan", "before":"Ontem", "after":"Hoje", "quote":"A gente continua essa conversa amanhã.", "closing":"Suas palavras de hoje.\nSeu inglês de amanhã.", "alt":"Uma frase escrita ontem vira inglês usado hoje na despedida de uma amiga."},
+  "ru": {"brand":"YiYan", "before":"Вчера", "after":"Сегодня", "quote":"Продолжим разговор завтра.", "closing":"Ваши слова сегодня.\nВаш английский завтра.", "alt":"Вчерашняя фраза сегодня звучит на английском при прощании с подругой."},
+  "hi": {"brand":"YiYan", "before":"कल", "after":"आज", "quote":"इस पर कल फिर बात करते हैं।", "closing":"आज के आपके शब्द।\nकल की आपकी अंग्रेज़ी।", "alt":"कल लिखा एक वाक्य आज दोस्त से विदा लेते समय अंग्रेज़ी में कहा जाता है।"},
+  "ar": {"brand":"YiYan", "before":"أمس", "after":"اليوم", "quote":"نكمل هذا الحديث غدًا.", "closing":"كلماتك اليوم.\nإنجليزيتك غدًا.", "alt":"جملة كُتبت أمس تُقال اليوم بالإنجليزية عند توديع صديقة."}
+}

@@ -1,0 +1,98 @@
+[
+  {
+    "locale": "zh-hans",
+    "route": "dist/keyhop/index.html",
+    "video": "/v/keyhop/hero-zh-hans-v2.mp4",
+    "poster": "/v/keyhop/hero-zh-hans-v2.jpg",
+    "credit": true,
+    "storyRemoved": true
+  },
+  {
+    "locale": "en",
+    "route": "dist/keyhop/en/index.html",
+    "video": "/v/keyhop/hero-en-v2.mp4",
+    "poster": "/v/keyhop/hero-en-v2.jpg",
+    "credit": true,
+    "storyRemoved": true
+  },
+  {
+    "locale": "zh-hant",
+    "route": "dist/keyhop/zh-hant/index.html",
+    "video": "/v/keyhop/hero-zh-hant-v2.mp4",
+    "poster": "/v/keyhop/hero-zh-hant-v2.jpg",
+    "credit": true,
+    "storyRemoved": true
+  },
+  {
+    "locale": "es",
+    "route": "dist/keyhop/es/index.html",
+    "video": "/v/keyhop/hero-es-v2.mp4",
+    "poster": "/v/keyhop/hero-es-v2.jpg",
+    "credit": true,
+    "storyRemoved": true
+  },
+  {
+    "locale": "pt-br",
+    "route": "dist/keyhop/pt-br/index.html",
+    "video": "/v/keyhop/hero-pt-br-v2.mp4",
+    "poster": "/v/keyhop/hero-pt-br-v2.jpg",
+    "credit": true,
+    "storyRemoved": true
+  },
+  {
+    "locale": "fr",
+    "route": "dist/keyhop/fr/index.html",
+    "video": "/v/keyhop/hero-fr-v2.mp4",
+    "poster": "/v/keyhop/hero-fr-v2.jpg",
+    "credit": true,
+    "storyRemoved": true
+  },
+  {
+    "locale": "de",
+    "route": "dist/keyhop/de/index.html",
+    "video": "/v/keyhop/hero-de-v2.mp4",
+    "poster": "/v/keyhop/hero-de-v2.jpg",
+    "credit": true,
+    "storyRemoved": true
+  },
+  {
+    "locale": "ja",
+    "route": "dist/keyhop/ja/index.html",
+    "video": "/v/keyhop/hero-ja-v2.mp4",
+    "poster": "/v/keyhop/hero-ja-v2.jpg",
+    "credit": true,
+    "storyRemoved": true
+  },
+  {
+    "locale": "ko",
+    "route": "dist/keyhop/ko/index.html",
+    "video": "/v/keyhop/hero-ko-v2.mp4",
+    "poster": "/v/keyhop/hero-ko-v2.jpg",
+    "credit": true,
+    "storyRemoved": true
+  },
+  {
+    "locale": "ru",
+    "route": "dist/keyhop/ru/index.html",
+    "video": "/v/keyhop/hero-ru-v2.mp4",
+    "poster": "/v/keyhop/hero-ru-v2.jpg",
+    "credit": true,
+    "storyRemoved": true
+  },
+  {
+    "locale": "ar",
+    "route": "dist/keyhop/ar/index.html",
+    "video": "/v/keyhop/hero-ar-v2.mp4",
+    "poster": "/v/keyhop/hero-ar-v2.jpg",
+    "credit": true,
+    "storyRemoved": true
+  },
+  {
+    "locale": "hi",
+    "route": "dist/keyhop/hi/index.html",
+    "video": "/v/keyhop/hero-hi-v2.mp4",
+    "poster": "/v/keyhop/hero-hi-v2.jpg",
+    "credit": true,
+    "storyRemoved": true
+  }
+]

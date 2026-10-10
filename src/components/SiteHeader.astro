@@ -1,0 +1,85 @@
+---
+import { Image } from 'astro:assets';
+import type { ImageMetadata } from 'astro';
+interface Props {
+  name?: string;
+  icon?: string;
+  homeLabel?: string;
+  homeMark?: 'wordmark' | 'sun';
+  pixelated?: boolean;
+  class?: string;
+}
+const { name, icon, homeLabel = 'lazyapps home', homeMark = 'wordmark', pixelated = false, class: className } = Astro.props;
+const nativeIcons = import.meta.glob<{ default: ImageMetadata }>('../assets/img/*-icon.png', { eager: true });
+const nativeIcon = Object.values(nativeIcons).find(entry => entry.default.src === icon)?.default;
+---
+<header class:list={['site-header', className]} dir="ltr">
+  <a class:list={['site-header__home', 'dsp', { 'site-header__home--sun': homeMark === 'sun' }]} href="/" aria-label={homeLabel} lang="en">
+    {homeMark === 'sun' ? <span class="site-header__sun" data-nav-sun aria-hidden="true">
+      <svg class="nav-sun-rays" width="32" height="32" viewBox="0 0 64 64" fill="none" focusable="false">
+        <path d="M32 3v5m0 48v5M3 32h5m48 0h5M11.5 11.5l3.5 3.5m34 34 3.5 3.5m-41 0L15 49m34-34 3.5-3.5" stroke="currentColor" stroke-width="3" stroke-linecap="round" />
+      </svg>
+    </span> : <>lazyapps<span class="site-header__dot" aria-hidden="true"></span></>}
+  </a>
+  {name && <div class="site-header__product">
+    {nativeIcon ? <Image src={nativeIcon} width={28} height={28} densities={[1, 2]} format="webp" quality={90} alt="" /> : icon && <img src={icon} width="28" height="28" alt="" class:list={{ 'is-pixelated': pixelated }} />}
+    <span class="dsp" dir="auto" lang={/^[A-Za-z0-9 .&-]+$/.test(name) ? 'en' : undefined}>{name}</span>
+  </div>}
+  <div class="site-header__controls"><slot /></div>
+</header>
+<script>
+  const header = document.querySelector<HTMLElement>('.site-header');
+  if (header) {
+    const updateBackdrop = () => header.classList.toggle('is-scrolled', window.scrollY > 0);
+    let scheduled = false;
+    window.addEventListener('scroll', () => {
+      if (scheduled) return;
+      scheduled = true;
+      requestAnimationFrame(() => {
+        updateBackdrop();
+        scheduled = false;
+      });
+    }, { passive: true });
+    window.addEventListener('pageshow', updateBackdrop);
+    updateBackdrop();
+  }
+  const sun = header?.querySelector<HTMLElement>('[data-nav-sun]');
+  if (sun) {
+    let inView = false;
+    const updateAnimation = () => sun.toggleAttribute('data-animating', inView && !document.hidden);
+    new IntersectionObserver(([entry]) => {
+      inView = entry.isIntersecting;
+      updateAnimation();
+    }).observe(sun);
+    document.addEventListener('visibilitychange', updateAnimation);
+  }
+</script>
+<style>
+  .site-header{--accent:#ff6846;--ink:#171717;position:sticky;top:0;z-index:1100;isolation:isolate;display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);align-items:center;gap:20px;min-height:80px;padding-block:calc(12px + var(--safe-top,0px)) 12px}
+  .site-header::before{content:"";position:absolute;inset-block:0;inset-inline:calc((100% - 100vw)/2);z-index:-1;pointer-events:none}
+  .site-header.is-scrolled::before{background:var(--paper)}
+  .site-header.is-scrolled::after{content:"";position:absolute;inset-block:0;inset-inline:calc((100% - 100vw)/2);z-index:-1;pointer-events:none}
+  .site-header__home{display:inline-flex;align-items:baseline;justify-self:start;gap:3px;min-height:44px;align-content:center;font-size:32px;line-height:44px;text-decoration:none;color:var(--ink)}
+  .site-header__dot{width:7px;height:7px;border-radius:50%;background:var(--accent)}
+  .site-header__home--sun{align-items:center;justify-content:center;width:44px;height:44px}
+  .site-header__sun{position:relative;display:block;width:10px;height:10px;border-radius:50%;color:#ff293c;background:currentColor;transition:transform .2s cubic-bezier(.22,1,.36,1)}
+  @media(hover:hover) and (pointer:fine){.site-header__home--sun:hover .site-header__sun{transform:scale(1.45)}}
+  .nav-sun-rays{position:absolute;inset:-11px;width:32px;height:32px;animation:nav-sun-turn 24s linear infinite paused;pointer-events:none}
+  .site-header__sun[data-animating] .nav-sun-rays{animation-play-state:running}
+  @keyframes nav-sun-turn{to{transform:rotate(360deg)}}
+  @media(prefers-reduced-motion:reduce){.nav-sun-rays{animation:none}.site-header__sun{transition:none}}
+  .site-header__product{display:flex;align-items:center;justify-content:center;gap:10px;min-width:0}
+  .site-header__product img{flex:none;object-fit:contain}
+  .site-header__product img.is-pixelated{image-rendering:pixelated;border-radius:0}
+  .site-header__product .dsp{font-size:24px;line-height:1.25;text-wrap:balance}
+  .site-header__controls{grid-column:3;justify-self:end;min-width:0}
+  .site-header__home:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px}
+  @media(max-width:650px){
+    .site-header{grid-template-columns:auto minmax(0,1fr) auto;gap:12px;min-height:72px}
+    .site-header__home{font-size:26px}
+    .site-header__product{gap:6px}
+    .site-header__product img{width:22px;height:22px}
+    .site-header__product .dsp{font-size:18px}
+  }
+  @media(max-width:370px){.site-header{gap:8px}.site-header__product img{display:none}.site-header__product .dsp{font-size:16px}}
+</style>

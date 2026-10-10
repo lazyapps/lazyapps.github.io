@@ -1,0 +1,34 @@
+{
+  "languages": [
+    "en"
+  ],
+  "files": [
+    {
+      "path": "icon.png",
+      "contentLanguage": "und",
+      "width": 1024,
+      "height": 1024,
+      "format": "PNG",
+      "bytes": 3476331,
+      "sha256": "1d89c17accc14746d520f6bcebe60a9025412cbacc3ad34944f48a531bd651bc"
+    },
+    {
+      "path": "en/globe-ipad.png",
+      "contentLanguage": "en",
+      "width": 2064,
+      "height": 2752,
+      "format": "PNG",
+      "bytes": 1664367,
+      "sha256": "6b56f5710d82296a3d035be6b3827abdc0d52480d6aec3044593d8ce855b42da"
+    },
+    {
+      "path": "social-card.png",
+      "contentLanguage": "und",
+      "width": 1200,
+      "height": 630,
+      "format": "PNG",
+      "bytes": 145492,
+      "sha256": "edf412f3c599838490295ee1d92df02fa7b44f037f089edabdc1c4092482af66"
+    }
+  ]
+}

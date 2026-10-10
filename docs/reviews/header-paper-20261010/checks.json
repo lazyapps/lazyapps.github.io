@@ -1,0 +1,38 @@
+{
+  "top": {
+    "background": "rgba(0, 0, 0, 0)",
+    "blur": "none",
+    "y": 0
+  },
+  "scrolled": {
+    "background": "rgb(248, 248, 246)",
+    "blur": "blur(16px)",
+    "border": "0px",
+    "opacity": "1",
+    "pageBackground": "rgb(248, 248, 246)",
+    "y": 40,
+    "z": "1100"
+  },
+  "shheep": {
+    "background": "rgb(248, 248, 246)",
+    "pageBackground": "rgb(248, 248, 246)",
+    "y": 700,
+    "z": "1100"
+  },
+  "grain": {
+    "background": "rgb(248, 248, 246)",
+    "opacity": "1",
+    "pageBackground": "rgb(248, 248, 246)",
+    "texture": {
+      "header": "url(\"http://127.0.0.1:4322/_astro/noise.BSesztit.png\")",
+      "headerFilter": "contrast(1.25) brightness(0.6)",
+      "headerOpacity": "0.09",
+      "headerSize": "111.111px auto",
+      "page": "url(\"http://127.0.0.1:4322/_astro/noise.BSesztit.png\")",
+      "pageFilter": "contrast(1.25) brightness(0.6)",
+      "pageOpacity": "0.09",
+      "pageSize": "111.111px auto"
+    },
+    "y": 700
+  }
+}

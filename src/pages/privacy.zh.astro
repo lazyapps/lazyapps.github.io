@@ -9,7 +9,9 @@ import yiyanIconUrl from '$assets/img/yiyan-icon.png?url';
 import xvdlIconUrl from '$assets/img/xvdl-icon.png?url';
 import opengraphUrl from '$assets/img/opengraph.png?url';
 import SocialMeta from '../components/SocialMeta.astro';
+import SiteGrain from '../components/SiteGrain.astro';
 import SiteFooterBase from '../components/SiteFooterBase.astro';
+import SiteHeader from '../components/SiteHeader.astro';
 ---
 <!doctype html>
 <html lang="zh-Hans">
@@ -95,22 +97,14 @@ section.doc.wrap{padding-top:clamp(8px,1.5vw,18px)}
 <body>
 
 
-<div class="grain" data-grain-animate="true"></div>
+<SiteGrain animated />
+
+<SiteHeader class="wrap" homeLabel="lazyapps 首页" />
 
 <main>
 
   
   <section class="doc wrap">
-    <div class="topbar">
-      <nav class="mono topbar__nav" aria-label="主导航">
-        <a data-hover href="/" class="topbar__home" aria-label="首页"><span aria-hidden="true" class="topbar__home-dot"></span></a>
-      </nav>
-      
-      <div class="topbar__app">
-        <h2 class="dsp" lang="en">lazyapps<i></i></h2>
-      </div>
-    </div>
-
     <div data-reveal-group data-stagger="110" data-distance="1.2em" data-start="top 94%">
       <h1 class="doc__h1 dsp"><span class="zh">隐私条款</span></h1>
       <p class="doc__p">感谢使用 <strong>lazyapps 出品的应用程序</strong>。应用数据以本地存储为主；本网站的访问统计在下方单独说明。</p>

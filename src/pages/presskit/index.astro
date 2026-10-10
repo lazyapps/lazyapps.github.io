@@ -1,0 +1,96 @@
+---
+import PressLayout from '../../layouts/PressLayout.astro';
+import NativeAppIcon from '../../components/NativeAppIcon.astro';
+import { pressKits as kits } from '../../content/presskit-catalog.mjs';
+import opengraph from '../../assets/img/opengraph.png?url';
+---
+<PressLayout title="lazyapps Press Kits — App Icons, Screenshots & Product Information" description="Download official lazyapps press kits with app icons, screenshots and product information in each app’s supported languages. Includes media contact details." image={opengraph}>
+  <section class="press-intro" aria-labelledby="press-title">
+    <h1 id="press-title"><span class="sr-only" lang="en">lazyapps </span><span data-press-text="hubTitleFirst">Press</span><br><span class="press-title__end"><span data-press-text="hubTitleSecond">Kits</span><span class="title-dot">.</span></span></h1>
+    <div class="press-icons" aria-hidden="true">
+      {kits.map((kit, index) => <div class="press-icon" style={`--tilt:${[-8, 6, -4, 5, -6, 8, -3][index]}deg`}>
+        <NativeAppIcon slug={kit.slug} size={88} loading="eager" />
+      </div>)}
+    </div>
+    <div class="press-intro__copy">
+      <p data-press-text="hubIntro">App icons, screenshots and product descriptions. Choose an app to download its press kit.</p>
+    </div>
+  </section>
+
+  <section aria-labelledby="products-title">
+    <h2 id="products-title" class="sr-only" data-press-text="products">App press kits</h2>
+    <ul class="product-list">{kits.map(kit => {
+      const english = kit.locales.find(locale => locale.tag === 'en');
+      return <li data-product={kit.slug}><a class="product-link" href={`/${kit.slug}/presskit/#en`} data-press-route={`/${kit.slug}/presskit/`}>
+        <span class="product-icon"><NativeAppIcon slug={kit.slug} /></span>
+        <div class="product-copy"><h3 data-press-card-name lang="en">{english.name}</h3><p data-press-card-summary lang="en" dir="ltr">{english.summary}</p></div>
+        <div class="product-access"><span class="product-action"><span data-press-text="kit">Press kit</span><span class="product-arrow" aria-hidden="true">↗</span></span></div>
+      </a></li>;
+    })}</ul>
+  </section>
+
+</PressLayout>
+
+<style>
+  .press-intro{display:grid;grid-template-columns:1.15fr 1fr;align-items:center;gap:40px 64px;padding-block:72px 56px}
+  #press-title{font:900 clamp(112px,15vw,196px)/.82 var(--display-latin);letter-spacing:-.025em;text-transform:uppercase}
+  #press-title:lang(zh),#press-title:lang(ja),#press-title:lang(ko),#press-title:lang(ar),#press-title:lang(hi){font-family:var(--sans);font-size:clamp(64px,8vw,108px);line-height:1.05;font-weight:750;letter-spacing:-.03em;text-transform:none}
+  #press-title:lang(fr),#press-title:lang(pt),#press-title:lang(tr){font-size:clamp(80px,10vw,132px)}
+  .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap;border:0}
+  .title-dot{color:var(--accent)}
+  .press-title__end{display:inline-block;white-space:nowrap}
+  .press-icons{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;max-width:380px;justify-self:end;align-items:center;padding:14px}
+  .press-icon{display:grid;place-items:center;aspect-ratio:1;transform:rotate(var(--tilt))}
+  .press-icon:last-child{grid-column:2}
+  .press-icon :global(img){width:100%;height:auto;aspect-ratio:1;object-fit:contain;min-width:0;flex-shrink:1}
+  .press-intro__copy{grid-column:1/-1;max-width:58ch}
+  .press-intro__copy>p{font-size:20px;line-height:1.55;text-wrap:pretty}
+  .product-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--space-grid);list-style:none;margin:0;padding:0}
+  .product-list li{min-width:0;border-radius:var(--r-card);background:var(--fill);box-shadow:inset 0 0 0 1px rgba(0,0,0,.08);transition:transform .2s ease}
+  .product-list [data-product="chmate"]{--fill:var(--app-chmate)}
+  .product-list [data-product="world-book"]{--fill:var(--app-world-book)}
+  .product-list [data-product="fondfont"]{--fill:var(--app-fondfont)}
+  .product-list [data-product="keyhop"]{--fill:var(--app-keyhop)}
+  .product-list [data-product="yiyan"]{--fill:var(--app-yiyan)}
+  .product-list [data-product="xvdl"]{--fill:var(--app-xvdl)}
+  .product-list [data-product="shheep"]{--fill:var(--app-shheep)}
+  .product-link{display:grid;height:100%;grid-template-columns:72px minmax(0,1fr);gap:24px;align-items:start;padding:var(--space-card);border-radius:inherit;text-decoration:none}
+  .product-icon{display:grid;place-items:center;width:72px;height:72px}
+  .product-icon :global(img){display:block;width:100%;height:100%;object-fit:contain}
+  .product-copy h3{font:900 clamp(30px,3.2vw,44px)/1 var(--display-latin);text-transform:uppercase;letter-spacing:-.01em}
+  .product-copy{container-type:inline-size}
+  .product-copy h3:lang(zh),.product-copy h3:lang(ja),.product-copy h3:lang(ko){font-family:var(--sans);font-size:30px;line-height:1.2;letter-spacing:0;text-transform:none}
+  .product-copy h3[data-bilingual]{font-size:clamp(16px,8cqw,30px);white-space:nowrap;overflow-wrap:normal}
+  .product-copy p{font-size:14px;line-height:1.6;color:var(--ink);margin-top:12px}
+  .product-access{grid-column:1/-1;display:flex;align-items:center;justify-content:flex-end;gap:16px;align-self:end}
+  .product-action{display:flex;align-items:center;gap:12px;min-height:44px;padding:8px 10px 8px 14px;border-radius:999px;background:rgba(0,0,0,.07);box-shadow:inset 0 0 0 1px rgba(0,0,0,.12);font-size:13px;font-weight:600;transition:background-color .18s ease}
+  .product-arrow{display:grid;place-items:center;width:28px;height:28px;border-radius:50%;background:rgba(0,0,0,.09);font-size:19px;transition:transform .18s ease}
+  @media(hover:hover) and (pointer:fine){
+    .product-list li:has(.product-link:hover){transform:translateY(-4px)}
+    .product-link:hover .product-action{background:rgba(0,0,0,.11)}
+    .product-link:hover .product-arrow{transform:translate(2px,-2px)}
+  }
+  @media(max-width:900px){
+    .press-intro{gap:32px;padding-block:56px}
+    .press-icons{padding:8px;gap:10px}
+    .press-intro__copy{gap:32px}
+  }
+  @media(max-width:720px){.product-list{grid-template-columns:1fr}}
+  @media(max-width:650px){
+    .press-intro{grid-template-columns:1fr;padding-block:40px;gap:28px}
+    #press-title{font-size:clamp(88px,25vw,152px)}
+    #press-title:lang(zh),#press-title:lang(ja),#press-title:lang(ko),#press-title:lang(ar),#press-title:lang(hi){font-size:clamp(64px,15vw,92px)}
+    #press-title:lang(fr),#press-title:lang(pt),#press-title:lang(tr){font-size:clamp(72px,20vw,112px)}
+    .press-icons{grid-template-columns:repeat(7,minmax(0,1fr));width:100%;max-width:none;gap:8px;padding:4px 0}
+    .press-icon:last-child{grid-column:auto}
+    .press-intro__copy>p{font-size:17px}
+    .product-link{grid-template-columns:52px minmax(0,1fr);gap:20px;padding:20px}
+    .product-icon{width:52px;height:52px}
+    .product-copy h3{font-size:32px;line-height:1.1}
+    .product-copy p{font-size:13px}
+  }
+  @media(prefers-reduced-motion:reduce){
+    .product-list li,.product-action,.product-arrow{transition:none}
+    .product-list li:has(.product-link:hover),.product-link:hover .product-arrow{transform:none}
+  }
+</style>

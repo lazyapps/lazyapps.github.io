@@ -1,0 +1,53 @@
+{
+  "languages": [
+    "de",
+    "en",
+    "es",
+    "fr",
+    "it",
+    "ja",
+    "ko",
+    "pt-BR",
+    "ru",
+    "zh-Hans",
+    "zh-Hant"
+  ],
+  "files": [
+    {
+      "path": "icon.png",
+      "contentLanguage": "und",
+      "width": 1024,
+      "height": 1024,
+      "format": "PNG",
+      "bytes": 686434,
+      "sha256": "a5bec121e6e23f1e5819c526b20f79d82eee7e926537d5f12074860e8822a4f0"
+    },
+    {
+      "path": "wordmark.png",
+      "contentLanguage": "und",
+      "width": 163,
+      "height": 61,
+      "format": "PNG",
+      "bytes": 7657,
+      "sha256": "151f12b04c70ad013f3aee794df2ae49659a9b34168c6bad85e85a48503a84cf"
+    },
+    {
+      "path": "bedroom-preview.png",
+      "contentLanguage": "en",
+      "width": 1050,
+      "height": 560,
+      "format": "PNG",
+      "bytes": 114529,
+      "sha256": "ecc94a21caa29cf107f24030b0497718c714b2fbb665d3939f4d719dae7001d0"
+    },
+    {
+      "path": "social-card.png",
+      "contentLanguage": "und",
+      "width": 1200,
+      "height": 630,
+      "format": "PNG",
+      "bytes": 69156,
+      "sha256": "be375d6e77091e801f5ce513a52fe56382db58f4cf984e383d8fd5da84d8ee38"
+    }
+  ]
+}

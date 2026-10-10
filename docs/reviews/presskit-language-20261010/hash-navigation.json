@@ -1,0 +1,47 @@
+[
+  {
+    "lang": "zh-Hans",
+    "picker": "#zh-Hans",
+    "productHref": "/chmate/presskit/#zh-Hans",
+    "test": "old-link-normalized",
+    "url": "http://127.0.0.1:4322/presskit/#zh-Hans"
+  },
+  {
+    "lang": "fr",
+    "picker": "#fr",
+    "readme": "/presskit/fondfont/fr/README.md",
+    "scrollY": 0,
+    "test": "select-fr",
+    "url": "http://127.0.0.1:4322/fondfont/presskit/#fr"
+  },
+  {
+    "hash": "#fr",
+    "lang": "fr",
+    "test": "back-to-fr"
+  },
+  {
+    "hash": "#ja",
+    "lang": "ja",
+    "test": "forward-to-ja"
+  },
+  {
+    "hash": "#main",
+    "lang": "ja",
+    "picker": "#ja",
+    "test": "main-keeps-ja"
+  },
+  {
+    "lang": "ja",
+    "links": [
+      "/chmate/presskit/#ja",
+      "/world-book/presskit/#ja",
+      "/fondfont/presskit/#ja",
+      "/keyhop/presskit/#ja",
+      "/yiyan/presskit/#ja",
+      "/xvdl/presskit/#ja",
+      "/shheep/presskit/#ja"
+    ],
+    "test": "return-hub-ja",
+    "url": "http://127.0.0.1:4322/presskit/#ja"
+  }
+]

@@ -1,19 +1,19 @@
 {
   "zh-hans": {
-    "sub": "把日常输入变成地道英语，顺手学会，下次用上。",
+    "sub": "在 Mac 上将输入润色成自然英语，附解释与例句。可捕捉 Claude Code、Codex 等 AI 编程工具的新输入，也可润色选中文字或当前输入框。记录可选通过 iCloud 同步到 iPhone 测试版。",
     "trust": ["原请求照常发送", "复用已登录的 AI 助手", "记录默认留在本机"],
     "cards": [
-      ["照常工作，自动积累", "自动捕捉 AI 编程工具中的新输入，不打断手头的事。"],
-      ["想说什么，随处润色", "直接写中文、英文或混合句；也能快捷润色其他 App 的选区或输入框。"],
-      ["不只改，还讲明白", "重点笔记配例句。在 Mac 上围绕这条记录继续追问。"],
-      ["按你的习惯表达", "美式或英式，自然、轻松或专业；自选讲解语言，也可保留原有语气。"],
-      ["自己的表达库", "日历找回、收藏重点、复制复用；失败可重试，不需要的记录随时删。"],
-      ["随身听，随时练", "可选 iCloud 同步 · iPhone TestFlight 测试版。朗读、记忆复习、每日提醒，也能转交 AI 继续问。"]
+      ["捕捉 AI 编程工具输入", "自动捕捉 AI 编程工具中的新输入，不打断手头的事。"],
+      ["润色选区与输入框", "直接写中文、英文或混合句；也能快捷润色其他 App 的选区或输入框。"],
+      ["解释、例句与追问", "重点笔记配例句。在 Mac 上围绕这条记录继续追问。"],
+      ["语言、风格与语气", "美式或英式，自然、轻松或专业；自选讲解语言，也可保留原有语气。"],
+      ["日历、收藏与记录管理", "日历找回、收藏重点、复制复用；失败可重试，不需要的记录随时删。"],
+      ["iPhone 朗读与记忆复习", "可选 iCloud 同步 · iPhone TestFlight 测试版。朗读、记忆复习、每日提醒，也能转交 AI 继续问。"]
     ],
     "details": [
       ["支持与连接", ["Pi · Claude Code · Codex · OpenCode · Antigravity。运行期间捕捉新输入，不补录旧对话。", "使用已安装、已登录且可用的助手，无需另配模型或 API。", "在 Mac 开启 iCloud，并使用同一 Apple 账户。iPhone 可搜索、按日历浏览、收藏和离线查看已同步记录。"]],
       ["隐私与掌控", ["记录默认本地保存；iCloud 同步由你开启。生成英语仍会使用所选 AI 服务。", "过滤低价值输入，识别并遮盖高置信度密钥；代码、路径和网址保留原样。", "Mac 追问仅存在本机，不同步、不导出。可单独删除云端数据，保留 Mac 记录。"]],
-      ["Mac 的顺手细节", ["润色选区会替换选中文字；无选区则在原文后追加。需辅助功能权限，也支持系统服务菜单。", "全局快捷键、置顶与透明度、深浅主题、字号、登录启动、自动更新。", "附带只读 CLI，可导出学习记录。iPhone 可复制记录上下文，或打开 ChatGPT、Claude、Gemini；由你确认发送。"]]
+      ["Mac 设置与导出", ["润色选区会替换选中文字；无选区则在原文后追加。需辅助功能权限，也支持系统服务菜单。", "全局快捷键、置顶与透明度、深浅主题、字号、登录启动、自动更新。", "附带只读 CLI，可导出学习记录。iPhone 可复制记录上下文，或打开 ChatGPT、Claude、Gemini；由你确认发送。"]]
     ],
     "video": ["随处润色", "学会怎么说", "随身复习"],
     "terms": ["自动捕捉 · 直接输入 · 当前输入框", "重点笔记 · 例句 · Mac 追问", "收藏 · 朗读 · 记忆复习\n每日提醒 · 转交 AI"],
@@ -21,20 +21,20 @@
     "sync": "可选 iCloud 同步 · iPhone TestFlight 测试版"
   },
   "zh-hant": {
-    "sub": "把日常輸入變成道地英語，順手學會，下次用上。",
+    "sub": "在 Mac 上將輸入潤飾成自然英語，附解釋與例句。可擷取 Claude Code、Codex 等 AI 程式開發工具的新輸入，也可潤飾選取文字或目前輸入框。紀錄可選透過 iCloud 同步到 iPhone 測試版。",
     "trust": ["原請求照常送出", "沿用已登入的 AI 助手", "紀錄預設留在本機"],
     "cards": [
-      ["照常工作，自動累積", "自動擷取 AI 程式開發工具中的新輸入，不打斷手上的事。"],
-      ["想說什麼，隨處潤飾", "直接寫中文、英文或混合句；也能快捷潤飾其他 App 的選取文字或輸入框。"],
-      ["不只改，還講明白", "重點筆記配例句。在 Mac 上針對這筆紀錄繼續追問。"],
-      ["依你的習慣表達", "美式或英式，自然、輕鬆或專業；自選講解語言，也可保留原有語氣。"],
-      ["自己的表達庫", "日曆找回、收藏重點、複製再用；失敗可重試，不需要的紀錄隨時刪。"],
-      ["隨身聽，隨時練", "可選 iCloud 同步 · iPhone TestFlight 測試版。朗讀、記憶複習、每日提醒，也能交給 AI 繼續問。"]
+      ["擷取 AI 程式開發工具輸入", "自動擷取 AI 程式開發工具中的新輸入，不打斷手上的事。"],
+      ["潤飾選取文字與輸入框", "直接寫中文、英文或混合句；也能快捷潤飾其他 App 的選取文字或輸入框。"],
+      ["解釋、例句與追問", "重點筆記配例句。在 Mac 上針對這筆紀錄繼續追問。"],
+      ["語言、風格與語氣", "美式或英式，自然、輕鬆或專業；自選講解語言，也可保留原有語氣。"],
+      ["日曆、收藏與紀錄管理", "日曆找回、收藏重點、複製再用；失敗可重試，不需要的紀錄隨時刪。"],
+      ["iPhone 朗讀與記憶複習", "可選 iCloud 同步 · iPhone TestFlight 測試版。朗讀、記憶複習、每日提醒，也能交給 AI 繼續問。"]
     ],
     "details": [
       ["支援與連接", ["Pi · Claude Code · Codex · OpenCode · Antigravity。執行期間擷取新輸入，不補錄舊對話。", "使用已安裝、已登入且可用的助手，無須另設模型或 API。", "在 Mac 開啟 iCloud，並使用同一 Apple 帳號。iPhone 可搜尋、依日曆瀏覽、收藏和離線查看已同步紀錄。"]],
       ["隱私與掌控", ["紀錄預設儲存在本機；iCloud 同步由你開啟。產生英語仍會使用所選 AI 服務。", "過濾低價值輸入，辨識並遮蔽高可信度金鑰；程式碼、路徑和網址保持原樣。", "Mac 追問僅留在本機，不同步、不匯出。可單獨刪除雲端資料，保留 Mac 紀錄。"]],
-      ["Mac 的順手細節", ["潤飾選取文字會替換原選區；未選取則追加於原文後。需輔助使用權限，也支援系統服務選單。", "全域快捷鍵、置頂與透明度、深淺主題、字級、登入啟動、自動更新。", "附唯讀 CLI，可匯出學習紀錄。iPhone 可複製紀錄內容，或開啟 ChatGPT、Claude、Gemini；由你確認傳送。"]]
+      ["Mac 設定與匯出", ["潤飾選取文字會替換原選區；未選取則追加於原文後。需輔助使用權限，也支援系統服務選單。", "全域快捷鍵、置頂與透明度、深淺主題、字級、登入啟動、自動更新。", "附唯讀 CLI，可匯出學習紀錄。iPhone 可複製紀錄內容，或開啟 ChatGPT、Claude、Gemini；由你確認傳送。"]]
     ],
     "video": ["隨處潤飾", "學會怎麼說", "隨身複習"],
     "terms": ["自動擷取 · 直接輸入 · 目前輸入框", "重點筆記 · 例句 · Mac 追問", "收藏 · 朗讀 · 記憶複習\n每日提醒 · 交給 AI"],
@@ -42,20 +42,20 @@
     "sync": "可選 iCloud 同步 · iPhone TestFlight 測試版"
   },
   "en": {
-    "sub": "Turn everyday input into natural English. Learn it now. Use it next time.",
+    "sub": "Refine text into natural English on Mac, with explanations and examples. Capture new input from AI coding tools such as Claude Code and Codex, or refine selected text and the current field. Optionally sync records via iCloud to the iPhone beta.",
     "trust": ["Your original request goes through", "Uses your signed-in AI assistant", "Records stay local by default"],
     "cards": [
-      ["Work as usual. Keep learning.", "Capture new input from AI coding tools without interrupting your work."],
-      ["Better English, wherever you write", "Type Chinese, English or both. Refine a selection or the current text field in another app."],
-      ["Understand the improvement", "Focused notes and examples. Ask follow-up questions about a record on your Mac."],
-      ["Make it sound like you", "US or UK English; natural, casual or professional. Choose the explanation language and keep your tone."],
-      ["Your own phrase library", "Browse by date, bookmark, copy and reuse. Retry failures or delete records you no longer need."],
-      ["Listen. Recall. Repeat.", "Optional iCloud sync · iPhone TestFlight beta. Read aloud, practise recall, set daily reminders or continue in an AI app."]
+      ["Capture AI coding input", "Capture new input from AI coding tools without interrupting your work."],
+      ["Refine selections & text fields", "Type Chinese, English or both. Refine a selection or the current text field in another app."],
+      ["Explanations, examples & follow-ups", "Focused notes and examples. Ask follow-up questions about a record on your Mac."],
+      ["Language, style & tone", "US or UK English; natural, casual or professional. Choose the explanation language and keep your tone."],
+      ["Calendar, bookmarks & records", "Browse by date, bookmark, copy and reuse. Retry failures or delete records you no longer need."],
+      ["iPhone listening & recall", "Optional iCloud sync · iPhone TestFlight beta. Read aloud, practise recall, set daily reminders or continue in an AI app."]
     ],
     "details": [
       ["Tools & connection", ["Pi · Claude Code · Codex · OpenCode · Antigravity. Captures new input while running; no old-chat import.", "Uses an installed, signed-in, available assistant. No separate model or API setup.", "Enable iCloud on Mac and use the same Apple Account. On iPhone: search, calendar, bookmarks and offline access to synced records."]],
       ["Privacy & control", ["Local records by default; you opt into iCloud. English generation still uses the selected AI service.", "Filters low-value input and redacts high-confidence secrets. Preserves code, paths and URLs.", "Mac follow-up chats stay local and are neither synced nor exported. Delete cloud data separately while keeping Mac records."]],
-      ["Made for your Mac", ["Refinement replaces selected text; with no selection, it appends after the original. Requires Accessibility permission; also available in Services.", "Global shortcuts, pinning, opacity, light/dark themes, text size, launch at login and automatic updates.", "Read-only CLI for record export. On iPhone, copy record context or open ChatGPT, Claude or Gemini; you choose when to send."]]
+      ["Mac settings & export", ["Refinement replaces selected text; with no selection, it appends after the original. Requires Accessibility permission; also available in Services.", "Global shortcuts, pinning, opacity, light/dark themes, text size, launch at login and automatic updates.", "Read-only CLI for record export. On iPhone, copy record context or open ChatGPT, Claude or Gemini; you choose when to send."]]
     ],
     "video": ["Write anywhere", "Learn how to say it", "Review on the go"],
     "terms": ["Auto-capture · Direct input · Current field", "Focused notes · Examples · Mac follow-ups", "Bookmarks · Listen · Recall\nDaily reminders · AI handoff"],
@@ -63,20 +63,20 @@
     "sync": "Optional iCloud sync · iPhone TestFlight beta"
   },
   "ja": {
-    "sub": "いつもの入力を自然な英語に。今覚えて、次に使う。",
+    "sub": "Mac で文章を自然な英語に推敲し、解説と例文を確認。Claude Code や Codex などの AI 開発ツールの新しい入力、選択した文章、現在の入力欄に対応。iCloud 同期を有効にすると iPhone ベータ版でも記録を確認できます。",
     "trust": ["元のリクエストはそのまま送信", "ログイン済みのAIアシスタントを活用", "記録は標準で端末に保存"],
     "cards": [
-      ["いつもの仕事が英語の練習に", "AI開発ツールへの新しい入力を自動取得。作業を止めません。"],
-      ["どこで書いても、自然な英語に", "中国語・英語・混在文を直接入力。他のアプリの選択範囲や入力欄も推敲できます。"],
-      ["直す理由までわかる", "要点を絞った学習メモと例文。Macでは記録について続けて質問できます。"],
-      ["自分に合う表現を選ぶ", "米式・英式、自然・カジュアル・専門的な文体。解説言語を選び、元の語調も維持できます。"],
-      ["自分の言葉が表現集に", "日付で探す、お気に入り、コピーして再利用。失敗時の再試行や記録の削除も。"],
-      ["外出先でも、聞いて復習", "任意のiCloud同期 · iPhone TestFlightベータ版。読み上げ、想起練習、毎日の通知、AIアプリへの引き継ぎ。"]
+      ["AI 開発ツールの入力を取り込む", "AI開発ツールへの新しい入力を自動取得。作業を止めません。"],
+      ["選択した文章と入力欄を推敲", "中国語・英語・混在文を直接入力。他のアプリの選択範囲や入力欄も推敲できます。"],
+      ["解説・例文・追加質問", "要点を絞った学習メモと例文。Macでは記録について続けて質問できます。"],
+      ["言語・文体・語調の設定", "米式・英式、自然・カジュアル・専門的な文体。解説言語を選び、元の語調も維持できます。"],
+      ["カレンダー・ブックマーク・記録", "日付で探す、お気に入り、コピーして再利用。失敗時の再試行や記録の削除も。"],
+      ["iPhone で読み上げと復習", "任意のiCloud同期 · iPhone TestFlightベータ版。読み上げ、想起練習、毎日の通知、AIアプリへの引き継ぎ。"]
     ],
     "details": [
       ["対応ツールと接続", ["Pi · Claude Code · Codex · OpenCode · Antigravity。起動中の新しい入力のみ取得し、過去の会話は取り込みません。", "インストール・ログイン済みで利用可能なアシスタントを使用。モデルやAPIの追加設定は不要です。", "MacでiCloudを有効にし、同じApple Accountを使用。iPhoneでは検索、カレンダー、お気に入り、同期済み記録のオフライン閲覧が可能。"]],
       ["プライバシーと管理", ["記録は標準でローカル保存。iCloudは任意です。英語の生成には選択したAIサービスを使用します。", "学習価値の低い入力を除外し、確度の高い秘密情報を伏せます。コード・パス・URLは保持します。", "Macの追加質問はローカル限定で、同期・エクスポートされません。Macの記録を残してクラウドだけ削除できます。"]],
-      ["Macで使いやすく", ["選択範囲は置換し、未選択なら原文の後に追記。アクセシビリティ権限が必要です。サービスメニューにも対応。", "グローバルショートカット、最前面表示、透明度、明暗テーマ、文字サイズ、ログイン時起動、自動更新。", "読み取り専用CLIで記録を出力。iPhoneでは記録をコピー、またはChatGPT・Claude・Geminiを開き、自分で送信できます。"]]
+      ["Mac の設定と書き出し", ["選択範囲は置換し、未選択なら原文の後に追記。アクセシビリティ権限が必要です。サービスメニューにも対応。", "グローバルショートカット、最前面表示、透明度、明暗テーマ、文字サイズ、ログイン時起動、自動更新。", "読み取り専用CLIで記録を出力。iPhoneでは記録をコピー、またはChatGPT・Claude・Geminiを開き、自分で送信できます。"]]
     ],
     "video": ["どこでも自然な英語に", "表現のコツを学ぶ", "外出先でも復習"],
     "terms": ["自動取得 · 直接入力 · 他の入力欄", "学習メモ · 例文 · Macで追加質問", "お気に入り · 読み上げ · 想起練習\n毎日の通知 · AIに引き継ぎ"],
@@ -84,20 +84,20 @@
     "sync": "任意のiCloud同期 · iPhone TestFlightベータ版"
   },
   "ko": {
-    "sub": "일상의 입력을 자연스러운 영어로. 지금 배우고, 다음에 써 보세요.",
+    "sub": "Mac에서 문장을 자연스러운 영어로 다듬고 설명과 예문을 확인하세요. Claude Code, Codex 등 AI 개발 도구의 새 입력을 수집하거나 선택한 텍스트와 현재 입력란을 다듬을 수 있습니다. 선택적 iCloud 동기화로 iPhone 베타에서도 기록을 확인하세요.",
     "trust": ["원래 요청은 그대로 전송", "로그인한 AI 도우미 활용", "기록은 기본적으로 기기에 저장"],
     "cards": [
-      ["일하면서 자연스럽게 배우기", "AI 코딩 도구의 새 입력을 자동 수집해 작업을 방해하지 않습니다."],
-      ["어디서든 영어 다듬기", "중국어, 영어, 혼합 문장을 직접 입력하거나 다른 앱의 선택 영역과 입력란을 다듬으세요."],
-      ["왜 더 나은지 이해하기", "핵심 학습 노트와 예문. Mac에서 기록에 관해 이어서 질문하세요."],
-      ["내게 맞는 표현", "미국식·영국식, 자연스러운·편안한·전문적인 문체. 설명 언어를 고르고 원래 어조도 유지하세요."],
-      ["나만의 표현 모음", "날짜별 탐색, 즐겨찾기, 복사와 재사용. 실패한 작업 재시도와 기록 삭제도 가능합니다."],
-      ["듣고, 떠올리고, 복습하기", "선택적 iCloud 동기화 · iPhone TestFlight 베타. 낭독, 기억 복습, 매일 알림, AI 앱으로 이어가기."]
+      ["AI 개발 도구 입력 수집", "AI 코딩 도구의 새 입력을 자동 수집해 작업을 방해하지 않습니다."],
+      ["선택한 텍스트와 입력란 다듬기", "중국어, 영어, 혼합 문장을 직접 입력하거나 다른 앱의 선택 영역과 입력란을 다듬으세요."],
+      ["설명, 예문, 추가 질문", "핵심 학습 노트와 예문. Mac에서 기록에 관해 이어서 질문하세요."],
+      ["언어, 문체, 어조 설정", "미국식·영국식, 자연스러운·편안한·전문적인 문체. 설명 언어를 고르고 원래 어조도 유지하세요."],
+      ["달력, 즐겨찾기, 기록 관리", "날짜별 탐색, 즐겨찾기, 복사와 재사용. 실패한 작업 재시도와 기록 삭제도 가능합니다."],
+      ["iPhone 듣기와 기억 복습", "선택적 iCloud 동기화 · iPhone TestFlight 베타. 낭독, 기억 복습, 매일 알림, AI 앱으로 이어가기."]
     ],
     "details": [
       ["지원 도구와 연결", ["Pi · Claude Code · Codex · OpenCode · Antigravity. 실행 중 새 입력만 수집하며 이전 대화는 가져오지 않습니다.", "설치·로그인되어 사용 가능한 도우미를 이용합니다. 별도 모델이나 API 설정은 필요 없습니다.", "Mac에서 iCloud를 켜고 같은 Apple 계정을 사용하세요. iPhone에서 검색, 달력, 즐겨찾기, 동기화한 기록의 오프라인 열람을 지원합니다."]],
       ["개인정보와 관리", ["기록은 기본적으로 로컬에 저장되며 iCloud는 선택 사항입니다. 영어 생성에는 선택한 AI 서비스를 사용합니다.", "학습 가치가 낮은 입력을 걸러 내고 확실한 비밀 정보를 가립니다. 코드, 경로, URL은 유지합니다.", "Mac의 후속 대화는 로컬에만 보관되며 동기화·내보내기되지 않습니다. Mac 기록을 남기고 클라우드 데이터만 삭제할 수 있습니다."]],
-      ["Mac을 위한 편의 기능", ["선택한 텍스트는 교체하고, 선택 영역이 없으면 원문 뒤에 덧붙입니다. 손쉬운 사용 권한이 필요하며 서비스 메뉴도 지원합니다.", "전역 단축키, 맨 위 고정, 투명도, 밝고 어두운 테마, 글자 크기, 로그인 시 실행, 자동 업데이트.", "읽기 전용 CLI로 기록을 내보냅니다. iPhone에서 기록 맥락을 복사하거나 ChatGPT, Claude, Gemini를 열 수 있으며 전송은 직접 결정합니다."]]
+      ["Mac 설정과 내보내기", ["선택한 텍스트는 교체하고, 선택 영역이 없으면 원문 뒤에 덧붙입니다. 손쉬운 사용 권한이 필요하며 서비스 메뉴도 지원합니다.", "전역 단축키, 맨 위 고정, 투명도, 밝고 어두운 테마, 글자 크기, 로그인 시 실행, 자동 업데이트.", "읽기 전용 CLI로 기록을 내보냅니다. iPhone에서 기록 맥락을 복사하거나 ChatGPT, Claude, Gemini를 열 수 있으며 전송은 직접 결정합니다."]]
     ],
     "video": ["어디서든 다듬기", "표현의 이유까지 배우기", "어디서든 복습"],
     "terms": ["자동 수집 · 직접 입력 · 현재 입력란", "핵심 노트 · 예문 · Mac 후속 질문", "즐겨찾기 · 낭독 · 기억 복습\n매일 알림 · AI 앱으로 연결"],
@@ -105,20 +105,20 @@
     "sync": "선택적 iCloud 동기화 · iPhone TestFlight 베타"
   },
   "de": {
-    "sub": "Aus alltäglichen Eingaben wird natürliches Englisch. Heute lernen, morgen nutzen.",
+    "sub": "Überarbeite Texte auf dem Mac in natürliches Englisch, mit Erklärungen und Beispielen. Erfasse neue Eingaben aus KI-Programmierwerkzeugen wie Claude Code und Codex oder überarbeite markierten Text und das aktuelle Textfeld. Optionaler iCloud-Abgleich mit der iPhone-Beta.",
     "trust": ["Die ursprüngliche Anfrage wird gesendet", "Nutzt deinen angemeldeten KI-Assistenten", "Einträge bleiben standardmäßig lokal"],
     "cards": [
-      ["Weiterarbeiten. Nebenbei lernen.", "Erfasst neue Eingaben aus KI-Programmierwerkzeugen, ohne deine Arbeit zu unterbrechen."],
-      ["Besseres Englisch, überall", "Chinesisch, Englisch oder beides direkt eingeben. Auswahl oder Eingabefeld in anderen Apps überarbeiten."],
-      ["Verstehen, warum es besser klingt", "Gezielte Lerntipps und Beispiele. Auf dem Mac Fragen zu einem Eintrag stellen."],
-      ["Dein Stil, dein Englisch", "US- oder britisches Englisch; natürlich, locker oder professionell. Erklärungssprache wählen und den Ton bewahren."],
-      ["Deine eigene Ausdruckssammlung", "Nach Datum stöbern, merken, kopieren und wiederverwenden. Fehler erneut versuchen oder Einträge löschen."],
-      ["Hören. Erinnern. Wiederholen.", "Optionaler iCloud-Abgleich · iPhone-TestFlight-Beta. Vorlesen, aktives Erinnern, tägliche Hinweise und Übergabe an KI-Apps."]
+      ["Eingaben aus KI-Werkzeugen erfassen", "Erfasst neue Eingaben aus KI-Programmierwerkzeugen, ohne deine Arbeit zu unterbrechen."],
+      ["Markierten Text und Textfelder überarbeiten", "Chinesisch, Englisch oder beides direkt eingeben. Auswahl oder Eingabefeld in anderen Apps überarbeiten."],
+      ["Erklärungen, Beispiele und Rückfragen", "Gezielte Lerntipps und Beispiele. Auf dem Mac Fragen zu einem Eintrag stellen."],
+      ["Sprache, Stil und Ton", "US- oder britisches Englisch; natürlich, locker oder professionell. Erklärungssprache wählen und den Ton bewahren."],
+      ["Kalender, Lesezeichen und Einträge", "Nach Datum stöbern, merken, kopieren und wiederverwenden. Fehler erneut versuchen oder Einträge löschen."],
+      ["Anhören und Wiederholen auf dem iPhone", "Optionaler iCloud-Abgleich · iPhone-TestFlight-Beta. Vorlesen, aktives Erinnern, tägliche Hinweise und Übergabe an KI-Apps."]
     ],
     "details": [
       ["Werkzeuge & Verbindung", ["Pi · Claude Code · Codex · OpenCode · Antigravity. Erfasst neue Eingaben während der Laufzeit, keine alten Chats.", "Nutzt einen installierten, angemeldeten und verfügbaren Assistenten. Keine zusätzliche Modell- oder API-Einrichtung.", "iCloud am Mac aktivieren und denselben Apple Account verwenden. Am iPhone: Suche, Kalender, Lesezeichen und Offline-Zugriff auf synchronisierte Einträge."]],
       ["Datenschutz & Kontrolle", ["Einträge standardmäßig lokal, iCloud nur auf Wunsch. Die englische Fassung erzeugt weiterhin der gewählte KI-Dienst.", "Filtert wenig hilfreiche Eingaben und verdeckt sicher erkannte Geheimnisse. Code, Pfade und URLs bleiben erhalten.", "Rückfragen am Mac bleiben lokal, ohne Synchronisierung oder Export. Cloud-Daten lassen sich löschen, während Mac-Einträge erhalten bleiben."]],
-      ["Praktisch am Mac", ["Überarbeiten ersetzt die Auswahl; ohne Auswahl wird der Text angehängt. Benötigt Bedienungshilfen-Zugriff; auch im Dienste-Menü verfügbar.", "Globale Kurzbefehle, Anheften, Transparenz, helles/dunkles Design, Schriftgröße, Start bei Anmeldung und automatische Updates.", "Nur lesende CLI zum Exportieren. Am iPhone Kontext kopieren oder ChatGPT, Claude bzw. Gemini öffnen; du entscheidest über das Senden."]]
+      ["Mac-Einstellungen und Export", ["Überarbeiten ersetzt die Auswahl; ohne Auswahl wird der Text angehängt. Benötigt Bedienungshilfen-Zugriff; auch im Dienste-Menü verfügbar.", "Globale Kurzbefehle, Anheften, Transparenz, helles/dunkles Design, Schriftgröße, Start bei Anmeldung und automatische Updates.", "Nur lesende CLI zum Exportieren. Am iPhone Kontext kopieren oder ChatGPT, Claude bzw. Gemini öffnen; du entscheidest über das Senden."]]
     ],
     "video": ["Überall besser schreiben", "Aus Formulierungen lernen", "Unterwegs wiederholen"],
     "terms": ["Automatisch · Direkt eingeben · Textfeld", "Lerntipps · Beispiele · Rückfragen am Mac", "Merken · Hören · Erinnern\nTägliche Hinweise · KI-Übergabe"],
@@ -126,20 +126,20 @@
     "sync": "Optionaler iCloud-Abgleich · iPhone-TestFlight-Beta"
   },
   "fr": {
-    "sub": "Vos textes du quotidien, en anglais naturel. Apprenez aujourd’hui, réutilisez demain.",
+    "sub": "Reformulez des textes en anglais naturel sur Mac, avec explications et exemples. Capturez les nouvelles saisies d’outils de programmation IA comme Claude Code et Codex, ou révisez la sélection et le champ actif. Synchronisation iCloud facultative vers la bêta iPhone.",
     "trust": ["Votre demande est envoyée normalement", "Utilise votre assistant IA connecté", "Fiches locales par défaut"],
     "cards": [
-      ["Travaillez. Apprenez au passage.", "Capture les nouvelles saisies des outils de code IA sans interrompre votre travail."],
-      ["Un meilleur anglais, partout", "Saisissez du chinois, de l’anglais ou les deux. Reformulez une sélection ou le champ actif d’une autre app."],
-      ["Comprenez ce qui change", "Notes ciblées et exemples. Posez des questions sur une fiche depuis le Mac."],
-      ["Gardez votre style", "Anglais américain ou britannique ; naturel, détendu ou professionnel. Choisissez la langue des explications et préservez votre ton."],
-      ["Votre bibliothèque d’expressions", "Parcourez par date, ajoutez aux favoris, copiez et réutilisez. Relancez un échec ou supprimez une fiche."],
-      ["Écoutez. Retrouvez. Révisez.", "Synchro iCloud facultative · bêta iPhone TestFlight. Lecture vocale, rappel actif, notifications quotidiennes et relais vers une app IA."]
+      ["Capture des saisies d’outils IA", "Capture les nouvelles saisies des outils de code IA sans interrompre votre travail."],
+      ["Révision des sélections et champs de texte", "Saisissez du chinois, de l’anglais ou les deux. Reformulez une sélection ou le champ actif d’une autre app."],
+      ["Explications, exemples et questions", "Notes ciblées et exemples. Posez des questions sur une fiche depuis le Mac."],
+      ["Langue, style et ton", "Anglais américain ou britannique ; naturel, détendu ou professionnel. Choisissez la langue des explications et préservez votre ton."],
+      ["Calendrier, favoris et historique", "Parcourez par date, ajoutez aux favoris, copiez et réutilisez. Relancez un échec ou supprimez une fiche."],
+      ["Écoute et révision sur iPhone", "Synchro iCloud facultative · bêta iPhone TestFlight. Lecture vocale, rappel actif, notifications quotidiennes et relais vers une app IA."]
     ],
     "details": [
       ["Outils et connexion", ["Pi · Claude Code · Codex · OpenCode · Antigravity. Capture les nouvelles saisies pendant l’exécution, sans importer les anciens échanges.", "Utilise un assistant installé, connecté et disponible. Aucun modèle ni API à configurer en plus.", "Activez iCloud sur Mac avec le même compte Apple. Sur iPhone : recherche, calendrier, favoris et accès hors ligne aux fiches synchronisées."]],
       ["Confidentialité et contrôle", ["Stockage local par défaut ; iCloud sur demande. La génération de l’anglais utilise le service IA choisi.", "Filtre les saisies peu utiles et masque les secrets identifiés avec forte certitude. Préserve code, chemins et URL.", "Les conversations sur Mac restent locales, sans synchro ni export. Vous pouvez effacer les données cloud tout en conservant les fiches Mac."]],
-      ["Pratique sur Mac", ["La reformulation remplace la sélection, ou s’ajoute après l’original sans sélection. Autorisation Accessibilité nécessaire ; disponible aussi dans Services.", "Raccourcis globaux, fenêtre épinglée, opacité, thèmes clair/sombre, taille du texte, lancement à la connexion et mises à jour automatiques.", "CLI en lecture seule pour exporter. Sur iPhone, copiez le contexte ou ouvrez ChatGPT, Claude ou Gemini ; vous décidez de l’envoi."]]
+      ["Réglages et exportation sur Mac", ["La reformulation remplace la sélection, ou s’ajoute après l’original sans sélection. Autorisation Accessibilité nécessaire ; disponible aussi dans Services.", "Raccourcis globaux, fenêtre épinglée, opacité, thèmes clair/sombre, taille du texte, lancement à la connexion et mises à jour automatiques.", "CLI en lecture seule pour exporter. Sur iPhone, copiez le contexte ou ouvrez ChatGPT, Claude ou Gemini ; vous décidez de l’envoi."]]
     ],
     "video": ["Écrivez partout", "Comprenez l’expression", "Révisez en chemin"],
     "terms": ["Capture auto · Saisie directe · Champ actif", "Notes ciblées · Exemples · Questions sur Mac", "Favoris · Écoute · Rappel actif\nRappels quotidiens · Relais IA"],
@@ -147,20 +147,20 @@
     "sync": "Synchro iCloud facultative · bêta iPhone TestFlight"
   },
   "es": {
-    "sub": "Convierte lo que escribes a diario en inglés natural. Aprende hoy, úsalo después.",
+    "sub": "Revisa textos en inglés natural en Mac con explicaciones y ejemplos. Captura nuevas entradas de herramientas de programación con IA como Claude Code y Codex, o revisa la selección y el campo actual. Sincroniza opcionalmente por iCloud con la beta de iPhone.",
     "trust": ["Tu solicitud se envía como siempre", "Usa tu asistente de IA con sesión iniciada", "Registros locales por defecto"],
     "cards": [
-      ["Trabaja y aprende de paso", "Captura nuevas entradas de herramientas de código con IA sin interrumpirte."],
-      ["Mejor inglés, donde escribas", "Escribe chino, inglés o ambos. Mejora una selección o el campo activo de otra app."],
-      ["Entiende por qué mejora", "Notas concretas y ejemplos. Haz preguntas sobre un registro desde el Mac."],
-      ["Exprésate a tu manera", "Inglés estadounidense o británico; natural, informal o profesional. Elige el idioma de explicación y conserva tu tono."],
-      ["Tu biblioteca de expresiones", "Explora por fecha, guarda favoritos, copia y reutiliza. Reintenta errores o borra registros."],
-      ["Escucha, recuerda y repasa", "iCloud opcional · beta de iPhone en TestFlight. Lectura en voz alta, recuerdo activo, avisos diarios y enlace con apps de IA."]
+      ["Captura entradas de herramientas con IA", "Captura nuevas entradas de herramientas de código con IA sin interrumpirte."],
+      ["Revisa selecciones y campos de texto", "Escribe chino, inglés o ambos. Mejora una selección o el campo activo de otra app."],
+      ["Explicaciones, ejemplos y preguntas", "Notas concretas y ejemplos. Haz preguntas sobre un registro desde el Mac."],
+      ["Idioma, estilo y tono", "Inglés estadounidense o británico; natural, informal o profesional. Elige el idioma de explicación y conserva tu tono."],
+      ["Calendario, favoritos y registros", "Explora por fecha, guarda favoritos, copia y reutiliza. Reintenta errores o borra registros."],
+      ["Escucha y repaso en iPhone", "iCloud opcional · beta de iPhone en TestFlight. Lectura en voz alta, recuerdo activo, avisos diarios y enlace con apps de IA."]
     ],
     "details": [
       ["Herramientas y conexión", ["Pi · Claude Code · Codex · OpenCode · Antigravity. Captura entradas nuevas mientras se ejecuta; no importa chats antiguos.", "Usa un asistente instalado, con sesión iniciada y disponible. Sin configurar otro modelo ni API.", "Activa iCloud en el Mac y usa la misma cuenta de Apple. En iPhone: búsqueda, calendario, favoritos y acceso sin conexión a registros sincronizados."]],
       ["Privacidad y control", ["Registros locales por defecto; tú activas iCloud. La generación de inglés utiliza el servicio de IA elegido.", "Filtra entradas de poco valor y oculta secretos detectados con alta confianza. Conserva código, rutas y URL.", "Las conversaciones del Mac son locales, sin sincronización ni exportación. Borra los datos de la nube conservando los del Mac."]],
-      ["Cómodo en el Mac", ["La mejora sustituye la selección; sin selección, se añade tras el original. Requiere permiso de Accesibilidad y está disponible en Servicios.", "Atajos globales, ventana fija, opacidad, temas claro/oscuro, tamaño del texto, inicio de sesión y actualizaciones automáticas.", "CLI de solo lectura para exportar. En iPhone, copia el contexto o abre ChatGPT, Claude o Gemini; tú decides cuándo enviarlo."]]
+      ["Ajustes y exportación en Mac", ["La mejora sustituye la selección; sin selección, se añade tras el original. Requiere permiso de Accesibilidad y está disponible en Servicios.", "Atajos globales, ventana fija, opacidad, temas claro/oscuro, tamaño del texto, inicio de sesión y actualizaciones automáticas.", "CLI de solo lectura para exportar. En iPhone, copia el contexto o abre ChatGPT, Claude o Gemini; tú decides cuándo enviarlo."]]
     ],
     "video": ["Escribe donde quieras", "Aprende cómo decirlo", "Repasa donde estés"],
     "terms": ["Captura auto · Entrada directa · Campo activo", "Notas · Ejemplos · Preguntas en Mac", "Favoritos · Escucha · Recuerdo activo\nAvisos diarios · Enlace con IA"],
@@ -168,20 +168,20 @@
     "sync": "iCloud opcional · beta de iPhone en TestFlight"
   },
   "pt-br": {
-    "sub": "Transforme o que escreve todo dia em inglês natural. Aprenda agora, use depois.",
+    "sub": "Revise textos em inglês natural no Mac com explicações e exemplos. Capture novas entradas de ferramentas de programação com IA, como Claude Code e Codex, ou revise a seleção e o campo atual. Sincronize opcionalmente pelo iCloud com a versão beta para iPhone.",
     "trust": ["Seu pedido é enviado normalmente", "Usa seu assistente de IA conectado", "Registros locais por padrão"],
     "cards": [
-      ["Trabalhe e aprenda no caminho", "Captura novas entradas de ferramentas de código com IA sem interromper seu trabalho."],
-      ["Inglês melhor, onde escrever", "Digite chinês, inglês ou ambos. Melhore uma seleção ou o campo ativo de outro app."],
-      ["Entenda o que melhorou", "Notas objetivas e exemplos. Tire dúvidas sobre um registro no Mac."],
-      ["Do seu jeito", "Inglês americano ou britânico; natural, casual ou profissional. Escolha o idioma das explicações e preserve seu tom."],
-      ["Sua biblioteca de expressões", "Navegue por data, favorite, copie e reutilize. Tente de novo após falhas ou apague registros."],
-      ["Ouça, lembre e revise", "iCloud opcional · beta do iPhone no TestFlight. Leitura em voz alta, recordação ativa, lembretes diários e conexão com apps de IA."]
+      ["Capture entradas de ferramentas com IA", "Captura novas entradas de ferramentas de código com IA sem interromper seu trabalho."],
+      ["Revise seleções e campos de texto", "Digite chinês, inglês ou ambos. Melhore uma seleção ou o campo ativo de outro app."],
+      ["Explicações, exemplos e perguntas", "Notas objetivas e exemplos. Tire dúvidas sobre um registro no Mac."],
+      ["Idioma, estilo e tom", "Inglês americano ou britânico; natural, casual ou profissional. Escolha o idioma das explicações e preserve seu tom."],
+      ["Calendário, favoritos e registros", "Navegue por data, favorite, copie e reutilize. Tente de novo após falhas ou apague registros."],
+      ["Escuta e revisão no iPhone", "iCloud opcional · beta do iPhone no TestFlight. Leitura em voz alta, recordação ativa, lembretes diários e conexão com apps de IA."]
     ],
     "details": [
       ["Ferramentas e conexão", ["Pi · Claude Code · Codex · OpenCode · Antigravity. Captura novas entradas enquanto está aberto; não importa conversas antigas.", "Usa um assistente instalado, conectado e disponível. Sem configurar outro modelo ou API.", "Ative o iCloud no Mac e use a mesma Conta Apple. No iPhone: busca, calendário, favoritos e acesso offline aos registros sincronizados."]],
       ["Privacidade e controle", ["Registros locais por padrão; você ativa o iCloud. A geração do inglês usa o serviço de IA escolhido.", "Filtra entradas pouco úteis e oculta segredos identificados com alta confiança. Preserva código, caminhos e URLs.", "Conversas do Mac ficam locais, sem sincronização nem exportação. Apague dados da nuvem sem perder os registros do Mac."]],
-      ["Prático no Mac", ["A revisão substitui a seleção; sem seleção, acrescenta após o original. Exige permissão de Acessibilidade; também funciona em Serviços.", "Atalhos globais, janela fixa, opacidade, temas claro/escuro, tamanho do texto, início com o sistema e atualizações automáticas.", "CLI somente leitura para exportar. No iPhone, copie o contexto ou abra ChatGPT, Claude ou Gemini; você decide quando enviar."]]
+      ["Ajustes e exportação no Mac", ["A revisão substitui a seleção; sem seleção, acrescenta após o original. Exige permissão de Acessibilidade; também funciona em Serviços.", "Atalhos globais, janela fixa, opacidade, temas claro/escuro, tamanho do texto, início com o sistema e atualizações automáticas.", "CLI somente leitura para exportar. No iPhone, copie o contexto ou abra ChatGPT, Claude ou Gemini; você decide quando enviar."]]
     ],
     "video": ["Escreva em qualquer app", "Aprenda como dizer", "Revise onde estiver"],
     "terms": ["Captura auto · Entrada direta · Campo ativo", "Notas · Exemplos · Perguntas no Mac", "Favoritos · Ouvir · Recordar\nLembretes diários · Conexão com IA"],
@@ -189,20 +189,20 @@
     "sync": "iCloud opcional · beta do iPhone no TestFlight"
   },
   "ru": {
-    "sub": "Превратите повседневный текст в естественный английский. Учите сейчас, используйте потом.",
+    "sub": "Редактируйте тексты на Mac на естественном английском с объяснениями и примерами. Получайте новый ввод из инструментов ИИ для программирования, включая Claude Code и Codex, или редактируйте выделение и текущее поле. Доступна необязательная синхронизация iCloud с бета-версией для iPhone.",
     "trust": ["Исходный запрос отправляется как обычно", "Использует ИИ с вашим входом в аккаунт", "По умолчанию записи локальные"],
     "cards": [
-      ["Работайте и учитесь попутно", "Собирает новые сообщения из ИИ-инструментов для кода, не прерывая работу."],
-      ["Лучший английский в любом окне", "Вводите китайский, английский или смешанный текст. Улучшайте выделение или поле ввода в другом приложении."],
-      ["Поймите, что улучшилось", "Краткие пояснения и примеры. Задавайте вопросы по записи на Mac."],
-      ["Выберите свой стиль", "Американский или британский английский; естественный, разговорный или деловой стиль. Выбирайте язык пояснений и сохраняйте тон."],
-      ["Ваша коллекция выражений", "Просмотр по датам, избранное, копирование. Повторяйте неудачные попытки или удаляйте записи."],
-      ["Слушайте и вспоминайте", "iCloud по желанию · бета iPhone в TestFlight. Озвучивание, активное вспоминание, ежедневные напоминания и переход в ИИ-приложения."]
+      ["Получение ввода из инструментов ИИ", "Собирает новые сообщения из ИИ-инструментов для кода, не прерывая работу."],
+      ["Редактирование выделений и полей", "Вводите китайский, английский или смешанный текст. Улучшайте выделение или поле ввода в другом приложении."],
+      ["Объяснения, примеры и вопросы", "Краткие пояснения и примеры. Задавайте вопросы по записи на Mac."],
+      ["Язык, стиль и тон", "Американский или британский английский; естественный, разговорный или деловой стиль. Выбирайте язык пояснений и сохраняйте тон."],
+      ["Календарь, избранное и записи", "Просмотр по датам, избранное, копирование. Повторяйте неудачные попытки или удаляйте записи."],
+      ["Прослушивание и повторение на iPhone", "iCloud по желанию · бета iPhone в TestFlight. Озвучивание, активное вспоминание, ежедневные напоминания и переход в ИИ-приложения."]
     ],
     "details": [
       ["Инструменты и подключение", ["Pi · Claude Code · Codex · OpenCode · Antigravity. Собирает новый ввод во время работы, без импорта старых чатов.", "Использует установленного и доступного ассистента с выполненным входом. Отдельная настройка модели или API не нужна.", "Включите iCloud на Mac и используйте один Аккаунт Apple. На iPhone: поиск, календарь, избранное и офлайн-доступ к синхронизированным записям."]],
       ["Приватность и управление", ["Записи локальные по умолчанию; iCloud включаете вы. Английский текст создаётся выбранным ИИ-сервисом.", "Фильтрует малоценные сообщения и скрывает уверенно распознанные секреты. Сохраняет код, пути и URL.", "Обсуждения на Mac остаются локальными, без синхронизации и экспорта. Данные облака можно удалить, сохранив записи Mac."]],
-      ["Удобно на Mac", ["Заменяет выделенный текст; без выделения добавляет результат после оригинала. Нужен доступ к Универсальному доступу; есть меню Службы.", "Глобальные сочетания клавиш, поверх окон, прозрачность, светлая/тёмная тема, размер текста, автозапуск и автообновления.", "CLI только для чтения с экспортом записей. На iPhone копируйте контекст или открывайте ChatGPT, Claude, Gemini; отправляете вы сами."]]
+      ["Настройки Mac и экспорт", ["Заменяет выделенный текст; без выделения добавляет результат после оригинала. Нужен доступ к Универсальному доступу; есть меню Службы.", "Глобальные сочетания клавиш, поверх окон, прозрачность, светлая/тёмная тема, размер текста, автозапуск и автообновления.", "CLI только для чтения с экспортом записей. На iPhone копируйте контекст или открывайте ChatGPT, Claude, Gemini; отправляете вы сами."]]
     ],
     "video": ["Пишите где удобно", "Учитесь выражаться", "Повторяйте в пути"],
     "terms": ["Автосбор · Прямой ввод · Поле ввода", "Пояснения · Примеры · Вопросы на Mac", "Избранное · Озвучка · Вспоминание\nНапоминания · Переход к ИИ"],
@@ -210,20 +210,20 @@
     "sync": "iCloud по желанию · бета iPhone в TestFlight"
   },
   "hi": {
-    "sub": "रोज़ के शब्दों को स्वाभाविक अंग्रेज़ी में बदलें। आज सीखें, अगली बार इस्तेमाल करें।",
+    "sub": "Mac पर पाठ को स्वाभाविक अंग्रेज़ी में सुधारें, व्याख्याओं और उदाहरणों के साथ। Claude Code और Codex जैसे AI कोडिंग टूल से नया इनपुट लें या चयनित पाठ और मौजूदा फ़ील्ड सुधारें। वैकल्पिक iCloud सिंक से रिकॉर्ड iPhone बीटा पर भी देखें।",
     "trust": ["मूल अनुरोध हमेशा की तरह भेजा जाता है", "लॉगिन किए हुए AI सहायक का उपयोग", "रिकॉर्ड डिफ़ॉल्ट रूप से डिवाइस पर"],
     "cards": [
-      ["काम करते रहें, सीखते रहें", "AI कोडिंग टूल के नए इनपुट अपने-आप सहेजता है, काम में बाधा डाले बिना।"],
-      ["जहाँ लिखें, बेहतर अंग्रेज़ी", "चीनी, अंग्रेज़ी या दोनों सीधे लिखें। दूसरे ऐप में चुने हुए पाठ या मौजूदा इनपुट फ़ील्ड को सुधारें।"],
-      ["सुधार की वजह भी समझें", "मुख्य नोट्स और उदाहरण। Mac पर किसी रिकॉर्ड के बारे में आगे सवाल पूछें।"],
-      ["अपने अंदाज़ में कहें", "अमेरिकी या ब्रिटिश अंग्रेज़ी; स्वाभाविक, अनौपचारिक या पेशेवर शैली। समझाने की भाषा चुनें और अपना लहजा रखें।"],
-      ["आपकी अपनी अभिव्यक्ति-सूची", "तारीख़ से देखें, पसंदीदा बनाएँ, कॉपी करके दोबारा इस्तेमाल करें। विफल प्रयास फिर करें या रिकॉर्ड मिटाएँ।"],
-      ["सुनें, याद करें, दोहराएँ", "वैकल्पिक iCloud सिंक · iPhone TestFlight बीटा। पढ़कर सुनाना, याद से अभ्यास, रोज़ के रिमाइंडर और AI ऐप में आगे पूछना।"]
+      ["AI कोडिंग टूल का इनपुट लें", "AI कोडिंग टूल के नए इनपुट अपने-आप सहेजता है, काम में बाधा डाले बिना।"],
+      ["चयनित पाठ और फ़ील्ड सुधारें", "चीनी, अंग्रेज़ी या दोनों सीधे लिखें। दूसरे ऐप में चुने हुए पाठ या मौजूदा इनपुट फ़ील्ड को सुधारें।"],
+      ["व्याख्याएँ, उदाहरण और आगे के प्रश्न", "मुख्य नोट्स और उदाहरण। Mac पर किसी रिकॉर्ड के बारे में आगे सवाल पूछें।"],
+      ["भाषा, शैली और लहजा", "अमेरिकी या ब्रिटिश अंग्रेज़ी; स्वाभाविक, अनौपचारिक या पेशेवर शैली। समझाने की भाषा चुनें और अपना लहजा रखें।"],
+      ["कैलेंडर, बुकमार्क और रिकॉर्ड", "तारीख़ से देखें, पसंदीदा बनाएँ, कॉपी करके दोबारा इस्तेमाल करें। विफल प्रयास फिर करें या रिकॉर्ड मिटाएँ।"],
+      ["iPhone पर सुनें और दोहराएँ", "वैकल्पिक iCloud सिंक · iPhone TestFlight बीटा। पढ़कर सुनाना, याद से अभ्यास, रोज़ के रिमाइंडर और AI ऐप में आगे पूछना।"]
     ],
     "details": [
       ["टूल और कनेक्शन", ["Pi · Claude Code · Codex · OpenCode · Antigravity. ऐप चलते समय नए इनपुट लेता है; पुरानी चैट आयात नहीं करता।", "इंस्टॉल, लॉगिन किए हुए और उपलब्ध सहायक का उपयोग। अलग मॉडल या API सेटअप की ज़रूरत नहीं।", "Mac पर iCloud चालू करें और वही Apple खाता रखें। iPhone पर खोज, कैलेंडर, पसंदीदा और सिंक किए रिकॉर्ड ऑफ़लाइन देख सकते हैं।"]],
       ["निजता और नियंत्रण", ["रिकॉर्ड डिफ़ॉल्ट रूप से स्थानीय हैं; iCloud आप चुनते हैं। अंग्रेज़ी बनाने में चुनी हुई AI सेवा इस्तेमाल होती है।", "कम उपयोगी इनपुट छाँटता है और भरोसे से पहचाने गए गोपनीय अंश छिपाता है। कोड, पाथ और URL वैसे ही रहते हैं।", "Mac की आगे की बातचीत स्थानीय रहती है, न सिंक होती है न निर्यात। Mac रिकॉर्ड रखकर क्लाउड डेटा अलग मिटा सकते हैं।"]],
-      ["Mac पर सुविधाजनक", ["चुना हुआ पाठ बदला जाता है; कुछ न चुनें तो नतीजा मूल के बाद जुड़ता है। Accessibility अनुमति चाहिए; Services मेनू भी उपलब्ध है।", "ग्लोबल शॉर्टकट, सबसे ऊपर रखना, पारदर्शिता, हल्की/गहरी थीम, अक्षर आकार, लॉगिन पर शुरू होना और अपने-आप अपडेट।", "रिकॉर्ड निर्यात के लिए केवल-पढ़ने वाली CLI। iPhone पर संदर्भ कॉपी करें या ChatGPT, Claude, Gemini खोलें; भेजना आप तय करते हैं।"]]
+      ["Mac सेटिंग्स और निर्यात", ["चुना हुआ पाठ बदला जाता है; कुछ न चुनें तो नतीजा मूल के बाद जुड़ता है। Accessibility अनुमति चाहिए; Services मेनू भी उपलब्ध है।", "ग्लोबल शॉर्टकट, सबसे ऊपर रखना, पारदर्शिता, हल्की/गहरी थीम, अक्षर आकार, लॉगिन पर शुरू होना और अपने-आप अपडेट।", "रिकॉर्ड निर्यात के लिए केवल-पढ़ने वाली CLI। iPhone पर संदर्भ कॉपी करें या ChatGPT, Claude, Gemini खोलें; भेजना आप तय करते हैं।"]]
     ],
     "video": ["कहीं भी बेहतर लिखें", "कहने का तरीका सीखें", "चलते-फिरते दोहराएँ"],
     "terms": ["अपने-आप कैप्चर · सीधा इनपुट · मौजूदा फ़ील्ड", "मुख्य नोट्स · उदाहरण · Mac पर सवाल", "पसंदीदा · सुनें · याद से अभ्यास\nरोज़ के रिमाइंडर · AI ऐप में पूछें"],
@@ -231,20 +231,20 @@
     "sync": "वैकल्पिक iCloud सिंक · iPhone TestFlight बीटा"
   },
   "ar": {
-    "sub": "حوّل نصوصك اليومية إلى إنجليزية طبيعية. تعلّم اليوم واستخدمها لاحقًا.",
+    "sub": "حسّن النصوص إلى إنجليزية طبيعية على Mac مع شروح وأمثلة. التقط الإدخال الجديد من أدوات برمجة بالذكاء الاصطناعي مثل Claude Code وCodex، أو حسّن النص المحدد والحقل الحالي. مزامنة iCloud اختيارية مع نسخة iPhone التجريبية.",
     "trust": ["يُرسل طلبك الأصلي كالمعتاد", "يستخدم مساعدك الذي سجّلت الدخول إليه", "السجلات محلية افتراضيًا"],
     "cards": [
-      ["اعمل وتعلّم أثناء العمل", "يلتقط المدخلات الجديدة من أدوات البرمجة بالذكاء الاصطناعي دون مقاطعتك."],
-      ["إنجليزية أفضل أينما كتبت", "اكتب بالصينية أو الإنجليزية أو كليهما. حسّن النص المحدد أو حقل الإدخال في تطبيق آخر."],
-      ["افهم سبب التحسين", "ملاحظات مركّزة وأمثلة. اسأل أسئلة متابعة عن السجل على Mac."],
-      ["اختر أسلوبك", "إنجليزية أمريكية أو بريطانية؛ طبيعية أو عفوية أو مهنية. اختر لغة الشرح وحافظ على نبرتك."],
-      ["مكتبتك الخاصة للتعبيرات", "تصفّح حسب التاريخ، أضف للمفضلة وانسخ وأعد الاستخدام. أعد المحاولات الفاشلة أو احذف السجلات."],
-      ["استمع وتذكّر وراجع", "مزامنة iCloud اختيارية · نسخة iPhone تجريبية عبر TestFlight. قراءة صوتية، استرجاع نشط، تذكيرات يومية والانتقال لتطبيق ذكاء اصطناعي."]
+      ["التقاط إدخال أدوات البرمجة بالذكاء الاصطناعي", "يلتقط المدخلات الجديدة من أدوات البرمجة بالذكاء الاصطناعي دون مقاطعتك."],
+      ["تحسين النص المحدد وحقول الكتابة", "اكتب بالصينية أو الإنجليزية أو كليهما. حسّن النص المحدد أو حقل الإدخال في تطبيق آخر."],
+      ["شروح وأمثلة وأسئلة متابعة", "ملاحظات مركّزة وأمثلة. اسأل أسئلة متابعة عن السجل على Mac."],
+      ["اللغة والأسلوب والنبرة", "إنجليزية أمريكية أو بريطانية؛ طبيعية أو عفوية أو مهنية. اختر لغة الشرح وحافظ على نبرتك."],
+      ["التقويم والمفضلة والسجلات", "تصفّح حسب التاريخ، أضف للمفضلة وانسخ وأعد الاستخدام. أعد المحاولات الفاشلة أو احذف السجلات."],
+      ["الاستماع والمراجعة على iPhone", "مزامنة iCloud اختيارية · نسخة iPhone تجريبية عبر TestFlight. قراءة صوتية، استرجاع نشط، تذكيرات يومية والانتقال لتطبيق ذكاء اصطناعي."]
     ],
     "details": [
       ["الأدوات والاتصال", ["Pi · Claude Code · Codex · OpenCode · Antigravity. يلتقط المدخلات الجديدة أثناء تشغيله، دون استيراد المحادثات القديمة.", "يستخدم مساعدًا مثبّتًا ومتوافرًا سجّلت الدخول إليه. لا إعداد إضافيًا لنموذج أو API.", "فعّل iCloud على Mac واستخدم حساب Apple نفسه. على iPhone: بحث وتقويم ومفضلة وتصفّح السجلات المتزامنة دون اتصال."]],
       ["الخصوصية والتحكّم", ["السجلات محلية افتراضيًا؛ تفعيل iCloud بيدك. إنشاء الإنجليزية يستخدم خدمة الذكاء الاصطناعي المختارة.", "يرشّح المدخلات قليلة الفائدة ويخفي الأسرار المكتشفة بثقة عالية. يحافظ على الشيفرة والمسارات والروابط.", "محادثات المتابعة على Mac محلية، لا تُزامن ولا تُصدّر. يمكنك حذف بيانات السحابة مع إبقاء سجلات Mac."]],
-      ["سهولة على Mac", ["يستبدل النص المحدد؛ دون تحديد يضيف النتيجة بعد الأصل. يتطلب إذن تسهيلات الاستخدام؛ متاح أيضًا في قائمة الخدمات.", "اختصارات عامة، تثبيت النافذة، شفافية، مظهر فاتح/داكن، حجم النص، تشغيل عند الدخول وتحديثات تلقائية.", "CLI للقراءة فقط لتصدير السجلات. على iPhone انسخ السياق أو افتح ChatGPT أو Claude أو Gemini؛ أنت تختار الإرسال."]]
+      ["إعدادات Mac والتصدير", ["يستبدل النص المحدد؛ دون تحديد يضيف النتيجة بعد الأصل. يتطلب إذن تسهيلات الاستخدام؛ متاح أيضًا في قائمة الخدمات.", "اختصارات عامة، تثبيت النافذة، شفافية، مظهر فاتح/داكن، حجم النص، تشغيل عند الدخول وتحديثات تلقائية.", "CLI للقراءة فقط لتصدير السجلات. على iPhone انسخ السياق أو افتح ChatGPT أو Claude أو Gemini؛ أنت تختار الإرسال."]]
     ],
     "video": ["اكتب في أي مكان", "تعلّم كيف تعبّر", "راجع أينما كنت"],
     "terms": ["التقاط تلقائي · إدخال مباشر · الحقل الحالي", "ملاحظات · أمثلة · أسئلة على Mac", "المفضلة · الاستماع · الاسترجاع\nتذكير يومي · انتقال إلى الذكاء الاصطناعي"],

@@ -3,10 +3,10 @@ export const YIYAN_LOCALES = {
   "": {
     "htmlLang": "zh-Hans",
     "title": "绎言 YiYan — Mac 英语润色与学习工具",
-    "description": "在 Mac 上将日常输入润色为地道英语，附重点笔记。支持 AI 编程工具、直接输入和当前输入框润色，学习记录通过 iCloud 同步到 iPhone。",
+    "description": "在 Mac 上将输入润色成自然英语，附解释与例句。可捕捉 Claude Code、Codex 等 AI 编程工具的新输入，也可润色选中文字或当前输入框。记录可选通过 iCloud 同步到 iPhone 测试版。",
     "canonical": "https://lazyapps.com/yiyan/",
-    "ogTitle": "绎言 YiYan — 地道英语，边蹬边学",
-    "ogDesc": "自动捕捉你在 Pi、Claude Code、Codex、OpenCode 或 Antigravity 里的输入，也可直接输入或润色当前输入框；给出更自然的英语表达和重点笔记。",
+    "ogTitle": "绎言 YiYan — Mac 英语润色与学习工具",
+    "ogDesc": "在 Mac 上将输入润色成自然英语，附解释与例句。可捕捉 Claude Code、Codex 等 AI 编程工具的新输入，也可润色选中文字或当前输入框。记录可选通过 iCloud 同步到 iPhone 测试版。",
     "ogUrl": "https://lazyapps.com/yiyan/",
     "navAria": "主导航",
     "homeAria": "首页",
@@ -16,8 +16,8 @@ export const YIYAN_LOCALES = {
     "localeNow": "简体中文",
     "selectAria": "切换语言",
     "selectedUrl": "/yiyan/",
-    "h1": "<span class=\"zh\">地道英语，边蹬边学</span>",
-    "sub": "照常在 Pi、Claude Code、Codex、OpenCode 或 Antigravity 里工作，或直接输入一段文字；需要时还可以从菜单栏或快捷键润色当前输入框。绎言会自动复用本机可用的语言助手，给出更自然的英语表达和重点笔记；记录可通过 iCloud 同步到 iPhone。",
+    "h1": "<span class=\"zh\">Mac 英语润色与学习笔记</span>",
+    "sub": "在 Mac 上将输入润色成自然英语，附解释与例句。可捕捉 Claude Code、Codex 等 AI 编程工具的新输入，也可润色选中文字或当前输入框。记录可选通过 iCloud 同步到 iPhone 测试版。",
     "cta": [
       "下载 Mac 版",
       "iPhone 公开测试版",
@@ -60,7 +60,7 @@ export const YIYAN_LOCALES = {
     "pair": {
       "headA": "拿你真的说过的话来学",
       "headB": "意思没变，说法顺了",
-      "h2": "<span class=\"zh\">不是看不懂，是自己的话说不顺</span>",
+      "h2": "<span class=\"zh\">原文与英语润色对照</span>",
       "cellSrc": " <p class=\"mono\">你刚说的</p> <p class=\"line\">去掉装饰元素，突出重点，使用原装组件，不要自行发挥。</p> ",
       "cellOut": " <p class=\"mono\">英语里更自然的说法</p> <p class=\"line\" lang=\"en\" dir=\"ltr\">Remove the decorative elements, <b>keep the focus on the content</b>, and use the original components <b>as-is</b> instead of <b>adding your own spin</b>.</p> ",
       "whyHtml": " <p class=\"mono\">为什么这样说</p> <p class=\"line\">“keep the focus on…” 比直译 “highlight the key points” 更贴合设计反馈；“as-is” 表示按原样使用，“add your own spin” 则自然地表达了“自行发挥”。</p> <p class=\"mono\">下次可以直接用</p> <p class=\"pair__reuse\" lang=\"en\" dir=\"ltr\"><code>keep the focus on …</code><code>use … as-is</code><code>add your own spin</code></p> ",
@@ -130,7 +130,7 @@ export const YIYAN_LOCALES = {
     },
     "next": {
       "imgAlt": "",
-      "q": "<span class=\"zh\">把日常输入，变成英语练习</span>"
+      "q": "<span class=\"zh\">下载 Mac 版</span>"
     },
     "brew": {
       "h3": "<span class=\"zh\">两行装好</span>",
@@ -148,10 +148,10 @@ export const YIYAN_LOCALES = {
     "htmlLang": "ar",
     "htmlDir": "rtl",
     "title": "YiYan — إنجليزية طبيعية تتعلمها أثناء العمل",
-    "description": "يلتقط YiYan ما تكتبه في Pi أو Claude Code أو Codex أو OpenCode أو Antigravity، ويتيح لك أيضًا إدخال النص مباشرة أو تنقيح الحقل الذي تعمل فيه. يعيد إنجليزية طبيعية وملاحظات مركّزة، ثم يزامن تعلّمك من Mac إلى iPhone عبر iCloud.",
+    "description": "حسّن النصوص إلى إنجليزية طبيعية على Mac مع شروح وأمثلة. التقط الإدخال الجديد من أدوات برمجة بالذكاء الاصطناعي مثل Claude Code وCodex، أو حسّن النص المحدد والحقل الحالي. مزامنة iCloud اختيارية مع نسخة iPhone التجريبية.",
     "canonical": "https://lazyapps.com/yiyan/ar/",
     "ogTitle": "YiYan — إنجليزية طبيعية تتعلمها أثناء العمل",
-    "ogDesc": "يلتقط YiYan ما تكتبه في Pi أو Claude Code أو Codex أو OpenCode أو Antigravity، ويتيح لك إدخال النص مباشرة أو تنقيح الحقل الحالي، ثم يعيد إنجليزية طبيعية وملاحظات مركّزة.",
+    "ogDesc": "حسّن النصوص إلى إنجليزية طبيعية على Mac مع شروح وأمثلة. التقط الإدخال الجديد من أدوات برمجة بالذكاء الاصطناعي مثل Claude Code وCodex، أو حسّن النص المحدد والحقل الحالي. مزامنة iCloud اختيارية مع نسخة iPhone التجريبية.",
     "ogUrl": "https://lazyapps.com/yiyan/ar/",
     "navAria": "التنقل الرئيسي",
     "homeAria": "الرئيسية",
@@ -161,8 +161,8 @@ export const YIYAN_LOCALES = {
     "localeNow": "العربية",
     "selectAria": "تغيير اللغة",
     "selectedUrl": "/yiyan/ar/",
-    "h1": "إنجليزية طبيعية، تتعلمها أثناء العمل",
-    "sub": "واصل العمل في Pi أو Claude Code أو Codex أو OpenCode أو Antigravity، أو اكتب مباشرة في YiYan، أو نقّح حقل الإدخال الحالي من اختصار أو شريط القوائم. يعيد YiYan استخدام مساعد متاح ومسجّل الدخول على Mac ليقدّم إنجليزية طبيعية وملاحظات مركّزة، وتصل سجلاتك إلى iPhone عبر iCloud.",
+    "h1": "تحسين الإنجليزية وملاحظات التعلّم على Mac",
+    "sub": "حسّن النصوص إلى إنجليزية طبيعية على Mac مع شروح وأمثلة. التقط الإدخال الجديد من أدوات برمجة بالذكاء الاصطناعي مثل Claude Code وCodex، أو حسّن النص المحدد والحقل الحالي. مزامنة iCloud اختيارية مع نسخة iPhone التجريبية.",
     "cta": [
       "تنزيل نسخة Mac",
       "نسخة iPhone التجريبية",
@@ -205,7 +205,7 @@ export const YIYAN_LOCALES = {
     "pair": {
       "headA": "تعلَّم من كلامك أنت",
       "headB": "المعنى كما هو، والصياغة أسلس",
-      "h2": "الفهم سهل، والصعب أن تقولها بكلماتك",
+      "h2": "النص الأصلي والإنجليزية المحسّنة",
       "cellSrc": " <p class=\"mono\">ما كتبته للتو</p> <p class=\"line\">احذف العناصر الزخرفية، وأبرِز الأهم، واستخدم المكوّنات الأصلية كما هي، ولا تضِف من عندك.</p> ",
       "cellOut": " <p class=\"mono\">الأطبع في الإنجليزية</p> <p class=\"line\" lang=\"en\" dir=\"ltr\">Remove the decorative elements, <b>keep the focus on the content</b>, and use the original components <b>as-is</b> instead of <b>adding your own spin</b>.</p> ",
       "whyHtml": " <p class=\"mono\">لماذا تُقال هكذا</p> <p class=\"line\">عبارة «keep the focus on…» أليق بملاحظات التصميم من الترجمة الحرفية «highlight the key points»، و«as-is» تعني الاستخدام كما هو، و«add your own spin» هي التعبير الأصيل عن الإضافة من عندك.</p> <p class=\"mono\">جاهزة للاستخدام في المرة القادمة</p> <p class=\"pair__reuse\" lang=\"en\" dir=\"ltr\"><code>keep the focus on …</code><code>use … as-is</code><code>add your own spin</code></p> ",
@@ -275,7 +275,7 @@ export const YIYAN_LOCALES = {
     },
     "next": {
       "imgAlt": "",
-      "q": "حوّل ما تكتبه يوميًا إلى تدريب على الإنجليزية"
+      "q": "تنزيل نسخة Mac"
     },
     "brew": {
       "h3": "سطران للتثبيت",
@@ -292,10 +292,10 @@ export const YIYAN_LOCALES = {
   "de": {
     "htmlLang": "de",
     "title": "YiYan — Natürliches Englisch, nebenbei gelernt",
-    "description": "YiYan greift auf, was du in Pi, Claude Code, Codex, OpenCode oder Antigravity schreibst, lässt dich aber auch Text direkt eingeben oder das aktive Eingabefeld verfeinern. Du erhältst natürliches Englisch und gezielte Hinweise; per iCloud geht dein Lernverlauf vom Mac aufs iPhone.",
+    "description": "Überarbeite Texte auf dem Mac in natürliches Englisch, mit Erklärungen und Beispielen. Erfasse neue Eingaben aus KI-Programmierwerkzeugen wie Claude Code und Codex oder überarbeite markierten Text und das aktuelle Textfeld. Optionaler iCloud-Abgleich mit der iPhone-Beta.",
     "canonical": "https://lazyapps.com/yiyan/de/",
     "ogTitle": "YiYan — Natürliches Englisch, nebenbei gelernt",
-    "ogDesc": "YiYan greift auf, was du in Pi, Claude Code, Codex, OpenCode oder Antigravity schreibst, lässt dich Text direkt eingeben oder das aktive Feld verfeinern und liefert natürliches Englisch mit gezielten Hinweisen.",
+    "ogDesc": "Überarbeite Texte auf dem Mac in natürliches Englisch, mit Erklärungen und Beispielen. Erfasse neue Eingaben aus KI-Programmierwerkzeugen wie Claude Code und Codex oder überarbeite markierten Text und das aktuelle Textfeld. Optionaler iCloud-Abgleich mit der iPhone-Beta.",
     "ogUrl": "https://lazyapps.com/yiyan/de/",
     "navAria": "Hauptnavigation",
     "homeAria": "Start",
@@ -305,8 +305,8 @@ export const YIYAN_LOCALES = {
     "localeNow": "Deutsch",
     "selectAria": "Sprache wechseln",
     "selectedUrl": "/yiyan/de/",
-    "h1": "Natürliches Englisch, nebenbei gelernt",
-    "sub": "Arbeite in Pi, Claude Code, Codex, OpenCode oder Antigravity weiter, schreibe direkt in YiYan oder verfeinere das aktive Eingabefeld per Kurzbefehl oder Menüleiste. YiYan nutzt einen verfügbaren, angemeldeten Assistenten auf deinem Mac für natürliches Englisch und gezielte Hinweise; dein Verlauf erreicht per iCloud das iPhone.",
+    "h1": "Englische Texte und Lernnotizen auf dem Mac",
+    "sub": "Überarbeite Texte auf dem Mac in natürliches Englisch, mit Erklärungen und Beispielen. Erfasse neue Eingaben aus KI-Programmierwerkzeugen wie Claude Code und Codex oder überarbeite markierten Text und das aktuelle Textfeld. Optionaler iCloud-Abgleich mit der iPhone-Beta.",
     "cta": [
       "Für Mac laden",
       "iPhone-Beta",
@@ -349,7 +349,7 @@ export const YIYAN_LOCALES = {
     "pair": {
       "headA": "Lerne an dem, was du wirklich geschrieben hast",
       "headB": "Der Sinn bleibt, die Formulierung wird rund",
-      "h2": "Verstehen ist leicht. Es selbst sagen ist das Schwere",
+      "h2": "Originaltext und überarbeitetes Englisch",
       "cellSrc": " <p class=\"mono\">Was du eben geschrieben hast</p> <p class=\"line\">Entferne die dekorativen Elemente, stelle das Wesentliche heraus, verwende die Original-Komponenten und improvisiere nicht.</p> ",
       "cellOut": " <p class=\"mono\">Natürlicher auf Englisch</p> <p class=\"line\" lang=\"en\" dir=\"ltr\">Remove the decorative elements, <b>keep the focus on the content</b>, and use the original components <b>as-is</b> instead of <b>adding your own spin</b>.</p> ",
       "whyHtml": " <p class=\"mono\">Warum man es so sagt</p> <p class=\"line\">„keep the focus on…“ trifft Design-Feedback besser als das wörtliche „highlight the key points“; „as-is“ heißt unverändert übernehmen, und „add your own spin“ ist die native Wendung für improvisieren.</p> <p class=\"mono\">Nächstes Mal direkt nutzen</p> <p class=\"pair__reuse\" lang=\"en\" dir=\"ltr\"><code>keep the focus on …</code><code>use … as-is</code><code>add your own spin</code></p> ",
@@ -419,7 +419,7 @@ export const YIYAN_LOCALES = {
     },
     "next": {
       "imgAlt": "",
-      "q": "Mach alltägliches Schreiben zur Englischübung"
+      "q": "Für Mac laden"
     },
     "brew": {
       "h3": "Zwei Zeilen, fertig",
@@ -436,10 +436,10 @@ export const YIYAN_LOCALES = {
   "en": {
     "htmlLang": "en",
     "title": "YiYan — English Writing & Learning for Mac and iPhone",
-    "description": "Refine everyday writing into natural English on Mac, with focused learning notes. Works with AI coding tools and syncs your learning to iPhone via iCloud.",
+    "description": "Refine text into natural English on Mac, with explanations and examples. Capture new input from AI coding tools such as Claude Code and Codex, or refine selected text and the current field. Optionally sync records via iCloud to the iPhone beta.",
     "canonical": "https://lazyapps.com/yiyan/en/",
-    "ogTitle": "YiYan — Natural English, picked up as you go",
-    "ogDesc": "YiYan picks up what you type in Pi, Claude Code, Codex, OpenCode, or Antigravity, lets you write directly or refine the field in front of you, and returns natural English with focused notes.",
+    "ogTitle": "YiYan — English Writing & Learning for Mac and iPhone",
+    "ogDesc": "Refine text into natural English on Mac, with explanations and examples. Capture new input from AI coding tools such as Claude Code and Codex, or refine selected text and the current field. Optionally sync records via iCloud to the iPhone beta.",
     "ogUrl": "https://lazyapps.com/yiyan/en/",
     "navAria": "Main navigation",
     "homeAria": "Home",
@@ -449,8 +449,8 @@ export const YIYAN_LOCALES = {
     "localeNow": "English",
     "selectAria": "Change language",
     "selectedUrl": "/yiyan/en/",
-    "h1": "Natural English, picked up as you go",
-    "sub": "Keep working in Pi, Claude Code, Codex, OpenCode, or Antigravity, type directly into YiYan, or refine the field in front of you from a shortcut or the menu bar. YiYan reuses an available signed-in assistant on your Mac to return natural English and focused notes, with your history available on iPhone through iCloud.",
+    "h1": "English refinement & learning notes on Mac",
+    "sub": "Refine text into natural English on Mac, with explanations and examples. Capture new input from AI coding tools such as Claude Code and Codex, or refine selected text and the current field. Optionally sync records via iCloud to the iPhone beta.",
     "cta": [
       "Download for Mac",
       "iPhone public beta",
@@ -493,7 +493,7 @@ export const YIYAN_LOCALES = {
     "pair": {
       "headA": "Learn from what you actually wrote",
       "headB": "Same meaning, smoother wording",
-      "h2": "Understanding it is easy. Saying it your way is the hard part",
+      "h2": "Original text & refined English",
       "cellSrc": " <p class=\"mono\">What you just wrote</p> <p class=\"line\">Delete the decoration elements, make the key points prominent, use the original components, and do not play by yourself.</p> ",
       "cellOut": " <p class=\"mono\">A more natural way to say it</p> <p class=\"line\" lang=\"en\" dir=\"ltr\">Remove the decorative elements, <b>keep the focus on the content</b>, and use the original components <b>as-is</b> instead of <b>adding your own spin</b>.</p> ",
       "whyHtml": " <p class=\"mono\">Why it reads that way</p> <p class=\"line\">“keep the focus on…” lands better in design feedback than a literal “highlight the key points”; “as-is” says use it exactly as shipped, and “add your own spin” is how a native speaker names improvising.</p> <p class=\"mono\">Reuse it next time</p> <p class=\"pair__reuse\" lang=\"en\" dir=\"ltr\"><code>keep the focus on …</code><code>use … as-is</code><code>add your own spin</code></p> ",
@@ -563,7 +563,7 @@ export const YIYAN_LOCALES = {
     },
     "next": {
       "imgAlt": "",
-      "q": "Turn everyday writing into English practice"
+      "q": "Download for Mac"
     },
     "brew": {
       "h3": "Two lines to install",
@@ -580,10 +580,10 @@ export const YIYAN_LOCALES = {
   "es": {
     "htmlLang": "es",
     "title": "YiYan — Inglés natural, aprendido sobre la marcha",
-    "description": "YiYan recoge lo que escribes en Pi, Claude Code, Codex, OpenCode o Antigravity, y también te deja introducir texto directamente o pulir el campo que tienes delante. Devuelve un inglés natural y notas concretas, y sincroniza tu aprendizaje del Mac al iPhone por iCloud.",
+    "description": "Revisa textos en inglés natural en Mac con explicaciones y ejemplos. Captura nuevas entradas de herramientas de programación con IA como Claude Code y Codex, o revisa la selección y el campo actual. Sincroniza opcionalmente por iCloud con la beta de iPhone.",
     "canonical": "https://lazyapps.com/yiyan/es/",
     "ogTitle": "YiYan — Inglés natural, aprendido sobre la marcha",
-    "ogDesc": "YiYan recoge lo que escribes en Pi, Claude Code, Codex, OpenCode o Antigravity, te deja introducir texto directamente o pulir el campo actual y devuelve un inglés natural con notas concretas.",
+    "ogDesc": "Revisa textos en inglés natural en Mac con explicaciones y ejemplos. Captura nuevas entradas de herramientas de programación con IA como Claude Code y Codex, o revisa la selección y el campo actual. Sincroniza opcionalmente por iCloud con la beta de iPhone.",
     "ogUrl": "https://lazyapps.com/yiyan/es/",
     "navAria": "Navegación principal",
     "homeAria": "Inicio",
@@ -593,8 +593,8 @@ export const YIYAN_LOCALES = {
     "localeNow": "Español",
     "selectAria": "Cambiar de idioma",
     "selectedUrl": "/yiyan/es/",
-    "h1": "Inglés natural, aprendido sobre la marcha",
-    "sub": "Sigue trabajando en Pi, Claude Code, Codex, OpenCode o Antigravity, escribe directamente en YiYan o pule el campo actual desde un atajo o la barra de menús. YiYan reutiliza un asistente disponible con sesión iniciada en tu Mac para devolver inglés natural y notas concretas; tu historial llega al iPhone por iCloud.",
+    "h1": "Revisión de inglés y notas de aprendizaje en Mac",
+    "sub": "Revisa textos en inglés natural en Mac con explicaciones y ejemplos. Captura nuevas entradas de herramientas de programación con IA como Claude Code y Codex, o revisa la selección y el campo actual. Sincroniza opcionalmente por iCloud con la beta de iPhone.",
     "cta": [
       "Descargar para Mac",
       "Beta pública para iPhone",
@@ -637,7 +637,7 @@ export const YIYAN_LOCALES = {
     "pair": {
       "headA": "Aprende de lo que escribiste de verdad",
       "headB": "El sentido intacto, la forma más fluida",
-      "h2": "Entenderlo es fácil; decirlo a tu manera es lo difícil",
+      "h2": "Texto original e inglés revisado",
       "cellSrc": " <p class=\"mono\">Lo que acabas de escribir</p> <p class=\"line\">Quita los elementos decorativos, destaca lo importante, usa los componentes originales y no improvises.</p> ",
       "cellOut": " <p class=\"mono\">Cómo suena más natural en inglés</p> <p class=\"line\" lang=\"en\" dir=\"ltr\">Remove the decorative elements, <b>keep the focus on the content</b>, and use the original components <b>as-is</b> instead of <b>adding your own spin</b>.</p> ",
       "whyHtml": " <p class=\"mono\">Por qué se dice así</p> <p class=\"line\">«keep the focus on…» funciona mejor en una crítica de diseño que el literal «highlight the key points»; «as-is» significa usarlo tal como viene, y «add your own spin» es la forma nativa de decir improvisar.</p> <p class=\"mono\">Para usar la próxima vez</p> <p class=\"pair__reuse\" lang=\"en\" dir=\"ltr\"><code>keep the focus on …</code><code>use … as-is</code><code>add your own spin</code></p> ",
@@ -707,7 +707,7 @@ export const YIYAN_LOCALES = {
     },
     "next": {
       "imgAlt": "",
-      "q": "Convierte lo que escribes a diario en práctica de inglés"
+      "q": "Descargar para Mac"
     },
     "brew": {
       "h3": "Dos líneas y listo",
@@ -724,10 +724,10 @@ export const YIYAN_LOCALES = {
   "fr": {
     "htmlLang": "fr",
     "title": "YiYan — Un anglais naturel, appris en chemin",
-    "description": "YiYan récupère ce que vous écrivez dans Pi, Claude Code, Codex, OpenCode ou Antigravity, et vous permet aussi de saisir du texte directement ou d’affiner le champ actif. Il renvoie un anglais naturel et des notes ciblées, puis synchronise votre apprentissage du Mac vers l’iPhone via iCloud.",
+    "description": "Reformulez des textes en anglais naturel sur Mac, avec explications et exemples. Capturez les nouvelles saisies d’outils de programmation IA comme Claude Code et Codex, ou révisez la sélection et le champ actif. Synchronisation iCloud facultative vers la bêta iPhone.",
     "canonical": "https://lazyapps.com/yiyan/fr/",
     "ogTitle": "YiYan — Un anglais naturel, appris en chemin",
-    "ogDesc": "YiYan récupère ce que vous écrivez dans Pi, Claude Code, Codex, OpenCode ou Antigravity, permet la saisie directe ou l’amélioration du champ actif et renvoie un anglais naturel avec des notes ciblées.",
+    "ogDesc": "Reformulez des textes en anglais naturel sur Mac, avec explications et exemples. Capturez les nouvelles saisies d’outils de programmation IA comme Claude Code et Codex, ou révisez la sélection et le champ actif. Synchronisation iCloud facultative vers la bêta iPhone.",
     "ogUrl": "https://lazyapps.com/yiyan/fr/",
     "navAria": "Navigation principale",
     "homeAria": "Accueil",
@@ -737,8 +737,8 @@ export const YIYAN_LOCALES = {
     "localeNow": "Français",
     "selectAria": "Changer de langue",
     "selectedUrl": "/yiyan/fr/",
-    "h1": "Un anglais naturel, appris en chemin",
-    "sub": "Continuez dans Pi, Claude Code, Codex, OpenCode ou Antigravity, écrivez directement dans YiYan ou affinez le champ actif avec un raccourci ou la barre des menus. YiYan réutilise un assistant disponible et connecté sur votre Mac pour produire un anglais naturel et des notes ciblées ; votre historique rejoint l’iPhone via iCloud.",
+    "h1": "Révision d’anglais et notes d’apprentissage sur Mac",
+    "sub": "Reformulez des textes en anglais naturel sur Mac, avec explications et exemples. Capturez les nouvelles saisies d’outils de programmation IA comme Claude Code et Codex, ou révisez la sélection et le champ actif. Synchronisation iCloud facultative vers la bêta iPhone.",
     "cta": [
       "Télécharger pour Mac",
       "Bêta publique iPhone",
@@ -781,7 +781,7 @@ export const YIYAN_LOCALES = {
     "pair": {
       "headA": "Apprenez de ce que vous avez vraiment écrit",
       "headB": "Le sens intact, la formulation plus fluide",
-      "h2": "Comprendre est facile ; le dire à votre façon, beaucoup moins",
+      "h2": "Texte original et anglais reformulé",
       "cellSrc": " <p class=\"mono\">Ce que vous venez d’écrire</p> <p class=\"line\">Supprime les éléments décoratifs, mets l’essentiel en avant, utilise les composants d’origine et n’improvise pas.</p> ",
       "cellOut": " <p class=\"mono\">La tournure plus naturelle en anglais</p> <p class=\"line\" lang=\"en\" dir=\"ltr\">Remove the decorative elements, <b>keep the focus on the content</b>, and use the original components <b>as-is</b> instead of <b>adding your own spin</b>.</p> ",
       "whyHtml": " <p class=\"mono\">Pourquoi on le dit ainsi</p> <p class=\"line\">« keep the focus on… » sonne plus juste dans un retour de design que le littéral « highlight the key points » ; « as-is » veut dire tel quel, et « add your own spin » est la façon native de dire improviser.</p> <p class=\"mono\">À réutiliser la prochaine fois</p> <p class=\"pair__reuse\" lang=\"en\" dir=\"ltr\"><code>keep the focus on …</code><code>use … as-is</code><code>add your own spin</code></p> ",
@@ -851,7 +851,7 @@ export const YIYAN_LOCALES = {
     },
     "next": {
       "imgAlt": "",
-      "q": "Faites de vos écrits quotidiens un exercice d’anglais"
+      "q": "Télécharger pour Mac"
     },
     "brew": {
       "h3": "Deux lignes et c’est installé",
@@ -868,10 +868,10 @@ export const YIYAN_LOCALES = {
   "hi": {
     "htmlLang": "hi",
     "title": "YiYan — सहज अंग्रेज़ी, काम के साथ-साथ",
-    "description": "YiYan Pi, Claude Code, Codex, OpenCode या Antigravity में आपके लिखे पाठ को उठा लेता है, और आपको सीधे लिखने या सामने वाले इनपुट फ़ील्ड को निखारने भी देता है। यह सहज अंग्रेज़ी और केंद्रित नोट देता है, फिर Mac से iPhone तक आपकी सीख को iCloud से सिंक करता है।",
+    "description": "Mac पर पाठ को स्वाभाविक अंग्रेज़ी में सुधारें, व्याख्याओं और उदाहरणों के साथ। Claude Code और Codex जैसे AI कोडिंग टूल से नया इनपुट लें या चयनित पाठ और मौजूदा फ़ील्ड सुधारें। वैकल्पिक iCloud सिंक से रिकॉर्ड iPhone बीटा पर भी देखें।",
     "canonical": "https://lazyapps.com/yiyan/hi/",
     "ogTitle": "YiYan — सहज अंग्रेज़ी, काम के साथ-साथ",
-    "ogDesc": "YiYan Pi, Claude Code, Codex, OpenCode या Antigravity में आपके लिखे पाठ को उठाता है, सीधे लिखने या मौजूदा फ़ील्ड को निखारने देता है और सहज अंग्रेज़ी के साथ केंद्रित नोट देता है।",
+    "ogDesc": "Mac पर पाठ को स्वाभाविक अंग्रेज़ी में सुधारें, व्याख्याओं और उदाहरणों के साथ। Claude Code और Codex जैसे AI कोडिंग टूल से नया इनपुट लें या चयनित पाठ और मौजूदा फ़ील्ड सुधारें। वैकल्पिक iCloud सिंक से रिकॉर्ड iPhone बीटा पर भी देखें।",
     "ogUrl": "https://lazyapps.com/yiyan/hi/",
     "navAria": "मुख्य नेविगेशन",
     "homeAria": "मुख्य पृष्ठ",
@@ -881,8 +881,8 @@ export const YIYAN_LOCALES = {
     "localeNow": "हिन्दी",
     "selectAria": "भाषा बदलें",
     "selectedUrl": "/yiyan/hi/",
-    "h1": "सहज अंग्रेज़ी, काम के साथ-साथ",
-    "sub": "Pi, Claude Code, Codex, OpenCode या Antigravity में काम करते रहें, YiYan में सीधे लिखें, या शॉर्टकट अथवा मेनू बार से मौजूदा इनपुट फ़ील्ड को निखारें। YiYan आपके Mac पर उपलब्ध, साइन-इन किए सहायक को दोबारा इस्तेमाल करके सहज अंग्रेज़ी और केंद्रित नोट देता है; आपका इतिहास iCloud से iPhone तक पहुँचता है।",
+    "h1": "Mac पर अंग्रेज़ी सुधार और सीखने के नोट्स",
+    "sub": "Mac पर पाठ को स्वाभाविक अंग्रेज़ी में सुधारें, व्याख्याओं और उदाहरणों के साथ। Claude Code और Codex जैसे AI कोडिंग टूल से नया इनपुट लें या चयनित पाठ और मौजूदा फ़ील्ड सुधारें। वैकल्पिक iCloud सिंक से रिकॉर्ड iPhone बीटा पर भी देखें।",
     "cta": [
       "Mac के लिए डाउनलोड",
       "iPhone सार्वजनिक बीटा",
@@ -925,7 +925,7 @@ export const YIYAN_LOCALES = {
     "pair": {
       "headA": "अपने ही लिखे से सीखिए",
       "headB": "अर्थ वही, कहन सहज",
-      "h2": "समझना आसान है; अपनी बात कहना मुश्किल",
+      "h2": "मूल पाठ और सुधरी अंग्रेज़ी",
       "cellSrc": " <p class=\"mono\">आपने अभी जो लिखा</p> <p class=\"line\">सजावटी तत्व हटा दो, ज़रूरी बात उभारो, मूल कंपोनेंट जैसे हैं वैसे इस्तेमाल करो, अपनी तरफ़ से कुछ न जोड़ो।</p> ",
       "cellOut": " <p class=\"mono\">अंग्रेज़ी में यह ज़्यादा सहज है</p> <p class=\"line\" lang=\"en\" dir=\"ltr\">Remove the decorative elements, <b>keep the focus on the content</b>, and use the original components <b>as-is</b> instead of <b>adding your own spin</b>.</p> ",
       "whyHtml": " <p class=\"mono\">ऐसा क्यों कहा जाता है</p> <p class=\"line\">डिज़ाइन पर टिप्पणी में “keep the focus on…” शब्दानुवाद “highlight the key points” से ज़्यादा जमता है; “as-is” का अर्थ है जैसा है वैसा ही रखना, और “add your own spin” अपनी तरफ़ से जोड़ने की सहज अंग्रेज़ी है।</p> <p class=\"mono\">अगली बार सीधे काम आएगा</p> <p class=\"pair__reuse\" lang=\"en\" dir=\"ltr\"><code>keep the focus on …</code><code>use … as-is</code><code>add your own spin</code></p> ",
@@ -995,7 +995,7 @@ export const YIYAN_LOCALES = {
     },
     "next": {
       "imgAlt": "",
-      "q": "रोज़ लिखे गए पाठ से अंग्रेज़ी का अभ्यास करें"
+      "q": "Mac के लिए डाउनलोड"
     },
     "brew": {
       "h3": "दो पंक्तियों में तैयार",
@@ -1012,10 +1012,10 @@ export const YIYAN_LOCALES = {
   "ja": {
     "htmlLang": "ja",
     "title": "YiYan — 手を止めずに、自然な英語",
-    "description": "Pi、Claude Code、Codex、OpenCode、Antigravity への入力を自動で拾うほか、YiYan に直接書いたり、いま開いている入力欄をその場で整えたりできます。自然な英語と要点メモを返し、Mac の学習記録は iCloud で iPhone へ同期します。",
+    "description": "Mac で文章を自然な英語に推敲し、解説と例文を確認。Claude Code や Codex などの AI 開発ツールの新しい入力、選択した文章、現在の入力欄に対応。iCloud 同期を有効にすると iPhone ベータ版でも記録を確認できます。",
     "canonical": "https://lazyapps.com/yiyan/ja/",
     "ogTitle": "YiYan — 手を止めずに、自然な英語",
-    "ogDesc": "Pi、Claude Code、Codex、OpenCode、Antigravity への入力を拾い、YiYan への直接入力や現在の入力欄の書き直しにも対応。自然な英語と要点メモを返します。",
+    "ogDesc": "Mac で文章を自然な英語に推敲し、解説と例文を確認。Claude Code や Codex などの AI 開発ツールの新しい入力、選択した文章、現在の入力欄に対応。iCloud 同期を有効にすると iPhone ベータ版でも記録を確認できます。",
     "ogUrl": "https://lazyapps.com/yiyan/ja/",
     "navAria": "メインナビゲーション",
     "homeAria": "ホーム",
@@ -1025,8 +1025,8 @@ export const YIYAN_LOCALES = {
     "localeNow": "日本語",
     "selectAria": "言語を切り替える",
     "selectedUrl": "/yiyan/ja/",
-    "h1": "手を止めずに、<wbr>自然な英語",
-    "sub": "Pi、Claude Code、Codex、OpenCode、Antigravity でいつもどおり作業する、YiYan に直接書く、またはショートカットやメニューバーから現在の入力欄を整える。YiYan は Mac で利用可能なログイン済みアシスタントをそのまま使い、自然な英語と要点メモを返します。記録は iCloud で iPhone にも届きます。",
+    "h1": "Mac で英語を推敲・学習",
+    "sub": "Mac で文章を自然な英語に推敲し、解説と例文を確認。Claude Code や Codex などの AI 開発ツールの新しい入力、選択した文章、現在の入力欄に対応。iCloud 同期を有効にすると iPhone ベータ版でも記録を確認できます。",
     "cta": [
       "Mac 版をダウンロード",
       "iPhone 版パブリックベータ",
@@ -1069,7 +1069,7 @@ export const YIYAN_LOCALES = {
     "pair": {
       "headA": "自分が実際に書いた文で学ぶ",
       "headB": "意味は変えず、言い方だけ整える",
-      "h2": "読めないのではなく、<wbr>自分の言葉が出てこない",
+      "h2": "元の文章と推敲した英語",
       "cellSrc": " <p class=\"mono\">いま書いた文</p> <p class=\"line\">装飾的な要素は削って、要点を目立たせて、元のコンポーネントをそのまま使って、勝手にアレンジしないで。</p> ",
       "cellOut": " <p class=\"mono\">英語ならこう言うほうが自然</p> <p class=\"line\" lang=\"en\" dir=\"ltr\">Remove the decorative elements, <b>keep the focus on the content</b>, and use the original components <b>as-is</b> instead of <b>adding your own spin</b>.</p> ",
       "whyHtml": " <p class=\"mono\">なぜそう言うのか</p> <p class=\"line\">「keep the focus on…」は直訳の「highlight the key points」よりデザインのフィードバックに馴染みます。「as-is」はそのまま使うこと、「add your own spin」は「勝手にアレンジする」に当たる自然な言い方です。</p> <p class=\"mono\">次はそのまま使える</p> <p class=\"pair__reuse\" lang=\"en\" dir=\"ltr\"><code>keep the focus on …</code><code>use … as-is</code><code>add your own spin</code></p> ",
@@ -1139,7 +1139,7 @@ export const YIYAN_LOCALES = {
     },
     "next": {
       "imgAlt": "",
-      "q": "日々の入力を英語の練習に"
+      "q": "Mac 版をダウンロード"
     },
     "brew": {
       "h3": "2 行で導入",
@@ -1156,10 +1156,10 @@ export const YIYAN_LOCALES = {
   "ko": {
     "htmlLang": "ko",
     "title": "YiYan — 손을 멈추지 않고, 자연스러운 영어",
-    "description": "YiYan은 Pi, Claude Code, Codex, OpenCode, Antigravity에 입력한 내용을 자동으로 가져오며, 직접 글을 쓰거나 지금 보고 있는 입력창을 다듬을 수도 있습니다. 자연스러운 영어와 핵심 메모를 돌려주고, Mac의 학습 기록은 iCloud로 iPhone에 동기화합니다.",
+    "description": "Mac에서 문장을 자연스러운 영어로 다듬고 설명과 예문을 확인하세요. Claude Code, Codex 등 AI 개발 도구의 새 입력을 수집하거나 선택한 텍스트와 현재 입력란을 다듬을 수 있습니다. 선택적 iCloud 동기화로 iPhone 베타에서도 기록을 확인하세요.",
     "canonical": "https://lazyapps.com/yiyan/ko/",
     "ogTitle": "YiYan — 손을 멈추지 않고, 자연스러운 영어",
-    "ogDesc": "Pi, Claude Code, Codex, OpenCode, Antigravity의 입력을 가져오고, 직접 입력하거나 현재 입력창을 다듬을 수 있으며, 자연스러운 영어와 핵심 메모를 제공합니다.",
+    "ogDesc": "Mac에서 문장을 자연스러운 영어로 다듬고 설명과 예문을 확인하세요. Claude Code, Codex 등 AI 개발 도구의 새 입력을 수집하거나 선택한 텍스트와 현재 입력란을 다듬을 수 있습니다. 선택적 iCloud 동기화로 iPhone 베타에서도 기록을 확인하세요.",
     "ogUrl": "https://lazyapps.com/yiyan/ko/",
     "navAria": "주요 내비게이션",
     "homeAria": "홈",
@@ -1169,8 +1169,8 @@ export const YIYAN_LOCALES = {
     "localeNow": "한국어",
     "selectAria": "언어 변경",
     "selectedUrl": "/yiyan/ko/",
-    "h1": "손을 멈추지 않고, 자연스러운 영어",
-    "sub": "Pi, Claude Code, Codex, OpenCode, Antigravity에서 평소처럼 작업하거나 YiYan에 직접 쓰고, 단축키나 메뉴 막대에서 현재 입력창을 다듬을 수도 있습니다. YiYan은 Mac에서 로그인되어 사용 가능한 도우미를 그대로 활용해 자연스러운 영어와 핵심 메모를 만들며, 기록은 iCloud로 iPhone에도 이어집니다.",
+    "h1": "Mac 영어 다듬기와 학습 노트",
+    "sub": "Mac에서 문장을 자연스러운 영어로 다듬고 설명과 예문을 확인하세요. Claude Code, Codex 등 AI 개발 도구의 새 입력을 수집하거나 선택한 텍스트와 현재 입력란을 다듬을 수 있습니다. 선택적 iCloud 동기화로 iPhone 베타에서도 기록을 확인하세요.",
     "cta": [
       "Mac 버전 다운로드",
       "iPhone 공개 베타",
@@ -1213,7 +1213,7 @@ export const YIYAN_LOCALES = {
     "pair": {
       "headA": "내가 실제로 쓴 말로 배우기",
       "headB": "뜻은 그대로, 표현만 매끄럽게",
-      "h2": "못 읽는 게 아니라, 내 말이 안 나오는 것",
+      "h2": "원문과 다듬은 영어 비교",
       "cellSrc": " <p class=\"mono\">방금 쓴 문장</p> <p class=\"line\">장식 요소는 빼고, 요점이 드러나게 하고, 원래 컴포넌트를 그대로 쓰고, 임의로 변형하지 마세요.</p> ",
       "cellOut": " <p class=\"mono\">영어로는 이렇게가 더 자연스럽습니다</p> <p class=\"line\" lang=\"en\" dir=\"ltr\">Remove the decorative elements, <b>keep the focus on the content</b>, and use the original components <b>as-is</b> instead of <b>adding your own spin</b>.</p> ",
       "whyHtml": " <p class=\"mono\">왜 그렇게 말하는가</p> <p class=\"line\">“keep the focus on…”은 직역인 “highlight the key points”보다 디자인 피드백에 잘 맞습니다. “as-is”는 있는 그대로 쓰라는 뜻이고, “add your own spin”은 임의로 변형한다는 말의 자연스러운 표현입니다.</p> <p class=\"mono\">다음에 바로 쓰기</p> <p class=\"pair__reuse\" lang=\"en\" dir=\"ltr\"><code>keep the focus on …</code><code>use … as-is</code><code>add your own spin</code></p> ",
@@ -1283,7 +1283,7 @@ export const YIYAN_LOCALES = {
     },
     "next": {
       "imgAlt": "",
-      "q": "일상 속 글쓰기를 영어 연습으로"
+      "q": "Mac 버전 다운로드"
     },
     "brew": {
       "h3": "두 줄로 설치",
@@ -1300,10 +1300,10 @@ export const YIYAN_LOCALES = {
   "pt-br": {
     "htmlLang": "pt-BR",
     "title": "YiYan — Inglês natural, aprendido no caminho",
-    "description": "O YiYan recolhe o que você escreve no Pi, Claude Code, Codex, OpenCode ou Antigravity, e também permite digitar diretamente ou lapidar o campo que está à sua frente. Ele devolve um inglês natural e notas objetivas, e sincroniza seu aprendizado do Mac para o iPhone pelo iCloud.",
+    "description": "Revise textos em inglês natural no Mac com explicações e exemplos. Capture novas entradas de ferramentas de programação com IA, como Claude Code e Codex, ou revise a seleção e o campo atual. Sincronize opcionalmente pelo iCloud com a versão beta para iPhone.",
     "canonical": "https://lazyapps.com/yiyan/pt-br/",
     "ogTitle": "YiYan — Inglês natural, aprendido no caminho",
-    "ogDesc": "O YiYan recolhe o que você escreve no Pi, Claude Code, Codex, OpenCode ou Antigravity, permite digitar diretamente ou lapidar o campo atual e devolve um inglês natural com notas objetivas.",
+    "ogDesc": "Revise textos em inglês natural no Mac com explicações e exemplos. Capture novas entradas de ferramentas de programação com IA, como Claude Code e Codex, ou revise a seleção e o campo atual. Sincronize opcionalmente pelo iCloud com a versão beta para iPhone.",
     "ogUrl": "https://lazyapps.com/yiyan/pt-br/",
     "navAria": "Navegação principal",
     "homeAria": "Início",
@@ -1313,8 +1313,8 @@ export const YIYAN_LOCALES = {
     "localeNow": "Português",
     "selectAria": "Mudar de idioma",
     "selectedUrl": "/yiyan/pt-br/",
-    "h1": "Inglês natural, aprendido no caminho",
-    "sub": "Continue trabalhando no Pi, Claude Code, Codex, OpenCode ou Antigravity, escreva diretamente no YiYan ou lapide o campo atual por um atalho ou pela barra de menus. O YiYan reutiliza um assistente disponível e conectado no Mac para devolver inglês natural e notas objetivas; seu histórico chega ao iPhone pelo iCloud.",
+    "h1": "Revisão de inglês e notas de aprendizado no Mac",
+    "sub": "Revise textos em inglês natural no Mac com explicações e exemplos. Capture novas entradas de ferramentas de programação com IA, como Claude Code e Codex, ou revise a seleção e o campo atual. Sincronize opcionalmente pelo iCloud com a versão beta para iPhone.",
     "cta": [
       "Baixar para Mac",
       "Beta pública para iPhone",
@@ -1357,7 +1357,7 @@ export const YIYAN_LOCALES = {
     "pair": {
       "headA": "Aprenda com o que você escreveu de verdade",
       "headB": "O sentido intacto, a forma mais fluida",
-      "h2": "Entender é fácil; dizer do seu jeito é a parte difícil",
+      "h2": "Texto original e inglês revisado",
       "cellSrc": " <p class=\"mono\">O que você acabou de escrever</p> <p class=\"line\">Remova os elementos decorativos, destaque o essencial, use os componentes originais e não improvise.</p> ",
       "cellOut": " <p class=\"mono\">Como soa mais natural em inglês</p> <p class=\"line\" lang=\"en\" dir=\"ltr\">Remove the decorative elements, <b>keep the focus on the content</b>, and use the original components <b>as-is</b> instead of <b>adding your own spin</b>.</p> ",
       "whyHtml": " <p class=\"mono\">Por que se diz assim</p> <p class=\"line\">“keep the focus on…” cai melhor num comentário de design do que o literal “highlight the key points”; “as-is” quer dizer usar exatamente como vem, e “add your own spin” é como um nativo chama improvisar.</p> <p class=\"mono\">Para usar na próxima</p> <p class=\"pair__reuse\" lang=\"en\" dir=\"ltr\"><code>keep the focus on …</code><code>use … as-is</code><code>add your own spin</code></p> ",
@@ -1427,7 +1427,7 @@ export const YIYAN_LOCALES = {
     },
     "next": {
       "imgAlt": "",
-      "q": "Transforme o que você escreve em prática de inglês"
+      "q": "Baixar para Mac"
     },
     "brew": {
       "h3": "Duas linhas e pronto",
@@ -1444,10 +1444,10 @@ export const YIYAN_LOCALES = {
   "ru": {
     "htmlLang": "ru",
     "title": "YiYan — Естественный английский по ходу дела",
-    "description": "YiYan подхватывает то, что вы пишете в Pi, Claude Code, Codex, OpenCode или Antigravity, а также позволяет ввести текст напрямую или улучшить текущее поле ввода. Он возвращает естественный английский и точные заметки, а затем синхронизирует обучение с Mac на iPhone через iCloud.",
+    "description": "Редактируйте тексты на Mac на естественном английском с объяснениями и примерами. Получайте новый ввод из инструментов ИИ для программирования, включая Claude Code и Codex, или редактируйте выделение и текущее поле. Доступна необязательная синхронизация iCloud с бета-версией для iPhone.",
     "canonical": "https://lazyapps.com/yiyan/ru/",
     "ogTitle": "YiYan — Естественный английский по ходу дела",
-    "ogDesc": "YiYan подхватывает текст из Pi, Claude Code, Codex, OpenCode или Antigravity, позволяет вводить его напрямую или улучшать текущее поле и возвращает естественный английский с точными заметками.",
+    "ogDesc": "Редактируйте тексты на Mac на естественном английском с объяснениями и примерами. Получайте новый ввод из инструментов ИИ для программирования, включая Claude Code и Codex, или редактируйте выделение и текущее поле. Доступна необязательная синхронизация iCloud с бета-версией для iPhone.",
     "ogUrl": "https://lazyapps.com/yiyan/ru/",
     "navAria": "Основная навигация",
     "homeAria": "Главная",
@@ -1457,8 +1457,8 @@ export const YIYAN_LOCALES = {
     "localeNow": "Русский",
     "selectAria": "Сменить язык",
     "selectedUrl": "/yiyan/ru/",
-    "h1": "Естественный английский по ходу дела",
-    "sub": "Продолжайте работать в Pi, Claude Code, Codex, OpenCode или Antigravity, пишите прямо в YiYan или улучшайте текущее поле через сочетание клавиш либо строку меню. YiYan повторно использует доступного помощника, в которого вы вошли на Mac, и возвращает естественный английский с точными заметками; история доступна на iPhone через iCloud.",
+    "h1": "Редактирование английского и учебные заметки на Mac",
+    "sub": "Редактируйте тексты на Mac на естественном английском с объяснениями и примерами. Получайте новый ввод из инструментов ИИ для программирования, включая Claude Code и Codex, или редактируйте выделение и текущее поле. Доступна необязательная синхронизация iCloud с бета-версией для iPhone.",
     "cta": [
       "Скачать для Mac",
       "Открытая бета для iPhone",
@@ -1501,7 +1501,7 @@ export const YIYAN_LOCALES = {
     "pair": {
       "headA": "Учитесь на том, что написали сами",
       "headB": "Смысл тот же, формулировка ровнее",
-      "h2": "Понять легко. Трудно сказать это своими словами",
+      "h2": "Исходный текст и исправленный английский",
       "cellSrc": " <p class=\"mono\">Что вы только что написали</p> <p class=\"line\">Убери декоративные элементы, выдели главное, используй исходные компоненты и не добавляй ничего от себя.</p> ",
       "cellOut": " <p class=\"mono\">По-английски естественнее так</p> <p class=\"line\" lang=\"en\" dir=\"ltr\">Remove the decorative elements, <b>keep the focus on the content</b>, and use the original components <b>as-is</b> instead of <b>adding your own spin</b>.</p> ",
       "whyHtml": " <p class=\"mono\">Почему так говорят</p> <p class=\"line\">«keep the focus on…» звучит уместнее в отзыве о дизайне, чем буквальное «highlight the key points»; «as-is» значит взять как есть, а «add your own spin» — это и есть носительское «добавлять своё».</p> <p class=\"mono\">Пригодится в следующий раз</p> <p class=\"pair__reuse\" lang=\"en\" dir=\"ltr\"><code>keep the focus on …</code><code>use … as-is</code><code>add your own spin</code></p> ",
@@ -1571,7 +1571,7 @@ export const YIYAN_LOCALES = {
     },
     "next": {
       "imgAlt": "",
-      "q": "Превратите повседневные сообщения в практику английского"
+      "q": "Скачать для Mac"
     },
     "brew": {
       "h3": "Две строки — и готово",
@@ -1588,10 +1588,10 @@ export const YIYAN_LOCALES = {
   "zh-hant": {
     "htmlLang": "zh-Hant",
     "title": "繹言 YiYan — Mac 英語潤飾與學習工具",
-    "description": "在 Mac 上將日常輸入潤飾為道地英語，附重點筆記。支援 AI 程式開發工具、直接輸入和目前輸入框潤飾，學習記錄透過 iCloud 同步到 iPhone。",
+    "description": "在 Mac 上將輸入潤飾成自然英語，附解釋與例句。可擷取 Claude Code、Codex 等 AI 程式開發工具的新輸入，也可潤飾選取文字或目前輸入框。紀錄可選透過 iCloud 同步到 iPhone 測試版。",
     "canonical": "https://lazyapps.com/yiyan/zh-hant/",
-    "ogTitle": "繹言 YiYan — 道地英語，邊蹬邊學",
-    "ogDesc": "自動擷取你在 Pi、Claude Code、Codex、OpenCode 或 Antigravity 裡的輸入，也可直接輸入或潤飾目前的輸入框；給出更自然的英語說法和重點筆記。",
+    "ogTitle": "繹言 YiYan — Mac 英語潤飾與學習工具",
+    "ogDesc": "在 Mac 上將輸入潤飾成自然英語，附解釋與例句。可擷取 Claude Code、Codex 等 AI 程式開發工具的新輸入，也可潤飾選取文字或目前輸入框。紀錄可選透過 iCloud 同步到 iPhone 測試版。",
     "ogUrl": "https://lazyapps.com/yiyan/zh-hant/",
     "navAria": "主導覽",
     "homeAria": "首頁",
@@ -1601,8 +1601,8 @@ export const YIYAN_LOCALES = {
     "localeNow": "繁體中文",
     "selectAria": "切換語言",
     "selectedUrl": "/yiyan/zh-hant/",
-    "h1": "<span class=\"zh\">道地英語，邊蹬邊學</span>",
-    "sub": "照常在 Pi、Claude Code、Codex、OpenCode 或 Antigravity 裡工作，或直接輸入一段文字；需要時還可以從選單列或快速鍵潤飾目前的輸入框。繹言會自動沿用本機可用的語言助理，給出更自然的英語說法和重點筆記；記錄可透過 iCloud 同步到 iPhone。",
+    "h1": "<span class=\"zh\">Mac 英語潤飾與學習筆記</span>",
+    "sub": "在 Mac 上將輸入潤飾成自然英語，附解釋與例句。可擷取 Claude Code、Codex 等 AI 程式開發工具的新輸入，也可潤飾選取文字或目前輸入框。紀錄可選透過 iCloud 同步到 iPhone 測試版。",
     "cta": [
       "下載 Mac 版",
       "iPhone 公開測試版",
@@ -1645,7 +1645,7 @@ export const YIYAN_LOCALES = {
     "pair": {
       "headA": "拿你真的說過的話來學",
       "headB": "意思沒變，說法順了",
-      "h2": "<span class=\"zh\">不是看不懂，是自己的話說不順</span>",
+      "h2": "<span class=\"zh\">原文與英語潤飾對照</span>",
       "cellSrc": " <p class=\"mono\">你剛說的</p> <p class=\"line\">去掉裝飾元素，突出重點，使用原裝元件，不要自行發揮。</p> ",
       "cellOut": " <p class=\"mono\">英語裡更自然的說法</p> <p class=\"line\" lang=\"en\" dir=\"ltr\">Remove the decorative elements, <b>keep the focus on the content</b>, and use the original components <b>as-is</b> instead of <b>adding your own spin</b>.</p> ",
       "whyHtml": " <p class=\"mono\">為什麼這樣說</p> <p class=\"line\">「keep the focus on…」比直譯的「highlight the key points」更貼近設計回饋；「as-is」表示照原樣使用，「add your own spin」則自然地表達了「自行發揮」。</p> <p class=\"mono\">下次可以直接用</p> <p class=\"pair__reuse\" lang=\"en\" dir=\"ltr\"><code>keep the focus on …</code><code>use … as-is</code><code>add your own spin</code></p> ",
@@ -1715,7 +1715,7 @@ export const YIYAN_LOCALES = {
     },
     "next": {
       "imgAlt": "",
-      "q": "<span class=\"zh\">把日常輸入，變成英語練習</span>"
+      "q": "<span class=\"zh\">下載 Mac 版</span>"
     },
     "brew": {
       "h3": "<span class=\"zh\">兩行裝好</span>",

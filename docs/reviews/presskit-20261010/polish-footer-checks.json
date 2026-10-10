@@ -1,0 +1,210 @@
+[
+  {
+    "route": "/",
+    "footerLinks": [
+      "Contact",
+      "Press Kit",
+      "Privacy"
+    ],
+    "metaFont": "13.5px / 20px -apple-system, \"system-ui\", \"SF Pro Text\", \"Helvetica Neue\", sans-serif",
+    "scrollWidth": 375,
+    "sunWidth": 60,
+    "width": 375,
+    "wordmarkFont": "700 28px / 28px -apple-system, \"system-ui\", \"SF Pro Text\", \"Helvetica Neue\", sans-serif"
+  },
+  {
+    "route": "/",
+    "footerLinks": [
+      "Contact",
+      "Press Kit",
+      "Privacy"
+    ],
+    "metaFont": "13.5px / 20px -apple-system, \"system-ui\", \"SF Pro Text\", \"Helvetica Neue\", sans-serif",
+    "scrollWidth": 1280,
+    "sunWidth": 64,
+    "width": 1280,
+    "wordmarkFont": "700 30px / 30px -apple-system, \"system-ui\", \"SF Pro Text\", \"Helvetica Neue\", sans-serif"
+  },
+  {
+    "route": "/chmate/presskit/",
+    "footerLinks": [
+      "Contact",
+      "Press Kit",
+      "Privacy"
+    ],
+    "metaFont": "13.5px / 20px -apple-system, \"system-ui\", \"SF Pro Text\", \"Helvetica Neue\", sans-serif",
+    "scrollWidth": 375,
+    "sunWidth": 60,
+    "width": 375,
+    "wordmarkFont": "700 28px / 28px -apple-system, \"system-ui\", \"SF Pro Text\", \"Helvetica Neue\", sans-serif"
+  },
+  {
+    "route": "/chmate/presskit/",
+    "footerLinks": [
+      "Contact",
+      "Press Kit",
+      "Privacy"
+    ],
+    "metaFont": "13.5px / 20px -apple-system, \"system-ui\", \"SF Pro Text\", \"Helvetica Neue\", sans-serif",
+    "scrollWidth": 1280,
+    "sunWidth": 64,
+    "width": 1280,
+    "wordmarkFont": "700 30px / 30px -apple-system, \"system-ui\", \"SF Pro Text\", \"Helvetica Neue\", sans-serif"
+  },
+  {
+    "route": "/world-book/presskit/",
+    "footerLinks": [
+      "Contact",
+      "Press Kit",
+      "Privacy"
+    ],
+    "metaFont": "13.5px / 20px -apple-system, \"system-ui\", \"SF Pro Text\", \"Helvetica Neue\", sans-serif",
+    "scrollWidth": 375,
+    "sunWidth": 60,
+    "width": 375,
+    "wordmarkFont": "700 28px / 28px -apple-system, \"system-ui\", \"SF Pro Text\", \"Helvetica Neue\", sans-serif"
+  },
+  {
+    "route": "/world-book/presskit/",
+    "footerLinks": [
+      "Contact",
+      "Press Kit",
+      "Privacy"
+    ],
+    "metaFont": "13.5px / 20px -apple-system, \"system-ui\", \"SF Pro Text\", \"Helvetica Neue\", sans-serif",
+    "scrollWidth": 1280,
+    "sunWidth": 64,
+    "width": 1280,
+    "wordmarkFont": "700 30px / 30px -apple-system, \"system-ui\", \"SF Pro Text\", \"Helvetica Neue\", sans-serif"
+  },
+  {
+    "route": "/fondfont/presskit/",
+    "footerLinks": [
+      "Contact",
+      "Press Kit",
+      "Privacy"
+    ],
+    "metaFont": "13.5px / 20px -apple-system, \"system-ui\", \"SF Pro Text\", \"Helvetica Neue\", sans-serif",
+    "scrollWidth": 375,
+    "sunWidth": 60,
+    "width": 375,
+    "wordmarkFont": "700 28px / 28px -apple-system, \"system-ui\", \"SF Pro Text\", \"Helvetica Neue\", sans-serif"
+  },
+  {
+    "route": "/fondfont/presskit/",
+    "footerLinks": [
+      "Contact",
+      "Press Kit",
+      "Privacy"
+    ],
+    "metaFont": "13.5px / 20px -apple-system, \"system-ui\", \"SF Pro Text\", \"Helvetica Neue\", sans-serif",
+    "scrollWidth": 1280,
+    "sunWidth": 64,
+    "width": 1280,
+    "wordmarkFont": "700 30px / 30px -apple-system, \"system-ui\", \"SF Pro Text\", \"Helvetica Neue\", sans-serif"
+  },
+  {
+    "route": "/keyhop/presskit/",
+    "footerLinks": [
+      "Contact",
+      "Press Kit",
+      "Privacy"
+    ],
+    "metaFont": "13.5px / 20px -apple-system, \"system-ui\", \"SF Pro Text\", \"Helvetica Neue\", sans-serif",
+    "scrollWidth": 375,
+    "sunWidth": 60,
+    "width": 375,
+    "wordmarkFont": "700 28px / 28px -apple-system, \"system-ui\", \"SF Pro Text\", \"Helvetica Neue\", sans-serif"
+  },
+  {
+    "route": "/keyhop/presskit/",
+    "footerLinks": [
+      "Contact",
+      "Press Kit",
+      "Privacy"
+    ],
+    "metaFont": "13.5px / 20px -apple-system, \"system-ui\", \"SF Pro Text\", \"Helvetica Neue\", sans-serif",
+    "scrollWidth": 1280,
+    "sunWidth": 64,
+    "width": 1280,
+    "wordmarkFont": "700 30px / 30px -apple-system, \"system-ui\", \"SF Pro Text\", \"Helvetica Neue\", sans-serif"
+  },
+  {
+    "route": "/yiyan/presskit/",
+    "footerLinks": [
+      "Contact",
+      "Press Kit",
+      "Privacy"
+    ],
+    "metaFont": "13.5px / 20px -apple-system, \"system-ui\", \"SF Pro Text\", \"Helvetica Neue\", sans-serif",
+    "scrollWidth": 375,
+    "sunWidth": 60,
+    "width": 375,
+    "wordmarkFont": "700 28px / 28px -apple-system, \"system-ui\", \"SF Pro Text\", \"Helvetica Neue\", sans-serif"
+  },
+  {
+    "route": "/yiyan/presskit/",
+    "footerLinks": [
+      "Contact",
+      "Press Kit",
+      "Privacy"
+    ],
+    "metaFont": "13.5px / 20px -apple-system, \"system-ui\", \"SF Pro Text\", \"Helvetica Neue\", sans-serif",
+    "scrollWidth": 1280,
+    "sunWidth": 64,
+    "width": 1280,
+    "wordmarkFont": "700 30px / 30px -apple-system, \"system-ui\", \"SF Pro Text\", \"Helvetica Neue\", sans-serif"
+  },
+  {
+    "route": "/xvdl/presskit/",
+    "footerLinks": [
+      "Contact",
+      "Press Kit",
+      "Privacy"
+    ],
+    "metaFont": "13.5px / 20px -apple-system, \"system-ui\", \"SF Pro Text\", \"Helvetica Neue\", sans-serif",
+    "scrollWidth": 375,
+    "sunWidth": 60,
+    "width": 375,
+    "wordmarkFont": "700 28px / 28px -apple-system, \"system-ui\", \"SF Pro Text\", \"Helvetica Neue\", sans-serif"
+  },
+  {
+    "route": "/xvdl/presskit/",
+    "footerLinks": [
+      "Contact",
+      "Press Kit",
+      "Privacy"
+    ],
+    "metaFont": "13.5px / 20px -apple-system, \"system-ui\", \"SF Pro Text\", \"Helvetica Neue\", sans-serif",
+    "scrollWidth": 1280,
+    "sunWidth": 64,
+    "width": 1280,
+    "wordmarkFont": "700 30px / 30px -apple-system, \"system-ui\", \"SF Pro Text\", \"Helvetica Neue\", sans-serif"
+  },
+  {
+    "route": "/shheep/presskit/",
+    "footerLinks": [
+      "Contact",
+      "Press Kit",
+      "Privacy"
+    ],
+    "metaFont": "13.5px / 20px -apple-system, \"system-ui\", \"SF Pro Text\", \"Helvetica Neue\", sans-serif",
+    "scrollWidth": 375,
+    "sunWidth": 60,
+    "width": 375,
+    "wordmarkFont": "700 28px / 28px -apple-system, \"system-ui\", \"SF Pro Text\", \"Helvetica Neue\", sans-serif"
+  },
+  {
+    "route": "/shheep/presskit/",
+    "footerLinks": [
+      "Contact",
+      "Press Kit",
+      "Privacy"
+    ],
+    "metaFont": "13.5px / 20px -apple-system, \"system-ui\", \"SF Pro Text\", \"Helvetica Neue\", sans-serif",
+    "scrollWidth": 1280,
+    "sunWidth": 64,
+    "width": 1280,
+    "wordmarkFont": "700 30px / 30px -apple-system, \"system-ui\", \"SF Pro Text\", \"Helvetica Neue\", sans-serif"
+  }
+]

@@ -1,0 +1,48 @@
+{
+  "desktop": {
+    "gameBottom": 668.578125,
+    "gameTop": -7.421875,
+    "gameZ": "1000",
+    "headerZ": "1100",
+    "hits": [
+      {
+        "headerOnTop": true,
+        "part": "site-header__home dsp"
+      },
+      {
+        "headerOnTop": true,
+        "part": "site-header__product"
+      },
+      {
+        "headerOnTop": true,
+        "part": "site-header__controls"
+      }
+    ],
+    "overlaps": true,
+    "scroll": 467
+  },
+  "mobile": {
+    "gameBottom": 739.6640625,
+    "gameTop": 317.7734375,
+    "headerOnTop": true,
+    "headerZ": "1100",
+    "overflow": false,
+    "overlaps": false,
+    "width": 390
+  },
+  "expanded": {
+    "closeOnTop": true,
+    "expanded": true,
+    "z": "10000"
+  },
+  "skip": {
+    "focused": true,
+    "onTop": true,
+    "z": "1101"
+  },
+  "loader": {
+    "headerZ": "1100",
+    "loaderOnTop": true,
+    "loaderZ": "10001"
+  }
+}

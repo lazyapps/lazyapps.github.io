@@ -1,0 +1,32 @@
+{
+  "desktopTop": {
+    "background": "rgba(0, 0, 0, 0)",
+    "grain": "none",
+    "grainContent": "none",
+    "sun": true,
+    "y": 0
+  },
+  "desktopScrolled": {
+    "background": "rgb(248, 248, 246)",
+    "backgroundOpacity": "1",
+    "grain": "url(\"http://127.0.0.1:4322/_astro/noise.BSesztit.png\")",
+    "grainFilter": "contrast(1.25) brightness(0.6)",
+    "grainOpacity": "0.09",
+    "sun": true,
+    "y": 700,
+    "zIndex": "1100"
+  },
+  "mobileScrolled": {
+    "background": "rgb(248, 248, 246)",
+    "grain": "url(\"http://127.0.0.1:4322/_astro/noise.BSesztit.png\")",
+    "pageWidth": 390,
+    "sun": true,
+    "width": 390,
+    "y": 601.5
+  },
+  "mobileTop": {
+    "y": 0,
+    "background": "rgba(0, 0, 0, 0)",
+    "grain": "none"
+  }
+}

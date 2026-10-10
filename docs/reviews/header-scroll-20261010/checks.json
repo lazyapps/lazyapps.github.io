@@ -1,0 +1,34 @@
+{
+  "presskitTop": {
+    "background": "rgba(0, 0, 0, 0)",
+    "blur": "none",
+    "bodyOverflow": "hidden auto",
+    "border": "0px",
+    "htmlOverflow": "visible",
+    "position": "sticky",
+    "top": 0,
+    "y": 0
+  },
+  "presskitMobileScroll": {
+    "blur": "blur(16px)",
+    "border": "0px",
+    "overflow": false,
+    "top": 0,
+    "width": 320,
+    "y": 2333
+  },
+  "fondfont": {
+    "desktopSun": "10px core, original 32px SVG, rgb(255,41,60), running",
+    "sceneReady": true,
+    "scroll": {
+      "top": 0,
+      "blur": "blur(16px)"
+    },
+    "returnToTop": {
+      "scrollY": 0,
+      "blur": "none"
+    },
+    "mobileWidth": 390,
+    "mobileOverflow": false
+  }
+}

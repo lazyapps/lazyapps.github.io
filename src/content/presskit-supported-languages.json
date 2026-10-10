@@ -1,0 +1,115 @@
+{
+  "chmate": {
+    "tags": [
+      "ar",
+      "de",
+      "en",
+      "es",
+      "fr",
+      "id",
+      "it",
+      "ja",
+      "ko",
+      "nl",
+      "pt",
+      "pt-BR",
+      "tr",
+      "zh-Hans",
+      "zh-Hant"
+    ],
+    "source": "CHMate/Localizable.xcstrings",
+    "project": "CHMate Neue",
+    "commit": "6d6bddab3a2b00f90e079349176dfb8f837c0623",
+    "note": "Main app UI languages; Base and widget-only localizations excluded."
+  },
+  "fondfont": {
+    "tags": [
+      "de",
+      "en",
+      "fr",
+      "ja",
+      "ko",
+      "zh-Hans",
+      "zh-Hant"
+    ],
+    "source": "iOSFontInstaller",
+    "project": "iOSFontInstaller",
+    "commit": "763cc3500ee101236e03ddbd7846dac1e0dcb2ad",
+    "note": "Main app UI languages; Base and widget-only localizations excluded."
+  },
+  "keyhop": {
+    "tags": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "it",
+      "ja",
+      "ko",
+      "pt-BR",
+      "zh-Hans",
+      "zh-Hant"
+    ],
+    "source": "KeyHop/Localizable.xcstrings",
+    "project": "keyhop",
+    "commit": "1ff875df0abcc4bf7c67b30bbb3bad9441a5f34a",
+    "note": "Main app UI languages; Base and widget-only localizations excluded."
+  },
+  "yiyan": {
+    "tags": [
+      "ar",
+      "de",
+      "en",
+      "es",
+      "fr",
+      "hi",
+      "ja",
+      "ko",
+      "pt-BR",
+      "ru",
+      "zh-Hans",
+      "zh-Hant"
+    ],
+    "source": "Sources/YiYanUI/Resources",
+    "project": "_yiyan",
+    "commit": "def94f50e048a6954bf466eecb934c2ccba5fe25",
+    "note": "Main app UI languages; Base and widget-only localizations excluded."
+  },
+  "shheep": {
+    "tags": [
+      "de",
+      "en",
+      "es",
+      "fr",
+      "it",
+      "ja",
+      "ko",
+      "pt-BR",
+      "ru",
+      "zh-Hans",
+      "zh-Hant"
+    ],
+    "source": "Shheep/Resources/Localizable.xcstrings",
+    "project": "shheep",
+    "commit": "b86226ea92fdb6494d8f5ddbd663c69dea8a2fbe",
+    "note": "Main app UI languages; Base and widget-only localizations excluded."
+  },
+  "world-book": {
+    "tags": [
+      "en"
+    ],
+    "source": "FactBook.xcodeproj/project.pbxproj",
+    "project": "WorldABC",
+    "commit": "3d03915f9a5be8eb2834aa869d24a12b375d77af",
+    "note": "Main app UI languages; Base and widget-only localizations excluded."
+  },
+  "xvdl": {
+    "tags": [
+      "en"
+    ],
+    "source": "Safari/XVDL/XVDL.xcodeproj/project.pbxproj",
+    "project": "xvdl",
+    "commit": "4b0a8cfe4e7314d6c03a2887b1a22398359ed4c2",
+    "note": "Main app UI languages; Base and widget-only localizations excluded."
+  }
+}

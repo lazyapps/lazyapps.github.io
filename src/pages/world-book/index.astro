@@ -1,7 +1,9 @@
 ---
 import SocialMeta from '../../components/SocialMeta.astro';
 import SoftwareApplication from '../../components/SoftwareApplication.astro';
+import SiteGrain from '../../components/SiteGrain.astro';
 import SiteFooterBase from '../../components/SiteFooterBase.astro';
+import SiteHeader from '../../components/SiteHeader.astro';
 import siteCssUrl from '$assets/s/site.css?url';
 import gsapUrl from '$assets/vendor/gsap.min.js?url';
 import scrollTriggerUrl from '$assets/vendor/ScrollTrigger.min.js?url';
@@ -18,22 +20,22 @@ const appStoreUrl = `https://apps.apple.com/app/apple-store/id412637620?${appSto
 const t = {
   htmlLang: 'en', htmlDir: 'ltr', ogLocale: 'en_US', selectedUrl: '/world-book/',
   title: 'World Book — Offline World Atlas for iPhone & iPad',
-  description: 'Explore 260+ countries and territories, spin a 3D globe, and compare global rankings. An independent world reference for iPhone and iPad. Buy once.',
+  description: 'Offline world atlas for iPhone and iPad: profiles of 260+ countries and territories, flags, a 3D globe and 100+ rankings. Photos and regional maps need an initial download.',
   navAria: 'Main navigation', homeAria: 'lazyapps home',
-  headline: ['The world,', 'ready to explore.'],
-  sub: 'Follow your curiosity across 260+ countries and territories. Spin the globe, read country profiles, and see how the world compares.',
+  headline: ['Offline atlas', 'for iPhone & iPad'],
+  sub: 'Look up profiles and flags for 260+ countries and territories. Explore a 3D globe offline and compare countries across 100+ rankings.',
   downloadLabel: 'Get World Book on the App Store', badgeAlt: 'Download on the App Store',
   purchaseNote: 'One-time purchase.', unlockNote: 'No ads or subscriptions.', mediaLocale: 'en',
   videoLabel: 'World Book preview: globe, country profiles, rankings, and photos',
   videoFallback: 'Your browser does not support this video.', storeLink: 'View World Book on the App Store',
-  featuresTitle: 'A world of knowledge, within reach.',
+  featuresTitle: 'Country profiles, offline maps & rankings',
   cards: [
-    ['Follow your curiosity.', 'Spin and zoom the interactive globe. Pick a flag to explore a country, from its geography and history to its people and economy.'],
-    ['Read wherever you are.', 'Country profiles, flags, rankings, locator maps, and the globe are ready offline. Photos and regional maps stay available after their first download.'],
-    ['Put facts in perspective.', 'Compare countries across 100+ rankings, from population to life expectancy. Explore interactive charts with reported values, dates, and ranks.'],
+    ['Explore the 3D globe.', 'Spin and zoom the interactive globe. Pick a flag to explore a country, from its geography and history to its people and economy.'],
+    ['Read offline.', 'Country profiles, flags, rankings, locator maps, and the globe are ready offline. Photos and regional maps stay available after their first download.'],
+    ['Compare 100+ rankings.', 'Compare countries across 100+ rankings, from population to life expectancy. Explore interactive charts with reported values, dates, and ranks.'],
   ],
-  promiseLines: ['Buy once.', 'Keep exploring.'],
-  promiseCopy: 'A reference book for your iPhone and iPad, with comfortable typography and four reading themes. One purchase, no in-app purchases, no subscriptions. No ads or tracking to interrupt your curiosity.',
+  promiseLines: ['One-time purchase.', 'No subscriptions.'],
+  promiseCopy: 'Choose from four reading themes on iPhone and iPad. One purchase includes the app: no in-app purchases, subscriptions, ads or tracking.',
   getApp: 'Get World Book',
 };
 ---
@@ -73,7 +75,7 @@ const t = {
   </head>
   <body>
     <div class="reading-backdrop" data-world-book-backdrop aria-hidden="true"><div class="reading-backdrop__map"></div></div>
-    <div class="grain" data-grain-animate="true" aria-hidden="true"></div>
+    <SiteGrain animated />
     <div data-load-wrap class="loader" id="loader" aria-hidden="true">
       <div data-load-bg class="loader__bg"><div data-load-progress class="loader__bg-bar"></div></div>
       <div data-load-container class="loader__container">
@@ -83,17 +85,7 @@ const t = {
         </div>
       </div>
     </div>
-    <header class="wrap">
-      <div class="topbar">
-        <nav class="topbar__nav" aria-label={t.navAria}>
-          <a href="/" class="topbar__home" aria-label={t.homeAria}><span aria-hidden="true" class="topbar__home-dot"></span></a>
-        </nav>
-        <a class="topbar__app" href={t.selectedUrl}>
-          <img src={iconUrl} alt="" width="26" height="26">
-          <span class="dsp" lang="en" dir="ltr">World Book</span>
-        </a>
-      </div>
-    </header>
+    <SiteHeader class="wrap" name="World Book" icon={iconUrl} />
 
     <main>
       <section class="reading-hero wrap" aria-labelledby="hero-title">
@@ -305,7 +297,7 @@ const t = {
           <p>Decorative background artwork is AI-generated. App screens show the actual app.</p>
           <p>Apple, the Apple logo, iPhone, and iPad are trademarks of Apple Inc. App Store is a service mark of Apple Inc.</p>
         </div>
-        <SiteFooterBase />
+        <SiteFooterBase pressKit="/world-book/presskit/" />
       </div>
     </footer>
     <script is:inline src={gsapUrl}></script>
@@ -321,7 +313,6 @@ const t = {
 <style>
   :global(html[data-world-book-recording="true"]), :global(html[data-world-book-recording="true"] *) { cursor: none !important; }
   :global(html[data-world-book-recording="true"] astro-dev-toolbar) { display: none !important; }
-  header { padding-top: clamp(8px, 1.5vw, 18px); }
   .reading-hero { display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr); align-items: center; gap: var(--space-grid); padding-top: clamp(28px, 4vw, 56px); }
   .reading-hero__heading { overflow-x: clip; }
   .reading-hero h1 { font-size: clamp(56px, 6.2vw, 96px); text-wrap: balance; overflow-wrap: anywhere; }
@@ -385,7 +376,7 @@ const t = {
   .reading-footer__notices a:hover { text-decoration-color: currentColor; }
   a:focus-visible, .preview:has(video:focus-visible), .preview__play:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
   @media (prefers-reduced-motion: reduce) {
-    .grain, .reading-backdrop__map { animation: none; }
+    .reading-backdrop__map { animation: none; }
   }
   @media (width < 768px) {
     .reading-hero { grid-template-columns: 1fr; align-items: start; gap: 28px; padding-top: 24px; }

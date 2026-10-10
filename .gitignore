@@ -6,6 +6,9 @@ npm-debug.log*
 .DS_Store
 .gstack/
 
+# Temporary LLVM output from native app previews.
+/default.profraw
+
 # Local production sources and experiments; publish reviewed web derivatives.
 __pycache__/
 *.py[cod]

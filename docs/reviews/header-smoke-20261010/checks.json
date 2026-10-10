@@ -1,0 +1,56 @@
+{
+  "widths": [
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "blur": "none",
+      "canvasTop": 1,
+      "overflow": false,
+      "productTop": 25,
+      "skyInset": "87px",
+      "width": 1280,
+      "y": 0
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "blur": "none",
+      "canvasTop": 1,
+      "overflow": false,
+      "productTop": 25,
+      "skyInset": "87px",
+      "width": 768,
+      "y": 0
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "blur": "none",
+      "canvasTop": 0.75,
+      "overflow": false,
+      "productTop": 24.75,
+      "skyInset": "79.25px",
+      "width": 390,
+      "y": 0
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "blur": "none",
+      "canvasTop": 2,
+      "overflow": false,
+      "productTop": 26,
+      "skyInset": "78px",
+      "width": 320,
+      "y": 0
+    }
+  ],
+  "resizeWhileScrolled": {
+    "blur": "blur(16px)",
+    "canvasDocumentTop": 0.75,
+    "expected": 0.75,
+    "skyInset": "79.25px",
+    "y": 1381.5
+  },
+  "returnToTop": {
+    "blur": "none",
+    "canvasTop": 0.75,
+    "y": 0
+  }
+}

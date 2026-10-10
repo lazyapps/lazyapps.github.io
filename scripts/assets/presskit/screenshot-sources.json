@@ -1,0 +1,299 @@
+{
+  "chmate": {
+    "checkedOn": "2026-10-10",
+    "appSourceCommit": "6d6bddab3a2b00f90e079349176dfb8f837c0623",
+    "captures": [
+      {
+        "source": "scripts/assets/presskit/chmate-reading-ar.png",
+        "sha256": "a5527c08b8e9577c9110d197ab26b507b0f654d6cb056a010039d07941437af9",
+        "contentLanguage": "ar",
+        "type": "native",
+        "operation": "Original pixels; no resizing or retouching.",
+        "originalSource": "/Users/realazy/Projects/iOS/CHMate Neue/AppPreview/raw/ipad/locales/ar/reader-after-open.png"
+      },
+      {
+        "source": "scripts/assets/presskit/chmate-reading-de.png",
+        "sha256": "67bbff221f0216ead2e7f4e369e17ff6b78bce0317808fa3905457a05c4a82f9",
+        "contentLanguage": "de",
+        "type": "native",
+        "operation": "Original pixels; no resizing or retouching.",
+        "originalSource": "/Users/realazy/Projects/iOS/CHMate Neue/AppPreview/raw/ipad/locales/de/reader-after-open.png"
+      },
+      {
+        "source": "scripts/assets/presskit/chmate-reading-en.png",
+        "sha256": "0f905108787648e6b289a4f2e678e652af8fe543da1797d1e578bd8764d2dd35",
+        "contentLanguage": "en",
+        "type": "native",
+        "operation": "Original pixels; no resizing or retouching.",
+        "originalSource": "/Users/realazy/Projects/iOS/CHMate Neue/AppPreview/raw/ipad/locales/en/reader-after-open.png"
+      },
+      {
+        "source": "scripts/assets/presskit/chmate-reading-es.png",
+        "sha256": "42d7227f38b5626b57288c2cb3e302e344a9b4c84f9b47bc8a6f4a73e4674e34",
+        "contentLanguage": "es",
+        "type": "native",
+        "operation": "Original pixels; no resizing or retouching.",
+        "originalSource": "/Users/realazy/Projects/iOS/CHMate Neue/AppPreview/raw/ipad/locales/es/reader-after-open.png"
+      },
+      {
+        "source": "scripts/assets/presskit/chmate-reading-fr.png",
+        "sha256": "7ca5aef93753902722b8ede3c1a8152211eca2440d6b91ec7dc277a2e337e4fb",
+        "contentLanguage": "fr",
+        "type": "native",
+        "operation": "Original pixels; no resizing or retouching.",
+        "originalSource": "/Users/realazy/Projects/iOS/CHMate Neue/AppPreview/raw/ipad/locales/fr/reader-after-open.png"
+      },
+      {
+        "source": "scripts/assets/presskit/chmate-reading-id.png",
+        "sha256": "19afb78891364fda047d49f2e28f3eedd59d4fe80cbc1cdaeec6641b16614d84",
+        "contentLanguage": "id",
+        "type": "native",
+        "operation": "Original pixels; no resizing or retouching.",
+        "originalSource": "/Users/realazy/Projects/iOS/CHMate Neue/AppPreview/raw/ipad/locales/id/reader-after-open.png"
+      },
+      {
+        "source": "scripts/assets/presskit/chmate-reading-it.png",
+        "sha256": "fb5a57b6d53f295ac572ef2519e1f358c5b724387258d409ffe573ff28917a72",
+        "contentLanguage": "it",
+        "type": "native",
+        "operation": "Original pixels; no resizing or retouching.",
+        "originalSource": "/Users/realazy/Projects/iOS/CHMate Neue/AppPreview/raw/ipad/locales/it/horizontal-sync-visible.png"
+      },
+      {
+        "source": "scripts/assets/presskit/chmate-reading-ja.png",
+        "sha256": "cb17ea3c4e6001b540ef87cfd6f8d2b7bd1065cb2b612e244369fc9f4fc9ff80",
+        "contentLanguage": "ja",
+        "type": "native",
+        "operation": "Original pixels; no resizing or retouching.",
+        "originalSource": "/Users/realazy/Projects/iOS/CHMate Neue/AppPreview/raw/ipad/locales/ja/reader-after-open.png"
+      },
+      {
+        "source": "scripts/assets/presskit/chmate-reading-ko.png",
+        "sha256": "b4f9ff4f0b334d7bd6d022c8acf4812b6c597eec61ba72dc134f2ff8835b1f13",
+        "contentLanguage": "ko",
+        "type": "native",
+        "operation": "Original pixels; no resizing or retouching.",
+        "originalSource": "/Users/realazy/Projects/iOS/CHMate Neue/AppPreview/raw/ipad/locales/ko/reader-after-open.png"
+      },
+      {
+        "source": "scripts/assets/presskit/chmate-reading-nl.png",
+        "sha256": "99bad1a8c2e67288860a17472dfc06effa86a0906cbe788d0118c7d2646fb3f2",
+        "contentLanguage": "nl",
+        "type": "native",
+        "operation": "Original pixels; no resizing or retouching.",
+        "originalSource": "/Users/realazy/Projects/iOS/CHMate Neue/AppPreview/raw/ipad/locales/nl/reader-after-open.png"
+      },
+      {
+        "source": "scripts/assets/presskit/chmate-reading-pt.png",
+        "sha256": "98923a35ae380449f83ec236c0d39717350f10f745bf9ea96da0b20b4243bce4",
+        "contentLanguage": "pt",
+        "type": "native",
+        "operation": "Original pixels; no resizing or retouching.",
+        "originalSource": "/Users/realazy/Projects/iOS/CHMate Neue/AppPreview/raw/ipad/locales/pt/reader-after-open.png"
+      },
+      {
+        "source": "scripts/assets/presskit/chmate-reading-pt-br.png",
+        "sha256": "f720470155b9535329db81aa698d76dfd068af31aeb82f72e4e9f64a550587ba",
+        "contentLanguage": "pt-BR",
+        "type": "native",
+        "operation": "Original pixels; no resizing or retouching.",
+        "originalSource": "/Users/realazy/Projects/iOS/CHMate Neue/AppPreview/raw/ipad/locales/pt-BR/reader-after-open.png"
+      },
+      {
+        "source": "scripts/assets/presskit/chmate-reading-tr.png",
+        "sha256": "06c7c11128161c6bb139ddd6b9a620701c4a49171c217bd7105aaa6c46f2311b",
+        "contentLanguage": "tr",
+        "type": "native",
+        "operation": "Original pixels; no resizing or retouching.",
+        "originalSource": "/Users/realazy/Projects/iOS/CHMate Neue/AppPreview/raw/ipad/locales/tr/reader-after-open.png"
+      },
+      {
+        "source": "scripts/assets/presskit/chmate-reading-zh-hans.png",
+        "sha256": "95e2876b92d698b5767f3f201f62273d1830952ab6b6ab06a557bdb770f0506b",
+        "contentLanguage": "zh-Hans",
+        "type": "native",
+        "operation": "Original pixels; no resizing or retouching.",
+        "originalSource": "/Users/realazy/Projects/iOS/CHMate Neue/AppPreview/raw/ipad/locales/zh-Hans/reader-after-open.png"
+      },
+      {
+        "source": "scripts/assets/presskit/chmate-reading-zh-hant.png",
+        "sha256": "c3726a293969043d607ba17a63cab2e1d02b53104cca0c5f78d834c9c0983447",
+        "contentLanguage": "zh-Hant",
+        "type": "native",
+        "operation": "Original pixels; no resizing or retouching.",
+        "originalSource": "/Users/realazy/Projects/iOS/CHMate Neue/AppPreview/raw/ipad/locales/zh-Hant/reader-after-open.png"
+      }
+    ]
+  },
+  "world-book": {
+    "checkedOn": "2026-10-10",
+    "appSourceCommit": "13ed813d4f3f544440030e2d91f10dc2ec4c6e0b",
+    "captures": [
+      {
+        "source": "scripts/assets/presskit/world-book-globe.png",
+        "sha256": "6b56f5710d82296a3d035be6b3827abdc0d52480d6aec3044593d8ce855b42da",
+        "contentLanguage": "en",
+        "type": "native",
+        "operation": "Original pixels; no resizing or retouching.",
+        "originalSource": "Argent full-resolution capture of World Book iPad Regression 20261006 (3C813927-93BF-4E4B-B004-C30B1BA4EDE6)",
+        "capturedOn": "2026-10-10",
+        "appVersion": "261010.0",
+        "appBuild": "470"
+      }
+    ]
+  },
+  "fondfont": {
+    "checkedOn": "2026-10-10",
+    "appSourceCommit": "763cc3500ee101236e03ddbd7846dac1e0dcb2ad",
+    "captures": [
+      {
+        "source": "scripts/assets/presskit/fondfont-select-de.png",
+        "sha256": "d9300fadf0b592ba73aa919364c036b1ce240721d1ab862548619e204414f7b5",
+        "contentLanguage": "de",
+        "type": "native",
+        "operation": "Original pixels; no resizing or retouching.",
+        "originalSource": "/Users/realazy/Projects/iOS/iOSFontInstaller/AppStore/Screenshots/public/screenshots/apple/iphone/de-DE/04.png",
+        "capturedOn": "2026-10-10"
+      },
+      {
+        "source": "scripts/assets/presskit/fondfont-select-en.png",
+        "sha256": "871e6550ffd5028ba3ee38e97290f2e1d12ee6dd7a8a0bd01d7927d1976d6cd3",
+        "contentLanguage": "en",
+        "type": "native",
+        "operation": "Original pixels; no resizing or retouching.",
+        "originalSource": "/Users/realazy/Projects/iOS/iOSFontInstaller/AppStore/Screenshots/public/screenshots/apple/iphone/en-US/04.png",
+        "capturedOn": "2026-10-10"
+      },
+      {
+        "source": "scripts/assets/presskit/fondfont-select-fr.png",
+        "sha256": "d94e4766457cee9a7e4a80b1dbd8aca9bc7bbb96f80ba3e35431c57ae89d1d50",
+        "contentLanguage": "fr",
+        "type": "native",
+        "operation": "Original pixels; no resizing or retouching.",
+        "originalSource": "/Users/realazy/Projects/iOS/iOSFontInstaller/AppStore/Screenshots/public/screenshots/apple/iphone/fr-FR/04.png",
+        "capturedOn": "2026-10-10"
+      },
+      {
+        "source": "scripts/assets/presskit/fondfont-select-ja.png",
+        "sha256": "7682567543a9cd35d04dab5f81d3d3b50542980fab5d2c888839f4ac7de5b722",
+        "contentLanguage": "ja",
+        "type": "native",
+        "operation": "Original pixels; no resizing or retouching.",
+        "originalSource": "/Users/realazy/Projects/iOS/iOSFontInstaller/AppStore/Screenshots/public/screenshots/apple/iphone/ja/04.png",
+        "capturedOn": "2026-10-10"
+      },
+      {
+        "source": "scripts/assets/presskit/fondfont-select-ko.png",
+        "sha256": "5b0d767ffd0cf81d2e83b2f59ec4d993f3475c02379dbd32cbe89c799e94cf52",
+        "contentLanguage": "ko",
+        "type": "native",
+        "operation": "Original pixels; no resizing or retouching.",
+        "originalSource": "/Users/realazy/Projects/iOS/iOSFontInstaller/AppStore/Screenshots/public/screenshots/apple/iphone/ko/04.png",
+        "capturedOn": "2026-10-10"
+      },
+      {
+        "source": "scripts/assets/presskit/fondfont-select-zh-hans.png",
+        "sha256": "03d46083fd8d442e99d06c7f66ab6f8d4a17cc57340de489c0562e7e709a81c2",
+        "contentLanguage": "zh-Hans",
+        "type": "native",
+        "operation": "Original pixels; no resizing or retouching.",
+        "originalSource": "/Users/realazy/Projects/iOS/iOSFontInstaller/AppStore/Screenshots/public/screenshots/apple/iphone/zh-Hans/04.png",
+        "capturedOn": "2026-10-10"
+      },
+      {
+        "source": "scripts/assets/presskit/fondfont-select-zh-hant.png",
+        "sha256": "6d35a81bbdb30b8aa81c410fa03474567551243b1d2662a6e19a5cedfd095c09",
+        "contentLanguage": "zh-Hant",
+        "type": "native",
+        "operation": "Original pixels; no resizing or retouching.",
+        "originalSource": "/Users/realazy/Projects/iOS/iOSFontInstaller/AppStore/Screenshots/public/screenshots/apple/iphone/zh-Hant/04.png",
+        "capturedOn": "2026-10-10"
+      }
+    ]
+  },
+  "keyhop": {
+    "checkedOn": "2026-10-10",
+    "appSourceCommit": "1ff875df0abcc4bf7c67b30bbb3bad9441a5f34a",
+    "captures": [
+      {
+        "source": "scripts/assets/presskit/keyhop-settings-en.jpg",
+        "sha256": "3d112d92ee4d7356a668b63c0c554597f3ec36bf61667bbd960c91fb9bcc3966",
+        "contentLanguage": "en",
+        "type": "native",
+        "operation": "Original pixels; no resizing or retouching.",
+        "originalSource": "Native macOS window capture via Computer Use; current Debug build; isolated preview defaults",
+        "capturedOn": "2026-10-10",
+        "buildConfiguration": "Debug",
+        "launchArguments": [
+          "--preview-settings",
+          "--preview-all-apps",
+          "-AppleLanguages",
+          "(en)"
+        ]
+      }
+    ]
+  },
+  "yiyan": {
+    "checkedOn": "2026-10-10",
+    "appSourceCommit": "def94f50e048a6954bf466eecb934c2ccba5fe25",
+    "captures": [
+      {
+        "source": "src/assets/img/yiyan-showcase.png",
+        "sha256": "3e2b352c55986a1123b3d2db50e7f15061a8d3b5dcde730661e8971c2b982d5e",
+        "contentLanguage": "en",
+        "type": "native",
+        "operation": "Original pixels; no resizing or retouching.",
+        "originalSource": "docs/reviews/yiyan-screenshots-20261008/source-provenance.json",
+        "capturedOn": "2026-10-08"
+      },
+      {
+        "source": "src/assets/img/yiyan-showcase-detail.png",
+        "sha256": "94f15539bd6fe4a9ae3edc025e62dabe1b77b26f59f937f76c7e964e6d2fa9b2",
+        "contentLanguage": "en",
+        "type": "native",
+        "operation": "Original pixels; no resizing or retouching.",
+        "originalSource": "docs/reviews/yiyan-screenshots-20261008/source-provenance.json",
+        "capturedOn": "2026-10-08"
+      }
+    ]
+  },
+  "xvdl": {
+    "checkedOn": "2026-10-10",
+    "appSourceCommit": "4b0a8cfe4e7314d6c03a2887b1a22398359ed4c2",
+    "captures": [
+      {
+        "source": "scripts/assets/presskit/xvdl-in-use-original.png",
+        "sha256": "280a32832e2dd8c85e622496bac0ea6d7b9a7d6afaf6810efba0c2cd0d552385",
+        "contentLanguage": "en",
+        "type": "native",
+        "operation": "Original pixels; no resizing or retouching.",
+        "capturedOn": "2026-10-10",
+        "originalSource": "Developer-supplied 2026-10-10 capture; docs/reviews/xvdl-screenshot-20261010/imagegen.md"
+      },
+      {
+        "source": "src/assets/img/xvdl-in-use.png",
+        "sha256": "44b7f329e60f6c85a15af4e22f217dd9bc7a796ac364fa86eca5da0cde766169",
+        "contentLanguage": "en",
+        "type": "edited",
+        "operation": "Developer-requested emphasis on download button; original capture included separately.",
+        "capturedOn": "2026-10-10",
+        "originalSource": "Developer-supplied 2026-10-10 capture; docs/reviews/xvdl-screenshot-20261010/imagegen.md",
+        "derivedFrom": "scripts/assets/presskit/xvdl-in-use-original.png"
+      }
+    ]
+  },
+  "shheep": {
+    "checkedOn": "2026-10-10",
+    "appSourceCommit": "b86226ea92fdb6494d8f5ddbd663c69dea8a2fbe",
+    "captures": [
+      {
+        "source": "public/shheep/preview.png",
+        "sha256": "ecc94a21caa29cf107f24030b0497718c714b2fbb665d3939f4d719dae7001d0",
+        "contentLanguage": "en",
+        "type": "title-screen",
+        "operation": "Original pixels; no resizing or retouching.",
+        "originalSource": "/Users/realazy/Projects/_vibe/shheep/web/public/shheep/preview.png"
+      }
+    ]
+  }
+}

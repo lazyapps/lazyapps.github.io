@@ -1,0 +1,130 @@
+{
+  "languages": [
+    "de",
+    "en",
+    "fr",
+    "ja",
+    "ko",
+    "zh-Hans",
+    "zh-Hant"
+  ],
+  "files": [
+    {
+      "path": "icon.png",
+      "contentLanguage": "und",
+      "width": 1024,
+      "height": 1024,
+      "format": "PNG",
+      "bytes": 1873848,
+      "sha256": "6450ebff5633c9758e6b8c3f1d169f875886dd8e0402555e72c716d49b3f2be6"
+    },
+    {
+      "path": "de/font-selection.png",
+      "contentLanguage": "de",
+      "width": 1206,
+      "height": 2622,
+      "format": "PNG",
+      "bytes": 522839,
+      "sha256": "d9300fadf0b592ba73aa919364c036b1ce240721d1ab862548619e204414f7b5"
+    },
+    {
+      "path": "social-card.png",
+      "contentLanguage": "und",
+      "width": 1200,
+      "height": 630,
+      "format": "PNG",
+      "bytes": 144942,
+      "sha256": "837f1b723b1ec43625dbf2c70f38a0c21521e30f0f1e5ed79fe008c1fb7e7964"
+    },
+    {
+      "path": "en/font-selection.png",
+      "contentLanguage": "en",
+      "width": 1206,
+      "height": 2622,
+      "format": "PNG",
+      "bytes": 972940,
+      "sha256": "871e6550ffd5028ba3ee38e97290f2e1d12ee6dd7a8a0bd01d7927d1976d6cd3"
+    },
+    {
+      "path": "fr/font-selection.png",
+      "contentLanguage": "fr",
+      "width": 1206,
+      "height": 2622,
+      "format": "PNG",
+      "bytes": 520531,
+      "sha256": "d94e4766457cee9a7e4a80b1dbd8aca9bc7bbb96f80ba3e35431c57ae89d1d50"
+    },
+    {
+      "path": "ja/font-selection.png",
+      "contentLanguage": "ja",
+      "width": 1206,
+      "height": 2622,
+      "format": "PNG",
+      "bytes": 607563,
+      "sha256": "7682567543a9cd35d04dab5f81d3d3b50542980fab5d2c888839f4ac7de5b722"
+    },
+    {
+      "path": "ja/social-card.png",
+      "contentLanguage": "ja",
+      "width": 1200,
+      "height": 630,
+      "format": "PNG",
+      "bytes": 136473,
+      "sha256": "7bc2bbe5c28d7a8eb36f6ca6deb32d021f557ff5a5fdca9894195e3f97b8c6bb"
+    },
+    {
+      "path": "ko/font-selection.png",
+      "contentLanguage": "ko",
+      "width": 1206,
+      "height": 2622,
+      "format": "PNG",
+      "bytes": 535184,
+      "sha256": "5b0d767ffd0cf81d2e83b2f59ec4d993f3475c02379dbd32cbe89c799e94cf52"
+    },
+    {
+      "path": "ko/social-card.png",
+      "contentLanguage": "ko",
+      "width": 1200,
+      "height": 630,
+      "format": "PNG",
+      "bytes": 141309,
+      "sha256": "0a9993f3f80fd77edfcc1139f4da683e5424dcdbc105a77955258ead10f9e864"
+    },
+    {
+      "path": "zh-Hans/font-selection.png",
+      "contentLanguage": "zh-Hans",
+      "width": 1206,
+      "height": 2622,
+      "format": "PNG",
+      "bytes": 550358,
+      "sha256": "03d46083fd8d442e99d06c7f66ab6f8d4a17cc57340de489c0562e7e709a81c2"
+    },
+    {
+      "path": "zh-Hans/social-card.png",
+      "contentLanguage": "zh-Hans",
+      "width": 1200,
+      "height": 630,
+      "format": "PNG",
+      "bytes": 158934,
+      "sha256": "3bc49005ff6eb55084f12f0cf632129c75d0c2b3b205e841ecd76e3d2a142084"
+    },
+    {
+      "path": "zh-Hant/font-selection.png",
+      "contentLanguage": "zh-Hant",
+      "width": 1206,
+      "height": 2622,
+      "format": "PNG",
+      "bytes": 551873,
+      "sha256": "6d35a81bbdb30b8aa81c410fa03474567551243b1d2662a6e19a5cedfd095c09"
+    },
+    {
+      "path": "zh-Hant/social-card.png",
+      "contentLanguage": "zh-Hant",
+      "width": 1200,
+      "height": 630,
+      "format": "PNG",
+      "bytes": 160825,
+      "sha256": "27b5b04a66d29ce017e71da9368d1a00e054d250271f9d806ed28bda94f50307"
+    }
+  ]
+}

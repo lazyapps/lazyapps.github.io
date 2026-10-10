@@ -1,0 +1,11 @@
+Proceed. The approach fits the supplied contract; no architectural blocker or further user decision is needed. Make these four requirements explicit:
+
+1. **Audit rendered copy, not just locale files.** YiYan’s `h1`, title and OG title still come from `yiyan-locales.mjs`, while much of its body comes from `yiyan-short-copy.json`. World Book and XVDL contain inline copy; XVDL also has a separately hardcoded structured-data description. Include these paths. Preserve valid application names when changing SEO titles—KeyHop and YiYan currently derive them with `title.split(' — ')[0]`.
+
+2. **Do not treat passing checks as proof of editorial consistency.** [check-seo.mjs](/Users/realazy/Projects/Sites/lazyapps/scripts/check-seo.mjs) mostly checks structure and presence; [check-presskits.mjs](/Users/realazy/Projects/Sites/lazyapps/scripts/check-presskits.mjs) verifies generated content against its own sources. Both can pass while promotional copy or contradictory product claims remain. Review extracted rendered copy across all 60 landing entries and compare matching Press Kit descriptions, platform limits and availability. Document sources for changed factual claims.
+
+3. **Include both Press Kit page types in the cleanup.** Remove the product-kit hero’s “Shared assets + language folders” implementation note, as well as redundant hub counts and eyebrows. Keep useful download and language information. Make the hub H1 explicitly “lazyapps Press Kits,” as required by [PRESSKIT.md](/Users/realazy/Projects/Sites/lazyapps/docs/PRESSKIT.md); removing its eyebrow otherwise leaves only “Press kits.”
+
+4. **Define representative header validation.** Cover every product template, both Press templates, Arabic RTL, a long localized app name, and pages without a picker. Existing topbars occupy different containers and have product-specific styling; sharing markup alone does not establish consistent layout. Check keyboard focus, picker operation and narrow-screen overflow.
+
+The homepage header exception and leaving OG bitmaps unchanged are appropriate. The remaining evidence should come from implementation and validation, not another approval round.

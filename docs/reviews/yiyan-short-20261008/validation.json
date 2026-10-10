@@ -1,0 +1,98 @@
+[
+  {
+    "locale": "zh-hans",
+    "seconds": 15,
+    "frames": 360,
+    "bytes": 1127112,
+    "sha256": "38c451f2960d28bbfeb68572fda5cb08f0a841ecf8d25a3a810df4b6ee22dd78",
+    "visible_copy_characters": 305
+  },
+  {
+    "locale": "zh-hant",
+    "seconds": 15,
+    "frames": 360,
+    "bytes": 1154371,
+    "sha256": "fdcee33e234b8a4c2c4cf202f7cb39ee38d18c53cdb9199eae302406d4e5678c",
+    "visible_copy_characters": 309
+  },
+  {
+    "locale": "en",
+    "seconds": 15,
+    "frames": 360,
+    "bytes": 1148730,
+    "sha256": "961fb69bc9946131905d7006ec119cb273d176629aeaa1f59d1319e169e8fc74",
+    "visible_copy_characters": 882
+  },
+  {
+    "locale": "ja",
+    "seconds": 15,
+    "frames": 360,
+    "bytes": 1161110,
+    "sha256": "4c42712809a51cb64abd59ed60170423313ccb0beecf97f3555c162bf24f8502",
+    "visible_copy_characters": 378
+  },
+  {
+    "locale": "ko",
+    "seconds": 15,
+    "frames": 360,
+    "bytes": 1143899,
+    "sha256": "62d1bef2ca661af545875e4b7c16ea150b324724c0a0aaaf89486a84fba558fc",
+    "visible_copy_characters": 440
+  },
+  {
+    "locale": "de",
+    "seconds": 15,
+    "frames": 360,
+    "bytes": 1164413,
+    "sha256": "7e68d87aeb3026806e463bc814989579f39b14e090b7a1808d92b8735ecdb8d4",
+    "visible_copy_characters": 979
+  },
+  {
+    "locale": "fr",
+    "seconds": 15,
+    "frames": 360,
+    "bytes": 1165743,
+    "sha256": "87758836e307365b6a13c274166354d7c482730b41b64c09653daab9d0765cb1",
+    "visible_copy_characters": 979
+  },
+  {
+    "locale": "es",
+    "seconds": 15,
+    "frames": 360,
+    "bytes": 1161572,
+    "sha256": "f9db45f0ad9a06a7794d6f49aba5ebab453767b31453c7e02f62dcfc00e6cbb3",
+    "visible_copy_characters": 902
+  },
+  {
+    "locale": "pt-br",
+    "seconds": 15,
+    "frames": 360,
+    "bytes": 1160025,
+    "sha256": "6874979d55c41f720ac46fef4a0f7fdae93517ec9702e54bcbfdfda3d7f6d563",
+    "visible_copy_characters": 883
+  },
+  {
+    "locale": "ru",
+    "seconds": 15,
+    "frames": 360,
+    "bytes": 1155598,
+    "sha256": "93799538037b86c32b9d1d3c7210899c098553a320307b80a8d246baf0a9c6d4",
+    "visible_copy_characters": 932
+  },
+  {
+    "locale": "hi",
+    "seconds": 15,
+    "frames": 360,
+    "bytes": 1154832,
+    "sha256": "0db6d80b16a021ce2881b8b489f13bbc6ce71786b71d8b2b3a4f1c67e55b5882",
+    "visible_copy_characters": 884
+  },
+  {
+    "locale": "ar",
+    "seconds": 15,
+    "frames": 360,
+    "bytes": 1178787,
+    "sha256": "a179e4689528d5be049032227fa5a53cc4323377f29489983ef67c7277a0e427",
+    "visible_copy_characters": 790
+  }
+]

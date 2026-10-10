@@ -1,0 +1,134 @@
+[
+  {
+    "assets": [
+      {
+        "height": 180,
+        "loaded": true,
+        "src": "/_astro/chmate-icon.CCuyvLDm_Z13NRGr.webp",
+        "width": 180
+      },
+      {
+        "height": 2752,
+        "loaded": true,
+        "src": "/presskit/chmate/en/reading-ipad.png",
+        "width": 2064
+      },
+      {
+        "height": 630,
+        "loaded": true,
+        "src": "/presskit/chmate/social-card.png",
+        "width": 1200
+      }
+    ],
+    "language": "en",
+    "overflow": false,
+    "url": "http://127.0.0.1:4322/chmate/presskit/#en"
+  },
+  {
+    "assets": [
+      {
+        "height": 180,
+        "loaded": true,
+        "src": "/_astro/keyhop-icon.CntT2BoN_1aVLXu.webp",
+        "width": 180
+      },
+      {
+        "height": 2168,
+        "loaded": true,
+        "src": "/presskit/keyhop/settings-en.jpg",
+        "width": 3456
+      },
+      {
+        "height": 630,
+        "loaded": true,
+        "src": "/presskit/keyhop/social-card.png",
+        "width": 1200
+      }
+    ],
+    "language": "en",
+    "overflow": false,
+    "url": "http://127.0.0.1:4322/keyhop/presskit/#en"
+  },
+  {
+    "assets": [
+      {
+        "height": 180,
+        "loaded": true,
+        "src": "/_astro/yiyan-icon.SpuI6eR0_fxyme.webp",
+        "width": 180
+      },
+      {
+        "height": 1344,
+        "loaded": true,
+        "src": "/presskit/yiyan/learning-notes-en.png",
+        "width": 2048
+      },
+      {
+        "height": 1328,
+        "loaded": true,
+        "src": "/presskit/yiyan/follow-up-en.png",
+        "width": 1984
+      },
+      {
+        "height": 630,
+        "loaded": true,
+        "src": "/presskit/yiyan/social-card.png",
+        "width": 1200
+      }
+    ],
+    "language": "en",
+    "overflow": false,
+    "url": "http://127.0.0.1:4322/yiyan/presskit/#en"
+  },
+  {
+    "assets": [
+      {
+        "height": 180,
+        "loaded": true,
+        "src": "/_astro/world-book-icon.DH5eSzku_Z12VwqR.webp",
+        "width": 180
+      },
+      {
+        "height": 2752,
+        "loaded": true,
+        "src": "/presskit/world-book/en/globe-ipad.png",
+        "width": 2064
+      },
+      {
+        "height": 630,
+        "loaded": true,
+        "src": "/presskit/world-book/social-card.png",
+        "width": 1200
+      }
+    ],
+    "language": "en",
+    "overflow": false,
+    "url": "http://127.0.0.1:4322/world-book/presskit/#en"
+  },
+  {
+    "assets": [
+      {
+        "height": 180,
+        "loaded": true,
+        "src": "/_astro/fondfont-icon.BmpimUC0_1mWjMb.webp",
+        "width": 180
+      },
+      {
+        "height": 2622,
+        "loaded": true,
+        "src": "/presskit/fondfont/zh-Hans/font-selection.png",
+        "width": 1206
+      },
+      {
+        "height": 630,
+        "loaded": true,
+        "src": "/presskit/fondfont/zh-Hans/social-card.png",
+        "width": 1200
+      }
+    ],
+    "language": "zh-Hans",
+    "overflow": false,
+    "url": "http://127.0.0.1:4322/fondfont/presskit/#zh-Hans",
+    "width": 390
+  }
+]

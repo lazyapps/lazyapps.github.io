@@ -64,6 +64,14 @@ body {
   --c5:#ffffff;
   --c6:#171717;
 
+  --app-shheep:#ffd4e5;
+  --app-keyhop:oklch(0.8 0.083 300);
+  --app-yiyan:oklch(0.9 0.152 95);
+  --app-xvdl:oklch(0.8 0.099 225);
+  --app-chmate:oklch(0.8 0.102 245);
+  --app-world-book:oklch(0.8 0.176 145);
+  --app-fondfont:oklch(0.9 0.17 105);
+
   --display-latin:"Sofia Sans Extra Condensed",Impact,"Haettenschweiler","Arial Narrow Bold","Avenir Next Condensed",sans-serif;
   --display:var(--display-latin);
   --sans:-apple-system,BlinkMacSystemFont,"SF Pro Text","Helvetica Neue","PingFang SC","Hiragino Sans GB","Noto Sans SC",sans-serif;
@@ -82,7 +90,7 @@ body {
 *{box-sizing:border-box}
 html{background:var(--paper);font-size:112.5%;color-scheme:light;min-height:100%}
 body{
-  margin:0;background:#e8e8e6;color:var(--ink);isolation:isolate;
+  margin:0;background:var(--paper);color:var(--ink);isolation:isolate;
   font:400 var(--size-font)/1.65 var(--sans);
   overflow-x:hidden;min-height:100%;
 }
@@ -102,6 +110,20 @@ a{color:inherit;text-decoration:none}
 h1,h2,h3,h4,p{margin:0}
 dl,dd{margin:0}
 h1,h2,h3{text-wrap:balance}
+/* Shared select geometry; the arrow stays inside the field, including in RTL. */
+:where(.select-control,.kit-locale,.gesture__select,.game-language-label){position:relative;--select-arrow-inset:16px;--select-arrow-size:12px;--select-text-gap:12px}
+:where(.select-control,.kit-locale,.gesture__select,.game-language-label)::after{
+  content:"";position:absolute;inset-inline-end:var(--select-arrow-inset);top:50%;transform:translateY(-50%);
+  width:var(--select-arrow-size);height:var(--select-arrow-size);background:currentColor;pointer-events:none;
+  --select-chevron:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'%3E%3Cpath d='m2.5 4.5 3.5 3.5 3.5-3.5' fill='none' stroke='black' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  -webkit-mask:var(--select-chevron) center/contain no-repeat;mask:var(--select-chevron) center/contain no-repeat;
+}
+.select-control select,.kit-locale select,.gesture__select select,.shheep-game .game-tools select.game-language{
+  appearance:none;-webkit-appearance:none;
+  padding-inline-end:calc(var(--select-arrow-inset) + var(--select-arrow-size) + var(--select-text-gap));
+}
+:where(.select-control,.kit-locale,.gesture__select,.game-language-label):has(select:disabled)::after{opacity:.4}
+.kit-locale::after{color:var(--ink)}
 p,li,dd{text-wrap:pretty;overflow-wrap:anywhere}
 :lang(zh),:lang(ja),:lang(ko){line-height:1.85;letter-spacing:0}
 :lang(ar),:lang(hi){line-height:1.8;letter-spacing:0}
@@ -150,18 +172,26 @@ p,li,dd{text-wrap:pretty;overflow-wrap:anywhere}
 
 [dir="rtl"] .brew pre{direction:ltr;text-align:left}
 
+.grain,
+.site-header.is-scrolled::after {
+  background: url("../img/noise.png") 50% 50% / calc(var(--size-font) * 7.8125) repeat;
+  opacity: 0.09;
+  filter: contrast(125%) brightness(60%);
+}
+
 .grain {
   position: fixed;
   inset: 0%;
   z-index: 999;
   pointer-events: none;
-  background: url("../img/noise.png") 50% 50% / 7.8125em repeat;
-  opacity: 0.09;
-  filter: contrast(125%) brightness(60%);
 }
 
 .grain[data-grain-animate="true"] {
   animation: grain 0.6s steps(1, end) infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .grain[data-grain-animate="true"] { animation: none; }
 }
 
 @keyframes grain {
@@ -193,6 +223,7 @@ footer{padding-bottom:env(safe-area-inset-bottom,0px)}
 .topbar__app img{width:26px;height:auto;border-radius:24%;flex:none}
 .topbar__app .dsp{min-width:0;font-size:1.375rem;white-space:nowrap}
 @media (max-width:560px){.topbar{gap:.5rem}}
+body .skip-link:focus{z-index:1101}
 
 .hero__brand{font-size:clamp(58px,22cqw,252px)}
 .wordmark{display:block;white-space:nowrap;text-box:trim-both cap alphabetic}
@@ -221,52 +252,6 @@ footer{padding-bottom:env(safe-area-inset-bottom,0px)}
 .qa__a a{font-weight:600;color:var(--accent)}
 @media (max-width:860px){.qa{grid-template-columns:1fr}}
 
-.base{
-  --accent:#ff6846;
-  --sans:-apple-system,BlinkMacSystemFont,"SF Pro Text","Helvetica Neue",sans-serif;
-  margin-top:clamp(40px,5vw,64px);padding-bottom:24px;
-  color:var(--ink);
-}
-.base__legal{
-  display:flex;align-items:center;justify-content:center;gap:16px;width:max-content;max-width:100%;margin-inline:auto;
-}
-.base__identity{display:grid;justify-items:start;gap:8px;min-width:0}
-.base__wordmark{
-  position:relative;display:block;
-  font:700 30px/1 var(--sans);letter-spacing:-.065em;white-space:nowrap;
-}
-.base__wordmark::before{content:"";position:absolute;inset-inline:0;bottom:0;height:44px}
-.base__sun{--sun-color:var(--accent);width:64px;height:64px;flex:none;pointer-events:none;user-select:none}
-.base__face{display:block;width:100%;height:100%;transform:rotate(-12deg)}
-.base__sun-rays{transform-origin:32px 32px;animation:footer-sun-rays 24s linear infinite paused}
-.base__sun[data-animating] .base__sun-rays{animation-play-state:running}
-@keyframes footer-sun-rays{
-  from{transform:rotate(0deg)}
-  to{transform:rotate(360deg)}
-}
-.base a{touch-action:manipulation}
-.base .base__legal a:focus-visible{outline-color:var(--ink)}
-.base__meta{
-  display:flex;align-items:center;flex-wrap:wrap;gap:8px;color:var(--muted);
-  font:400 .75rem/20px var(--sans);letter-spacing:0;white-space:nowrap;
-}
-.base__meta nav{display:flex;align-items:center;gap:.65em}
-.base__meta nav a{
-  position:relative;display:inline-flex;align-items:center;justify-content:center;min-width:44px;
-  color:inherit;font:inherit;
-}
-.base__meta nav a::before{content:"";position:absolute;inset-inline:0;top:0;height:44px}
-.base__meta [data-underline-link]{line-height:inherit}
-@media (max-width:560px){
-  .base{margin-top:40px}
-  .base__legal{gap:14px}
-  .base__wordmark{font-size:28px}
-  .base__sun{width:60px;height:60px}
-}
-@media (prefers-reduced-motion:reduce){
-  .base__sun-rays{animation:none}
-  .base [data-underline-link]::before{transition:none}
-}
 
 a:not(.button-023):focus-visible{outline:2px solid var(--accent);outline-offset:4px;border-radius:2px}
 
@@ -511,7 +496,7 @@ a:not(.button-023):focus-visible{outline:2px solid var(--accent);outline-offset:
 }
 
 .loader {
-  z-index: 100;
+  z-index: 10001;
   color: var(--paper);
   width: 100%;
   height: 100dvh;

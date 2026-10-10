@@ -1,0 +1,10 @@
+---
+import { Image } from 'astro:assets';
+import type { ImageMetadata } from 'astro';
+interface Props { slug: string; size?: number; class?: string; loading?: 'eager' | 'lazy'; alt?: string; }
+const { slug, size = 72, class: className, loading = 'lazy', alt = '' } = Astro.props;
+const icons = import.meta.glob<{ default: ImageMetadata }>('../assets/img/*-icon.png', { eager: true });
+const icon = icons[`../assets/img/${slug}-icon.png`]?.default;
+if (!icon) throw new Error(`Missing native App icon: ${slug}`);
+---
+<Image src={icon} width={size} height={size} densities={[1, 2]} format="webp" quality={90} class={className} alt={alt} loading={loading} decoding="async" />

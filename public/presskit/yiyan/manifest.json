@@ -1,0 +1,72 @@
+{
+  "languages": [
+    "ar",
+    "de",
+    "en",
+    "es",
+    "fr",
+    "hi",
+    "ja",
+    "ko",
+    "pt-BR",
+    "ru",
+    "zh-Hans",
+    "zh-Hant"
+  ],
+  "files": [
+    {
+      "path": "icon.png",
+      "contentLanguage": "und",
+      "width": 1024,
+      "height": 1024,
+      "format": "PNG",
+      "bytes": 2040338,
+      "sha256": "00229f263d4823d0381f8e426a12a208cb847c515304527ac4d5fa17ad0a3e13"
+    },
+    {
+      "path": "learning-notes-en.png",
+      "contentLanguage": "en",
+      "width": 2048,
+      "height": 1344,
+      "format": "PNG",
+      "bytes": 500639,
+      "sha256": "3e2b352c55986a1123b3d2db50e7f15061a8d3b5dcde730661e8971c2b982d5e"
+    },
+    {
+      "path": "follow-up-en.png",
+      "contentLanguage": "en",
+      "width": 1984,
+      "height": 1328,
+      "format": "PNG",
+      "bytes": 504408,
+      "sha256": "94f15539bd6fe4a9ae3edc025e62dabe1b77b26f59f937f76c7e964e6d2fa9b2"
+    },
+    {
+      "path": "social-card.png",
+      "contentLanguage": "und",
+      "width": 1200,
+      "height": 630,
+      "format": "PNG",
+      "bytes": 151853,
+      "sha256": "ab914a50f562d4782573d676718d94dc954b8af3536161d49997e9bffb1b3dc5"
+    },
+    {
+      "path": "zh-Hans/social-card.png",
+      "contentLanguage": "zh-Hans",
+      "width": 1200,
+      "height": 630,
+      "format": "PNG",
+      "bytes": 167341,
+      "sha256": "a47b4c124358fce8c246705c4c68f99046ab29a77d949fb6f7e57b717a814370"
+    },
+    {
+      "path": "zh-Hant/social-card.png",
+      "contentLanguage": "zh-Hant",
+      "width": 1200,
+      "height": 630,
+      "format": "PNG",
+      "bytes": 169932,
+      "sha256": "fefbf6ae0ccd5f2b7ef2bfcb80f2a9f9c715f4cf35ca5e95c076c0e60c8c14ff"
+    }
+  ]
+}

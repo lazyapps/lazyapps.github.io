@@ -1,0 +1,19 @@
+---
+interface Props { name: string; }
+const { name } = Astro.props;
+---
+<div data-load-wrap class="loader" id="loader" aria-hidden="true">
+  <div data-load-bg class="loader__bg">
+    <div data-load-progress class="loader__bg-bar"></div>
+  </div>
+  <div data-load-container class="loader__container">
+    <div class="loader__logo-wrap">
+      <div class="loader__logo-item is--base">
+        <span class="loader__logo-img" lang="en">{name}</span>
+      </div>
+      <div data-load-logo class="loader__logo-item is--top">
+        <span class="loader__logo-img" lang="en">{name}</span>
+      </div>
+    </div>
+  </div>
+</div>

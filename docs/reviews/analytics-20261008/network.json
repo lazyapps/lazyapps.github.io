@@ -1,0 +1,23 @@
+[
+  {
+    "type": "Network.requestWillBeSent",
+    "url": "https://www.googletagmanager.com/gtag/js",
+    "measurementId": "G-44V1H8KZ4W"
+  },
+  {
+    "type": "Network.responseReceived",
+    "url": "https://www.googletagmanager.com/gtag/js",
+    "status": 200
+  },
+  {
+    "type": "Network.requestWillBeSent",
+    "url": "https://www.google-analytics.com/g/collect",
+    "measurementId": "G-44V1H8KZ4W",
+    "event": "page_view"
+  },
+  {
+    "type": "Network.responseReceived",
+    "url": "https://www.google-analytics.com/g/collect",
+    "status": 204
+  }
+]

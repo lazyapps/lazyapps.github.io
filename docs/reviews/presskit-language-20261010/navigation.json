@@ -1,0 +1,71 @@
+[
+  {
+    "hash": "#language-zh-Hans",
+    "lang": "zh-Hans",
+    "readme": "/presskit/chmate/zh-Hans/README.md",
+    "scrollY": 0,
+    "test": "select-zh"
+  },
+  {
+    "hash": "#language-fr",
+    "lang": "fr",
+    "scrollY": 0,
+    "test": "back"
+  },
+  {
+    "hash": "#language-zh-Hans",
+    "lang": "zh-Hans",
+    "scrollY": 0,
+    "test": "forward"
+  },
+  {
+    "hash": "#main",
+    "lang": "zh-Hans",
+    "picker": "#language-zh-Hans",
+    "test": "skip-main"
+  },
+  {
+    "firstProduct": "/chmate/presskit/#language-ar",
+    "lang": "ar",
+    "test": "return-hub-ar",
+    "url": "http://127.0.0.1:4322/presskit/#language-ar"
+  },
+  {
+    "back": "/presskit/#language-ar",
+    "dir": "rtl",
+    "lang": "ar",
+    "materialLang": "en",
+    "materialNotice": "لغة المواد: English",
+    "readme": "/presskit/world-book/en/README.md",
+    "scrollY": 0,
+    "summaryDir": "ltr",
+    "summaryLang": "en",
+    "test": "hub-to-world-book-ar",
+    "url": "http://127.0.0.1:4322/world-book/presskit/#language-ar"
+  },
+  {
+    "hash": "#language-ar",
+    "lang": "ar",
+    "notice": "لغة المواد: English",
+    "readme": "/presskit/keyhop/en/README.md",
+    "scrollY": 0,
+    "summaryLang": "ar",
+    "test": "keyhop-ar",
+    "website": "/keyhop/ar/"
+  },
+  {
+    "hash": "#language-it",
+    "lang": "it",
+    "readme": "/presskit/keyhop/it/README.md",
+    "scrollY": 0,
+    "test": "keyhop-it",
+    "website": "/keyhop/en/"
+  },
+  {
+    "hash": "#language-en",
+    "lang": "en",
+    "noticeHidden": true,
+    "scrollY": 0,
+    "test": "english-entry-overrides-saved-ar"
+  }
+]

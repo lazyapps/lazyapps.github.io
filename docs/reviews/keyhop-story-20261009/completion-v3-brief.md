@@ -1,0 +1,7 @@
+Review one decision: Is the final v3 ready to deliver with the user's explicit requirement that subtitles must not obscure apps?
+
+Prior completion review is completion-advice.md and approved creative, source/credit, localization contingent on browser QA. Latest user requested app visibility, so scripts/compose-keyhop-story.py shifts all captions 54px down; SUBTITLE_TOP=620 and SUBTITLE_BOTTOM=704, asserts all 48 language bounds. Toy keys end y=608, so both icon and key labels remain above subtitles. All 12 new actual encoded contact sheets encoded-*-v3.jpg and validation-v3.json are durable. Source clips, storyline and music unchanged. Website now references v3.
+
+Mobile390x844 native controls previously occluded captions; src/components/KeyHopPage.astro now has localized44x44 play/pause and mute controls below the video. HTML native controls kept only as no-JS fallback. Browser verified button states/playback, automatic offscreen pause/resume, manual pause stays paused after scroll back, reduced-motion initial paused at0 but explicit play works, no horizontal overflow. Final latest-media page screenshot and twelve-route build verification being finalized.
+
+Read-only. Inspect exact source, frames, manifests and browser evidence if present. No irreversible actions or publishing. Focus on subtitle/app overlap and final player change, rather than reopening approved story decisions. Give a decisive result and only material remaining issues.

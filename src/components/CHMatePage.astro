@@ -2,6 +2,8 @@
 import SocialMeta from './SocialMeta.astro';
 import SoftwareApplication from './SoftwareApplication.astro';
 import LanguagePicker from './LanguagePicker.astro';
+import SiteHeader from './SiteHeader.astro';
+import SiteGrain from './SiteGrain.astro';
 import SiteFooterBase from './SiteFooterBase.astro';
 import siteCssUrl from '$assets/s/site.css?url';
 import gsapUrl from '$assets/vendor/gsap.min.js?url';
@@ -10,7 +12,7 @@ import customEaseUrl from '$assets/vendor/CustomEase.min.js?url';
 import splitTextUrl from '$assets/vendor/SplitText.min.js?url';
 import logoRevealUrl from '$assets/s/logo-reveal-loader.js?url';
 import siteJsUrl from '$assets/s/site.js?url';
-import iconUrl from '$assets/img/app-chmate.jpg?url';
+import iconUrl from '$assets/img/chmate-icon.png?url';
 import { CHMATE_LOCALES } from '../i18n/chmate-locales.mjs';
 import opengraphUrl from '$assets/img/chmate-opengraph-shared.png?url';
 
@@ -47,7 +49,7 @@ const locales = Object.values(CHMATE_LOCALES);
       locale={t.ogLocale}
     />
     <SoftwareApplication name="CHMate" description={t.description} url={`https://lazyapps.com${t.selectedUrl}`} language={t.htmlLang} operatingSystem="iOS, iPadOS" downloadUrl="https://apps.apple.com/app/id335157929" image={`https://lazyapps.com${iconUrl}`} />
-    <link rel="icon" href={iconUrl} type="image/jpeg">
+    <link rel="icon" href={iconUrl} type="image/png">
     <link rel="stylesheet" href={siteCssUrl}>
     <script is:inline>
       document.documentElement.classList.remove('no-js');
@@ -64,7 +66,7 @@ const locales = Object.values(CHMATE_LOCALES);
     <div class="reading-backdrop" aria-hidden="true">
       <video data-chmate-backdrop poster="/v/chmate/daylight-landscape-v3.jpg" muted loop playsinline preload="none" tabindex="-1" disablepictureinpicture></video>
     </div>
-    <div class="grain" data-grain-animate="true" aria-hidden="true"></div>
+    <SiteGrain animated />
     <div data-load-wrap class="loader" id="loader" aria-hidden="true">
       <div data-load-bg class="loader__bg"><div data-load-progress class="loader__bg-bar"></div></div>
       <div data-load-container class="loader__container">
@@ -74,18 +76,9 @@ const locales = Object.values(CHMATE_LOCALES);
         </div>
       </div>
     </div>
-    <header class="wrap">
-      <div class="topbar">
-        <nav class="topbar__nav" aria-label={t.navAria}>
-          <a href="/" class="topbar__home" aria-label={t.homeAria}><span aria-hidden="true" class="topbar__home-dot"></span></a>
-        </nav>
-        <a class="topbar__app" href={t.selectedUrl}>
-          <img src={iconUrl} alt="" width="26" height="26">
-          <span class="dsp" lang="en" dir="ltr">CHMate</span>
-        </a>
+    <SiteHeader class="wrap" name="CHMate" icon={iconUrl} homeLabel={t.homeAria}>
         <LanguagePicker label={t.selectAria} current={t.selectedUrl} storageKey="chmate.locale" options={locales.map(locale => ({ language: locale.htmlLang, url: locale.selectedUrl, label: locale.localeNow }))} />
-      </div>
-    </header>
+      </SiteHeader>
 
     <main>
       <section class="reading-hero wrap" aria-labelledby="hero-title">
@@ -257,7 +250,7 @@ const locales = Object.values(CHMATE_LOCALES);
           <p>{t.musicCredit[0]} <a href="https://www.scottbuckley.com.au/library/solace/" lang="en" dir="ltr">“Solace” — Scott Buckley</a>{t.musicCredit[1]} <a href="https://creativecommons.org/licenses/by/4.0/" lang="en" dir="ltr">CC BY 4.0</a>{t.musicCredit[2]}</p>
           <p>{t.trademark}</p>
         </div>
-        <SiteFooterBase locale={t.htmlLang} />
+        <SiteFooterBase locale={t.htmlLang} pressKit="/chmate/presskit/" />
       </div>
     </footer>
     <script is:inline src={gsapUrl}></script>
@@ -271,7 +264,6 @@ const locales = Object.values(CHMATE_LOCALES);
 </html>
 
 <style>
-  header { padding-top: clamp(8px, 1.5vw, 18px); }
   .reading-hero { display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr); align-items: center; gap: var(--space-grid); padding-top: clamp(28px, 4vw, 56px); }
   .reading-hero__heading { overflow-x: clip; }
   .reading-hero h1 { font-size: clamp(56px, 6.2vw, 96px); text-wrap: balance; overflow-wrap: anywhere; }
@@ -329,9 +321,6 @@ const locales = Object.values(CHMATE_LOCALES);
   .reading-footer__notices a { text-decoration: underline; text-decoration-color: color-mix(in srgb, currentColor 45%, transparent); text-underline-offset: .2em; }
   .reading-footer__notices a:hover { text-decoration-color: currentColor; }
   a:focus-visible, .preview:has(video:focus-visible) { outline: 2px solid var(--accent); outline-offset: 4px; border-radius: 4px; }
-  @media (prefers-reduced-motion: reduce) {
-    .grain { animation: none; }
-  }
   @media (width < 768px) {
     .reading-hero { grid-template-columns: 1fr; align-items: start; gap: 28px; padding-top: 24px; }
     .reading-hero h1 { font-size: clamp(48px, 12vw, 72px); text-align: center; }

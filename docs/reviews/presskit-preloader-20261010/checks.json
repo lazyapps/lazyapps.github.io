@@ -1,0 +1,242 @@
+{
+  "products": [
+    {
+      "link": "/chmate/presskit/#es",
+      "initial": {
+        "language": "es",
+        "loaderCount": 1,
+        "name": "CHMATE",
+        "visible": true
+      },
+      "settled": {
+        "background": "rgb(248, 248, 246)",
+        "language": "es",
+        "loaded": true,
+        "overflow": false,
+        "pageTheme": true,
+        "picker": "#es"
+      },
+      "switched": {
+        "language": "ja",
+        "loaderCount": 0
+      },
+      "elapsedMs": 3697
+    },
+    {
+      "link": "/world-book/presskit/#es",
+      "initial": {
+        "language": "es",
+        "loaderCount": 1,
+        "name": "WORLD BOOK",
+        "visible": true
+      },
+      "settled": {
+        "background": "rgb(248, 248, 246)",
+        "language": "es",
+        "loaded": true,
+        "overflow": false,
+        "pageTheme": true,
+        "picker": "#es"
+      },
+      "switched": {
+        "language": "ja",
+        "loaderCount": 0
+      },
+      "elapsedMs": 3764
+    },
+    {
+      "link": "/fondfont/presskit/#es",
+      "initial": {
+        "language": "es",
+        "loaderCount": 1,
+        "name": "FONDFONT",
+        "visible": true
+      },
+      "settled": {
+        "background": "rgb(248, 248, 246)",
+        "language": "es",
+        "loaded": true,
+        "overflow": false,
+        "pageTheme": true,
+        "picker": "#es"
+      },
+      "switched": {
+        "language": "ja",
+        "loaderCount": 0
+      },
+      "elapsedMs": 3770
+    },
+    {
+      "link": "/keyhop/presskit/#es",
+      "initial": {
+        "language": "es",
+        "loaderCount": 1,
+        "name": "KEYHOP",
+        "visible": true
+      },
+      "settled": {
+        "background": "rgb(248, 248, 246)",
+        "language": "es",
+        "loaded": true,
+        "overflow": false,
+        "pageTheme": true,
+        "picker": "#es"
+      },
+      "switched": {
+        "language": "ja",
+        "loaderCount": 0
+      },
+      "elapsedMs": 3676
+    },
+    {
+      "link": "/yiyan/presskit/#es",
+      "initial": {
+        "language": "es",
+        "loaderCount": 1,
+        "name": "YIYAN",
+        "visible": true
+      },
+      "settled": {
+        "background": "rgb(248, 248, 246)",
+        "language": "es",
+        "loaded": true,
+        "overflow": false,
+        "pageTheme": true,
+        "picker": "#es"
+      },
+      "switched": {
+        "language": "ja",
+        "loaderCount": 0
+      },
+      "elapsedMs": 3781
+    },
+    {
+      "link": "/xvdl/presskit/#es",
+      "initial": {
+        "language": "es",
+        "loaderCount": 1,
+        "name": "XVDL",
+        "visible": true
+      },
+      "settled": {
+        "background": "rgb(248, 248, 246)",
+        "language": "es",
+        "loaded": true,
+        "overflow": false,
+        "pageTheme": true,
+        "picker": "#es"
+      },
+      "switched": {
+        "language": "ja",
+        "loaderCount": 0
+      },
+      "elapsedMs": 3699
+    },
+    {
+      "link": "/shheep/presskit/#es",
+      "initial": {
+        "language": "es",
+        "loaderCount": 1,
+        "name": "SHHEEP",
+        "visible": true
+      },
+      "settled": {
+        "background": "rgb(248, 248, 246)",
+        "language": "es",
+        "loaded": true,
+        "overflow": false,
+        "pageTheme": true,
+        "picker": "#es"
+      },
+      "switched": {
+        "language": "ja",
+        "loaderCount": 0
+      },
+      "elapsedMs": 3683
+    }
+  ],
+  "mobile": [
+    {
+      "fits": true,
+      "logo": "LAZYAPPS",
+      "overflow": false,
+      "path": "/presskit/",
+      "width": 320
+    },
+    {
+      "fits": true,
+      "logo": "CHMATE",
+      "overflow": false,
+      "path": "/chmate/presskit/",
+      "width": 320
+    },
+    {
+      "fits": true,
+      "logo": "WORLD BOOK",
+      "overflow": false,
+      "path": "/world-book/presskit/",
+      "width": 320
+    },
+    {
+      "fits": true,
+      "logo": "FONDFONT",
+      "overflow": false,
+      "path": "/fondfont/presskit/",
+      "width": 320
+    },
+    {
+      "fits": true,
+      "logo": "KEYHOP",
+      "overflow": false,
+      "path": "/keyhop/presskit/",
+      "width": 320
+    },
+    {
+      "fits": true,
+      "logo": "YIYAN",
+      "overflow": false,
+      "path": "/yiyan/presskit/",
+      "width": 320
+    },
+    {
+      "fits": true,
+      "logo": "XVDL",
+      "overflow": false,
+      "path": "/xvdl/presskit/",
+      "width": 320
+    },
+    {
+      "fits": true,
+      "logo": "SHHEEP",
+      "overflow": false,
+      "path": "/shheep/presskit/",
+      "width": 320
+    }
+  ],
+  "homepage": {
+    "loaded": true,
+    "loader": false,
+    "path": "/",
+    "theme": true
+  },
+  "reducedMotion": {
+    "background": "rgb(248, 248, 246)",
+    "classes": "is-page-theme is-loaded",
+    "language": "zh-Hant",
+    "loader": false
+  },
+  "noJavaScript": {
+    "background": "rgb(248, 248, 246)",
+    "classes": "no-js",
+    "language": "en",
+    "loaderDisplay": "none",
+    "pickerHidden": true
+  },
+  "scriptFailureFallback": {
+    "background": "rgb(248, 248, 246)",
+    "language": "zh-Hant",
+    "loaded": true,
+    "loader": false,
+    "theme": "#f8f8f6"
+  }
+}

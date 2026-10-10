@@ -1,0 +1,40 @@
+{
+  "generatedPages": 68,
+  "fondfont": {
+    "top": {
+      "background": "rgba(0, 0, 0, 0)",
+      "blur": "none",
+      "border": "0px",
+      "canvasTop": 1,
+      "sun": true,
+      "y": 0,
+      "z": "1100"
+    },
+    "scroll": {
+      "background": "color(srgb 0.972549 0.972549 0.964706 / 0.78)",
+      "blur": "blur(16px)",
+      "top": 0,
+      "y": 40
+    },
+    "return": {
+      "blur": "none",
+      "y": 0
+    }
+  },
+  "presskit": {
+    "top": {
+      "blur": "none",
+      "y": 0,
+      "z": "1100"
+    },
+    "scroll": {
+      "blur": "blur(16px)",
+      "y": 40
+    }
+  },
+  "shheep": {
+    "blur": "none",
+    "y": 0,
+    "z": "1100"
+  }
+}

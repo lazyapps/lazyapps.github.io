@@ -1,0 +1,26 @@
+[
+  {
+    "displayHeight": 205.734375,
+    "displayWidth": 280,
+    "loaded": true,
+    "overflow": false,
+    "ratioMatches": true,
+    "width": 320
+  },
+  {
+    "displayHeight": 257.171875,
+    "displayWidth": 350,
+    "loaded": true,
+    "overflow": false,
+    "ratioMatches": true,
+    "width": 390
+  },
+  {
+    "displayHeight": 507.8828125,
+    "displayWidth": 691.203125,
+    "loaded": true,
+    "overflow": false,
+    "ratioMatches": true,
+    "width": 768
+  }
+]

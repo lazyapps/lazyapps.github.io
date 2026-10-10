@@ -2,14 +2,16 @@
 import SocialMeta from './SocialMeta.astro';
 import SoftwareApplication from './SoftwareApplication.astro';
 import LanguagePicker from './LanguagePicker.astro';
+import SiteHeader from './SiteHeader.astro';
+import SiteGrain from './SiteGrain.astro';
 import SiteFooterBase from './SiteFooterBase.astro';
 import FondFontAssetCredits from './FondFontAssetCredits.astro';
 import FondFontFactoryScene from './FondFontFactoryScene.astro';
 import FondFontInstallGuide from './FondFontInstallGuide.astro';
 import siteCssUrl from '$assets/s/site.css?url';
 import '$assets/s/fondfont-fonts.css';
-import appIconUrl from '$assets/img/fondfont-web-icon-128.webp';
-import faviconUrl from '$assets/img/fondfont-web-icon-64.png';
+import appIconUrl from '$assets/img/fondfont-icon.png';
+import faviconUrl from '$assets/img/fondfont-icon.png';
 import { FONDFONT_LOCALES } from '../i18n/fondfont-locales.mjs';
 const { t } = Astro.props;
 const locales = Object.values(FONDFONT_LOCALES);
@@ -37,14 +39,11 @@ const ogUrl = ogImages[`/src/assets/img/fondfont-opengraph-${t.ogAsset}.png`];
     <link rel="stylesheet" href={siteCssUrl}>
   </head>
   <body>
+    <SiteGrain />
     <a class="skip-link" href="#main">{t.skip}</a>
-    <header class="wrap">
-      <div class="topbar">
-        <nav class="topbar__nav" aria-label={t.homeAria}><a class="topbar__home" href="/" aria-label={t.homeAria}><span class="topbar__home-dot" data-nav-sun aria-hidden="true"><svg class="nav-sun-rays" width="32" height="32" viewBox="0 0 64 64" fill="none" focusable="false"><path d="M32 3v5m0 48v5M3 32h5m48 0h5M11.5 11.5l3.5 3.5m34 34 3.5 3.5m-41 0L15 49m34-34 3.5-3.5" stroke="currentColor" stroke-width="3" stroke-linecap="round" /></svg></span></a></nav>
-        <a class="topbar__app" href={t.selectedUrl}><img src={appIconUrl.src} alt="" width="32" height="32"><span class="dsp" lang={t.htmlLang}>{t.name}</span></a>
+    <SiteHeader class="wrap" name={t.name} icon={appIconUrl.src} homeLabel={t.homeAria} homeMark="sun">
         <LanguagePicker label={t.selectAria} current={t.selectedUrl} storageKey="fondfont.locale" options={locales.map(locale => ({ language: locale.htmlLang, url: locale.selectedUrl, label: locale.localeNow, storageValue: locale.code }))} />
-      </div>
-    </header>
+      </SiteHeader>
     <main id="main">
       <section class="font-hero wrap" aria-labelledby="hero-title">
         <FondFontFactoryScene locale={t.code} />
@@ -69,21 +68,10 @@ const ogUrl = ogImages[`/src/assets/img/fondfont-opengraph-${t.ogAsset}.png`];
       </section>
       <footer class="font-footer wrap">
         <FondFontAssetCredits locale={t.code} />
-        <SiteFooterBase locale={t.htmlLang} />
+        <SiteFooterBase locale={t.htmlLang} pressKit="/fondfont/presskit/" />
       </footer>
     </main>
-    <script>
-      const sun = document.querySelector<HTMLElement>('[data-nav-sun]');
-      if (sun) {
-        let inView = false;
-        const updateAnimation = () => sun.toggleAttribute('data-animating', inView && !document.hidden);
-        new IntersectionObserver(([entry]) => {
-          inView = entry.isIntersecting;
-          updateAnimation();
-        }).observe(sun);
-        document.addEventListener('visibilitychange', updateAnimation);
-      }
-    </script>
+
   </body>
 </html>
 <style>
@@ -91,13 +79,6 @@ const ogUrl = ogImages[`/src/assets/img/fondfont-opengraph-${t.ogAsset}.png`];
   :global(a:focus-visible),button:focus-visible,summary:focus-visible{outline:2px solid var(--accent);outline-offset:5px}
   .skip-link{position:fixed;left:24px;top:16px;transform:translateY(-200%);z-index:1000;background:var(--paper);padding:10px 16px}
   .skip-link:focus{transform:none}
-  header{padding-top:clamp(8px,1.5vw,18px)}
-  .topbar__home-dot{position:relative;color:var(--accent)}
-  .topbar__app img{width:32px;height:32px}
-  .nav-sun-rays{position:absolute;inset:-11px;width:32px;height:32px;animation:nav-sun-turn 24s linear infinite paused;pointer-events:none}
-  .topbar__home-dot[data-animating] .nav-sun-rays{animation-play-state:running}
-  @keyframes nav-sun-turn{to{transform:rotate(360deg)}}
-  @media(max-width:479px){.topbar__app .dsp:lang(ja){font-size:1rem}}
   .font-hero{display:flex;flex-direction:column;align-items:center;padding-block:8px 72px}
   .font-hero__copy{min-width:0;width:100%;max-width:850px;display:flex;flex-direction:column;align-items:center;gap:12px;text-align:center;container-type:inline-size;margin-top:-10px}
   h1{font-size:min(64px,7.5cqw);width:100%;max-width:none;letter-spacing:-.045em}
@@ -150,5 +131,5 @@ const ogUrl = ogImages[`/src/assets/img/fondfont-opengraph-${t.ogAsset}.png`];
     .questions{margin-top:16px}
     .font-footer{padding-top:24px}
   }
-  @media(prefers-reduced-motion:reduce){.nav-sun-rays{animation:none}*{scroll-behavior:auto!important;transition:none!important}}
+  @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
 </style>

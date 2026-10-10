@@ -1,0 +1,586 @@
+[
+  {
+    "apps": [
+      {
+        "category": "Web · iOS coming soon",
+        "clippedText": false,
+        "color": "rgb(255, 212, 229)",
+        "description": "Play a browser game about counting sheep. Jump over fences, duck under bats and try a new course each night.",
+        "name": "Shheep"
+      },
+      {
+        "category": "macOS 26+ · Apple silicon",
+        "clippedText": false,
+        "color": "oklch(0.8 0.083 300)",
+        "description": "Switch to or launch Mac apps with keyboard shortcuts. Assign up to ten apps to home-row keys and optionally sync your bindings with iCloud.",
+        "name": "KeyHop"
+      },
+      {
+        "category": "macOS 15+ · iPhone beta",
+        "clippedText": false,
+        "color": "oklch(0.9 0.152 95)",
+        "description": "Turn input from AI coding tools such as Claude Code and Codex into natural English, with explanations and examples. Polish selected text or the current input field on Mac.",
+        "name": "YiYan"
+      },
+      {
+        "category": "macOS · Safari extension",
+        "clippedText": false,
+        "color": "oklch(0.8 0.099 225)",
+        "description": "Download videos from X in Safari on your Mac. Save the highest-quality available MP4 directly to your Downloads folder.",
+        "name": "XVDL"
+      },
+      {
+        "category": "iPhone & iPad · EPUB / CHM reader",
+        "clippedText": false,
+        "color": "oklch(0.8 0.102 245)",
+        "description": "Read EPUB ebooks, CHM documents and MHT files on iPhone and iPad. Search across chapters, highlight passages and add notes.",
+        "name": "CHMate"
+      },
+      {
+        "category": "iPhone & iPad · Offline atlas",
+        "clippedText": false,
+        "color": "oklch(0.8 0.176 145)",
+        "description": "Look up country profiles, flags and rankings, and explore a 3D globe offline. Download photos and regional maps to view them offline too.",
+        "name": "World Book"
+      },
+      {
+        "category": "iPhone & iPad · Fanfou client",
+        "clippedText": false,
+        "color": "oklch(0.8 0.1 160)",
+        "description": "Read your Fanfou timeline, mentions and direct messages on iPhone and iPad. View favorites and photos.",
+        "name": "一饭"
+      },
+      {
+        "category": "iPhone & iPad · Font installer",
+        "clippedText": false,
+        "color": "oklch(0.9 0.17 105)",
+        "description": "Install your TTF, OTF and TTC font files on iPhone and iPad. Use them in apps that support the iOS font library, including Pages and Keynote.",
+        "name": "FondFont"
+      }
+    ],
+    "canonical": "https://lazyapps.com/",
+    "description": "Mac, iPhone and iPad apps for keyboard shortcuts, English practice, X video downloads, EPUB and CHM reading, country facts and fonts. Play Shheep in your browser.",
+    "footerLinks": [
+      "Contact",
+      "Press Kit",
+      "Privacy"
+    ],
+    "h1Count": 1,
+    "ogDescription": "Mac, iPhone and iPad apps for keyboard shortcuts, English practice, X video downloads, EPUB and CHM reading, country facts and fonts. Play Shheep in your browser.",
+    "route": "/",
+    "scrollWidth": 320,
+    "theme": {
+      "bodyFont": "-apple-system, \"system-ui\", \"SF Pro Text\", \"Helvetica Neue\", \"PingFang SC\", \"Hiragino Sans GB\", \"Noto Sans SC\", sans-serif",
+      "headingFont": "\"Sofia Sans Extra Condensed\", Impact, Haettenschweiler, \"Arial Narrow Bold\", \"Avenir Next Condensed\", sans-serif",
+      "paper": "#f8f8f6",
+      "wrapWidth": 320
+    },
+    "title": "lazyapps — Apps for Mac, iPhone & iPad",
+    "width": 320
+  },
+  {
+    "apps": [
+      {
+        "category": "Web · iOS coming soon",
+        "clippedText": false,
+        "color": "rgb(255, 212, 229)",
+        "description": "Play a browser game about counting sheep. Jump over fences, duck under bats and try a new course each night.",
+        "name": "Shheep"
+      },
+      {
+        "category": "macOS 26+ · Apple silicon",
+        "clippedText": false,
+        "color": "oklch(0.8 0.083 300)",
+        "description": "Switch to or launch Mac apps with keyboard shortcuts. Assign up to ten apps to home-row keys and optionally sync your bindings with iCloud.",
+        "name": "KeyHop"
+      },
+      {
+        "category": "macOS 15+ · iPhone beta",
+        "clippedText": false,
+        "color": "oklch(0.9 0.152 95)",
+        "description": "Turn input from AI coding tools such as Claude Code and Codex into natural English, with explanations and examples. Polish selected text or the current input field on Mac.",
+        "name": "YiYan"
+      },
+      {
+        "category": "macOS · Safari extension",
+        "clippedText": false,
+        "color": "oklch(0.8 0.099 225)",
+        "description": "Download videos from X in Safari on your Mac. Save the highest-quality available MP4 directly to your Downloads folder.",
+        "name": "XVDL"
+      },
+      {
+        "category": "iPhone & iPad · EPUB / CHM reader",
+        "clippedText": false,
+        "color": "oklch(0.8 0.102 245)",
+        "description": "Read EPUB ebooks, CHM documents and MHT files on iPhone and iPad. Search across chapters, highlight passages and add notes.",
+        "name": "CHMate"
+      },
+      {
+        "category": "iPhone & iPad · Offline atlas",
+        "clippedText": false,
+        "color": "oklch(0.8 0.176 145)",
+        "description": "Look up country profiles, flags and rankings, and explore a 3D globe offline. Download photos and regional maps to view them offline too.",
+        "name": "World Book"
+      },
+      {
+        "category": "iPhone & iPad · Fanfou client",
+        "clippedText": false,
+        "color": "oklch(0.8 0.1 160)",
+        "description": "Read your Fanfou timeline, mentions and direct messages on iPhone and iPad. View favorites and photos.",
+        "name": "一饭"
+      },
+      {
+        "category": "iPhone & iPad · Font installer",
+        "clippedText": false,
+        "color": "oklch(0.9 0.17 105)",
+        "description": "Install your TTF, OTF and TTC font files on iPhone and iPad. Use them in apps that support the iOS font library, including Pages and Keynote.",
+        "name": "FondFont"
+      }
+    ],
+    "canonical": "https://lazyapps.com/",
+    "description": "Mac, iPhone and iPad apps for keyboard shortcuts, English practice, X video downloads, EPUB and CHM reading, country facts and fonts. Play Shheep in your browser.",
+    "footerLinks": [
+      "Contact",
+      "Press Kit",
+      "Privacy"
+    ],
+    "h1Count": 1,
+    "ogDescription": "Mac, iPhone and iPad apps for keyboard shortcuts, English practice, X video downloads, EPUB and CHM reading, country facts and fonts. Play Shheep in your browser.",
+    "route": "/",
+    "scrollWidth": 375,
+    "theme": {
+      "bodyFont": "-apple-system, \"system-ui\", \"SF Pro Text\", \"Helvetica Neue\", \"PingFang SC\", \"Hiragino Sans GB\", \"Noto Sans SC\", sans-serif",
+      "headingFont": "\"Sofia Sans Extra Condensed\", Impact, Haettenschweiler, \"Arial Narrow Bold\", \"Avenir Next Condensed\", sans-serif",
+      "paper": "#f8f8f6",
+      "wrapWidth": 375
+    },
+    "title": "lazyapps — Apps for Mac, iPhone & iPad",
+    "width": 375
+  },
+  {
+    "apps": [
+      {
+        "category": "Web · iOS coming soon",
+        "clippedText": false,
+        "color": "rgb(255, 212, 229)",
+        "description": "Play a browser game about counting sheep. Jump over fences, duck under bats and try a new course each night.",
+        "name": "Shheep"
+      },
+      {
+        "category": "macOS 26+ · Apple silicon",
+        "clippedText": false,
+        "color": "oklch(0.8 0.083 300)",
+        "description": "Switch to or launch Mac apps with keyboard shortcuts. Assign up to ten apps to home-row keys and optionally sync your bindings with iCloud.",
+        "name": "KeyHop"
+      },
+      {
+        "category": "macOS 15+ · iPhone beta",
+        "clippedText": false,
+        "color": "oklch(0.9 0.152 95)",
+        "description": "Turn input from AI coding tools such as Claude Code and Codex into natural English, with explanations and examples. Polish selected text or the current input field on Mac.",
+        "name": "YiYan"
+      },
+      {
+        "category": "macOS · Safari extension",
+        "clippedText": false,
+        "color": "oklch(0.8 0.099 225)",
+        "description": "Download videos from X in Safari on your Mac. Save the highest-quality available MP4 directly to your Downloads folder.",
+        "name": "XVDL"
+      },
+      {
+        "category": "iPhone & iPad · EPUB / CHM reader",
+        "clippedText": false,
+        "color": "oklch(0.8 0.102 245)",
+        "description": "Read EPUB ebooks, CHM documents and MHT files on iPhone and iPad. Search across chapters, highlight passages and add notes.",
+        "name": "CHMate"
+      },
+      {
+        "category": "iPhone & iPad · Offline atlas",
+        "clippedText": false,
+        "color": "oklch(0.8 0.176 145)",
+        "description": "Look up country profiles, flags and rankings, and explore a 3D globe offline. Download photos and regional maps to view them offline too.",
+        "name": "World Book"
+      },
+      {
+        "category": "iPhone & iPad · Fanfou client",
+        "clippedText": false,
+        "color": "oklch(0.8 0.1 160)",
+        "description": "Read your Fanfou timeline, mentions and direct messages on iPhone and iPad. View favorites and photos.",
+        "name": "一饭"
+      },
+      {
+        "category": "iPhone & iPad · Font installer",
+        "clippedText": false,
+        "color": "oklch(0.9 0.17 105)",
+        "description": "Install your TTF, OTF and TTC font files on iPhone and iPad. Use them in apps that support the iOS font library, including Pages and Keynote.",
+        "name": "FondFont"
+      }
+    ],
+    "canonical": "https://lazyapps.com/",
+    "description": "Mac, iPhone and iPad apps for keyboard shortcuts, English practice, X video downloads, EPUB and CHM reading, country facts and fonts. Play Shheep in your browser.",
+    "footerLinks": [
+      "Contact",
+      "Press Kit",
+      "Privacy"
+    ],
+    "h1Count": 1,
+    "ogDescription": "Mac, iPhone and iPad apps for keyboard shortcuts, English practice, X video downloads, EPUB and CHM reading, country facts and fonts. Play Shheep in your browser.",
+    "route": "/",
+    "scrollWidth": 768,
+    "theme": {
+      "bodyFont": "-apple-system, \"system-ui\", \"SF Pro Text\", \"Helvetica Neue\", \"PingFang SC\", \"Hiragino Sans GB\", \"Noto Sans SC\", sans-serif",
+      "headingFont": "\"Sofia Sans Extra Condensed\", Impact, Haettenschweiler, \"Arial Narrow Bold\", \"Avenir Next Condensed\", sans-serif",
+      "paper": "#f8f8f6",
+      "wrapWidth": 768
+    },
+    "title": "lazyapps — Apps for Mac, iPhone & iPad",
+    "width": 768
+  },
+  {
+    "apps": [
+      {
+        "category": "Web · iOS coming soon",
+        "clippedText": false,
+        "color": "rgb(255, 212, 229)",
+        "description": "Play a browser game about counting sheep. Jump over fences, duck under bats and try a new course each night.",
+        "name": "Shheep"
+      },
+      {
+        "category": "macOS 26+ · Apple silicon",
+        "clippedText": false,
+        "color": "oklch(0.8 0.083 300)",
+        "description": "Switch to or launch Mac apps with keyboard shortcuts. Assign up to ten apps to home-row keys and optionally sync your bindings with iCloud.",
+        "name": "KeyHop"
+      },
+      {
+        "category": "macOS 15+ · iPhone beta",
+        "clippedText": false,
+        "color": "oklch(0.9 0.152 95)",
+        "description": "Turn input from AI coding tools such as Claude Code and Codex into natural English, with explanations and examples. Polish selected text or the current input field on Mac.",
+        "name": "YiYan"
+      },
+      {
+        "category": "macOS · Safari extension",
+        "clippedText": false,
+        "color": "oklch(0.8 0.099 225)",
+        "description": "Download videos from X in Safari on your Mac. Save the highest-quality available MP4 directly to your Downloads folder.",
+        "name": "XVDL"
+      },
+      {
+        "category": "iPhone & iPad · EPUB / CHM reader",
+        "clippedText": false,
+        "color": "oklch(0.8 0.102 245)",
+        "description": "Read EPUB ebooks, CHM documents and MHT files on iPhone and iPad. Search across chapters, highlight passages and add notes.",
+        "name": "CHMate"
+      },
+      {
+        "category": "iPhone & iPad · Offline atlas",
+        "clippedText": false,
+        "color": "oklch(0.8 0.176 145)",
+        "description": "Look up country profiles, flags and rankings, and explore a 3D globe offline. Download photos and regional maps to view them offline too.",
+        "name": "World Book"
+      },
+      {
+        "category": "iPhone & iPad · Fanfou client",
+        "clippedText": false,
+        "color": "oklch(0.8 0.1 160)",
+        "description": "Read your Fanfou timeline, mentions and direct messages on iPhone and iPad. View favorites and photos.",
+        "name": "一饭"
+      },
+      {
+        "category": "iPhone & iPad · Font installer",
+        "clippedText": false,
+        "color": "oklch(0.9 0.17 105)",
+        "description": "Install your TTF, OTF and TTC font files on iPhone and iPad. Use them in apps that support the iOS font library, including Pages and Keynote.",
+        "name": "FondFont"
+      }
+    ],
+    "canonical": "https://lazyapps.com/",
+    "description": "Mac, iPhone and iPad apps for keyboard shortcuts, English practice, X video downloads, EPUB and CHM reading, country facts and fonts. Play Shheep in your browser.",
+    "footerLinks": [
+      "Contact",
+      "Press Kit",
+      "Privacy"
+    ],
+    "h1Count": 1,
+    "ogDescription": "Mac, iPhone and iPad apps for keyboard shortcuts, English practice, X video downloads, EPUB and CHM reading, country facts and fonts. Play Shheep in your browser.",
+    "route": "/",
+    "scrollWidth": 1280,
+    "theme": {
+      "bodyFont": "-apple-system, \"system-ui\", \"SF Pro Text\", \"Helvetica Neue\", \"PingFang SC\", \"Hiragino Sans GB\", \"Noto Sans SC\", sans-serif",
+      "headingFont": "\"Sofia Sans Extra Condensed\", Impact, Haettenschweiler, \"Arial Narrow Bold\", \"Avenir Next Condensed\", sans-serif",
+      "paper": "#f8f8f6",
+      "wrapWidth": 1180
+    },
+    "title": "lazyapps — Apps for Mac, iPhone & iPad",
+    "width": 1280
+  },
+  {
+    "cards": [
+      {
+        "clippedText": false,
+        "color": "oklch(0.8 0.102 245)",
+        "iconRadius": "24%",
+        "product": "chmate",
+        "radius": "16px"
+      },
+      {
+        "clippedText": false,
+        "color": "oklch(0.8 0.176 145)",
+        "iconRadius": "24%",
+        "product": "world-book",
+        "radius": "16px"
+      },
+      {
+        "clippedText": false,
+        "color": "oklch(0.9 0.17 105)",
+        "iconRadius": "24%",
+        "product": "fondfont",
+        "radius": "16px"
+      },
+      {
+        "clippedText": false,
+        "color": "oklch(0.8 0.083 300)",
+        "iconRadius": "24%",
+        "product": "keyhop",
+        "radius": "16px"
+      },
+      {
+        "clippedText": false,
+        "color": "oklch(0.9 0.152 95)",
+        "iconRadius": "24%",
+        "product": "yiyan",
+        "radius": "16px"
+      },
+      {
+        "clippedText": false,
+        "color": "oklch(0.8 0.099 225)",
+        "iconRadius": "24%",
+        "product": "xvdl",
+        "radius": "16px"
+      },
+      {
+        "clippedText": false,
+        "color": "rgb(255, 212, 229)",
+        "iconRadius": "24%",
+        "product": "shheep",
+        "radius": "16px"
+      }
+    ],
+    "footerLinks": [
+      "Contact",
+      "Press Kit",
+      "Privacy"
+    ],
+    "route": "/presskit/",
+    "scrollWidth": 320,
+    "theme": {
+      "bodyFont": "-apple-system, \"system-ui\", \"SF Pro Text\", \"Helvetica Neue\", \"PingFang SC\", \"Hiragino Sans GB\", \"Noto Sans SC\", sans-serif",
+      "headingFont": "\"Sofia Sans Extra Condensed\", Impact, Haettenschweiler, \"Arial Narrow Bold\", \"Avenir Next Condensed\", sans-serif",
+      "paper": "#f8f8f6",
+      "wrapWidth": 320
+    },
+    "width": 320
+  },
+  {
+    "cards": [
+      {
+        "clippedText": false,
+        "color": "oklch(0.8 0.102 245)",
+        "iconRadius": "24%",
+        "product": "chmate",
+        "radius": "16px"
+      },
+      {
+        "clippedText": false,
+        "color": "oklch(0.8 0.176 145)",
+        "iconRadius": "24%",
+        "product": "world-book",
+        "radius": "16px"
+      },
+      {
+        "clippedText": false,
+        "color": "oklch(0.9 0.17 105)",
+        "iconRadius": "24%",
+        "product": "fondfont",
+        "radius": "16px"
+      },
+      {
+        "clippedText": false,
+        "color": "oklch(0.8 0.083 300)",
+        "iconRadius": "24%",
+        "product": "keyhop",
+        "radius": "16px"
+      },
+      {
+        "clippedText": false,
+        "color": "oklch(0.9 0.152 95)",
+        "iconRadius": "24%",
+        "product": "yiyan",
+        "radius": "16px"
+      },
+      {
+        "clippedText": false,
+        "color": "oklch(0.8 0.099 225)",
+        "iconRadius": "24%",
+        "product": "xvdl",
+        "radius": "16px"
+      },
+      {
+        "clippedText": false,
+        "color": "rgb(255, 212, 229)",
+        "iconRadius": "24%",
+        "product": "shheep",
+        "radius": "16px"
+      }
+    ],
+    "footerLinks": [
+      "Contact",
+      "Press Kit",
+      "Privacy"
+    ],
+    "route": "/presskit/",
+    "scrollWidth": 375,
+    "theme": {
+      "bodyFont": "-apple-system, \"system-ui\", \"SF Pro Text\", \"Helvetica Neue\", \"PingFang SC\", \"Hiragino Sans GB\", \"Noto Sans SC\", sans-serif",
+      "headingFont": "\"Sofia Sans Extra Condensed\", Impact, Haettenschweiler, \"Arial Narrow Bold\", \"Avenir Next Condensed\", sans-serif",
+      "paper": "#f8f8f6",
+      "wrapWidth": 375
+    },
+    "width": 375
+  },
+  {
+    "cards": [
+      {
+        "clippedText": false,
+        "color": "oklch(0.8 0.102 245)",
+        "iconRadius": "24%",
+        "product": "chmate",
+        "radius": "16px"
+      },
+      {
+        "clippedText": false,
+        "color": "oklch(0.8 0.176 145)",
+        "iconRadius": "24%",
+        "product": "world-book",
+        "radius": "16px"
+      },
+      {
+        "clippedText": false,
+        "color": "oklch(0.9 0.17 105)",
+        "iconRadius": "24%",
+        "product": "fondfont",
+        "radius": "16px"
+      },
+      {
+        "clippedText": false,
+        "color": "oklch(0.8 0.083 300)",
+        "iconRadius": "24%",
+        "product": "keyhop",
+        "radius": "16px"
+      },
+      {
+        "clippedText": false,
+        "color": "oklch(0.9 0.152 95)",
+        "iconRadius": "24%",
+        "product": "yiyan",
+        "radius": "16px"
+      },
+      {
+        "clippedText": false,
+        "color": "oklch(0.8 0.099 225)",
+        "iconRadius": "24%",
+        "product": "xvdl",
+        "radius": "16px"
+      },
+      {
+        "clippedText": false,
+        "color": "rgb(255, 212, 229)",
+        "iconRadius": "24%",
+        "product": "shheep",
+        "radius": "16px"
+      }
+    ],
+    "footerLinks": [
+      "Contact",
+      "Press Kit",
+      "Privacy"
+    ],
+    "route": "/presskit/",
+    "scrollWidth": 768,
+    "theme": {
+      "bodyFont": "-apple-system, \"system-ui\", \"SF Pro Text\", \"Helvetica Neue\", \"PingFang SC\", \"Hiragino Sans GB\", \"Noto Sans SC\", sans-serif",
+      "headingFont": "\"Sofia Sans Extra Condensed\", Impact, Haettenschweiler, \"Arial Narrow Bold\", \"Avenir Next Condensed\", sans-serif",
+      "paper": "#f8f8f6",
+      "wrapWidth": 768
+    },
+    "width": 768
+  },
+  {
+    "cards": [
+      {
+        "clippedText": false,
+        "color": "oklch(0.8 0.102 245)",
+        "iconRadius": "24%",
+        "product": "chmate",
+        "radius": "16px"
+      },
+      {
+        "clippedText": false,
+        "color": "oklch(0.8 0.176 145)",
+        "iconRadius": "24%",
+        "product": "world-book",
+        "radius": "16px"
+      },
+      {
+        "clippedText": false,
+        "color": "oklch(0.9 0.17 105)",
+        "iconRadius": "24%",
+        "product": "fondfont",
+        "radius": "16px"
+      },
+      {
+        "clippedText": false,
+        "color": "oklch(0.8 0.083 300)",
+        "iconRadius": "24%",
+        "product": "keyhop",
+        "radius": "16px"
+      },
+      {
+        "clippedText": false,
+        "color": "oklch(0.9 0.152 95)",
+        "iconRadius": "24%",
+        "product": "yiyan",
+        "radius": "16px"
+      },
+      {
+        "clippedText": false,
+        "color": "oklch(0.8 0.099 225)",
+        "iconRadius": "24%",
+        "product": "xvdl",
+        "radius": "16px"
+      },
+      {
+        "clippedText": false,
+        "color": "rgb(255, 212, 229)",
+        "iconRadius": "24%",
+        "product": "shheep",
+        "radius": "16px"
+      }
+    ],
+    "footerLinks": [
+      "Contact",
+      "Press Kit",
+      "Privacy"
+    ],
+    "route": "/presskit/",
+    "scrollWidth": 1280,
+    "theme": {
+      "bodyFont": "-apple-system, \"system-ui\", \"SF Pro Text\", \"Helvetica Neue\", \"PingFang SC\", \"Hiragino Sans GB\", \"Noto Sans SC\", sans-serif",
+      "headingFont": "\"Sofia Sans Extra Condensed\", Impact, Haettenschweiler, \"Arial Narrow Bold\", \"Avenir Next Condensed\", sans-serif",
+      "paper": "#f8f8f6",
+      "wrapWidth": 1180
+    },
+    "width": 1280
+  }
+]

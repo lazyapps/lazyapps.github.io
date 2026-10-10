@@ -1,0 +1,12 @@
+{
+  "headerHomeFocus": {
+    "href": "/",
+    "outline": "2px solid rgb(255,104,70)",
+    "height": 44
+  },
+  "languagePicker": {
+    "from": "/chmate/en/",
+    "to": "http://127.0.0.1:4322/chmate/fr/",
+    "selected": "locale"
+  }
+}

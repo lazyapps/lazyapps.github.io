@@ -1,0 +1,174 @@
+{
+  "languages": [
+    "ar",
+    "de",
+    "en",
+    "es",
+    "fr",
+    "id",
+    "it",
+    "ja",
+    "ko",
+    "nl",
+    "pt",
+    "pt-BR",
+    "tr",
+    "zh-Hans",
+    "zh-Hant"
+  ],
+  "files": [
+    {
+      "path": "icon.png",
+      "contentLanguage": "und",
+      "width": 1024,
+      "height": 1024,
+      "format": "PNG",
+      "bytes": 1793773,
+      "sha256": "0650bac78fbcce9c5db9628659ec61ade1b30ce41283d138bc1b3d7044aac94a"
+    },
+    {
+      "path": "ar/reading-ipad.png",
+      "contentLanguage": "ar",
+      "width": 2064,
+      "height": 2752,
+      "format": "PNG",
+      "bytes": 872886,
+      "sha256": "a5527c08b8e9577c9110d197ab26b507b0f654d6cb056a010039d07941437af9"
+    },
+    {
+      "path": "social-card.png",
+      "contentLanguage": "und",
+      "width": 1200,
+      "height": 630,
+      "format": "PNG",
+      "bytes": 145881,
+      "sha256": "18337bfde1f8fd0316611c829bb97fed2205a92ff0a60ea98c088fc9ab28913e"
+    },
+    {
+      "path": "de/reading-ipad.png",
+      "contentLanguage": "de",
+      "width": 2064,
+      "height": 2752,
+      "format": "PNG",
+      "bytes": 962403,
+      "sha256": "67bbff221f0216ead2e7f4e369e17ff6b78bce0317808fa3905457a05c4a82f9"
+    },
+    {
+      "path": "en/reading-ipad.png",
+      "contentLanguage": "en",
+      "width": 2064,
+      "height": 2752,
+      "format": "PNG",
+      "bytes": 2284914,
+      "sha256": "0f905108787648e6b289a4f2e678e652af8fe543da1797d1e578bd8764d2dd35"
+    },
+    {
+      "path": "es/reading-ipad.png",
+      "contentLanguage": "es",
+      "width": 2064,
+      "height": 2752,
+      "format": "PNG",
+      "bytes": 947625,
+      "sha256": "42d7227f38b5626b57288c2cb3e302e344a9b4c84f9b47bc8a6f4a73e4674e34"
+    },
+    {
+      "path": "fr/reading-ipad.png",
+      "contentLanguage": "fr",
+      "width": 2064,
+      "height": 2752,
+      "format": "PNG",
+      "bytes": 908505,
+      "sha256": "7ca5aef93753902722b8ede3c1a8152211eca2440d6b91ec7dc277a2e337e4fb"
+    },
+    {
+      "path": "id/reading-ipad.png",
+      "contentLanguage": "id",
+      "width": 2064,
+      "height": 2752,
+      "format": "PNG",
+      "bytes": 909040,
+      "sha256": "19afb78891364fda047d49f2e28f3eedd59d4fe80cbc1cdaeec6641b16614d84"
+    },
+    {
+      "path": "it/reading-ipad.png",
+      "contentLanguage": "it",
+      "width": 2064,
+      "height": 2752,
+      "format": "PNG",
+      "bytes": 358406,
+      "sha256": "fb5a57b6d53f295ac572ef2519e1f358c5b724387258d409ffe573ff28917a72"
+    },
+    {
+      "path": "ja/reading-ipad.png",
+      "contentLanguage": "ja",
+      "width": 2064,
+      "height": 2752,
+      "format": "PNG",
+      "bytes": 988577,
+      "sha256": "cb17ea3c4e6001b540ef87cfd6f8d2b7bd1065cb2b612e244369fc9f4fc9ff80"
+    },
+    {
+      "path": "ko/reading-ipad.png",
+      "contentLanguage": "ko",
+      "width": 2064,
+      "height": 2752,
+      "format": "PNG",
+      "bytes": 803201,
+      "sha256": "b4f9ff4f0b334d7bd6d022c8acf4812b6c597eec61ba72dc134f2ff8835b1f13"
+    },
+    {
+      "path": "nl/reading-ipad.png",
+      "contentLanguage": "nl",
+      "width": 2064,
+      "height": 2752,
+      "format": "PNG",
+      "bytes": 1196765,
+      "sha256": "99bad1a8c2e67288860a17472dfc06effa86a0906cbe788d0118c7d2646fb3f2"
+    },
+    {
+      "path": "pt/reading-ipad.png",
+      "contentLanguage": "pt",
+      "width": 2064,
+      "height": 2752,
+      "format": "PNG",
+      "bytes": 827362,
+      "sha256": "98923a35ae380449f83ec236c0d39717350f10f745bf9ea96da0b20b4243bce4"
+    },
+    {
+      "path": "pt-BR/reading-ipad.png",
+      "contentLanguage": "pt-BR",
+      "width": 2064,
+      "height": 2752,
+      "format": "PNG",
+      "bytes": 897968,
+      "sha256": "f720470155b9535329db81aa698d76dfd068af31aeb82f72e4e9f64a550587ba"
+    },
+    {
+      "path": "tr/reading-ipad.png",
+      "contentLanguage": "tr",
+      "width": 2064,
+      "height": 2752,
+      "format": "PNG",
+      "bytes": 1180427,
+      "sha256": "06c7c11128161c6bb139ddd6b9a620701c4a49171c217bd7105aaa6c46f2311b"
+    },
+    {
+      "path": "zh-Hans/reading-ipad.png",
+      "contentLanguage": "zh-Hans",
+      "width": 2064,
+      "height": 2752,
+      "format": "PNG",
+      "bytes": 1257757,
+      "sha256": "95e2876b92d698b5767f3f201f62273d1830952ab6b6ab06a557bdb770f0506b"
+    },
+    {
+      "path": "zh-Hant/reading-ipad.png",
+      "contentLanguage": "zh-Hant",
+      "width": 2064,
+      "height": 2752,
+      "format": "PNG",
+      "bytes": 1078913,
+      "sha256": "c3726a293969043d607ba17a63cab2e1d02b53104cca0c5f78d834c9c0983447"
+    }
+  ]
+}

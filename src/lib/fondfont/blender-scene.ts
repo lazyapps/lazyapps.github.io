@@ -191,6 +191,7 @@ export async function createBlenderFactory(host:HTMLElement,copy:SceneCopy,signa
   let leafSkyLine=10,skyPixels=0,canvasWidth=1,canvasHeight=1;
   function dispose(){if(disposed)return;disposed=true;resize.disconnect();petAnimator.dispose();litterMesh.dispose();host.classList.remove('is-ready');if(smokeBlur)smokeBlur.style.opacity='0';skeletonSet.forEach(s=>s.dispose());geometrySet.forEach(g=>g.dispose());materialSet.forEach(m=>m.dispose());textureSet.forEach(t=>t.dispose());env.dispose();key.shadow.dispose();ao.dispose();beauty.dispose();output.dispose();composer.dispose();renderer.dispose();document.fonts.delete(font);roofFonts.forEach(f=>document.fonts.delete(f));}
   const pageSun=document.querySelector<HTMLElement>('[data-nav-sun]');
+  const header=document.querySelector<HTMLElement>('.site-header');
   const sunTarget=POSTER_SUN.clone();
   let previousSun='';
   function syncSun(){
@@ -216,9 +217,11 @@ export async function createBlenderFactory(host:HTMLElement,copy:SceneCopy,signa
   function size(){
     const stage=host.querySelector<HTMLElement>('.font-factory__stage')??host;
     const w=stage.clientWidth,h=stage.clientHeight;
-    const logo=document.querySelector('.topbar__app img')?.getBoundingClientRect();
-    const stageTop=stage.getBoundingClientRect().top;
-    const skyInset=host.classList.contains('is-export')?0:Math.max(0,stageTop-(logo?.top??stageTop)+24);
+    const logo=header?.querySelector('.site-header__product')?.getBoundingClientRect();
+    // Keep the sky in document coordinates when the header sticks during scrolling.
+    const stageTop=stage.getBoundingClientRect().top+window.scrollY;
+    const logoTop=logo?logo.top-header!.getBoundingClientRect().top:stageTop;
+    const skyInset=host.classList.contains('is-export')?0:Math.max(0,stageTop-logoTop+24);
     host.style.setProperty('--sky-inset',`${skyInset}px`);
     const totalHeight=h+skyInset;
     skyPixels=skyInset;canvasWidth=w;canvasHeight=totalHeight;
@@ -231,7 +234,7 @@ export async function createBlenderFactory(host:HTMLElement,copy:SceneCopy,signa
     previousSun='';
     fitLens(camera,roadWidth,w,h,skyInset);
     // Leaves spawn on the ray through the pixel just above the logo, at the depth of the campus centre.
-    const spawnPixel=(logo?.top??stageTop)-8-(stageTop-skyInset);
+    const spawnPixel=logoTop-8-(stageTop-skyInset);
     const spawn=rayToPlane(camera,0,1-2*spawnPixel/totalHeight,new THREE.Plane(new THREE.Vector3(0,0,1),-cameraTarget.z));
     leafSkyLine=Math.cos(Math.atan2(19,29.5))*spawn.y-Math.sin(Math.atan2(19,29.5))*spawn.z;
     syncSun();
@@ -242,7 +245,7 @@ export async function createBlenderFactory(host:HTMLElement,copy:SceneCopy,signa
   }
   const resize=new ResizeObserver(()=>{size();render(renderTime);});resize.observe(host);resize.observe(host.querySelector('.font-factory__stage')??host);
   if(pageSun)resize.observe(pageSun);
-  const topbar=document.querySelector('.topbar');if(topbar)resize.observe(topbar);
+  if(header)resize.observe(header);
   if(signal.aborted){dispose();return null;}
   const truckStudy=import.meta.env.DEV&&new URLSearchParams(location.search).has('truckStudy');
   const truck=model.getObjectByName('Truck')!,cargo=model.getObjectByName('Cargo')!;

@@ -1,0 +1,119 @@
+---
+import SocialMeta from '../components/SocialMeta.astro';
+import SiteGrain from '../components/SiteGrain.astro';
+import SiteFooterBase from '../components/SiteFooterBase.astro';
+import SiteHeader from '../components/SiteHeader.astro';
+import PressKitClosing from '../components/PressKitClosing.astro';
+import LanguagePicker from '../components/LanguagePicker.astro';
+import SitePreloader from '../components/SitePreloader.astro';
+import { languageOptions, pressPresentations } from '../content/presskit-presentation.mjs';
+import siteCssUrl from '$assets/s/site.css?url';
+import gsapUrl from '$assets/vendor/gsap.min.js?url';
+import scrollTriggerUrl from '$assets/vendor/ScrollTrigger.min.js?url';
+import customEaseUrl from '$assets/vendor/CustomEase.min.js?url';
+import splitTextUrl from '$assets/vendor/SplitText.min.js?url';
+import logoRevealUrl from '$assets/s/logo-reveal-loader.js?url';
+import siteJsUrl from '$assets/s/site.js?url';
+interface Props { title: string; description: string; image: string; product?: string; slug?: string; }
+const { title, description, image, product, slug } = Astro.props;
+const url = new URL(Astro.url.pathname, Astro.site).href;
+const presentation = { product: slug, products: slug ? pressPresentations.filter(item => item.slug === slug) : pressPresentations };
+const loaderName = slug ? presentation.products[0].locales.en.name.toUpperCase() : 'LAZYAPPS';
+---
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+    <title>{title}</title>
+    <meta name="description" content={description}>
+    <meta name="theme-color" content="#171717" data-page-color="#f8f8f6">
+    <SocialMeta title={title} description={description} url={url} image={new URL(image, Astro.site).href} imageAlt={title} imageWidth={1200} imageHeight={630} locale="en_US" />
+    <link rel="stylesheet" href={siteCssUrl}>
+    <script is:inline>
+      document.documentElement.classList.remove('no-js');
+      setTimeout(function () {
+        document.documentElement.classList.add('is-page-theme', 'is-loaded');
+        document.getElementById('loader')?.remove();
+        document.querySelectorAll('meta[name="theme-color"][data-page-color]').forEach(function (meta) {
+          meta.setAttribute('content', meta.getAttribute('data-page-color'));
+        });
+      }, 6000);
+    </script>
+  </head>
+  <body class="presskit">
+    <SiteGrain />
+    <SitePreloader name={loaderName} />
+    <a class="press-skip" href="#main" data-press-text="skip">Skip to content</a>
+    <SiteHeader class="wrap">
+      {product && <a class="press-back" href="/presskit/#en" data-press-route="/presskit/"><span data-press-text="allKits">All Press Kits</span><span aria-hidden="true">↗</span></a>}
+      <LanguagePicker label="Change language" current="#en" options={languageOptions} mode="hash" />
+    </SiteHeader>
+    <main id="main" class="wrap"><slot /><PressKitClosing productName={product} /></main>
+    <footer class="wrap"><SiteFooterBase /></footer>
+    <script id="press-page-data" type="application/json" set:html={JSON.stringify(presentation).replaceAll('<', '\\u003c')} />
+    <script is:inline src={gsapUrl}></script>
+    <script is:inline src={scrollTriggerUrl}></script>
+    <script is:inline src={customEaseUrl}></script>
+    <script is:inline src={splitTextUrl}></script>
+    <script is:inline src={logoRevealUrl}></script>
+    <script is:inline src={siteJsUrl}></script>
+  </body>
+</html>
+<script>
+  import '../scripts/presskit-language';
+</script>
+<style is:global>
+  .presskit{background:var(--paper)}
+  .press-back{display:inline-flex;align-items:center;justify-content:center;gap:6px;min-height:44px;font-size:14px;font-weight:600;text-decoration:none}
+  .press-back:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px}
+  .presskit .site-header__controls{display:flex;align-items:center;gap:24px}
+  .presskit .press-back{max-width:180px;text-align:start;text-wrap:pretty}
+  .presskit [hidden]{display:none!important}
+  .presskit .site-header__home{flex:none}
+  @media(max-width:650px){.presskit .site-header{grid-template-columns:auto minmax(0,1fr)}.presskit .site-header__controls{grid-column:2;gap:12px}.press-back{font-size:12px;max-width:130px}}
+  .presskit h1{font:900 clamp(44px,7vw,88px)/1 var(--display-latin);letter-spacing:-.01em;text-transform:uppercase}
+  .presskit .kit-alias{font:600 .6em/1.4 var(--sans);letter-spacing:0;text-transform:none}
+  .presskit .kit-title{display:block;font-size:.55em;margin-top:.18em;color:var(--muted)}
+  .presskit h2{font:900 clamp(28px,3vw,40px)/1.1 var(--display-latin);letter-spacing:-.01em;text-transform:uppercase}
+  .presskit h2 [lang]{font-family:var(--sans);font-size:.65em;font-weight:600;letter-spacing:0;text-transform:none}
+  .presskit h3{font-size:20px;line-height:1.35;font-weight:600}
+  /* Keep localized inline text on the heading's rhythm instead of body leading. */
+  .presskit :is(h1,h2,h3) :where(span,br){line-height:inherit;letter-spacing:inherit}
+  .presskit h1:lang(zh),.presskit h1:lang(ja),.presskit h1:lang(ko),.presskit h1:lang(ar),.presskit h1:lang(hi),
+  .presskit h2:lang(zh),.presskit h2:lang(ja),.presskit h2:lang(ko),.presskit h2:lang(ar),.presskit h2:lang(hi),
+  .presskit .kit-title:lang(zh),.presskit .kit-title:lang(ja),.presskit .kit-title:lang(ko),.presskit .kit-title:lang(ar),.presskit .kit-title:lang(hi){font-family:var(--sans);font-weight:750;line-height:1.2;letter-spacing:0;text-transform:none}
+  .presskit h1,.presskit h2,.presskit .button,.presskit .press-back{overflow-wrap:anywhere}
+  .presskit #site-footer{direction:inherit}
+  .presskit .base__meta{white-space:normal}
+  .presskit .base__meta nav{flex-wrap:wrap}
+  .presskit .base__wordmark{width:max-content}
+  .press-skip{position:absolute;top:8px;left:20px;transform:translateY(-200%);background:var(--ink);color:var(--paper);padding:10px;z-index:1000}
+  .press-skip:focus{transform:none}
+  .presskit .lead{font-size:clamp(18px,2vw,24px);line-height:1.5;margin-top:24px;max-width:48ch}
+  .presskit .muted{color:var(--muted)}
+  .presskit .actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
+  .presskit .button{display:inline-flex;flex-wrap:wrap;gap:4px 6px;align-items:center;justify-content:center;min-height:48px;padding:.75rem 1rem;border-radius:999px;font:600 .875rem/1.4 var(--sans);text-decoration:none;background:rgba(0,0,0,.07);box-shadow:inset 0 0 0 1px rgba(0,0,0,.12);transition:background-color .18s ease,transform .18s ease}
+  .presskit .button>span{white-space:nowrap}
+  .presskit .button.primary{background:var(--accent)}
+  .presskit .button:active{transform:scale(.96)}
+  .presskit .copy-body{max-width:58ch}
+  .presskit .asset-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:36px 24px}
+  .presskit .asset{margin:0;min-width:0}
+  .presskit .asset-preview{display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,.035);box-shadow:inset 0 0 0 1px rgba(0,0,0,.09);height:330px;padding:24px;border-radius:var(--r-card)}
+  .presskit .asset-preview img{max-height:100%;max-width:100%;height:auto;flex-shrink:1;object-fit:contain}
+  .presskit .asset[data-kind="icon"] .asset-preview img{max-width:180px;max-height:180px}
+  .presskit .asset[data-kind="logo"] img{image-rendering:pixelated}
+  .presskit .asset-caption{padding-top:18px}
+  .presskit .asset-caption h3{margin-bottom:6px}
+  .presskit .asset-caption .dimensions{font:12px/1.6 var(--mono);margin-bottom:10px;color:var(--muted)}
+  .presskit .asset-caption .note{font-size:13px;line-height:1.6;color:var(--muted);margin-top:12px}
+  .presskit .asset-caption a{font-size:14px}
+  @media(hover:hover) and (pointer:fine){.presskit .button:hover{background:rgba(0,0,0,.11)}.presskit .button.primary:hover{background:var(--c2)}}
+  @media(max-width:650px){
+    .presskit .button{font-size:14px}
+    .presskit .asset-grid{grid-template-columns:minmax(0,1fr);gap:28px}
+    .presskit .asset-preview{height:300px}
+  }
+  @media(prefers-reduced-motion:reduce){.presskit .button{transition:none}.presskit .button:active{transform:none}}
+</style>

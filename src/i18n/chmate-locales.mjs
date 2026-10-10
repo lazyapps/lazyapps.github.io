@@ -10,10 +10,10 @@ export const CHMATE_LOCALES = {
     "mediaLocale": "zh-hans",
     "title": "CHMate — iPhone 与 iPad 上的 EPUB、CHM 阅读器",
     "headline": [
-      "把时间，",
-      "留给阅读"
+      "EPUB、CHM",
+      "阅读器"
     ],
-    "sub": "阅读 EPUB 电子书与 CHM 文档，自选纸张背景与字体排版，随时搜索、高亮和记笔记。",
+    "sub": "阅读 EPUB、CHM 和 MHT 文件，跨章节搜索、高亮与记笔记。支持 iPhone 和 iPad，可通过本地 Wi-Fi 传书并离线阅读。",
     "navAria": "主导航",
     "homeAria": "lazyapps 首页",
     "selectAria": "切换语言",
@@ -24,19 +24,19 @@ export const CHMATE_LOCALES = {
     "videoLabel": "CHMate 应用预览：书架、阅读与纸张主题",
     "videoFallback": "你的浏览器不支持视频。",
     "storeLink": "在 App Store 查看 CHMate。",
-    "featuresTitle": "按自己的方式阅读",
+    "featuresTitle": "排版、搜索与书架",
     "cards": [
       [
-        "让书页合你心意",
-        "选择纸张背景与深色模式，调整字体、行距和页边距，找到最适合自己的阅读方式。"
+        "字体与纸张主题",
+        "选择纸张背景或深色模式，调整字体、行距和页边距。"
       ],
       [
-        "留住值得重读的话",
-        "跨章节搜索，为段落添加高亮和笔记。随时回到那些值得记住的文字。"
+        "搜索、高亮与笔记",
+        "跨章节搜索，为段落添加高亮和笔记，随时返回标记的位置。"
       ],
       [
-        "从小说到参考手册",
-        "把 EPUB、CHM 和 MHT 文件放进同一个书架。通过本地 Wi-Fi 传书，离线也能阅读。"
+        "Wi-Fi 传书与离线阅读",
+        "在同一书架管理 EPUB、CHM 和 MHT 文件。通过本地 Wi-Fi 传书，离线阅读。"
       ]
     ],
     "promiseLines": [
@@ -51,7 +51,7 @@ export const CHMATE_LOCALES = {
       "许可发布。选段经过剪辑、淡入淡出和音量调整。"
     ],
     "trademark": "Apple 和 Apple 标志是 Apple Inc. 的商标。App Store 是 Apple Inc. 的服务标志。",
-    "description": "阅读 EPUB 电子书与 CHM 文档，自选纸张背景与字体排版，随时搜索、高亮和记笔记。 免费下载，自由阅读。"
+    "description": "阅读 EPUB、CHM 和 MHT 文件，跨章节搜索、高亮与记笔记。支持 iPhone 和 iPad，可通过本地 Wi-Fi 传书并离线阅读。"
   },
   "en": {
     "htmlLang": "en",
@@ -64,10 +64,10 @@ export const CHMATE_LOCALES = {
     "mediaLocale": "en",
     "title": "CHMate — EPUB & CHM Reader for iPhone and iPad",
     "headline": [
-      "Make time",
-      "for reading"
+      "Read EPUB",
+      "& CHM books"
     ],
-    "sub": "Read EPUB books and CHM documents with paper themes, personal typography, search, and notes.",
+    "sub": "Read EPUB, CHM and MHT files on iPhone and iPad. Search across chapters, highlight passages and add notes. Transfer books over local Wi-Fi and read offline.",
     "navAria": "Primary navigation",
     "homeAria": "lazyapps home",
     "selectAria": "Change language",
@@ -78,19 +78,19 @@ export const CHMATE_LOCALES = {
     "videoLabel": "CHMate app preview showing the bookshelf, reading, and paper themes",
     "videoFallback": "Your browser does not support video.",
     "storeLink": "See CHMate on the App Store.",
-    "featuresTitle": "Read it your way",
+    "featuresTitle": "Typography, search & library",
     "cards": [
       [
-        "A page that feels right",
-        "Choose paper backgrounds and dark mode. Adjust fonts, line spacing, and margins to suit the way you read."
+        "Fonts & paper themes",
+        "Choose paper backgrounds or dark mode. Adjust fonts, line spacing and margins."
       ],
       [
-        "Keep the good parts",
-        "Search across chapters, highlight a passage, and leave a note. Return to the words that matter."
+        "Search, highlights & notes",
+        "Search across chapters, highlight passages and add notes. Return to any marked passage."
       ],
       [
-        "Novels to reference manuals",
-        "Keep EPUB, CHM, and MHT files in one library. Transfer books over local Wi-Fi and read them offline."
+        "Wi-Fi transfer & offline reading",
+        "Manage EPUB, CHM and MHT files in one library. Transfer books over local Wi-Fi and read offline."
       ]
     ],
     "promiseLines": [
@@ -105,7 +105,7 @@ export const CHMATE_LOCALES = {
       ". Excerpt edited, faded, and volume-adjusted."
     ],
     "trademark": "Apple and the Apple logo are trademarks of Apple Inc. App Store is a service mark of Apple Inc.",
-    "description": "Read EPUB books and CHM documents with paper themes, personal typography, search, and notes. Free to download and read."
+    "description": "Read EPUB, CHM and MHT files on iPhone and iPad. Search across chapters, highlight passages and add notes. Transfer books over local Wi-Fi and read offline."
   },
   "zh-hant": {
     "htmlLang": "zh-Hant",
@@ -118,10 +118,10 @@ export const CHMATE_LOCALES = {
     "mediaLocale": "zh-hant",
     "title": "CHMate — iPhone 與 iPad 上的 EPUB、CHM 閱讀器",
     "headline": [
-      "把時間，",
-      "留給閱讀"
+      "EPUB、CHM",
+      "閱讀器"
     ],
-    "sub": "閱讀 EPUB 電子書與 CHM 文件，自選紙張背景與字體排版，隨時搜尋、標示重點和記筆記。",
+    "sub": "閱讀 EPUB、CHM 和 MHT 檔案，跨章節搜尋、標示重點與做筆記。支援 iPhone 和 iPad，可透過本機 Wi-Fi 傳書並離線閱讀。",
     "navAria": "主導覽",
     "homeAria": "lazyapps 首頁",
     "selectAria": "切換語言",
@@ -132,19 +132,19 @@ export const CHMATE_LOCALES = {
     "videoLabel": "CHMate 應用程式預覽：書架、閱讀與紙張主題",
     "videoFallback": "你的瀏覽器不支援影片。",
     "storeLink": "在 App Store 查看 CHMate。",
-    "featuresTitle": "照自己的方式閱讀",
+    "featuresTitle": "排版、搜尋與書架",
     "cards": [
       [
-        "讓書頁合你心意",
-        "選擇紙張背景與深色模式，調整字體、行距和頁邊距，找到最適合自己的閱讀方式。"
+        "字型與紙張主題",
+        "選擇紙張背景或深色模式，調整字型、行距和頁邊距。"
       ],
       [
-        "留下值得重讀的話",
-        "跨章節搜尋，為段落標示重點並加入筆記。隨時回到那些值得記住的文字。"
+        "搜尋、重點與筆記",
+        "跨章節搜尋，為段落標示重點和加入筆記，隨時返回標記的位置。"
       ],
       [
-        "從小說到參考手冊",
-        "把 EPUB、CHM 和 MHT 檔案放進同一個書架。透過本機 Wi-Fi 傳書，離線也能閱讀。"
+        "Wi-Fi 傳書與離線閱讀",
+        "在同一書架管理 EPUB、CHM 和 MHT 檔案。透過本機 Wi-Fi 傳書，離線閱讀。"
       ]
     ],
     "promiseLines": [
@@ -159,7 +159,7 @@ export const CHMATE_LOCALES = {
       "授權發布。選段經過剪輯、淡入淡出和音量調整。"
     ],
     "trademark": "Apple 和 Apple 標誌是 Apple Inc. 的商標。App Store 是 Apple Inc. 的服務標章。",
-    "description": "閱讀 EPUB 電子書與 CHM 文件，自選紙張背景與字體排版，隨時搜尋、標示重點和記筆記。 免費下載，自由閱讀。"
+    "description": "閱讀 EPUB、CHM 和 MHT 檔案，跨章節搜尋、標示重點與做筆記。支援 iPhone 和 iPad，可透過本機 Wi-Fi 傳書並離線閱讀。"
   },
   "es": {
     "htmlLang": "es",
@@ -172,10 +172,10 @@ export const CHMATE_LOCALES = {
     "mediaLocale": "es",
     "title": "CHMate — Lector EPUB y CHM para iPhone y iPad",
     "headline": [
-      "Un momento",
-      "para leer"
+      "Lee libros",
+      "EPUB y CHM"
     ],
-    "sub": "Lee libros EPUB y documentos CHM con fondos de papel, tipografía a tu gusto, búsqueda y notas.",
+    "sub": "Lee archivos EPUB, CHM y MHT en iPhone y iPad. Busca entre capítulos, resalta pasajes y añade notas. Transfiere libros por Wi-Fi local y lee sin conexión.",
     "navAria": "Navegación principal",
     "homeAria": "Inicio de lazyapps",
     "selectAria": "Cambiar idioma",
@@ -186,19 +186,19 @@ export const CHMATE_LOCALES = {
     "videoLabel": "Vista previa de CHMate: biblioteca, lectura y temas de papel",
     "videoFallback": "Tu navegador no admite vídeo.",
     "storeLink": "Ver CHMate en el App Store.",
-    "featuresTitle": "Lee a tu manera",
+    "featuresTitle": "Tipografía, búsqueda y biblioteca",
     "cards": [
       [
-        "Una página a tu gusto",
-        "Elige fondos de papel y modo oscuro. Ajusta las fuentes, el interlineado y los márgenes a tu forma de leer."
+        "Fuentes y temas de papel",
+        "Elige fondos de papel o modo oscuro. Ajusta la fuente, el interlineado y los márgenes."
       ],
       [
-        "Guarda lo que importa",
-        "Busca entre capítulos, resalta un pasaje y añade una nota. Vuelve a las palabras que quieres recordar."
+        "Búsqueda, resaltados y notas",
+        "Busca entre capítulos, resalta pasajes y añade notas. Vuelve a cualquier pasaje marcado."
       ],
       [
-        "De novelas a manuales",
-        "Reúne tus archivos EPUB, CHM y MHT en una sola biblioteca. Transfiere libros por Wi-Fi local y lee sin conexión."
+        "Transferencia Wi-Fi y lectura sin conexión",
+        "Gestiona archivos EPUB, CHM y MHT en una biblioteca. Transfiere libros por Wi-Fi local y lee sin conexión."
       ]
     ],
     "promiseLines": [
@@ -213,7 +213,7 @@ export const CHMATE_LOCALES = {
       ". Fragmento editado, con fundidos y ajuste de volumen."
     ],
     "trademark": "Apple y el logotipo de Apple son marcas comerciales de Apple Inc. App Store es una marca de servicio de Apple Inc.",
-    "description": "Lee libros EPUB y documentos CHM con fondos de papel, tipografía a tu gusto, búsqueda y notas. Descarga y lectura gratis."
+    "description": "Lee archivos EPUB, CHM y MHT en iPhone y iPad. Busca entre capítulos, resalta pasajes y añade notas. Transfiere libros por Wi-Fi local y lee sin conexión."
   },
   "pt-br": {
     "htmlLang": "pt-BR",
@@ -226,10 +226,10 @@ export const CHMATE_LOCALES = {
     "mediaLocale": "pt-br",
     "title": "CHMate — Leitor de EPUB e CHM para iPhone e iPad",
     "headline": [
-      "Reserve um tempo",
-      "para ler"
+      "Leia livros",
+      "EPUB e CHM"
     ],
-    "sub": "Leia livros EPUB e documentos CHM com fundos de papel, tipografia do seu jeito, busca e notas.",
+    "sub": "Leia arquivos EPUB, CHM e MHT no iPhone e iPad. Pesquise entre capítulos, destaque trechos e adicione notas. Transfira livros por Wi-Fi local e leia offline.",
     "navAria": "Navegação principal",
     "homeAria": "Início da lazyapps",
     "selectAria": "Mudar idioma",
@@ -240,19 +240,19 @@ export const CHMATE_LOCALES = {
     "videoLabel": "Prévia do CHMate: estante, leitura e temas de papel",
     "videoFallback": "Seu navegador não suporta vídeos.",
     "storeLink": "Veja o CHMate na App Store.",
-    "featuresTitle": "Leia do seu jeito",
+    "featuresTitle": "Tipografia, busca e biblioteca",
     "cards": [
       [
-        "Uma página que combina com você",
-        "Escolha fundos de papel e o modo escuro. Ajuste fontes, espaçamento entre linhas e margens ao seu jeito de ler."
+        "Fontes e temas de papel",
+        "Escolha fundos de papel ou modo escuro. Ajuste fontes, espaçamento entre linhas e margens."
       ],
       [
-        "Guarde os melhores trechos",
-        "Busque entre capítulos, destaque uma passagem e deixe uma nota. Volte às palavras que fazem a diferença."
+        "Busca, destaques e notas",
+        "Pesquise entre capítulos, destaque trechos e adicione notas. Volte a qualquer trecho marcado."
       ],
       [
-        "De romances a manuais",
-        "Reúna arquivos EPUB, CHM e MHT em uma só biblioteca. Transfira livros pela rede Wi-Fi local e leia offline."
+        "Transferência Wi-Fi e leitura offline",
+        "Organize arquivos EPUB, CHM e MHT em uma biblioteca. Transfira livros por Wi-Fi local e leia offline."
       ]
     ],
     "promiseLines": [
@@ -267,7 +267,7 @@ export const CHMATE_LOCALES = {
       ". Trecho editado, com fades e ajuste de volume."
     ],
     "trademark": "Apple e o logotipo da Apple são marcas da Apple Inc. App Store é uma marca de serviço da Apple Inc.",
-    "description": "Leia livros EPUB e documentos CHM com fundos de papel, tipografia do seu jeito, busca e notas. Baixe e leia de graça."
+    "description": "Leia arquivos EPUB, CHM e MHT no iPhone e iPad. Pesquise entre capítulos, destaque trechos e adicione notas. Transfira livros por Wi-Fi local e leia offline."
   },
   "pt": {
     "htmlLang": "pt",
@@ -280,10 +280,10 @@ export const CHMATE_LOCALES = {
     "mediaLocale": "pt",
     "title": "CHMate — Leitor de EPUB e CHM para iPhone e iPad",
     "headline": [
-      "Reserve tempo",
-      "para ler"
+      "Leia livros",
+      "EPUB e CHM"
     ],
-    "sub": "Leia livros EPUB e documentos CHM com fundos de papel, tipografia à sua medida, pesquisa e notas.",
+    "sub": "Leia ficheiros EPUB, CHM e MHT no iPhone e iPad. Pesquise entre capítulos, destaque passagens e adicione notas. Transfira livros por Wi-Fi local e leia offline.",
     "navAria": "Navegação principal",
     "homeAria": "Página inicial da lazyapps",
     "selectAria": "Alterar idioma",
@@ -294,19 +294,19 @@ export const CHMATE_LOCALES = {
     "videoLabel": "Pré-visualização do CHMate: estante, leitura e temas de papel",
     "videoFallback": "O seu navegador não suporta vídeo.",
     "storeLink": "Ver CHMate na App Store.",
-    "featuresTitle": "Leia à sua maneira",
+    "featuresTitle": "Tipografia, pesquisa e biblioteca",
     "cards": [
       [
-        "Uma página à sua medida",
-        "Escolha fundos de papel e o modo escuro. Ajuste os tipos de letra, o espaçamento entre linhas e as margens à sua forma de ler."
+        "Tipos de letra e temas de papel",
+        "Escolha fundos de papel ou modo escuro. Ajuste o tipo de letra, o espaçamento e as margens."
       ],
       [
-        "Guarde os melhores trechos",
-        "Pesquise entre capítulos, destaque uma passagem e deixe uma nota. Regresse às palavras que vale a pena recordar."
+        "Pesquisa, destaques e notas",
+        "Pesquise entre capítulos, destaque passagens e adicione notas. Regresse a qualquer passagem marcada."
       ],
       [
-        "De romances a manuais",
-        "Reúna ficheiros EPUB, CHM e MHT numa só biblioteca. Transfira livros pela rede Wi-Fi local e leia sem ligação à Internet."
+        "Transferência Wi-Fi e leitura offline",
+        "Organize ficheiros EPUB, CHM e MHT numa biblioteca. Transfira livros por Wi-Fi local e leia offline."
       ]
     ],
     "promiseLines": [
@@ -321,7 +321,7 @@ export const CHMATE_LOCALES = {
       ". Excerto editado, com transições graduais e ajuste de volume."
     ],
     "trademark": "Apple e o logótipo da Apple são marcas comerciais da Apple Inc. App Store é uma marca de serviço da Apple Inc.",
-    "description": "Leia livros EPUB e documentos CHM com fundos de papel, tipografia à sua medida, pesquisa e notas. Descarregue e leia gratuitamente."
+    "description": "Leia ficheiros EPUB, CHM e MHT no iPhone e iPad. Pesquise entre capítulos, destaque passagens e adicione notas. Transfira livros por Wi-Fi local e leia offline."
   },
   "fr": {
     "htmlLang": "fr",
@@ -334,10 +334,10 @@ export const CHMATE_LOCALES = {
     "mediaLocale": "fr",
     "title": "CHMate — Lecteur EPUB et CHM pour iPhone et iPad",
     "headline": [
-      "Prenez le temps",
-      "de lire"
+      "Lisez vos livres",
+      "EPUB et CHM"
     ],
-    "sub": "Lisez vos livres EPUB et documents CHM avec des fonds papier, une typographie à votre goût, la recherche et des notes.",
+    "sub": "Lisez des fichiers EPUB, CHM et MHT sur iPhone et iPad. Recherchez dans les chapitres, surlignez et annotez. Transférez des livres par Wi-Fi local et lisez hors ligne.",
     "navAria": "Navigation principale",
     "homeAria": "Accueil lazyapps",
     "selectAria": "Changer de langue",
@@ -348,19 +348,19 @@ export const CHMATE_LOCALES = {
     "videoLabel": "Aperçu de CHMate : bibliothèque, lecture et thèmes papier",
     "videoFallback": "Votre navigateur ne prend pas en charge la vidéo.",
     "storeLink": "Voir CHMate sur l’App Store.",
-    "featuresTitle": "Lisez à votre façon",
+    "featuresTitle": "Typographie, recherche et bibliothèque",
     "cards": [
       [
-        "Une page à votre goût",
-        "Choisissez un fond papier ou le mode sombre. Réglez les polices, l’interligne et les marges selon vos habitudes de lecture."
+        "Polices et thèmes de papier",
+        "Choisissez un fond de papier ou le mode sombre. Réglez la police, l’interligne et les marges."
       ],
       [
-        "Gardez les passages marquants",
-        "Recherchez dans tous les chapitres, surlignez un passage et ajoutez une note. Retrouvez les mots qui comptent."
+        "Recherche, surlignage et notes",
+        "Recherchez dans les chapitres, surlignez et annotez. Retrouvez chaque passage marqué."
       ],
       [
-        "Du roman au manuel",
-        "Réunissez vos fichiers EPUB, CHM et MHT dans une seule bibliothèque. Transférez vos livres en Wi-Fi local et lisez hors ligne."
+        "Transfert Wi-Fi et lecture hors ligne",
+        "Gérez les fichiers EPUB, CHM et MHT dans une bibliothèque. Transférez des livres par Wi-Fi local et lisez hors ligne."
       ]
     ],
     "promiseLines": [
@@ -375,7 +375,7 @@ export const CHMATE_LOCALES = {
       ". Extrait monté avec fondus et ajustement du volume."
     ],
     "trademark": "Apple et le logo Apple sont des marques d’Apple Inc. App Store est une marque de service d’Apple Inc.",
-    "description": "Lisez vos livres EPUB et documents CHM avec des fonds papier, une typographie à votre goût, la recherche et des notes. Téléchargez et lisez gratuitement."
+    "description": "Lisez des fichiers EPUB, CHM et MHT sur iPhone et iPad. Recherchez dans les chapitres, surlignez et annotez. Transférez des livres par Wi-Fi local et lisez hors ligne."
   },
   "de": {
     "htmlLang": "de",
@@ -388,10 +388,10 @@ export const CHMATE_LOCALES = {
     "mediaLocale": "de",
     "title": "CHMate — EPUB- und CHM-Reader für iPhone und iPad",
     "headline": [
-      "Zeit zum",
-      "Lesen"
+      "EPUB- und",
+      "CHM-Bücher lesen"
     ],
-    "sub": "Lies EPUB-Bücher und CHM-Dokumente mit Papierhintergründen, eigener Typografie, Suche und Notizen.",
+    "sub": "Lies EPUB-, CHM- und MHT-Dateien auf iPhone und iPad. Suche über Kapitel hinweg, markiere Text und füge Notizen hinzu. Übertrage Bücher per lokalem WLAN und lies offline.",
     "navAria": "Hauptnavigation",
     "homeAria": "lazyapps Startseite",
     "selectAria": "Sprache ändern",
@@ -402,19 +402,19 @@ export const CHMATE_LOCALES = {
     "videoLabel": "CHMate-App-Vorschau mit Bücherregal, Lesen und Papierdesigns",
     "videoFallback": "Dein Browser unterstützt keine Videos.",
     "storeLink": "CHMate im App Store ansehen.",
-    "featuresTitle": "Lies auf deine Weise",
+    "featuresTitle": "Schrift, Suche und Bibliothek",
     "cards": [
       [
-        "Seiten, die sich richtig anfühlen",
-        "Wähle Papierhintergründe und den Dunkelmodus. Passe Schrift, Zeilenabstand und Ränder an deine Lesegewohnheiten an."
+        "Schriften und Papierdesigns",
+        "Wähle Papierhintergründe oder den Dunkelmodus. Passe Schrift, Zeilenabstand und Ränder an."
       ],
       [
-        "Das Wichtige festhalten",
-        "Suche über Kapitel hinweg, markiere Textstellen und füge Notizen hinzu. Finde die Worte wieder, die dir wichtig sind."
+        "Suche, Markierungen und Notizen",
+        "Suche über Kapitel hinweg, markiere Text und füge Notizen hinzu. Kehre zu markierten Stellen zurück."
       ],
       [
-        "Vom Roman zum Handbuch",
-        "EPUB-, CHM- und MHT-Dateien in einer Bibliothek. Übertrage Bücher per lokalem WLAN und lies sie offline."
+        "WLAN-Übertragung und Offline-Lesen",
+        "Verwalte EPUB-, CHM- und MHT-Dateien in einer Bibliothek. Übertrage Bücher per lokalem WLAN und lies offline."
       ]
     ],
     "promiseLines": [
@@ -429,7 +429,7 @@ export const CHMATE_LOCALES = {
       ". Ausschnitt bearbeitet, ein- und ausgeblendet sowie in der Lautstärke angepasst."
     ],
     "trademark": "Apple und das Apple-Logo sind Marken von Apple Inc. App Store ist eine Dienstleistungsmarke von Apple Inc.",
-    "description": "Lies EPUB-Bücher und CHM-Dokumente mit Papierhintergründen, eigener Typografie, Suche und Notizen. Kostenlos laden und lesen."
+    "description": "Lies EPUB-, CHM- und MHT-Dateien auf iPhone und iPad. Suche über Kapitel hinweg, markiere Text und füge Notizen hinzu. Übertrage Bücher per lokalem WLAN und lies offline."
   },
   "ja": {
     "htmlLang": "ja",
@@ -442,10 +442,10 @@ export const CHMATE_LOCALES = {
     "mediaLocale": "ja",
     "title": "CHMate — iPhone・iPad 用 EPUB・CHM リーダー",
     "headline": [
-      "本を開いて、",
-      "ひと息"
+      "EPUB・CHM",
+      "リーダー"
     ],
-    "sub": "EPUB の本や CHM 文書を、紙の背景と自分好みの文字組みで。検索、ハイライト、メモも使えます。",
+    "sub": "iPhone・iPad で EPUB、CHM、MHT ファイルを読む。章をまたいだ検索、ハイライト、メモに対応。ローカル Wi-Fi で本を転送し、オフラインで読めます。",
     "navAria": "メインナビゲーション",
     "homeAria": "lazyapps ホーム",
     "selectAria": "言語を変更",
@@ -456,19 +456,19 @@ export const CHMATE_LOCALES = {
     "videoLabel": "CHMate のプレビュー：本棚、読書、紙のテーマ",
     "videoFallback": "お使いのブラウザは動画に対応していません。",
     "storeLink": "App Store で CHMate を見る。",
-    "featuresTitle": "自分らしい読書を",
+    "featuresTitle": "文字設定・検索・本棚",
     "cards": [
       [
-        "心地よいページに",
-        "紙の背景やダークモードを選び、フォント、行間、余白を調整。自分に合った読み心地に整えられます。"
+        "フォントと紙のテーマ",
+        "紙の背景やダークモードを選び、フォント、行間、余白を調整できます。"
       ],
       [
-        "大切な言葉を残す",
-        "章をまたいで検索し、気になる一節にハイライトやメモを。読み返したい言葉に、いつでも戻れます。"
+        "検索・ハイライト・メモ",
+        "章をまたいで検索し、文章にハイライトやメモを追加。マークした箇所に戻れます。"
       ],
       [
-        "小説からマニュアルまで",
-        "EPUB、CHM、MHT ファイルを一つの本棚に。ローカル Wi-Fi で本を転送し、オフラインでも読めます。"
+        "Wi-Fi 転送とオフライン読書",
+        "EPUB、CHM、MHT ファイルを一つの本棚で管理。ローカル Wi-Fi で本を転送し、オフラインで読めます。"
       ]
     ],
     "promiseLines": [
@@ -483,7 +483,7 @@ export const CHMATE_LOCALES = {
       "。抜粋を編集し、フェードと音量調整を行っています。"
     ],
     "trademark": "Apple および Apple ロゴは Apple Inc. の商標です。App Store は Apple Inc. のサービスマークです。",
-    "description": "EPUB の本や CHM 文書を、紙の背景と自分好みの文字組みで。検索、ハイライト、メモも使えます。 ダウンロードも読書も無料。"
+    "description": "iPhone・iPad で EPUB、CHM、MHT ファイルを読む。章をまたいだ検索、ハイライト、メモに対応。ローカル Wi-Fi で本を転送し、オフラインで読めます。"
   },
   "ko": {
     "htmlLang": "ko",
@@ -496,10 +496,10 @@ export const CHMATE_LOCALES = {
     "mediaLocale": "ko",
     "title": "CHMate — iPhone 및 iPad용 EPUB·CHM 리더",
     "headline": [
-      "독서를 위한",
-      "시간"
+      "EPUB·CHM",
+      "리더"
     ],
-    "sub": "종이 배경과 나만의 글꼴 설정으로 EPUB 책과 CHM 문서를 읽으세요. 검색, 하이라이트, 메모도 함께합니다.",
+    "sub": "iPhone과 iPad에서 EPUB, CHM, MHT 파일을 읽으세요. 장 전체 검색, 하이라이트, 메모를 지원합니다. 로컬 Wi-Fi로 책을 전송하고 오프라인에서 읽을 수 있습니다.",
     "navAria": "기본 탐색",
     "homeAria": "lazyapps 홈",
     "selectAria": "언어 변경",
@@ -510,19 +510,19 @@ export const CHMATE_LOCALES = {
     "videoLabel": "CHMate 앱 미리보기: 책장, 독서 및 종이 테마",
     "videoFallback": "브라우저가 동영상을 지원하지 않습니다.",
     "storeLink": "App Store에서 CHMate 보기.",
-    "featuresTitle": "나만의 방식으로 읽기",
+    "featuresTitle": "글꼴 설정, 검색, 서재",
     "cards": [
       [
-        "편안하게 읽는 페이지",
-        "종이 배경과 다크 모드를 선택하세요. 글꼴, 줄 간격, 여백을 내 독서 습관에 맞게 조절할 수 있습니다."
+        "글꼴과 종이 테마",
+        "종이 배경이나 다크 모드를 선택하고 글꼴, 줄 간격, 여백을 조절하세요."
       ],
       [
-        "좋은 문장을 간직하기",
-        "여러 장에 걸쳐 검색하고, 마음에 드는 구절을 강조하고 메모하세요. 기억하고 싶은 문장으로 언제든 돌아갈 수 있습니다."
+        "검색, 하이라이트, 메모",
+        "장 전체를 검색하고 하이라이트와 메모를 추가하세요. 표시한 구절로 돌아갈 수 있습니다."
       ],
       [
-        "소설부터 참고서까지",
-        "EPUB, CHM, MHT 파일을 하나의 서재에 모으세요. 로컬 Wi-Fi로 책을 전송하고 오프라인에서도 읽을 수 있습니다."
+        "Wi-Fi 전송과 오프라인 읽기",
+        "EPUB, CHM, MHT 파일을 한 서재에서 관리하세요. 로컬 Wi-Fi로 책을 전송하고 오프라인에서 읽으세요."
       ]
     ],
     "promiseLines": [
@@ -537,7 +537,7 @@ export const CHMATE_LOCALES = {
       ". 발췌본에 편집, 페이드 및 음량 조정을 적용했습니다."
     ],
     "trademark": "Apple 및 Apple 로고는 Apple Inc.의 상표입니다. App Store는 Apple Inc.의 서비스 상표입니다.",
-    "description": "종이 배경과 나만의 글꼴 설정으로 EPUB 책과 CHM 문서를 읽으세요. 검색, 하이라이트, 메모도 함께합니다. 다운로드도 독서도 무료."
+    "description": "iPhone과 iPad에서 EPUB, CHM, MHT 파일을 읽으세요. 장 전체 검색, 하이라이트, 메모를 지원합니다. 로컬 Wi-Fi로 책을 전송하고 오프라인에서 읽을 수 있습니다."
   },
   "ar": {
     "htmlLang": "ar",
@@ -550,10 +550,10 @@ export const CHMATE_LOCALES = {
     "mediaLocale": "ar",
     "title": "CHMate — قارئ EPUB وCHM لأجهزة iPhone وiPad",
     "headline": [
-      "وقت",
-      "للقراءة"
+      "قارئ كتب",
+      "EPUB وCHM"
     ],
-    "sub": "اقرأ كتب EPUB ومستندات CHM بخلفيات ورقية وخطوط تناسبك، مع البحث والتظليل والملاحظات.",
+    "sub": "اقرأ ملفات EPUB وCHM وMHT على iPhone وiPad. ابحث عبر الفصول وميّز المقاطع وأضف ملاحظات. انقل الكتب عبر Wi-Fi محلي واقرأ دون اتصال.",
     "navAria": "التنقل الرئيسي",
     "homeAria": "الصفحة الرئيسية لـ lazyapps",
     "selectAria": "تغيير اللغة",
@@ -564,19 +564,19 @@ export const CHMATE_LOCALES = {
     "videoLabel": "معاينة CHMate: رف الكتب والقراءة والسمات الورقية",
     "videoFallback": "متصفحك لا يدعم الفيديو.",
     "storeLink": "عرض CHMate في App Store.",
-    "featuresTitle": "اقرأ بطريقتك",
+    "featuresTitle": "الخطوط والبحث والمكتبة",
     "cards": [
       [
-        "صفحة تريح عينيك",
-        "اختر الخلفيات الورقية والوضع الداكن. اضبط الخطوط وتباعد الأسطر والهوامش بما يناسب طريقة قراءتك."
+        "الخطوط وخلفيات الورق",
+        "اختر خلفيات ورقية أو الوضع الداكن. اضبط الخط وتباعد الأسطر والهوامش."
       ],
       [
-        "احتفظ بالمقاطع المهمة",
-        "ابحث عبر الفصول، وظلّل مقطعًا وأضف ملاحظة. عد إلى الكلمات التي تستحق أن تتذكرها."
+        "البحث والتظليل والملاحظات",
+        "ابحث عبر الفصول وميّز المقاطع وأضف ملاحظات. عُد إلى أي مقطع معلّم."
       ],
       [
-        "من الروايات إلى المراجع",
-        "اجمع ملفات EPUB وCHM وMHT في مكتبة واحدة. انقل الكتب عبر شبكة Wi-Fi المحلية واقرأ دون اتصال بالإنترنت."
+        "نقل Wi-Fi والقراءة دون اتصال",
+        "نظّم ملفات EPUB وCHM وMHT في مكتبة واحدة. انقل الكتب عبر Wi-Fi محلي واقرأ دون اتصال."
       ]
     ],
     "promiseLines": [
@@ -591,7 +591,7 @@ export const CHMATE_LOCALES = {
       ". عُدّل المقتطف مع تلاشي الصوت تدريجيًا وضبط مستوى الصوت."
     ],
     "trademark": "Apple وشعار Apple علامتان تجاريتان لشركة Apple Inc. وApp Store علامة خدمة لشركة Apple Inc.",
-    "description": "اقرأ كتب EPUB ومستندات CHM بخلفيات ورقية وخطوط تناسبك، مع البحث والتظليل والملاحظات. التنزيل والقراءة مجانًا."
+    "description": "اقرأ ملفات EPUB وCHM وMHT على iPhone وiPad. ابحث عبر الفصول وميّز المقاطع وأضف ملاحظات. انقل الكتب عبر Wi-Fi محلي واقرأ دون اتصال."
   },
   "it": {
     "htmlLang": "it",
@@ -604,10 +604,10 @@ export const CHMATE_LOCALES = {
     "mediaLocale": "it",
     "title": "CHMate — Lettore EPUB e CHM per iPhone e iPad",
     "headline": [
-      "Prenditi tempo",
-      "per leggere"
+      "Leggi libri",
+      "EPUB e CHM"
     ],
-    "sub": "Leggi libri EPUB e documenti CHM con sfondi di carta, tipografia su misura, ricerca e note.",
+    "sub": "Leggi file EPUB, CHM e MHT su iPhone e iPad. Cerca tra i capitoli, evidenzia brani e aggiungi note. Trasferisci libri via Wi-Fi locale e leggi offline.",
     "navAria": "Navigazione principale",
     "homeAria": "Home di lazyapps",
     "selectAria": "Cambia lingua",
@@ -618,19 +618,19 @@ export const CHMATE_LOCALES = {
     "videoLabel": "Anteprima di CHMate: libreria, lettura e temi di carta",
     "videoFallback": "Il tuo browser non supporta i video.",
     "storeLink": "Scopri CHMate su App Store.",
-    "featuresTitle": "Leggi a modo tuo",
+    "featuresTitle": "Tipografia, ricerca e libreria",
     "cards": [
       [
-        "Una pagina che senti tua",
-        "Scegli sfondi di carta e modalità scura. Regola caratteri, interlinea e margini secondo le tue abitudini di lettura."
+        "Font e temi di carta",
+        "Scegli sfondi di carta o la modalità scura. Regola font, interlinea e margini."
       ],
       [
-        "Conserva i passaggi migliori",
-        "Cerca tra i capitoli, evidenzia un brano e aggiungi una nota. Ritrova le parole che contano."
+        "Ricerca, evidenziazioni e note",
+        "Cerca tra i capitoli, evidenzia brani e aggiungi note. Torna a qualsiasi brano segnato."
       ],
       [
-        "Dai romanzi ai manuali",
-        "Raccogli file EPUB, CHM e MHT in un’unica libreria. Trasferisci libri tramite Wi-Fi locale e leggi offline."
+        "Trasferimento Wi-Fi e lettura offline",
+        "Gestisci file EPUB, CHM e MHT in una libreria. Trasferisci libri via Wi-Fi locale e leggi offline."
       ]
     ],
     "promiseLines": [
@@ -645,7 +645,7 @@ export const CHMATE_LOCALES = {
       ". Estratto montato, con dissolvenze e volume regolato."
     ],
     "trademark": "Apple e il logo Apple sono marchi di Apple Inc. App Store è un marchio di servizio di Apple Inc.",
-    "description": "Leggi libri EPUB e documenti CHM con sfondi di carta, tipografia su misura, ricerca e note. Download e lettura gratuiti."
+    "description": "Leggi file EPUB, CHM e MHT su iPhone e iPad. Cerca tra i capitoli, evidenzia brani e aggiungi note. Trasferisci libri via Wi-Fi locale e leggi offline."
   },
   "id": {
     "htmlLang": "id",
@@ -658,10 +658,10 @@ export const CHMATE_LOCALES = {
     "mediaLocale": "id",
     "title": "CHMate — Pembaca EPUB dan CHM untuk iPhone dan iPad",
     "headline": [
-      "Luangkan waktu",
-      "untuk membaca"
+      "Baca buku",
+      "EPUB dan CHM"
     ],
-    "sub": "Baca buku EPUB dan dokumen CHM dengan latar kertas, pengaturan huruf sesuai selera, pencarian, dan catatan.",
+    "sub": "Baca berkas EPUB, CHM, dan MHT di iPhone dan iPad. Cari lintas bab, sorot teks, dan tambahkan catatan. Transfer buku melalui Wi-Fi lokal dan baca secara offline.",
     "navAria": "Navigasi utama",
     "homeAria": "Beranda lazyapps",
     "selectAria": "Ganti bahasa",
@@ -672,19 +672,19 @@ export const CHMATE_LOCALES = {
     "videoLabel": "Pratinjau CHMate: rak buku, membaca, dan tema kertas",
     "videoFallback": "Browser Anda tidak mendukung video.",
     "storeLink": "Lihat CHMate di App Store.",
-    "featuresTitle": "Baca dengan cara Anda",
+    "featuresTitle": "Tipografi, pencarian, dan pustaka",
     "cards": [
       [
-        "Halaman yang terasa nyaman",
-        "Pilih latar kertas dan mode gelap. Sesuaikan font, jarak antarbaris, dan margin dengan kebiasaan membaca Anda."
+        "Font dan tema kertas",
+        "Pilih latar kertas atau mode gelap. Atur font, jarak baris, dan margin."
       ],
       [
-        "Simpan bagian yang berkesan",
-        "Cari di seluruh bab, sorot kutipan, dan tambahkan catatan. Kembali ke kata-kata yang ingin Anda ingat."
+        "Pencarian, sorotan, dan catatan",
+        "Cari lintas bab, sorot teks, dan tambahkan catatan. Kembali ke bagian yang ditandai."
       ],
       [
-        "Dari novel hingga buku panduan",
-        "Simpan file EPUB, CHM, dan MHT dalam satu perpustakaan. Kirim buku lewat Wi-Fi lokal dan baca tanpa koneksi internet."
+        "Transfer Wi-Fi dan membaca offline",
+        "Kelola berkas EPUB, CHM, dan MHT dalam satu pustaka. Transfer buku melalui Wi-Fi lokal dan baca offline."
       ]
     ],
     "promiseLines": [
@@ -699,7 +699,7 @@ export const CHMATE_LOCALES = {
       ". Cuplikan telah disunting dengan efek pudar dan penyesuaian volume."
     ],
     "trademark": "Apple dan logo Apple adalah merek dagang Apple Inc. App Store adalah merek layanan Apple Inc.",
-    "description": "Baca buku EPUB dan dokumen CHM dengan latar kertas, pengaturan huruf sesuai selera, pencarian, dan catatan. Unduh dan baca secara gratis."
+    "description": "Baca berkas EPUB, CHM, dan MHT di iPhone dan iPad. Cari lintas bab, sorot teks, dan tambahkan catatan. Transfer buku melalui Wi-Fi lokal dan baca secara offline."
   },
   "nl": {
     "htmlLang": "nl",
@@ -712,10 +712,10 @@ export const CHMATE_LOCALES = {
     "mediaLocale": "nl",
     "title": "CHMate — EPUB- en CHM-lezer voor iPhone en iPad",
     "headline": [
-      "Neem de tijd",
-      "om te lezen"
+      "Lees boeken",
+      "in EPUB en CHM"
     ],
-    "sub": "Lees EPUB-boeken en CHM-documenten met papierachtergronden, je eigen typografie, zoeken en notities.",
+    "sub": "Lees EPUB-, CHM- en MHT-bestanden op iPhone en iPad. Zoek door hoofdstukken, markeer tekst en maak notities. Zet boeken over via lokale wifi en lees offline.",
     "navAria": "Hoofdnavigatie",
     "homeAria": "lazyapps startpagina",
     "selectAria": "Taal wijzigen",
@@ -726,19 +726,19 @@ export const CHMATE_LOCALES = {
     "videoLabel": "CHMate-appvoorbeeld: boekenkast, lezen en papierthema’s",
     "videoFallback": "Je browser ondersteunt geen video.",
     "storeLink": "Bekijk CHMate in de App Store.",
-    "featuresTitle": "Lees op jouw manier",
+    "featuresTitle": "Typografie, zoeken en bibliotheek",
     "cards": [
       [
-        "Een pagina die prettig leest",
-        "Kies papierachtergronden en de donkere modus. Pas lettertypen, regelafstand en marges aan je leesgewoonten aan."
+        "Lettertypen en papierthema’s",
+        "Kies papierachtergronden of de donkere modus. Pas lettertype, regelafstand en marges aan."
       ],
       [
-        "Bewaar wat je raakt",
-        "Zoek door hoofdstukken, markeer een passage en voeg een notitie toe. Vind de woorden terug die je wilt onthouden."
+        "Zoeken, markeringen en notities",
+        "Zoek door hoofdstukken, markeer tekst en maak notities. Ga terug naar gemarkeerde passages."
       ],
       [
-        "Van romans tot naslagwerken",
-        "Bewaar EPUB-, CHM- en MHT-bestanden in één bibliotheek. Zet boeken over via lokale wifi en lees offline."
+        "Wifi-overdracht en offline lezen",
+        "Beheer EPUB-, CHM- en MHT-bestanden in één bibliotheek. Zet boeken over via lokale wifi en lees offline."
       ]
     ],
     "promiseLines": [
@@ -753,7 +753,7 @@ export const CHMATE_LOCALES = {
       ". Fragment bewerkt, met fades en aangepast volume."
     ],
     "trademark": "Apple en het Apple-logo zijn handelsmerken van Apple Inc. App Store is een dienstmerk van Apple Inc.",
-    "description": "Lees EPUB-boeken en CHM-documenten met papierachtergronden, je eigen typografie, zoeken en notities. Gratis downloaden en lezen."
+    "description": "Lees EPUB-, CHM- en MHT-bestanden op iPhone en iPad. Zoek door hoofdstukken, markeer tekst en maak notities. Zet boeken over via lokale wifi en lees offline."
   },
   "tr": {
     "htmlLang": "tr",
@@ -766,10 +766,10 @@ export const CHMATE_LOCALES = {
     "mediaLocale": "tr",
     "title": "CHMate — iPhone ve iPad için EPUB ve CHM Okuyucu",
     "headline": [
-      "Okumaya",
-      "zaman ayır"
+      "EPUB ve CHM",
+      "kitaplarını okuyun"
     ],
-    "sub": "EPUB kitaplarını ve CHM belgelerini kâğıt arka planları, kişisel yazı ayarları, arama ve notlarla okuyun.",
+    "sub": "iPhone ve iPad’de EPUB, CHM ve MHT dosyalarını okuyun. Bölümler arasında arayın, metni vurgulayın ve not ekleyin. Kitapları yerel Wi-Fi ile aktarın ve çevrimdışı okuyun.",
     "navAria": "Ana gezinme",
     "homeAria": "lazyapps ana sayfası",
     "selectAria": "Dili değiştir",
@@ -780,19 +780,19 @@ export const CHMATE_LOCALES = {
     "videoLabel": "CHMate uygulama önizlemesi: kitaplık, okuma ve kâğıt temaları",
     "videoFallback": "Tarayıcınız video oynatmayı desteklemiyor.",
     "storeLink": "CHMate’i App Store’da görün.",
-    "featuresTitle": "Kendi tarzınızda okuyun",
+    "featuresTitle": "Yazı ayarları, arama ve kitaplık",
     "cards": [
       [
-        "Size uygun bir sayfa",
-        "Kâğıt arka planlarını ve koyu modu seçin. Yazı tipini, satır aralığını ve kenar boşluklarını okuma alışkanlıklarınıza göre ayarlayın."
+        "Yazı tipleri ve kâğıt temaları",
+        "Kâğıt arka planlarını veya koyu modu seçin. Yazı tipini, satır aralığını ve kenar boşluklarını ayarlayın."
       ],
       [
-        "Güzel satırları saklayın",
-        "Bölümler arasında arama yapın, bir pasajı vurgulayın ve not ekleyin. Hatırlamak istediğiniz sözlere yeniden dönün."
+        "Arama, vurgulama ve notlar",
+        "Bölümler arasında arayın, metni vurgulayın ve not ekleyin. İşaretlediğiniz bölümlere dönün."
       ],
       [
-        "Romanlardan başvuru kitaplarına",
-        "EPUB, CHM ve MHT dosyalarını tek bir kitaplıkta toplayın. Kitapları yerel Wi-Fi üzerinden aktarın ve çevrimdışı okuyun."
+        "Wi-Fi aktarımı ve çevrimdışı okuma",
+        "EPUB, CHM ve MHT dosyalarını tek kitaplıkta yönetin. Kitapları yerel Wi-Fi ile aktarın ve çevrimdışı okuyun."
       ]
     ],
     "promiseLines": [
@@ -807,6 +807,6 @@ export const CHMATE_LOCALES = {
       ". Alıntı düzenlenmiş, ses geçişleri ve ses düzeyi ayarlanmıştır."
     ],
     "trademark": "Apple ve Apple logosu Apple Inc.’in ticari markalarıdır. App Store, Apple Inc.’in hizmet markasıdır.",
-    "description": "EPUB kitaplarını ve CHM belgelerini kâğıt arka planları, kişisel yazı ayarları, arama ve notlarla okuyun. İndirmek ve okumak ücretsiz."
+    "description": "iPhone ve iPad’de EPUB, CHM ve MHT dosyalarını okuyun. Bölümler arasında arayın, metni vurgulayın ve not ekleyin. Kitapları yerel Wi-Fi ile aktarın ve çevrimdışı okuyun."
   }
 };

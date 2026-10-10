@@ -1,0 +1,1 @@
+No must-fix blockers found. Main-app resources match all 57 language entries, with World Book’s `English`/`en` normalized to `en`. Archive checks pass for shared root assets, deduplication, locale folders, and README links. Sample READMEs accurately distinguish localized screenshots, shared English captures, and title-screen imagery.

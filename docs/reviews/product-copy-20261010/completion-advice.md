@@ -1,0 +1,6 @@
+Two substantive Press Kit omissions remain:
+
+- **World Book’s archival-data limitation is missing.** The [landing page](/Users/realazy/Projects/Sites/lazyapps/src/pages/world-book/index.astro:295) explicitly says the data is archived, not live, and figures may reference different years. The [press README](/Users/realazy/Projects/Sites/lazyapps/public/presskit/world-book/en/README.md) omits this qualification. Add it to the registry’s English/Chinese descriptions and regenerate.
+- **KeyHop’s compatibility requirements are missing.** The [landing copy](/Users/realazy/Projects/Sites/lazyapps/src/i18n/keyhop-locales.mjs:137) requires Apple silicon and macOS 26+, while the [press README](/Users/realazy/Projects/Sites/lazyapps/public/presskit/keyhop/en/README.md) says only “Mac.” Preserve these requirements in the registry and every localized README, including Italian.
+
+These affect what readers can reasonably infer about the products. Fix both before sign-off; no other substantive contradiction surfaced in the inspected copy.

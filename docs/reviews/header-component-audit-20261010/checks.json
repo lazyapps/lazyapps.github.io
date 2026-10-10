@@ -1,0 +1,49 @@
+{
+  "chmate": {
+    "beforeCleanup": {
+      "background": "rgb(248, 248, 246)",
+      "backgroundVideoOpacity": "0.26",
+      "blur": "blur(16px)",
+      "headerOpacity": "1",
+      "opacity": "1",
+      "rect": {
+        "bottom": 80,
+        "height": 80,
+        "left": 50,
+        "right": 1230,
+        "top": 0,
+        "width": 1180,
+        "x": 50,
+        "y": 0
+      },
+      "scrolled": true,
+      "y": 700
+    },
+    "scrolled": {
+      "background": "rgb(248, 248, 246)",
+      "blur": "none",
+      "border": "0px",
+      "opacity": "1",
+      "url": "http://127.0.0.1:4322/chmate/",
+      "y": 700,
+      "z": "1100"
+    },
+    "top": {
+      "background": "rgba(0, 0, 0, 0)",
+      "blur": "none",
+      "y": 0
+    }
+  },
+  "privacy": {
+    "top": {
+      "background": "rgba(0, 0, 0, 0)",
+      "y": 0
+    },
+    "scrolled": {
+      "background": "rgb(248, 248, 246)",
+      "blur": "none",
+      "opacity": "1",
+      "y": 40
+    }
+  }
+}

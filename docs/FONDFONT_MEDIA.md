@@ -834,6 +834,13 @@ wind as falling leaves. The canvas extends up to the header without moving or
 rescaling the road. Leaves therefore begin above the app logo. A soft masked
 backdrop blur follows the plume across the header and resets on scene disposal.
 
+After the shared-header migration (2026-10-10), sky expansion and leaf spawning
+use `.site-header__product` and observe `.site-header` for resize. Measure the
+stage in document coordinates and the product within the sticky header so a
+resize while scrolled cannot shrink the sky. Smoke renders behind the shared
+header, which is fully transparent at scrollY 0 and uses opaque page paper after scrolling;
+do not reintroduce the removed `.topbar__app` anchor.
+
 For the user's walking/turning feedback, pets now use real skinned armatures
 built in Blender, replacing the earlier rigid-joint runtime animation.
 `scripts/build-fondfont-pet-rig.py` produces the editable

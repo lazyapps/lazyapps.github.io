@@ -1,0 +1,69 @@
+{
+  "fill-specializations" : [
+    {
+      "value" : {
+        "automatic-gradient" : "extended-gray:1.00000,1.00000"
+      }
+    },
+    {
+      "appearance" : "dark",
+      "value" : {
+        "automatic-gradient" : "extended-gray:0.00000,1.00000"
+      }
+    }
+  ],
+  "groups" : [
+    {
+      "layers" : [
+        {
+          "fill" : {
+            "automatic-gradient" : "srgb:0.19067,0.55547,0.63416,1.00000"
+          },
+          "glass" : true,
+          "image-name" : "01-cyan-key.svg",
+          "name" : "01 Cyan App Key"
+        },
+        {
+          "fill" : {
+            "automatic-gradient" : "srgb:0.88323,0.21228,0.22852,1.00000"
+          },
+          "glass" : true,
+          "image-name" : "02-coral-key.svg",
+          "name" : "02 Coral App Key"
+        },
+        {
+          "fill" : {
+            "automatic-gradient" : "srgb:0.19272,0.59546,0.23752,1.00000"
+          },
+          "glass" : true,
+          "image-name" : "03-lime-key.svg",
+          "name" : "03 Lime App Key"
+        },
+        {
+          "fill" : {
+            "automatic-gradient" : "srgb:0.59275,0.32876,0.92861,1.00000"
+          },
+          "glass" : true,
+          "image-name" : "04-spacebar.svg",
+          "name" : "04 Spacebar"
+        }
+      ],
+      "lighting" : "individual",
+      "name" : "KeyHop Keys",
+      "shadow" : {
+        "kind" : "layer-color",
+        "opacity" : 0.35
+      },
+      "translucency" : {
+        "enabled" : true,
+        "value" : 0.08
+      }
+    }
+  ],
+  "supported-platforms" : {
+    "circles" : [
+      "watchOS"
+    ],
+    "squares" : "shared"
+  }
+}

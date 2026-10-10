@@ -1,0 +1,9 @@
+---
+import NativeAppIcon from './NativeAppIcon.astro';
+interface Props { base: string; asset: any; metadata: any; lang?: string; }
+const { base, asset, metadata, lang = 'en' } = Astro.props;
+---
+<figure class="asset" data-kind={asset.kind} lang={lang}>
+  <a class="asset-preview" href={base + asset.path} aria-label={asset.label}>{asset.kind === 'icon' ? <NativeAppIcon slug={base.split('/')[2]} size={180} alt={asset.label} /> : <img src={base + asset.path} alt={asset.label} width={metadata.width} height={metadata.height} loading="lazy" decoding="async" />}</a>
+  <figcaption class="asset-caption"><div class="asset-caption__heading"><h3>{asset.label}</h3><a href={base + asset.path} download aria-label={`${asset.label} · ${asset.path} ↓`}>↓ <span>{metadata.format}</span></a></div><p class="dimensions" dir="ltr">{metadata.width} × {metadata.height} · {asset.path}</p><p class="note">{asset.note}</p></figcaption>
+</figure>

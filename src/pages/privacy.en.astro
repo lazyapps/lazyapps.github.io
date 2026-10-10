@@ -9,7 +9,9 @@ import yiyanIconUrl from '$assets/img/yiyan-icon.png?url';
 import xvdlIconUrl from '$assets/img/xvdl-icon.png?url';
 import opengraphUrl from '$assets/img/opengraph.png?url';
 import SocialMeta from '../components/SocialMeta.astro';
+import SiteGrain from '../components/SiteGrain.astro';
 import SiteFooterBase from '../components/SiteFooterBase.astro';
+import SiteHeader from '../components/SiteHeader.astro';
 ---
 <!doctype html>
 <html lang="en">
@@ -94,22 +96,14 @@ section.doc.wrap{padding-top:clamp(8px,1.5vw,18px)}
 <body>
 
 
-<div class="grain" data-grain-animate="true"></div>
+<SiteGrain animated />
+
+<SiteHeader class="wrap" />
 
 <main>
 
   
   <section class="doc wrap">
-    <div class="topbar">
-      <nav class="mono topbar__nav" aria-label="Primary">
-        <a data-hover href="/" class="topbar__home" aria-label="Home"><span aria-hidden="true" class="topbar__home-dot"></span></a>
-      </nav>
-      
-      <div class="topbar__app">
-        <h2 class="dsp">lazyapps<i></i></h2>
-      </div>
-    </div>
-
     <div data-reveal-group data-stagger="110" data-distance="1.2em" data-start="top 94%">
       <h1 class="doc__h1 dsp">Privacy Policy</h1>
       <p class="doc__p">Your privacy is fundamental to how we build software. Our apps keep data primarily on your devices. Website analytics are described separately below.</p>
