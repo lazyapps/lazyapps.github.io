@@ -2,15 +2,15 @@
 
 - Sito del prodotto: [https://lazyapps.com/shheep/it/](https://lazyapps.com/shheep/it/)
 - Kit stampa: [https://lazyapps.com/shheep/presskit/#it](https://lazyapps.com/shheep/presskit/#it)
-- Piattaforma: Web · iPhone · iPad
-- Disponibilità: Gioca nel browser · iOS in arrivo
+- Piattaforma: iPhone · iPad
+- Disponibilità: Presto su App Store
 - Contatto stampa: [lazyapps.feedback@gmail.com](mailto:lazyapps.feedback@gmail.com)
 
 ## Informazioni sull’app
 
-Salta le staccionate, evita i pipistrelli e conta le pecore. Ogni notte c’è un nuovo percorso; punteggi e serie restano in questo browser. Presto su iPhone e iPad.
+Conta le pecore su iPhone e iPad
 
-Salta le staccionate, evita i pipistrelli e conta le pecore. Ogni notte c’è un nuovo percorso; punteggi e serie restano in questo browser. Presto su iPhone e iPad.
+Salta le staccionate, evita i pipistrelli e conta le pecore su un nuovo percorso ogni notte. Shheep arriverà presto su iPhone e iPad.
 
 Salta una staccionata e lei conta una pecora in più. Tieni premuto un po’ più a lungo per saltare più in alto. Quando arriva un pipistrello, abbassati o saltalo se vola basso.
 
@@ -18,11 +18,13 @@ Un nuovo percorso ogni notte. Torna alle stesse staccionate e agli stessi pipist
 
 Un ostacolo termina la partita. Ricomincia o condividi un biglietto della buonanotte con il numero di pecore contate.
 
-Punteggi e serie web sono salvati in questo browser. L’app iOS aggiunge classifiche Game Center, sfide e inviti agli amici. I record web e iOS non si sincronizzano.
+L’app per iPhone e iPad offre classifiche Game Center, sfide e inviti agli amici.
+
+I record della demo web restano in questo browser e non si sincronizzano con l’app.
 
 ## Link ufficiali
 
-- [Gioca nel browser](https://lazyapps.com/shheep/)
+- [Prova la demo web](https://lazyapps.com/shheep/)
 
 ## Immagini
 

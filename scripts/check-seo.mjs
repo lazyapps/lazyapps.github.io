@@ -73,7 +73,7 @@ for (const page of pages) {
     check(attr(game, 'data-language') === locale.htmlLang, 'Game default language must match the page');
     const h1 = page.nodes.find(node => node.tagName === 'h1');
     check(locale.headline.every(line => text(h1).includes(line)), 'Headline is not localized');
-    for (const [, body] of [...locale.cards, ...locale.details]) check(page.html.includes(body.replaceAll('&', '&amp;')), 'Missing translated page content');
+    for (const body of [...locale.cards.map(card => card[1]), locale.gameCenterCopy, locale.demoNote]) check(page.html.includes(body.replaceAll('&', '&amp;')), 'Missing translated page content');
   }
   if (localizedProduct.test(new URL(page.url).pathname)) {
     check(languageLinks.get(page.language) === page.canonical, 'Missing self hreflang');
@@ -112,8 +112,13 @@ for (const page of pages) {
     check(app.description === attr(meta(page, 'description'), 'content'), 'App description differs from page metadata');
     check(attr(meta(page, 'og:description'), 'content') === app.description, 'OG description differs from app metadata');
     check(attr(meta(page, 'og:title'), 'content') === text(titles[0]), 'OG title differs from page title');
-    check(app['@type'] === 'WebApplication' ? app.browserRequirements : app.downloadUrl, 'Missing browser requirements or download URL');
-    if (product.test(new URL(page.url).pathname) && page.url.startsWith(`${site}/shheep/`)) check(app.applicationCategory === 'GameApplication', 'Missing game application category');
+    if (page.url.startsWith(`${site}/shheep/`)) {
+      check(app['@type'] === 'SoftwareApplication' && app.operatingSystem === 'iOS, iPadOS', 'Shheep must describe the native iOS app');
+      check(app.applicationCategory === 'GameApplication', 'Missing game application category');
+      check(!app.downloadUrl && !app.browserRequirements, 'Upcoming native app must not claim an available download or browser platform');
+    } else {
+      check(app['@type'] === 'WebApplication' ? app.browserRequirements : app.downloadUrl, 'Missing browser requirements or download URL');
+    }
     check(!app.aggregateRating && !app.review && !app.offers, 'Unverified ratings/reviews/offers');
   }
   if (page.url === `${site}/`) {

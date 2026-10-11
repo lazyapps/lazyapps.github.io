@@ -54,10 +54,13 @@ export const pressKits = originals.map(kit => {
     if (kit.slug === 'chmate') description = [t.description, ...t.cards.map(card => card[1]), t.promiseCopy].map(plain).join('\n\n');
     if (kit.slug === 'fondfont') description = [t.description, ...t.features.map(feature => feature[1]), ...t.steps.map(step => step[1]), t.privacyCopy, t.faqs[1][1]].map(plain).join('\n\n');
     if (kit.slug === 'yiyan') { const copy = yiyanCopy[tag.toLowerCase()]; summary = copy.sub; description = [copy.sub, ...copy.cards.map(card => card[1]), ...copy.details.map(detail => detail[1].join(' '))].join('\n\n'); }
-    if (kit.slug === 'shheep') description = [t.description, ...t.cards.map(card => card[1]), t.details[3][1]].join('\n\n');
-    const category = ['chmate','fondfont','world-book'].includes(kit.slug) ? 'store' : kit.slug === 'yiyan' ? 'beta' : kit.slug === 'shheep' ? 'web' : 'mac';
-    const links = kit.links.map(link => ({url:link.url, label:link.url.includes('apps.apple.com') ? 'App Store' : link.url.includes('testflight.') ? g.links.beta : link.url.endsWith('/releases') ? g.links.download : link.url.includes('github.com') ? g.links.source : g.links.play}));
-    return { tag, displayName: g.name, name, summary, description, website: t?.selectedUrl ?? `/${kit.slug}/`, platform: kit.slug === 'shheep' ? 'Web · iPhone · iPad' : kit.platform[lang], availability: g.availability[category], links, assets: localeAssets(kit, tag, t), headings: g.headings, usage: g.usage };
+    if (kit.slug === 'shheep') {
+      summary = plain(t.title.split(' — ')[1]);
+      description = [t.description, ...t.cards.map(card => card[1]), t.gameCenterCopy, t.demoNote].join('\n\n');
+    }
+    const category = ['chmate','fondfont','world-book'].includes(kit.slug) ? 'store' : kit.slug === 'yiyan' ? 'beta' : kit.slug === 'shheep' ? 'upcoming' : 'mac';
+    const links = kit.links.map(link => ({url:link.url, label:link.url.includes('apps.apple.com') ? 'App Store' : link.url.includes('testflight.') ? g.links.beta : link.url.endsWith('/releases') ? g.links.download : link.url.includes('github.com') ? g.links.source : kit.slug === 'shheep' ? g.links.demo : g.links.play}));
+    return { tag, displayName: g.name, name, summary, description, website: t?.selectedUrl ?? `/${kit.slug}/`, platform: kit.platform[lang], availability: g.availability[category], links, assets: localeAssets(kit, tag, t), headings: g.headings, usage: g.usage };
   });
   // Identity is source bytes, so repeated artwork is stored once even for a subset of languages.
   const identities = new Map();

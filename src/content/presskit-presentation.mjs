@@ -21,7 +21,7 @@ export const pressPresentations = pressKits.map(kit => ({
     const copy = kit.locales.find(locale => locale.tag === tag);
     const marketing = Object.values(translations[kit.slug] ?? {}).find(locale => locale.htmlLang === tag);
     const chinese = tag === 'zh-Hans' ? kit.summary.zh : tag === 'zh-Hant' ? traditionalSummaries[kit.slug] : undefined;
-    const category = ['chmate', 'fondfont', 'world-book'].includes(kit.slug) ? 'store' : kit.slug === 'yiyan' ? 'beta' : kit.slug === 'shheep' ? 'web' : 'mac';
+    const category = ['chmate', 'fondfont', 'world-book'].includes(kit.slug) ? 'store' : kit.slug === 'yiyan' ? 'beta' : kit.slug === 'shheep' ? 'upcoming' : 'mac';
     const g = glossary[tag];
     return [tag, {
       name: copy?.name ?? kit.names.en,
@@ -31,7 +31,7 @@ export const pressPresentations = pressKits.map(kit => ({
       platform: copy?.platform ?? kit.platform.en,
       availability: g.availability[category],
       materialTag: materialLanguage(tag, kit.locales.map(locale => locale.tag)),
-      links: kit.links.map(link => ({ url: link.url, label: link.url.includes('apps.apple.com') ? 'App Store' : link.url.includes('testflight.') ? g.links.beta : link.url.endsWith('/releases') ? g.links.download : link.url.includes('github.com') ? g.links.source : g.links.play })),
+      links: kit.links.map(link => ({ url: link.url, label: link.url.includes('apps.apple.com') ? 'App Store' : link.url.includes('testflight.') ? g.links.beta : link.url.endsWith('/releases') ? g.links.download : link.url.includes('github.com') ? g.links.source : kit.slug === 'shheep' ? g.links.demo : g.links.play })),
     }];
   })),
 }));

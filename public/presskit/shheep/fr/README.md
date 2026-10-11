@@ -2,15 +2,15 @@
 
 - Site du produit: [https://lazyapps.com/shheep/fr/](https://lazyapps.com/shheep/fr/)
 - Dossier de presse: [https://lazyapps.com/shheep/presskit/#fr](https://lazyapps.com/shheep/presskit/#fr)
-- Plateforme: Web · iPhone · iPad
-- Disponibilité: Jouer dans le navigateur · iOS à venir
+- Plateforme: iPhone · iPad
+- Disponibilité: Bientôt sur l’App Store
 - Contact presse: [lazyapps.feedback@gmail.com](mailto:lazyapps.feedback@gmail.com)
 
 ## À propos de l’app
 
-Sautez les barrières, évitez les chauves-souris et comptez les moutons. Un nouveau parcours chaque nuit ; scores et séries restent dans ce navigateur. Bientôt sur iPhone et iPad.
+Comptez les moutons sur iPhone et iPad
 
-Sautez les barrières, évitez les chauves-souris et comptez les moutons. Un nouveau parcours chaque nuit ; scores et séries restent dans ce navigateur. Bientôt sur iPhone et iPad.
+Sautez les barrières, évitez les chauves-souris et comptez les moutons sur un nouveau parcours chaque nuit. Shheep arrive bientôt sur iPhone et iPad.
 
 Sautez une barrière et elle compte un mouton de plus. Maintenez un peu plus longtemps pour sauter plus haut. À l’arrivée d’une chauve-souris, baissez-vous ou sautez par-dessus si elle vole bas.
 
@@ -18,11 +18,13 @@ Un nouveau parcours chaque nuit. Retrouvez les mêmes barrières et chauves-sour
 
 Un obstacle touché met fin à la partie. Recommencez ou partagez une carte de bonne nuit avec le nombre de moutons comptés.
 
-Les scores et séries web sont enregistrés dans ce navigateur. L’app iOS ajoute les classements Game Center, les défis entre amis et les invitations. Les records web et iOS ne sont pas synchronisés.
+L’app pour iPhone et iPad propose les classements Game Center, les défis entre amis et les invitations.
+
+Les records de la démo web restent dans ce navigateur et ne sont pas synchronisés avec l’app.
 
 ## Liens officiels
 
-- [Jouer dans le navigateur](https://lazyapps.com/shheep/)
+- [Essayer la démo web](https://lazyapps.com/shheep/)
 
 ## Images
 

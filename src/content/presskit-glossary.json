@@ -23,7 +23,7 @@
       "store": "Available on the App Store",
       "mac": "Download for macOS",
       "beta": "Mac download · iPhone TestFlight beta",
-      "web": "Play in browser · iOS coming soon"
+      "upcoming": "Coming soon on the App Store"
     },
     "notes": {
       "icon": "Original native App icon, 1024 × 1024 PNG. Original artwork, proportions and transparency preserved.",
@@ -40,7 +40,8 @@
       "download": "Download / releases",
       "source": "Source code",
       "beta": "iPhone TestFlight beta",
-      "play": "Play in browser"
+      "play": "Play in browser",
+      "demo": "Try the web demo"
     }
   },
   "zh-Hans": {
@@ -67,7 +68,7 @@
       "store": "已在 App Store 上架",
       "mac": "提供 macOS 下载",
       "beta": "Mac 下载 · iPhone TestFlight 测试版",
-      "web": "可在浏览器游玩 · iOS 即将推出"
+      "upcoming": "即将登陆 App Store"
     },
     "notes": {
       "icon": "原版 App 图标，1024 × 1024 PNG。保留原版图案、比例与透明边角。",
@@ -84,7 +85,8 @@
       "download": "下载 / 发行版本",
       "source": "源代码",
       "beta": "iPhone TestFlight 测试版",
-      "play": "在浏览器中游玩"
+      "play": "在浏览器中游玩",
+      "demo": "网页试玩 Demo"
     }
   },
   "zh-Hant": {
@@ -111,7 +113,7 @@
       "store": "已在 App Store 上架",
       "mac": "提供 macOS 下載",
       "beta": "Mac 下載 · iPhone TestFlight 測試版",
-      "web": "可在瀏覽器遊玩 · iOS 即將推出"
+      "upcoming": "即將登陸 App Store"
     },
     "notes": {
       "icon": "原版 App 圖示，1024 × 1024 PNG。保留原版圖案、比例與透明邊角。",
@@ -128,7 +130,8 @@
       "download": "下載 / 發行版本",
       "source": "原始碼",
       "beta": "iPhone TestFlight 測試版",
-      "play": "在瀏覽器中遊玩"
+      "play": "在瀏覽器中遊玩",
+      "demo": "網頁試玩 Demo"
     }
   },
   "de": {
@@ -155,7 +158,7 @@
       "store": "Im App Store erhältlich",
       "mac": "Download für macOS",
       "beta": "Mac-Download · iPhone-TestFlight-Beta",
-      "web": "Im Browser spielen · iOS folgt"
+      "upcoming": "Bald im App Store"
     },
     "notes": {
       "icon": "Originales App-Symbol, 1024 × 1024 PNG. Grafik, Proportionen und Transparenz unverändert.",
@@ -172,7 +175,8 @@
       "download": "Download / Versionen",
       "source": "Quellcode",
       "beta": "iPhone-TestFlight-Beta",
-      "play": "Im Browser spielen"
+      "play": "Im Browser spielen",
+      "demo": "Web-Demo ausprobieren"
     }
   },
   "fr": {
@@ -199,7 +203,7 @@
       "store": "Disponible sur l’App Store",
       "mac": "Téléchargement pour macOS",
       "beta": "Téléchargement Mac · bêta iPhone TestFlight",
-      "web": "Jouer dans le navigateur · iOS à venir"
+      "upcoming": "Bientôt sur l’App Store"
     },
     "notes": {
       "icon": "Icône native originale, PNG 1024 × 1024. Dessin, proportions et transparence préservés.",
@@ -216,7 +220,8 @@
       "download": "Téléchargement / versions",
       "source": "Code source",
       "beta": "Bêta iPhone TestFlight",
-      "play": "Jouer dans le navigateur"
+      "play": "Jouer dans le navigateur",
+      "demo": "Essayer la démo web"
     }
   },
   "es": {
@@ -243,7 +248,7 @@
       "store": "Disponible en el App Store",
       "mac": "Descarga para macOS",
       "beta": "Descarga para Mac · beta de iPhone en TestFlight",
-      "web": "Juega en el navegador · iOS próximamente"
+      "upcoming": "Próximamente en el App Store"
     },
     "notes": {
       "icon": "Icono nativo original, PNG de 1024 × 1024. Conserva el diseño, las proporciones y la transparencia.",
@@ -260,7 +265,8 @@
       "download": "Descarga / versiones",
       "source": "Código fuente",
       "beta": "Beta de iPhone en TestFlight",
-      "play": "Jugar en el navegador"
+      "play": "Jugar en el navegador",
+      "demo": "Probar la demo web"
     }
   },
   "pt-BR": {
@@ -287,7 +293,7 @@
       "store": "Disponível na App Store",
       "mac": "Download para macOS",
       "beta": "Download para Mac · beta do iPhone no TestFlight",
-      "web": "Jogue no navegador · iOS em breve"
+      "upcoming": "Em breve na App Store"
     },
     "notes": {
       "icon": "Ícone nativo original, PNG 1024 × 1024. Arte, proporções e transparência preservadas.",
@@ -304,7 +310,8 @@
       "download": "Download / versões",
       "source": "Código-fonte",
       "beta": "Beta do iPhone no TestFlight",
-      "play": "Jogar no navegador"
+      "play": "Jogar no navegador",
+      "demo": "Experimentar a demo web"
     }
   },
   "pt": {
@@ -331,7 +338,7 @@
       "store": "Disponível na App Store",
       "mac": "Transferência para macOS",
       "beta": "Transferência para Mac · beta iPhone no TestFlight",
-      "web": "Jogar no navegador · iOS em breve"
+      "upcoming": "Em breve na App Store"
     },
     "notes": {
       "icon": "Ícone nativo original, PNG 1024 × 1024. Grafismo, proporções e transparência preservados.",
@@ -347,7 +354,8 @@
       "download": "Transferência / versões",
       "source": "Código-fonte",
       "beta": "Beta iPhone no TestFlight",
-      "play": "Jogar no navegador"
+      "play": "Jogar no navegador",
+      "demo": "Experimentar a demo web"
     }
   },
   "it": {
@@ -374,7 +382,7 @@
       "store": "Disponibile sull’App Store",
       "mac": "Download per macOS",
       "beta": "Download per Mac · beta iPhone su TestFlight",
-      "web": "Gioca nel browser · iOS in arrivo"
+      "upcoming": "Presto su App Store"
     },
     "notes": {
       "icon": "Icona nativa originale, PNG 1024 × 1024. Grafica, proporzioni e trasparenza preservate.",
@@ -390,7 +398,8 @@
       "download": "Download / versioni",
       "source": "Codice sorgente",
       "beta": "Beta iPhone su TestFlight",
-      "play": "Gioca nel browser"
+      "play": "Gioca nel browser",
+      "demo": "Prova la demo web"
     }
   },
   "ja": {
@@ -417,7 +426,7 @@
       "store": "App Store で公開中",
       "mac": "macOS 向けダウンロード",
       "beta": "Mac 向けダウンロード · iPhone TestFlight ベータ版",
-      "web": "ブラウザでプレイ可能 · iOS 版は近日公開"
+      "upcoming": "App Store にまもなく登場"
     },
     "notes": {
       "icon": "原版の App アイコン。1024 × 1024 PNG。図柄・比率・透明部分を保持。",
@@ -434,7 +443,8 @@
       "download": "ダウンロード / リリース",
       "source": "ソースコード",
       "beta": "iPhone TestFlight ベータ版",
-      "play": "ブラウザでプレイ"
+      "play": "ブラウザでプレイ",
+      "demo": "ウェブデモを試す"
     }
   },
   "ko": {
@@ -461,7 +471,7 @@
       "store": "App Store에서 제공 중",
       "mac": "macOS 다운로드",
       "beta": "Mac 다운로드 · iPhone TestFlight 베타",
-      "web": "브라우저에서 플레이 · iOS 출시 예정"
+      "upcoming": "App Store에 곧 출시"
     },
     "notes": {
       "icon": "원본 앱 아이콘, 1024 × 1024 PNG. 원본 그림, 비율, 투명 영역 유지.",
@@ -478,7 +488,8 @@
       "download": "다운로드 / 릴리스",
       "source": "소스 코드",
       "beta": "iPhone TestFlight 베타",
-      "play": "브라우저에서 플레이"
+      "play": "브라우저에서 플레이",
+      "demo": "웹 데모 체험"
     }
   },
   "ar": {
@@ -505,7 +516,7 @@
       "store": "متوفر في App Store",
       "mac": "تنزيل لنظام macOS",
       "beta": "تنزيل Mac · نسخة iPhone التجريبية عبر TestFlight",
-      "web": "العب في المتصفح · إصدار iOS قريبًا"
+      "upcoming": "قريبًا في App Store"
     },
     "notes": {
       "icon": "أيقونة التطبيق الأصلية بصيغة PNG بحجم 1024 × 1024. حُفظ الرسم والنسب والشفافية.",
@@ -522,7 +533,8 @@
       "download": "تنزيل / إصدارات",
       "source": "الشيفرة المصدرية",
       "beta": "نسخة iPhone التجريبية عبر TestFlight",
-      "play": "العب في المتصفح"
+      "play": "العب في المتصفح",
+      "demo": "جرّب العرض التوضيحي على الويب"
     }
   },
   "id": {
@@ -549,7 +561,7 @@
       "store": "Tersedia di App Store",
       "mac": "Unduh untuk macOS",
       "beta": "Unduhan Mac · beta iPhone melalui TestFlight",
-      "web": "Main di browser · iOS segera hadir"
+      "upcoming": "Segera hadir di App Store"
     },
     "notes": {
       "icon": "Ikon aplikasi asli, PNG 1024 × 1024. Gambar, proporsi, dan transparansi dipertahankan.",
@@ -565,7 +577,8 @@
       "download": "Unduhan / rilis",
       "source": "Kode sumber",
       "beta": "Beta iPhone melalui TestFlight",
-      "play": "Main di browser"
+      "play": "Main di browser",
+      "demo": "Coba demo web"
     }
   },
   "nl": {
@@ -592,7 +605,7 @@
       "store": "Beschikbaar in de App Store",
       "mac": "Download voor macOS",
       "beta": "Mac-download · iPhone-TestFlight-bèta",
-      "web": "Speel in de browser · iOS volgt"
+      "upcoming": "Binnenkort in de App Store"
     },
     "notes": {
       "icon": "Origineel app-icoon, 1024 × 1024 PNG. Ontwerp, verhoudingen en transparantie behouden.",
@@ -608,7 +621,8 @@
       "download": "Download / versies",
       "source": "Broncode",
       "beta": "iPhone-TestFlight-bèta",
-      "play": "Speel in de browser"
+      "play": "Speel in de browser",
+      "demo": "Probeer de webdemo"
     }
   },
   "tr": {
@@ -635,7 +649,7 @@
       "store": "App Store’da mevcut",
       "mac": "macOS için indir",
       "beta": "Mac indirme · iPhone TestFlight beta",
-      "web": "Tarayıcıda oyna · iOS yakında"
+      "upcoming": "Yakında App Store’da"
     },
     "notes": {
       "icon": "Orijinal uygulama simgesi, 1024 × 1024 PNG. Görsel, oranlar ve saydamlık korunmuştur.",
@@ -651,7 +665,8 @@
       "download": "İndirme / sürümler",
       "source": "Kaynak kodu",
       "beta": "iPhone TestFlight beta",
-      "play": "Tarayıcıda oyna"
+      "play": "Tarayıcıda oyna",
+      "demo": "Web demosunu dene"
     }
   },
   "ru": {
@@ -678,7 +693,7 @@
       "store": "Доступно в App Store",
       "mac": "Скачать для macOS",
       "beta": "Загрузка для Mac · бета iPhone в TestFlight",
-      "web": "Играйте в браузере · iOS скоро"
+      "upcoming": "Скоро в App Store"
     },
     "notes": {
       "icon": "Оригинальная иконка приложения, PNG 1024 × 1024. Рисунок, пропорции и прозрачность сохранены.",
@@ -695,7 +710,8 @@
       "download": "Загрузка / версии",
       "source": "Исходный код",
       "beta": "Бета iPhone в TestFlight",
-      "play": "Играть в браузере"
+      "play": "Играть в браузере",
+      "demo": "Попробовать веб-демо"
     }
   },
   "hi": {
@@ -722,7 +738,7 @@
       "store": "App Store पर उपलब्ध",
       "mac": "macOS के लिए डाउनलोड",
       "beta": "Mac डाउनलोड · iPhone TestFlight बीटा",
-      "web": "ब्राउज़र में खेलें · iOS जल्द आ रहा है"
+      "upcoming": "जल्द ही App Store पर"
     },
     "notes": {
       "icon": "मूल ऐप आइकन, 1024 × 1024 PNG। मूल चित्र, अनुपात और पारदर्शिता सुरक्षित हैं।",
@@ -739,7 +755,8 @@
       "download": "डाउनलोड / रिलीज़",
       "source": "स्रोत कोड",
       "beta": "iPhone TestFlight बीटा",
-      "play": "ब्राउज़र में खेलें"
+      "play": "ब्राउज़र में खेलें",
+      "demo": "वेब डेमो आज़माएँ"
     }
   }
 }

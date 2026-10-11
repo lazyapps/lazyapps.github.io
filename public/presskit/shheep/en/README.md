@@ -2,15 +2,15 @@
 
 - Website: [https://lazyapps.com/shheep/](https://lazyapps.com/shheep/)
 - Press Kit: [https://lazyapps.com/shheep/presskit/#en](https://lazyapps.com/shheep/presskit/#en)
-- Platform: Web · iPhone · iPad
-- Availability: Play in browser · iOS coming soon
+- Platform: iPhone · iPad
+- Availability: Coming soon on the App Store
 - Media contact: [lazyapps.feedback@gmail.com](mailto:lazyapps.feedback@gmail.com)
 
 ## About the app
 
-Jump over fences, duck under bats and count sheep. Play a new course each night; your scores and streaks stay in this browser. iPhone and iPad versions are coming soon.
+Count sheep on iPhone & iPad
 
-Jump over fences, duck under bats and count sheep. Play a new course each night; your scores and streaks stay in this browser. iPhone and iPad versions are coming soon.
+Jump over fences, duck under bats and count sheep on a new course each night. Shheep is coming soon to iPhone and iPad.
 
 Hop over a fence and she counts one more sheep. Hold a little longer to jump a little higher. When a bat flies by, duck down—or hop over it if it’s low.
 
@@ -18,11 +18,13 @@ A new course for every night. Come back for the same fences and bats, try to cou
 
 Hit an obstacle and the run ends. Start again or share a good-night card showing the number of sheep you counted.
 
-Web scores and streaks are saved in this browser. The iOS app adds Game Center leaderboards, friend challenges and invitations. Web and iOS records don’t sync.
+The iPhone and iPad app supports Game Center leaderboards, friend challenges and invitations.
+
+Web demo scores stay in this browser and do not sync with the app.
 
 ## Official links
 
-- [Play in browser](https://lazyapps.com/shheep/)
+- [Try the web demo](https://lazyapps.com/shheep/)
 
 ## Images
 

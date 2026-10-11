@@ -2,15 +2,15 @@
 
 - Sitio del producto: [https://lazyapps.com/shheep/es/](https://lazyapps.com/shheep/es/)
 - Kit de prensa: [https://lazyapps.com/shheep/presskit/#es](https://lazyapps.com/shheep/presskit/#es)
-- Plataforma: Web · iPhone · iPad
-- Disponibilidad: Juega en el navegador · iOS próximamente
+- Plataforma: iPhone · iPad
+- Disponibilidad: Próximamente en el App Store
 - Contacto de prensa: [lazyapps.feedback@gmail.com](mailto:lazyapps.feedback@gmail.com)
 
 ## Sobre la app
 
-Salta vallas, esquiva murciélagos y cuenta ovejas. Cada noche hay un recorrido nuevo; las puntuaciones y rachas se guardan en este navegador. Próximamente en iPhone y iPad.
+Cuenta ovejas en iPhone y iPad
 
-Salta vallas, esquiva murciélagos y cuenta ovejas. Cada noche hay un recorrido nuevo; las puntuaciones y rachas se guardan en este navegador. Próximamente en iPhone y iPad.
+Salta vallas, esquiva murciélagos y cuenta ovejas en un nuevo recorrido cada noche. Shheep llegará pronto a iPhone y iPad.
 
 Salta una valla y ella contará otra oveja. Mantén pulsado un poco más para saltar más alto. Cuando llegue un murciélago, agáchate o sáltalo si vuela bajo.
 
@@ -18,11 +18,13 @@ Un recorrido nuevo cada noche. Vuelve a las mismas vallas y murciélagos, cuenta
 
 Chocar con un obstáculo termina la partida. Empieza de nuevo o comparte una tarjeta de buenas noches con las ovejas que contaste.
 
-Las puntuaciones y rachas web se guardan en este navegador. La app para iOS añade clasificaciones de Game Center, retos e invitaciones a amigos. Los registros web y de iOS no se sincronizan.
+La app para iPhone y iPad ofrece clasificaciones de Game Center, retos e invitaciones a amigos.
+
+Los récords de la demo web se guardan en este navegador y no se sincronizan con la app.
 
 ## Enlaces oficiales
 
-- [Jugar en el navegador](https://lazyapps.com/shheep/)
+- [Probar la demo web](https://lazyapps.com/shheep/)
 
 ## Imágenes
 

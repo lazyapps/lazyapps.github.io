@@ -433,26 +433,26 @@
     "slug": "shheep",
     "name": "Shheep",
     "platform": {
-      "en": "Web · iPhone / iPad (coming soon)",
-      "zh": "网页 · iPhone / iPad（即将推出）"
+      "en": "iPhone · iPad",
+      "zh": "iPhone · iPad"
     },
     "availability": {
-      "en": "Play in your browser · iOS coming soon",
-      "zh": "可在浏览器游玩 · iOS 即将推出"
+      "en": "Coming soon on the App Store",
+      "zh": "即将登陆 App Store"
     },
     "summary": {
-      "en": "A browser game: jump fences, dodge bats and count sheep on a new course each night.",
-      "zh": "浏览器数羊游戏：跳栅栏、躲蝙蝠，每晚挑战新路线。"
+      "en": "Jump over fences, duck under bats and count sheep on a new course each night. Shheep is coming soon to iPhone and iPad.",
+      "zh": "跳过栅栏，低头躲开蝙蝠，每晚挑战新路线。Shheep 即将登陆 iPhone 和 iPad。"
     },
     "description": {
-      "en": "Hop over a fence and she counts one more sheep. Hold a little longer to jump a little higher. When a bat flies by, duck down—or hop over it if it’s low.\n\nA new course for every night. Come back for the same fences and bats, try to count a few more, and keep your nightly streak going. Past midnight? It’s still the same night until noon.\n\nHit an obstacle and the run ends. Start again or share a good-night card showing the number of sheep you counted.\n\nWeb scores and streaks are saved in this browser. The iOS app adds Game Center leaderboards, friend challenges and invitations. Web and iOS records don’t sync.",
-      "zh": "跳过一道栅栏，她就多数一只羊。按住久一点，就能跳得高一点。蝙蝠飞来时低头躲过；飞得低的话，也可以跳过去。\n\n每晚都有新路线。回来挑战相同的栅栏和蝙蝠，试着多放过几只羊，让连续游玩的纪录延续下去。过了午夜？中午之前都算同一个夜晚。\n\n碰到障碍物后本局结束。可重新开始，也可把数羊成绩做成晚安卡片分享。\n\n网页版的成绩和连续游玩纪录保存在当前浏览器中。iOS App 还支持 Game Center 排行榜、好友挑战和邀请。网页版与 iOS 的纪录不会同步。"
+      "en": "Jump over fences, duck under bats and count sheep on a new course each night. Shheep is coming soon to iPhone and iPad.\n\nThe iPhone and iPad app supports Game Center leaderboards, friend challenges and invitations.\n\nWeb demo scores stay in this browser and do not sync with the app.",
+      "zh": "跳过栅栏，低头躲开蝙蝠，每晚挑战新路线。Shheep 即将登陆 iPhone 和 iPad。\n\niPhone 和 iPad App 支持 Game Center 排行榜、好友挑战和邀请。\n\n网页试玩成绩仅保存在当前浏览器，不与 App 同步。"
     },
     "links": [
       {
         "label": {
-          "en": "Play in browser",
-          "zh": "在浏览器中游玩"
+          "en": "Product website · Web demo",
+          "zh": "产品网站 · 网页试玩 Demo"
         },
         "url": "/shheep/"
       }

@@ -1,8 +1,7 @@
 ---
 import SocialMeta from './SocialMeta.astro';
 import StructuredData from './StructuredData.astro';
-// App Store launch: restore the native app metadata and download badge below.
-// import SoftwareApplication from './SoftwareApplication.astro';
+// App Store launch: restore the download badge and Smart App Banner below.
 import SiteGrain from './SiteGrain.astro';
 import SiteFooterBase from './SiteFooterBase.astro';
 import ShheepGame from './ShheepGame.astro';
@@ -51,16 +50,12 @@ const fontNotices = [
   {locales.map(locale => <link rel="alternate" hreflang={locale.htmlLang} href={`https://lazyapps.com${locale.selectedUrl}`} />)}
   <link rel="alternate" hreflang="x-default" href="https://lazyapps.com/shheep/">
   {locales.filter(locale => locale.htmlLang !== t.htmlLang).map(locale => <meta property="og:locale:alternate" content={locale.ogLocale} />)}
-  {/* <SoftwareApplication name="Shheep" description={description} url={pageURL}
-    language={t.htmlLang} operatingSystem="iOS, iPadOS" applicationCategory="GameApplication"
-    downloadUrl={storeURL} image="https://lazyapps.com/shheep/opengraph.png" /> */}
   <StructuredData data={{
     '@context': 'https://schema.org',
-    '@type': 'WebApplication',
-    '@id': `${pageURL}#game`,
+    '@type': 'SoftwareApplication',
+    '@id': `${pageURL}#app`,
     name: 'Shheep', description, url: pageURL, inLanguage: t.htmlLang,
-    applicationCategory: 'GameApplication', operatingSystem: 'Any',
-    browserRequirements: t.browserRequirements,
+    applicationCategory: 'GameApplication', operatingSystem: 'iOS, iPadOS',
     image: 'https://lazyapps.com/shheep/opengraph.png',
     publisher: { '@type': 'Organization', name: 'lazyapps', url: 'https://lazyapps.com/' },
   }} />
@@ -97,7 +92,7 @@ const fontNotices = [
     <section class="phero wrap" aria-labelledby="shheep-title">
 
       <h1 class="phero__h1 dsp" id="shheep-title"><span class="sr-only">Shheep — </span>{t.headline[0]}<br>{t.headline[1]}</h1>
-      <div class="phero__intro"><p class="phero__sub">{t.sub}</p><a class="mono hero-how" href="#how-to-play">{t.howTo} ↘</a></div>
+      <div class="phero__intro"><p class="phero__sub">{t.sub}</p></div>
       <ShheepGame language={t.htmlLang} />
       <div class="phero__cta">
         {/* <a href={storeURL} class="app-store-badge">
@@ -131,10 +126,9 @@ const fontNotices = [
     </section>
 
     <section class="details wrap" aria-labelledby="details-title">
-      <h2 class="dsp" id="details-title">{t.detailsTitle}</h2>
-      <dl class="details__grid">
-        {t.details.map(([heading, body]) => <div><dt>{heading}</dt><dd>{body}</dd></div>)}
-      </dl>
+      <h2 class="dsp" id="details-title">Game Center</h2>
+      <p>{t.gameCenterCopy}</p>
+      <p class="details__note">{t.demoNote}</p>
     </section>
   </main>
   <footer class="wrap shheep-footer">
@@ -183,10 +177,9 @@ const fontNotices = [
   .skip-link{position:fixed;top:12px;left:12px;z-index:1000;padding:12px 18px;background:var(--ink);color:var(--paper);border-radius:8px;transform:translateY(calc(-100% - 24px))}
   .skip-link:focus{transform:translateY(0)}
   .phero{padding-top:clamp(8px,1.5vw,18px)}
-  .hero-how{flex-shrink:0;white-space:nowrap;font-size:10px;min-height:44px;display:inline-flex;align-items:center}
-  .phero__intro{display:flex;align-items:center;justify-content:center;gap:18px;margin-top:22px}
+  .phero__intro{margin-top:22px}
   .phero__h1{margin:clamp(28px,4vw,56px) auto 0;font-size:clamp(48px,7.3vw,104px);text-align:center;max-width:100%;overflow-wrap:anywhere;text-wrap:balance}
-  .phero__sub{min-width:0;margin:0;font-size:1.0625rem;color:var(--muted);text-align:center;text-wrap:balance}
+  .phero__sub{min-width:0;margin:0 auto;font-size:1.0625rem;color:var(--muted);text-align:center;text-wrap:balance}
   .phero__cta{display:flex;justify-content:center;margin-top:24px}
   .app-store-badge{display:inline-block;border-radius:7px}
   .app-store-badge svg{display:block;width:auto;height:48px}
@@ -206,9 +199,9 @@ const fontNotices = [
   .scene-moon{width:68px;right:14%;top:0}.scene-town{width:100%;bottom:24px}.scene-cloud{width:100%;bottom:-4px;max-height:80px}
   .scene-night{position:absolute;left:7%;top:12%;font:15px ShheepLatin,var(--mono);color:#4a2e5e}
   .dream-card__scene--wake img{width:226px;right:10%;bottom:0}.dream-card__scene--wake span{position:absolute;left:12%;top:12%;color:#9ed1ff;font:22px ShheepLatin,var(--mono);transform:rotate(-8deg)}
-  .details{padding-top:var(--space-section)}.details>h2{overflow-wrap:anywhere;font-size:clamp(38px,5vw,70px);margin-top:18px}
-  .details__grid{display:grid;grid-template-columns:1fr 1fr;gap:32px 48px;margin-top:36px}
-  .details__grid dt{font-weight:600;margin-bottom:10px;font-size:1.0625rem}.details__grid dd{font-size:.9375rem;line-height:1.8;color:var(--muted)}
+  .details{padding-top:clamp(32px,4vw,64px)}.details>h2{overflow-wrap:anywhere;font-size:clamp(28px,3vw,44px);margin:0 0 16px}
+  .details p{max-width:64ch;font-size:1rem;line-height:1.6}
+  .details .details__note{margin-top:16px;font-size:.8rem;color:var(--muted)}
   .shheep-footer{margin-top:var(--space-section)}.footer-sheep{width:94px;height:80px;image-rendering:pixelated;margin:0 auto 24px}
   .licenses{grid-column:1/-1;width:100%;max-width:680px;margin:10px auto 0;color:var(--muted);font:13px/1.7 var(--sans);text-align:left}
   .licenses[hidden]{display:none}
@@ -222,6 +215,5 @@ const fontNotices = [
   .licenses__content a{text-decoration:underline;text-underline-offset:3px}
   .next__q{overflow-wrap:anywhere;text-wrap:balance}
   .footer-credits{grid-column:1/-1;justify-self:center;max-width:68ch;font:400 .6667rem/1.4 var(--sans);text-transform:uppercase;letter-spacing:.04em;color:var(--muted);margin-top:28px;text-align:center}.footer-credits a:hover{text-decoration:underline}
-  @media(max-width:700px){.dream-card__grid{grid-template-columns:1fr}.dream-card__scene{min-height:210px}.details__grid{grid-template-columns:1fr}.phero__h1{font-size:clamp(44px,9vw,66px)}.dream-card__scene--wake img{right:20%}}
-  @media(max-width:560px){.phero__intro{flex-direction:column;gap:0}}
+  @media(max-width:700px){.dream-card__grid{grid-template-columns:1fr}.dream-card__scene{min-height:210px}.phero__h1{font-size:clamp(44px,9vw,66px)}.dream-card__scene--wake img{right:20%}}
 </style>

@@ -2,15 +2,15 @@
 
 - Site do produto: [https://lazyapps.com/shheep/pt-br/](https://lazyapps.com/shheep/pt-br/)
 - Kit de imprensa: [https://lazyapps.com/shheep/presskit/#pt-BR](https://lazyapps.com/shheep/presskit/#pt-BR)
-- Plataforma: Web · iPhone · iPad
-- Disponibilidade: Jogue no navegador · iOS em breve
+- Plataforma: iPhone · iPad
+- Disponibilidade: Em breve na App Store
 - Contato de imprensa: [lazyapps.feedback@gmail.com](mailto:lazyapps.feedback@gmail.com)
 
 ## Sobre o app
 
-Pule cercas, desvie de morcegos e conte ovelhas. Há um percurso novo a cada noite; pontuações e sequências ficam neste navegador. Em breve no iPhone e iPad.
+Conte ovelhas no iPhone e iPad
 
-Pule cercas, desvie de morcegos e conte ovelhas. Há um percurso novo a cada noite; pontuações e sequências ficam neste navegador. Em breve no iPhone e iPad.
+Pule cercas, desvie de morcegos e conte ovelhas em um percurso novo a cada noite. Shheep chega em breve ao iPhone e iPad.
 
 Pule uma cerca e ela conta mais uma ovelha. Segure um pouco mais para pular mais alto. Quando vier um morcego, abaixe-se ou pule por cima se ele voar baixo.
 
@@ -18,11 +18,13 @@ Um percurso novo a cada noite. Volte às mesmas cercas e morcegos, tente contar 
 
 Bater em um obstáculo encerra a partida. Recomece ou compartilhe um cartão de boa noite com a quantidade de ovelhas que contou.
 
-As pontuações e sequências da web ficam salvas neste navegador. O app para iOS inclui placares do Game Center, desafios e convites para amigos. Os registros da web e do iOS não são sincronizados.
+O app para iPhone e iPad oferece placares do Game Center, desafios e convites para amigos.
+
+Os recordes da demo web ficam neste navegador e não são sincronizados com o app.
 
 ## Links oficiais
 
-- [Jogar no navegador](https://lazyapps.com/shheep/)
+- [Experimentar a demo web](https://lazyapps.com/shheep/)
 
 ## Imagens
 

@@ -2,15 +2,15 @@
 
 - 製品サイト: [https://lazyapps.com/shheep/ja/](https://lazyapps.com/shheep/ja/)
 - プレスキット: [https://lazyapps.com/shheep/presskit/#ja](https://lazyapps.com/shheep/presskit/#ja)
-- 対応環境: Web · iPhone · iPad
-- 提供状況: ブラウザでプレイ可能 · iOS 版は近日公開
+- 対応環境: iPhone · iPad
+- 提供状況: App Store にまもなく登場
 - メディアお問い合わせ: [lazyapps.feedback@gmail.com](mailto:lazyapps.feedback@gmail.com)
 
 ## アプリについて
 
-柵を跳び越え、コウモリを避けて羊を数えるゲーム。毎晩新しいコースに挑戦でき、スコアと連続プレイ記録はこのブラウザに保存されます。iPhone・iPad 版は近日公開。
+iPhone・iPad で遊ぶ羊のジャンプゲーム
 
-柵を跳び越え、コウモリを避けて羊を数えるゲーム。毎晩新しいコースに挑戦でき、スコアと連続プレイ記録はこのブラウザに保存されます。iPhone・iPad 版は近日公開。
+柵を跳び越え、コウモリを避けて羊を数えよう。毎晩新しいコースに挑戦。Shheep は iPhone・iPad 向けに近日公開。
 
 柵を一つ跳び越えると、羊が一匹増えます。長く押すと、少し高くジャンプ。コウモリが来たらかがんでよけよう。低く飛んでいたら跳び越えても大丈夫。
 
@@ -18,11 +18,13 @@
 
 障害物に当たると終了。再挑戦するか、数えた羊の数をおやすみカードにして共有できます。
 
-ブラウザ版のスコアと連続プレイ記録は、このブラウザに保存されます。iOS 版では Game Center のランキング、友達へのチャレンジや招待も利用できます。ブラウザ版と iOS 版の記録は同期されません。
+iPhone・iPad アプリは Game Center のランキング、友達へのチャレンジや招待に対応。
+
+ウェブデモの記録はこのブラウザだけに保存され、アプリとは同期されません。
 
 ## 公式リンク
 
-- [ブラウザでプレイ](https://lazyapps.com/shheep/)
+- [ウェブデモを試す](https://lazyapps.com/shheep/)
 
 ## 画像素材
 
