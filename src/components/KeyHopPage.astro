@@ -8,7 +8,8 @@ const { t, code } = Astro.props;
 const SITE = 'https://lazyapps.com';
 
 import SocialMeta from './SocialMeta.astro';
-import SoftwareApplication from './SoftwareApplication.astro';
+import StructuredData from './StructuredData.astro';
+import { KEYHOP_STATUS } from '../i18n/keyhop-status.mjs';
 import LanguagePicker from './LanguagePicker.astro';
 import SiteHeader from './SiteHeader.astro';
 import SiteGrain from './SiteGrain.astro';
@@ -41,8 +42,9 @@ const film = filmCopy[filmLocale];
 const heroVideoUrl = '/v/keyhop/hero-v4.mp4';
 const heroVideoPoster = '/v/keyhop/hero-v4.jpg';
 
-const releaseUrl = 'https://github.com/cxa/keyhop/releases';
-const notesUrl = 'https://github.com/cxa/keyhop/blob/main/RELEASE_NOTES.md';
+const repositoryUrl = 'https://github.com/cxa/keyhop';
+const [statusHeading, statusDescription] = KEYHOP_STATUS[t.htmlLang];
+const title = `${t.title.split(' — ')[0]} — ${statusHeading}`;
 const layoutLabel = t.layoutAria ?? 'Keyboard layout';
 const modifierLabel = t.modifierAria ?? 'Leader modifier';
 const demoApps = [
@@ -93,14 +95,14 @@ const socialImageUrl = {
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-  <title>{t.title}</title>
-  <meta name="description" content={t.description}>
+  <title>{title}</title>
+  <meta name="description" content={statusDescription}>
   <meta name="theme-color" content="#171717" data-page-color="#e8e8e6">
   <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#171717" data-page-color="#e8e8e6">
   {alternates.map(([hreflang, path]) => <link rel="alternate" hreflang={hreflang} href={`${SITE}/keyhop/${path}`} />)}
   <SocialMeta
-    title={t.ogTitle}
-    description={t.ogDesc}
+    title={title}
+    description={statusDescription}
     url={t.canonical}
     image={`${SITE}${socialImageUrl}`}
     imageAlt={t.ogTitle}
@@ -108,7 +110,10 @@ const socialImageUrl = {
     imageHeight={630}
     locale={ogLocales[code] ?? 'en_US'}
   />
-  <SoftwareApplication name={t.title.split(' — ')[0]} description={t.description} url={t.canonical} language={t.htmlLang} operatingSystem="macOS" downloadUrl={releaseUrl} image={`${SITE}${keyhopIconUrl}`} />
+  <StructuredData data={{
+    '@context': 'https://schema.org', '@type': 'WebPage',
+    name: title, description: statusDescription, url: t.canonical, inLanguage: t.htmlLang,
+  }} />
   <link rel="icon" type="image/png" href={keyhopIconUrl}>
   <link rel="stylesheet" href={siteCssUrl}>
   <script is:inline>
@@ -227,6 +232,9 @@ const socialImageUrl = {
     .brew pre{margin:0;font:400 .875rem/1.9 var(--mono);white-space:pre-wrap;word-break:break-all}.brew pre .p{opacity:.45}
     .brew a.brew__download{white-space:normal;overflow-wrap:anywhere;text-decoration-line:underline;text-decoration-color:color-mix(in srgb,currentColor 48%,transparent);text-decoration-thickness:.0625em;text-underline-offset:.2em;text-decoration-skip-ink:auto}
     .brew__download:hover{text-decoration-color:currentColor}
+    .archive-notice{margin-top:32px;padding:28px;border:1px solid var(--line);border-radius:var(--r-card);background:oklch(0.92 0.14 95)}
+    .archive-notice h2{font:600 1.1rem/1.4 var(--sans);margin:0 0 12px;text-wrap:balance}
+    .archive-notice a{font:600 .8rem/1.5 var(--sans);text-decoration:underline;text-underline-offset:.2em}
     .keyhop-footer__inner{margin-top:var(--space-grid);border-top:1px solid var(--line);padding-top:28px}
     .keyhop-footer__notices{display:grid;gap:8px;max-width:68ch;margin-inline:auto;text-align:center;color:var(--muted);font:400 .6667rem/1.4 var(--sans);text-transform:uppercase;letter-spacing:.04em}
     .keyhop-footer__notices p{max-width:68ch;line-height:inherit}
@@ -257,6 +265,10 @@ const socialImageUrl = {
 
       <div data-reveal-group data-stagger="110" data-distance="1.2em" data-start="top 94%">
         <h1 class="phero__h1 dsp"><Fragment set:html={t.h1} /></h1>
+        <aside class="archive-notice" aria-labelledby="archive-heading" data-keyhop-archived>
+          <h2 id="archive-heading">{statusHeading}</h2>
+          <a data-hover href={repositoryUrl} lang="en" dir="ltr">GitHub · Archived ↗</a>
+        </aside>
         <figure class="hero-film">
           <video id="keyhop-story-video" data-keyhop-hero-video aria-label={film.label} poster={heroVideoPoster}
             preload="metadata" muted loop playsinline controls>
@@ -282,16 +294,6 @@ const socialImageUrl = {
           </div>
         </figure>
         <p class="phero__sub"><Fragment set:html={t.sub} /></p>
-        <div class="phero__cta">
-          <a data-hover href={releaseUrl} class="button-023">
-            <span class="button-023__bg"><span style="--index:0" class="button-023__bg-inner is--first"></span><span style="--index:1" class="button-023__bg-inner is--second"></span></span>
-            <span class="button-023__inner"><span class="button-023__text is--first">{t.cta[0]}</span><span aria-hidden="true" class="button-023__text is--second">{t.cta[0]}</span></span>
-          </a>
-          <a data-hover href="#homebrew" class="button-023 button-023--ghost">
-            <span class="button-023__bg"><span style="--index:0" class="button-023__bg-inner is--first"></span><span style="--index:1" class="button-023__bg-inner is--second"></span></span>
-            <span class="button-023__inner"><span class="button-023__text is--first">Homebrew</span><span aria-hidden="true" class="button-023__text is--second">Homebrew</span></span>
-          </a>
-        </div>
       </div>
     </section>
 
@@ -364,23 +366,11 @@ const socialImageUrl = {
   </main>
 
   <footer class="wrap">
-    <section class="next" data-reveal-group data-stagger="110" data-distance="1.4em" data-start="top 88%">
-      <img class="next__plate next__plate--icon" src={keyhopIconUrl} alt="">
-      <div class="next__act"><a data-hover href={notesUrl} class="button-023 button-023--square">
-        <span class="button-023__bg"><span style="--index:0" class="button-023__bg-inner is--first"></span><span style="--index:1" class="button-023__bg-inner is--second"></span></span>
-        <span class="button-023__inner"><span class="button-023__text is--first">{t.cta[1]}</span><span aria-hidden="true" class="button-023__text is--second">{t.cta[1]}</span></span>
-      </a></div>
-    </section>
-    <div class="brew" id="homebrew" data-reveal-group data-stagger="100" data-distance="1.2em" data-start="top 94%">
-      <h3 class="dsp"><Fragment set:html={t.brew.h3} /></h3>
-      <pre dir="ltr"><Fragment set:html={t.brew.install} /></pre>
-      <p class="bounds__a">{t.brew.p} <a class="brew__download" href={releaseUrl}>{t.brew.dmg}</a>{t.brew.dmgEnd}</p>
-    </div>
     <div class="keyhop-footer__inner">
       <div class="keyhop-footer__notices">
         <p>{film.musicLabel}: <a href="https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1400011" lang="en" dir="ltr">“Monkeys Spinning Monkeys” — Kevin MacLeod</a> · <a href="https://creativecommons.org/licenses/by/4.0/" lang="en" dir="ltr">CC BY 4.0</a> · {film.musicEdit}</p>
       </div>
-      <SiteFooterBase locale={t.htmlLang} pressKit="/keyhop/presskit/" />
+      <SiteFooterBase locale={t.htmlLang} pressKit={false} />
     </div>
   </footer>
 

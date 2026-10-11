@@ -4,12 +4,14 @@ import { readFile } from 'node:fs/promises';
 import { join } from 'node:path';
 import { attr, text, readPages, dist, site } from './lib/seo.mjs';
 import { SHHEEP_LOCALES } from '../src/i18n/shheep-locales.mjs';
+import { KEYHOP_LOCALES } from '../src/i18n/keyhop-locales.mjs';
+import { KEYHOP_STATUS } from '../src/i18n/keyhop-status.mjs';
 
 const pages = await readPages();
 assert(pages.length > 0, 'No built pages. Run npm run build first.');
 const byUrl = new Map(pages.map(page => [page.url, page]));
 const knownAliases = new Map([[`${site}/fondfont/`, `${site}/fondfont/en/`]]);
-const product = /^\/(chmate|fondfont|keyhop|yiyan|world-book|xvdl|shheep)\/(?:[a-z]{2}(?:-[a-z]+)?\/)?$/;
+const product = /^\/(chmate|fondfont|yiyan|world-book|xvdl|shheep)\/(?:[a-z]{2}(?:-[a-z]+)?\/)?$/;
 const localizedProduct = /^\/(chmate|fondfont|keyhop|yiyan|shheep)\/(?:[a-z]{2}(?:-[a-z]+)?\/)?$/;
 const meta = (page, key) => page.metas.find(node => attr(node, 'name') === key || attr(node, 'property') === key);
 const shheepLocales = Object.values(SHHEEP_LOCALES);
@@ -17,9 +19,28 @@ assert.deepEqual(shheepLocales.map(locale => locale.htmlLang).sort(), ['en', 'zh
 assert.equal(new Set(shheepLocales.map(locale => locale.title)).size, 11, 'Shheep titles must be translated');
 assert.equal(new Set(shheepLocales.map(locale => locale.description)).size, 11, 'Shheep descriptions must be translated');
 for (const locale of shheepLocales) assert(byUrl.has(`${site}${locale.selectedUrl}`), `Missing Shheep locale page: ${locale.htmlLang}`);
+const retiredRedirects = new Map([[`${site}/keyhop/presskit/`, `${site}/keyhop/`]]);
+for (const [url, target] of retiredRedirects) {
+  const page = byUrl.get(url);
+  assert(page?.redirectTo && new URL(page.redirectTo, url).href === target && page.noindex, `Missing retired page redirect: ${url}`);
+}
+for (const locale of Object.values(KEYHOP_LOCALES)) {
+  const page = byUrl.get(`${site}${locale.selectedUrl}`);
+  assert(page, `Missing KeyHop archive: ${locale.htmlLang}`);
+  const notice = page.nodes.find(node => attr(node, 'data-keyhop-archived') !== undefined);
+  assert(notice && text(notice).includes(KEYHOP_STATUS[locale.htmlLang][0]), `Missing localized retirement notice: ${locale.htmlLang}`);
+  assert(page.nodes.some(node => node.tagName === 'a' && attr(node, 'href') === 'https://github.com/cxa/keyhop' && text(node).includes('Archived')), 'Missing archived GitHub link');
+  assert(!page.html.includes('brew install') && !page.html.includes('https://github.com/cxa/keyhop/releases'), 'Retired KeyHop must not promote installation');
+  assert(!page.nodes.some(node => node.tagName === 'a' && attr(node, 'data-press-route') !== undefined), 'KeyHop archive footer must not link to a Press Kit');
+}
 
 for (const page of pages) {
   const check = (condition, message) => assert(condition, `${page.url}: ${message}`);
+  if (page.redirectTo) {
+    check(new URL(page.redirectTo, page.url).href === retiredRedirects.get(page.url), 'Unexpected redirect');
+    check(byUrl.has(retiredRedirects.get(page.url)), 'Redirect target is not built');
+    continue;
+  }
   check(page.links.filter(node => attr(node, 'rel') === 'canonical').length === 1, 'Expected one canonical');
   check(byUrl.has(page.canonical), `Canonical target is not built: ${page.canonical}`);
   check(page.canonical === (knownAliases.get(page.url) ?? page.url), 'Unexpected canonical alias');
@@ -78,6 +99,12 @@ for (const page of pages) {
   }
 
   const jsonLd = page.nodes.filter(node => node.tagName === 'script' && attr(node, 'type') === 'application/ld+json').map(node => JSON.parse(text(node)));
+  if (page.url.startsWith(`${site}/keyhop/`)) {
+    check(!jsonLd.some(data => data['@type'] === 'SoftwareApplication'), 'Retired product must use archival page metadata');
+    const archive = jsonLd.find(data => data['@type'] === 'WebPage');
+    check(archive?.url === page.canonical && archive?.inLanguage === page.language && archive?.description === attr(meta(page, 'description'), 'content'), 'Archive metadata differs from page');
+    check(attr(meta(page, 'og:description'), 'content') === archive.description, 'Archive OG description differs');
+  }
   if (product.test(new URL(page.url).pathname)) {
     const app = jsonLd.find(data => ['SoftwareApplication', 'WebApplication'].includes(data['@type']));
     check(app?.url === page.canonical && app?.inLanguage === page.language, 'App structured data does not match page');

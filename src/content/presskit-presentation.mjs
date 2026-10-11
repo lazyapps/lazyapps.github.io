@@ -4,11 +4,10 @@ import ui from './presskit-ui.json' with { type: 'json' };
 import { materialLanguage, languageHash } from '../i18n/presskit-language.mjs';
 import { CHMATE_LOCALES } from '../i18n/chmate-locales.mjs';
 import { FONDFONT_LOCALES } from '../i18n/fondfont-locales.mjs';
-import { KEYHOP_LOCALES } from '../i18n/keyhop-locales.mjs';
 import { YIYAN_LOCALES } from '../i18n/yiyan-locales.mjs';
 import { SHHEEP_LOCALES } from '../i18n/shheep-locales.mjs';
 
-const translations = { chmate: CHMATE_LOCALES, fondfont: FONDFONT_LOCALES, keyhop: KEYHOP_LOCALES, yiyan: YIYAN_LOCALES, shheep: SHHEEP_LOCALES };
+const translations = { chmate: CHMATE_LOCALES, fondfont: FONDFONT_LOCALES, yiyan: YIYAN_LOCALES, shheep: SHHEEP_LOCALES };
 const traditionalSummaries = {
   'world-book': 'iPhone 與 iPad 離線世界地圖集，可查國家資料、瀏覽 3D 地球和比較排名。',
   xvdl: 'Mac Safari 的影片下載擴充功能，可從支援的網頁下載影片。',

@@ -211,28 +211,6 @@
       }
     ]
   },
-  "keyhop": {
-    "checkedOn": "2026-10-10",
-    "appSourceCommit": "1ff875df0abcc4bf7c67b30bbb3bad9441a5f34a",
-    "captures": [
-      {
-        "source": "scripts/assets/presskit/keyhop-settings-en.jpg",
-        "sha256": "3d112d92ee4d7356a668b63c0c554597f3ec36bf61667bbd960c91fb9bcc3966",
-        "contentLanguage": "en",
-        "type": "native",
-        "operation": "Original pixels; no resizing or retouching.",
-        "originalSource": "Native macOS window capture via Computer Use; current Debug build; isolated preview defaults",
-        "capturedOn": "2026-10-10",
-        "buildConfiguration": "Debug",
-        "launchArguments": [
-          "--preview-settings",
-          "--preview-all-apps",
-          "-AppleLanguages",
-          "(en)"
-        ]
-      }
-    ]
-  },
   "yiyan": {
     "checkedOn": "2026-10-10",
     "appSourceCommit": "def94f50e048a6954bf466eecb934c2ccba5fe25",

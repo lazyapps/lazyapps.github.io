@@ -30,19 +30,14 @@ for (const product of pressPresentations) {
     assert(appLanguages[product.slug].tags.includes(copy.materialTag), 'Presentation must not invent downloadable languages');
   }
 }
-for (const slug of ['fondfont', 'keyhop', 'yiyan']) {
+for (const slug of ['fondfont', 'yiyan']) {
   const product = pressPresentations.find(item => item.slug === slug);
   for (const tag of ['zh-Hans', 'zh-Hant']) {
     assert(product.locales[tag].name.includes(' · '), 'Bilingual names must share the middle-dot separator');
     assert(!/[（）()]/.test(product.locales[tag].name), 'Bilingual names must not use parentheses');
   }
 }
-const keyhop = pressPresentations.find(product => product.slug === 'keyhop');
-assert.equal(keyhop.locales.ar.summaryLang, 'ar', 'Keep the Arabic marketing copy without fabricating Arabic App assets');
-assert.equal(keyhop.locales.ar.materialTag, 'en');
-assert.equal(keyhop.locales.ar.website, '/keyhop/ar/');
-assert.equal(keyhop.locales.it.materialTag, 'it');
-assert.equal(keyhop.locales.it.website, '/keyhop/en/', 'Italian return links must use the existing English landing route');
+assert(!pressPresentations.some(product => product.slug === 'keyhop'), 'Retired KeyHop must not appear in Press Kits');
 for (const slug of ['world-book', 'xvdl']) {
   const copy = pressPresentations.find(product => product.slug === slug).locales.ar;
   assert.equal(copy.summaryLang, 'en');

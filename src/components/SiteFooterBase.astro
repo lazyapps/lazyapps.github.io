@@ -4,13 +4,13 @@ import { languageHash } from '../i18n/presskit-language.mjs';
 interface Props {
   class?: string;
   locale?: string;
-  pressKit?: string;
+  pressKit?: string | false;
 }
 
 const { class: className, locale = 'en', pressKit = '/presskit/' } = Astro.props;
 const classes = ['base', className].filter(Boolean).join(' ');
 const privacyUrl = locale.toLowerCase().startsWith('zh') ? '/privacy.zh.html' : '/privacy.en.html';
-const pressKitUrl = pressKit.split('#')[0] + languageHash(locale === 'zh' ? 'zh-Hans' : locale);
+const pressKitUrl = pressKit && pressKit.split('#')[0] + languageHash(locale === 'zh' ? 'zh-Hans' : locale);
 ---
 
 <div id="site-footer" class={classes} lang="en" dir="ltr">
@@ -31,8 +31,10 @@ const pressKitUrl = pressKit.split('#')[0] + languageHash(locale === 'zh' ? 'zh-
         <span aria-hidden="true">·</span>
         <nav aria-label="Footer" data-press-footer-nav>
           <a data-hover href="mailto:lazyapps.feedback@gmail.com"><span data-underline-link class="underline-link" data-press-text="contact">Contact</span></a>
-          <span aria-hidden="true">·</span>
-          <a data-hover href={pressKitUrl} data-press-route={pressKit.split('#')[0]}><span data-underline-link class="underline-link" data-press-text="kit">Press Kit</span></a>
+          {pressKit && <>
+            <span aria-hidden="true">·</span>
+            <a data-hover href={pressKitUrl} data-press-route={pressKit.split('#')[0]}><span data-underline-link class="underline-link" data-press-text="kit">Press Kit</span></a>
+          </>}
           <span aria-hidden="true">·</span>
           <a data-hover href={privacyUrl} data-press-privacy><span data-underline-link class="underline-link" data-press-text="privacy">Privacy</span></a>
         </nav>

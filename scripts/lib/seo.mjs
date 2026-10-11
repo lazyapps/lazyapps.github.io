@@ -28,6 +28,7 @@ export async function readPages() {
         const nodes = elements(parse(html));
         const links = nodes.filter(node => node.tagName === 'link');
         const metas = nodes.filter(node => node.tagName === 'meta');
+        const refresh = metas.find(node => attr(node, 'http-equiv')?.toLowerCase() === 'refresh');
         pages.push({
           path,
           html,
@@ -38,7 +39,8 @@ export async function readPages() {
           canonical: attr(links.find(node => attr(node, 'rel') === 'canonical') ?? {}, 'href'),
           alternates: links.filter(node => attr(node, 'rel') === 'alternate' && attr(node, 'hreflang')),
           language: attr(nodes.find(node => node.tagName === 'html'), 'lang'),
-          noindex: metas.some(node => /^(robots|googlebot)$/i.test(attr(node, 'name') ?? '') && /\bnoindex\b/i.test(attr(node, 'content') ?? '')),
+          redirectTo: attr(refresh, 'content')?.match(/url=(.+)$/i)?.[1],
+          noindex: !!refresh || metas.some(node => /^(robots|googlebot)$/i.test(attr(node, 'name') ?? '') && /\bnoindex\b/i.test(attr(node, 'content') ?? '')),
         });
       }
     }

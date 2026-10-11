@@ -37,24 +37,6 @@
     "commit": "763cc3500ee101236e03ddbd7846dac1e0dcb2ad",
     "note": "Main app UI languages; Base and widget-only localizations excluded."
   },
-  "keyhop": {
-    "tags": [
-      "de",
-      "en",
-      "es",
-      "fr",
-      "it",
-      "ja",
-      "ko",
-      "pt-BR",
-      "zh-Hans",
-      "zh-Hant"
-    ],
-    "source": "KeyHop/Localizable.xcstrings",
-    "project": "keyhop",
-    "commit": "1ff875df0abcc4bf7c67b30bbb3bad9441a5f34a",
-    "note": "Main app UI languages; Base and widget-only localizations excluded."
-  },
   "yiyan": {
     "tags": [
       "ar",

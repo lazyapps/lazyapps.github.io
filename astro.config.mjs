@@ -6,6 +6,9 @@ import { googleAnalytics } from './scripts/google-analytics.mjs';
 export default defineConfig({
   site: 'https://lazyapps.com/',
   trailingSlash: 'ignore',
+  redirects: {
+    '/keyhop/presskit': '/keyhop/',
+  },
   integrations: [googleAnalytics('G-44V1H8KZ4W')],
   vite: {
     plugins: [shheepRecordingDev()],

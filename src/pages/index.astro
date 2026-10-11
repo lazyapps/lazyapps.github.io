@@ -1,7 +1,7 @@
 ---
 const SITE = 'https://lazyapps.com';
 const title = 'lazyapps — Apps for Mac, iPhone & iPad';
-const description = 'Mac, iPhone and iPad apps for keyboard shortcuts, English practice, X video downloads, EPUB and CHM reading, country facts and fonts. Play Shheep in your browser.';
+const description = 'Mac, iPhone and iPad apps for English practice, X video downloads, EPUB and CHM reading, country facts and fonts. Play Shheep in your browser.';
 import NativeAppIcon from '../components/NativeAppIcon.astro';
 import SocialMeta from '../components/SocialMeta.astro';
 import StructuredData from '../components/StructuredData.astro';
@@ -15,7 +15,6 @@ import customEaseUrl from '$assets/vendor/CustomEase.min.js?url';
 import splitTextUrl from '$assets/vendor/SplitText.min.js?url';
 import logoRevealUrl from '$assets/s/logo-reveal-loader.js?url';
 import siteJsUrl from '$assets/s/site.js?url';
-import keyhopSettingsUrl from '$assets/img/keyhop-settings.png?url';
 import opengraphUrl from '$assets/img/opengraph.png?url';
 import showcaseUrl from '$assets/img/yiyan-learning-log.png?url';
 import inUseUrl from '$assets/img/xvdl-in-use.png?url';
@@ -85,7 +84,6 @@ setTimeout(function(){
 .card--fondfont{--fill:var(--app-fondfont)}
 .card--shheep{--fill:var(--app-shheep)}
 .card--shheep .card__shots img{image-rendering:pixelated}
-.card--keyhop{--fill:var(--app-keyhop)}
 .card:nth-child(odd){--card-rotate:-1deg}
 .card:nth-child(even){--card-rotate:1deg}
 .card__tag{
@@ -130,8 +128,8 @@ setTimeout(function(){
   width:100%;height:100%;max-height:clamp(190px,22vw,320px);object-fit:cover;object-position:top;
   border-radius:min(1.2vw,8px);outline:1px solid color-mix(in oklch,currentColor 10%,transparent);outline-offset:-1px;
 }
-:is(.card--keyhop,.card--yiyan) .card__shots{aspect-ratio:auto}
-:is(.card--keyhop,.card--yiyan) .card__shots img{height:auto;max-height:none;object-fit:contain;outline:none}
+.card--yiyan .card__shots{aspect-ratio:auto}
+.card--yiyan .card__shots img{height:auto;max-height:none;object-fit:contain;outline:none}
 @media (hover:hover) and (pointer:fine){
   .card:has(.card__go:hover){z-index:4;transform:translateY(-6px) rotate(0)}
   .card:has(.card__go:active){transform:translateY(-2px) rotate(0) scale(.995)}
@@ -205,24 +203,6 @@ setTimeout(function(){
         </div>
       </article>
 
-      <article class="card card--featured card--keyhop" id="keyhop">
-        <p class="card__tag">macOS 26+ · Apple silicon</p>
-        <div class="card__grid">
-          <div class="card__copy">
-            <div class="card__heading">
-              <NativeAppIcon slug="keyhop" size={72} class="card__icon" />
-              <h2 class="card__title dsp">KeyHop</h2>
-            </div>
-            <p class="card__p">Switch to or launch Mac apps with keyboard shortcuts. Assign up to ten apps to home-row keys and optionally sync your bindings with iCloud.</p>
-            <div class="card__foot">
-              <a data-hover href="/keyhop/en/" class="card__go"><span>KeyHop details</span><span class="card__arrow" aria-hidden="true">↗</span></a>
-            </div>
-          </div>
-          <div class="card__shots">
-            <img src={keyhopSettingsUrl} alt="KeyHop settings with leader-key selection and home-row app assignments" width="1944" height="1408">
-          </div>
-        </div>
-      </article>
 
       <article class="card card--featured card--yiyan" id="yiyan">
         <p class="card__tag">macOS 15+ · iPhone beta</p>
