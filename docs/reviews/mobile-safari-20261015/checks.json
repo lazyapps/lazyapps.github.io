@@ -1,0 +1,53 @@
+{
+  "date": "2026-10-15",
+  "device": "iPhone 17e simulator",
+  "runtime": "iOS 27.0",
+  "browser": "Safari",
+  "origin": "http://127.0.0.1:4335",
+  "method": "Visual inspection of native Safari screenshots after navigation, swiping and device rotation.",
+  "checks": [
+    {
+      "route": "/",
+      "state": "Portrait, page top, expanded toolbar",
+      "result": "pass",
+      "observed": "Page background meets the status area without an opaque guide covering content.",
+      "screenshot": "home-top.png"
+    },
+    {
+      "route": "/",
+      "state": "Portrait, scrolled, compact toolbar",
+      "result": "pass",
+      "observed": "Text and colored cards scroll through the viewport without opaque edge strips obscuring them.",
+      "screenshot": "home-scrolled.png"
+    },
+    {
+      "route": "/",
+      "state": "Portrait, footer",
+      "result": "pass",
+      "observed": "Footer links remain visible above Safari controls and the home indicator.",
+      "screenshot": "home-footer.png"
+    },
+    {
+      "route": "/chmate/en/",
+      "state": "Portrait, page top",
+      "result": "pass",
+      "observed": "Background artwork fades smoothly into the edge color; header and download badge are visible.",
+      "screenshot": "chmate-portrait.png"
+    },
+    {
+      "route": "/chmate/en/",
+      "state": "Landscape, page top",
+      "result": "pass",
+      "observed": "Header, language picker and two-column content fit the available width without horizontal clipping.",
+      "screenshot": "chmate-landscape.png"
+    },
+    {
+      "route": "/presskit/",
+      "state": "Portrait, page top after returning from landscape",
+      "result": "pass",
+      "observed": "Page reflows correctly; header, language picker and product cards are visible without guide overlays.",
+      "screenshot": "presskit-portrait.png"
+    }
+  ],
+  "sourceChangesRequired": false
+}

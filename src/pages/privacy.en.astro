@@ -9,6 +9,7 @@ import xvdlIconUrl from '$assets/img/xvdl-icon.png?url';
 import opengraphUrl from '$assets/img/opengraph.png?url';
 import SocialMeta from '../components/SocialMeta.astro';
 import SiteGrain from '../components/SiteGrain.astro';
+import SiteEdges from '../components/SiteEdges.astro';
 import SiteFooterBase from '../components/SiteFooterBase.astro';
 import SiteHeader from '../components/SiteHeader.astro';
 ---
@@ -19,8 +20,7 @@ import SiteHeader from '../components/SiteHeader.astro';
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>lazyapps — Privacy Policy</title>
 <meta name="description" content="How lazyapps handles app data, third-party services, and website analytics.">
-<meta name="theme-color" content="#e8e8e6">
-<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#e8e8e6">
+<meta name="theme-color" content="#f8f8f6">
 <SocialMeta
   title="lazyapps — Privacy Policy"
   description="How lazyapps handles app data, third-party services, and website analytics."
@@ -95,6 +95,7 @@ section.doc.wrap{padding-top:clamp(8px,1.5vw,18px)}
 <body>
 
 
+<SiteEdges />
 <SiteGrain animated />
 
 <SiteHeader class="wrap" />

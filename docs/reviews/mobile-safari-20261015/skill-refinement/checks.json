@@ -1,0 +1,972 @@
+{
+  "checks": [
+    {
+      "label": "top /",
+      "html": "rgb(248, 248, 246)",
+      "body": "rgb(248, 248, 246)",
+      "canvas": "rgb(248, 248, 246)",
+      "top": "rgb(248, 248, 246)",
+      "bottom": "rgb(248, 248, 246)",
+      "theme": [
+        "rgb(248, 248, 246)"
+      ],
+      "parents": [
+        "BODY",
+        "BODY"
+      ],
+      "position": [
+        "fixed",
+        "fixed"
+      ],
+      "heights": [
+        12,
+        12
+      ],
+      "pointer": [
+        "none",
+        "none"
+      ],
+      "count": 2,
+      "overflow": false
+    },
+    {
+      "label": "footer /",
+      "html": "rgb(248, 248, 246)",
+      "body": "rgb(248, 248, 246)",
+      "canvas": "rgb(248, 248, 246)",
+      "top": "rgb(248, 248, 246)",
+      "bottom": "rgb(248, 248, 246)",
+      "theme": [
+        "rgb(248, 248, 246)"
+      ],
+      "parents": [
+        "BODY",
+        "BODY"
+      ],
+      "position": [
+        "fixed",
+        "fixed"
+      ],
+      "heights": [
+        12,
+        12
+      ],
+      "pointer": [
+        "none",
+        "none"
+      ],
+      "count": 2,
+      "overflow": false
+    },
+    {
+      "label": "top /chmate/en/",
+      "html": "rgb(248, 248, 246)",
+      "body": "rgb(248, 248, 246)",
+      "canvas": "rgb(248, 248, 246)",
+      "top": "rgb(248, 248, 246)",
+      "bottom": "rgb(248, 248, 246)",
+      "theme": [
+        "rgb(248, 248, 246)"
+      ],
+      "parents": [
+        "BODY",
+        "BODY"
+      ],
+      "position": [
+        "fixed",
+        "fixed"
+      ],
+      "heights": [
+        12,
+        12
+      ],
+      "pointer": [
+        "none",
+        "none"
+      ],
+      "count": 2,
+      "overflow": false
+    },
+    {
+      "label": "footer /chmate/en/",
+      "html": "rgb(248, 248, 246)",
+      "body": "rgb(248, 248, 246)",
+      "canvas": "rgb(248, 248, 246)",
+      "top": "rgb(248, 248, 246)",
+      "bottom": "rgb(248, 248, 246)",
+      "theme": [
+        "rgb(248, 248, 246)"
+      ],
+      "parents": [
+        "BODY",
+        "BODY"
+      ],
+      "position": [
+        "fixed",
+        "fixed"
+      ],
+      "heights": [
+        12,
+        12
+      ],
+      "pointer": [
+        "none",
+        "none"
+      ],
+      "count": 2,
+      "overflow": false
+    },
+    {
+      "label": "top /chmate/ar/",
+      "html": "rgb(248, 248, 246)",
+      "body": "rgb(248, 248, 246)",
+      "canvas": "rgb(248, 248, 246)",
+      "top": "rgb(248, 248, 246)",
+      "bottom": "rgb(248, 248, 246)",
+      "theme": [
+        "rgb(248, 248, 246)"
+      ],
+      "parents": [
+        "BODY",
+        "BODY"
+      ],
+      "position": [
+        "fixed",
+        "fixed"
+      ],
+      "heights": [
+        12,
+        12
+      ],
+      "pointer": [
+        "none",
+        "none"
+      ],
+      "count": 2,
+      "overflow": false
+    },
+    {
+      "label": "footer /chmate/ar/",
+      "html": "rgb(248, 248, 246)",
+      "body": "rgb(248, 248, 246)",
+      "canvas": "rgb(248, 248, 246)",
+      "top": "rgb(248, 248, 246)",
+      "bottom": "rgb(248, 248, 246)",
+      "theme": [
+        "rgb(248, 248, 246)"
+      ],
+      "parents": [
+        "BODY",
+        "BODY"
+      ],
+      "position": [
+        "fixed",
+        "fixed"
+      ],
+      "heights": [
+        12,
+        12
+      ],
+      "pointer": [
+        "none",
+        "none"
+      ],
+      "count": 2,
+      "overflow": false
+    },
+    {
+      "label": "top /world-book/",
+      "html": "rgb(248, 248, 246)",
+      "body": "rgb(248, 248, 246)",
+      "canvas": "rgb(248, 248, 246)",
+      "top": "rgb(248, 248, 246)",
+      "bottom": "rgb(248, 248, 246)",
+      "theme": [
+        "rgb(248, 248, 246)"
+      ],
+      "parents": [
+        "BODY",
+        "BODY"
+      ],
+      "position": [
+        "fixed",
+        "fixed"
+      ],
+      "heights": [
+        12,
+        12
+      ],
+      "pointer": [
+        "none",
+        "none"
+      ],
+      "count": 2,
+      "overflow": false
+    },
+    {
+      "label": "footer /world-book/",
+      "html": "rgb(248, 248, 246)",
+      "body": "rgb(248, 248, 246)",
+      "canvas": "rgb(248, 248, 246)",
+      "top": "rgb(248, 248, 246)",
+      "bottom": "rgb(248, 248, 246)",
+      "theme": [
+        "rgb(248, 248, 246)"
+      ],
+      "parents": [
+        "BODY",
+        "BODY"
+      ],
+      "position": [
+        "fixed",
+        "fixed"
+      ],
+      "heights": [
+        12,
+        12
+      ],
+      "pointer": [
+        "none",
+        "none"
+      ],
+      "count": 2,
+      "overflow": false
+    },
+    {
+      "label": "top /yiyan/en/",
+      "html": "rgb(248, 248, 246)",
+      "body": "rgb(248, 248, 246)",
+      "canvas": "rgb(248, 248, 246)",
+      "top": "rgb(248, 248, 246)",
+      "bottom": "rgb(248, 248, 246)",
+      "theme": [
+        "rgb(248, 248, 246)"
+      ],
+      "parents": [
+        "BODY",
+        "BODY"
+      ],
+      "position": [
+        "fixed",
+        "fixed"
+      ],
+      "heights": [
+        12,
+        12
+      ],
+      "pointer": [
+        "none",
+        "none"
+      ],
+      "count": 2,
+      "overflow": false
+    },
+    {
+      "label": "footer /yiyan/en/",
+      "html": "rgb(248, 248, 246)",
+      "body": "rgb(248, 248, 246)",
+      "canvas": "rgb(248, 248, 246)",
+      "top": "rgb(248, 248, 246)",
+      "bottom": "rgb(248, 248, 246)",
+      "theme": [
+        "rgb(248, 248, 246)"
+      ],
+      "parents": [
+        "BODY",
+        "BODY"
+      ],
+      "position": [
+        "fixed",
+        "fixed"
+      ],
+      "heights": [
+        12,
+        12
+      ],
+      "pointer": [
+        "none",
+        "none"
+      ],
+      "count": 2,
+      "overflow": false
+    },
+    {
+      "label": "top /xvdl/",
+      "html": "rgb(248, 248, 246)",
+      "body": "rgb(248, 248, 246)",
+      "canvas": "rgb(248, 248, 246)",
+      "top": "rgb(248, 248, 246)",
+      "bottom": "rgb(248, 248, 246)",
+      "theme": [
+        "rgb(248, 248, 246)"
+      ],
+      "parents": [
+        "BODY",
+        "BODY"
+      ],
+      "position": [
+        "fixed",
+        "fixed"
+      ],
+      "heights": [
+        12,
+        12
+      ],
+      "pointer": [
+        "none",
+        "none"
+      ],
+      "count": 2,
+      "overflow": false
+    },
+    {
+      "label": "footer /xvdl/",
+      "html": "rgb(248, 248, 246)",
+      "body": "rgb(248, 248, 246)",
+      "canvas": "rgb(248, 248, 246)",
+      "top": "rgb(248, 248, 246)",
+      "bottom": "rgb(248, 248, 246)",
+      "theme": [
+        "rgb(248, 248, 246)"
+      ],
+      "parents": [
+        "BODY",
+        "BODY"
+      ],
+      "position": [
+        "fixed",
+        "fixed"
+      ],
+      "heights": [
+        12,
+        12
+      ],
+      "pointer": [
+        "none",
+        "none"
+      ],
+      "count": 2,
+      "overflow": false
+    },
+    {
+      "label": "top /keyhop/en/",
+      "html": "rgb(248, 248, 246)",
+      "body": "rgb(248, 248, 246)",
+      "canvas": "rgb(248, 248, 246)",
+      "top": "rgb(248, 248, 246)",
+      "bottom": "rgb(248, 248, 246)",
+      "theme": [
+        "rgb(248, 248, 246)"
+      ],
+      "parents": [
+        "BODY",
+        "BODY"
+      ],
+      "position": [
+        "fixed",
+        "fixed"
+      ],
+      "heights": [
+        12,
+        12
+      ],
+      "pointer": [
+        "none",
+        "none"
+      ],
+      "count": 2,
+      "overflow": false
+    },
+    {
+      "label": "footer /keyhop/en/",
+      "html": "rgb(248, 248, 246)",
+      "body": "rgb(248, 248, 246)",
+      "canvas": "rgb(248, 248, 246)",
+      "top": "rgb(248, 248, 246)",
+      "bottom": "rgb(248, 248, 246)",
+      "theme": [
+        "rgb(248, 248, 246)"
+      ],
+      "parents": [
+        "BODY",
+        "BODY"
+      ],
+      "position": [
+        "fixed",
+        "fixed"
+      ],
+      "heights": [
+        12,
+        12
+      ],
+      "pointer": [
+        "none",
+        "none"
+      ],
+      "count": 2,
+      "overflow": false
+    },
+    {
+      "label": "top /shheep/",
+      "html": "rgb(248, 248, 246)",
+      "body": "rgb(248, 248, 246)",
+      "canvas": "rgb(248, 248, 246)",
+      "top": "rgb(248, 248, 246)",
+      "bottom": "rgb(248, 248, 246)",
+      "theme": [
+        "rgb(248, 248, 246)"
+      ],
+      "parents": [
+        "BODY",
+        "BODY"
+      ],
+      "position": [
+        "fixed",
+        "fixed"
+      ],
+      "heights": [
+        12,
+        12
+      ],
+      "pointer": [
+        "none",
+        "none"
+      ],
+      "count": 2,
+      "overflow": false
+    },
+    {
+      "label": "footer /shheep/",
+      "html": "rgb(248, 248, 246)",
+      "body": "rgb(248, 248, 246)",
+      "canvas": "rgb(248, 248, 246)",
+      "top": "rgb(248, 248, 246)",
+      "bottom": "rgb(248, 248, 246)",
+      "theme": [
+        "rgb(248, 248, 246)"
+      ],
+      "parents": [
+        "BODY",
+        "BODY"
+      ],
+      "position": [
+        "fixed",
+        "fixed"
+      ],
+      "heights": [
+        12,
+        12
+      ],
+      "pointer": [
+        "none",
+        "none"
+      ],
+      "count": 2,
+      "overflow": false
+    },
+    {
+      "label": "top /fondfont/en/",
+      "html": "rgb(248, 248, 246)",
+      "body": "rgb(248, 248, 246)",
+      "canvas": "rgb(248, 248, 246)",
+      "top": "rgb(248, 248, 246)",
+      "bottom": "rgb(248, 248, 246)",
+      "theme": [
+        "rgb(248, 248, 246)"
+      ],
+      "parents": [
+        "BODY",
+        "BODY"
+      ],
+      "position": [
+        "fixed",
+        "fixed"
+      ],
+      "heights": [
+        12,
+        12
+      ],
+      "pointer": [
+        "none",
+        "none"
+      ],
+      "count": 2,
+      "overflow": false
+    },
+    {
+      "label": "footer /fondfont/en/",
+      "html": "rgb(248, 248, 246)",
+      "body": "rgb(248, 248, 246)",
+      "canvas": "rgb(248, 248, 246)",
+      "top": "rgb(248, 248, 246)",
+      "bottom": "rgb(248, 248, 246)",
+      "theme": [
+        "rgb(248, 248, 246)"
+      ],
+      "parents": [
+        "BODY",
+        "BODY"
+      ],
+      "position": [
+        "fixed",
+        "fixed"
+      ],
+      "heights": [
+        12,
+        12
+      ],
+      "pointer": [
+        "none",
+        "none"
+      ],
+      "count": 2,
+      "overflow": false
+    },
+    {
+      "label": "top /privacy.en.html",
+      "html": "rgb(248, 248, 246)",
+      "body": "rgb(248, 248, 246)",
+      "canvas": "rgb(248, 248, 246)",
+      "top": "rgb(248, 248, 246)",
+      "bottom": "rgb(248, 248, 246)",
+      "theme": [
+        "rgb(248, 248, 246)"
+      ],
+      "parents": [
+        "BODY",
+        "BODY"
+      ],
+      "position": [
+        "fixed",
+        "fixed"
+      ],
+      "heights": [
+        12,
+        12
+      ],
+      "pointer": [
+        "none",
+        "none"
+      ],
+      "count": 2,
+      "overflow": false
+    },
+    {
+      "label": "footer /privacy.en.html",
+      "html": "rgb(248, 248, 246)",
+      "body": "rgb(248, 248, 246)",
+      "canvas": "rgb(248, 248, 246)",
+      "top": "rgb(248, 248, 246)",
+      "bottom": "rgb(248, 248, 246)",
+      "theme": [
+        "rgb(248, 248, 246)"
+      ],
+      "parents": [
+        "BODY",
+        "BODY"
+      ],
+      "position": [
+        "fixed",
+        "fixed"
+      ],
+      "heights": [
+        12,
+        12
+      ],
+      "pointer": [
+        "none",
+        "none"
+      ],
+      "count": 2,
+      "overflow": false
+    },
+    {
+      "label": "top /presskit/",
+      "html": "rgb(248, 248, 246)",
+      "body": "rgb(248, 248, 246)",
+      "canvas": "rgb(248, 248, 246)",
+      "top": "rgb(248, 248, 246)",
+      "bottom": "rgb(248, 248, 246)",
+      "theme": [
+        "rgb(248, 248, 246)"
+      ],
+      "parents": [
+        "BODY",
+        "BODY"
+      ],
+      "position": [
+        "fixed",
+        "fixed"
+      ],
+      "heights": [
+        12,
+        12
+      ],
+      "pointer": [
+        "none",
+        "none"
+      ],
+      "count": 2,
+      "overflow": false
+    },
+    {
+      "label": "footer /presskit/",
+      "html": "rgb(248, 248, 246)",
+      "body": "rgb(248, 248, 246)",
+      "canvas": "rgb(248, 248, 246)",
+      "top": "rgb(248, 248, 246)",
+      "bottom": "rgb(248, 248, 246)",
+      "theme": [
+        "rgb(248, 248, 246)"
+      ],
+      "parents": [
+        "BODY",
+        "BODY"
+      ],
+      "position": [
+        "fixed",
+        "fixed"
+      ],
+      "heights": [
+        12,
+        12
+      ],
+      "pointer": [
+        "none",
+        "none"
+      ],
+      "count": 2,
+      "overflow": false
+    },
+    {
+      "label": "top /chmate/presskit/",
+      "html": "rgb(248, 248, 246)",
+      "body": "rgb(248, 248, 246)",
+      "canvas": "rgb(248, 248, 246)",
+      "top": "rgb(248, 248, 246)",
+      "bottom": "rgb(248, 248, 246)",
+      "theme": [
+        "rgb(248, 248, 246)"
+      ],
+      "parents": [
+        "BODY",
+        "BODY"
+      ],
+      "position": [
+        "fixed",
+        "fixed"
+      ],
+      "heights": [
+        12,
+        12
+      ],
+      "pointer": [
+        "none",
+        "none"
+      ],
+      "count": 2,
+      "overflow": false
+    },
+    {
+      "label": "footer /chmate/presskit/",
+      "html": "rgb(248, 248, 246)",
+      "body": "rgb(248, 248, 246)",
+      "canvas": "rgb(248, 248, 246)",
+      "top": "rgb(248, 248, 246)",
+      "bottom": "rgb(248, 248, 246)",
+      "theme": [
+        "rgb(248, 248, 246)"
+      ],
+      "parents": [
+        "BODY",
+        "BODY"
+      ],
+      "position": [
+        "fixed",
+        "fixed"
+      ],
+      "heights": [
+        12,
+        12
+      ],
+      "pointer": [
+        "none",
+        "none"
+      ],
+      "count": 2,
+      "overflow": false
+    },
+    {
+      "label": "dark loader",
+      "html": "rgb(23, 23, 23)",
+      "body": "rgb(23, 23, 23)",
+      "canvas": "rgb(23, 23, 23)",
+      "top": "rgb(23, 23, 23)",
+      "bottom": "rgb(23, 23, 23)",
+      "theme": [
+        "rgb(23, 23, 23)"
+      ],
+      "parents": [
+        "BODY",
+        "BODY"
+      ],
+      "position": [
+        "fixed",
+        "fixed"
+      ],
+      "heights": [
+        12,
+        12
+      ],
+      "pointer": [
+        "none",
+        "none"
+      ],
+      "count": 2,
+      "overflow": false
+    },
+    {
+      "label": "loader handoff",
+      "html": "rgb(248, 248, 246)",
+      "body": "rgb(248, 248, 246)",
+      "canvas": "rgb(248, 248, 246)",
+      "top": "rgb(248, 248, 246)",
+      "bottom": "rgb(248, 248, 246)",
+      "theme": [
+        "rgb(248, 248, 246)"
+      ],
+      "parents": [
+        "BODY",
+        "BODY"
+      ],
+      "position": [
+        "fixed",
+        "fixed"
+      ],
+      "heights": [
+        12,
+        12
+      ],
+      "pointer": [
+        "none",
+        "none"
+      ],
+      "count": 2,
+      "overflow": false
+    },
+    {
+      "label": "motion changed during loader",
+      "html": "rgb(248, 248, 246)",
+      "body": "rgb(248, 248, 246)",
+      "canvas": "rgb(248, 248, 246)",
+      "top": "rgb(248, 248, 246)",
+      "bottom": "rgb(248, 248, 246)",
+      "theme": [
+        "rgb(248, 248, 246)"
+      ],
+      "parents": [
+        "BODY",
+        "BODY"
+      ],
+      "position": [
+        "fixed",
+        "fixed"
+      ],
+      "heights": [
+        12,
+        12
+      ],
+      "pointer": [
+        "none",
+        "none"
+      ],
+      "count": 2,
+      "overflow": false
+    },
+    {
+      "label": "landscape",
+      "html": "rgb(248, 248, 246)",
+      "body": "rgb(248, 248, 246)",
+      "canvas": "rgb(248, 248, 246)",
+      "top": "rgb(248, 248, 246)",
+      "bottom": "rgb(248, 248, 246)",
+      "theme": [
+        "rgb(248, 248, 246)"
+      ],
+      "parents": [
+        "BODY",
+        "BODY"
+      ],
+      "position": [
+        "fixed",
+        "fixed"
+      ],
+      "heights": [
+        12,
+        12
+      ],
+      "pointer": [
+        "none",
+        "none"
+      ],
+      "count": 2,
+      "overflow": false
+    },
+    {
+      "label": "visual viewport events",
+      "html": "rgb(248, 248, 246)",
+      "body": "rgb(248, 248, 246)",
+      "canvas": "rgb(248, 248, 246)",
+      "top": "rgb(248, 248, 246)",
+      "bottom": "rgb(248, 248, 246)",
+      "theme": [
+        "rgb(248, 248, 246)"
+      ],
+      "parents": [
+        "BODY",
+        "BODY"
+      ],
+      "position": [
+        "fixed",
+        "fixed"
+      ],
+      "heights": [
+        12,
+        12
+      ],
+      "pointer": [
+        "none",
+        "none"
+      ],
+      "count": 2,
+      "overflow": false
+    },
+    {
+      "label": "background state changes",
+      "html": "rgb(69, 103, 137)",
+      "body": "rgb(69, 103, 137)",
+      "canvas": "rgb(69, 103, 137)",
+      "top": "rgb(69, 103, 137)",
+      "bottom": "rgb(69, 103, 137)",
+      "theme": [
+        "rgb(69, 103, 137)"
+      ],
+      "parents": [
+        "BODY",
+        "BODY"
+      ],
+      "position": [
+        "fixed",
+        "fixed"
+      ],
+      "heights": [
+        12,
+        12
+      ],
+      "pointer": [
+        "none",
+        "none"
+      ],
+      "count": 2,
+      "overflow": false
+    },
+    {
+      "label": "background state restored",
+      "html": "rgb(248, 248, 246)",
+      "body": "rgb(248, 248, 246)",
+      "canvas": "rgb(248, 248, 246)",
+      "top": "rgb(248, 248, 246)",
+      "bottom": "rgb(248, 248, 246)",
+      "theme": [
+        "rgb(248, 248, 246)"
+      ],
+      "parents": [
+        "BODY",
+        "BODY"
+      ],
+      "position": [
+        "fixed",
+        "fixed"
+      ],
+      "heights": [
+        12,
+        12
+      ],
+      "pointer": [
+        "none",
+        "none"
+      ],
+      "count": 2,
+      "overflow": false
+    },
+    {
+      "label": "history restoration",
+      "html": "rgb(248, 248, 246)",
+      "body": "rgb(248, 248, 246)",
+      "canvas": "rgb(248, 248, 246)",
+      "top": "rgb(248, 248, 246)",
+      "bottom": "rgb(248, 248, 246)",
+      "theme": [
+        "rgb(248, 248, 246)"
+      ],
+      "parents": [
+        "BODY",
+        "BODY"
+      ],
+      "position": [
+        "fixed",
+        "fixed"
+      ],
+      "heights": [
+        12,
+        12
+      ],
+      "pointer": [
+        "none",
+        "none"
+      ],
+      "count": 2,
+      "overflow": false
+    },
+    {
+      "label": "page exit restores styles, priority, metadata and removes owned strips",
+      "top": "#123456",
+      "priority": "important",
+      "bottom": "#654321",
+      "meta": "#f8f8f6",
+      "count": 0
+    },
+    {
+      "label": "exit disconnects listeners and observers",
+      "result": "pass"
+    },
+    {
+      "label": "BFCache remount recreates exactly two edges and reapplies the palette",
+      "result": "pass"
+    },
+    {
+      "label": "no JavaScript retains the light page palette",
+      "result": "pass"
+    }
+  ],
+  "errors": [],
+  "date": "2026-10-15",
+  "scope": "Safari edge controller refinement using safari-edge-colors skill",
+  "nativeSafari": {
+    "device": "iPhone Air simulator",
+    "runtime": "iOS 26.5",
+    "checks": [
+      "loader",
+      "portrait after loader",
+      "scrolling with compact toolbar",
+      "landscape after scrolling"
+    ],
+    "result": "No new hard edge bands, clipped header controls or strip overlays observed. Native Safari blur over media remains browser-controlled.",
+    "screenshots": [
+      "air-loader.png",
+      "air-portrait.png",
+      "air-scrolled.png",
+      "air-landscape.png"
+    ]
+  }
+}

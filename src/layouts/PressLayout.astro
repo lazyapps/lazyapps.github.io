@@ -1,6 +1,7 @@
 ---
 import SocialMeta from '../components/SocialMeta.astro';
 import SiteGrain from '../components/SiteGrain.astro';
+import SiteEdges from '../components/SiteEdges.astro';
 import SiteFooterBase from '../components/SiteFooterBase.astro';
 import SiteHeader from '../components/SiteHeader.astro';
 import PressKitClosing from '../components/PressKitClosing.astro';
@@ -27,7 +28,7 @@ const loaderName = slug ? presentation.products[0].locales.en.name.toUpperCase()
     <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
     <title>{title}</title>
     <meta name="description" content={description}>
-    <meta name="theme-color" content="#171717" data-page-color="#f8f8f6">
+    <meta name="theme-color" content="#f8f8f6">
     <SocialMeta title={title} description={description} url={url} image={new URL(image, Astro.site).href} imageAlt={title} imageWidth={1200} imageHeight={630} locale="en_US" />
     <link rel="stylesheet" href={siteCssUrl}>
     <script is:inline>
@@ -35,13 +36,11 @@ const loaderName = slug ? presentation.products[0].locales.en.name.toUpperCase()
       setTimeout(function () {
         document.documentElement.classList.add('is-page-theme', 'is-loaded');
         document.getElementById('loader')?.remove();
-        document.querySelectorAll('meta[name="theme-color"][data-page-color]').forEach(function (meta) {
-          meta.setAttribute('content', meta.getAttribute('data-page-color'));
-        });
       }, 6000);
     </script>
   </head>
   <body class="presskit">
+    <SiteEdges />
     <SiteGrain />
     <SitePreloader name={loaderName} />
     <a class="press-skip" href="#main" data-press-text="skip">Skip to content</a>
@@ -64,7 +63,7 @@ const loaderName = slug ? presentation.products[0].locales.en.name.toUpperCase()
   import '../scripts/presskit-language';
 </script>
 <style is:global>
-  .presskit{background:var(--paper)}
+  .presskit{background:var(--edge-bottom-background)}
   .press-back{display:inline-flex;align-items:center;justify-content:center;gap:6px;min-height:44px;font-size:14px;font-weight:600;text-decoration:none}
   .press-back:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px}
   .presskit .site-header__controls{display:flex;align-items:center;gap:24px}

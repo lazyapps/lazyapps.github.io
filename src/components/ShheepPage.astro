@@ -3,6 +3,7 @@ import SocialMeta from './SocialMeta.astro';
 import StructuredData from './StructuredData.astro';
 // App Store launch: restore the download badge and Smart App Banner below.
 import SiteGrain from './SiteGrain.astro';
+import SiteEdges from './SiteEdges.astro';
 import SiteFooterBase from './SiteFooterBase.astro';
 import ShheepGame from './ShheepGame.astro';
 import ShheepStoreBadge from './ShheepStoreBadge.astro';
@@ -42,7 +43,7 @@ const fontNotices = [
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
   <title>{title}</title>
   <meta name="description" content={description}>
-  <meta name="theme-color" content="#171717" data-page-color="#f8f8f6">
+  <meta name="theme-color" content="#f8f8f6">
   {/* <meta name="apple-itunes-app" content={`app-id=6819031865, affiliate-data=${appStoreCampaign}`}> */}
   <SocialMeta title={title} description={description}
     url={pageURL} image="https://lazyapps.com/shheep/opengraph.png"
@@ -66,14 +67,12 @@ const fontNotices = [
     setTimeout(() => {
       document.documentElement.classList.add('is-page-theme', 'is-loaded');
       document.getElementById('loader')?.remove();
-      document.querySelectorAll('meta[name="theme-color"][data-page-color]').forEach((meta) => {
-        meta.setAttribute('content', meta.getAttribute('data-page-color'));
-      });
     }, 6000);
   </script>
 </head>
 <body>
   <a class="skip-link" href="#how-to-play">{t.skip}</a>
+  <SiteEdges />
   <SiteGrain />
   <div data-load-wrap class="loader" id="loader" aria-hidden="true">
     <div data-load-bg class="loader__bg"><div data-load-progress class="loader__bg-bar"></div></div>

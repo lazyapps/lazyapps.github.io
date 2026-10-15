@@ -6,6 +6,7 @@ import NativeAppIcon from '../components/NativeAppIcon.astro';
 import SocialMeta from '../components/SocialMeta.astro';
 import StructuredData from '../components/StructuredData.astro';
 import SiteGrain from '../components/SiteGrain.astro';
+import SiteEdges from '../components/SiteEdges.astro';
 import SiteFooterBase from '../components/SiteFooterBase.astro';
 import SitePreloader from '../components/SitePreloader.astro';
 import siteCssUrl from '$assets/s/site.css?url';
@@ -26,8 +27,7 @@ import inUseUrl from '$assets/img/xvdl-in-use.png?url';
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>{title}</title>
 <meta name="description" content={description}>
-<meta name="theme-color" content="#171717" data-page-color="#e8e8e6">
-<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#171717" data-page-color="#e8e8e6">
+<meta name="theme-color" content="#f8f8f6">
 <SocialMeta
   title={title}
   description={description}
@@ -55,9 +55,6 @@ setTimeout(function(){
   document.documentElement.classList.add('is-loaded');
   var l = document.getElementById('loader');
   if (l) l.remove();
-  document.querySelectorAll('meta[name="theme-color"][data-page-color]').forEach(function(meta){
-    meta.setAttribute('content', meta.getAttribute('data-page-color'));
-  });
 }, 6000);
 </script>
 <style is:inline>
@@ -161,6 +158,7 @@ setTimeout(function(){
 <body>
 
 
+<SiteEdges />
 <SiteGrain animated />
 
 

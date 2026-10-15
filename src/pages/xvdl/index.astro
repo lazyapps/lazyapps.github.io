@@ -5,6 +5,7 @@ const description = 'Download videos from X in Safari on Mac. XVDL saves the hig
 import SocialMeta from '../../components/SocialMeta.astro';
 import SoftwareApplication from '../../components/SoftwareApplication.astro';
 import SiteGrain from '../../components/SiteGrain.astro';
+import SiteEdges from '../../components/SiteEdges.astro';
 import SiteFooterBase from '../../components/SiteFooterBase.astro';
 import SiteHeader from '../../components/SiteHeader.astro';
 import siteCssUrl from '$assets/s/site.css?url';
@@ -25,8 +26,7 @@ import xvdlOpengraphUrl from '$assets/img/xvdl-opengraph.png?url';
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>{title}</title>
 <meta name="description" content={description}>
-<meta name="theme-color" content="#171717" data-page-color="#e8e8e6">
-<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#171717" data-page-color="#e8e8e6">
+<meta name="theme-color" content="#f8f8f6">
 <SocialMeta
   title={title}
   description={description}
@@ -48,9 +48,6 @@ setTimeout(function(){
   document.documentElement.classList.add('is-loaded');
   var l = document.getElementById('loader');
   if (l) l.remove();
-  document.querySelectorAll('meta[name="theme-color"][data-page-color]').forEach(function(meta){
-    meta.setAttribute('content', meta.getAttribute('data-page-color'));
-  });
 }, 6000);
 </script>
 <style is:inline>
@@ -126,6 +123,7 @@ section.phero.wrap{padding-top:clamp(8px,1.5vw,18px);--h1-size:clamp(38px,6.2vw,
 <body>
 
 
+<SiteEdges />
 <SiteGrain animated />
 
 

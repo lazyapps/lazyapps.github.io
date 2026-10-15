@@ -12,6 +12,7 @@ import SoftwareApplication from './SoftwareApplication.astro';
 import LanguagePicker from './LanguagePicker.astro';
 import SiteHeader from './SiteHeader.astro';
 import SiteGrain from './SiteGrain.astro';
+import SiteEdges from './SiteEdges.astro';
 import SiteFooterBase from './SiteFooterBase.astro';
 import siteCssUrl from '$assets/s/site.css?url';
 import gsapUrl from '$assets/vendor/gsap.min.js?url';
@@ -150,8 +151,7 @@ const ctaButtons = t.cta.slice(0, 2).map((label, i) => {
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>{t.title}</title>
 <meta name="description" content={t.description}>
-<meta name="theme-color" content="#171717" data-page-color="#e8e8e6">
-<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#171717" data-page-color="#e8e8e6">
+<meta name="theme-color" content="#f8f8f6">
 {ALTS.map(([hreflang, path]) => <link rel="alternate" hreflang={hreflang} href={`${SITE}/${path}`} />)}
 <SocialMeta
   title={t.ogTitle}
@@ -173,9 +173,6 @@ setTimeout(()=> {
   document.documentElement.classList.add('is-loaded');
   var l = document.getElementById('loader');
   if (l) l.remove();
-  document.querySelectorAll('meta[name="theme-color"][data-page-color]').forEach(function(meta){
-    meta.setAttribute('content', meta.getAttribute('data-page-color'));
-  });
 }, 6000);
 </script>
 <style is:inline>
@@ -302,6 +299,7 @@ html[data-trust=cjk] .phero__trust li{font:400 .75rem/1.5 var(--mono);letter-spa
 <body>
 
 
+<SiteEdges />
 <SiteGrain animated />
 
 

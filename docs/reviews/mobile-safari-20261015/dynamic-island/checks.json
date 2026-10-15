@@ -1,0 +1,82 @@
+{
+  "date": "2026-10-15",
+  "browser": "Safari",
+  "environment": "iOS simulators with Dynamic Island",
+  "origin": "http://127.0.0.1:4335",
+  "method": "Native screenshots inspected after navigation, scrolling and device rotation.",
+  "checks": [
+    {
+      "device": "iPhone 17",
+      "runtime": "iOS 27.0",
+      "state": "Homepage portrait, expanded Safari toolbar",
+      "result": "pass",
+      "observed": "Title starts below Dynamic Island; no opaque edge strip covers page content.",
+      "screenshot": "iphone17-home.png"
+    },
+    {
+      "device": "iPhone 17",
+      "runtime": "iOS 27.0",
+      "state": "Homepage footer, compact toolbar",
+      "result": "pass",
+      "observed": "Footer links remain visible above browser controls.",
+      "screenshot": "iphone17-footer.png"
+    },
+    {
+      "device": "iPhone 17",
+      "runtime": "iOS 27.0",
+      "state": "CHMate portrait",
+      "result": "pass",
+      "observed": "Header and language picker sit below Dynamic Island; artwork fades into the edge background.",
+      "screenshot": "iphone17-chmate-portrait.png"
+    },
+    {
+      "device": "iPhone 17",
+      "runtime": "iOS 27.0",
+      "state": "Homepage landscape, expanded Safari toolbar",
+      "result": "pass",
+      "observed": "Wordmark and copy respect the safe inset beside the landscape cutout.",
+      "screenshot": "iphone17-home-landscape.png"
+    },
+    {
+      "device": "iPhone Air",
+      "runtime": "iOS 26.5",
+      "state": "Homepage portrait, expanded toolbar",
+      "result": "pass",
+      "observed": "Title clears Dynamic Island; background meets the status region.",
+      "screenshot": "iphone-air-home.png"
+    },
+    {
+      "device": "iPhone Air",
+      "runtime": "iOS 26.5",
+      "state": "Homepage scrolling, compact toolbar",
+      "result": "pass",
+      "observed": "Safari toolbar collapses and edge strips do not obscure scrolling page content.",
+      "screenshot": "iphone-air-scrolled.png"
+    },
+    {
+      "device": "iPhone Air",
+      "runtime": "iOS 26.5",
+      "state": "CHMate loader",
+      "result": "pass",
+      "observed": "Dark loader background extends behind the status region and browser controls.",
+      "screenshot": "iphone-air-loader.png"
+    },
+    {
+      "device": "iPhone Air",
+      "runtime": "iOS 26.5",
+      "state": "CHMate portrait after loader",
+      "result": "pass",
+      "observed": "Light page background replaces the loader color; header controls clear Dynamic Island.",
+      "screenshot": "iphone-air-chmate-portrait.png"
+    },
+    {
+      "device": "iPhone Air",
+      "runtime": "iOS 26.5",
+      "state": "CHMate landscape",
+      "result": "pass",
+      "observed": "Header, language picker and content sit within the side safe areas beside Dynamic Island.",
+      "screenshot": "iphone-air-chmate-landscape.png"
+    }
+  ],
+  "sourceChangesRequired": false
+}

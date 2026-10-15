@@ -162,13 +162,6 @@ function warmUpRevealMachinery(){
 
 function beginPageTheme(){
   document.documentElement.classList.add('is-page-theme');
-  restorePageThemeColor();
-}
-
-function restorePageThemeColor(){
-  document.querySelectorAll('meta[name="theme-color"][data-page-color]').forEach((meta) => {
-    meta.setAttribute('content', meta.dataset.pageColor);
-  });
 }
 
 function handoffToContent(){

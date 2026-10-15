@@ -88,18 +88,58 @@ body {
 }
 
 *{box-sizing:border-box}
-html{background:var(--paper);font-size:112.5%;color-scheme:light;min-height:100%}
+:root{
+  --page-background:var(--paper);
+  --edge-top-background:#f8f8f6;
+  --edge-bottom-background:#f8f8f6;
+}
+html{background:var(--edge-top-background);font-size:112.5%;color-scheme:light;min-height:100%}
 body{
-  margin:0;background:var(--paper);color:var(--ink);isolation:isolate;
+  margin:0;background:var(--edge-bottom-background);color:var(--ink);isolation:isolate;
   font:400 var(--size-font)/1.65 var(--sans);
   overflow-x:hidden;min-height:100%;
 }
 body::before{
   content:"";position:fixed;z-index:-1;inset:0;
-  background:var(--paper);pointer-events:none;
+  background:var(--page-background);pointer-events:none;
 }
-html:has(#loader):not(.is-page-theme):not(.no-js) body,
-html:has(#loader):not(.is-page-theme):not(.no-js) body::before{background:var(--ink)}
+@media (prefers-reduced-motion:no-preference){
+  html:has(#loader):not(.is-page-theme):not(.no-js){
+    --page-background:var(--ink);
+    --edge-top-background:var(--ink);
+    --edge-bottom-background:var(--ink);
+  }
+}
+/* Fixed edge guides let mobile Safari extend the page color behind its controls. */
+.edge-top,.edge-bottom{
+  position:fixed;inset-inline:0;z-index:-1;pointer-events:none;
+}
+.edge-top{
+  top:0;height:max(12px,env(safe-area-inset-top,0px));
+}
+.edge-bottom{
+  bottom:0;height:max(12px,env(safe-area-inset-bottom,0px));
+}
+.edge-top::after,.edge-bottom::after{
+  content:"";position:absolute;inset:0;pointer-events:none;
+}
+.edge-top::after{background:var(--edge-top-background)}
+.edge-bottom::after{background:var(--edge-bottom-background)}
+@media (hover:none) and (pointer:coarse){
+  /* Fade texture and ambient artwork into the solid colors at Safari's edges. */
+  .grain,.reading-backdrop{
+    mask-image:linear-gradient(to bottom,
+      transparent max(12px,env(safe-area-inset-top,0px)),
+      #000 calc(max(12px,env(safe-area-inset-top,0px)) + 48px),
+      #000 calc(100% - max(12px,env(safe-area-inset-bottom,0px)) - 48px),
+      transparent calc(100% - max(12px,env(safe-area-inset-bottom,0px))));
+  }
+  .site-header.is-scrolled::after{
+    mask-image:linear-gradient(to bottom,
+      transparent max(12px,env(safe-area-inset-top,0px)),
+      #000 calc(max(12px,env(safe-area-inset-top,0px)) + 48px));
+  }
+}
 @supports (height:100dvh){
   html{min-height:100dvh;height:auto}
   body{min-height:100dvh}

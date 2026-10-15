@@ -2,6 +2,7 @@
 import SocialMeta from '../../components/SocialMeta.astro';
 import SoftwareApplication from '../../components/SoftwareApplication.astro';
 import SiteGrain from '../../components/SiteGrain.astro';
+import SiteEdges from '../../components/SiteEdges.astro';
 import SiteFooterBase from '../../components/SiteFooterBase.astro';
 import SiteHeader from '../../components/SiteHeader.astro';
 import siteCssUrl from '$assets/s/site.css?url';
@@ -46,8 +47,7 @@ const t = {
     <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
     <title>{t.title}</title>
     <meta name="description" content={t.description}>
-    <meta name="theme-color" content="#171717" data-page-color="#e8e8e6">
-    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#171717" data-page-color="#e8e8e6">
+    <meta name="theme-color" content="#f8f8f6">
     <meta name="apple-itunes-app" content={`app-id=412637620, affiliate-data=${appStoreCampaign}`}>
     <SocialMeta
       title={t.title}
@@ -67,14 +67,12 @@ const t = {
       setTimeout(() => {
         document.documentElement.classList.add('is-page-theme', 'is-loaded');
         document.getElementById('loader')?.remove();
-        document.querySelectorAll('meta[name="theme-color"][data-page-color]').forEach((meta) => {
-          meta.setAttribute('content', meta.getAttribute('data-page-color'));
-        });
       }, 6000);
     </script>
   </head>
   <body>
     <div class="reading-backdrop" data-world-book-backdrop aria-hidden="true"><div class="reading-backdrop__map"></div></div>
+    <SiteEdges />
     <SiteGrain animated />
     <div data-load-wrap class="loader" id="loader" aria-hidden="true">
       <div data-load-bg class="loader__bg"><div data-load-progress class="loader__bg-bar"></div></div>
