@@ -90,7 +90,12 @@ const fontNotices = [
 <main>
     <section class="phero wrap" aria-labelledby="shheep-title">
 
-      <h1 class="phero__h1 dsp" id="shheep-title"><span class="sr-only">Shheep — </span>{t.headline[0]}<br>{t.headline[1]}</h1>
+      <h1 class="phero__h1 dsp" id="shheep-title">
+        <span class="sr-only">Shheep — </span>{t.headline.map((line, index) => <Fragment>
+          {index > 0 && <br>}
+          {line.split(/(iPhone|iPad)/g).map(part => part === 'iPhone' || part === 'iPad' ? <span class="phero__device">{part}</span> : part)}
+        </Fragment>)}
+      </h1>
       <div class="phero__intro"><p class="phero__sub">{t.sub}</p></div>
       <ShheepGame language={t.htmlLang} />
       <div class="phero__cta">
@@ -175,6 +180,15 @@ const fontNotices = [
   .phero{padding-top:clamp(8px,1.5vw,18px)}
   .phero__intro{margin-top:22px}
   .phero__h1{margin:clamp(28px,4vw,56px) auto 0;font-size:clamp(48px,7.3vw,104px);text-align:center;max-width:100%;overflow-wrap:anywhere;text-wrap:balance}
+  .phero__h1 > *{line-height:inherit}
+  .phero__device{text-transform:none}
+  .phero__h1:lang(zh){--hero-line-width:8.6}
+  .phero__h1:lang(ja){--hero-line-width:11.2}
+  .phero__h1:lang(ko){--hero-line-width:8.6}
+  .phero__h1:lang(pt){--hero-line-width:8.5}
+  .phero__h1:lang(fr){--hero-line-width:9.5}
+  .phero__h1:lang(it){--hero-line-width:8.8}
+  .phero__h1:lang(ru){--hero-line-width:8.1}
   .phero__sub{min-width:0;margin:0 auto;font-size:1.0625rem;color:var(--muted);text-align:center;text-wrap:balance}
   .phero__cta{display:flex;justify-content:center;margin-top:24px}
   .app-store-badge{display:inline-block;border-radius:7px}
@@ -211,5 +225,5 @@ const fontNotices = [
   .licenses__content a{text-decoration:underline;text-underline-offset:3px}
   .next__q{overflow-wrap:anywhere;text-wrap:balance}
   .footer-credits{grid-column:1/-1;justify-self:center;max-width:68ch;font:400 .6667rem/1.4 var(--sans);text-transform:uppercase;letter-spacing:.04em;color:var(--muted);margin-top:28px;text-align:center}.footer-credits a:hover{text-decoration:underline}
-  @media(max-width:700px){.dream-card__grid{grid-template-columns:1fr}.dream-card__scene{min-height:210px}.phero__h1{font-size:clamp(44px,9vw,66px)}.dream-card__scene--wake img{right:20%}}
+  @media(max-width:700px){.dream-card__grid{grid-template-columns:1fr}.dream-card__scene{min-height:210px}.phero__h1{font-size:min(clamp(44px,9vw,66px),calc((100vw - 2 * var(--pad)) / var(--hero-line-width,6.7)))}.dream-card__scene--wake img{right:20%}}
 </style>
