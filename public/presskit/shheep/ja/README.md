@@ -3,14 +3,14 @@
 - 製品サイト: [https://lazyapps.com/shheep/ja/](https://lazyapps.com/shheep/ja/)
 - プレスキット: [https://lazyapps.com/shheep/presskit/#ja](https://lazyapps.com/shheep/presskit/#ja)
 - 対応環境: iPhone · iPad
-- 提供状況: App Store にまもなく登場
+- 提供状況: App Store で公開中
 - メディアお問い合わせ: [lazyapps.feedback@gmail.com](mailto:lazyapps.feedback@gmail.com)
 
 ## アプリについて
 
 iPhone・iPad で遊ぶ羊のジャンプゲーム
 
-柵を跳び越え、コウモリを避けて羊を数えよう。毎晩新しいコースに挑戦。Shheep は iPhone・iPad 向けに近日公開。
+柵を跳び越え、コウモリを避けて羊を数えよう。毎晩新しいコースに挑戦。Shheep は iPhone・iPad で配信中。
 
 柵を一つ跳び越えると、羊が一匹増えます。長く押すと、少し高くジャンプ。コウモリが来たらかがんでよけよう。低く飛んでいたら跳び越えても大丈夫。
 
@@ -24,6 +24,7 @@ iPhone・iPad アプリは Game Center のランキング、友達へのチャ�
 
 ## 公式リンク
 
+- [App Store](https://apps.apple.com/app/id6819031865)
 - [ウェブデモを試す](https://lazyapps.com/shheep/)
 
 ## 画像素材

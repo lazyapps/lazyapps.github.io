@@ -1,7 +1,6 @@
 ---
 import SocialMeta from './SocialMeta.astro';
 import StructuredData from './StructuredData.astro';
-// App Store launch: restore the download badge and Smart App Banner below.
 import SiteGrain from './SiteGrain.astro';
 import SiteEdges from './SiteEdges.astro';
 import SiteFooterBase from './SiteFooterBase.astro';
@@ -26,8 +25,8 @@ interface Props { t: (typeof SHHEEP_LOCALES)[keyof typeof SHHEEP_LOCALES]; }
 const { t } = Astro.props;
 const locales = Object.values(SHHEEP_LOCALES);
 const art = '/shheep/assets/sprites/';
-// const appStoreCampaign = `pt=259198&ct=lazyapps-${t.htmlLang.toLowerCase()}&mt=8`;
-// const storeURL = `https://apps.apple.com/app/apple-store/id6819031865?${appStoreCampaign}`;
+const appStoreCampaign = `pt=259198&ct=lazyapps-${t.htmlLang.toLowerCase()}&mt=8`;
+const storeURL = `https://apps.apple.com/app/apple-store/id6819031865?${appStoreCampaign}`;
 const { title, description } = t;
 const pageURL = `https://lazyapps.com${t.selectedUrl}`;
 const fontNotices = [
@@ -44,7 +43,7 @@ const fontNotices = [
   <title>{title}</title>
   <meta name="description" content={description}>
   <meta name="theme-color" content="#f8f8f6">
-  {/* <meta name="apple-itunes-app" content={`app-id=6819031865, affiliate-data=${appStoreCampaign}`}> */}
+  <meta name="apple-itunes-app" content={`app-id=6819031865, affiliate-data=${appStoreCampaign}`}>
   <SocialMeta title={title} description={description}
     url={pageURL} image="https://lazyapps.com/shheep/opengraph.png"
     imageAlt={t.imageAlt} imageWidth={1200} imageHeight={630} locale={t.ogLocale} />
@@ -57,6 +56,7 @@ const fontNotices = [
     '@id': `${pageURL}#app`,
     name: 'Shheep', description, url: pageURL, inLanguage: t.htmlLang,
     applicationCategory: 'GameApplication', operatingSystem: 'iOS, iPadOS',
+    downloadUrl: 'https://apps.apple.com/app/id6819031865',
     image: 'https://lazyapps.com/shheep/opengraph.png',
     publisher: { '@type': 'Organization', name: 'lazyapps', url: 'https://lazyapps.com/' },
   }} />
@@ -94,10 +94,7 @@ const fontNotices = [
       <div class="phero__intro"><p class="phero__sub">{t.sub}</p></div>
       <ShheepGame language={t.htmlLang} />
       <div class="phero__cta">
-        {/* <a href={storeURL} class="app-store-badge">
-          <img src="/shheep/app-store-badge.svg" width="144" height="48" alt="Download on the App Store">
-        </a> */}
-        <ShheepStoreBadge label={t.comingSoon} description={t.badgeAlt} />
+        <ShheepStoreBadge href={storeURL} locale={t.htmlLang} description={t.badgeAlt} />
       </div>
     </section>
 
@@ -181,7 +178,7 @@ const fontNotices = [
   .phero__sub{min-width:0;margin:0 auto;font-size:1.0625rem;color:var(--muted);text-align:center;text-wrap:balance}
   .phero__cta{display:flex;justify-content:center;margin-top:24px}
   .app-store-badge{display:inline-block;border-radius:7px}
-  .app-store-badge svg{display:block;width:auto;height:48px}
+  .app-store-badge img{display:block;width:auto;height:48px}
   .app-store-badge:focus-visible{outline:2px solid var(--ink);outline-offset:5px}
   .deck{padding-top:var(--space-section)}
   .dream-card{position:relative;padding:var(--space-card);background:var(--fill);border:1px solid #17171714;border-radius:var(--r-card);margin-top:-8px}

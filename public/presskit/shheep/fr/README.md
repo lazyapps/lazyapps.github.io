@@ -3,14 +3,14 @@
 - Site du produit: [https://lazyapps.com/shheep/fr/](https://lazyapps.com/shheep/fr/)
 - Dossier de presse: [https://lazyapps.com/shheep/presskit/#fr](https://lazyapps.com/shheep/presskit/#fr)
 - Plateforme: iPhone · iPad
-- Disponibilité: Bientôt sur l’App Store
+- Disponibilité: Disponible sur l’App Store
 - Contact presse: [lazyapps.feedback@gmail.com](mailto:lazyapps.feedback@gmail.com)
 
 ## À propos de l’app
 
 Comptez les moutons sur iPhone et iPad
 
-Sautez les barrières, évitez les chauves-souris et comptez les moutons sur un nouveau parcours chaque nuit. Shheep arrive bientôt sur iPhone et iPad.
+Sautez les barrières, évitez les chauves-souris et comptez les moutons sur un nouveau parcours chaque nuit. Shheep est disponible sur iPhone et iPad.
 
 Sautez une barrière et elle compte un mouton de plus. Maintenez un peu plus longtemps pour sauter plus haut. À l’arrivée d’une chauve-souris, baissez-vous ou sautez par-dessus si elle vole bas.
 
@@ -24,6 +24,7 @@ Les records de la démo web restent dans ce navigateur et ne sont pas synchronis
 
 ## Liens officiels
 
+- [App Store](https://apps.apple.com/app/id6819031865)
 - [Essayer la démo web](https://lazyapps.com/shheep/)
 
 ## Images

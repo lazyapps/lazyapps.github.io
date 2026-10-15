@@ -73,6 +73,12 @@ for (const page of pages) {
     check(attr(game, 'data-language') === locale.htmlLang, 'Game default language must match the page');
     const h1 = page.nodes.find(node => node.tagName === 'h1');
     check(locale.headline.every(line => text(h1).includes(line)), 'Headline is not localized');
+    const campaign = `pt=259198&ct=lazyapps-${locale.htmlLang.toLowerCase()}&mt=8`;
+    const storeLink = page.nodes.find(node => node.tagName === 'a' && attr(node, 'href') === `https://apps.apple.com/app/apple-store/id6819031865?${campaign}`);
+    check(storeLink, 'Missing localized App Store download link');
+    const badge = storeLink?.childNodes.find(node => node.tagName === 'img');
+    check(attr(badge, 'alt') === locale.badgeAlt && attr(badge, 'src'), 'Missing localized App Store download badge');
+    check(attr(meta(page, 'apple-itunes-app'), 'content') === `app-id=6819031865, affiliate-data=${campaign}`, 'Missing Safari Smart App Banner');
     for (const body of [...locale.cards.map(card => card[1]), locale.gameCenterCopy, locale.demoNote]) check(page.html.includes(body.replaceAll('&', '&amp;')), 'Missing translated page content');
   }
   if (localizedProduct.test(new URL(page.url).pathname)) {
@@ -115,7 +121,7 @@ for (const page of pages) {
     if (page.url.startsWith(`${site}/shheep/`)) {
       check(app['@type'] === 'SoftwareApplication' && app.operatingSystem === 'iOS, iPadOS', 'Shheep must describe the native iOS app');
       check(app.applicationCategory === 'GameApplication', 'Missing game application category');
-      check(!app.downloadUrl && !app.browserRequirements, 'Upcoming native app must not claim an available download or browser platform');
+      check(app.downloadUrl === 'https://apps.apple.com/app/id6819031865' && !app.browserRequirements, 'Released native app must provide its App Store download URL');
     } else {
       check(app['@type'] === 'WebApplication' ? app.browserRequirements : app.downloadUrl, 'Missing browser requirements or download URL');
     }

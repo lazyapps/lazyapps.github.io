@@ -3,14 +3,14 @@
 - Sitio del producto: [https://lazyapps.com/shheep/es/](https://lazyapps.com/shheep/es/)
 - Kit de prensa: [https://lazyapps.com/shheep/presskit/#es](https://lazyapps.com/shheep/presskit/#es)
 - Plataforma: iPhone · iPad
-- Disponibilidad: Próximamente en el App Store
+- Disponibilidad: Disponible en el App Store
 - Contacto de prensa: [lazyapps.feedback@gmail.com](mailto:lazyapps.feedback@gmail.com)
 
 ## Sobre la app
 
 Cuenta ovejas en iPhone y iPad
 
-Salta vallas, esquiva murciélagos y cuenta ovejas en un nuevo recorrido cada noche. Shheep llegará pronto a iPhone y iPad.
+Salta vallas, esquiva murciélagos y cuenta ovejas en un nuevo recorrido cada noche. Shheep ya está disponible para iPhone y iPad.
 
 Salta una valla y ella contará otra oveja. Mantén pulsado un poco más para saltar más alto. Cuando llegue un murciélago, agáchate o sáltalo si vuela bajo.
 
@@ -24,6 +24,7 @@ Los récords de la demo web se guardan en este navegador y no se sincronizan con
 
 ## Enlaces oficiales
 
+- [App Store](https://apps.apple.com/app/id6819031865)
 - [Probar la demo web](https://lazyapps.com/shheep/)
 
 ## Imágenes

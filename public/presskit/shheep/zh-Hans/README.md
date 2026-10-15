@@ -3,14 +3,14 @@
 - 产品网站: [https://lazyapps.com/shheep/zh-hans/](https://lazyapps.com/shheep/zh-hans/)
 - 媒体资料页: [https://lazyapps.com/shheep/presskit/#zh-Hans](https://lazyapps.com/shheep/presskit/#zh-Hans)
 - 平台: iPhone · iPad
-- 发布状态: 即将登陆 App Store
+- 发布状态: 已在 App Store 上架
 - 媒体联系: [lazyapps.feedback@gmail.com](mailto:lazyapps.feedback@gmail.com)
 
 ## 产品简介
 
 在 iPhone 和 iPad 上跳跃数羊
 
-跳过栅栏，低头躲开蝙蝠，每晚挑战新路线。Shheep 即将登陆 iPhone 和 iPad。
+跳过栅栏，低头躲开蝙蝠，每晚挑战新路线。Shheep 现已登陆 iPhone 和 iPad。
 
 跳过一道栅栏，她就多数一只羊。按住久一点，就能跳得高一点。蝙蝠飞来时低头躲过；飞得低的话，也可以跳过去。
 
@@ -24,6 +24,7 @@ iPhone 和 iPad App 支持 Game Center 排行榜、好友挑战和邀请。
 
 ## 官方链接
 
+- [App Store](https://apps.apple.com/app/id6819031865)
 - [网页试玩 Demo](https://lazyapps.com/shheep/)
 
 ## 图片素材

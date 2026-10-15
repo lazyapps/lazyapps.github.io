@@ -3,14 +3,14 @@
 - Produktwebsite: [https://lazyapps.com/shheep/de/](https://lazyapps.com/shheep/de/)
 - Pressemappe: [https://lazyapps.com/shheep/presskit/#de](https://lazyapps.com/shheep/presskit/#de)
 - Plattform: iPhone · iPad
-- Verfügbarkeit: Bald im App Store
+- Verfügbarkeit: Im App Store erhältlich
 - Pressekontakt: [lazyapps.feedback@gmail.com](mailto:lazyapps.feedback@gmail.com)
 
 ## Über die App
 
 Schafe zählen auf iPhone und iPad
 
-Spring über Zäune, duck dich unter Fledermäusen und zähle Schafe auf einer neuen Strecke jede Nacht. Shheep kommt bald für iPhone und iPad.
+Spring über Zäune, duck dich unter Fledermäusen und zähle Schafe auf einer neuen Strecke jede Nacht. Shheep ist jetzt für iPhone und iPad erhältlich.
 
 Spring über einen Zaun und sie zählt ein Schäfchen mehr. Halte länger gedrückt, um höher zu springen. Wenn eine Fledermaus kommt, duck dich – oder spring darüber, wenn sie tief fliegt.
 
@@ -24,6 +24,7 @@ Rekorde der Web-Demo bleiben in diesem Browser und werden nicht mit der App sync
 
 ## Offizielle Links
 
+- [App Store](https://apps.apple.com/app/id6819031865)
 - [Web-Demo ausprobieren](https://lazyapps.com/shheep/)
 
 ## Bilder

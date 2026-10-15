@@ -437,18 +437,25 @@
       "zh": "iPhone · iPad"
     },
     "availability": {
-      "en": "Coming soon on the App Store",
-      "zh": "即将登陆 App Store"
+      "en": "Available on the App Store",
+      "zh": "已在 App Store 上架"
     },
     "summary": {
-      "en": "Jump over fences, duck under bats and count sheep on a new course each night. Shheep is coming soon to iPhone and iPad.",
-      "zh": "跳过栅栏，低头躲开蝙蝠，每晚挑战新路线。Shheep 即将登陆 iPhone 和 iPad。"
+      "en": "Jump over fences, duck under bats and count sheep on a new course each night. Shheep is available on iPhone and iPad.",
+      "zh": "跳过栅栏，低头躲开蝙蝠，每晚挑战新路线。Shheep 现已登陆 iPhone 和 iPad。"
     },
     "description": {
-      "en": "Jump over fences, duck under bats and count sheep on a new course each night. Shheep is coming soon to iPhone and iPad.\n\nThe iPhone and iPad app supports Game Center leaderboards, friend challenges and invitations.\n\nWeb demo scores stay in this browser and do not sync with the app.",
-      "zh": "跳过栅栏，低头躲开蝙蝠，每晚挑战新路线。Shheep 即将登陆 iPhone 和 iPad。\n\niPhone 和 iPad App 支持 Game Center 排行榜、好友挑战和邀请。\n\n网页试玩成绩仅保存在当前浏览器，不与 App 同步。"
+      "en": "Jump over fences, duck under bats and count sheep on a new course each night. Shheep is available on iPhone and iPad.\n\nThe iPhone and iPad app supports Game Center leaderboards, friend challenges and invitations.\n\nWeb demo scores stay in this browser and do not sync with the app.",
+      "zh": "跳过栅栏，低头躲开蝙蝠，每晚挑战新路线。Shheep 现已登陆 iPhone 和 iPad。\n\niPhone 和 iPad App 支持 Game Center 排行榜、好友挑战和邀请。\n\n网页试玩成绩仅保存在当前浏览器，不与 App 同步。"
     },
     "links": [
+      {
+        "label": {
+          "en": "App Store",
+          "zh": "App Store"
+        },
+        "url": "https://apps.apple.com/app/id6819031865"
+      },
       {
         "label": {
           "en": "Product website · Web demo",

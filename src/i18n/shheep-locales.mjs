@@ -2,11 +2,11 @@ const copy = {
   en: {
     htmlLang: 'en', ogLocale: 'en_US', localeNow: 'English', localeShort: 'EN',
     title: "Shheep — Count sheep on iPhone & iPad",
-    description: "Jump over fences, duck under bats and count sheep on a new course each night. Shheep is coming soon to iPhone and iPad.",
+    description: "Jump over fences, duck under bats and count sheep on a new course each night. Shheep is available on iPhone and iPad.",
     imageAlt: 'Shheep’s pink pixel sheep wordmark above a sleeping girl in a cozy purple bedroom',
     home: 'lazyapps home', chooseLanguage: 'Choose language', skip: 'Skip game to how to play', howTo: 'How to play',
-    headline: ["Count sheep", "on iPhone & iPad"], sub: "Jump over fences, duck under bats and count sheep on a new course each night. Shheep is coming soon to iPhone and iPad.",
-    comingSoon: 'Coming soon on the', badgeAlt: 'Coming soon on the App Store',
+    headline: ["Count sheep", "on iPhone & iPad"], sub: "Jump over fences, duck under bats and count sheep on a new course each night. Shheep is available on iPhone and iPad.",
+    badgeAlt: 'Download on the App Store',
     cards: [
       [["Jump fences.", "Dodge bats."], 'Hop over a fence and she counts one more sheep. Hold a little longer to jump a little higher. When a bat flies by, duck down—or hop over it if it’s low.'],
       [["A new course.", "Every night."], 'A new course for every night. Come back for the same fences and bats, try to count a few more, and keep your nightly streak going. Past midnight? It’s still the same night until noon.'],
@@ -22,11 +22,11 @@ const copy = {
   'zh-hans': {
     htmlLang: 'zh-Hans', ogLocale: 'zh_CN', localeNow: '简体中文', localeShort: '简',
     title: "Shheep — 在 iPhone 和 iPad 上跳跃数羊",
-    description: "跳过栅栏，低头躲开蝙蝠，每晚挑战新路线。Shheep 即将登陆 iPhone 和 iPad。",
+    description: "跳过栅栏，低头躲开蝙蝠，每晚挑战新路线。Shheep 现已登陆 iPhone 和 iPad。",
     imageAlt: '粉色像素小羊组成的 Shheep 标志，下方是紫色卧室里熟睡的女孩',
     home: '返回 lazyapps 首页', chooseLanguage: '选择语言', skip: '跳过游戏，查看玩法', howTo: '怎么玩',
-    headline: ["在 iPhone 和 iPad 上", "跳跃数羊"], sub: "跳过栅栏，低头躲开蝙蝠，每晚挑战新路线。Shheep 即将登陆 iPhone 和 iPad。",
-    comingSoon: '即将登陆', badgeAlt: '即将登陆 App Store',
+    headline: ["在 iPhone 和 iPad 上", "跳跃数羊"], sub: "跳过栅栏，低头躲开蝙蝠，每晚挑战新路线。Shheep 现已登陆 iPhone 和 iPad。",
+    badgeAlt: '在 App Store 下载',
     cards: [
       [["跳过栅栏，", "躲开蝙蝠。"], '跳过一道栅栏，她就多数一只羊。按住久一点，就能跳得高一点。蝙蝠飞来时低头躲过；飞得低的话，也可以跳过去。'],
       [["每晚更新，", "挑战同一路线。"], '每晚都有新路线。回来挑战相同的栅栏和蝙蝠，试着多放过几只羊，让连续游玩的纪录延续下去。过了午夜？中午之前都算同一个夜晚。'],
@@ -42,11 +42,11 @@ const copy = {
   'zh-hant': {
     htmlLang: 'zh-Hant', ogLocale: 'zh_TW', localeNow: '繁體中文', localeShort: '繁',
     title: "Shheep — 在 iPhone 和 iPad 上跳躍數羊",
-    description: "跳過柵欄，低頭躲開蝙蝠，每晚挑戰新路線。Shheep 即將登陸 iPhone 和 iPad。",
+    description: "跳過柵欄，低頭躲開蝙蝠，每晚挑戰新路線。Shheep 現已登陸 iPhone 和 iPad。",
     imageAlt: '粉色像素小羊組成的 Shheep 標誌，下方是紫色臥室裡熟睡的女孩',
     home: '返回 lazyapps 首頁', chooseLanguage: '選擇語言', skip: '跳過遊戲，查看玩法', howTo: '怎麼玩',
-    headline: ["在 iPhone 和 iPad 上", "跳躍數羊"], sub: "跳過柵欄，低頭躲開蝙蝠，每晚挑戰新路線。Shheep 即將登陸 iPhone 和 iPad。",
-    comingSoon: '即將登陸', badgeAlt: '即將登陸 App Store',
+    headline: ["在 iPhone 和 iPad 上", "跳躍數羊"], sub: "跳過柵欄，低頭躲開蝙蝠，每晚挑戰新路線。Shheep 現已登陸 iPhone 和 iPad。",
+    badgeAlt: '在 App Store 下載',
     cards: [
       [["跳過柵欄，", "躲開蝙蝠。"], '跳過一道柵欄，她就多數一隻羊。按住久一點，就能跳得高一點。蝙蝠飛來時低頭躲過；飛得低的話，也可以跳過去。'],
       [["每晚更新，", "挑戰同一路線。"], '每晚都有新路線。回來挑戰相同的柵欄和蝙蝠，試著多放過幾隻羊，讓連續遊玩的紀錄延續下去。過了午夜？中午之前都算同一個夜晚。'],
@@ -62,11 +62,11 @@ const copy = {
   ja: {
     htmlLang: 'ja', ogLocale: 'ja_JP', localeNow: '日本語', localeShort: 'JA',
     title: "Shheep — iPhone・iPad で遊ぶ羊のジャンプゲーム",
-    description: "柵を跳び越え、コウモリを避けて羊を数えよう。毎晩新しいコースに挑戦。Shheep は iPhone・iPad 向けに近日公開。",
+    description: "柵を跳び越え、コウモリを避けて羊を数えよう。毎晩新しいコースに挑戦。Shheep は iPhone・iPad で配信中。",
     imageAlt: '紫の寝室で眠る女の子と、ピンクの羊で描かれた Shheep のピクセルロゴ',
     home: 'lazyapps ホーム', chooseLanguage: '言語を選ぶ', skip: 'ゲームを飛ばして遊び方へ', howTo: '遊び方',
-    headline: ["iPhone・iPad で遊ぶ", "羊のジャンプゲーム"], sub: "柵を跳び越え、コウモリを避けて羊を数えよう。毎晩新しいコースに挑戦。Shheep は iPhone・iPad 向けに近日公開。",
-    comingSoon: 'まもなく登場', badgeAlt: 'App Store にまもなく登場',
+    headline: ["iPhone・iPad で遊ぶ", "羊のジャンプゲーム"], sub: "柵を跳び越え、コウモリを避けて羊を数えよう。毎晩新しいコースに挑戦。Shheep は iPhone・iPad で配信中。",
+    badgeAlt: 'App Store からダウンロード',
     cards: [
       [["柵を跳び越え、", "コウモリを避ける。"], '柵を一つ跳び越えると、羊が一匹増えます。長く押すと、少し高くジャンプ。コウモリが来たらかがんでよけよう。低く飛んでいたら跳び越えても大丈夫。'],
       [["毎晩変わる", "コースに挑戦。"], '夜ごとに新しいコースが登場。同じ柵とコウモリに再挑戦して、もっと羊を数えよう。連続プレイの記録も残ります。日付が変わっても、お昼までは同じ夜です。'],
@@ -82,11 +82,11 @@ const copy = {
   ko: {
     htmlLang: 'ko', ogLocale: 'ko_KR', localeNow: '한국어', localeShort: 'KO',
     title: "Shheep — iPhone과 iPad에서 즐기는 양 세기 게임",
-    description: "울타리를 뛰어넘고 박쥐를 피해 양을 세세요. 매일 밤 새로운 코스에 도전하세요. Shheep은 iPhone과 iPad용으로 출시 예정입니다.",
+    description: "울타리를 뛰어넘고 박쥐를 피해 양을 세세요. 매일 밤 새로운 코스에 도전하세요. Shheep을 이제 iPhone과 iPad에서 만나보세요.",
     imageAlt: '보라색 침실에서 잠든 소녀와 분홍색 픽셀 양으로 만든 Shheep 로고',
     home: 'lazyapps 홈', chooseLanguage: '언어 선택', skip: '게임을 건너뛰고 게임 방법 보기', howTo: '게임 방법',
-    headline: ["iPhone과 iPad에서", "양을 세세요"], sub: "울타리를 뛰어넘고 박쥐를 피해 양을 세세요. 매일 밤 새로운 코스에 도전하세요. Shheep은 iPhone과 iPad용으로 출시 예정입니다.",
-    comingSoon: '곧 출시', badgeAlt: 'App Store에 곧 출시',
+    headline: ["iPhone과 iPad에서", "양을 세세요"], sub: "울타리를 뛰어넘고 박쥐를 피해 양을 세세요. 매일 밤 새로운 코스에 도전하세요. Shheep을 이제 iPhone과 iPad에서 만나보세요.",
+    badgeAlt: 'App Store에서 다운로드',
     cards: [
       [["울타리를 넘고", "박쥐를 피하세요."], '울타리를 하나 넘으면 양도 한 마리 늘어요. 조금 더 오래 누르면 더 높이 뛸 수 있어요. 박쥐가 날아오면 몸을 숙이세요. 낮게 날면 뛰어넘어도 돼요.'],
       [["매일 밤 새로운", "코스에 도전하세요."], '매일 밤 새로운 코스가 열려요. 같은 울타리와 박쥐에 다시 도전하며 더 많은 양을 세고 연속 플레이 기록을 이어 가세요. 자정이 지나도 정오까지는 같은 밤이에요.'],
@@ -102,11 +102,11 @@ const copy = {
   es: {
     htmlLang: 'es', ogLocale: 'es_ES', localeNow: 'Español', localeShort: 'ES',
     title: "Shheep — Cuenta ovejas en iPhone y iPad",
-    description: "Salta vallas, esquiva murciélagos y cuenta ovejas en un nuevo recorrido cada noche. Shheep llegará pronto a iPhone y iPad.",
+    description: "Salta vallas, esquiva murciélagos y cuenta ovejas en un nuevo recorrido cada noche. Shheep ya está disponible para iPhone y iPad.",
     imageAlt: 'El logotipo rosa de Shheep con ovejas de píxeles sobre una niña dormida en un dormitorio violeta',
     home: 'Inicio de lazyapps', chooseLanguage: 'Elegir idioma', skip: 'Saltar el juego e ir a cómo jugar', howTo: 'Cómo jugar',
-    headline: ["Cuenta ovejas", "en iPhone y iPad"], sub: "Salta vallas, esquiva murciélagos y cuenta ovejas en un nuevo recorrido cada noche. Shheep llegará pronto a iPhone y iPad.",
-    comingSoon: 'Próximamente en', badgeAlt: 'Próximamente en el App Store',
+    headline: ["Cuenta ovejas", "en iPhone y iPad"], sub: "Salta vallas, esquiva murciélagos y cuenta ovejas en un nuevo recorrido cada noche. Shheep ya está disponible para iPhone y iPad.",
+    badgeAlt: 'Descargar en el App Store',
     cards: [
       [["Salta vallas.", "Esquiva murciélagos."], 'Salta una valla y ella contará otra oveja. Mantén pulsado un poco más para saltar más alto. Cuando llegue un murciélago, agáchate o sáltalo si vuela bajo.'],
       [["Un recorrido nuevo.", "Cada noche."], 'Un recorrido nuevo cada noche. Vuelve a las mismas vallas y murciélagos, cuenta unas ovejas más y mantén tu racha. ¿Ya pasó medianoche? Hasta el mediodía sigue siendo la misma noche.'],
@@ -122,11 +122,11 @@ const copy = {
   'pt-br': {
     htmlLang: 'pt-BR', ogLocale: 'pt_BR', localeNow: 'Português (Brasil)', localeShort: 'PT',
     title: "Shheep — Conte ovelhas no iPhone e iPad",
-    description: "Pule cercas, desvie de morcegos e conte ovelhas em um percurso novo a cada noite. Shheep chega em breve ao iPhone e iPad.",
+    description: "Pule cercas, desvie de morcegos e conte ovelhas em um percurso novo a cada noite. Shheep já está disponível para iPhone e iPad.",
     imageAlt: 'O logotipo rosa de Shheep com ovelhas de pixels sobre uma menina dormindo num quarto roxo',
     home: 'Início da lazyapps', chooseLanguage: 'Escolher idioma', skip: 'Pular o jogo e ver como jogar', howTo: 'Como jogar',
-    headline: ["Conte ovelhas", "no iPhone e iPad"], sub: "Pule cercas, desvie de morcegos e conte ovelhas em um percurso novo a cada noite. Shheep chega em breve ao iPhone e iPad.",
-    comingSoon: 'Em breve na', badgeAlt: 'Em breve na App Store',
+    headline: ["Conte ovelhas", "no iPhone e iPad"], sub: "Pule cercas, desvie de morcegos e conte ovelhas em um percurso novo a cada noite. Shheep já está disponível para iPhone e iPad.",
+    badgeAlt: 'Baixar na App Store',
     cards: [
       [["Pule cercas.", "Desvie de morcegos."], 'Pule uma cerca e ela conta mais uma ovelha. Segure um pouco mais para pular mais alto. Quando vier um morcego, abaixe-se ou pule por cima se ele voar baixo.'],
       [["Um percurso novo.", "A cada noite."], 'Um percurso novo a cada noite. Volte às mesmas cercas e morcegos, tente contar mais ovelhas e mantenha sua sequência. Passou da meia-noite? Até o meio-dia ainda é a mesma noite.'],
@@ -142,11 +142,11 @@ const copy = {
   de: {
     htmlLang: 'de', ogLocale: 'de_DE', localeNow: 'Deutsch', localeShort: 'DE',
     title: "Shheep — Schafe zählen auf iPhone und iPad",
-    description: "Spring über Zäune, duck dich unter Fledermäusen und zähle Schafe auf einer neuen Strecke jede Nacht. Shheep kommt bald für iPhone und iPad.",
+    description: "Spring über Zäune, duck dich unter Fledermäusen und zähle Schafe auf einer neuen Strecke jede Nacht. Shheep ist jetzt für iPhone und iPad erhältlich.",
     imageAlt: 'Das rosa Shheep-Pixellogo aus Schafen über einem schlafenden Mädchen in einem violetten Schlafzimmer',
     home: 'lazyapps-Startseite', chooseLanguage: 'Sprache wählen', skip: 'Spiel überspringen und zur Anleitung', howTo: 'So geht’s',
-    headline: ["Schafe zählen", "auf iPhone und iPad"], sub: "Spring über Zäune, duck dich unter Fledermäusen und zähle Schafe auf einer neuen Strecke jede Nacht. Shheep kommt bald für iPhone und iPad.",
-    comingSoon: 'Bald im', badgeAlt: 'Bald im App Store',
+    headline: ["Schafe zählen", "auf iPhone und iPad"], sub: "Spring über Zäune, duck dich unter Fledermäusen und zähle Schafe auf einer neuen Strecke jede Nacht. Shheep ist jetzt für iPhone und iPad erhältlich.",
+    badgeAlt: 'Laden im App Store',
     cards: [
       [["Zäune überspringen.", "Fledermäusen ausweichen."], 'Spring über einen Zaun und sie zählt ein Schäfchen mehr. Halte länger gedrückt, um höher zu springen. Wenn eine Fledermaus kommt, duck dich – oder spring darüber, wenn sie tief fliegt.'],
       [["Eine neue Strecke.", "Jede Nacht."], 'Jede Nacht bringt eine neue Strecke. Versuch dich erneut an denselben Zäunen und Fledermäusen, zähl mehr Schäfchen und halte deine Serie am Laufen. Nach Mitternacht? Bis mittags zählt noch dieselbe Nacht.'],
@@ -162,11 +162,11 @@ const copy = {
   fr: {
     htmlLang: 'fr', ogLocale: 'fr_FR', localeNow: 'Français', localeShort: 'FR',
     title: "Shheep — Comptez les moutons sur iPhone et iPad",
-    description: "Sautez les barrières, évitez les chauves-souris et comptez les moutons sur un nouveau parcours chaque nuit. Shheep arrive bientôt sur iPhone et iPad.",
+    description: "Sautez les barrières, évitez les chauves-souris et comptez les moutons sur un nouveau parcours chaque nuit. Shheep est disponible sur iPhone et iPad.",
     imageAlt: 'Le logo rose de Shheep composé de moutons en pixels au-dessus d’une fille endormie dans une chambre violette',
     home: 'Accueil lazyapps', chooseLanguage: 'Choisir la langue', skip: 'Passer le jeu et voir comment jouer', howTo: 'Comment jouer',
-    headline: ["Comptez les moutons", "sur iPhone et iPad"], sub: "Sautez les barrières, évitez les chauves-souris et comptez les moutons sur un nouveau parcours chaque nuit. Shheep arrive bientôt sur iPhone et iPad.",
-    comingSoon: 'Bientôt sur', badgeAlt: 'Bientôt sur l’App Store',
+    headline: ["Comptez les moutons", "sur iPhone et iPad"], sub: "Sautez les barrières, évitez les chauves-souris et comptez les moutons sur un nouveau parcours chaque nuit. Shheep est disponible sur iPhone et iPad.",
+    badgeAlt: 'Télécharger dans l’App Store',
     cards: [
       [["Sautez les barrières.", "Évitez les chauves-souris."], 'Sautez une barrière et elle compte un mouton de plus. Maintenez un peu plus longtemps pour sauter plus haut. À l’arrivée d’une chauve-souris, baissez-vous ou sautez par-dessus si elle vole bas.'],
       [["Un nouveau parcours.", "Chaque nuit."], 'Un nouveau parcours chaque nuit. Retrouvez les mêmes barrières et chauves-souris, comptez quelques moutons de plus et poursuivez votre série. Minuit est passé ? Jusqu’à midi, c’est encore la même nuit.'],
@@ -182,11 +182,11 @@ const copy = {
   it: {
     htmlLang: 'it', ogLocale: 'it_IT', localeNow: 'Italiano', localeShort: 'IT',
     title: "Shheep — Conta le pecore su iPhone e iPad",
-    description: "Salta le staccionate, evita i pipistrelli e conta le pecore su un nuovo percorso ogni notte. Shheep arriverà presto su iPhone e iPad.",
+    description: "Salta le staccionate, evita i pipistrelli e conta le pecore su un nuovo percorso ogni notte. Shheep è disponibile per iPhone e iPad.",
     imageAlt: 'Il logo rosa di Shheep con pecorelle in pixel sopra una ragazza addormentata in una cameretta viola',
     home: 'Home di lazyapps', chooseLanguage: 'Scegli la lingua', skip: 'Salta il gioco e scopri come giocare', howTo: 'Come si gioca',
-    headline: ["Conta le pecore", "su iPhone e iPad"], sub: "Salta le staccionate, evita i pipistrelli e conta le pecore su un nuovo percorso ogni notte. Shheep arriverà presto su iPhone e iPad.",
-    comingSoon: 'Presto su', badgeAlt: 'Presto su App Store',
+    headline: ["Conta le pecore", "su iPhone e iPad"], sub: "Salta le staccionate, evita i pipistrelli e conta le pecore su un nuovo percorso ogni notte. Shheep è disponibile per iPhone e iPad.",
+    badgeAlt: 'Scarica su App Store',
     cards: [
       [["Salta le staccionate.", "Evita i pipistrelli."], 'Salta una staccionata e lei conta una pecora in più. Tieni premuto un po’ più a lungo per saltare più in alto. Quando arriva un pipistrello, abbassati o saltalo se vola basso.'],
       [["Un nuovo percorso.", "Ogni notte."], 'Un nuovo percorso ogni notte. Torna alle stesse staccionate e agli stessi pipistrelli, prova a contare più pecore e continua la tua serie. È passata mezzanotte? Fino a mezzogiorno è ancora la stessa notte.'],
@@ -202,11 +202,11 @@ const copy = {
   ru: {
     htmlLang: 'ru', ogLocale: 'ru_RU', localeNow: 'Русский', localeShort: 'RU',
     title: "Shheep — Считайте овечек на iPhone и iPad",
-    description: "Прыгайте через заборы, пригибайтесь под летучими мышами и считайте овечек на новой трассе каждую ночь. Shheep скоро появится на iPhone и iPad.",
+    description: "Прыгайте через заборы, пригибайтесь под летучими мышами и считайте овечек на новой трассе каждую ночь. Shheep уже доступен на iPhone и iPad.",
     imageAlt: 'Розовый пиксельный логотип Shheep из овечек над спящей девочкой в фиолетовой спальне',
     home: 'Главная lazyapps', chooseLanguage: 'Выбрать язык', skip: 'Пропустить игру и перейти к правилам', howTo: 'Как играть',
-    headline: ["Считайте овечек", "на iPhone и iPad"], sub: "Прыгайте через заборы, пригибайтесь под летучими мышами и считайте овечек на новой трассе каждую ночь. Shheep скоро появится на iPhone и iPad.",
-    comingSoon: 'Скоро в', badgeAlt: 'Скоро в App Store',
+    headline: ["Считайте овечек", "на iPhone и iPad"], sub: "Прыгайте через заборы, пригибайтесь под летучими мышами и считайте овечек на новой трассе каждую ночь. Shheep уже доступен на iPhone и iPad.",
+    badgeAlt: 'Загрузить в App Store',
     cards: [
       [["Прыгайте через заборы.", "Избегайте летучих мышей."], 'Перепрыгните забор, и она насчитает ещё одну овечку. Удерживайте чуть дольше, чтобы прыгнуть выше. Когда летит мышь, пригнитесь или перепрыгните её, если она летит низко.'],
       [["Новая трасса.", "Каждую ночь."], 'Каждую ночь — новая трасса. Возвращайтесь к тем же заборам и мышам, считайте больше овечек и продолжайте серию. Уже за полночь? До полудня всё ещё считается та же ночь.'],

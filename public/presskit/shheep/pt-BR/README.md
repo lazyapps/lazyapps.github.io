@@ -3,14 +3,14 @@
 - Site do produto: [https://lazyapps.com/shheep/pt-br/](https://lazyapps.com/shheep/pt-br/)
 - Kit de imprensa: [https://lazyapps.com/shheep/presskit/#pt-BR](https://lazyapps.com/shheep/presskit/#pt-BR)
 - Plataforma: iPhone · iPad
-- Disponibilidade: Em breve na App Store
+- Disponibilidade: Disponível na App Store
 - Contato de imprensa: [lazyapps.feedback@gmail.com](mailto:lazyapps.feedback@gmail.com)
 
 ## Sobre o app
 
 Conte ovelhas no iPhone e iPad
 
-Pule cercas, desvie de morcegos e conte ovelhas em um percurso novo a cada noite. Shheep chega em breve ao iPhone e iPad.
+Pule cercas, desvie de morcegos e conte ovelhas em um percurso novo a cada noite. Shheep já está disponível para iPhone e iPad.
 
 Pule uma cerca e ela conta mais uma ovelha. Segure um pouco mais para pular mais alto. Quando vier um morcego, abaixe-se ou pule por cima se ele voar baixo.
 
@@ -24,6 +24,7 @@ Os recordes da demo web ficam neste navegador e não são sincronizados com o ap
 
 ## Links oficiais
 
+- [App Store](https://apps.apple.com/app/id6819031865)
 - [Experimentar a demo web](https://lazyapps.com/shheep/)
 
 ## Imagens

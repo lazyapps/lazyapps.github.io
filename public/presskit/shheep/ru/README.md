@@ -3,14 +3,14 @@
 - Сайт продукта: [https://lazyapps.com/shheep/ru/](https://lazyapps.com/shheep/ru/)
 - Пресс-кит: [https://lazyapps.com/shheep/presskit/#ru](https://lazyapps.com/shheep/presskit/#ru)
 - Платформа: iPhone · iPad
-- Доступность: Скоро в App Store
+- Доступность: Доступно в App Store
 - Контакт для прессы: [lazyapps.feedback@gmail.com](mailto:lazyapps.feedback@gmail.com)
 
 ## О приложении
 
 Считайте овечек на iPhone и iPad
 
-Прыгайте через заборы, пригибайтесь под летучими мышами и считайте овечек на новой трассе каждую ночь. Shheep скоро появится на iPhone и iPad.
+Прыгайте через заборы, пригибайтесь под летучими мышами и считайте овечек на новой трассе каждую ночь. Shheep уже доступен на iPhone и iPad.
 
 Перепрыгните забор, и она насчитает ещё одну овечку. Удерживайте чуть дольше, чтобы прыгнуть выше. Когда летит мышь, пригнитесь или перепрыгните её, если она летит низко.
 
@@ -24,6 +24,7 @@
 
 ## Официальные ссылки
 
+- [App Store](https://apps.apple.com/app/id6819031865)
 - [Попробовать веб-демо](https://lazyapps.com/shheep/)
 
 ## Изображения

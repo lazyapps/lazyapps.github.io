@@ -21,7 +21,7 @@ export const pressPresentations = pressKits.map(kit => ({
     const copy = kit.locales.find(locale => locale.tag === tag);
     const marketing = Object.values(translations[kit.slug] ?? {}).find(locale => locale.htmlLang === tag);
     const chinese = tag === 'zh-Hans' ? kit.summary.zh : tag === 'zh-Hant' ? traditionalSummaries[kit.slug] : undefined;
-    const category = ['chmate', 'fondfont', 'world-book'].includes(kit.slug) ? 'store' : kit.slug === 'yiyan' ? 'beta' : kit.slug === 'shheep' ? 'upcoming' : 'mac';
+    const category = ['chmate', 'fondfont', 'world-book', 'shheep'].includes(kit.slug) ? 'store' : kit.slug === 'yiyan' ? 'beta' : 'mac';
     const g = glossary[tag];
     return [tag, {
       name: copy?.name ?? kit.names.en,

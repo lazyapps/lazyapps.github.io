@@ -3,14 +3,14 @@
 - 제품 웹사이트: [https://lazyapps.com/shheep/ko/](https://lazyapps.com/shheep/ko/)
 - 프레스 키트: [https://lazyapps.com/shheep/presskit/#ko](https://lazyapps.com/shheep/presskit/#ko)
 - 플랫폼: iPhone · iPad
-- 제공 상태: App Store에 곧 출시
+- 제공 상태: App Store에서 제공 중
 - 언론 문의: [lazyapps.feedback@gmail.com](mailto:lazyapps.feedback@gmail.com)
 
 ## 앱 소개
 
 iPhone과 iPad에서 즐기는 양 세기 게임
 
-울타리를 뛰어넘고 박쥐를 피해 양을 세세요. 매일 밤 새로운 코스에 도전하세요. Shheep은 iPhone과 iPad용으로 출시 예정입니다.
+울타리를 뛰어넘고 박쥐를 피해 양을 세세요. 매일 밤 새로운 코스에 도전하세요. Shheep을 이제 iPhone과 iPad에서 만나보세요.
 
 울타리를 하나 넘으면 양도 한 마리 늘어요. 조금 더 오래 누르면 더 높이 뛸 수 있어요. 박쥐가 날아오면 몸을 숙이세요. 낮게 날면 뛰어넘어도 돼요.
 
@@ -24,6 +24,7 @@ iPhone과 iPad 앱은 Game Center 순위표, 친구 도전과 초대를 지원�
 
 ## 공식 링크
 
+- [App Store](https://apps.apple.com/app/id6819031865)
 - [웹 데모 체험](https://lazyapps.com/shheep/)
 
 ## 이미지 자료

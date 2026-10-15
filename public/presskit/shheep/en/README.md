@@ -3,14 +3,14 @@
 - Website: [https://lazyapps.com/shheep/](https://lazyapps.com/shheep/)
 - Press Kit: [https://lazyapps.com/shheep/presskit/#en](https://lazyapps.com/shheep/presskit/#en)
 - Platform: iPhone · iPad
-- Availability: Coming soon on the App Store
+- Availability: Available on the App Store
 - Media contact: [lazyapps.feedback@gmail.com](mailto:lazyapps.feedback@gmail.com)
 
 ## About the app
 
 Count sheep on iPhone & iPad
 
-Jump over fences, duck under bats and count sheep on a new course each night. Shheep is coming soon to iPhone and iPad.
+Jump over fences, duck under bats and count sheep on a new course each night. Shheep is available on iPhone and iPad.
 
 Hop over a fence and she counts one more sheep. Hold a little longer to jump a little higher. When a bat flies by, duck down—or hop over it if it’s low.
 
@@ -24,6 +24,7 @@ Web demo scores stay in this browser and do not sync with the app.
 
 ## Official links
 
+- [App Store](https://apps.apple.com/app/id6819031865)
 - [Try the web demo](https://lazyapps.com/shheep/)
 
 ## Images

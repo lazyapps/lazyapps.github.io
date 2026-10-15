@@ -3,14 +3,14 @@
 - Sito del prodotto: [https://lazyapps.com/shheep/it/](https://lazyapps.com/shheep/it/)
 - Kit stampa: [https://lazyapps.com/shheep/presskit/#it](https://lazyapps.com/shheep/presskit/#it)
 - Piattaforma: iPhone · iPad
-- Disponibilità: Presto su App Store
+- Disponibilità: Disponibile sull’App Store
 - Contatto stampa: [lazyapps.feedback@gmail.com](mailto:lazyapps.feedback@gmail.com)
 
 ## Informazioni sull’app
 
 Conta le pecore su iPhone e iPad
 
-Salta le staccionate, evita i pipistrelli e conta le pecore su un nuovo percorso ogni notte. Shheep arriverà presto su iPhone e iPad.
+Salta le staccionate, evita i pipistrelli e conta le pecore su un nuovo percorso ogni notte. Shheep è disponibile per iPhone e iPad.
 
 Salta una staccionata e lei conta una pecora in più. Tieni premuto un po’ più a lungo per saltare più in alto. Quando arriva un pipistrello, abbassati o saltalo se vola basso.
 
@@ -24,6 +24,7 @@ I record della demo web restano in questo browser e non si sincronizzano con l�
 
 ## Link ufficiali
 
+- [App Store](https://apps.apple.com/app/id6819031865)
 - [Prova la demo web](https://lazyapps.com/shheep/)
 
 ## Immagini

@@ -58,7 +58,7 @@ export const pressKits = originals.map(kit => {
       summary = plain(t.title.split(' — ')[1]);
       description = [t.description, ...t.cards.map(card => card[1]), t.gameCenterCopy, t.demoNote].join('\n\n');
     }
-    const category = ['chmate','fondfont','world-book'].includes(kit.slug) ? 'store' : kit.slug === 'yiyan' ? 'beta' : kit.slug === 'shheep' ? 'upcoming' : 'mac';
+    const category = ['chmate','fondfont','world-book','shheep'].includes(kit.slug) ? 'store' : kit.slug === 'yiyan' ? 'beta' : 'mac';
     const links = kit.links.map(link => ({url:link.url, label:link.url.includes('apps.apple.com') ? 'App Store' : link.url.includes('testflight.') ? g.links.beta : link.url.endsWith('/releases') ? g.links.download : link.url.includes('github.com') ? g.links.source : kit.slug === 'shheep' ? g.links.demo : g.links.play}));
     return { tag, displayName: g.name, name, summary, description, website: t?.selectedUrl ?? `/${kit.slug}/`, platform: kit.platform[lang], availability: g.availability[category], links, assets: localeAssets(kit, tag, t), headings: g.headings, usage: g.usage };
   });
