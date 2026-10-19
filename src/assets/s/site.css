@@ -64,6 +64,7 @@ body {
   --c5:#ffffff;
   --c6:#171717;
 
+  --app-doze:oklch(0.87 0.09 235);
   --app-shheep:#ffd4e5;
   --app-keyhop:oklch(0.8 0.083 300);
   --app-yiyan:oklch(0.9 0.152 95);

@@ -1,0 +1,34 @@
+{
+  "project": "_vibe/doze/src",
+  "source": "Sources/StatusIcon.swift",
+  "commit": "027b9a60070253119244b9244228384bc25e3dc1",
+  "sourceSha256": "1289cecc7496c8259873e6dba31f254f221db60068ab15a4360a4d3e4c6f2514",
+  "output": "src/assets/img/doze-menubar.png",
+  "outputSha256": "08d0d36396e7c70ff86b09f5037f9d70125058df9df1b503b6c1af0662d40598",
+  "size": [
+    44,
+    40
+  ],
+  "note": "Native template image rendered at 2× from the current working-tree source, preserving its original aspect ratio. The active, keep-awake-off state matches the panel capture. Dark appearance uses template inversion. Companion menu icons are native macOS SF Symbols.",
+  "systemSymbols": [
+    {
+      "symbol": "apple.logo",
+      "output": "src/assets/img/doze-system-apple.png",
+      "sha256": "70b4b56d35a7fda7f43d3f530033b7fb28c39b94483495073ec3e060764c120b"
+    },
+    {
+      "symbol": "wifi",
+      "output": "src/assets/img/doze-system-wifi.png",
+      "sha256": "1ffcc0fc4fbc3432fa17be248564ef366ec4d41891ce60a0431ac6e68800a71d"
+    },
+    {
+      "symbol": "battery.100percent",
+      "output": "src/assets/img/doze-system-battery.png",
+      "sha256": "df9dfeb3e65c483bbf39926b62ccf24d4df253c0a8e7a3e355dacb0351ff5696"
+    }
+  ],
+  "state": {
+    "state": "active",
+    "keepAwake": false
+  }
+}

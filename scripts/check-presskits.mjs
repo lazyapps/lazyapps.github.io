@@ -124,6 +124,17 @@ for (const kit of kits) {
   const identityPaths = new Map();
   const originalIcon = nativeIcons[kit.slug];
   check(originalIcon, 'Missing native App icon provenance');
+  if (originalIcon.compactSource) {
+    for (const [name, checksum] of Object.entries(originalIcon.compactSource.sourceHashes)) {
+      check(hash(await readFile(posix.join(originalIcon.compactSource.source, name))) === checksum,
+        `Compact icon source changed: ${name}; export and update provenance`);
+    }
+  }
+  for (const rendition of originalIcon.webRenditions ?? []) {
+    const bytes = await readFile(rendition.output);
+    check(hash(bytes) === rendition.sha256, 'Small native icon rendition changed without a source export');
+    assert.deepEqual(imageSize(bytes), [rendition.size * rendition.scale, rendition.size * rendition.scale], 'Small native icon density differs');
+  }
   for (const [name, checksum] of Object.entries(originalIcon.sourceHashes)) {
     const sourcePath = originalIcon.source.endsWith('.png') ? originalIcon.source : posix.join(originalIcon.source, name);
     check(hash(await readFile(sourcePath)) === checksum, `Native icon source changed: ${name}; export and update provenance`);

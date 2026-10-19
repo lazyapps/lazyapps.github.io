@@ -1,0 +1,27 @@
+{
+  "project": "_vibe/doze/src",
+  "commit": "027b9a60070253119244b9244228384bc25e3dc1",
+  "note": "Original native app artwork used only as website demo atmosphere, outside the unmodified panel capture. This is a staged website demonstration, not an app wallpaper feature.",
+  "assets": [
+    {
+      "original": "Assets/sun-cozy-doodle.png",
+      "output": "src/assets/img/doze-sun-cozy-doodle.png",
+      "sha256": "5a65b13ff4a08ae1593e0bee3449a5d93f6afcc5de577094d22debc55a167a84"
+    },
+    {
+      "original": "Assets/moon-cozy-doodle.png",
+      "output": "src/assets/img/doze-moon-cozy-doodle.png",
+      "sha256": "2bf3cabfa5756271a8958f5007390db3f86a3f5064aa268e863a43654cb02960"
+    },
+    {
+      "original": "Assets/landscape-day-cozy-doodle.png",
+      "output": "src/assets/img/doze-landscape-day-cozy-doodle.png",
+      "sha256": "8a985c4ed011c2f2c79e1ddb5d56cb77267eab4df3b48763f4c6415b4f194f75"
+    },
+    {
+      "original": "Assets/landscape-night-cozy-doodle.png",
+      "output": "src/assets/img/doze-landscape-night-cozy-doodle.png",
+      "sha256": "f204e111c04f3c3a3d2df0de4354b4be0ad50385d899829ed2297329aeaf45f1"
+    }
+  ]
+}

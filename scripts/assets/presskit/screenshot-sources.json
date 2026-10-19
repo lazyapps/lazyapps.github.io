@@ -273,5 +273,229 @@
         "originalSource": "/Users/realazy/Projects/_vibe/shheep/web/public/shheep/preview.png"
       }
     ]
+  },
+  "doze": {
+    "checkedOn": "2026-10-20",
+    "appSourceCommit": "8a479d24188402e906dfd6565ebacfc716e13aa0",
+    "sourceContext": "Native CUA window captures of the finalized 261019.0 UI in isolated preview apps. Preview safe areas match the native popover. Cmd-T switches native appearance; CUA JPEG output converted to PNG at its original Retina dimensions, without resizing or retouching. Exact source hashes in scripts/assets/doze/capture-source.json.",
+    "captures": [
+      {
+        "source": "scripts/assets/presskit/doze-panel-ar-light.png",
+        "sha256": "9238125d27eb8715a0a86c2bf6c9ed3952fed509d24c24d0713ea758fe41e46b",
+        "contentLanguage": "ar",
+        "type": "native",
+        "operation": "Original Retina pixels from native ControlPanelView; no resizing or retouching.",
+        "originalSource": "/Users/realazy/Projects/_vibe/doze/src/Sources/ControlPanelView.swift (ar, light; isolated preview snapshot)",
+        "capturedOn": "2026-10-20"
+      },
+      {
+        "source": "scripts/assets/presskit/doze-panel-ar-dark.png",
+        "sha256": "1b2280d199541540450ae65e753be5e49436d7d07573cc9c89b3b93909397ebe",
+        "contentLanguage": "ar",
+        "type": "native",
+        "operation": "Original Retina pixels from native ControlPanelView; no resizing or retouching.",
+        "originalSource": "/Users/realazy/Projects/_vibe/doze/src/Sources/ControlPanelView.swift (ar, dark; isolated preview snapshot)",
+        "capturedOn": "2026-10-20"
+      },
+      {
+        "source": "scripts/assets/presskit/doze-panel-de-light.png",
+        "sha256": "416bcba5d0217536c9faaa6d73332ead448973119d261eb7075acff50a179586",
+        "contentLanguage": "de",
+        "type": "native",
+        "operation": "Original Retina pixels from native ControlPanelView; no resizing or retouching.",
+        "originalSource": "/Users/realazy/Projects/_vibe/doze/src/Sources/ControlPanelView.swift (de, light; isolated preview snapshot)",
+        "capturedOn": "2026-10-20"
+      },
+      {
+        "source": "scripts/assets/presskit/doze-panel-de-dark.png",
+        "sha256": "1f5916f9b1423422897f911890455b934b8c0044ecbe3f19f3bc55cb5547bc77",
+        "contentLanguage": "de",
+        "type": "native",
+        "operation": "Original Retina pixels from native ControlPanelView; no resizing or retouching.",
+        "originalSource": "/Users/realazy/Projects/_vibe/doze/src/Sources/ControlPanelView.swift (de, dark; isolated preview snapshot)",
+        "capturedOn": "2026-10-20"
+      },
+      {
+        "source": "scripts/assets/presskit/doze-panel-en-light.png",
+        "sha256": "e37e9b75c1c02a42a5db3e547c7990eb0663d0c59178a1c73420fc7ae05fab57",
+        "contentLanguage": "en",
+        "type": "native",
+        "operation": "Original Retina pixels from native ControlPanelView; no resizing or retouching.",
+        "originalSource": "/Users/realazy/Projects/_vibe/doze/src/Sources/ControlPanelView.swift (en, light; isolated preview snapshot)",
+        "capturedOn": "2026-10-20"
+      },
+      {
+        "source": "scripts/assets/presskit/doze-panel-en-dark.png",
+        "sha256": "2c89fa54adb1aece8df3fd00c0fba364c797c200ef05d7e86e84fb67e955c133",
+        "contentLanguage": "en",
+        "type": "native",
+        "operation": "Original Retina pixels from native ControlPanelView; no resizing or retouching.",
+        "originalSource": "/Users/realazy/Projects/_vibe/doze/src/Sources/ControlPanelView.swift (en, dark; isolated preview snapshot)",
+        "capturedOn": "2026-10-20"
+      },
+      {
+        "source": "scripts/assets/presskit/doze-panel-es-light.png",
+        "sha256": "240accc10a0682fdae3005dbc28e1d3420a0f1eca3c2e6f02fea2d338ffb0c94",
+        "contentLanguage": "es",
+        "type": "native",
+        "operation": "Original Retina pixels from native ControlPanelView; no resizing or retouching.",
+        "originalSource": "/Users/realazy/Projects/_vibe/doze/src/Sources/ControlPanelView.swift (es, light; isolated preview snapshot)",
+        "capturedOn": "2026-10-20"
+      },
+      {
+        "source": "scripts/assets/presskit/doze-panel-es-dark.png",
+        "sha256": "e5c54203a72a9e55c459ee873c07a3129e0b29e6161e46606c74f1cf9d821204",
+        "contentLanguage": "es",
+        "type": "native",
+        "operation": "Original Retina pixels from native ControlPanelView; no resizing or retouching.",
+        "originalSource": "/Users/realazy/Projects/_vibe/doze/src/Sources/ControlPanelView.swift (es, dark; isolated preview snapshot)",
+        "capturedOn": "2026-10-20"
+      },
+      {
+        "source": "scripts/assets/presskit/doze-panel-fr-light.png",
+        "sha256": "bbf9ba1d1ab7be606ce02813ad8a38004c6a9acf583eca3e11a57e0e251c02df",
+        "contentLanguage": "fr",
+        "type": "native",
+        "operation": "Original Retina pixels from native ControlPanelView; no resizing or retouching.",
+        "originalSource": "/Users/realazy/Projects/_vibe/doze/src/Sources/ControlPanelView.swift (fr, light; isolated preview snapshot)",
+        "capturedOn": "2026-10-20"
+      },
+      {
+        "source": "scripts/assets/presskit/doze-panel-fr-dark.png",
+        "sha256": "0003a68fb385e49625a5cef722e71206027ded270cbd1ae147bb4fa2795f3a11",
+        "contentLanguage": "fr",
+        "type": "native",
+        "operation": "Original Retina pixels from native ControlPanelView; no resizing or retouching.",
+        "originalSource": "/Users/realazy/Projects/_vibe/doze/src/Sources/ControlPanelView.swift (fr, dark; isolated preview snapshot)",
+        "capturedOn": "2026-10-20"
+      },
+      {
+        "source": "scripts/assets/presskit/doze-panel-hi-light.png",
+        "sha256": "00de604d7d086f27d1a64de6cb88297b7272deed85c9fa467fc2a3a3029f6351",
+        "contentLanguage": "hi",
+        "type": "native",
+        "operation": "Original Retina pixels from native ControlPanelView; no resizing or retouching.",
+        "originalSource": "/Users/realazy/Projects/_vibe/doze/src/Sources/ControlPanelView.swift (hi, light; isolated preview snapshot)",
+        "capturedOn": "2026-10-20"
+      },
+      {
+        "source": "scripts/assets/presskit/doze-panel-hi-dark.png",
+        "sha256": "2ea36f0f631d044bcdd85d2ed18651a5c652f2cfe27a4992571a23e1e0d4a00c",
+        "contentLanguage": "hi",
+        "type": "native",
+        "operation": "Original Retina pixels from native ControlPanelView; no resizing or retouching.",
+        "originalSource": "/Users/realazy/Projects/_vibe/doze/src/Sources/ControlPanelView.swift (hi, dark; isolated preview snapshot)",
+        "capturedOn": "2026-10-20"
+      },
+      {
+        "source": "scripts/assets/presskit/doze-panel-ja-light.png",
+        "sha256": "51148a5f25547b37f8caea6657f4142e3ac15cbf8e7d1c79e4d761167f43ba71",
+        "contentLanguage": "ja",
+        "type": "native",
+        "operation": "Original Retina pixels from native ControlPanelView; no resizing or retouching.",
+        "originalSource": "/Users/realazy/Projects/_vibe/doze/src/Sources/ControlPanelView.swift (ja, light; isolated preview snapshot)",
+        "capturedOn": "2026-10-20"
+      },
+      {
+        "source": "scripts/assets/presskit/doze-panel-ja-dark.png",
+        "sha256": "64a3037ef31c9725b5e0dc55102a137a72cbeca33dae5030ee1d6c8f621ba223",
+        "contentLanguage": "ja",
+        "type": "native",
+        "operation": "Original Retina pixels from native ControlPanelView; no resizing or retouching.",
+        "originalSource": "/Users/realazy/Projects/_vibe/doze/src/Sources/ControlPanelView.swift (ja, dark; isolated preview snapshot)",
+        "capturedOn": "2026-10-20"
+      },
+      {
+        "source": "scripts/assets/presskit/doze-panel-ko-light.png",
+        "sha256": "a4ef0dec7bd308e4fcd5e1ec873f24d49019a567d25a72896df88afc467c9fd8",
+        "contentLanguage": "ko",
+        "type": "native",
+        "operation": "Original Retina pixels from native ControlPanelView; no resizing or retouching.",
+        "originalSource": "/Users/realazy/Projects/_vibe/doze/src/Sources/ControlPanelView.swift (ko, light; isolated preview snapshot)",
+        "capturedOn": "2026-10-20"
+      },
+      {
+        "source": "scripts/assets/presskit/doze-panel-ko-dark.png",
+        "sha256": "03d7e899a6ccfaf28566c372fd139706a40472f4232474d3d8fa8159b58c449f",
+        "contentLanguage": "ko",
+        "type": "native",
+        "operation": "Original Retina pixels from native ControlPanelView; no resizing or retouching.",
+        "originalSource": "/Users/realazy/Projects/_vibe/doze/src/Sources/ControlPanelView.swift (ko, dark; isolated preview snapshot)",
+        "capturedOn": "2026-10-20"
+      },
+      {
+        "source": "scripts/assets/presskit/doze-panel-pt-br-light.png",
+        "sha256": "0d4fdf8afc6ac88c482f63c4ca0e10c7a93b9e07b6137c2f44a92a28c0e11ca6",
+        "contentLanguage": "pt-BR",
+        "type": "native",
+        "operation": "Original Retina pixels from native ControlPanelView; no resizing or retouching.",
+        "originalSource": "/Users/realazy/Projects/_vibe/doze/src/Sources/ControlPanelView.swift (pt-BR, light; isolated preview snapshot)",
+        "capturedOn": "2026-10-20"
+      },
+      {
+        "source": "scripts/assets/presskit/doze-panel-pt-br-dark.png",
+        "sha256": "1c2e431f81abcabb4a88ef0b13df43bcf4fe1b7edb2e8114c931e3e6fa0529d3",
+        "contentLanguage": "pt-BR",
+        "type": "native",
+        "operation": "Original Retina pixels from native ControlPanelView; no resizing or retouching.",
+        "originalSource": "/Users/realazy/Projects/_vibe/doze/src/Sources/ControlPanelView.swift (pt-BR, dark; isolated preview snapshot)",
+        "capturedOn": "2026-10-20"
+      },
+      {
+        "source": "scripts/assets/presskit/doze-panel-ru-light.png",
+        "sha256": "0c304ae0d839668e427b9426626861c4ac80fdd256ae41036371789ceea8390e",
+        "contentLanguage": "ru",
+        "type": "native",
+        "operation": "Original Retina pixels from native ControlPanelView; no resizing or retouching.",
+        "originalSource": "/Users/realazy/Projects/_vibe/doze/src/Sources/ControlPanelView.swift (ru, light; isolated preview snapshot)",
+        "capturedOn": "2026-10-20"
+      },
+      {
+        "source": "scripts/assets/presskit/doze-panel-ru-dark.png",
+        "sha256": "a5b7f0fa336e620b8b43643408e45e2241ca7d3b76ba4f0f028e23b4eb540ebb",
+        "contentLanguage": "ru",
+        "type": "native",
+        "operation": "Original Retina pixels from native ControlPanelView; no resizing or retouching.",
+        "originalSource": "/Users/realazy/Projects/_vibe/doze/src/Sources/ControlPanelView.swift (ru, dark; isolated preview snapshot)",
+        "capturedOn": "2026-10-20"
+      },
+      {
+        "source": "scripts/assets/presskit/doze-panel-zh-hans-light.png",
+        "sha256": "295bec71a8509d238aef140b92dd4efb7beef5fcee94b626d5cc30ec6281e910",
+        "contentLanguage": "zh-Hans",
+        "type": "native",
+        "operation": "Original Retina pixels from native ControlPanelView; no resizing or retouching.",
+        "originalSource": "/Users/realazy/Projects/_vibe/doze/src/Sources/ControlPanelView.swift (zh-Hans, light; isolated preview snapshot)",
+        "capturedOn": "2026-10-20"
+      },
+      {
+        "source": "scripts/assets/presskit/doze-panel-zh-hans-dark.png",
+        "sha256": "671d35a1095c6966922f11702127c90cd818bd1d9a2720d32df60a06cdafe9e4",
+        "contentLanguage": "zh-Hans",
+        "type": "native",
+        "operation": "Original Retina pixels from native ControlPanelView; no resizing or retouching.",
+        "originalSource": "/Users/realazy/Projects/_vibe/doze/src/Sources/ControlPanelView.swift (zh-Hans, dark; isolated preview snapshot)",
+        "capturedOn": "2026-10-20"
+      },
+      {
+        "source": "scripts/assets/presskit/doze-panel-zh-hant-light.png",
+        "sha256": "01bb012333041f7e1ec720fd22f70638c467b5467e676196d94e2667ea1b93d9",
+        "contentLanguage": "zh-Hant",
+        "type": "native",
+        "operation": "Original Retina pixels from native ControlPanelView; no resizing or retouching.",
+        "originalSource": "/Users/realazy/Projects/_vibe/doze/src/Sources/ControlPanelView.swift (zh-Hant, light; isolated preview snapshot)",
+        "capturedOn": "2026-10-20"
+      },
+      {
+        "source": "scripts/assets/presskit/doze-panel-zh-hant-dark.png",
+        "sha256": "fd6e7a2eb8e9e6cf7f62912b85ef8683bf05f75275ec7e399687973e618d4cc7",
+        "contentLanguage": "zh-Hant",
+        "type": "native",
+        "operation": "Original Retina pixels from native ControlPanelView; no resizing or retouching.",
+        "originalSource": "/Users/realazy/Projects/_vibe/doze/src/Sources/ControlPanelView.swift (zh-Hant, dark; isolated preview snapshot)",
+        "capturedOn": "2026-10-20"
+      }
+    ],
+    "appVersion": "261019.0"
   }
 }

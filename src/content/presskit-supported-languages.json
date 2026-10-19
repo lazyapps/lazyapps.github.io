@@ -93,5 +93,25 @@
     "project": "xvdl",
     "commit": "4b0a8cfe4e7314d6c03a2887b1a22398359ed4c2",
     "note": "Main app UI languages; Base and widget-only localizations excluded."
+  },
+  "doze": {
+    "tags": [
+      "ar",
+      "de",
+      "en",
+      "es",
+      "fr",
+      "hi",
+      "ja",
+      "ko",
+      "pt-BR",
+      "ru",
+      "zh-Hans",
+      "zh-Hant"
+    ],
+    "source": "Resources/<language>.lproj/Localizable.strings and InfoPlist.strings",
+    "project": "_vibe/doze/src",
+    "commit": "8a479d24188402e906dfd6565ebacfc716e13aa0",
+    "note": "12 main app UI languages verified from the finalized source; exact localization hashes in scripts/assets/doze/capture-source.json."
   }
 }

@@ -522,5 +522,105 @@
       "en": "Shheep",
       "zh": "Shheep"
     }
+  },
+  {
+    "slug": "doze",
+    "name": "Doze",
+    "names": {
+      "en": "Doze",
+      "zh": "眯会儿 · Doze"
+    },
+    "platform": {
+      "en": "macOS 13+",
+      "zh": "macOS 13+"
+    },
+    "availability": {
+      "en": "First release in preparation",
+      "zh": "首个版本准备中"
+    },
+    "summary": {
+      "en": "Doze dims your Mac’s screen when you step away. Enable “Keep Computer Awake” to prevent display sleep and the screen saver from interrupting computer use.",
+      "zh": "离开后，眯会儿会调暗屏幕。开启“保持电脑唤醒”，避免自动关屏和屏保打断 computer use。"
+    },
+    "description": {
+      "en": "Doze dims your Mac’s screen when you step away. Enable “Keep Computer Awake” to prevent display sleep and the screen saver from interrupting computer use.",
+      "zh": "离开后，眯会儿会调暗屏幕。开启“保持电脑唤醒”，避免自动关屏和屏保打断 computer use。"
+    },
+    "links": [
+      {
+        "label": {
+          "en": "View releases",
+          "zh": "查看发布进度"
+        },
+        "url": "https://github.com/cxa/doze/releases"
+      }
+    ],
+    "assets": [
+      {
+        "source": "src/assets/img/doze-icon.png",
+        "filename": "icon.png",
+        "kind": "icon",
+        "label": {
+          "en": "App icon",
+          "zh": "App 图标"
+        },
+        "note": {
+          "en": "Original native App icon, 1024 × 1024 PNG. Preserves artwork, proportions and transparency.",
+          "zh": "原版 App 图标，1024 × 1024 PNG。保留图案、比例与透明边角。"
+        }
+      },
+      {
+        "source": "src/assets/img/doze-symbol.png",
+        "filename": "symbol.png",
+        "kind": "logo",
+        "label": {
+          "en": "Transparent brand symbol",
+          "zh": "透明品牌符号"
+        },
+        "note": {
+          "en": "Original transparent optical artwork from the production Icon Composer project.",
+          "zh": "正式 Icon Composer 工程中的原版透明光学图案。"
+        }
+      },
+      {
+        "source": "scripts/assets/presskit/doze-panel-en-light.png",
+        "filename": "settings-light.png",
+        "kind": "screenshot",
+        "label": {
+          "en": "Settings · day",
+          "zh": "设置 · 日间"
+        },
+        "note": {
+          "en": "Native English interface captured from the current localized app preview. Original pixels.",
+          "zh": "当前本地化版本原生预览中的英语界面，保留原始像素。"
+        }
+      },
+      {
+        "source": "scripts/assets/presskit/doze-panel-en-dark.png",
+        "filename": "settings-dark.png",
+        "kind": "screenshot",
+        "label": {
+          "en": "Settings · night",
+          "zh": "设置 · 夜间"
+        },
+        "note": {
+          "en": "Native English interface captured from the current localized app preview. Original pixels.",
+          "zh": "当前本地化版本原生预览中的英语界面，保留原始像素。"
+        }
+      },
+      {
+        "source": "src/assets/img/doze-opengraph-en.png",
+        "filename": "social-card.png",
+        "kind": "artwork",
+        "label": {
+          "en": "Social sharing image",
+          "zh": "社交分享图"
+        },
+        "note": {
+          "en": "1200 × 630 promotional artwork, not an app screenshot.",
+          "zh": "1200 × 630 宣传图片，不是 App 界面截图。"
+        }
+      }
+    ]
   }
 ]

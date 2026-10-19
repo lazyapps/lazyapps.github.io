@@ -1,0 +1,360 @@
+{
+  "languages": [
+    "ar",
+    "de",
+    "en",
+    "es",
+    "fr",
+    "hi",
+    "ja",
+    "ko",
+    "pt-BR",
+    "ru",
+    "zh-Hans",
+    "zh-Hant"
+  ],
+  "files": [
+    {
+      "path": "icon.png",
+      "contentLanguage": "und",
+      "width": 1024,
+      "height": 1024,
+      "format": "PNG",
+      "bytes": 2870497,
+      "sha256": "a3aea447be484dd354990e39d0a1cb26095f980cdeea1e8f9c7557de9a7c0335"
+    },
+    {
+      "path": "symbol.png",
+      "contentLanguage": "und",
+      "width": 2048,
+      "height": 2048,
+      "format": "PNG",
+      "bytes": 2636190,
+      "sha256": "0ca1870a6b3ce44699e4f587e39bcb249bd155c14713f677e7e33ff952dfcd78"
+    },
+    {
+      "path": "ar/settings-light.png",
+      "contentLanguage": "ar",
+      "width": 768,
+      "height": 1192,
+      "format": "PNG",
+      "bytes": 350571,
+      "sha256": "9238125d27eb8715a0a86c2bf6c9ed3952fed509d24c24d0713ea758fe41e46b"
+    },
+    {
+      "path": "ar/settings-dark.png",
+      "contentLanguage": "ar",
+      "width": 768,
+      "height": 1192,
+      "format": "PNG",
+      "bytes": 405172,
+      "sha256": "1b2280d199541540450ae65e753be5e49436d7d07573cc9c89b3b93909397ebe"
+    },
+    {
+      "path": "ar/social-card.png",
+      "contentLanguage": "ar",
+      "width": 1200,
+      "height": 630,
+      "format": "PNG",
+      "bytes": 197726,
+      "sha256": "1aa34501cfc5c95db575f1ee7bfcdc7dd4caffdb5e425f04f5360849aedbcc95"
+    },
+    {
+      "path": "de/settings-light.png",
+      "contentLanguage": "de",
+      "width": 768,
+      "height": 1308,
+      "format": "PNG",
+      "bytes": 439780,
+      "sha256": "416bcba5d0217536c9faaa6d73332ead448973119d261eb7075acff50a179586"
+    },
+    {
+      "path": "de/settings-dark.png",
+      "contentLanguage": "de",
+      "width": 768,
+      "height": 1308,
+      "format": "PNG",
+      "bytes": 503849,
+      "sha256": "1f5916f9b1423422897f911890455b934b8c0044ecbe3f19f3bc55cb5547bc77"
+    },
+    {
+      "path": "de/social-card.png",
+      "contentLanguage": "de",
+      "width": 1200,
+      "height": 630,
+      "format": "PNG",
+      "bytes": 151845,
+      "sha256": "7c9b06a5c952bb98afef87139fef2e1792dab971f6e24af56cd2890ce1f478b3"
+    },
+    {
+      "path": "en/settings-light.png",
+      "contentLanguage": "en",
+      "width": 768,
+      "height": 1162,
+      "format": "PNG",
+      "bytes": 329731,
+      "sha256": "e37e9b75c1c02a42a5db3e547c7990eb0663d0c59178a1c73420fc7ae05fab57"
+    },
+    {
+      "path": "en/settings-dark.png",
+      "contentLanguage": "en",
+      "width": 768,
+      "height": 1162,
+      "format": "PNG",
+      "bytes": 380366,
+      "sha256": "2c89fa54adb1aece8df3fd00c0fba364c797c200ef05d7e86e84fb67e955c133"
+    },
+    {
+      "path": "en/social-card.png",
+      "contentLanguage": "en",
+      "width": 1200,
+      "height": 630,
+      "format": "PNG",
+      "bytes": 179454,
+      "sha256": "2a78c74f1305656dc3d29bcb6c0e191ec4d5fbcb30a40a52efc1092aa6643096"
+    },
+    {
+      "path": "es/settings-light.png",
+      "contentLanguage": "es",
+      "width": 768,
+      "height": 1250,
+      "format": "PNG",
+      "bytes": 372022,
+      "sha256": "240accc10a0682fdae3005dbc28e1d3420a0f1eca3c2e6f02fea2d338ffb0c94"
+    },
+    {
+      "path": "es/settings-dark.png",
+      "contentLanguage": "es",
+      "width": 768,
+      "height": 1250,
+      "format": "PNG",
+      "bytes": 428151,
+      "sha256": "e5c54203a72a9e55c459ee873c07a3129e0b29e6161e46606c74f1cf9d821204"
+    },
+    {
+      "path": "es/social-card.png",
+      "contentLanguage": "es",
+      "width": 1200,
+      "height": 630,
+      "format": "PNG",
+      "bytes": 160623,
+      "sha256": "e157073a8f73d4552269479218965a4a1cd4dcd07a8128f09998d4eb10cbd3c8"
+    },
+    {
+      "path": "fr/settings-light.png",
+      "contentLanguage": "fr",
+      "width": 768,
+      "height": 1278,
+      "format": "PNG",
+      "bytes": 394792,
+      "sha256": "bbf9ba1d1ab7be606ce02813ad8a38004c6a9acf583eca3e11a57e0e251c02df"
+    },
+    {
+      "path": "fr/settings-dark.png",
+      "contentLanguage": "fr",
+      "width": 768,
+      "height": 1278,
+      "format": "PNG",
+      "bytes": 458662,
+      "sha256": "0003a68fb385e49625a5cef722e71206027ded270cbd1ae147bb4fa2795f3a11"
+    },
+    {
+      "path": "fr/social-card.png",
+      "contentLanguage": "fr",
+      "width": 1200,
+      "height": 630,
+      "format": "PNG",
+      "bytes": 149933,
+      "sha256": "0ca9b12e95981f35dd3991689d95d798acb55f76dd503486435ba50bbae67e58"
+    },
+    {
+      "path": "hi/settings-light.png",
+      "contentLanguage": "hi",
+      "width": 768,
+      "height": 1190,
+      "format": "PNG",
+      "bytes": 351833,
+      "sha256": "00de604d7d086f27d1a64de6cb88297b7272deed85c9fa467fc2a3a3029f6351"
+    },
+    {
+      "path": "hi/settings-dark.png",
+      "contentLanguage": "hi",
+      "width": 768,
+      "height": 1190,
+      "format": "PNG",
+      "bytes": 409154,
+      "sha256": "2ea36f0f631d044bcdd85d2ed18651a5c652f2cfe27a4992571a23e1e0d4a00c"
+    },
+    {
+      "path": "hi/social-card.png",
+      "contentLanguage": "hi",
+      "width": 1200,
+      "height": 630,
+      "format": "PNG",
+      "bytes": 188413,
+      "sha256": "2feba6ac321bda1616cac530eb1c038311958c30f87097837fef5a871ada44f1"
+    },
+    {
+      "path": "ja/settings-light.png",
+      "contentLanguage": "ja",
+      "width": 768,
+      "height": 1162,
+      "format": "PNG",
+      "bytes": 353679,
+      "sha256": "51148a5f25547b37f8caea6657f4142e3ac15cbf8e7d1c79e4d761167f43ba71"
+    },
+    {
+      "path": "ja/settings-dark.png",
+      "contentLanguage": "ja",
+      "width": 768,
+      "height": 1162,
+      "format": "PNG",
+      "bytes": 411349,
+      "sha256": "64a3037ef31c9725b5e0dc55102a137a72cbeca33dae5030ee1d6c8f621ba223"
+    },
+    {
+      "path": "ja/social-card.png",
+      "contentLanguage": "ja",
+      "width": 1200,
+      "height": 630,
+      "format": "PNG",
+      "bytes": 156761,
+      "sha256": "ffe3c87e0219d1e1fa54f45d534846b859761d5f056c805037336d105e15b44b"
+    },
+    {
+      "path": "ko/settings-light.png",
+      "contentLanguage": "ko",
+      "width": 768,
+      "height": 1144,
+      "format": "PNG",
+      "bytes": 331493,
+      "sha256": "a4ef0dec7bd308e4fcd5e1ec873f24d49019a567d25a72896df88afc467c9fd8"
+    },
+    {
+      "path": "ko/settings-dark.png",
+      "contentLanguage": "ko",
+      "width": 768,
+      "height": 1144,
+      "format": "PNG",
+      "bytes": 381454,
+      "sha256": "03d7e899a6ccfaf28566c372fd139706a40472f4232474d3d8fa8159b58c449f"
+    },
+    {
+      "path": "ko/social-card.png",
+      "contentLanguage": "ko",
+      "width": 1200,
+      "height": 630,
+      "format": "PNG",
+      "bytes": 175767,
+      "sha256": "7d6e2ce9d5b71923fd8f8171d70419c3a9a4ce91bea233366232ac3f74247753"
+    },
+    {
+      "path": "pt-BR/settings-light.png",
+      "contentLanguage": "pt-BR",
+      "width": 768,
+      "height": 1250,
+      "format": "PNG",
+      "bytes": 378766,
+      "sha256": "0d4fdf8afc6ac88c482f63c4ca0e10c7a93b9e07b6137c2f44a92a28c0e11ca6"
+    },
+    {
+      "path": "pt-BR/settings-dark.png",
+      "contentLanguage": "pt-BR",
+      "width": 768,
+      "height": 1250,
+      "format": "PNG",
+      "bytes": 441271,
+      "sha256": "1c2e431f81abcabb4a88ef0b13df43bcf4fe1b7edb2e8114c931e3e6fa0529d3"
+    },
+    {
+      "path": "pt-BR/social-card.png",
+      "contentLanguage": "pt-BR",
+      "width": 1200,
+      "height": 630,
+      "format": "PNG",
+      "bytes": 160030,
+      "sha256": "261462b1dd488f798c08615cab85b0524f16ff75a77a1ac238345e7dc29de52c"
+    },
+    {
+      "path": "ru/settings-light.png",
+      "contentLanguage": "ru",
+      "width": 768,
+      "height": 1278,
+      "format": "PNG",
+      "bytes": 381134,
+      "sha256": "0c304ae0d839668e427b9426626861c4ac80fdd256ae41036371789ceea8390e"
+    },
+    {
+      "path": "ru/settings-dark.png",
+      "contentLanguage": "ru",
+      "width": 768,
+      "height": 1278,
+      "format": "PNG",
+      "bytes": 438775,
+      "sha256": "a5b7f0fa336e620b8b43643408e45e2241ca7d3b76ba4f0f028e23b4eb540ebb"
+    },
+    {
+      "path": "ru/social-card.png",
+      "contentLanguage": "ru",
+      "width": 1200,
+      "height": 630,
+      "format": "PNG",
+      "bytes": 170727,
+      "sha256": "ed13213902777e761eef9f24d9aa4ac5f966472cc2d90165dd839abdbb285720"
+    },
+    {
+      "path": "zh-Hans/settings-light.png",
+      "contentLanguage": "zh-Hans",
+      "width": 768,
+      "height": 1144,
+      "format": "PNG",
+      "bytes": 323917,
+      "sha256": "295bec71a8509d238aef140b92dd4efb7beef5fcee94b626d5cc30ec6281e910"
+    },
+    {
+      "path": "zh-Hans/settings-dark.png",
+      "contentLanguage": "zh-Hans",
+      "width": 768,
+      "height": 1144,
+      "format": "PNG",
+      "bytes": 374160,
+      "sha256": "671d35a1095c6966922f11702127c90cd818bd1d9a2720d32df60a06cdafe9e4"
+    },
+    {
+      "path": "zh-Hans/social-card.png",
+      "contentLanguage": "zh-Hans",
+      "width": 1200,
+      "height": 630,
+      "format": "PNG",
+      "bytes": 179897,
+      "sha256": "0592c60dc6b76699c80a938072e6795a7268522943fd7755a417c77a675d291f"
+    },
+    {
+      "path": "zh-Hant/settings-light.png",
+      "contentLanguage": "zh-Hant",
+      "width": 768,
+      "height": 1144,
+      "format": "PNG",
+      "bytes": 334880,
+      "sha256": "01bb012333041f7e1ec720fd22f70638c467b5467e676196d94e2667ea1b93d9"
+    },
+    {
+      "path": "zh-Hant/settings-dark.png",
+      "contentLanguage": "zh-Hant",
+      "width": 768,
+      "height": 1144,
+      "format": "PNG",
+      "bytes": 388336,
+      "sha256": "fd6e7a2eb8e9e6cf7f62912b85ef8683bf05f75275ec7e399687973e618d4cc7"
+    },
+    {
+      "path": "zh-Hant/social-card.png",
+      "contentLanguage": "zh-Hant",
+      "width": 1200,
+      "height": 630,
+      "format": "PNG",
+      "bytes": 184116,
+      "sha256": "f8aef25d759bc13955666d61cf58d3894adfe0a06aec19d0b3e2e97facb49bbc"
+    }
+  ]
+}

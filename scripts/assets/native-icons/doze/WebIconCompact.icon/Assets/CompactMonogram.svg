@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+<defs><linearGradient id="gold" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#FFF19D"/><stop offset=".52" stop-color="#FFDB36"/><stop offset="1" stop-color="#FFC21A"/></linearGradient></defs>
+<g fill="none" stroke="url(#gold)" stroke-linecap="round" stroke-linejoin="round">
+<rect x="176" y="208" width="228" height="610" rx="58" stroke-width="76"/>
+<path d="M176 420 Q290 466 404 420 M176 610 Q290 656 404 610" stroke-width="76"/>
+<path d="M650 200V824 M452 514H856 M604 602L474 754 M730 608L856 754" stroke-width="92"/>
+<path d="M500 345Q523 400 546 345" stroke-width="50"/>
+<path d="M764 345Q802 420 840 345" stroke-width="64"/>
+</g></svg>

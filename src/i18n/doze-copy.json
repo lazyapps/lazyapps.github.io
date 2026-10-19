@@ -1,0 +1,626 @@
+{
+  "zh-Hans": {
+    "headline": [
+      "让 AI 继续忙，",
+      "让屏幕歇一会儿。"
+    ],
+    "description": "离开后，眯会儿会调暗屏幕。开启“保持电脑唤醒”，避免自动关屏和屏保打断 computer use。",
+    "positioning": "Mac 菜单栏屏幕调暗工具",
+    "compatibility": "macOS 13+ · 内置屏及支持系统亮度调节的显示器",
+    "releases": "查看发布进度",
+    "download": "下载 Mac 版",
+    "upcoming": "首个版本准备中",
+    "available": "现已发布",
+    "select": "切换语言",
+    "skip": "跳到正文",
+    "home": "lazyapps 首页",
+    "preview": "实际界面",
+    "light": "日间",
+    "dark": "夜间",
+    "shot": "眯会儿的简体中文设置面板",
+    "features": [
+      [
+        "离开时调暗",
+        "开启“离开时调暗屏幕”，选择多久后调暗。默认 10 分钟，也可随时立即调暗。"
+      ],
+      [
+        "回来即恢复",
+        "移动鼠标、滑动触控板或按键，即可恢复亮度。已验证的 AI 工具模拟点击和按键不会唤亮屏幕；其他工具可能不同。"
+      ],
+      [
+        "保持电脑唤醒",
+        "阻止屏保和自动关屏，让 computer use 等 AI 桌面任务能看见、操作应用。\n防止自动睡眠，让下载、导出继续。仍会调暗，但更耗电。"
+      ]
+    ],
+    "setup": "三步，交给眯会儿",
+    "steps": [
+      "打开 Doze.app，点击菜单栏的“眯”字图标。",
+      "开启“离开时调暗屏幕”，选择等待时间。",
+      "需要 AI 持续操作电脑时，开启“保持电脑唤醒”。"
+    ],
+    "details": "用之前，了解这几件事",
+    "faqs": [
+      [
+        "我的显示器支持吗？",
+        "支持 Mac 内置屏和 Studio Display 等能由系统调节亮度的显示器。其他外接屏不保证支持。能否完全熄灭取决于显示器。"
+      ],
+      [
+        "还能合盖或手动睡眠吗？",
+        "可以。“保持电脑唤醒”不影响合盖和手动睡眠。关闭该选项或退出眯会儿后，会恢复原来的设置。"
+      ]
+    ],
+    "license": "Doze 是专有软件；GitHub 仓库用于发布安装包和产品说明。"
+  },
+  "en": {
+    "headline": [
+      "Let AI keep working.",
+      "Let your screen rest."
+    ],
+    "description": "Doze dims your Mac’s screen when you step away. Enable “Keep Computer Awake” to prevent display sleep and the screen saver from interrupting computer use.",
+    "positioning": "A menu bar screen dimmer for Mac",
+    "compatibility": "macOS 13+ · Built-in displays and supported displays with system brightness control",
+    "releases": "View releases",
+    "download": "Download for Mac",
+    "upcoming": "First release in preparation",
+    "available": "Available now",
+    "select": "Choose language",
+    "skip": "Skip to content",
+    "home": "lazyapps home",
+    "preview": "The actual app",
+    "light": "Day",
+    "dark": "Night",
+    "shot": "Doze settings panel in English",
+    "features": [
+      [
+        "Dim when away",
+        "Turn on “Dim When Away” and choose a delay. The default is 10 minutes. You can also dim the screen immediately."
+      ],
+      [
+        "Restore on return",
+        "Move the mouse, use the trackpad or press a key to restore brightness. Simulated clicks and keystrokes from tested AI tools do not brighten the screen; other tools may behave differently."
+      ],
+      [
+        "Keep Computer Awake",
+        "Stops screen savers and display sleep so AI can see and use apps for computer use and other desktop tasks.\nAlso prevents automatic sleep for downloads and exports. Still dims; uses more power."
+      ]
+    ],
+    "setup": "Three steps. Then step away.",
+    "steps": [
+      "Open Doze.app and click the “眯” icon in the menu bar.",
+      "Enable “Dim When Away” and choose a delay.",
+      "For ongoing computer use, enable “Keep Computer Awake”."
+    ],
+    "details": "A few things to know",
+    "faqs": [
+      [
+        "Will it work with my display?",
+        "Supports built-in Mac displays and displays with system brightness control, such as Studio Display. Other external displays are not guaranteed. Whether the screen goes fully dark depends on the display."
+      ],
+      [
+        "Can I still close the lid or choose Sleep?",
+        "Yes. “Keep Computer Awake” does not prevent either. Turning it off or quitting Doze restores your previous settings."
+      ]
+    ],
+    "license": "Doze is proprietary software. Its GitHub repository provides releases and product information."
+  },
+  "zh-Hant": {
+    "headline": [
+      "讓 AI 繼續忙，",
+      "讓螢幕歇一會兒。"
+    ],
+    "description": "離開後，瞇會兒會調暗螢幕。開啟「讓電腦保持喚醒」，避免自動關閉螢幕和螢幕保護程式打斷 computer use。",
+    "positioning": "Mac 選單列螢幕調暗工具",
+    "compatibility": "macOS 13+ · 內建螢幕及支援系統亮度調整的顯示器",
+    "releases": "查看發佈進度",
+    "download": "下載 Mac 版",
+    "upcoming": "首個版本準備中",
+    "available": "現已發佈",
+    "select": "切換語言",
+    "skip": "跳到主要內容",
+    "home": "lazyapps 首頁",
+    "preview": "實際介面",
+    "light": "日間",
+    "dark": "夜間",
+    "shot": "瞇會兒的繁體中文設定面板",
+    "features": [
+      [
+        "離開時調暗",
+        "開啟「離開時調暗螢幕」，選擇等待時間。預設 10 分鐘，也能隨時立即調暗。"
+      ],
+      [
+        "回來即恢復",
+        "移動滑鼠、滑動觸控式軌跡板或按鍵，即可恢復亮度。已驗證的 AI 工具模擬點擊與按鍵不會喚亮螢幕；其他工具可能不同。"
+      ],
+      [
+        "讓電腦保持喚醒",
+        "阻止螢幕保護程式和自動關閉螢幕，讓 computer use 等 AI 桌面工作能看見、操作應用程式。\n防止自動睡眠，讓下載、匯出繼續。仍會調暗，但更耗電。"
+      ]
+    ],
+    "setup": "三步，交給瞇會兒",
+    "steps": [
+      "開啟 Doze.app，點選選單列的「眯」字圖示。",
+      "開啟「離開時調暗螢幕」，選擇等待時間。",
+      "需要 AI 持續操作電腦時，開啟「讓電腦保持喚醒」。"
+    ],
+    "details": "使用前，先了解這些事",
+    "faqs": [
+      [
+        "我的顯示器支援嗎？",
+        "支援 Mac 內建螢幕和 Studio Display 等能由系統調整亮度的顯示器。其他外接顯示器不保證支援。能否完全熄滅取決於顯示器。"
+      ],
+      [
+        "還能闔蓋或手動睡眠嗎？",
+        "可以。「保持電腦喚醒」不影響闔蓋與手動睡眠。關閉此選項或結束瞇會兒後，會恢復原本的設定。"
+      ]
+    ],
+    "license": "Doze 是專有軟體；GitHub 儲存庫提供安裝套件及產品說明。"
+  },
+  "es": {
+    "headline": [
+      "Que la IA siga trabajando.",
+      "Que tu pantalla descanse."
+    ],
+    "description": "Siestita atenúa la pantalla cuando te ausentas. Mantén el Mac despierto para que el apagado automático de pantalla y el salvapantallas no interrumpan el uso del ordenador por la IA.",
+    "positioning": "Atenúa la pantalla desde la barra de menús del Mac",
+    "compatibility": "macOS 13+ · Pantallas integradas y compatibles con el control de brillo del sistema",
+    "releases": "Ver versiones",
+    "download": "Descargar para Mac",
+    "upcoming": "Primera versión en preparación",
+    "available": "Ya disponible",
+    "select": "Elegir idioma",
+    "skip": "Ir al contenido",
+    "home": "Inicio de lazyapps",
+    "preview": "La aplicación real",
+    "light": "Día",
+    "dark": "Noche",
+    "shot": "Panel de ajustes de Siestita en español",
+    "features": [
+      [
+        "Atenúa al ausentarte",
+        "Activa la atenuación al ausentarte y elige el tiempo de espera. Por defecto son 10 minutos. También puedes atenuar la pantalla al instante."
+      ],
+      [
+        "Recupera el brillo al volver",
+        "Mueve el ratón, usa el trackpad o pulsa una tecla para recuperar el brillo. Los clics y las teclas simulados de las herramientas de IA probadas no iluminan la pantalla; otras pueden comportarse de otro modo."
+      ],
+      [
+        "Mantener el Mac despierto",
+        "Evita el salvapantallas y el apagado de pantalla para que la IA pueda ver y usar apps en computer use y otras tareas de escritorio.\nTambién evita el reposo automático para continuar descargas y exportaciones. Sigue atenuando; consume más energía."
+      ]
+    ],
+    "setup": "Tres pasos y puedes irte.",
+    "steps": [
+      "Abre Doze.app y haz clic en el icono «眯» de la barra de menús.",
+      "Activa la atenuación al ausentarte y elige un tiempo de espera.",
+      "Para que la IA siga usando el ordenador, activa la opción de mantener el Mac despierto."
+    ],
+    "details": "Antes de empezar",
+    "faqs": [
+      [
+        "¿Es compatible con mi pantalla?",
+        "Admite las pantallas integradas del Mac y las que permiten ajustar el brillo desde el sistema, como Studio Display. No se garantiza la compatibilidad con otras pantallas externas. Que se oscurezca por completo depende de la pantalla."
+      ],
+      [
+        "¿Puedo cerrar la tapa o poner el Mac en reposo?",
+        "Sí. Mantener el ordenador activo no impide estas acciones. Al desactivar la opción o salir de Siestita, se restauran los ajustes anteriores."
+      ]
+    ],
+    "license": "Doze es software propietario. Su repositorio de GitHub ofrece versiones e información del producto."
+  },
+  "pt-BR": {
+    "headline": [
+      "Deixe a IA trabalhar.",
+      "Deixe a tela descansar."
+    ],
+    "description": "Cochilo reduz o brilho quando você se afasta. Mantenha o Mac acordado para evitar que o desligamento automático da tela e o protetor de tela interrompam o uso do computador pela IA.",
+    "positioning": "Controle de brilho na barra de menus do Mac",
+    "compatibility": "macOS 13+ · Telas integradas e compatíveis com o controle de brilho do sistema",
+    "releases": "Ver versões",
+    "download": "Baixar para Mac",
+    "upcoming": "Primeira versão em preparação",
+    "available": "Já disponível",
+    "select": "Escolher idioma",
+    "skip": "Ir para o conteúdo",
+    "home": "Início do lazyapps",
+    "preview": "O app de verdade",
+    "light": "Dia",
+    "dark": "Noite",
+    "shot": "Painel de ajustes do Cochilo em português do Brasil",
+    "features": [
+      [
+        "Escurece ao sair",
+        "Ative a redução de brilho ao se ausentar e escolha o intervalo. O padrão é 10 minutos. Você também pode escurecer a tela imediatamente."
+      ],
+      [
+        "Brilho de volta ao retornar",
+        "Mova o mouse, use o trackpad ou pressione uma tecla para restaurar o brilho. Cliques e teclas simulados pelas ferramentas de IA testadas não acendem a tela; outras ferramentas podem se comportar de forma diferente."
+      ],
+      [
+        "Manter o Mac Acordado",
+        "Impede o protetor de tela e o desligamento da tela para que a IA veja e use apps em computer use e outras tarefas no computador.\nTambém impede o repouso automático para continuar downloads e exportações. Ainda reduz o brilho; gasta mais energia."
+      ]
+    ],
+    "setup": "Três passos. Depois, uma pausa.",
+    "steps": [
+      "Abra Doze.app e clique no ícone “眯” na barra de menus.",
+      "Ative a redução de brilho ao se ausentar e escolha o intervalo.",
+      "Para a IA continuar usando o computador, ative a opção de manter o Mac acordado."
+    ],
+    "details": "Antes de começar",
+    "faqs": [
+      [
+        "Funciona com a minha tela?",
+        "Compatível com telas integradas do Mac e telas com controle de brilho pelo sistema, como o Studio Display. Outras telas externas não têm compatibilidade garantida. Escurecer por completo depende da tela."
+      ],
+      [
+        "Posso fechar a tampa ou colocar o Mac em repouso?",
+        "Sim. Manter o computador ativo não impede essas ações. Desativar a opção ou encerrar o Cochilo restaura os ajustes anteriores."
+      ]
+    ],
+    "license": "Doze é software proprietário. O repositório no GitHub oferece versões e informações do produto."
+  },
+  "fr": {
+    "headline": [
+      "L’IA continue de travailler.",
+      "Votre écran se repose."
+    ],
+    "description": "Petit Repos réduit la luminosité en votre absence. Gardez le Mac éveillé pour que la veille de l’écran et l’économiseur d’écran n’interrompent pas les actions de l’IA dans les apps.",
+    "positioning": "Un variateur d’écran dans la barre des menus du Mac",
+    "compatibility": "macOS 13+ · Écrans intégrés et écrans compatibles avec le réglage système de luminosité",
+    "releases": "Voir les versions",
+    "download": "Télécharger pour Mac",
+    "upcoming": "Première version en préparation",
+    "available": "Disponible",
+    "select": "Choisir la langue",
+    "skip": "Aller au contenu",
+    "home": "Accueil lazyapps",
+    "preview": "L’application réelle",
+    "light": "Jour",
+    "dark": "Nuit",
+    "shot": "Panneau de réglages de Petit Repos en français",
+    "features": [
+      [
+        "Atténuer en votre absence",
+        "Activez la réduction de luminosité en votre absence et choisissez un délai. Par défaut : 10 minutes. Vous pouvez aussi assombrir l’écran immédiatement."
+      ],
+      [
+        "Rétablir à votre retour",
+        "Bougez la souris, utilisez le trackpad ou appuyez sur une touche. Les clics et frappes simulés des outils d’IA testés ne rallument pas l’écran ; d’autres outils peuvent se comporter différemment."
+      ],
+      [
+        "Garder le Mac éveillé",
+        "Bloque l’économiseur d’écran et la veille de l’écran pour que l’IA puisse voir et utiliser les apps avec computer use et d’autres tâches de bureau.\nEmpêche aussi la veille automatique pour les téléchargements et les exports. Réduit toujours la luminosité ; consomme plus."
+      ]
+    ],
+    "setup": "Trois étapes, puis une pause.",
+    "steps": [
+      "Ouvrez Doze.app et cliquez sur l’icône « 眯 » dans la barre des menus.",
+      "Activez la réduction de luminosité en votre absence et choisissez un délai.",
+      "Pour que l’IA continue à utiliser les apps, activez le maintien en éveil du Mac."
+    ],
+    "details": "Avant de commencer",
+    "faqs": [
+      [
+        "Mon écran est-il compatible ?",
+        "Les écrans intégrés des Mac et les écrans réglables par le système, comme Studio Display, sont pris en charge. Les autres écrans externes ne sont pas garantis. L’obscurité totale dépend de l’écran."
+      ],
+      [
+        "Puis-je fermer le capot ou mettre le Mac en veille ?",
+        "Oui. Le maintien en éveil ne bloque pas ces actions. Désactiver cette option ou quitter Petit Repos rétablit les réglages précédents."
+      ]
+    ],
+    "license": "Doze est un logiciel propriétaire. Son dépôt GitHub fournit les versions et les informations produit."
+  },
+  "de": {
+    "headline": [
+      "Die KI arbeitet weiter.",
+      "Dein Bildschirm ruht."
+    ],
+    "description": "Schlummer dimmt den Bildschirm, wenn du weggehst. Halte den Mac wach, damit Bildschirmruhezustand und Bildschirmschoner die KI beim Bedienen von Apps nicht unterbrechen.",
+    "positioning": "Bildschirm dimmen über die Mac-Menüleiste",
+    "compatibility": "macOS 13+ · Integrierte und unterstützte Displays mit System-Helligkeitssteuerung",
+    "releases": "Versionen ansehen",
+    "download": "Für Mac laden",
+    "upcoming": "Erste Version in Vorbereitung",
+    "available": "Jetzt verfügbar",
+    "select": "Sprache wählen",
+    "skip": "Zum Inhalt",
+    "home": "lazyapps-Startseite",
+    "preview": "Die echte App",
+    "light": "Tag",
+    "dark": "Nacht",
+    "shot": "Schlummer-Einstellungen auf Deutsch",
+    "features": [
+      [
+        "Bei Abwesenheit dimmen",
+        "Aktiviere das Dimmen bei Abwesenheit und wähle eine Wartezeit. Standard sind 10 Minuten. Du kannst den Bildschirm auch sofort dimmen."
+      ],
+      [
+        "Bei Rückkehr aufhellen",
+        "Bewege die Maus, nutze das Trackpad oder drücke eine Taste. Simulierte Klicks und Tastendrücke getesteter KI-Werkzeuge hellen den Bildschirm nicht auf. Andere Werkzeuge können sich anders verhalten."
+      ],
+      [
+        "Mac wach halten",
+        "Verhindert Bildschirmschoner und das Abschalten des Displays, damit die KI bei computer use und anderen Desktop-Aufgaben Apps sehen und bedienen kann.\nVerhindert auch automatischen Ruhezustand für Downloads und Exporte. Dimmt weiterhin; braucht mehr Strom."
+      ]
+    ],
+    "setup": "Drei Schritte. Dann eine Pause.",
+    "steps": [
+      "Öffne Doze.app und klicke auf das „眯“-Symbol in der Menüleiste.",
+      "Aktiviere das Dimmen bei Abwesenheit und wähle eine Wartezeit.",
+      "Soll die KI weiter Apps bedienen, aktiviere „Mac wach halten“."
+    ],
+    "details": "Gut zu wissen",
+    "faqs": [
+      [
+        "Wird mein Display unterstützt?",
+        "Unterstützt werden integrierte Mac-Displays und Displays mit Helligkeitssteuerung über das System, etwa Studio Display. Für andere externe Displays gibt es keine Garantie. Ob der Bildschirm ganz dunkel wird, hängt vom Display ab."
+      ],
+      [
+        "Kann ich den Deckel schließen oder den Ruhezustand wählen?",
+        "Ja. Das Wachhalten verhindert beides nicht. Wenn du die Option ausschaltest oder Schlummer beendest, werden die vorherigen Einstellungen wiederhergestellt."
+      ]
+    ],
+    "license": "Doze ist proprietäre Software. Das GitHub-Repository enthält Versionen und Produktinformationen."
+  },
+  "ja": {
+    "headline": [
+      "AI は作業を続ける。",
+      "画面は、ひとやすみ。"
+    ],
+    "description": "ひとやすみは離席中に画面を暗くします。「スリープさせない」を有効にすると、画面のスリープやスクリーンセーバによる AI の computer use の中断を防げます。",
+    "positioning": "Mac のメニューバーに置く画面調光アプリ",
+    "compatibility": "macOS 13 以降 · 内蔵ディスプレイおよびシステムで輝度調整できる対応ディスプレイ",
+    "releases": "リリースを見る",
+    "download": "Mac 版をダウンロード",
+    "upcoming": "初回リリースを準備中",
+    "available": "公開中",
+    "select": "言語を選択",
+    "skip": "本文へ移動",
+    "home": "lazyapps ホーム",
+    "preview": "実際のアプリ画面",
+    "light": "昼",
+    "dark": "夜",
+    "shot": "ひとやすみの日本語設定パネル",
+    "features": [
+      [
+        "離席中は暗く",
+        "離席時の調光を有効にして、待ち時間を選びます。初期設定は 10 分。すぐに暗くすることもできます。"
+      ],
+      [
+        "戻れば明るく",
+        "マウスやトラックパッドを動かすか、キーを押すだけ。検証済みの AI ツールによる模擬クリックやキー入力では明るくなりません。他のツールでは動作が異なる場合があります。"
+      ],
+      [
+        "スリープさせない",
+        "スクリーンセーバと画面オフを防ぎ、computer use などの AI デスクトップ作業でアプリを見て操作できる状態を保ちます。\n自動スリープも防ぎ、ダウンロードや書き出しを続けられます。画面は暗くなりますが、消費電力は増えます。"
+      ]
+    ],
+    "setup": "3 ステップで、ひとやすみ。",
+    "steps": [
+      "Doze.app を開き、メニューバーの「眯」アイコンをクリックします。",
+      "離席時の調光を有効にして、待ち時間を選びます。",
+      "computer use を続けるには、「スリープさせない」を有効にします。"
+    ],
+    "details": "使う前に知っておきたいこと",
+    "faqs": [
+      [
+        "どのディスプレイに対応していますか？",
+        "Mac の内蔵ディスプレイと、Studio Display などシステムで輝度を調整できるディスプレイに対応します。その他の外部ディスプレイは動作保証外です。完全に暗くなるかどうかはディスプレイによります。"
+      ],
+      [
+        "ふたを閉じたり、手動でスリープできますか？",
+        "はい。スリープ防止の設定中でも可能です。設定をオフにするか、ひとやすみを終了すると、元の設定に戻ります。"
+      ]
+    ],
+    "license": "Doze はプロプライエタリソフトウェアです。GitHub リポジトリでは配布版と製品情報を提供します。"
+  },
+  "ko": {
+    "headline": [
+      "AI는 계속 일하고,",
+      "화면은 잠깐 쉬어요."
+    ],
+    "description": "잠깐 쉼은 자리를 비우면 화면을 어둡게 합니다. “컴퓨터 깨어 있게 유지”를 켜면 화면 자동 꺼짐과 화면 보호기가 AI의 computer use를 중단하지 않게 할 수 있어요.",
+    "positioning": "Mac 메뉴 막대에서 사용하는 화면 밝기 조절 앱",
+    "compatibility": "macOS 13 이상 · 내장 디스플레이 및 시스템 밝기 조절을 지원하는 디스플레이",
+    "releases": "릴리스 보기",
+    "download": "Mac용 다운로드",
+    "upcoming": "첫 출시 준비 중",
+    "available": "출시됨",
+    "select": "언어 선택",
+    "skip": "본문으로 이동",
+    "home": "lazyapps 홈",
+    "preview": "실제 앱 화면",
+    "light": "낮",
+    "dark": "밤",
+    "shot": "잠깐 쉼의 한국어 설정 패널",
+    "features": [
+      [
+        "자리를 비우면 어둡게",
+        "자리 비움 시 화면 어둡게 하기 기능을 켜고 대기 시간을 선택하세요. 기본값은 10분입니다. 바로 어둡게 할 수도 있어요."
+      ],
+      [
+        "돌아오면 밝게",
+        "마우스나 트랙패드를 움직이거나 키를 누르면 됩니다. 검증한 AI 도구의 가상 클릭과 키 입력은 화면을 밝히지 않습니다. 다른 도구는 다르게 동작할 수 있어요."
+      ],
+      [
+        "컴퓨터 깨어 있게 유지",
+        "화면 보호기와 화면 꺼짐을 막아 computer use 등 AI 데스크톱 작업에서 앱을 보고 조작할 수 있게 합니다.\n자동 잠자기도 막아 다운로드와 내보내기를 계속합니다. 화면은 계속 어두워지지만 전력을 더 사용합니다."
+      ]
+    ],
+    "setup": "세 단계면 쉬러 가도 돼요.",
+    "steps": [
+      "Doze.app을 열고 메뉴 막대의 ‘眯’ 아이콘을 클릭하세요.",
+      "자리 비움 시 화면 어둡게 하기 기능을 켜고 대기 시간을 선택하세요.",
+      "AI가 컴퓨터를 계속 조작해야 한다면 “컴퓨터 깨어 있게 유지”를 켜세요."
+    ],
+    "details": "사용 전에 알아두세요",
+    "faqs": [
+      [
+        "제 디스플레이도 지원하나요?",
+        "Mac 내장 디스플레이와 Studio Display처럼 시스템에서 밝기를 조절할 수 있는 디스플레이를 지원합니다. 다른 외장 디스플레이의 작동은 보장하지 않습니다. 완전히 어두워지는지는 디스플레이에 따라 달라요."
+      ],
+      [
+        "덮개를 닫거나 직접 잠자기로 전환할 수 있나요?",
+        "네. 깨어 있게 유지하는 옵션은 두 동작을 막지 않습니다. 옵션을 끄거나 잠깐 쉼을 종료하면 이전 설정으로 돌아갑니다."
+      ]
+    ],
+    "license": "Doze는 독점 소프트웨어입니다. GitHub 저장소는 배포 파일과 제품 정보를 제공합니다."
+  },
+  "ru": {
+    "headline": [
+      "Пусть ИИ работает.",
+      "Пусть экран отдыхает."
+    ],
+    "description": "Дрёма уменьшает яркость, когда вы отходите. Включите «Не давать Mac засыпать», чтобы отключение экрана и заставка не прерывали действия ИИ в приложениях.",
+    "positioning": "Затемнение экрана из строки меню Mac",
+    "compatibility": "macOS 13+ · Встроенные и совместимые дисплеи с системной регулировкой яркости",
+    "releases": "Посмотреть выпуски",
+    "download": "Скачать для Mac",
+    "upcoming": "Первый выпуск готовится",
+    "available": "Уже доступно",
+    "select": "Выбрать язык",
+    "skip": "К содержимому",
+    "home": "Главная lazyapps",
+    "preview": "Настоящий интерфейс",
+    "light": "День",
+    "dark": "Ночь",
+    "shot": "Панель настроек Дрёмы на русском языке",
+    "features": [
+      [
+        "Темнее без вас",
+        "Включите затемнение при отсутствии и выберите задержку. По умолчанию 10 минут. Можно затемнить экран и сразу."
+      ],
+      [
+        "Ярче при возвращении",
+        "Подвигайте мышью, воспользуйтесь трекпадом или нажмите клавишу. Имитация щелчков и нажатий в проверенных инструментах ИИ не повышает яркость. Другие инструменты могут работать иначе."
+      ],
+      [
+        "Не давать Mac засыпать",
+        "Не даёт заставке и выключению экрана мешать ИИ видеть приложения и управлять ими в computer use и других задачах на рабочем столе.\nТакже предотвращает автоматический сон для загрузок и экспорта. Экран затемняется; энергии нужно больше."
+      ]
+    ],
+    "setup": "Три шага, и можно отойти.",
+    "steps": [
+      "Откройте Doze.app и нажмите значок «眯» в строке меню.",
+      "Включите затемнение при отсутствии и выберите задержку.",
+      "Чтобы ИИ продолжал работать с приложениями, включите «Не давать Mac засыпать»."
+    ],
+    "details": "Что стоит знать",
+    "faqs": [
+      [
+        "Поддерживается ли мой дисплей?",
+        "Поддерживаются встроенные дисплеи Mac и дисплеи с системной регулировкой яркости, например Studio Display. Работа с другими внешними дисплеями не гарантируется. Полное затемнение зависит от дисплея."
+      ],
+      [
+        "Можно закрыть крышку или включить сон вручную?",
+        "Да. Поддержание активности этому не мешает. Отключение этой функции или выход из Дрёмы восстанавливает прежние настройки."
+      ]
+    ],
+    "license": "Doze распространяется как проприетарное ПО. Репозиторий GitHub предназначен для выпусков и информации о продукте."
+  },
+  "ar": {
+    "headline": [
+      "دع الذكاء الاصطناعي يعمل.",
+      "ودع شاشتك تستريح."
+    ],
+    "description": "يخفّض غفوة سطوع الشاشة عند ابتعادك. فعّل إبقاء الكمبيوتر مستيقظًا لمنع إطفاء الشاشة تلقائيًا وشاشة التوقف من مقاطعة استخدام الذكاء الاصطناعي للتطبيقات.",
+    "positioning": "تطبيق لتعتيم الشاشة من شريط قوائم Mac",
+    "compatibility": "macOS 13 أو أحدث · الشاشات المدمجة والشاشات المتوافقة مع ضبط السطوع عبر النظام",
+    "releases": "عرض الإصدارات",
+    "download": "تنزيل لـ Mac",
+    "upcoming": "الإصدار الأول قيد الإعداد",
+    "available": "متاح الآن",
+    "select": "اختيار اللغة",
+    "skip": "انتقل إلى المحتوى",
+    "home": "صفحة lazyapps الرئيسية",
+    "preview": "واجهة التطبيق الفعلية",
+    "light": "نهار",
+    "dark": "ليل",
+    "shot": "لوحة إعدادات غفوة باللغة العربية",
+    "features": [
+      [
+        "تعتيم عند الابتعاد",
+        "فعّل تعتيم الشاشة عند الابتعاد واختر مدة الانتظار. المدة الافتراضية 10 دقائق. ويمكنك تعتيم الشاشة فورًا أيضًا."
+      ],
+      [
+        "استعادة السطوع عند العودة",
+        "حرّك الماوس أو استخدم لوحة التعقب أو اضغط مفتاحًا. النقرات وضغطات المفاتيح المحاكية من أدوات الذكاء الاصطناعي التي اختُبرت لا ترفع السطوع؛ وقد يختلف سلوك الأدوات الأخرى."
+      ],
+      [
+        "إبقاء الكمبيوتر مستيقظًا",
+        "يمنع شاشة التوقف وإطفاء الشاشة، ليتمكن الذكاء الاصطناعي من رؤية التطبيقات واستخدامها في computer use ومهام سطح المكتب الأخرى.\nويمنع السكون التلقائي لتستمر التنزيلات والتصدير. يستمر التعتيم، لكن استهلاك الطاقة يزيد."
+      ]
+    ],
+    "setup": "ثلاث خطوات، ثم خذ استراحة.",
+    "steps": [
+      "افتح Doze.app وانقر أيقونة «眯» في شريط القوائم.",
+      "فعّل تعتيم الشاشة عند الابتعاد واختر مدة الانتظار.",
+      "ليواصل الذكاء الاصطناعي استخدام التطبيقات، فعّل إبقاء الكمبيوتر مستيقظًا."
+    ],
+    "details": "قبل أن تبدأ",
+    "faqs": [
+      [
+        "هل يدعم شاشتي؟",
+        "يدعم شاشات Mac المدمجة والشاشات التي يتحكم النظام في سطوعها، مثل Studio Display. لا يُضمن دعم الشاشات الخارجية الأخرى. ويتوقف التعتيم الكامل على الشاشة نفسها."
+      ],
+      [
+        "هل يمكنني إغلاق الغطاء أو اختيار السكون يدويًا؟",
+        "نعم. إبقاء الكمبيوتر مستيقظًا لا يمنع ذلك. يؤدي تعطيل الخيار أو إنهاء غفوة إلى استعادة الإعدادات السابقة."
+      ]
+    ],
+    "license": "Doze برنامج احتكاري. يوفّر مستودع GitHub الإصدارات ومعلومات المنتج."
+  },
+  "hi": {
+    "headline": [
+      "AI काम करता रहे।",
+      "स्क्रीन को आराम करने दें।"
+    ],
+    "description": "झपकी आपके दूर जाने पर स्क्रीन मंद करता है। कंप्यूटर को जागता रखें विकल्प चालू करें, ताकि स्क्रीन का अपने-आप बंद होना या स्क्रीन सेवर AI के ऐप्स में काम करने को न रोके।",
+    "positioning": "Mac के मेनू बार से स्क्रीन की चमक कम करने वाला ऐप",
+    "compatibility": "macOS 13 या नया · बिल्ट-इन डिस्प्ले और सिस्टम से चमक बदलने वाले समर्थित डिस्प्ले",
+    "releases": "रिलीज़ देखें",
+    "download": "Mac के लिए डाउनलोड करें",
+    "upcoming": "पहली रिलीज़ की तैयारी जारी है",
+    "available": "अब उपलब्ध है",
+    "select": "भाषा चुनें",
+    "skip": "मुख्य सामग्री पर जाएँ",
+    "home": "lazyapps होम",
+    "preview": "ऐप का असली इंटरफ़ेस",
+    "light": "दिन",
+    "dark": "रात",
+    "shot": "झपकी का हिंदी सेटिंग पैनल",
+    "features": [
+      [
+        "दूर जाने पर मंद",
+        "दूर जाने पर स्क्रीन मंद करने का विकल्प चालू करें और समय चुनें। डिफ़ॉल्ट समय 10 मिनट है। आप स्क्रीन को तुरंत भी मंद कर सकते हैं।"
+      ],
+      [
+        "लौटने पर चमक वापस",
+        "माउस या ट्रैकपैड चलाएँ या कोई कुंजी दबाएँ। जाँचे गए AI टूल के नकली क्लिक और कुंजी दबाने से स्क्रीन की चमक नहीं बढ़ती। दूसरे टूल का व्यवहार अलग हो सकता है।"
+      ],
+      [
+        "कंप्यूटर को जागता रखें",
+        "स्क्रीन सेवर और स्क्रीन बंद होने से रोकता है, ताकि AI, computer use और दूसरे डेस्कटॉप कामों में ऐप्स को देख और चला सके।\nअपने-आप स्लीप होने से भी रोकता है, ताकि डाउनलोड और एक्सपोर्ट चलते रहें। स्क्रीन मंद होती रहेगी, पर बिजली ज़्यादा लगेगी।"
+      ]
+    ],
+    "setup": "तीन कदम। फिर एक विराम।",
+    "steps": [
+      "Doze.app खोलें और मेनू बार में “眯” आइकन पर क्लिक करें।",
+      "दूर जाने पर स्क्रीन मंद करने का विकल्प चालू करें और समय चुनें।",
+      "AI को ऐप्स में काम जारी रखने देने के लिए कंप्यूटर को जागता रखें विकल्प चालू करें।"
+    ],
+    "details": "शुरू करने से पहले",
+    "faqs": [
+      [
+        "क्या मेरा डिस्प्ले समर्थित है?",
+        "Mac के बिल्ट-इन डिस्प्ले और Studio Display जैसे डिस्प्ले समर्थित हैं जिनकी चमक सिस्टम से बदली जा सकती है। दूसरे बाहरी डिस्प्ले के लिए गारंटी नहीं है। स्क्रीन पूरी तरह अँधेरी होगी या नहीं, यह डिस्प्ले पर निर्भर है।"
+      ],
+      [
+        "क्या ढक्कन बंद कर सकता हूँ या खुद स्लीप चुन सकता हूँ?",
+        "हाँ। कंप्यूटर को जागृत रखने का विकल्प इनमें बाधा नहीं डालता। विकल्प बंद करने या झपकी से बाहर निकलने पर पुरानी सेटिंग वापस आ जाती हैं।"
+      ]
+    ],
+    "license": "Doze मालिकाना सॉफ़्टवेयर है। GitHub रिपॉज़िटरी पर रिलीज़ और उत्पाद की जानकारी मिलती है।"
+  }
+}

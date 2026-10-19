@@ -1,5 +1,5 @@
 ---
-import { Image } from 'astro:assets';
+import NativeAppIcon from './NativeAppIcon.astro';
 import type { ImageMetadata } from 'astro';
 interface Props {
   name?: string;
@@ -11,7 +11,8 @@ interface Props {
 }
 const { name, icon, homeLabel = 'lazyapps home', homeMark = 'wordmark', pixelated = false, class: className } = Astro.props;
 const nativeIcons = import.meta.glob<{ default: ImageMetadata }>('../assets/img/*-icon.png', { eager: true });
-const nativeIcon = Object.values(nativeIcons).find(entry => entry.default.src === icon)?.default;
+const nativeIconPath = Object.entries(nativeIcons).find(([, entry]) => entry.default.src === icon)?.[0];
+const nativeSlug = nativeIconPath?.split('/').at(-1)?.replace('-icon.png', '');
 ---
 <header class:list={['site-header', className]} dir="ltr">
   <a class:list={['site-header__home', 'dsp', { 'site-header__home--sun': homeMark === 'sun' }]} href="/" aria-label={homeLabel} lang="en">
@@ -22,7 +23,7 @@ const nativeIcon = Object.values(nativeIcons).find(entry => entry.default.src ==
     </span> : <>lazyapps<span class="site-header__dot" aria-hidden="true"></span></>}
   </a>
   {name && <div class="site-header__product">
-    {nativeIcon ? <Image src={nativeIcon} width={28} height={28} densities={[1, 2]} format="webp" quality={90} alt="" /> : icon && <img src={icon} width="28" height="28" alt="" class:list={{ 'is-pixelated': pixelated }} />}
+    {nativeSlug ? <NativeAppIcon slug={nativeSlug} size={28} loading="eager" /> : icon && <img src={icon} width="28" height="28" alt="" class:list={{ 'is-pixelated': pixelated }} />}
     <span class="dsp" dir="auto" lang={/^[A-Za-z0-9 .&-]+$/.test(name) ? 'en' : undefined}>{name}</span>
   </div>}
   <div class="site-header__controls"><slot /></div>
@@ -69,8 +70,8 @@ const nativeIcon = Object.values(nativeIcons).find(entry => entry.default.src ==
   @keyframes nav-sun-turn{to{transform:rotate(360deg)}}
   @media(prefers-reduced-motion:reduce){.nav-sun-rays{animation:none}.site-header__sun{transition:none}}
   .site-header__product{display:flex;align-items:center;justify-content:center;gap:10px;min-width:0}
-  .site-header__product img{flex:none;object-fit:contain}
-  .site-header__product img.is-pixelated{image-rendering:pixelated;border-radius:0}
+  .site-header__product :global(img){flex:none;object-fit:contain}
+  .site-header__product :global(img).is-pixelated{image-rendering:pixelated;border-radius:0}
   .site-header__product .dsp{font-size:24px;line-height:1.25;text-wrap:balance}
   .site-header__controls{grid-column:3;justify-self:end;min-width:0}
   .site-header__home:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px}
@@ -78,8 +79,8 @@ const nativeIcon = Object.values(nativeIcons).find(entry => entry.default.src ==
     .site-header{grid-template-columns:auto minmax(0,1fr) auto;gap:12px;min-height:72px}
     .site-header__home{font-size:26px}
     .site-header__product{gap:6px}
-    .site-header__product img{width:22px;height:22px}
+    .site-header__product :global(img){width:22px;height:22px}
     .site-header__product .dsp{font-size:18px}
   }
-  @media(max-width:370px){.site-header{gap:8px}.site-header__product img{display:none}.site-header__product .dsp{font-size:16px}}
+  @media(max-width:370px){.site-header{gap:8px}.site-header__product :global(img){display:none}.site-header__product .dsp{font-size:16px}}
 </style>

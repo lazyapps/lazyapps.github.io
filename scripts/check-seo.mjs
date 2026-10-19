@@ -3,16 +3,24 @@ import { existsSync } from 'node:fs';
 import { readFile } from 'node:fs/promises';
 import { join } from 'node:path';
 import { attr, text, readPages, dist, site } from './lib/seo.mjs';
+import { DOZE_LOCALES, DOZE_RELEASE } from '../src/i18n/doze-locales.mjs';
 import { SHHEEP_LOCALES } from '../src/i18n/shheep-locales.mjs';
 import { KEYHOP_LOCALES } from '../src/i18n/keyhop-locales.mjs';
 import { KEYHOP_STATUS } from '../src/i18n/keyhop-status.mjs';
 
+assert(['upcoming', 'published'].includes(DOZE_RELEASE.status), 'Unknown Doze release status');
+if (DOZE_RELEASE.status === 'published') {
+  assert(/^\d{6}\.\d+$/.test(DOZE_RELEASE.version), 'Published Doze needs its verified version');
+  assert(DOZE_RELEASE.downloadUrl?.startsWith(`https://github.com/cxa/doze/releases/download/v${DOZE_RELEASE.version}/`) && DOZE_RELEASE.downloadUrl.endsWith('.dmg'), 'Published Doze needs its verified versioned DMG');
+} else {
+  assert(DOZE_RELEASE.version === null && DOZE_RELEASE.downloadUrl === null, 'Unreleased Doze must not claim an available version or download');
+}
 const pages = await readPages();
 assert(pages.length > 0, 'No built pages. Run npm run build first.');
 const byUrl = new Map(pages.map(page => [page.url, page]));
 const knownAliases = new Map([[`${site}/fondfont/`, `${site}/fondfont/en/`]]);
-const product = /^\/(chmate|fondfont|yiyan|world-book|xvdl|shheep)\/(?:[a-z]{2}(?:-[a-z]+)?\/)?$/;
-const localizedProduct = /^\/(chmate|fondfont|keyhop|yiyan|shheep)\/(?:[a-z]{2}(?:-[a-z]+)?\/)?$/;
+const product = /^\/(chmate|fondfont|yiyan|world-book|xvdl|shheep|doze)\/(?:[a-z]{2}(?:-[a-z]+)?\/)?$/;
+const localizedProduct = /^\/(chmate|fondfont|keyhop|yiyan|shheep|doze)\/(?:[a-z]{2}(?:-[a-z]+)?\/)?$/;
 const meta = (page, key) => page.metas.find(node => attr(node, 'name') === key || attr(node, 'property') === key);
 const shheepLocales = Object.values(SHHEEP_LOCALES);
 assert.deepEqual(shheepLocales.map(locale => locale.htmlLang).sort(), ['en', 'zh-Hans', 'zh-Hant', 'ja', 'ko', 'es', 'pt-BR', 'de', 'fr', 'it', 'ru'].sort(), 'Shheep must cover all 11 app languages');
@@ -122,6 +130,11 @@ for (const page of pages) {
       check(app['@type'] === 'SoftwareApplication' && app.operatingSystem === 'iOS, iPadOS', 'Shheep must describe the native iOS app');
       check(app.applicationCategory === 'GameApplication', 'Missing game application category');
       check(app.downloadUrl === 'https://apps.apple.com/app/id6819031865' && !app.browserRequirements, 'Released native app must provide its App Store download URL');
+    } else if (page.url.startsWith(`${site}/doze/`)) {
+      const locale = Object.values(DOZE_LOCALES).find(locale => locale.canonical === page.url);
+      check(locale && app.name === locale.name, 'Incorrect Doze localized identity');
+      check(app.downloadUrl === (DOZE_RELEASE.downloadUrl ?? undefined), 'Doze release metadata drift');
+      check(languageLinks.size === 13 && languageLinks.get('x-default') === DOZE_LOCALES.en.canonical, 'Doze must cover 12 languages with English fallback');
     } else {
       check(app['@type'] === 'WebApplication' ? app.browserRequirements : app.downloadUrl, 'Missing browser requirements or download URL');
     }

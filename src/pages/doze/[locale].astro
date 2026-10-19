@@ -1,0 +1,8 @@
+---
+import { DOZE_LOCALES } from '../../i18n/doze-locales.mjs';
+import DozePage from '../../components/DozePage.astro';
+export function getStaticPaths() {
+  return Object.keys(DOZE_LOCALES).filter(Boolean).map(locale => ({ params: { locale } }));
+}
+---
+<DozePage code={Astro.params.locale} />

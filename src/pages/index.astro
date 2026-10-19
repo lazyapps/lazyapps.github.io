@@ -1,7 +1,9 @@
 ---
 const SITE = 'https://lazyapps.com';
 const title = 'lazyapps — Apps for Mac, iPhone & iPad';
-const description = 'Mac, iPhone and iPad apps for English practice, X video downloads, EPUB and CHM reading, country facts and fonts. Shheep is a sheep-counting game for iPhone and iPad.';
+const description = 'Mac, iPhone and iPad apps for screen dimming while AI works, English practice, X video downloads, EPUB and CHM reading, country facts and fonts. Shheep is a sheep-counting game for iPhone and iPad.';
+import { DOZE_LOCALES } from '../i18n/doze-locales.mjs';
+const doze = DOZE_LOCALES.en;
 import NativeAppIcon from '../components/NativeAppIcon.astro';
 import SocialMeta from '../components/SocialMeta.astro';
 import StructuredData from '../components/StructuredData.astro';
@@ -73,6 +75,7 @@ setTimeout(function(){
   transition:transform .32s cubic-bezier(.2,.8,.2,1);
 }
 .card--featured{grid-column:1/-1}
+.card--doze{--fill:var(--app-doze)}
 .card--yiyan{--fill:var(--app-yiyan)}
 .card--xvdl{--fill:var(--app-xvdl)}
 .card--chmate{--fill:var(--app-chmate)}
@@ -201,6 +204,22 @@ setTimeout(function(){
         </div>
       </article>
 
+
+      <article class="card card--compact card--doze">
+        <p class="card__tag">macOS 13+ · {doze.availability}</p>
+        <div class="card__grid">
+          <div class="card__copy">
+            <div class="card__heading">
+              <NativeAppIcon slug="doze" size={72} class="card__icon" />
+              <h2 class="card__title dsp">Doze</h2>
+            </div>
+            <p class="card__p">{doze.description}</p>
+            <div class="card__foot">
+              <a data-hover href={doze.selectedUrl} class="card__go"><span>Doze details</span><span class="card__arrow" aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+        </div>
+      </article>
 
       <article class="card card--featured card--yiyan" id="yiyan">
         <p class="card__tag">macOS 15+ · iPhone beta</p>

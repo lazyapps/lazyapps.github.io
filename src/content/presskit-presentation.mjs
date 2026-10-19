@@ -5,9 +5,10 @@ import { materialLanguage, languageHash } from '../i18n/presskit-language.mjs';
 import { CHMATE_LOCALES } from '../i18n/chmate-locales.mjs';
 import { FONDFONT_LOCALES } from '../i18n/fondfont-locales.mjs';
 import { YIYAN_LOCALES } from '../i18n/yiyan-locales.mjs';
+import { DOZE_LOCALES, DOZE_RELEASE } from '../i18n/doze-locales.mjs';
 import { SHHEEP_LOCALES } from '../i18n/shheep-locales.mjs';
 
-const translations = { chmate: CHMATE_LOCALES, fondfont: FONDFONT_LOCALES, yiyan: YIYAN_LOCALES, shheep: SHHEEP_LOCALES };
+const translations = { doze: DOZE_LOCALES, chmate: CHMATE_LOCALES, fondfont: FONDFONT_LOCALES, yiyan: YIYAN_LOCALES, shheep: SHHEEP_LOCALES };
 const traditionalSummaries = {
   'world-book': 'iPhone 與 iPad 離線世界地圖集，可查國家資料、瀏覽 3D 地球和比較排名。',
   xvdl: 'Mac Safari 的影片下載擴充功能，可從支援的網頁下載影片。',
@@ -27,11 +28,11 @@ export const pressPresentations = pressKits.map(kit => ({
       name: copy?.name ?? kit.names.en,
       summary: copy?.summary ?? (marketing ? plain(marketing.sub ?? marketing.description) : chinese ?? kit.summary.en),
       summaryLang: copy || marketing || chinese ? tag : 'en',
-      website: copy?.website ?? marketing?.selectedUrl ?? `/${kit.slug}/`,
+      website: copy?.website ?? marketing?.selectedUrl ?? (kit.slug === 'doze' ? DOZE_LOCALES.en.selectedUrl : `/${kit.slug}/`),
       platform: copy?.platform ?? kit.platform.en,
-      availability: g.availability[category],
+      availability: kit.slug === 'doze' ? (DOZE_RELEASE.status === 'published' ? g.availability.mac : g.availability.upcomingMac) : g.availability[category],
       materialTag: materialLanguage(tag, kit.locales.map(locale => locale.tag)),
-      links: kit.links.map(link => ({ url: link.url, label: link.url.includes('apps.apple.com') ? 'App Store' : link.url.includes('testflight.') ? g.links.beta : link.url.endsWith('/releases') ? g.links.download : link.url.includes('github.com') ? g.links.source : kit.slug === 'shheep' ? g.links.demo : g.links.play })),
+      links: kit.links.map(link => ({ url: link.url, label: kit.slug === 'doze' ? (DOZE_RELEASE.status === 'published' ? g.links.download : g.links.releases) : link.url.includes('apps.apple.com') ? 'App Store' : link.url.includes('testflight.') ? g.links.beta : link.url.endsWith('/releases') ? g.links.download : link.url.includes('github.com') ? g.links.source : kit.slug === 'shheep' ? g.links.demo : g.links.play })),
     }];
   })),
 }));
