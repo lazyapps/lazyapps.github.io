@@ -53,6 +53,14 @@ iPhone 和 iPad App 支援 Game Center 排行榜、好友挑戰和邀請。
 
 共用的遊戲標題畫面預覽，不是實際遊玩過程的截圖。
 
+### 桌面背景
+
+[website-background.png](../website-background.png)
+
+1536 × 1024 · PNG
+
+AI 生成的裝飾背景，用於網站展示；不是 App 截圖、遊戲場景或內建功能。
+
 ### 社群分享圖
 
 [social-card.png](../social-card.png)

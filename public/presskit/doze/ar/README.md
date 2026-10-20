@@ -37,7 +37,7 @@ Doze برنامج احتكاري. يوفّر مستودع GitHub الإصدار�
 
 ## روابط رسمية
 
-- [تنزيل لـ Mac](https://github.com/cxa/doze/releases/download/v261019.0/Doze-261019.0.dmg)
+- [تنزيل لـ Mac](https://github.com/cxa/doze/releases)
 
 ## الصور
 

@@ -53,6 +53,14 @@ Logotype pixelisé transparent d’origine ; conserver les contours et les propo
 
 Aperçu partagé de l’écran titre du jeu, pas une partie en cours.
 
+### Fond d’écran du bureau
+
+[website-background.png](../website-background.png)
+
+1536 × 1024 · PNG
+
+Décor généré par IA pour la présentation sur le site ; il ne s’agit ni d’une capture de l’app, ni d’une scène du jeu, ni d’une fonctionnalité intégrée.
+
 ### Image pour les réseaux sociaux
 
 [social-card.png](../social-card.png)

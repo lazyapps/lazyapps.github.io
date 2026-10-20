@@ -23,7 +23,7 @@ export const DOZE_LOCALES = Object.fromEntries(identities.map(([code, htmlLang, 
     title: `${name} — ${t.positioning}`, selectedUrl, canonical: `https://lazyapps.com${selectedUrl}`,
     availability: release.status === 'published' ? t.available : t.upcoming,
     cta: release.status === 'published' ? t.download : t.releases,
-    ctaUrl: release.downloadUrl ?? release.releasesUrl,
+    ctaUrl: release.releasesUrl,
     ogAsset: `doze-opengraph-${code || 'zh-hans'}.png`,
   }];
 }));

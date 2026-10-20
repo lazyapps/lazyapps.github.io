@@ -53,6 +53,14 @@ Logotipo original em pixels com transparência; preserve bordas e proporções.
 
 Prévia compartilhada da tela de título do jogo, não de uma partida em andamento.
 
+### Plano de fundo da área de trabalho
+
+[website-background.png](../website-background.png)
+
+1536 × 1024 · PNG
+
+Fundo decorativo gerado por IA para apresentação no site; não é uma captura do app, uma cena do jogo nem um recurso integrado.
+
 ### Imagem para redes sociais
 
 [social-card.png](../social-card.png)

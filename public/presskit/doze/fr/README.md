@@ -37,7 +37,7 @@ Doze est un logiciel propriétaire. Son dépôt GitHub fournit les versions et l
 
 ## Liens officiels
 
-- [Télécharger pour Mac](https://github.com/cxa/doze/releases/download/v261019.0/Doze-261019.0.dmg)
+- [Télécharger pour Mac](https://github.com/cxa/doze/releases)
 
 ## Images
 

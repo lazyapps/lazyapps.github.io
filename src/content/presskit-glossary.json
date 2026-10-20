@@ -17,7 +17,8 @@
       "icon": "App icon",
       "screenshot": "Screenshot",
       "artwork": "Social sharing image",
-      "logo": "Wordmark"
+      "logo": "Wordmark",
+      "background": "Desktop wallpaper"
     },
     "availability": {
       "store": "Available on the App Store",
@@ -34,7 +35,9 @@
       "logo": "Original transparent pixel wordmark; preserve pixel edges and proportions.",
       "title": "Shared game title-screen preview; not active gameplay.",
       "globe": "Frame from the English native iPad preview; unchanged pixels.",
-      "sharedEnglishCapture": "Shared English interface screenshot with example Chinese writing and English learning notes; original pixels are unchanged."
+      "sharedEnglishCapture": "Shared English interface screenshot with example Chinese writing and English learning notes; original pixels are unchanged.",
+      "background": "AI-generated desert wallpaper for the website presentation; not an app screenshot or built-in app feature.",
+      "websiteBackground": "AI-generated decorative backdrop for the website presentation; not an app screenshot, game scene or built-in feature."
     },
     "usage": "For editorial coverage of this product. Preserve names, proportions and context; credit lazyapps and link to the product website. Third-party content and trademarks retain their respective rights; this kit grants no standalone reuse rights. Contact us for other uses.",
     "links": {
@@ -64,7 +67,8 @@
       "icon": "App 图标",
       "screenshot": "界面截图",
       "artwork": "社交分享图",
-      "logo": "文字标志"
+      "logo": "文字标志",
+      "background": "桌面背景"
     },
     "availability": {
       "store": "已在 App Store 上架",
@@ -81,7 +85,9 @@
       "logo": "原始透明像素文字标志，请保留像素边缘与比例。",
       "title": "共享的游戏标题画面预览，不是实际游玩过程的截图。",
       "globe": "从英语原生 iPad 预览提取的画面，像素保持原样。",
-      "sharedEnglishCapture": "共享英语界面截图，展示中文示例文字与英语学习笔记，保留原始像素。"
+      "sharedEnglishCapture": "共享英语界面截图，展示中文示例文字与英语学习笔记，保留原始像素。",
+      "background": "AI 生成的沙丘壁纸，用于网站展示；不是 App 截图或内置功能。",
+      "websiteBackground": "AI 生成的装饰背景，用于网站展示；不是 App 截图、游戏场景或内置功能。"
     },
     "usage": "这些素材用于介绍本产品的媒体报道。请保留名称、比例与产品语境，署名 lazyapps 并链接产品网站。第三方内容与商标保留各自权利；本资料包不授予其独立使用权。如需其他用途，请联系我们。",
     "links": {
@@ -111,7 +117,8 @@
       "icon": "App 圖示",
       "screenshot": "介面截圖",
       "artwork": "社群分享圖",
-      "logo": "文字標誌"
+      "logo": "文字標誌",
+      "background": "桌面背景"
     },
     "availability": {
       "store": "已在 App Store 上架",
@@ -128,7 +135,9 @@
       "logo": "原始透明像素文字標誌，請保留像素邊緣與比例。",
       "title": "共用的遊戲標題畫面預覽，不是實際遊玩過程的截圖。",
       "globe": "從英語原生 iPad 預覽擷取的畫面，像素保持原樣。",
-      "sharedEnglishCapture": "共用英語介面截圖，展示中文範例文字與英語學習筆記，保留原始像素。"
+      "sharedEnglishCapture": "共用英語介面截圖，展示中文範例文字與英語學習筆記，保留原始像素。",
+      "background": "AI 生成的沙丘桌布，用於網站展示；不是 App 截圖或內建功能。",
+      "websiteBackground": "AI 生成的裝飾背景，用於網站展示；不是 App 截圖、遊戲場景或內建功能。"
     },
     "usage": "這些素材用於介紹本產品的媒體報導。請保留名稱、比例與產品語境，署名 lazyapps 並連結產品網站。第三方內容與商標保留各自權利；本資料包不授予其獨立使用權。如需其他用途，請聯絡我們。",
     "links": {
@@ -158,7 +167,8 @@
       "icon": "App-Symbol",
       "screenshot": "Screenshot",
       "artwork": "Bild für soziale Medien",
-      "logo": "Wortmarke"
+      "logo": "Wortmarke",
+      "background": "Desktophintergrund"
     },
     "availability": {
       "store": "Im App Store erhältlich",
@@ -175,7 +185,9 @@
       "logo": "Originale transparente Pixel-Wortmarke; Pixelkanten und Proportionen erhalten.",
       "title": "Gemeinsame Vorschau des Spiel-Titelbildschirms, kein aktives Spielgeschehen.",
       "globe": "Bild aus der englischen nativen iPad-Vorschau; unveränderte Pixel.",
-      "sharedEnglishCapture": "Gemeinsamer Screenshot der englischen Oberfläche mit chinesischen Beispieltexten und englischen Lernnotizen; die Originalpixel sind unverändert."
+      "sharedEnglishCapture": "Gemeinsamer Screenshot der englischen Oberfläche mit chinesischen Beispieltexten und englischen Lernnotizen; die Originalpixel sind unverändert.",
+      "background": "KI-generiertes Dünenmotiv für die Website-Präsentation; kein App-Screenshot und keine integrierte App-Funktion.",
+      "websiteBackground": "KI-generierter dekorativer Hintergrund für die Website; kein App-Screenshot, keine Spielszene und keine integrierte Funktion."
     },
     "usage": "Für redaktionelle Berichte über dieses Produkt. Namen, Proportionen und Kontext erhalten; lazyapps nennen und auf die Produktwebsite verlinken. Rechte an Inhalten und Marken Dritter bleiben bestehen; dieses Paket erlaubt keine eigenständige Weiterverwendung. Für andere Nutzungen bitte Kontakt aufnehmen.",
     "links": {
@@ -205,7 +217,8 @@
       "icon": "Icône de l’app",
       "screenshot": "Capture d’écran",
       "artwork": "Image pour les réseaux sociaux",
-      "logo": "Logotype"
+      "logo": "Logotype",
+      "background": "Fond d’écran du bureau"
     },
     "availability": {
       "store": "Disponible sur l’App Store",
@@ -222,7 +235,9 @@
       "logo": "Logotype pixelisé transparent d’origine ; conserver les contours et les proportions.",
       "title": "Aperçu partagé de l’écran titre du jeu, pas une partie en cours.",
       "globe": "Image de l’aperçu natif anglais sur iPad ; pixels inchangés.",
-      "sharedEnglishCapture": "Capture partagée de l’interface en anglais avec des exemples de textes chinois et des notes d’apprentissage de l’anglais ; pixels d’origine inchangés."
+      "sharedEnglishCapture": "Capture partagée de l’interface en anglais avec des exemples de textes chinois et des notes d’apprentissage de l’anglais ; pixels d’origine inchangés.",
+      "background": "Paysage de dunes généré par IA pour la présentation du site ; ce n’est ni une capture d’écran ni une fonction intégrée de l’app.",
+      "websiteBackground": "Décor généré par IA pour la présentation sur le site ; il ne s’agit ni d’une capture de l’app, ni d’une scène du jeu, ni d’une fonctionnalité intégrée."
     },
     "usage": "Pour les articles présentant ce produit. Conserver les noms, proportions et contexte ; créditer lazyapps et ajouter un lien vers le site du produit. Les contenus et marques de tiers conservent leurs droits ; ce dossier n’autorise pas leur réutilisation séparée. Nous contacter pour tout autre usage.",
     "links": {
@@ -252,7 +267,8 @@
       "icon": "Icono de la app",
       "screenshot": "Captura de pantalla",
       "artwork": "Imagen para redes sociales",
-      "logo": "Logotipo"
+      "logo": "Logotipo",
+      "background": "Fondo de escritorio"
     },
     "availability": {
       "store": "Disponible en el App Store",
@@ -269,7 +285,9 @@
       "logo": "Logotipo original de píxeles con transparencia; conservar bordes y proporciones.",
       "title": "Vista previa compartida de la pantalla de título del juego, no de una partida activa.",
       "globe": "Fotograma de la vista previa nativa en inglés en iPad; píxeles sin modificar.",
-      "sharedEnglishCapture": "Captura compartida de la interfaz en inglés con texto de ejemplo en chino y notas para aprender inglés; los píxeles originales no se han modificado."
+      "sharedEnglishCapture": "Captura compartida de la interfaz en inglés con texto de ejemplo en chino y notas para aprender inglés; los píxeles originales no se han modificado.",
+      "background": "Fondo de dunas generado con IA para la presentación del sitio web; no es una captura ni una función integrada de la app.",
+      "websiteBackground": "Fondo decorativo generado con IA para la presentación web; no es una captura de la app, una escena del juego ni una función integrada."
     },
     "usage": "Para publicaciones sobre este producto. Conserva nombres, proporciones y contexto; menciona a lazyapps y enlaza al sitio del producto. El contenido y las marcas de terceros conservan sus derechos; este kit no permite reutilizarlos por separado. Contáctanos para otros usos.",
     "links": {
@@ -299,7 +317,8 @@
       "icon": "Ícone do app",
       "screenshot": "Captura de tela",
       "artwork": "Imagem para redes sociais",
-      "logo": "Logotipo"
+      "logo": "Logotipo",
+      "background": "Plano de fundo da área de trabalho"
     },
     "availability": {
       "store": "Disponível na App Store",
@@ -316,7 +335,9 @@
       "logo": "Logotipo original em pixels com transparência; preserve bordas e proporções.",
       "title": "Prévia compartilhada da tela de título do jogo, não de uma partida em andamento.",
       "globe": "Quadro da prévia nativa em inglês no iPad; pixels sem alterações.",
-      "sharedEnglishCapture": "Captura compartilhada da interface em inglês com exemplos de textos em chinês e notas de aprendizado de inglês; os pixels originais não foram alterados."
+      "sharedEnglishCapture": "Captura compartilhada da interface em inglês com exemplos de textos em chinês e notas de aprendizado de inglês; os pixels originais não foram alterados.",
+      "background": "Paisagem de dunas gerada por IA para a apresentação no site; não é uma captura de tela nem um recurso integrado do app.",
+      "websiteBackground": "Fundo decorativo gerado por IA para apresentação no site; não é uma captura do app, uma cena do jogo nem um recurso integrado."
     },
     "usage": "Para publicações sobre este produto. Preserve nomes, proporções e contexto; dê crédito à lazyapps e inclua o site do produto. Conteúdos e marcas de terceiros mantêm seus direitos; este kit não autoriza reutilização separada. Entre em contato para outros usos.",
     "links": {
@@ -392,7 +413,8 @@
       "icon": "Icona dell’app",
       "screenshot": "Schermata",
       "artwork": "Immagine per i social",
-      "logo": "Logotipo"
+      "logo": "Logotipo",
+      "background": "Sfondo decorativo"
     },
     "availability": {
       "store": "Disponibile sull’App Store",
@@ -408,7 +430,8 @@
       "artwork": "Immagine promozionale, non una schermata dell’app.",
       "logo": "Logotipo originale in pixel con trasparenza; conserva bordi e proporzioni.",
       "title": "Anteprima condivisa della schermata del titolo del gioco, non di una partita in corso.",
-      "globe": "Fotogramma dell’anteprima nativa inglese su iPad; pixel invariati."
+      "globe": "Fotogramma dell’anteprima nativa inglese su iPad; pixel invariati.",
+      "websiteBackground": "Sfondo decorativo generato con IA per la presentazione sul sito; non è una schermata dell’app, una scena di gioco o una funzione integrata."
     },
     "usage": "Per articoli dedicati a questo prodotto. Mantieni nomi, proporzioni e contesto; cita lazyapps e collega il sito del prodotto. I contenuti e i marchi di terzi conservano i rispettivi diritti; questo kit non ne autorizza il riutilizzo separato. Contattaci per altri usi.",
     "links": {
@@ -438,7 +461,8 @@
       "icon": "アプリアイコン",
       "screenshot": "スクリーンショット",
       "artwork": "SNS共有画像",
-      "logo": "ワードマーク"
+      "logo": "ワードマーク",
+      "background": "デスクトップ背景"
     },
     "availability": {
       "store": "App Store で公開中",
@@ -455,7 +479,9 @@
       "logo": "元の透過ピクセルワードマーク。輪郭と縦横比を保持してください。",
       "title": "共通のゲームタイトル画面プレビュー。プレイ中の画面ではありません。",
       "globe": "英語のネイティブ iPad プレビューから抽出したフレーム。ピクセルの変更はありません。",
-      "sharedEnglishCapture": "共通の英語画面スクリーンショット。中国語の例文と英語学習ノートを表示しています。元のピクセルは変更していません。"
+      "sharedEnglishCapture": "共通の英語画面スクリーンショット。中国語の例文と英語学習ノートを表示しています。元のピクセルは変更していません。",
+      "background": "ウェブサイトの展示用に AI で生成した砂丘の壁紙です。アプリのスクリーンショットや内蔵機能ではありません。",
+      "websiteBackground": "ウェブサイトでの展示用にAIで生成した装飾背景です。アプリのスクリーンショット、ゲーム内の場面、内蔵機能ではありません。"
     },
     "usage": "本製品を紹介する報道にご利用ください。名称、比率、製品の文脈を保持し、lazyapps のクレジットと製品サイトへのリンクを掲載してください。第三者のコンテンツや商標の権利は各権利者に帰属し、このキットはそれらの単独利用を許諾しません。他の用途はお問い合わせください。",
     "links": {
@@ -485,7 +511,8 @@
       "icon": "앱 아이콘",
       "screenshot": "스크린샷",
       "artwork": "소셜 공유 이미지",
-      "logo": "워드마크"
+      "logo": "워드마크",
+      "background": "데스크톱 배경"
     },
     "availability": {
       "store": "App Store에서 제공 중",
@@ -502,7 +529,9 @@
       "logo": "원본 투명 픽셀 워드마크입니다. 픽셀 가장자리와 비율을 유지하세요.",
       "title": "공통 게임 제목 화면 미리보기이며 실제 플레이 화면이 아닙니다.",
       "globe": "영어 네이티브 iPad 미리보기에서 추출한 프레임으로 픽셀을 변경하지 않았습니다.",
-      "sharedEnglishCapture": "공유 영어 인터페이스 스크린샷으로, 중국어 예문과 영어 학습 노트를 보여 줍니다. 원본 픽셀은 변경하지 않았습니다."
+      "sharedEnglishCapture": "공유 영어 인터페이스 스크린샷으로, 중국어 예문과 영어 학습 노트를 보여 줍니다. 원본 픽셀은 변경하지 않았습니다.",
+      "background": "웹사이트 전시용으로 AI가 생성한 사막 사구 배경입니다. 앱 스크린샷이나 내장 기능이 아닙니다.",
+      "websiteBackground": "웹사이트 전시용으로 AI가 생성한 장식 배경입니다. 앱 스크린샷, 게임 장면 또는 내장 기능이 아닙니다."
     },
     "usage": "이 제품을 소개하는 보도에 사용하세요. 이름, 비율, 제품 맥락을 유지하고 lazyapps를 명시하며 제품 웹사이트를 링크하세요. 제3자 콘텐츠와 상표의 권리는 각 권리자에게 있으며 이 키트는 별도 재사용을 허용하지 않습니다. 다른 용도는 문의해 주세요.",
     "links": {
@@ -532,7 +561,8 @@
       "icon": "أيقونة التطبيق",
       "screenshot": "لقطة شاشة",
       "artwork": "صورة للمشاركة الاجتماعية",
-      "logo": "شعار نصي"
+      "logo": "شعار نصي",
+      "background": "خلفية سطح المكتب"
     },
     "availability": {
       "store": "متوفر في App Store",
@@ -549,7 +579,8 @@
       "logo": "الشعار النصي الأصلي الشفاف بالبكسلات؛ حافظ على الحواف والنسب.",
       "title": "معاينة مشتركة لشاشة عنوان اللعبة وليست لقطة أثناء اللعب.",
       "globe": "إطار من معاينة iPad الأصلية بالإنجليزية دون تغيير البكسلات.",
-      "sharedEnglishCapture": "لقطة مشتركة للواجهة الإنجليزية تعرض كتابة صينية نموذجية وملاحظات لتعلّم الإنجليزية؛ البكسلات الأصلية دون تغيير."
+      "sharedEnglishCapture": "لقطة مشتركة للواجهة الإنجليزية تعرض كتابة صينية نموذجية وملاحظات لتعلّم الإنجليزية؛ البكسلات الأصلية دون تغيير.",
+      "background": "خلفية كثبان رملية مولّدة بالذكاء الاصطناعي لعرض الموقع؛ ليست لقطة شاشة للتطبيق أو ميزة مدمجة فيه."
     },
     "usage": "للتغطية الصحفية لهذا المنتج. حافظ على الأسماء والنسب والسياق، وانسب المواد إلى lazyapps واربط بموقع المنتج. تحتفظ محتويات وعلامات الأطراف الأخرى بحقوقها؛ لا يمنح هذا الملف إذنًا بإعادة استخدامها منفردة. تواصل معنا للاستخدامات الأخرى.",
     "links": {
@@ -717,7 +748,8 @@
       "icon": "Значок приложения",
       "screenshot": "Снимок экрана",
       "artwork": "Изображение для соцсетей",
-      "logo": "Текстовый логотип"
+      "logo": "Текстовый логотип",
+      "background": "Обои рабочего стола"
     },
     "availability": {
       "store": "Доступно в App Store",
@@ -734,7 +766,9 @@
       "logo": "Оригинальный прозрачный пиксельный логотип; сохраняйте границы пикселей и пропорции.",
       "title": "Общий предпросмотр титульного экрана игры, а не активного игрового процесса.",
       "globe": "Кадр английского нативного предпросмотра на iPad; пиксели не изменены.",
-      "sharedEnglishCapture": "Общий снимок английского интерфейса с примерами китайского текста и заметками для изучения английского; исходные пиксели не изменены."
+      "sharedEnglishCapture": "Общий снимок английского интерфейса с примерами китайского текста и заметками для изучения английского; исходные пиксели не изменены.",
+      "background": "Изображение дюн, созданное ИИ для оформления сайта; это не снимок экрана и не встроенная функция приложения.",
+      "websiteBackground": "Декоративный фон, созданный ИИ для оформления сайта; это не снимок приложения, не игровая сцена и не встроенная функция."
     },
     "usage": "Для публикаций об этом продукте. Сохраняйте названия, пропорции и контекст; укажите lazyapps и ссылку на сайт продукта. Права на контент и товарные знаки третьих лиц сохраняются; этот комплект не разрешает их отдельное использование. Для других целей свяжитесь с нами.",
     "links": {
@@ -764,7 +798,8 @@
       "icon": "ऐप आइकन",
       "screenshot": "स्क्रीनशॉट",
       "artwork": "सोशल शेयरिंग चित्र",
-      "logo": "शब्दचिह्न"
+      "logo": "शब्दचिह्न",
+      "background": "डेस्कटॉप वॉलपेपर"
     },
     "availability": {
       "store": "App Store पर उपलब्ध",
@@ -781,7 +816,8 @@
       "logo": "मूल पारदर्शी पिक्सेल शब्दचिह्न; किनारे और अनुपात बनाए रखें।",
       "title": "साझा गेम शीर्षक स्क्रीन का पूर्वावलोकन; सक्रिय गेमप्ले नहीं।",
       "globe": "अंग्रेज़ी मूल iPad पूर्वावलोकन का फ़्रेम; पिक्सेल नहीं बदले गए हैं।",
-      "sharedEnglishCapture": "साझा अंग्रेज़ी इंटरफ़ेस का स्क्रीनशॉट, जिसमें उदाहरण के तौर पर चीनी लेखन और अंग्रेज़ी सीखने के नोट्स हैं; मूल पिक्सेल अपरिवर्तित हैं।"
+      "sharedEnglishCapture": "साझा अंग्रेज़ी इंटरफ़ेस का स्क्रीनशॉट, जिसमें उदाहरण के तौर पर चीनी लेखन और अंग्रेज़ी सीखने के नोट्स हैं; मूल पिक्सेल अपरिवर्तित हैं।",
+      "background": "वेबसाइट पर प्रस्तुति के लिए AI से बनाया गया रेत के टीलों का वॉलपेपर; यह ऐप का स्क्रीनशॉट या अंतर्निहित सुविधा नहीं है।"
     },
     "usage": "इस उत्पाद की समाचार कवरेज के लिए। नाम, अनुपात और संदर्भ बनाए रखें; lazyapps को श्रेय दें और उत्पाद वेबसाइट का लिंक जोड़ें। तृतीय पक्ष की सामग्री और ट्रेडमार्क के अधिकार उनके पास रहते हैं; यह किट उन्हें अलग से दोबारा इस्तेमाल करने की अनुमति नहीं देती। अन्य उपयोगों के लिए संपर्क करें।",
     "links": {

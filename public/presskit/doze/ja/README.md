@@ -37,7 +37,7 @@ Doze はプロプライエタリソフトウェアです。GitHub リポジト�
 
 ## 公式リンク
 
-- [Mac 版をダウンロード](https://github.com/cxa/doze/releases/download/v261019.0/Doze-261019.0.dmg)
+- [Mac 版をダウンロード](https://github.com/cxa/doze/releases)
 
 ## 画像素材
 

@@ -101,15 +101,15 @@ const ogUrl = cards[`../assets/img/${t.ogAsset}`].default;
           </div>
         </div>
         <div class="doze-hero__copy">
-          <p class="doze-intro">{t.description}</p>
+          <div class="doze-hero__intro">
+            <p class="doze-intro">{t.description}</p>
+          </div>
           <div class="doze-cta">
             <a class="button-023" href={t.ctaUrl}>
               <span class="button-023__bg"><span style="--index:0" class="button-023__bg-inner is--first"></span><span style="--index:1" class="button-023__bg-inner is--second"></span></span>
               <span class="button-023__inner"><span class="button-023__text is--first">{t.cta} ↗</span><span aria-hidden="true" class="button-023__text is--second">{t.cta} ↗</span></span>
             </a>
           </div>
-          <p class="doze-status" data-doze-status>{t.availability}{DOZE_RELEASE.version && <> · <bdi>{DOZE_RELEASE.version}</bdi></>}</p>
-          <p class="doze-compatibility">{t.compatibility}</p>
         </div>
       </section>
       <section class="doze-features" aria-label={t.positioning}>
@@ -172,11 +172,11 @@ const ogUrl = cards[`../assets/img/${t.ogAsset}`].default;
   h1:lang(zh),h1:lang(ja),h1:lang(ko){font-size:clamp(44px,9.6vw,96px);line-height:1.2}
   h1:lang(ar),h1:lang(hi){font-size:clamp(38px,6.2vw,88px);line-height:1.35}
   h1 span{display:block;line-height:inherit}
-  .doze-hero__copy{margin-block-start:var(--space-grid)}
-  .doze-intro{max-width:54ch;font-size:1.0625rem;line-height:1.7;margin-block-start:0;color:var(--muted)}
-  .doze-cta{margin-block-start:var(--space-grid)}
-  .doze-status{font-size:.875rem;color:var(--muted);margin-block-start:16px}
-  .doze-compatibility{max-width:44ch;font-size:.875rem;line-height:1.7;color:var(--muted);margin-block-start:16px}
+  .doze-hero__copy{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:start;gap:clamp(28px,4vw,56px);margin-block-start:clamp(28px,4vw,48px)}
+  .doze-hero__intro{min-width:0}
+  .doze-intro{max-width:50ch;font-size:clamp(18px,1.6vw,22px);line-height:1.6;margin:0;color:var(--ink);text-wrap:pretty}
+  .doze-cta{display:flex;flex-direction:column;align-items:flex-start;gap:12px}
+  .doze-cta .button-023{--button-023-padding:1em 1.5em;--button-023-click-scale:.96;min-height:52px;max-width:100%}
   button:focus-visible,summary:focus-visible{outline:2px solid var(--accent);outline-offset:4px}
   .doze-preview{--popover-surface:#faf9ef;--popover-inset:clamp(24px,4vw,56px);--menu-anchor:90px;min-width:0;width:100%}
   .doze-themes{align-self:center;display:flex;gap:0;height:28px;padding:2px;border-radius:999px;background:#1717170d;box-shadow:inset 0 0 0 1px #1717170d;font-size:13px;line-height:1}
@@ -207,9 +207,9 @@ const ogUrl = cards[`../assets/img/${t.ogAsset}`].default;
   [data-doze-appearance=dark] .doze-menubar img{filter:invert(1)}
   .doze-panel img{width:100%;height:auto;display:block}
   .doze-features{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--space-grid);padding-block:var(--space-grid) var(--space-section)}
-  .doze-features article{padding:var(--space-card);border:1px solid #17171714;border-radius:var(--r-card);background:var(--app-doze);transform:rotate(-1deg)}
-  .doze-features article:nth-child(2){background:var(--c4);transform:rotate(1deg)}
-  .doze-features article:nth-child(3){background:var(--c5)}
+  .doze-features article{padding:var(--space-card);border:1px solid #17171714;border-radius:var(--r-card);background:oklch(0.93 0.085 94);transform:rotate(-1deg)}
+  .doze-features article:nth-child(2){background:oklch(0.895 0.045 114);transform:rotate(1deg)}
+  .doze-features article:nth-child(3){background:var(--app-doze)}
   .doze-features h2{font-size:clamp(28px,3.2vw,44px);margin:0 0 16px}
   .doze-features :is(p,li){font-size:1rem;line-height:1.7;color:var(--ink);text-wrap:pretty}
   .doze-features ul{margin:0;padding-inline-start:1.1em}
@@ -226,6 +226,7 @@ const ogUrl = cards[`../assets/img/${t.ogAsset}`].default;
   summary span{font:400 24px var(--sans);flex:none}
   details[open] summary span{transform:rotate(45deg)}
   .doze-details p{font-size:1rem;line-height:1.75;margin:0;padding-block-end:24px;color:var(--muted)}
-  @media(max-width:800px){.doze-preview{--popover-inset:24px}.doze-features{grid-template-columns:1fr}.doze-features article{transform:none}.doze-features article:nth-child(2){transform:none}}
+  @media(max-width:800px){.doze-hero__copy{grid-template-columns:minmax(0,1fr);gap:24px}.doze-preview{--popover-inset:24px}.doze-features{grid-template-columns:1fr}.doze-features article{transform:none}.doze-features article:nth-child(2){transform:none}}
+  @media(max-width:600px){.doze-cta{align-items:stretch}.doze-cta .button-023{width:100%}}
   @media(max-width:600px){.doze-preview{--popover-inset:14px}.doze-desktop{padding-block-end:18px}.doze-atmosphere :global(.doze-celestial){display:none}h1{font-size:clamp(48px,11vw,64px)}h1:lang(zh),h1:lang(ja),h1:lang(ko),h1:lang(ar),h1:lang(hi){font-size:clamp(34px,8.7vw,46px)}.doze-features h2{font-size:32px}.doze-setup,.doze-details{grid-template-columns:1fr;gap:28px}}
 </style>

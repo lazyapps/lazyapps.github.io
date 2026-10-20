@@ -37,7 +37,7 @@ Doze é software proprietário. O repositório no GitHub oferece versões e info
 
 ## Links oficiais
 
-- [Baixar para Mac](https://github.com/cxa/doze/releases/download/v261019.0/Doze-261019.0.dmg)
+- [Baixar para Mac](https://github.com/cxa/doze/releases)
 
 ## Imagens
 

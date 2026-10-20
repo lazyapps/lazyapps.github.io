@@ -62,6 +62,14 @@ Pi · Claude Code · Codex · OpenCode · Antigravity. 실행 중 새 입력만 
 
 공유 영어 인터페이스 스크린샷으로, 중국어 예문과 영어 학습 노트를 보여 줍니다. 원본 픽셀은 변경하지 않았습니다.
 
+### 데스크톱 배경
+
+[desktop-wallpaper.png](../desktop-wallpaper.png)
+
+1536 × 1024 · PNG
+
+웹사이트 전시용으로 AI가 생성한 사막 사구 배경입니다. 앱 스크린샷이나 내장 기능이 아닙니다.
+
 ### 소셜 공유 이미지
 
 [social-card.png](../social-card.png)

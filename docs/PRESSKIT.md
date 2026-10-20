@@ -10,6 +10,10 @@
 
 全站页面用 `SiteGrain` 挂载磨砂纸纹，包括产品页、资料页、首页及隐私页。页面底色统一为 `var(--paper)`。纸纹与滚动后的 header 共用 `site.css` 中的纹理、尺寸、强度与滤镜；尺寸按全站 `--size-font` 缩放，不受某个页面正文字号影响。`SiteGrain` 的 `animated` 只控制已有纸纹动效，不另写纹理样式；系统开启减少动态效果时统一关闭纸纹动画。FondFont 保留静态纸纹、太阳与场景动画。
 
+首页 YiYan 的截图展示区使用独立的沙丘桌面背景，原生窗口截图保持原样。背景由 imagegen 生成，源图为 `src/assets/img/yiyan-desert-desktop.png`，提示词与来源哈希见 `scripts/assets/yiyan/desktop-background-source.json`。Press Kit 将其作为语言中立的 `desktop-wallpaper.png` 单独提供，各语言说明明确标注为 AI 生成的网页布景，不作为 App 截图或内置功能。
+
+首页所有插图背景容器使用直角，在桌面铺满卡片插图一侧并延伸至上、右、下边缘，在手机上铺满卡片下半区；仅由外卡片的圆角统一裁切。Shheep 配像素夜空背景 `src/assets/img/shheep-pixel-night-background.png`，XVDL 配蓝调海岸背景 `src/assets/img/xvdl-blue-hour-background.png`；均由 imagegen 生成，提示词与来源哈希分别见 `scripts/assets/shheep/website-background-source.json` 与 `scripts/assets/xvdl/website-background-source.json`。两张背景作为各产品 Press Kit 的语言中立素材 `website-background.png` 独立提供，明确标注为网页展示布景；原始游戏标题画面和操作截图保持原样。
+
 滚动后的 header 由 `SiteHeader` 自身提供纸纹，不依赖页面是否挂载全局纸纹。纸纹只叠加在不透明底色上，不让下方内容透出，也不改变游戏的纹理或层级；滚动位置为 0 时 header 的纸纹与底色都关闭。
 
 层级遵循：嵌入游戏 1000、共用 header 1100、获焦跳转链接 1101、展开游戏 10000、预加载遮罩 10001。滚动时游戏不能遮挡导航；预加载遮罩必须覆盖导航，展开游戏的关闭按钮保持可用。

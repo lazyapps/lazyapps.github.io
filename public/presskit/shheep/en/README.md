@@ -53,6 +53,14 @@ Original transparent pixel wordmark from the exported game assets. Preserve pixe
 
 Existing game title-screen preview (1050 × 560), not an active gameplay screenshot.
 
+### Desktop wallpaper
+
+[website-background.png](../website-background.png)
+
+1536 × 1024 · PNG
+
+AI-generated pixel night-sky backdrop for the website presentation; not a game screenshot or built-in game scene.
+
 ### Social sharing image
 
 [social-card.png](../social-card.png)

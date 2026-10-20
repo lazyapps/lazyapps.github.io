@@ -328,6 +328,19 @@
           "en": "Existing 1200 × 630 promotional artwork, not an app screenshot.",
           "zh": "现有 1200 × 630 宣传图片，不是 App 界面截图。"
         }
+      },
+      {
+        "source": "src/assets/img/yiyan-desert-desktop.png",
+        "filename": "desktop-wallpaper.png",
+        "kind": "background",
+        "label": {
+          "en": "Desktop wallpaper",
+          "zh": "桌面背景"
+        },
+        "note": {
+          "en": "AI-generated desert wallpaper for the website presentation; not an app screenshot or built-in app feature.",
+          "zh": "AI 生成的沙丘壁纸，用于网站展示；不是 App 截图或内置功能。"
+        }
       }
     ],
     "names": {
@@ -422,6 +435,19 @@
           "en": "Existing 1200 × 630 promotional artwork, not an app screenshot.",
           "zh": "现有 1200 × 630 宣传图片，不是 App 界面截图。"
         }
+      },
+      {
+        "source": "src/assets/img/xvdl-blue-hour-background.png",
+        "filename": "website-background.png",
+        "kind": "background",
+        "label": {
+          "en": "Website background",
+          "zh": "网页背景"
+        },
+        "note": {
+          "en": "AI-generated blue-hour coastal wallpaper for the website presentation; not an app screenshot or built-in app feature.",
+          "zh": "AI 生成的蓝调海岸壁纸，用于网站展示；不是 App 截图或内置功能。"
+        }
       }
     ],
     "names": {
@@ -515,6 +541,19 @@
         "note": {
           "en": "Existing 1200 × 630 promotional artwork, not an app screenshot.",
           "zh": "现有 1200 × 630 宣传图片，不是 App 界面截图。"
+        }
+      },
+      {
+        "source": "src/assets/img/shheep-pixel-night-background.png",
+        "filename": "website-background.png",
+        "kind": "background",
+        "label": {
+          "en": "Website background",
+          "zh": "网页背景"
+        },
+        "note": {
+          "en": "AI-generated pixel night-sky backdrop for the website presentation; not a game screenshot or built-in game scene.",
+          "zh": "AI 生成的像素夜空背景，用于网站展示；不是游戏截图或内置游戏场景。"
         }
       }
     ],

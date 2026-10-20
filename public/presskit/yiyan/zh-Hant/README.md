@@ -62,6 +62,14 @@ Pi · Claude Code · Codex · OpenCode · Antigravity。執行期間擷取新輸
 
 共用英語介面截圖，展示中文範例文字與英語學習筆記，保留原始像素。
 
+### 桌面背景
+
+[desktop-wallpaper.png](../desktop-wallpaper.png)
+
+1536 × 1024 · PNG
+
+AI 生成的沙丘桌布，用於網站展示；不是 App 截圖或內建功能。
+
 ### 社群分享圖
 
 [social-card.png](social-card.png)

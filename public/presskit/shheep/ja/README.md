@@ -53,6 +53,14 @@ iPhone・iPad アプリは Game Center のランキング、友達へのチャ�
 
 共通のゲームタイトル画面プレビュー。プレイ中の画面ではありません。
 
+### デスクトップ背景
+
+[website-background.png](../website-background.png)
+
+1536 × 1024 · PNG
+
+ウェブサイトでの展示用にAIで生成した装飾背景です。アプリのスクリーンショット、ゲーム内の場面、内蔵機能ではありません。
+
 ### SNS共有画像
 
 [social-card.png](../social-card.png)

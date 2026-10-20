@@ -37,7 +37,7 @@ Doze는 독점 소프트웨어입니다. GitHub 저장소는 배포 파일과 �
 
 ## 공식 링크
 
-- [Mac용 다운로드](https://github.com/cxa/doze/releases/download/v261019.0/Doze-261019.0.dmg)
+- [Mac용 다운로드](https://github.com/cxa/doze/releases)
 
 ## 이미지 자료
 

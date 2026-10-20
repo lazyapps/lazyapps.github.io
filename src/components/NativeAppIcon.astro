@@ -7,11 +7,11 @@ const icons = import.meta.glob<{ default: ImageMetadata }>('../assets/img/*-icon
 const icon = icons[`../assets/img/${slug}-icon.png`]?.default;
 const compactIcons = import.meta.glob<{ default: ImageMetadata }>('../assets/img/*/icon-small-*.png', { eager: true });
 const compact = (size: number, scale: number) => compactIcons[`../assets/img/${slug}/icon-small-${size}-${scale}x.png`]?.default.src;
-const useCompact = size === 28 && compact(28, 1) && compact(28, 2) && compact(22, 1) && compact(22, 2);
+const useCompact = compact(size, 1) && compact(size, 2);
 if (!icon) throw new Error(`Missing native App icon: ${slug}`);
 ---
 {useCompact ? <picture class="native-compact">
-  <source media="(max-width: 650px)" srcset={`${compact(22, 1)} 1x, ${compact(22, 2)} 2x`} />
-  <img src={compact(28, 1)} srcset={`${compact(28, 1)} 1x, ${compact(28, 2)} 2x`} width={28} height={28} class={className} alt={alt} loading={loading} decoding="async" />
+  {size === 28 && compact(22, 1) && compact(22, 2) && <source media="(max-width: 650px)" srcset={`${compact(22, 1)} 1x, ${compact(22, 2)} 2x`} />}
+  <img src={compact(size, 1)} srcset={`${compact(size, 1)} 1x, ${compact(size, 2)} 2x`} width={size} height={size} class={className} alt={alt} loading={loading} decoding="async" />
 </picture> : <Image src={icon} width={size} height={size} densities={[1, 2]} format="webp" quality={90} class={className} alt={alt} loading={loading} decoding="async" />}
 <style>.native-compact{display:contents}</style>

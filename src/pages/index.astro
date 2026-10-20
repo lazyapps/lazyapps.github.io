@@ -21,6 +21,20 @@ import siteJsUrl from '$assets/s/site.js?url';
 import opengraphUrl from '$assets/img/opengraph.png?url';
 import showcaseUrl from '$assets/img/yiyan-learning-log.png?url';
 import inUseUrl from '$assets/img/xvdl-in-use.png?url';
+import { Image, getImage } from 'astro:assets';
+import dozePanel from '../../scripts/assets/presskit/doze-panel-en-light.png';
+import dozeDayLandscape from '$assets/img/doze-landscape-day-cozy-doodle.png';
+import dozeSunArtwork from '$assets/img/doze-sun-cozy-doodle.png';
+import yiyanDesktopArtwork from '$assets/img/yiyan-desert-desktop.png';
+import shheepNightArtwork from '$assets/img/shheep-pixel-night-background.png';
+import xvdlBlueHourArtwork from '$assets/img/xvdl-blue-hour-background.png';
+const [dozeLandscape, dozeSun, yiyanDesktop, shheepNight, xvdlBlueHour] = await Promise.all([
+  getImage({ src: dozeDayLandscape, width: 1200, format: 'webp', quality: 90 }),
+  getImage({ src: dozeSunArtwork, width: 160, format: 'webp', quality: 90 }),
+  getImage({ src: yiyanDesktopArtwork, width: 1200, format: 'webp', quality: 85 }),
+  getImage({ src: shheepNightArtwork, width: 1200, format: 'webp', quality: 90 }),
+  getImage({ src: xvdlBlueHourArtwork, width: 1200, format: 'webp', quality: 85 }),
+]);
 ---
 <!doctype html>
 <html lang="en" class="no-js">
@@ -60,16 +74,22 @@ setTimeout(function(){
 }, 6000);
 </script>
 <style is:inline>
-.deck{padding-top:clamp(28px,4vw,48px)}
+.deck{
+  --space-card:clamp(28px,3.4vw,52px);--space-grid:clamp(24px,3vw,44px);
+  --r-card:32px;
+  padding-top:clamp(28px,4vw,48px);
+}
 .deck>[data-reveal-group]{
   display:grid;grid-template-columns:repeat(2,minmax(0,1fr));
   gap:var(--space-grid);align-items:stretch;
 }
 .card{
   --card-rotate:0deg;
+  --tag-font-size:.65rem;--tag-gap:.5rem;--tag-padding-block:.25rem;
   position:relative;isolation:isolate;display:flex;min-width:0;overflow:clip;flex-direction:column;
   background:var(--fill);color:var(--fg,var(--ink));
-  border:1px solid rgba(23,23,23,.08);border-radius:var(--r-card);
+  border-radius:var(--r-card);
+  box-shadow:0 0 0 1px #0000000e,0 2px 4px -2px #0000000f,0 10px 24px -16px #00000024;
   padding:var(--space-card);
   transform:rotate(var(--card-rotate));transform-origin:center;
   transition:transform .32s cubic-bezier(.2,.8,.2,1);
@@ -87,49 +107,84 @@ setTimeout(function(){
 .card:nth-child(odd){--card-rotate:-1deg}
 .card:nth-child(even){--card-rotate:1deg}
 .card__tag{
-  display:inline-flex;width:max-content;max-width:100%;margin-left:auto;
-  padding:.375rem .625rem;border-radius:999px;
+  display:inline-flex;width:max-content;max-width:100%;margin:var(--tag-gap) 0 0;
+  padding:var(--tag-padding-block) .5rem;border-radius:999px;
   background:color-mix(in oklch,currentColor 6%,transparent);
   box-shadow:inset 0 0 0 1px color-mix(in oklch,currentColor 10%,transparent);
-  font:400 .6875rem/1.4 var(--mono);text-transform:uppercase;letter-spacing:.09em;opacity:.7;
+  font:500 var(--tag-font-size)/1.3 var(--sans);text-transform:none;letter-spacing:0;opacity:.7;
 }
 .card__grid{
   flex:1;display:grid;grid-template-columns:minmax(0,9fr) minmax(240px,8fr);
-  gap:var(--space-grid);align-items:stretch;padding-top:var(--space-grid);
+  gap:var(--space-grid);align-items:stretch;
 }
 .card--compact .card__grid{grid-template-columns:minmax(0,1fr)}
 .card__copy{display:flex;min-width:0;flex-direction:column;align-items:flex-start}
-.card__heading{display:flex;min-width:0;align-items:center;gap:clamp(8px,.8vw,10px);font:900 clamp(34px,4.6vw,64px)/1 var(--display-latin)}
+.card__heading{
+  --icon-size:calc(var(--icon-title-height,1cap) + var(--tag-gap) + var(--tag-font-size)*1.3 + var(--tag-padding-block)*2);
+  display:flex;min-width:0;align-items:center;gap:clamp(12px,1.2vw,18px);font:900 clamp(34px,4.6vw,64px)/1 var(--display-latin);
+}
+.card__identity{display:flex;min-width:0;flex-direction:column;align-items:flex-start}
 .card__title{font-size:inherit;text-box:trim-both cap alphabetic}
 .card--compact .card__heading{font-size:clamp(30px,3.2vw,44px)}
 .card--yifan .card__title{text-box:normal}
-.card__p{margin-top:1rem;max-width:34em;font-size:1rem;line-height:1.7}
-.card__foot{margin-top:auto;padding-top:clamp(20px,2.4vw,30px)}
-.card .card__icon{width:1.12cap;height:1.12cap;object-fit:contain;flex:none}
+.card--yifan .card__heading{--icon-title-height:1.24em}
+.card__p{margin-top:clamp(24px,2.6vw,32px);max-width:34em;font-size:1rem;line-height:1.7}
+.card__foot{margin-top:auto;padding-top:clamp(28px,3vw,40px)}
+.card .card__icon{width:var(--icon-size);height:var(--icon-size);object-fit:contain;flex:none}
 .card__go{
-  display:inline-flex;min-height:44px;align-items:center;gap:.75rem;
-  padding:.75rem .875rem .75rem 1rem;border-radius:999px;
+  display:inline-flex;min-height:44px;align-items:center;justify-content:space-between;gap:1.25rem;
+  padding:.625rem .875rem .625rem 1rem;border-radius:999px;
   background:color-mix(in oklch,currentColor 7%,transparent);
   box-shadow:inset 0 0 0 1px color-mix(in oklch,currentColor 12%,transparent);
-  font:600 .9375rem/1 var(--sans);
+  font:600 .9375rem/1.2 var(--sans);
 }
 .card__go::after{content:"";position:absolute;z-index:2;inset:0}
 .card__go>*{position:relative;z-index:3}
 .card__go:focus-visible{outline:none}
 .card:has(.card__go:focus-visible){outline:2px solid var(--accent);outline-offset:4px}
-.card__arrow{display:grid;width:1.5rem;height:1.5rem;place-items:center;border-radius:50%;background:color-mix(in oklch,currentColor 9%,transparent)}
+.card__arrow{display:grid;flex:none;width:1.25rem;height:1.25rem;margin-left:auto;place-items:center;font-size:1.25rem;line-height:1}
 .card__shots{
-  display:grid;min-width:0;overflow:hidden;place-items:center;padding:clamp(12px,1.5vw,20px);
-  border-radius:calc(var(--r-card) - 6px);
+  --shot-padding:clamp(12px,1.5vw,20px);
+  display:grid;min-width:0;overflow:hidden;place-items:center;padding:var(--shot-padding);
+  border-radius:0;
   background:color-mix(in oklch,currentColor 6%,transparent);
   box-shadow:inset 0 0 0 1px color-mix(in oklch,currentColor 9%,transparent);
 }
+.card--featured .card__shots{
+  justify-self:stretch;
+  margin:calc(-1 * var(--space-card)) calc(-1 * var(--space-card)) calc(-1 * var(--space-card)) 0;
+}
 .card__shots img{
   width:100%;height:100%;max-height:clamp(190px,22vw,320px);object-fit:cover;object-position:top;
-  border-radius:min(1.2vw,8px);outline:1px solid color-mix(in oklch,currentColor 10%,transparent);outline-offset:-1px;
+  border-radius:8px;outline:1px solid rgba(0,0,0,.1);outline-offset:-1px;
 }
-.card--yiyan .card__shots{aspect-ratio:auto}
-.card--yiyan .card__shots img{height:auto;max-height:none;object-fit:contain;outline:none}
+.card--shheep .card__shots,.card--xvdl .card__shots{
+  --shot-padding:clamp(20px,2.5vw,32px);
+  background-position:center;background-size:cover;
+}
+.card--shheep .card__shots{background-color:#49476f}
+.card--xvdl .card__shots{background-color:#425d7d}
+.card--shheep .card__shots img,.card--xvdl .card__shots img{
+  width:auto;height:auto;max-width:100%;object-fit:contain;
+  box-shadow:0 12px 28px -8px #0000004d;
+}
+.card--yiyan .card__shots{
+  aspect-ratio:auto;background-color:#d6baa0;background-position:center;background-size:cover;
+}
+.card--yiyan .card__shots img{
+  height:auto;max-height:none;object-fit:contain;outline:none;
+  filter:drop-shadow(0 14px 20px #31271940) drop-shadow(0 2px 4px #31271926);
+}
+.card--doze .card__shots{
+  --shot-padding:clamp(20px,2.5vw,32px);
+  aspect-ratio:auto;background-color:#faf9ef;
+  background-repeat:no-repeat;background-position:8% 10%,center calc(100% + 20px);
+  background-size:clamp(56px,7vw,96px) auto,calc(100% + 32px) auto;
+}
+.card--doze .card__shots img{
+  width:auto;height:auto;max-width:100%;max-height:clamp(280px,28vw,360px);object-fit:contain;outline:none;
+  box-shadow:0 28px 64px -12px #14202f59,0 10px 24px -6px #14202f40,0 0 0 1px #1717172b;
+}
 @media (hover:hover) and (pointer:fine){
   .card:has(.card__go:hover){z-index:4;transform:translateY(-6px) rotate(0)}
   .card:has(.card__go:active){transform:translateY(-2px) rotate(0) scale(.995)}
@@ -140,18 +195,20 @@ setTimeout(function(){
   .card--featured{grid-column:auto}
   .card__grid{grid-template-columns:minmax(0,1fr)}
   .card__shots{aspect-ratio:16/9}
+  .card--featured .card__shots{margin:0 calc(-1 * var(--space-card)) calc(-1 * var(--space-card))}
 }
 @media (max-width:560px){
-  .card{border-radius:14px;padding:20px;transform:none}
-  .card__tag{font-size:.6875rem}
+  .deck{--space-card:28px;--r-card:24px}
+  .card{transform:none}
   .card__heading{font-size:36px}
   .card--compact .card__heading{font-size:32px}
   .card__p{font-size:1.0625rem;line-height:1.65}
-  .card__foot{width:100%;padding-top:20px}
+  .card__foot{width:100%;padding-top:28px}
   .card__go{width:100%;min-height:48px;justify-content:space-between}
-  .card__shots{padding:10px;border-radius:10px}
+  .card__shots{--shot-padding:12px}
 }
 @media (max-width:360px){
+  .deck{--space-card:24px}
   .card__heading{font-size:34px}
   .card--compact .card__heading{font-size:30px}
 }
@@ -186,138 +243,157 @@ setTimeout(function(){
     <div data-reveal-group data-stagger="140" data-distance="2.1em" data-start="top 88%">
 
       <article class="card card--featured card--shheep" id="shheep">
-        <p class="card__tag">iPhone · iPad</p>
         <div class="card__grid">
           <div class="card__copy">
             <div class="card__heading">
-              <NativeAppIcon slug="shheep" size={72} class="card__icon" />
-              <h2 class="card__title dsp">Shheep</h2>
+              <NativeAppIcon slug="shheep" size={96} class="card__icon" />
+              <div class="card__identity">
+                <h2 class="card__title dsp">Shheep</h2>
+                <p class="card__tag">iPhone · iPad</p>
+              </div>
             </div>
             <p class="card__p">A sheep-counting game for iPhone and iPad. Jump over fences, duck under bats and try a new course each night. Download on the App Store or try the web demo.</p>
             <div class="card__foot">
-              <a data-hover href="/shheep/" class="card__go"><span>Discover Shheep</span><span class="card__arrow" aria-hidden="true">↗</span></a>
+              <a data-hover href="/shheep/" class="card__go"><span>Discover Shheep</span><span class="card__arrow" aria-hidden="true">→</span></a>
             </div>
           </div>
-          <div class="card__shots">
+          <div class="card__shots" style={{ backgroundImage: `url("${shheepNight.src}")` }}>
             <img src="/shheep/preview.png" width="1050" height="560" alt="Shheep’s pixel bedroom, with a sleepy girl and a sheep-filled thought bubble">
           </div>
         </div>
       </article>
 
 
-      <article class="card card--compact card--doze">
-        <p class="card__tag">macOS 13+ · {doze.availability}</p>
+      <article class="card card--featured card--doze" id="doze">
         <div class="card__grid">
           <div class="card__copy">
             <div class="card__heading">
-              <NativeAppIcon slug="doze" size={72} class="card__icon" />
-              <h2 class="card__title dsp">Doze</h2>
+              <NativeAppIcon slug="doze" size={80} class="card__icon" />
+              <div class="card__identity">
+                <h2 class="card__title dsp">Doze</h2>
+                <p class="card__tag">macOS</p>
+              </div>
             </div>
             <p class="card__p">{doze.description}</p>
             <div class="card__foot">
-              <a data-hover href={doze.selectedUrl} class="card__go"><span>Doze details</span><span class="card__arrow" aria-hidden="true">↗</span></a>
+              <a data-hover href={doze.selectedUrl} class="card__go"><span>Doze details</span><span class="card__arrow" aria-hidden="true">→</span></a>
             </div>
+          </div>
+          <div class="card__shots" style={{ backgroundImage: `url("${dozeSun.src}"),url("${dozeLandscape.src}")` }}>
+            <Image src={dozePanel} width={384} densities={[1, 2]} format="webp" quality={90} alt="Doze’s Mac settings for screen dimming and keeping computer use running" />
           </div>
         </div>
       </article>
 
       <article class="card card--featured card--yiyan" id="yiyan">
-        <p class="card__tag">macOS 15+ · iPhone beta</p>
         <div class="card__grid">
           <div class="card__copy">
             <div class="card__heading">
-              <NativeAppIcon slug="yiyan" size={72} class="card__icon" />
-              <h2 class="card__title dsp">YiYan</h2>
+              <NativeAppIcon slug="yiyan" size={96} class="card__icon" />
+              <div class="card__identity">
+                <h2 class="card__title dsp">YiYan</h2>
+                <p class="card__tag">macOS · iPhone</p>
+              </div>
             </div>
             <p class="card__p">Turn input from AI coding tools such as Claude Code and Codex into natural English, with explanations and examples. Polish selected text or the current input field on Mac.</p>
             <div class="card__foot">
-              <a data-hover href="/yiyan/en/" class="card__go"><span>YiYan details</span><span class="card__arrow" aria-hidden="true">↗</span></a>
+              <a data-hover href="/yiyan/en/" class="card__go"><span>YiYan details</span><span class="card__arrow" aria-hidden="true">→</span></a>
             </div>
           </div>
-          <div class="card__shots">
+          <div class="card__shots" style={{ backgroundImage: `url("${yiyanDesktop.src}")` }}>
             <img src={showcaseUrl} alt="YiYan learning log on macOS" width="1616" height="1388">
           </div>
         </div>
       </article>
 
       <article class="card card--featured card--xvdl">
-        <p class="card__tag">macOS · Safari extension</p>
         <div class="card__grid">
           <div class="card__copy">
             <div class="card__heading">
-              <NativeAppIcon slug="xvdl" size={72} class="card__icon" />
-              <h2 class="card__title dsp">XVDL</h2>
+              <NativeAppIcon slug="xvdl" size={96} class="card__icon" />
+              <div class="card__identity">
+                <h2 class="card__title dsp">XVDL</h2>
+                <p class="card__tag">macOS</p>
+              </div>
             </div>
             <p class="card__p">Download videos from X in Safari on your Mac. Save the highest-quality available MP4 directly to your Downloads folder.</p>
             <div class="card__foot">
-              <a data-hover href="/xvdl/" class="card__go"><span>XVDL details</span><span class="card__arrow" aria-hidden="true">↗</span></a>
+              <a data-hover href="/xvdl/" class="card__go"><span>XVDL details</span><span class="card__arrow" aria-hidden="true">→</span></a>
             </div>
           </div>
-          <div class="card__shots">
+          <div class="card__shots" style={{ backgroundImage: `url("${xvdlBlueHour.src}")` }}>
             <img src={inUseUrl} alt="XVDL download button on an X video post">
           </div>
         </div>
       </article>
 
       <article class="card card--compact card--chmate">
-        <p class="card__tag">iPhone &amp; iPad · EPUB / CHM reader</p>
         <div class="card__grid">
           <div class="card__copy">
             <div class="card__heading">
-              <NativeAppIcon slug="chmate" size={72} class="card__icon" />
-              <h2 class="card__title dsp">CHMate</h2>
+              <NativeAppIcon slug="chmate" size={96} class="card__icon" />
+              <div class="card__identity">
+                <h2 class="card__title dsp">CHMate</h2>
+                <p class="card__tag">iPhone · iPad</p>
+              </div>
             </div>
             <p class="card__p">Read EPUB ebooks, CHM documents and MHT files on iPhone and iPad. Search across chapters, highlight passages and add notes.</p>
             <div class="card__foot">
-              <a data-hover href="/chmate/en/" class="card__go"><span>CHMate details</span><span class="card__arrow" aria-hidden="true">↗</span></a>
+              <a data-hover href="/chmate/en/" class="card__go"><span>CHMate details</span><span class="card__arrow" aria-hidden="true">→</span></a>
             </div>
           </div>
         </div>
       </article>
 
       <article class="card card--compact card--cia">
-        <p class="card__tag">iPhone &amp; iPad · Offline atlas</p>
         <div class="card__grid">
           <div class="card__copy">
             <div class="card__heading">
-              <NativeAppIcon slug="world-book" size={72} class="card__icon" />
-              <h2 class="card__title dsp">World Book</h2>
+              <NativeAppIcon slug="world-book" size={96} class="card__icon" />
+              <div class="card__identity">
+                <h2 class="card__title dsp">World Book</h2>
+                <p class="card__tag">iPhone · iPad</p>
+              </div>
             </div>
             <p class="card__p">Look up country profiles, flags and rankings, and explore a 3D globe offline. Download photos and regional maps to view them offline too.</p>
             <div class="card__foot">
-              <a data-hover href="/world-book/" class="card__go"><span>World Book details</span><span class="card__arrow" aria-hidden="true">↗</span></a>
+              <a data-hover href="/world-book/" class="card__go"><span>World Book details</span><span class="card__arrow" aria-hidden="true">→</span></a>
             </div>
           </div>
         </div>
       </article>
 
       <article class="card card--compact card--yifan">
-        <p class="card__tag">iPhone &amp; iPad · Fanfou client</p>
         <div class="card__grid">
           <div class="card__copy">
             <div class="card__heading">
-              <NativeAppIcon slug="yifan" size={72} class="card__icon" />
-              <h2 class="card__title dsp"><span class="zh" lang="zh">一饭</span></h2>
+              <NativeAppIcon slug="yifan" size={96} class="card__icon" />
+              <div class="card__identity">
+                <h2 class="card__title dsp"><span class="zh" lang="zh">一饭</span></h2>
+                <p class="card__tag">iPhone · iPad</p>
+              </div>
             </div>
             <p class="card__p">Read your Fanfou timeline, mentions and direct messages on iPhone and iPad. View favorites and photos.</p>
             <div class="card__foot">
-              <a data-hover href="https://apps.apple.com/us/app/%E4%B8%80%E9%A5%AD-%E5%B2%81%E9%9D%99%E9%A5%AD%E5%90%A6%E5%AE%A2%E6%88%B7%E7%AB%AF/id541110403?uo=4" class="card__go"><span>View on App Store</span><span class="card__arrow" aria-hidden="true">↗</span></a>
+              <a data-hover href="https://apps.apple.com/us/app/%E4%B8%80%E9%A5%AD-%E5%B2%81%E9%9D%99%E9%A5%AD%E5%90%A6%E5%AE%A2%E6%88%B7%E7%AB%AF/id541110403?uo=4" class="card__go"><span>View on App Store</span><span class="card__arrow" aria-hidden="true">→</span></a>
             </div>
           </div>
         </div>
       </article>
 
       <article class="card card--compact card--fondfont">
-        <p class="card__tag">iPhone &amp; iPad · Font installer</p>
         <div class="card__grid">
           <div class="card__copy">
             <div class="card__heading">
-              <NativeAppIcon slug="fondfont" size={72} class="card__icon" />
-              <h2 class="card__title dsp">FondFont</h2>
+              <NativeAppIcon slug="fondfont" size={96} class="card__icon" />
+              <div class="card__identity">
+                <h2 class="card__title dsp">FondFont</h2>
+                <p class="card__tag">iPhone · iPad</p>
+              </div>
             </div>
             <p class="card__p">Install your TTF, OTF and TTC font files on iPhone and iPad. Use them in apps that support the iOS font library, including Pages and Keynote.</p>
             <div class="card__foot">
-              <a data-hover href="/fondfont/en/" class="card__go"><span>FondFont details</span><span class="card__arrow" aria-hidden="true">↗</span></a>
+              <a data-hover href="/fondfont/en/" class="card__go"><span>FondFont details</span><span class="card__arrow" aria-hidden="true">→</span></a>
             </div>
           </div>
         </div>

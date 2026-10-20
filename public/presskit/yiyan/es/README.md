@@ -62,6 +62,14 @@ Captura compartida de la interfaz en inglés con texto de ejemplo en chino y not
 
 Captura compartida de la interfaz en inglés con texto de ejemplo en chino y notas para aprender inglés; los píxeles originales no se han modificado.
 
+### Fondo de escritorio
+
+[desktop-wallpaper.png](../desktop-wallpaper.png)
+
+1536 × 1024 · PNG
+
+Fondo de dunas generado con IA para la presentación del sitio web; no es una captura ni una función integrada de la app.
+
 ### Imagen para redes sociales
 
 [social-card.png](../social-card.png)

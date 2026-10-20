@@ -1,0 +1,8 @@
+{
+  "created": "2026-10-20",
+  "asset": "src/assets/img/shheep-pixel-night-background.png",
+  "method": "OpenAI built-in imagegen",
+  "purpose": "Decorative website backdrop behind the unchanged shheep screenshot. Not an app screenshot or built-in app feature.",
+  "prompt": "Use case: stylized-concept. Asset type: decorative website backdrop behind an existing Shheep pixel-art game title-screen image. Create one original landscape 3:2 pixel-art night-sky wallpaper. Cozy sleepy atmosphere, restrained dusty indigo and muted lavender sky with a few pale butter-yellow pixel stars, a small crescent moon near the upper right edge, and gentle dusky lilac cloud banks along the bottom and outer corners. Palette complements a pink and lavender pixel bedroom game screen. The large center must stay calm and low contrast because the real game title screen will be placed over it; details should be visible mainly around the perimeter. Deliberately chunky, clean square pixel clusters with consistent pixel scale, limited palette and carefully stepped cloud silhouettes, no blur, no gradients that look airbrushed, no photorealism. Full-bleed opaque background, straight rectangular edges. No text, lettering, logos, UI, frames, game screens, sheep, people or watermarks. Wallpaper only, not a mockup.",
+  "sha256": "011e8b386ff7767b399e3737c7b535f84fdc3693dea08e00539bd90f756398bd"
+}

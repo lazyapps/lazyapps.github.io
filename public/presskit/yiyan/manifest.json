@@ -42,6 +42,15 @@
       "sha256": "94f15539bd6fe4a9ae3edc025e62dabe1b77b26f59f937f76c7e964e6d2fa9b2"
     },
     {
+      "path": "desktop-wallpaper.png",
+      "contentLanguage": "und",
+      "width": 1536,
+      "height": 1024,
+      "format": "PNG",
+      "bytes": 1958653,
+      "sha256": "01e359546c88d48ae98f04d04ca7a3f33403d9477ee9c42ef54740fe16757604"
+    },
+    {
       "path": "social-card.png",
       "contentLanguage": "und",
       "width": 1200,

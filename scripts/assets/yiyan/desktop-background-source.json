@@ -1,0 +1,8 @@
+{
+  "created": "2026-10-20",
+  "asset": "src/assets/img/yiyan-desert-desktop.png",
+  "method": "OpenAI built-in imagegen",
+  "purpose": "Decorative website desktop backdrop behind the unchanged native YiYan window. Not an app feature or a native app screenshot.",
+  "prompt": "Use case: photorealistic-natural. Asset type: original desktop wallpaper behind an existing macOS app screenshot on a product website. Create one polished landscape-format wallpaper, approximately 3:2. A quiet, minimal desert landscape at soft morning light: broad sculptural ochre and pale apricot sand dunes occupy the lower half, a distant hazy sandstone ridge along the low horizon, pale powder-blue sky across the upper half. Restrained warm sand, soft gold, muted blue-gray shadows. Fine natural sand texture, believable soft light and atmosphere, subtle tonal transitions, no oversaturated colors. Composition must work as a desktop background partly covered by a large white app window in the center: spacious calm center, graceful dune contours visible near the lower and side edges, no small focal subject. Refined landscape photography with an uncluttered composition. No text, logos, icons, windows, interfaces, frames, desktop objects, people, buildings, watermarks, or sun disc. Generate the wallpaper alone, full bleed, opaque background.",
+  "sha256": "01e359546c88d48ae98f04d04ca7a3f33403d9477ee9c42ef54740fe16757604"
+}

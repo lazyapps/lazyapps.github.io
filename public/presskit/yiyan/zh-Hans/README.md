@@ -62,6 +62,14 @@ Pi · Claude Code · Codex · OpenCode · Antigravity。运行期间捕捉新输
 
 开发者于 2026-10-08 提供的原始原生截图，于 2026-10-10 核对当前 App。共享英语界面，展示中文示例文字与英语学习笔记，保留原始像素。
 
+### 桌面背景
+
+[desktop-wallpaper.png](../desktop-wallpaper.png)
+
+1536 × 1024 · PNG
+
+AI 生成的沙丘壁纸，用于网站展示；不是 App 截图或内置功能。
+
 ### 社交分享图
 
 [social-card.png](social-card.png)

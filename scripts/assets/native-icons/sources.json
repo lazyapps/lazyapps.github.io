@@ -255,6 +255,30 @@
         "scale": 2,
         "output": "src/assets/img/doze/icon-small-32-2x.png",
         "sha256": "214f898f3817f48a4a44f6591e804f2a5558da456c6ab2466f2a023ba24f633f"
+      },
+      {
+        "size": 48,
+        "scale": 1,
+        "output": "src/assets/img/doze/icon-small-48-1x.png",
+        "sha256": "2ad92681290b77816e2494544655c2bbacd3b6104dc957f0f3a8e0b36e5a9cd1"
+      },
+      {
+        "size": 48,
+        "scale": 2,
+        "output": "src/assets/img/doze/icon-small-48-2x.png",
+        "sha256": "43f9de74183e60d6f1d7cdd3313191cc7819ddba2efa9d81e1a3b7981b94320b"
+      },
+      {
+        "size": 80,
+        "scale": 1,
+        "output": "src/assets/img/doze/icon-small-80-1x.png",
+        "sha256": "709f27dff5206b9eadedb25e2a7925bdd5b8134ab611c4e16468199e5890006a"
+      },
+      {
+        "size": 80,
+        "scale": 2,
+        "output": "src/assets/img/doze/icon-small-80-2x.png",
+        "sha256": "08f590dc4d7056b0cdd40cfc49bb758e6c4d038480456168440f86da623266eb"
       }
     ],
     "compactSource": {

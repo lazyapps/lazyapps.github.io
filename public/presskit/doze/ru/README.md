@@ -37,7 +37,7 @@ Doze распространяется как проприетарное ПО. Р
 
 ## Официальные ссылки
 
-- [Скачать для Mac](https://github.com/cxa/doze/releases/download/v261019.0/Doze-261019.0.dmg)
+- [Скачать для Mac](https://github.com/cxa/doze/releases)
 
 ## Изображения
 

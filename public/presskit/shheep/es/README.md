@@ -53,6 +53,14 @@ Logotipo original de píxeles con transparencia; conservar bordes y proporciones
 
 Vista previa compartida de la pantalla de título del juego, no de una partida activa.
 
+### Fondo de escritorio
+
+[website-background.png](../website-background.png)
+
+1536 × 1024 · PNG
+
+Fondo decorativo generado con IA para la presentación web; no es una captura de la app, una escena del juego ni una función integrada.
+
 ### Imagen para redes sociales
 
 [social-card.png](../social-card.png)

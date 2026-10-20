@@ -62,6 +62,14 @@ Captura compartilhada da interface em inglês com exemplos de textos em chinês 
 
 Captura compartilhada da interface em inglês com exemplos de textos em chinês e notas de aprendizado de inglês; os pixels originais não foram alterados.
 
+### Plano de fundo da área de trabalho
+
+[desktop-wallpaper.png](../desktop-wallpaper.png)
+
+1536 × 1024 · PNG
+
+Paisagem de dunas gerada por IA para a apresentação no site; não é uma captura de tela nem um recurso integrado do app.
+
 ### Imagem para redes sociais
 
 [social-card.png](../social-card.png)

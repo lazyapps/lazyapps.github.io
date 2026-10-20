@@ -53,6 +53,14 @@ iPhone 和 iPad App 支持 Game Center 排行榜、好友挑战和邀请。
 
 现有游戏标题画面预览（1050 × 560），不是实际游玩过程的截图。
 
+### 桌面背景
+
+[website-background.png](../website-background.png)
+
+1536 × 1024 · PNG
+
+AI 生成的像素夜空背景，用于网站展示；不是游戏截图或内置游戏场景。
+
 ### 社交分享图
 
 [social-card.png](../social-card.png)

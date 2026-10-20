@@ -18,7 +18,7 @@ function asset(kit, tag, source, filename, kind, note, shared = false) {
   const g = glossary[tag];
   const original = kit.assets.find(item => item.source === source);
   const lang = tag === 'en' ? 'en' : tag === 'zh-Hans' ? 'zh' : null;
-  return { source, filename, kind, label: g.labels[kind], note: lang && original ? original.note[lang] : g.notes[note], shared, contentLanguage: ['icon', 'logo'].includes(kind) || (kind === 'artwork' && shared) ? 'und' : ['world-book', 'xvdl', 'shheep', 'yiyan'].includes(kit.slug) && kind === 'screenshot' ? 'en' : tag };
+  return { source, filename, kind, label: g.labels[kind], note: lang && original ? original.note[lang] : g.notes[note], shared, contentLanguage: ['icon', 'logo', 'background'].includes(kind) || (kind === 'artwork' && shared) ? 'und' : ['world-book', 'xvdl', 'shheep', 'yiyan'].includes(kit.slug) && kind === 'screenshot' ? 'en' : tag };
 }
 function localeAssets(kit, tag, t) {
   const g = glossary[tag];
@@ -43,6 +43,9 @@ function localeAssets(kit, tag, t) {
     for (const item of kit.assets.filter(item => item.kind === 'screenshot')) {
       assets.push({ ...asset(kit, tag, item.source, item.filename, item.kind, 'native', true), label: item.label.en });
     }
+  }
+  for (const item of kit.assets.filter(item => item.kind === 'background')) {
+    assets.push(asset(kit, tag, item.source, item.filename, 'background', kit.slug === 'yiyan' ? 'background' : 'websiteBackground', true));
   }
   let card = kit.assets.find(item => item.kind === 'artwork').source;
   let shared = true;

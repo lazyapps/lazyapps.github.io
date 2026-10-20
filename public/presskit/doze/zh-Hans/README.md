@@ -37,7 +37,7 @@ Doze 是专有软件；GitHub 仓库用于发布安装包和产品说明。
 
 ## 官方链接
 
-- [下载 Mac 版](https://github.com/cxa/doze/releases/download/v261019.0/Doze-261019.0.dmg)
+- [下载 Mac 版](https://github.com/cxa/doze/releases)
 
 ## 图片素材
 

@@ -17,7 +17,7 @@ compact['sourceHashes'] = {
     for path in sorted(source.rglob('*')) if path.is_file()
 }
 renditions = []
-for size in [16, 22, 28, 32]:
+for size in [16, 22, 28, 32, 48, 80]:
     for scale in [1, 2]:
         output = ROOT / f'src/assets/img/doze/icon-small-{size}-{scale}x.png'
         output.parent.mkdir(parents=True, exist_ok=True)
@@ -29,4 +29,4 @@ for size in [16, 22, 28, 32]:
         renditions.append(dict(size=size, scale=scale, output=str(output.relative_to(ROOT)), sha256=hashlib.sha256(data).hexdigest()))
 record['webRenditions'] = renditions
 registry.write_text(json.dumps(records, ensure_ascii=False, indent=2) + '\n')
-print('Exported 8 lossless native icon renditions (1× and 2×).')
+print(f'Exported {len(renditions)} lossless native icon renditions (1× and 2×).')

@@ -62,6 +62,14 @@ Original native capture supplied by the developer on 2026-10-08, verified agains
 
 Original native capture supplied by the developer on 2026-10-08, verified against the current app on 2026-10-10. Shared English interface with example Chinese writing and English learning notes; pixels are unchanged.
 
+### Desktop wallpaper
+
+[desktop-wallpaper.png](../desktop-wallpaper.png)
+
+1536 × 1024 · PNG
+
+AI-generated desert wallpaper for the website presentation; not an app screenshot or built-in app feature.
+
 ### Social sharing image
 
 [social-card.png](../social-card.png)

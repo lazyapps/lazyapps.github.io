@@ -43,6 +43,14 @@ Original screenshot supplied by the developer on 2026-10-10, showing XVDL's down
 
 Edited screenshot with a coral outline and subdued surrounding video to highlight the download button. Original capture: safari-in-use.png. X content, marks and account imagery belong to their respective owners; no standalone reuse rights are granted.
 
+### Desktop wallpaper
+
+[website-background.png](../website-background.png)
+
+1536 × 1024 · PNG
+
+AI-generated blue-hour coastal wallpaper for the website presentation; not an app screenshot or built-in app feature.
+
 ### Social sharing image
 
 [social-card.png](../social-card.png)

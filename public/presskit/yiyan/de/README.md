@@ -62,6 +62,14 @@ Gemeinsamer Screenshot der englischen Oberfläche mit chinesischen Beispieltexte
 
 Gemeinsamer Screenshot der englischen Oberfläche mit chinesischen Beispieltexten und englischen Lernnotizen; die Originalpixel sind unverändert.
 
+### Desktophintergrund
+
+[desktop-wallpaper.png](../desktop-wallpaper.png)
+
+1536 × 1024 · PNG
+
+KI-generiertes Dünenmotiv für die Website-Präsentation; kein App-Screenshot und keine integrierte App-Funktion.
+
 ### Bild für soziale Medien
 
 [social-card.png](../social-card.png)

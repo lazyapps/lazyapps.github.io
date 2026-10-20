@@ -62,6 +62,14 @@ Capture partagée de l’interface en anglais avec des exemples de textes chinoi
 
 Capture partagée de l’interface en anglais avec des exemples de textes chinois et des notes d’apprentissage de l’anglais ; pixels d’origine inchangés.
 
+### Fond d’écran du bureau
+
+[desktop-wallpaper.png](../desktop-wallpaper.png)
+
+1536 × 1024 · PNG
+
+Paysage de dunes généré par IA pour la présentation du site ; ce n’est ni une capture d’écran ni une fonction intégrée de l’app.
+
 ### Image pour les réseaux sociaux
 
 [social-card.png](../social-card.png)

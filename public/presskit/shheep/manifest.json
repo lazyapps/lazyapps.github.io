@@ -41,6 +41,15 @@
       "sha256": "ecc94a21caa29cf107f24030b0497718c714b2fbb665d3939f4d719dae7001d0"
     },
     {
+      "path": "website-background.png",
+      "contentLanguage": "und",
+      "width": 1536,
+      "height": 1024,
+      "format": "PNG",
+      "bytes": 1322404,
+      "sha256": "011e8b386ff7767b399e3737c7b535f84fdc3693dea08e00539bd90f756398bd"
+    },
+    {
       "path": "social-card.png",
       "contentLanguage": "und",
       "width": 1200,

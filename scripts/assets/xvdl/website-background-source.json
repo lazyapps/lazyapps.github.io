@@ -1,0 +1,8 @@
+{
+  "created": "2026-10-20",
+  "asset": "src/assets/img/xvdl-blue-hour-background.png",
+  "method": "OpenAI built-in imagegen",
+  "purpose": "Decorative website backdrop behind the unchanged xvdl screenshot. Not an app screenshot or built-in app feature.",
+  "prompt": "Use case: photorealistic-natural. Asset type: original desktop wallpaper behind an unchanged dark screenshot of a macOS video-download utility named XVDL on a product website. Create one refined landscape 3:2 wallpaper: a quiet coastal mountain range at blue hour, layered slate-blue silhouettes along the lower third, a calm hazy steel-blue sky taking the upper two thirds, subtle silver-blue light at the distant horizon. Restrained cool blue-gray palette, natural photographic atmosphere, understated and low contrast, refined minimal composition. The center will be covered by a large black app screenshot, so keep it calm and let scenery be visible mainly at the outer perimeter. No strong focal point, no sun, moon, stars, buildings, people, boats, text, logos, screens, UI, frames or watermarks. Full bleed straight rectangular edges, opaque background. Wallpaper alone, not a mockup.",
+  "sha256": "cbf8c0a1b51ebe7be0967f15c70da28f7369d9615385f07ae65c9b15f5892301"
+}

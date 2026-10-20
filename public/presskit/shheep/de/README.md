@@ -53,6 +53,14 @@ Originale transparente Pixel-Wortmarke; Pixelkanten und Proportionen erhalten.
 
 Gemeinsame Vorschau des Spiel-Titelbildschirms, kein aktives Spielgeschehen.
 
+### Desktophintergrund
+
+[website-background.png](../website-background.png)
+
+1536 × 1024 · PNG
+
+KI-generierter dekorativer Hintergrund für die Website; kein App-Screenshot, keine Spielszene und keine integrierte Funktion.
+
 ### Bild für soziale Medien
 
 [social-card.png](../social-card.png)

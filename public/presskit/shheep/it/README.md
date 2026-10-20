@@ -53,6 +53,14 @@ Logotipo originale in pixel con trasparenza; conserva bordi e proporzioni.
 
 Anteprima condivisa della schermata del titolo del gioco, non di una partita in corso.
 
+### Sfondo decorativo
+
+[website-background.png](../website-background.png)
+
+1536 × 1024 · PNG
+
+Sfondo decorativo generato con IA per la presentazione sul sito; non è una schermata dell’app, una scena di gioco o una funzione integrata.
+
 ### Immagine per i social
 
 [social-card.png](../social-card.png)

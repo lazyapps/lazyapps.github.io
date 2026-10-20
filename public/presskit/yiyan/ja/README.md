@@ -62,6 +62,14 @@ Pi · Claude Code · Codex · OpenCode · Antigravity。起動中の新しい入
 
 共通の英語画面スクリーンショット。中国語の例文と英語学習ノートを表示しています。元のピクセルは変更していません。
 
+### デスクトップ背景
+
+[desktop-wallpaper.png](../desktop-wallpaper.png)
+
+1536 × 1024 · PNG
+
+ウェブサイトの展示用に AI で生成した砂丘の壁紙です。アプリのスクリーンショットや内蔵機能ではありません。
+
 ### SNS共有画像
 
 [social-card.png](../social-card.png)

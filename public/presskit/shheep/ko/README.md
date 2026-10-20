@@ -53,6 +53,14 @@ iPhone과 iPad 앱은 Game Center 순위표, 친구 도전과 초대를 지원�
 
 공통 게임 제목 화면 미리보기이며 실제 플레이 화면이 아닙니다.
 
+### 데스크톱 배경
+
+[website-background.png](../website-background.png)
+
+1536 × 1024 · PNG
+
+웹사이트 전시용으로 AI가 생성한 장식 배경입니다. 앱 스크린샷, 게임 장면 또는 내장 기능이 아닙니다.
+
 ### 소셜 공유 이미지
 
 [social-card.png](../social-card.png)

@@ -37,7 +37,7 @@ Doze मालिकाना सॉफ़्टवेयर है। GitHub �
 
 ## आधिकारिक लिंक
 
-- [Mac के लिए डाउनलोड करें](https://github.com/cxa/doze/releases/download/v261019.0/Doze-261019.0.dmg)
+- [Mac के लिए डाउनलोड करें](https://github.com/cxa/doze/releases)
 
 ## चित्र
 
