@@ -158,7 +158,7 @@ h1,h2,h3,h4,p{margin:0}
 .hero__brand,.phero__h1,.reading-hero h1,.font-hero h1,.doze-hero h1,.kit-hero h1{text-align:center}
 dl,dd{margin:0}
 h1,h2,h3{text-wrap:balance}
-.hero__sub,.doc__p{text-wrap:balance}
+.hero__sub{text-wrap:balance}
 /* Shared select geometry; the arrow stays inside the field, including in RTL. */
 :where(.select-control,.kit-locale,.gesture__select,.game-language-label){position:relative;--select-arrow-inset:16px;--select-arrow-size:12px;--select-text-gap:12px}
 :where(.select-control,.kit-locale,.gesture__select,.game-language-label)::after{

@@ -1,0 +1,125 @@
+---
+import siteCssUrl from '$assets/s/site.css?url';
+import opengraphUrl from '$assets/img/opengraph.png?url';
+import SocialMeta from './SocialMeta.astro';
+import SiteGrain from './SiteGrain.astro';
+import SiteEdges from './SiteEdges.astro';
+import SiteFooterBase from './SiteFooterBase.astro';
+import SiteHeader from './SiteHeader.astro';
+import LanguagePicker from './LanguagePicker.astro';
+
+interface Props { locale: 'en' | 'zh-Hans'; }
+const { locale } = Astro.props;
+const chinese = locale === 'zh-Hans';
+const t = chinese ? {
+  title: '隐私政策',
+  description: '了解 lazyapps 如何处理应用数据、第三方服务和网站访问统计。',
+  scope: '适用于 lazyapps 应用与网站',
+  intro: '应用数据以本地存储为主。使用第三方服务时，数据由相应服务处理；网站访问统计在下文单独说明。',
+  skip: '跳转到正文', home: 'lazyapps 首页', language: '选择语言',
+  sections: [
+    { id: 'app-data', title: '应用数据', paragraphs: ['应用数据主要保存在您的设备上。我们不会通过 lazyapps 自有服务器收集或存储您在应用中的个人数据。'] },
+    { id: 'services', title: '第三方服务', paragraphs: ['部分功能使用您选择启用的第三方服务，例如 iCloud 同步或 AI 服务。这些服务处理的数据受各自的隐私政策约束。'] },
+    { id: 'analytics', title: '网站访问统计', paragraphs: ['lazyapps.com 使用 Google Analytics 了解页面浏览和下载链接点击等访问情况。浏览器会向 Google 发送页面、设备和浏览器信息，以及 IP 地址。Google 可能使用 Cookie 统计访问。这些网站统计与应用中保存的数据分开。', '我们在网站统计代码中关闭了 Google signals 和广告个性化。您可使用浏览器的隐私控制或 Google 提供的停用插件，限制 Analytics 统计。'] },
+    { id: 'updates', title: '政策更新', paragraphs: ['应用或网站发生变化时，我们可能相应更新本政策。最新版本会发布在本页。'] },
+  ],
+  google: 'Google 如何使用来自合作网站的信息', optOut: 'Google Analytics 停用插件',
+  contact: '联系我们', contactCopy: '如对本政策或数据处理方式有疑问，请发邮件至：',
+} : {
+  title: 'Privacy Policy',
+  description: 'How lazyapps handles app data, third-party services, and website analytics.',
+  scope: 'For lazyapps apps and website',
+  intro: 'App data stays primarily on your devices. Third-party services handle data when you choose to use them. Website analytics are described separately below.',
+  skip: 'Skip to content', home: 'lazyapps home', language: 'Choose language',
+  sections: [
+    { id: 'app-data', title: 'App data', paragraphs: ['App data is stored primarily on your devices. We do not collect or store your personal app data on lazyapps servers.'] },
+    { id: 'services', title: 'Third-party services', paragraphs: ['Some features use third-party services you choose to enable, such as iCloud sync or an AI service. Data handled by those services is subject to their own privacy policies.'] },
+    { id: 'analytics', title: 'Website analytics', paragraphs: ['lazyapps.com uses Google Analytics to understand visits and interactions, including page views and clicks on download links. Your browser sends page, device and browser information to Google, together with your IP address. Google may use cookies to measure visits. These website statistics are separate from data stored in our apps.', 'Google signals and advertising personalization are disabled in our website tag. You can use browser privacy controls or Google’s opt-out add-on to limit Analytics measurement.'] },
+    { id: 'updates', title: 'Policy updates', paragraphs: ['We may update this policy when our apps or website change. The current version is published on this page.'] },
+  ],
+  google: 'How Google uses information from partner sites', optOut: 'Google Analytics opt-out add-on',
+  contact: 'Contact', contactCopy: 'For questions about this policy or how your data is handled, email:',
+};
+const path = `/privacy.${chinese ? 'zh' : 'en'}.html`;
+const alternate = `/privacy.${chinese ? 'en' : 'zh'}.html`;
+const languages = [
+  { language: 'en', label: 'English', url: '/privacy.en.html' },
+  { language: 'zh-Hans', label: '简体中文', url: '/privacy.zh.html' },
+];
+---
+<!doctype html>
+<html lang={locale}>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+    <title>{`lazyapps — ${t.title}`}</title>
+    <meta name="description" content={t.description}>
+    <meta name="theme-color" content="#f8f8f6">
+    <SocialMeta title={`lazyapps — ${t.title}`} description={t.description} url={`https://lazyapps.com${path}`} image={`https://lazyapps.com${opengraphUrl}`} imageAlt="lazyapps" imageWidth={1200} imageHeight={630} locale={chinese ? 'zh_CN' : 'en_US'} />
+    <link rel="alternate" hreflang="zh" href="https://lazyapps.com/privacy.zh.html">
+    <link rel="alternate" hreflang="en" href="https://lazyapps.com/privacy.en.html">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2064%2064%22%3E%3Crect%20width%3D%2264%22%20height%3D%2264%22%20rx%3D%2215%22%20fill%3D%22%23171717%22%2F%3E%3Cpath%20fill%3D%22%23f8f8f6%22%20d%3D%22M20%2013h12v33h17v10H20z%22%2F%3E%3Ccircle%20cx%3D%2245%22%20cy%3D%2219%22%20r%3D%225%22%20fill%3D%22%23ff6846%22%2F%3E%3C%2Fsvg%3E">
+    <link rel="stylesheet" href={siteCssUrl}>
+  </head>
+  <body>
+    <SiteEdges />
+    <SiteGrain />
+    <a class="privacy-skip" href="#main">{t.skip}</a>
+    <SiteHeader class="wrap" homeLabel={t.home}>
+      <LanguagePicker label={t.language} current={path} options={languages} />
+      <noscript><a href={alternate} lang={chinese ? 'en' : 'zh-Hans'}>{chinese ? 'English' : '简体中文'}</a></noscript>
+    </SiteHeader>
+    <main id="main" class="privacy wrap">
+      <article class="privacy__document" aria-labelledby="privacy-title">
+        <header class="privacy__intro">
+          <p class="privacy__scope">{t.scope}</p>
+          <h1 id="privacy-title" class="privacy__title dsp">{t.title}</h1>
+          <p class="privacy__summary">{t.intro}</p>
+        </header>
+        {t.sections.map(section => <section class="privacy__section" aria-labelledby={section.id}>
+          <h2 id={section.id}>{section.title}</h2>
+          {section.paragraphs.map(paragraph => <p>{paragraph}</p>)}
+          {section.id === 'analytics' && <ul class="privacy__references">
+            <li><a href={`https://policies.google.com/technologies/partner-sites${chinese ? '?hl=zh-CN' : ''}`}>{t.google}</a></li>
+            <li><a href={`https://tools.google.com/dlpage/gaoptout${chinese ? '?hl=zh-CN' : ''}`}>{t.optOut}</a></li>
+          </ul>}
+        </section>)}
+        <section class="privacy__section" aria-labelledby="contact">
+          <h2 id="contact">{t.contact}</h2>
+          <p>{t.contactCopy}</p>
+          <a class="privacy__email" href="mailto:lazyapps.feedback@gmail.com">lazyapps.feedback@gmail.com</a>
+        </section>
+      </article>
+    </main>
+    <footer class="privacy-footer wrap"><SiteFooterBase locale={locale} pressKit={false} /></footer>
+  </body>
+</html>
+<style>
+  .privacy{padding-block:clamp(32px,5vw,64px) 0}
+  .privacy__document{max-width:760px;margin-inline:auto;font-size:18px;line-height:var(--leading-body);text-align:start}
+  .privacy__intro{padding-bottom:clamp(28px,4vw,40px);border-bottom:1px solid var(--line)}
+  .privacy__scope{margin-bottom:14px;color:var(--muted);font-size:14px;line-height:1.5}
+  .privacy__title{font-size:clamp(48px,6vw,76px);line-height:var(--leading-display);text-align:start;text-transform:uppercase}
+  .privacy__title:lang(zh){font-size:clamp(40px,5vw,60px);font-weight:750;letter-spacing:0}
+  .privacy__summary{margin-top:20px;max-width:56ch;color:var(--muted);text-wrap:balance}
+  .privacy__section{padding-block:28px;border-bottom:1px solid var(--line);scroll-margin-top:100px}
+  .privacy__section:last-child{border-bottom:0}
+  .privacy__section h2{font:650 22px/1.4 var(--sans);letter-spacing:-.015em;text-wrap:balance}
+  .privacy__section h2:lang(zh){letter-spacing:0}
+  .privacy__section p{margin-top:12px;text-wrap:pretty}
+  .privacy__references{display:grid;gap:8px;margin:16px 0 0;padding-inline-start:1.2em;font-size:16px}
+  .privacy__document a{text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:.2em}
+  .privacy__document a:hover{text-decoration-thickness:2px}
+  .privacy__document a:focus-visible{outline:2px solid var(--accent);outline-offset:4px;border-radius:2px}
+  .privacy__email{display:inline-flex;align-items:center;min-height:44px;max-width:100%;overflow-wrap:anywhere}
+  .privacy-footer{margin-top:clamp(40px,5vw,64px)}
+  .privacy-skip{position:fixed;inset-block-start:8px;inset-inline-start:20px;z-index:1101;padding:10px 14px;background:var(--ink);color:var(--paper);transform:translateY(-200%)}
+  .privacy-skip:focus{transform:none}
+  @media(max-width:650px){
+    .privacy__document{font-size:17px}
+    .privacy__summary{margin-top:16px}
+    .privacy__section{padding-block:24px}
+    .privacy__section h2{font-size:20px}
+    .privacy__references{font-size:15px}
+  }
+</style>
