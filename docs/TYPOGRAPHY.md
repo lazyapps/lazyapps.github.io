@@ -2,7 +2,9 @@
 
 `src/assets/s/site.css` 按实际使用的字体族维护 `--leading-display`（展示标题）与 `--leading-body`（默认正文）。产品页、存档页、隐私页和 Press Kit 共用这组规则。段落、表单、按钮及小字号说明可以保留适合自身用途的显式行高。
 
-全站页面唯一的 h1（Hero 大标题）统一居中；正文、下载说明和各章节标题保留各自的布局对齐。
+标题对齐由页面用途决定，不对所有 h1 强制居中。首页、产品页（含 KeyHop 存档页）和产品 Press Kit 子页的 Hero 居中；Privacy Policy 中英文页及 Press Kits 汇总页按正文方向对齐（LTR 靠左，RTL 靠右）。正文、下载说明和各章节标题保留各自的布局对齐。
+
+标题及首页、Privacy Policy、Press Kits 汇总页的短介绍使用 `text-wrap:balance`，均衡各行长度；产品 Press Kit 的 Hero 介绍沿用相同规则。长正文保留 `text-wrap:pretty`，减少孤词而不强制均分整段。
 
 | 语言／字体 | 展示标题 | 默认正文 |
 | --- | --- | --- |

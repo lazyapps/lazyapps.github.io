@@ -155,9 +155,10 @@ a{color:inherit;text-decoration:none}
 .term-link:hover{text-decoration-thickness:2px}
 .term-link:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:2px}
 h1,h2,h3,h4,p{margin:0}
-h1{text-align:center}
+.hero__brand,.phero__h1,.reading-hero h1,.font-hero h1,.doze-hero h1,.kit-hero h1{text-align:center}
 dl,dd{margin:0}
 h1,h2,h3{text-wrap:balance}
+.hero__sub,.doc__p{text-wrap:balance}
 /* Shared select geometry; the arrow stays inside the field, including in RTL. */
 :where(.select-control,.kit-locale,.gesture__select,.game-language-label){position:relative;--select-arrow-inset:16px;--select-arrow-size:12px;--select-text-gap:12px}
 :where(.select-control,.kit-locale,.gesture__select,.game-language-label)::after{
@@ -260,7 +261,9 @@ p,li,dd{text-wrap:pretty;overflow-wrap:anywhere}
 }
 .hero{
   container-type:inline-size;
-  padding-top:calc(var(--safe-top) + clamp(32px,5vw,64px));
+  display:grid;gap:clamp(28px,3.5vw,44px);
+  padding-top:calc(var(--safe-top) + clamp(56px,7vw,104px));
+  padding-bottom:clamp(44px,5vw,72px);
 }
 .topbar{
   display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);align-items:center;gap:1rem;
@@ -282,13 +285,14 @@ footer{padding-bottom:env(safe-area-inset-bottom,0px)}
 @media (max-width:560px){.topbar{gap:.5rem}}
 body .skip-link:focus{z-index:1101}
 
-.hero__brand{font-size:clamp(58px,22cqw,252px)}
+.hero__brand{font-size:clamp(72px,25cqw,280px)}
 .wordmark{display:block;white-space:nowrap;text-box:trim-both cap alphabetic}
 .wordmark i,.topbar__app i{
   display:inline-block;width:.13em;height:.13em;border-radius:50%;
   background:var(--accent);vertical-align:.05em;margin-left:.05em;
 }
-.hero__sub{margin-top:clamp(18px,2vw,28px);font-size:1.0625rem;color:var(--muted);max-width:30em}
+.hero__sub{margin:0 auto;font-size:clamp(14px,1.3vw,18px);line-height:1.65;color:var(--muted);max-width:min(48rem,80cqw);text-align:center}
+.hero__sub-phrase{display:inline-block;max-width:100%}
 
 .next{
   margin-top:var(--space-section);padding-top:var(--space-grid);border-top:1px solid var(--line);
