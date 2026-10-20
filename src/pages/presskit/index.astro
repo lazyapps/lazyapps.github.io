@@ -1,6 +1,7 @@
 ---
 import PressLayout from '../../layouts/PressLayout.astro';
 import NativeAppIcon from '../../components/NativeAppIcon.astro';
+import CardAction from '../../components/CardAction.astro';
 import { pressKits as kits } from '../../content/presskit-catalog.mjs';
 import opengraph from '../../assets/img/opengraph.png?url';
 ---
@@ -24,7 +25,7 @@ import opengraph from '../../assets/img/opengraph.png?url';
       return <li data-product={kit.slug}><a class="product-link" href={`/${kit.slug}/presskit/#en`} data-press-route={`/${kit.slug}/presskit/`}>
         <span class="product-icon"><NativeAppIcon slug={kit.slug} /></span>
         <div class="product-copy"><h3 data-press-card-name lang="en">{english.name}</h3><p data-press-card-summary lang="en" dir="ltr">{english.summary}</p></div>
-        <div class="product-access"><span class="product-action"><span data-press-text="kit">Press kit</span><span class="product-arrow" aria-hidden="true">↗</span></span></div>
+        <div class="product-access"><CardAction><span data-press-text="kit">Press kit</span></CardAction></div>
       </a></li>;
     })}</ul>
   </section>
@@ -34,7 +35,8 @@ import opengraph from '../../assets/img/opengraph.png?url';
 <style>
   .press-intro{display:grid;grid-template-columns:1.15fr 1fr;align-items:center;gap:40px 64px;padding-block:72px 56px}
   #press-title{font:900 clamp(112px,15vw,196px)/.82 var(--display-latin);letter-spacing:-.025em;text-transform:uppercase}
-  #press-title:lang(zh),#press-title:lang(ja),#press-title:lang(ko),#press-title:lang(ar),#press-title:lang(hi){font-family:var(--sans);font-size:clamp(64px,8vw,108px);line-height:1.05;font-weight:750;letter-spacing:-.03em;text-transform:none}
+  #press-title:lang(zh),#press-title:lang(ja),#press-title:lang(ko),#press-title:lang(ar),#press-title:lang(hi){font-family:var(--sans);font-size:clamp(64px,8vw,108px);line-height:var(--leading-display);font-weight:750;letter-spacing:-.03em;text-transform:none}
+  #press-title:lang(ru),#press-title:lang(tr){line-height:var(--leading-display)}
   #press-title:lang(fr),#press-title:lang(pt),#press-title:lang(tr){font-size:clamp(80px,10vw,132px)}
   .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap;border:0}
   .title-dot{color:var(--accent)}
@@ -57,18 +59,14 @@ import opengraph from '../../assets/img/opengraph.png?url';
   .product-link{display:grid;height:100%;grid-template-columns:72px minmax(0,1fr);gap:24px;align-items:start;padding:var(--space-card);border-radius:inherit;text-decoration:none}
   .product-icon{display:grid;place-items:center;width:72px;height:72px}
   .product-icon :global(img){display:block;width:100%;height:100%;object-fit:contain}
-  .product-copy h3{font:900 clamp(30px,3.2vw,44px)/1 var(--display-latin);text-transform:uppercase;letter-spacing:-.01em}
+  .product-copy h3{font:900 clamp(30px,3.2vw,44px)/var(--leading-display) var(--display);text-transform:uppercase;letter-spacing:-.01em}
   .product-copy{container-type:inline-size}
-  .product-copy h3:lang(zh),.product-copy h3:lang(ja),.product-copy h3:lang(ko){font-family:var(--sans);font-size:30px;line-height:1.2;letter-spacing:0;text-transform:none}
+  .product-copy h3:lang(zh),.product-copy h3:lang(ja),.product-copy h3:lang(ko){font-family:var(--sans);font-size:30px;letter-spacing:0;text-transform:none}
   .product-copy h3[data-bilingual]{font-size:clamp(16px,8cqw,30px);white-space:nowrap;overflow-wrap:normal}
   .product-copy p{font-size:14px;line-height:1.6;color:var(--ink);margin-top:12px}
-  .product-access{grid-column:1/-1;display:flex;align-items:center;justify-content:flex-end;gap:16px;align-self:end}
-  .product-action{display:flex;align-items:center;gap:12px;min-height:44px;padding:8px 10px 8px 14px;border-radius:999px;background:rgba(0,0,0,.07);box-shadow:inset 0 0 0 1px rgba(0,0,0,.12);font-size:13px;font-weight:600;transition:background-color .18s ease}
-  .product-arrow{display:grid;place-items:center;width:28px;height:28px;border-radius:50%;background:rgba(0,0,0,.09);font-size:19px;transition:transform .18s ease}
+  .product-access{grid-column:2;display:flex;align-items:center;justify-content:flex-start;gap:16px;align-self:end}
   @media(hover:hover) and (pointer:fine){
     .product-list li:has(.product-link:hover){transform:translateY(-4px)}
-    .product-link:hover .product-action{background:rgba(0,0,0,.11)}
-    .product-link:hover .product-arrow{transform:translate(2px,-2px)}
   }
   @media(max-width:900px){
     .press-intro{gap:32px;padding-block:56px}
@@ -86,11 +84,11 @@ import opengraph from '../../assets/img/opengraph.png?url';
     .press-intro__copy>p{font-size:17px}
     .product-link{grid-template-columns:52px minmax(0,1fr);gap:20px;padding:20px}
     .product-icon{width:52px;height:52px}
-    .product-copy h3{font-size:32px;line-height:1.1}
+    .product-copy h3{font-size:32px}
     .product-copy p{font-size:13px}
   }
   @media(prefers-reduced-motion:reduce){
-    .product-list li,.product-action,.product-arrow{transition:none}
-    .product-list li:has(.product-link:hover),.product-link:hover .product-arrow{transform:none}
+    .product-list li{transition:none}
+    .product-list li:has(.product-link:hover){transform:none}
   }
 </style>

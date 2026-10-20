@@ -61,6 +61,14 @@ Prévia compartilhada da tela de título do jogo, não de uma partida em andamen
 
 Fundo decorativo gerado por IA para apresentação no site; não é uma captura do app, uma cena do jogo nem um recurso integrado.
 
+### Logotipo
+
+[wordmark.svg](../wordmark.svg)
+
+163.0 × 61.0 · SVG
+
+SVG sem perdas do logotipo pixelado original. Formas, cores e transparência de cada pixel são preservadas, sem suavização nem bitmap incorporado.
+
 ### Imagem para redes sociais
 
 [social-card.png](../social-card.png)

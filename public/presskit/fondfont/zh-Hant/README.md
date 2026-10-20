@@ -50,6 +50,14 @@
 
 對應語言的原生介面預覽，像素保持原樣。
 
+### 平面向量圖
+
+[artwork-flat.svg](../artwork-flat.svg)
+
+1024.0 × 1024.0 · SVG
+
+由原版向量圖案和圖層位置組合的平面 SVG，不重現原生玻璃、光照或系統圖示裁切。完整原生 App 圖示請使用 PNG。
+
 ### 社群分享圖
 
 [social-card.png](social-card.png)

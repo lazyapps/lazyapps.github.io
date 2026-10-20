@@ -42,6 +42,14 @@ Comece a ler gratuitamente. Quando a sua coleção crescer, uma única compra na
 
 Pré-visualização da interface nativa neste idioma; píxeis inalterados.
 
+### Ilustração vetorial plana
+
+[artwork-flat.svg](../artwork-flat.svg)
+
+1024.0 × 1024.0 · SVG
+
+SVG plano composto a partir das formas vetoriais e posições das camadas originais. Não reproduz vidro, iluminação ou máscaras de ícones do sistema; utilize o PNG para o ícone nativo completo.
+
 ### Imagem para redes sociais
 
 [social-card.png](../social-card.png)

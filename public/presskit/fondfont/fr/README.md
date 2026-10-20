@@ -50,6 +50,14 @@ Icône native originale, PNG 1024 × 1024. Dessin, proportions et transparence p
 
 Aperçu de l’interface native dans cette langue ; pixels inchangés.
 
+### Illustration vectorielle à plat
+
+[artwork-flat.svg](../artwork-flat.svg)
+
+1024.0 × 1024.0 · SVG
+
+SVG à plat assemblé à partir des formes vectorielles et positions de calques d’origine. Les effets de verre, l’éclairage et les masques d’icône du système ne sont pas reproduits ; utilisez le PNG pour l’icône native complète.
+
 ### Image pour les réseaux sociaux
 
 [social-card.png](../social-card.png)

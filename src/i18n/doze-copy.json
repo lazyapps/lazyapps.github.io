@@ -1,10 +1,10 @@
 {
   "zh-Hans": {
     "headline": [
-      "让 AI 继续忙，",
-      "让屏幕歇一会儿。"
+      "屏幕眯会儿",
+      "AI 仍能操作电脑"
     ],
-    "description": "离开后，眯会儿会调暗屏幕。开启“保持电脑唤醒”，避免自动关屏和屏保打断 computer use。",
+    "description": "离开后自动调暗屏幕。开启「保持电脑唤醒」，避免自动关屏和屏保打断 AI 的计算机使用（computer use）。",
     "positioning": "Mac 菜单栏屏幕调暗工具",
     "compatibility": "macOS 13+ · 内置屏及支持系统亮度调节的显示器",
     "releases": "查看发布进度",
@@ -49,14 +49,15 @@
         "可以。“保持电脑唤醒”不影响合盖和手动睡眠。关闭该选项或退出眯会儿后，会恢复原来的设置。"
       ]
     ],
-    "license": "Doze 是专有软件；GitHub 仓库用于发布安装包和产品说明。"
+    "license": "Doze 是专有软件；GitHub 仓库用于发布安装包和产品说明。",
+    "eyebrow": "为 AI 的 Computer use 而设计"
   },
   "en": {
     "headline": [
-      "Let AI keep working.",
-      "Let your screen rest."
+      "Your screen dozes",
+      "AI can still use your computer"
     ],
-    "description": "Doze dims your Mac’s screen when you step away. Enable “Keep Computer Awake” to prevent display sleep and the screen saver from interrupting computer use.",
+    "description": "Automatically dim your screen when you step away. Enable “Keep Computer Awake” so display sleep and screen savers don’t interrupt AI computer use.",
     "positioning": "A menu bar screen dimmer for Mac",
     "compatibility": "macOS 13+ · Built-in displays and supported displays with system brightness control",
     "releases": "View releases",
@@ -101,14 +102,15 @@
         "Yes. “Keep Computer Awake” does not prevent either. Turning it off or quitting Doze restores your previous settings."
       ]
     ],
-    "license": "Doze is proprietary software. Its GitHub repository provides releases and product information."
+    "license": "Doze is proprietary software. Its GitHub repository provides releases and product information.",
+    "eyebrow": "For AI computer use"
   },
   "zh-Hant": {
     "headline": [
-      "讓 AI 繼續忙，",
-      "讓螢幕歇一會兒。"
+      "螢幕瞇會兒",
+      "AI 仍能操作電腦"
     ],
-    "description": "離開後，瞇會兒會調暗螢幕。開啟「讓電腦保持喚醒」，避免自動關閉螢幕和螢幕保護程式打斷 computer use。",
+    "description": "離開後自動調暗螢幕。開啟「讓電腦保持喚醒」，避免自動關閉螢幕和螢幕保護程式打斷 AI 的計算機使用（computer use）。",
     "positioning": "Mac 選單列螢幕調暗工具",
     "compatibility": "macOS 13+ · 內建螢幕及支援系統亮度調整的顯示器",
     "releases": "查看發佈進度",
@@ -153,14 +155,15 @@
         "可以。「保持電腦喚醒」不影響闔蓋與手動睡眠。關閉此選項或結束瞇會兒後，會恢復原本的設定。"
       ]
     ],
-    "license": "Doze 是專有軟體；GitHub 儲存庫提供安裝套件及產品說明。"
+    "license": "Doze 是專有軟體；GitHub 儲存庫提供安裝套件及產品說明。",
+    "eyebrow": "為 AI 的 Computer use 而設計"
   },
   "es": {
     "headline": [
-      "Que la IA siga trabajando.",
-      "Que tu pantalla descanse."
+      "Tu pantalla se echa una siestita",
+      "La IA puede seguir usando tu ordenador"
     ],
-    "description": "Siestita atenúa la pantalla cuando te ausentas. Mantén el Mac despierto para que el apagado automático de pantalla y el salvapantallas no interrumpan el uso del ordenador por la IA.",
+    "description": "Atenúa automáticamente la pantalla cuando te ausentas. Mantén el Mac despierto para que el apagado automático de pantalla y el salvapantallas no interrumpan el uso del ordenador por la IA (computer use).",
     "positioning": "Atenúa la pantalla desde la barra de menús del Mac",
     "compatibility": "macOS 13+ · Pantallas integradas y compatibles con el control de brillo del sistema",
     "releases": "Ver versiones",
@@ -205,14 +208,15 @@
         "Sí. Mantener el ordenador activo no impide estas acciones. Al desactivar la opción o salir de Siestita, se restauran los ajustes anteriores."
       ]
     ],
-    "license": "Doze es software propietario. Su repositorio de GitHub ofrece versiones e información del producto."
+    "license": "Doze es software propietario. Su repositorio de GitHub ofrece versiones e información del producto.",
+    "eyebrow": "Para el Computer use de la IA"
   },
   "pt-BR": {
     "headline": [
-      "Deixe a IA trabalhar.",
-      "Deixe a tela descansar."
+      "A tela tira um cochilo",
+      "A IA ainda pode usar o computador"
     ],
-    "description": "Cochilo reduz o brilho quando você se afasta. Mantenha o Mac acordado para evitar que o desligamento automático da tela e o protetor de tela interrompam o uso do computador pela IA.",
+    "description": "Reduza automaticamente o brilho da tela ao se afastar. Mantenha o Mac acordado para que o desligamento automático da tela e o protetor de tela não interrompam o uso do computador pela IA (computer use).",
     "positioning": "Controle de brilho na barra de menus do Mac",
     "compatibility": "macOS 13+ · Telas integradas e compatíveis com o controle de brilho do sistema",
     "releases": "Ver versões",
@@ -257,14 +261,15 @@
         "Sim. Manter o computador ativo não impede essas ações. Desativar a opção ou encerrar o Cochilo restaura os ajustes anteriores."
       ]
     ],
-    "license": "Doze é software proprietário. O repositório no GitHub oferece versões e informações do produto."
+    "license": "Doze é software proprietário. O repositório no GitHub oferece versões e informações do produto.",
+    "eyebrow": "Para o Computer use da IA"
   },
   "fr": {
     "headline": [
-      "L’IA continue de travailler.",
-      "Votre écran se repose."
+      "Votre écran prend un petit repos",
+      "L’IA peut continuer à utiliser votre ordinateur"
     ],
-    "description": "Petit Repos réduit la luminosité en votre absence. Gardez le Mac éveillé pour que la veille de l’écran et l’économiseur d’écran n’interrompent pas les actions de l’IA dans les apps.",
+    "description": "Réduisez automatiquement la luminosité de l’écran en votre absence. Gardez le Mac éveillé pour que la veille de l’écran et l’économiseur d’écran n’interrompent pas l’utilisation de l’ordinateur par l’IA (computer use).",
     "positioning": "Un variateur d’écran dans la barre des menus du Mac",
     "compatibility": "macOS 13+ · Écrans intégrés et écrans compatibles avec le réglage système de luminosité",
     "releases": "Voir les versions",
@@ -309,14 +314,15 @@
         "Oui. Le maintien en éveil ne bloque pas ces actions. Désactiver cette option ou quitter Petit Repos rétablit les réglages précédents."
       ]
     ],
-    "license": "Doze est un logiciel propriétaire. Son dépôt GitHub fournit les versions et les informations produit."
+    "license": "Doze est un logiciel propriétaire. Son dépôt GitHub fournit les versions et les informations produit.",
+    "eyebrow": "Pour le Computer use de l’IA"
   },
   "de": {
     "headline": [
-      "Die KI arbeitet weiter.",
-      "Dein Bildschirm ruht."
+      "Dein Bildschirm schlummert",
+      "KI kann deinen Computer weiter bedienen"
     ],
-    "description": "Schlummer dimmt den Bildschirm, wenn du weggehst. Halte den Mac wach, damit Bildschirmruhezustand und Bildschirmschoner die KI beim Bedienen von Apps nicht unterbrechen.",
+    "description": "Dimme den Bildschirm automatisch, wenn du weggehst. Halte den Mac wach, damit Bildschirmruhezustand und Bildschirmschoner die Computernutzung durch KI (computer use) nicht unterbrechen.",
     "positioning": "Bildschirm dimmen über die Mac-Menüleiste",
     "compatibility": "macOS 13+ · Integrierte und unterstützte Displays mit System-Helligkeitssteuerung",
     "releases": "Versionen ansehen",
@@ -361,14 +367,15 @@
         "Ja. Das Wachhalten verhindert beides nicht. Wenn du die Option ausschaltest oder Schlummer beendest, werden die vorherigen Einstellungen wiederhergestellt."
       ]
     ],
-    "license": "Doze ist proprietäre Software. Das GitHub-Repository enthält Versionen und Produktinformationen."
+    "license": "Doze ist proprietäre Software. Das GitHub-Repository enthält Versionen und Produktinformationen.",
+    "eyebrow": "Für Computer use mit KI"
   },
   "ja": {
     "headline": [
-      "AI は作業を続ける。",
-      "画面は、ひとやすみ。"
+      "画面はひとやすみ",
+      "AI は引き続きパソコンを操作できる"
     ],
-    "description": "ひとやすみは離席中に画面を暗くします。「スリープさせない」を有効にすると、画面のスリープやスクリーンセーバによる AI の computer use の中断を防げます。",
+    "description": "離席すると画面を自動で暗くします。「スリープさせない」を有効にすると、画面のスリープやスクリーンセーバによる AI のコンピュータ操作（computer use）の中断を防げます。",
     "positioning": "Mac のメニューバーに置く画面調光アプリ",
     "compatibility": "macOS 13 以降 · 内蔵ディスプレイおよびシステムで輝度調整できる対応ディスプレイ",
     "releases": "リリースを見る",
@@ -413,14 +420,15 @@
         "はい。スリープ防止の設定中でも可能です。設定をオフにするか、ひとやすみを終了すると、元の設定に戻ります。"
       ]
     ],
-    "license": "Doze はプロプライエタリソフトウェアです。GitHub リポジトリでは配布版と製品情報を提供します。"
+    "license": "Doze はプロプライエタリソフトウェアです。GitHub リポジトリでは配布版と製品情報を提供します。",
+    "eyebrow": "AI の Computer use のために"
   },
   "ko": {
     "headline": [
-      "AI는 계속 일하고,",
-      "화면은 잠깐 쉬어요."
+      "화면은 잠깐 쉼",
+      "AI는 계속 컴퓨터를 조작할 수 있어요"
     ],
-    "description": "잠깐 쉼은 자리를 비우면 화면을 어둡게 합니다. “컴퓨터 깨어 있게 유지”를 켜면 화면 자동 꺼짐과 화면 보호기가 AI의 computer use를 중단하지 않게 할 수 있어요.",
+    "description": "자리를 비우면 화면이 자동으로 어두워집니다. “컴퓨터 깨어 있게 유지”를 켜면 화면 자동 꺼짐과 화면 보호기가 AI의 컴퓨터 사용(computer use)을 중단하지 않게 할 수 있어요.",
     "positioning": "Mac 메뉴 막대에서 사용하는 화면 밝기 조절 앱",
     "compatibility": "macOS 13 이상 · 내장 디스플레이 및 시스템 밝기 조절을 지원하는 디스플레이",
     "releases": "릴리스 보기",
@@ -465,14 +473,15 @@
         "네. 깨어 있게 유지하는 옵션은 두 동작을 막지 않습니다. 옵션을 끄거나 잠깐 쉼을 종료하면 이전 설정으로 돌아갑니다."
       ]
     ],
-    "license": "Doze는 독점 소프트웨어입니다. GitHub 저장소는 배포 파일과 제품 정보를 제공합니다."
+    "license": "Doze는 독점 소프트웨어입니다. GitHub 저장소는 배포 파일과 제품 정보를 제공합니다.",
+    "eyebrow": "AI의 Computer use를 위해"
   },
   "ru": {
     "headline": [
-      "Пусть ИИ работает.",
-      "Пусть экран отдыхает."
+      "Экран погружается в дрёму",
+      "ИИ по-прежнему может управлять компьютером"
     ],
-    "description": "Дрёма уменьшает яркость, когда вы отходите. Включите «Не давать Mac засыпать», чтобы отключение экрана и заставка не прерывали действия ИИ в приложениях.",
+    "description": "Экран автоматически затемняется, когда вы отходите. Включите «Не давать Mac засыпать», чтобы отключение экрана и заставка не прерывали использование компьютера ИИ (computer use).",
     "positioning": "Затемнение экрана из строки меню Mac",
     "compatibility": "macOS 13+ · Встроенные и совместимые дисплеи с системной регулировкой яркости",
     "releases": "Посмотреть выпуски",
@@ -517,14 +526,15 @@
         "Да. Поддержание активности этому не мешает. Отключение этой функции или выход из Дрёмы восстанавливает прежние настройки."
       ]
     ],
-    "license": "Doze распространяется как проприетарное ПО. Репозиторий GitHub предназначен для выпусков и информации о продукте."
+    "license": "Doze распространяется как проприетарное ПО. Репозиторий GitHub предназначен для выпусков и информации о продукте.",
+    "eyebrow": "Для Computer use с ИИ"
   },
   "ar": {
     "headline": [
-      "دع الذكاء الاصطناعي يعمل.",
-      "ودع شاشتك تستريح."
+      "شاشتك تأخذ غفوة",
+      "ويمكن للذكاء الاصطناعي مواصلة استخدام الكمبيوتر"
     ],
-    "description": "يخفّض غفوة سطوع الشاشة عند ابتعادك. فعّل إبقاء الكمبيوتر مستيقظًا لمنع إطفاء الشاشة تلقائيًا وشاشة التوقف من مقاطعة استخدام الذكاء الاصطناعي للتطبيقات.",
+    "description": "تُعتّم الشاشة تلقائيًا عند ابتعادك. فعّل إبقاء الكمبيوتر مستيقظًا كي لا يقاطع إطفاء الشاشة تلقائيًا أو شاشة التوقف استخدام الذكاء الاصطناعي للكمبيوتر (computer use).",
     "positioning": "تطبيق لتعتيم الشاشة من شريط قوائم Mac",
     "compatibility": "macOS 13 أو أحدث · الشاشات المدمجة والشاشات المتوافقة مع ضبط السطوع عبر النظام",
     "releases": "عرض الإصدارات",
@@ -569,14 +579,15 @@
         "نعم. إبقاء الكمبيوتر مستيقظًا لا يمنع ذلك. يؤدي تعطيل الخيار أو إنهاء غفوة إلى استعادة الإعدادات السابقة."
       ]
     ],
-    "license": "Doze برنامج احتكاري. يوفّر مستودع GitHub الإصدارات ومعلومات المنتج."
+    "license": "Doze برنامج احتكاري. يوفّر مستودع GitHub الإصدارات ومعلومات المنتج.",
+    "eyebrow": "مصمّم لقدرة Computer use لدى الذكاء الاصطناعي"
   },
   "hi": {
     "headline": [
-      "AI काम करता रहे।",
-      "स्क्रीन को आराम करने दें।"
+      "स्क्रीन एक झपकी लेती है",
+      "AI अब भी कंप्यूटर का उपयोग कर सकता है"
     ],
-    "description": "झपकी आपके दूर जाने पर स्क्रीन मंद करता है। कंप्यूटर को जागता रखें विकल्प चालू करें, ताकि स्क्रीन का अपने-आप बंद होना या स्क्रीन सेवर AI के ऐप्स में काम करने को न रोके।",
+    "description": "आपके दूर जाने पर स्क्रीन अपने-आप मंद हो जाती है। कंप्यूटर को जागता रखें विकल्प चालू करें, ताकि स्क्रीन का अपने-आप बंद होना और स्क्रीन सेवर AI के कंप्यूटर इस्तेमाल (computer use) में बाधा न डालें।",
     "positioning": "Mac के मेनू बार से स्क्रीन की चमक कम करने वाला ऐप",
     "compatibility": "macOS 13 या नया · बिल्ट-इन डिस्प्ले और सिस्टम से चमक बदलने वाले समर्थित डिस्प्ले",
     "releases": "रिलीज़ देखें",
@@ -621,6 +632,7 @@
         "हाँ। कंप्यूटर को जागृत रखने का विकल्प इनमें बाधा नहीं डालता। विकल्प बंद करने या झपकी से बाहर निकलने पर पुरानी सेटिंग वापस आ जाती हैं।"
       ]
     ],
-    "license": "Doze मालिकाना सॉफ़्टवेयर है। GitHub रिपॉज़िटरी पर रिलीज़ और उत्पाद की जानकारी मिलती है।"
+    "license": "Doze मालिकाना सॉफ़्टवेयर है। GitHub रिपॉज़िटरी पर रिलीज़ और उत्पाद की जानकारी मिलती है।",
+    "eyebrow": "AI की Computer use क्षमता के लिए"
   }
 }

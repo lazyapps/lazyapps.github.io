@@ -42,6 +42,14 @@ Ikon aplikasi asli, PNG 1024 × 1024. Gambar, proporsi, dan transparansi diperta
 
 Pratinjau antarmuka asli dalam bahasa ini; piksel tidak diubah.
 
+### Gambar vektor datar
+
+[artwork-flat.svg](../artwork-flat.svg)
+
+1024.0 × 1024.0 · SVG
+
+SVG datar disusun dari bentuk vektor dan posisi lapisan asli. Efek kaca, pencahayaan, dan masker ikon sistem tidak direproduksi; gunakan PNG untuk ikon aplikasi native yang lengkap.
+
 ### Gambar berbagi sosial
 
 [social-card.png](../social-card.png)

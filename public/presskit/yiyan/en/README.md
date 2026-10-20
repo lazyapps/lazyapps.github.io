@@ -70,6 +70,14 @@ Original native capture supplied by the developer on 2026-10-08, verified agains
 
 AI-generated desert wallpaper for the website presentation; not an app screenshot or built-in app feature.
 
+### Flat vector artwork
+
+[artwork-flat.svg](../artwork-flat.svg)
+
+1024.0 × 1024.0 · SVG
+
+Flat SVG assembled from the original vector artwork and layer positions. Native glass, lighting and platform icon masks are not reproduced; use the PNG for the complete native app icon.
+
 ### Social sharing image
 
 [social-card.png](../social-card.png)

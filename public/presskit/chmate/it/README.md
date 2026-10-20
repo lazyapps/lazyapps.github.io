@@ -42,6 +42,14 @@ Icona nativa originale, PNG 1024 × 1024. Grafica, proporzioni e trasparenza pre
 
 Anteprima dell’interfaccia nativa in questa lingua; pixel invariati.
 
+### Grafica vettoriale piatta
+
+[artwork-flat.svg](../artwork-flat.svg)
+
+1024.0 × 1024.0 · SVG
+
+SVG piatto composto dalle forme vettoriali e dalle posizioni dei livelli originali. Non riproduce vetro, illuminazione o maschere delle icone di sistema; usa il PNG per l’icona nativa completa.
+
 ### Immagine per i social
 
 [social-card.png](../social-card.png)

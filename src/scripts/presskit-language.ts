@@ -1,6 +1,7 @@
 import ui from '../content/presskit-ui.json';
 import glossary from '../content/presskit-glossary.json';
 import { languageHash, languageFromHash, resolvePressLanguage } from '../i18n/presskit-language.mjs';
+import { computerUseParts } from '../content/computer-use.mjs';
 
 type ProductCopy = {
   name: string; summary: string; summaryLang: string; website: string;
@@ -16,6 +17,19 @@ const product = data.products.find(item => item.slug === data.product);
 let saved: string | null = null;
 try { saved = localStorage.getItem('presskit.locale'); } catch {}
 let current = resolvePressLanguage({ hash: location.hash, saved, preferred: navigator.languages, supported: languages }) as Language;
+
+function renderSummary(element: HTMLElement, text: string, locale: string) {
+  element.replaceChildren(...computerUseParts(text, locale).map(part => {
+    if (!part.href) return document.createTextNode(part.text);
+    const link = document.createElement('a');
+    link.className = 'term-link';
+    link.href = part.href;
+    link.lang = 'en';
+    link.dir = 'ltr';
+    link.textContent = part.text;
+    return link;
+  }));
+}
 
 function applyLanguage(tag: Language) {
   current = tag;
@@ -50,7 +64,8 @@ function applyLanguage(tag: Language) {
     const copy = product.locales[tag];
     document.querySelectorAll<HTMLElement>('[data-press-product]').forEach(element => {
       const key = element.dataset.pressProduct as 'name' | 'summary' | 'platform' | 'availability';
-      element.textContent = copy[key];
+      if (key === 'summary') renderSummary(element, copy.summary, copy.summaryLang);
+      else element.textContent = copy[key];
       if (key === 'summary' || key === 'name') {
         element.lang = key === 'summary' ? copy.summaryLang : /^[A-Za-z0-9 .&-]+$/.test(copy.name) ? 'en' : tag;
         element.dir = element.lang === 'ar' ? 'rtl' : 'ltr';

@@ -13,10 +13,12 @@
 ## 原版素材
 
 - App 图标：`scripts/assets/native-icons/doze/AppIcon.icon`；由 Icon Composer 导出 Default 1024px PNG。源文件与导出哈希见 `scripts/assets/native-icons/sources.json`。
-- 透明符号：原版 Icon Composer 工程内的光学图案，保存为 `src/assets/img/doze-symbol.png`，保留完整透明画布。
+- 透明符号：原版 Icon Composer 工程中的 `Assets/Monogram.svg`，保留原版金色、轮廓和透明度，确定性渲染为 `src/assets/img/doze-symbol.png`，保留完整 2048px 透明画布。来源记录见 `scripts/assets/doze/symbol-source.json`。
 - 截图：`scripts/assets/presskit/doze-panel-<locale>-<theme>.png`。12 种真实界面语言各含日、夜两张，均为原生 Retina 截图，未缩放或修饰。来源记录见 `scripts/assets/presskit/screenshot-sources.json`。
 - 截图在隔离副本中使用 App 当前的 `ControlPanelView`、`SkyView`、`Localization`、`IdleDelay`、Resources 和原版插画导出。捕捉工具为 `scripts/assets/doze/capture-panels.swift`，预览沿用原生 popover 的水平安全区；`capture-source.json` 保存核对时源码提交及工作区精确文件哈希。使用独立临时 App，不构建或写入主 App 项目，不更改其运行状态。原生视图中的 Core Animation 图层需要窗口截图，不能以 `cacheDisplay` 代替。
 - 菜单栏图标：使用 `scripts/assets/doze/export-menubar.swift` 配合源项目 `Sources/StatusIcon.swift` 导出原生 2× 模板图，按原比例显示，图标高度为 20pt，来源和导出哈希见 `menubar-source.json`。菜单栏的 Apple、Wi-Fi、电池图标从 macOS SF Symbols 原生导出。网页补充菜单栏、选中背景与 popover 箭头；原生面板截图保持原样。
+- Press Kit 提供 4 种原生菜单栏外观：普通、保持电脑唤醒、已暂停、已暂停且保持电脑唤醒。运行中、屏幕已调暗、需要注意三种状态共用普通外观；保持唤醒时眼形改变，暂停时保留原版 45% 不透明度。提供 44 × 40px 的透明 2× PNG（原生 22 × 20pt）和原始 CGPath 导出的 22 × 20 SVG，各语言共享一份，同一预览提供两种下载，全部收入 ZIP。SVG 保留原生坐标变换与不透明度，不描摹 PNG。仅分发 Doze 自身图标，不附带网页菜单栏使用的系统符号。
+- `scripts/assets/doze/StatusIcon.swift` 保存原版绘制源码快照；`menubar-source.json` 记录原生提交、快照哈希、各外观的状态映射及导出哈希。`python3 scripts/export-doze-menubar-icons.py` 可从快照重新导出；跟进原生项目时使用 `--project /path/to/doze/src` 同步快照与提交信息。
 - 网站构建只读取已保存的素材和快照，不依赖 Xcode 或私有项目。
 
 ## 更新
@@ -28,7 +30,9 @@
 产品文案简洁说明：离开后调暗屏幕，配合可选的“保持电脑唤醒”，避免自动关屏和屏保打断 computer use。不另加锁屏说明，不用破折号解释术语。首页、12 种产品页语言、SEO 描述及媒体资料保持相同表述。
 
 ```sh
-python3 scripts/export-native-app-icons.py
+python3 scripts/export-native-app-icons.py --product doze
+python3 scripts/export-doze-menubar-icons.py
+python3 scripts/prepare-presskit-vectors.py
 # Python 环境需要 Pillow、fonttools、brotli，文字由 macOS AppKit 确定性渲染。
 python3 scripts/render-doze-opengraph.py --review-dir /tmp/doze-og-review
 python3 scripts/prepare-presskits.py
@@ -37,16 +41,20 @@ npm run build
 
 分享图使用原版透明符号与对应语言的实际应用名。Latin 使用主站 Sofia Sans Extra Condensed 900，其他文字通过 AppKit 排版。所有核心内容保持在 1200 × 630 图像中央的 630 × 630 安全区内；需同时查看横图与方形裁切。
 
+2026-10-20：跟进源项目 `7e8d8c7`，App 图标更新为原生矢量 Liquid Glass，替换网站和 Press Kit 中的旧光学材质图标与符号。12 种语言的 OG 均已用新版金色符号重新生成，输出哈希和内容安全区记录在 `scripts/assets/doze/opengraph-source.json`。WebIconCompact、菜单栏、日夜插画及全部面板截图的源文件哈希与现有快照一致，继续使用已核对的原版素材。
+
 ## Hero 展示
 
-Hero 沿用绎言等产品页的通栏标题、宽幅主视觉与下方介绍结构，继续使用主站字体和组件。演示区的日夜切换位于菜单栏；窗体保持原生截图比例并使用独立投影。背景日月、山丘是 App 原版插画，仅用于网站布景，不是 App 壁纸功能，且不合成到下载的原生截图中。原版插画快照见 `scripts/assets/doze/scene-source.json`。菜单栏图标按导出 PNG 元数据自动保留 2× 尺寸比例，当前原生画布为 22 × 20pt。
+Hero 的 12 种语言大标题统一居中，用直接陈述句表达屏幕休息的同时，AI 仍能操作电脑，强调 can still use 的能力。标题上方用本地化小标题明确露出 Computer use 术语（英文为 For AI computer use，简中为“为 AI 的 Computer use 而设计”）；副文案说明自动调暗与保持唤醒，点明自动关屏、屏保会打断计算机使用的痛点。术语参照 OpenAI 官方文档 https://developers.openai.com/api/docs/guides/tools-computer-use 与中文介绍 https://openai.com/zh-Hans-CN/index/codex-for-almost-everything/ 。Hero 不使用“让／Let”等使役或祈使说法。标题不使用句号；各语言的休息表达呼应本地 App 名，例如“屏幕眯会儿”、Your screen dozes、ひとやすみ、siestita、cochilo。简繁中文与日文的行尾逗号使用零宽内联元素悬挂显示，保留可读标点，但不参与文字宽度与居中计算。Hero 沿用绎言等产品页的通栏标题、宽幅主视觉与下方介绍结构，继续使用主站字体和组件。演示区的日夜切换位于菜单栏；窗体保持原生截图比例并使用独立投影。背景日月、山丘是 App 原版插画，仅用于网站布景，不是 App 壁纸功能，且不合成到下载的原生截图中。原版插画快照见 `scripts/assets/doze/scene-source.json`。菜单栏图标按导出 PNG 元数据自动保留 2× 尺寸比例，当前原生画布为 22 × 20pt。
 
-导航小图标使用 App 项目中的 `Assets/WebIconCompact.icon`。这个小尺寸版本保留蓝底、金色「眯」和闭眼，使用清晰的 SVG 笔画、较浅的立体高光，并为眼形留出间隙，避免完整光学材质的细密反光在缩小后混在一起。原版快照位于 `scripts/assets/native-icons/doze/WebIconCompact.icon`，来源和文件哈希记录在 `compactSource`。使用 `python3 scripts/export-doze-small-icons.py` 从 Icon Composer 直接按 16、22、28、32、48、80pt 及 1×/2× 渲染。导航在桌面选择 28/56px、窄屏选择 22/44px 的原生无损 PNG，避免 1024px 母图缩放后再经有损 WebP 压缩。favicon 同样选择原生 16/32px 图。完整 PNG 下载及媒体资料保持 1024px，所有小尺寸导出记录在 native-icons/sources.json 的 webRenditions，并纳入构建的哈希与尺寸校验。
+导航小图标使用 App 项目中的 `Assets/WebIconCompact.icon`。这个小尺寸版本保留蓝底、金色「眯」和闭眼，使用清晰的 SVG 笔画、较浅的立体高光，并为眼形留出间隙，避免完整光学材质的细密反光在缩小后混在一起。原版快照位于 `scripts/assets/native-icons/doze/WebIconCompact.icon`，来源和文件哈希记录在 `compactSource`。使用 `python3 scripts/export-doze-small-icons.py` 从 Icon Composer 直接按 16、22、28、32、48、80pt 及 1×/2× 渲染：16–32pt 使用 Compact 工程，48/80pt 使用当前原版 AppIcon 工程。导航在桌面选择 28/56px、窄屏选择 22/44px 的原生无损 PNG，避免 1024px 母图缩放后再经有损 WebP 压缩。favicon 同样选择原生 16/32px 图。完整 PNG 下载及媒体资料保持 1024px，所有小尺寸导出的原版工程路径与哈希记录在 native-icons/sources.json 的 webRenditions，并纳入构建的哈希与尺寸校验。
 
 Day／Night 位于模拟菜单栏最右侧，使用 28px 高的分段控件，在 36px 菜单栏中上下各留 4px。选中项使用实色背景，切换时同步原生日夜截图。菜单栏图标使用当前源代码的 active、keepAwake=false 状态，与演示面板中关闭的保持唤醒开关对应。
 
 2026-10-20：首发定稿更新全部 24 张日夜原生截图。保持唤醒的两条圆点说明、40pt 液态玻璃主按钮、无背景退出按钮和 96pt 底部留白与当前 App 一致；图中语言与来源哈希同步更新。旧的 261019.1 预览发行将撤下，产品页和资料包统一使用 261019.0。
 
-首页 Doze 卡片与其他带界面的产品共用通栏网格，使用完整日间原生截图和 WebIconCompact 的 80/160px 无损版本。所有首页卡片的标题区统一为左侧图标、右侧名称与平台标签，图标按名称的大写字高、标签行高及间距计算尺寸，使两侧视觉等高。截图展示区复用子页面 Hero 的浅色天空、太阳及日间山丘插画作为背景，原生截图保持独立。产品页主视觉下的介绍与下载操作分为两组，桌面并排，窄屏顺序排列。下载区不附加系统及显示器说明、发布状态或版本文字。
+首页 Doze 卡片与其他带界面的产品共用通栏网格，使用完整日间原生截图和当前原版 AppIcon 的 80/160px 无损版本。所有首页卡片的标题区统一为左侧图标、右侧名称与平台标签，图标按名称的大写字高、标签行高及间距计算布局尺寸，并整体放大 8% 做光学校正，使两侧视觉等高；XVDL 的不透明主体为原画布的 824/1024，先补偿原图透明留白再做相同校正，最终比例为 1.34214。仅调整首页显示比例，不裁切、修改原图，也不改变其他页面的图标。截图展示区复用浅色天空与日间山丘插画作为通栏背景，不再额外叠加太阳，以免与原生面板中的太阳重复。完整截图按 208–272px 宽展示，使用独立的 12px 圆角、低透明度纯黑轮廓与柔和的两层阴影，四周留白 28–40px；原始截图文件保持不变。产品页主视觉下的介绍与下载操作分为两组，桌面并排，窄屏顺序排列。下载区不附加系统及显示器说明、发布状态或版本文字。
 
 功能卡片色相取自原版插图：太阳约 94°、日间山丘约 114°。卡片使用调浅后的日光黄与灰绿；首页及 Press Kit 的 Doze 产品底色共用 `--app-doze:oklch(0.93 0.03 105)`，沿用 App 日间界面的浅暖灰绿，呼应原生面板与山丘。图标保留原版蓝金配色。颜色均在 sRGB 范围内，正文对比度超过 7:1。
+
+Computer use 术语解释链接共用 `src/content/computer-use.mjs`：中文在“计算机使用／計算機使用”后补充“（computer use）”，链接至 OpenAI 中文介绍；其他语言保留本地解释及 computer use 原词，链接至 OpenAI 官方技术文档。产品页、首页及 Press Kit 产品资料正文复用 `ComputerUseText`；Press Kit 切换语言时同步保留链接。汇总卡片内不嵌套链接，README 提供同一来源的术语参考链接。

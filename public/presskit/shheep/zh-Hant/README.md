@@ -61,6 +61,14 @@ iPhone 和 iPad App 支援 Game Center 排行榜、好友挑戰和邀請。
 
 AI 生成的裝飾背景，用於網站展示；不是 App 截圖、遊戲場景或內建功能。
 
+### 文字標誌
+
+[wordmark.svg](../wordmark.svg)
+
+163.0 × 61.0 · SVG
+
+由原版像素文字標誌無損轉換的 SVG，逐像素保留形狀、顏色與透明度，不平滑邊緣、不嵌入點陣圖。
+
 ### 社群分享圖
 
 [social-card.png](../social-card.png)

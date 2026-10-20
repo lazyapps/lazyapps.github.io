@@ -70,6 +70,14 @@ Captura compartilhada da interface em inglês com exemplos de textos em chinês 
 
 Paisagem de dunas gerada por IA para a apresentação no site; não é uma captura de tela nem um recurso integrado do app.
 
+### Arte vetorial plana
+
+[artwork-flat.svg](../artwork-flat.svg)
+
+1024.0 × 1024.0 · SVG
+
+SVG plano montado com as formas vetoriais e posições de camadas originais. Vidro, iluminação e máscaras de ícones do sistema não são reproduzidos; use o PNG para o ícone nativo completo.
+
 ### Imagem para redes sociais
 
 [social-card.png](../social-card.png)

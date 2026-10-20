@@ -8,11 +8,13 @@
 
 ## 产品简介
 
-离开后，眯会儿会调暗屏幕。开启“保持电脑唤醒”，避免自动关屏和屏保打断 computer use。
+离开后自动调暗屏幕。开启「保持电脑唤醒」，避免自动关屏和屏保打断 AI 的计算机使用（computer use）。
 
-让 AI 继续忙， 让屏幕歇一会儿。
+为 AI 的 Computer use 而设计
 
-离开后，眯会儿会调暗屏幕。开启“保持电脑唤醒”，避免自动关屏和屏保打断 computer use。
+屏幕眯会儿 AI 仍能操作电脑
+
+离开后自动调暗屏幕。开启「保持电脑唤醒」，避免自动关屏和屏保打断 AI 的计算机使用（computer use）。
 
 macOS 13+ · 内置屏及支持系统亮度调节的显示器
 
@@ -35,6 +37,8 @@ macOS 13+ · 内置屏及支持系统亮度调节的显示器
 
 Doze 是专有软件；GitHub 仓库用于发布安装包和产品说明。
 
+[computer use](https://openai.com/zh-Hans-CN/index/codex-for-almost-everything/)
+
 ## 官方链接
 
 - [下载 Mac 版](https://github.com/cxa/doze/releases)
@@ -49,13 +53,45 @@ Doze 是专有软件；GitHub 仓库用于发布安装包和产品说明。
 
 原版 App 图标，1024 × 1024 PNG。保留图案、比例与透明边角。
 
-### 文字标志
+### 透明品牌符号
 
 [symbol.png](../symbol.png)
 
 2048 × 2048 · PNG
 
-正式 Icon Composer 工程中的原版透明光学图案。
+当前 App 图标中的原版透明品牌符号，保留原版金色、比例和不透明度。
+
+### 菜单栏图标 · 普通
+
+[menubar-active.png](../menubar-active.png)
+
+44 × 40 · PNG
+
+原版透明 2× 模板 PNG（44 × 40 像素，22 × 20 点）。运行中、屏幕已调暗和需要注意三种状态共用普通外观；保持电脑唤醒时眼形改变。暂停图标保留原生 45% 不透明度，macOS 会为深色菜单栏自动调整模板颜色。
+
+### 菜单栏图标 · 保持电脑唤醒
+
+[menubar-keep-awake.png](../menubar-keep-awake.png)
+
+44 × 40 · PNG
+
+原版透明 2× 模板 PNG（44 × 40 像素，22 × 20 点）。运行中、屏幕已调暗和需要注意三种状态共用普通外观；保持电脑唤醒时眼形改变。暂停图标保留原生 45% 不透明度，macOS 会为深色菜单栏自动调整模板颜色。
+
+### 菜单栏图标 · 已暂停
+
+[menubar-paused.png](../menubar-paused.png)
+
+44 × 40 · PNG
+
+原版透明 2× 模板 PNG（44 × 40 像素，22 × 20 点）。运行中、屏幕已调暗和需要注意三种状态共用普通外观；保持电脑唤醒时眼形改变。暂停图标保留原生 45% 不透明度，macOS 会为深色菜单栏自动调整模板颜色。
+
+### 菜单栏图标 · 已暂停 · 保持电脑唤醒
+
+[menubar-paused-keep-awake.png](../menubar-paused-keep-awake.png)
+
+44 × 40 · PNG
+
+原版透明 2× 模板 PNG（44 × 40 像素，22 × 20 点）。运行中、屏幕已调暗和需要注意三种状态共用普通外观；保持电脑唤醒时眼形改变。暂停图标保留原生 45% 不透明度，macOS 会为深色菜单栏自动调整模板颜色。
 
 ### 界面截图 · 日间
 
@@ -72,6 +108,46 @@ Doze 是专有软件；GitHub 仓库用于发布安装包和产品说明。
 768 × 1144 · PNG
 
 对应语言的原生界面预览，像素保持原样。
+
+### 透明品牌符号
+
+[symbol.svg](../symbol.svg)
+
+1024.0 × 1024.0 · SVG
+
+SVG 保留原版矢量路径、比例与透明度。
+
+### 菜单栏图标 · 普通
+
+[menubar-active.svg](../menubar-active.svg)
+
+22.0 × 20.0 · SVG
+
+SVG 保留原版矢量路径、比例与透明度。
+
+### 菜单栏图标 · 保持电脑唤醒
+
+[menubar-keep-awake.svg](../menubar-keep-awake.svg)
+
+22.0 × 20.0 · SVG
+
+SVG 保留原版矢量路径、比例与透明度。
+
+### 菜单栏图标 · 已暂停
+
+[menubar-paused.svg](../menubar-paused.svg)
+
+22.0 × 20.0 · SVG
+
+SVG 保留原版矢量路径、比例与透明度。
+
+### 菜单栏图标 · 已暂停 · 保持电脑唤醒
+
+[menubar-paused-keep-awake.svg](../menubar-paused-keep-awake.svg)
+
+22.0 × 20.0 · SVG
+
+SVG 保留原版矢量路径、比例与透明度。
 
 ### 社交分享图
 

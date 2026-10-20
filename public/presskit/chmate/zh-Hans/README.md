@@ -42,6 +42,14 @@
 
 对应语言的原生界面预览，像素保持原样。
 
+### 平面矢量图
+
+[artwork-flat.svg](../artwork-flat.svg)
+
+1024.0 × 1024.0 · SVG
+
+由原版矢量图案和图层位置组合的平面 SVG，不重现原生玻璃、光照或系统图标裁切。完整原生 App 图标请使用 PNG。
+
 ### 社交分享图
 
 [social-card.png](../social-card.png)

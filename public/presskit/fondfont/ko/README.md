@@ -50,6 +50,14 @@ Pages, Keynote, Word, PowerPoint 등 iOS 폰트 보관함을 지원하는 앱에
 
 해당 언어의 네이티브 화면 미리보기이며 픽셀을 변경하지 않았습니다.
 
+### 평면 벡터 이미지
+
+[artwork-flat.svg](../artwork-flat.svg)
+
+1024.0 × 1024.0 · SVG
+
+원본 벡터 도형과 레이어 위치로 구성한 평면 SVG입니다. 네이티브 유리 효과, 조명, 시스템 아이콘 마스크는 재현하지 않습니다. 완전한 네이티브 앱 아이콘은 PNG를 사용하세요.
+
 ### 소셜 공유 이미지
 
 [social-card.png](social-card.png)

@@ -1,5 +1,6 @@
 """Render localized Doze social cards from original transparent artwork and real type."""
 import argparse
+import hashlib
 import json
 from pathlib import Path
 import subprocess
@@ -12,6 +13,22 @@ from PIL import Image, ImageDraw, ImageFont
 ROOT = Path(__file__).resolve().parents[1]
 ASSETS = ROOT / 'src/assets'
 SCALE = 3
+
+
+def render_symbol():
+    source = ROOT / 'scripts/assets/native-icons/doze/AppIcon.icon/Assets/Monogram.svg'
+    output = ASSETS / 'img/doze-symbol.png'
+    subprocess.run(['node', '--input-type=module', '-e',
+        "import sharp from 'sharp'; await sharp(process.argv[1], {density: 144}).resize(2048, 2048).png().toFile(process.argv[2]);",
+        str(source), str(output)], cwd=ROOT, check=True)
+    native = json.loads((ROOT / 'scripts/assets/native-icons/sources.json').read_text())['doze']
+    record = dict(project=native['project'], commit=native['commit'],
+        original='Assets/AppIcon.icon/Assets/Monogram.svg', source=str(source.relative_to(ROOT)),
+        sourceSha256=hashlib.sha256(source.read_bytes()).hexdigest(),
+        output=str(output.relative_to(ROOT)), outputSha256=hashlib.sha256(output.read_bytes()).hexdigest(),
+        method='Exact native SVG contours rendered to transparent 2048 × 2048 PNG by Sharp; original solid gold fill preserved.')
+    (ROOT / 'scripts/assets/doze/symbol-source.json').write_text(json.dumps(record, ensure_ascii=False, indent=2) + '\n')
+    return record
 
 
 def background():
@@ -34,8 +51,10 @@ def main():
         args.review_dir.mkdir(parents=True, exist_ok=True)
     locales = json.loads(subprocess.check_output(['node', '--input-type=module', '-e',
         "import {DOZE_LOCALES} from './src/i18n/doze-locales.mjs'; process.stdout.write(JSON.stringify(Object.values(DOZE_LOCALES)))"], cwd=ROOT, text=True))
+    symbol_source = render_symbol()
     symbol = Image.open(ASSETS / 'img/doze-symbol.png').convert('RGBA')
     symbol = symbol.crop(symbol.getchannel('A').getbbox())
+    cards = []
     with tempfile.TemporaryDirectory() as directory:
         temp = Path(directory)
         native = [dict(file=f"{t['htmlLang']}.png", text=t['name'], width=2000, height=500,
@@ -72,10 +91,20 @@ def main():
             canvas.paste(mark, (x, y), mark)
             canvas.paste(title, (x + mark.width + gap, y), title)
             result = canvas.resize((1200, 630), Image.Resampling.LANCZOS)
-            result.save(ASSETS / 'img' / t['ogAsset'], optimize=True)
+            output = ASSETS / 'img' / t['ogAsset']
+            result.save(output, optimize=True)
+            bounds = [round(x / SCALE), round(y / SCALE), round(total / SCALE), round(height / SCALE)]
+            assert bounds[0] >= 285 and bounds[0] + bounds[2] <= 915
+            cards.append(dict(language=t['htmlLang'], name=t['name'], output=str(output.relative_to(ROOT)),
+                sha256=hashlib.sha256(output.read_bytes()).hexdigest(), contentBounds=bounds))
             if args.review_dir:
                 result.crop((285, 0, 915, 630)).save(args.review_dir / f"og-square-{t['code'] or 'zh-hans'}.png")
             print(t['htmlLang'], t['name'], 'safe width', round(total / SCALE))
+    font_source = ASSETS / 'fonts/sofia-sans-xcond-latin.woff2'
+    record = dict(symbolSource='scripts/assets/doze/symbol-source.json', symbolSha256=symbol_source['outputSha256'],
+        font=str(font_source.relative_to(ROOT)), fontSha256=hashlib.sha256(font_source.read_bytes()).hexdigest(),
+        size=[1200, 630], safeRect=[285, 0, 630, 630], cards=cards)
+    (ROOT / 'scripts/assets/doze/opengraph-source.json').write_text(json.dumps(record, ensure_ascii=False, indent=2) + '\n')
 
 
 if __name__ == '__main__':

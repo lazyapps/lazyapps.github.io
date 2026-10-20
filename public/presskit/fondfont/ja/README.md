@@ -50,6 +50,14 @@ Pages、Keynote、Word、PowerPoint など、iOS のフォントライブラリ�
 
 この言語のネイティブ画面プレビュー。ピクセルの変更はありません。
 
+### フラットなベクター画像
+
+[artwork-flat.svg](../artwork-flat.svg)
+
+1024.0 × 1024.0 · SVG
+
+元のベクター図形とレイヤー位置から構成したフラットなSVGです。ネイティブのガラス効果、照明、システムのアイコンマスクは再現していません。完全なネイティブアプリアイコンにはPNGをご利用ください。
+
 ### SNS共有画像
 
 [social-card.png](social-card.png)

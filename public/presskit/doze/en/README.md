@@ -8,11 +8,13 @@
 
 ## About the app
 
-Doze dims your Mac’s screen when you step away. Enable “Keep Computer Awake” to prevent display sleep and the screen saver from interrupting computer use.
+Automatically dim your screen when you step away. Enable “Keep Computer Awake” so display sleep and screen savers don’t interrupt AI computer use.
 
-Let AI keep working. Let your screen rest.
+For AI computer use
 
-Doze dims your Mac’s screen when you step away. Enable “Keep Computer Awake” to prevent display sleep and the screen saver from interrupting computer use.
+Your screen dozes AI can still use your computer
+
+Automatically dim your screen when you step away. Enable “Keep Computer Awake” so display sleep and screen savers don’t interrupt AI computer use.
 
 macOS 13+ · Built-in displays and supported displays with system brightness control
 
@@ -35,6 +37,8 @@ Yes. “Keep Computer Awake” does not prevent either. Turning it off or quitti
 
 Doze is proprietary software. Its GitHub repository provides releases and product information.
 
+[computer use](https://developers.openai.com/api/docs/guides/tools-computer-use)
+
 ## Official links
 
 - [Download for Mac](https://github.com/cxa/doze/releases)
@@ -49,13 +53,45 @@ Doze is proprietary software. Its GitHub repository provides releases and produc
 
 Original native App icon, 1024 × 1024 PNG. Preserves artwork, proportions and transparency.
 
-### Wordmark
+### Transparent brand symbol
 
 [symbol.png](../symbol.png)
 
 2048 × 2048 · PNG
 
-Original transparent optical artwork from the production Icon Composer project.
+Original transparent brand symbol from the current app icon. Original gold color, proportions and opacity preserved.
+
+### Menu bar icon · Normal
+
+[menubar-active.png](../menubar-active.png)
+
+44 × 40 · PNG
+
+Original transparent 2× template PNG (44 × 40 pixels; 22 × 20 points). Active, dimmed and attention states share the normal appearance; keeping the computer awake changes the eyes. Paused icons retain the native 45% opacity. macOS adapts template color for dark menu bars.
+
+### Menu bar icon · Keep Computer Awake
+
+[menubar-keep-awake.png](../menubar-keep-awake.png)
+
+44 × 40 · PNG
+
+Original transparent 2× template PNG (44 × 40 pixels; 22 × 20 points). Active, dimmed and attention states share the normal appearance; keeping the computer awake changes the eyes. Paused icons retain the native 45% opacity. macOS adapts template color for dark menu bars.
+
+### Menu bar icon · Paused
+
+[menubar-paused.png](../menubar-paused.png)
+
+44 × 40 · PNG
+
+Original transparent 2× template PNG (44 × 40 pixels; 22 × 20 points). Active, dimmed and attention states share the normal appearance; keeping the computer awake changes the eyes. Paused icons retain the native 45% opacity. macOS adapts template color for dark menu bars.
+
+### Menu bar icon · Paused · Keep Computer Awake
+
+[menubar-paused-keep-awake.png](../menubar-paused-keep-awake.png)
+
+44 × 40 · PNG
+
+Original transparent 2× template PNG (44 × 40 pixels; 22 × 20 points). Active, dimmed and attention states share the normal appearance; keeping the computer awake changes the eyes. Paused icons retain the native 45% opacity. macOS adapts template color for dark menu bars.
 
 ### Screenshot · Day
 
@@ -72,6 +108,46 @@ Native interface preview in this language; unchanged pixels.
 768 × 1162 · PNG
 
 Native interface preview in this language; unchanged pixels.
+
+### Transparent brand symbol
+
+[symbol.svg](../symbol.svg)
+
+1024.0 × 1024.0 · SVG
+
+SVG preserves the original vector paths, proportions and transparency.
+
+### Menu bar icon · Normal
+
+[menubar-active.svg](../menubar-active.svg)
+
+22.0 × 20.0 · SVG
+
+SVG preserves the original vector paths, proportions and transparency.
+
+### Menu bar icon · Keep Computer Awake
+
+[menubar-keep-awake.svg](../menubar-keep-awake.svg)
+
+22.0 × 20.0 · SVG
+
+SVG preserves the original vector paths, proportions and transparency.
+
+### Menu bar icon · Paused
+
+[menubar-paused.svg](../menubar-paused.svg)
+
+22.0 × 20.0 · SVG
+
+SVG preserves the original vector paths, proportions and transparency.
+
+### Menu bar icon · Paused · Keep Computer Awake
+
+[menubar-paused-keep-awake.svg](../menubar-paused-keep-awake.svg)
+
+22.0 × 20.0 · SVG
+
+SVG preserves the original vector paths, proportions and transparency.
 
 ### Social sharing image
 

@@ -70,6 +70,14 @@ Capture partagée de l’interface en anglais avec des exemples de textes chinoi
 
 Paysage de dunes généré par IA pour la présentation du site ; ce n’est ni une capture d’écran ni une fonction intégrée de l’app.
 
+### Illustration vectorielle à plat
+
+[artwork-flat.svg](../artwork-flat.svg)
+
+1024.0 × 1024.0 · SVG
+
+SVG à plat assemblé à partir des formes vectorielles et positions de calques d’origine. Les effets de verre, l’éclairage et les masques d’icône du système ne sont pas reproduits ; utilisez le PNG pour l’icône native complète.
+
 ### Image pour les réseaux sociaux
 
 [social-card.png](../social-card.png)

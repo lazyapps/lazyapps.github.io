@@ -190,17 +190,16 @@
   "doze": {
     "project": "_vibe/doze/src",
     "original": "Assets/AppIcon.icon",
-    "commit": "027b9a60070253119244b9244228384bc25e3dc1",
+    "commit": "7e8d8c7951448ade666a0da60c41503ee9a680ef",
     "source": "scripts/assets/native-icons/doze/AppIcon.icon",
     "platform": "macOS",
     "method": "Icon Composer Default export",
     "output": "src/assets/img/doze-icon.png",
     "sourceHashes": {
-      "Assets/GlassShell.svg": "92810de31ece84f8531f346e5890a8ed0e4fe791c1f5089b567616a0b79c37a1",
-      "Assets/PrototypeOpticalMonogram-0ca1870a6b3c.png": "0ca1870a6b3ce44699e4f587e39bcb249bd155c14713f677e7e33ff952dfcd78",
-      "icon.json": "40db5cb1d6ee516ed8e891cb5242b568769ca0cd09890ddff311d8d0250f9091"
+      "Assets/Monogram.svg": "7b8f78959ee001a7ba971b3da7e19ea32013587ae3837db86de6f353c1cb6ec3",
+      "icon.json": "0a52a505af8b97322c0ae204812c544dd7e46ff4003352d620dc0efb1273f526"
     },
-    "outputSha256": "a3aea447be484dd354990e39d0a1cb26095f980cdeea1e8f9c7557de9a7c0335",
+    "outputSha256": "293d5b27a2d7492ab16ce1c71fe4253fd00ce3c64906088ada8410cdcdf63844",
     "size": [
       1024,
       1024
@@ -211,74 +210,86 @@
       {
         "size": 16,
         "scale": 1,
+        "source": "scripts/assets/native-icons/doze/WebIconCompact.icon",
         "output": "src/assets/img/doze/icon-small-16-1x.png",
         "sha256": "e11e83c99f0ab9c4bf1f2e643976a4d16d41124346a1d79a678ede11e3a25c3f"
       },
       {
         "size": 16,
         "scale": 2,
+        "source": "scripts/assets/native-icons/doze/WebIconCompact.icon",
         "output": "src/assets/img/doze/icon-small-16-2x.png",
         "sha256": "03a7478cef52fcf70de4fb7ed8f2d02e7eb6aff274a77c180d17afd618b5ff54"
       },
       {
         "size": 22,
         "scale": 1,
+        "source": "scripts/assets/native-icons/doze/WebIconCompact.icon",
         "output": "src/assets/img/doze/icon-small-22-1x.png",
         "sha256": "b9703ad44c6cf9d660ec001849df7fa9bbc9897001aa5c3191b7736dde06eede"
       },
       {
         "size": 22,
         "scale": 2,
+        "source": "scripts/assets/native-icons/doze/WebIconCompact.icon",
         "output": "src/assets/img/doze/icon-small-22-2x.png",
         "sha256": "b1e1703853322b349925eb3d89a3b2c887bdc705bfadd2886cf09f528be6792d"
       },
       {
         "size": 28,
         "scale": 1,
+        "source": "scripts/assets/native-icons/doze/WebIconCompact.icon",
         "output": "src/assets/img/doze/icon-small-28-1x.png",
         "sha256": "7a66c34b137d431fa5ff61fcd88b3b4bbd4e43ac6bfd0a89670f3e0ae5059878"
       },
       {
         "size": 28,
         "scale": 2,
+        "source": "scripts/assets/native-icons/doze/WebIconCompact.icon",
         "output": "src/assets/img/doze/icon-small-28-2x.png",
         "sha256": "6e2fb5168847ee9c0ccebaa3efc02c6980de522a69a6a2e20854638e483832f2"
       },
       {
         "size": 32,
         "scale": 1,
+        "source": "scripts/assets/native-icons/doze/WebIconCompact.icon",
         "output": "src/assets/img/doze/icon-small-32-1x.png",
         "sha256": "1e4b8c18cb6edfb12ce969e0ad62c7f4ac5e13a515b38f56b123193711ecfaf9"
       },
       {
         "size": 32,
         "scale": 2,
+        "source": "scripts/assets/native-icons/doze/WebIconCompact.icon",
         "output": "src/assets/img/doze/icon-small-32-2x.png",
         "sha256": "214f898f3817f48a4a44f6591e804f2a5558da456c6ab2466f2a023ba24f633f"
       },
       {
         "size": 48,
         "scale": 1,
+        "source": "scripts/assets/native-icons/doze/AppIcon.icon",
         "output": "src/assets/img/doze/icon-small-48-1x.png",
-        "sha256": "2ad92681290b77816e2494544655c2bbacd3b6104dc957f0f3a8e0b36e5a9cd1"
+        "sha256": "38a31b1f3caa623422d1f13a0df631b2efcbbe1fd8202bf748513b3eb3f526c2"
       },
       {
         "size": 48,
         "scale": 2,
+        "source": "scripts/assets/native-icons/doze/AppIcon.icon",
         "output": "src/assets/img/doze/icon-small-48-2x.png",
-        "sha256": "43f9de74183e60d6f1d7cdd3313191cc7819ddba2efa9d81e1a3b7981b94320b"
+        "sha256": "9d21c25e96b5a1658f8f025d54f3d54f1688fc2ec5b452f3806ecd1432cdec64"
       },
       {
         "size": 80,
         "scale": 1,
+        "source": "scripts/assets/native-icons/doze/AppIcon.icon",
         "output": "src/assets/img/doze/icon-small-80-1x.png",
-        "sha256": "709f27dff5206b9eadedb25e2a7925bdd5b8134ab611c4e16468199e5890006a"
+        "sha256": "70032cd083a92128a704398a929d1c27843fc0b9e05d67a028d9871117448a6f"
       },
       {
         "size": 80,
         "scale": 2,
+        "source": "scripts/assets/native-icons/doze/AppIcon.icon",
         "output": "src/assets/img/doze/icon-small-80-2x.png",
-        "sha256": "08f590dc4d7056b0cdd40cfc49bb758e6c4d038480456168440f86da623266eb"
+        "sha256": "f68e99ab36932751518961adeb3a61f21a3a5601f2f6507c491bf69ca55b57c3"
       }
     ],
     "compactSource": {

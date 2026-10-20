@@ -1,8 +1,4 @@
 {
-  "features": [
-    "refractivity",
-    "specular-location"
-  ],
   "fill-specializations": [
     {
       "value": {
@@ -28,69 +24,37 @@
   ],
   "groups": [
     {
-      "blur-material": 0,
       "layers": [
         {
-          "glass": false,
+          "glass": true,
           "hidden": false,
-          "image-name": "PrototypeOpticalMonogram-0ca1870a6b3c.png",
-          "name": "Full optical glass \u00b7 squinting eyes"
+          "image-name": "Monogram.svg",
+          "name": "眯 · clear closed eyes"
         }
       ],
-      "name": "02 \u00b7 Sculpted glass and luminous gold",
-      "position": {
-        "scale": 0.5,
-        "translation-in-points": [
-          0,
-          0
-        ]
-      },
+      "name": "Native Liquid Glass",
       "refractivity": {
-        "depth": 0.2,
-        "enabled": false,
-        "strength": 0
+        "enabled": true,
+        "strength": 0.3,
+        "depth": 0.25
       },
       "shadow": {
         "kind": "neutral",
-        "opacity": 0.2
+        "opacity": 0.1
       },
-      "specular": "inside",
       "translucency": {
-        "enabled": false,
-        "value": 0
-      }
-    },
-    {
+        "enabled": true,
+        "value": 0.08
+      },
       "blur-material": 0,
-      "layers": [
-        {
-          "fill": {
-            "solid": "srgb:0.20000,0.75000,1.00000,0.03000"
-          },
-          "glass": true,
-          "hidden": false,
-          "image-name": "GlassShell.svg",
-          "name": "Continuous optical silhouette"
-        }
-      ],
-      "name": "01 \u00b7 Native clear glass depth",
-      "refractivity": {
-        "depth": 0.4,
-        "enabled": true,
-        "strength": 0.2
-      },
-      "shadow": {
-        "kind": "layer-color",
-        "opacity": 0.25
-      },
-      "specular": "inside",
-      "translucency": {
-        "enabled": true,
-        "value": 0.7
-      }
+      "specular": "inside"
     }
   ],
   "supported-platforms": {
     "squares": "shared"
-  }
+  },
+  "features": [
+    "refractivity",
+    "specular-location"
+  ]
 }

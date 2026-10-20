@@ -1,5 +1,9 @@
 # 产品 Press Kit
 
+首页产品卡片与 Press Kit 汇总卡片的胶囊操作统一使用 `src/components/CardAction.astro`，共用字体、内边距、文字间距与正右向 SVG 箭头。Press Kit 的操作与名称、正文所在列的左边缘对齐，整张卡片保留一个链接；共用组件在此处渲染为非交互的展示元素。
+
+首页已有资料包的 7 个产品卡片在平台 pill 右侧提供独立的 `/<product>/presskit/#en` 次级链接，复用 `CardAction` 的 `secondary` 样式，以文字下划线区分层级。链接采用与平台标签相近的小字号，不显示箭头，同一行居中对齐；视觉尺寸保持轻巧，以 44px 高的透明点击区保证触控可用。链接位于主操作的整卡点击层上方，保持独立点击与键盘焦点，卡片底部仅保留主操作。一饭暂无资料包，保留 App Store 入口。
+
 每个产品有 `/<product>/presskit/` 资料页，所有语言版本的产品页页脚链接到此页，并用 `#<BCP47>` 传递入口语言；首页页脚链接 `/presskit/#en` 汇总页。资料包覆盖该 App 实际支持的界面语言，法律等非产品页面不需要独立资料包。
 
 已下架且不再维护的 KeyHop 仅保留多语言产品存档页：hero 明示下架状态，页脚不提供 Press Kit，页面使用 `WebPage` 元数据。它不进入媒体目录及汇总页，不再分发资料包；旧 `/keyhop/presskit/` 跳转至 `/keyhop/`。GitHub 发版仓库已归档。
@@ -44,6 +48,14 @@ Press Kit 保持现有路径，不创建语言子路径或自动重定向。所�
 
 原版资源快照与项目版本、文件哈希记录在 `scripts/assets/native-icons/sources.json`；已有原版 Icon Composer 工程可复用 `scripts/assets/<product>/AppIcon.icon`。更新图标时运行 `python3 scripts/export-native-app-icons.py`（需要 Xcode 内 Icon Composer），再生成资料包。网站构建验证来源快照、导出文件哈希和 1024px 尺寸，不依赖 Xcode 或私有项目。网页预览用 Astro 生成相应显示尺寸的 WebP，完整 PNG 作为下载文件保留。
 
+Doze 的菜单栏图标使用独立的 `menubar` 素材类型，不混作 App 图标。由原生 `StatusIcon.swift` 导出 4 种真实外观（普通、保持唤醒、暂停、暂停且保持唤醒），保留 2× PNG、原生路径 SVG、透明背景与暂停不透明度；各语言说明记录状态共用关系。页面以紧凑预览展示，素材在 ZIP 根目录共享，不收录 Apple、Wi-Fi、电池等系统符号。导出命令与来源记录见 `docs/DOZE.md`。
+
+## SVG 素材
+
+全部 7 个 Press Kit 提供可用的 SVG。原版 App 图标 PNG、截图与照片继续按原格式分发，不将位图嵌入 SVG 冒充矢量图。CHMate、World Book、YiYan 从原版 Icon Composer 的 SVG 图层按原生位置、比例和默认填色组合平面矢量图；FondFont 使用已有的原版轮廓平面印刷版本；均明确说明不重现原生玻璃、光照与系统图标裁切，不作为完整原生图标替代品。XVDL 使用原版扩展 SVG。Doze 提供原版金色符号与 4 个菜单栏状态的精确路径 SVG。Shheep 的像素文字标志逐行转换为矢量路径，保留原始 RGBA 像素，不描摹、平滑或嵌入位图。
+
+源文件、生成方法与输入／输出哈希见 `scripts/assets/presskit/vector-sources.json`；可复现的生成命令为 `python3 scripts/prepare-presskit-vectors.py`（需要 Pillow，菜单栏 SVG 先运行 `python3 scripts/export-doze-menubar-icons.py`）。SVG 保存在 `scripts/assets/presskit/vectors/`，构建与分发不读取私有项目。`prepare-presskits.py`、清单和构建检查支持 SVG 的 viewBox 尺寸与 `SVG` 格式标记。图片的同一视觉版本通过 `alternateFor` 对应，共用预览并提供 PNG／SVG 独立下载；独立平面图单独展示。所有素材的下载按钮统一放在预览框右上角，距上、右边缘各 12px，按钮之间保留 10px；采用至少 52 × 32px 的小号按钮和 11px 文字，以不透明底色保证图片上的可读性，并通过上下各 6px 的透明区域保留 44px 高的点击范围。图片预览链接与下载链接分别独立。README 列出所有格式，ZIP 根目录按内容哈希去重。
+
 ## 资料包结构
 
 ZIP 根目录直接放语言文件夹与共享素材，不套产品名文件夹。语言文件夹使用 App 的 BCP 47 标识，包含该语言的 `README.md` 和专属素材；可共享的图标、标志、图片只在根目录保存一份。README 用相对路径引用本地与共享文件。
@@ -82,3 +94,5 @@ it/
 产品页各语言的标题与正文直接说明功能、操作和适用平台，删去空泛宣传语。title、description、Open Graph 与应用结构化数据使用一致的产品定位。修改名称、功能、发布状态、下载入口或素材时，同步媒体目录及来源记录，重新生成资料包。测试版与即将推出的状态明确标注。
 
 构建从页面 `SoftwareApplication` / `WebApplication` 数据独立识别产品，要求每个产品都有媒体目录及页脚入口。新增产品首页提供匹配自身 canonical 的应用结构化数据；工具、索引与法律页不作为产品。支持语言以 App 资源快照为准，而非网站页面数量。
+
+产品 Press Kit 子页面的 Hero 统一沿中轴组织：所有尺寸按原版图标、App 名称、Press Kit 标记纵向居中，下方依次放置居中介绍及下载／网站操作；图标为 112–144px，名称为 56–88px，Press Kit 标记降为 22–30px 的次级标题。650px 以下，80px 图标位于名称上方，双语名称独占整行；说明及操作保持相同中轴。所有产品和语言复用同一布局，原版图标不裁切或加底壳。

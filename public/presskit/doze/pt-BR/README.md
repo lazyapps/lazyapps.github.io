@@ -8,11 +8,13 @@
 
 ## Sobre o app
 
-Cochilo reduz o brilho quando você se afasta. Mantenha o Mac acordado para evitar que o desligamento automático da tela e o protetor de tela interrompam o uso do computador pela IA.
+Reduza automaticamente o brilho da tela ao se afastar. Mantenha o Mac acordado para que o desligamento automático da tela e o protetor de tela não interrompam o uso do computador pela IA (computer use).
 
-Deixe a IA trabalhar. Deixe a tela descansar.
+Para o Computer use da IA
 
-Cochilo reduz o brilho quando você se afasta. Mantenha o Mac acordado para evitar que o desligamento automático da tela e o protetor de tela interrompam o uso do computador pela IA.
+A tela tira um cochilo A IA ainda pode usar o computador
+
+Reduza automaticamente o brilho da tela ao se afastar. Mantenha o Mac acordado para que o desligamento automático da tela e o protetor de tela não interrompam o uso do computador pela IA (computer use).
 
 macOS 13+ · Telas integradas e compatíveis com o controle de brilho do sistema
 
@@ -35,6 +37,8 @@ Sim. Manter o computador ativo não impede essas ações. Desativar a opção ou
 
 Doze é software proprietário. O repositório no GitHub oferece versões e informações do produto.
 
+[computer use](https://developers.openai.com/api/docs/guides/tools-computer-use)
+
 ## Links oficiais
 
 - [Baixar para Mac](https://github.com/cxa/doze/releases)
@@ -49,13 +53,45 @@ Doze é software proprietário. O repositório no GitHub oferece versões e info
 
 Ícone nativo original, PNG 1024 × 1024. Arte, proporções e transparência preservadas.
 
-### Logotipo
+### Símbolo da marca transparente
 
 [symbol.png](../symbol.png)
 
 2048 × 2048 · PNG
 
-Logotipo original em pixels com transparência; preserve bordas e proporções.
+Símbolo original da marca com transparência, extraído do ícone atual do app. Preserva a cor dourada, as proporções e a opacidade originais.
+
+### Ícone da barra de menus · Normal
+
+[menubar-active.png](../menubar-active.png)
+
+44 × 40 · PNG
+
+PNG de modelo transparente 2× original (44 × 40 pixels; 22 × 20 pontos). Os estados ativo, tela escurecida e atenção usam a mesma aparência normal; manter o computador ativo muda os olhos. Os ícones pausados preservam a opacidade nativa de 45%. O macOS adapta a cor do modelo às barras de menus escuras.
+
+### Ícone da barra de menus · Manter o computador ativo
+
+[menubar-keep-awake.png](../menubar-keep-awake.png)
+
+44 × 40 · PNG
+
+PNG de modelo transparente 2× original (44 × 40 pixels; 22 × 20 pontos). Os estados ativo, tela escurecida e atenção usam a mesma aparência normal; manter o computador ativo muda os olhos. Os ícones pausados preservam a opacidade nativa de 45%. O macOS adapta a cor do modelo às barras de menus escuras.
+
+### Ícone da barra de menus · Pausado
+
+[menubar-paused.png](../menubar-paused.png)
+
+44 × 40 · PNG
+
+PNG de modelo transparente 2× original (44 × 40 pixels; 22 × 20 pontos). Os estados ativo, tela escurecida e atenção usam a mesma aparência normal; manter o computador ativo muda os olhos. Os ícones pausados preservam a opacidade nativa de 45%. O macOS adapta a cor do modelo às barras de menus escuras.
+
+### Ícone da barra de menus · Pausado · Manter o computador ativo
+
+[menubar-paused-keep-awake.png](../menubar-paused-keep-awake.png)
+
+44 × 40 · PNG
+
+PNG de modelo transparente 2× original (44 × 40 pixels; 22 × 20 pontos). Os estados ativo, tela escurecida e atenção usam a mesma aparência normal; manter o computador ativo muda os olhos. Os ícones pausados preservam a opacidade nativa de 45%. O macOS adapta a cor do modelo às barras de menus escuras.
 
 ### Captura de tela · Dia
 
@@ -72,6 +108,46 @@ Prévia da interface nativa neste idioma; pixels sem alterações.
 768 × 1250 · PNG
 
 Prévia da interface nativa neste idioma; pixels sem alterações.
+
+### Símbolo da marca transparente
+
+[symbol.svg](../symbol.svg)
+
+1024.0 × 1024.0 · SVG
+
+O SVG preserva os caminhos vetoriais, as proporções e a transparência originais.
+
+### Ícone da barra de menus · Normal
+
+[menubar-active.svg](../menubar-active.svg)
+
+22.0 × 20.0 · SVG
+
+O SVG preserva os caminhos vetoriais, as proporções e a transparência originais.
+
+### Ícone da barra de menus · Manter o computador ativo
+
+[menubar-keep-awake.svg](../menubar-keep-awake.svg)
+
+22.0 × 20.0 · SVG
+
+O SVG preserva os caminhos vetoriais, as proporções e a transparência originais.
+
+### Ícone da barra de menus · Pausado
+
+[menubar-paused.svg](../menubar-paused.svg)
+
+22.0 × 20.0 · SVG
+
+O SVG preserva os caminhos vetoriais, as proporções e a transparência originais.
+
+### Ícone da barra de menus · Pausado · Manter o computador ativo
+
+[menubar-paused-keep-awake.svg](../menubar-paused-keep-awake.svg)
+
+22.0 × 20.0 · SVG
+
+O SVG preserva os caminhos vetoriais, as proporções e a transparência originais.
 
 ### Imagem para redes sociais
 

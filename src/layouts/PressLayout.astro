@@ -71,17 +71,17 @@ const loaderName = slug ? presentation.products[0].locales.en.name.toUpperCase()
   .presskit [hidden]{display:none!important}
   .presskit .site-header__home{flex:none}
   @media(max-width:650px){.presskit .site-header{grid-template-columns:auto minmax(0,1fr)}.presskit .site-header__controls{grid-column:2;gap:12px}.press-back{font-size:12px;max-width:130px}}
-  .presskit h1{font:900 clamp(44px,7vw,88px)/1 var(--display-latin);letter-spacing:-.01em;text-transform:uppercase}
+  .presskit h1{font:900 clamp(44px,7vw,88px)/var(--leading-display) var(--display);letter-spacing:-.01em;text-transform:uppercase}
   .presskit .kit-alias{font:600 .6em/1.4 var(--sans);letter-spacing:0;text-transform:none}
   .presskit .kit-title{display:block;font-size:.55em;margin-top:.18em;color:var(--muted)}
-  .presskit h2{font:900 clamp(28px,3vw,40px)/1.1 var(--display-latin);letter-spacing:-.01em;text-transform:uppercase}
+  .presskit h2{font:900 clamp(28px,3vw,40px)/var(--leading-display) var(--display);letter-spacing:-.01em;text-transform:uppercase}
   .presskit h2 [lang]{font-family:var(--sans);font-size:.65em;font-weight:600;letter-spacing:0;text-transform:none}
   .presskit h3{font-size:20px;line-height:1.35;font-weight:600}
   /* Keep localized inline text on the heading's rhythm instead of body leading. */
   .presskit :is(h1,h2,h3) :where(span,br){line-height:inherit;letter-spacing:inherit}
   .presskit h1:lang(zh),.presskit h1:lang(ja),.presskit h1:lang(ko),.presskit h1:lang(ar),.presskit h1:lang(hi),
   .presskit h2:lang(zh),.presskit h2:lang(ja),.presskit h2:lang(ko),.presskit h2:lang(ar),.presskit h2:lang(hi),
-  .presskit .kit-title:lang(zh),.presskit .kit-title:lang(ja),.presskit .kit-title:lang(ko),.presskit .kit-title:lang(ar),.presskit .kit-title:lang(hi){font-family:var(--sans);font-weight:750;line-height:1.2;letter-spacing:0;text-transform:none}
+  .presskit .kit-title:lang(zh),.presskit .kit-title:lang(ja),.presskit .kit-title:lang(ko),.presskit .kit-title:lang(ar),.presskit .kit-title:lang(hi){font-family:var(--sans);font-weight:750;line-height:var(--leading-display);letter-spacing:0;text-transform:none}
   .presskit h1,.presskit h2,.presskit .button,.presskit .press-back{overflow-wrap:anywhere}
   .presskit #site-footer{direction:inherit}
   .presskit .base__meta{white-space:normal}

@@ -66,6 +66,21 @@
           "en": "Existing 1200 × 630 promotional artwork, not an app screenshot.",
           "zh": "现有 1200 × 630 宣传图片，不是 App 界面截图。"
         }
+      },
+      {
+        "source": "scripts/assets/presskit/vectors/chmate-flat.svg",
+        "filename": "artwork-flat.svg",
+        "kind": "vector",
+        "labelKey": "flatVector",
+        "noteKey": "flatVector",
+        "label": {
+          "en": "Flat vector artwork",
+          "zh": "平面矢量图"
+        },
+        "note": {
+          "en": "Flat SVG assembled from the original vector artwork and layer positions. Native glass, lighting and platform icon masks are not reproduced; use the PNG for the complete native app icon.",
+          "zh": "由原版矢量图案和图层位置组合的平面 SVG，不重现原生玻璃、光照或系统图标裁切。完整原生 App 图标请使用 PNG。"
+        }
       }
     ],
     "names": {
@@ -139,6 +154,21 @@
         "note": {
           "en": "Existing 1200 × 630 promotional artwork, not an app screenshot.",
           "zh": "现有 1200 × 630 宣传图片，不是 App 界面截图。"
+        }
+      },
+      {
+        "source": "scripts/assets/presskit/vectors/world-book-flat.svg",
+        "filename": "artwork-flat.svg",
+        "kind": "vector",
+        "labelKey": "flatVector",
+        "noteKey": "flatVector",
+        "label": {
+          "en": "Flat vector artwork",
+          "zh": "平面矢量图"
+        },
+        "note": {
+          "en": "Flat SVG assembled from the original vector artwork and layer positions. Native glass, lighting and platform icon masks are not reproduced; use the PNG for the complete native app icon.",
+          "zh": "由原版矢量图案和图层位置组合的平面 SVG，不重现原生玻璃、光照或系统图标裁切。完整原生 App 图标请使用 PNG。"
         }
       }
     ],
@@ -226,6 +256,21 @@
         "note": {
           "en": "Existing 1200 × 630 promotional artwork, not an app screenshot.",
           "zh": "现有 1200 × 630 宣传图片，不是 App 界面截图。"
+        }
+      },
+      {
+        "source": "scripts/assets/presskit/vectors/fondfont-flat.svg",
+        "filename": "artwork-flat.svg",
+        "kind": "vector",
+        "labelKey": "flatVector",
+        "noteKey": "flatVector",
+        "label": {
+          "en": "Flat vector artwork",
+          "zh": "平面矢量图"
+        },
+        "note": {
+          "en": "Flat SVG assembled from the original vector artwork and layer positions. Native glass, lighting and platform icon masks are not reproduced; use the PNG for the complete native app icon.",
+          "zh": "由原版矢量图案和图层位置组合的平面 SVG，不重现原生玻璃、光照或系统图标裁切。完整原生 App 图标请使用 PNG。"
         }
       }
     ],
@@ -341,6 +386,21 @@
           "en": "AI-generated desert wallpaper for the website presentation; not an app screenshot or built-in app feature.",
           "zh": "AI 生成的沙丘壁纸，用于网站展示；不是 App 截图或内置功能。"
         }
+      },
+      {
+        "source": "scripts/assets/presskit/vectors/yiyan-flat.svg",
+        "filename": "artwork-flat.svg",
+        "kind": "vector",
+        "labelKey": "flatVector",
+        "noteKey": "flatVector",
+        "label": {
+          "en": "Flat vector artwork",
+          "zh": "平面矢量图"
+        },
+        "note": {
+          "en": "Flat SVG assembled from the original vector artwork and layer positions. Native glass, lighting and platform icon masks are not reproduced; use the PNG for the complete native app icon.",
+          "zh": "由原版矢量图案和图层位置组合的平面 SVG，不重现原生玻璃、光照或系统图标裁切。完整原生 App 图标请使用 PNG。"
+        }
       }
     ],
     "names": {
@@ -447,6 +507,21 @@
         "note": {
           "en": "AI-generated blue-hour coastal wallpaper for the website presentation; not an app screenshot or built-in app feature.",
           "zh": "AI 生成的蓝调海岸壁纸，用于网站展示；不是 App 截图或内置功能。"
+        }
+      },
+      {
+        "source": "scripts/assets/presskit/vectors/xvdl-icon.svg",
+        "filename": "icon-vector.svg",
+        "kind": "vector",
+        "labelKey": "icon",
+        "noteKey": "vector",
+        "label": {
+          "en": "Flat vector artwork",
+          "zh": "平面矢量图"
+        },
+        "note": {
+          "en": "SVG preserves the original vector paths, proportions and transparency.",
+          "zh": "SVG 保留原版矢量路径、比例与透明度。"
         }
       }
     ],
@@ -555,6 +630,21 @@
           "en": "AI-generated pixel night-sky backdrop for the website presentation; not a game screenshot or built-in game scene.",
           "zh": "AI 生成的像素夜空背景，用于网站展示；不是游戏截图或内置游戏场景。"
         }
+      },
+      {
+        "source": "scripts/assets/presskit/vectors/shheep-wordmark.svg",
+        "filename": "wordmark.svg",
+        "kind": "vector",
+        "alternateFor": "wordmark.png",
+        "noteKey": "pixelVector",
+        "label": {
+          "en": "Flat vector artwork",
+          "zh": "平面矢量图"
+        },
+        "note": {
+          "en": "Lossless SVG of the original pixel wordmark. Exact pixel shapes, colors and transparency are preserved without smoothing or an embedded bitmap.",
+          "zh": "由原版像素文字标志无损转换的 SVG，逐像素保留形状、颜色与透明度，不平滑边缘、不嵌入位图。"
+        }
       }
     ],
     "names": {
@@ -578,12 +668,12 @@
       "zh": "首个版本准备中"
     },
     "summary": {
-      "en": "Doze dims your Mac’s screen when you step away. Enable “Keep Computer Awake” to prevent display sleep and the screen saver from interrupting computer use.",
-      "zh": "离开后，眯会儿会调暗屏幕。开启“保持电脑唤醒”，避免自动关屏和屏保打断 computer use。"
+      "en": "Automatically dim your screen when you step away. Enable “Keep Computer Awake” so display sleep and screen savers don’t interrupt AI computer use.",
+      "zh": "离开后自动调暗屏幕。开启「保持电脑唤醒」，避免自动关屏和屏保打断 AI 的计算机使用（computer use）。"
     },
     "description": {
-      "en": "Doze dims your Mac’s screen when you step away. Enable “Keep Computer Awake” to prevent display sleep and the screen saver from interrupting computer use.",
-      "zh": "离开后，眯会儿会调暗屏幕。开启“保持电脑唤醒”，避免自动关屏和屏保打断 computer use。"
+      "en": "Automatically dim your screen when you step away. Enable “Keep Computer Awake” so display sleep and screen savers don’t interrupt AI computer use.",
+      "zh": "离开后自动调暗屏幕。开启「保持电脑唤醒」，避免自动关屏和屏保打断 AI 的计算机使用（computer use）。"
     },
     "links": [
       {
@@ -617,8 +707,64 @@
           "zh": "透明品牌符号"
         },
         "note": {
-          "en": "Original transparent optical artwork from the production Icon Composer project.",
-          "zh": "正式 Icon Composer 工程中的原版透明光学图案。"
+          "en": "Original transparent brand symbol from the current app icon. Original gold color, proportions and opacity preserved.",
+          "zh": "当前 App 图标中的原版透明品牌符号，保留原版金色、比例和不透明度。"
+        }
+      },
+      {
+        "source": "src/assets/img/doze-menubar.png",
+        "filename": "menubar-active.png",
+        "kind": "menubar",
+        "variant": "active",
+        "label": {
+          "en": "Menu bar icon · Normal",
+          "zh": "菜单栏图标 · 普通"
+        },
+        "note": {
+          "en": "Original transparent 2× template PNG (44 × 40 pixels; 22 × 20 points). Active, dimmed and attention states share the normal appearance; keeping the computer awake changes the eyes. Paused icons retain the native 45% opacity. macOS adapts template color for dark menu bars.",
+          "zh": "原版透明 2× 模板 PNG（44 × 40 像素，22 × 20 点）。运行中、屏幕已调暗和需要注意三种状态共用普通外观；保持电脑唤醒时眼形改变。暂停图标保留原生 45% 不透明度，macOS 会为深色菜单栏自动调整模板颜色。"
+        }
+      },
+      {
+        "source": "src/assets/img/doze-menubar-keep-awake.png",
+        "filename": "menubar-keep-awake.png",
+        "kind": "menubar",
+        "variant": "keepAwake",
+        "label": {
+          "en": "Menu bar icon · Keep Computer Awake",
+          "zh": "菜单栏图标 · 保持电脑唤醒"
+        },
+        "note": {
+          "en": "Original transparent 2× template PNG (44 × 40 pixels; 22 × 20 points). Active, dimmed and attention states share the normal appearance; keeping the computer awake changes the eyes. Paused icons retain the native 45% opacity. macOS adapts template color for dark menu bars.",
+          "zh": "原版透明 2× 模板 PNG（44 × 40 像素，22 × 20 点）。运行中、屏幕已调暗和需要注意三种状态共用普通外观；保持电脑唤醒时眼形改变。暂停图标保留原生 45% 不透明度，macOS 会为深色菜单栏自动调整模板颜色。"
+        }
+      },
+      {
+        "source": "src/assets/img/doze-menubar-paused.png",
+        "filename": "menubar-paused.png",
+        "kind": "menubar",
+        "variant": "paused",
+        "label": {
+          "en": "Menu bar icon · Paused",
+          "zh": "菜单栏图标 · 已暂停"
+        },
+        "note": {
+          "en": "Original transparent 2× template PNG (44 × 40 pixels; 22 × 20 points). Active, dimmed and attention states share the normal appearance; keeping the computer awake changes the eyes. Paused icons retain the native 45% opacity. macOS adapts template color for dark menu bars.",
+          "zh": "原版透明 2× 模板 PNG（44 × 40 像素，22 × 20 点）。运行中、屏幕已调暗和需要注意三种状态共用普通外观；保持电脑唤醒时眼形改变。暂停图标保留原生 45% 不透明度，macOS 会为深色菜单栏自动调整模板颜色。"
+        }
+      },
+      {
+        "source": "src/assets/img/doze-menubar-paused-keep-awake.png",
+        "filename": "menubar-paused-keep-awake.png",
+        "kind": "menubar",
+        "variant": "pausedKeepAwake",
+        "label": {
+          "en": "Menu bar icon · Paused · Keep Computer Awake",
+          "zh": "菜单栏图标 · 已暂停 · 保持电脑唤醒"
+        },
+        "note": {
+          "en": "Original transparent 2× template PNG (44 × 40 pixels; 22 × 20 points). Active, dimmed and attention states share the normal appearance; keeping the computer awake changes the eyes. Paused icons retain the native 45% opacity. macOS adapts template color for dark menu bars.",
+          "zh": "原版透明 2× 模板 PNG（44 × 40 像素，22 × 20 点）。运行中、屏幕已调暗和需要注意三种状态共用普通外观；保持电脑唤醒时眼形改变。暂停图标保留原生 45% 不透明度，macOS 会为深色菜单栏自动调整模板颜色。"
         }
       },
       {
@@ -658,6 +804,81 @@
         "note": {
           "en": "1200 × 630 promotional artwork, not an app screenshot.",
           "zh": "1200 × 630 宣传图片，不是 App 界面截图。"
+        }
+      },
+      {
+        "source": "scripts/assets/presskit/vectors/doze-symbol.svg",
+        "filename": "symbol.svg",
+        "kind": "vector",
+        "alternateFor": "symbol.png",
+        "noteKey": "vector",
+        "label": {
+          "en": "Flat vector artwork",
+          "zh": "平面矢量图"
+        },
+        "note": {
+          "en": "SVG preserves the original vector paths, proportions and transparency.",
+          "zh": "SVG 保留原版矢量路径、比例与透明度。"
+        }
+      },
+      {
+        "source": "scripts/assets/presskit/vectors/doze-menubar.svg",
+        "filename": "menubar-active.svg",
+        "kind": "vector",
+        "alternateFor": "menubar-active.png",
+        "noteKey": "vector",
+        "label": {
+          "en": "Flat vector artwork",
+          "zh": "平面矢量图"
+        },
+        "note": {
+          "en": "SVG preserves the original vector paths, proportions and transparency.",
+          "zh": "SVG 保留原版矢量路径、比例与透明度。"
+        }
+      },
+      {
+        "source": "scripts/assets/presskit/vectors/doze-menubar-keep-awake.svg",
+        "filename": "menubar-keep-awake.svg",
+        "kind": "vector",
+        "alternateFor": "menubar-keep-awake.png",
+        "noteKey": "vector",
+        "label": {
+          "en": "Flat vector artwork",
+          "zh": "平面矢量图"
+        },
+        "note": {
+          "en": "SVG preserves the original vector paths, proportions and transparency.",
+          "zh": "SVG 保留原版矢量路径、比例与透明度。"
+        }
+      },
+      {
+        "source": "scripts/assets/presskit/vectors/doze-menubar-paused.svg",
+        "filename": "menubar-paused.svg",
+        "kind": "vector",
+        "alternateFor": "menubar-paused.png",
+        "noteKey": "vector",
+        "label": {
+          "en": "Flat vector artwork",
+          "zh": "平面矢量图"
+        },
+        "note": {
+          "en": "SVG preserves the original vector paths, proportions and transparency.",
+          "zh": "SVG 保留原版矢量路径、比例与透明度。"
+        }
+      },
+      {
+        "source": "scripts/assets/presskit/vectors/doze-menubar-paused-keep-awake.svg",
+        "filename": "menubar-paused-keep-awake.svg",
+        "kind": "vector",
+        "alternateFor": "menubar-paused-keep-awake.png",
+        "noteKey": "vector",
+        "label": {
+          "en": "Flat vector artwork",
+          "zh": "平面矢量图"
+        },
+        "note": {
+          "en": "SVG preserves the original vector paths, proportions and transparency.",
+          "zh": "SVG 保留原版矢量路径、比例与透明度。"
         }
       }
     ]

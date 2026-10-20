@@ -13,3 +13,7 @@
 ## Shheep
 
 Shheep 按游戏本身的可爱像素风制作，使用原版卧室、睡着的女孩与像素标题素材，替代默认的纸色背景和网站标题字体。保留 `1200 × 630` 尺寸及中央 `630 × 630` 安全区；使用 nearest-neighbor 整数倍缩放，不重画品牌资产。运行 `python3 scripts/render-shheep-opengraph.py` 可重建。
+
+## Doze
+
+Doze 使用当前 AppIcon.icon 中的原版 `Monogram.svg`，保留纯金色轮廓与不透明度，不带 App 图标底壳。`scripts/render-doze-opengraph.py` 同时更新透明符号及全部 12 种语言的 OG；来源、输出哈希与安全区记录在 `scripts/assets/doze/symbol-source.json` 和 `opengraph-source.json`。

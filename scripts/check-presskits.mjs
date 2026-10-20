@@ -53,6 +53,12 @@ for (const path of ['/presskit/', ...kits.map(kit => `/${kit.slug}/presskit/`)])
 
 function imageSize(bytes) {
   if (bytes.subarray(0, 8).equals(Buffer.from('89504e470d0a1a0a', 'hex'))) return [bytes.readUInt32BE(16), bytes.readUInt32BE(20)];
+  const svg = bytes.subarray(0, 512).toString().trimStart().match(/^(?:<\?xml[^>]*>\s*)?<svg\b[^>]*>/)?.[0];
+  if (svg) {
+    const viewBox = svg.match(/\bviewBox=["']([^"']+)["']/)?.[1];
+    assert(viewBox, 'SVG needs an explicit viewBox');
+    return viewBox.trim().split(/[\s,]+/).map(Number).slice(2);
+  }
   assert.equal(bytes.readUInt16BE(0), 0xffd8, 'Unsupported press image format');
   let offset = 2;
   while (offset < bytes.length) {

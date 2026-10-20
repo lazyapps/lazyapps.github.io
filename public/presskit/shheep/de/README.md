@@ -61,6 +61,14 @@ Gemeinsame Vorschau des Spiel-Titelbildschirms, kein aktives Spielgeschehen.
 
 KI-generierter dekorativer Hintergrund für die Website; kein App-Screenshot, keine Spielszene und keine integrierte Funktion.
 
+### Wortmarke
+
+[wordmark.svg](../wordmark.svg)
+
+163.0 × 61.0 · SVG
+
+Verlustfreies SVG der ursprünglichen Pixel-Wortmarke. Pixelformen, Farben und Transparenz bleiben exakt erhalten, ohne Glättung oder eingebettete Bitmap.
+
 ### Bild für soziale Medien
 
 [social-card.png](../social-card.png)

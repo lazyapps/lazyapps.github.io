@@ -34,6 +34,14 @@ Original native App icon, 1024 × 1024 PNG. Preserves the app’s artwork, propo
 
 Original full-resolution native iPad globe capture (2064 × 2752), captured on 2026-10-10 from app version 261010.0 (470), including the current top navigation. No resizing, retouching or generated promotional artwork.
 
+### Flat vector artwork
+
+[artwork-flat.svg](../artwork-flat.svg)
+
+1024.0 × 1024.0 · SVG
+
+Flat SVG assembled from the original vector artwork and layer positions. Native glass, lighting and platform icon masks are not reproduced; use the PNG for the complete native app icon.
+
 ### Social sharing image
 
 [social-card.png](../social-card.png)

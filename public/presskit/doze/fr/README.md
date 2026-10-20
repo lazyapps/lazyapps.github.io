@@ -8,11 +8,13 @@
 
 ## À propos de l’app
 
-Petit Repos réduit la luminosité en votre absence. Gardez le Mac éveillé pour que la veille de l’écran et l’économiseur d’écran n’interrompent pas les actions de l’IA dans les apps.
+Réduisez automatiquement la luminosité de l’écran en votre absence. Gardez le Mac éveillé pour que la veille de l’écran et l’économiseur d’écran n’interrompent pas l’utilisation de l’ordinateur par l’IA (computer use).
 
-L’IA continue de travailler. Votre écran se repose.
+Pour le Computer use de l’IA
 
-Petit Repos réduit la luminosité en votre absence. Gardez le Mac éveillé pour que la veille de l’écran et l’économiseur d’écran n’interrompent pas les actions de l’IA dans les apps.
+Votre écran prend un petit repos L’IA peut continuer à utiliser votre ordinateur
+
+Réduisez automatiquement la luminosité de l’écran en votre absence. Gardez le Mac éveillé pour que la veille de l’écran et l’économiseur d’écran n’interrompent pas l’utilisation de l’ordinateur par l’IA (computer use).
 
 macOS 13+ · Écrans intégrés et écrans compatibles avec le réglage système de luminosité
 
@@ -35,6 +37,8 @@ Oui. Le maintien en éveil ne bloque pas ces actions. Désactiver cette option o
 
 Doze est un logiciel propriétaire. Son dépôt GitHub fournit les versions et les informations produit.
 
+[computer use](https://developers.openai.com/api/docs/guides/tools-computer-use)
+
 ## Liens officiels
 
 - [Télécharger pour Mac](https://github.com/cxa/doze/releases)
@@ -49,13 +53,45 @@ Doze est un logiciel propriétaire. Son dépôt GitHub fournit les versions et l
 
 Icône native originale, PNG 1024 × 1024. Dessin, proportions et transparence préservés.
 
-### Logotype
+### Symbole de marque transparent
 
 [symbol.png](../symbol.png)
 
 2048 × 2048 · PNG
 
-Logotype pixelisé transparent d’origine ; conserver les contours et les proportions.
+Symbole de marque transparent d’origine issu de l’icône actuelle de l’app. La couleur dorée, les proportions et l’opacité d’origine sont préservées.
+
+### Icône de barre des menus · Normal
+
+[menubar-active.png](../menubar-active.png)
+
+44 × 40 · PNG
+
+PNG modèle transparent 2× d’origine (44 × 40 pixels ; 22 × 20 points). Les états actif, écran assombri et attention partagent la même apparence normale ; garder le Mac éveillé modifie les yeux. Les icônes en pause conservent leur opacité native de 45 %. macOS adapte la couleur du modèle aux barres des menus sombres.
+
+### Icône de barre des menus · Garder le Mac éveillé
+
+[menubar-keep-awake.png](../menubar-keep-awake.png)
+
+44 × 40 · PNG
+
+PNG modèle transparent 2× d’origine (44 × 40 pixels ; 22 × 20 points). Les états actif, écran assombri et attention partagent la même apparence normale ; garder le Mac éveillé modifie les yeux. Les icônes en pause conservent leur opacité native de 45 %. macOS adapte la couleur du modèle aux barres des menus sombres.
+
+### Icône de barre des menus · En pause
+
+[menubar-paused.png](../menubar-paused.png)
+
+44 × 40 · PNG
+
+PNG modèle transparent 2× d’origine (44 × 40 pixels ; 22 × 20 points). Les états actif, écran assombri et attention partagent la même apparence normale ; garder le Mac éveillé modifie les yeux. Les icônes en pause conservent leur opacité native de 45 %. macOS adapte la couleur du modèle aux barres des menus sombres.
+
+### Icône de barre des menus · En pause · Garder le Mac éveillé
+
+[menubar-paused-keep-awake.png](../menubar-paused-keep-awake.png)
+
+44 × 40 · PNG
+
+PNG modèle transparent 2× d’origine (44 × 40 pixels ; 22 × 20 points). Les états actif, écran assombri et attention partagent la même apparence normale ; garder le Mac éveillé modifie les yeux. Les icônes en pause conservent leur opacité native de 45 %. macOS adapte la couleur du modèle aux barres des menus sombres.
 
 ### Capture d’écran · Jour
 
@@ -72,6 +108,46 @@ Aperçu de l’interface native dans cette langue ; pixels inchangés.
 768 × 1278 · PNG
 
 Aperçu de l’interface native dans cette langue ; pixels inchangés.
+
+### Symbole de marque transparent
+
+[symbol.svg](../symbol.svg)
+
+1024.0 × 1024.0 · SVG
+
+Le SVG conserve les tracés vectoriels, les proportions et la transparence d’origine.
+
+### Icône de barre des menus · Normal
+
+[menubar-active.svg](../menubar-active.svg)
+
+22.0 × 20.0 · SVG
+
+Le SVG conserve les tracés vectoriels, les proportions et la transparence d’origine.
+
+### Icône de barre des menus · Garder le Mac éveillé
+
+[menubar-keep-awake.svg](../menubar-keep-awake.svg)
+
+22.0 × 20.0 · SVG
+
+Le SVG conserve les tracés vectoriels, les proportions et la transparence d’origine.
+
+### Icône de barre des menus · En pause
+
+[menubar-paused.svg](../menubar-paused.svg)
+
+22.0 × 20.0 · SVG
+
+Le SVG conserve les tracés vectoriels, les proportions et la transparence d’origine.
+
+### Icône de barre des menus · En pause · Garder le Mac éveillé
+
+[menubar-paused-keep-awake.svg](../menubar-paused-keep-awake.svg)
+
+22.0 × 20.0 · SVG
+
+Le SVG conserve les tracés vectoriels, les proportions et la transparence d’origine.
 
 ### Image pour les réseaux sociaux
 

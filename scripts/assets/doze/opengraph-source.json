@@ -1,0 +1,162 @@
+{
+  "symbolSource": "scripts/assets/doze/symbol-source.json",
+  "symbolSha256": "d4def7e21d5bda9031a420a3dec2658e9c44003c0421dc9d8c4cc4e1e07a8045",
+  "font": "src/assets/fonts/sofia-sans-xcond-latin.woff2",
+  "fontSha256": "1194eac07dcf5226d6c8906fffc2ba644274ff89b44d1d842b2e135e479c2ced",
+  "size": [
+    1200,
+    630
+  ],
+  "safeRect": [
+    285,
+    0,
+    630,
+    630
+  ],
+  "cards": [
+    {
+      "language": "zh-Hans",
+      "name": "眯会儿",
+      "output": "src/assets/img/doze-opengraph-zh-hans.png",
+      "sha256": "fe58d8683377102f780c37de5ca70b51248b2b47c8e6eaf9be9798b41a50d220",
+      "contentBounds": [
+        330,
+        253,
+        540,
+        124
+      ]
+    },
+    {
+      "language": "en",
+      "name": "Doze",
+      "output": "src/assets/img/doze-opengraph-en.png",
+      "sha256": "3ffa95ba72553705bc5ddb4be2fe04fa4719495c4640a29a77673261a302d937",
+      "contentBounds": [
+        330,
+        241,
+        540,
+        147
+      ]
+    },
+    {
+      "language": "zh-Hant",
+      "name": "瞇會兒",
+      "output": "src/assets/img/doze-opengraph-zh-hant.png",
+      "sha256": "1cd1ad0da0b782207cae0f5d5964b6cca19ee3e70b989f2c037fae72d0ddfdb6",
+      "contentBounds": [
+        330,
+        253,
+        541,
+        125
+      ]
+    },
+    {
+      "language": "es",
+      "name": "Siestita",
+      "output": "src/assets/img/doze-opengraph-es.png",
+      "sha256": "8275189c1f94f26822fbc75a51b1ce0d7e3ff14da18b507317826290d79a1d8e",
+      "contentBounds": [
+        330,
+        265,
+        540,
+        99
+      ]
+    },
+    {
+      "language": "pt-BR",
+      "name": "Cochilo",
+      "output": "src/assets/img/doze-opengraph-pt-br.png",
+      "sha256": "9f43e2468d9e48381e44b9957b8e3882894468f4f847f616e37360da583241da",
+      "contentBounds": [
+        330,
+        266,
+        540,
+        98
+      ]
+    },
+    {
+      "language": "fr",
+      "name": "Petit Repos",
+      "output": "src/assets/img/doze-opengraph-fr.png",
+      "sha256": "9da774ed91e528a5e5435ee57fedc19dc280beb1828bdd4b44716b44606689ce",
+      "contentBounds": [
+        330,
+        278,
+        539,
+        74
+      ]
+    },
+    {
+      "language": "de",
+      "name": "Schlummer",
+      "output": "src/assets/img/doze-opengraph-de.png",
+      "sha256": "c93560cd75a966f089252919d2355201d277d27698ba15014ca7c77e70e30001",
+      "contentBounds": [
+        331,
+        279,
+        539,
+        72
+      ]
+    },
+    {
+      "language": "ja",
+      "name": "ひとやすみ",
+      "output": "src/assets/img/doze-opengraph-ja.png",
+      "sha256": "f9865538f7d83e6576c5394f509d231265d1c1f078749a4d54bfdb09e7b3264f",
+      "contentBounds": [
+        330,
+        275,
+        540,
+        80
+      ]
+    },
+    {
+      "language": "ko",
+      "name": "잠깐 쉼",
+      "output": "src/assets/img/doze-opengraph-ko.png",
+      "sha256": "11843238aa3d6b5d96d913367b929b889e69d31a9d956cb6ca1d02c645c77a2c",
+      "contentBounds": [
+        330,
+        252,
+        540,
+        126
+      ]
+    },
+    {
+      "language": "ru",
+      "name": "Дрёма",
+      "output": "src/assets/img/doze-opengraph-ru.png",
+      "sha256": "b0a4393b888598cee3664faea305c89dfc5d3fb5ecd81c0b39baa63255a6b495",
+      "contentBounds": [
+        330,
+        258,
+        540,
+        114
+      ]
+    },
+    {
+      "language": "ar",
+      "name": "غفوة",
+      "output": "src/assets/img/doze-opengraph-ar.png",
+      "sha256": "8ce2ddb6487b43fec5acc3ab027e268e4645979b2da748a2b1c9302ab56cdb69",
+      "contentBounds": [
+        330,
+        232,
+        540,
+        166
+      ]
+    },
+    {
+      "language": "hi",
+      "name": "झपकी",
+      "output": "src/assets/img/doze-opengraph-hi.png",
+      "sha256": "95e16c507dda00a3c3d3d772b827f9b60f9318369cb6c5f51a7e79ee33e97448",
+      "contentBounds": [
+        330,
+        237,
+        540,
+        155
+      ]
+    }
+  ]
+}

@@ -22,6 +22,15 @@
       "sha256": "6b56f5710d82296a3d035be6b3827abdc0d52480d6aec3044593d8ce855b42da"
     },
     {
+      "path": "artwork-flat.svg",
+      "contentLanguage": "und",
+      "width": 1024.0,
+      "height": 1024.0,
+      "format": "SVG",
+      "bytes": 16981,
+      "sha256": "e624b6e2d7dbb383680f98afcb8c41711f2243543f1b8529e75499ece4eda648"
+    },
+    {
       "path": "social-card.png",
       "contentLanguage": "und",
       "width": 1200,

@@ -20,8 +20,8 @@
       "width": 1024,
       "height": 1024,
       "format": "PNG",
-      "bytes": 2870497,
-      "sha256": "a3aea447be484dd354990e39d0a1cb26095f980cdeea1e8f9c7557de9a7c0335"
+      "bytes": 1352303,
+      "sha256": "293d5b27a2d7492ab16ce1c71fe4253fd00ce3c64906088ada8410cdcdf63844"
     },
     {
       "path": "symbol.png",
@@ -29,8 +29,44 @@
       "width": 2048,
       "height": 2048,
       "format": "PNG",
-      "bytes": 2636190,
-      "sha256": "0ca1870a6b3ce44699e4f587e39bcb249bd155c14713f677e7e33ff952dfcd78"
+      "bytes": 90230,
+      "sha256": "d4def7e21d5bda9031a420a3dec2658e9c44003c0421dc9d8c4cc4e1e07a8045"
+    },
+    {
+      "path": "menubar-active.png",
+      "contentLanguage": "und",
+      "width": 44,
+      "height": 40,
+      "format": "PNG",
+      "bytes": 967,
+      "sha256": "08d0d36396e7c70ff86b09f5037f9d70125058df9df1b503b6c1af0662d40598"
+    },
+    {
+      "path": "menubar-keep-awake.png",
+      "contentLanguage": "und",
+      "width": 44,
+      "height": 40,
+      "format": "PNG",
+      "bytes": 962,
+      "sha256": "2b20e9ceb2f2524c62a78141637a18ced044d2487938ecf9ee9eaa2addfa8e18"
+    },
+    {
+      "path": "menubar-paused.png",
+      "contentLanguage": "und",
+      "width": 44,
+      "height": 40,
+      "format": "PNG",
+      "bytes": 1070,
+      "sha256": "1fbde4a64243b3d30720e571ddfd439a4109a3bd417081bdb52fe61a3dee8755"
+    },
+    {
+      "path": "menubar-paused-keep-awake.png",
+      "contentLanguage": "und",
+      "width": 44,
+      "height": 40,
+      "format": "PNG",
+      "bytes": 1053,
+      "sha256": "324cac5bd85313732ced8568c3f38c8471d27caf699e1074d0312e11f924ad70"
     },
     {
       "path": "ar/settings-light.png",
@@ -51,13 +87,58 @@
       "sha256": "1b2280d199541540450ae65e753be5e49436d7d07573cc9c89b3b93909397ebe"
     },
     {
+      "path": "symbol.svg",
+      "contentLanguage": "und",
+      "width": 1024.0,
+      "height": 1024.0,
+      "format": "SVG",
+      "bytes": 2889,
+      "sha256": "7b8f78959ee001a7ba971b3da7e19ea32013587ae3837db86de6f353c1cb6ec3"
+    },
+    {
+      "path": "menubar-active.svg",
+      "contentLanguage": "und",
+      "width": 22.0,
+      "height": 20.0,
+      "format": "SVG",
+      "bytes": 3807,
+      "sha256": "e7f4df9ce3fb152a81e9695b076339cfd166eab7ab0288b30ef8784783cb2ad3"
+    },
+    {
+      "path": "menubar-keep-awake.svg",
+      "contentLanguage": "und",
+      "width": 22.0,
+      "height": 20.0,
+      "format": "SVG",
+      "bytes": 3802,
+      "sha256": "6f922d7df5581417b3c66b94990ea3d76e480ee039d44618d6c5f47b7253ba22"
+    },
+    {
+      "path": "menubar-paused.svg",
+      "contentLanguage": "und",
+      "width": 22.0,
+      "height": 20.0,
+      "format": "SVG",
+      "bytes": 3808,
+      "sha256": "353eccb9c2594107fc5bf5abddd18dbb293fdbe4f8480621ec088aa3201ba65d"
+    },
+    {
+      "path": "menubar-paused-keep-awake.svg",
+      "contentLanguage": "und",
+      "width": 22.0,
+      "height": 20.0,
+      "format": "SVG",
+      "bytes": 3803,
+      "sha256": "1a28e07e1a7eca476e921f512e4041fceed1cc6310474edddf06bd9dbcaf0618"
+    },
+    {
       "path": "ar/social-card.png",
       "contentLanguage": "ar",
       "width": 1200,
       "height": 630,
       "format": "PNG",
-      "bytes": 197726,
-      "sha256": "1aa34501cfc5c95db575f1ee7bfcdc7dd4caffdb5e425f04f5360849aedbcc95"
+      "bytes": 158050,
+      "sha256": "8ce2ddb6487b43fec5acc3ab027e268e4645979b2da748a2b1c9302ab56cdb69"
     },
     {
       "path": "de/settings-light.png",
@@ -83,8 +164,8 @@
       "width": 1200,
       "height": 630,
       "format": "PNG",
-      "bytes": 151845,
-      "sha256": "7c9b06a5c952bb98afef87139fef2e1792dab971f6e24af56cd2890ce1f478b3"
+      "bytes": 144810,
+      "sha256": "c93560cd75a966f089252919d2355201d277d27698ba15014ca7c77e70e30001"
     },
     {
       "path": "en/settings-light.png",
@@ -110,8 +191,8 @@
       "width": 1200,
       "height": 630,
       "format": "PNG",
-      "bytes": 179454,
-      "sha256": "2a78c74f1305656dc3d29bcb6c0e191ec4d5fbcb30a40a52efc1092aa6643096"
+      "bytes": 149149,
+      "sha256": "3ffa95ba72553705bc5ddb4be2fe04fa4719495c4640a29a77673261a302d937"
     },
     {
       "path": "es/settings-light.png",
@@ -137,8 +218,8 @@
       "width": 1200,
       "height": 630,
       "format": "PNG",
-      "bytes": 160623,
-      "sha256": "e157073a8f73d4552269479218965a4a1cd4dcd07a8128f09998d4eb10cbd3c8"
+      "bytes": 146930,
+      "sha256": "8275189c1f94f26822fbc75a51b1ce0d7e3ff14da18b507317826290d79a1d8e"
     },
     {
       "path": "fr/settings-light.png",
@@ -164,8 +245,8 @@
       "width": 1200,
       "height": 630,
       "format": "PNG",
-      "bytes": 149933,
-      "sha256": "0ca9b12e95981f35dd3991689d95d798acb55f76dd503486435ba50bbae67e58"
+      "bytes": 142418,
+      "sha256": "9da774ed91e528a5e5435ee57fedc19dc280beb1828bdd4b44716b44606689ce"
     },
     {
       "path": "hi/settings-light.png",
@@ -191,8 +272,8 @@
       "width": 1200,
       "height": 630,
       "format": "PNG",
-      "bytes": 188413,
-      "sha256": "2feba6ac321bda1616cac530eb1c038311958c30f87097837fef5a871ada44f1"
+      "bytes": 153742,
+      "sha256": "95e16c507dda00a3c3d3d772b827f9b60f9318369cb6c5f51a7e79ee33e97448"
     },
     {
       "path": "ja/settings-light.png",
@@ -218,8 +299,8 @@
       "width": 1200,
       "height": 630,
       "format": "PNG",
-      "bytes": 156761,
-      "sha256": "ffe3c87e0219d1e1fa54f45d534846b859761d5f056c805037336d105e15b44b"
+      "bytes": 149216,
+      "sha256": "f9865538f7d83e6576c5394f509d231265d1c1f078749a4d54bfdb09e7b3264f"
     },
     {
       "path": "ko/settings-light.png",
@@ -245,8 +326,8 @@
       "width": 1200,
       "height": 630,
       "format": "PNG",
-      "bytes": 175767,
-      "sha256": "7d6e2ce9d5b71923fd8f8171d70419c3a9a4ce91bea233366232ac3f74247753"
+      "bytes": 153460,
+      "sha256": "11843238aa3d6b5d96d913367b929b889e69d31a9d956cb6ca1d02c645c77a2c"
     },
     {
       "path": "pt-BR/settings-light.png",
@@ -272,8 +353,8 @@
       "width": 1200,
       "height": 630,
       "format": "PNG",
-      "bytes": 160030,
-      "sha256": "261462b1dd488f798c08615cab85b0524f16ff75a77a1ac238345e7dc29de52c"
+      "bytes": 146972,
+      "sha256": "9f43e2468d9e48381e44b9957b8e3882894468f4f847f616e37360da583241da"
     },
     {
       "path": "ru/settings-light.png",
@@ -299,8 +380,8 @@
       "width": 1200,
       "height": 630,
       "format": "PNG",
-      "bytes": 170727,
-      "sha256": "ed13213902777e761eef9f24d9aa4ac5f966472cc2d90165dd839abdbb285720"
+      "bytes": 151847,
+      "sha256": "b0a4393b888598cee3664faea305c89dfc5d3fb5ecd81c0b39baa63255a6b495"
     },
     {
       "path": "zh-Hans/settings-light.png",
@@ -326,8 +407,8 @@
       "width": 1200,
       "height": 630,
       "format": "PNG",
-      "bytes": 179897,
-      "sha256": "0592c60dc6b76699c80a938072e6795a7268522943fd7755a417c77a675d291f"
+      "bytes": 157104,
+      "sha256": "fe58d8683377102f780c37de5ca70b51248b2b47c8e6eaf9be9798b41a50d220"
     },
     {
       "path": "zh-Hant/settings-light.png",
@@ -353,8 +434,8 @@
       "width": 1200,
       "height": 630,
       "format": "PNG",
-      "bytes": 184116,
-      "sha256": "f8aef25d759bc13955666d61cf58d3894adfe0a06aec19d0b3e2e97facb49bbc"
+      "bytes": 162387,
+      "sha256": "1cd1ad0da0b782207cae0f5d5964b6cca19ee3e70b989f2c037fae72d0ddfdb6"
     }
   ]
 }

@@ -70,6 +70,14 @@ Captura compartida de la interfaz en inglés con texto de ejemplo en chino y not
 
 Fondo de dunas generado con IA para la presentación del sitio web; no es una captura ni una función integrada de la app.
 
+### Ilustración vectorial plana
+
+[artwork-flat.svg](../artwork-flat.svg)
+
+1024.0 × 1024.0 · SVG
+
+SVG plano compuesto con las formas vectoriales y posiciones de capa originales. No reproduce el cristal, la iluminación ni las máscaras de iconos del sistema; usa el PNG para el icono nativo completo.
+
 ### Imagen para redes sociales
 
 [social-card.png](../social-card.png)

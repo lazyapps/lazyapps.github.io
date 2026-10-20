@@ -50,6 +50,15 @@
       "sha256": "011e8b386ff7767b399e3737c7b535f84fdc3693dea08e00539bd90f756398bd"
     },
     {
+      "path": "wordmark.svg",
+      "contentLanguage": "und",
+      "width": 163.0,
+      "height": 61.0,
+      "format": "SVG",
+      "bytes": 50758,
+      "sha256": "ccc971b5b7125d64166dae329db276510669ba60657e5fb691066cfb1729f56e"
+    },
+    {
       "path": "social-card.png",
       "contentLanguage": "und",
       "width": 1200,

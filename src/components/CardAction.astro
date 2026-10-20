@@ -1,0 +1,43 @@
+---
+import type { HTMLAttributes } from 'astro/types';
+
+interface Props extends HTMLAttributes<'a'> {
+  stretched?: boolean;
+  secondary?: boolean;
+  arrow?: boolean;
+}
+
+const { href, class: className, stretched = false, secondary = false, arrow = true, ...attributes } = Astro.props;
+const Tag = href ? 'a' : 'span';
+---
+<Tag {...attributes} href={href} class:list={['card-action', className, { 'card-action--stretched': stretched, 'card-action--secondary': secondary }]} data-hover>
+  <span class="card-action__label"><slot /></span>
+  {arrow && <svg class="card-action__arrow" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" focusable="false">
+    <path d="M3 10h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" />
+  </svg>}
+</Tag>
+
+<style>
+  .card-action{
+    display:inline-flex;min-height:var(--card-action-min-height,44px);align-items:center;justify-content:space-between;gap:.5rem;
+    padding:var(--card-action-padding-block,.625rem) .875rem var(--card-action-padding-block,.625rem) 1rem;border-radius:999px;
+    background:color-mix(in oklch,currentColor 7%,transparent);
+    box-shadow:inset 0 0 0 1px color-mix(in oklch,currentColor 12%,transparent);
+    font:600 var(--card-action-font-size,.9375rem)/1.2 var(--sans);text-decoration:none;
+    transition:background-color .18s ease;
+  }
+  .card-action__label{min-width:0}
+  .card-action__arrow{flex:none;width:1.125rem;height:1.125rem;margin-inline-start:auto}
+  .card-action--stretched::after{content:"";position:absolute;z-index:2;inset:0}
+  .card-action--stretched>*{position:relative;z-index:3}
+  .card-action--secondary{position:relative;z-index:3;padding-inline:0;background:none;box-shadow:none}
+  .card-action--secondary .card-action__label{text-decoration:underline;text-decoration-color:color-mix(in oklch,currentColor 30%,transparent);text-underline-offset:.2em}
+  .card-action:focus-visible{outline:2px solid var(--accent);outline-offset:4px}
+  .card-action--stretched:focus-visible{outline:none}
+  @media(hover:hover) and (pointer:fine){
+    .card-action:hover,:global(a:hover) .card-action{background:color-mix(in oklch,currentColor 11%,transparent)}
+    .card-action--secondary:hover{background:none}
+    .card-action--secondary:hover .card-action__label{text-decoration-color:currentColor}
+  }
+  @media(prefers-reduced-motion:reduce){.card-action{transition:none}}
+</style>

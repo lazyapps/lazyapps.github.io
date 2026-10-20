@@ -70,6 +70,14 @@ Pi · Claude Code · Codex · OpenCode · Antigravity. 실행 중 새 입력만 
 
 웹사이트 전시용으로 AI가 생성한 사막 사구 배경입니다. 앱 스크린샷이나 내장 기능이 아닙니다.
 
+### 평면 벡터 이미지
+
+[artwork-flat.svg](../artwork-flat.svg)
+
+1024.0 × 1024.0 · SVG
+
+원본 벡터 도형과 레이어 위치로 구성한 평면 SVG입니다. 네이티브 유리 효과, 조명, 시스템 아이콘 마스크는 재현하지 않습니다. 완전한 네이티브 앱 아이콘은 PNG를 사용하세요.
+
 ### 소셜 공유 이미지
 
 [social-card.png](../social-card.png)

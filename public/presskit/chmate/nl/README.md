@@ -42,6 +42,14 @@ Origineel app-icoon, 1024 × 1024 PNG. Ontwerp, verhoudingen en transparantie be
 
 Voorbeeld van de native interface in deze taal; pixels ongewijzigd.
 
+### Vlakke vectorillustratie
+
+[artwork-flat.svg](../artwork-flat.svg)
+
+1024.0 × 1024.0 · SVG
+
+Vlakke SVG samengesteld uit de oorspronkelijke vectorvormen en laagposities. Glaseffecten, belichting en systeempictogrammaskers worden niet nagebootst; gebruik de PNG voor het volledige oorspronkelijke app-pictogram.
+
 ### Afbeelding voor sociale media
 
 [social-card.png](../social-card.png)

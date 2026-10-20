@@ -42,6 +42,14 @@ Originales App-Symbol, 1024 × 1024 PNG. Grafik, Proportionen und Transparenz un
 
 Native Vorschau der Oberfläche in dieser Sprache; unveränderte Pixel.
 
+### Flache Vektorgrafik
+
+[artwork-flat.svg](../artwork-flat.svg)
+
+1024.0 × 1024.0 · SVG
+
+Flaches SVG aus den ursprünglichen Vektorformen und Ebenenpositionen. Native Glaseffekte, Beleuchtung und Systemsymbolmasken werden nicht nachgebildet; das vollständige native App-Symbol liegt als PNG vor.
+
 ### Bild für soziale Medien
 
 [social-card.png](../social-card.png)

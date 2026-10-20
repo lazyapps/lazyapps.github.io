@@ -1,0 +1,35 @@
+[
+  {
+    "color": "sun",
+    "oklch": [
+      0.93,
+      0.085,
+      94
+    ],
+    "hex": "#fae8a7",
+    "contrastWithInk": 14.63,
+    "sRGB": true
+  },
+  {
+    "color": "hills",
+    "oklch": [
+      0.895,
+      0.045,
+      114
+    ],
+    "hex": "#dbe0bf",
+    "contrastWithInk": 13.2,
+    "sRGB": true
+  },
+  {
+    "color": "night",
+    "oklch": [
+      0.87,
+      0.045,
+      238
+    ],
+    "hex": "#bad9ef",
+    "contrastWithInk": 12.19,
+    "sRGB": true
+  }
+]

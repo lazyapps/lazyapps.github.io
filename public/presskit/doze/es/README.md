@@ -8,11 +8,13 @@
 
 ## Sobre la app
 
-Siestita atenúa la pantalla cuando te ausentas. Mantén el Mac despierto para que el apagado automático de pantalla y el salvapantallas no interrumpan el uso del ordenador por la IA.
+Atenúa automáticamente la pantalla cuando te ausentas. Mantén el Mac despierto para que el apagado automático de pantalla y el salvapantallas no interrumpan el uso del ordenador por la IA (computer use).
 
-Que la IA siga trabajando. Que tu pantalla descanse.
+Para el Computer use de la IA
 
-Siestita atenúa la pantalla cuando te ausentas. Mantén el Mac despierto para que el apagado automático de pantalla y el salvapantallas no interrumpan el uso del ordenador por la IA.
+Tu pantalla se echa una siestita La IA puede seguir usando tu ordenador
+
+Atenúa automáticamente la pantalla cuando te ausentas. Mantén el Mac despierto para que el apagado automático de pantalla y el salvapantallas no interrumpan el uso del ordenador por la IA (computer use).
 
 macOS 13+ · Pantallas integradas y compatibles con el control de brillo del sistema
 
@@ -35,6 +37,8 @@ Sí. Mantener el ordenador activo no impide estas acciones. Al desactivar la opc
 
 Doze es software propietario. Su repositorio de GitHub ofrece versiones e información del producto.
 
+[computer use](https://developers.openai.com/api/docs/guides/tools-computer-use)
+
 ## Enlaces oficiales
 
 - [Descargar para Mac](https://github.com/cxa/doze/releases)
@@ -49,13 +53,45 @@ Doze es software propietario. Su repositorio de GitHub ofrece versiones e inform
 
 Icono nativo original, PNG de 1024 × 1024. Conserva el diseño, las proporciones y la transparencia.
 
-### Logotipo
+### Símbolo de marca transparente
 
 [symbol.png](../symbol.png)
 
 2048 × 2048 · PNG
 
-Logotipo original de píxeles con transparencia; conservar bordes y proporciones.
+Símbolo de marca transparente original del icono actual de la app. Conserva el color dorado, las proporciones y la opacidad originales.
+
+### Icono de la barra de menús · Normal
+
+[menubar-active.png](../menubar-active.png)
+
+44 × 40 · PNG
+
+PNG de plantilla transparente 2× original (44 × 40 píxeles; 22 × 20 puntos). Los estados activo, pantalla atenuada y atención comparten la apariencia normal; mantener el ordenador despierto cambia los ojos. Los iconos en pausa conservan la opacidad nativa del 45 %. macOS adapta el color de la plantilla a las barras de menús oscuras.
+
+### Icono de la barra de menús · Mantener el ordenador despierto
+
+[menubar-keep-awake.png](../menubar-keep-awake.png)
+
+44 × 40 · PNG
+
+PNG de plantilla transparente 2× original (44 × 40 píxeles; 22 × 20 puntos). Los estados activo, pantalla atenuada y atención comparten la apariencia normal; mantener el ordenador despierto cambia los ojos. Los iconos en pausa conservan la opacidad nativa del 45 %. macOS adapta el color de la plantilla a las barras de menús oscuras.
+
+### Icono de la barra de menús · En pausa
+
+[menubar-paused.png](../menubar-paused.png)
+
+44 × 40 · PNG
+
+PNG de plantilla transparente 2× original (44 × 40 píxeles; 22 × 20 puntos). Los estados activo, pantalla atenuada y atención comparten la apariencia normal; mantener el ordenador despierto cambia los ojos. Los iconos en pausa conservan la opacidad nativa del 45 %. macOS adapta el color de la plantilla a las barras de menús oscuras.
+
+### Icono de la barra de menús · En pausa · Mantener el ordenador despierto
+
+[menubar-paused-keep-awake.png](../menubar-paused-keep-awake.png)
+
+44 × 40 · PNG
+
+PNG de plantilla transparente 2× original (44 × 40 píxeles; 22 × 20 puntos). Los estados activo, pantalla atenuada y atención comparten la apariencia normal; mantener el ordenador despierto cambia los ojos. Los iconos en pausa conservan la opacidad nativa del 45 %. macOS adapta el color de la plantilla a las barras de menús oscuras.
 
 ### Captura de pantalla · Día
 
@@ -72,6 +108,46 @@ Vista previa de la interfaz nativa en este idioma; píxeles sin modificar.
 768 × 1250 · PNG
 
 Vista previa de la interfaz nativa en este idioma; píxeles sin modificar.
+
+### Símbolo de marca transparente
+
+[symbol.svg](../symbol.svg)
+
+1024.0 × 1024.0 · SVG
+
+El SVG conserva los trazados vectoriales, las proporciones y la transparencia originales.
+
+### Icono de la barra de menús · Normal
+
+[menubar-active.svg](../menubar-active.svg)
+
+22.0 × 20.0 · SVG
+
+El SVG conserva los trazados vectoriales, las proporciones y la transparencia originales.
+
+### Icono de la barra de menús · Mantener el ordenador despierto
+
+[menubar-keep-awake.svg](../menubar-keep-awake.svg)
+
+22.0 × 20.0 · SVG
+
+El SVG conserva los trazados vectoriales, las proporciones y la transparencia originales.
+
+### Icono de la barra de menús · En pausa
+
+[menubar-paused.svg](../menubar-paused.svg)
+
+22.0 × 20.0 · SVG
+
+El SVG conserva los trazados vectoriales, las proporciones y la transparencia originales.
+
+### Icono de la barra de menús · En pausa · Mantener el ordenador despierto
+
+[menubar-paused-keep-awake.svg](../menubar-paused-keep-awake.svg)
+
+22.0 × 20.0 · SVG
+
+El SVG conserva los trazados vectoriales, las proporciones y la transparencia originales.
 
 ### Imagen para redes sociales
 

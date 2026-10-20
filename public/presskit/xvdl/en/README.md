@@ -51,6 +51,14 @@ Edited screenshot with a coral outline and subdued surrounding video to highligh
 
 AI-generated blue-hour coastal wallpaper for the website presentation; not an app screenshot or built-in app feature.
 
+### App icon
+
+[icon-vector.svg](../icon-vector.svg)
+
+128.0 × 128.0 · SVG
+
+SVG preserves the original vector paths, proportions and transparency.
+
 ### Social sharing image
 
 [social-card.png](../social-card.png)

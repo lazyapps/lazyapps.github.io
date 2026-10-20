@@ -61,6 +61,14 @@ Anteprima condivisa della schermata del titolo del gioco, non di una partita in 
 
 Sfondo decorativo generato con IA per la presentazione sul sito; non è una schermata dell’app, una scena di gioco o una funzione integrata.
 
+### Logotipo
+
+[wordmark.svg](../wordmark.svg)
+
+163.0 × 61.0 · SVG
+
+SVG senza perdita del logotipo pixel originale. Forme, colori e trasparenza di ogni pixel sono preservati, senza smussatura né bitmap incorporata.
+
 ### Immagine per i social
 
 [social-card.png](../social-card.png)

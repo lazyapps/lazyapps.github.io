@@ -42,6 +42,14 @@ Orijinal uygulama simgesi, 1024 × 1024 PNG. Görsel, oranlar ve saydamlık koru
 
 Bu dildeki özgün arayüz önizlemesi; pikseller değiştirilmemiştir.
 
+### Düz vektör görseli
+
+[artwork-flat.svg](../artwork-flat.svg)
+
+1024.0 × 1024.0 · SVG
+
+Özgün vektör şekilleri ve katman konumlarından oluşturulmuş düz SVG. Yerel cam efektleri, aydınlatma ve sistem simge maskeleri yeniden üretilmez; tam yerel uygulama simgesi için PNG kullanın.
+
 ### Sosyal paylaşım görseli
 
 [social-card.png](../social-card.png)

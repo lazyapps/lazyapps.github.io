@@ -42,6 +42,14 @@ Icono nativo original, PNG de 1024 × 1024. Conserva el diseño, las proporcione
 
 Vista previa de la interfaz nativa en este idioma; píxeles sin modificar.
 
+### Ilustración vectorial plana
+
+[artwork-flat.svg](../artwork-flat.svg)
+
+1024.0 × 1024.0 · SVG
+
+SVG plano compuesto con las formas vectoriales y posiciones de capa originales. No reproduce el cristal, la iluminación ni las máscaras de iconos del sistema; usa el PNG para el icono nativo completo.
+
 ### Imagen para redes sociales
 
 [social-card.png](../social-card.png)

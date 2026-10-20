@@ -10,6 +10,7 @@ import { FONDFONT_LOCALES } from '../i18n/fondfont-locales.mjs';
 import { YIYAN_LOCALES } from '../i18n/yiyan-locales.mjs';
 import { DOZE_LOCALES } from '../i18n/doze-locales.mjs';
 import { SHHEEP_LOCALES } from '../i18n/shheep-locales.mjs';
+import { computerUseParts } from './computer-use.mjs';
 export const supported = supportedLanguages;
 export const glossary = pressGlossary;
 const translations = { doze: DOZE_LOCALES, chmate: CHMATE_LOCALES, fondfont: FONDFONT_LOCALES, yiyan: YIYAN_LOCALES, shheep: SHHEEP_LOCALES };
@@ -18,14 +19,17 @@ function asset(kit, tag, source, filename, kind, note, shared = false) {
   const g = glossary[tag];
   const original = kit.assets.find(item => item.source === source);
   const lang = tag === 'en' ? 'en' : tag === 'zh-Hans' ? 'zh' : null;
-  return { source, filename, kind, label: g.labels[kind], note: lang && original ? original.note[lang] : g.notes[note], shared, contentLanguage: ['icon', 'logo', 'background'].includes(kind) || (kind === 'artwork' && shared) ? 'und' : ['world-book', 'xvdl', 'shheep', 'yiyan'].includes(kit.slug) && kind === 'screenshot' ? 'en' : tag };
+  return { source, filename, kind, label: g.labels[kind], note: lang && original ? original.note[lang] : g.notes[note], shared, contentLanguage: ['icon', 'logo', 'background', 'menubar', 'vector'].includes(kind) || (kind === 'artwork' && shared) ? 'und' : ['world-book', 'xvdl', 'shheep', 'yiyan'].includes(kit.slug) && kind === 'screenshot' ? 'en' : tag };
 }
 function localeAssets(kit, tag, t) {
   const g = glossary[tag];
   const assets = [asset(kit, tag, kit.assets[0].source, kit.assets[0].filename, kit.assets[0].kind, kit.assets[0].kind, true)];
   if (kit.slug === 'doze') {
     const logo = kit.assets.find(item => item.kind === 'logo');
-    assets.push(asset(kit, tag, logo.source, logo.filename, 'logo', 'logo', true));
+    assets.push({ ...asset(kit, tag, logo.source, logo.filename, 'logo', 'symbol', true), label: g.labels.symbol });
+    for (const item of kit.assets.filter(item => item.kind === 'menubar')) {
+      assets.push({ ...asset(kit, tag, item.source, item.filename, 'menubar', 'menubar', true), label: `${g.labels.menubar} · ${g.menubarStates[item.variant]}` });
+    }
     for (const theme of ['light', 'dark']) {
       assets.push({ ...asset(kit, tag, `scripts/assets/presskit/doze-panel-${tag.toLowerCase()}-${theme}.png`, `settings-${theme}.png`, 'screenshot', 'native'), label: `${g.labels.screenshot} · ${theme === 'light' ? t.light : t.dark}`, note: g.notes.native });
     }
@@ -47,6 +51,11 @@ function localeAssets(kit, tag, t) {
   for (const item of kit.assets.filter(item => item.kind === 'background')) {
     assets.push(asset(kit, tag, item.source, item.filename, 'background', kit.slug === 'yiyan' ? 'background' : 'websiteBackground', true));
   }
+  for (const item of kit.assets.filter(item => item.kind === 'vector')) {
+    const primary = assets.find(candidate => candidate.filename === item.alternateFor);
+    assets.push({ ...asset(kit, tag, item.source, item.filename, 'vector', item.noteKey, true),
+      label: primary?.label ?? g.labels[item.labelKey], note: g.notes[item.noteKey], alternateFor: item.alternateFor });
+  }
   let card = kit.assets.find(item => item.kind === 'artwork').source;
   let shared = true;
   if (kit.slug === 'doze') { card = `src/assets/img/${t.ogAsset}`; shared = false; }
@@ -65,7 +74,7 @@ export const pressKits = originals.map(kit => {
     const name = kit.slug === 'doze' ? t.brand : tag === 'zh-Hans' ? kit.names.zh : tag === 'zh-Hant' ? kit.names.zh.replaceAll('飞键','飛鍵').replaceAll('绎言','繹言').replaceAll('爱装字体','愛裝字體') : kit.names.en;
     let summary = t ? plain(t.sub ?? t.description) : kit.summary.en;
     let description = t ? plain(t.description) : kit.description.en;
-    if (kit.slug === 'doze') description = [t.headline.join(' '), t.description, t.compatibility, ...t.features.map(item => item[1]), ...t.steps, ...t.faqs.map(item => item[1]), t.license].join('\n\n');
+    if (kit.slug === 'doze') description = [t.eyebrow, t.headline.join(' '), t.description, t.compatibility, ...t.features.map(item => item[1]), ...t.steps, ...t.faqs.map(item => item[1]), t.license].join('\n\n');
     if (kit.slug === 'chmate') description = [t.description, ...t.cards.map(card => card[1]), t.promiseCopy].map(plain).join('\n\n');
     if (kit.slug === 'fondfont') description = [t.description, ...t.features.map(feature => feature[1]), ...t.steps.map(step => step[1]), t.privacyCopy, t.faqs[1][1]].map(plain).join('\n\n');
     if (kit.slug === 'yiyan') { const copy = yiyanCopy[tag.toLowerCase()]; summary = copy.sub; description = [copy.sub, ...copy.cards.map(card => card[1]), ...copy.details.map(detail => detail[1].join(' '))].join('\n\n'); }
@@ -75,7 +84,8 @@ export const pressKits = originals.map(kit => {
     }
     const category = ['chmate','fondfont','world-book','shheep'].includes(kit.slug) ? 'store' : kit.slug === 'yiyan' ? 'beta' : 'mac';
     const links = kit.links.map(link => ({url:link.url, label:kit.slug === 'doze' ? t.cta : link.url.includes('apps.apple.com') ? 'App Store' : link.url.includes('testflight.') ? g.links.beta : link.url.endsWith('/releases') ? g.links.download : link.url.includes('github.com') ? g.links.source : kit.slug === 'shheep' ? g.links.demo : g.links.play}));
-    return { tag, displayName: g.name, name, summary, description, website: t?.selectedUrl ?? `/${kit.slug}/`, platform: kit.platform[lang], availability: kit.slug === 'doze' ? t.availability : g.availability[category], links, assets: localeAssets(kit, tag, t), headings: g.headings, usage: g.usage };
+    const references = kit.slug === 'doze' ? computerUseParts('computer use', tag).filter(part => part.href).map(part => ({ label: part.text, url: part.href })) : [];
+    return { tag, displayName: g.name, name, summary, description, website: t?.selectedUrl ?? `/${kit.slug}/`, platform: kit.platform[lang], availability: kit.slug === 'doze' ? t.availability : g.availability[category], links, references, assets: localeAssets(kit, tag, t), headings: g.headings, usage: g.usage };
   });
   // Identity is source bytes, so repeated artwork is stored once even for a subset of languages.
   const identities = new Map();

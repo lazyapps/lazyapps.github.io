@@ -61,6 +61,14 @@ Aperçu partagé de l’écran titre du jeu, pas une partie en cours.
 
 Décor généré par IA pour la présentation sur le site ; il ne s’agit ni d’une capture de l’app, ni d’une scène du jeu, ni d’une fonctionnalité intégrée.
 
+### Logotype
+
+[wordmark.svg](../wordmark.svg)
+
+163.0 × 61.0 · SVG
+
+SVG sans perte du logotype en pixels d’origine. Formes, couleurs et transparence de chaque pixel préservées, sans lissage ni image matricielle intégrée.
+
 ### Image pour les réseaux sociaux
 
 [social-card.png](../social-card.png)

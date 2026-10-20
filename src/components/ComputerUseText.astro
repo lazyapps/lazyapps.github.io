@@ -1,0 +1,7 @@
+---
+import { computerUseParts } from '../content/computer-use.mjs';
+const { text, locale = 'en' } = Astro.props;
+---
+{computerUseParts(text, locale).map(part => part.href
+  ? <a class="term-link" href={part.href} lang="en" dir="ltr">{part.text}</a>
+  : part.text)}

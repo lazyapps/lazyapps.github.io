@@ -8,11 +8,13 @@
 
 ## Über die App
 
-Schlummer dimmt den Bildschirm, wenn du weggehst. Halte den Mac wach, damit Bildschirmruhezustand und Bildschirmschoner die KI beim Bedienen von Apps nicht unterbrechen.
+Dimme den Bildschirm automatisch, wenn du weggehst. Halte den Mac wach, damit Bildschirmruhezustand und Bildschirmschoner die Computernutzung durch KI (computer use) nicht unterbrechen.
 
-Die KI arbeitet weiter. Dein Bildschirm ruht.
+Für Computer use mit KI
 
-Schlummer dimmt den Bildschirm, wenn du weggehst. Halte den Mac wach, damit Bildschirmruhezustand und Bildschirmschoner die KI beim Bedienen von Apps nicht unterbrechen.
+Dein Bildschirm schlummert KI kann deinen Computer weiter bedienen
+
+Dimme den Bildschirm automatisch, wenn du weggehst. Halte den Mac wach, damit Bildschirmruhezustand und Bildschirmschoner die Computernutzung durch KI (computer use) nicht unterbrechen.
 
 macOS 13+ · Integrierte und unterstützte Displays mit System-Helligkeitssteuerung
 
@@ -35,6 +37,8 @@ Ja. Das Wachhalten verhindert beides nicht. Wenn du die Option ausschaltest oder
 
 Doze ist proprietäre Software. Das GitHub-Repository enthält Versionen und Produktinformationen.
 
+[computer use](https://developers.openai.com/api/docs/guides/tools-computer-use)
+
 ## Offizielle Links
 
 - [Für Mac laden](https://github.com/cxa/doze/releases)
@@ -49,13 +53,45 @@ Doze ist proprietäre Software. Das GitHub-Repository enthält Versionen und Pro
 
 Originales App-Symbol, 1024 × 1024 PNG. Grafik, Proportionen und Transparenz unverändert.
 
-### Wortmarke
+### Transparentes Markensymbol
 
 [symbol.png](../symbol.png)
 
 2048 × 2048 · PNG
 
-Originale transparente Pixel-Wortmarke; Pixelkanten und Proportionen erhalten.
+Originales transparentes Markensymbol aus dem aktuellen App-Symbol. Goldfarbe, Proportionen und Deckkraft bleiben erhalten.
+
+### Menüleistensymbol · Normal
+
+[menubar-active.png](../menubar-active.png)
+
+44 × 40 · PNG
+
+Originales transparentes 2×-Vorlagen-PNG (44 × 40 Pixel; 22 × 20 Punkte). Aktiv, abgedunkelt und Hinweis verwenden dieselbe normale Darstellung; beim Wachhalten ändern sich die Augen. Pausierte Symbole behalten die native Deckkraft von 45 %. macOS passt die Vorlagenfarbe an dunkle Menüleisten an.
+
+### Menüleistensymbol · Computer wach halten
+
+[menubar-keep-awake.png](../menubar-keep-awake.png)
+
+44 × 40 · PNG
+
+Originales transparentes 2×-Vorlagen-PNG (44 × 40 Pixel; 22 × 20 Punkte). Aktiv, abgedunkelt und Hinweis verwenden dieselbe normale Darstellung; beim Wachhalten ändern sich die Augen. Pausierte Symbole behalten die native Deckkraft von 45 %. macOS passt die Vorlagenfarbe an dunkle Menüleisten an.
+
+### Menüleistensymbol · Pausiert
+
+[menubar-paused.png](../menubar-paused.png)
+
+44 × 40 · PNG
+
+Originales transparentes 2×-Vorlagen-PNG (44 × 40 Pixel; 22 × 20 Punkte). Aktiv, abgedunkelt und Hinweis verwenden dieselbe normale Darstellung; beim Wachhalten ändern sich die Augen. Pausierte Symbole behalten die native Deckkraft von 45 %. macOS passt die Vorlagenfarbe an dunkle Menüleisten an.
+
+### Menüleistensymbol · Pausiert · Computer wach halten
+
+[menubar-paused-keep-awake.png](../menubar-paused-keep-awake.png)
+
+44 × 40 · PNG
+
+Originales transparentes 2×-Vorlagen-PNG (44 × 40 Pixel; 22 × 20 Punkte). Aktiv, abgedunkelt und Hinweis verwenden dieselbe normale Darstellung; beim Wachhalten ändern sich die Augen. Pausierte Symbole behalten die native Deckkraft von 45 %. macOS passt die Vorlagenfarbe an dunkle Menüleisten an.
 
 ### Screenshot · Tag
 
@@ -72,6 +108,46 @@ Native Vorschau der Oberfläche in dieser Sprache; unveränderte Pixel.
 768 × 1308 · PNG
 
 Native Vorschau der Oberfläche in dieser Sprache; unveränderte Pixel.
+
+### Transparentes Markensymbol
+
+[symbol.svg](../symbol.svg)
+
+1024.0 × 1024.0 · SVG
+
+Das SVG bewahrt die ursprünglichen Vektorpfade, Proportionen und Transparenz.
+
+### Menüleistensymbol · Normal
+
+[menubar-active.svg](../menubar-active.svg)
+
+22.0 × 20.0 · SVG
+
+Das SVG bewahrt die ursprünglichen Vektorpfade, Proportionen und Transparenz.
+
+### Menüleistensymbol · Computer wach halten
+
+[menubar-keep-awake.svg](../menubar-keep-awake.svg)
+
+22.0 × 20.0 · SVG
+
+Das SVG bewahrt die ursprünglichen Vektorpfade, Proportionen und Transparenz.
+
+### Menüleistensymbol · Pausiert
+
+[menubar-paused.svg](../menubar-paused.svg)
+
+22.0 × 20.0 · SVG
+
+Das SVG bewahrt die ursprünglichen Vektorpfade, Proportionen und Transparenz.
+
+### Menüleistensymbol · Pausiert · Computer wach halten
+
+[menubar-paused-keep-awake.svg](../menubar-paused-keep-awake.svg)
+
+22.0 × 20.0 · SVG
+
+Das SVG bewahrt die ursprünglichen Vektorpfade, Proportionen und Transparenz.
 
 ### Bild für soziale Medien
 

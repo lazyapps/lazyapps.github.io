@@ -7,12 +7,17 @@ import shutil
 import subprocess
 import posixpath
 import zipfile
+from xml.etree import ElementTree as ET
 
 ROOT = Path(__file__).resolve().parents[1]
 KITS = json.loads(subprocess.check_output(['node', str(ROOT / 'scripts/print-presskit-catalog.mjs')], text=True))
 CONTACT = 'lazyapps.feedback@gmail.com'
 
 def image_size(data):
+    if data.lstrip().startswith((b'<svg', b'<?xml')):
+        svg = ET.fromstring(data)
+        _, _, width, height = [float(value) for value in svg.attrib['viewBox'].replace(',', ' ').split()]
+        return width, height, 'SVG'
     if data.startswith(b'\x89PNG\r\n\x1a\n'):
         width, height = struct.unpack('>II', data[16:24])
         return width, height, 'PNG'
@@ -29,7 +34,7 @@ def image_size(data):
                 height, width = struct.unpack('>HH', data[i+3:i+7])
                 return width, height, 'JPEG'
             i += length
-    raise ValueError('Press assets must be PNG or JPEG')
+    raise ValueError('Press assets must be PNG, JPEG or SVG')
 
 for kit in KITS:
     out = ROOT / 'public/presskit' / kit['slug']
@@ -69,6 +74,7 @@ for kit in KITS:
                  f"- {headings[3]}: {locale['platform']}", f"- {headings[4]}: {locale['availability']}",
                  f"- {headings[5]}: [{CONTACT}](mailto:{CONTACT})", '',
                  f"## {headings[6]}", '', locale['summary'], '', locale['description'], '',
+                 *[f"[{reference['label']}]({reference['url']})\n" for reference in locale['references']],
                  f"## {headings[7]}", '']
         for link in locale['links']:
             url = ('https://lazyapps.com' if link['url'].startswith('/') else '') + link['url']

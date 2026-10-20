@@ -1,0 +1,124 @@
+{
+  "chmate": [
+    {
+      "output": "scripts/assets/presskit/vectors/chmate-flat.svg",
+      "sha256": "da0f7fb73aed6283b34fd3a51b645747c1707bacb7eaa67ca169d581a28af315",
+      "inputs": {
+        "scripts/assets/chmate/AppIcon.icon/icon.json": "738a281138d2f6d3dbe306c5b30ab3c10195bc1ba868c2df2cbabc21f23ef39e",
+        "scripts/assets/chmate/AppIcon.icon/Assets/bottom-paths.svg": "83b56c17f45a7ca04ef1052b4d5beda1f238df74a5c1110b730efee58333042f",
+        "scripts/assets/chmate/AppIcon.icon/Assets/top-paths.svg": "a46e789b1379e93efd3b904b49f59278ab581444506e014fa739bcf0319a8b1b",
+        "scripts/assets/chmate/AppIcon.icon/Assets/page-shading.svg": "0273018a88bd7df6db8f4ab4faccf0d20307376337d795bf56845d01b6cc4325"
+      },
+      "method": "Flat SVG composition of the original vector layers, native positions, scales and default fills. Native glass, refraction, lighting, shadows and platform icon masks are not reproduced. The native PNG remains the complete rendered app icon."
+    }
+  ],
+  "world-book": [
+    {
+      "output": "scripts/assets/presskit/vectors/world-book-flat.svg",
+      "sha256": "e624b6e2d7dbb383680f98afcb8c41711f2243543f1b8529e75499ece4eda648",
+      "inputs": {
+        "scripts/assets/world-book/AppIcon.icon/icon.json": "475a81dd311f44fd378efa91dd4e7bcd1312f32bacb100ed71451969e9827797",
+        "scripts/assets/world-book/AppIcon.icon/Assets/Space-Background.svg": "89c3a147f6ba7980be016fdfe4cd69f6c6e950ebb01ba587c503d4864f86febd",
+        "scripts/assets/world-book/AppIcon.icon/Assets/Globe-Lightspill.svg": "0222b344e914a4cff153ba9af18af04e3a4c8ec6164a97831ef28b3ee6412a93",
+        "scripts/assets/world-book/AppIcon.icon/Assets/Open-Cover.svg": "82d98f8dcb74bf01cd2bd8cac69eef885b9806a736078d25f06a9abf1e82a0a2",
+        "scripts/assets/world-book/AppIcon.icon/Assets/Open-Pages.svg": "560a49eee5051425b65d22a96953a4e669b460292dc8edbdd69ee660f210b2b2",
+        "scripts/assets/world-book/AppIcon.icon/Assets/Ocean-Color.svg": "63de401d7a173118791e21b22f01095bcfeedd7b85cfec57b61988e9ebecd46e",
+        "scripts/assets/world-book/AppIcon.icon/Assets/Globe-Land.svg": "8320c1ddfc61eac8f5ba8ee30d60824f691ab1ca7f5ec3e099fa6e99c06041e2",
+        "scripts/assets/world-book/AppIcon.icon/Assets/Globe-Glow.svg": "06a6359238707d8006ab4a11a3b273080acaa5da16eb629b9d71d88e46e9088f",
+        "scripts/assets/world-book/AppIcon.icon/Assets/Ocean-Sphere.svg": "8985760691226aa46cb5e47fed254f96860d281a717008fcae93937ec4b118ce"
+      },
+      "method": "Flat SVG composition of the original vector layers, native positions, scales and default fills. Native glass, refraction, lighting, shadows and platform icon masks are not reproduced. The native PNG remains the complete rendered app icon."
+    }
+  ],
+  "yiyan": [
+    {
+      "output": "scripts/assets/presskit/vectors/yiyan-flat.svg",
+      "sha256": "6ac7dbc88f91ab3bee9a82eb7f98a0292d162a1812946525cc8c272a84287cfa",
+      "inputs": {
+        "scripts/assets/yiyan/AppIcon.icon/icon.json": "983fe66969c3495cb12219c9644ce3e7859c85f8d40821fa4c0e021d26bc2ea3",
+        "scripts/assets/yiyan/AppIcon.icon/Assets/05-sun-glow.svg": "8adcc4cafbd31cd24d4021433a051931880da975240e404451a67561a60ecf63",
+        "scripts/assets/yiyan/AppIcon.icon/Assets/40-mouth.svg": "25e27f68333adb04933b68b9c632973c7b214a784aeca8f9f0e5911f819f9f61",
+        "scripts/assets/yiyan/AppIcon.icon/Assets/30-short-stroke.svg": "e48997d2a2355ee1d5bd38e28d0725ceca1fce1b367c566f31c741f27b1593f3",
+        "scripts/assets/yiyan/AppIcon.icon/Assets/20-long-stroke.svg": "f7e112fba7a975328ac94157bc590948e07848bc5cd79810f439574b809f7cdc",
+        "scripts/assets/yiyan/AppIcon.icon/Assets/10-sun.svg": "a6bf04fbc90f2e8d4101ebd54291b1fbe683d045e81104146f72b18f206163ee"
+      },
+      "method": "Flat SVG composition of the original vector layers, native positions, scales and default fills. Native glass, refraction, lighting, shadows and platform icon masks are not reproduced. The native PNG remains the complete rendered app icon."
+    }
+  ],
+  "fondfont": [
+    {
+      "output": "scripts/assets/presskit/vectors/fondfont-flat.svg",
+      "sha256": "30b9f4e1a6d4885c28db28fe9446cc4d3e93e6a21f00abb5e49067458c46c543",
+      "inputs": {
+        "src/assets/img/fondfont-web-icon.svg": "30b9f4e1a6d4885c28db28fe9446cc4d3e93e6a21f00abb5e49067458c46c543"
+      },
+      "method": "Existing flat artwork using the original Bodoni vector masks, authored transforms and documented flat print colors; native glass effects are not reproduced."
+    }
+  ],
+  "xvdl": [
+    {
+      "output": "scripts/assets/presskit/vectors/xvdl-icon.svg",
+      "sha256": "c1caaa90c87e465b1b25c77cad16239d19f1b7ac98078b0556e7e8d2bba54cd3",
+      "inputs": {
+        "scripts/assets/native-icons/xvdl/icon.svg": "c1caaa90c87e465b1b25c77cad16239d19f1b7ac98078b0556e7e8d2bba54cd3"
+      },
+      "method": "Original extension icon SVG, byte-for-byte. Scalable vector artwork; the original native app icon PNG is retained separately."
+    }
+  ],
+  "doze": [
+    {
+      "output": "scripts/assets/presskit/vectors/doze-symbol.svg",
+      "sha256": "7b8f78959ee001a7ba971b3da7e19ea32013587ae3837db86de6f353c1cb6ec3",
+      "inputs": {
+        "scripts/assets/native-icons/doze/AppIcon.icon/Assets/Monogram.svg": "7b8f78959ee001a7ba971b3da7e19ea32013587ae3837db86de6f353c1cb6ec3"
+      },
+      "method": "Original native gold monogram SVG, byte-for-byte."
+    },
+    {
+      "output": "scripts/assets/presskit/vectors/doze-menubar.svg",
+      "sha256": "e7f4df9ce3fb152a81e9695b076339cfd166eab7ab0288b30ef8784783cb2ad3",
+      "inputs": {
+        "src/assets/img/doze-menubar.svg": "e7f4df9ce3fb152a81e9695b076339cfd166eab7ab0288b30ef8784783cb2ad3",
+        "scripts/assets/doze/StatusIcon.swift": "1289cecc7496c8259873e6dba31f254f221db60068ab15a4360a4d3e4c6f2514"
+      },
+      "method": "Exact native CGPath elements serialized as SVG, with the original placement, scale, vertical axis conversion and paused opacity. No raster image or tracing."
+    },
+    {
+      "output": "scripts/assets/presskit/vectors/doze-menubar-keep-awake.svg",
+      "sha256": "6f922d7df5581417b3c66b94990ea3d76e480ee039d44618d6c5f47b7253ba22",
+      "inputs": {
+        "src/assets/img/doze-menubar-keep-awake.svg": "6f922d7df5581417b3c66b94990ea3d76e480ee039d44618d6c5f47b7253ba22",
+        "scripts/assets/doze/StatusIcon.swift": "1289cecc7496c8259873e6dba31f254f221db60068ab15a4360a4d3e4c6f2514"
+      },
+      "method": "Exact native CGPath elements serialized as SVG, with the original placement, scale, vertical axis conversion and paused opacity. No raster image or tracing."
+    },
+    {
+      "output": "scripts/assets/presskit/vectors/doze-menubar-paused.svg",
+      "sha256": "353eccb9c2594107fc5bf5abddd18dbb293fdbe4f8480621ec088aa3201ba65d",
+      "inputs": {
+        "src/assets/img/doze-menubar-paused.svg": "353eccb9c2594107fc5bf5abddd18dbb293fdbe4f8480621ec088aa3201ba65d",
+        "scripts/assets/doze/StatusIcon.swift": "1289cecc7496c8259873e6dba31f254f221db60068ab15a4360a4d3e4c6f2514"
+      },
+      "method": "Exact native CGPath elements serialized as SVG, with the original placement, scale, vertical axis conversion and paused opacity. No raster image or tracing."
+    },
+    {
+      "output": "scripts/assets/presskit/vectors/doze-menubar-paused-keep-awake.svg",
+      "sha256": "1a28e07e1a7eca476e921f512e4041fceed1cc6310474edddf06bd9dbcaf0618",
+      "inputs": {
+        "src/assets/img/doze-menubar-paused-keep-awake.svg": "1a28e07e1a7eca476e921f512e4041fceed1cc6310474edddf06bd9dbcaf0618",
+        "scripts/assets/doze/StatusIcon.swift": "1289cecc7496c8259873e6dba31f254f221db60068ab15a4360a4d3e4c6f2514"
+      },
+      "method": "Exact native CGPath elements serialized as SVG, with the original placement, scale, vertical axis conversion and paused opacity. No raster image or tracing."
+    }
+  ],
+  "shheep": [
+    {
+      "output": "scripts/assets/presskit/vectors/shheep-wordmark.svg",
+      "sha256": "ccc971b5b7125d64166dae329db276510669ba60657e5fb691066cfb1729f56e",
+      "inputs": {
+        "public/shheep/assets/sprites/title.png": "151f12b04c70ad013f3aee794df2ae49659a9b34168c6bad85e85a48503a84cf"
+      },
+      "method": "Lossless pixel-to-vector conversion: each original horizontal run becomes a filled vector path; all RGBA values, transparency, canvas and pixel edges are preserved. No tracing, smoothing or embedded raster image."
+    }
+  ]
+}

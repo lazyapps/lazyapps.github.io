@@ -10,6 +10,7 @@ import SocialMeta from './SocialMeta.astro';
 import SoftwareApplication from './SoftwareApplication.astro';
 import SiteEdges from './SiteEdges.astro';
 import SitePreloader from './SitePreloader.astro';
+import ComputerUseText from './ComputerUseText.astro';
 import siteCssUrl from '$assets/s/site.css?url';
 import gsapUrl from '$assets/vendor/gsap.min.js?url';
 import scrollTriggerUrl from '$assets/vendor/ScrollTrigger.min.js?url';
@@ -31,6 +32,7 @@ import favicon32 from '$assets/img/doze/icon-small-32-1x.png?url';
 const { code = '' } = Astro.props;
 const iconUrl = appIcon.src;
 const t = DOZE_LOCALES[code];
+const headline = t.headline.map(line => ({ text: line.replace(/[，、]$/u, ''), punctuation: line.match(/[，、]$/u)?.[0] }));
 const shots = import.meta.glob<{ default: ImageMetadata }>('../../scripts/assets/presskit/doze-panel-*.png', { eager: true });
 const shot = (theme: string) => shots[`../../scripts/assets/presskit/doze-panel-${t.htmlLang.toLowerCase()}-${theme}.png`].default;
 const cards = import.meta.glob<{ default: string }>('../assets/img/doze-opengraph-*.png', { eager: true, query: '?url' });
@@ -70,7 +72,8 @@ const ogUrl = cards[`../assets/img/${t.ogAsset}`].default;
     </SiteHeader>
     <main id="main">
       <section class="doze-hero" aria-labelledby="hero-title">
-        <h1 id="hero-title" class="dsp"><span>{t.headline[0]}</span> <span>{t.headline[1]}</span></h1>
+        <p class="doze-hero__eyebrow"><ComputerUseText text={t.eyebrow} locale={t.htmlLang} /></p>
+        <h1 id="hero-title" class="dsp">{headline.map(line => <span class="doze-headline__line">{line.text}{line.punctuation && <span class="doze-headline__punctuation">{line.punctuation}</span>}</span>)}</h1>
         <div class="doze-preview" data-doze-appearance="light">
           <div class="doze-desktop">
             <div class="doze-menubar" dir="ltr">
@@ -102,7 +105,7 @@ const ogUrl = cards[`../assets/img/${t.ogAsset}`].default;
         </div>
         <div class="doze-hero__copy">
           <div class="doze-hero__intro">
-            <p class="doze-intro">{t.description}</p>
+            <p class="doze-intro"><ComputerUseText text={t.description} locale={t.htmlLang} /></p>
           </div>
           <div class="doze-cta">
             <a class="button-023" href={t.ctaUrl}>
@@ -168,10 +171,12 @@ const ogUrl = cards[`../assets/img/${t.ogAsset}`].default;
   .skip-link{position:fixed;inset-block-start:10px;inset-inline-start:16px;padding:12px 18px;background:var(--paper);transform:translateY(-160%);border:2px solid var(--ink);border-radius:8px}
   .skip-link:focus{transform:none}
   .doze-hero{padding-block:clamp(28px,4vw,56px) var(--space-section)}
-  h1{font-size:clamp(56px,10.5vw,128px);margin:0 0 clamp(28px,4vw,52px);line-height:1.02}
-  h1:lang(zh),h1:lang(ja),h1:lang(ko){font-size:clamp(44px,9.6vw,96px);line-height:1.2}
-  h1:lang(ar),h1:lang(hi){font-size:clamp(38px,6.2vw,88px);line-height:1.35}
-  h1 span{display:block;line-height:inherit}
+  .doze-hero__eyebrow{margin-block-end:clamp(16px,2vw,24px);font-size:14px;line-height:var(--leading-body);color:var(--muted);text-align:center;text-wrap:balance}
+  h1{font-size:clamp(56px,10.5vw,128px);margin:0 0 clamp(28px,4vw,52px);line-height:var(--leading-display);text-align:center}
+  h1:lang(zh),h1:lang(ja),h1:lang(ko){font-size:clamp(44px,9.6vw,96px)}
+  h1:lang(ar),h1:lang(hi){font-size:clamp(38px,6.2vw,88px)}
+  .doze-headline__line{display:block;line-height:inherit}
+  .doze-headline__punctuation{display:inline-block;inline-size:0;overflow:visible;text-align:start;white-space:nowrap}
   .doze-hero__copy{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:start;gap:clamp(28px,4vw,56px);margin-block-start:clamp(28px,4vw,48px)}
   .doze-hero__intro{min-width:0}
   .doze-intro{max-width:50ch;font-size:clamp(18px,1.6vw,22px);line-height:1.6;margin:0;color:var(--ink);text-wrap:pretty}

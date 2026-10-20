@@ -1,0 +1,10 @@
+{
+  "project": "_vibe/doze/src",
+  "commit": "7e8d8c7951448ade666a0da60c41503ee9a680ef",
+  "original": "Assets/AppIcon.icon/Assets/Monogram.svg",
+  "source": "scripts/assets/native-icons/doze/AppIcon.icon/Assets/Monogram.svg",
+  "sourceSha256": "7b8f78959ee001a7ba971b3da7e19ea32013587ae3837db86de6f353c1cb6ec3",
+  "output": "src/assets/img/doze-symbol.png",
+  "outputSha256": "d4def7e21d5bda9031a420a3dec2658e9c44003c0421dc9d8c4cc4e1e07a8045",
+  "method": "Exact native SVG contours rendered to transparent 2048 × 2048 PNG by Sharp; original solid gold fill preserved."
+}

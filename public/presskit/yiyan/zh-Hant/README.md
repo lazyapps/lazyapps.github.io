@@ -70,6 +70,14 @@ Pi · Claude Code · Codex · OpenCode · Antigravity。執行期間擷取新輸
 
 AI 生成的沙丘桌布，用於網站展示；不是 App 截圖或內建功能。
 
+### 平面向量圖
+
+[artwork-flat.svg](../artwork-flat.svg)
+
+1024.0 × 1024.0 · SVG
+
+由原版向量圖案和圖層位置組合的平面 SVG，不重現原生玻璃、光照或系統圖示裁切。完整原生 App 圖示請使用 PNG。
+
 ### 社群分享圖
 
 [social-card.png](social-card.png)

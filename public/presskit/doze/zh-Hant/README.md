@@ -8,11 +8,13 @@
 
 ## 產品簡介
 
-離開後，瞇會兒會調暗螢幕。開啟「讓電腦保持喚醒」，避免自動關閉螢幕和螢幕保護程式打斷 computer use。
+離開後自動調暗螢幕。開啟「讓電腦保持喚醒」，避免自動關閉螢幕和螢幕保護程式打斷 AI 的計算機使用（computer use）。
 
-讓 AI 繼續忙， 讓螢幕歇一會兒。
+為 AI 的 Computer use 而設計
 
-離開後，瞇會兒會調暗螢幕。開啟「讓電腦保持喚醒」，避免自動關閉螢幕和螢幕保護程式打斷 computer use。
+螢幕瞇會兒 AI 仍能操作電腦
+
+離開後自動調暗螢幕。開啟「讓電腦保持喚醒」，避免自動關閉螢幕和螢幕保護程式打斷 AI 的計算機使用（computer use）。
 
 macOS 13+ · 內建螢幕及支援系統亮度調整的顯示器
 
@@ -35,6 +37,8 @@ macOS 13+ · 內建螢幕及支援系統亮度調整的顯示器
 
 Doze 是專有軟體；GitHub 儲存庫提供安裝套件及產品說明。
 
+[computer use](https://openai.com/zh-Hans-CN/index/codex-for-almost-everything/)
+
 ## 官方連結
 
 - [下載 Mac 版](https://github.com/cxa/doze/releases)
@@ -49,13 +53,45 @@ Doze 是專有軟體；GitHub 儲存庫提供安裝套件及產品說明。
 
 原版 App 圖示，1024 × 1024 PNG。保留原版圖案、比例與透明邊角。
 
-### 文字標誌
+### 透明品牌符號
 
 [symbol.png](../symbol.png)
 
 2048 × 2048 · PNG
 
-原始透明像素文字標誌，請保留像素邊緣與比例。
+目前 App 圖示中的原版透明品牌符號，保留原版金色、比例與不透明度。
+
+### 選單列圖示 · 一般
+
+[menubar-active.png](../menubar-active.png)
+
+44 × 40 · PNG
+
+原版透明 2× 樣板 PNG（44 × 40 像素，22 × 20 點）。執行中、螢幕已調暗和需要注意三種狀態共用一般外觀；保持電腦喚醒時眼形改變。暫停圖示保留原生 45% 不透明度，macOS 會為深色選單列自動調整樣板顏色。
+
+### 選單列圖示 · 保持電腦喚醒
+
+[menubar-keep-awake.png](../menubar-keep-awake.png)
+
+44 × 40 · PNG
+
+原版透明 2× 樣板 PNG（44 × 40 像素，22 × 20 點）。執行中、螢幕已調暗和需要注意三種狀態共用一般外觀；保持電腦喚醒時眼形改變。暫停圖示保留原生 45% 不透明度，macOS 會為深色選單列自動調整樣板顏色。
+
+### 選單列圖示 · 已暫停
+
+[menubar-paused.png](../menubar-paused.png)
+
+44 × 40 · PNG
+
+原版透明 2× 樣板 PNG（44 × 40 像素，22 × 20 點）。執行中、螢幕已調暗和需要注意三種狀態共用一般外觀；保持電腦喚醒時眼形改變。暫停圖示保留原生 45% 不透明度，macOS 會為深色選單列自動調整樣板顏色。
+
+### 選單列圖示 · 已暫停 · 保持電腦喚醒
+
+[menubar-paused-keep-awake.png](../menubar-paused-keep-awake.png)
+
+44 × 40 · PNG
+
+原版透明 2× 樣板 PNG（44 × 40 像素，22 × 20 點）。執行中、螢幕已調暗和需要注意三種狀態共用一般外觀；保持電腦喚醒時眼形改變。暫停圖示保留原生 45% 不透明度，macOS 會為深色選單列自動調整樣板顏色。
 
 ### 介面截圖 · 日間
 
@@ -72,6 +108,46 @@ Doze 是專有軟體；GitHub 儲存庫提供安裝套件及產品說明。
 768 × 1144 · PNG
 
 對應語言的原生介面預覽，像素保持原樣。
+
+### 透明品牌符號
+
+[symbol.svg](../symbol.svg)
+
+1024.0 × 1024.0 · SVG
+
+SVG 保留原版向量路徑、比例與透明度。
+
+### 選單列圖示 · 一般
+
+[menubar-active.svg](../menubar-active.svg)
+
+22.0 × 20.0 · SVG
+
+SVG 保留原版向量路徑、比例與透明度。
+
+### 選單列圖示 · 保持電腦喚醒
+
+[menubar-keep-awake.svg](../menubar-keep-awake.svg)
+
+22.0 × 20.0 · SVG
+
+SVG 保留原版向量路徑、比例與透明度。
+
+### 選單列圖示 · 已暫停
+
+[menubar-paused.svg](../menubar-paused.svg)
+
+22.0 × 20.0 · SVG
+
+SVG 保留原版向量路徑、比例與透明度。
+
+### 選單列圖示 · 已暫停 · 保持電腦喚醒
+
+[menubar-paused-keep-awake.svg](../menubar-paused-keep-awake.svg)
+
+22.0 × 20.0 · SVG
+
+SVG 保留原版向量路徑、比例與透明度。
 
 ### 社群分享圖
 

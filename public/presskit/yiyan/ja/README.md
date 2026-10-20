@@ -70,6 +70,14 @@ Pi · Claude Code · Codex · OpenCode · Antigravity。起動中の新しい入
 
 ウェブサイトの展示用に AI で生成した砂丘の壁紙です。アプリのスクリーンショットや内蔵機能ではありません。
 
+### フラットなベクター画像
+
+[artwork-flat.svg](../artwork-flat.svg)
+
+1024.0 × 1024.0 · SVG
+
+元のベクター図形とレイヤー位置から構成したフラットなSVGです。ネイティブのガラス効果、照明、システムのアイコンマスクは再現していません。完全なネイティブアプリアイコンにはPNGをご利用ください。
+
 ### SNS共有画像
 
 [social-card.png](../social-card.png)

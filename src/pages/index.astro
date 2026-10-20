@@ -1,10 +1,12 @@
 ---
 const SITE = 'https://lazyapps.com';
 const title = 'lazyapps — Apps for Mac, iPhone & iPad';
-const description = 'Mac, iPhone and iPad apps for screen dimming while AI works, English practice, X video downloads, EPUB and CHM reading, country facts and fonts. Shheep is a sheep-counting game for iPhone and iPad.';
+const description = 'Mac, iPhone and iPad apps for screen dimming during AI computer use, English practice, X video downloads, EPUB and CHM reading, country facts and fonts. Shheep is a sheep-counting game for iPhone and iPad.';
 import { DOZE_LOCALES } from '../i18n/doze-locales.mjs';
+import ComputerUseText from '../components/ComputerUseText.astro';
 const doze = DOZE_LOCALES.en;
 import NativeAppIcon from '../components/NativeAppIcon.astro';
+import CardAction from '../components/CardAction.astro';
 import SocialMeta from '../components/SocialMeta.astro';
 import StructuredData from '../components/StructuredData.astro';
 import SiteGrain from '../components/SiteGrain.astro';
@@ -24,13 +26,11 @@ import inUseUrl from '$assets/img/xvdl-in-use.png?url';
 import { Image, getImage } from 'astro:assets';
 import dozePanel from '../../scripts/assets/presskit/doze-panel-en-light.png';
 import dozeDayLandscape from '$assets/img/doze-landscape-day-cozy-doodle.png';
-import dozeSunArtwork from '$assets/img/doze-sun-cozy-doodle.png';
 import yiyanDesktopArtwork from '$assets/img/yiyan-desert-desktop.png';
 import shheepNightArtwork from '$assets/img/shheep-pixel-night-background.png';
 import xvdlBlueHourArtwork from '$assets/img/xvdl-blue-hour-background.png';
-const [dozeLandscape, dozeSun, yiyanDesktop, shheepNight, xvdlBlueHour] = await Promise.all([
+const [dozeLandscape, yiyanDesktop, shheepNight, xvdlBlueHour] = await Promise.all([
   getImage({ src: dozeDayLandscape, width: 1200, format: 'webp', quality: 90 }),
-  getImage({ src: dozeSunArtwork, width: 160, format: 'webp', quality: 90 }),
   getImage({ src: yiyanDesktopArtwork, width: 1200, format: 'webp', quality: 85 }),
   getImage({ src: shheepNightArtwork, width: 1200, format: 'webp', quality: 90 }),
   getImage({ src: xvdlBlueHourArtwork, width: 1200, format: 'webp', quality: 85 }),
@@ -97,7 +97,7 @@ setTimeout(function(){
 .card--featured{grid-column:1/-1}
 .card--doze{--fill:var(--app-doze)}
 .card--yiyan{--fill:var(--app-yiyan)}
-.card--xvdl{--fill:var(--app-xvdl)}
+.card--xvdl{--fill:var(--app-xvdl);--icon-optical-scale:1.34214}
 .card--chmate{--fill:var(--app-chmate)}
 .card--cia{--fill:var(--app-world-book)}
 .card--yifan{--fill:oklch(0.8 0.1 160)}
@@ -124,25 +124,21 @@ setTimeout(function(){
   display:flex;min-width:0;align-items:center;gap:clamp(12px,1.2vw,18px);font:900 clamp(34px,4.6vw,64px)/1 var(--display-latin);
 }
 .card__identity{display:flex;min-width:0;flex-direction:column;align-items:flex-start}
+.card__meta{display:flex;align-items:center;gap:12px;margin-top:var(--tag-gap);white-space:nowrap}
+.card__meta .card__tag{margin:0;flex:none}
+.card__press{
+  --card-action-min-height:0px;--card-action-font-size:var(--tag-font-size);
+  --card-action-padding-block:0px;
+}
+.card__press::before{content:"";position:absolute;inset-inline:0;top:50%;height:44px;transform:translateY(-50%)}
 .card__title{font-size:inherit;text-box:trim-both cap alphabetic}
 .card--compact .card__heading{font-size:clamp(30px,3.2vw,44px)}
 .card--yifan .card__title{text-box:normal}
-.card--yifan .card__heading{--icon-title-height:1.24em}
+.card--yifan .card__heading{--icon-title-height:1em}
 .card__p{margin-top:clamp(24px,2.6vw,32px);max-width:34em;font-size:1rem;line-height:1.7}
 .card__foot{margin-top:auto;padding-top:clamp(28px,3vw,40px)}
-.card .card__icon{width:var(--icon-size);height:var(--icon-size);object-fit:contain;flex:none}
-.card__go{
-  display:inline-flex;min-height:44px;align-items:center;justify-content:space-between;gap:1.25rem;
-  padding:.625rem .875rem .625rem 1rem;border-radius:999px;
-  background:color-mix(in oklch,currentColor 7%,transparent);
-  box-shadow:inset 0 0 0 1px color-mix(in oklch,currentColor 12%,transparent);
-  font:600 .9375rem/1.2 var(--sans);
-}
-.card__go::after{content:"";position:absolute;z-index:2;inset:0}
-.card__go>*{position:relative;z-index:3}
-.card__go:focus-visible{outline:none}
+.card .card__icon{width:var(--icon-size);height:var(--icon-size);object-fit:contain;flex:none;scale:var(--icon-optical-scale,1.08)}
 .card:has(.card__go:focus-visible){outline:2px solid var(--accent);outline-offset:4px}
-.card__arrow{display:grid;flex:none;width:1.25rem;height:1.25rem;margin-left:auto;place-items:center;font-size:1.25rem;line-height:1}
 .card__shots{
   --shot-padding:clamp(12px,1.5vw,20px);
   display:grid;min-width:0;overflow:hidden;place-items:center;padding:var(--shot-padding);
@@ -176,19 +172,19 @@ setTimeout(function(){
   filter:drop-shadow(0 14px 20px #31271940) drop-shadow(0 2px 4px #31271926);
 }
 .card--doze .card__shots{
-  --shot-padding:clamp(20px,2.5vw,32px);
+  --shot-padding:clamp(28px,3vw,40px);
   aspect-ratio:auto;background-color:#faf9ef;
-  background-repeat:no-repeat;background-position:8% 10%,center calc(100% + 20px);
-  background-size:clamp(56px,7vw,96px) auto,calc(100% + 32px) auto;
+  background-repeat:no-repeat;background-position:center calc(100% + 20px);
+  background-size:calc(100% + 32px) auto;
 }
 .card--doze .card__shots img{
-  width:auto;height:auto;max-width:100%;max-height:clamp(280px,28vw,360px);object-fit:contain;outline:none;
-  box-shadow:0 28px 64px -12px #14202f59,0 10px 24px -6px #14202f40,0 0 0 1px #1717172b;
+  width:clamp(208px,22vw,272px);height:auto;max-width:100%;max-height:none;object-fit:contain;
+  border-radius:12px;
+  box-shadow:0 2px 6px -2px rgba(0,0,0,.12),0 14px 28px -8px rgba(0,0,0,.16);
 }
 @media (hover:hover) and (pointer:fine){
   .card:has(.card__go:hover){z-index:4;transform:translateY(-6px) rotate(0)}
   .card:has(.card__go:active){transform:translateY(-2px) rotate(0) scale(.995)}
-  .card:has(.card__go:hover) .card__go{background:color-mix(in oklch,currentColor 11%,transparent)}
 }
 @media (max-width:720px){
   .deck>[data-reveal-group]{grid-template-columns:minmax(0,1fr)}
@@ -203,8 +199,8 @@ setTimeout(function(){
   .card__heading{font-size:36px}
   .card--compact .card__heading{font-size:32px}
   .card__p{font-size:1.0625rem;line-height:1.65}
-  .card__foot{width:100%;padding-top:28px}
-  .card__go{width:100%;min-height:48px;justify-content:space-between}
+  .card__foot{--card-action-min-height:48px;width:100%;padding-top:28px}
+  .card__go{width:100%}
   .card__shots{--shot-padding:12px}
 }
 @media (max-width:360px){
@@ -242,28 +238,6 @@ setTimeout(function(){
   <section class="deck wrap" id="deck">
     <div data-reveal-group data-stagger="140" data-distance="2.1em" data-start="top 88%">
 
-      <article class="card card--featured card--shheep" id="shheep">
-        <div class="card__grid">
-          <div class="card__copy">
-            <div class="card__heading">
-              <NativeAppIcon slug="shheep" size={96} class="card__icon" />
-              <div class="card__identity">
-                <h2 class="card__title dsp">Shheep</h2>
-                <p class="card__tag">iPhone · iPad</p>
-              </div>
-            </div>
-            <p class="card__p">A sheep-counting game for iPhone and iPad. Jump over fences, duck under bats and try a new course each night. Download on the App Store or try the web demo.</p>
-            <div class="card__foot">
-              <a data-hover href="/shheep/" class="card__go"><span>Discover Shheep</span><span class="card__arrow" aria-hidden="true">→</span></a>
-            </div>
-          </div>
-          <div class="card__shots" style={{ backgroundImage: `url("${shheepNight.src}")` }}>
-            <img src="/shheep/preview.png" width="1050" height="560" alt="Shheep’s pixel bedroom, with a sleepy girl and a sheep-filled thought bubble">
-          </div>
-        </div>
-      </article>
-
-
       <article class="card card--featured card--doze" id="doze">
         <div class="card__grid">
           <div class="card__copy">
@@ -271,16 +245,44 @@ setTimeout(function(){
               <NativeAppIcon slug="doze" size={80} class="card__icon" />
               <div class="card__identity">
                 <h2 class="card__title dsp">Doze</h2>
-                <p class="card__tag">macOS</p>
+                <div class="card__meta">
+                  <p class="card__tag">macOS</p>
+                  <CardAction href="/doze/presskit/#en" aria-label="Doze Press Kit" class="card__press" secondary arrow={false}>Press Kit</CardAction>
+                </div>
               </div>
             </div>
-            <p class="card__p">{doze.description}</p>
+            <p class="card__p"><ComputerUseText text={doze.description} /></p>
             <div class="card__foot">
-              <a data-hover href={doze.selectedUrl} class="card__go"><span>Doze details</span><span class="card__arrow" aria-hidden="true">→</span></a>
+              <CardAction href={doze.selectedUrl} class="card__go" stretched>Doze details</CardAction>
             </div>
           </div>
-          <div class="card__shots" style={{ backgroundImage: `url("${dozeSun.src}"),url("${dozeLandscape.src}")` }}>
+          <div class="card__shots" style={{ backgroundImage: `url("${dozeLandscape.src}")` }}>
             <Image src={dozePanel} width={384} densities={[1, 2]} format="webp" quality={90} alt="Doze’s Mac settings for screen dimming and keeping computer use running" />
+          </div>
+        </div>
+      </article>
+
+
+      <article class="card card--featured card--shheep" id="shheep">
+        <div class="card__grid">
+          <div class="card__copy">
+            <div class="card__heading">
+              <NativeAppIcon slug="shheep" size={96} class="card__icon" />
+              <div class="card__identity">
+                <h2 class="card__title dsp">Shheep</h2>
+                <div class="card__meta">
+                  <p class="card__tag">iPhone · iPad</p>
+                  <CardAction href="/shheep/presskit/#en" aria-label="Shheep Press Kit" class="card__press" secondary arrow={false}>Press Kit</CardAction>
+                </div>
+              </div>
+            </div>
+            <p class="card__p">A sheep-counting game for iPhone and iPad. Jump over fences, duck under bats and try a new course each night. Download on the App Store or try the web demo.</p>
+            <div class="card__foot">
+              <CardAction href="/shheep/" class="card__go" stretched>Discover Shheep</CardAction>
+            </div>
+          </div>
+          <div class="card__shots" style={{ backgroundImage: `url("${shheepNight.src}")` }}>
+            <img src="/shheep/preview.png" width="1050" height="560" alt="Shheep’s pixel bedroom, with a sleepy girl and a sheep-filled thought bubble">
           </div>
         </div>
       </article>
@@ -292,12 +294,15 @@ setTimeout(function(){
               <NativeAppIcon slug="yiyan" size={96} class="card__icon" />
               <div class="card__identity">
                 <h2 class="card__title dsp">YiYan</h2>
-                <p class="card__tag">macOS · iPhone</p>
+                <div class="card__meta">
+                  <p class="card__tag">macOS · iPhone</p>
+                  <CardAction href="/yiyan/presskit/#en" aria-label="YiYan Press Kit" class="card__press" secondary arrow={false}>Press Kit</CardAction>
+                </div>
               </div>
             </div>
             <p class="card__p">Turn input from AI coding tools such as Claude Code and Codex into natural English, with explanations and examples. Polish selected text or the current input field on Mac.</p>
             <div class="card__foot">
-              <a data-hover href="/yiyan/en/" class="card__go"><span>YiYan details</span><span class="card__arrow" aria-hidden="true">→</span></a>
+              <CardAction href="/yiyan/en/" class="card__go" stretched>YiYan details</CardAction>
             </div>
           </div>
           <div class="card__shots" style={{ backgroundImage: `url("${yiyanDesktop.src}")` }}>
@@ -313,12 +318,15 @@ setTimeout(function(){
               <NativeAppIcon slug="xvdl" size={96} class="card__icon" />
               <div class="card__identity">
                 <h2 class="card__title dsp">XVDL</h2>
-                <p class="card__tag">macOS</p>
+                <div class="card__meta">
+                  <p class="card__tag">macOS</p>
+                  <CardAction href="/xvdl/presskit/#en" aria-label="XVDL Press Kit" class="card__press" secondary arrow={false}>Press Kit</CardAction>
+                </div>
               </div>
             </div>
             <p class="card__p">Download videos from X in Safari on your Mac. Save the highest-quality available MP4 directly to your Downloads folder.</p>
             <div class="card__foot">
-              <a data-hover href="/xvdl/" class="card__go"><span>XVDL details</span><span class="card__arrow" aria-hidden="true">→</span></a>
+              <CardAction href="/xvdl/" class="card__go" stretched>XVDL details</CardAction>
             </div>
           </div>
           <div class="card__shots" style={{ backgroundImage: `url("${xvdlBlueHour.src}")` }}>
@@ -334,12 +342,15 @@ setTimeout(function(){
               <NativeAppIcon slug="chmate" size={96} class="card__icon" />
               <div class="card__identity">
                 <h2 class="card__title dsp">CHMate</h2>
-                <p class="card__tag">iPhone · iPad</p>
+                <div class="card__meta">
+                  <p class="card__tag">iPhone · iPad</p>
+                  <CardAction href="/chmate/presskit/#en" aria-label="CHMate Press Kit" class="card__press" secondary arrow={false}>Press Kit</CardAction>
+                </div>
               </div>
             </div>
             <p class="card__p">Read EPUB ebooks, CHM documents and MHT files on iPhone and iPad. Search across chapters, highlight passages and add notes.</p>
             <div class="card__foot">
-              <a data-hover href="/chmate/en/" class="card__go"><span>CHMate details</span><span class="card__arrow" aria-hidden="true">→</span></a>
+              <CardAction href="/chmate/en/" class="card__go" stretched>CHMate details</CardAction>
             </div>
           </div>
         </div>
@@ -352,12 +363,15 @@ setTimeout(function(){
               <NativeAppIcon slug="world-book" size={96} class="card__icon" />
               <div class="card__identity">
                 <h2 class="card__title dsp">World Book</h2>
-                <p class="card__tag">iPhone · iPad</p>
+                <div class="card__meta">
+                  <p class="card__tag">iPhone · iPad</p>
+                  <CardAction href="/world-book/presskit/#en" aria-label="World Book Press Kit" class="card__press" secondary arrow={false}>Press Kit</CardAction>
+                </div>
               </div>
             </div>
             <p class="card__p">Look up country profiles, flags and rankings, and explore a 3D globe offline. Download photos and regional maps to view them offline too.</p>
             <div class="card__foot">
-              <a data-hover href="/world-book/" class="card__go"><span>World Book details</span><span class="card__arrow" aria-hidden="true">→</span></a>
+              <CardAction href="/world-book/" class="card__go" stretched>World Book details</CardAction>
             </div>
           </div>
         </div>
@@ -375,7 +389,7 @@ setTimeout(function(){
             </div>
             <p class="card__p">Read your Fanfou timeline, mentions and direct messages on iPhone and iPad. View favorites and photos.</p>
             <div class="card__foot">
-              <a data-hover href="https://apps.apple.com/us/app/%E4%B8%80%E9%A5%AD-%E5%B2%81%E9%9D%99%E9%A5%AD%E5%90%A6%E5%AE%A2%E6%88%B7%E7%AB%AF/id541110403?uo=4" class="card__go"><span>View on App Store</span><span class="card__arrow" aria-hidden="true">→</span></a>
+              <CardAction href="https://apps.apple.com/us/app/%E4%B8%80%E9%A5%AD-%E5%B2%81%E9%9D%99%E9%A5%AD%E5%90%A6%E5%AE%A2%E6%88%B7%E7%AB%AF/id541110403?uo=4" class="card__go" stretched>View on App Store</CardAction>
             </div>
           </div>
         </div>
@@ -388,12 +402,15 @@ setTimeout(function(){
               <NativeAppIcon slug="fondfont" size={96} class="card__icon" />
               <div class="card__identity">
                 <h2 class="card__title dsp">FondFont</h2>
-                <p class="card__tag">iPhone · iPad</p>
+                <div class="card__meta">
+                  <p class="card__tag">iPhone · iPad</p>
+                  <CardAction href="/fondfont/presskit/#en" aria-label="FondFont Press Kit" class="card__press" secondary arrow={false}>Press Kit</CardAction>
+                </div>
               </div>
             </div>
             <p class="card__p">Install your TTF, OTF and TTC font files on iPhone and iPad. Use them in apps that support the iOS font library, including Pages and Keynote.</p>
             <div class="card__foot">
-              <a data-hover href="/fondfont/en/" class="card__go"><span>FondFont details</span><span class="card__arrow" aria-hidden="true">→</span></a>
+              <CardAction href="/fondfont/en/" class="card__go" stretched>FondFont details</CardAction>
             </div>
           </div>
         </div>

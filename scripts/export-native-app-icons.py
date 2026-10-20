@@ -1,4 +1,5 @@
 """Export full native app icons from preserved production assets, without retouching."""
+import argparse
 import hashlib
 import json
 from pathlib import Path
@@ -13,7 +14,12 @@ ICTOOL = '/Applications/Xcode.app/Contents/Applications/Icon Composer.app/Conten
 
 def main():
     sources = json.loads(SOURCES.read_text())
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--product', choices=sources, help='Export only this product')
+    args = parser.parse_args()
     for slug, record in sources.items():
+        if args.product and slug != args.product:
+            continue
         source = ROOT / record['source']
         output = ROOT / record['output']
         files = sorted(path for path in source.rglob('*') if path.is_file() and not path.name.startswith('.')) if source.is_dir() else [source]

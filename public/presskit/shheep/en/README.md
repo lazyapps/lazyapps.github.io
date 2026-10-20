@@ -61,6 +61,14 @@ Existing game title-screen preview (1050 × 560), not an active gameplay screens
 
 AI-generated pixel night-sky backdrop for the website presentation; not a game screenshot or built-in game scene.
 
+### Wordmark
+
+[wordmark.svg](../wordmark.svg)
+
+163.0 × 61.0 · SVG
+
+Lossless SVG of the original pixel wordmark. Exact pixel shapes, colors and transparency are preserved without smoothing or an embedded bitmap.
+
 ### Social sharing image
 
 [social-card.png](../social-card.png)

@@ -18,7 +18,10 @@
       "screenshot": "Screenshot",
       "artwork": "Social sharing image",
       "logo": "Wordmark",
-      "background": "Desktop wallpaper"
+      "background": "Desktop wallpaper",
+      "symbol": "Transparent brand symbol",
+      "menubar": "Menu bar icon",
+      "flatVector": "Flat vector artwork"
     },
     "availability": {
       "store": "Available on the App Store",
@@ -37,7 +40,12 @@
       "globe": "Frame from the English native iPad preview; unchanged pixels.",
       "sharedEnglishCapture": "Shared English interface screenshot with example Chinese writing and English learning notes; original pixels are unchanged.",
       "background": "AI-generated desert wallpaper for the website presentation; not an app screenshot or built-in app feature.",
-      "websiteBackground": "AI-generated decorative backdrop for the website presentation; not an app screenshot, game scene or built-in feature."
+      "websiteBackground": "AI-generated decorative backdrop for the website presentation; not an app screenshot, game scene or built-in feature.",
+      "symbol": "Original transparent brand symbol from the current app icon. Original gold color, proportions and opacity preserved.",
+      "menubar": "Original transparent 2× template PNG (44 × 40 pixels; 22 × 20 points). Active, dimmed and attention states share the normal appearance; keeping the computer awake changes the eyes. Paused icons retain the native 45% opacity. macOS adapts template color for dark menu bars.",
+      "flatVector": "Flat SVG assembled from the original vector artwork and layer positions. Native glass, lighting and platform icon masks are not reproduced; use the PNG for the complete native app icon.",
+      "vector": "SVG preserves the original vector paths, proportions and transparency.",
+      "pixelVector": "Lossless SVG of the original pixel wordmark. Exact pixel shapes, colors and transparency are preserved without smoothing or an embedded bitmap."
     },
     "usage": "For editorial coverage of this product. Preserve names, proportions and context; credit lazyapps and link to the product website. Third-party content and trademarks retain their respective rights; this kit grants no standalone reuse rights. Contact us for other uses.",
     "links": {
@@ -47,6 +55,12 @@
       "play": "Play in browser",
       "demo": "Try the web demo",
       "releases": "View releases"
+    },
+    "menubarStates": {
+      "active": "Normal",
+      "keepAwake": "Keep Computer Awake",
+      "paused": "Paused",
+      "pausedKeepAwake": "Paused · Keep Computer Awake"
     }
   },
   "zh-Hans": {
@@ -68,7 +82,10 @@
       "screenshot": "界面截图",
       "artwork": "社交分享图",
       "logo": "文字标志",
-      "background": "桌面背景"
+      "background": "桌面背景",
+      "symbol": "透明品牌符号",
+      "menubar": "菜单栏图标",
+      "flatVector": "平面矢量图"
     },
     "availability": {
       "store": "已在 App Store 上架",
@@ -87,7 +104,12 @@
       "globe": "从英语原生 iPad 预览提取的画面，像素保持原样。",
       "sharedEnglishCapture": "共享英语界面截图，展示中文示例文字与英语学习笔记，保留原始像素。",
       "background": "AI 生成的沙丘壁纸，用于网站展示；不是 App 截图或内置功能。",
-      "websiteBackground": "AI 生成的装饰背景，用于网站展示；不是 App 截图、游戏场景或内置功能。"
+      "websiteBackground": "AI 生成的装饰背景，用于网站展示；不是 App 截图、游戏场景或内置功能。",
+      "symbol": "当前 App 图标中的原版透明品牌符号，保留原版金色、比例和不透明度。",
+      "menubar": "原版透明 2× 模板 PNG（44 × 40 像素，22 × 20 点）。运行中、屏幕已调暗和需要注意三种状态共用普通外观；保持电脑唤醒时眼形改变。暂停图标保留原生 45% 不透明度，macOS 会为深色菜单栏自动调整模板颜色。",
+      "flatVector": "由原版矢量图案和图层位置组合的平面 SVG，不重现原生玻璃、光照或系统图标裁切。完整原生 App 图标请使用 PNG。",
+      "vector": "SVG 保留原版矢量路径、比例与透明度。",
+      "pixelVector": "由原版像素文字标志无损转换的 SVG，逐像素保留形状、颜色与透明度，不平滑边缘、不嵌入位图。"
     },
     "usage": "这些素材用于介绍本产品的媒体报道。请保留名称、比例与产品语境，署名 lazyapps 并链接产品网站。第三方内容与商标保留各自权利；本资料包不授予其独立使用权。如需其他用途，请联系我们。",
     "links": {
@@ -97,6 +119,12 @@
       "play": "在浏览器中游玩",
       "demo": "网页试玩 Demo",
       "releases": "查看发布进度"
+    },
+    "menubarStates": {
+      "active": "普通",
+      "keepAwake": "保持电脑唤醒",
+      "paused": "已暂停",
+      "pausedKeepAwake": "已暂停 · 保持电脑唤醒"
     }
   },
   "zh-Hant": {
@@ -118,7 +146,10 @@
       "screenshot": "介面截圖",
       "artwork": "社群分享圖",
       "logo": "文字標誌",
-      "background": "桌面背景"
+      "background": "桌面背景",
+      "symbol": "透明品牌符號",
+      "menubar": "選單列圖示",
+      "flatVector": "平面向量圖"
     },
     "availability": {
       "store": "已在 App Store 上架",
@@ -137,7 +168,12 @@
       "globe": "從英語原生 iPad 預覽擷取的畫面，像素保持原樣。",
       "sharedEnglishCapture": "共用英語介面截圖，展示中文範例文字與英語學習筆記，保留原始像素。",
       "background": "AI 生成的沙丘桌布，用於網站展示；不是 App 截圖或內建功能。",
-      "websiteBackground": "AI 生成的裝飾背景，用於網站展示；不是 App 截圖、遊戲場景或內建功能。"
+      "websiteBackground": "AI 生成的裝飾背景，用於網站展示；不是 App 截圖、遊戲場景或內建功能。",
+      "symbol": "目前 App 圖示中的原版透明品牌符號，保留原版金色、比例與不透明度。",
+      "menubar": "原版透明 2× 樣板 PNG（44 × 40 像素，22 × 20 點）。執行中、螢幕已調暗和需要注意三種狀態共用一般外觀；保持電腦喚醒時眼形改變。暫停圖示保留原生 45% 不透明度，macOS 會為深色選單列自動調整樣板顏色。",
+      "flatVector": "由原版向量圖案和圖層位置組合的平面 SVG，不重現原生玻璃、光照或系統圖示裁切。完整原生 App 圖示請使用 PNG。",
+      "vector": "SVG 保留原版向量路徑、比例與透明度。",
+      "pixelVector": "由原版像素文字標誌無損轉換的 SVG，逐像素保留形狀、顏色與透明度，不平滑邊緣、不嵌入點陣圖。"
     },
     "usage": "這些素材用於介紹本產品的媒體報導。請保留名稱、比例與產品語境，署名 lazyapps 並連結產品網站。第三方內容與商標保留各自權利；本資料包不授予其獨立使用權。如需其他用途，請聯絡我們。",
     "links": {
@@ -147,6 +183,12 @@
       "play": "在瀏覽器中遊玩",
       "demo": "網頁試玩 Demo",
       "releases": "查看發佈進度"
+    },
+    "menubarStates": {
+      "active": "一般",
+      "keepAwake": "保持電腦喚醒",
+      "paused": "已暫停",
+      "pausedKeepAwake": "已暫停 · 保持電腦喚醒"
     }
   },
   "de": {
@@ -168,7 +210,10 @@
       "screenshot": "Screenshot",
       "artwork": "Bild für soziale Medien",
       "logo": "Wortmarke",
-      "background": "Desktophintergrund"
+      "background": "Desktophintergrund",
+      "symbol": "Transparentes Markensymbol",
+      "menubar": "Menüleistensymbol",
+      "flatVector": "Flache Vektorgrafik"
     },
     "availability": {
       "store": "Im App Store erhältlich",
@@ -187,7 +232,12 @@
       "globe": "Bild aus der englischen nativen iPad-Vorschau; unveränderte Pixel.",
       "sharedEnglishCapture": "Gemeinsamer Screenshot der englischen Oberfläche mit chinesischen Beispieltexten und englischen Lernnotizen; die Originalpixel sind unverändert.",
       "background": "KI-generiertes Dünenmotiv für die Website-Präsentation; kein App-Screenshot und keine integrierte App-Funktion.",
-      "websiteBackground": "KI-generierter dekorativer Hintergrund für die Website; kein App-Screenshot, keine Spielszene und keine integrierte Funktion."
+      "websiteBackground": "KI-generierter dekorativer Hintergrund für die Website; kein App-Screenshot, keine Spielszene und keine integrierte Funktion.",
+      "symbol": "Originales transparentes Markensymbol aus dem aktuellen App-Symbol. Goldfarbe, Proportionen und Deckkraft bleiben erhalten.",
+      "menubar": "Originales transparentes 2×-Vorlagen-PNG (44 × 40 Pixel; 22 × 20 Punkte). Aktiv, abgedunkelt und Hinweis verwenden dieselbe normale Darstellung; beim Wachhalten ändern sich die Augen. Pausierte Symbole behalten die native Deckkraft von 45 %. macOS passt die Vorlagenfarbe an dunkle Menüleisten an.",
+      "flatVector": "Flaches SVG aus den ursprünglichen Vektorformen und Ebenenpositionen. Native Glaseffekte, Beleuchtung und Systemsymbolmasken werden nicht nachgebildet; das vollständige native App-Symbol liegt als PNG vor.",
+      "vector": "Das SVG bewahrt die ursprünglichen Vektorpfade, Proportionen und Transparenz.",
+      "pixelVector": "Verlustfreies SVG der ursprünglichen Pixel-Wortmarke. Pixelformen, Farben und Transparenz bleiben exakt erhalten, ohne Glättung oder eingebettete Bitmap."
     },
     "usage": "Für redaktionelle Berichte über dieses Produkt. Namen, Proportionen und Kontext erhalten; lazyapps nennen und auf die Produktwebsite verlinken. Rechte an Inhalten und Marken Dritter bleiben bestehen; dieses Paket erlaubt keine eigenständige Weiterverwendung. Für andere Nutzungen bitte Kontakt aufnehmen.",
     "links": {
@@ -197,6 +247,12 @@
       "play": "Im Browser spielen",
       "demo": "Web-Demo ausprobieren",
       "releases": "Versionen ansehen"
+    },
+    "menubarStates": {
+      "active": "Normal",
+      "keepAwake": "Computer wach halten",
+      "paused": "Pausiert",
+      "pausedKeepAwake": "Pausiert · Computer wach halten"
     }
   },
   "fr": {
@@ -218,7 +274,10 @@
       "screenshot": "Capture d’écran",
       "artwork": "Image pour les réseaux sociaux",
       "logo": "Logotype",
-      "background": "Fond d’écran du bureau"
+      "background": "Fond d’écran du bureau",
+      "symbol": "Symbole de marque transparent",
+      "menubar": "Icône de barre des menus",
+      "flatVector": "Illustration vectorielle à plat"
     },
     "availability": {
       "store": "Disponible sur l’App Store",
@@ -237,7 +296,12 @@
       "globe": "Image de l’aperçu natif anglais sur iPad ; pixels inchangés.",
       "sharedEnglishCapture": "Capture partagée de l’interface en anglais avec des exemples de textes chinois et des notes d’apprentissage de l’anglais ; pixels d’origine inchangés.",
       "background": "Paysage de dunes généré par IA pour la présentation du site ; ce n’est ni une capture d’écran ni une fonction intégrée de l’app.",
-      "websiteBackground": "Décor généré par IA pour la présentation sur le site ; il ne s’agit ni d’une capture de l’app, ni d’une scène du jeu, ni d’une fonctionnalité intégrée."
+      "websiteBackground": "Décor généré par IA pour la présentation sur le site ; il ne s’agit ni d’une capture de l’app, ni d’une scène du jeu, ni d’une fonctionnalité intégrée.",
+      "symbol": "Symbole de marque transparent d’origine issu de l’icône actuelle de l’app. La couleur dorée, les proportions et l’opacité d’origine sont préservées.",
+      "menubar": "PNG modèle transparent 2× d’origine (44 × 40 pixels ; 22 × 20 points). Les états actif, écran assombri et attention partagent la même apparence normale ; garder le Mac éveillé modifie les yeux. Les icônes en pause conservent leur opacité native de 45 %. macOS adapte la couleur du modèle aux barres des menus sombres.",
+      "flatVector": "SVG à plat assemblé à partir des formes vectorielles et positions de calques d’origine. Les effets de verre, l’éclairage et les masques d’icône du système ne sont pas reproduits ; utilisez le PNG pour l’icône native complète.",
+      "vector": "Le SVG conserve les tracés vectoriels, les proportions et la transparence d’origine.",
+      "pixelVector": "SVG sans perte du logotype en pixels d’origine. Formes, couleurs et transparence de chaque pixel préservées, sans lissage ni image matricielle intégrée."
     },
     "usage": "Pour les articles présentant ce produit. Conserver les noms, proportions et contexte ; créditer lazyapps et ajouter un lien vers le site du produit. Les contenus et marques de tiers conservent leurs droits ; ce dossier n’autorise pas leur réutilisation séparée. Nous contacter pour tout autre usage.",
     "links": {
@@ -247,6 +311,12 @@
       "play": "Jouer dans le navigateur",
       "demo": "Essayer la démo web",
       "releases": "Voir les versions"
+    },
+    "menubarStates": {
+      "active": "Normal",
+      "keepAwake": "Garder le Mac éveillé",
+      "paused": "En pause",
+      "pausedKeepAwake": "En pause · Garder le Mac éveillé"
     }
   },
   "es": {
@@ -268,7 +338,10 @@
       "screenshot": "Captura de pantalla",
       "artwork": "Imagen para redes sociales",
       "logo": "Logotipo",
-      "background": "Fondo de escritorio"
+      "background": "Fondo de escritorio",
+      "symbol": "Símbolo de marca transparente",
+      "menubar": "Icono de la barra de menús",
+      "flatVector": "Ilustración vectorial plana"
     },
     "availability": {
       "store": "Disponible en el App Store",
@@ -287,7 +360,12 @@
       "globe": "Fotograma de la vista previa nativa en inglés en iPad; píxeles sin modificar.",
       "sharedEnglishCapture": "Captura compartida de la interfaz en inglés con texto de ejemplo en chino y notas para aprender inglés; los píxeles originales no se han modificado.",
       "background": "Fondo de dunas generado con IA para la presentación del sitio web; no es una captura ni una función integrada de la app.",
-      "websiteBackground": "Fondo decorativo generado con IA para la presentación web; no es una captura de la app, una escena del juego ni una función integrada."
+      "websiteBackground": "Fondo decorativo generado con IA para la presentación web; no es una captura de la app, una escena del juego ni una función integrada.",
+      "symbol": "Símbolo de marca transparente original del icono actual de la app. Conserva el color dorado, las proporciones y la opacidad originales.",
+      "menubar": "PNG de plantilla transparente 2× original (44 × 40 píxeles; 22 × 20 puntos). Los estados activo, pantalla atenuada y atención comparten la apariencia normal; mantener el ordenador despierto cambia los ojos. Los iconos en pausa conservan la opacidad nativa del 45 %. macOS adapta el color de la plantilla a las barras de menús oscuras.",
+      "flatVector": "SVG plano compuesto con las formas vectoriales y posiciones de capa originales. No reproduce el cristal, la iluminación ni las máscaras de iconos del sistema; usa el PNG para el icono nativo completo.",
+      "vector": "El SVG conserva los trazados vectoriales, las proporciones y la transparencia originales.",
+      "pixelVector": "SVG sin pérdida del logotipo de píxeles original. Conserva exactamente formas, colores y transparencia, sin suavizado ni mapa de bits incrustado."
     },
     "usage": "Para publicaciones sobre este producto. Conserva nombres, proporciones y contexto; menciona a lazyapps y enlaza al sitio del producto. El contenido y las marcas de terceros conservan sus derechos; este kit no permite reutilizarlos por separado. Contáctanos para otros usos.",
     "links": {
@@ -297,6 +375,12 @@
       "play": "Jugar en el navegador",
       "demo": "Probar la demo web",
       "releases": "Ver versiones"
+    },
+    "menubarStates": {
+      "active": "Normal",
+      "keepAwake": "Mantener el ordenador despierto",
+      "paused": "En pausa",
+      "pausedKeepAwake": "En pausa · Mantener el ordenador despierto"
     }
   },
   "pt-BR": {
@@ -318,7 +402,10 @@
       "screenshot": "Captura de tela",
       "artwork": "Imagem para redes sociais",
       "logo": "Logotipo",
-      "background": "Plano de fundo da área de trabalho"
+      "background": "Plano de fundo da área de trabalho",
+      "symbol": "Símbolo da marca transparente",
+      "menubar": "Ícone da barra de menus",
+      "flatVector": "Arte vetorial plana"
     },
     "availability": {
       "store": "Disponível na App Store",
@@ -337,7 +424,12 @@
       "globe": "Quadro da prévia nativa em inglês no iPad; pixels sem alterações.",
       "sharedEnglishCapture": "Captura compartilhada da interface em inglês com exemplos de textos em chinês e notas de aprendizado de inglês; os pixels originais não foram alterados.",
       "background": "Paisagem de dunas gerada por IA para a apresentação no site; não é uma captura de tela nem um recurso integrado do app.",
-      "websiteBackground": "Fundo decorativo gerado por IA para apresentação no site; não é uma captura do app, uma cena do jogo nem um recurso integrado."
+      "websiteBackground": "Fundo decorativo gerado por IA para apresentação no site; não é uma captura do app, uma cena do jogo nem um recurso integrado.",
+      "symbol": "Símbolo original da marca com transparência, extraído do ícone atual do app. Preserva a cor dourada, as proporções e a opacidade originais.",
+      "menubar": "PNG de modelo transparente 2× original (44 × 40 pixels; 22 × 20 pontos). Os estados ativo, tela escurecida e atenção usam a mesma aparência normal; manter o computador ativo muda os olhos. Os ícones pausados preservam a opacidade nativa de 45%. O macOS adapta a cor do modelo às barras de menus escuras.",
+      "flatVector": "SVG plano montado com as formas vetoriais e posições de camadas originais. Vidro, iluminação e máscaras de ícones do sistema não são reproduzidos; use o PNG para o ícone nativo completo.",
+      "vector": "O SVG preserva os caminhos vetoriais, as proporções e a transparência originais.",
+      "pixelVector": "SVG sem perdas do logotipo pixelado original. Formas, cores e transparência de cada pixel são preservadas, sem suavização nem bitmap incorporado."
     },
     "usage": "Para publicações sobre este produto. Preserve nomes, proporções e contexto; dê crédito à lazyapps e inclua o site do produto. Conteúdos e marcas de terceiros mantêm seus direitos; este kit não autoriza reutilização separada. Entre em contato para outros usos.",
     "links": {
@@ -347,6 +439,12 @@
       "play": "Jogar no navegador",
       "demo": "Experimentar a demo web",
       "releases": "Ver versões"
+    },
+    "menubarStates": {
+      "active": "Normal",
+      "keepAwake": "Manter o computador ativo",
+      "paused": "Pausado",
+      "pausedKeepAwake": "Pausado · Manter o computador ativo"
     }
   },
   "pt": {
@@ -367,7 +465,8 @@
       "icon": "Ícone da aplicação",
       "screenshot": "Captura de ecrã",
       "artwork": "Imagem para redes sociais",
-      "logo": "Logótipo"
+      "logo": "Logótipo",
+      "flatVector": "Ilustração vetorial plana"
     },
     "availability": {
       "store": "Disponível na App Store",
@@ -383,7 +482,10 @@
       "artwork": "Imagem promocional, não uma captura da aplicação.",
       "logo": "Logótipo original em píxeis com transparência; preserve contornos e proporções.",
       "title": "Pré-visualização partilhada do ecrã de título do jogo, não de uma partida em curso.",
-      "globe": "Fotograma da pré-visualização nativa em inglês no iPad; píxeis inalterados."
+      "globe": "Fotograma da pré-visualização nativa em inglês no iPad; píxeis inalterados.",
+      "flatVector": "SVG plano composto a partir das formas vetoriais e posições das camadas originais. Não reproduz vidro, iluminação ou máscaras de ícones do sistema; utilize o PNG para o ícone nativo completo.",
+      "vector": "O SVG preserva os caminhos vetoriais, as proporções e a transparência originais.",
+      "pixelVector": "SVG sem perdas do logótipo pixelizado original. Formas, cores e transparência de cada píxel preservadas, sem suavização nem mapa de bits incorporado."
     },
     "usage": "Para publicações sobre este produto. Preserve nomes, proporções e contexto; dê crédito à lazyapps e inclua o site do produto. Conteúdos e marcas de terceiros mantêm os respetivos direitos; este kit não autoriza a reutilização separada. Contacte-nos para outros usos.",
     "links": {
@@ -414,7 +516,8 @@
       "screenshot": "Schermata",
       "artwork": "Immagine per i social",
       "logo": "Logotipo",
-      "background": "Sfondo decorativo"
+      "background": "Sfondo decorativo",
+      "flatVector": "Grafica vettoriale piatta"
     },
     "availability": {
       "store": "Disponibile sull’App Store",
@@ -431,7 +534,10 @@
       "logo": "Logotipo originale in pixel con trasparenza; conserva bordi e proporzioni.",
       "title": "Anteprima condivisa della schermata del titolo del gioco, non di una partita in corso.",
       "globe": "Fotogramma dell’anteprima nativa inglese su iPad; pixel invariati.",
-      "websiteBackground": "Sfondo decorativo generato con IA per la presentazione sul sito; non è una schermata dell’app, una scena di gioco o una funzione integrata."
+      "websiteBackground": "Sfondo decorativo generato con IA per la presentazione sul sito; non è una schermata dell’app, una scena di gioco o una funzione integrata.",
+      "flatVector": "SVG piatto composto dalle forme vettoriali e dalle posizioni dei livelli originali. Non riproduce vetro, illuminazione o maschere delle icone di sistema; usa il PNG per l’icona nativa completa.",
+      "vector": "L’SVG conserva i tracciati vettoriali, le proporzioni e la trasparenza originali.",
+      "pixelVector": "SVG senza perdita del logotipo pixel originale. Forme, colori e trasparenza di ogni pixel sono preservati, senza smussatura né bitmap incorporata."
     },
     "usage": "Per articoli dedicati a questo prodotto. Mantieni nomi, proporzioni e contesto; cita lazyapps e collega il sito del prodotto. I contenuti e i marchi di terzi conservano i rispettivi diritti; questo kit non ne autorizza il riutilizzo separato. Contattaci per altri usi.",
     "links": {
@@ -462,7 +568,10 @@
       "screenshot": "スクリーンショット",
       "artwork": "SNS共有画像",
       "logo": "ワードマーク",
-      "background": "デスクトップ背景"
+      "background": "デスクトップ背景",
+      "symbol": "透過ブランドシンボル",
+      "menubar": "メニューバーアイコン",
+      "flatVector": "フラットなベクター画像"
     },
     "availability": {
       "store": "App Store で公開中",
@@ -481,7 +590,12 @@
       "globe": "英語のネイティブ iPad プレビューから抽出したフレーム。ピクセルの変更はありません。",
       "sharedEnglishCapture": "共通の英語画面スクリーンショット。中国語の例文と英語学習ノートを表示しています。元のピクセルは変更していません。",
       "background": "ウェブサイトの展示用に AI で生成した砂丘の壁紙です。アプリのスクリーンショットや内蔵機能ではありません。",
-      "websiteBackground": "ウェブサイトでの展示用にAIで生成した装飾背景です。アプリのスクリーンショット、ゲーム内の場面、内蔵機能ではありません。"
+      "websiteBackground": "ウェブサイトでの展示用にAIで生成した装飾背景です。アプリのスクリーンショット、ゲーム内の場面、内蔵機能ではありません。",
+      "symbol": "現在のアプリアイコンに含まれるオリジナルの透過ブランドシンボルです。元の金色、縦横比、不透明度を保持しています。",
+      "menubar": "オリジナルの透過2×テンプレートPNG（44 × 40ピクセル、22 × 20ポイント）。動作中、画面の減光中、注意が必要な状態は同じ通常表示です。コンピュータをスリープさせない設定では目の形が変わります。一時停止中のアイコンは本来の不透明度45%を保持します。macOSが暗いメニューバーに合わせてテンプレートの色を調整します。",
+      "flatVector": "元のベクター図形とレイヤー位置から構成したフラットなSVGです。ネイティブのガラス効果、照明、システムのアイコンマスクは再現していません。完全なネイティブアプリアイコンにはPNGをご利用ください。",
+      "vector": "SVGは元のベクターパス、縦横比、透明度を保持しています。",
+      "pixelVector": "元のピクセルワードマークを可逆変換したSVGです。各ピクセルの形、色、透明度を保持し、平滑化やビットマップの埋め込みは行っていません。"
     },
     "usage": "本製品を紹介する報道にご利用ください。名称、比率、製品の文脈を保持し、lazyapps のクレジットと製品サイトへのリンクを掲載してください。第三者のコンテンツや商標の権利は各権利者に帰属し、このキットはそれらの単独利用を許諾しません。他の用途はお問い合わせください。",
     "links": {
@@ -491,6 +605,12 @@
       "play": "ブラウザでプレイ",
       "demo": "ウェブデモを試す",
       "releases": "リリースを見る"
+    },
+    "menubarStates": {
+      "active": "通常",
+      "keepAwake": "コンピュータをスリープさせない",
+      "paused": "一時停止中",
+      "pausedKeepAwake": "一時停止中 · コンピュータをスリープさせない"
     }
   },
   "ko": {
@@ -512,7 +632,10 @@
       "screenshot": "스크린샷",
       "artwork": "소셜 공유 이미지",
       "logo": "워드마크",
-      "background": "데스크톱 배경"
+      "background": "데스크톱 배경",
+      "symbol": "투명 브랜드 심볼",
+      "menubar": "메뉴 막대 아이콘",
+      "flatVector": "평면 벡터 이미지"
     },
     "availability": {
       "store": "App Store에서 제공 중",
@@ -531,7 +654,12 @@
       "globe": "영어 네이티브 iPad 미리보기에서 추출한 프레임으로 픽셀을 변경하지 않았습니다.",
       "sharedEnglishCapture": "공유 영어 인터페이스 스크린샷으로, 중국어 예문과 영어 학습 노트를 보여 줍니다. 원본 픽셀은 변경하지 않았습니다.",
       "background": "웹사이트 전시용으로 AI가 생성한 사막 사구 배경입니다. 앱 스크린샷이나 내장 기능이 아닙니다.",
-      "websiteBackground": "웹사이트 전시용으로 AI가 생성한 장식 배경입니다. 앱 스크린샷, 게임 장면 또는 내장 기능이 아닙니다."
+      "websiteBackground": "웹사이트 전시용으로 AI가 생성한 장식 배경입니다. 앱 스크린샷, 게임 장면 또는 내장 기능이 아닙니다.",
+      "symbol": "현재 앱 아이콘의 원본 투명 브랜드 심볼입니다. 원래의 금색, 비율, 불투명도를 유지합니다.",
+      "menubar": "원본 투명 2× 템플릿 PNG(44 × 40픽셀, 22 × 20포인트)입니다. 활성, 화면 어두워짐, 주의 상태는 일반 모양을 공유하며, 컴퓨터를 깨어 있게 유지하면 눈 모양이 바뀝니다. 일시 정지 아이콘은 원래의 45% 불투명도를 유지합니다. macOS가 어두운 메뉴 막대에 맞게 템플릿 색상을 조정합니다.",
+      "flatVector": "원본 벡터 도형과 레이어 위치로 구성한 평면 SVG입니다. 네이티브 유리 효과, 조명, 시스템 아이콘 마스크는 재현하지 않습니다. 완전한 네이티브 앱 아이콘은 PNG를 사용하세요.",
+      "vector": "SVG는 원본 벡터 경로, 비율, 투명도를 유지합니다.",
+      "pixelVector": "원본 픽셀 워드마크를 손실 없이 변환한 SVG입니다. 픽셀 모양, 색상, 투명도를 그대로 유지하며 가장자리 보정이나 비트맵 삽입을 하지 않습니다."
     },
     "usage": "이 제품을 소개하는 보도에 사용하세요. 이름, 비율, 제품 맥락을 유지하고 lazyapps를 명시하며 제품 웹사이트를 링크하세요. 제3자 콘텐츠와 상표의 권리는 각 권리자에게 있으며 이 키트는 별도 재사용을 허용하지 않습니다. 다른 용도는 문의해 주세요.",
     "links": {
@@ -541,6 +669,12 @@
       "play": "브라우저에서 플레이",
       "demo": "웹 데모 체험",
       "releases": "릴리스 보기"
+    },
+    "menubarStates": {
+      "active": "일반",
+      "keepAwake": "컴퓨터 깨어 있음 유지",
+      "paused": "일시 정지",
+      "pausedKeepAwake": "일시 정지 · 컴퓨터 깨어 있음 유지"
     }
   },
   "ar": {
@@ -562,7 +696,10 @@
       "screenshot": "لقطة شاشة",
       "artwork": "صورة للمشاركة الاجتماعية",
       "logo": "شعار نصي",
-      "background": "خلفية سطح المكتب"
+      "background": "خلفية سطح المكتب",
+      "symbol": "رمز العلامة بخلفية شفافة",
+      "menubar": "أيقونة شريط القوائم",
+      "flatVector": "رسم متجهي مسطح"
     },
     "availability": {
       "store": "متوفر في App Store",
@@ -580,7 +717,12 @@
       "title": "معاينة مشتركة لشاشة عنوان اللعبة وليست لقطة أثناء اللعب.",
       "globe": "إطار من معاينة iPad الأصلية بالإنجليزية دون تغيير البكسلات.",
       "sharedEnglishCapture": "لقطة مشتركة للواجهة الإنجليزية تعرض كتابة صينية نموذجية وملاحظات لتعلّم الإنجليزية؛ البكسلات الأصلية دون تغيير.",
-      "background": "خلفية كثبان رملية مولّدة بالذكاء الاصطناعي لعرض الموقع؛ ليست لقطة شاشة للتطبيق أو ميزة مدمجة فيه."
+      "background": "خلفية كثبان رملية مولّدة بالذكاء الاصطناعي لعرض الموقع؛ ليست لقطة شاشة للتطبيق أو ميزة مدمجة فيه.",
+      "symbol": "رمز العلامة الأصلي بخلفية شفافة من أيقونة التطبيق الحالية. مع الحفاظ على اللون الذهبي والنسب ودرجة التعتيم الأصلية.",
+      "menubar": "ملف PNG أصلي شفاف لقالب بدقة 2× ‏(44 × 40 بكسل؛ 22 × 20 نقطة). تتشارك حالات النشاط وتعتيم الشاشة والتنبيه المظهر العادي نفسه؛ وتتغير العينان عند إبقاء الكمبيوتر مستيقظًا. تحتفظ أيقونات الإيقاف المؤقت بدرجة التعتيم الأصلية البالغة 45٪. يضبط macOS لون القالب لأشرطة القوائم الداكنة.",
+      "flatVector": "ملف SVG مسطح مُركّب من الأشكال المتجهية ومواضع الطبقات الأصلية. لا يعيد إنتاج تأثيرات الزجاج والإضاءة وأقنعة أيقونات النظام؛ استخدم PNG لأيقونة التطبيق الأصلية الكاملة.",
+      "vector": "يحافظ SVG على المسارات المتجهية والنسب والشفافية الأصلية.",
+      "pixelVector": "تحويل SVG دون فقدان للشعار النصي الأصلي بالبكسل. يحافظ بدقة على أشكال البكسل وألوانها وشفافيتها، دون تنعيم أو صورة نقطية مضمّنة."
     },
     "usage": "للتغطية الصحفية لهذا المنتج. حافظ على الأسماء والنسب والسياق، وانسب المواد إلى lazyapps واربط بموقع المنتج. تحتفظ محتويات وعلامات الأطراف الأخرى بحقوقها؛ لا يمنح هذا الملف إذنًا بإعادة استخدامها منفردة. تواصل معنا للاستخدامات الأخرى.",
     "links": {
@@ -590,6 +732,12 @@
       "play": "العب في المتصفح",
       "demo": "جرّب العرض التوضيحي على الويب",
       "releases": "عرض الإصدارات"
+    },
+    "menubarStates": {
+      "active": "عادي",
+      "keepAwake": "إبقاء الكمبيوتر مستيقظًا",
+      "paused": "متوقف مؤقتًا",
+      "pausedKeepAwake": "متوقف مؤقتًا · إبقاء الكمبيوتر مستيقظًا"
     }
   },
   "id": {
@@ -610,7 +758,8 @@
       "icon": "Ikon aplikasi",
       "screenshot": "Tangkapan layar",
       "artwork": "Gambar berbagi sosial",
-      "logo": "Logo teks"
+      "logo": "Logo teks",
+      "flatVector": "Gambar vektor datar"
     },
     "availability": {
       "store": "Tersedia di App Store",
@@ -626,7 +775,10 @@
       "artwork": "Gambar promosi, bukan tangkapan layar aplikasi.",
       "logo": "Logo teks piksel transparan asli; pertahankan tepi dan proporsinya.",
       "title": "Pratinjau layar judul game yang digunakan bersama, bukan permainan aktif.",
-      "globe": "Bingkai dari pratinjau asli iPad berbahasa Inggris; piksel tidak diubah."
+      "globe": "Bingkai dari pratinjau asli iPad berbahasa Inggris; piksel tidak diubah.",
+      "flatVector": "SVG datar disusun dari bentuk vektor dan posisi lapisan asli. Efek kaca, pencahayaan, dan masker ikon sistem tidak direproduksi; gunakan PNG untuk ikon aplikasi native yang lengkap.",
+      "vector": "SVG mempertahankan jalur vektor, proporsi, dan transparansi asli.",
+      "pixelVector": "SVG tanpa kehilangan data dari logo teks piksel asli. Bentuk, warna, dan transparansi tiap piksel dipertahankan tanpa penghalusan atau bitmap tertanam."
     },
     "usage": "Untuk liputan tentang produk ini. Pertahankan nama, proporsi, dan konteks; cantumkan lazyapps dan tautkan situs produk. Konten dan merek pihak ketiga tetap memiliki hak masing-masing; kit ini tidak memberi izin penggunaan ulang secara terpisah. Hubungi kami untuk penggunaan lain.",
     "links": {
@@ -656,7 +808,8 @@
       "icon": "App-icoon",
       "screenshot": "Schermafbeelding",
       "artwork": "Afbeelding voor sociale media",
-      "logo": "Woordmerk"
+      "logo": "Woordmerk",
+      "flatVector": "Vlakke vectorillustratie"
     },
     "availability": {
       "store": "Beschikbaar in de App Store",
@@ -672,7 +825,10 @@
       "artwork": "Promotiebeeld, geen schermafbeelding van de app.",
       "logo": "Origineel transparant pixelwoordmerk; behoud pixelranden en verhoudingen.",
       "title": "Gedeeld voorbeeld van het titelscherm van het spel, geen actieve gameplay.",
-      "globe": "Beeld uit de Engelse native iPad-preview; pixels ongewijzigd."
+      "globe": "Beeld uit de Engelse native iPad-preview; pixels ongewijzigd.",
+      "flatVector": "Vlakke SVG samengesteld uit de oorspronkelijke vectorvormen en laagposities. Glaseffecten, belichting en systeempictogrammaskers worden niet nagebootst; gebruik de PNG voor het volledige oorspronkelijke app-pictogram.",
+      "vector": "De SVG behoudt de oorspronkelijke vectorpaden, verhoudingen en transparantie.",
+      "pixelVector": "Verliesvrije SVG van het oorspronkelijke pixelwoordmerk. Pixelvormen, kleuren en transparantie blijven exact behouden, zonder vervaging of ingesloten bitmap."
     },
     "usage": "Voor redactionele berichtgeving over dit product. Behoud namen, verhoudingen en context; vermeld lazyapps en link naar de productwebsite. Inhoud en merken van derden behouden hun rechten; deze kit geeft geen toestemming voor afzonderlijk hergebruik. Neem contact op voor ander gebruik.",
     "links": {
@@ -702,7 +858,8 @@
       "icon": "Uygulama simgesi",
       "screenshot": "Ekran görüntüsü",
       "artwork": "Sosyal paylaşım görseli",
-      "logo": "Yazı logosu"
+      "logo": "Yazı logosu",
+      "flatVector": "Düz vektör görseli"
     },
     "availability": {
       "store": "App Store’da mevcut",
@@ -718,7 +875,10 @@
       "artwork": "Tanıtım görselidir, uygulama ekran görüntüsü değildir.",
       "logo": "Özgün şeffaf piksel yazı logosu; kenarları ve oranları koruyun.",
       "title": "Ortak oyun başlık ekranı önizlemesidir, aktif oynanış değildir.",
-      "globe": "İngilizce özgün iPad önizlemesinden bir kare; pikseller değiştirilmemiştir."
+      "globe": "İngilizce özgün iPad önizlemesinden bir kare; pikseller değiştirilmemiştir.",
+      "flatVector": "Özgün vektör şekilleri ve katman konumlarından oluşturulmuş düz SVG. Yerel cam efektleri, aydınlatma ve sistem simge maskeleri yeniden üretilmez; tam yerel uygulama simgesi için PNG kullanın.",
+      "vector": "SVG, özgün vektör yollarını, oranları ve saydamlığı korur.",
+      "pixelVector": "Özgün piksel yazı logosunun kayıpsız SVG sürümü. Piksel şekilleri, renkleri ve saydamlığı yumuşatma veya gömülü bitmap olmadan aynen korunur."
     },
     "usage": "Bu ürün hakkındaki haberler için sağlanır. Adları, oranları ve bağlamı koruyun; lazyapps’e atıf yapın ve ürün sitesine bağlantı verin. Üçüncü taraf içerik ve markaları kendi haklarını korur; bu kit ayrı yeniden kullanım izni vermez. Diğer kullanımlar için iletişime geçin.",
     "links": {
@@ -749,7 +909,10 @@
       "screenshot": "Снимок экрана",
       "artwork": "Изображение для соцсетей",
       "logo": "Текстовый логотип",
-      "background": "Обои рабочего стола"
+      "background": "Обои рабочего стола",
+      "symbol": "Символ бренда с прозрачным фоном",
+      "menubar": "Значок строки меню",
+      "flatVector": "Плоская векторная графика"
     },
     "availability": {
       "store": "Доступно в App Store",
@@ -768,7 +931,12 @@
       "globe": "Кадр английского нативного предпросмотра на iPad; пиксели не изменены.",
       "sharedEnglishCapture": "Общий снимок английского интерфейса с примерами китайского текста и заметками для изучения английского; исходные пиксели не изменены.",
       "background": "Изображение дюн, созданное ИИ для оформления сайта; это не снимок экрана и не встроенная функция приложения.",
-      "websiteBackground": "Декоративный фон, созданный ИИ для оформления сайта; это не снимок приложения, не игровая сцена и не встроенная функция."
+      "websiteBackground": "Декоративный фон, созданный ИИ для оформления сайта; это не снимок приложения, не игровая сцена и не встроенная функция.",
+      "symbol": "Оригинальный символ бренда из текущего значка приложения. Исходные золотой цвет, пропорции и непрозрачность сохранены.",
+      "menubar": "Оригинальный прозрачный шаблон PNG 2× (44 × 40 пикселей; 22 × 20 точек). Активное состояние, затемнение экрана и предупреждение используют обычный вид; при запрете сна меняется форма глаз. Значки паузы сохраняют исходную непрозрачность 45 %. macOS адаптирует цвет шаблона для тёмной строки меню.",
+      "flatVector": "Плоский SVG из исходных векторных форм и расположения слоёв. Эффекты стекла, освещение и системные маски значков не воспроизводятся; для полного нативного значка приложения используйте PNG.",
+      "vector": "SVG сохраняет исходные векторные контуры, пропорции и прозрачность.",
+      "pixelVector": "SVG исходного пиксельного логотипа без потерь. Формы, цвета и прозрачность каждого пикселя сохранены без сглаживания и встроенного растрового изображения."
     },
     "usage": "Для публикаций об этом продукте. Сохраняйте названия, пропорции и контекст; укажите lazyapps и ссылку на сайт продукта. Права на контент и товарные знаки третьих лиц сохраняются; этот комплект не разрешает их отдельное использование. Для других целей свяжитесь с нами.",
     "links": {
@@ -778,6 +946,12 @@
       "play": "Играть в браузере",
       "demo": "Попробовать веб-демо",
       "releases": "Посмотреть выпуски"
+    },
+    "menubarStates": {
+      "active": "Обычный",
+      "keepAwake": "Не давать компьютеру засыпать",
+      "paused": "Приостановлено",
+      "pausedKeepAwake": "Приостановлено · Не давать компьютеру засыпать"
     }
   },
   "hi": {
@@ -799,7 +973,10 @@
       "screenshot": "स्क्रीनशॉट",
       "artwork": "सोशल शेयरिंग चित्र",
       "logo": "शब्दचिह्न",
-      "background": "डेस्कटॉप वॉलपेपर"
+      "background": "डेस्कटॉप वॉलपेपर",
+      "symbol": "पारदर्शी ब्रांड चिह्न",
+      "menubar": "मेनू बार आइकन",
+      "flatVector": "सपाट वेक्टर चित्र"
     },
     "availability": {
       "store": "App Store पर उपलब्ध",
@@ -817,7 +994,12 @@
       "title": "साझा गेम शीर्षक स्क्रीन का पूर्वावलोकन; सक्रिय गेमप्ले नहीं।",
       "globe": "अंग्रेज़ी मूल iPad पूर्वावलोकन का फ़्रेम; पिक्सेल नहीं बदले गए हैं।",
       "sharedEnglishCapture": "साझा अंग्रेज़ी इंटरफ़ेस का स्क्रीनशॉट, जिसमें उदाहरण के तौर पर चीनी लेखन और अंग्रेज़ी सीखने के नोट्स हैं; मूल पिक्सेल अपरिवर्तित हैं।",
-      "background": "वेबसाइट पर प्रस्तुति के लिए AI से बनाया गया रेत के टीलों का वॉलपेपर; यह ऐप का स्क्रीनशॉट या अंतर्निहित सुविधा नहीं है।"
+      "background": "वेबसाइट पर प्रस्तुति के लिए AI से बनाया गया रेत के टीलों का वॉलपेपर; यह ऐप का स्क्रीनशॉट या अंतर्निहित सुविधा नहीं है।",
+      "symbol": "मौजूदा ऐप आइकन का मूल पारदर्शी ब्रांड चिह्न। मूल सुनहरा रंग, अनुपात और अपारदर्शिता बरकरार हैं।",
+      "menubar": "मूल पारदर्शी 2× टेम्पलेट PNG (44 × 40 पिक्सेल; 22 × 20 पॉइंट)। सक्रिय, स्क्रीन मंद होने और ध्यान देने की स्थितियों में सामान्य रूप एक जैसा है; कंप्यूटर को सक्रिय रखने पर आँखों का आकार बदलता है। रुके हुए आइकन मूल 45% अपारदर्शिता बनाए रखते हैं। macOS गहरे मेनू बार के लिए टेम्पलेट का रंग बदलता है।",
+      "flatVector": "मूल वेक्टर आकृतियों और परतों की स्थितियों से बना सपाट SVG। मूल ग्लास प्रभाव, रोशनी और सिस्टम आइकन मास्क दोहराए नहीं गए हैं; पूरे मूल ऐप आइकन के लिए PNG इस्तेमाल करें।",
+      "vector": "SVG मूल वेक्टर पथ, अनुपात और पारदर्शिता बनाए रखता है।",
+      "pixelVector": "मूल पिक्सेल वर्डमार्क का बिना किसी क्षति वाला SVG। हर पिक्सेल का आकार, रंग और पारदर्शिता सुरक्षित है; किनारों को चिकना नहीं किया गया और कोई बिटमैप नहीं जोड़ा गया है।"
     },
     "usage": "इस उत्पाद की समाचार कवरेज के लिए। नाम, अनुपात और संदर्भ बनाए रखें; lazyapps को श्रेय दें और उत्पाद वेबसाइट का लिंक जोड़ें। तृतीय पक्ष की सामग्री और ट्रेडमार्क के अधिकार उनके पास रहते हैं; यह किट उन्हें अलग से दोबारा इस्तेमाल करने की अनुमति नहीं देती। अन्य उपयोगों के लिए संपर्क करें।",
     "links": {
@@ -827,6 +1009,12 @@
       "play": "ब्राउज़र में खेलें",
       "demo": "वेब डेमो आज़माएँ",
       "releases": "रिलीज़ देखें"
+    },
+    "menubarStates": {
+      "active": "सामान्य",
+      "keepAwake": "कंप्यूटर को सक्रिय रखें",
+      "paused": "रुका हुआ",
+      "pausedKeepAwake": "रुका हुआ · कंप्यूटर को सक्रिय रखें"
     }
   }
 }

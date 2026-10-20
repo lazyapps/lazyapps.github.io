@@ -70,6 +70,14 @@ Gemeinsamer Screenshot der englischen Oberfläche mit chinesischen Beispieltexte
 
 KI-generiertes Dünenmotiv für die Website-Präsentation; kein App-Screenshot und keine integrierte App-Funktion.
 
+### Flache Vektorgrafik
+
+[artwork-flat.svg](../artwork-flat.svg)
+
+1024.0 × 1024.0 · SVG
+
+Flaches SVG aus den ursprünglichen Vektorformen und Ebenenpositionen. Native Glaseffekte, Beleuchtung und Systemsymbolmasken werden nicht nachgebildet; das vollständige native App-Symbol liegt als PNG vor.
+
 ### Bild für soziale Medien
 
 [social-card.png](../social-card.png)

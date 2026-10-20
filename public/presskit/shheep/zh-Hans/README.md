@@ -61,6 +61,14 @@ iPhone 和 iPad App 支持 Game Center 排行榜、好友挑战和邀请。
 
 AI 生成的像素夜空背景，用于网站展示；不是游戏截图或内置游戏场景。
 
+### 文字标志
+
+[wordmark.svg](../wordmark.svg)
+
+163.0 × 61.0 · SVG
+
+由原版像素文字标志无损转换的 SVG，逐像素保留形状、颜色与透明度，不平滑边缘、不嵌入位图。
+
 ### 社交分享图
 
 [social-card.png](../social-card.png)
