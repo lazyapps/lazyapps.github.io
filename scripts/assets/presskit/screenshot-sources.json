@@ -317,7 +317,7 @@
       },
       {
         "source": "scripts/assets/presskit/doze-panel-en-light.png",
-        "sha256": "868e9e75d1656be82b8165cf7d754367e0468df899af8a115af93c67e5849fc0",
+        "sha256": "25f0d5a3ccc4921a333075c5111d1d21a06972029e37926a10364f440f0b852c",
         "contentLanguage": "en",
         "type": "native",
         "operation": "Original Retina pixels from native ControlPanelView; no resizing or retouching.",
@@ -335,7 +335,7 @@
       },
       {
         "source": "scripts/assets/presskit/doze-panel-es-light.png",
-        "sha256": "d050f003a6dd6e26c102f300adfabb29206a5376a5c7e7d63a73f24034bc1ef0",
+        "sha256": "ced5cb98c15fe207725f53142c416cd960061dd53a0865316c16d5b554f93ee4",
         "contentLanguage": "es",
         "type": "native",
         "operation": "Original Retina pixels from native ControlPanelView; no resizing or retouching.",
@@ -353,7 +353,7 @@
       },
       {
         "source": "scripts/assets/presskit/doze-panel-fr-light.png",
-        "sha256": "a272b582a87a890d29cb5dedfda1880c7268eb0e6714455e8c377b588878b2ba",
+        "sha256": "5a2c0b80c9e7c6a862a0bcf865bd3dbfa41b127a0838f2e69177be1b3335e0da",
         "contentLanguage": "fr",
         "type": "native",
         "operation": "Original Retina pixels from native ControlPanelView; no resizing or retouching.",
@@ -371,7 +371,7 @@
       },
       {
         "source": "scripts/assets/presskit/doze-panel-hi-light.png",
-        "sha256": "ed4166fd5a7e6f8ca91be7c92df41a25aafd7bd8db4257a858fd8ff1abb8d3b6",
+        "sha256": "34233bc0d4f554e06d181c5ce167452f3e894eb79fd70162ba3946cc8c1a4ba2",
         "contentLanguage": "hi",
         "type": "native",
         "operation": "Original Retina pixels from native ControlPanelView; no resizing or retouching.",
@@ -389,7 +389,7 @@
       },
       {
         "source": "scripts/assets/presskit/doze-panel-ja-light.png",
-        "sha256": "de0aed414ad72a394dcd03aa5842ea5b487543edb9b89bffdc357b90dfbbf7e8",
+        "sha256": "14689ba80c80447168107244e904213be539e138ea4966380f92f673db00a5b2",
         "contentLanguage": "ja",
         "type": "native",
         "operation": "Original Retina pixels from native ControlPanelView; no resizing or retouching.",
@@ -407,7 +407,7 @@
       },
       {
         "source": "scripts/assets/presskit/doze-panel-ko-light.png",
-        "sha256": "7be87156cf6132e365436bf28d8c3c84014f01b52fd33846cf38c43480da680e",
+        "sha256": "bbe5e1103347249a68160e6e415316bc65226731a19066d0dac85d068b570cfa",
         "contentLanguage": "ko",
         "type": "native",
         "operation": "Original Retina pixels from native ControlPanelView; no resizing or retouching.",
@@ -425,7 +425,7 @@
       },
       {
         "source": "scripts/assets/presskit/doze-panel-pt-br-light.png",
-        "sha256": "48020b204b37a86a5faaae3d3a0220df48580ea7c1dcc50aa94cfb9c1e73a370",
+        "sha256": "0499570031d20faaf773a28e311f5eeb7ed5b2cc02b55ad9a75470a81a3e7ebf",
         "contentLanguage": "pt-BR",
         "type": "native",
         "operation": "Original Retina pixels from native ControlPanelView; no resizing or retouching.",
@@ -443,7 +443,7 @@
       },
       {
         "source": "scripts/assets/presskit/doze-panel-ru-light.png",
-        "sha256": "8a11a858b8c588e752d1bc9219a4ef17bd4be819fe15cc4c34157c30f29395ab",
+        "sha256": "42a3ac57e454ee6325e75b6647b6ddf15a64d707f4f4d475f739c45f3f34c129",
         "contentLanguage": "ru",
         "type": "native",
         "operation": "Original Retina pixels from native ControlPanelView; no resizing or retouching.",
@@ -461,7 +461,7 @@
       },
       {
         "source": "scripts/assets/presskit/doze-panel-zh-hans-light.png",
-        "sha256": "847051ce05e79b5c8f2ddaeece2bc245b6beb5a2119dc32f2881edc773c505b1",
+        "sha256": "017975c29988c7b3d4e097f59bdaf616ee9813c74f266fe62a02a36c3b5288bf",
         "contentLanguage": "zh-Hans",
         "type": "native",
         "operation": "Original Retina pixels from native ControlPanelView; no resizing or retouching.",
@@ -479,7 +479,7 @@
       },
       {
         "source": "scripts/assets/presskit/doze-panel-zh-hant-light.png",
-        "sha256": "808ba33f260d9afae7276889eb7834bd57cde68e9f28f437e8435066a6a533c1",
+        "sha256": "86835b4da0cdb8736645a5905483e0ea0dfdb9ff9d3250e73235ec45ddb0b64c",
         "contentLanguage": "zh-Hant",
         "type": "native",
         "operation": "Original Retina pixels from native ControlPanelView; no resizing or retouching.",

@@ -1,6 +1,6 @@
 {
   "commit": "0155162077926fa283656946fb76b1a43aa230ec",
-  "note": "Native Retina window captures of the 261019.0 UI with the update action, in isolated per-language preview apps. CUA verified language and layout; Cmd-T toggles appearance. Original pixels captured by window ID, with no resizing or retouching.",
+  "note": "Native Retina window captures of the 261019.0 UI with the update action, in isolated per-language preview apps. CUA verified language and layout; Cmd-T toggles appearance. Original pixels captured by window ID, with no resizing or retouching. On 2026-10-21, recaptured ten light appearances (en, es, fr, hi, ja, ko, pt-BR, ru, zh-Hans, zh-Hant) after toggling dark and back to light to refresh native control rendering; verified blue primary buttons and on switches before capture. The other fourteen captures are unchanged.",
   "hashes": {
     "Sources/Localization.swift": "94dc0bac536e467e79899cd923ba7bded7316a57208f2916013855ded4740e86",
     "Sources/IdleDelay.swift": "76cde3c0c4adac239d898711e2959e3c1b05994c3a45ed592c29c6c0c9cf0041",
