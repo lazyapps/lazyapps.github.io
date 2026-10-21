@@ -23,7 +23,9 @@ Activa la atenuación al ausentarte y elige el tiempo de espera. Por defecto son
 Mueve el ratón, usa el trackpad o pulsa una tecla para recuperar el brillo. Los clics y las teclas simulados de las herramientas de IA probadas no iluminan la pantalla; otras pueden comportarse de otro modo.
 
 Evita el salvapantallas y el apagado de pantalla para que la IA pueda ver y usar apps en computer use y otras tareas de escritorio.
-También evita el reposo automático para continuar descargas y exportaciones. Sigue atenuando; consume más energía.
+También evita el reposo automático para continuar descargas y exportaciones.
+
+Con esta opción activada, la pantalla se sigue atenuando según lo configurado.
 
 Abre Doze.app y haz clic en el icono «眯» de la barra de menús.
 
@@ -97,7 +99,7 @@ PNG de plantilla transparente 2× original (44 × 40 píxeles; 22 × 20 puntos).
 
 [settings-light.png](settings-light.png)
 
-768 × 1306 · PNG
+768 × 1350 · PNG
 
 Vista previa de la interfaz nativa en este idioma; píxeles sin modificar.
 
@@ -105,7 +107,7 @@ Vista previa de la interfaz nativa en este idioma; píxeles sin modificar.
 
 [settings-dark.png](settings-dark.png)
 
-768 × 1306 · PNG
+768 × 1350 · PNG
 
 Vista previa de la interfaz nativa en este idioma; píxeles sin modificar.
 

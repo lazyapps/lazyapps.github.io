@@ -29,7 +29,7 @@
       ],
       [
         "保持电脑唤醒",
-        "阻止屏保和自动关屏，让 computer use 等 AI 桌面任务能看见、操作应用。\n防止自动睡眠，让下载、导出继续。仍会调暗，但更耗电。"
+        "阻止屏保和自动关屏，让 computer use 等 AI 桌面任务能看见、操作应用。\n防止自动睡眠，让下载、导出继续。"
       ]
     ],
     "setup": "三步，交给眯会儿",
@@ -50,7 +50,8 @@
       ]
     ],
     "license": "Doze 是专有软件；GitHub 仓库用于发布安装包和产品说明。",
-    "eyebrow": "为 AI 的 Computer use 而设计"
+    "eyebrow": "为 AI 的 Computer use 而设计",
+    "awakeNote": "开启后，屏幕仍会按设定调暗。"
   },
   "en": {
     "headline": [
@@ -82,7 +83,7 @@
       ],
       [
         "Keep Computer Awake",
-        "Stops screen savers and display sleep so AI can see and use apps for computer use and other desktop tasks.\nAlso prevents automatic sleep for downloads and exports. Still dims; uses more power."
+        "Stops screen savers and display sleep so AI can see and use apps for computer use and other desktop tasks.\nAlso prevents automatic sleep for downloads and exports."
       ]
     ],
     "setup": "Three steps. Then step away.",
@@ -103,7 +104,8 @@
       ]
     ],
     "license": "Doze is proprietary software. Its GitHub repository provides releases and product information.",
-    "eyebrow": "For AI computer use"
+    "eyebrow": "For AI computer use",
+    "awakeNote": "With this on, the screen still dims as set."
   },
   "zh-Hant": {
     "headline": [
@@ -135,7 +137,7 @@
       ],
       [
         "讓電腦保持喚醒",
-        "阻止螢幕保護程式和自動關閉螢幕，讓 computer use 等 AI 桌面工作能看見、操作應用程式。\n防止自動睡眠，讓下載、匯出繼續。仍會調暗，但更耗電。"
+        "阻止螢幕保護程式和自動關閉螢幕，讓 computer use 等 AI 桌面工作能看見、操作應用程式。\n防止自動睡眠，讓下載、匯出繼續。"
       ]
     ],
     "setup": "三步，交給瞇會兒",
@@ -156,7 +158,8 @@
       ]
     ],
     "license": "Doze 是專有軟體；GitHub 儲存庫提供安裝套件及產品說明。",
-    "eyebrow": "為 AI 的 Computer use 而設計"
+    "eyebrow": "為 AI 的 Computer use 而設計",
+    "awakeNote": "開啟後，螢幕仍會依設定調暗。"
   },
   "es": {
     "headline": [
@@ -188,7 +191,7 @@
       ],
       [
         "Mantener el Mac despierto",
-        "Evita el salvapantallas y el apagado de pantalla para que la IA pueda ver y usar apps en computer use y otras tareas de escritorio.\nTambién evita el reposo automático para continuar descargas y exportaciones. Sigue atenuando; consume más energía."
+        "Evita el salvapantallas y el apagado de pantalla para que la IA pueda ver y usar apps en computer use y otras tareas de escritorio.\nTambién evita el reposo automático para continuar descargas y exportaciones."
       ]
     ],
     "setup": "Tres pasos y puedes irte.",
@@ -209,7 +212,8 @@
       ]
     ],
     "license": "Doze es software propietario. Su repositorio de GitHub ofrece versiones e información del producto.",
-    "eyebrow": "Para el Computer use de la IA"
+    "eyebrow": "Para el Computer use de la IA",
+    "awakeNote": "Con esta opción activada, la pantalla se sigue atenuando según lo configurado."
   },
   "pt-BR": {
     "headline": [
@@ -241,7 +245,7 @@
       ],
       [
         "Manter o Mac Acordado",
-        "Impede o protetor de tela e o desligamento da tela para que a IA veja e use apps em computer use e outras tarefas no computador.\nTambém impede o repouso automático para continuar downloads e exportações. Ainda reduz o brilho; gasta mais energia."
+        "Impede o protetor de tela e o desligamento da tela para que a IA veja e use apps em computer use e outras tarefas no computador.\nTambém impede o repouso automático para continuar downloads e exportações."
       ]
     ],
     "setup": "Três passos. Depois, uma pausa.",
@@ -262,7 +266,8 @@
       ]
     ],
     "license": "Doze é software proprietário. O repositório no GitHub oferece versões e informações do produto.",
-    "eyebrow": "Para o Computer use da IA"
+    "eyebrow": "Para o Computer use da IA",
+    "awakeNote": "Com esta opção ativada, a tela continua escurecendo conforme os ajustes."
   },
   "fr": {
     "headline": [
@@ -294,7 +299,7 @@
       ],
       [
         "Garder le Mac éveillé",
-        "Bloque l’économiseur d’écran et la veille de l’écran pour que l’IA puisse voir et utiliser les apps avec computer use et d’autres tâches de bureau.\nEmpêche aussi la veille automatique pour les téléchargements et les exports. Réduit toujours la luminosité ; consomme plus."
+        "Bloque l’économiseur d’écran et la veille de l’écran pour que l’IA puisse voir et utiliser les apps avec computer use et d’autres tâches de bureau.\nEmpêche aussi la veille automatique pour les téléchargements et les exports."
       ]
     ],
     "setup": "Trois étapes, puis une pause.",
@@ -315,7 +320,8 @@
       ]
     ],
     "license": "Doze est un logiciel propriétaire. Son dépôt GitHub fournit les versions et les informations produit.",
-    "eyebrow": "Pour le Computer use de l’IA"
+    "eyebrow": "Pour le Computer use de l’IA",
+    "awakeNote": "Quand cette option est activée, l’écran s’assombrit toujours selon vos réglages."
   },
   "de": {
     "headline": [
@@ -347,7 +353,7 @@
       ],
       [
         "Mac wach halten",
-        "Verhindert Bildschirmschoner und das Abschalten des Displays, damit die KI bei computer use und anderen Desktop-Aufgaben Apps sehen und bedienen kann.\nVerhindert auch automatischen Ruhezustand für Downloads und Exporte. Dimmt weiterhin; braucht mehr Strom."
+        "Verhindert Bildschirmschoner und das Abschalten des Displays, damit die KI bei computer use und anderen Desktop-Aufgaben Apps sehen und bedienen kann.\nVerhindert auch automatischen Ruhezustand für Downloads und Exporte."
       ]
     ],
     "setup": "Drei Schritte. Dann eine Pause.",
@@ -368,7 +374,8 @@
       ]
     ],
     "license": "Doze ist proprietäre Software. Das GitHub-Repository enthält Versionen und Produktinformationen.",
-    "eyebrow": "Für Computer use mit KI"
+    "eyebrow": "Für Computer use mit KI",
+    "awakeNote": "Bei aktivierter Option wird der Bildschirm weiterhin wie eingestellt gedimmt."
   },
   "ja": {
     "headline": [
@@ -400,7 +407,7 @@
       ],
       [
         "スリープさせない",
-        "スクリーンセーバと画面オフを防ぎ、computer use などの AI デスクトップ作業でアプリを見て操作できる状態を保ちます。\n自動スリープも防ぎ、ダウンロードや書き出しを続けられます。画面は暗くなりますが、消費電力は増えます。"
+        "スクリーンセーバと画面オフを防ぎ、computer use などの AI デスクトップ作業でアプリを見て操作できる状態を保ちます。\n自動スリープも防ぎ、ダウンロードや書き出しを続けられます。"
       ]
     ],
     "setup": "3 ステップで、ひとやすみ。",
@@ -421,7 +428,8 @@
       ]
     ],
     "license": "Doze はプロプライエタリソフトウェアです。GitHub リポジトリでは配布版と製品情報を提供します。",
-    "eyebrow": "AI の Computer use のために"
+    "eyebrow": "AI の Computer use のために",
+    "awakeNote": "オンにしても、設定どおりに画面は暗くなります。"
   },
   "ko": {
     "headline": [
@@ -453,7 +461,7 @@
       ],
       [
         "컴퓨터 깨어 있게 유지",
-        "화면 보호기와 화면 꺼짐을 막아 computer use 등 AI 데스크톱 작업에서 앱을 보고 조작할 수 있게 합니다.\n자동 잠자기도 막아 다운로드와 내보내기를 계속합니다. 화면은 계속 어두워지지만 전력을 더 사용합니다."
+        "화면 보호기와 화면 꺼짐을 막아 computer use 등 AI 데스크톱 작업에서 앱을 보고 조작할 수 있게 합니다.\n자동 잠자기도 막아 다운로드와 내보내기를 계속합니다."
       ]
     ],
     "setup": "세 단계면 쉬러 가도 돼요.",
@@ -474,7 +482,8 @@
       ]
     ],
     "license": "Doze는 독점 소프트웨어입니다. GitHub 저장소는 배포 파일과 제품 정보를 제공합니다.",
-    "eyebrow": "AI의 Computer use를 위해"
+    "eyebrow": "AI의 Computer use를 위해",
+    "awakeNote": "이 옵션을 켜도 화면은 설정에 따라 어두워집니다."
   },
   "ru": {
     "headline": [
@@ -506,7 +515,7 @@
       ],
       [
         "Не давать Mac засыпать",
-        "Не даёт заставке и выключению экрана мешать ИИ видеть приложения и управлять ими в computer use и других задачах на рабочем столе.\nТакже предотвращает автоматический сон для загрузок и экспорта. Экран затемняется; энергии нужно больше."
+        "Не даёт заставке и выключению экрана мешать ИИ видеть приложения и управлять ими в computer use и других задачах на рабочем столе.\nТакже предотвращает автоматический сон для загрузок и экспорта."
       ]
     ],
     "setup": "Три шага, и можно отойти.",
@@ -527,7 +536,8 @@
       ]
     ],
     "license": "Doze распространяется как проприетарное ПО. Репозиторий GitHub предназначен для выпусков и информации о продукте.",
-    "eyebrow": "Для Computer use с ИИ"
+    "eyebrow": "Для Computer use с ИИ",
+    "awakeNote": "При включённом режиме экран по-прежнему затемняется по вашим настройкам."
   },
   "ar": {
     "headline": [
@@ -559,7 +569,7 @@
       ],
       [
         "إبقاء الكمبيوتر مستيقظًا",
-        "يمنع شاشة التوقف وإطفاء الشاشة، ليتمكن الذكاء الاصطناعي من رؤية التطبيقات واستخدامها في computer use ومهام سطح المكتب الأخرى.\nويمنع السكون التلقائي لتستمر التنزيلات والتصدير. يستمر التعتيم، لكن استهلاك الطاقة يزيد."
+        "يمنع شاشة التوقف وإطفاء الشاشة، ليتمكن الذكاء الاصطناعي من رؤية التطبيقات واستخدامها في computer use ومهام سطح المكتب الأخرى.\nويمنع السكون التلقائي لتستمر التنزيلات والتصدير."
       ]
     ],
     "setup": "ثلاث خطوات، ثم خذ استراحة.",
@@ -580,7 +590,8 @@
       ]
     ],
     "license": "Doze برنامج احتكاري. يوفّر مستودع GitHub الإصدارات ومعلومات المنتج.",
-    "eyebrow": "مصمّم لقدرة Computer use لدى الذكاء الاصطناعي"
+    "eyebrow": "مصمّم لقدرة Computer use لدى الذكاء الاصطناعي",
+    "awakeNote": "عند تفعيل هذا الخيار، تظل الشاشة تُعتَّم وفق إعداداتك."
   },
   "hi": {
     "headline": [
@@ -612,7 +623,7 @@
       ],
       [
         "कंप्यूटर को जागता रखें",
-        "स्क्रीन सेवर और स्क्रीन बंद होने से रोकता है, ताकि AI, computer use और दूसरे डेस्कटॉप कामों में ऐप्स को देख और चला सके।\nअपने-आप स्लीप होने से भी रोकता है, ताकि डाउनलोड और एक्सपोर्ट चलते रहें। स्क्रीन मंद होती रहेगी, पर बिजली ज़्यादा लगेगी।"
+        "स्क्रीन सेवर और स्क्रीन बंद होने से रोकता है, ताकि AI, computer use और दूसरे डेस्कटॉप कामों में ऐप्स को देख और चला सके।\nअपने-आप स्लीप होने से भी रोकता है, ताकि डाउनलोड और एक्सपोर्ट चलते रहें।"
       ]
     ],
     "setup": "तीन कदम। फिर एक विराम।",
@@ -633,6 +644,7 @@
       ]
     ],
     "license": "Doze मालिकाना सॉफ़्टवेयर है। GitHub रिपॉज़िटरी पर रिलीज़ और उत्पाद की जानकारी मिलती है।",
-    "eyebrow": "AI की Computer use क्षमता के लिए"
+    "eyebrow": "AI की Computer use क्षमता के लिए",
+    "awakeNote": "यह विकल्प चालू होने पर भी स्क्रीन आपकी सेटिंग के अनुसार मंद होती रहेगी।"
   }
 }

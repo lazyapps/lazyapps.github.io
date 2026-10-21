@@ -23,7 +23,9 @@ Aktiviere das Dimmen bei Abwesenheit und wähle eine Wartezeit. Standard sind 10
 Bewege die Maus, nutze das Trackpad oder drücke eine Taste. Simulierte Klicks und Tastendrücke getesteter KI-Werkzeuge hellen den Bildschirm nicht auf. Andere Werkzeuge können sich anders verhalten.
 
 Verhindert Bildschirmschoner und das Abschalten des Displays, damit die KI bei computer use und anderen Desktop-Aufgaben Apps sehen und bedienen kann.
-Verhindert auch automatischen Ruhezustand für Downloads und Exporte. Dimmt weiterhin; braucht mehr Strom.
+Verhindert auch automatischen Ruhezustand für Downloads und Exporte.
+
+Bei aktivierter Option wird der Bildschirm weiterhin wie eingestellt gedimmt.
 
 Öffne Doze.app und klicke auf das „眯“-Symbol in der Menüleiste.
 
@@ -97,7 +99,7 @@ Originales transparentes 2×-Vorlagen-PNG (44 × 40 Pixel; 22 × 20 Punkte). Akt
 
 [settings-light.png](settings-light.png)
 
-768 × 1364 · PNG
+768 × 1408 · PNG
 
 Native Vorschau der Oberfläche in dieser Sprache; unveränderte Pixel.
 
@@ -105,7 +107,7 @@ Native Vorschau der Oberfläche in dieser Sprache; unveränderte Pixel.
 
 [settings-dark.png](settings-dark.png)
 
-768 × 1364 · PNG
+768 × 1408 · PNG
 
 Native Vorschau der Oberfläche in dieser Sprache; unveränderte Pixel.
 

@@ -23,7 +23,9 @@ Activez la réduction de luminosité en votre absence et choisissez un délai. P
 Bougez la souris, utilisez le trackpad ou appuyez sur une touche. Les clics et frappes simulés des outils d’IA testés ne rallument pas l’écran ; d’autres outils peuvent se comporter différemment.
 
 Bloque l’économiseur d’écran et la veille de l’écran pour que l’IA puisse voir et utiliser les apps avec computer use et d’autres tâches de bureau.
-Empêche aussi la veille automatique pour les téléchargements et les exports. Réduit toujours la luminosité ; consomme plus.
+Empêche aussi la veille automatique pour les téléchargements et les exports.
+
+Quand cette option est activée, l’écran s’assombrit toujours selon vos réglages.
 
 Ouvrez Doze.app et cliquez sur l’icône « 眯 » dans la barre des menus.
 
@@ -97,7 +99,7 @@ PNG modèle transparent 2× d’origine (44 × 40 pixels ; 22 × 20 points). Les
 
 [settings-light.png](settings-light.png)
 
-768 × 1334 · PNG
+768 × 1378 · PNG
 
 Aperçu de l’interface native dans cette langue ; pixels inchangés.
 
@@ -105,7 +107,7 @@ Aperçu de l’interface native dans cette langue ; pixels inchangés.
 
 [settings-dark.png](settings-dark.png)
 
-768 × 1334 · PNG
+768 × 1378 · PNG
 
 Aperçu de l’interface native dans cette langue ; pixels inchangés.
 

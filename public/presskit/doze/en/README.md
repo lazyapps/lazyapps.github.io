@@ -23,7 +23,9 @@ Turn on “Dim When Away” and choose a delay. The default is 10 minutes. You c
 Move the mouse, use the trackpad or press a key to restore brightness. Simulated clicks and keystrokes from tested AI tools do not brighten the screen; other tools may behave differently.
 
 Stops screen savers and display sleep so AI can see and use apps for computer use and other desktop tasks.
-Also prevents automatic sleep for downloads and exports. Still dims; uses more power.
+Also prevents automatic sleep for downloads and exports.
+
+With this on, the screen still dims as set.
 
 Open Doze.app and click the “眯” icon in the menu bar.
 
@@ -97,7 +99,7 @@ Original transparent 2× template PNG (44 × 40 pixels; 22 × 20 points). Active
 
 [settings-light.png](settings-light.png)
 
-768 × 1218 · PNG
+768 × 1262 · PNG
 
 Native interface preview in this language; unchanged pixels.
 
@@ -105,7 +107,7 @@ Native interface preview in this language; unchanged pixels.
 
 [settings-dark.png](settings-dark.png)
 
-768 × 1218 · PNG
+768 × 1262 · PNG
 
 Native interface preview in this language; unchanged pixels.
 

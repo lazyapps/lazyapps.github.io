@@ -118,7 +118,7 @@ const ogUrl = cards[`../assets/img/${t.ogAsset}`].default;
       <section class="doze-features" aria-label={t.positioning}>
         {t.features.map(([title, text], index) => <article>
           <h2 class="dsp">{title}</h2>{index === 2
-            ? <ul>{text.split('\n').map(item => <li>{item}</li>)}</ul>
+            ? <><ul>{text.split('\n').map(item => <li>{item}</li>)}</ul><p>{t.awakeNote}</p></>
             : <p>{text}</p>}
         </article>)}
       </section>

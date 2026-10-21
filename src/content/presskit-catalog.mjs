@@ -74,7 +74,7 @@ export const pressKits = originals.map(kit => {
     const name = kit.slug === 'doze' ? t.brand : tag === 'zh-Hans' ? kit.names.zh : tag === 'zh-Hant' ? kit.names.zh.replaceAll('飞键','飛鍵').replaceAll('绎言','繹言').replaceAll('爱装字体','愛裝字體') : kit.names.en;
     let summary = t ? plain(t.sub ?? t.description) : kit.summary.en;
     let description = t ? plain(t.description) : kit.description.en;
-    if (kit.slug === 'doze') description = [t.eyebrow, t.headline.join(' '), t.description, t.compatibility, ...t.features.map(item => item[1]), ...t.steps, ...t.faqs.map(item => item[1]), t.license].join('\n\n');
+    if (kit.slug === 'doze') description = [t.eyebrow, t.headline.join(' '), t.description, t.compatibility, ...t.features.map(item => item[1]), t.awakeNote, ...t.steps, ...t.faqs.map(item => item[1]), t.license].join('\n\n');
     if (kit.slug === 'chmate') description = [t.description, ...t.cards.map(card => card[1]), t.promiseCopy].map(plain).join('\n\n');
     if (kit.slug === 'fondfont') description = [t.description, ...t.features.map(feature => feature[1]), ...t.steps.map(step => step[1]), t.privacyCopy, t.faqs[1][1]].map(plain).join('\n\n');
     if (kit.slug === 'yiyan') { const copy = yiyanCopy[tag.toLowerCase()]; summary = copy.sub; description = [copy.sub, ...copy.cards.map(card => card[1]), ...copy.details.map(detail => detail[1].join(' '))].join('\n\n'); }

@@ -23,7 +23,9 @@ Ative a redução de brilho ao se ausentar e escolha o intervalo. O padrão é 1
 Mova o mouse, use o trackpad ou pressione uma tecla para restaurar o brilho. Cliques e teclas simulados pelas ferramentas de IA testadas não acendem a tela; outras ferramentas podem se comportar de forma diferente.
 
 Impede o protetor de tela e o desligamento da tela para que a IA veja e use apps em computer use e outras tarefas no computador.
-Também impede o repouso automático para continuar downloads e exportações. Ainda reduz o brilho; gasta mais energia.
+Também impede o repouso automático para continuar downloads e exportações.
+
+Com esta opção ativada, a tela continua escurecendo conforme os ajustes.
 
 Abra Doze.app e clique no ícone “眯” na barra de menus.
 
@@ -97,7 +99,7 @@ PNG de modelo transparente 2× original (44 × 40 pixels; 22 × 20 pontos). Os e
 
 [settings-light.png](settings-light.png)
 
-768 × 1306 · PNG
+768 × 1350 · PNG
 
 Prévia da interface nativa neste idioma; pixels sem alterações.
 
@@ -105,7 +107,7 @@ Prévia da interface nativa neste idioma; pixels sem alterações.
 
 [settings-dark.png](settings-dark.png)
 
-768 × 1306 · PNG
+768 × 1350 · PNG
 
 Prévia da interface nativa neste idioma; pixels sem alterações.
 
