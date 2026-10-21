@@ -1,0 +1,32 @@
+---
+import { renderPressMarkdown } from '../content/presskit-markdown.mjs';
+interface Props { source: string; base: string; prefix: string; locale: string; tableLabel: string; }
+const html = await renderPressMarkdown(Astro.props.source, Astro.props);
+---
+<div class="press-markdown" set:html={html} />
+<style>
+  .press-markdown{min-width:0;max-width:70ch;font:400 16px/var(--leading-body) var(--sans);overflow-wrap:anywhere;text-align:start;text-wrap:pretty}
+  .press-markdown :global(> :first-child){margin-block-start:0}
+  .press-markdown :global(> :last-child){margin-block-end:0}
+  .press-markdown :global(p),.press-markdown :global(ul),.press-markdown :global(ol),.press-markdown :global(blockquote),.press-markdown :global(pre),.press-markdown :global(.press-markdown__table){margin-block:0 1.15em}
+  .press-markdown :global(:is(h3,h4,h5,h6)){font-family:var(--sans);font-weight:650;line-height:var(--leading-body);text-transform:none;letter-spacing:0;text-wrap:pretty;overflow-wrap:anywhere;scroll-margin-block-start:100px}
+  .press-markdown :global(h3){font-size:24px;margin-block:0 1em;line-height:var(--leading-display)}
+  .press-markdown :global(h4){font-size:20px;margin-block:2em .75em;padding-block-end:.5em;border-block-end:1px solid var(--line)}
+  .press-markdown :global(h5),.press-markdown :global(h6){font-size:16px;margin-block:1.5em .5em}
+  .press-markdown :global(ul),.press-markdown :global(ol){padding-inline-start:1.5em}
+  .press-markdown :global(li+li){margin-block-start:.4em}
+  .press-markdown :global(li > :is(ul,ol)){margin-block:.5em 0}
+  .press-markdown :global(a){unicode-bidi:isolate;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:.2em}
+  .press-markdown :global(a:focus-visible),.press-markdown :global([tabindex]:focus-visible){outline:2px solid var(--accent);outline-offset:4px}
+  .press-markdown :global(blockquote){margin-inline:0;padding-inline-start:1em;border-inline-start:3px solid var(--accent);color:var(--muted)}
+  .press-markdown :global(code){font: .875em/1.6 var(--mono);padding:.15em .35em;border-radius:4px;background:rgba(0,0,0,.05)}
+  .press-markdown :global(pre){max-width:100%;overflow-x:auto;padding:16px;border-radius:8px;background:rgba(0,0,0,.04);direction:ltr;text-align:left;white-space:pre;overflow-wrap:normal}
+  .press-markdown :global(pre code){padding:0;background:none}
+  .press-markdown :global(.press-markdown__table){max-width:100%;overflow-x:auto}
+  .press-markdown :global(table){width:100%;border-collapse:collapse;font-size:14px;text-wrap:normal}
+  .press-markdown :global(th),.press-markdown :global(td){padding:10px 14px;border:1px solid var(--line);min-width:8em;vertical-align:top}
+  .press-markdown :global(th){font-weight:600;background:rgba(0,0,0,.03)}
+  .press-markdown :global(img){max-width:100%;height:auto;margin-block:1em}
+  .press-markdown :global(hr){border:0;border-block-start:1px solid var(--line);margin-block:2em}
+  @media(hover:hover) and (pointer:fine){.press-markdown :global(a:hover){text-decoration-thickness:2px}}
+</style>

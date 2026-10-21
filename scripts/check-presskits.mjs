@@ -18,6 +18,7 @@ assert.equal(slugs.size, kits.length, 'Duplicate presskit product');
 assert.deepEqual(Object.keys(screenshotSources).sort(), [...slugs].sort(), 'Screenshot provenance must cover every app');
 const anchors = page => page.nodes.filter(node => node.tagName === 'a');
 const linksTo = (page, path) => anchors(page).some(node => attr(node, 'href')?.split('#')[0] === path);
+const descendants = node => [node, ...(node.childNodes ?? []).flatMap(descendants)];
 
 // Discover apps from actual built metadata, independent of the presskit registry.
 const products = new Map();
@@ -109,6 +110,8 @@ for (const kit of kits) {
   const path = `/${kit.slug}/presskit/`;
   const page = byPath.get(path);
   check(page && page.canonical === site + path, 'Missing canonical presskit page');
+  const ids = page.nodes.map(node => attr(node, 'id')).filter(Boolean);
+  check(ids.length === new Set(ids).size, 'Rendered Markdown must not introduce duplicate IDs');
   check(page.alternates.length === 0, 'Presskit must not enter product hreflang groups');
   check(linksTo(byPath.get('/presskit/'), path), 'Missing index entry');
   check(linksTo(page, kit.locales.find(locale => locale.tag === 'en').website), 'Missing return link to product');
@@ -169,7 +172,18 @@ for (const kit of kits) {
     const bytes = await readFile(join(directory, readmePath));
     const contents = bytes.toString();
     const panel = page.nodes.find(node => attr(node, 'data-kit-panel') === locale.tag);
-    check(panel && text(panel).includes(locale.summary) && text(panel).replace(/\s/g, '').includes(locale.description.replace(/\s/g, '')), `Missing localized material copy: ${locale.tag}`);
+    check(panel, `Missing language panel: ${locale.tag}`);
+    const copy = descendants(panel).find(node => attr(node, 'class') === 'kit-copy__text');
+    check(copy && text(copy).includes(locale.summary) && text(copy).replace(/\s/g, '').includes(locale.description.replace(/\s/g, '')), `Missing localized material copy: ${locale.tag}`);
+    const readme = descendants(panel).find(node => node.tagName === 'details' && attr(node, 'class') === 'kit-readme');
+    check(readme && attr(readme, 'open') === undefined, `README preview must start collapsed: ${locale.tag}`);
+    const documentNodes = descendants(readme);
+    check(!documentNodes.some(node => ['h1', 'h2'].includes(node.tagName)), 'README headings must fit the surrounding page hierarchy');
+    check(documentNodes.some(node => node.tagName === 'h3' && text(node) === contents.split('\n')[0].slice(2)), `Missing rendered README title: ${locale.tag}`);
+    check(text(readme).includes(locale.usage), `Missing rendered README usage: ${locale.tag}`);
+    for (const asset of locale.assets) check(documentNodes.some(node => node.tagName === 'a' && attr(node, 'href') === base + asset.path), `Broken rendered README asset link: ${locale.tag}/${asset.filename}`);
+    const download = descendants(panel).find(node => node.tagName === 'a' && attr(node, 'href') === base + readmePath);
+    check(download && attr(download, 'download') !== undefined, `Raw Markdown download must remain available: ${locale.tag}`);
     check(contents.includes(`https://lazyapps.com/${kit.slug}/presskit/#${locale.tag}`), 'README Press Kit link must preserve its own language');
     check(archived.get(readmePath).equals(bytes), 'Archived README differs');
     check(linksTo(page, base + readmePath), 'Missing language-specific README download');

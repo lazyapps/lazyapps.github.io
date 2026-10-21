@@ -5,6 +5,7 @@ import { pressKits } from '../../content/presskit-catalog.mjs';
 import PressAsset from '../../components/PressAsset.astro';
 import NativeAppIcon from '../../components/NativeAppIcon.astro';
 import ComputerUseText from '../../components/ComputerUseText.astro';
+import PressMarkdown from '../../components/PressMarkdown.astro';
 export function getStaticPaths() {
   return pressKits.map(kit => ({ params: { product: kit.slug }, props: { kit } }));
 }
@@ -43,8 +44,12 @@ const bodyFor = locale => locale.description.startsWith(locale.summary + '\n\n')
         <summary lang={locale.tag}>{locale.displayName}</summary>
         <div class="kit-panel__content" lang={locale.tag} dir={locale.tag === 'ar' ? 'rtl' : 'ltr'}>
           <div class="kit-copy">
-            <div><h3>{locale.name}</h3><p class="copy-summary"><ComputerUseText text={locale.summary} locale={locale.tag} /></p><p class="copy-body"><ComputerUseText text={bodyFor(locale)} locale={locale.tag} /></p></div>
+            <div class="kit-copy__text"><h3>{locale.name}</h3><p class="copy-summary"><ComputerUseText text={locale.summary} locale={locale.tag} /></p><PressMarkdown source={bodyFor(locale)} base={`${base}${locale.tag}/`} prefix={`copy-${locale.tag}`} locale={locale.tag} tableLabel={locale.headings[6]} /></div>
             <a class="button readme-download" href={`${base}${locale.tag}/README.md`} download dir="ltr">README.md <span aria-hidden="true">↓</span></a>
+            <details class="kit-readme">
+              <summary><span dir="ltr">README.md</span><span aria-hidden="true">+</span></summary>
+              <div class="kit-readme__content"><PressMarkdown source={readFileSync(`public${base}${locale.tag}/README.md`, 'utf8')} base={`${base}${locale.tag}/`} prefix={`readme-${locale.tag}`} locale={locale.tag} tableLabel={locale.headings[0]} /></div>
+            </details>
           </div>
           <div class="asset-grid">{locale.assets.filter(asset => !asset.alternateFor).map(asset => <PressAsset base={base} asset={asset} metadata={metadataFor(asset)} lang={locale.tag} formats={locale.assets.filter(format => format.alternateFor === asset.filename).map(format => ({ asset: format, metadata: metadataFor(format) }))} />)}</div>
         </div>
@@ -79,10 +84,16 @@ const bodyFor = locale => locale.description.startsWith(locale.summary + '\n\n')
   [data-enhanced] .kit-panel>summary{display:none}
   .kit-copy{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:start;gap:32px;padding:28px 32px;margin-bottom:32px;background:white;border-radius:var(--r-card);box-shadow:0 1px 3px rgba(0,0,0,.04),0 0 0 1px rgba(0,0,0,.06)}
   .kit-copy h3{font:600 16px/1.5 var(--sans);margin-bottom:12px;white-space:nowrap;overflow-wrap:normal}
+  .kit-copy__text{min-width:0}
   .kit-copy .copy-summary{font-size:20px;line-height:1.5;margin-bottom:12px;max-width:54ch;text-wrap:pretty}
-  .kit-copy .copy-body{font-size:16px;line-height:1.8;max-width:66ch;text-wrap:pretty}
-  .kit-copy .copy-body+.copy-body{margin-top:16px;color:var(--muted)}
   .kit-copy .readme-download{white-space:nowrap;flex-wrap:nowrap;margin-top:0}
+  .kit-readme{grid-column:1/-1;min-width:0;border-block-start:1px solid var(--line)}
+  .kit-readme>summary{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:52px;padding-block-start:12px;cursor:pointer;list-style:none;font:500 14px/1.5 var(--mono)}
+  .kit-readme>summary::-webkit-details-marker{display:none}
+  .kit-readme>summary>span:last-child{font:400 24px/1 var(--sans)}
+  .kit-readme[open]>summary>span:last-child{transform:rotate(45deg)}
+  .kit-readme>summary:focus-visible{outline:2px solid var(--accent);outline-offset:4px;border-radius:4px}
+  .kit-readme__content{padding-block:24px 4px}
   .kit-materials :global(.asset-grid){gap:32px}
   .kit-materials :global(.asset-preview){height:340px;padding:24px;background:rgba(0,0,0,.025);box-shadow:inset 0 0 0 1px rgba(0,0,0,.1)}
   .kit-materials :global(.asset-preview img){object-fit:contain}
