@@ -97,7 +97,7 @@ PNG de plantilla transparente 2× original (44 × 40 píxeles; 22 × 20 puntos).
 
 [settings-light.png](settings-light.png)
 
-768 × 1250 · PNG
+768 × 1306 · PNG
 
 Vista previa de la interfaz nativa en este idioma; píxeles sin modificar.
 
@@ -105,7 +105,7 @@ Vista previa de la interfaz nativa en este idioma; píxeles sin modificar.
 
 [settings-dark.png](settings-dark.png)
 
-768 × 1250 · PNG
+768 × 1306 · PNG
 
 Vista previa de la interfaz nativa en este idioma; píxeles sin modificar.
 

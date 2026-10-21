@@ -97,7 +97,7 @@ Doze 是专有软件；GitHub 仓库用于发布安装包和产品说明。
 
 [settings-light.png](settings-light.png)
 
-768 × 1144 · PNG
+768 × 1190 · PNG
 
 对应语言的原生界面预览，像素保持原样。
 
@@ -105,7 +105,7 @@ Doze 是专有软件；GitHub 仓库用于发布安装包和产品说明。
 
 [settings-dark.png](settings-dark.png)
 
-768 × 1144 · PNG
+768 × 1190 · PNG
 
 对应语言的原生界面预览，像素保持原样。
 

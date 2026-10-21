@@ -97,7 +97,7 @@ PNG modèle transparent 2× d’origine (44 × 40 pixels ; 22 × 20 points). Les
 
 [settings-light.png](settings-light.png)
 
-768 × 1278 · PNG
+768 × 1334 · PNG
 
 Aperçu de l’interface native dans cette langue ; pixels inchangés.
 
@@ -105,7 +105,7 @@ Aperçu de l’interface native dans cette langue ; pixels inchangés.
 
 [settings-dark.png](settings-dark.png)
 
-768 × 1278 · PNG
+768 × 1334 · PNG
 
 Aperçu de l’interface native dans cette langue ; pixels inchangés.
 

@@ -97,7 +97,7 @@ Doze 是專有軟體；GitHub 儲存庫提供安裝套件及產品說明。
 
 [settings-light.png](settings-light.png)
 
-768 × 1144 · PNG
+768 × 1190 · PNG
 
 對應語言的原生介面預覽，像素保持原樣。
 
@@ -105,7 +105,7 @@ Doze 是專有軟體；GitHub 儲存庫提供安裝套件及產品說明。
 
 [settings-dark.png](settings-dark.png)
 
-768 × 1144 · PNG
+768 × 1190 · PNG
 
 對應語言的原生介面預覽，像素保持原樣。
 

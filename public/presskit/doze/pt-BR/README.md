@@ -97,7 +97,7 @@ PNG de modelo transparente 2× original (44 × 40 pixels; 22 × 20 pontos). Os e
 
 [settings-light.png](settings-light.png)
 
-768 × 1250 · PNG
+768 × 1306 · PNG
 
 Prévia da interface nativa neste idioma; pixels sem alterações.
 
@@ -105,7 +105,7 @@ Prévia da interface nativa neste idioma; pixels sem alterações.
 
 [settings-dark.png](settings-dark.png)
 
-768 × 1250 · PNG
+768 × 1306 · PNG
 
 Prévia da interface nativa neste idioma; pixels sem alterações.
 

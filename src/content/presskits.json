@@ -776,8 +776,8 @@
           "zh": "设置 · 日间"
         },
         "note": {
-          "en": "Native English interface captured from the current localized app preview. Original pixels.",
-          "zh": "当前本地化版本原生预览中的英语界面，保留原始像素。"
+          "en": "Native localized app interface, including the new Check for Updates control. Original Retina pixels.",
+          "zh": "原生本地化应用界面，包含新增的“检查更新”控件。保留 Retina 原始像素。"
         }
       },
       {
@@ -789,8 +789,8 @@
           "zh": "设置 · 夜间"
         },
         "note": {
-          "en": "Native English interface captured from the current localized app preview. Original pixels.",
-          "zh": "当前本地化版本原生预览中的英语界面，保留原始像素。"
+          "en": "Native localized app interface, including the new Check for Updates control. Original Retina pixels.",
+          "zh": "原生本地化应用界面，包含新增的“检查更新”控件。保留 Retina 原始像素。"
         }
       },
       {

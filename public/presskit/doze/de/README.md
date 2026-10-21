@@ -97,7 +97,7 @@ Originales transparentes 2×-Vorlagen-PNG (44 × 40 Pixel; 22 × 20 Punkte). Akt
 
 [settings-light.png](settings-light.png)
 
-768 × 1308 · PNG
+768 × 1364 · PNG
 
 Native Vorschau der Oberfläche in dieser Sprache; unveränderte Pixel.
 
@@ -105,7 +105,7 @@ Native Vorschau der Oberfläche in dieser Sprache; unveränderte Pixel.
 
 [settings-dark.png](settings-dark.png)
 
-768 × 1308 · PNG
+768 × 1364 · PNG
 
 Native Vorschau der Oberfläche in dieser Sprache; unveränderte Pixel.
 

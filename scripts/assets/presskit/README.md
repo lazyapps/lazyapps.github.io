@@ -1,6 +1,6 @@
 # Press Kit screenshot sources
 
-Screenshots were checked against current app sources and native captures on 2026-10-10. `screenshot-sources.json` records every catalog screenshot, original source, actual interface language, SHA-256, review date and app source revision. Review dates are not capture dates. Private projects are evidence only; all files needed to build the site are kept in this repository.
+Screenshot review dates are product-specific and recorded in `screenshot-sources.json`; Doze was recaptured on 2026-10-21. `screenshot-sources.json` records every catalog screenshot, original source, actual interface language, SHA-256, review date and app source revision. Review dates are not capture dates. Private projects are evidence only; all files needed to build the site are kept in this repository.
 
 | App | Current material |
 | --- | --- |
@@ -10,8 +10,9 @@ Screenshots were checked against current app sources and native captures on 2026
 | YiYan | The developer’s original October 8 native screenshots, preserved byte for byte in `src/assets/img/yiyan-showcase.png` and `yiyan-showcase-detail.png`, show English UI with Chinese example writing and English learning notes. Shared across all 12 app-language folders; no obsolete August localized screenshots are included. Original receipts: `docs/reviews/yiyan-screenshots-20261008/source-provenance.json`. |
 | World Book | Fresh full-resolution 2064 × 2752 native iPad capture from 2026-10-10, app 261010.0 (470), with the current top navigation. Captured by Argent from World Book iPad Regression 20261006; no UI reconstruction, resizing or retouching. Replaces the compressed 900 × 1200 video frame. |
 | XVDL | Original 1190 × 874 developer-supplied October 10 screenshot, unchanged. The separate `src/assets/img/xvdl-in-use.png` is the developer-requested edited presentation highlighting the download button, explicitly labelled and packaged alongside the original. Prompt/provenance: `docs/reviews/xvdl-screenshot-20261010/imagegen.md`. |
+| Doze | Fresh native Retina settings captures for light and dark appearance in all 12 app languages, including the new update-check control. Source files and hashes are recorded in `screenshot-sources.json` and `scripts/assets/doze/capture-source.json`. |
 | Shheep | Existing 1050 × 560 title-screen export matches the current game project’s `web/public/shheep/preview.png` byte for byte. It is a title screen, not active gameplay. |
 
-App language coverage is recorded in `src/content/presskit-supported-languages.json`: CHMate 15; FondFont 7; KeyHop 10; YiYan 12; Shheep 11; World Book and XVDL English only. Shared images are stored once at the archive root, with their actual interface language identified in each localized README. Native icons and promotional artwork have separate provenance; screenshots do not grant standalone rights to third-party content shown inside the apps.
+App language coverage is recorded in `src/content/presskit-supported-languages.json`: CHMate 15; FondFont 7; KeyHop 10; YiYan 12; Doze 12; Shheep 11; World Book and XVDL English only. Shared images are stored once at the archive root, with their actual interface language identified in each localized README. Native icons and promotional artwork have separate provenance; screenshots do not grant standalone rights to third-party content shown inside the apps.
 
 When app UI changes, review and replace affected screenshots, update their provenance and localized asset notes, regenerate with `python3 scripts/prepare-presskits.py`, then run `npm run build`. The build rejects missing source reviews, changed screenshot hashes, mismatched output files and stale ZIP contents. It does not infer freshness from file modification times or access private app projects.

@@ -97,7 +97,7 @@ Doze는 독점 소프트웨어입니다. GitHub 저장소는 배포 파일과 �
 
 [settings-light.png](settings-light.png)
 
-768 × 1144 · PNG
+768 × 1190 · PNG
 
 해당 언어의 네이티브 화면 미리보기이며 픽셀을 변경하지 않았습니다.
 
@@ -105,7 +105,7 @@ Doze는 독점 소프트웨어입니다. GitHub 저장소는 배포 파일과 �
 
 [settings-dark.png](settings-dark.png)
 
-768 × 1144 · PNG
+768 × 1190 · PNG
 
 해당 언어의 네이티브 화면 미리보기이며 픽셀을 변경하지 않았습니다.
 

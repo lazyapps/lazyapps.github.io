@@ -11,6 +11,7 @@ final class CaptureActions: NSObject {
         NSApp.appearance = appearance
         window.appearance = appearance
         window.contentView?.needsDisplay = true
+        window.makeFirstResponder(nil)
     }
 }
 

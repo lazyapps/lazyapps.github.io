@@ -97,7 +97,7 @@ Original transparent 2× template PNG (44 × 40 pixels; 22 × 20 points). Active
 
 [settings-light.png](settings-light.png)
 
-768 × 1162 · PNG
+768 × 1218 · PNG
 
 Native interface preview in this language; unchanged pixels.
 
@@ -105,7 +105,7 @@ Native interface preview in this language; unchanged pixels.
 
 [settings-dark.png](settings-dark.png)
 
-768 × 1162 · PNG
+768 × 1218 · PNG
 
 Native interface preview in this language; unchanged pixels.
 

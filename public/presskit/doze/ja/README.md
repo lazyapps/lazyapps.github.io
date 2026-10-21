@@ -97,7 +97,7 @@ Doze はプロプライエタリソフトウェアです。GitHub リポジト�
 
 [settings-light.png](settings-light.png)
 
-768 × 1162 · PNG
+768 × 1218 · PNG
 
 この言語のネイティブ画面プレビュー。ピクセルの変更はありません。
 
@@ -105,7 +105,7 @@ Doze はプロプライエタリソフトウェアです。GitHub リポジト�
 
 [settings-dark.png](settings-dark.png)
 
-768 × 1162 · PNG
+768 × 1218 · PNG
 
 この言語のネイティブ画面プレビュー。ピクセルの変更はありません。
 
