@@ -41,7 +41,8 @@ const description = 'Get help with CHMate and other lazyapps apps. Contact us by
   body{display:flex;flex-direction:column;min-height:100svh}
   body > :global(.wrap){width:100%}
   .support{flex:1;padding-block:clamp(48px,8vw,112px)}
-  .support__content{max-width:760px;margin-inline:auto;text-align:start}
+  .support__content{max-width:760px;text-align:start}
+  footer :global(.base__legal){margin-inline:0}
   .support__title{font-size:clamp(64px,9vw,112px);line-height:var(--leading-display);text-transform:uppercase;text-align:start}
   .support__intro{max-width:48ch;margin-top:24px;font-size:20px;line-height:1.6;text-wrap:pretty}
   .support__email{display:inline-flex;align-items:center;gap:12px;min-height:44px;max-width:100%;margin-top:28px;padding-block:8px;font:600 clamp(18px,3vw,30px)/1.5 var(--sans);letter-spacing:-.025em;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:.2em;overflow-wrap:anywhere;touch-action:manipulation}
