@@ -54,7 +54,7 @@ function applyLanguage(tag: Language) {
   const footer = document.querySelector<HTMLElement>('#site-footer')!;
   footer.lang = tag;
   footer.dir = tag === 'ar' ? 'rtl' : 'ltr';
-  footer.querySelector('[data-press-footer-nav]')!.setAttribute('aria-label', [ui[tag].contact, g.headings[0], ui[tag].privacy].join(', '));
+  footer.querySelector('[data-press-footer-nav]')!.setAttribute('aria-label', [ui[tag].support, g.headings[0], ui[tag].privacy].join(', '));
   document.querySelectorAll<HTMLAnchorElement>('[data-press-route]').forEach(link => {
     link.href = link.dataset.pressRoute + languageHash(tag);
   });
