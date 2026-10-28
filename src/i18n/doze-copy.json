@@ -17,11 +17,11 @@
     "preview": "实际界面",
     "light": "日间",
     "dark": "夜间",
-    "shot": "眯会儿的简体中文设置面板",
+    "shot": "眯会儿的简体中文设置面板 · 媒体播放",
     "features": [
       [
         "离开时调暗",
-        "开启“离开时调暗屏幕”，选择多久后调暗。默认 10 分钟，也可随时立即调暗。"
+        "开启“离开时调暗屏幕”，选择多久后调暗。默认 10 分钟，也可随时立即调暗。 macOS 14.2 或更新版本会在受支持的应用播放媒体时暂缓调暗。"
       ],
       [
         "回来即恢复",
@@ -47,6 +47,10 @@
       [
         "还能合盖或手动睡眠吗？",
         "可以。“保持电脑唤醒”不影响合盖和手动睡眠。关闭该选项或退出眯会儿后，会恢复原来的设置。"
+      ],
+      [
+        "播放媒体时还会调暗吗？",
+        "在 macOS 14.2 或更新版本中，检测到受支持的播放器或浏览器使用音频时，眯会儿会暂缓自动调暗；音频输出停止后，重新等待你选好的完整时长。播放期间仍可手动调暗。菜单栏里的圆形播放标记和设置区下方的状态块会显示暂停原因。\n\n覆盖 VLC、QuickTime Player、IINA、mpv、Infuse、Apple TV，以及 Chrome、Edge、Firefox、Brave、Arc、Opera、Vivaldi 和 Zen。没有音轨的视频可能无法识别；有些应用暂停后仍保持音频连接，需要关闭媒体或相关标签页才会恢复计时。本版暂不覆盖 Safari，Apple Music 和 Spotify 也不会暂停自动调暗。"
       ]
     ],
     "license": "Doze 是专有软件；GitHub 仓库用于发布安装包和产品说明。",
@@ -71,11 +75,11 @@
     "preview": "The actual app",
     "light": "Day",
     "dark": "Night",
-    "shot": "Doze settings panel in English",
+    "shot": "Doze settings panel in English · Media active",
     "features": [
       [
         "Dim when away",
-        "Turn on “Dim When Away” and choose a delay. The default is 10 minutes. You can also dim the screen immediately."
+        "Turn on “Dim When Away” and choose a delay. The default is 10 minutes. You can also dim the screen immediately. Playback in supported apps pauses dimming on macOS 14.2 or later."
       ],
       [
         "Restore on return",
@@ -101,6 +105,10 @@
       [
         "Can I still close the lid or choose Sleep?",
         "Yes. “Keep Computer Awake” does not prevent either. Turning it off or quitting Doze restores your previous settings."
+      ],
+      [
+        "Will the screen dim during media playback?",
+        "On macOS 14.2 or later, Doze pauses automatic dimming while supported players or browsers use audio. After audio output stops, the full waiting time starts again. You can still dim the screen manually. A circular play marker in the menu bar and a status card below the settings show when dimming is paused.\n\nThis covers VLC, QuickTime Player, IINA, mpv, Infuse and Apple TV, plus Chrome, Edge, Firefox, Brave, Arc, Opera, Vivaldi and Zen. Videos without audio may not be detected. Some apps keep their audio connection after pausing, so you may need to close the media or its browser tab before timing resumes. Safari, Apple Music and Spotify do not pause automatic dimming in this version."
       ]
     ],
     "license": "Doze is proprietary software. Its GitHub repository provides releases and product information.",
@@ -125,11 +133,11 @@
     "preview": "實際介面",
     "light": "日間",
     "dark": "夜間",
-    "shot": "瞇會兒的繁體中文設定面板",
+    "shot": "瞇會兒的繁體中文設定面板 · 媒體播放",
     "features": [
       [
         "離開時調暗",
-        "開啟「離開時調暗螢幕」，選擇等待時間。預設 10 分鐘，也能隨時立即調暗。"
+        "開啟「離開時調暗螢幕」，選擇等待時間。預設 10 分鐘，也能隨時立即調暗。 macOS 14.2 或更新版本會在支援的應用程式播放媒體時暫緩調暗。"
       ],
       [
         "回來即恢復",
@@ -155,6 +163,10 @@
       [
         "還能闔蓋或手動睡眠嗎？",
         "可以。「保持電腦喚醒」不影響闔蓋與手動睡眠。關閉此選項或結束瞇會兒後，會恢復原本的設定。"
+      ],
+      [
+        "播放媒體時還會調暗嗎？",
+        "在 macOS 14.2 或更新版本中，偵測到支援的播放器或瀏覽器使用音訊時，瞇會兒會暫緩自動調暗；音訊輸出停止後，重新等待你選好的完整時間。播放期間仍可手動調暗。選單列中的圓形播放標記和設定區下方的狀態區塊會顯示暫停原因。\n\n涵蓋 VLC、QuickTime Player、IINA、mpv、Infuse、Apple TV，以及 Chrome、Edge、Firefox、Brave、Arc、Opera、Vivaldi 和 Zen。沒有音軌的影片可能無法辨識；部分應用程式暫停後仍保留音訊連線，可能需要關閉媒體或相關分頁才會恢復計時。本版暫不涵蓋 Safari，Apple Music 和 Spotify 也不會暫停自動調暗。"
       ]
     ],
     "license": "Doze 是專有軟體；GitHub 儲存庫提供安裝套件及產品說明。",
@@ -179,11 +191,11 @@
     "preview": "La aplicación real",
     "light": "Día",
     "dark": "Noche",
-    "shot": "Panel de ajustes de Siestita en español",
+    "shot": "Panel de ajustes de Siestita en español · Audio activo",
     "features": [
       [
         "Atenúa al ausentarte",
-        "Activa la atenuación al ausentarte y elige el tiempo de espera. Por defecto son 10 minutos. También puedes atenuar la pantalla al instante."
+        "Activa la atenuación al ausentarte y elige el tiempo de espera. Por defecto son 10 minutos. También puedes atenuar la pantalla al instante. En macOS 14.2 o posterior, la reproducción en apps compatibles pausa la atenuación."
       ],
       [
         "Recupera el brillo al volver",
@@ -209,6 +221,10 @@
       [
         "¿Puedo cerrar la tapa o poner el Mac en reposo?",
         "Sí. Mantener el ordenador activo no impide estas acciones. Al desactivar la opción o salir de Siestita, se restauran los ajustes anteriores."
+      ],
+      [
+        "¿Se atenúa la pantalla al reproducir contenido?",
+        "En macOS 14.2 o posterior, Siestita pausa la atenuación automática cuando un reproductor o navegador compatible usa audio. Al detenerse la salida de audio, el tiempo de espera vuelve a empezar. Puedes seguir atenuando la pantalla manualmente. Un símbolo de reproducción circular en la barra de menús y una tarjeta bajo los ajustes indican la pausa.\n\nIncluye VLC, QuickTime Player, IINA, mpv, Infuse y Apple TV, además de Chrome, Edge, Firefox, Brave, Arc, Opera, Vivaldi y Zen. Los vídeos sin audio pueden no detectarse. Algunas aplicaciones mantienen la conexión de audio tras pausar: quizá debas cerrar el contenido o su pestaña para reiniciar la espera. Safari, Apple Music y Spotify no pausan la atenuación automática en esta versión."
       ]
     ],
     "license": "Doze es software propietario. Su repositorio de GitHub ofrece versiones e información del producto.",
@@ -233,11 +249,11 @@
     "preview": "O app de verdade",
     "light": "Dia",
     "dark": "Noite",
-    "shot": "Painel de ajustes do Cochilo em português do Brasil",
+    "shot": "Painel de ajustes do Cochilo em português do Brasil · Áudio de mídia ativo",
     "features": [
       [
         "Escurece ao sair",
-        "Ative a redução de brilho ao se ausentar e escolha o intervalo. O padrão é 10 minutos. Você também pode escurecer a tela imediatamente."
+        "Ative a redução de brilho ao se ausentar e escolha o intervalo. O padrão é 10 minutos. Você também pode escurecer a tela imediatamente. No macOS 14.2 ou posterior, a reprodução em apps compatíveis pausa o escurecimento."
       ],
       [
         "Brilho de volta ao retornar",
@@ -263,6 +279,10 @@
       [
         "Posso fechar a tampa ou colocar o Mac em repouso?",
         "Sim. Manter o computador ativo não impede essas ações. Desativar a opção ou encerrar o Cochilo restaura os ajustes anteriores."
+      ],
+      [
+        "A tela escurece durante a reprodução de mídia?",
+        "No macOS 14.2 ou posterior, o Cochilo pausa o escurecimento automático quando players ou navegadores compatíveis usam áudio. Quando a saída de áudio para, o tempo de espera recomeça por completo. Você ainda pode escurecer a tela manualmente. Um símbolo circular de reprodução na barra de menus e um cartão abaixo dos ajustes indicam a pausa.\n\nInclui VLC, QuickTime Player, IINA, mpv, Infuse e Apple TV, além de Chrome, Edge, Firefox, Brave, Arc, Opera, Vivaldi e Zen. Vídeos sem áudio podem não ser detectados. Alguns apps mantêm a conexão de áudio após a pausa; talvez seja necessário fechar a mídia ou sua aba para retomar a contagem. Safari, Apple Music e Spotify não pausam o escurecimento automático nesta versão."
       ]
     ],
     "license": "Doze é software proprietário. O repositório no GitHub oferece versões e informações do produto.",
@@ -287,11 +307,11 @@
     "preview": "L’application réelle",
     "light": "Jour",
     "dark": "Nuit",
-    "shot": "Panneau de réglages de Petit Repos en français",
+    "shot": "Panneau de réglages de Petit Repos en français · Média actif",
     "features": [
       [
         "Atténuer en votre absence",
-        "Activez la réduction de luminosité en votre absence et choisissez un délai. Par défaut : 10 minutes. Vous pouvez aussi assombrir l’écran immédiatement."
+        "Activez la réduction de luminosité en votre absence et choisissez un délai. Par défaut : 10 minutes. Vous pouvez aussi assombrir l’écran immédiatement. Sous macOS 14.2 ou version ultérieure, la lecture dans les apps compatibles suspend l’assombrissement."
       ],
       [
         "Rétablir à votre retour",
@@ -317,6 +337,10 @@
       [
         "Puis-je fermer le capot ou mettre le Mac en veille ?",
         "Oui. Le maintien en éveil ne bloque pas ces actions. Désactiver cette option ou quitter Petit Repos rétablit les réglages précédents."
+      ],
+      [
+        "L’écran s’assombrit-il pendant la lecture ?",
+        "Sous macOS 14.2 ou version ultérieure, Petit Repos suspend l’assombrissement automatique lorsqu’un lecteur ou navigateur compatible utilise l’audio. Quand la sortie audio s’arrête, le délai repart de zéro. Vous pouvez toujours assombrir l’écran manuellement. Un symbole de lecture circulaire dans la barre des menus et un encart sous les réglages indiquent la pause.\n\nCela couvre VLC, QuickTime Player, IINA, mpv, Infuse et Apple TV, ainsi que Chrome, Edge, Firefox, Brave, Arc, Opera, Vivaldi et Zen. Les vidéos sans audio peuvent ne pas être détectées. Certaines apps gardent leur connexion audio après une pause : il peut être nécessaire de fermer le média ou son onglet pour relancer le délai. Safari, Apple Music et Spotify ne suspendent pas l’assombrissement automatique dans cette version."
       ]
     ],
     "license": "Doze est un logiciel propriétaire. Son dépôt GitHub fournit les versions et les informations produit.",
@@ -341,11 +365,11 @@
     "preview": "Die echte App",
     "light": "Tag",
     "dark": "Nacht",
-    "shot": "Schlummer-Einstellungen auf Deutsch",
+    "shot": "Schlummer-Einstellungen auf Deutsch · Medien aktiv",
     "features": [
       [
         "Bei Abwesenheit dimmen",
-        "Aktiviere das Dimmen bei Abwesenheit und wähle eine Wartezeit. Standard sind 10 Minuten. Du kannst den Bildschirm auch sofort dimmen."
+        "Aktiviere das Dimmen bei Abwesenheit und wähle eine Wartezeit. Standard sind 10 Minuten. Du kannst den Bildschirm auch sofort dimmen. Ab macOS 14.2 pausiert die Wiedergabe in unterstützten Apps das Abdunkeln."
       ],
       [
         "Bei Rückkehr aufhellen",
@@ -371,6 +395,10 @@
       [
         "Kann ich den Deckel schließen oder den Ruhezustand wählen?",
         "Ja. Das Wachhalten verhindert beides nicht. Wenn du die Option ausschaltest oder Schlummer beendest, werden die vorherigen Einstellungen wiederhergestellt."
+      ],
+      [
+        "Wird der Bildschirm bei der Medienwiedergabe abgedunkelt?",
+        "Ab macOS 14.2 pausiert Schlummer das automatische Abdunkeln, wenn unterstützte Player oder Browser Audio verwenden. Sobald die Audioausgabe endet, beginnt die vollständige Wartezeit von vorn. Manuelles Abdunkeln bleibt möglich. Ein rundes Wiedergabesymbol in der Menüleiste und eine Statuskarte unter den Einstellungen zeigen die Pause an.\n\nUnterstützt werden VLC, QuickTime Player, IINA, mpv, Infuse und Apple TV sowie Chrome, Edge, Firefox, Brave, Arc, Opera, Vivaldi und Zen. Videos ohne Audio werden möglicherweise nicht erkannt. Manche Apps halten ihre Audioverbindung nach dem Pausieren offen; dann muss das Medium oder der Browser-Tab geschlossen werden, damit die Wartezeit neu beginnt. Safari, Apple Music und Spotify pausieren das automatische Abdunkeln in dieser Version nicht."
       ]
     ],
     "license": "Doze ist proprietäre Software. Das GitHub-Repository enthält Versionen und Produktinformationen.",
@@ -395,11 +423,11 @@
     "preview": "実際のアプリ画面",
     "light": "昼",
     "dark": "夜",
-    "shot": "ひとやすみの日本語設定パネル",
+    "shot": "ひとやすみの日本語設定パネル · メディア再生中",
     "features": [
       [
         "離席中は暗く",
-        "離席時の調光を有効にして、待ち時間を選びます。初期設定は 10 分。すぐに暗くすることもできます。"
+        "離席時の調光を有効にして、待ち時間を選びます。初期設定は 10 分。すぐに暗くすることもできます。 macOS 14.2 以降では、対応アプリでのメディア再生中は減光を一時停止します。"
       ],
       [
         "戻れば明るく",
@@ -425,6 +453,10 @@
       [
         "ふたを閉じたり、手動でスリープできますか？",
         "はい。スリープ防止の設定中でも可能です。設定をオフにするか、ひとやすみを終了すると、元の設定に戻ります。"
+      ],
+      [
+        "メディアの再生中も画面は暗くなりますか？",
+        "macOS 14.2 以降では、対応するプレーヤーやブラウザが音声を使用している間、自動減光を一時停止します。音声出力が停止すると、設定した待ち時間を最初から数え直します。手動での減光は引き続き使えます。メニューバーの丸い再生マークと設定欄の下のステータス表示で、一時停止中であることを確認できます。\n\nVLC、QuickTime Player、IINA、mpv、Infuse、Apple TV と、Chrome、Edge、Firefox、Brave、Arc、Opera、Vivaldi、Zen に対応しています。音声のない動画は検出できない場合があります。一時停止後も音声接続を維持するアプリでは、メディアや該当タブを閉じるまで計測が再開しないことがあります。このバージョンでは Safari、Apple Music、Spotify は自動減光を一時停止しません。"
       ]
     ],
     "license": "Doze はプロプライエタリソフトウェアです。GitHub リポジトリでは配布版と製品情報を提供します。",
@@ -449,11 +481,11 @@
     "preview": "실제 앱 화면",
     "light": "낮",
     "dark": "밤",
-    "shot": "잠깐 쉼의 한국어 설정 패널",
+    "shot": "잠깐 쉼의 한국어 설정 패널 · 미디어 재생 중",
     "features": [
       [
         "자리를 비우면 어둡게",
-        "자리 비움 시 화면 어둡게 하기 기능을 켜고 대기 시간을 선택하세요. 기본값은 10분입니다. 바로 어둡게 할 수도 있어요."
+        "자리 비움 시 화면 어둡게 하기 기능을 켜고 대기 시간을 선택하세요. 기본값은 10분입니다. 바로 어둡게 할 수도 있어요. macOS 14.2 이상에서는 지원하는 앱에서 미디어를 재생할 때 자동 밝기 낮추기를 잠시 멈춰요."
       ],
       [
         "돌아오면 밝게",
@@ -479,6 +511,10 @@
       [
         "덮개를 닫거나 직접 잠자기로 전환할 수 있나요?",
         "네. 깨어 있게 유지하는 옵션은 두 동작을 막지 않습니다. 옵션을 끄거나 잠깐 쉼을 종료하면 이전 설정으로 돌아갑니다."
+      ],
+      [
+        "미디어 재생 중에도 화면이 어두워지나요?",
+        "macOS 14.2 이상에서는 지원하는 플레이어나 브라우저가 오디오를 사용하는 동안 자동 밝기 낮추기를 잠시 멈춰요. 오디오 출력이 멈추면 설정한 대기 시간을 처음부터 다시 계산해요. 수동으로 화면을 어둡게 하는 기능은 계속 사용할 수 있어요. 메뉴 막대의 원형 재생 표시와 설정 아래의 상태 카드에서 일시 정지를 확인할 수 있어요.\n\nVLC, QuickTime Player, IINA, mpv, Infuse, Apple TV와 Chrome, Edge, Firefox, Brave, Arc, Opera, Vivaldi, Zen을 지원해요. 오디오가 없는 영상은 감지하지 못할 수 있어요. 일부 앱은 일시 정지 후에도 오디오 연결을 유지하므로 미디어나 해당 탭을 닫아야 대기 시간이 다시 시작될 수 있어요. 이 버전에서는 Safari, Apple Music, Spotify가 자동 밝기 낮추기를 멈추지 않아요."
       ]
     ],
     "license": "Doze는 독점 소프트웨어입니다. GitHub 저장소는 배포 파일과 제품 정보를 제공합니다.",
@@ -503,11 +539,11 @@
     "preview": "Настоящий интерфейс",
     "light": "День",
     "dark": "Ночь",
-    "shot": "Панель настроек Дрёмы на русском языке",
+    "shot": "Панель настроек Дрёмы на русском языке · Медиа активно",
     "features": [
       [
         "Темнее без вас",
-        "Включите затемнение при отсутствии и выберите задержку. По умолчанию 10 минут. Можно затемнить экран и сразу."
+        "Включите затемнение при отсутствии и выберите задержку. По умолчанию 10 минут. Можно затемнить экран и сразу. В macOS 14.2 и новее воспроизведение в поддерживаемых приложениях приостанавливает затемнение."
       ],
       [
         "Ярче при возвращении",
@@ -533,6 +569,10 @@
       [
         "Можно закрыть крышку или включить сон вручную?",
         "Да. Поддержание активности этому не мешает. Отключение этой функции или выход из Дрёмы восстанавливает прежние настройки."
+      ],
+      [
+        "Будет ли экран затемняться во время воспроизведения?",
+        "В macOS 14.2 и новее Дрёма приостанавливает автоматическое затемнение, когда поддерживаемый проигрыватель или браузер использует аудио. После прекращения вывода звука время ожидания отсчитывается заново. Ручное затемнение остаётся доступным. Круглый значок воспроизведения в строке меню и карточка под настройками показывают, что затемнение приостановлено.\n\nПоддерживаются VLC, QuickTime Player, IINA, mpv, Infuse и Apple TV, а также Chrome, Edge, Firefox, Brave, Arc, Opera, Vivaldi и Zen. Видео без аудио может не определяться. Некоторые приложения сохраняют аудиосоединение после паузы; для возобновления отсчёта может потребоваться закрыть медиа или соответствующую вкладку. В этой версии Safari, Apple Music и Spotify не приостанавливают автоматическое затемнение."
       ]
     ],
     "license": "Doze распространяется как проприетарное ПО. Репозиторий GitHub предназначен для выпусков и информации о продукте.",
@@ -557,11 +597,11 @@
     "preview": "واجهة التطبيق الفعلية",
     "light": "نهار",
     "dark": "ليل",
-    "shot": "لوحة إعدادات غفوة باللغة العربية",
+    "shot": "لوحة إعدادات غفوة باللغة العربية · وسائط نشطة",
     "features": [
       [
         "تعتيم عند الابتعاد",
-        "فعّل تعتيم الشاشة عند الابتعاد واختر مدة الانتظار. المدة الافتراضية 10 دقائق. ويمكنك تعتيم الشاشة فورًا أيضًا."
+        "فعّل تعتيم الشاشة عند الابتعاد واختر مدة الانتظار. المدة الافتراضية 10 دقائق. ويمكنك تعتيم الشاشة فورًا أيضًا. في macOS 14.2 أو أحدث، يوقف التشغيل في التطبيقات المدعومة التعتيم مؤقتًا."
       ],
       [
         "استعادة السطوع عند العودة",
@@ -587,6 +627,10 @@
       [
         "هل يمكنني إغلاق الغطاء أو اختيار السكون يدويًا؟",
         "نعم. إبقاء الكمبيوتر مستيقظًا لا يمنع ذلك. يؤدي تعطيل الخيار أو إنهاء غفوة إلى استعادة الإعدادات السابقة."
+      ],
+      [
+        "هل تُعتّم الشاشة أثناء تشغيل الوسائط؟",
+        "في macOS 14.2 أو أحدث، يوقف غفوة التعتيم التلقائي مؤقتًا عندما تستخدم مشغلات أو متصفحات مدعومة الصوت. عند توقف إخراج الصوت، يبدأ وقت الانتظار كاملًا من جديد. يظل التعتيم اليدوي متاحًا. يوضح رمز تشغيل دائري في شريط القوائم وبطاقة حالة أسفل الإعدادات أن التعتيم متوقف مؤقتًا.\n\nيشمل ذلك VLC وQuickTime Player وIINA وmpv وInfuse وApple TV، إضافة إلى Chrome وEdge وFirefox وBrave وArc وOpera وVivaldi وZen. قد لا يتم اكتشاف الفيديو الذي لا يحتوي على صوت. تحتفظ بعض التطبيقات باتصال الصوت بعد الإيقاف المؤقت؛ وقد يلزم إغلاق الوسائط أو علامة التبويب لبدء الانتظار مجددًا. لا توقف Safari وApple Music وSpotify التعتيم التلقائي في هذا الإصدار."
       ]
     ],
     "license": "Doze برنامج احتكاري. يوفّر مستودع GitHub الإصدارات ومعلومات المنتج.",
@@ -611,11 +655,11 @@
     "preview": "ऐप का असली इंटरफ़ेस",
     "light": "दिन",
     "dark": "रात",
-    "shot": "झपकी का हिंदी सेटिंग पैनल",
+    "shot": "झपकी का हिंदी सेटिंग पैनल · मीडिया सक्रिय",
     "features": [
       [
         "दूर जाने पर मंद",
-        "दूर जाने पर स्क्रीन मंद करने का विकल्प चालू करें और समय चुनें। डिफ़ॉल्ट समय 10 मिनट है। आप स्क्रीन को तुरंत भी मंद कर सकते हैं।"
+        "दूर जाने पर स्क्रीन मंद करने का विकल्प चालू करें और समय चुनें। डिफ़ॉल्ट समय 10 मिनट है। आप स्क्रीन को तुरंत भी मंद कर सकते हैं। macOS 14.2 या नए संस्करण में समर्थित ऐप में मीडिया चलने पर रोशनी कम करना रुक जाता है।"
       ],
       [
         "लौटने पर चमक वापस",
@@ -641,6 +685,10 @@
       [
         "क्या ढक्कन बंद कर सकता हूँ या खुद स्लीप चुन सकता हूँ?",
         "हाँ। कंप्यूटर को जागृत रखने का विकल्प इनमें बाधा नहीं डालता। विकल्प बंद करने या झपकी से बाहर निकलने पर पुरानी सेटिंग वापस आ जाती हैं।"
+      ],
+      [
+        "क्या मीडिया चलते समय स्क्रीन की रोशनी कम होगी?",
+        "macOS 14.2 या नए संस्करण में, समर्थित प्लेयर या ब्राउज़र के ऑडियो इस्तेमाल करने पर झपकी स्क्रीन की रोशनी अपने-आप कम करना रोक देता है। ऑडियो आउटपुट रुकने पर इंतज़ार का पूरा समय फिर से शुरू होता है। आप अब भी स्क्रीन की रोशनी खुद कम कर सकते हैं। मेनू बार का गोल प्ले निशान और सेटिंग के नीचे का स्थिति कार्ड इस रुकावट को दिखाते हैं।\n\nइसमें VLC, QuickTime Player, IINA, mpv, Infuse और Apple TV के साथ Chrome, Edge, Firefox, Brave, Arc, Opera, Vivaldi और Zen शामिल हैं। बिना ऑडियो वाले वीडियो का पता नहीं चल सकता। कुछ ऐप विराम के बाद भी ऑडियो कनेक्शन खुला रखते हैं; ऐसे में गिनती फिर शुरू करने के लिए मीडिया या उसका टैब बंद करना पड़ सकता है। इस संस्करण में Safari, Apple Music और Spotify अपने-आप रोशनी कम करने को नहीं रोकते।"
       ]
     ],
     "license": "Doze मालिकाना सॉफ़्टवेयर है। GitHub रिपॉज़िटरी पर रिलीज़ और उत्पाद की जानकारी मिलती है।",

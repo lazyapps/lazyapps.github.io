@@ -19,7 +19,7 @@ import splitTextUrl from '$assets/vendor/SplitText.min.js?url';
 import logoRevealUrl from '$assets/s/logo-reveal-loader.js?url';
 import siteJsUrl from '$assets/s/site.js?url';
 import appIcon from '$assets/img/doze-icon.png';
-import menubarIcon from '$assets/img/doze-menubar.png';
+import menubarIcon from '$assets/img/doze-menubar-media.png';
 import dayLandscape from '$assets/img/doze-landscape-day-cozy-doodle.png';
 import nightLandscape from '$assets/img/doze-landscape-night-cozy-doodle.png';
 import sunArtwork from '$assets/img/doze-sun-cozy-doodle.png';
@@ -49,7 +49,7 @@ const ogUrl = cards[`../assets/img/${t.ogAsset}`].default;
   {Object.values(DOZE_LOCALES).map(locale => <link rel="alternate" hreflang={locale.htmlLang} href={locale.canonical} />)}
   <link rel="alternate" hreflang="x-default" href={DOZE_LOCALES.en.canonical}>
   <SocialMeta title={t.title} description={t.description} url={t.canonical} image={`https://lazyapps.com${ogUrl}`} imageAlt={t.brand} imageWidth={1200} imageHeight={630} locale={t.ogLocale} />
-  <SoftwareApplication name={t.name} description={t.description} url={t.canonical} language={t.htmlLang} operatingSystem="macOS 13.0 or later" downloadUrl={DOZE_RELEASE.downloadUrl ?? undefined} image={`https://lazyapps.com${iconUrl}`} applicationCategory="UtilitiesApplication" />
+  <SoftwareApplication name={t.name} description={t.description} url={t.canonical} language={t.htmlLang} operatingSystem="macOS 13.0 or later" downloadUrl={DOZE_RELEASE.status === 'published' ? DOZE_RELEASE.releasesUrl : undefined} image={`https://lazyapps.com${iconUrl}`} applicationCategory="UtilitiesApplication" />
   <link rel="icon" type="image/png" sizes="16x16" href={favicon16}>
   <link rel="icon" type="image/png" sizes="32x32" href={favicon32}>
   <link rel="stylesheet" href={siteCssUrl}>

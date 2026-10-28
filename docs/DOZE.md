@@ -4,11 +4,11 @@
 
 ## 发布状态
 
-产品页及 Press Kit 的主 CTA 始终指向公开 Releases 页面。已核实的 `downloadUrl` 用于应用结构化数据。
+产品页、首页及 Press Kit 的下载入口和应用结构化数据均使用公开 Releases 页面，不展示具体发布版本，也不固定到某个 DMG 附件，以免内容过时。
 
-`src/i18n/doze-release.json` 是产品页、首页及 Press Kit 的共同状态来源。当前已核实版本 `261021.0`（2026-10-21，macOS 13.0+）和实际 DMG 附件，产品页、首页及 Press Kit 显示正式下载。首发准备期间只显示准备中与发布页入口，不在应用结构化数据中声明下载地址。
+`src/i18n/doze-release.json` 是产品页、首页及 Press Kit 的共同状态来源，仅保存发布状态、稳定的 Releases 地址及核对日期。2026-10-28 已核实存在正式发布，最低系统仍为 macOS 13；媒体音频暂缓功能需要 macOS 14.2+。首发准备期间只显示准备中与发布页入口，不在应用结构化数据中声明下载地址。
 
-公开发行仓库为 `cxa/doze`，源码仓库为私有 `cxa/doze-src`。公开仓库不是开源代码入口。只有核实已发布 Release 的实际 DMG 附件、版本与最低系统要求后，才能将状态改成 `published` 并填写 `version`、`downloadUrl` 及核对日期；随后重新生成资料包并构建。
+公开发行仓库为 `cxa/doze`，源码仓库为私有 `cxa/doze-src`。公开仓库不是开源代码入口。核实公开 Release 及最低系统要求后，才能将状态改成 `published` 并填写核对日期；版本与源码提交仅记录在素材来源证据中，不进入下载文案。更新后重新生成资料包并构建。
 
 ## 原版素材
 
@@ -17,7 +17,7 @@
 - 截图：`scripts/assets/presskit/doze-panel-<locale>-<theme>.png`。12 种真实界面语言各含日、夜两张，均为原生 Retina 截图，未缩放或修饰。来源记录见 `scripts/assets/presskit/screenshot-sources.json`。
 - 截图在隔离副本中使用 App 当前的 `ControlPanelView`、`SkyView`、`Localization`、`IdleDelay`、Resources 和原版插画导出。捕捉工具为 `scripts/assets/doze/capture-panels.swift`，预览沿用原生 popover 的水平安全区；`capture-source.json` 保存核对时源码提交及工作区精确文件哈希。使用独立临时 App，不构建或写入主 App 项目，不更改其运行状态。原生视图中的 Core Animation 图层需要窗口截图，不能以 `cacheDisplay` 代替。
 - 菜单栏图标：使用 `scripts/assets/doze/export-menubar.swift` 配合源项目 `Sources/StatusIcon.swift` 导出原生 2× 模板图，按原比例显示，图标高度为 20pt，来源和导出哈希见 `menubar-source.json`。菜单栏的 Apple、Wi-Fi、电池图标从 macOS SF Symbols 原生导出。网页补充菜单栏、选中背景与 popover 箭头；原生面板截图保持原样。
-- Press Kit 提供 4 种原生菜单栏外观：普通、保持电脑唤醒、已暂停、已暂停且保持电脑唤醒。运行中、屏幕已调暗、需要注意三种状态共用普通外观；保持唤醒时眼形改变，暂停时保留原版 45% 不透明度。提供 44 × 40px 的透明 2× PNG（原生 22 × 20pt）和原始 CGPath 导出的 22 × 20 SVG，各语言共享一份，同一预览提供两种下载，全部收入 ZIP。SVG 保留原生坐标变换与不透明度，不描摹 PNG。仅分发 Doze 自身图标，不附带网页菜单栏使用的系统符号。
+- Press Kit 提供 6 种原生菜单栏外观：普通、保持电脑唤醒、已暂停、已暂停且保持电脑唤醒、媒体播放、媒体播放且保持电脑唤醒。运行中、屏幕已调暗、需要注意三种状态共用普通外观；保持唤醒时眼形改变，暂停时保留原版 45% 不透明度。提供 44 × 40px 的透明 2× PNG（原生 22 × 20pt）和原始 CGPath 导出的 22 × 20 SVG，各语言共享一份，同一预览提供两种下载，全部收入 ZIP。SVG 保留原生坐标变换与不透明度，不描摹 PNG。仅分发 Doze 自身图标，不附带网页菜单栏使用的系统符号。
 - `scripts/assets/doze/StatusIcon.swift` 保存原版绘制源码快照；`menubar-source.json` 记录原生提交、快照哈希、各外观的状态映射及导出哈希。`python3 scripts/export-doze-menubar-icons.py` 可从快照重新导出；跟进原生项目时使用 `--project /path/to/doze/src` 同步快照与提交信息。
 - 网站构建只读取已保存的素材和快照，不依赖 Xcode 或私有项目。
 
@@ -49,7 +49,7 @@ Hero 的 12 种语言大标题统一居中，用直接陈述句表达屏幕休�
 
 导航小图标使用 App 项目中的 `Assets/WebIconCompact.icon`。这个小尺寸版本保留蓝底、金色「眯」和闭眼，使用清晰的 SVG 笔画、较浅的立体高光，并为眼形留出间隙，避免完整光学材质的细密反光在缩小后混在一起。原版快照位于 `scripts/assets/native-icons/doze/WebIconCompact.icon`，来源和文件哈希记录在 `compactSource`。使用 `python3 scripts/export-doze-small-icons.py` 从 Icon Composer 直接按 16、22、28、32、48、80pt 及 1×/2× 渲染：16–32pt 使用 Compact 工程，48/80pt 使用当前原版 AppIcon 工程。导航在桌面选择 28/56px、窄屏选择 22/44px 的原生无损 PNG，避免 1024px 母图缩放后再经有损 WebP 压缩。favicon 同样选择原生 16/32px 图。完整 PNG 下载及媒体资料保持 1024px，所有小尺寸导出的原版工程路径与哈希记录在 native-icons/sources.json 的 webRenditions，并纳入构建的哈希与尺寸校验。
 
-Day／Night 位于模拟菜单栏最右侧，使用 28px 高的分段控件，在 36px 菜单栏中上下各留 4px。选中项使用实色背景，切换时同步原生日夜截图。菜单栏图标使用当前源代码的 active、keepAwake=false 状态，与演示面板中关闭的保持唤醒开关对应。
+Day／Night 位于模拟菜单栏最右侧，使用 28px 高的分段控件，在 36px 菜单栏中上下各留 4px。选中项使用实色背景，切换时同步原生日夜截图。菜单栏图标使用当前源代码的 media、keepAwake=false 状态，与新版演示面板中的媒体暂缓状态和关闭的保持唤醒开关对应。
 
 2026-10-20：首发定稿更新全部 24 张日夜原生截图。保持唤醒的两条圆点说明、40pt 液态玻璃主按钮、无背景退出按钮和 96pt 底部留白与当前 App 一致；图中语言与来源哈希同步更新。旧的 261019.1 预览发行将撤下，产品页和资料包统一使用 261019.0。
 
@@ -62,3 +62,5 @@ Computer use 术语解释链接共用 `src/content/computer-use.mjs`：中文在
 2026-10-21：核对全部 24 张面板截图，重拍主按钮呈灰色的 10 张日间截图（英、西、法、印地、日、韩、巴葡、俄、简中、繁中），保留其余 14 张。预览首次打开后需切换到夜间再回到日间，待原生控件完成刷新，确认主按钮和已开启的开关均为蓝色后再按窗口 ID 截取；保留原始 Retina 像素，不改色或缩放。
 
 2026-10-21：跟进 Doze `261021.0`（源码 `9ea77c0`），全部 12 种语言将保持唤醒的两条用途与调暗提醒分开显示。更新 24 张日夜原生截图，保留已确认且源码哈希完全相同的两张简中截图；逐张确认蓝色主按钮。产品页、12 种语言媒体说明、来源记录、资料包及下载版本同步更新。
+
+2026-10-28：按当前已发布原生源码更新全部 24 张日夜界面截图，展示设置区下方的媒体暂停状态块。截图由独立命名的原生预览应用通过 CUA 捕获，保留原始 Retina 尺寸；原始 JPEG 解码为 PNG，不改色、缩放或修饰。同步 6 种菜单栏状态的 PNG/SVG、12 种语言的媒体播放说明、支持范围和限制。下载入口及应用结构化数据统一指向稳定 Releases 页面，不记录待维护的版本或 DMG 地址。

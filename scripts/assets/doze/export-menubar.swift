@@ -25,15 +25,28 @@ func svgPath(_ path: CGPath) -> String {
             (StatusIcon.State.active, false, output.lastPathComponent),
             (.active, true, "doze-menubar-keep-awake.png"),
             (.paused, false, "doze-menubar-paused.png"),
-            (.paused, true, "doze-menubar-paused-keep-awake.png")
+            (.paused, true, "doze-menubar-paused-keep-awake.png"),
+            (.media, false, "doze-menubar-media.png"),
+            (.media, true, "doze-menubar-media-keep-awake.png")
         ] {
             let image = StatusIcon.image(for: state, keepAwake: keepAwake)
             let bitmap = image.representations.compactMap { $0 as? NSBitmapImageRep }.first { $0.pixelsHigh == Int(image.size.height * 2) }!
             try bitmap.representation(using: .png, properties: [:])!.write(to: output.deletingLastPathComponent().appendingPathComponent(filename))
             let bounds = StatusIcon.vectorPathForExport(smiling: false).boundingBoxOfPath
             let path = svgPath(StatusIcon.vectorPathForExport(smiling: keepAwake))
+            let glyph = """
+            <g transform="translate(11 10) scale(0.8 -0.8) translate(\(-bounds.midX) \(-bounds.midY))" fill="#000000" opacity="\(state == .paused ? 0.45 : state == .media ? 0.75 : 1)"><path d="\(path)"/></g>
+            """
+            let artwork: String
+            if state == .media {
+                artwork = """
+                <defs><mask id="glyph" maskUnits="userSpaceOnUse" x="0" y="0" width="22" height="20"><rect width="22" height="20" fill="white"/><circle cx="11" cy="10" r="5" fill="black"/></mask><mask id="play" maskUnits="userSpaceOnUse" x="0" y="0" width="22" height="20"><rect width="22" height="20" fill="white"/><path d="M10 12 L13 10 L10 8 Z" fill="black"/></mask></defs><g mask="url(#glyph)">\(glyph)</g><circle cx="11" cy="10" r="4" fill="#000000" opacity="0.9" mask="url(#play)"/>
+                """
+            } else {
+                artwork = glyph
+            }
             let svg = """
-            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20"><g transform="translate(11 10) scale(0.8 -0.8) translate(\(-bounds.midX) \(-bounds.midY))" fill="#000000" opacity="\(state == .paused ? 0.45 : 1)"><path d="\(path)"/></g></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20">\(artwork)</svg>
             """
             try svg.write(to: output.deletingLastPathComponent().appendingPathComponent(filename).deletingPathExtension().appendingPathExtension("svg"), atomically: true, encoding: .utf8)
         }

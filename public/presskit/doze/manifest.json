@@ -69,22 +69,40 @@
       "sha256": "324cac5bd85313732ced8568c3f38c8471d27caf699e1074d0312e11f924ad70"
     },
     {
+      "path": "menubar-media.png",
+      "contentLanguage": "und",
+      "width": 44,
+      "height": 40,
+      "format": "PNG",
+      "bytes": 1233,
+      "sha256": "40e92c1379f4081fdd7c499fc3886719022f9feaab40e598d8407c824a1cd35b"
+    },
+    {
+      "path": "menubar-media-keep-awake.png",
+      "contentLanguage": "und",
+      "width": 44,
+      "height": 40,
+      "format": "PNG",
+      "bytes": 1236,
+      "sha256": "550fc1d6f5e2930f7b8f21f50b040e09bd5ccf320677e647a100dd86f4366560"
+    },
+    {
       "path": "ar/settings-light.png",
       "contentLanguage": "ar",
       "width": 768,
-      "height": 1264,
+      "height": 1422,
       "format": "PNG",
-      "bytes": 594454,
-      "sha256": "abf7f12b7c0422b071b9819702dabedbde51951a077da78bf8bf966d4709934b"
+      "bytes": 361458,
+      "sha256": "c8398bca5affa6640864cab500d32e6971cb8de9a9d9f43a827cbd122057e605"
     },
     {
       "path": "ar/settings-dark.png",
       "contentLanguage": "ar",
       "width": 768,
-      "height": 1264,
+      "height": 1422,
       "format": "PNG",
-      "bytes": 526953,
-      "sha256": "b2fb3faa472f956a88e9469d182dfc0bbdf52f64d1df2da61db0e0b518469d8b"
+      "bytes": 418451,
+      "sha256": "c0193b532b222a44ae22deeb267dd8bb5ff853c5c87c8e51af687f998d485aa4"
     },
     {
       "path": "symbol.svg",
@@ -132,6 +150,24 @@
       "sha256": "1a28e07e1a7eca476e921f512e4041fceed1cc6310474edddf06bd9dbcaf0618"
     },
     {
+      "path": "menubar-media.svg",
+      "contentLanguage": "und",
+      "width": 22.0,
+      "height": 20.0,
+      "format": "SVG",
+      "bytes": 4272,
+      "sha256": "44172ba3a746fd8c8d8b7040e5e1b6dfaeeb6e6a92372d957c8d50fb8e9245a4"
+    },
+    {
+      "path": "menubar-media-keep-awake.svg",
+      "contentLanguage": "und",
+      "width": 22.0,
+      "height": 20.0,
+      "format": "SVG",
+      "bytes": 4267,
+      "sha256": "a036b80eb3580f609a9c1c3957a366e3a03a29775eebf960a5eefabfc8bc4c1a"
+    },
+    {
       "path": "ar/social-card.png",
       "contentLanguage": "ar",
       "width": 1200,
@@ -144,19 +180,19 @@
       "path": "de/settings-light.png",
       "contentLanguage": "de",
       "width": 768,
-      "height": 1408,
+      "height": 1566,
       "format": "PNG",
-      "bytes": 680115,
-      "sha256": "79de88f8dd6e8f9a12fcb3506c555722be7a5fe525253d49556892530b9e2f8b"
+      "bytes": 436267,
+      "sha256": "b9eeccc4f2898b98118a87f9957a1af2aea230413ad3f778049976b77182d8b1"
     },
     {
       "path": "de/settings-dark.png",
       "contentLanguage": "de",
       "width": 768,
-      "height": 1408,
+      "height": 1566,
       "format": "PNG",
-      "bytes": 603893,
-      "sha256": "71effedb84ed9685a0f0b179e672bb94cdd930ca9a12be08f9c61b8390d15c09"
+      "bytes": 512586,
+      "sha256": "aab79d567da281c4919e161eb362856ea3dfb71a71e95a08b0d2011f42008979"
     },
     {
       "path": "de/social-card.png",
@@ -171,19 +207,19 @@
       "path": "en/settings-light.png",
       "contentLanguage": "en",
       "width": 768,
-      "height": 1262,
+      "height": 1392,
       "format": "PNG",
-      "bytes": 588022,
-      "sha256": "f17048c273f00a572ca4cd2bf99ea1821cec63182b627f4c94e54a32181f9a38"
+      "bytes": 343632,
+      "sha256": "c63a51020d6784f5d76175fb0ecd902e6a5ad864427ef5a8efcfc51a1582ae82"
     },
     {
       "path": "en/settings-dark.png",
       "contentLanguage": "en",
       "width": 768,
-      "height": 1262,
+      "height": 1392,
       "format": "PNG",
-      "bytes": 519797,
-      "sha256": "012ef384a5c33a8d1c3354b782dcdb3842de827061d0bb92e9252e468b582eb2"
+      "bytes": 395051,
+      "sha256": "446b6973f0e458ead8893f81148269674930935d2798491a7c8dd62c49eb5d31"
     },
     {
       "path": "en/social-card.png",
@@ -198,19 +234,19 @@
       "path": "es/settings-light.png",
       "contentLanguage": "es",
       "width": 768,
-      "height": 1350,
+      "height": 1508,
       "format": "PNG",
-      "bytes": 639249,
-      "sha256": "e2979184c046d2a4ae17539a78f1de632ca313e1bcfa676f4a702b72e927e9f7"
+      "bytes": 403521,
+      "sha256": "76468365314c0fd768b5ad0e8d88484ed423fc58b99a2206f720f677dbdf8e08"
     },
     {
       "path": "es/settings-dark.png",
       "contentLanguage": "es",
       "width": 768,
-      "height": 1350,
+      "height": 1508,
       "format": "PNG",
-      "bytes": 565849,
-      "sha256": "400f9e5919efb1004fdb6aed8fe84f537c35c212515372a885d35cba7425cba9"
+      "bytes": 469513,
+      "sha256": "e48c57dcd5877ac9233396b42af11589005e8f9256a5515b5fa506692d636c55"
     },
     {
       "path": "es/social-card.png",
@@ -225,19 +261,19 @@
       "path": "fr/settings-light.png",
       "contentLanguage": "fr",
       "width": 768,
-      "height": 1378,
+      "height": 1508,
       "format": "PNG",
-      "bytes": 665082,
-      "sha256": "c1badf343d38399e44f79b99138529525890c0bbed7c931dda15f091efddd256"
+      "bytes": 419038,
+      "sha256": "7310ff5050398a27ba223fee1518d160bf100f9d8ebe7a5229c969bfe8c5e719"
     },
     {
       "path": "fr/settings-dark.png",
       "contentLanguage": "fr",
       "width": 768,
-      "height": 1378,
+      "height": 1508,
       "format": "PNG",
-      "bytes": 592439,
-      "sha256": "101fe73a12505d19041fc8051d99a70770dad0773dedf8e59fcc208d26ade4f5"
+      "bytes": 483328,
+      "sha256": "9953fcd25700921c8bc61d62f0ecdff3a6893b4241b3f8dffc3f33ba85b62275"
     },
     {
       "path": "fr/social-card.png",
@@ -252,19 +288,19 @@
       "path": "hi/settings-light.png",
       "contentLanguage": "hi",
       "width": 768,
-      "height": 1290,
+      "height": 1420,
       "format": "PNG",
-      "bytes": 604155,
-      "sha256": "c26822544b7fc287b1b6dfc0c25f6eb70f8ec58c7db538e281b3ce523b320b45"
+      "bytes": 364520,
+      "sha256": "92108844255733e5fb3b11a654d129641084cfa47a0e6a5c84351bf6b16b6654"
     },
     {
       "path": "hi/settings-dark.png",
       "contentLanguage": "hi",
       "width": 768,
-      "height": 1290,
+      "height": 1420,
       "format": "PNG",
-      "bytes": 532798,
-      "sha256": "6e0e12f5045f44c46d4a51ad0d5a1afa42394762111413bf0a446f510d022c04"
+      "bytes": 423156,
+      "sha256": "dbc47aaaaaafc5e03e5e6772b0c84d90519a0176946f19f2ab359cde3a9bc2c8"
     },
     {
       "path": "hi/social-card.png",
@@ -279,19 +315,19 @@
       "path": "ja/settings-light.png",
       "contentLanguage": "ja",
       "width": 768,
-      "height": 1262,
+      "height": 1420,
       "format": "PNG",
-      "bytes": 604270,
-      "sha256": "598d985641a661d61325015c8fb7fa72f45fc6d2343e0b40fa3f05ccf5397dc7"
+      "bytes": 372183,
+      "sha256": "3464cac600b47382599e911085f2149dc54fab9c6f7888d2dd2174142d155506"
     },
     {
       "path": "ja/settings-dark.png",
       "contentLanguage": "ja",
       "width": 768,
-      "height": 1262,
+      "height": 1420,
       "format": "PNG",
-      "bytes": 537933,
-      "sha256": "91cc1637571feda320360d890e7715fb439a1cb9f564b0df45bf3c5409c12a2a"
+      "bytes": 426662,
+      "sha256": "d12b37b9b37634e3a201689fd071e2b8e384f79d32c990243e63997833a6379b"
     },
     {
       "path": "ja/social-card.png",
@@ -306,19 +342,19 @@
       "path": "ko/settings-light.png",
       "contentLanguage": "ko",
       "width": 768,
-      "height": 1206,
+      "height": 1336,
       "format": "PNG",
-      "bytes": 572305,
-      "sha256": "bc94c0cc946365c283c9011004973e908fec53703e6ea43d1c3479e38022bfd5"
+      "bytes": 332103,
+      "sha256": "ccfbe81e1530c408ef7f21118c43e1fcd112c82cd61abcc9949493e1c4e66936"
     },
     {
       "path": "ko/settings-dark.png",
       "contentLanguage": "ko",
       "width": 768,
-      "height": 1206,
+      "height": 1336,
       "format": "PNG",
-      "bytes": 504103,
-      "sha256": "9feff27ae4de4b9c8ace1dbf8212387fa257dc94b72ee3f7096435c6ab81a456"
+      "bytes": 391141,
+      "sha256": "ab0ae27ec1b00915dbcec86f398097bf3cd74c3dfeef6e2dba45a68e85903ad7"
     },
     {
       "path": "ko/social-card.png",
@@ -333,19 +369,19 @@
       "path": "pt-BR/settings-light.png",
       "contentLanguage": "pt-BR",
       "width": 768,
-      "height": 1350,
+      "height": 1508,
       "format": "PNG",
-      "bytes": 644822,
-      "sha256": "aad37b2272dc1ceafbfc720abf0eab2b41e626c1fb10ec485cc95941d9c3a3a1"
+      "bytes": 411609,
+      "sha256": "480af9d52f7463aca0d930be655241cb66ff7d43674c66cd2761410bd8f54265"
     },
     {
       "path": "pt-BR/settings-dark.png",
       "contentLanguage": "pt-BR",
       "width": 768,
-      "height": 1350,
+      "height": 1508,
       "format": "PNG",
-      "bytes": 570610,
-      "sha256": "33726602d7c65fba71c983264da7b6a92c15150f06cabdbb0f2377a138f665a2"
+      "bytes": 481998,
+      "sha256": "82c6ac3c44559bdaa350514bfdbcdc59ef5fca80a0e661d852bd7abda8a8fe04"
     },
     {
       "path": "pt-BR/social-card.png",
@@ -360,19 +396,19 @@
       "path": "ru/settings-light.png",
       "contentLanguage": "ru",
       "width": 768,
-      "height": 1378,
+      "height": 1536,
       "format": "PNG",
-      "bytes": 653658,
-      "sha256": "5e6b5107bb54de7261d1230ac7247241969af9fb48b6d7793622304916279bd8"
+      "bytes": 402493,
+      "sha256": "be6ab5f36d0e27611f0e390b728aba9827cc8e7959e1b61ed17814328ddef1e8"
     },
     {
       "path": "ru/settings-dark.png",
       "contentLanguage": "ru",
       "width": 768,
-      "height": 1378,
+      "height": 1536,
       "format": "PNG",
-      "bytes": 581737,
-      "sha256": "8f246cfd0fbc2b8971e78fbed3dc8d9b46b861dd3f3fb5a0c9caf7873f175fb9"
+      "bytes": 469553,
+      "sha256": "35bf1cd52d0a524a30fae6196ac3385f5b40fed3e868f5c9e5eb51c3269b5b1d"
     },
     {
       "path": "ru/social-card.png",
@@ -387,19 +423,19 @@
       "path": "zh-Hans/settings-light.png",
       "contentLanguage": "zh-Hans",
       "width": 768,
-      "height": 1206,
+      "height": 1336,
       "format": "PNG",
-      "bytes": 583479,
-      "sha256": "a7c2a147493ea769338d2566ab47f3085d1813eca0fa3a29e833b57e9c246e37"
+      "bytes": 329275,
+      "sha256": "6912c29d398173280d40aa38a371efb3baf8ed9e3be109ba50209b7498d59b95"
     },
     {
       "path": "zh-Hans/settings-dark.png",
       "contentLanguage": "zh-Hans",
       "width": 768,
-      "height": 1206,
+      "height": 1336,
       "format": "PNG",
-      "bytes": 513890,
-      "sha256": "373614f703e91cb6c542dd71f8d8499ee6a33da03596b4c02eceb62eab0e3e3e"
+      "bytes": 379474,
+      "sha256": "6baee55f94bb98a79098004c2e1349f0f44006b5b804b0f12968b75b54ced5c8"
     },
     {
       "path": "zh-Hans/social-card.png",
@@ -414,19 +450,19 @@
       "path": "zh-Hant/settings-light.png",
       "contentLanguage": "zh-Hant",
       "width": 768,
-      "height": 1206,
+      "height": 1336,
       "format": "PNG",
-      "bytes": 595415,
-      "sha256": "83a4bfdbd9e3a69168d815aeec90ca095e545f1b1aee4e08eab2566b0577839f"
+      "bytes": 347132,
+      "sha256": "3aafbd15511dcbc3bff697a90e0a02bf14584fac3435b53400b30e9e0daf1bbd"
     },
     {
       "path": "zh-Hant/settings-dark.png",
       "contentLanguage": "zh-Hant",
       "width": 768,
-      "height": 1206,
+      "height": 1336,
       "format": "PNG",
-      "bytes": 528847,
-      "sha256": "7bda6d5aec8c5d21a4b8ba95d4e8d18eeeab48a1a1fd69c2dc56548b40c8c9b6"
+      "bytes": 394331,
+      "sha256": "16ab1fcacca5481a31210f6f74f753fda3753708e3de50ccf9bb1603d951429e"
     },
     {
       "path": "zh-Hant/social-card.png",

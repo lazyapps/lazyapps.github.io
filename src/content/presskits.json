@@ -664,8 +664,8 @@
       "zh": "macOS 13+"
     },
     "availability": {
-      "en": "First release in preparation",
-      "zh": "首个版本准备中"
+      "en": "Available now",
+      "zh": "现已发布"
     },
     "summary": {
       "en": "Automatically dim your screen when you step away. Enable “Keep Computer Awake” so display sleep and screen savers don’t interrupt AI computer use.",
@@ -678,8 +678,8 @@
     "links": [
       {
         "label": {
-          "en": "View releases",
-          "zh": "查看发布进度"
+          "en": "Download for Mac",
+          "zh": "下载 Mac 版"
         },
         "url": "https://github.com/cxa/doze/releases"
       }
@@ -721,8 +721,8 @@
           "zh": "菜单栏图标 · 普通"
         },
         "note": {
-          "en": "Original transparent 2× template PNG (44 × 40 pixels; 22 × 20 points). Active, dimmed and attention states share the normal appearance; keeping the computer awake changes the eyes. Paused icons retain the native 45% opacity. macOS adapts template color for dark menu bars.",
-          "zh": "原版透明 2× 模板 PNG（44 × 40 像素，22 × 20 点）。运行中、屏幕已调暗和需要注意三种状态共用普通外观；保持电脑唤醒时眼形改变。暂停图标保留原生 45% 不透明度，macOS 会为深色菜单栏自动调整模板颜色。"
+          "en": "Original transparent 2× template PNG (44 × 40 pixels; 22 × 20 points). Active, dimmed and attention states share the normal appearance; keeping the computer awake changes the eyes. Paused icons retain the native 45% opacity. macOS adapts template color for dark menu bars. Media variants show a centered circular play marker.",
+          "zh": "原版透明 2× 模板 PNG（44 × 40 像素，22 × 20 点）。运行中、屏幕已调暗和需要注意三种状态共用普通外观；保持电脑唤醒时眼形改变。暂停图标保留原生 45% 不透明度，macOS 会为深色菜单栏自动调整模板颜色。 媒体播放状态在字形中央显示圆形播放标记。"
         }
       },
       {
@@ -735,8 +735,8 @@
           "zh": "菜单栏图标 · 保持电脑唤醒"
         },
         "note": {
-          "en": "Original transparent 2× template PNG (44 × 40 pixels; 22 × 20 points). Active, dimmed and attention states share the normal appearance; keeping the computer awake changes the eyes. Paused icons retain the native 45% opacity. macOS adapts template color for dark menu bars.",
-          "zh": "原版透明 2× 模板 PNG（44 × 40 像素，22 × 20 点）。运行中、屏幕已调暗和需要注意三种状态共用普通外观；保持电脑唤醒时眼形改变。暂停图标保留原生 45% 不透明度，macOS 会为深色菜单栏自动调整模板颜色。"
+          "en": "Original transparent 2× template PNG (44 × 40 pixels; 22 × 20 points). Active, dimmed and attention states share the normal appearance; keeping the computer awake changes the eyes. Paused icons retain the native 45% opacity. macOS adapts template color for dark menu bars. Media variants show a centered circular play marker.",
+          "zh": "原版透明 2× 模板 PNG（44 × 40 像素，22 × 20 点）。运行中、屏幕已调暗和需要注意三种状态共用普通外观；保持电脑唤醒时眼形改变。暂停图标保留原生 45% 不透明度，macOS 会为深色菜单栏自动调整模板颜色。 媒体播放状态在字形中央显示圆形播放标记。"
         }
       },
       {
@@ -749,8 +749,8 @@
           "zh": "菜单栏图标 · 已暂停"
         },
         "note": {
-          "en": "Original transparent 2× template PNG (44 × 40 pixels; 22 × 20 points). Active, dimmed and attention states share the normal appearance; keeping the computer awake changes the eyes. Paused icons retain the native 45% opacity. macOS adapts template color for dark menu bars.",
-          "zh": "原版透明 2× 模板 PNG（44 × 40 像素，22 × 20 点）。运行中、屏幕已调暗和需要注意三种状态共用普通外观；保持电脑唤醒时眼形改变。暂停图标保留原生 45% 不透明度，macOS 会为深色菜单栏自动调整模板颜色。"
+          "en": "Original transparent 2× template PNG (44 × 40 pixels; 22 × 20 points). Active, dimmed and attention states share the normal appearance; keeping the computer awake changes the eyes. Paused icons retain the native 45% opacity. macOS adapts template color for dark menu bars. Media variants show a centered circular play marker.",
+          "zh": "原版透明 2× 模板 PNG（44 × 40 像素，22 × 20 点）。运行中、屏幕已调暗和需要注意三种状态共用普通外观；保持电脑唤醒时眼形改变。暂停图标保留原生 45% 不透明度，macOS 会为深色菜单栏自动调整模板颜色。 媒体播放状态在字形中央显示圆形播放标记。"
         }
       },
       {
@@ -763,8 +763,36 @@
           "zh": "菜单栏图标 · 已暂停 · 保持电脑唤醒"
         },
         "note": {
-          "en": "Original transparent 2× template PNG (44 × 40 pixels; 22 × 20 points). Active, dimmed and attention states share the normal appearance; keeping the computer awake changes the eyes. Paused icons retain the native 45% opacity. macOS adapts template color for dark menu bars.",
-          "zh": "原版透明 2× 模板 PNG（44 × 40 像素，22 × 20 点）。运行中、屏幕已调暗和需要注意三种状态共用普通外观；保持电脑唤醒时眼形改变。暂停图标保留原生 45% 不透明度，macOS 会为深色菜单栏自动调整模板颜色。"
+          "en": "Original transparent 2× template PNG (44 × 40 pixels; 22 × 20 points). Active, dimmed and attention states share the normal appearance; keeping the computer awake changes the eyes. Paused icons retain the native 45% opacity. macOS adapts template color for dark menu bars. Media variants show a centered circular play marker.",
+          "zh": "原版透明 2× 模板 PNG（44 × 40 像素，22 × 20 点）。运行中、屏幕已调暗和需要注意三种状态共用普通外观；保持电脑唤醒时眼形改变。暂停图标保留原生 45% 不透明度，macOS 会为深色菜单栏自动调整模板颜色。 媒体播放状态在字形中央显示圆形播放标记。"
+        }
+      },
+      {
+        "source": "src/assets/img/doze-menubar-media.png",
+        "filename": "menubar-media.png",
+        "kind": "menubar",
+        "variant": "media",
+        "label": {
+          "en": "Menu bar icon · Media active",
+          "zh": "菜单栏图标 · 媒体播放"
+        },
+        "note": {
+          "en": "Original transparent 2× template PNG (44 × 40 pixels; 22 × 20 points). Active, dimmed and attention states share the normal appearance; keeping the computer awake changes the eyes. Paused icons retain the native 45% opacity. macOS adapts template color for dark menu bars. Media variants show a centered circular play marker.",
+          "zh": "原版透明 2× 模板 PNG（44 × 40 像素，22 × 20 点）。运行中、屏幕已调暗和需要注意三种状态共用普通外观；保持电脑唤醒时眼形改变。暂停图标保留原生 45% 不透明度，macOS 会为深色菜单栏自动调整模板颜色。 媒体播放状态在字形中央显示圆形播放标记。"
+        }
+      },
+      {
+        "source": "src/assets/img/doze-menubar-media-keep-awake.png",
+        "filename": "menubar-media-keep-awake.png",
+        "kind": "menubar",
+        "variant": "mediaKeepAwake",
+        "label": {
+          "en": "Menu bar icon · Media active · Keep Computer Awake",
+          "zh": "菜单栏图标 · 媒体播放 · 保持电脑唤醒"
+        },
+        "note": {
+          "en": "Original transparent 2× template PNG (44 × 40 pixels; 22 × 20 points). Active, dimmed and attention states share the normal appearance; keeping the computer awake changes the eyes. Paused icons retain the native 45% opacity. macOS adapts template color for dark menu bars. Media variants show a centered circular play marker.",
+          "zh": "原版透明 2× 模板 PNG（44 × 40 像素，22 × 20 点）。运行中、屏幕已调暗和需要注意三种状态共用普通外观；保持电脑唤醒时眼形改变。暂停图标保留原生 45% 不透明度，macOS 会为深色菜单栏自动调整模板颜色。 媒体播放状态在字形中央显示圆形播放标记。"
         }
       },
       {
@@ -871,6 +899,36 @@
         "filename": "menubar-paused-keep-awake.svg",
         "kind": "vector",
         "alternateFor": "menubar-paused-keep-awake.png",
+        "noteKey": "vector",
+        "label": {
+          "en": "Flat vector artwork",
+          "zh": "平面矢量图"
+        },
+        "note": {
+          "en": "SVG preserves the original vector paths, proportions and transparency.",
+          "zh": "SVG 保留原版矢量路径、比例与透明度。"
+        }
+      },
+      {
+        "source": "scripts/assets/presskit/vectors/doze-menubar-media.svg",
+        "filename": "menubar-media.svg",
+        "kind": "vector",
+        "alternateFor": "menubar-media.png",
+        "noteKey": "vector",
+        "label": {
+          "en": "Flat vector artwork",
+          "zh": "平面矢量图"
+        },
+        "note": {
+          "en": "SVG preserves the original vector paths, proportions and transparency.",
+          "zh": "SVG 保留原版矢量路径、比例与透明度。"
+        }
+      },
+      {
+        "source": "scripts/assets/presskit/vectors/doze-menubar-media-keep-awake.svg",
+        "filename": "menubar-media-keep-awake.svg",
+        "kind": "vector",
+        "alternateFor": "menubar-media-keep-awake.png",
         "noteKey": "vector",
         "label": {
           "en": "Flat vector artwork",

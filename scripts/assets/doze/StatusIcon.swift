@@ -2,7 +2,7 @@ import AppKit
 
 enum StatusIcon {
     enum State: CaseIterable, Hashable {
-        case active, dimmed, paused, attention
+        case active, dimmed, paused, media, attention
     }
 
     private struct Variant: Hashable {
@@ -12,7 +12,7 @@ enum StatusIcon {
 
     private static let images = Dictionary(uniqueKeysWithValues: State.allCases.flatMap { state in
         [false, true].map { awake in
-            (Variant(state: state, keepAwake: awake), makeImage(paused: state == .paused, keepAwake: awake))
+            (Variant(state: state, keepAwake: awake), makeImage(state: state, keepAwake: awake))
         }
     })
 
@@ -20,7 +20,7 @@ enum StatusIcon {
         images[Variant(state: state, keepAwake: keepAwake)]!
     }
 
-    private static func makeImage(paused: Bool, keepAwake: Bool) -> NSImage {
+    private static func makeImage(state: State, keepAwake: Bool) -> NSImage {
         let size = NSSize(width: 22, height: 20)
         let image = NSImage(size: size)
         let glyph = monogram(smiling: keepAwake)
@@ -39,10 +39,28 @@ enum StatusIcon {
             context.translateBy(x: size.width / 2, y: size.height / 2)
             context.scaleBy(x: 0.8, y: 0.8)
             context.translateBy(x: -bounds.midX, y: -bounds.midY)
-            context.setFillColor(NSColor.black.withAlphaComponent(paused ? 0.45 : 1).cgColor)
+            let opacity: CGFloat = state == .paused ? 0.45 : state == .media ? 0.75 : 1
+            context.setFillColor(NSColor.black.withAlphaComponent(opacity).cgColor)
             context.addPath(glyph)
             context.fillPath()
             context.restoreGState()
+            if state == .media {
+                context.saveGState()
+                context.setBlendMode(.clear)
+                context.fillEllipse(in: CGRect(x: 6, y: 5, width: 10, height: 10))
+                context.setBlendMode(.normal)
+                context.setFillColor(NSColor.black.withAlphaComponent(0.9).cgColor)
+                context.fillEllipse(in: CGRect(x: 7, y: 6, width: 8, height: 8))
+                let play = CGMutablePath()
+                play.move(to: CGPoint(x: 10, y: 8))
+                play.addLine(to: CGPoint(x: 13, y: 10))
+                play.addLine(to: CGPoint(x: 10, y: 12))
+                play.closeSubpath()
+                context.setBlendMode(.clear)
+                context.addPath(play)
+                context.fillPath()
+                context.restoreGState()
+            }
             NSGraphicsContext.restoreGraphicsState()
             image.addRepresentation(bitmap)
         }

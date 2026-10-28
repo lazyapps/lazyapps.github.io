@@ -9,12 +9,8 @@ import { KEYHOP_LOCALES } from '../src/i18n/keyhop-locales.mjs';
 import { KEYHOP_STATUS } from '../src/i18n/keyhop-status.mjs';
 
 assert(['upcoming', 'published'].includes(DOZE_RELEASE.status), 'Unknown Doze release status');
-if (DOZE_RELEASE.status === 'published') {
-  assert(/^\d{6}\.\d+$/.test(DOZE_RELEASE.version), 'Published Doze needs its verified version');
-  assert(DOZE_RELEASE.downloadUrl?.startsWith(`https://github.com/cxa/doze/releases/download/v${DOZE_RELEASE.version}/`) && DOZE_RELEASE.downloadUrl.endsWith('.dmg'), 'Published Doze needs its verified versioned DMG');
-} else {
-  assert(DOZE_RELEASE.version === null && DOZE_RELEASE.downloadUrl === null, 'Unreleased Doze must not claim an available version or download');
-}
+assert.equal(DOZE_RELEASE.releasesUrl, 'https://github.com/cxa/doze/releases', 'Doze downloads must use the stable Releases page');
+assert(!('version' in DOZE_RELEASE) && !('downloadUrl' in DOZE_RELEASE), 'Doze must not pin a release version or installer URL');
 const pages = await readPages();
 assert(pages.length > 0, 'No built pages. Run npm run build first.');
 const byUrl = new Map(pages.map(page => [page.url, page]));
@@ -133,7 +129,7 @@ for (const page of pages) {
     } else if (page.url.startsWith(`${site}/doze/`)) {
       const locale = Object.values(DOZE_LOCALES).find(locale => locale.canonical === page.url);
       check(locale && app.name === locale.name, 'Incorrect Doze localized identity');
-      check(app.downloadUrl === (DOZE_RELEASE.downloadUrl ?? undefined), 'Doze release metadata drift');
+      check(app.downloadUrl === (DOZE_RELEASE.status === 'published' ? DOZE_RELEASE.releasesUrl : undefined), 'Doze release metadata drift');
       check(languageLinks.size === 13 && languageLinks.get('x-default') === DOZE_LOCALES.en.canonical, 'Doze must cover 12 languages with English fallback');
     } else {
       check(app['@type'] === 'WebApplication' ? app.browserRequirements : app.downloadUrl, 'Missing browser requirements or download URL');

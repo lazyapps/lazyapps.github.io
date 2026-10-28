@@ -18,7 +18,7 @@ Réduisez automatiquement la luminosité de l’écran en votre absence. Gardez 
 
 macOS 13+ · Écrans intégrés et écrans compatibles avec le réglage système de luminosité
 
-Activez la réduction de luminosité en votre absence et choisissez un délai. Par défaut : 10 minutes. Vous pouvez aussi assombrir l’écran immédiatement.
+Activez la réduction de luminosité en votre absence et choisissez un délai. Par défaut : 10 minutes. Vous pouvez aussi assombrir l’écran immédiatement. Sous macOS 14.2 ou version ultérieure, la lecture dans les apps compatibles suspend l’assombrissement.
 
 Bougez la souris, utilisez le trackpad ou appuyez sur une touche. Les clics et frappes simulés des outils d’IA testés ne rallument pas l’écran ; d’autres outils peuvent se comporter différemment.
 
@@ -36,6 +36,10 @@ Pour que l’IA continue à utiliser les apps, activez le maintien en éveil du 
 Les écrans intégrés des Mac et les écrans réglables par le système, comme Studio Display, sont pris en charge. Les autres écrans externes ne sont pas garantis. L’obscurité totale dépend de l’écran.
 
 Oui. Le maintien en éveil ne bloque pas ces actions. Désactiver cette option ou quitter Petit Repos rétablit les réglages précédents.
+
+Sous macOS 14.2 ou version ultérieure, Petit Repos suspend l’assombrissement automatique lorsqu’un lecteur ou navigateur compatible utilise l’audio. Quand la sortie audio s’arrête, le délai repart de zéro. Vous pouvez toujours assombrir l’écran manuellement. Un symbole de lecture circulaire dans la barre des menus et un encart sous les réglages indiquent la pause.
+
+Cela couvre VLC, QuickTime Player, IINA, mpv, Infuse et Apple TV, ainsi que Chrome, Edge, Firefox, Brave, Arc, Opera, Vivaldi et Zen. Les vidéos sans audio peuvent ne pas être détectées. Certaines apps gardent leur connexion audio après une pause : il peut être nécessaire de fermer le média ou son onglet pour relancer le délai. Safari, Apple Music et Spotify ne suspendent pas l’assombrissement automatique dans cette version.
 
 Doze est un logiciel propriétaire. Son dépôt GitHub fournit les versions et les informations produit.
 
@@ -69,7 +73,7 @@ Symbole de marque transparent d’origine issu de l’icône actuelle de l’app
 
 44 × 40 · PNG
 
-PNG modèle transparent 2× d’origine (44 × 40 pixels ; 22 × 20 points). Les états actif, écran assombri et attention partagent la même apparence normale ; garder le Mac éveillé modifie les yeux. Les icônes en pause conservent leur opacité native de 45 %. macOS adapte la couleur du modèle aux barres des menus sombres.
+PNG modèle transparent 2× d’origine (44 × 40 pixels ; 22 × 20 points). Les états actif, écran assombri et attention partagent la même apparence normale ; garder le Mac éveillé modifie les yeux. Les icônes en pause conservent leur opacité native de 45 %. macOS adapte la couleur du modèle aux barres des menus sombres. Les variantes multimédias affichent un symbole de lecture circulaire au centre.
 
 ### Icône de barre des menus · Garder le Mac éveillé
 
@@ -77,7 +81,7 @@ PNG modèle transparent 2× d’origine (44 × 40 pixels ; 22 × 20 points). Les
 
 44 × 40 · PNG
 
-PNG modèle transparent 2× d’origine (44 × 40 pixels ; 22 × 20 points). Les états actif, écran assombri et attention partagent la même apparence normale ; garder le Mac éveillé modifie les yeux. Les icônes en pause conservent leur opacité native de 45 %. macOS adapte la couleur du modèle aux barres des menus sombres.
+PNG modèle transparent 2× d’origine (44 × 40 pixels ; 22 × 20 points). Les états actif, écran assombri et attention partagent la même apparence normale ; garder le Mac éveillé modifie les yeux. Les icônes en pause conservent leur opacité native de 45 %. macOS adapte la couleur du modèle aux barres des menus sombres. Les variantes multimédias affichent un symbole de lecture circulaire au centre.
 
 ### Icône de barre des menus · En pause
 
@@ -85,7 +89,7 @@ PNG modèle transparent 2× d’origine (44 × 40 pixels ; 22 × 20 points). Les
 
 44 × 40 · PNG
 
-PNG modèle transparent 2× d’origine (44 × 40 pixels ; 22 × 20 points). Les états actif, écran assombri et attention partagent la même apparence normale ; garder le Mac éveillé modifie les yeux. Les icônes en pause conservent leur opacité native de 45 %. macOS adapte la couleur du modèle aux barres des menus sombres.
+PNG modèle transparent 2× d’origine (44 × 40 pixels ; 22 × 20 points). Les états actif, écran assombri et attention partagent la même apparence normale ; garder le Mac éveillé modifie les yeux. Les icônes en pause conservent leur opacité native de 45 %. macOS adapte la couleur du modèle aux barres des menus sombres. Les variantes multimédias affichent un symbole de lecture circulaire au centre.
 
 ### Icône de barre des menus · En pause · Garder le Mac éveillé
 
@@ -93,13 +97,29 @@ PNG modèle transparent 2× d’origine (44 × 40 pixels ; 22 × 20 points). Les
 
 44 × 40 · PNG
 
-PNG modèle transparent 2× d’origine (44 × 40 pixels ; 22 × 20 points). Les états actif, écran assombri et attention partagent la même apparence normale ; garder le Mac éveillé modifie les yeux. Les icônes en pause conservent leur opacité native de 45 %. macOS adapte la couleur du modèle aux barres des menus sombres.
+PNG modèle transparent 2× d’origine (44 × 40 pixels ; 22 × 20 points). Les états actif, écran assombri et attention partagent la même apparence normale ; garder le Mac éveillé modifie les yeux. Les icônes en pause conservent leur opacité native de 45 %. macOS adapte la couleur du modèle aux barres des menus sombres. Les variantes multimédias affichent un symbole de lecture circulaire au centre.
+
+### Icône de barre des menus · Média actif
+
+[menubar-media.png](../menubar-media.png)
+
+44 × 40 · PNG
+
+PNG modèle transparent 2× d’origine (44 × 40 pixels ; 22 × 20 points). Les états actif, écran assombri et attention partagent la même apparence normale ; garder le Mac éveillé modifie les yeux. Les icônes en pause conservent leur opacité native de 45 %. macOS adapte la couleur du modèle aux barres des menus sombres. Les variantes multimédias affichent un symbole de lecture circulaire au centre.
+
+### Icône de barre des menus · Média actif · Garder le Mac éveillé
+
+[menubar-media-keep-awake.png](../menubar-media-keep-awake.png)
+
+44 × 40 · PNG
+
+PNG modèle transparent 2× d’origine (44 × 40 pixels ; 22 × 20 points). Les états actif, écran assombri et attention partagent la même apparence normale ; garder le Mac éveillé modifie les yeux. Les icônes en pause conservent leur opacité native de 45 %. macOS adapte la couleur du modèle aux barres des menus sombres. Les variantes multimédias affichent un symbole de lecture circulaire au centre.
 
 ### Capture d’écran · Jour
 
 [settings-light.png](settings-light.png)
 
-768 × 1378 · PNG
+768 × 1508 · PNG
 
 Aperçu de l’interface native dans cette langue ; pixels inchangés.
 
@@ -107,7 +127,7 @@ Aperçu de l’interface native dans cette langue ; pixels inchangés.
 
 [settings-dark.png](settings-dark.png)
 
-768 × 1378 · PNG
+768 × 1508 · PNG
 
 Aperçu de l’interface native dans cette langue ; pixels inchangés.
 
@@ -146,6 +166,22 @@ Le SVG conserve les tracés vectoriels, les proportions et la transparence d’o
 ### Icône de barre des menus · En pause · Garder le Mac éveillé
 
 [menubar-paused-keep-awake.svg](../menubar-paused-keep-awake.svg)
+
+22.0 × 20.0 · SVG
+
+Le SVG conserve les tracés vectoriels, les proportions et la transparence d’origine.
+
+### Icône de barre des menus · Média actif
+
+[menubar-media.svg](../menubar-media.svg)
+
+22.0 × 20.0 · SVG
+
+Le SVG conserve les tracés vectoriels, les proportions et la transparence d’origine.
+
+### Icône de barre des menus · Média actif · Garder le Mac éveillé
+
+[menubar-media-keep-awake.svg](../menubar-media-keep-awake.svg)
 
 22.0 × 20.0 · SVG
 

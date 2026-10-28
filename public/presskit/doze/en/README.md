@@ -18,7 +18,7 @@ Automatically dim your screen when you step away. Enable “Keep Computer Awake�
 
 macOS 13+ · Built-in displays and supported displays with system brightness control
 
-Turn on “Dim When Away” and choose a delay. The default is 10 minutes. You can also dim the screen immediately.
+Turn on “Dim When Away” and choose a delay. The default is 10 minutes. You can also dim the screen immediately. Playback in supported apps pauses dimming on macOS 14.2 or later.
 
 Move the mouse, use the trackpad or press a key to restore brightness. Simulated clicks and keystrokes from tested AI tools do not brighten the screen; other tools may behave differently.
 
@@ -36,6 +36,10 @@ For ongoing computer use, enable “Keep Computer Awake”.
 Supports built-in Mac displays and displays with system brightness control, such as Studio Display. Other external displays are not guaranteed. Whether the screen goes fully dark depends on the display.
 
 Yes. “Keep Computer Awake” does not prevent either. Turning it off or quitting Doze restores your previous settings.
+
+On macOS 14.2 or later, Doze pauses automatic dimming while supported players or browsers use audio. After audio output stops, the full waiting time starts again. You can still dim the screen manually. A circular play marker in the menu bar and a status card below the settings show when dimming is paused.
+
+This covers VLC, QuickTime Player, IINA, mpv, Infuse and Apple TV, plus Chrome, Edge, Firefox, Brave, Arc, Opera, Vivaldi and Zen. Videos without audio may not be detected. Some apps keep their audio connection after pausing, so you may need to close the media or its browser tab before timing resumes. Safari, Apple Music and Spotify do not pause automatic dimming in this version.
 
 Doze is proprietary software. Its GitHub repository provides releases and product information.
 
@@ -69,7 +73,7 @@ Original transparent brand symbol from the current app icon. Original gold color
 
 44 × 40 · PNG
 
-Original transparent 2× template PNG (44 × 40 pixels; 22 × 20 points). Active, dimmed and attention states share the normal appearance; keeping the computer awake changes the eyes. Paused icons retain the native 45% opacity. macOS adapts template color for dark menu bars.
+Original transparent 2× template PNG (44 × 40 pixels; 22 × 20 points). Active, dimmed and attention states share the normal appearance; keeping the computer awake changes the eyes. Paused icons retain the native 45% opacity. macOS adapts template color for dark menu bars. Media variants show a centered circular play marker.
 
 ### Menu bar icon · Keep Computer Awake
 
@@ -77,7 +81,7 @@ Original transparent 2× template PNG (44 × 40 pixels; 22 × 20 points). Active
 
 44 × 40 · PNG
 
-Original transparent 2× template PNG (44 × 40 pixels; 22 × 20 points). Active, dimmed and attention states share the normal appearance; keeping the computer awake changes the eyes. Paused icons retain the native 45% opacity. macOS adapts template color for dark menu bars.
+Original transparent 2× template PNG (44 × 40 pixels; 22 × 20 points). Active, dimmed and attention states share the normal appearance; keeping the computer awake changes the eyes. Paused icons retain the native 45% opacity. macOS adapts template color for dark menu bars. Media variants show a centered circular play marker.
 
 ### Menu bar icon · Paused
 
@@ -85,7 +89,7 @@ Original transparent 2× template PNG (44 × 40 pixels; 22 × 20 points). Active
 
 44 × 40 · PNG
 
-Original transparent 2× template PNG (44 × 40 pixels; 22 × 20 points). Active, dimmed and attention states share the normal appearance; keeping the computer awake changes the eyes. Paused icons retain the native 45% opacity. macOS adapts template color for dark menu bars.
+Original transparent 2× template PNG (44 × 40 pixels; 22 × 20 points). Active, dimmed and attention states share the normal appearance; keeping the computer awake changes the eyes. Paused icons retain the native 45% opacity. macOS adapts template color for dark menu bars. Media variants show a centered circular play marker.
 
 ### Menu bar icon · Paused · Keep Computer Awake
 
@@ -93,13 +97,29 @@ Original transparent 2× template PNG (44 × 40 pixels; 22 × 20 points). Active
 
 44 × 40 · PNG
 
-Original transparent 2× template PNG (44 × 40 pixels; 22 × 20 points). Active, dimmed and attention states share the normal appearance; keeping the computer awake changes the eyes. Paused icons retain the native 45% opacity. macOS adapts template color for dark menu bars.
+Original transparent 2× template PNG (44 × 40 pixels; 22 × 20 points). Active, dimmed and attention states share the normal appearance; keeping the computer awake changes the eyes. Paused icons retain the native 45% opacity. macOS adapts template color for dark menu bars. Media variants show a centered circular play marker.
+
+### Menu bar icon · Media active
+
+[menubar-media.png](../menubar-media.png)
+
+44 × 40 · PNG
+
+Original transparent 2× template PNG (44 × 40 pixels; 22 × 20 points). Active, dimmed and attention states share the normal appearance; keeping the computer awake changes the eyes. Paused icons retain the native 45% opacity. macOS adapts template color for dark menu bars. Media variants show a centered circular play marker.
+
+### Menu bar icon · Media active · Keep Computer Awake
+
+[menubar-media-keep-awake.png](../menubar-media-keep-awake.png)
+
+44 × 40 · PNG
+
+Original transparent 2× template PNG (44 × 40 pixels; 22 × 20 points). Active, dimmed and attention states share the normal appearance; keeping the computer awake changes the eyes. Paused icons retain the native 45% opacity. macOS adapts template color for dark menu bars. Media variants show a centered circular play marker.
 
 ### Screenshot · Day
 
 [settings-light.png](settings-light.png)
 
-768 × 1262 · PNG
+768 × 1392 · PNG
 
 Native interface preview in this language; unchanged pixels.
 
@@ -107,7 +127,7 @@ Native interface preview in this language; unchanged pixels.
 
 [settings-dark.png](settings-dark.png)
 
-768 × 1262 · PNG
+768 × 1392 · PNG
 
 Native interface preview in this language; unchanged pixels.
 
@@ -146,6 +166,22 @@ SVG preserves the original vector paths, proportions and transparency.
 ### Menu bar icon · Paused · Keep Computer Awake
 
 [menubar-paused-keep-awake.svg](../menubar-paused-keep-awake.svg)
+
+22.0 × 20.0 · SVG
+
+SVG preserves the original vector paths, proportions and transparency.
+
+### Menu bar icon · Media active
+
+[menubar-media.svg](../menubar-media.svg)
+
+22.0 × 20.0 · SVG
+
+SVG preserves the original vector paths, proportions and transparency.
+
+### Menu bar icon · Media active · Keep Computer Awake
+
+[menubar-media-keep-awake.svg](../menubar-media-keep-awake.svg)
 
 22.0 × 20.0 · SVG
 

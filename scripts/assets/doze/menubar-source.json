@@ -1,15 +1,15 @@
 {
   "project": "_vibe/doze/src",
   "source": "Sources/StatusIcon.swift",
-  "commit": "7e8d8c7951448ade666a0da60c41503ee9a680ef",
-  "sourceSha256": "1289cecc7496c8259873e6dba31f254f221db60068ab15a4360a4d3e4c6f2514",
+  "commit": "611b9070744289cbff340deb7a78935781452f32",
+  "sourceSha256": "013e0e67ac997b973dc0f82b8fb537af09e7d87f690554fdab80ff215fdd2935",
   "output": "src/assets/img/doze-menubar.png",
   "outputSha256": "08d0d36396e7c70ff86b09f5037f9d70125058df9df1b503b6c1af0662d40598",
   "size": [
     44,
     40
   ],
-  "note": "Four original native template appearances at 2× (44 × 40 pixels, 22 × 20 points). Black glyphs on transparency; paused variants preserve native 45% opacity. Active, dimmed and attention share the same appearance. Keep Computer Awake changes the eyes. macOS adapts template color for dark menu bars. Companion system symbols are not Press Kit assets.",
+  "note": "Six original native template appearances at 2× (44 × 40 pixels, 22 × 20 points). Black glyphs on transparency; manually paused variants preserve native 45% opacity. Media variants have a centered circular play marker. Active, dimmed and attention share the same appearance. Keep Computer Awake changes the eyes. macOS adapts template color for dark menu bars. Companion system symbols are not Press Kit assets.",
   "systemSymbols": [
     {
       "symbol": "apple.logo",
@@ -104,6 +104,40 @@
       "scale": 2,
       "svgOutput": "src/assets/img/doze-menubar-paused-keep-awake.svg",
       "svgSha256": "1a28e07e1a7eca476e921f512e4041fceed1cc6310474edddf06bd9dbcaf0618"
+    },
+    {
+      "key": "media",
+      "state": "media",
+      "keepAwake": false,
+      "equivalentStates": [
+        "media"
+      ],
+      "output": "src/assets/img/doze-menubar-media.png",
+      "sha256": "40e92c1379f4081fdd7c499fc3886719022f9feaab40e598d8407c824a1cd35b",
+      "size": [
+        44,
+        40
+      ],
+      "scale": 2,
+      "svgOutput": "src/assets/img/doze-menubar-media.svg",
+      "svgSha256": "44172ba3a746fd8c8d8b7040e5e1b6dfaeeb6e6a92372d957c8d50fb8e9245a4"
+    },
+    {
+      "key": "mediaKeepAwake",
+      "state": "media",
+      "keepAwake": true,
+      "equivalentStates": [
+        "media"
+      ],
+      "output": "src/assets/img/doze-menubar-media-keep-awake.png",
+      "sha256": "550fc1d6f5e2930f7b8f21f50b040e09bd5ccf320677e647a100dd86f4366560",
+      "size": [
+        44,
+        40
+      ],
+      "scale": 2,
+      "svgOutput": "src/assets/img/doze-menubar-media-keep-awake.svg",
+      "svgSha256": "a036b80eb3580f609a9c1c3957a366e3a03a29775eebf960a5eefabfc8bc4c1a"
     }
   ]
 }

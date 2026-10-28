@@ -79,7 +79,7 @@
       "sha256": "e7f4df9ce3fb152a81e9695b076339cfd166eab7ab0288b30ef8784783cb2ad3",
       "inputs": {
         "src/assets/img/doze-menubar.svg": "e7f4df9ce3fb152a81e9695b076339cfd166eab7ab0288b30ef8784783cb2ad3",
-        "scripts/assets/doze/StatusIcon.swift": "1289cecc7496c8259873e6dba31f254f221db60068ab15a4360a4d3e4c6f2514"
+        "scripts/assets/doze/StatusIcon.swift": "013e0e67ac997b973dc0f82b8fb537af09e7d87f690554fdab80ff215fdd2935"
       },
       "method": "Exact native CGPath elements serialized as SVG, with the original placement, scale, vertical axis conversion and paused opacity. No raster image or tracing."
     },
@@ -88,7 +88,7 @@
       "sha256": "6f922d7df5581417b3c66b94990ea3d76e480ee039d44618d6c5f47b7253ba22",
       "inputs": {
         "src/assets/img/doze-menubar-keep-awake.svg": "6f922d7df5581417b3c66b94990ea3d76e480ee039d44618d6c5f47b7253ba22",
-        "scripts/assets/doze/StatusIcon.swift": "1289cecc7496c8259873e6dba31f254f221db60068ab15a4360a4d3e4c6f2514"
+        "scripts/assets/doze/StatusIcon.swift": "013e0e67ac997b973dc0f82b8fb537af09e7d87f690554fdab80ff215fdd2935"
       },
       "method": "Exact native CGPath elements serialized as SVG, with the original placement, scale, vertical axis conversion and paused opacity. No raster image or tracing."
     },
@@ -97,7 +97,7 @@
       "sha256": "353eccb9c2594107fc5bf5abddd18dbb293fdbe4f8480621ec088aa3201ba65d",
       "inputs": {
         "src/assets/img/doze-menubar-paused.svg": "353eccb9c2594107fc5bf5abddd18dbb293fdbe4f8480621ec088aa3201ba65d",
-        "scripts/assets/doze/StatusIcon.swift": "1289cecc7496c8259873e6dba31f254f221db60068ab15a4360a4d3e4c6f2514"
+        "scripts/assets/doze/StatusIcon.swift": "013e0e67ac997b973dc0f82b8fb537af09e7d87f690554fdab80ff215fdd2935"
       },
       "method": "Exact native CGPath elements serialized as SVG, with the original placement, scale, vertical axis conversion and paused opacity. No raster image or tracing."
     },
@@ -106,7 +106,25 @@
       "sha256": "1a28e07e1a7eca476e921f512e4041fceed1cc6310474edddf06bd9dbcaf0618",
       "inputs": {
         "src/assets/img/doze-menubar-paused-keep-awake.svg": "1a28e07e1a7eca476e921f512e4041fceed1cc6310474edddf06bd9dbcaf0618",
-        "scripts/assets/doze/StatusIcon.swift": "1289cecc7496c8259873e6dba31f254f221db60068ab15a4360a4d3e4c6f2514"
+        "scripts/assets/doze/StatusIcon.swift": "013e0e67ac997b973dc0f82b8fb537af09e7d87f690554fdab80ff215fdd2935"
+      },
+      "method": "Exact native CGPath elements serialized as SVG, with the original placement, scale, vertical axis conversion and paused opacity. No raster image or tracing."
+    },
+    {
+      "output": "scripts/assets/presskit/vectors/doze-menubar-media.svg",
+      "sha256": "44172ba3a746fd8c8d8b7040e5e1b6dfaeeb6e6a92372d957c8d50fb8e9245a4",
+      "inputs": {
+        "src/assets/img/doze-menubar-media.svg": "44172ba3a746fd8c8d8b7040e5e1b6dfaeeb6e6a92372d957c8d50fb8e9245a4",
+        "scripts/assets/doze/StatusIcon.swift": "013e0e67ac997b973dc0f82b8fb537af09e7d87f690554fdab80ff215fdd2935"
+      },
+      "method": "Exact native CGPath elements serialized as SVG, with the original placement, scale, vertical axis conversion and paused opacity. No raster image or tracing."
+    },
+    {
+      "output": "scripts/assets/presskit/vectors/doze-menubar-media-keep-awake.svg",
+      "sha256": "a036b80eb3580f609a9c1c3957a366e3a03a29775eebf960a5eefabfc8bc4c1a",
+      "inputs": {
+        "src/assets/img/doze-menubar-media-keep-awake.svg": "a036b80eb3580f609a9c1c3957a366e3a03a29775eebf960a5eefabfc8bc4c1a",
+        "scripts/assets/doze/StatusIcon.swift": "013e0e67ac997b973dc0f82b8fb537af09e7d87f690554fdab80ff215fdd2935"
       },
       "method": "Exact native CGPath elements serialized as SVG, with the original placement, scale, vertical axis conversion and paused opacity. No raster image or tracing."
     }

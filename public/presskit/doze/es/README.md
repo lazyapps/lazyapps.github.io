@@ -18,7 +18,7 @@ Atenúa automáticamente la pantalla cuando te ausentas. Mantén el Mac despiert
 
 macOS 13+ · Pantallas integradas y compatibles con el control de brillo del sistema
 
-Activa la atenuación al ausentarte y elige el tiempo de espera. Por defecto son 10 minutos. También puedes atenuar la pantalla al instante.
+Activa la atenuación al ausentarte y elige el tiempo de espera. Por defecto son 10 minutos. También puedes atenuar la pantalla al instante. En macOS 14.2 o posterior, la reproducción en apps compatibles pausa la atenuación.
 
 Mueve el ratón, usa el trackpad o pulsa una tecla para recuperar el brillo. Los clics y las teclas simulados de las herramientas de IA probadas no iluminan la pantalla; otras pueden comportarse de otro modo.
 
@@ -36,6 +36,10 @@ Para que la IA siga usando el ordenador, activa la opción de mantener el Mac de
 Admite las pantallas integradas del Mac y las que permiten ajustar el brillo desde el sistema, como Studio Display. No se garantiza la compatibilidad con otras pantallas externas. Que se oscurezca por completo depende de la pantalla.
 
 Sí. Mantener el ordenador activo no impide estas acciones. Al desactivar la opción o salir de Siestita, se restauran los ajustes anteriores.
+
+En macOS 14.2 o posterior, Siestita pausa la atenuación automática cuando un reproductor o navegador compatible usa audio. Al detenerse la salida de audio, el tiempo de espera vuelve a empezar. Puedes seguir atenuando la pantalla manualmente. Un símbolo de reproducción circular en la barra de menús y una tarjeta bajo los ajustes indican la pausa.
+
+Incluye VLC, QuickTime Player, IINA, mpv, Infuse y Apple TV, además de Chrome, Edge, Firefox, Brave, Arc, Opera, Vivaldi y Zen. Los vídeos sin audio pueden no detectarse. Algunas aplicaciones mantienen la conexión de audio tras pausar: quizá debas cerrar el contenido o su pestaña para reiniciar la espera. Safari, Apple Music y Spotify no pausan la atenuación automática en esta versión.
 
 Doze es software propietario. Su repositorio de GitHub ofrece versiones e información del producto.
 
@@ -69,7 +73,7 @@ Símbolo de marca transparente original del icono actual de la app. Conserva el 
 
 44 × 40 · PNG
 
-PNG de plantilla transparente 2× original (44 × 40 píxeles; 22 × 20 puntos). Los estados activo, pantalla atenuada y atención comparten la apariencia normal; mantener el ordenador despierto cambia los ojos. Los iconos en pausa conservan la opacidad nativa del 45 %. macOS adapta el color de la plantilla a las barras de menús oscuras.
+PNG de plantilla transparente 2× original (44 × 40 píxeles; 22 × 20 puntos). Los estados activo, pantalla atenuada y atención comparten la apariencia normal; mantener el ordenador despierto cambia los ojos. Los iconos en pausa conservan la opacidad nativa del 45 %. macOS adapta el color de la plantilla a las barras de menús oscuras. Las variantes multimedia muestran un símbolo de reproducción circular en el centro.
 
 ### Icono de la barra de menús · Mantener el ordenador despierto
 
@@ -77,7 +81,7 @@ PNG de plantilla transparente 2× original (44 × 40 píxeles; 22 × 20 puntos).
 
 44 × 40 · PNG
 
-PNG de plantilla transparente 2× original (44 × 40 píxeles; 22 × 20 puntos). Los estados activo, pantalla atenuada y atención comparten la apariencia normal; mantener el ordenador despierto cambia los ojos. Los iconos en pausa conservan la opacidad nativa del 45 %. macOS adapta el color de la plantilla a las barras de menús oscuras.
+PNG de plantilla transparente 2× original (44 × 40 píxeles; 22 × 20 puntos). Los estados activo, pantalla atenuada y atención comparten la apariencia normal; mantener el ordenador despierto cambia los ojos. Los iconos en pausa conservan la opacidad nativa del 45 %. macOS adapta el color de la plantilla a las barras de menús oscuras. Las variantes multimedia muestran un símbolo de reproducción circular en el centro.
 
 ### Icono de la barra de menús · En pausa
 
@@ -85,7 +89,7 @@ PNG de plantilla transparente 2× original (44 × 40 píxeles; 22 × 20 puntos).
 
 44 × 40 · PNG
 
-PNG de plantilla transparente 2× original (44 × 40 píxeles; 22 × 20 puntos). Los estados activo, pantalla atenuada y atención comparten la apariencia normal; mantener el ordenador despierto cambia los ojos. Los iconos en pausa conservan la opacidad nativa del 45 %. macOS adapta el color de la plantilla a las barras de menús oscuras.
+PNG de plantilla transparente 2× original (44 × 40 píxeles; 22 × 20 puntos). Los estados activo, pantalla atenuada y atención comparten la apariencia normal; mantener el ordenador despierto cambia los ojos. Los iconos en pausa conservan la opacidad nativa del 45 %. macOS adapta el color de la plantilla a las barras de menús oscuras. Las variantes multimedia muestran un símbolo de reproducción circular en el centro.
 
 ### Icono de la barra de menús · En pausa · Mantener el ordenador despierto
 
@@ -93,13 +97,29 @@ PNG de plantilla transparente 2× original (44 × 40 píxeles; 22 × 20 puntos).
 
 44 × 40 · PNG
 
-PNG de plantilla transparente 2× original (44 × 40 píxeles; 22 × 20 puntos). Los estados activo, pantalla atenuada y atención comparten la apariencia normal; mantener el ordenador despierto cambia los ojos. Los iconos en pausa conservan la opacidad nativa del 45 %. macOS adapta el color de la plantilla a las barras de menús oscuras.
+PNG de plantilla transparente 2× original (44 × 40 píxeles; 22 × 20 puntos). Los estados activo, pantalla atenuada y atención comparten la apariencia normal; mantener el ordenador despierto cambia los ojos. Los iconos en pausa conservan la opacidad nativa del 45 %. macOS adapta el color de la plantilla a las barras de menús oscuras. Las variantes multimedia muestran un símbolo de reproducción circular en el centro.
+
+### Icono de la barra de menús · Audio activo
+
+[menubar-media.png](../menubar-media.png)
+
+44 × 40 · PNG
+
+PNG de plantilla transparente 2× original (44 × 40 píxeles; 22 × 20 puntos). Los estados activo, pantalla atenuada y atención comparten la apariencia normal; mantener el ordenador despierto cambia los ojos. Los iconos en pausa conservan la opacidad nativa del 45 %. macOS adapta el color de la plantilla a las barras de menús oscuras. Las variantes multimedia muestran un símbolo de reproducción circular en el centro.
+
+### Icono de la barra de menús · Audio activo · Mantener el ordenador despierto
+
+[menubar-media-keep-awake.png](../menubar-media-keep-awake.png)
+
+44 × 40 · PNG
+
+PNG de plantilla transparente 2× original (44 × 40 píxeles; 22 × 20 puntos). Los estados activo, pantalla atenuada y atención comparten la apariencia normal; mantener el ordenador despierto cambia los ojos. Los iconos en pausa conservan la opacidad nativa del 45 %. macOS adapta el color de la plantilla a las barras de menús oscuras. Las variantes multimedia muestran un símbolo de reproducción circular en el centro.
 
 ### Captura de pantalla · Día
 
 [settings-light.png](settings-light.png)
 
-768 × 1350 · PNG
+768 × 1508 · PNG
 
 Vista previa de la interfaz nativa en este idioma; píxeles sin modificar.
 
@@ -107,7 +127,7 @@ Vista previa de la interfaz nativa en este idioma; píxeles sin modificar.
 
 [settings-dark.png](settings-dark.png)
 
-768 × 1350 · PNG
+768 × 1508 · PNG
 
 Vista previa de la interfaz nativa en este idioma; píxeles sin modificar.
 
@@ -146,6 +166,22 @@ El SVG conserva los trazados vectoriales, las proporciones y la transparencia or
 ### Icono de la barra de menús · En pausa · Mantener el ordenador despierto
 
 [menubar-paused-keep-awake.svg](../menubar-paused-keep-awake.svg)
+
+22.0 × 20.0 · SVG
+
+El SVG conserva los trazados vectoriales, las proporciones y la transparencia originales.
+
+### Icono de la barra de menús · Audio activo
+
+[menubar-media.svg](../menubar-media.svg)
+
+22.0 × 20.0 · SVG
+
+El SVG conserva los trazados vectoriales, las proporciones y la transparencia originales.
+
+### Icono de la barra de menús · Audio activo · Mantener el ordenador despierto
+
+[menubar-media-keep-awake.svg](../menubar-media-keep-awake.svg)
 
 22.0 × 20.0 · SVG
 

@@ -111,7 +111,7 @@
     ],
     "source": "Resources/<language>.lproj/Localizable.strings and InfoPlist.strings",
     "project": "_vibe/doze/src",
-    "commit": "9ea77c0f5b559904a8af89adfed350dbf11be5e9",
+    "commit": "611b9070744289cbff340deb7a78935781452f32",
     "note": "12 main app UI languages verified from the finalized source; exact localization hashes in scripts/assets/doze/capture-source.json."
   }
 }

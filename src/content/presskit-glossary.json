@@ -42,7 +42,7 @@
       "background": "AI-generated desert wallpaper for the website presentation; not an app screenshot or built-in app feature.",
       "websiteBackground": "AI-generated decorative backdrop for the website presentation; not an app screenshot, game scene or built-in feature.",
       "symbol": "Original transparent brand symbol from the current app icon. Original gold color, proportions and opacity preserved.",
-      "menubar": "Original transparent 2× template PNG (44 × 40 pixels; 22 × 20 points). Active, dimmed and attention states share the normal appearance; keeping the computer awake changes the eyes. Paused icons retain the native 45% opacity. macOS adapts template color for dark menu bars.",
+      "menubar": "Original transparent 2× template PNG (44 × 40 pixels; 22 × 20 points). Active, dimmed and attention states share the normal appearance; keeping the computer awake changes the eyes. Paused icons retain the native 45% opacity. macOS adapts template color for dark menu bars. Media variants show a centered circular play marker.",
       "flatVector": "Flat SVG assembled from the original vector artwork and layer positions. Native glass, lighting and platform icon masks are not reproduced; use the PNG for the complete native app icon.",
       "vector": "SVG preserves the original vector paths, proportions and transparency.",
       "pixelVector": "Lossless SVG of the original pixel wordmark. Exact pixel shapes, colors and transparency are preserved without smoothing or an embedded bitmap."
@@ -60,7 +60,9 @@
       "active": "Normal",
       "keepAwake": "Keep Computer Awake",
       "paused": "Paused",
-      "pausedKeepAwake": "Paused · Keep Computer Awake"
+      "pausedKeepAwake": "Paused · Keep Computer Awake",
+      "media": "Media active",
+      "mediaKeepAwake": "Media active · Keep Computer Awake"
     }
   },
   "zh-Hans": {
@@ -106,7 +108,7 @@
       "background": "AI 生成的沙丘壁纸，用于网站展示；不是 App 截图或内置功能。",
       "websiteBackground": "AI 生成的装饰背景，用于网站展示；不是 App 截图、游戏场景或内置功能。",
       "symbol": "当前 App 图标中的原版透明品牌符号，保留原版金色、比例和不透明度。",
-      "menubar": "原版透明 2× 模板 PNG（44 × 40 像素，22 × 20 点）。运行中、屏幕已调暗和需要注意三种状态共用普通外观；保持电脑唤醒时眼形改变。暂停图标保留原生 45% 不透明度，macOS 会为深色菜单栏自动调整模板颜色。",
+      "menubar": "原版透明 2× 模板 PNG（44 × 40 像素，22 × 20 点）。运行中、屏幕已调暗和需要注意三种状态共用普通外观；保持电脑唤醒时眼形改变。暂停图标保留原生 45% 不透明度，macOS 会为深色菜单栏自动调整模板颜色。 媒体播放状态在字形中央显示圆形播放标记。",
       "flatVector": "由原版矢量图案和图层位置组合的平面 SVG，不重现原生玻璃、光照或系统图标裁切。完整原生 App 图标请使用 PNG。",
       "vector": "SVG 保留原版矢量路径、比例与透明度。",
       "pixelVector": "由原版像素文字标志无损转换的 SVG，逐像素保留形状、颜色与透明度，不平滑边缘、不嵌入位图。"
@@ -124,7 +126,9 @@
       "active": "普通",
       "keepAwake": "保持电脑唤醒",
       "paused": "已暂停",
-      "pausedKeepAwake": "已暂停 · 保持电脑唤醒"
+      "pausedKeepAwake": "已暂停 · 保持电脑唤醒",
+      "media": "媒体播放",
+      "mediaKeepAwake": "媒体播放 · 保持电脑唤醒"
     }
   },
   "zh-Hant": {
@@ -170,7 +174,7 @@
       "background": "AI 生成的沙丘桌布，用於網站展示；不是 App 截圖或內建功能。",
       "websiteBackground": "AI 生成的裝飾背景，用於網站展示；不是 App 截圖、遊戲場景或內建功能。",
       "symbol": "目前 App 圖示中的原版透明品牌符號，保留原版金色、比例與不透明度。",
-      "menubar": "原版透明 2× 樣板 PNG（44 × 40 像素，22 × 20 點）。執行中、螢幕已調暗和需要注意三種狀態共用一般外觀；保持電腦喚醒時眼形改變。暫停圖示保留原生 45% 不透明度，macOS 會為深色選單列自動調整樣板顏色。",
+      "menubar": "原版透明 2× 樣板 PNG（44 × 40 像素，22 × 20 點）。執行中、螢幕已調暗和需要注意三種狀態共用一般外觀；保持電腦喚醒時眼形改變。暫停圖示保留原生 45% 不透明度，macOS 會為深色選單列自動調整樣板顏色。 媒體播放狀態在字形中央顯示圓形播放標記。",
       "flatVector": "由原版向量圖案和圖層位置組合的平面 SVG，不重現原生玻璃、光照或系統圖示裁切。完整原生 App 圖示請使用 PNG。",
       "vector": "SVG 保留原版向量路徑、比例與透明度。",
       "pixelVector": "由原版像素文字標誌無損轉換的 SVG，逐像素保留形狀、顏色與透明度，不平滑邊緣、不嵌入點陣圖。"
@@ -188,7 +192,9 @@
       "active": "一般",
       "keepAwake": "保持電腦喚醒",
       "paused": "已暫停",
-      "pausedKeepAwake": "已暫停 · 保持電腦喚醒"
+      "pausedKeepAwake": "已暫停 · 保持電腦喚醒",
+      "media": "媒體播放",
+      "mediaKeepAwake": "媒體播放 · 保持電腦喚醒"
     }
   },
   "de": {
@@ -234,7 +240,7 @@
       "background": "KI-generiertes Dünenmotiv für die Website-Präsentation; kein App-Screenshot und keine integrierte App-Funktion.",
       "websiteBackground": "KI-generierter dekorativer Hintergrund für die Website; kein App-Screenshot, keine Spielszene und keine integrierte Funktion.",
       "symbol": "Originales transparentes Markensymbol aus dem aktuellen App-Symbol. Goldfarbe, Proportionen und Deckkraft bleiben erhalten.",
-      "menubar": "Originales transparentes 2×-Vorlagen-PNG (44 × 40 Pixel; 22 × 20 Punkte). Aktiv, abgedunkelt und Hinweis verwenden dieselbe normale Darstellung; beim Wachhalten ändern sich die Augen. Pausierte Symbole behalten die native Deckkraft von 45 %. macOS passt die Vorlagenfarbe an dunkle Menüleisten an.",
+      "menubar": "Originales transparentes 2×-Vorlagen-PNG (44 × 40 Pixel; 22 × 20 Punkte). Aktiv, abgedunkelt und Hinweis verwenden dieselbe normale Darstellung; beim Wachhalten ändern sich die Augen. Pausierte Symbole behalten die native Deckkraft von 45 %. macOS passt die Vorlagenfarbe an dunkle Menüleisten an. Die Medienvarianten zeigen ein rundes Wiedergabesymbol in der Mitte.",
       "flatVector": "Flaches SVG aus den ursprünglichen Vektorformen und Ebenenpositionen. Native Glaseffekte, Beleuchtung und Systemsymbolmasken werden nicht nachgebildet; das vollständige native App-Symbol liegt als PNG vor.",
       "vector": "Das SVG bewahrt die ursprünglichen Vektorpfade, Proportionen und Transparenz.",
       "pixelVector": "Verlustfreies SVG der ursprünglichen Pixel-Wortmarke. Pixelformen, Farben und Transparenz bleiben exakt erhalten, ohne Glättung oder eingebettete Bitmap."
@@ -252,7 +258,9 @@
       "active": "Normal",
       "keepAwake": "Computer wach halten",
       "paused": "Pausiert",
-      "pausedKeepAwake": "Pausiert · Computer wach halten"
+      "pausedKeepAwake": "Pausiert · Computer wach halten",
+      "media": "Medien aktiv",
+      "mediaKeepAwake": "Medien aktiv · Computer wach halten"
     }
   },
   "fr": {
@@ -298,7 +306,7 @@
       "background": "Paysage de dunes généré par IA pour la présentation du site ; ce n’est ni une capture d’écran ni une fonction intégrée de l’app.",
       "websiteBackground": "Décor généré par IA pour la présentation sur le site ; il ne s’agit ni d’une capture de l’app, ni d’une scène du jeu, ni d’une fonctionnalité intégrée.",
       "symbol": "Symbole de marque transparent d’origine issu de l’icône actuelle de l’app. La couleur dorée, les proportions et l’opacité d’origine sont préservées.",
-      "menubar": "PNG modèle transparent 2× d’origine (44 × 40 pixels ; 22 × 20 points). Les états actif, écran assombri et attention partagent la même apparence normale ; garder le Mac éveillé modifie les yeux. Les icônes en pause conservent leur opacité native de 45 %. macOS adapte la couleur du modèle aux barres des menus sombres.",
+      "menubar": "PNG modèle transparent 2× d’origine (44 × 40 pixels ; 22 × 20 points). Les états actif, écran assombri et attention partagent la même apparence normale ; garder le Mac éveillé modifie les yeux. Les icônes en pause conservent leur opacité native de 45 %. macOS adapte la couleur du modèle aux barres des menus sombres. Les variantes multimédias affichent un symbole de lecture circulaire au centre.",
       "flatVector": "SVG à plat assemblé à partir des formes vectorielles et positions de calques d’origine. Les effets de verre, l’éclairage et les masques d’icône du système ne sont pas reproduits ; utilisez le PNG pour l’icône native complète.",
       "vector": "Le SVG conserve les tracés vectoriels, les proportions et la transparence d’origine.",
       "pixelVector": "SVG sans perte du logotype en pixels d’origine. Formes, couleurs et transparence de chaque pixel préservées, sans lissage ni image matricielle intégrée."
@@ -316,7 +324,9 @@
       "active": "Normal",
       "keepAwake": "Garder le Mac éveillé",
       "paused": "En pause",
-      "pausedKeepAwake": "En pause · Garder le Mac éveillé"
+      "pausedKeepAwake": "En pause · Garder le Mac éveillé",
+      "media": "Média actif",
+      "mediaKeepAwake": "Média actif · Garder le Mac éveillé"
     }
   },
   "es": {
@@ -362,7 +372,7 @@
       "background": "Fondo de dunas generado con IA para la presentación del sitio web; no es una captura ni una función integrada de la app.",
       "websiteBackground": "Fondo decorativo generado con IA para la presentación web; no es una captura de la app, una escena del juego ni una función integrada.",
       "symbol": "Símbolo de marca transparente original del icono actual de la app. Conserva el color dorado, las proporciones y la opacidad originales.",
-      "menubar": "PNG de plantilla transparente 2× original (44 × 40 píxeles; 22 × 20 puntos). Los estados activo, pantalla atenuada y atención comparten la apariencia normal; mantener el ordenador despierto cambia los ojos. Los iconos en pausa conservan la opacidad nativa del 45 %. macOS adapta el color de la plantilla a las barras de menús oscuras.",
+      "menubar": "PNG de plantilla transparente 2× original (44 × 40 píxeles; 22 × 20 puntos). Los estados activo, pantalla atenuada y atención comparten la apariencia normal; mantener el ordenador despierto cambia los ojos. Los iconos en pausa conservan la opacidad nativa del 45 %. macOS adapta el color de la plantilla a las barras de menús oscuras. Las variantes multimedia muestran un símbolo de reproducción circular en el centro.",
       "flatVector": "SVG plano compuesto con las formas vectoriales y posiciones de capa originales. No reproduce el cristal, la iluminación ni las máscaras de iconos del sistema; usa el PNG para el icono nativo completo.",
       "vector": "El SVG conserva los trazados vectoriales, las proporciones y la transparencia originales.",
       "pixelVector": "SVG sin pérdida del logotipo de píxeles original. Conserva exactamente formas, colores y transparencia, sin suavizado ni mapa de bits incrustado."
@@ -380,7 +390,9 @@
       "active": "Normal",
       "keepAwake": "Mantener el ordenador despierto",
       "paused": "En pausa",
-      "pausedKeepAwake": "En pausa · Mantener el ordenador despierto"
+      "pausedKeepAwake": "En pausa · Mantener el ordenador despierto",
+      "media": "Audio activo",
+      "mediaKeepAwake": "Audio activo · Mantener el ordenador despierto"
     }
   },
   "pt-BR": {
@@ -426,7 +438,7 @@
       "background": "Paisagem de dunas gerada por IA para a apresentação no site; não é uma captura de tela nem um recurso integrado do app.",
       "websiteBackground": "Fundo decorativo gerado por IA para apresentação no site; não é uma captura do app, uma cena do jogo nem um recurso integrado.",
       "symbol": "Símbolo original da marca com transparência, extraído do ícone atual do app. Preserva a cor dourada, as proporções e a opacidade originais.",
-      "menubar": "PNG de modelo transparente 2× original (44 × 40 pixels; 22 × 20 pontos). Os estados ativo, tela escurecida e atenção usam a mesma aparência normal; manter o computador ativo muda os olhos. Os ícones pausados preservam a opacidade nativa de 45%. O macOS adapta a cor do modelo às barras de menus escuras.",
+      "menubar": "PNG de modelo transparente 2× original (44 × 40 pixels; 22 × 20 pontos). Os estados ativo, tela escurecida e atenção usam a mesma aparência normal; manter o computador ativo muda os olhos. Os ícones pausados preservam a opacidade nativa de 45%. O macOS adapta a cor do modelo às barras de menus escuras. As variantes de mídia mostram um símbolo circular de reprodução no centro.",
       "flatVector": "SVG plano montado com as formas vetoriais e posições de camadas originais. Vidro, iluminação e máscaras de ícones do sistema não são reproduzidos; use o PNG para o ícone nativo completo.",
       "vector": "O SVG preserva os caminhos vetoriais, as proporções e a transparência originais.",
       "pixelVector": "SVG sem perdas do logotipo pixelado original. Formas, cores e transparência de cada pixel são preservadas, sem suavização nem bitmap incorporado."
@@ -444,7 +456,9 @@
       "active": "Normal",
       "keepAwake": "Manter o computador ativo",
       "paused": "Pausado",
-      "pausedKeepAwake": "Pausado · Manter o computador ativo"
+      "pausedKeepAwake": "Pausado · Manter o computador ativo",
+      "media": "Áudio de mídia ativo",
+      "mediaKeepAwake": "Áudio de mídia ativo · Manter o computador ativo"
     }
   },
   "pt": {
@@ -592,7 +606,7 @@
       "background": "ウェブサイトの展示用に AI で生成した砂丘の壁紙です。アプリのスクリーンショットや内蔵機能ではありません。",
       "websiteBackground": "ウェブサイトでの展示用にAIで生成した装飾背景です。アプリのスクリーンショット、ゲーム内の場面、内蔵機能ではありません。",
       "symbol": "現在のアプリアイコンに含まれるオリジナルの透過ブランドシンボルです。元の金色、縦横比、不透明度を保持しています。",
-      "menubar": "オリジナルの透過2×テンプレートPNG（44 × 40ピクセル、22 × 20ポイント）。動作中、画面の減光中、注意が必要な状態は同じ通常表示です。コンピュータをスリープさせない設定では目の形が変わります。一時停止中のアイコンは本来の不透明度45%を保持します。macOSが暗いメニューバーに合わせてテンプレートの色を調整します。",
+      "menubar": "オリジナルの透過2×テンプレートPNG（44 × 40ピクセル、22 × 20ポイント）。動作中、画面の減光中、注意が必要な状態は同じ通常表示です。コンピュータをスリープさせない設定では目の形が変わります。一時停止中のアイコンは本来の不透明度45%を保持します。macOSが暗いメニューバーに合わせてテンプレートの色を調整します。 メディア再生中のアイコンには、中央に丸い再生マークが表示されます。",
       "flatVector": "元のベクター図形とレイヤー位置から構成したフラットなSVGです。ネイティブのガラス効果、照明、システムのアイコンマスクは再現していません。完全なネイティブアプリアイコンにはPNGをご利用ください。",
       "vector": "SVGは元のベクターパス、縦横比、透明度を保持しています。",
       "pixelVector": "元のピクセルワードマークを可逆変換したSVGです。各ピクセルの形、色、透明度を保持し、平滑化やビットマップの埋め込みは行っていません。"
@@ -610,7 +624,9 @@
       "active": "通常",
       "keepAwake": "コンピュータをスリープさせない",
       "paused": "一時停止中",
-      "pausedKeepAwake": "一時停止中 · コンピュータをスリープさせない"
+      "pausedKeepAwake": "一時停止中 · コンピュータをスリープさせない",
+      "media": "メディア再生中",
+      "mediaKeepAwake": "メディア再生中 · コンピュータをスリープさせない"
     }
   },
   "ko": {
@@ -656,7 +672,7 @@
       "background": "웹사이트 전시용으로 AI가 생성한 사막 사구 배경입니다. 앱 스크린샷이나 내장 기능이 아닙니다.",
       "websiteBackground": "웹사이트 전시용으로 AI가 생성한 장식 배경입니다. 앱 스크린샷, 게임 장면 또는 내장 기능이 아닙니다.",
       "symbol": "현재 앱 아이콘의 원본 투명 브랜드 심볼입니다. 원래의 금색, 비율, 불투명도를 유지합니다.",
-      "menubar": "원본 투명 2× 템플릿 PNG(44 × 40픽셀, 22 × 20포인트)입니다. 활성, 화면 어두워짐, 주의 상태는 일반 모양을 공유하며, 컴퓨터를 깨어 있게 유지하면 눈 모양이 바뀝니다. 일시 정지 아이콘은 원래의 45% 불투명도를 유지합니다. macOS가 어두운 메뉴 막대에 맞게 템플릿 색상을 조정합니다.",
+      "menubar": "원본 투명 2× 템플릿 PNG(44 × 40픽셀, 22 × 20포인트)입니다. 활성, 화면 어두워짐, 주의 상태는 일반 모양을 공유하며, 컴퓨터를 깨어 있게 유지하면 눈 모양이 바뀝니다. 일시 정지 아이콘은 원래의 45% 불투명도를 유지합니다. macOS가 어두운 메뉴 막대에 맞게 템플릿 색상을 조정합니다. 미디어 상태 아이콘은 중앙에 원형 재생 표시가 있어요.",
       "flatVector": "원본 벡터 도형과 레이어 위치로 구성한 평면 SVG입니다. 네이티브 유리 효과, 조명, 시스템 아이콘 마스크는 재현하지 않습니다. 완전한 네이티브 앱 아이콘은 PNG를 사용하세요.",
       "vector": "SVG는 원본 벡터 경로, 비율, 투명도를 유지합니다.",
       "pixelVector": "원본 픽셀 워드마크를 손실 없이 변환한 SVG입니다. 픽셀 모양, 색상, 투명도를 그대로 유지하며 가장자리 보정이나 비트맵 삽입을 하지 않습니다."
@@ -674,7 +690,9 @@
       "active": "일반",
       "keepAwake": "컴퓨터 깨어 있음 유지",
       "paused": "일시 정지",
-      "pausedKeepAwake": "일시 정지 · 컴퓨터 깨어 있음 유지"
+      "pausedKeepAwake": "일시 정지 · 컴퓨터 깨어 있음 유지",
+      "media": "미디어 재생 중",
+      "mediaKeepAwake": "미디어 재생 중 · 컴퓨터 깨어 있음 유지"
     }
   },
   "ar": {
@@ -719,7 +737,7 @@
       "sharedEnglishCapture": "لقطة مشتركة للواجهة الإنجليزية تعرض كتابة صينية نموذجية وملاحظات لتعلّم الإنجليزية؛ البكسلات الأصلية دون تغيير.",
       "background": "خلفية كثبان رملية مولّدة بالذكاء الاصطناعي لعرض الموقع؛ ليست لقطة شاشة للتطبيق أو ميزة مدمجة فيه.",
       "symbol": "رمز العلامة الأصلي بخلفية شفافة من أيقونة التطبيق الحالية. مع الحفاظ على اللون الذهبي والنسب ودرجة التعتيم الأصلية.",
-      "menubar": "ملف PNG أصلي شفاف لقالب بدقة 2× ‏(44 × 40 بكسل؛ 22 × 20 نقطة). تتشارك حالات النشاط وتعتيم الشاشة والتنبيه المظهر العادي نفسه؛ وتتغير العينان عند إبقاء الكمبيوتر مستيقظًا. تحتفظ أيقونات الإيقاف المؤقت بدرجة التعتيم الأصلية البالغة 45٪. يضبط macOS لون القالب لأشرطة القوائم الداكنة.",
+      "menubar": "ملف PNG أصلي شفاف لقالب بدقة 2× ‏(44 × 40 بكسل؛ 22 × 20 نقطة). تتشارك حالات النشاط وتعتيم الشاشة والتنبيه المظهر العادي نفسه؛ وتتغير العينان عند إبقاء الكمبيوتر مستيقظًا. تحتفظ أيقونات الإيقاف المؤقت بدرجة التعتيم الأصلية البالغة 45٪. يضبط macOS لون القالب لأشرطة القوائم الداكنة. تُظهر أيقونات الوسائط رمز تشغيل دائريًا في المنتصف.",
       "flatVector": "ملف SVG مسطح مُركّب من الأشكال المتجهية ومواضع الطبقات الأصلية. لا يعيد إنتاج تأثيرات الزجاج والإضاءة وأقنعة أيقونات النظام؛ استخدم PNG لأيقونة التطبيق الأصلية الكاملة.",
       "vector": "يحافظ SVG على المسارات المتجهية والنسب والشفافية الأصلية.",
       "pixelVector": "تحويل SVG دون فقدان للشعار النصي الأصلي بالبكسل. يحافظ بدقة على أشكال البكسل وألوانها وشفافيتها، دون تنعيم أو صورة نقطية مضمّنة."
@@ -737,7 +755,9 @@
       "active": "عادي",
       "keepAwake": "إبقاء الكمبيوتر مستيقظًا",
       "paused": "متوقف مؤقتًا",
-      "pausedKeepAwake": "متوقف مؤقتًا · إبقاء الكمبيوتر مستيقظًا"
+      "pausedKeepAwake": "متوقف مؤقتًا · إبقاء الكمبيوتر مستيقظًا",
+      "media": "وسائط نشطة",
+      "mediaKeepAwake": "وسائط نشطة · إبقاء الكمبيوتر مستيقظًا"
     }
   },
   "id": {
@@ -933,7 +953,7 @@
       "background": "Изображение дюн, созданное ИИ для оформления сайта; это не снимок экрана и не встроенная функция приложения.",
       "websiteBackground": "Декоративный фон, созданный ИИ для оформления сайта; это не снимок приложения, не игровая сцена и не встроенная функция.",
       "symbol": "Оригинальный символ бренда из текущего значка приложения. Исходные золотой цвет, пропорции и непрозрачность сохранены.",
-      "menubar": "Оригинальный прозрачный шаблон PNG 2× (44 × 40 пикселей; 22 × 20 точек). Активное состояние, затемнение экрана и предупреждение используют обычный вид; при запрете сна меняется форма глаз. Значки паузы сохраняют исходную непрозрачность 45 %. macOS адаптирует цвет шаблона для тёмной строки меню.",
+      "menubar": "Оригинальный прозрачный шаблон PNG 2× (44 × 40 пикселей; 22 × 20 точек). Активное состояние, затемнение экрана и предупреждение используют обычный вид; при запрете сна меняется форма глаз. Значки паузы сохраняют исходную непрозрачность 45 %. macOS адаптирует цвет шаблона для тёмной строки меню. Варианты мультимедиа показывают круглый значок воспроизведения в центре.",
       "flatVector": "Плоский SVG из исходных векторных форм и расположения слоёв. Эффекты стекла, освещение и системные маски значков не воспроизводятся; для полного нативного значка приложения используйте PNG.",
       "vector": "SVG сохраняет исходные векторные контуры, пропорции и прозрачность.",
       "pixelVector": "SVG исходного пиксельного логотипа без потерь. Формы, цвета и прозрачность каждого пикселя сохранены без сглаживания и встроенного растрового изображения."
@@ -951,7 +971,9 @@
       "active": "Обычный",
       "keepAwake": "Не давать компьютеру засыпать",
       "paused": "Приостановлено",
-      "pausedKeepAwake": "Приостановлено · Не давать компьютеру засыпать"
+      "pausedKeepAwake": "Приостановлено · Не давать компьютеру засыпать",
+      "media": "Медиа активно",
+      "mediaKeepAwake": "Медиа активно · Не давать компьютеру засыпать"
     }
   },
   "hi": {
@@ -996,7 +1018,7 @@
       "sharedEnglishCapture": "साझा अंग्रेज़ी इंटरफ़ेस का स्क्रीनशॉट, जिसमें उदाहरण के तौर पर चीनी लेखन और अंग्रेज़ी सीखने के नोट्स हैं; मूल पिक्सेल अपरिवर्तित हैं।",
       "background": "वेबसाइट पर प्रस्तुति के लिए AI से बनाया गया रेत के टीलों का वॉलपेपर; यह ऐप का स्क्रीनशॉट या अंतर्निहित सुविधा नहीं है।",
       "symbol": "मौजूदा ऐप आइकन का मूल पारदर्शी ब्रांड चिह्न। मूल सुनहरा रंग, अनुपात और अपारदर्शिता बरकरार हैं।",
-      "menubar": "मूल पारदर्शी 2× टेम्पलेट PNG (44 × 40 पिक्सेल; 22 × 20 पॉइंट)। सक्रिय, स्क्रीन मंद होने और ध्यान देने की स्थितियों में सामान्य रूप एक जैसा है; कंप्यूटर को सक्रिय रखने पर आँखों का आकार बदलता है। रुके हुए आइकन मूल 45% अपारदर्शिता बनाए रखते हैं। macOS गहरे मेनू बार के लिए टेम्पलेट का रंग बदलता है।",
+      "menubar": "मूल पारदर्शी 2× टेम्पलेट PNG (44 × 40 पिक्सेल; 22 × 20 पॉइंट)। सक्रिय, स्क्रीन मंद होने और ध्यान देने की स्थितियों में सामान्य रूप एक जैसा है; कंप्यूटर को सक्रिय रखने पर आँखों का आकार बदलता है। रुके हुए आइकन मूल 45% अपारदर्शिता बनाए रखते हैं। macOS गहरे मेनू बार के लिए टेम्पलेट का रंग बदलता है। मीडिया वाले आइकन के बीच में गोल प्ले निशान दिखता है।",
       "flatVector": "मूल वेक्टर आकृतियों और परतों की स्थितियों से बना सपाट SVG। मूल ग्लास प्रभाव, रोशनी और सिस्टम आइकन मास्क दोहराए नहीं गए हैं; पूरे मूल ऐप आइकन के लिए PNG इस्तेमाल करें।",
       "vector": "SVG मूल वेक्टर पथ, अनुपात और पारदर्शिता बनाए रखता है।",
       "pixelVector": "मूल पिक्सेल वर्डमार्क का बिना किसी क्षति वाला SVG। हर पिक्सेल का आकार, रंग और पारदर्शिता सुरक्षित है; किनारों को चिकना नहीं किया गया और कोई बिटमैप नहीं जोड़ा गया है।"
@@ -1014,7 +1036,9 @@
       "active": "सामान्य",
       "keepAwake": "कंप्यूटर को सक्रिय रखें",
       "paused": "रुका हुआ",
-      "pausedKeepAwake": "रुका हुआ · कंप्यूटर को सक्रिय रखें"
+      "pausedKeepAwake": "रुका हुआ · कंप्यूटर को सक्रिय रखें",
+      "media": "मीडिया सक्रिय",
+      "mediaKeepAwake": "मीडिया सक्रिय · कंप्यूटर को सक्रिय रखें"
     }
   }
 }

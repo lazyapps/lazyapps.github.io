@@ -48,7 +48,8 @@ final class PreviewWindow: NSWindow {
         panel.additionalSafeAreaInsets = NSEdgeInsets(top: 0, left: 13, bottom: 0, right: 13)
         window.contentView = panel
         actions.window = window
-        panel.update(notice: nil, automatic: true, delay: .tenMinutes, login: true, actionTitle: L10n.string("action.dim"), actionEnabled: true)
+        panel.update(notice: nil, automatic: true, delay: .tenMinutes, login: true,
+                     actionTitle: L10n.string("action.dim"), actionEnabled: true, mediaActive: true)
         window.center()
         window.makeKeyAndOrderFront(nil)
         app.activate(ignoringOtherApps: true)

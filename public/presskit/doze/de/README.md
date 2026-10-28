@@ -18,7 +18,7 @@ Dimme den Bildschirm automatisch, wenn du weggehst. Halte den Mac wach, damit Bi
 
 macOS 13+ · Integrierte und unterstützte Displays mit System-Helligkeitssteuerung
 
-Aktiviere das Dimmen bei Abwesenheit und wähle eine Wartezeit. Standard sind 10 Minuten. Du kannst den Bildschirm auch sofort dimmen.
+Aktiviere das Dimmen bei Abwesenheit und wähle eine Wartezeit. Standard sind 10 Minuten. Du kannst den Bildschirm auch sofort dimmen. Ab macOS 14.2 pausiert die Wiedergabe in unterstützten Apps das Abdunkeln.
 
 Bewege die Maus, nutze das Trackpad oder drücke eine Taste. Simulierte Klicks und Tastendrücke getesteter KI-Werkzeuge hellen den Bildschirm nicht auf. Andere Werkzeuge können sich anders verhalten.
 
@@ -36,6 +36,10 @@ Soll die KI weiter Apps bedienen, aktiviere „Mac wach halten“.
 Unterstützt werden integrierte Mac-Displays und Displays mit Helligkeitssteuerung über das System, etwa Studio Display. Für andere externe Displays gibt es keine Garantie. Ob der Bildschirm ganz dunkel wird, hängt vom Display ab.
 
 Ja. Das Wachhalten verhindert beides nicht. Wenn du die Option ausschaltest oder Schlummer beendest, werden die vorherigen Einstellungen wiederhergestellt.
+
+Ab macOS 14.2 pausiert Schlummer das automatische Abdunkeln, wenn unterstützte Player oder Browser Audio verwenden. Sobald die Audioausgabe endet, beginnt die vollständige Wartezeit von vorn. Manuelles Abdunkeln bleibt möglich. Ein rundes Wiedergabesymbol in der Menüleiste und eine Statuskarte unter den Einstellungen zeigen die Pause an.
+
+Unterstützt werden VLC, QuickTime Player, IINA, mpv, Infuse und Apple TV sowie Chrome, Edge, Firefox, Brave, Arc, Opera, Vivaldi und Zen. Videos ohne Audio werden möglicherweise nicht erkannt. Manche Apps halten ihre Audioverbindung nach dem Pausieren offen; dann muss das Medium oder der Browser-Tab geschlossen werden, damit die Wartezeit neu beginnt. Safari, Apple Music und Spotify pausieren das automatische Abdunkeln in dieser Version nicht.
 
 Doze ist proprietäre Software. Das GitHub-Repository enthält Versionen und Produktinformationen.
 
@@ -69,7 +73,7 @@ Originales transparentes Markensymbol aus dem aktuellen App-Symbol. Goldfarbe, P
 
 44 × 40 · PNG
 
-Originales transparentes 2×-Vorlagen-PNG (44 × 40 Pixel; 22 × 20 Punkte). Aktiv, abgedunkelt und Hinweis verwenden dieselbe normale Darstellung; beim Wachhalten ändern sich die Augen. Pausierte Symbole behalten die native Deckkraft von 45 %. macOS passt die Vorlagenfarbe an dunkle Menüleisten an.
+Originales transparentes 2×-Vorlagen-PNG (44 × 40 Pixel; 22 × 20 Punkte). Aktiv, abgedunkelt und Hinweis verwenden dieselbe normale Darstellung; beim Wachhalten ändern sich die Augen. Pausierte Symbole behalten die native Deckkraft von 45 %. macOS passt die Vorlagenfarbe an dunkle Menüleisten an. Die Medienvarianten zeigen ein rundes Wiedergabesymbol in der Mitte.
 
 ### Menüleistensymbol · Computer wach halten
 
@@ -77,7 +81,7 @@ Originales transparentes 2×-Vorlagen-PNG (44 × 40 Pixel; 22 × 20 Punkte). Akt
 
 44 × 40 · PNG
 
-Originales transparentes 2×-Vorlagen-PNG (44 × 40 Pixel; 22 × 20 Punkte). Aktiv, abgedunkelt und Hinweis verwenden dieselbe normale Darstellung; beim Wachhalten ändern sich die Augen. Pausierte Symbole behalten die native Deckkraft von 45 %. macOS passt die Vorlagenfarbe an dunkle Menüleisten an.
+Originales transparentes 2×-Vorlagen-PNG (44 × 40 Pixel; 22 × 20 Punkte). Aktiv, abgedunkelt und Hinweis verwenden dieselbe normale Darstellung; beim Wachhalten ändern sich die Augen. Pausierte Symbole behalten die native Deckkraft von 45 %. macOS passt die Vorlagenfarbe an dunkle Menüleisten an. Die Medienvarianten zeigen ein rundes Wiedergabesymbol in der Mitte.
 
 ### Menüleistensymbol · Pausiert
 
@@ -85,7 +89,7 @@ Originales transparentes 2×-Vorlagen-PNG (44 × 40 Pixel; 22 × 20 Punkte). Akt
 
 44 × 40 · PNG
 
-Originales transparentes 2×-Vorlagen-PNG (44 × 40 Pixel; 22 × 20 Punkte). Aktiv, abgedunkelt und Hinweis verwenden dieselbe normale Darstellung; beim Wachhalten ändern sich die Augen. Pausierte Symbole behalten die native Deckkraft von 45 %. macOS passt die Vorlagenfarbe an dunkle Menüleisten an.
+Originales transparentes 2×-Vorlagen-PNG (44 × 40 Pixel; 22 × 20 Punkte). Aktiv, abgedunkelt und Hinweis verwenden dieselbe normale Darstellung; beim Wachhalten ändern sich die Augen. Pausierte Symbole behalten die native Deckkraft von 45 %. macOS passt die Vorlagenfarbe an dunkle Menüleisten an. Die Medienvarianten zeigen ein rundes Wiedergabesymbol in der Mitte.
 
 ### Menüleistensymbol · Pausiert · Computer wach halten
 
@@ -93,13 +97,29 @@ Originales transparentes 2×-Vorlagen-PNG (44 × 40 Pixel; 22 × 20 Punkte). Akt
 
 44 × 40 · PNG
 
-Originales transparentes 2×-Vorlagen-PNG (44 × 40 Pixel; 22 × 20 Punkte). Aktiv, abgedunkelt und Hinweis verwenden dieselbe normale Darstellung; beim Wachhalten ändern sich die Augen. Pausierte Symbole behalten die native Deckkraft von 45 %. macOS passt die Vorlagenfarbe an dunkle Menüleisten an.
+Originales transparentes 2×-Vorlagen-PNG (44 × 40 Pixel; 22 × 20 Punkte). Aktiv, abgedunkelt und Hinweis verwenden dieselbe normale Darstellung; beim Wachhalten ändern sich die Augen. Pausierte Symbole behalten die native Deckkraft von 45 %. macOS passt die Vorlagenfarbe an dunkle Menüleisten an. Die Medienvarianten zeigen ein rundes Wiedergabesymbol in der Mitte.
+
+### Menüleistensymbol · Medien aktiv
+
+[menubar-media.png](../menubar-media.png)
+
+44 × 40 · PNG
+
+Originales transparentes 2×-Vorlagen-PNG (44 × 40 Pixel; 22 × 20 Punkte). Aktiv, abgedunkelt und Hinweis verwenden dieselbe normale Darstellung; beim Wachhalten ändern sich die Augen. Pausierte Symbole behalten die native Deckkraft von 45 %. macOS passt die Vorlagenfarbe an dunkle Menüleisten an. Die Medienvarianten zeigen ein rundes Wiedergabesymbol in der Mitte.
+
+### Menüleistensymbol · Medien aktiv · Computer wach halten
+
+[menubar-media-keep-awake.png](../menubar-media-keep-awake.png)
+
+44 × 40 · PNG
+
+Originales transparentes 2×-Vorlagen-PNG (44 × 40 Pixel; 22 × 20 Punkte). Aktiv, abgedunkelt und Hinweis verwenden dieselbe normale Darstellung; beim Wachhalten ändern sich die Augen. Pausierte Symbole behalten die native Deckkraft von 45 %. macOS passt die Vorlagenfarbe an dunkle Menüleisten an. Die Medienvarianten zeigen ein rundes Wiedergabesymbol in der Mitte.
 
 ### Screenshot · Tag
 
 [settings-light.png](settings-light.png)
 
-768 × 1408 · PNG
+768 × 1566 · PNG
 
 Native Vorschau der Oberfläche in dieser Sprache; unveränderte Pixel.
 
@@ -107,7 +127,7 @@ Native Vorschau der Oberfläche in dieser Sprache; unveränderte Pixel.
 
 [settings-dark.png](settings-dark.png)
 
-768 × 1408 · PNG
+768 × 1566 · PNG
 
 Native Vorschau der Oberfläche in dieser Sprache; unveränderte Pixel.
 
@@ -146,6 +166,22 @@ Das SVG bewahrt die ursprünglichen Vektorpfade, Proportionen und Transparenz.
 ### Menüleistensymbol · Pausiert · Computer wach halten
 
 [menubar-paused-keep-awake.svg](../menubar-paused-keep-awake.svg)
+
+22.0 × 20.0 · SVG
+
+Das SVG bewahrt die ursprünglichen Vektorpfade, Proportionen und Transparenz.
+
+### Menüleistensymbol · Medien aktiv
+
+[menubar-media.svg](../menubar-media.svg)
+
+22.0 × 20.0 · SVG
+
+Das SVG bewahrt die ursprünglichen Vektorpfade, Proportionen und Transparenz.
+
+### Menüleistensymbol · Medien aktiv · Computer wach halten
+
+[menubar-media-keep-awake.svg](../menubar-media-keep-awake.svg)
 
 22.0 × 20.0 · SVG
 
