@@ -17,6 +17,7 @@
   --footer-mono:ui-monospace,"SF Mono",Menlo,Consolas,monospace;
   --rise:1;
   --pull:0;
+  --tile-w:calc(var(--tile-h) * var(--tile-ratio,3));
   /* Full-bleed band: break out of the page wrap and run into the bottom safe area. */
   margin:clamp(40px,5vw,72px) calc(50% - 50vw) calc(env(safe-area-inset-bottom,0px) * -1);
   color:var(--footer-ink);
@@ -67,7 +68,6 @@ html:not(.no-js) .base{--rise:0}
 /* Landscape: one seamless tile repeated edge to edge, sky pulled up under the links.
    Tile positions (--sun-x, --zzz-x …) are fractions of the tile centered on the page. */
 .base__scene{
-  --tile-w:calc(var(--tile-h) * var(--tile-ratio,3));
   --sun-x:.475;--sun-y:.225;--zzz-x:.175;--zzz-y:.335;--sky-overlap:-.18;
   position:relative;z-index:1;height:var(--tile-h);
   margin-top:calc(var(--tile-h) * var(--sky-overlap));
@@ -81,11 +81,28 @@ html:not(.no-js) .base{--rise:0}
   transform:translate3d(0,calc((1 - var(--rise)) * var(--tile-h) * .06),0) scale(calc(1 + var(--rise) * .035 + var(--pull) * .05));
   will-change:transform;
 }
-/* The footer script sets data-land once the footer is near; a <noscript> rule covers no-JS. */
-.base[data-land] .base__land{background-image:var(--land)}
-@supports (background-image:image-set(url("data:,") type("image/avif") 1x)){
-  .base[data-land] .base__land{background-image:var(--land-typed)}
+/* The footer script loads the artwork once the footer is near and sets data-land when it is ready;
+   until then an inlined sketch with solid land holds its place (and keeps the sun behind the hills). */
+.base[data-land] .base__land{background-image:var(--land-art)}
+.base__land::after{
+  content:"";position:absolute;inset:0;
+  background:var(--land-sketch) 50% 100% / var(--tile-w) var(--tile-h) repeat-x;
+  transition:opacity .6s var(--ease-out);
 }
+.base[data-land] .base__land::after{opacity:0}
+/* Rubber-band overscroll on touch devices drags the page up past its end. This fixed layer sits behind the
+   content at the bottom edge: its top hides behind the footer's land and water, and the script stretches it
+   (--stretch) to fill whatever opens up below, with the open-water band repeating so the lake goes on. */
+.base__tail{
+  --tail-top:calc(var(--tile-h) * .55);
+  position:fixed;inset:auto 0 0;z-index:-1;height:calc(var(--tail-top) + var(--stretch,0px));
+  background:var(--footer-panel);
+  pointer-events:none;visibility:hidden;
+}
+.base[data-land] .base__tail{
+  background:var(--water) 50% var(--tail-top) / var(--tile-w) calc(var(--tile-w) * var(--water-ratio)) repeat,var(--footer-panel);
+}
+.base[data-at-end] .base__tail{visibility:visible}
 .base__sun{
   --sun-color:var(--accent);
   --sunrise:var(--rise);
@@ -159,5 +176,5 @@ html:not(.no-js) .base{--rise:0}
   html .base,html:not(.no-js) .base{--rise:1}
   .base__sun-rays{animation:none}
   .base__zzz{display:none}
-  .base [data-underline-link]::before,.base__wordmark i{transition:none}
+  .base [data-underline-link]::before,.base__wordmark i,.base__land::after{transition:none}
 }

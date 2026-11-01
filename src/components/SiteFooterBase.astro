@@ -4,6 +4,8 @@ import { getImage } from 'astro:assets';
 import '../assets/s/site-footer.css';
 import { languageHash } from '../i18n/presskit-language.mjs';
 import landscape from '../assets/img/footer-landscape.png';
+import landSketch from '../assets/img/footer-landscape-sketch.png?inline';
+import water from '../assets/img/footer-landscape-water.png';
 interface Props {
   class?: string;
   locale?: string;
@@ -28,24 +30,29 @@ const mobileApps = [
 ];
 
 // One seamless tile, repeated across the full width of the footer band.
-// AVIF for browsers that can pick by type, WebP otherwise; both at 1x and 2x.
+// A <picture> picks AVIF or WebP at 1x or 2x; the script copies the loaded file into the CSS background.
 const tileWidths = [Math.round(landscape.width / 2), landscape.width];
-const [avif1x, avif2x, webp1x, webp2x] = await Promise.all([
+const [avif1x, avif2x, webp1x, webp2x, water1x, water2x] = await Promise.all([
   ...tileWidths.map(width => getImage({ src: landscape, width, format: 'avif', quality: 50 })),
   ...tileWidths.map(width => getImage({ src: landscape, width, format: 'webp', quality: 75 })),
+  ...tileWidths.map(width => getImage({ src: water, width, format: 'webp', quality: 75 })),
 ]);
 // Dev serves /_image with a one-year max-age under an unchanged URL, so version it by mtime; build URLs are content-hashed.
-const devVersion = import.meta.env.DEV ? `&v=${Math.round(statSync(new URL('../assets/img/footer-landscape.png', import.meta.url)).mtimeMs)}` : '';
-const tile = (image: { src: string }, density: string, type?: string) =>
-  `url("${image.src}${devVersion}")${type ? ` type("image/${type}")` : ''} ${density}`;
+const devVersion = (file: string) => import.meta.env.DEV ? `&v=${Math.round(statSync(new URL(`../assets/img/${file}`, import.meta.url)).mtimeMs)}` : '';
+const landVersion = devVersion('footer-landscape.png');
+const waterVersion = devVersion('footer-landscape-water.png');
+const srcset = (x1: { src: string }, x2: { src: string }) => `${x1.src}${landVersion} 1x, ${x2.src}${landVersion} 2x`;
 const landStyle = [
   `--tile-ratio:${landscape.width / landscape.height}`,
-  `--land:image-set(${tile(webp1x, '1x')},${tile(webp2x, '2x')})`,
-  `--land-typed:image-set(${tile(avif1x, '1x', 'avif')},${tile(avif2x, '2x', 'avif')},${tile(webp1x, '1x', 'webp')},${tile(webp2x, '2x', 'webp')})`,
+  `--land-sketch:url("${landSketch}")`,
+  `--water-ratio:${water.height / water.width}`,
+  `--water:image-set(url("${water1x.src}${waterVersion}") 1x,url("${water2x.src}${waterVersion}") 2x)`,
+  // Only used without JavaScript.
+  `--land:image-set(url("${webp1x.src}${landVersion}") 1x,url("${webp2x.src}${landVersion}") 2x)`,
 ].join(';');
 ---
 
-<div id="site-footer" class={classes} lang="en" dir="ltr">
+<div id="site-footer" class={classes} lang="en" dir="ltr" style={landStyle}>
   <div class="base__panel">
     <div class="base__inner">
       <div class="base__top">
@@ -78,7 +85,7 @@ const landStyle = [
       </div>
     </div>
 
-    <div class="base__scene" aria-hidden="true" style={landStyle}>
+    <div class="base__scene" aria-hidden="true">
       <span class="base__sun">
         <svg class="base__face" viewBox="0 0 64 64" fill="none" focusable="false">
           <path class="base__sun-rays" d="M32 3v5m0 48v5M3 32h5m48 0h5M11.5 11.5l3.5 3.5m34 34 3.5 3.5m-41 0L15 49m34-34 3.5-3.5" stroke="var(--sun-color)" stroke-width="3" stroke-linecap="round" />
@@ -89,10 +96,17 @@ const landStyle = [
         </svg>
       </span>
       <div class="base__land"></div>
-      <noscript><style is:inline>.base__land{background-image:var(--land)}</style></noscript>
+      <template class="base__art">
+        <picture hidden>
+          <source type="image/avif" srcset={srcset(avif1x, avif2x)} />
+          <img srcset={srcset(webp1x, webp2x)} alt="" decoding="async" />
+        </picture>
+      </template>
+      <noscript><style is:inline>.base__land{background-image:var(--land)}.base__land::after{display:none}</style></noscript>
       <span class="base__zzz"><i>z</i><i>z</i><i>z</i></span>
     </div>
   </div>
+  <span class="base__tail" aria-hidden="true"></span>
 </div>
 
 <script>
@@ -211,15 +225,41 @@ const landStyle = [
     measure();
     rise = reduce.matches ? 1 : riseTarget;
     footer.style.setProperty('--rise', rise.toFixed(4));
+    // At the end of the page, keep the lake going behind the bottom edge, as far as rubber-band overscroll drags the page up.
+    let endFrame = 0;
+    const trackEnd = () => {
+      endFrame = 0;
+      const gap = window.innerHeight - scene.getBoundingClientRect().bottom;
+      footer.toggleAttribute('data-at-end', gap >= -2);
+      footer.style.setProperty('--stretch', `${Math.max(0, Math.ceil(gap))}px`);
+    };
+    const scheduleEnd = () => {
+      if (!endFrame) endFrame = requestAnimationFrame(trackEnd);
+    };
     new IntersectionObserver(([entry]) => {
       inView = entry.isIntersecting;
       update();
+      for (const type of ['scroll', 'resize', 'touchmove', 'touchend']) {
+        if (inView) window.addEventListener(type, scheduleEnd, { passive: true });
+        else window.removeEventListener(type, scheduleEnd);
+      }
+      trackEnd();
     }).observe(scene);
     // Fetch the artwork only when the footer is about a screen away, so it never competes with the page itself.
+    // Until it has loaded, the inlined sketch holds its place; then the sketch fades out.
     const landObserver = new IntersectionObserver(([entry]) => {
       if (!entry.isIntersecting) return;
-      footer.setAttribute('data-land', '');
       landObserver.disconnect();
+      const art = footer.querySelector<HTMLTemplateElement>('.base__art');
+      const picture = art?.content.firstElementChild?.cloneNode(true) as HTMLPictureElement | undefined;
+      const img = picture?.querySelector('img');
+      if (!art || !picture || !img) return;
+      img.addEventListener('load', () => {
+        footer.style.setProperty('--land-art', `url("${img.currentSrc}")`);
+        footer.setAttribute('data-land', '');
+        picture.remove();
+      }, { once: true });
+      art.after(picture);
     }, { rootMargin: '0px 0px 100% 0px' });
     landObserver.observe(scene);
     document.addEventListener('visibilitychange', update);
