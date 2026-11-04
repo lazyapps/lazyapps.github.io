@@ -1,0 +1,9 @@
+{
+  "method": "Native Applications folder icon from NSWorkspace and native SF Symbols arrow.right/accessibility, rendered at 128px in sRGB for website-only setup diagrams. App icon, app artwork, layout map, and panel text reuse existing reviewed assets. These are static instructional diagrams, not app screenshots.",
+  "files": {
+    "scripts/assets/calmon/export-setup-art.swift": "2d5a901e364767dad02b43b990617ec6529e7ff120f9e1d5508015cb6b0c2c68",
+    "src/assets/img/calmon-setup/accessibility.png": "a7a9c2b742316425d790a37797b9039c3c71a897d1dbc5a97709556cf494017b",
+    "src/assets/img/calmon-setup/applications.png": "c5e7133c56726032aeac6a4bbf44a69e5e24c690d60f42d6ab09c3c7938f7dc6",
+    "src/assets/img/calmon-setup/arrow-right.png": "004646206bfaaba7059ce6e227c2116788dd98388d7c2b152b8b5b87145540b9"
+  }
+}

@@ -9,7 +9,7 @@ import opengraph from '../../assets/img/opengraph.png?url';
   <section class="press-intro" aria-labelledby="press-title">
     <h1 id="press-title"><span class="sr-only" lang="en">lazyapps </span><span data-press-text="hubTitleFirst">Press</span><br><span class="press-title__end"><span data-press-text="hubTitleSecond">Kits</span><span class="title-dot">.</span></span></h1>
     <div class="press-icons" aria-hidden="true">
-      {kits.map((kit, index) => <div class="press-icon" style={`--tilt:${[-8, 6, -4, 5, -6, 8, -3][index]}deg`}>
+      {kits.map((kit, index) => <div class="press-icon" style={`--tilt:${[-8, 6, -4, 5, -6, 8, -3, 5][index % 8]}deg`}>
         <NativeAppIcon slug={kit.slug} size={88} loading="eager" />
       </div>)}
     </div>
@@ -43,13 +43,14 @@ import opengraph from '../../assets/img/opengraph.png?url';
   .press-title__end{display:inline-block;white-space:nowrap}
   .press-icons{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;max-width:380px;justify-self:end;align-items:center;padding:14px}
   .press-icon{display:grid;place-items:center;aspect-ratio:1;transform:rotate(var(--tilt))}
-  .press-icon:last-child{grid-column:2}
+  .press-icon:last-child:nth-child(3n + 1){grid-column:2}
   .press-icon :global(img){width:100%;height:auto;aspect-ratio:1;object-fit:contain;min-width:0;flex-shrink:1}
   .press-intro__copy{grid-column:1/-1;max-width:58ch}
   .press-intro__copy>p{font-size:20px;line-height:1.55;text-wrap:balance}
   .product-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--space-grid);list-style:none;margin:0;padding:0}
   .product-list li{min-width:0;border-radius:var(--r-card);background:var(--fill);box-shadow:inset 0 0 0 1px rgba(0,0,0,.08);transition:transform .2s ease}
   .product-list [data-product="doze"]{--fill:var(--app-doze)}
+  .product-list [data-product="calmon"]{--fill:var(--app-calmon)}
   .product-list [data-product="chmate"]{--fill:var(--app-chmate)}
   .product-list [data-product="world-book"]{--fill:var(--app-world-book)}
   .product-list [data-product="fondfont"]{--fill:var(--app-fondfont)}

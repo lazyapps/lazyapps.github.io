@@ -1,3 +1,5 @@
+@font-face{font-family:'Calmon Oswald';font-style:normal;font-weight:700;font-display:swap;src:url(../fonts/oswald-vietnamese-700.woff2) format('woff2')}
+@font-face{font-family:'Calmon Sofia Greek';font-style:normal;font-weight:900;font-display:swap;src:url(../fonts/sofia-sans-xcond-greek-900.woff2) format('woff2');unicode-range:U+0370-03FF,U+1F00-1FFF}
 @font-face{font-family:"Sofia Sans Extra Condensed";font-style:normal;font-weight:1 1000;font-display:swap;
   src:url(../fonts/sofia-sans-xcond-latin.woff2) format("woff2");
   unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
@@ -65,6 +67,7 @@ body {
   --c6:#171717;
 
   --app-doze:oklch(0.93 0.03 105);
+  --app-calmon:oklch(0.94 0.04 160);
   --app-shheep:#ffd4e5;
   --app-keyhop:oklch(0.8 0.083 300);
   --app-yiyan:oklch(0.9 0.152 95);
@@ -671,3 +674,12 @@ html:not(.is-loaded):not(.no-js):has(#loader) .grain{animation:none}
 @media (prefers-reduced-motion:reduce){
   .loader{display:none}
 }
+
+:lang(vi){--display:"Calmon Oswald","Arial Narrow",sans-serif}
+.dsp:lang(vi){font-weight:700;letter-spacing:0}
+:lang(he),:lang(th){--display:var(--sans);--leading-display:1.25}
+.dsp:lang(he),.dsp:lang(th){letter-spacing:0;text-transform:none}
+
+:lang(el){--display:"Calmon Sofia Greek",var(--display-latin)}
+
+:lang(zh-HK){--sans:-apple-system,BlinkMacSystemFont,"SF Pro Text","PingFang HK","PingFang TC","Heiti TC",sans-serif}

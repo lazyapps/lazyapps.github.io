@@ -1,10 +1,13 @@
 ---
 const SITE = 'https://lazyapps.com';
 const title = 'lazyapps — Apps for Mac, iPhone & iPad';
-const description = 'Mac, iPhone and iPad apps for screen dimming during AI computer use, English practice, X video downloads, EPUB and CHM reading, country facts and fonts. Shheep is a sheep-counting game for iPhone and iPad.';
+const description = 'Mac, iPhone and iPad apps for scrolling window management, screen dimming during AI computer use, English practice, X video downloads, EPUB and CHM reading, country facts and fonts. Shheep is a sheep-counting game for iPhone and iPad.';
 import { DOZE_LOCALES } from '../i18n/doze-locales.mjs';
+import { CALMON_LOCALES } from '../i18n/calmon-locales.mjs';
+import CalmonDemo from '../components/CalmonDemo.astro';
 import ComputerUseText from '../components/ComputerUseText.astro';
 const doze = DOZE_LOCALES.en;
+const calmon = CALMON_LOCALES.en;
 import NativeAppIcon from '../components/NativeAppIcon.astro';
 import CardAction from '../components/CardAction.astro';
 import SocialMeta from '../components/SocialMeta.astro';
@@ -96,6 +99,9 @@ setTimeout(function(){
 }
 .card--featured{grid-column:1/-1}
 .card--doze{--fill:var(--app-doze)}
+.card--calmon{--fill:var(--app-calmon)}
+.card--calmon .card__title{text-transform:none}
+.card--calmon .card__shots{padding:0;background:var(--app-calmon)}
 .card--yiyan{--fill:var(--app-yiyan)}
 .card--xvdl{--fill:var(--app-xvdl);--icon-optical-scale:1.34214}
 .card--chmate{--fill:var(--app-chmate)}
@@ -136,6 +142,7 @@ setTimeout(function(){
 .card--yifan .card__title{text-box:normal}
 .card--yifan .card__heading{--icon-title-height:1em}
 .card__p{margin-top:clamp(24px,2.6vw,32px);max-width:34em;font-size:1rem;line-height:1.7}
+.card__availability{margin-top:14px;font-size:12px;color:#48694c}
 .card__foot{margin-top:auto;padding-top:clamp(28px,3vw,40px)}
 .card .card__icon{width:var(--icon-size);height:var(--icon-size);object-fit:contain;flex:none;scale:var(--icon-optical-scale,1.08)}
 .card:has(.card__go:focus-visible){outline:2px solid var(--accent);outline-offset:4px}
@@ -259,6 +266,30 @@ setTimeout(function(){
           <div class="card__shots" style={{ backgroundImage: `url("${dozeLandscape.src}")` }}>
             <Image src={dozePanel} width={384} densities={[1, 2]} format="webp" quality={90} alt="Doze’s Mac settings for screen dimming and keeping computer use running" />
           </div>
+        </div>
+      </article>
+
+
+      <article class="card card--featured card--calmon" id="calmon">
+        <div class="card__grid">
+          <div class="card__copy">
+            <div class="card__heading">
+              <NativeAppIcon slug="calmon" size={80} class="card__icon" />
+              <div class="card__identity">
+                <h2 class="card__title dsp">Calmon</h2>
+                <div class="card__meta">
+                  <p class="card__tag">macOS 26+</p>
+                  <CardAction href="/calmon/presskit/#en" aria-label="Calmon Press Kit" class="card__press" secondary arrow={false}>Press Kit</CardAction>
+                </div>
+              </div>
+            </div>
+            <p class="card__p">{calmon.description}</p>
+            <p class="card__availability">{calmon.availability}</p>
+            <div class="card__foot">
+              <CardAction href={calmon.selectedUrl} class="card__go" stretched>Calmon details</CardAction>
+            </div>
+          </div>
+          <div class="card__shots" aria-hidden="true" inert><CalmonDemo compact /></div>
         </div>
       </article>
 

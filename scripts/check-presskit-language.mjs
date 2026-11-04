@@ -23,10 +23,10 @@ assert.equal(matchLanguage('pt-PT', supported), 'pt');
 assert.equal(languageHash('pt-BR'), '#pt-BR');
 
 for (const product of pressPresentations) {
-  assert.deepEqual(Object.keys(product.locales), supported, 'Every Press Kit must accept the same presentation language');
+  assert.deepEqual(Object.keys(product.locales).toSorted(), (product.slug === 'calmon' ? [...new Set([...appLanguages.calmon.tags, ...supported])] : supported).toSorted(), 'Press Kit interface must cover its supported presentation languages');
   for (const [tag, copy] of Object.entries(product.locales)) {
     assert(copy.name && copy.summary && copy.website && copy.availability && copy.links.length);
-    assert.equal(copy.materialTag, materialLanguage(tag, appLanguages[product.slug].tags));
+    assert.equal(copy.materialTag, materialLanguage(product.slug === 'calmon' && tag === 'pt' ? 'pt-PT' : tag, appLanguages[product.slug].tags));
     assert(appLanguages[product.slug].tags.includes(copy.materialTag), 'Presentation must not invent downloadable languages');
   }
 }
@@ -43,4 +43,4 @@ for (const slug of ['world-book', 'xvdl']) {
   assert.equal(copy.summaryLang, 'en');
   assert.equal(copy.materialTag, 'en');
 }
-console.log('Press Kit language rules passed: hash precedence, regional matching, malformed/ordinary anchors, 17 presentation languages and unchanged App download coverage.');
+console.log('Press Kit language rules passed: hash precedence, regional matching, malformed/ordinary anchors, 17 shared presentation languages, 38 Calmon languages and verified App download coverage.');

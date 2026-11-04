@@ -1,0 +1,156 @@
+{
+  "hero": [
+    "Zachowaj\nspokój i przewijaj dalej",
+    "Kafelkowy menedżer okien z przewijaniem",
+    "Calmon układa okna Maca w przewijanych kolumnach. Grupuj okna, przypnij kolumnę i przełączaj myszą lub klawiaturą."
+  ],
+  "nav": [
+    "Strona główna lazyapps",
+    "Wybierz język",
+    "Przejdź do treści"
+  ],
+  "release": [
+    "Pobierz za darmo",
+    "Bezpłatnie w wersji beta",
+    "Błąd lub pomysł? Napisz do @lazyapps na X. Dziękujemy za pomoc w ulepszaniu Calmon.",
+    "macOS 26 lub nowszy"
+  ],
+  "display": [
+    "Jak ustawić kilka monitorów?",
+    "Ustaw monitory jeden nad drugim. Obok siebie wspólne krawędzie blokują przewijanie, a przełączanie kolumn wraca tam do początku. Przy monitorach po obu stronach okna w tle nakładają się za wybranym oknem."
+  ],
+  "features": [
+    [
+      "Przewijanie kolumn",
+      "Okna przewijają się poziomo. Aktywna kolumna zajmuje większość ekranu. Używaj strzałek w trybie poleceń."
+    ],
+    [
+      "Stosy aplikacji",
+      "Kafelkowe okna tej samej aplikacji tworzą stos. Kliknij znacznik stosu lub naciśnij ⌘`, aby przełączyć okno. Kolumna mieści do trzech stosów."
+    ],
+    [
+      "Stała kolumna",
+      "Przypnij kolumnę do lewej lub prawej krawędzi. Inne okna przewijają się obok. Tab zmienia fokus w trybie poleceń."
+    ],
+    [
+      "Pin Deck",
+      "Przypnij do dziesięciu aplikacji. Dodawaj znacznikiem Pin Deck, usuwaj z menu ikony. Kolejność jest wspólna dla wszystkich monitorów."
+    ],
+    [
+      "Sky Deck i Max Deck",
+      "Sky Deck pokazuje okna swobodne, a Max Deck natywne okna pełnoekranowe. Kliknij ikonę, aby wrócić do okna."
+    ],
+    [
+      "Okna i biurka",
+      "Kliknij numer biurka. W trybie poleceń wpisz etykietę ikony. Shift i 1–9 przenoszą wybrane okno na inne biurko."
+    ]
+  ],
+  "keyboard": [
+    "Używaj myszy\nPoznawaj klawisze po drodze",
+    "mapę układu",
+    "Wyłącz panel automatyczny: Ustawienia → Klawiatura → Panel klawiszy → Pokaż po → Nigdy. Mapa układu zawsze otwiera panel.",
+    "Naciśnij dwukrotnie ⌘ i puść. Gdy okno jest podświetlone, możesz wykonywać kolejne polecenia. Esc kończy tryb.",
+    "Panel klawiszy",
+    "Podstawowe klawisze"
+  ],
+  "mouse": [
+    "Kliknij ikonę na pasku kart, aby wybrać okno.",
+    "Control-kliknięcie otwiera działania okna.",
+    "Kliknij mapę układu, aby otworzyć panel klawiszy.",
+    "Kliknij klawisz, aby wykonać polecenie."
+  ],
+  "actions": [
+    "Wybierz kolumnę / okno",
+    "Przenieś okno lub kolumnę",
+    "Dołącz / oddziel kolumnę",
+    "Dołącz / opuść stos aplikacji",
+    "Dodaj / usuń aplikację Pin Deck",
+    "Przełącz biurko / przenieś okno",
+    "Zakończ tryb poleceń"
+  ],
+  "setup": [
+    "Pierwsze kroki",
+    "Aplikacje",
+    "Dostępność",
+    "Zainstaluj Calmon",
+    "Pobierz Calmon",
+    ". Przenieś do Aplikacji.",
+    "Zezwól na dostępność",
+    "Przeciągnij Calmon na listę Dostępność i włącz go.",
+    "Otwórz okna",
+    "Wybierz okno na pasku kart. Mapa układu otwiera panel klawiszy.",
+    "Calmon nie ma ikony w Docku. Znajdziesz go na pasku menu {icon}."
+  ],
+  "faq": [
+    "Pytania i odpowiedzi",
+    [
+      "Które Maki są obsługiwane?",
+      "Maki z czipem Apple lub procesorem Intel i macOS 26 lub nowszym."
+    ],
+    [
+      "Jakie uprawnienie jest potrzebne?",
+      "Dostępność do przenoszenia, zmiany rozmiaru i wybierania okien."
+    ],
+    [
+      "Czy muszę pamiętać skróty?",
+      "Nie. Wszystkie działania wykonasz myszą. Mapa układu otwiera panel klawiszy."
+    ],
+    [
+      "Czy mogę używać gestów gładzika?",
+      "Początkowo są wyłączone. Włącz gesty trzema lub czterema palcami w Ustawienia → Gesty. Przytrzymaj Shift przed gestem, aby użyć oryginalnego gestu macOS."
+    ],
+    [
+      "Czy wszystkie okna są kafelkowane?",
+      "Standardowe tak. Dialogi, ustawienia i okna o stałym rozmiarze są swobodne. Dodaj reguły w Ustawienia → Zaawansowane."
+    ],
+    [
+      "Czy Calmon przenosi okna między biurkami?",
+      "Tylko gdy je przeniesiesz. Przełączaj biurka numerami lub trybem poleceń. Przy zamykaniu Calmon odtwarza zapisane pozycje okien."
+    ],
+    [
+      "Czy beta jest bezpłatna?",
+      "Tak, Calmon jest bezpłatny w okresie beta."
+    ],
+    [
+      "Jak aktualizować?",
+      "Wybierz Sprawdź uaktualnienia w menu Calmon."
+    ]
+  ],
+  "demo": [
+    "Pauza",
+    "Kontynuuj",
+    "Uruchom pokaz od nowa",
+    "Naciśnij dwukrotnie ⌘ i puść",
+    "Tryb poleceń · używaj kolejnych klawiszy",
+    "Skrót macOS · bez trybu poleceń",
+    "potem",
+    "Włącz JavaScript, aby obejrzeć pokaz.",
+    "Tryb poleceń zakończony"
+  ],
+  "menus": [
+    "Plik",
+    "Edycja",
+    "Widok",
+    "Okno",
+    "Pomoc"
+  ],
+  "apps": [
+    "Notatki",
+    "Finder",
+    "Terminal",
+    "Mail",
+    "Kalendarz",
+    "Muzyka"
+  ],
+  "windows": [
+    "Poradnik Calmon",
+    "Ten tydzień",
+    "Pomysły",
+    "Projekty",
+    "Witryna",
+    "Odebrane",
+    "Plan",
+    "Teraz odtwarzane"
+  ],
+  "subtitle": "Przewijane okna kafelkowe"
+}

@@ -1,0 +1,156 @@
+{
+  "hero": [
+    "Mantenha a calma\ne continue rolando",
+    "Gerenciador de janelas em mosaico com rolagem",
+    "O Calmon organiza janelas do Mac em colunas com rolagem. Empilhe janelas, fixe uma coluna e alterne com o mouse ou teclado."
+  ],
+  "nav": [
+    "Início da lazyapps",
+    "Escolher idioma",
+    "Ir para o conteúdo"
+  ],
+  "release": [
+    "Baixar grátis",
+    "Grátis durante o beta",
+    "Encontrou um erro ou tem uma ideia? Fale com @lazyapps no X. Obrigado por ajudar a melhorar o Calmon.",
+    "macOS 26 ou posterior"
+  ],
+  "display": [
+    "Como organizar vários monitores?",
+    "Coloque os monitores na vertical. Lado a lado, as bordas compartilhadas bloqueiam a rolagem; a navegação entre colunas retorna ao início nesses pontos. Com monitores nos dois lados, as janelas de fundo se sobrepõem atrás da selecionada."
+  ],
+  "features": [
+    [
+      "Rolar colunas",
+      "As janelas rolam na horizontal. A coluna ativa ocupa quase toda a tela. Use as setas no modo de comandos."
+    ],
+    [
+      "Pilhas de apps",
+      "Janelas em mosaico do mesmo app formam uma pilha. Clique no indicador ou use ⌘` para alternar. Cada coluna comporta até três pilhas."
+    ],
+    [
+      "Coluna fixa",
+      "Fixe uma coluna em uma das bordas. As outras janelas rolam ao lado. Tab alterna o foco no modo de comandos."
+    ],
+    [
+      "Pin Deck",
+      "Fixe até dez apps. Adicione pela marca do Pin Deck e remova pelo menu do ícone. A ordem é igual em todos os monitores."
+    ],
+    [
+      "Sky Deck e Max Deck",
+      "Sky Deck lista janelas flutuantes. Max Deck lista janelas em tela cheia nativa. Clique em um ícone para voltar à janela."
+    ],
+    [
+      "Janelas e mesas",
+      "Clique no número de uma mesa. No modo de comandos, digite a etiqueta de um ícone. Shift e 1–9 movem a janela selecionada para outra mesa."
+    ]
+  ],
+  "keyboard": [
+    "Use o mouse\nAprenda as teclas aos poucos",
+    "mapa de layout",
+    "Para ocultar o painel automático: Ajustes → Teclado → Painel de teclas → Mostrar após → Nunca. O mapa de layout sempre abre o painel.",
+    "Pressione ⌘ duas vezes e solte. Enquanto a janela estiver destacada, continue usando os comandos. Esc sai do modo.",
+    "Painel de teclas",
+    "Teclas essenciais"
+  ],
+  "mouse": [
+    "Clique em um ícone da barra de abas para selecionar a janela.",
+    "Control-clique abre as ações da janela.",
+    "Clique no mapa de layout para abrir o painel de teclas.",
+    "Clique em uma tecla para executar o comando."
+  ],
+  "actions": [
+    "Selecionar coluna / janela",
+    "Mover janela ou coluna",
+    "Unir / separar coluna",
+    "Entrar / sair de pilha de app",
+    "Adicionar / remover app do Pin Deck",
+    "Trocar de mesa / mover janela",
+    "Sair do modo de comandos"
+  ],
+  "setup": [
+    "Primeiros passos",
+    "Aplicativos",
+    "Acessibilidade",
+    "Instalar o Calmon",
+    "Baixar Calmon",
+    ". Mova-o para Aplicativos.",
+    "Permitir acessibilidade",
+    "Arraste o Calmon para a lista de Acessibilidade e ative-o.",
+    "Abrir suas janelas",
+    "Selecione uma janela na barra de abas. O mapa de layout abre o painel de teclas.",
+    "O Calmon não tem ícone no Dock. Encontre-o na barra de menus {icon}."
+  ],
+  "faq": [
+    "Perguntas e respostas",
+    [
+      "Quais Macs são compatíveis?",
+      "Macs com chip da Apple ou Intel e macOS 26 ou posterior."
+    ],
+    [
+      "Qual permissão é necessária?",
+      "Acessibilidade para mover, redimensionar e selecionar janelas."
+    ],
+    [
+      "Preciso decorar atalhos?",
+      "Não. Todas as ações funcionam com o mouse. Abra o painel de teclas pelo mapa de layout."
+    ],
+    [
+      "Posso usar gestos do trackpad?",
+      "Estão desativados de início. Ative três ou quatro dedos em Ajustes → Gestos. Segure Shift antes de deslizar para usar o gesto original do macOS."
+    ],
+    [
+      "Todas as janelas ficam em mosaico?",
+      "As padrão sim. Diálogos, ajustes e janelas de tamanho fixo flutuam. Adicione regras em Ajustes → Avançado."
+    ],
+    [
+      "O Calmon move janelas entre mesas?",
+      "Só quando você as move. Use os números ou o modo de comandos para trocar de mesa. Ao sair, o Calmon restaura as posições salvas."
+    ],
+    [
+      "O beta é grátis?",
+      "Sim, o Calmon é grátis durante o beta."
+    ],
+    [
+      "Como atualizar?",
+      "Escolha Buscar Atualizações no menu do Calmon."
+    ]
+  ],
+  "demo": [
+    "Pausar",
+    "Continuar",
+    "Reiniciar demonstração",
+    "Pressione ⌘ duas vezes e solte",
+    "Modo de comandos · continue usando as teclas",
+    "Atalho do macOS · sem modo de comandos",
+    "depois",
+    "Ative JavaScript para ver a demonstração.",
+    "Modo de comandos encerrado"
+  ],
+  "menus": [
+    "Arquivo",
+    "Editar",
+    "Visualizar",
+    "Janela",
+    "Ajuda"
+  ],
+  "apps": [
+    "Notas",
+    "Finder",
+    "Terminal",
+    "Mail",
+    "Calendário",
+    "Música"
+  ],
+  "windows": [
+    "Guia do Calmon",
+    "Esta semana",
+    "Ideias",
+    "Projetos",
+    "Site",
+    "Entrada",
+    "Agenda",
+    "Reproduzindo"
+  ],
+  "subtitle": "WM de mosaico com rolagem"
+}

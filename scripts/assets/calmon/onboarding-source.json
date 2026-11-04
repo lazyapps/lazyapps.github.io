@@ -1,0 +1,29 @@
+{
+  "checkedOn": "2026-11-03",
+  "method": "Web choreography follows calmon onboarding. Key panels rendered by native OnboardingKeyPanel in English and Simplified Chinese; symbols exported from the same SF Symbols used by the native scene. Desktop uses the app onboarding wallpaper, resized for the web. These assets do not contain app source.",
+  "wallpaperSource": "/Users/realazy/Projects/_vibe/pane/Sources/Assets.xcassets/OnboardingDesktop.imageset/GoldenGateSunset.jpg",
+  "wallpaperSourceSha256": "53f8a868b14a4679d6539f41dab897fa9c55a9279e319241dce4e4920f69ab2e",
+  "nativeSceneSourceSha256": "25656a2ee7f331771583d1716de0395d59eba672f8b6f4c230f6926f8dce5fc1",
+  "outputs": {
+    "src/assets/img/calmon-onboarding/deck-max.png": "e214fd224918c5b672786df8843eca9d30f6da03b47a72d2576e7e697bac5639",
+    "src/assets/img/calmon-onboarding/deck-pin.png": "8d845879368ebdb9683528ee49e3e193c6e6de94a686b99faee1bf9b01cd10d3",
+    "src/assets/img/calmon-onboarding/deck-sky.png": "23f04db7c9a4024a19e0f4f36b40c1aeac8b6e3246c4c5c4050364f437f2a441",
+    "src/assets/img/calmon-onboarding/desktop.jpg": "7f7cec217f7cca3ea2f92e782f262186dc2634cc9379f37976977fbf553beef7",
+    "src/assets/img/calmon-onboarding/key-panel-en-main-lit.png": "2632749afa1f9db9e5e2a6a0476103a761e8688e7c92530d8673a41307034e91",
+    "src/assets/img/calmon-onboarding/key-panel-en-main.png": "7cd7a44180454d0a28999e8376498c77d795e3dba20a8926e6d1c881286bf93b",
+    "src/assets/img/calmon-onboarding/key-panel-en-space-lit.png": "a63433eb63c631a4fc27cb905516cd1f6046a499c2b90f1adc2879dfb7459d42",
+    "src/assets/img/calmon-onboarding/key-panel-en-space.png": "bf2507c253b9d5c292d0adf4837078a60026622038d7c62a03757b74a09bc59d",
+    "src/assets/img/calmon-onboarding/key-panel-en.json": "a82061ce8e9642434e88795240c6a9a24a7afa437fadd6dfb8013cf44a6ddecb",
+    "src/assets/img/calmon-onboarding/key-panel-en.png": "f57fe6eaa6d5ff4c1185119c1b03d53fa5de6af1d544fddd1546c40cd0eb3b4f",
+    "src/assets/img/calmon-onboarding/key-panel-zh-Hans-main-lit.png": "21be6d60b216f934370b7e9117e8f55249f417c6f0e044cda5ad1ef1ba92770f",
+    "src/assets/img/calmon-onboarding/key-panel-zh-Hans-main.png": "01dac006182c01d6864b7ae8c5226fc0bbed0b1224d9194534aa3dbc6131f1d1",
+    "src/assets/img/calmon-onboarding/key-panel-zh-Hans-space-lit.png": "fc3a22b299086207b9e856a7492efec000d848e10492f4a8bbde4797a209db57",
+    "src/assets/img/calmon-onboarding/key-panel-zh-Hans-space.png": "bd23cb323676314a24f3f1ea618aec539ffbb27173c8f1bb504ad2ad1442587a",
+    "src/assets/img/calmon-onboarding/key-panel-zh-Hans.json": "ce5f313115db6bae7f0935789bee22142dacfa073ee321e4ab5d683999361fd8",
+    "src/assets/img/calmon-onboarding/key-panel-zh-Hans.png": "82e381eda2509877a1e78aadab0ed33c2049282ba09c1870a3d7b3e4df9baca7",
+    "src/assets/img/calmon-onboarding/map-leader.png": "3e140a1e418cc19a25c6c143fc3e480c51bd3896e2d4cb62047396edc9717a2c",
+    "src/assets/img/calmon-onboarding/map-normal.png": "9c1d20459fcbf7fcb0083cc20383bf2521a2414a6fe9d18748e3874f71595095",
+    "src/assets/img/calmon-onboarding/symbols.png": "a2e196b6dbdd69507dbb5c1fd66aa0ece991ce3c628f057265d2cf5f85d17a5c",
+    "src/assets/img/calmon-onboarding/tab-metrics.json": "922afa1a9afa6ef477d349650fe10255a9411d2b2e61c0fe08785de95d736388"
+  }
+}

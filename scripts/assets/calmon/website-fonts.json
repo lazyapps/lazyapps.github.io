@@ -1,0 +1,15 @@
+{
+  "source": "Google Fonts official CSS API; SIL Open Font License 1.1",
+  "sources": [
+    "Sofia Sans Extra Condensed 900: https://fonts.gstatic.com/s/sofiasansextracondensed/v6/raxdHjafvdAIOju4GcIfJH0i7zi50X3zRtuLNiMS0d6iDr-MD5Si9NGLM2-Efw.ttf",
+    "Oswald 700: https://fonts.gstatic.com/s/oswald/v57/TK3_WkUHHAIjg75cFRf3bXL8LICs1xZogUE.ttf"
+  ],
+  "outputs": {
+    "src/assets/fonts/oswald-vietnamese-700.woff2": "4ea7f16e498e7515c33cd6ca18aacc7494e7e04a444d0d04791157f0b8b3721f",
+    "src/assets/fonts/sofia-sans-xcond-greek-900.woff2": "30d85c354e28306d52aa1e0c4506ccf3897acfc1a3bbafa8af0492c9784ea487"
+  },
+  "languages": {
+    "vi": "Oswald 700: complete Vietnamese title glyphs",
+    "el": "Sofia Sans Extra Condensed 900: original Greek glyphs"
+  }
+}

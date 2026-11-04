@@ -940,5 +940,120 @@
         }
       }
     ]
+  },
+  {
+    "slug": "calmon",
+    "name": "Calmon",
+    "names": {
+      "en": "Calmon",
+      "zh": "Calmon"
+    },
+    "platform": {
+      "en": "macOS 26 or later",
+      "zh": "macOS 26 或更新版本"
+    },
+    "availability": {
+      "en": "Free during beta",
+      "zh": "Beta 期间免费"
+    },
+    "summary": {
+      "en": "A scrolling tiling window manager for Mac with app stacks, pinned columns, window labels, Pin Deck app shortcuts, Sky Deck floating windows, and Max Deck full-screen windows. Use the mouse or keyboard, with a clickable key panel to help you learn shortcuts.",
+      "zh": "Calmon 是 Mac 滚动平铺窗口管理器，支持 App 堆叠、固定列、窗口标签、Pin Deck 常用 App 、Sky Deck 浮动窗口和 Max Deck 全屏窗口。鼠标即可操作，也能通过按键面板熟悉快捷键。"
+    },
+    "description": {
+      "en": "A scrolling tiling window manager for Mac with app stacks, pinned columns, window labels, Pin Deck app shortcuts, Sky Deck floating windows, and Max Deck full-screen windows. Use the mouse or keyboard, with a clickable key panel to help you learn shortcuts. Free to use throughout beta. Feedback and bug reports are welcome.",
+      "zh": "Calmon 是 Mac 滚动平铺窗口管理器，支持 App 堆叠、固定列、窗口标签、Pin Deck 常用 App 、Sky Deck 浮动窗口和 Max Deck 全屏窗口。鼠标即可操作，也能通过按键面板熟悉快捷键。 Beta 期间免费使用。欢迎反馈问题和建议。"
+    },
+    "links": [
+      {
+        "url": "https://github.com/cxa/calmon/releases",
+        "label": {
+          "en": "Download free Mac beta",
+          "zh": "免费下载 Mac Beta"
+        }
+      }
+    ],
+    "assets": [
+      {
+        "source": "src/assets/img/calmon-icon.png",
+        "filename": "icon.png",
+        "kind": "icon",
+        "label": {
+          "en": "App icon · Light",
+          "zh": "App 图标 · 亮色"
+        },
+        "note": {
+          "en": "Original native 1024 × 1024 App icon exported from Icon Composer. Artwork, proportions and transparency preserved.",
+          "zh": "从原版 Icon Composer 工程导出的 1024 × 1024 App 图标，保留图案、比例与透明边角。"
+        }
+      },
+      {
+        "source": "src/assets/img/calmon-icon-dark.png",
+        "filename": "icon-dark.png",
+        "kind": "icon",
+        "label": {
+          "en": "App icon · Dark",
+          "zh": "App 图标 · 暗色"
+        },
+        "note": {
+          "en": "Original native 1024 × 1024 dark App icon exported from the same Icon Composer document. Pure-black backing and the complete green spectrum.",
+          "zh": "从同一 Icon Composer 工程导出的 1024 × 1024 原生暗色图标，纯黑背景与完整绿色光谱。"
+        }
+      },
+      {
+        "source": "scripts/assets/presskit/calmon-menubar.png",
+        "filename": "menubar-2x.png",
+        "kind": "menubar",
+        "label": {
+          "en": "Menu bar icon · 2× template",
+          "zh": "菜单栏图标 · 2× 模板"
+        },
+        "note": {
+          "en": "Original 44 × 44 pixel template for a 22 × 22 pt menu bar icon, rendered at native 2× resolution from the app contours. macOS supplies the foreground color.",
+          "zh": "原生导出的 44 × 44 像素模板，对应 22 × 22 pt 菜单栏图标；系统负责前景色。"
+        }
+      },
+      {
+        "source": "scripts/assets/presskit/calmon-leader-keys.png",
+        "filename": "leader-keys-en.png",
+        "kind": "screenshot",
+        "label": {
+          "en": "Native leader key panel · English",
+          "zh": "原生 Leader 按键面板 · 英语"
+        },
+        "note": {
+          "en": "Native LeaderHelpView rendered from the current app source with default command sections, without starting the window manager. English UI; original PNG pixels retained.",
+          "zh": "从当前 App 源码导出原生 LeaderHelpView，使用默认命令，未启动窗口管理器。英语界面，保留原始 PNG 像素。"
+        }
+      },
+      {
+        "source": "scripts/assets/presskit/vectors/calmon-lettering.svg",
+        "filename": "lettering-flat.svg",
+        "kind": "vector",
+        "labelKey": "flatVector",
+        "noteKey": "flatVector",
+        "label": {
+          "en": "Flat vector lettering",
+          "zh": "平面矢量字标"
+        },
+        "note": {
+          "en": "Exact rounded contours exported from the native CGPath geometry, with the current six green diagonal bands. No glass, lighting, backing or embedded bitmap.",
+          "zh": "由原生 CGPath 几何轮廓直接导出，使用当前六色绿色斜向色带；不含玻璃、光照、底壳或嵌入位图。"
+        }
+      },
+      {
+        "source": "src/assets/img/calmon-opengraph-shared.png",
+        "filename": "social-card.png",
+        "kind": "artwork",
+        "label": {
+          "en": "Social sharing image",
+          "zh": "社交分享图"
+        },
+        "note": {
+          "en": "1200 × 630 promotional artwork, not an app screenshot. Shared by all website languages.",
+          "zh": "1200 × 630 宣传图，不是 App 截图，各网站语言共用。"
+        }
+      }
+    ]
   }
 ]

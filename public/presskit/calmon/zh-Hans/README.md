@@ -1,0 +1,109 @@
+# Calmon — 媒体资料
+
+- 产品网站: [https://lazyapps.com/calmon/](https://lazyapps.com/calmon/)
+- 媒体资料页: [https://lazyapps.com/calmon/presskit/#zh-Hans](https://lazyapps.com/calmon/presskit/#zh-Hans)
+- 平台: macOS 26 或更新版本
+- 发布状态: Beta 期间免费
+- 媒体联系: [lazyapps.feedback@gmail.com](mailto:lazyapps.feedback@gmail.com)
+
+## 产品简介
+
+Calmon 将 Mac 窗口排成可滚动的列。支持同应用堆叠、固定列和桌面切换。鼠标或键盘都能操作。
+
+macOS 26 或更新版本
+
+多显示器建议上下排列。横向并排时，共享边缘会阻断滚动，切换列时会循环跳转。两侧都有显示器时，后台窗口会叠在当前窗口后方。
+
+Beta 期间免费
+
+遇到问题或有想法，来 X 找 @lazyapps。谢谢你帮 Calmon 变得更好用。
+
+Calmon 不在 Dock 显示图标。可在菜单栏  找到它。
+
+窗口横向排列，随焦点滚动。当前列占据大部分屏幕。在前导模式中用方向键切换。
+
+同一 App 的平铺窗口自动堆叠。点击堆叠标记或按 ⌘` 切换窗口。每列最多上下摆放三叠窗口。
+
+将一列固定在左侧或右侧，其他窗口在旁边滚动。在前导模式中按 Tab 切换焦点。
+
+最多固定十个 App，各显示器共用顺序。点击 Pin Deck 标记添加 App。通过图标菜单移出 App。
+
+Sky Deck 显示浮动窗口，Max Deck 显示原生全屏窗口。点击图标返回对应窗口。
+
+点击桌面编号切换桌面。在前导模式中按图标标签选择窗口。按 Shift 和 1–9 将窗口移到其他桌面。
+
+点击标签栏图标选择窗口。右键点击图标打开窗口菜单。点击布局图打开按键面板。点击面板上的按键执行操作。
+
+需要辅助功能权限，用于移动窗口、调整大小和切换焦点。
+
+不用。鼠标可完成全部窗口操作。点击布局图可随时打开按键面板。
+
+轻扫默认关闭。可在「设置 → 手势」中启用三指或四指轻扫。轻扫前按住 Shift，可使用原有的 macOS 手势。
+
+标准窗口默认平铺。对话框、设置窗口和固定大小的窗口默认浮动。可在「设置 → 高级」中按 App 或标题添加规则。
+
+只有主动移动时，窗口才会改变所属桌面。可用桌面编号或前导模式切换桌面。退出 Calmon 时会恢复保存的窗口位置。
+
+是的，Beta 期间免费。
+
+在 Calmon 菜单中选择「检查更新」。
+
+[X @lazyapps](https://x.com/lazyapps)
+
+## 官方链接
+
+- [免费下载](https://github.com/cxa/calmon/releases)
+
+## 图片素材
+
+### App 图标
+
+[icon.png](../icon.png)
+
+1024 × 1024 · PNG
+
+从原版 Icon Composer 工程导出的 1024 × 1024 App 图标，保留图案、比例与透明边角。
+
+### App 图标 · icon-dark.png
+
+[icon-dark.png](../icon-dark.png)
+
+1024 × 1024 · PNG
+
+原版 App 图标，1024 × 1024 PNG。保留原版图案、比例与透明边角。
+
+### 菜单栏图标 · menubar-2x.png
+
+[menubar-2x.png](../menubar-2x.png)
+
+44 × 44 · PNG
+
+菜单栏图标 · PNG · 44 × 44 · 2×
+
+### 按键面板
+
+[leader-keys.png](leader-keys.png)
+
+1148 × 732 · PNG
+
+对应语言的原生界面预览，像素保持原样。
+
+### 平面矢量图
+
+[lettering-flat.svg](../lettering-flat.svg)
+
+684.0 × 684.0 · SVG
+
+由原版矢量图案和图层位置组合的平面 SVG，不重现原生玻璃、光照或系统图标裁切。完整原生 App 图标请使用 PNG。
+
+### 社交分享图
+
+[social-card.png](../social-card.png)
+
+1200 × 630 · PNG
+
+1200 × 630 宣传图，不是 App 截图，各网站语言共用。
+
+## 使用说明
+
+这些素材用于介绍本产品的媒体报道。请保留名称、比例与产品语境，署名 lazyapps 并链接产品网站。第三方内容与商标保留各自权利；本资料包不授予其独立使用权。如需其他用途，请联系我们。

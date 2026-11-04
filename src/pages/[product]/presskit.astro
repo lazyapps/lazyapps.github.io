@@ -3,6 +3,7 @@ import { readFileSync } from 'node:fs';
 import PressLayout from '../../layouts/PressLayout.astro';
 import { pressKits } from '../../content/presskit-catalog.mjs';
 import PressAsset from '../../components/PressAsset.astro';
+import CalmonPanelReference from '../../components/CalmonPanelReference.astro';
 import NativeAppIcon from '../../components/NativeAppIcon.astro';
 import ComputerUseText from '../../components/ComputerUseText.astro';
 import PressMarkdown from '../../components/PressMarkdown.astro';
@@ -15,6 +16,11 @@ const manifest = JSON.parse(readFileSync(`public${base}manifest.json`, 'utf8'));
 const english = kit.locales.find(locale => locale.tag === 'en');
 const artwork = english.assets.find(asset => asset.kind === 'artwork');
 const metadataFor = asset => manifest.files.find(item => item.path === asset.path);
+const panelVariants = kit.slug === 'calmon' ? kit.locales.map(locale => {
+  const asset = locale.assets.find(asset=>asset.kind === 'screenshot');
+  const metadata = metadataFor(asset);
+  return {tag:locale.tag,src:base + asset.path,width:metadata.width,height:metadata.height};
+}) : [];
 const bodyFor = locale => locale.description.startsWith(locale.summary + '\n\n') ? locale.description.slice(locale.summary.length).trim() : locale.description;
 ---
 <PressLayout product={kit.name} slug={kit.slug} title={`${kit.name} — Press Kit | lazyapps`} description={`Official press kit for ${kit.name}: product descriptions, images, links and media contact. ${kit.summary.en}`} image={base + artwork.path}>
@@ -42,7 +48,7 @@ const bodyFor = locale => locale.description.startsWith(locale.summary + '\n\n')
       </div>
       {kit.locales.map(locale => <details class="kit-panel" id={`materials-${locale.tag}`} data-kit-panel={locale.tag} open={locale.tag === 'en'}>
         <summary lang={locale.tag}>{locale.displayName}</summary>
-        <div class="kit-panel__content" lang={locale.tag} dir={locale.tag === 'ar' ? 'rtl' : 'ltr'}>
+        <div class="kit-panel__content" lang={locale.tag} dir={['ar','he'].includes(locale.tag) ? 'rtl' : 'ltr'}>
           <div class="kit-copy">
             <div class="kit-copy__text"><h3>{locale.name}</h3><p class="copy-summary"><ComputerUseText text={locale.summary} locale={locale.tag} /></p><PressMarkdown source={bodyFor(locale)} base={`${base}${locale.tag}/`} prefix={`copy-${locale.tag}`} locale={locale.tag} tableLabel={locale.headings[6]} /></div>
             <a class="button readme-download" href={`${base}${locale.tag}/README.md`} download dir="ltr">README.md <span aria-hidden="true">↓</span></a>
@@ -51,7 +57,7 @@ const bodyFor = locale => locale.description.startsWith(locale.summary + '\n\n')
               <div class="kit-readme__content"><PressMarkdown source={readFileSync(`public${base}${locale.tag}/README.md`, 'utf8')} base={`${base}${locale.tag}/`} prefix={`readme-${locale.tag}`} locale={locale.tag} tableLabel={locale.headings[0]} /></div>
             </details>
           </div>
-          <div class="asset-grid">{locale.assets.filter(asset => !asset.alternateFor).map(asset => <PressAsset base={base} asset={asset} metadata={metadataFor(asset)} lang={locale.tag} formats={locale.assets.filter(format => format.alternateFor === asset.filename).map(format => ({ asset: format, metadata: metadataFor(format) }))} />)}</div>
+          <div class="asset-grid">{locale.assets.filter(asset => !asset.alternateFor).map(asset => kit.slug === 'calmon' && asset.kind === 'screenshot' ? <CalmonPanelReference code={locale.tag} title={asset.label} variants={panelVariants}><PressAsset base={base} asset={asset} metadata={metadataFor(asset)} lang={locale.tag} /></CalmonPanelReference> : <PressAsset base={base} asset={asset} metadata={metadataFor(asset)} lang={locale.tag} formats={locale.assets.filter(format => format.alternateFor === asset.filename).map(format => ({ asset: format, metadata: metadataFor(format) }))} />)}</div>
         </div>
       </details>)}
     </section>

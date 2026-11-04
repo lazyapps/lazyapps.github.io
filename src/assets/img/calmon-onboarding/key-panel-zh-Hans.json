@@ -1,0 +1,1558 @@
+{
+  "main": {
+    "height": 342,
+    "regions": [
+      {
+        "action": "previous",
+        "label": "列 ←",
+        "rect": [
+          196,
+          39,
+          30,
+          21
+        ],
+        "row": 0,
+        "section": 0,
+        "title": false
+      },
+      {
+        "action": "next",
+        "label": "列 →",
+        "rect": [
+          229,
+          39,
+          30,
+          21
+        ],
+        "row": 0,
+        "section": 0,
+        "title": false
+      },
+      {
+        "action": "up",
+        "label": "窗口 ↑",
+        "rect": [
+          196,
+          66,
+          30,
+          21
+        ],
+        "row": 1,
+        "section": 0,
+        "title": false
+      },
+      {
+        "action": "down",
+        "label": "窗口 ↓",
+        "rect": [
+          229,
+          66,
+          30,
+          21
+        ],
+        "row": 1,
+        "section": 0,
+        "title": false
+      },
+      {
+        "action": "desktops",
+        "label": "桌面 1–9",
+        "rect": [
+          220,
+          93,
+          39,
+          21
+        ],
+        "row": 2,
+        "section": 0,
+        "title": false
+      },
+      {
+        "action": "desktops",
+        "label": "桌面 桌面",
+        "rect": [
+          12,
+          93,
+          36,
+          21
+        ],
+        "row": 2,
+        "section": 0,
+        "title": true
+      },
+      {
+        "action": "consume-left",
+        "label": "移入或移出 ,",
+        "rect": [
+          196,
+          147,
+          30,
+          21
+        ],
+        "row": 0,
+        "section": 1,
+        "title": false
+      },
+      {
+        "action": "consume-right",
+        "label": "移入或移出 .",
+        "rect": [
+          229,
+          147,
+          30,
+          21
+        ],
+        "row": 0,
+        "section": 1,
+        "title": false
+      },
+      {
+        "action": "shrink",
+        "label": "宽度 -",
+        "rect": [
+          196,
+          174,
+          30,
+          21
+        ],
+        "row": 1,
+        "section": 1,
+        "title": false
+      },
+      {
+        "action": "grow",
+        "label": "宽度 =",
+        "rect": [
+          229,
+          174,
+          30,
+          21
+        ],
+        "row": 1,
+        "section": 1,
+        "title": false
+      },
+      {
+        "action": "height-shrink",
+        "label": "高度 [",
+        "rect": [
+          196,
+          201,
+          30,
+          21
+        ],
+        "row": 2,
+        "section": 1,
+        "title": false
+      },
+      {
+        "action": "height-grow",
+        "label": "高度 ]",
+        "rect": [
+          229,
+          201,
+          30,
+          21
+        ],
+        "row": 2,
+        "section": 1,
+        "title": false
+      },
+      {
+        "action": "focus-pin",
+        "label": "聚焦固定列 ⇥",
+        "rect": [
+          220,
+          228,
+          39,
+          21
+        ],
+        "row": 3,
+        "section": 1,
+        "title": false
+      },
+      {
+        "action": "focus-pin",
+        "label": "聚焦固定列 聚焦固定列",
+        "rect": [
+          12,
+          228,
+          90,
+          21
+        ],
+        "row": 3,
+        "section": 1,
+        "title": true
+      },
+      {
+        "action": "label:A",
+        "label": "前往窗口 a",
+        "rect": [
+          130,
+          282,
+          30,
+          21
+        ],
+        "row": 0,
+        "section": 2,
+        "title": false
+      },
+      {
+        "action": "label:S",
+        "label": "前往窗口 s",
+        "rect": [
+          163,
+          282,
+          30,
+          21
+        ],
+        "row": 0,
+        "section": 2,
+        "title": false
+      },
+      {
+        "action": "label:D",
+        "label": "前往窗口 d",
+        "rect": [
+          196,
+          282,
+          30,
+          21
+        ],
+        "row": 0,
+        "section": 2,
+        "title": false
+      },
+      {
+        "action": "labels",
+        "label": "前往窗口 …",
+        "rect": [
+          229,
+          282,
+          30,
+          21
+        ],
+        "row": 0,
+        "section": 2,
+        "title": false
+      },
+      {
+        "action": "bring-label:A",
+        "label": "移到下方 a",
+        "rect": [
+          196,
+          309,
+          30,
+          21
+        ],
+        "row": 1,
+        "section": 2,
+        "title": false
+      },
+      {
+        "action": "bring",
+        "label": "移到下方 …",
+        "rect": [
+          229,
+          309,
+          30,
+          21
+        ],
+        "row": 1,
+        "section": 2,
+        "title": false
+      },
+      {
+        "action": "float",
+        "label": "浮动/平铺 f",
+        "rect": [
+          508,
+          39,
+          30,
+          21
+        ],
+        "row": 0,
+        "section": 3,
+        "title": false
+      },
+      {
+        "action": "float",
+        "label": "浮动/平铺 浮动/平铺",
+        "rect": [
+          291,
+          39,
+          81,
+          21
+        ],
+        "row": 0,
+        "section": 3,
+        "title": true
+      },
+      {
+        "action": "full",
+        "label": "全屏 s",
+        "rect": [
+          508,
+          66,
+          30,
+          21
+        ],
+        "row": 1,
+        "section": 3,
+        "title": false
+      },
+      {
+        "action": "full",
+        "label": "全屏 全屏",
+        "rect": [
+          291,
+          66,
+          36,
+          21
+        ],
+        "row": 1,
+        "section": 3,
+        "title": true
+      },
+      {
+        "action": "pin",
+        "label": "固定/取消固定 p",
+        "rect": [
+          508,
+          93,
+          30,
+          21
+        ],
+        "row": 2,
+        "section": 3,
+        "title": false
+      },
+      {
+        "action": "pin",
+        "label": "固定/取消固定 固定/取消固定",
+        "rect": [
+          291,
+          93,
+          117,
+          21
+        ],
+        "row": 2,
+        "section": 3,
+        "title": true
+      },
+      {
+        "action": "join-stack",
+        "label": "加入/离开 App 堆叠 j",
+        "rect": [
+          463,
+          120,
+          30,
+          21
+        ],
+        "row": 3,
+        "section": 3,
+        "title": false
+      },
+      {
+        "action": "leave-stack",
+        "label": "加入/离开 App 堆叠 x",
+        "rect": [
+          508,
+          120,
+          30,
+          21
+        ],
+        "row": 3,
+        "section": 3,
+        "title": false
+      },
+      {
+        "action": "add-pin",
+        "label": "加入/移出 Pin Deck a",
+        "rect": [
+          463,
+          147,
+          30,
+          21
+        ],
+        "row": 4,
+        "section": 3,
+        "title": false
+      },
+      {
+        "action": "remove-pin",
+        "label": "加入/移出 Pin Deck r",
+        "rect": [
+          508,
+          147,
+          30,
+          21
+        ],
+        "row": 4,
+        "section": 3,
+        "title": false
+      },
+      {
+        "action": "tile-all",
+        "label": "全部平铺 t",
+        "rect": [
+          508,
+          174,
+          30,
+          21
+        ],
+        "row": 5,
+        "section": 3,
+        "title": false
+      },
+      {
+        "action": "tile-all",
+        "label": "全部平铺 全部平铺",
+        "rect": [
+          291,
+          174,
+          72,
+          21
+        ],
+        "row": 5,
+        "section": 3,
+        "title": true
+      },
+      {
+        "action": "new-desktop",
+        "label": "新建/删除桌面 n",
+        "rect": [
+          463,
+          201,
+          30,
+          21
+        ],
+        "row": 6,
+        "section": 3,
+        "title": false
+      },
+      {
+        "action": "delete-desktop",
+        "label": "新建/删除桌面 d",
+        "rect": [
+          508,
+          201,
+          30,
+          21
+        ],
+        "row": 6,
+        "section": 3,
+        "title": false
+      },
+      {
+        "action": "send-menu",
+        "label": "全部移到桌面 m",
+        "rect": [
+          466,
+          228,
+          30,
+          21
+        ],
+        "row": 7,
+        "section": 3,
+        "title": false
+      },
+      {
+        "action": "send-menu",
+        "label": "全部移到桌面 1–9",
+        "rect": [
+          499,
+          228,
+          39,
+          21
+        ],
+        "row": 7,
+        "section": 3,
+        "title": false
+      },
+      {
+        "action": "send-menu",
+        "label": "全部移到桌面 全部移到桌面",
+        "rect": [
+          291,
+          228,
+          108,
+          21
+        ],
+        "row": 7,
+        "section": 3,
+        "title": true
+      },
+      {
+        "action": "settings",
+        "label": "设置 ,",
+        "rect": [
+          508,
+          282,
+          30,
+          21
+        ],
+        "row": 0,
+        "section": 4,
+        "title": false
+      },
+      {
+        "action": "settings",
+        "label": "设置 设置",
+        "rect": [
+          291,
+          282,
+          36,
+          21
+        ],
+        "row": 0,
+        "section": 4,
+        "title": true
+      },
+      {
+        "action": "escape",
+        "label": "退出 esc",
+        "rect": [
+          499,
+          309,
+          39,
+          21
+        ],
+        "row": 1,
+        "section": 4,
+        "title": false
+      },
+      {
+        "action": "escape",
+        "label": "退出 退出",
+        "rect": [
+          291,
+          309,
+          36,
+          21
+        ],
+        "row": 1,
+        "section": 4,
+        "title": true
+      }
+    ],
+    "width": 550,
+    "rows": [
+      {
+        "section": 0,
+        "row": 0,
+        "rect": [
+          12,
+          39,
+          174,
+          21
+        ]
+      },
+      {
+        "section": 0,
+        "row": 1,
+        "rect": [
+          12,
+          66,
+          174,
+          21
+        ]
+      },
+      {
+        "section": 0,
+        "row": 2,
+        "rect": [
+          12,
+          93,
+          198,
+          21
+        ]
+      },
+      {
+        "section": 1,
+        "row": 0,
+        "rect": [
+          12,
+          147,
+          174,
+          21
+        ]
+      },
+      {
+        "section": 1,
+        "row": 1,
+        "rect": [
+          12,
+          174,
+          174,
+          21
+        ]
+      },
+      {
+        "section": 1,
+        "row": 2,
+        "rect": [
+          12,
+          201,
+          174,
+          21
+        ]
+      },
+      {
+        "section": 1,
+        "row": 3,
+        "rect": [
+          12,
+          228,
+          198,
+          21
+        ]
+      },
+      {
+        "section": 2,
+        "row": 0,
+        "rect": [
+          12,
+          282,
+          108,
+          21
+        ]
+      },
+      {
+        "section": 2,
+        "row": 1,
+        "rect": [
+          12,
+          309,
+          174,
+          21
+        ]
+      },
+      {
+        "section": 3,
+        "row": 0,
+        "rect": [
+          291,
+          39,
+          207,
+          21
+        ]
+      },
+      {
+        "section": 3,
+        "row": 1,
+        "rect": [
+          291,
+          66,
+          207,
+          21
+        ]
+      },
+      {
+        "section": 3,
+        "row": 2,
+        "rect": [
+          291,
+          93,
+          207,
+          21
+        ]
+      },
+      {
+        "section": 3,
+        "row": 3,
+        "rect": [
+          291,
+          120,
+          162,
+          21
+        ]
+      },
+      {
+        "section": 3,
+        "row": 4,
+        "rect": [
+          291,
+          147,
+          162,
+          21
+        ]
+      },
+      {
+        "section": 3,
+        "row": 5,
+        "rect": [
+          291,
+          174,
+          207,
+          21
+        ]
+      },
+      {
+        "section": 3,
+        "row": 6,
+        "rect": [
+          291,
+          201,
+          162,
+          21
+        ]
+      },
+      {
+        "section": 3,
+        "row": 7,
+        "rect": [
+          291,
+          228,
+          165,
+          21
+        ]
+      },
+      {
+        "section": 4,
+        "row": 0,
+        "rect": [
+          291,
+          282,
+          207,
+          21
+        ]
+      },
+      {
+        "section": 4,
+        "row": 1,
+        "rect": [
+          291,
+          309,
+          198,
+          21
+        ]
+      }
+    ],
+    "headers": [
+      {
+        "section": 0,
+        "rect": [
+          12,
+          12,
+          247,
+          21
+        ]
+      },
+      {
+        "section": 1,
+        "rect": [
+          12,
+          120,
+          247,
+          21
+        ]
+      },
+      {
+        "section": 2,
+        "rect": [
+          12,
+          255,
+          247,
+          21
+        ]
+      },
+      {
+        "section": 3,
+        "rect": [
+          291,
+          12,
+          247,
+          21
+        ]
+      },
+      {
+        "section": 4,
+        "rect": [
+          291,
+          255,
+          247,
+          21
+        ]
+      }
+    ]
+  },
+  "space": {
+    "height": 342,
+    "regions": [
+      {
+        "action": "previous",
+        "label": "列 ←",
+        "rect": [
+          196,
+          39,
+          30,
+          21
+        ],
+        "row": 0,
+        "section": 0,
+        "title": false
+      },
+      {
+        "action": "next",
+        "label": "列 →",
+        "rect": [
+          229,
+          39,
+          30,
+          21
+        ],
+        "row": 0,
+        "section": 0,
+        "title": false
+      },
+      {
+        "action": "up",
+        "label": "窗口 ↑",
+        "rect": [
+          196,
+          66,
+          30,
+          21
+        ],
+        "row": 1,
+        "section": 0,
+        "title": false
+      },
+      {
+        "action": "down",
+        "label": "窗口 ↓",
+        "rect": [
+          229,
+          66,
+          30,
+          21
+        ],
+        "row": 1,
+        "section": 0,
+        "title": false
+      },
+      {
+        "action": "desktops",
+        "label": "桌面 1–9",
+        "rect": [
+          220,
+          93,
+          39,
+          21
+        ],
+        "row": 2,
+        "section": 0,
+        "title": false
+      },
+      {
+        "action": "desktops",
+        "label": "桌面 桌面",
+        "rect": [
+          12,
+          93,
+          36,
+          21
+        ],
+        "row": 2,
+        "section": 0,
+        "title": true
+      },
+      {
+        "action": "consume-left",
+        "label": "移入或移出 ,",
+        "rect": [
+          196,
+          147,
+          30,
+          21
+        ],
+        "row": 0,
+        "section": 1,
+        "title": false
+      },
+      {
+        "action": "consume-right",
+        "label": "移入或移出 .",
+        "rect": [
+          229,
+          147,
+          30,
+          21
+        ],
+        "row": 0,
+        "section": 1,
+        "title": false
+      },
+      {
+        "action": "shrink",
+        "label": "宽度 -",
+        "rect": [
+          196,
+          174,
+          30,
+          21
+        ],
+        "row": 1,
+        "section": 1,
+        "title": false
+      },
+      {
+        "action": "grow",
+        "label": "宽度 =",
+        "rect": [
+          229,
+          174,
+          30,
+          21
+        ],
+        "row": 1,
+        "section": 1,
+        "title": false
+      },
+      {
+        "action": "height-shrink",
+        "label": "高度 [",
+        "rect": [
+          196,
+          201,
+          30,
+          21
+        ],
+        "row": 2,
+        "section": 1,
+        "title": false
+      },
+      {
+        "action": "height-grow",
+        "label": "高度 ]",
+        "rect": [
+          229,
+          201,
+          30,
+          21
+        ],
+        "row": 2,
+        "section": 1,
+        "title": false
+      },
+      {
+        "action": "focus-pin",
+        "label": "聚焦固定列 ⇥",
+        "rect": [
+          220,
+          228,
+          39,
+          21
+        ],
+        "row": 3,
+        "section": 1,
+        "title": false
+      },
+      {
+        "action": "focus-pin",
+        "label": "聚焦固定列 聚焦固定列",
+        "rect": [
+          12,
+          228,
+          90,
+          21
+        ],
+        "row": 3,
+        "section": 1,
+        "title": true
+      },
+      {
+        "action": "label:A",
+        "label": "前往窗口 a",
+        "rect": [
+          130,
+          282,
+          30,
+          21
+        ],
+        "row": 0,
+        "section": 2,
+        "title": false
+      },
+      {
+        "action": "label:S",
+        "label": "前往窗口 s",
+        "rect": [
+          163,
+          282,
+          30,
+          21
+        ],
+        "row": 0,
+        "section": 2,
+        "title": false
+      },
+      {
+        "action": "label:D",
+        "label": "前往窗口 d",
+        "rect": [
+          196,
+          282,
+          30,
+          21
+        ],
+        "row": 0,
+        "section": 2,
+        "title": false
+      },
+      {
+        "action": "labels",
+        "label": "前往窗口 …",
+        "rect": [
+          229,
+          282,
+          30,
+          21
+        ],
+        "row": 0,
+        "section": 2,
+        "title": false
+      },
+      {
+        "action": "bring-label:A",
+        "label": "移到下方 a",
+        "rect": [
+          196,
+          309,
+          30,
+          21
+        ],
+        "row": 1,
+        "section": 2,
+        "title": false
+      },
+      {
+        "action": "bring",
+        "label": "移到下方 …",
+        "rect": [
+          229,
+          309,
+          30,
+          21
+        ],
+        "row": 1,
+        "section": 2,
+        "title": false
+      },
+      {
+        "action": "float",
+        "label": "浮动/平铺 f",
+        "rect": [
+          508,
+          39,
+          30,
+          21
+        ],
+        "row": 0,
+        "section": 3,
+        "title": false
+      },
+      {
+        "action": "float",
+        "label": "浮动/平铺 浮动/平铺",
+        "rect": [
+          291,
+          39,
+          81,
+          21
+        ],
+        "row": 0,
+        "section": 3,
+        "title": true
+      },
+      {
+        "action": "full",
+        "label": "全屏 s",
+        "rect": [
+          508,
+          66,
+          30,
+          21
+        ],
+        "row": 1,
+        "section": 3,
+        "title": false
+      },
+      {
+        "action": "full",
+        "label": "全屏 全屏",
+        "rect": [
+          291,
+          66,
+          36,
+          21
+        ],
+        "row": 1,
+        "section": 3,
+        "title": true
+      },
+      {
+        "action": "pin",
+        "label": "固定/取消固定 p",
+        "rect": [
+          508,
+          93,
+          30,
+          21
+        ],
+        "row": 2,
+        "section": 3,
+        "title": false
+      },
+      {
+        "action": "pin",
+        "label": "固定/取消固定 固定/取消固定",
+        "rect": [
+          291,
+          93,
+          117,
+          21
+        ],
+        "row": 2,
+        "section": 3,
+        "title": true
+      },
+      {
+        "action": "join-stack",
+        "label": "加入/离开 App 堆叠 j",
+        "rect": [
+          463,
+          120,
+          30,
+          21
+        ],
+        "row": 3,
+        "section": 3,
+        "title": false
+      },
+      {
+        "action": "leave-stack",
+        "label": "加入/离开 App 堆叠 x",
+        "rect": [
+          508,
+          120,
+          30,
+          21
+        ],
+        "row": 3,
+        "section": 3,
+        "title": false
+      },
+      {
+        "action": "add-pin",
+        "label": "加入/移出 Pin Deck a",
+        "rect": [
+          463,
+          147,
+          30,
+          21
+        ],
+        "row": 4,
+        "section": 3,
+        "title": false
+      },
+      {
+        "action": "remove-pin",
+        "label": "加入/移出 Pin Deck r",
+        "rect": [
+          508,
+          147,
+          30,
+          21
+        ],
+        "row": 4,
+        "section": 3,
+        "title": false
+      },
+      {
+        "action": "tile-all",
+        "label": "全部平铺 t",
+        "rect": [
+          508,
+          174,
+          30,
+          21
+        ],
+        "row": 5,
+        "section": 3,
+        "title": false
+      },
+      {
+        "action": "tile-all",
+        "label": "全部平铺 全部平铺",
+        "rect": [
+          291,
+          174,
+          72,
+          21
+        ],
+        "row": 5,
+        "section": 3,
+        "title": true
+      },
+      {
+        "action": "new-desktop",
+        "label": "新建/删除桌面 n",
+        "rect": [
+          463,
+          201,
+          30,
+          21
+        ],
+        "row": 6,
+        "section": 3,
+        "title": false
+      },
+      {
+        "action": "delete-desktop",
+        "label": "新建/删除桌面 d",
+        "rect": [
+          508,
+          201,
+          30,
+          21
+        ],
+        "row": 6,
+        "section": 3,
+        "title": false
+      },
+      {
+        "action": "send-menu",
+        "label": "全部移到桌面 m",
+        "rect": [
+          466,
+          228,
+          30,
+          21
+        ],
+        "row": 7,
+        "section": 3,
+        "title": false
+      },
+      {
+        "action": "send-menu",
+        "label": "全部移到桌面 1–9",
+        "rect": [
+          499,
+          228,
+          39,
+          21
+        ],
+        "row": 7,
+        "section": 3,
+        "title": false
+      },
+      {
+        "action": "send-menu",
+        "label": "全部移到桌面 全部移到桌面",
+        "rect": [
+          291,
+          228,
+          108,
+          21
+        ],
+        "row": 7,
+        "section": 3,
+        "title": true
+      },
+      {
+        "action": "settings",
+        "label": "设置 ,",
+        "rect": [
+          508,
+          282,
+          30,
+          21
+        ],
+        "row": 0,
+        "section": 4,
+        "title": false
+      },
+      {
+        "action": "settings",
+        "label": "设置 设置",
+        "rect": [
+          291,
+          282,
+          36,
+          21
+        ],
+        "row": 0,
+        "section": 4,
+        "title": true
+      },
+      {
+        "action": "escape",
+        "label": "返回 esc",
+        "rect": [
+          499,
+          309,
+          39,
+          21
+        ],
+        "row": 1,
+        "section": 4,
+        "title": false
+      },
+      {
+        "action": "escape",
+        "label": "返回 返回",
+        "rect": [
+          291,
+          309,
+          36,
+          21
+        ],
+        "row": 1,
+        "section": 4,
+        "title": true
+      }
+    ],
+    "width": 550,
+    "rows": [
+      {
+        "section": 0,
+        "row": 0,
+        "rect": [
+          12,
+          39,
+          174,
+          21
+        ]
+      },
+      {
+        "section": 0,
+        "row": 1,
+        "rect": [
+          12,
+          66,
+          174,
+          21
+        ]
+      },
+      {
+        "section": 0,
+        "row": 2,
+        "rect": [
+          12,
+          93,
+          198,
+          21
+        ]
+      },
+      {
+        "section": 1,
+        "row": 0,
+        "rect": [
+          12,
+          147,
+          174,
+          21
+        ]
+      },
+      {
+        "section": 1,
+        "row": 1,
+        "rect": [
+          12,
+          174,
+          174,
+          21
+        ]
+      },
+      {
+        "section": 1,
+        "row": 2,
+        "rect": [
+          12,
+          201,
+          174,
+          21
+        ]
+      },
+      {
+        "section": 1,
+        "row": 3,
+        "rect": [
+          12,
+          228,
+          198,
+          21
+        ]
+      },
+      {
+        "section": 2,
+        "row": 0,
+        "rect": [
+          12,
+          282,
+          108,
+          21
+        ]
+      },
+      {
+        "section": 2,
+        "row": 1,
+        "rect": [
+          12,
+          309,
+          174,
+          21
+        ]
+      },
+      {
+        "section": 3,
+        "row": 0,
+        "rect": [
+          291,
+          39,
+          207,
+          21
+        ]
+      },
+      {
+        "section": 3,
+        "row": 1,
+        "rect": [
+          291,
+          66,
+          207,
+          21
+        ]
+      },
+      {
+        "section": 3,
+        "row": 2,
+        "rect": [
+          291,
+          93,
+          207,
+          21
+        ]
+      },
+      {
+        "section": 3,
+        "row": 3,
+        "rect": [
+          291,
+          120,
+          162,
+          21
+        ]
+      },
+      {
+        "section": 3,
+        "row": 4,
+        "rect": [
+          291,
+          147,
+          162,
+          21
+        ]
+      },
+      {
+        "section": 3,
+        "row": 5,
+        "rect": [
+          291,
+          174,
+          207,
+          21
+        ]
+      },
+      {
+        "section": 3,
+        "row": 6,
+        "rect": [
+          291,
+          201,
+          162,
+          21
+        ]
+      },
+      {
+        "section": 3,
+        "row": 7,
+        "rect": [
+          291,
+          228,
+          165,
+          21
+        ]
+      },
+      {
+        "section": 4,
+        "row": 0,
+        "rect": [
+          291,
+          282,
+          207,
+          21
+        ]
+      },
+      {
+        "section": 4,
+        "row": 1,
+        "rect": [
+          291,
+          309,
+          198,
+          21
+        ]
+      }
+    ],
+    "headers": [
+      {
+        "section": 0,
+        "rect": [
+          12,
+          12,
+          247,
+          21
+        ]
+      },
+      {
+        "section": 1,
+        "rect": [
+          12,
+          120,
+          247,
+          21
+        ]
+      },
+      {
+        "section": 2,
+        "rect": [
+          12,
+          255,
+          247,
+          21
+        ]
+      },
+      {
+        "section": 3,
+        "rect": [
+          291,
+          12,
+          247,
+          21
+        ]
+      },
+      {
+        "section": 4,
+        "rect": [
+          291,
+          255,
+          247,
+          21
+        ]
+      }
+    ]
+  }
+}

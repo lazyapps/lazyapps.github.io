@@ -1,0 +1,156 @@
+{
+  "hero": [
+    "Csak nyugalom\nés görgess tovább",
+    "Görgethető csempéző ablakkezelő",
+    "A Calmon görgethető oszlopokba rendezi a Mac ablakait. Csoportosíts ablakokat, rögzíts egy oszlopot, és válts egérrel vagy billentyűzettel."
+  ],
+  "nav": [
+    "lazyapps kezdőlap",
+    "Nyelv választása",
+    "Ugrás a tartalomra"
+  ],
+  "release": [
+    "Ingyenes letöltés",
+    "A béta alatt ingyenes",
+    "Hibát találtál vagy ötleted van? Írj az X-en: @lazyapps. Köszönjük, hogy segítesz jobbá tenni a Calmont.",
+    "macOS 26 vagy újabb"
+  ],
+  "display": [
+    "Hogyan rendezzem el a kijelzőket?",
+    "Helyezd őket egymás fölé. Egymás mellett a közös szélek blokkolják a görgetést; az oszlopváltás itt visszaugrik az elejére. Ha mindkét oldalon van kijelző, a háttérablakok egymásra kerülnek a kijelölt ablak mögött."
+  ],
+  "features": [
+    [
+      "Görgethető oszlopok",
+      "Az ablakok vízszintesen görgethetők. Az aktív oszlop a képernyő nagy részét kitölti. Parancsmódban használd a nyilakat."
+    ],
+    [
+      "Appcsoportok",
+      "Azonos app csempézett ablakai csoportot alkotnak. Kattints a jelölőre vagy nyomj ⌘`-t a váltáshoz. Egy oszlopba három csoport fér."
+    ],
+    [
+      "Rögzített oszlop",
+      "Rögzíts egy oszlopot bal vagy jobb oldalon. A többi ablak mellette görgethető. Parancsmódban a Tab vált fókuszt."
+    ],
+    [
+      "Pin Deck",
+      "Legfeljebb tíz appot rögzíthetsz. A Pin Deck jelével adhatsz hozzá, az ikonmenüvel távolíthatsz el. A sorrend minden kijelzőn azonos."
+    ],
+    [
+      "Sky Deck és Max Deck",
+      "A Sky Deck a lebegő, a Max Deck a natív teljes képernyős ablakokat mutatja. Kattints az ikonra a visszatéréshez."
+    ],
+    [
+      "Ablakok és íróasztalok",
+      "Kattints az íróasztal számára. Parancsmódban írd be az ikon címkéjét. A Shift és 1–9 másik íróasztalra helyezi a kijelölt ablakot."
+    ]
+  ],
+  "keyboard": [
+    "Használd az egeret\nA billentyűket útközben megtanulod",
+    "elrendezéstérképre",
+    "Automatikus panel kikapcsolása: Beállítások → Billentyűzet → Billentyűpanel → Megjelenítés késleltetése → Soha. Az elrendezéstérkép mindig megnyitja a panelt.",
+    "Nyomd meg kétszer a ⌘ billentyűt, majd engedd fel. Amíg az ablak kiemelt, folytathatod a parancsokat. Esc: kilépés.",
+    "Billentyűpanel",
+    "Alapvető billentyűk"
+  ],
+  "mouse": [
+    "Kattints a lapsáv ikonjára az ablak kijelöléséhez.",
+    "Control-kattintással nyílnak meg az ablakműveletek.",
+    "Kattints az elrendezéstérképre a billentyűpanel megnyitásához.",
+    "Kattints egy billentyűre a parancs végrehajtásához."
+  ],
+  "actions": [
+    "Oszlop / ablak kijelölése",
+    "Ablak vagy oszlop mozgatása",
+    "Oszlop összevonása / szétválasztása",
+    "Csatlakozás / kilépés appcsoportból",
+    "Pin Deck-app hozzáadása / eltávolítása",
+    "Íróasztalváltás / ablakmozgatás",
+    "Kilépés a parancsmódból"
+  ],
+  "setup": [
+    "Első lépések",
+    "Alkalmazások",
+    "Kisegítő lehetőségek",
+    "Calmon telepítése",
+    "Calmon letöltése",
+    ". Helyezd az Alkalmazások mappába.",
+    "Kisegítő hozzáférés engedélyezése",
+    "Húzd a Calmont a Kisegítő lehetőségek listájára, és kapcsold be.",
+    "Ablakok megnyitása",
+    "Válassz ablakot a lapsávon. Az elrendezéstérkép megnyitja a billentyűpanelt.",
+    "A Calmonnak nincs Dock-ikonja. A menüsoron találod {icon}."
+  ],
+  "faq": [
+    "Kérdések és válaszok",
+    [
+      "Mely Mac gépek támogatottak?",
+      "Apple-chipes vagy Intel Mac macOS 26 vagy újabb rendszerrel."
+    ],
+    [
+      "Milyen engedély kell?",
+      "Kisegítő hozzáférés az ablakok mozgatásához, átméretezéséhez és kijelöléséhez."
+    ],
+    [
+      "Meg kell tanulnom a gyorsbillentyűket?",
+      "Nem. Minden ablakművelet elvégezhető egérrel. Az elrendezéstérkép megnyitja a billentyűpanelt."
+    ],
+    [
+      "Használhatok trackpadgesztusokat?",
+      "Alapból ki vannak kapcsolva. Engedélyezd a három- vagy négyujjas gesztusokat: Beállítások → Gesztusok. Tartsd a Shiftet a gesztus előtt az eredeti macOS-gesztushoz."
+    ],
+    [
+      "Minden ablak csempézett lesz?",
+      "A normál ablakok igen. A párbeszédek, beállítások és rögzített méretű ablakok lebegnek. Szabályok: Beállítások → Haladó."
+    ],
+    [
+      "Áthelyez ablakokat a Calmon más íróasztalra?",
+      "Csak ha te mozgatod őket. Válts az íróasztalszámokkal vagy parancsmódban. Kilépéskor a Calmon visszaállítja a mentett ablakpozíciókat."
+    ],
+    [
+      "Ingyenes a béta?",
+      "Igen, a béta alatt a Calmon ingyenes."
+    ],
+    [
+      "Hogyan frissítsek?",
+      "Válaszd a Frissítések keresése pontot a Calmon menüben."
+    ]
+  ],
+  "demo": [
+    "Szünet",
+    "Folytatás",
+    "Bemutató újraindítása",
+    "Nyomd meg kétszer a ⌘ billentyűt, majd engedd fel",
+    "Parancsmód · folytasd a billentyűkkel",
+    "macOS-gyorsbillentyű · parancsmód nélkül",
+    "majd",
+    "Engedélyezd a JavaScriptet a bemutatóhoz.",
+    "Parancsmód bezárva"
+  ],
+  "menus": [
+    "Fájl",
+    "Szerkesztés",
+    "Nézet",
+    "Ablak",
+    "Súgó"
+  ],
+  "apps": [
+    "Jegyzetek",
+    "Finder",
+    "Terminál",
+    "Mail",
+    "Naptár",
+    "Zene"
+  ],
+  "windows": [
+    "Calmon-útmutató",
+    "Ezen a héten",
+    "Ötletek",
+    "Projektek",
+    "Webhely",
+    "Bejövő",
+    "Ütemezés",
+    "Most játszott"
+  ],
+  "subtitle": "Görgethető csempés ablakok"
+}

@@ -1,0 +1,156 @@
+{
+  "hero": [
+    "Zachovajte\npokoj a posúvajte ďalej",
+    "Dlaždicový správca okien s posúvaním",
+    "Calmon usporiada okná Macu do posuvných stĺpcov. Zoskupujte okná, pripnite stĺpec a prepínajte myšou alebo klávesnicou."
+  ],
+  "nav": [
+    "Domov lazyapps",
+    "Vybrať jazyk",
+    "Prejsť na obsah"
+  ],
+  "release": [
+    "Stiahnuť zadarmo",
+    "Počas bety zadarmo",
+    "Chyba alebo nápad? Napíšte @lazyapps na X. Ďakujeme, že pomáhate zlepšovať Calmon.",
+    "macOS 26 alebo novší"
+  ],
+  "display": [
+    "Ako usporiadať viac monitorov?",
+    "Umiestnite ich nad seba. Vedľa seba spoločné okraje blokujú posúvanie a prepínanie stĺpcov sa tam vráti na začiatok. Pri monitoroch na oboch stranách sa okná na pozadí prekrývajú za vybraným oknom."
+  ],
+  "features": [
+    [
+      "Posuvné stĺpce",
+      "Okná sa posúvajú vodorovne. Aktívny stĺpec vypĺňa väčšinu obrazovky. V režime príkazov používajte šípky."
+    ],
+    [
+      "Skupiny apiek",
+      "Dlaždicové okná rovnakej apky tvoria skupinu. Prepínajte značkou skupiny alebo ⌘`. Stĺpec pojme až tri skupiny."
+    ],
+    [
+      "Pevný stĺpec",
+      "Pripnite stĺpec na ľavý alebo pravý okraj. Ostatné okná sa posúvajú vedľa. Tab prepína zameranie v režime príkazov."
+    ],
+    [
+      "Pin Deck",
+      "Pripnite až desať apiek. Pridávajte značkou Pin Deck, odoberajte z menu ikony. Poradie je spoločné pre všetky monitory."
+    ],
+    [
+      "Sky Deck a Max Deck",
+      "Sky Deck zobrazuje plávajúce okná, Max Deck natívne okná na celej obrazovke. Kliknutím na ikonu sa vrátite do okna."
+    ],
+    [
+      "Okná a plochy",
+      "Kliknite na číslo plochy. V režime príkazov napíšte štítok ikony. Shift a 1–9 presunú vybrané okno na inú plochu."
+    ]
+  ],
+  "keyboard": [
+    "Používajte myš\nKlávesy sa naučíte postupne",
+    "mapu rozloženia",
+    "Vypnite automatický panel: Nastavenia → Klávesnica → Panel klávesov → Zobraziť po → Nikdy. Mapa rozloženia panel otvorí vždy.",
+    "Dvakrát stlačte ⌘ a uvoľnite. Kým je okno zvýraznené, zadávajte ďalšie príkazy. Esc ukončí režim.",
+    "Panel klávesov",
+    "Základné klávesy"
+  ],
+  "mouse": [
+    "Kliknutím na ikonu v lište tabov vyberte okno.",
+    "Control-kliknutie otvorí akcie okna.",
+    "Kliknutím na mapu rozloženia otvorte panel klávesov.",
+    "Kliknutím na kláves spustite príkaz."
+  ],
+  "actions": [
+    "Vybrať stĺpec / okno",
+    "Presunúť okno alebo stĺpec",
+    "Pripojiť / oddeliť stĺpec",
+    "Pripojiť / opustiť skupinu apky",
+    "Pridať / odobrať apku Pin Deck",
+    "Prepnúť plochu / presunúť okno",
+    "Ukončiť režim príkazov"
+  ],
+  "setup": [
+    "Začíname",
+    "Aplikácie",
+    "Prístupnosť",
+    "Nainštalujte Calmon",
+    "Stiahnuť Calmon",
+    ". Presuňte ho do Aplikácií.",
+    "Povoľte prístupnosť",
+    "Potiahnite Calmon do zoznamu Prístupnosť a zapnite ho.",
+    "Otvorte svoje okná",
+    "Vyberte okno v lište tabov. Mapa rozloženia otvorí panel klávesov.",
+    "Calmon nemá ikonu v Docku. Nájdete ho v lište {icon}."
+  ],
+  "faq": [
+    "Otázky a odpovede",
+    [
+      "Ktoré Macy sú podporované?",
+      "Macy s čipom Apple alebo Intel a macOS 26 alebo novším."
+    ],
+    [
+      "Aké povolenie treba?",
+      "Prístupnosť na presúvanie, zmenu veľkosti a výber okien."
+    ],
+    [
+      "Musím si pamätať skratky?",
+      "Nie. Všetky akcie fungujú myšou. Mapa rozloženia otvorí panel klávesov."
+    ],
+    [
+      "Môžem používať gestá trackpadu?",
+      "Spočiatku sú vypnuté. Zapnite tri alebo štyri prsty v Nastavenia → Gestá. Pred gestom podržte Shift pre pôvodné gesto macOS."
+    ],
+    [
+      "Dlaždicujú sa všetky okná?",
+      "Štandardné áno. Dialógy, nastavenia a okná pevnej veľkosti plávajú. Pravidlá pridajte v Nastavenia → Rozšírené."
+    ],
+    [
+      "Presúva Calmon okná medzi plochami?",
+      "Len keď ich presuniete vy. Prepínajte číslami plôch alebo režimom príkazov. Pri ukončení Calmon obnoví uložené pozície okien."
+    ],
+    [
+      "Je beta zadarmo?",
+      "Áno, počas bety je Calmon zadarmo."
+    ],
+    [
+      "Ako aktualizovať?",
+      "V menu Calmon vyberte Vyhľadať aktualizácie."
+    ]
+  ],
+  "demo": [
+    "Pauza",
+    "Pokračovať",
+    "Spustiť ukážku znova",
+    "Dvakrát stlačte ⌘ a uvoľnite",
+    "Režim príkazov · pokračujte klávesmi",
+    "Skratka macOS · bez režimu príkazov",
+    "potom",
+    "Na ukážku zapnite JavaScript.",
+    "Režim príkazov ukončený"
+  ],
+  "menus": [
+    "Súbor",
+    "Upraviť",
+    "Zobraziť",
+    "Okno",
+    "Pomocník"
+  ],
+  "apps": [
+    "Poznámky",
+    "Finder",
+    "Terminál",
+    "Mail",
+    "Kalendár",
+    "Hudba"
+  ],
+  "windows": [
+    "Sprievodca Calmon",
+    "Tento týždeň",
+    "Nápady",
+    "Projekty",
+    "Web",
+    "Prijaté",
+    "Plán",
+    "Práve hrá"
+  ],
+  "subtitle": "Posuvné dlaždicové okná"
+}

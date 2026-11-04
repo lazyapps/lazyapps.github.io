@@ -1,0 +1,112 @@
+---
+import safari from '$assets/img/calmon-desktop/safari.png?url';
+import notes from '$assets/img/calmon-desktop/notes.png?url';
+import finder from '$assets/img/calmon-desktop/finder.png?url';
+import music from '$assets/img/calmon-desktop/music.png?url';
+import terminal from '$assets/img/calmon-desktop/terminal.png?url';
+import pin from '$assets/img/calmon-onboarding/deck-pin.png?url';
+import sky from '$assets/img/calmon-onboarding/deck-sky.png?url';
+import max from '$assets/img/calmon-onboarding/deck-max.png?url';
+const { index } = Astro.props;
+---
+<div dir="ltr" class:list={['calmon-feature-art', `calmon-feature-art--${index}`]} aria-hidden="true">
+  {index === 0 && <div class="scroll-scene">
+    <div class="scroll-track">
+      {[notes, finder, safari].map((src, column) => <div class:list={['mini-window', {'is-focused': column === 1}]} style={`--column:${column - 1}`}><span class="traffic-lights"><i></i><i></i><i></i></span><img src={src} alt="" /></div>)}
+    </div>
+    <span class="scroll-arrows">←<span></span>→</span>
+  </div>}
+  {index === 1 && <div class="stack-scene">
+    {[0, 1, 2].map(n => <div class:list={['stack-window', {'is-front': n === 2}]} style={`--layer:${n}`}><img src={notes} alt="" />{n === 2 && <div class="note-pages">{[0, 1, 2].map(page => <span style={`--page:${page}`}><i></i><i></i></span>)}</div>}</div>)}
+    <span class="stack-pages">{[0, 1, 2].map(page => <i style={`--page:${page}`}></i>)}</span>
+  </div>}
+  {index === 2 && <div class="pin-scene">
+    <div class="pinned-window"><img src={notes} alt="" /><span class="pin-glyph">⌖</span></div>
+    <div class="pin-workspace"><div class="pin-track"><div class="scrolling-window"><img src={finder} alt="" /><span>↔</span></div><div class="next-window"></div></div></div>
+  </div>}
+  {index === 3 && <div class="deck-scene">
+    <span class="deck-mark"><img src={pin} width="72" height="56" alt="" /></span>
+    {[safari, notes, finder].map(src => <span class="deck-item"><img class="deck-app" src={src} alt="" /></span>)}
+  </div>}
+  {index === 4 && <div class="decks-scene">
+    <div><span class="deck-mark"><img src={sky} width="72" height="56" alt="" /></span><img class="deck-app" src={music} alt="" /><img class="deck-app" src={notes} alt="" /></div>
+    <div><span class="deck-mark"><img src={max} width="72" height="56" alt="" /></span><img class="deck-app" src={terminal} alt="" /><img class="deck-app" src={safari} alt="" /></div>
+  </div>}
+  {index === 5 && <div class="labels-scene">
+    <span class="desktop-number">1</span>
+    <span class="labeled-app" style="--target:0"><img src={safari} alt="" /><span>A</span></span>
+    <span class="labeled-app" style="--target:1"><img src={finder} alt="" /><span>S</span></span>
+    <span class="desktop-number is-next">2</span>
+    <span class="labeled-app" style="--target:2"><img src={notes} alt="" /><span>D</span></span>
+  </div>}
+</div>
+<script>
+  import { observeIllustrationMotion } from '../scripts/calmon-illustration-motion';
+  observeIllustrationMotion('.calmon-feature-art');
+</script>
+<style>
+  .calmon-feature-art{--green:#00ff33;--window-shadow:0 8px 18px -8px #16392930,0 1px 4px #16392910;--motion-ease:cubic-bezier(.4,0,.2,1);position:relative;z-index:1000;isolation:isolate;width:280px;height:140px;margin-bottom:20px;display:flex;align-items:center;justify-content:flex-start;overflow:hidden;max-width:100%}
+  .calmon-feature-art img{display:block;object-fit:contain}
+  .calmon-feature-art--3,.calmon-feature-art--4,.calmon-feature-art--5{justify-content:center}
+  .calmon-feature-art--3::before,.calmon-feature-art--4::before,.calmon-feature-art--5::before{content:'';position:absolute;z-index:-1;inset:0;border-radius:12px;background:#edf2ee;box-shadow:inset 0 0 0 1px #0000000a}
+  .scroll-scene{position:relative;width:100%;height:134px;padding-top:4px}
+  .scroll-track{position:relative;width:100%;height:124px}
+  .mini-window{position:absolute;left:calc(36px + var(--column)*(100% - 64px));display:grid;place-items:center;width:calc(100% - 72px);height:124px;background:linear-gradient(#f0f3f1 20px,#fff 20px);border:1px solid #c7d0ca;border-radius:12px;box-shadow:var(--window-shadow)}
+  .mini-window img{width:44px;height:44px;margin-top:16px}
+  .mini-window.is-focused{border-color:#00cb29;box-shadow:0 0 0 1px var(--green),var(--window-shadow)}
+  .traffic-lights{position:absolute;left:9px;top:8px;display:flex;gap:3px}
+  .traffic-lights i{width:5px;height:5px;border-radius:50%;background:#ff6259}.traffic-lights i:nth-child(2){background:#ffbe2f}.traffic-lights i:nth-child(3){background:#28c840}
+  .scroll-arrows{position:absolute;z-index:1;bottom:10px;pointer-events:none;left:0;right:0;display:flex;justify-content:center;align-items:center;gap:8px;color:#087763;font-size:20px;line-height:20px}
+  .scroll-arrows>span{width:44px;height:1px;background:#08776355}
+  .stack-scene{position:relative;width:100%;height:134px}
+  .stack-window{position:absolute;left:calc(1px + var(--layer)*24px);top:calc(4px + var(--layer)*12px);width:calc(100% - 50px);height:96px;border:1px solid #bbc9c0;border-radius:12px;background:#f4f7f5;box-shadow:var(--window-shadow)}
+  .stack-window img{position:absolute;left:7px;top:8px;width:22px;height:22px}
+  .stack-window.is-front{border-color:#00cb29;background:linear-gradient(#f2f5f3 20px,#fff 20px);box-shadow:0 0 0 1px var(--green),var(--window-shadow)}
+  .stack-window.is-front img{left:50%;top:44%;transform:translate(-50%,-50%);width:36px;height:36px}
+  .note-pages{position:absolute;left:50%;top:66%;width:50px;height:16px;transform:translateX(-50%)}
+  .note-pages>span{position:absolute;inset:0;opacity:0}.note-pages>span:last-child{opacity:1}
+  .note-pages i{display:block;height:2px;background:#cbd6ce;border-radius:1px;margin-bottom:5px}
+  .note-pages i:last-child{width:65%}.note-pages>span:nth-child(2) i:first-child{width:75%}.note-pages>span:nth-child(3) i:last-child{width:85%}
+  .stack-pages{position:absolute;left:60px;top:22px;display:flex;gap:4px}
+  .stack-pages i{width:12px;height:2px;background:#a6b4ac}.stack-pages i:last-child{background:var(--green)}
+  .pin-scene{display:flex;align-items:center;gap:8px;width:100%;height:112px}
+  .pinned-window,.scrolling-window,.next-window{position:relative;display:grid;place-items:center;height:104px;border:1px solid #bbc9c0;border-radius:12px;background:#fff;box-shadow:var(--window-shadow);flex:none}
+  .pinned-window{width:60px;border-inline-start:3px solid #087763;background:#edf6f0}
+  .pinned-window img{width:32px;height:32px}.pin-glyph{position:absolute;right:6px;top:5px;color:#087763;font-size:15px}
+  .pin-workspace{flex:1;min-width:0;height:112px;overflow:hidden;padding-block:4px}
+  .pin-track{display:flex;gap:8px;width:100%}
+  .scrolling-window{width:calc(100% - 28px);min-width:80px;border-color:#00cb29;box-shadow:0 0 0 1px var(--green),var(--window-shadow)}.scrolling-window img{width:44px;height:44px}.scrolling-window>span{position:absolute;bottom:5px;color:#087763;font-size:20px;line-height:20px}
+  .next-window{width:100%;background:#edf2ee}
+  .deck-scene,.labels-scene,.decks-scene>div{display:flex;align-items:center;gap:14px}
+  .deck-scene{width:208px;max-width:100%;gap:6px}
+  .deck-mark{position:relative;width:46px;height:31px;flex:none;overflow:hidden}
+  .deck-mark>img{position:absolute;left:-14px;top:-17px;width:72px;height:56px;max-width:none;image-rendering:pixelated}
+  .deck-app{width:48px;height:48px;flex:none;filter:drop-shadow(0 5px 4px #143b2420)}
+  .deck-item{position:relative}.deck-item::after{content:'';position:absolute;right:5px;bottom:3px;width:7px;height:7px;border:2px solid #123424;border-radius:50%;background:#00ff33}
+  .decks-scene{display:flex;flex-direction:column;gap:8px}
+  .decks-scene>div{gap:14px}
+  .labels-scene{width:208px;max-width:100%;gap:8px}
+  .desktop-number{display:grid;place-items:center;align-self:flex-start;flex:none;margin-top:6px;width:28px;height:30px;color:var(--green);background:#050505;border-radius:6px;font:26px/1 'calmon Pixel',monospace;box-shadow:0 3px 5px #16392918}
+  .labeled-app{position:relative;display:block;padding-bottom:9px}
+  .labeled-app>img{width:40px;height:40px;filter:drop-shadow(0 4px 3px #143b2420)}
+  .labeled-app>span{position:absolute;bottom:0;left:2px;right:2px;text-align:center;background:#050505;color:var(--green);border-radius:3px;font:18px/16px 'calmon Pixel',monospace}
+  .calmon-feature-art.is-active .scroll-track{animation:feature-scroll 8s var(--motion-ease) infinite}
+  .calmon-feature-art.is-active .pin-track{animation:feature-pinned-scroll 8s var(--motion-ease) infinite}
+  .calmon-feature-art.is-active .stack-pages i{animation:feature-stack-tab 9s linear infinite;animation-delay:calc(var(--page)*3s - 6s)}
+  .calmon-feature-art.is-active .note-pages>span{animation:feature-stack-page 9s linear infinite;animation-delay:calc(var(--page)*3s - 6s)}
+  .calmon-feature-art.is-active .deck-item:last-child{animation:feature-pin-app 8s var(--motion-ease) infinite}
+  .calmon-feature-art.is-active .decks-scene .deck-app{animation:feature-deck-entry 8s var(--motion-ease) infinite}
+  .calmon-feature-art.is-active .decks-scene>div:last-child .deck-app{animation-delay:.6s;animation-fill-mode:both}
+  .calmon-feature-art.is-active .labeled-app>span{animation:feature-label 9s linear infinite;animation-delay:calc(var(--target)*3s)}
+  @keyframes feature-scroll{0%,12%,100%{transform:translateX(0)}30%,45%{transform:translateX(-12px)}63%,78%{transform:translateX(12px)}}
+  @keyframes feature-pinned-scroll{0%,12%,100%{transform:translateX(0)}32%,72%{transform:translateX(-12px)}}
+  @keyframes feature-stack-tab{0%,29%{background:var(--green)}34%,100%{background:#a6b4ac}}
+  @keyframes feature-stack-page{0%,27%{opacity:1;transform:translateY(0)}32%,96%{opacity:0;transform:translateY(2px)}100%{opacity:1;transform:translateY(0)}}
+  @keyframes feature-pin-app{0%,10%,100%{opacity:0;transform:translateX(8px)}26%,86%{opacity:1;transform:translateX(0)}}
+  @keyframes feature-deck-entry{0%,10%,100%{opacity:.35;transform:translateX(6px)}26%,86%{opacity:1;transform:translateX(0)}}
+  @keyframes feature-label{0%,27%{background:var(--green);color:#123424}34%,100%{background:#050505;color:var(--green)}}
+  @media(max-width:800px){
+    .calmon-feature-art{margin-bottom:16px}
+  }
+  @media(prefers-reduced-motion:reduce){.calmon-feature-art *{animation:none!important}}
+</style>

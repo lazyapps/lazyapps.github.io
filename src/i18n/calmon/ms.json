@@ -1,0 +1,156 @@
+{
+  "hero": [
+    "Bertenang\ndan teruskan menatal",
+    "Pengurus tetingkap jubin dengan tatalan",
+    "Calmon menyusun tetingkap Mac dalam lajur boleh tatal. Tindankan tetingkap, pin lajur dan beralih dengan tetikus atau papan kekunci."
+  ],
+  "nav": [
+    "Laman utama lazyapps",
+    "Pilih bahasa",
+    "Ke kandungan"
+  ],
+  "release": [
+    "Muat turun percuma",
+    "Percuma sepanjang beta",
+    "Menemui pepijat atau ada idea? Hubungi @lazyapps di X. Terima kasih kerana membantu menambah baik Calmon.",
+    "macOS 26 atau lebih baharu"
+  ],
+  "display": [
+    "Bagaimana menyusun berbilang paparan?",
+    "Susun paparan secara menegak. Apabila bersebelahan, tepi bersama menyekat tatalan dan pertukaran lajur berulang dari awal di situ. Dengan paparan di kedua-dua sisi, tetingkap latar bertindih di belakang tetingkap dipilih."
+  ],
+  "features": [
+    [
+      "Tatal lajur",
+      "Tetingkap menatal secara mendatar. Lajur aktif memenuhi kebanyakan skrin. Gunakan kekunci anak panah dalam mod perintah."
+    ],
+    [
+      "Tindanan app",
+      "Tetingkap jubin daripada app sama membentuk tindanan. Klik penanda tindanan atau tekan ⌘` untuk beralih. Satu lajur memuatkan hingga tiga tindanan."
+    ],
+    [
+      "Lajur tetap",
+      "Pin lajur pada tepi kiri atau kanan. Tetingkap lain menatal di sebelahnya. Tab menukar fokus dalam mod perintah."
+    ],
+    [
+      "Pin Deck",
+      "Pin hingga sepuluh app. Tambah melalui tanda Pin Deck, alih keluar melalui menu ikon. Susunannya sama pada semua paparan."
+    ],
+    [
+      "Sky Deck & Max Deck",
+      "Sky Deck menyenaraikan tetingkap terapung, Max Deck tetingkap skrin penuh asli macOS. Klik ikon untuk kembali ke tetingkap."
+    ],
+    [
+      "Tetingkap & desktop",
+      "Klik nombor desktop. Dalam mod perintah, taip label ikon. Shift dan 1–9 mengalihkan tetingkap dipilih ke desktop lain."
+    ]
+  ],
+  "keyboard": [
+    "Gunakan tetikus\nPelajari kekunci sambil menggunakan",
+    "peta susun atur",
+    "Matikan panel automatik: Seting → Papan Kekunci → Panel Kekunci → Tunjukkan selepas → Jangan. Peta susun atur sentiasa membuka panel.",
+    "Tekan ⌘ dua kali dan lepaskan. Semasa tetingkap diserlahkan, teruskan menggunakan perintah. Esc keluar daripada mod.",
+    "Panel kekunci",
+    "Kekunci penting"
+  ],
+  "mouse": [
+    "Klik ikon pada bar tab untuk memilih tetingkap.",
+    "Control-klik membuka tindakan tetingkap.",
+    "Klik peta susun atur untuk membuka panel kekunci.",
+    "Klik kekunci untuk menjalankan perintahnya."
+  ],
+  "actions": [
+    "Pilih lajur / tetingkap",
+    "Alih tetingkap atau lajur",
+    "Gabung / pisahkan lajur",
+    "Sertai / tinggalkan tindanan app",
+    "Tambah / alih keluar app Pin Deck",
+    "Tukar desktop / alih tetingkap",
+    "Keluar daripada mod perintah"
+  ],
+  "setup": [
+    "Bermula",
+    "Aplikasi",
+    "Kebolehcapaian",
+    "Pasang Calmon",
+    "Muat turun Calmon",
+    ". Alihkan ke Aplikasi.",
+    "Benarkan kebolehcapaian",
+    "Seret Calmon ke senarai Kebolehcapaian, kemudian aktifkannya.",
+    "Buka tetingkap anda",
+    "Pilih tetingkap pada bar tab. Peta susun atur membuka panel kekunci.",
+    "Calmon tiada ikon dalam Dock. Carinya pada bar menu {icon}."
+  ],
+  "faq": [
+    "Soalan dan jawapan",
+    [
+      "Mac manakah yang disokong?",
+      "Mac dengan cip Apple atau Intel dan macOS 26 atau lebih baharu."
+    ],
+    [
+      "Apakah kebenaran yang diperlukan?",
+      "Kebolehcapaian untuk mengalih, mengubah saiz dan memilih tetingkap."
+    ],
+    [
+      "Perlukah menghafal pintasan?",
+      "Tidak. Semua tindakan boleh dilakukan dengan tetikus. Peta susun atur membuka panel kekunci."
+    ],
+    [
+      "Bolehkah menggunakan leretan pad jejak?",
+      "Dimatikan pada mulanya. Aktifkan tiga atau empat jari dalam Seting → Gerak Isyarat. Tahan Shift sebelum meleret untuk menggunakan gerak isyarat asal macOS."
+    ],
+    [
+      "Adakah semua tetingkap dijubin?",
+      "Tetingkap biasa dijubin. Dialog, seting dan tetingkap saiz tetap terapung. Tambah peraturan dalam Seting → Lanjutan."
+    ],
+    [
+      "Adakah Calmon mengalih tetingkap antara desktop?",
+      "Hanya apabila anda mengalihkannya. Tukar melalui nombor desktop atau mod perintah. Apabila keluar, Calmon memulihkan kedudukan tersimpan."
+    ],
+    [
+      "Adakah beta percuma?",
+      "Ya, Calmon percuma sepanjang beta."
+    ],
+    [
+      "Bagaimana mengemas kini?",
+      "Pilih Semak Kemas Kini dalam menu Calmon."
+    ]
+  ],
+  "demo": [
+    "Jeda",
+    "Teruskan",
+    "Mulakan semula demo",
+    "Tekan ⌘ dua kali dan lepaskan",
+    "Mod perintah · teruskan dengan kekunci",
+    "Pintasan macOS · tanpa mod perintah",
+    "kemudian",
+    "Aktifkan JavaScript untuk memainkan demo.",
+    "Mod perintah ditamatkan"
+  ],
+  "menus": [
+    "Fail",
+    "Edit",
+    "Paparan",
+    "Tetingkap",
+    "Bantuan"
+  ],
+  "apps": [
+    "Nota",
+    "Finder",
+    "Terminal",
+    "Mail",
+    "Kalendar",
+    "Muzik"
+  ],
+  "windows": [
+    "Panduan Calmon",
+    "Minggu ini",
+    "Idea",
+    "Projek",
+    "Laman web",
+    "Peti masuk",
+    "Jadual",
+    "Sedang dimainkan"
+  ],
+  "subtitle": "Tetingkap jubin boleh tatal"
+}

@@ -1,0 +1,1558 @@
+{
+  "main": {
+    "height": 342,
+    "regions": [
+      {
+        "action": "previous",
+        "label": "Column ←",
+        "rect": [
+          232,
+          39,
+          30,
+          21
+        ],
+        "row": 0,
+        "section": 0,
+        "title": false
+      },
+      {
+        "action": "next",
+        "label": "Column →",
+        "rect": [
+          265,
+          39,
+          30,
+          21
+        ],
+        "row": 0,
+        "section": 0,
+        "title": false
+      },
+      {
+        "action": "up",
+        "label": "Window ↑",
+        "rect": [
+          232,
+          66,
+          30,
+          21
+        ],
+        "row": 1,
+        "section": 0,
+        "title": false
+      },
+      {
+        "action": "down",
+        "label": "Window ↓",
+        "rect": [
+          265,
+          66,
+          30,
+          21
+        ],
+        "row": 1,
+        "section": 0,
+        "title": false
+      },
+      {
+        "action": "desktops",
+        "label": "Desktop 1–9",
+        "rect": [
+          256,
+          93,
+          39,
+          21
+        ],
+        "row": 2,
+        "section": 0,
+        "title": false
+      },
+      {
+        "action": "desktops",
+        "label": "Desktop Desktop",
+        "rect": [
+          12,
+          93,
+          63,
+          21
+        ],
+        "row": 2,
+        "section": 0,
+        "title": true
+      },
+      {
+        "action": "consume-left",
+        "label": "Move Into or Out ,",
+        "rect": [
+          232,
+          147,
+          30,
+          21
+        ],
+        "row": 0,
+        "section": 1,
+        "title": false
+      },
+      {
+        "action": "consume-right",
+        "label": "Move Into or Out .",
+        "rect": [
+          265,
+          147,
+          30,
+          21
+        ],
+        "row": 0,
+        "section": 1,
+        "title": false
+      },
+      {
+        "action": "shrink",
+        "label": "Width -",
+        "rect": [
+          232,
+          174,
+          30,
+          21
+        ],
+        "row": 1,
+        "section": 1,
+        "title": false
+      },
+      {
+        "action": "grow",
+        "label": "Width =",
+        "rect": [
+          265,
+          174,
+          30,
+          21
+        ],
+        "row": 1,
+        "section": 1,
+        "title": false
+      },
+      {
+        "action": "height-shrink",
+        "label": "Height [",
+        "rect": [
+          232,
+          201,
+          30,
+          21
+        ],
+        "row": 2,
+        "section": 1,
+        "title": false
+      },
+      {
+        "action": "height-grow",
+        "label": "Height ]",
+        "rect": [
+          265,
+          201,
+          30,
+          21
+        ],
+        "row": 2,
+        "section": 1,
+        "title": false
+      },
+      {
+        "action": "focus-pin",
+        "label": "Focus Pinned ⇥",
+        "rect": [
+          256,
+          228,
+          39,
+          21
+        ],
+        "row": 3,
+        "section": 1,
+        "title": false
+      },
+      {
+        "action": "focus-pin",
+        "label": "Focus Pinned Focus Pinned",
+        "rect": [
+          12,
+          228,
+          108,
+          21
+        ],
+        "row": 3,
+        "section": 1,
+        "title": true
+      },
+      {
+        "action": "label:A",
+        "label": "Go to Window a",
+        "rect": [
+          166,
+          282,
+          30,
+          21
+        ],
+        "row": 0,
+        "section": 2,
+        "title": false
+      },
+      {
+        "action": "label:S",
+        "label": "Go to Window s",
+        "rect": [
+          199,
+          282,
+          30,
+          21
+        ],
+        "row": 0,
+        "section": 2,
+        "title": false
+      },
+      {
+        "action": "label:D",
+        "label": "Go to Window d",
+        "rect": [
+          232,
+          282,
+          30,
+          21
+        ],
+        "row": 0,
+        "section": 2,
+        "title": false
+      },
+      {
+        "action": "labels",
+        "label": "Go to Window …",
+        "rect": [
+          265,
+          282,
+          30,
+          21
+        ],
+        "row": 0,
+        "section": 2,
+        "title": false
+      },
+      {
+        "action": "bring-label:A",
+        "label": "Bring Below a",
+        "rect": [
+          232,
+          309,
+          30,
+          21
+        ],
+        "row": 1,
+        "section": 2,
+        "title": false
+      },
+      {
+        "action": "bring",
+        "label": "Bring Below …",
+        "rect": [
+          265,
+          309,
+          30,
+          21
+        ],
+        "row": 1,
+        "section": 2,
+        "title": false
+      },
+      {
+        "action": "float",
+        "label": "Float or Tile f",
+        "rect": [
+          580,
+          39,
+          30,
+          21
+        ],
+        "row": 0,
+        "section": 3,
+        "title": false
+      },
+      {
+        "action": "float",
+        "label": "Float or Tile Float or Tile",
+        "rect": [
+          327,
+          39,
+          117,
+          21
+        ],
+        "row": 0,
+        "section": 3,
+        "title": true
+      },
+      {
+        "action": "full",
+        "label": "Full Screen s",
+        "rect": [
+          580,
+          66,
+          30,
+          21
+        ],
+        "row": 1,
+        "section": 3,
+        "title": false
+      },
+      {
+        "action": "full",
+        "label": "Full Screen Full Screen",
+        "rect": [
+          327,
+          66,
+          99,
+          21
+        ],
+        "row": 1,
+        "section": 3,
+        "title": true
+      },
+      {
+        "action": "pin",
+        "label": "Pin or Unpin p",
+        "rect": [
+          580,
+          93,
+          30,
+          21
+        ],
+        "row": 2,
+        "section": 3,
+        "title": false
+      },
+      {
+        "action": "pin",
+        "label": "Pin or Unpin Pin or Unpin",
+        "rect": [
+          327,
+          93,
+          108,
+          21
+        ],
+        "row": 2,
+        "section": 3,
+        "title": true
+      },
+      {
+        "action": "join-stack",
+        "label": "Join/Leave App Stack j",
+        "rect": [
+          535,
+          120,
+          30,
+          21
+        ],
+        "row": 3,
+        "section": 3,
+        "title": false
+      },
+      {
+        "action": "leave-stack",
+        "label": "Join/Leave App Stack x",
+        "rect": [
+          580,
+          120,
+          30,
+          21
+        ],
+        "row": 3,
+        "section": 3,
+        "title": false
+      },
+      {
+        "action": "add-pin",
+        "label": "Add/Remove Pin Deck a",
+        "rect": [
+          535,
+          147,
+          30,
+          21
+        ],
+        "row": 4,
+        "section": 3,
+        "title": false
+      },
+      {
+        "action": "remove-pin",
+        "label": "Add/Remove Pin Deck r",
+        "rect": [
+          580,
+          147,
+          30,
+          21
+        ],
+        "row": 4,
+        "section": 3,
+        "title": false
+      },
+      {
+        "action": "tile-all",
+        "label": "Tile All t",
+        "rect": [
+          580,
+          174,
+          30,
+          21
+        ],
+        "row": 5,
+        "section": 3,
+        "title": false
+      },
+      {
+        "action": "tile-all",
+        "label": "Tile All Tile All",
+        "rect": [
+          327,
+          174,
+          72,
+          21
+        ],
+        "row": 5,
+        "section": 3,
+        "title": true
+      },
+      {
+        "action": "new-desktop",
+        "label": "New/Delete Desktop n",
+        "rect": [
+          535,
+          201,
+          30,
+          21
+        ],
+        "row": 6,
+        "section": 3,
+        "title": false
+      },
+      {
+        "action": "delete-desktop",
+        "label": "New/Delete Desktop d",
+        "rect": [
+          580,
+          201,
+          30,
+          21
+        ],
+        "row": 6,
+        "section": 3,
+        "title": false
+      },
+      {
+        "action": "send-menu",
+        "label": "All to Desktop m",
+        "rect": [
+          538,
+          228,
+          30,
+          21
+        ],
+        "row": 7,
+        "section": 3,
+        "title": false
+      },
+      {
+        "action": "send-menu",
+        "label": "All to Desktop 1–9",
+        "rect": [
+          571,
+          228,
+          39,
+          21
+        ],
+        "row": 7,
+        "section": 3,
+        "title": false
+      },
+      {
+        "action": "send-menu",
+        "label": "All to Desktop All to Desktop",
+        "rect": [
+          327,
+          228,
+          126,
+          21
+        ],
+        "row": 7,
+        "section": 3,
+        "title": true
+      },
+      {
+        "action": "settings",
+        "label": "Settings ,",
+        "rect": [
+          580,
+          282,
+          30,
+          21
+        ],
+        "row": 0,
+        "section": 4,
+        "title": false
+      },
+      {
+        "action": "settings",
+        "label": "Settings Settings",
+        "rect": [
+          327,
+          282,
+          72,
+          21
+        ],
+        "row": 0,
+        "section": 4,
+        "title": true
+      },
+      {
+        "action": "escape",
+        "label": "Exit esc",
+        "rect": [
+          571,
+          309,
+          39,
+          21
+        ],
+        "row": 1,
+        "section": 4,
+        "title": false
+      },
+      {
+        "action": "escape",
+        "label": "Exit Exit",
+        "rect": [
+          327,
+          309,
+          36,
+          21
+        ],
+        "row": 1,
+        "section": 4,
+        "title": true
+      }
+    ],
+    "width": 622,
+    "rows": [
+      {
+        "section": 0,
+        "row": 0,
+        "rect": [
+          12,
+          39,
+          210,
+          21
+        ]
+      },
+      {
+        "section": 0,
+        "row": 1,
+        "rect": [
+          12,
+          66,
+          210,
+          21
+        ]
+      },
+      {
+        "section": 0,
+        "row": 2,
+        "rect": [
+          12,
+          93,
+          234,
+          21
+        ]
+      },
+      {
+        "section": 1,
+        "row": 0,
+        "rect": [
+          12,
+          147,
+          210,
+          21
+        ]
+      },
+      {
+        "section": 1,
+        "row": 1,
+        "rect": [
+          12,
+          174,
+          210,
+          21
+        ]
+      },
+      {
+        "section": 1,
+        "row": 2,
+        "rect": [
+          12,
+          201,
+          210,
+          21
+        ]
+      },
+      {
+        "section": 1,
+        "row": 3,
+        "rect": [
+          12,
+          228,
+          234,
+          21
+        ]
+      },
+      {
+        "section": 2,
+        "row": 0,
+        "rect": [
+          12,
+          282,
+          144,
+          21
+        ]
+      },
+      {
+        "section": 2,
+        "row": 1,
+        "rect": [
+          12,
+          309,
+          210,
+          21
+        ]
+      },
+      {
+        "section": 3,
+        "row": 0,
+        "rect": [
+          327,
+          39,
+          243,
+          21
+        ]
+      },
+      {
+        "section": 3,
+        "row": 1,
+        "rect": [
+          327,
+          66,
+          243,
+          21
+        ]
+      },
+      {
+        "section": 3,
+        "row": 2,
+        "rect": [
+          327,
+          93,
+          243,
+          21
+        ]
+      },
+      {
+        "section": 3,
+        "row": 3,
+        "rect": [
+          327,
+          120,
+          198,
+          21
+        ]
+      },
+      {
+        "section": 3,
+        "row": 4,
+        "rect": [
+          327,
+          147,
+          198,
+          21
+        ]
+      },
+      {
+        "section": 3,
+        "row": 5,
+        "rect": [
+          327,
+          174,
+          243,
+          21
+        ]
+      },
+      {
+        "section": 3,
+        "row": 6,
+        "rect": [
+          327,
+          201,
+          198,
+          21
+        ]
+      },
+      {
+        "section": 3,
+        "row": 7,
+        "rect": [
+          327,
+          228,
+          201,
+          21
+        ]
+      },
+      {
+        "section": 4,
+        "row": 0,
+        "rect": [
+          327,
+          282,
+          243,
+          21
+        ]
+      },
+      {
+        "section": 4,
+        "row": 1,
+        "rect": [
+          327,
+          309,
+          234,
+          21
+        ]
+      }
+    ],
+    "headers": [
+      {
+        "section": 0,
+        "rect": [
+          12,
+          12,
+          283,
+          21
+        ]
+      },
+      {
+        "section": 1,
+        "rect": [
+          12,
+          120,
+          283,
+          21
+        ]
+      },
+      {
+        "section": 2,
+        "rect": [
+          12,
+          255,
+          283,
+          21
+        ]
+      },
+      {
+        "section": 3,
+        "rect": [
+          327,
+          12,
+          283,
+          21
+        ]
+      },
+      {
+        "section": 4,
+        "rect": [
+          327,
+          255,
+          283,
+          21
+        ]
+      }
+    ]
+  },
+  "space": {
+    "height": 342,
+    "regions": [
+      {
+        "action": "previous",
+        "label": "Column ←",
+        "rect": [
+          232,
+          39,
+          30,
+          21
+        ],
+        "row": 0,
+        "section": 0,
+        "title": false
+      },
+      {
+        "action": "next",
+        "label": "Column →",
+        "rect": [
+          265,
+          39,
+          30,
+          21
+        ],
+        "row": 0,
+        "section": 0,
+        "title": false
+      },
+      {
+        "action": "up",
+        "label": "Window ↑",
+        "rect": [
+          232,
+          66,
+          30,
+          21
+        ],
+        "row": 1,
+        "section": 0,
+        "title": false
+      },
+      {
+        "action": "down",
+        "label": "Window ↓",
+        "rect": [
+          265,
+          66,
+          30,
+          21
+        ],
+        "row": 1,
+        "section": 0,
+        "title": false
+      },
+      {
+        "action": "desktops",
+        "label": "Desktop 1–9",
+        "rect": [
+          256,
+          93,
+          39,
+          21
+        ],
+        "row": 2,
+        "section": 0,
+        "title": false
+      },
+      {
+        "action": "desktops",
+        "label": "Desktop Desktop",
+        "rect": [
+          12,
+          93,
+          63,
+          21
+        ],
+        "row": 2,
+        "section": 0,
+        "title": true
+      },
+      {
+        "action": "consume-left",
+        "label": "Move Into or Out ,",
+        "rect": [
+          232,
+          147,
+          30,
+          21
+        ],
+        "row": 0,
+        "section": 1,
+        "title": false
+      },
+      {
+        "action": "consume-right",
+        "label": "Move Into or Out .",
+        "rect": [
+          265,
+          147,
+          30,
+          21
+        ],
+        "row": 0,
+        "section": 1,
+        "title": false
+      },
+      {
+        "action": "shrink",
+        "label": "Width -",
+        "rect": [
+          232,
+          174,
+          30,
+          21
+        ],
+        "row": 1,
+        "section": 1,
+        "title": false
+      },
+      {
+        "action": "grow",
+        "label": "Width =",
+        "rect": [
+          265,
+          174,
+          30,
+          21
+        ],
+        "row": 1,
+        "section": 1,
+        "title": false
+      },
+      {
+        "action": "height-shrink",
+        "label": "Height [",
+        "rect": [
+          232,
+          201,
+          30,
+          21
+        ],
+        "row": 2,
+        "section": 1,
+        "title": false
+      },
+      {
+        "action": "height-grow",
+        "label": "Height ]",
+        "rect": [
+          265,
+          201,
+          30,
+          21
+        ],
+        "row": 2,
+        "section": 1,
+        "title": false
+      },
+      {
+        "action": "focus-pin",
+        "label": "Focus Pinned ⇥",
+        "rect": [
+          256,
+          228,
+          39,
+          21
+        ],
+        "row": 3,
+        "section": 1,
+        "title": false
+      },
+      {
+        "action": "focus-pin",
+        "label": "Focus Pinned Focus Pinned",
+        "rect": [
+          12,
+          228,
+          108,
+          21
+        ],
+        "row": 3,
+        "section": 1,
+        "title": true
+      },
+      {
+        "action": "label:A",
+        "label": "Go to Window a",
+        "rect": [
+          166,
+          282,
+          30,
+          21
+        ],
+        "row": 0,
+        "section": 2,
+        "title": false
+      },
+      {
+        "action": "label:S",
+        "label": "Go to Window s",
+        "rect": [
+          199,
+          282,
+          30,
+          21
+        ],
+        "row": 0,
+        "section": 2,
+        "title": false
+      },
+      {
+        "action": "label:D",
+        "label": "Go to Window d",
+        "rect": [
+          232,
+          282,
+          30,
+          21
+        ],
+        "row": 0,
+        "section": 2,
+        "title": false
+      },
+      {
+        "action": "labels",
+        "label": "Go to Window …",
+        "rect": [
+          265,
+          282,
+          30,
+          21
+        ],
+        "row": 0,
+        "section": 2,
+        "title": false
+      },
+      {
+        "action": "bring-label:A",
+        "label": "Bring Below a",
+        "rect": [
+          232,
+          309,
+          30,
+          21
+        ],
+        "row": 1,
+        "section": 2,
+        "title": false
+      },
+      {
+        "action": "bring",
+        "label": "Bring Below …",
+        "rect": [
+          265,
+          309,
+          30,
+          21
+        ],
+        "row": 1,
+        "section": 2,
+        "title": false
+      },
+      {
+        "action": "float",
+        "label": "Float or Tile f",
+        "rect": [
+          580,
+          39,
+          30,
+          21
+        ],
+        "row": 0,
+        "section": 3,
+        "title": false
+      },
+      {
+        "action": "float",
+        "label": "Float or Tile Float or Tile",
+        "rect": [
+          327,
+          39,
+          117,
+          21
+        ],
+        "row": 0,
+        "section": 3,
+        "title": true
+      },
+      {
+        "action": "full",
+        "label": "Full Screen s",
+        "rect": [
+          580,
+          66,
+          30,
+          21
+        ],
+        "row": 1,
+        "section": 3,
+        "title": false
+      },
+      {
+        "action": "full",
+        "label": "Full Screen Full Screen",
+        "rect": [
+          327,
+          66,
+          99,
+          21
+        ],
+        "row": 1,
+        "section": 3,
+        "title": true
+      },
+      {
+        "action": "pin",
+        "label": "Pin or Unpin p",
+        "rect": [
+          580,
+          93,
+          30,
+          21
+        ],
+        "row": 2,
+        "section": 3,
+        "title": false
+      },
+      {
+        "action": "pin",
+        "label": "Pin or Unpin Pin or Unpin",
+        "rect": [
+          327,
+          93,
+          108,
+          21
+        ],
+        "row": 2,
+        "section": 3,
+        "title": true
+      },
+      {
+        "action": "join-stack",
+        "label": "Join/Leave App Stack j",
+        "rect": [
+          535,
+          120,
+          30,
+          21
+        ],
+        "row": 3,
+        "section": 3,
+        "title": false
+      },
+      {
+        "action": "leave-stack",
+        "label": "Join/Leave App Stack x",
+        "rect": [
+          580,
+          120,
+          30,
+          21
+        ],
+        "row": 3,
+        "section": 3,
+        "title": false
+      },
+      {
+        "action": "add-pin",
+        "label": "Add/Remove Pin Deck a",
+        "rect": [
+          535,
+          147,
+          30,
+          21
+        ],
+        "row": 4,
+        "section": 3,
+        "title": false
+      },
+      {
+        "action": "remove-pin",
+        "label": "Add/Remove Pin Deck r",
+        "rect": [
+          580,
+          147,
+          30,
+          21
+        ],
+        "row": 4,
+        "section": 3,
+        "title": false
+      },
+      {
+        "action": "tile-all",
+        "label": "Tile All t",
+        "rect": [
+          580,
+          174,
+          30,
+          21
+        ],
+        "row": 5,
+        "section": 3,
+        "title": false
+      },
+      {
+        "action": "tile-all",
+        "label": "Tile All Tile All",
+        "rect": [
+          327,
+          174,
+          72,
+          21
+        ],
+        "row": 5,
+        "section": 3,
+        "title": true
+      },
+      {
+        "action": "new-desktop",
+        "label": "New/Delete Desktop n",
+        "rect": [
+          535,
+          201,
+          30,
+          21
+        ],
+        "row": 6,
+        "section": 3,
+        "title": false
+      },
+      {
+        "action": "delete-desktop",
+        "label": "New/Delete Desktop d",
+        "rect": [
+          580,
+          201,
+          30,
+          21
+        ],
+        "row": 6,
+        "section": 3,
+        "title": false
+      },
+      {
+        "action": "send-menu",
+        "label": "All to Desktop m",
+        "rect": [
+          538,
+          228,
+          30,
+          21
+        ],
+        "row": 7,
+        "section": 3,
+        "title": false
+      },
+      {
+        "action": "send-menu",
+        "label": "All to Desktop 1–9",
+        "rect": [
+          571,
+          228,
+          39,
+          21
+        ],
+        "row": 7,
+        "section": 3,
+        "title": false
+      },
+      {
+        "action": "send-menu",
+        "label": "All to Desktop All to Desktop",
+        "rect": [
+          327,
+          228,
+          126,
+          21
+        ],
+        "row": 7,
+        "section": 3,
+        "title": true
+      },
+      {
+        "action": "settings",
+        "label": "Settings ,",
+        "rect": [
+          580,
+          282,
+          30,
+          21
+        ],
+        "row": 0,
+        "section": 4,
+        "title": false
+      },
+      {
+        "action": "settings",
+        "label": "Settings Settings",
+        "rect": [
+          327,
+          282,
+          72,
+          21
+        ],
+        "row": 0,
+        "section": 4,
+        "title": true
+      },
+      {
+        "action": "escape",
+        "label": "Back esc",
+        "rect": [
+          571,
+          309,
+          39,
+          21
+        ],
+        "row": 1,
+        "section": 4,
+        "title": false
+      },
+      {
+        "action": "escape",
+        "label": "Back Back",
+        "rect": [
+          327,
+          309,
+          36,
+          21
+        ],
+        "row": 1,
+        "section": 4,
+        "title": true
+      }
+    ],
+    "width": 622,
+    "rows": [
+      {
+        "section": 0,
+        "row": 0,
+        "rect": [
+          12,
+          39,
+          210,
+          21
+        ]
+      },
+      {
+        "section": 0,
+        "row": 1,
+        "rect": [
+          12,
+          66,
+          210,
+          21
+        ]
+      },
+      {
+        "section": 0,
+        "row": 2,
+        "rect": [
+          12,
+          93,
+          234,
+          21
+        ]
+      },
+      {
+        "section": 1,
+        "row": 0,
+        "rect": [
+          12,
+          147,
+          210,
+          21
+        ]
+      },
+      {
+        "section": 1,
+        "row": 1,
+        "rect": [
+          12,
+          174,
+          210,
+          21
+        ]
+      },
+      {
+        "section": 1,
+        "row": 2,
+        "rect": [
+          12,
+          201,
+          210,
+          21
+        ]
+      },
+      {
+        "section": 1,
+        "row": 3,
+        "rect": [
+          12,
+          228,
+          234,
+          21
+        ]
+      },
+      {
+        "section": 2,
+        "row": 0,
+        "rect": [
+          12,
+          282,
+          144,
+          21
+        ]
+      },
+      {
+        "section": 2,
+        "row": 1,
+        "rect": [
+          12,
+          309,
+          210,
+          21
+        ]
+      },
+      {
+        "section": 3,
+        "row": 0,
+        "rect": [
+          327,
+          39,
+          243,
+          21
+        ]
+      },
+      {
+        "section": 3,
+        "row": 1,
+        "rect": [
+          327,
+          66,
+          243,
+          21
+        ]
+      },
+      {
+        "section": 3,
+        "row": 2,
+        "rect": [
+          327,
+          93,
+          243,
+          21
+        ]
+      },
+      {
+        "section": 3,
+        "row": 3,
+        "rect": [
+          327,
+          120,
+          198,
+          21
+        ]
+      },
+      {
+        "section": 3,
+        "row": 4,
+        "rect": [
+          327,
+          147,
+          198,
+          21
+        ]
+      },
+      {
+        "section": 3,
+        "row": 5,
+        "rect": [
+          327,
+          174,
+          243,
+          21
+        ]
+      },
+      {
+        "section": 3,
+        "row": 6,
+        "rect": [
+          327,
+          201,
+          198,
+          21
+        ]
+      },
+      {
+        "section": 3,
+        "row": 7,
+        "rect": [
+          327,
+          228,
+          201,
+          21
+        ]
+      },
+      {
+        "section": 4,
+        "row": 0,
+        "rect": [
+          327,
+          282,
+          243,
+          21
+        ]
+      },
+      {
+        "section": 4,
+        "row": 1,
+        "rect": [
+          327,
+          309,
+          234,
+          21
+        ]
+      }
+    ],
+    "headers": [
+      {
+        "section": 0,
+        "rect": [
+          12,
+          12,
+          283,
+          21
+        ]
+      },
+      {
+        "section": 1,
+        "rect": [
+          12,
+          120,
+          283,
+          21
+        ]
+      },
+      {
+        "section": 2,
+        "rect": [
+          12,
+          255,
+          283,
+          21
+        ]
+      },
+      {
+        "section": 3,
+        "rect": [
+          327,
+          12,
+          283,
+          21
+        ]
+      },
+      {
+        "section": 4,
+        "rect": [
+          327,
+          255,
+          283,
+          21
+        ]
+      }
+    ]
+  }
+}

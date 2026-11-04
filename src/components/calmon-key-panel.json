@@ -1,0 +1,6044 @@
+{
+  "en": [
+    {
+      "title": "Focus · ⇧ Move",
+      "rows": [
+        {
+          "title": "Column",
+          "keys": [
+            "←",
+            "→"
+          ]
+        },
+        {
+          "title": "Window",
+          "keys": [
+            "↑",
+            "↓"
+          ]
+        },
+        {
+          "title": "Desktop",
+          "keys": [
+            "1–9"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Column",
+      "rows": [
+        {
+          "title": "Move Into or Out",
+          "keys": [
+            ",",
+            "."
+          ]
+        },
+        {
+          "title": "Width",
+          "keys": [
+            "-",
+            "="
+          ]
+        },
+        {
+          "title": "Height",
+          "keys": [
+            "[",
+            "]"
+          ]
+        },
+        {
+          "title": "Focus Pinned",
+          "keys": [
+            "TAB"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Labels",
+      "rows": [
+        {
+          "title": "Go to Window",
+          "keys": [
+            "A",
+            "S",
+            "D",
+            "…"
+          ]
+        },
+        {
+          "title": "Bring Below",
+          "keys": [
+            "⇧",
+            "A",
+            "…"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Space Then",
+      "rows": [
+        {
+          "title": "Float or Tile",
+          "keys": [
+            "F"
+          ]
+        },
+        {
+          "title": "Full Screen",
+          "keys": [
+            "S"
+          ]
+        },
+        {
+          "title": "Pin or Unpin",
+          "keys": [
+            "P"
+          ]
+        },
+        {
+          "title": "Join/Leave App Stack",
+          "keys": [
+            "J",
+            "/",
+            "X"
+          ]
+        },
+        {
+          "title": "Add/Remove Pin Deck",
+          "keys": [
+            "A",
+            "/",
+            "R"
+          ]
+        },
+        {
+          "title": "Tile All",
+          "keys": [
+            "T"
+          ]
+        },
+        {
+          "title": "New/Delete Desktop",
+          "keys": [
+            "N",
+            "/",
+            "D"
+          ]
+        },
+        {
+          "title": "All to Desktop",
+          "keys": [
+            "M",
+            "1–9"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Actions",
+      "rows": [
+        {
+          "title": "Settings",
+          "keys": [
+            "CMD",
+            ","
+          ]
+        },
+        {
+          "title": "Exit",
+          "keys": [
+            "ESC"
+          ]
+        }
+      ]
+    }
+  ],
+  "ar": [
+    {
+      "title": "تنشيط · ⇧ نقل",
+      "rows": [
+        {
+          "title": "عمود",
+          "keys": [
+            "←",
+            "→"
+          ]
+        },
+        {
+          "title": "نافذة",
+          "keys": [
+            "↑",
+            "↓"
+          ]
+        },
+        {
+          "title": "سطح المكتب",
+          "keys": [
+            "1–9"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "عمود",
+      "rows": [
+        {
+          "title": "نقل إلى العمود أو خارجه",
+          "keys": [
+            ",",
+            "."
+          ]
+        },
+        {
+          "title": "العرض",
+          "keys": [
+            "-",
+            "="
+          ]
+        },
+        {
+          "title": "الارتفاع",
+          "keys": [
+            "[",
+            "]"
+          ]
+        },
+        {
+          "title": "تنشيط العمود المثبّت",
+          "keys": [
+            "TAB"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "التسميات",
+      "rows": [
+        {
+          "title": "الانتقال إلى نافذة",
+          "keys": [
+            "A",
+            "S",
+            "D",
+            "…"
+          ]
+        },
+        {
+          "title": "إحضار إلى الأسفل",
+          "keys": [
+            "⇧",
+            "A",
+            "…"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "بعد المسافة",
+      "rows": [
+        {
+          "title": "تعويم أو تجانب",
+          "keys": [
+            "F"
+          ]
+        },
+        {
+          "title": "ملء الشاشة",
+          "keys": [
+            "S"
+          ]
+        },
+        {
+          "title": "تثبيت أو إلغاء التثبيت",
+          "keys": [
+            "P"
+          ]
+        },
+        {
+          "title": "رزمة التطبيق: انضمام/مغادرة",
+          "keys": [
+            "J",
+            "/",
+            "X"
+          ]
+        },
+        {
+          "title": "Pin Deck: إضافة/إزالة",
+          "keys": [
+            "A",
+            "/",
+            "R"
+          ]
+        },
+        {
+          "title": "تجانب الكل",
+          "keys": [
+            "T"
+          ]
+        },
+        {
+          "title": "سطح مكتب جديد/حذف",
+          "keys": [
+            "N",
+            "/",
+            "D"
+          ]
+        },
+        {
+          "title": "نقل الكل إلى سطح مكتب",
+          "keys": [
+            "M",
+            "1–9"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "إجراءات",
+      "rows": [
+        {
+          "title": "الإعدادات",
+          "keys": [
+            "CMD",
+            ","
+          ]
+        },
+        {
+          "title": "خروج",
+          "keys": [
+            "ESC"
+          ]
+        }
+      ]
+    }
+  ],
+  "ca": [
+    {
+      "title": "Anar · ⇧ Moure",
+      "rows": [
+        {
+          "title": "Columna",
+          "keys": [
+            "←",
+            "→"
+          ]
+        },
+        {
+          "title": "Finestra",
+          "keys": [
+            "↑",
+            "↓"
+          ]
+        },
+        {
+          "title": "Escriptori",
+          "keys": [
+            "1–9"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Columna",
+      "rows": [
+        {
+          "title": "Entrar o sortir",
+          "keys": [
+            ",",
+            "."
+          ]
+        },
+        {
+          "title": "Amplada",
+          "keys": [
+            "-",
+            "="
+          ]
+        },
+        {
+          "title": "Alçada",
+          "keys": [
+            "[",
+            "]"
+          ]
+        },
+        {
+          "title": "Anar a la fixada",
+          "keys": [
+            "TAB"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Etiquetes",
+      "rows": [
+        {
+          "title": "Anar a la finestra",
+          "keys": [
+            "A",
+            "S",
+            "D",
+            "…"
+          ]
+        },
+        {
+          "title": "Portar a sota",
+          "keys": [
+            "⇧",
+            "A",
+            "…"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Espai, després",
+      "rows": [
+        {
+          "title": "Flotant o en mosaic",
+          "keys": [
+            "F"
+          ]
+        },
+        {
+          "title": "Pantalla completa",
+          "keys": [
+            "S"
+          ]
+        },
+        {
+          "title": "Fixar o no fixar",
+          "keys": [
+            "P"
+          ]
+        },
+        {
+          "title": "Uneix-te a la pila/surt-ne",
+          "keys": [
+            "J",
+            "/",
+            "X"
+          ]
+        },
+        {
+          "title": "Pin Deck: afegeix/treu",
+          "keys": [
+            "A",
+            "/",
+            "R"
+          ]
+        },
+        {
+          "title": "Tot en mosaic",
+          "keys": [
+            "T"
+          ]
+        },
+        {
+          "title": "Crear o eliminar escriptori",
+          "keys": [
+            "N",
+            "/",
+            "D"
+          ]
+        },
+        {
+          "title": "Tot a l’escriptori",
+          "keys": [
+            "M",
+            "1–9"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Accions",
+      "rows": [
+        {
+          "title": "Configuració",
+          "keys": [
+            "CMD",
+            ","
+          ]
+        },
+        {
+          "title": "Sortir",
+          "keys": [
+            "ESC"
+          ]
+        }
+      ]
+    }
+  ],
+  "cs": [
+    {
+      "title": "Aktivace · ⇧ Přesun",
+      "rows": [
+        {
+          "title": "Sloupec",
+          "keys": [
+            "←",
+            "→"
+          ]
+        },
+        {
+          "title": "Okno",
+          "keys": [
+            "↑",
+            "↓"
+          ]
+        },
+        {
+          "title": "Plocha",
+          "keys": [
+            "1–9"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Sloupec",
+      "rows": [
+        {
+          "title": "Do/ze sloupce",
+          "keys": [
+            ",",
+            "."
+          ]
+        },
+        {
+          "title": "Šířka",
+          "keys": [
+            "-",
+            "="
+          ]
+        },
+        {
+          "title": "Výška",
+          "keys": [
+            "[",
+            "]"
+          ]
+        },
+        {
+          "title": "Na připnutý",
+          "keys": [
+            "TAB"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Štítky",
+      "rows": [
+        {
+          "title": "Na okno",
+          "keys": [
+            "A",
+            "S",
+            "D",
+            "…"
+          ]
+        },
+        {
+          "title": "Pod aktivní",
+          "keys": [
+            "⇧",
+            "A",
+            "…"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Po mezerníku",
+      "rows": [
+        {
+          "title": "Uvolnit/zařadit",
+          "keys": [
+            "F"
+          ]
+        },
+        {
+          "title": "Celá obrazovka",
+          "keys": [
+            "S"
+          ]
+        },
+        {
+          "title": "Připnout/odepnout",
+          "keys": [
+            "P"
+          ]
+        },
+        {
+          "title": "Sada: připojit/opustit",
+          "keys": [
+            "J",
+            "/",
+            "X"
+          ]
+        },
+        {
+          "title": "Pin Deck: přidat/odstranit",
+          "keys": [
+            "A",
+            "/",
+            "R"
+          ]
+        },
+        {
+          "title": "Zařadit vše",
+          "keys": [
+            "T"
+          ]
+        },
+        {
+          "title": "Nová/smazat plochu",
+          "keys": [
+            "N",
+            "/",
+            "D"
+          ]
+        },
+        {
+          "title": "Vše na plochu",
+          "keys": [
+            "M",
+            "1–9"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Akce",
+      "rows": [
+        {
+          "title": "Nastavení",
+          "keys": [
+            "CMD",
+            ","
+          ]
+        },
+        {
+          "title": "Konec",
+          "keys": [
+            "ESC"
+          ]
+        }
+      ]
+    }
+  ],
+  "da": [
+    {
+      "title": "Fokus · ⇧ Flyt",
+      "rows": [
+        {
+          "title": "Kolonne",
+          "keys": [
+            "←",
+            "→"
+          ]
+        },
+        {
+          "title": "Vindue",
+          "keys": [
+            "↑",
+            "↓"
+          ]
+        },
+        {
+          "title": "Skrivebord",
+          "keys": [
+            "1–9"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Kolonne",
+      "rows": [
+        {
+          "title": "Ind i eller ud af kolonne",
+          "keys": [
+            ",",
+            "."
+          ]
+        },
+        {
+          "title": "Bredde",
+          "keys": [
+            "-",
+            "="
+          ]
+        },
+        {
+          "title": "Højde",
+          "keys": [
+            "[",
+            "]"
+          ]
+        },
+        {
+          "title": "Til fastgjort kolonne",
+          "keys": [
+            "TAB"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Mærker",
+      "rows": [
+        {
+          "title": "Gå til vindue",
+          "keys": [
+            "A",
+            "S",
+            "D",
+            "…"
+          ]
+        },
+        {
+          "title": "Hent under",
+          "keys": [
+            "⇧",
+            "A",
+            "…"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Mellemrum, derefter",
+      "rows": [
+        {
+          "title": "Svæv eller arranger",
+          "keys": [
+            "F"
+          ]
+        },
+        {
+          "title": "Fuld skærm",
+          "keys": [
+            "S"
+          ]
+        },
+        {
+          "title": "Fastgør eller frigør",
+          "keys": [
+            "P"
+          ]
+        },
+        {
+          "title": "Appstak: tilføj/fjern",
+          "keys": [
+            "J",
+            "/",
+            "X"
+          ]
+        },
+        {
+          "title": "Pin Deck: tilføj/fjern",
+          "keys": [
+            "A",
+            "/",
+            "R"
+          ]
+        },
+        {
+          "title": "Arranger alle",
+          "keys": [
+            "T"
+          ]
+        },
+        {
+          "title": "Tilføj/slet skrivebord",
+          "keys": [
+            "N",
+            "/",
+            "D"
+          ]
+        },
+        {
+          "title": "Alle til skrivebord",
+          "keys": [
+            "M",
+            "1–9"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Handlinger",
+      "rows": [
+        {
+          "title": "Indstillinger",
+          "keys": [
+            "CMD",
+            ","
+          ]
+        },
+        {
+          "title": "Afslut",
+          "keys": [
+            "ESC"
+          ]
+        }
+      ]
+    }
+  ],
+  "de": [
+    {
+      "title": "Fokus · ⇧ Bewegen",
+      "rows": [
+        {
+          "title": "Spalte",
+          "keys": [
+            "←",
+            "→"
+          ]
+        },
+        {
+          "title": "Fenster",
+          "keys": [
+            "↑",
+            "↓"
+          ]
+        },
+        {
+          "title": "Schreibtisch",
+          "keys": [
+            "1–9"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Spalte",
+      "rows": [
+        {
+          "title": "In Spalte hinein oder heraus",
+          "keys": [
+            ",",
+            "."
+          ]
+        },
+        {
+          "title": "Breite",
+          "keys": [
+            "-",
+            "="
+          ]
+        },
+        {
+          "title": "Höhe",
+          "keys": [
+            "[",
+            "]"
+          ]
+        },
+        {
+          "title": "Zur angehefteten Spalte",
+          "keys": [
+            "TAB"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Kürzel",
+      "rows": [
+        {
+          "title": "Zum Fenster",
+          "keys": [
+            "A",
+            "S",
+            "D",
+            "…"
+          ]
+        },
+        {
+          "title": "Nach unten holen",
+          "keys": [
+            "⇧",
+            "A",
+            "…"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Leertaste, dann",
+      "rows": [
+        {
+          "title": "Schweben oder kacheln",
+          "keys": [
+            "F"
+          ]
+        },
+        {
+          "title": "Vollbild",
+          "keys": [
+            "S"
+          ]
+        },
+        {
+          "title": "Anheften oder lösen",
+          "keys": [
+            "P"
+          ]
+        },
+        {
+          "title": "App-Stapel: hinzufügen/lösen",
+          "keys": [
+            "J",
+            "/",
+            "X"
+          ]
+        },
+        {
+          "title": "Pin Deck: hinzufügen/entfernen",
+          "keys": [
+            "A",
+            "/",
+            "R"
+          ]
+        },
+        {
+          "title": "Alle kacheln",
+          "keys": [
+            "T"
+          ]
+        },
+        {
+          "title": "Schreibtisch hinzufügen/löschen",
+          "keys": [
+            "N",
+            "/",
+            "D"
+          ]
+        },
+        {
+          "title": "Alle auf Schreibtisch",
+          "keys": [
+            "M",
+            "1–9"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Aktionen",
+      "rows": [
+        {
+          "title": "Einstellungen",
+          "keys": [
+            "CMD",
+            ","
+          ]
+        },
+        {
+          "title": "Beenden",
+          "keys": [
+            "ESC"
+          ]
+        }
+      ]
+    }
+  ],
+  "el": [
+    {
+      "title": "Εστίαση · ⇧ μετακίνηση",
+      "rows": [
+        {
+          "title": "Στήλη",
+          "keys": [
+            "←",
+            "→"
+          ]
+        },
+        {
+          "title": "Παράθυρο",
+          "keys": [
+            "↑",
+            "↓"
+          ]
+        },
+        {
+          "title": "Γραφείο εργασίας",
+          "keys": [
+            "1–9"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Στήλη",
+      "rows": [
+        {
+          "title": "Μέσα ή έξω από στήλη",
+          "keys": [
+            ",",
+            "."
+          ]
+        },
+        {
+          "title": "Πλάτος",
+          "keys": [
+            "-",
+            "="
+          ]
+        },
+        {
+          "title": "Ύψος",
+          "keys": [
+            "[",
+            "]"
+          ]
+        },
+        {
+          "title": "Εστίαση στην καρφιτσωμένη",
+          "keys": [
+            "TAB"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Ετικέτες",
+      "rows": [
+        {
+          "title": "Μετάβαση σε παράθυρο",
+          "keys": [
+            "A",
+            "S",
+            "D",
+            "…"
+          ]
+        },
+        {
+          "title": "Κάτω από το ενεργό",
+          "keys": [
+            "⇧",
+            "A",
+            "…"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Μετά το Διάστημα",
+      "rows": [
+        {
+          "title": "Αιώρηση ή παράθεση",
+          "keys": [
+            "F"
+          ]
+        },
+        {
+          "title": "Πλήρης οθόνη",
+          "keys": [
+            "S"
+          ]
+        },
+        {
+          "title": "Καρφίτσωμα ή ξεκαρφίτσωμα",
+          "keys": [
+            "P"
+          ]
+        },
+        {
+          "title": "Στοίβα εφαρμογής: είσοδος/έξοδος",
+          "keys": [
+            "J",
+            "/",
+            "X"
+          ]
+        },
+        {
+          "title": "Pin Deck: προσθήκη/αφαίρεση",
+          "keys": [
+            "A",
+            "/",
+            "R"
+          ]
+        },
+        {
+          "title": "Παράθεση όλων",
+          "keys": [
+            "T"
+          ]
+        },
+        {
+          "title": "Προσθήκη ή διαγραφή γραφείου εργασίας",
+          "keys": [
+            "N",
+            "/",
+            "D"
+          ]
+        },
+        {
+          "title": "Όλα σε γραφείο εργασίας",
+          "keys": [
+            "M",
+            "1–9"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Ενέργειες",
+      "rows": [
+        {
+          "title": "Ρυθμίσεις",
+          "keys": [
+            "CMD",
+            ","
+          ]
+        },
+        {
+          "title": "Έξοδος",
+          "keys": [
+            "ESC"
+          ]
+        }
+      ]
+    }
+  ],
+  "es": [
+    {
+      "title": "Ir · ⇧ Mover",
+      "rows": [
+        {
+          "title": "Columna",
+          "keys": [
+            "←",
+            "→"
+          ]
+        },
+        {
+          "title": "Ventana",
+          "keys": [
+            "↑",
+            "↓"
+          ]
+        },
+        {
+          "title": "Escritorio",
+          "keys": [
+            "1–9"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Columna",
+      "rows": [
+        {
+          "title": "Meter o sacar",
+          "keys": [
+            ",",
+            "."
+          ]
+        },
+        {
+          "title": "Anchura",
+          "keys": [
+            "-",
+            "="
+          ]
+        },
+        {
+          "title": "Altura",
+          "keys": [
+            "[",
+            "]"
+          ]
+        },
+        {
+          "title": "Ir a la fijada",
+          "keys": [
+            "TAB"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Etiquetas",
+      "rows": [
+        {
+          "title": "Ir a la ventana",
+          "keys": [
+            "A",
+            "S",
+            "D",
+            "…"
+          ]
+        },
+        {
+          "title": "Traer debajo",
+          "keys": [
+            "⇧",
+            "A",
+            "…"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Espacio, luego",
+      "rows": [
+        {
+          "title": "Flotante o en mosaico",
+          "keys": [
+            "F"
+          ]
+        },
+        {
+          "title": "Pantalla completa",
+          "keys": [
+            "S"
+          ]
+        },
+        {
+          "title": "Fijar o no fijar",
+          "keys": [
+            "P"
+          ]
+        },
+        {
+          "title": "Unir a la pila/salir de ella",
+          "keys": [
+            "J",
+            "/",
+            "X"
+          ]
+        },
+        {
+          "title": "Pin Deck: añadir/quitar",
+          "keys": [
+            "A",
+            "/",
+            "R"
+          ]
+        },
+        {
+          "title": "Todo en mosaico",
+          "keys": [
+            "T"
+          ]
+        },
+        {
+          "title": "Crear o eliminar escritorio",
+          "keys": [
+            "N",
+            "/",
+            "D"
+          ]
+        },
+        {
+          "title": "Todo al escritorio",
+          "keys": [
+            "M",
+            "1–9"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Acciones",
+      "rows": [
+        {
+          "title": "Ajustes",
+          "keys": [
+            "CMD",
+            ","
+          ]
+        },
+        {
+          "title": "Salir",
+          "keys": [
+            "ESC"
+          ]
+        }
+      ]
+    }
+  ],
+  "es-419": [
+    {
+      "title": "Ir · ⇧ Mover",
+      "rows": [
+        {
+          "title": "Columna",
+          "keys": [
+            "←",
+            "→"
+          ]
+        },
+        {
+          "title": "Ventana",
+          "keys": [
+            "↑",
+            "↓"
+          ]
+        },
+        {
+          "title": "Escritorio",
+          "keys": [
+            "1–9"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Columna",
+      "rows": [
+        {
+          "title": "Meter o sacar",
+          "keys": [
+            ",",
+            "."
+          ]
+        },
+        {
+          "title": "Ancho",
+          "keys": [
+            "-",
+            "="
+          ]
+        },
+        {
+          "title": "Altura",
+          "keys": [
+            "[",
+            "]"
+          ]
+        },
+        {
+          "title": "Ir a la fijada",
+          "keys": [
+            "TAB"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Etiquetas",
+      "rows": [
+        {
+          "title": "Ir a la ventana",
+          "keys": [
+            "A",
+            "S",
+            "D",
+            "…"
+          ]
+        },
+        {
+          "title": "Traer debajo",
+          "keys": [
+            "⇧",
+            "A",
+            "…"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Espacio, luego",
+      "rows": [
+        {
+          "title": "Flotante o en mosaico",
+          "keys": [
+            "F"
+          ]
+        },
+        {
+          "title": "Pantalla completa",
+          "keys": [
+            "S"
+          ]
+        },
+        {
+          "title": "Fijar o no fijar",
+          "keys": [
+            "P"
+          ]
+        },
+        {
+          "title": "Unir a la pila/salir de ella",
+          "keys": [
+            "J",
+            "/",
+            "X"
+          ]
+        },
+        {
+          "title": "Pin Deck: agregar/quitar",
+          "keys": [
+            "A",
+            "/",
+            "R"
+          ]
+        },
+        {
+          "title": "Todo en mosaico",
+          "keys": [
+            "T"
+          ]
+        },
+        {
+          "title": "Crear o eliminar escritorio",
+          "keys": [
+            "N",
+            "/",
+            "D"
+          ]
+        },
+        {
+          "title": "Todo al escritorio",
+          "keys": [
+            "M",
+            "1–9"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Acciones",
+      "rows": [
+        {
+          "title": "Configuración",
+          "keys": [
+            "CMD",
+            ","
+          ]
+        },
+        {
+          "title": "Salir",
+          "keys": [
+            "ESC"
+          ]
+        }
+      ]
+    }
+  ],
+  "fi": [
+    {
+      "title": "Kohdista · ⇧ Siirrä",
+      "rows": [
+        {
+          "title": "Sarake",
+          "keys": [
+            "←",
+            "→"
+          ]
+        },
+        {
+          "title": "Ikkuna",
+          "keys": [
+            "↑",
+            "↓"
+          ]
+        },
+        {
+          "title": "Työpöytä",
+          "keys": [
+            "1–9"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Sarake",
+      "rows": [
+        {
+          "title": "Sarakkeeseen tai siitä pois",
+          "keys": [
+            ",",
+            "."
+          ]
+        },
+        {
+          "title": "Leveys",
+          "keys": [
+            "-",
+            "="
+          ]
+        },
+        {
+          "title": "Korkeus",
+          "keys": [
+            "[",
+            "]"
+          ]
+        },
+        {
+          "title": "Kiinnitettyyn sarakkeeseen",
+          "keys": [
+            "TAB"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Tunnisteet",
+      "rows": [
+        {
+          "title": "Siirry ikkunaan",
+          "keys": [
+            "A",
+            "S",
+            "D",
+            "…"
+          ]
+        },
+        {
+          "title": "Tuo alle",
+          "keys": [
+            "⇧",
+            "A",
+            "…"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Välilyönti, sitten",
+      "rows": [
+        {
+          "title": "Kelluta tai laatoita",
+          "keys": [
+            "F"
+          ]
+        },
+        {
+          "title": "Koko näyttö",
+          "keys": [
+            "S"
+          ]
+        },
+        {
+          "title": "Kiinnitä tai irrota",
+          "keys": [
+            "P"
+          ]
+        },
+        {
+          "title": "Appipino: liitä/poista",
+          "keys": [
+            "J",
+            "/",
+            "X"
+          ]
+        },
+        {
+          "title": "Pin Deck: lisää/poista",
+          "keys": [
+            "A",
+            "/",
+            "R"
+          ]
+        },
+        {
+          "title": "Laatoita kaikki",
+          "keys": [
+            "T"
+          ]
+        },
+        {
+          "title": "Lisää/poista työpöytä",
+          "keys": [
+            "N",
+            "/",
+            "D"
+          ]
+        },
+        {
+          "title": "Kaikki työpöydälle",
+          "keys": [
+            "M",
+            "1–9"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Toimet",
+      "rows": [
+        {
+          "title": "Asetukset",
+          "keys": [
+            "CMD",
+            ","
+          ]
+        },
+        {
+          "title": "Poistu",
+          "keys": [
+            "ESC"
+          ]
+        }
+      ]
+    }
+  ],
+  "fr": [
+    {
+      "title": "Aller · ⇧ Déplacer",
+      "rows": [
+        {
+          "title": "Colonne",
+          "keys": [
+            "←",
+            "→"
+          ]
+        },
+        {
+          "title": "Fenêtre",
+          "keys": [
+            "↑",
+            "↓"
+          ]
+        },
+        {
+          "title": "Bureau",
+          "keys": [
+            "1–9"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Colonne",
+      "rows": [
+        {
+          "title": "Entrer ou sortir",
+          "keys": [
+            ",",
+            "."
+          ]
+        },
+        {
+          "title": "Largeur",
+          "keys": [
+            "-",
+            "="
+          ]
+        },
+        {
+          "title": "Hauteur",
+          "keys": [
+            "[",
+            "]"
+          ]
+        },
+        {
+          "title": "Aller à l’épinglée",
+          "keys": [
+            "TAB"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Libellés",
+      "rows": [
+        {
+          "title": "Aller à la fenêtre",
+          "keys": [
+            "A",
+            "S",
+            "D",
+            "…"
+          ]
+        },
+        {
+          "title": "Amener dessous",
+          "keys": [
+            "⇧",
+            "A",
+            "…"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Espace, puis",
+      "rows": [
+        {
+          "title": "Flottante ou en mosaïque",
+          "keys": [
+            "F"
+          ]
+        },
+        {
+          "title": "Plein écran",
+          "keys": [
+            "S"
+          ]
+        },
+        {
+          "title": "Épingler ou détacher",
+          "keys": [
+            "P"
+          ]
+        },
+        {
+          "title": "Rejoindre/quitter la pile d’app",
+          "keys": [
+            "J",
+            "/",
+            "X"
+          ]
+        },
+        {
+          "title": "Pin Deck : ajouter/retirer",
+          "keys": [
+            "A",
+            "/",
+            "R"
+          ]
+        },
+        {
+          "title": "Tout en mosaïque",
+          "keys": [
+            "T"
+          ]
+        },
+        {
+          "title": "Créer ou supprimer un bureau",
+          "keys": [
+            "N",
+            "/",
+            "D"
+          ]
+        },
+        {
+          "title": "Tout vers le bureau",
+          "keys": [
+            "M",
+            "1–9"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Actions",
+      "rows": [
+        {
+          "title": "Réglages",
+          "keys": [
+            "CMD",
+            ","
+          ]
+        },
+        {
+          "title": "Quitter",
+          "keys": [
+            "ESC"
+          ]
+        }
+      ]
+    }
+  ],
+  "fr-CA": [
+    {
+      "title": "Aller · ⇧ Déplacer",
+      "rows": [
+        {
+          "title": "Colonne",
+          "keys": [
+            "←",
+            "→"
+          ]
+        },
+        {
+          "title": "Fenêtre",
+          "keys": [
+            "↑",
+            "↓"
+          ]
+        },
+        {
+          "title": "Bureau",
+          "keys": [
+            "1–9"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Colonne",
+      "rows": [
+        {
+          "title": "Entrer ou sortir",
+          "keys": [
+            ",",
+            "."
+          ]
+        },
+        {
+          "title": "Largeur",
+          "keys": [
+            "-",
+            "="
+          ]
+        },
+        {
+          "title": "Hauteur",
+          "keys": [
+            "[",
+            "]"
+          ]
+        },
+        {
+          "title": "Aller à l’épinglée",
+          "keys": [
+            "TAB"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Libellés",
+      "rows": [
+        {
+          "title": "Aller à la fenêtre",
+          "keys": [
+            "A",
+            "S",
+            "D",
+            "…"
+          ]
+        },
+        {
+          "title": "Amener dessous",
+          "keys": [
+            "⇧",
+            "A",
+            "…"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Espace, puis",
+      "rows": [
+        {
+          "title": "Flottante ou en mosaïque",
+          "keys": [
+            "F"
+          ]
+        },
+        {
+          "title": "Plein écran",
+          "keys": [
+            "S"
+          ]
+        },
+        {
+          "title": "Épingler ou détacher",
+          "keys": [
+            "P"
+          ]
+        },
+        {
+          "title": "Rejoindre/quitter la pile d’app",
+          "keys": [
+            "J",
+            "/",
+            "X"
+          ]
+        },
+        {
+          "title": "Pin Deck : ajouter/retirer",
+          "keys": [
+            "A",
+            "/",
+            "R"
+          ]
+        },
+        {
+          "title": "Tout en mosaïque",
+          "keys": [
+            "T"
+          ]
+        },
+        {
+          "title": "Créer ou supprimer un bureau",
+          "keys": [
+            "N",
+            "/",
+            "D"
+          ]
+        },
+        {
+          "title": "Tout vers le bureau",
+          "keys": [
+            "M",
+            "1–9"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Actions",
+      "rows": [
+        {
+          "title": "Réglages",
+          "keys": [
+            "CMD",
+            ","
+          ]
+        },
+        {
+          "title": "Quitter",
+          "keys": [
+            "ESC"
+          ]
+        }
+      ]
+    }
+  ],
+  "he": [
+    {
+      "title": "פוקוס · ⇧ הזזה",
+      "rows": [
+        {
+          "title": "עמודה",
+          "keys": [
+            "←",
+            "→"
+          ]
+        },
+        {
+          "title": "חלון",
+          "keys": [
+            "↑",
+            "↓"
+          ]
+        },
+        {
+          "title": "מכתבה",
+          "keys": [
+            "1–9"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "עמודה",
+      "rows": [
+        {
+          "title": "הכנסה לעמודה או הוצאה ממנה",
+          "keys": [
+            ",",
+            "."
+          ]
+        },
+        {
+          "title": "רוחב",
+          "keys": [
+            "-",
+            "="
+          ]
+        },
+        {
+          "title": "גובה",
+          "keys": [
+            "[",
+            "]"
+          ]
+        },
+        {
+          "title": "פוקוס לעמודה המוצמדת",
+          "keys": [
+            "TAB"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "תוויות",
+      "rows": [
+        {
+          "title": "מעבר לחלון",
+          "keys": [
+            "A",
+            "S",
+            "D",
+            "…"
+          ]
+        },
+        {
+          "title": "הבאה מתחת",
+          "keys": [
+            "⇧",
+            "A",
+            "…"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "אחרי רווח",
+      "rows": [
+        {
+          "title": "צף או הצבה",
+          "keys": [
+            "F"
+          ]
+        },
+        {
+          "title": "מסך מלא",
+          "keys": [
+            "S"
+          ]
+        },
+        {
+          "title": "הצמדה או ביטול הצמדה",
+          "keys": [
+            "P"
+          ]
+        },
+        {
+          "title": "ערימת היישום: הצטרפות/יציאה",
+          "keys": [
+            "J",
+            "/",
+            "X"
+          ]
+        },
+        {
+          "title": "Pin Deck: הוספה/הסרה",
+          "keys": [
+            "A",
+            "/",
+            "R"
+          ]
+        },
+        {
+          "title": "הצבת הכל",
+          "keys": [
+            "T"
+          ]
+        },
+        {
+          "title": "מכתבה חדשה/מחיקה",
+          "keys": [
+            "N",
+            "/",
+            "D"
+          ]
+        },
+        {
+          "title": "הכל למכתבה",
+          "keys": [
+            "M",
+            "1–9"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "פעולות",
+      "rows": [
+        {
+          "title": "הגדרות",
+          "keys": [
+            "CMD",
+            ","
+          ]
+        },
+        {
+          "title": "יציאה",
+          "keys": [
+            "ESC"
+          ]
+        }
+      ]
+    }
+  ],
+  "hi": [
+    {
+      "title": "फ़ोकस · ⇧ मूव",
+      "rows": [
+        {
+          "title": "कॉलम",
+          "keys": [
+            "←",
+            "→"
+          ]
+        },
+        {
+          "title": "विंडो",
+          "keys": [
+            "↑",
+            "↓"
+          ]
+        },
+        {
+          "title": "डेस्कटॉप",
+          "keys": [
+            "1–9"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "कॉलम",
+      "rows": [
+        {
+          "title": "कॉलम के अंदर या बाहर ले जाएँ",
+          "keys": [
+            ",",
+            "."
+          ]
+        },
+        {
+          "title": "चौड़ाई",
+          "keys": [
+            "-",
+            "="
+          ]
+        },
+        {
+          "title": "ऊँचाई",
+          "keys": [
+            "[",
+            "]"
+          ]
+        },
+        {
+          "title": "पिन किए गए कॉलम पर फ़ोकस",
+          "keys": [
+            "TAB"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "लेबल",
+      "rows": [
+        {
+          "title": "विंडो पर जाएँ",
+          "keys": [
+            "A",
+            "S",
+            "D",
+            "…"
+          ]
+        },
+        {
+          "title": "नीचे लाएँ",
+          "keys": [
+            "⇧",
+            "A",
+            "…"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "स्पेस के बाद",
+      "rows": [
+        {
+          "title": "फ़्लोट या टाइल",
+          "keys": [
+            "F"
+          ]
+        },
+        {
+          "title": "पूर्ण स्क्रीन",
+          "keys": [
+            "S"
+          ]
+        },
+        {
+          "title": "पिन या अनपिन करें",
+          "keys": [
+            "P"
+          ]
+        },
+        {
+          "title": "ऐप स्टैक: जुड़ें/छोड़ें",
+          "keys": [
+            "J",
+            "/",
+            "X"
+          ]
+        },
+        {
+          "title": "Pin Deck: जोड़ें/हटाएँ",
+          "keys": [
+            "A",
+            "/",
+            "R"
+          ]
+        },
+        {
+          "title": "सभी टाइल करें",
+          "keys": [
+            "T"
+          ]
+        },
+        {
+          "title": "डेस्कटॉप जोड़ें/डिलीट करें",
+          "keys": [
+            "N",
+            "/",
+            "D"
+          ]
+        },
+        {
+          "title": "सभी को डेस्कटॉप पर ले जाएँ",
+          "keys": [
+            "M",
+            "1–9"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "क्रियाएँ",
+      "rows": [
+        {
+          "title": "सेटिंग",
+          "keys": [
+            "CMD",
+            ","
+          ]
+        },
+        {
+          "title": "बाहर निकलें",
+          "keys": [
+            "ESC"
+          ]
+        }
+      ]
+    }
+  ],
+  "hr": [
+    {
+      "title": "Fokus · ⇧ premještanje",
+      "rows": [
+        {
+          "title": "Stupac",
+          "keys": [
+            "←",
+            "→"
+          ]
+        },
+        {
+          "title": "Prozor",
+          "keys": [
+            "↑",
+            "↓"
+          ]
+        },
+        {
+          "title": "Radna površina",
+          "keys": [
+            "1–9"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Stupac",
+      "rows": [
+        {
+          "title": "U stupac ili iz njega",
+          "keys": [
+            ",",
+            "."
+          ]
+        },
+        {
+          "title": "Širina",
+          "keys": [
+            "-",
+            "="
+          ]
+        },
+        {
+          "title": "Visina",
+          "keys": [
+            "[",
+            "]"
+          ]
+        },
+        {
+          "title": "Fokus na prikvačeni",
+          "keys": [
+            "TAB"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Oznake",
+      "rows": [
+        {
+          "title": "Idi na prozor",
+          "keys": [
+            "A",
+            "S",
+            "D",
+            "…"
+          ]
+        },
+        {
+          "title": "Stavi ispod aktivnog",
+          "keys": [
+            "⇧",
+            "A",
+            "…"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Nakon razmaknice",
+      "rows": [
+        {
+          "title": "Plutajući ili razmješteni",
+          "keys": [
+            "F"
+          ]
+        },
+        {
+          "title": "Cijeli zaslon",
+          "keys": [
+            "S"
+          ]
+        },
+        {
+          "title": "Prikvači ili otkvači",
+          "keys": [
+            "P"
+          ]
+        },
+        {
+          "title": "Hrpa aplikacije: pridruži/izdvoji",
+          "keys": [
+            "J",
+            "/",
+            "X"
+          ]
+        },
+        {
+          "title": "Pin Deck: dodaj/ukloni",
+          "keys": [
+            "A",
+            "/",
+            "R"
+          ]
+        },
+        {
+          "title": "Razmjesti sve",
+          "keys": [
+            "T"
+          ]
+        },
+        {
+          "title": "Dodaj ili obriši radnu površinu",
+          "keys": [
+            "N",
+            "/",
+            "D"
+          ]
+        },
+        {
+          "title": "Sve na radnu površinu",
+          "keys": [
+            "M",
+            "1–9"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Radnje",
+      "rows": [
+        {
+          "title": "Postavke",
+          "keys": [
+            "CMD",
+            ","
+          ]
+        },
+        {
+          "title": "Izlaz",
+          "keys": [
+            "ESC"
+          ]
+        }
+      ]
+    }
+  ],
+  "hu": [
+    {
+      "title": "Fókusz · ⇧ mozgatás",
+      "rows": [
+        {
+          "title": "Oszlop",
+          "keys": [
+            "←",
+            "→"
+          ]
+        },
+        {
+          "title": "Ablak",
+          "keys": [
+            "↑",
+            "↓"
+          ]
+        },
+        {
+          "title": "Íróasztal",
+          "keys": [
+            "1–9"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Oszlop",
+      "rows": [
+        {
+          "title": "Oszlopba be vagy ki",
+          "keys": [
+            ",",
+            "."
+          ]
+        },
+        {
+          "title": "Szélesség",
+          "keys": [
+            "-",
+            "="
+          ]
+        },
+        {
+          "title": "Magasság",
+          "keys": [
+            "[",
+            "]"
+          ]
+        },
+        {
+          "title": "Ugrás a rögzítettre",
+          "keys": [
+            "TAB"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Címkék",
+      "rows": [
+        {
+          "title": "Ugrás az ablakra",
+          "keys": [
+            "A",
+            "S",
+            "D",
+            "…"
+          ]
+        },
+        {
+          "title": "Az aktív ablak alá",
+          "keys": [
+            "⇧",
+            "A",
+            "…"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Szóköz után",
+      "rows": [
+        {
+          "title": "Lebegő vagy mozaik",
+          "keys": [
+            "F"
+          ]
+        },
+        {
+          "title": "Teljes képernyő",
+          "keys": [
+            "S"
+          ]
+        },
+        {
+          "title": "Rögzítés vagy feloldás",
+          "keys": [
+            "P"
+          ]
+        },
+        {
+          "title": "Appköteg: csatlakozás/kilépés",
+          "keys": [
+            "J",
+            "/",
+            "X"
+          ]
+        },
+        {
+          "title": "Pin Deck: hozzáadás/eltávolítás",
+          "keys": [
+            "A",
+            "/",
+            "R"
+          ]
+        },
+        {
+          "title": "Összes mozaikba",
+          "keys": [
+            "T"
+          ]
+        },
+        {
+          "title": "Íróasztal hozzáadása vagy törlése",
+          "keys": [
+            "N",
+            "/",
+            "D"
+          ]
+        },
+        {
+          "title": "Összes ablak íróasztalra",
+          "keys": [
+            "M",
+            "1–9"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Műveletek",
+      "rows": [
+        {
+          "title": "Beállítások",
+          "keys": [
+            "CMD",
+            ","
+          ]
+        },
+        {
+          "title": "Kilépés",
+          "keys": [
+            "ESC"
+          ]
+        }
+      ]
+    }
+  ],
+  "id": [
+    {
+      "title": "Fokus · ⇧ Pindah",
+      "rows": [
+        {
+          "title": "Kolom",
+          "keys": [
+            "←",
+            "→"
+          ]
+        },
+        {
+          "title": "Jendela",
+          "keys": [
+            "↑",
+            "↓"
+          ]
+        },
+        {
+          "title": "Desktop",
+          "keys": [
+            "1–9"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Kolom",
+      "rows": [
+        {
+          "title": "Masukkan atau Keluarkan",
+          "keys": [
+            ",",
+            "."
+          ]
+        },
+        {
+          "title": "Lebar",
+          "keys": [
+            "-",
+            "="
+          ]
+        },
+        {
+          "title": "Tinggi",
+          "keys": [
+            "[",
+            "]"
+          ]
+        },
+        {
+          "title": "Fokuskan Kolom Tersemat",
+          "keys": [
+            "TAB"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Label",
+      "rows": [
+        {
+          "title": "Buka Jendela",
+          "keys": [
+            "A",
+            "S",
+            "D",
+            "…"
+          ]
+        },
+        {
+          "title": "Bawa ke Bawah",
+          "keys": [
+            "⇧",
+            "A",
+            "…"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Spasi Lalu",
+      "rows": [
+        {
+          "title": "Apungkan atau Susun",
+          "keys": [
+            "F"
+          ]
+        },
+        {
+          "title": "Layar Penuh",
+          "keys": [
+            "S"
+          ]
+        },
+        {
+          "title": "Sematkan atau Lepaskan",
+          "keys": [
+            "P"
+          ]
+        },
+        {
+          "title": "Tumpukan App: Gabung/Keluar",
+          "keys": [
+            "J",
+            "/",
+            "X"
+          ]
+        },
+        {
+          "title": "Pin Deck: Tambahkan/Hapus",
+          "keys": [
+            "A",
+            "/",
+            "R"
+          ]
+        },
+        {
+          "title": "Susun Semua",
+          "keys": [
+            "T"
+          ]
+        },
+        {
+          "title": "Tambah/Hapus Desktop",
+          "keys": [
+            "N",
+            "/",
+            "D"
+          ]
+        },
+        {
+          "title": "Semua ke Desktop",
+          "keys": [
+            "M",
+            "1–9"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Tindakan",
+      "rows": [
+        {
+          "title": "Pengaturan",
+          "keys": [
+            "CMD",
+            ","
+          ]
+        },
+        {
+          "title": "Keluar",
+          "keys": [
+            "ESC"
+          ]
+        }
+      ]
+    }
+  ],
+  "it": [
+    {
+      "title": "Vai · ⇧ Sposta",
+      "rows": [
+        {
+          "title": "Colonna",
+          "keys": [
+            "←",
+            "→"
+          ]
+        },
+        {
+          "title": "Finestra",
+          "keys": [
+            "↑",
+            "↓"
+          ]
+        },
+        {
+          "title": "Scrivania",
+          "keys": [
+            "1–9"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Colonna",
+      "rows": [
+        {
+          "title": "Dentro o fuori",
+          "keys": [
+            ",",
+            "."
+          ]
+        },
+        {
+          "title": "Larghezza",
+          "keys": [
+            "-",
+            "="
+          ]
+        },
+        {
+          "title": "Altezza",
+          "keys": [
+            "[",
+            "]"
+          ]
+        },
+        {
+          "title": "Vai alla fissata",
+          "keys": [
+            "TAB"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Etichette",
+      "rows": [
+        {
+          "title": "Vai alla finestra",
+          "keys": [
+            "A",
+            "S",
+            "D",
+            "…"
+          ]
+        },
+        {
+          "title": "Porta sotto",
+          "keys": [
+            "⇧",
+            "A",
+            "…"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Spazio, poi",
+      "rows": [
+        {
+          "title": "Fluttuante o affiancata",
+          "keys": [
+            "F"
+          ]
+        },
+        {
+          "title": "Tutto schermo",
+          "keys": [
+            "S"
+          ]
+        },
+        {
+          "title": "Fissa o sblocca",
+          "keys": [
+            "P"
+          ]
+        },
+        {
+          "title": "Pila: unisci/esci",
+          "keys": [
+            "J",
+            "/",
+            "X"
+          ]
+        },
+        {
+          "title": "Pin Deck: aggiungi/rimuovi",
+          "keys": [
+            "A",
+            "/",
+            "R"
+          ]
+        },
+        {
+          "title": "Affianca tutte",
+          "keys": [
+            "T"
+          ]
+        },
+        {
+          "title": "Crea o elimina scrivania",
+          "keys": [
+            "N",
+            "/",
+            "D"
+          ]
+        },
+        {
+          "title": "Tutte sulla scrivania",
+          "keys": [
+            "M",
+            "1–9"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Azioni",
+      "rows": [
+        {
+          "title": "Impostazioni",
+          "keys": [
+            "CMD",
+            ","
+          ]
+        },
+        {
+          "title": "Esci",
+          "keys": [
+            "ESC"
+          ]
+        }
+      ]
+    }
+  ],
+  "ja": [
+    {
+      "title": "フォーカス · ⇧ 移動",
+      "rows": [
+        {
+          "title": "列",
+          "keys": [
+            "←",
+            "→"
+          ]
+        },
+        {
+          "title": "ウインドウ",
+          "keys": [
+            "↑",
+            "↓"
+          ]
+        },
+        {
+          "title": "デスクトップ",
+          "keys": [
+            "1–9"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "列",
+      "rows": [
+        {
+          "title": "列に出し入れ",
+          "keys": [
+            ",",
+            "."
+          ]
+        },
+        {
+          "title": "幅",
+          "keys": [
+            "-",
+            "="
+          ]
+        },
+        {
+          "title": "高さ",
+          "keys": [
+            "[",
+            "]"
+          ]
+        },
+        {
+          "title": "固定列へ",
+          "keys": [
+            "TAB"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "ラベル",
+      "rows": [
+        {
+          "title": "ウインドウへ",
+          "keys": [
+            "A",
+            "S",
+            "D",
+            "…"
+          ]
+        },
+        {
+          "title": "下に配置",
+          "keys": [
+            "⇧",
+            "A",
+            "…"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Space の後",
+      "rows": [
+        {
+          "title": "フロート/タイル",
+          "keys": [
+            "F"
+          ]
+        },
+        {
+          "title": "フルスクリーン",
+          "keys": [
+            "S"
+          ]
+        },
+        {
+          "title": "固定/固定解除",
+          "keys": [
+            "P"
+          ]
+        },
+        {
+          "title": "スタックに追加/スタックから外す",
+          "keys": [
+            "J",
+            "/",
+            "X"
+          ]
+        },
+        {
+          "title": "Pin Deckに追加/Pin Deckから削除",
+          "keys": [
+            "A",
+            "/",
+            "R"
+          ]
+        },
+        {
+          "title": "全部タイル",
+          "keys": [
+            "T"
+          ]
+        },
+        {
+          "title": "デスクトップ追加/削除",
+          "keys": [
+            "N",
+            "/",
+            "D"
+          ]
+        },
+        {
+          "title": "全部移動",
+          "keys": [
+            "M",
+            "1–9"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "操作",
+      "rows": [
+        {
+          "title": "設定",
+          "keys": [
+            "CMD",
+            ","
+          ]
+        },
+        {
+          "title": "終了",
+          "keys": [
+            "ESC"
+          ]
+        }
+      ]
+    }
+  ],
+  "ko": [
+    {
+      "title": "포커스 · ⇧ 이동",
+      "rows": [
+        {
+          "title": "열",
+          "keys": [
+            "←",
+            "→"
+          ]
+        },
+        {
+          "title": "윈도우",
+          "keys": [
+            "↑",
+            "↓"
+          ]
+        },
+        {
+          "title": "데스크탑",
+          "keys": [
+            "1–9"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "열",
+      "rows": [
+        {
+          "title": "열 넣기/빼기",
+          "keys": [
+            ",",
+            "."
+          ]
+        },
+        {
+          "title": "너비",
+          "keys": [
+            "-",
+            "="
+          ]
+        },
+        {
+          "title": "높이",
+          "keys": [
+            "[",
+            "]"
+          ]
+        },
+        {
+          "title": "고정 열로",
+          "keys": [
+            "TAB"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "레이블",
+      "rows": [
+        {
+          "title": "윈도우로 이동",
+          "keys": [
+            "A",
+            "S",
+            "D",
+            "…"
+          ]
+        },
+        {
+          "title": "아래에 놓기",
+          "keys": [
+            "⇧",
+            "A",
+            "…"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "스페이스 후",
+      "rows": [
+        {
+          "title": "플로팅/타일",
+          "keys": [
+            "F"
+          ]
+        },
+        {
+          "title": "전체 화면",
+          "keys": [
+            "S"
+          ]
+        },
+        {
+          "title": "고정/해제",
+          "keys": [
+            "P"
+          ]
+        },
+        {
+          "title": "스택에 합치기/스택에서 빼기",
+          "keys": [
+            "J",
+            "/",
+            "X"
+          ]
+        },
+        {
+          "title": "Pin Deck에 추가/Pin Deck에서 제거",
+          "keys": [
+            "A",
+            "/",
+            "R"
+          ]
+        },
+        {
+          "title": "모두 타일",
+          "keys": [
+            "T"
+          ]
+        },
+        {
+          "title": "데스크탑 추가/삭제",
+          "keys": [
+            "N",
+            "/",
+            "D"
+          ]
+        },
+        {
+          "title": "모두 이동",
+          "keys": [
+            "M",
+            "1–9"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "동작",
+      "rows": [
+        {
+          "title": "설정",
+          "keys": [
+            "CMD",
+            ","
+          ]
+        },
+        {
+          "title": "종료",
+          "keys": [
+            "ESC"
+          ]
+        }
+      ]
+    }
+  ],
+  "ms": [
+    {
+      "title": "Fokus · ⇧ Alih",
+      "rows": [
+        {
+          "title": "Lajur",
+          "keys": [
+            "←",
+            "→"
+          ]
+        },
+        {
+          "title": "Tetingkap",
+          "keys": [
+            "↑",
+            "↓"
+          ]
+        },
+        {
+          "title": "Desktop",
+          "keys": [
+            "1–9"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Lajur",
+      "rows": [
+        {
+          "title": "Masuk atau Keluar",
+          "keys": [
+            ",",
+            "."
+          ]
+        },
+        {
+          "title": "Lebar",
+          "keys": [
+            "-",
+            "="
+          ]
+        },
+        {
+          "title": "Tinggi",
+          "keys": [
+            "[",
+            "]"
+          ]
+        },
+        {
+          "title": "Fokus Lajur Dipin",
+          "keys": [
+            "TAB"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Label",
+      "rows": [
+        {
+          "title": "Pergi ke Tetingkap",
+          "keys": [
+            "A",
+            "S",
+            "D",
+            "…"
+          ]
+        },
+        {
+          "title": "Bawa ke Bawah",
+          "keys": [
+            "⇧",
+            "A",
+            "…"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Space Lalu",
+      "rows": [
+        {
+          "title": "Apungkan atau Jubin",
+          "keys": [
+            "F"
+          ]
+        },
+        {
+          "title": "Skrin Penuh",
+          "keys": [
+            "S"
+          ]
+        },
+        {
+          "title": "Pin atau Nyahpin",
+          "keys": [
+            "P"
+          ]
+        },
+        {
+          "title": "Tindanan App: Sertai/Keluar",
+          "keys": [
+            "J",
+            "/",
+            "X"
+          ]
+        },
+        {
+          "title": "Pin Deck: Tambah/Keluarkan",
+          "keys": [
+            "A",
+            "/",
+            "R"
+          ]
+        },
+        {
+          "title": "Jubin Semua",
+          "keys": [
+            "T"
+          ]
+        },
+        {
+          "title": "Desktop Baharu/Padam",
+          "keys": [
+            "N",
+            "/",
+            "D"
+          ]
+        },
+        {
+          "title": "Semua ke Desktop",
+          "keys": [
+            "M",
+            "1–9"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Tindakan",
+      "rows": [
+        {
+          "title": "Seting",
+          "keys": [
+            "CMD",
+            ","
+          ]
+        },
+        {
+          "title": "Keluar",
+          "keys": [
+            "ESC"
+          ]
+        }
+      ]
+    }
+  ],
+  "nb": [
+    {
+      "title": "Fokus · ⇧ Flytt",
+      "rows": [
+        {
+          "title": "Kolonne",
+          "keys": [
+            "←",
+            "→"
+          ]
+        },
+        {
+          "title": "Vindu",
+          "keys": [
+            "↑",
+            "↓"
+          ]
+        },
+        {
+          "title": "Skrivebord",
+          "keys": [
+            "1–9"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Kolonne",
+      "rows": [
+        {
+          "title": "Inn i eller ut av kolonne",
+          "keys": [
+            ",",
+            "."
+          ]
+        },
+        {
+          "title": "Bredde",
+          "keys": [
+            "-",
+            "="
+          ]
+        },
+        {
+          "title": "Høyde",
+          "keys": [
+            "[",
+            "]"
+          ]
+        },
+        {
+          "title": "Til festet kolonne",
+          "keys": [
+            "TAB"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Etiketter",
+      "rows": [
+        {
+          "title": "Gå til vindu",
+          "keys": [
+            "A",
+            "S",
+            "D",
+            "…"
+          ]
+        },
+        {
+          "title": "Hent under",
+          "keys": [
+            "⇧",
+            "A",
+            "…"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Mellomrom, deretter",
+      "rows": [
+        {
+          "title": "La flyte eller ordne",
+          "keys": [
+            "F"
+          ]
+        },
+        {
+          "title": "Fullskjerm",
+          "keys": [
+            "S"
+          ]
+        },
+        {
+          "title": "Fest eller løsne",
+          "keys": [
+            "P"
+          ]
+        },
+        {
+          "title": "Appstabel: legg i/ta ut",
+          "keys": [
+            "J",
+            "/",
+            "X"
+          ]
+        },
+        {
+          "title": "Pin Deck: legg til/fjern",
+          "keys": [
+            "A",
+            "/",
+            "R"
+          ]
+        },
+        {
+          "title": "Ordne alle",
+          "keys": [
+            "T"
+          ]
+        },
+        {
+          "title": "Legg til/slett skrivebord",
+          "keys": [
+            "N",
+            "/",
+            "D"
+          ]
+        },
+        {
+          "title": "Alle til skrivebord",
+          "keys": [
+            "M",
+            "1–9"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Handlinger",
+      "rows": [
+        {
+          "title": "Innstillinger",
+          "keys": [
+            "CMD",
+            ","
+          ]
+        },
+        {
+          "title": "Avslutt",
+          "keys": [
+            "ESC"
+          ]
+        }
+      ]
+    }
+  ],
+  "nl": [
+    {
+      "title": "Focus · ⇧ Verplaats",
+      "rows": [
+        {
+          "title": "Kolom",
+          "keys": [
+            "←",
+            "→"
+          ]
+        },
+        {
+          "title": "Venster",
+          "keys": [
+            "↑",
+            "↓"
+          ]
+        },
+        {
+          "title": "Bureaublad",
+          "keys": [
+            "1–9"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Kolom",
+      "rows": [
+        {
+          "title": "Kolom in of uit",
+          "keys": [
+            ",",
+            "."
+          ]
+        },
+        {
+          "title": "Breedte",
+          "keys": [
+            "-",
+            "="
+          ]
+        },
+        {
+          "title": "Hoogte",
+          "keys": [
+            "[",
+            "]"
+          ]
+        },
+        {
+          "title": "Naar vastgezette kolom",
+          "keys": [
+            "TAB"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Labels",
+      "rows": [
+        {
+          "title": "Naar venster",
+          "keys": [
+            "A",
+            "S",
+            "D",
+            "…"
+          ]
+        },
+        {
+          "title": "Haal eronder",
+          "keys": [
+            "⇧",
+            "A",
+            "…"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Na spatie",
+      "rows": [
+        {
+          "title": "Laat zweven of tegel",
+          "keys": [
+            "F"
+          ]
+        },
+        {
+          "title": "Schermvullend",
+          "keys": [
+            "S"
+          ]
+        },
+        {
+          "title": "Zet vast of maak los",
+          "keys": [
+            "P"
+          ]
+        },
+        {
+          "title": "Appstapel: voeg toe/haal eruit",
+          "keys": [
+            "J",
+            "/",
+            "X"
+          ]
+        },
+        {
+          "title": "Pin Deck: voeg toe/verwijder",
+          "keys": [
+            "A",
+            "/",
+            "R"
+          ]
+        },
+        {
+          "title": "Tegel alles",
+          "keys": [
+            "T"
+          ]
+        },
+        {
+          "title": "Bureaublad toevoegen/verwijderen",
+          "keys": [
+            "N",
+            "/",
+            "D"
+          ]
+        },
+        {
+          "title": "Alle naar bureaublad",
+          "keys": [
+            "M",
+            "1–9"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Acties",
+      "rows": [
+        {
+          "title": "Instellingen",
+          "keys": [
+            "CMD",
+            ","
+          ]
+        },
+        {
+          "title": "Stop",
+          "keys": [
+            "ESC"
+          ]
+        }
+      ]
+    }
+  ],
+  "pl": [
+    {
+      "title": "Aktywuj · ⇧ Przenieś",
+      "rows": [
+        {
+          "title": "Kolumna",
+          "keys": [
+            "←",
+            "→"
+          ]
+        },
+        {
+          "title": "Okno",
+          "keys": [
+            "↑",
+            "↓"
+          ]
+        },
+        {
+          "title": "Biurko",
+          "keys": [
+            "1–9"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Kolumna",
+      "rows": [
+        {
+          "title": "Wejdź/wyjdź",
+          "keys": [
+            ",",
+            "."
+          ]
+        },
+        {
+          "title": "Szerokość",
+          "keys": [
+            "-",
+            "="
+          ]
+        },
+        {
+          "title": "Wysokość",
+          "keys": [
+            "[",
+            "]"
+          ]
+        },
+        {
+          "title": "Na przypiętą",
+          "keys": [
+            "TAB"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Etykiety",
+      "rows": [
+        {
+          "title": "Do okna",
+          "keys": [
+            "A",
+            "S",
+            "D",
+            "…"
+          ]
+        },
+        {
+          "title": "Pod aktywne",
+          "keys": [
+            "⇧",
+            "A",
+            "…"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Po Spacji",
+      "rows": [
+        {
+          "title": "Uwolnij/ułóż",
+          "keys": [
+            "F"
+          ]
+        },
+        {
+          "title": "Pełny ekran",
+          "keys": [
+            "S"
+          ]
+        },
+        {
+          "title": "Przypnij/odepnij",
+          "keys": [
+            "P"
+          ]
+        },
+        {
+          "title": "Stos: dołącz/opuść",
+          "keys": [
+            "J",
+            "/",
+            "X"
+          ]
+        },
+        {
+          "title": "Pin Deck: dodaj/usuń",
+          "keys": [
+            "A",
+            "/",
+            "R"
+          ]
+        },
+        {
+          "title": "Ułóż wszystko",
+          "keys": [
+            "T"
+          ]
+        },
+        {
+          "title": "Nowe/usuń biurko",
+          "keys": [
+            "N",
+            "/",
+            "D"
+          ]
+        },
+        {
+          "title": "Całe biurko",
+          "keys": [
+            "M",
+            "1–9"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Akcje",
+      "rows": [
+        {
+          "title": "Ustawienia",
+          "keys": [
+            "CMD",
+            ","
+          ]
+        },
+        {
+          "title": "Wyjdź",
+          "keys": [
+            "ESC"
+          ]
+        }
+      ]
+    }
+  ],
+  "pt-BR": [
+    {
+      "title": "Foco · ⇧ Mover",
+      "rows": [
+        {
+          "title": "Coluna",
+          "keys": [
+            "←",
+            "→"
+          ]
+        },
+        {
+          "title": "Janela",
+          "keys": [
+            "↑",
+            "↓"
+          ]
+        },
+        {
+          "title": "Mesa",
+          "keys": [
+            "1–9"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Coluna",
+      "rows": [
+        {
+          "title": "Entrar ou Sair",
+          "keys": [
+            ",",
+            "."
+          ]
+        },
+        {
+          "title": "Largura",
+          "keys": [
+            "-",
+            "="
+          ]
+        },
+        {
+          "title": "Altura",
+          "keys": [
+            "[",
+            "]"
+          ]
+        },
+        {
+          "title": "Ir à Fixada",
+          "keys": [
+            "TAB"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Rótulos",
+      "rows": [
+        {
+          "title": "Ir à Janela",
+          "keys": [
+            "A",
+            "S",
+            "D",
+            "…"
+          ]
+        },
+        {
+          "title": "Pôr Abaixo",
+          "keys": [
+            "⇧",
+            "A",
+            "…"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Após Espaço",
+      "rows": [
+        {
+          "title": "Flutuar/Encaixar",
+          "keys": [
+            "F"
+          ]
+        },
+        {
+          "title": "Tela Cheia",
+          "keys": [
+            "S"
+          ]
+        },
+        {
+          "title": "Fixar/Desafixar",
+          "keys": [
+            "P"
+          ]
+        },
+        {
+          "title": "Pilha: Juntar/Sair",
+          "keys": [
+            "J",
+            "/",
+            "X"
+          ]
+        },
+        {
+          "title": "Pin Deck: Adicionar/Remover",
+          "keys": [
+            "A",
+            "/",
+            "R"
+          ]
+        },
+        {
+          "title": "Encaixar Tudo",
+          "keys": [
+            "T"
+          ]
+        },
+        {
+          "title": "Criar/Apagar Mesa",
+          "keys": [
+            "N",
+            "/",
+            "D"
+          ]
+        },
+        {
+          "title": "Mover Todas",
+          "keys": [
+            "M",
+            "1–9"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Ações",
+      "rows": [
+        {
+          "title": "Ajustes",
+          "keys": [
+            "CMD",
+            ","
+          ]
+        },
+        {
+          "title": "Sair",
+          "keys": [
+            "ESC"
+          ]
+        }
+      ]
+    }
+  ],
+  "pt-PT": [
+    {
+      "title": "Foco · ⇧ Mover",
+      "rows": [
+        {
+          "title": "Coluna",
+          "keys": [
+            "←",
+            "→"
+          ]
+        },
+        {
+          "title": "Janela",
+          "keys": [
+            "↑",
+            "↓"
+          ]
+        },
+        {
+          "title": "Secretária",
+          "keys": [
+            "1–9"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Coluna",
+      "rows": [
+        {
+          "title": "Entrar ou sair",
+          "keys": [
+            ",",
+            "."
+          ]
+        },
+        {
+          "title": "Largura",
+          "keys": [
+            "-",
+            "="
+          ]
+        },
+        {
+          "title": "Altura",
+          "keys": [
+            "[",
+            "]"
+          ]
+        },
+        {
+          "title": "Ir à afixada",
+          "keys": [
+            "TAB"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Etiquetas",
+      "rows": [
+        {
+          "title": "Ir à janela",
+          "keys": [
+            "A",
+            "S",
+            "D",
+            "…"
+          ]
+        },
+        {
+          "title": "Pôr abaixo",
+          "keys": [
+            "⇧",
+            "A",
+            "…"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Após Espaço",
+      "rows": [
+        {
+          "title": "Flutuar/encaixar",
+          "keys": [
+            "F"
+          ]
+        },
+        {
+          "title": "Ecrã Completo",
+          "keys": [
+            "S"
+          ]
+        },
+        {
+          "title": "Afixar/desafixar",
+          "keys": [
+            "P"
+          ]
+        },
+        {
+          "title": "Pilha: juntar/sair",
+          "keys": [
+            "J",
+            "/",
+            "X"
+          ]
+        },
+        {
+          "title": "Pin Deck: adicionar/remover",
+          "keys": [
+            "A",
+            "/",
+            "R"
+          ]
+        },
+        {
+          "title": "Encaixar tudo",
+          "keys": [
+            "T"
+          ]
+        },
+        {
+          "title": "Criar/apagar secretária",
+          "keys": [
+            "N",
+            "/",
+            "D"
+          ]
+        },
+        {
+          "title": "Mover todas",
+          "keys": [
+            "M",
+            "1–9"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Ações",
+      "rows": [
+        {
+          "title": "Definições",
+          "keys": [
+            "CMD",
+            ","
+          ]
+        },
+        {
+          "title": "Sair",
+          "keys": [
+            "ESC"
+          ]
+        }
+      ]
+    }
+  ],
+  "ro": [
+    {
+      "title": "Activare · ⇧ Mutare",
+      "rows": [
+        {
+          "title": "Coloană",
+          "keys": [
+            "←",
+            "→"
+          ]
+        },
+        {
+          "title": "Fereastră",
+          "keys": [
+            "↑",
+            "↓"
+          ]
+        },
+        {
+          "title": "Desktop",
+          "keys": [
+            "1–9"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Coloană",
+      "rows": [
+        {
+          "title": "Intrați/ieșiți",
+          "keys": [
+            ",",
+            "."
+          ]
+        },
+        {
+          "title": "Lățime",
+          "keys": [
+            "-",
+            "="
+          ]
+        },
+        {
+          "title": "Înălțime",
+          "keys": [
+            "[",
+            "]"
+          ]
+        },
+        {
+          "title": "La cea fixată",
+          "keys": [
+            "TAB"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Etichete",
+      "rows": [
+        {
+          "title": "La fereastră",
+          "keys": [
+            "A",
+            "S",
+            "D",
+            "…"
+          ]
+        },
+        {
+          "title": "Aduceți sub",
+          "keys": [
+            "⇧",
+            "A",
+            "…"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "După Space",
+      "rows": [
+        {
+          "title": "Flotant/aranjat",
+          "keys": [
+            "F"
+          ]
+        },
+        {
+          "title": "Tot ecranul",
+          "keys": [
+            "S"
+          ]
+        },
+        {
+          "title": "Fixați/anulați",
+          "keys": [
+            "P"
+          ]
+        },
+        {
+          "title": "Stivă: alăturare/ieșire",
+          "keys": [
+            "J",
+            "/",
+            "X"
+          ]
+        },
+        {
+          "title": "Pin Deck: adăugare/eliminare",
+          "keys": [
+            "A",
+            "/",
+            "R"
+          ]
+        },
+        {
+          "title": "Aranjați tot",
+          "keys": [
+            "T"
+          ]
+        },
+        {
+          "title": "Desktop nou/ștergere",
+          "keys": [
+            "N",
+            "/",
+            "D"
+          ]
+        },
+        {
+          "title": "Mutați toate",
+          "keys": [
+            "M",
+            "1–9"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Acțiuni",
+      "rows": [
+        {
+          "title": "Configurări",
+          "keys": [
+            "CMD",
+            ","
+          ]
+        },
+        {
+          "title": "Ieșire",
+          "keys": [
+            "ESC"
+          ]
+        }
+      ]
+    }
+  ],
+  "ru": [
+    {
+      "title": "Фокус · ⇧ перемещение",
+      "rows": [
+        {
+          "title": "Колонка",
+          "keys": [
+            "←",
+            "→"
+          ]
+        },
+        {
+          "title": "Окно",
+          "keys": [
+            "↑",
+            "↓"
+          ]
+        },
+        {
+          "title": "Рабочий стол",
+          "keys": [
+            "1–9"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Колонка",
+      "rows": [
+        {
+          "title": "Внести в колонку или вынести",
+          "keys": [
+            ",",
+            "."
+          ]
+        },
+        {
+          "title": "Ширина",
+          "keys": [
+            "-",
+            "="
+          ]
+        },
+        {
+          "title": "Высота",
+          "keys": [
+            "[",
+            "]"
+          ]
+        },
+        {
+          "title": "Перейти к закрепленной",
+          "keys": [
+            "TAB"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Метки",
+      "rows": [
+        {
+          "title": "Перейти к окну",
+          "keys": [
+            "A",
+            "S",
+            "D",
+            "…"
+          ]
+        },
+        {
+          "title": "Поместить под активное",
+          "keys": [
+            "⇧",
+            "A",
+            "…"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "После пробела",
+      "rows": [
+        {
+          "title": "Плавающее или плитка",
+          "keys": [
+            "F"
+          ]
+        },
+        {
+          "title": "Полный экран",
+          "keys": [
+            "S"
+          ]
+        },
+        {
+          "title": "Закрепить или открепить",
+          "keys": [
+            "P"
+          ]
+        },
+        {
+          "title": "Стопка приложения: добавить/извлечь",
+          "keys": [
+            "J",
+            "/",
+            "X"
+          ]
+        },
+        {
+          "title": "Pin Deck: добавить/удалить",
+          "keys": [
+            "A",
+            "/",
+            "R"
+          ]
+        },
+        {
+          "title": "Все плиткой",
+          "keys": [
+            "T"
+          ]
+        },
+        {
+          "title": "Добавить или удалить рабочий стол",
+          "keys": [
+            "N",
+            "/",
+            "D"
+          ]
+        },
+        {
+          "title": "Все окна на рабочий стол",
+          "keys": [
+            "M",
+            "1–9"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Действия",
+      "rows": [
+        {
+          "title": "Настройки",
+          "keys": [
+            "CMD",
+            ","
+          ]
+        },
+        {
+          "title": "Выход",
+          "keys": [
+            "ESC"
+          ]
+        }
+      ]
+    }
+  ],
+  "sk": [
+    {
+      "title": "Aktivácia · ⇧ Presun",
+      "rows": [
+        {
+          "title": "Stĺpec",
+          "keys": [
+            "←",
+            "→"
+          ]
+        },
+        {
+          "title": "Okno",
+          "keys": [
+            "↑",
+            "↓"
+          ]
+        },
+        {
+          "title": "Plocha",
+          "keys": [
+            "1–9"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Stĺpec",
+      "rows": [
+        {
+          "title": "Do/zo stĺpca",
+          "keys": [
+            ",",
+            "."
+          ]
+        },
+        {
+          "title": "Šírka",
+          "keys": [
+            "-",
+            "="
+          ]
+        },
+        {
+          "title": "Výška",
+          "keys": [
+            "[",
+            "]"
+          ]
+        },
+        {
+          "title": "Na pripnutý",
+          "keys": [
+            "TAB"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Štítky",
+      "rows": [
+        {
+          "title": "Na okno",
+          "keys": [
+            "A",
+            "S",
+            "D",
+            "…"
+          ]
+        },
+        {
+          "title": "Pod aktívne",
+          "keys": [
+            "⇧",
+            "A",
+            "…"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Po medzerníku",
+      "rows": [
+        {
+          "title": "Uvoľniť/zaradiť",
+          "keys": [
+            "F"
+          ]
+        },
+        {
+          "title": "Celá obrazovka",
+          "keys": [
+            "S"
+          ]
+        },
+        {
+          "title": "Pripnúť/odopnúť",
+          "keys": [
+            "P"
+          ]
+        },
+        {
+          "title": "Sada: pripojiť/opustiť",
+          "keys": [
+            "J",
+            "/",
+            "X"
+          ]
+        },
+        {
+          "title": "Pin Deck: pridať/odstrániť",
+          "keys": [
+            "A",
+            "/",
+            "R"
+          ]
+        },
+        {
+          "title": "Zaradiť všetko",
+          "keys": [
+            "T"
+          ]
+        },
+        {
+          "title": "Nová/zmazať plochu",
+          "keys": [
+            "N",
+            "/",
+            "D"
+          ]
+        },
+        {
+          "title": "Celá plocha",
+          "keys": [
+            "M",
+            "1–9"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Akcie",
+      "rows": [
+        {
+          "title": "Nastavenia",
+          "keys": [
+            "CMD",
+            ","
+          ]
+        },
+        {
+          "title": "Koniec",
+          "keys": [
+            "ESC"
+          ]
+        }
+      ]
+    }
+  ],
+  "sl": [
+    {
+      "title": "Fokus · ⇧ premik",
+      "rows": [
+        {
+          "title": "Stolpec",
+          "keys": [
+            "←",
+            "→"
+          ]
+        },
+        {
+          "title": "Okno",
+          "keys": [
+            "↑",
+            "↓"
+          ]
+        },
+        {
+          "title": "Namizje",
+          "keys": [
+            "1–9"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Stolpec",
+      "rows": [
+        {
+          "title": "V stolpec ali iz njega",
+          "keys": [
+            ",",
+            "."
+          ]
+        },
+        {
+          "title": "Širina",
+          "keys": [
+            "-",
+            "="
+          ]
+        },
+        {
+          "title": "Višina",
+          "keys": [
+            "[",
+            "]"
+          ]
+        },
+        {
+          "title": "Fokus na pripeti",
+          "keys": [
+            "TAB"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Oznake",
+      "rows": [
+        {
+          "title": "Pojdi na okno",
+          "keys": [
+            "A",
+            "S",
+            "D",
+            "…"
+          ]
+        },
+        {
+          "title": "Postavi pod aktivno",
+          "keys": [
+            "⇧",
+            "A",
+            "…"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Po preslednici",
+      "rows": [
+        {
+          "title": "Plavajoče ali razporejeno",
+          "keys": [
+            "F"
+          ]
+        },
+        {
+          "title": "Celoten zaslon",
+          "keys": [
+            "S"
+          ]
+        },
+        {
+          "title": "Pripni ali odpni",
+          "keys": [
+            "P"
+          ]
+        },
+        {
+          "title": "Kup aplikacije: pridruži/izloči",
+          "keys": [
+            "J",
+            "/",
+            "X"
+          ]
+        },
+        {
+          "title": "Pin Deck: dodaj/odstrani",
+          "keys": [
+            "A",
+            "/",
+            "R"
+          ]
+        },
+        {
+          "title": "Razporedi vse",
+          "keys": [
+            "T"
+          ]
+        },
+        {
+          "title": "Dodaj ali izbriši namizje",
+          "keys": [
+            "N",
+            "/",
+            "D"
+          ]
+        },
+        {
+          "title": "Vsa okna na namizje",
+          "keys": [
+            "M",
+            "1–9"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Dejanja",
+      "rows": [
+        {
+          "title": "Nastavitve",
+          "keys": [
+            "CMD",
+            ","
+          ]
+        },
+        {
+          "title": "Izhod",
+          "keys": [
+            "ESC"
+          ]
+        }
+      ]
+    }
+  ],
+  "sv": [
+    {
+      "title": "Fokus · ⇧ Flytta",
+      "rows": [
+        {
+          "title": "Kolumn",
+          "keys": [
+            "←",
+            "→"
+          ]
+        },
+        {
+          "title": "Fönster",
+          "keys": [
+            "↑",
+            "↓"
+          ]
+        },
+        {
+          "title": "Skrivbord",
+          "keys": [
+            "1–9"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Kolumn",
+      "rows": [
+        {
+          "title": "In i eller ut ur kolumn",
+          "keys": [
+            ",",
+            "."
+          ]
+        },
+        {
+          "title": "Bredd",
+          "keys": [
+            "-",
+            "="
+          ]
+        },
+        {
+          "title": "Höjd",
+          "keys": [
+            "[",
+            "]"
+          ]
+        },
+        {
+          "title": "Till fäst kolumn",
+          "keys": [
+            "TAB"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Etiketter",
+      "rows": [
+        {
+          "title": "Gå till fönster",
+          "keys": [
+            "A",
+            "S",
+            "D",
+            "…"
+          ]
+        },
+        {
+          "title": "Hämta under",
+          "keys": [
+            "⇧",
+            "A",
+            "…"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Mellanslag, sedan",
+      "rows": [
+        {
+          "title": "Låt flyta eller ordna",
+          "keys": [
+            "F"
+          ]
+        },
+        {
+          "title": "Helskärm",
+          "keys": [
+            "S"
+          ]
+        },
+        {
+          "title": "Fäst eller lossa",
+          "keys": [
+            "P"
+          ]
+        },
+        {
+          "title": "Appstapel: lägg i/ta ur",
+          "keys": [
+            "J",
+            "/",
+            "X"
+          ]
+        },
+        {
+          "title": "Pin Deck: lägg till/ta bort",
+          "keys": [
+            "A",
+            "/",
+            "R"
+          ]
+        },
+        {
+          "title": "Ordna alla",
+          "keys": [
+            "T"
+          ]
+        },
+        {
+          "title": "Lägg till/ta bort skrivbord",
+          "keys": [
+            "N",
+            "/",
+            "D"
+          ]
+        },
+        {
+          "title": "Alla till skrivbord",
+          "keys": [
+            "M",
+            "1–9"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Åtgärder",
+      "rows": [
+        {
+          "title": "Inställningar",
+          "keys": [
+            "CMD",
+            ","
+          ]
+        },
+        {
+          "title": "Avsluta",
+          "keys": [
+            "ESC"
+          ]
+        }
+      ]
+    }
+  ],
+  "th": [
+    {
+      "title": "โฟกัส · ⇧ ย้าย",
+      "rows": [
+        {
+          "title": "คอลัมน์",
+          "keys": [
+            "←",
+            "→"
+          ]
+        },
+        {
+          "title": "หน้าต่าง",
+          "keys": [
+            "↑",
+            "↓"
+          ]
+        },
+        {
+          "title": "เดสก์ท็อป",
+          "keys": [
+            "1–9"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "คอลัมน์",
+      "rows": [
+        {
+          "title": "ย้ายเข้าหรือออก",
+          "keys": [
+            ",",
+            "."
+          ]
+        },
+        {
+          "title": "ความกว้าง",
+          "keys": [
+            "-",
+            "="
+          ]
+        },
+        {
+          "title": "ความสูง",
+          "keys": [
+            "[",
+            "]"
+          ]
+        },
+        {
+          "title": "โฟกัสคอลัมน์ที่ปักหมุด",
+          "keys": [
+            "TAB"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "ตัวอักษรกำกับ",
+      "rows": [
+        {
+          "title": "ไปที่หน้าต่าง",
+          "keys": [
+            "A",
+            "S",
+            "D",
+            "…"
+          ]
+        },
+        {
+          "title": "นำลงล่าง",
+          "keys": [
+            "⇧",
+            "A",
+            "…"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "หลัง Space",
+      "rows": [
+        {
+          "title": "ลอยหรือเรียง",
+          "keys": [
+            "F"
+          ]
+        },
+        {
+          "title": "เต็มหน้าจอ",
+          "keys": [
+            "S"
+          ]
+        },
+        {
+          "title": "ปักหมุดหรือเลิกปักหมุด",
+          "keys": [
+            "P"
+          ]
+        },
+        {
+          "title": "เข้าร่วม/ออกจากกลุ่มแอป",
+          "keys": [
+            "J",
+            "/",
+            "X"
+          ]
+        },
+        {
+          "title": "Pin Deck: เพิ่ม/เอาออก",
+          "keys": [
+            "A",
+            "/",
+            "R"
+          ]
+        },
+        {
+          "title": "เรียงทั้งหมด",
+          "keys": [
+            "T"
+          ]
+        },
+        {
+          "title": "เพิ่ม/ลบเดสก์ท็อป",
+          "keys": [
+            "N",
+            "/",
+            "D"
+          ]
+        },
+        {
+          "title": "ย้ายทั้งหมดไปยังเดสก์ท็อป",
+          "keys": [
+            "M",
+            "1–9"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "การทำงาน",
+      "rows": [
+        {
+          "title": "การตั้งค่า",
+          "keys": [
+            "CMD",
+            ","
+          ]
+        },
+        {
+          "title": "ออก",
+          "keys": [
+            "ESC"
+          ]
+        }
+      ]
+    }
+  ],
+  "tr": [
+    {
+      "title": "Odakla · ⇧ Taşı",
+      "rows": [
+        {
+          "title": "Sütun",
+          "keys": [
+            "←",
+            "→"
+          ]
+        },
+        {
+          "title": "Pencere",
+          "keys": [
+            "↑",
+            "↓"
+          ]
+        },
+        {
+          "title": "Masaüstü",
+          "keys": [
+            "1–9"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Sütun",
+      "rows": [
+        {
+          "title": "Sütuna Gir veya Çık",
+          "keys": [
+            ",",
+            "."
+          ]
+        },
+        {
+          "title": "Genişlik",
+          "keys": [
+            "-",
+            "="
+          ]
+        },
+        {
+          "title": "Yükseklik",
+          "keys": [
+            "[",
+            "]"
+          ]
+        },
+        {
+          "title": "Sabit Sütuna Odaklan",
+          "keys": [
+            "TAB"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Etiketler",
+      "rows": [
+        {
+          "title": "Pencereye Git",
+          "keys": [
+            "A",
+            "S",
+            "D",
+            "…"
+          ]
+        },
+        {
+          "title": "Alta Getir",
+          "keys": [
+            "⇧",
+            "A",
+            "…"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Boşluktan Sonra",
+      "rows": [
+        {
+          "title": "Yüzdür veya Döşe",
+          "keys": [
+            "F"
+          ]
+        },
+        {
+          "title": "Tam Ekran",
+          "keys": [
+            "S"
+          ]
+        },
+        {
+          "title": "Sabitle veya Sabitlemeyi Kaldır",
+          "keys": [
+            "P"
+          ]
+        },
+        {
+          "title": "Uygulama Yığını: Katıl/Ayrıl",
+          "keys": [
+            "J",
+            "/",
+            "X"
+          ]
+        },
+        {
+          "title": "Pin Deck: Ekle/Sil",
+          "keys": [
+            "A",
+            "/",
+            "R"
+          ]
+        },
+        {
+          "title": "Tümünü Döşe",
+          "keys": [
+            "T"
+          ]
+        },
+        {
+          "title": "Masaüstü Ekle/Sil",
+          "keys": [
+            "N",
+            "/",
+            "D"
+          ]
+        },
+        {
+          "title": "Tümünü Masaüstüne Taşı",
+          "keys": [
+            "M",
+            "1–9"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Eylemler",
+      "rows": [
+        {
+          "title": "Ayarlar",
+          "keys": [
+            "CMD",
+            ","
+          ]
+        },
+        {
+          "title": "Çık",
+          "keys": [
+            "ESC"
+          ]
+        }
+      ]
+    }
+  ],
+  "uk": [
+    {
+      "title": "Фокус · ⇧ переміщення",
+      "rows": [
+        {
+          "title": "Колонка",
+          "keys": [
+            "←",
+            "→"
+          ]
+        },
+        {
+          "title": "Вікно",
+          "keys": [
+            "↑",
+            "↓"
+          ]
+        },
+        {
+          "title": "Робочий стіл",
+          "keys": [
+            "1–9"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Колонка",
+      "rows": [
+        {
+          "title": "Внести в колонку чи винести",
+          "keys": [
+            ",",
+            "."
+          ]
+        },
+        {
+          "title": "Ширина",
+          "keys": [
+            "-",
+            "="
+          ]
+        },
+        {
+          "title": "Висота",
+          "keys": [
+            "[",
+            "]"
+          ]
+        },
+        {
+          "title": "Перейти до закріпленої",
+          "keys": [
+            "TAB"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Мітки",
+      "rows": [
+        {
+          "title": "Перейти до вікна",
+          "keys": [
+            "A",
+            "S",
+            "D",
+            "…"
+          ]
+        },
+        {
+          "title": "Помістити під активне",
+          "keys": [
+            "⇧",
+            "A",
+            "…"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Після пробілу",
+      "rows": [
+        {
+          "title": "Плаваюче або розміщене",
+          "keys": [
+            "F"
+          ]
+        },
+        {
+          "title": "Повний екран",
+          "keys": [
+            "S"
+          ]
+        },
+        {
+          "title": "Закріпити чи відкріпити",
+          "keys": [
+            "P"
+          ]
+        },
+        {
+          "title": "Стос програми: додати/вилучити",
+          "keys": [
+            "J",
+            "/",
+            "X"
+          ]
+        },
+        {
+          "title": "Pin Deck: додати/вилучити",
+          "keys": [
+            "A",
+            "/",
+            "R"
+          ]
+        },
+        {
+          "title": "Розмістити всі",
+          "keys": [
+            "T"
+          ]
+        },
+        {
+          "title": "Додати чи вилучити робочий стіл",
+          "keys": [
+            "N",
+            "/",
+            "D"
+          ]
+        },
+        {
+          "title": "Усі вікна на робочий стіл",
+          "keys": [
+            "M",
+            "1–9"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Дії",
+      "rows": [
+        {
+          "title": "Параметри",
+          "keys": [
+            "CMD",
+            ","
+          ]
+        },
+        {
+          "title": "Вихід",
+          "keys": [
+            "ESC"
+          ]
+        }
+      ]
+    }
+  ],
+  "vi": [
+    {
+      "title": "Chọn · ⇧ Di chuyển",
+      "rows": [
+        {
+          "title": "Cột",
+          "keys": [
+            "←",
+            "→"
+          ]
+        },
+        {
+          "title": "Cửa sổ",
+          "keys": [
+            "↑",
+            "↓"
+          ]
+        },
+        {
+          "title": "Màn hình nền",
+          "keys": [
+            "1–9"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Cột",
+      "rows": [
+        {
+          "title": "Vào hoặc ra khỏi cột",
+          "keys": [
+            ",",
+            "."
+          ]
+        },
+        {
+          "title": "Chiều rộng",
+          "keys": [
+            "-",
+            "="
+          ]
+        },
+        {
+          "title": "Chiều cao",
+          "keys": [
+            "[",
+            "]"
+          ]
+        },
+        {
+          "title": "Chọn cột đã ghim",
+          "keys": [
+            "TAB"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Nhãn",
+      "rows": [
+        {
+          "title": "Đi tới cửa sổ",
+          "keys": [
+            "A",
+            "S",
+            "D",
+            "…"
+          ]
+        },
+        {
+          "title": "Đưa xuống dưới",
+          "keys": [
+            "⇧",
+            "A",
+            "…"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Sau Dấu cách",
+      "rows": [
+        {
+          "title": "Thả nổi hoặc xếp",
+          "keys": [
+            "F"
+          ]
+        },
+        {
+          "title": "Toàn màn hình",
+          "keys": [
+            "S"
+          ]
+        },
+        {
+          "title": "Ghim hoặc bỏ ghim",
+          "keys": [
+            "P"
+          ]
+        },
+        {
+          "title": "Vào/rời ngăn xếp ứng dụng",
+          "keys": [
+            "J",
+            "/",
+            "X"
+          ]
+        },
+        {
+          "title": "Pin Deck: thêm/xóa",
+          "keys": [
+            "A",
+            "/",
+            "R"
+          ]
+        },
+        {
+          "title": "Xếp tất cả",
+          "keys": [
+            "T"
+          ]
+        },
+        {
+          "title": "Thêm/Xóa màn hình nền",
+          "keys": [
+            "N",
+            "/",
+            "D"
+          ]
+        },
+        {
+          "title": "Tất cả sang màn hình nền",
+          "keys": [
+            "M",
+            "1–9"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Tác vụ",
+      "rows": [
+        {
+          "title": "Cài đặt",
+          "keys": [
+            "CMD",
+            ","
+          ]
+        },
+        {
+          "title": "Thoát",
+          "keys": [
+            "ESC"
+          ]
+        }
+      ]
+    }
+  ],
+  "zh-HK": [
+    {
+      "title": "聚焦 · ⇧ 移動",
+      "rows": [
+        {
+          "title": "欄",
+          "keys": [
+            "←",
+            "→"
+          ]
+        },
+        {
+          "title": "視窗",
+          "keys": [
+            "↑",
+            "↓"
+          ]
+        },
+        {
+          "title": "桌面",
+          "keys": [
+            "1–9"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "欄",
+      "rows": [
+        {
+          "title": "移入或移出",
+          "keys": [
+            ",",
+            "."
+          ]
+        },
+        {
+          "title": "寬度",
+          "keys": [
+            "-",
+            "="
+          ]
+        },
+        {
+          "title": "高度",
+          "keys": [
+            "[",
+            "]"
+          ]
+        },
+        {
+          "title": "聚焦固定欄",
+          "keys": [
+            "TAB"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "標籤",
+      "rows": [
+        {
+          "title": "前往視窗",
+          "keys": [
+            "A",
+            "S",
+            "D",
+            "…"
+          ]
+        },
+        {
+          "title": "移到下方",
+          "keys": [
+            "⇧",
+            "A",
+            "…"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "空格後",
+      "rows": [
+        {
+          "title": "浮動/並排",
+          "keys": [
+            "F"
+          ]
+        },
+        {
+          "title": "全螢幕",
+          "keys": [
+            "S"
+          ]
+        },
+        {
+          "title": "固定/取消固定",
+          "keys": [
+            "P"
+          ]
+        },
+        {
+          "title": "加入/離開 App 堆疊",
+          "keys": [
+            "J",
+            "/",
+            "X"
+          ]
+        },
+        {
+          "title": "加入/移出 Pin Deck",
+          "keys": [
+            "A",
+            "/",
+            "R"
+          ]
+        },
+        {
+          "title": "全部並排",
+          "keys": [
+            "T"
+          ]
+        },
+        {
+          "title": "新增/刪除桌面",
+          "keys": [
+            "N",
+            "/",
+            "D"
+          ]
+        },
+        {
+          "title": "全部移到桌面",
+          "keys": [
+            "M",
+            "1–9"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "動作",
+      "rows": [
+        {
+          "title": "設定",
+          "keys": [
+            "CMD",
+            ","
+          ]
+        },
+        {
+          "title": "離開",
+          "keys": [
+            "ESC"
+          ]
+        }
+      ]
+    }
+  ],
+  "zh-Hans": [
+    {
+      "title": "聚焦 · ⇧ 移动",
+      "rows": [
+        {
+          "title": "列",
+          "keys": [
+            "←",
+            "→"
+          ]
+        },
+        {
+          "title": "窗口",
+          "keys": [
+            "↑",
+            "↓"
+          ]
+        },
+        {
+          "title": "桌面",
+          "keys": [
+            "1–9"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "列",
+      "rows": [
+        {
+          "title": "移入或移出",
+          "keys": [
+            ",",
+            "."
+          ]
+        },
+        {
+          "title": "宽度",
+          "keys": [
+            "-",
+            "="
+          ]
+        },
+        {
+          "title": "高度",
+          "keys": [
+            "[",
+            "]"
+          ]
+        },
+        {
+          "title": "聚焦固定列",
+          "keys": [
+            "TAB"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "标签",
+      "rows": [
+        {
+          "title": "前往窗口",
+          "keys": [
+            "A",
+            "S",
+            "D",
+            "…"
+          ]
+        },
+        {
+          "title": "移到下方",
+          "keys": [
+            "⇧",
+            "A",
+            "…"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "空格键后",
+      "rows": [
+        {
+          "title": "浮动/平铺",
+          "keys": [
+            "F"
+          ]
+        },
+        {
+          "title": "全屏",
+          "keys": [
+            "S"
+          ]
+        },
+        {
+          "title": "固定/取消固定",
+          "keys": [
+            "P"
+          ]
+        },
+        {
+          "title": "加入/离开 App 堆叠",
+          "keys": [
+            "J",
+            "/",
+            "X"
+          ]
+        },
+        {
+          "title": "加入/移出 Pin Deck",
+          "keys": [
+            "A",
+            "/",
+            "R"
+          ]
+        },
+        {
+          "title": "全部平铺",
+          "keys": [
+            "T"
+          ]
+        },
+        {
+          "title": "新建/删除桌面",
+          "keys": [
+            "N",
+            "/",
+            "D"
+          ]
+        },
+        {
+          "title": "全部移到桌面",
+          "keys": [
+            "M",
+            "1–9"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "操作",
+      "rows": [
+        {
+          "title": "设置",
+          "keys": [
+            "CMD",
+            ","
+          ]
+        },
+        {
+          "title": "退出",
+          "keys": [
+            "ESC"
+          ]
+        }
+      ]
+    }
+  ],
+  "zh-Hant": [
+    {
+      "title": "聚焦 · ⇧ 移動",
+      "rows": [
+        {
+          "title": "欄",
+          "keys": [
+            "←",
+            "→"
+          ]
+        },
+        {
+          "title": "視窗",
+          "keys": [
+            "↑",
+            "↓"
+          ]
+        },
+        {
+          "title": "桌面",
+          "keys": [
+            "1–9"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "欄",
+      "rows": [
+        {
+          "title": "移入或移出",
+          "keys": [
+            ",",
+            "."
+          ]
+        },
+        {
+          "title": "寬度",
+          "keys": [
+            "-",
+            "="
+          ]
+        },
+        {
+          "title": "高度",
+          "keys": [
+            "[",
+            "]"
+          ]
+        },
+        {
+          "title": "聚焦固定欄",
+          "keys": [
+            "TAB"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "標籤",
+      "rows": [
+        {
+          "title": "前往視窗",
+          "keys": [
+            "A",
+            "S",
+            "D",
+            "…"
+          ]
+        },
+        {
+          "title": "移到下方",
+          "keys": [
+            "⇧",
+            "A",
+            "…"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "空白鍵後",
+      "rows": [
+        {
+          "title": "浮動/並排",
+          "keys": [
+            "F"
+          ]
+        },
+        {
+          "title": "全螢幕",
+          "keys": [
+            "S"
+          ]
+        },
+        {
+          "title": "固定/取消固定",
+          "keys": [
+            "P"
+          ]
+        },
+        {
+          "title": "加入/離開 App 堆疊",
+          "keys": [
+            "J",
+            "/",
+            "X"
+          ]
+        },
+        {
+          "title": "加入/移出 Pin Deck",
+          "keys": [
+            "A",
+            "/",
+            "R"
+          ]
+        },
+        {
+          "title": "全部並排",
+          "keys": [
+            "T"
+          ]
+        },
+        {
+          "title": "新增/刪除桌面",
+          "keys": [
+            "N",
+            "/",
+            "D"
+          ]
+        },
+        {
+          "title": "全部移到桌面",
+          "keys": [
+            "M",
+            "1–9"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "動作",
+      "rows": [
+        {
+          "title": "設定",
+          "keys": [
+            "CMD",
+            ","
+          ]
+        },
+        {
+          "title": "離開",
+          "keys": [
+            "ESC"
+          ]
+        }
+      ]
+    }
+  ]
+}

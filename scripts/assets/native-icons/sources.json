@@ -303,5 +303,70 @@
       },
       "commit": "78aae7c44c597c1edbc40543ea5b96c696fffae6"
     }
+  },
+  "calmon": {
+    "project": "_vibe/pane",
+    "original": "Sources/AppIcon.icon",
+    "commit": "2d94d5604cd5c7239bb39f8f3a63cfa29f5ac38e",
+    "source": "scripts/assets/native-icons/calmon/AppIcon.icon",
+    "platform": "macOS",
+    "method": "Icon Composer Default export",
+    "output": "src/assets/img/calmon-icon.png",
+    "sourceHashes": {
+      "Assets/BlackField.svg": "a38ef0970ae4197416a496c992b31d2ee07dca6819d5658acfb9267c341ac60e",
+      "Assets/ColorBands.svg": "fa34b4292de623261a636bcd78cb50bba60c0a2a4f5a2223737a5392531ef544",
+      "Assets/DarkLetterA.png": "439383f7ff60acf550455a8746e572c6ba71bff89f1c1e64b38b16ce0e0dd769",
+      "Assets/DarkLetterC.png": "54936afbfb919c878781be98c71b2c7c68d34984e8beffb88155deccd9518e4b",
+      "Assets/DarkLetterL.png": "5ace27365637e5b846d67154888bfb3753c304efd7c9d1e12b5c0c00ed20083a",
+      "Assets/DarkLetterM.png": "530d409895399ea865fceb9542471e6b457e04ccf2d452f0be9a693e70152e32",
+      "Assets/DarkSideA.png": "398f0e0eda7d3a6a79190a5c7699ec79f21d3a2aa72bdaa2d54bb447368157a5",
+      "Assets/DarkSideC.png": "9bb2c6b57809bea8db8470c45b435a1367d5fcda4a3d01a9fc37026b38d1daa9",
+      "Assets/DarkSideL.png": "ba184b88699ffe7331c6c80ce6c31a5713c691749349945c1a0943edb7bd0158",
+      "Assets/DarkSideM.png": "6c7f813a29132e5a25516e6e147740462d92cfdb26f1606ab3fcf581c132f5a6",
+      "Assets/LetterA.png": "39d1fef7f07a3c76214a4f814d75a7d89f9e4453c8b8bb71f6d479af6984b50c",
+      "Assets/LetterC.png": "3b3ee818a3b56500278146bc90a6e82e5f4a500c4cdb4174effa3c4b82c8eb46",
+      "Assets/LetterL.png": "e3fcaeac1cc6c18c749d7b0660d212f7599818e0c98117628e6a5dc6827a9040",
+      "Assets/LetterM.png": "7351ef3f9b87839e9e7a9f0e6f027ded4e10c62675220e0718736819d9735a24",
+      "Assets/SideA.png": "6f262e3128757e803b4de31962b62c8ea56ca007ef72d54c25af6c37677f555c",
+      "Assets/SideC.png": "879444b3eb563ee6c8fa3201c1e37e6f93abb5b2d2a9e43f7d523df17f84b068",
+      "Assets/SideL.png": "8c166427cafe853a4fa064263cf50790e31166c395c26e58e80f8544b89c8210",
+      "Assets/SideM.png": "9fcb3f45e298989f883c6c488c90f626e887c15018af125183b588a38d853b83",
+      "icon.json": "b7aedfc0b4d5313a239258fea9fa6f8c9b4b68be466b0096678767047ccc59c4"
+    },
+    "outputSha256": "2047004796807b63f0d287ace071caba4a2ef53460c03007d025034fb99b44bb",
+    "size": [
+      1024,
+      1024
+    ],
+    "rendition": "Default",
+    "designGeneration": 27,
+    "workingTree": true,
+    "repository": "https://github.com/cxa/calmon-src",
+    "webRenditions": [
+      {
+        "output": "src/assets/img/calmon-icon-dark.png",
+        "sha256": "179e41625c75a516d67f04bbd8484066820022dd766d5606518b7449822c38b9",
+        "size": 1024,
+        "scale": 1,
+        "rendition": "Dark"
+      }
+    ],
+    "menuBar": {
+      "source": "scripts/assets/native-icons/calmon/MenuBarIcon.imageset/MenuBarIcon@2x.png",
+      "output": "scripts/assets/presskit/calmon-menubar.png",
+      "size": [
+        44,
+        44
+      ],
+      "points": [
+        22,
+        22
+      ],
+      "markPoints": [
+        16,
+        16
+      ],
+      "sha256": "7b0fd8e527d9c094b1fea3affccb8fc5074902abf73c74b994018f786916035e"
+    }
   }
 }

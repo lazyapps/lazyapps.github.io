@@ -1,5 +1,5 @@
-import ui from '../content/presskit-ui.json';
-import glossary from '../content/presskit-glossary.json';
+import baseUI from '../content/presskit-ui.json';
+import baseGlossary from '../content/presskit-glossary.json';
 import { languageHash, languageFromHash, resolvePressLanguage } from '../i18n/presskit-language.mjs';
 import { computerUseParts } from '../content/computer-use.mjs';
 
@@ -9,10 +9,14 @@ type ProductCopy = {
   links: { url: string; label: string }[];
 };
 type Presentation = { slug: string; locales: Record<string, ProductCopy> };
-type Language = keyof typeof ui;
-const data = JSON.parse(document.querySelector('#press-page-data')!.textContent!) as { product?: string; products: Presentation[] };
-const languages = Object.keys(ui);
+type Language = string;
+type InterfaceCopy = typeof baseUI.en;
+type GlossaryCopy = Pick<typeof baseGlossary.en, 'name' | 'headings' | 'usage'>;
+const data = JSON.parse(document.querySelector('#press-page-data')!.textContent!) as { product?: string; products: Presentation[]; ui?: Record<string,InterfaceCopy>; glossary?: Record<string,GlossaryCopy> };
+const ui: Record<string,InterfaceCopy> = data.ui ?? baseUI;
+const glossary: Record<string,GlossaryCopy> = data.glossary ?? baseGlossary;
 const picker = document.querySelector<HTMLSelectElement>('[data-locale-mode="hash"]')!;
+const languages = [...picker.options].map(option=>option.dataset.locale!);
 const product = data.products.find(item => item.slug === data.product);
 let saved: string | null = null;
 try { saved = localStorage.getItem('presskit.locale'); } catch {}
@@ -40,7 +44,7 @@ function applyLanguage(tag: Language) {
     mediaContact: g.headings[5], officialLinks: g.headings[7], usageLabel: g.headings[9], usage: g.usage,
   };
   document.documentElement.lang = tag;
-  document.documentElement.dir = tag === 'ar' ? 'rtl' : 'ltr';
+  document.documentElement.dir = ['ar','he'].includes(tag) ? 'rtl' : 'ltr';
   document.querySelectorAll<HTMLElement>('[data-press-text]').forEach(element => {
     element.textContent = labels[element.dataset.pressText!];
   });
@@ -53,7 +57,7 @@ function applyLanguage(tag: Language) {
   document.querySelectorAll<HTMLElement>('[data-press-home],.site-header__home').forEach(element => element.setAttribute('aria-label', ui[tag].home));
   const footer = document.querySelector<HTMLElement>('#site-footer')!;
   footer.lang = tag;
-  footer.dir = tag === 'ar' ? 'rtl' : 'ltr';
+  footer.dir = ['ar','he'].includes(tag) ? 'rtl' : 'ltr';
   footer.querySelector('[data-press-footer-nav]')!.setAttribute('aria-label', [ui[tag].support, g.headings[0], ui[tag].privacy].join(', '));
   document.querySelectorAll<HTMLAnchorElement>('[data-press-route]').forEach(link => {
     link.href = link.dataset.pressRoute + languageHash(tag);
@@ -68,7 +72,7 @@ function applyLanguage(tag: Language) {
       else element.textContent = copy[key];
       if (key === 'summary' || key === 'name') {
         element.lang = key === 'summary' ? copy.summaryLang : /^[A-Za-z0-9 .&-]+$/.test(copy.name) ? 'en' : tag;
-        element.dir = element.lang === 'ar' ? 'rtl' : 'ltr';
+        element.dir = ['ar','he'].includes(element.lang) ? 'rtl' : 'ltr';
         if (key === 'name') element.toggleAttribute('data-bilingual', copy.name.includes(' · '));
       }
     });
@@ -88,7 +92,7 @@ function applyLanguage(tag: Language) {
     const materialName = document.querySelector<HTMLElement>('[data-press-material-name]')!;
     materialName.textContent = glossary[copy.materialTag as Language].name;
     materialName.lang = copy.materialTag;
-    materialName.dir = copy.materialTag === 'ar' ? 'rtl' : 'ltr';
+    materialName.dir = ['ar','he'].includes(copy.materialTag) ? 'rtl' : 'ltr';
     document.title = `${copy.name} — ${g.headings[0]} | lazyapps`;
   } else {
     data.products.forEach(item => {

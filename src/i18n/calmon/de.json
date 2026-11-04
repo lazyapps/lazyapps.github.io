@@ -1,0 +1,156 @@
+{
+  "hero": [
+    "Ruhig bleiben\nund weiterscrollen",
+    "Scrollender Kachel-Fenstermanager",
+    "Calmon ordnet Mac-Fenster in scrollbaren Spalten an. Fenster stapeln, Spalten anheften und per Maus oder Tastatur wechseln."
+  ],
+  "nav": [
+    "lazyapps-Startseite",
+    "Sprache wählen",
+    "Zum Inhalt"
+  ],
+  "release": [
+    "Kostenlos herunterladen",
+    "Während der Beta kostenlos",
+    "Fehler gefunden oder eine Idee? Schreib @lazyapps auf X. Danke, dass du Calmon besser machst.",
+    "macOS 26 oder neuer"
+  ],
+  "display": [
+    "Wie ordne ich mehrere Bildschirme an?",
+    "Bildschirme am besten übereinander anordnen. Nebeneinander blockieren gemeinsame Ränder das Scrollen; der Spaltenwechsel springt dort zum Anfang. Bei Bildschirmen auf beiden Seiten liegen Hintergrundfenster hinter dem gewählten Fenster übereinander."
+  ],
+  "features": [
+    [
+      "Spalten scrollen",
+      "Fenster scrollen horizontal. Die aktive Spalte füllt den Großteil des Bildschirms. Im Befehlsmodus mit den Pfeiltasten wechseln."
+    ],
+    [
+      "App-Stapel",
+      "Gekachelte Fenster derselben App bilden einen Stapel. Mit Stapelmarkierung oder ⌘` wechseln. Eine Spalte fasst bis zu drei Stapel."
+    ],
+    [
+      "Feste Spalte",
+      "Eine Spalte am linken oder rechten Rand festhalten. Andere Fenster scrollen daneben. Im Befehlsmodus wechselt Tab den Fokus."
+    ],
+    [
+      "Pin Deck",
+      "Bis zu zehn Apps anheften. Über die Pin Deck-Markierung hinzufügen, über das Symbolmenü entfernen. Die Reihenfolge gilt für alle Bildschirme."
+    ],
+    [
+      "Sky Deck & Max Deck",
+      "Sky Deck zeigt schwebende Fenster, Max Deck native Vollbildfenster. Ein Klick auf das Symbol öffnet das Fenster."
+    ],
+    [
+      "Fenster & Schreibtische",
+      "Auf eine Schreibtischnummer klicken. Im Befehlsmodus ein Symbolkürzel eingeben. Mit Shift und 1–9 das gewählte Fenster auf einen anderen Schreibtisch verschieben."
+    ]
+  ],
+  "keyboard": [
+    "Mit der Maus arbeiten\nTasten nebenbei lernen",
+    "Layoutübersicht",
+    "Automatische Anzeige ausschalten: Einstellungen → Tastatur → Tastenübersicht → Anzeigen nach → Nie. Die Layoutübersicht öffnet das Panel weiterhin.",
+    "⌘ zweimal antippen und loslassen. Solange das Fenster hervorgehoben ist, kannst du weitere Befehle ausführen. Esc beendet den Modus.",
+    "Tastenübersicht",
+    "Wichtige Tasten"
+  ],
+  "mouse": [
+    "Ein Symbol in der Tableiste wählt das Fenster.",
+    "Control-Klick öffnet die Fensteraktionen.",
+    "Die Layoutübersicht öffnet die Tastenübersicht.",
+    "Ein Klick auf eine Taste führt den Befehl aus."
+  ],
+  "actions": [
+    "Spalte / Fenster wählen",
+    "Fenster oder Spalte verschieben",
+    "Spalte verbinden / trennen",
+    "App-Stapel beitreten / verlassen",
+    "Pin Deck-App hinzufügen / entfernen",
+    "Schreibtisch wechseln / Fenster verschieben",
+    "Befehlsmodus beenden"
+  ],
+  "setup": [
+    "Erste Schritte",
+    "Programme",
+    "Bedienungshilfen",
+    "Calmon installieren",
+    "Calmon laden",
+    ". In „Programme“ verschieben.",
+    "Bedienungshilfen erlauben",
+    "Calmon in die Bedienungshilfen-Liste ziehen und einschalten.",
+    "Fenster öffnen",
+    "Fenster über die Tableiste wählen. Die Layoutübersicht öffnet die Tastenübersicht.",
+    "Calmon hat kein Dock-Symbol. Du findest es in der Menüleiste {icon}."
+  ],
+  "faq": [
+    "Fragen und Antworten",
+    [
+      "Welche Macs werden unterstützt?",
+      "macOS 26 oder neuer, mit Apple Chip oder Intel."
+    ],
+    [
+      "Welche Berechtigung ist nötig?",
+      "Bedienungshilfen erlauben, damit Calmon Fenster bewegen, skalieren und auswählen kann."
+    ],
+    [
+      "Muss ich Tastenkürzel lernen?",
+      "Nein. Alle Fensteraktionen funktionieren mit der Maus. Die Layoutübersicht öffnet jederzeit die Tastenübersicht."
+    ],
+    [
+      "Kann ich Trackpad-Wischgesten nutzen?",
+      "In Einstellungen → Gesten Drei- oder Vier-Finger-Wischen aktivieren. Standardmäßig aus. Vor dem Wischen Shift halten, um die ursprüngliche macOS-Geste zu nutzen."
+    ],
+    [
+      "Werden alle Fenster gekachelt?",
+      "Standardfenster werden gekachelt. Dialoge, Einstellungen und Fenster mit fester Größe schweben. Regeln unter Einstellungen → Erweitert hinzufügen."
+    ],
+    [
+      "Wechselt Calmon den Schreibtisch eines Fensters?",
+      "Nur wenn du es verschiebst. Über Schreibtischnummern oder den Befehlsmodus wechseln. Beim Beenden stellt Calmon gespeicherte Fensterpositionen wieder her."
+    ],
+    [
+      "Ist die Beta kostenlos?",
+      "Ja, während der Beta ist Calmon kostenlos."
+    ],
+    [
+      "Wie aktualisiere ich Calmon?",
+      "Im Calmon-Menü „Nach Updates suchen“ wählen."
+    ]
+  ],
+  "demo": [
+    "Pause",
+    "Weiter",
+    "Demo neu starten",
+    "⌘ zweimal antippen und loslassen",
+    "Befehlsmodus · weitere Tasten verwenden",
+    "macOS-Kürzel · ohne Befehlsmodus",
+    "dann",
+    "JavaScript aktivieren, um die Demo abzuspielen.",
+    "Befehlsmodus beendet"
+  ],
+  "menus": [
+    "Ablage",
+    "Bearbeiten",
+    "Darstellung",
+    "Fenster",
+    "Hilfe"
+  ],
+  "apps": [
+    "Notizen",
+    "Finder",
+    "Terminal",
+    "Mail",
+    "Kalender",
+    "Musik"
+  ],
+  "windows": [
+    "Calmon-Anleitung",
+    "Diese Woche",
+    "Ideen",
+    "Projekte",
+    "Website",
+    "Eingang",
+    "Termine",
+    "Aktuelle Wiedergabe"
+  ],
+  "subtitle": "Scrollender Kachel-WM"
+}

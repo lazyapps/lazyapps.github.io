@@ -10,14 +10,16 @@ interface Props {
   class?: string;
   locale?: string;
   pressKit?: string | false;
+  labels?: { support: string; privacy: string; kit: string };
 }
 
-const { class: className, locale = 'en', pressKit = '/presskit/' } = Astro.props;
+const { class: className, locale = 'en', pressKit = '/presskit/', labels } = Astro.props;
 const classes = ['base', className].filter(Boolean).join(' ');
 const privacyUrl = locale.toLowerCase().startsWith('zh') ? '/privacy.zh.html' : '/privacy.en.html';
 const pressKitUrl = pressKit && pressKit.split('#')[0] + languageHash(locale === 'zh' ? 'zh-Hans' : locale);
 
 const macApps = [
+  { name: 'Calmon', href: '/calmon/' },
   { name: 'Doze', href: '/doze/' },
   { name: 'YiYan', href: '/yiyan/' },
   { name: 'XVDL', href: '/xvdl/' },
@@ -52,13 +54,13 @@ const landStyle = [
 ].join(';');
 ---
 
-<div id="site-footer" class={classes} lang="en" dir="ltr" style={landStyle}>
+<div id="site-footer" class={classes} lang={labels ? locale : 'en'} dir={labels && ['ar','he'].includes(locale) ? 'rtl' : 'ltr'} style={landStyle}>
   <div class="base__panel">
     <div class="base__inner">
       <div class="base__top">
         <div class="base__brand">
           <a href="/" class="base__wordmark" aria-label="lazyapps home" data-press-home>Lazyapps<i aria-hidden="true"></i></a>
-          <p class="base__meta">© 2026 · Taking it easy since 2009</p>
+          <p class="base__meta">© Taking it easy since 2009</p>
         </div>
         <div class="base__cols">
           <nav class="base__col" aria-label="Mac apps">
@@ -76,9 +78,10 @@ const landStyle = [
           <nav class="base__col" aria-label="Footer" data-press-footer-nav>
             <p class="base__label">Studio</p>
             <ul>
-              <li><a data-hover href="/support/"><span data-underline-link class="underline-link" data-press-text="support">Support</span></a></li>
-              {pressKit && <li><a data-hover href={pressKitUrl} data-press-route={pressKit.split('#')[0]}><span data-underline-link class="underline-link" data-press-text="kit">Press Kit</span></a></li>}
-              <li><a data-hover href={privacyUrl} data-press-privacy><span data-underline-link class="underline-link" data-press-text="privacy">Privacy</span></a></li>
+              <li><a class="base__icon-link" data-hover href="/support/"><svg class="base__link-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="2" y="4" width="20" height="16" rx="3" /><path d="m3 6 9 7 9-7" /></svg><span data-underline-link class="underline-link" data-press-text="support">{labels?.support ?? 'Support'}</span></a></li>
+              <li><a class="base__icon-link" data-hover href="https://x.com/lazyapps" aria-label="X @lazyapps" target="_blank" rel="noopener noreferrer"><svg class="base__link-icon base__link-icon--x" width="12" height="12" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.64 7.584H.47l8.6-9.835L0 1.154h7.594l5.243 6.932 6.064-6.933ZM17.61 20.644h2.039L6.486 3.24H4.298L17.61 20.644Z" /></svg><span data-underline-link class="underline-link">@lazyapps</span></a></li>
+              {pressKit && <li><a class="base__icon-link" data-hover href={pressKitUrl} data-press-route={pressKit.split('#')[0]}><svg class="base__link-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 20H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2Z" /></svg><span data-underline-link class="underline-link" data-press-text="kit">{labels?.kit ?? 'Press Kit'}</span></a></li>}
+              <li><a class="base__icon-link" data-hover href={privacyUrl} data-press-privacy><svg class="base__link-icon base__link-icon--shield" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m12 2 9 3v6c0 6-9 11-9 11S3 17 3 11V5l9-3Z" /><path d="m9 12 2 2 4-4" /></svg><span data-underline-link class="underline-link" data-press-text="privacy">{labels?.privacy ?? 'Privacy'}</span></a></li>
             </ul>
           </nav>
         </div>

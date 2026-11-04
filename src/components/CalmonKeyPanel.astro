@@ -1,0 +1,38 @@
+---
+import panels from './calmon-key-panel.json';
+import systemLanguages from './calmon-key-panel-system.json';
+const { code = '', label } = Astro.props;
+const sections = panels[code || 'zh-Hans'];
+const columns = [sections.slice(0, 3), sections.slice(3)];
+---
+<div class:list={['calmon-key-panel', {'is-system-text': systemLanguages.includes(code || 'zh-Hans')}]} role="group" aria-label={label}>
+  <div class="calmon-key-panel__columns">
+    {columns.map(column => <div class="calmon-key-panel__column">
+      {column.map(section => <section>
+        <h3><span>{section.title}</span></h3>
+        <dl>{section.rows.map(row => <div class="calmon-key-panel__row">
+          <dt>{row.title}</dt>
+          <dd dir="ltr">{row.keys.map(key => key === '/' ? <span class="calmon-key-panel__separator">/</span> : <kbd>{key}</kbd>)}</dd>
+        </div>)}</dl>
+      </section>)}
+    </div>)}
+  </div>
+</div>
+<style>
+  @font-face{font-family:'calmon Panel';src:url('../assets/fonts/calmon-panel.woff2') format('woff2');font-weight:400;font-display:swap}
+  .calmon-key-panel{container-type:inline-size;padding:12px;border-radius:8px;background:#111;color:#ddd;font:400 18px/24px 'calmon Panel',monospace;font-synthesis:none;letter-spacing:0;text-align:start}
+  .is-system-text{font-family:var(--sans);font-size:16px;line-height:1.5;text-align:start}
+  .calmon-key-panel kbd{font-family:'calmon Panel',monospace}
+  .calmon-key-panel__columns{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:24px}
+  .calmon-key-panel__column{display:flex;flex-direction:column;gap:12px;min-width:0}
+  section:last-child{margin-top:auto}
+  h3{display:flex;align-items:center;height:24px;margin:0;font:inherit;text-transform:uppercase}
+  h3 span{display:inline-block;padding:0 3px;border-radius:1px;background:#00ff33;color:#101a0e;line-height:21px}
+  dl,dd{margin:0}
+  .calmon-key-panel__row{display:flex;align-items:center;justify-content:space-between;gap:8px;min-height:27px}
+  dt{min-width:0}
+  dd{display:flex;align-items:center;justify-content:flex-end;gap:3px;flex:none}
+  kbd{display:inline-flex;align-items:center;justify-content:center;min-width:24px;height:21px;padding:0 4px;border-radius:1px;background:#414141;color:#eee;box-shadow:inset 0 1px #676767,0 1px #222;font:inherit;line-height:21px;white-space:nowrap}
+  .calmon-key-panel__separator{padding-inline:1px;color:#aaa}
+  @container(max-width:535px){.calmon-key-panel__columns{grid-template-columns:1fr;gap:12px}}
+</style>

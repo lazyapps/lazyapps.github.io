@@ -44,6 +44,21 @@ def main():
         record['size'] = [width, height]
         record['rendition'] = 'Default'
         record['designGeneration'] = 27 if source.is_dir() else None
+        if slug == 'calmon':
+            dark_output = ROOT / 'src/assets/img/calmon-icon-dark.png'
+            subprocess.run([ICTOOL, str(source), '--export-image', '--output-file', str(dark_output),
+                            '--platform', 'macOS', '--rendition', 'Dark', '--width', '1024',
+                            '--height', '1024', '--scale', '1', '--design-generation', '27'],
+                           check=True, capture_output=True)
+            record['webRenditions'] = [{'output': str(dark_output.relative_to(ROOT)),
+                'sha256': hashlib.sha256(dark_output.read_bytes()).hexdigest(),
+                'size': 1024, 'scale': 1, 'rendition': 'Dark'}]
+            menu_source = source.parent / 'MenuBarIcon.imageset/MenuBarIcon@2x.png'
+            menu_output = ROOT / 'scripts/assets/presskit/calmon-menubar.png'
+            shutil.copyfile(menu_source, menu_output)
+            record['menuBar'] = {'source': str(menu_source.relative_to(ROOT)),
+                'output': str(menu_output.relative_to(ROOT)), 'size': [44, 44], 'points': [22, 22], 'markPoints': [16, 16],
+                'sha256': hashlib.sha256(menu_output.read_bytes()).hexdigest()}
         print(f'{slug}: {width}×{height} · {record["method"]}')
     SOURCES.write_text(json.dumps(sources, ensure_ascii=False, indent=2) + '\n')
 

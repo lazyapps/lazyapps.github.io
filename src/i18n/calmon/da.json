@@ -1,0 +1,156 @@
+{
+  "hero": [
+    "Tag det\nroligt og rul videre",
+    "Vinduesstyring med rullende fliser",
+    "Calmon ordner Mac-vinduer i rullende kolonner. Stabl vinduer, fastgør en kolonne, og skift med mus eller tastatur."
+  ],
+  "nav": [
+    "lazyapps-forside",
+    "Vælg sprog",
+    "Til indhold"
+  ],
+  "release": [
+    "Download gratis",
+    "Gratis under betaen",
+    "En fejl eller en idé? Skriv til @lazyapps på X. Tak, fordi du hjælper os med at forbedre Calmon.",
+    "macOS 26 eller nyere"
+  ],
+  "display": [
+    "Hvordan placerer jeg flere skærme?",
+    "Placer skærmene over hinanden. Ved siden af hinanden blokerer fælles kanter rulning, og kolonneskift starter forfra dér. Med skærme på begge sider overlapper baggrundsvinduer bag det valgte vindue."
+  ],
+  "features": [
+    [
+      "Rul mellem kolonner",
+      "Vinduer ruller vandret. Den aktive kolonne fylder det meste af skærmen. Brug piletaster i kommandotilstand."
+    ],
+    [
+      "Appstakke",
+      "Flisevinduer fra samme app danner en stak. Klik på en stakmarkør, eller tryk ⌘` for at skifte. En kolonne rummer op til tre stakke."
+    ],
+    [
+      "Fast kolonne",
+      "Fastgør en kolonne til venstre eller højre. Andre vinduer ruller ved siden af. Tab skifter fokus i kommandotilstand."
+    ],
+    [
+      "Pin Deck",
+      "Fastgør op til ti apps. Tilføj via Pin Deck-mærket, og fjern via ikonets menu. Rækkefølgen er ens på alle skærme."
+    ],
+    [
+      "Sky Deck og Max Deck",
+      "Sky Deck viser flydende vinduer, Max Deck vinduer i macOS’ fuldskærmstilstand. Klik på et ikon for at vende tilbage."
+    ],
+    [
+      "Vinduer og skriveborde",
+      "Klik på et skrivebordsnummer. Skriv en ikonetiket i kommandotilstand. Shift og 1–9 flytter det valgte vindue til et andet skrivebord."
+    ]
+  ],
+  "keyboard": [
+    "Brug musen\nLær tasterne undervejs",
+    "layoutkortet",
+    "Skjul det automatiske panel: Indstillinger → Tastatur → Tastepanel → Vis efter → Aldrig. Layoutkortet åbner altid panelet.",
+    "Tryk to gange på ⌘, og slip. Fortsæt med kommandoer, mens vinduet er fremhævet. Esc afslutter tilstanden.",
+    "Tastepanel",
+    "Vigtige taster"
+  ],
+  "mouse": [
+    "Klik på et ikon i fanelinjen for at vælge et vindue.",
+    "Control-klik åbner vindueshandlinger.",
+    "Klik på layoutkortet for at åbne tastepanelet.",
+    "Klik på en tast for at udføre kommandoen."
+  ],
+  "actions": [
+    "Vælg kolonne / vindue",
+    "Flyt vindue eller kolonne",
+    "Saml / adskil kolonne",
+    "Tilslut / forlad appstak",
+    "Tilføj / fjern Pin Deck-app",
+    "Skift skrivebord / flyt vindue",
+    "Afslut kommandotilstand"
+  ],
+  "setup": [
+    "Kom i gang",
+    "Programmer",
+    "Tilgængelighed",
+    "Installer Calmon",
+    "Hent Calmon",
+    ". Flyt det til Programmer.",
+    "Tillad tilgængelighed",
+    "Træk Calmon til listen Tilgængelighed, og slå det til.",
+    "Åbn dine vinduer",
+    "Vælg et vindue i fanelinjen. Layoutkortet åbner tastepanelet.",
+    "Calmon har ikke et Dock-symbol. Find det på menulinjen {icon}."
+  ],
+  "faq": [
+    "Spørgsmål og svar",
+    [
+      "Hvilke Mac-computere understøttes?",
+      "Mac med Apple-chip eller Intel og macOS 26 eller nyere."
+    ],
+    [
+      "Hvilken tilladelse kræves?",
+      "Tilgængelighed til at flytte, ændre størrelse på og vælge vinduer."
+    ],
+    [
+      "Skal jeg huske genveje?",
+      "Nej. Alle vindueshandlinger virker med musen. Layoutkortet åbner tastepanelet."
+    ],
+    [
+      "Kan jeg bruge pegefeltbevægelser?",
+      "De er slået fra som standard. Aktivér tre eller fire fingre i Indstillinger → Bevægelser. Hold Shift før bevægelsen for at bruge macOS’ oprindelige bevægelse."
+    ],
+    [
+      "Arrangeres alle vinduer som fliser?",
+      "Standardvinduer gør. Dialoger, indstillinger og vinduer med fast størrelse flyder. Tilføj regler i Indstillinger → Avanceret."
+    ],
+    [
+      "Flytter Calmon vinduer mellem skriveborde?",
+      "Kun når du flytter dem. Skift med skrivebordsnumre eller kommandotilstand. Når Calmon afsluttes, gendannes gemte vinduespositioner."
+    ],
+    [
+      "Er betaen gratis?",
+      "Ja, Calmon er gratis under betaen."
+    ],
+    [
+      "Hvordan opdaterer jeg?",
+      "Vælg Søg efter opdateringer i Calmon-menuen."
+    ]
+  ],
+  "demo": [
+    "Pause",
+    "Fortsæt",
+    "Start demo forfra",
+    "Tryk to gange på ⌘, og slip",
+    "Kommandotilstand · fortsæt med tasterne",
+    "macOS-genvej · uden kommandotilstand",
+    "derefter",
+    "Slå JavaScript til for at se demoen.",
+    "Kommandotilstand afsluttet"
+  ],
+  "menus": [
+    "Arkiv",
+    "Rediger",
+    "Oversigt",
+    "Vindue",
+    "Hjælp"
+  ],
+  "apps": [
+    "Noter",
+    "Finder",
+    "Terminal",
+    "Mail",
+    "Kalender",
+    "Musik"
+  ],
+  "windows": [
+    "Calmon-guide",
+    "Denne uge",
+    "Idéer",
+    "Projekter",
+    "Websted",
+    "Indbakke",
+    "Plan",
+    "Afspilles nu"
+  ],
+  "subtitle": "Vinduer med rullende fliser"
+}

@@ -1,0 +1,156 @@
+{
+  "hero": [
+    "Mantieni la calma\ne continua a scorrere",
+    "Gestore di finestre affiancate a scorrimento",
+    "Calmon dispone le finestre Mac in colonne scorrevoli. Impila le finestre, fissa una colonna e passa da una finestra all’altra con mouse o tastiera."
+  ],
+  "nav": [
+    "Home di lazyapps",
+    "Scegli lingua",
+    "Vai al contenuto"
+  ],
+  "release": [
+    "Scarica gratis",
+    "Gratis durante la beta",
+    "Un errore o un’idea? Scrivi a @lazyapps su X. Grazie per aiutarci a migliorare Calmon.",
+    "macOS 26 o successivo"
+  ],
+  "display": [
+    "Come disporre più schermi?",
+    "Disponili in verticale. Affiancati, i bordi condivisi bloccano lo scorrimento e il cambio di colonna torna all’inizio. Con schermi su entrambi i lati, le finestre sullo sfondo si sovrappongono dietro quella selezionata."
+  ],
+  "features": [
+    [
+      "Scorri le colonne",
+      "Le finestre scorrono in orizzontale. La colonna attiva occupa quasi tutto lo schermo. Usa le frecce in modalità comandi."
+    ],
+    [
+      "Pile di app",
+      "Le finestre affiancate della stessa app formano una pila. Fai clic sull’indicatore o premi ⌘` per cambiare finestra. Ogni colonna contiene fino a tre pile."
+    ],
+    [
+      "Colonna fissa",
+      "Fissa una colonna a sinistra o a destra. Le altre finestre scorrono accanto. Tab cambia il focus in modalità comandi."
+    ],
+    [
+      "Pin Deck",
+      "Fissa fino a dieci app. Aggiungile dal simbolo Pin Deck e rimuovile dal menu dell’icona. L’ordine è comune a tutti gli schermi."
+    ],
+    [
+      "Sky Deck e Max Deck",
+      "Sky Deck elenca le finestre mobili, Max Deck quelle a tutto schermo nativo. Fai clic su un’icona per tornare alla finestra."
+    ],
+    [
+      "Finestre e scrivanie",
+      "Fai clic sul numero di una scrivania. In modalità comandi, digita l’etichetta di un’icona. Shift e 1–9 spostano la finestra selezionata su un’altra scrivania."
+    ]
+  ],
+  "keyboard": [
+    "Usa il mouse\nImpara i tasti strada facendo",
+    "mappa del layout",
+    "Per nascondere il pannello automatico: Impostazioni → Tastiera → Pannello tasti → Mostra dopo → Mai. La mappa del layout apre sempre il pannello.",
+    "Premi ⌘ due volte e rilascialo. Finché la finestra è evidenziata, puoi continuare a eseguire comandi. Esc esce dalla modalità.",
+    "Pannello tasti",
+    "Tasti essenziali"
+  ],
+  "mouse": [
+    "Fai clic su un’icona nella barra delle schede per scegliere la finestra.",
+    "Control-clic apre le azioni della finestra.",
+    "Fai clic sulla mappa del layout per aprire il pannello tasti.",
+    "Fai clic su un tasto per eseguire il comando."
+  ],
+  "actions": [
+    "Scegli colonna / finestra",
+    "Sposta finestra o colonna",
+    "Unisci / separa colonna",
+    "Entra / esci dalla pila dell’app",
+    "Aggiungi / rimuovi app da Pin Deck",
+    "Cambia scrivania / sposta finestra",
+    "Esci dalla modalità comandi"
+  ],
+  "setup": [
+    "Per iniziare",
+    "Applicazioni",
+    "Accessibilità",
+    "Installa Calmon",
+    "Scarica Calmon",
+    ". Spostalo in Applicazioni.",
+    "Consenti l’accessibilità",
+    "Trascina Calmon nell’elenco Accessibilità e attivalo.",
+    "Apri le finestre",
+    "Scegli una finestra dalla barra delle schede. La mappa del layout apre il pannello tasti.",
+    "Calmon non ha un’icona nel Dock. Lo trovi nella barra dei menu {icon}."
+  ],
+  "faq": [
+    "Domande e risposte",
+    [
+      "Quali Mac sono compatibili?",
+      "Mac con chip Apple o Intel e macOS 26 o successivo."
+    ],
+    [
+      "Quale permesso serve?",
+      "Accessibilità per spostare, ridimensionare e selezionare le finestre."
+    ],
+    [
+      "Devo ricordare le scorciatoie?",
+      "No. Tutte le azioni funzionano con il mouse. Apri il pannello tasti dalla mappa del layout."
+    ],
+    [
+      "Posso usare i gesti del trackpad?",
+      "Sono disattivati all’inizio. Abilita tre o quattro dita in Impostazioni → Gesti. Tieni premuto Shift prima di scorrere per usare il gesto macOS originale."
+    ],
+    [
+      "Tutte le finestre vengono affiancate?",
+      "Quelle standard sì. Dialoghi, impostazioni e finestre di dimensioni fisse restano mobili. Aggiungi regole in Impostazioni → Avanzate."
+    ],
+    [
+      "Calmon sposta le finestre tra scrivanie?",
+      "Solo quando le sposti tu. Cambia scrivania con i numeri o la modalità comandi. All’uscita, Calmon ripristina le posizioni salvate."
+    ],
+    [
+      "La beta è gratis?",
+      "Sì, Calmon è gratis durante la beta."
+    ],
+    [
+      "Come si aggiorna?",
+      "Scegli Cerca aggiornamenti nel menu Calmon."
+    ]
+  ],
+  "demo": [
+    "Pausa",
+    "Continua",
+    "Riavvia demo",
+    "Premi ⌘ due volte e rilascialo",
+    "Modalità comandi · continua con i tasti",
+    "Scorciatoia macOS · senza modalità comandi",
+    "poi",
+    "Abilita JavaScript per vedere la demo.",
+    "Modalità comandi disattivata"
+  ],
+  "menus": [
+    "File",
+    "Modifica",
+    "Vista",
+    "Finestra",
+    "Aiuto"
+  ],
+  "apps": [
+    "Note",
+    "Finder",
+    "Terminale",
+    "Mail",
+    "Calendario",
+    "Musica"
+  ],
+  "windows": [
+    "Guida Calmon",
+    "Questa settimana",
+    "Idee",
+    "Progetti",
+    "Sito web",
+    "Entrata",
+    "Programma",
+    "In riproduzione"
+  ],
+  "subtitle": "WM a mosaico scorrevole"
+}

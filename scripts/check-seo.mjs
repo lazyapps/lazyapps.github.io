@@ -4,26 +4,34 @@ import { readFile } from 'node:fs/promises';
 import { join } from 'node:path';
 import { attr, text, readPages, dist, site } from './lib/seo.mjs';
 import { DOZE_LOCALES, DOZE_RELEASE } from '../src/i18n/doze-locales.mjs';
+import { CALMON_LOCALES, CALMON_RELEASE } from '../src/i18n/calmon-locales.mjs';
 import { SHHEEP_LOCALES } from '../src/i18n/shheep-locales.mjs';
 import { KEYHOP_LOCALES } from '../src/i18n/keyhop-locales.mjs';
 import { KEYHOP_STATUS } from '../src/i18n/keyhop-status.mjs';
 
 assert(['upcoming', 'published'].includes(DOZE_RELEASE.status), 'Unknown Doze release status');
 assert.equal(DOZE_RELEASE.releasesUrl, 'https://github.com/cxa/doze/releases', 'Doze downloads must use the stable Releases page');
+assert(['upcoming', 'published'].includes(CALMON_RELEASE.status), 'Unknown calmon release status');
+assert.equal(CALMON_RELEASE.releasesUrl, 'https://github.com/cxa/calmon/releases', 'calmon downloads must use the stable Releases page');
 assert(!('version' in DOZE_RELEASE) && !('downloadUrl' in DOZE_RELEASE), 'Doze must not pin a release version or installer URL');
 const pages = await readPages();
 assert(pages.length > 0, 'No built pages. Run npm run build first.');
 const byUrl = new Map(pages.map(page => [page.url, page]));
 const knownAliases = new Map([[`${site}/fondfont/`, `${site}/fondfont/en/`]]);
-const product = /^\/(chmate|fondfont|yiyan|world-book|xvdl|shheep|doze)\/(?:[a-z]{2}(?:-[a-z]+)?\/)?$/;
-const localizedProduct = /^\/(chmate|fondfont|keyhop|yiyan|shheep|doze)\/(?:[a-z]{2}(?:-[a-z]+)?\/)?$/;
+const product = /^\/(chmate|fondfont|yiyan|world-book|xvdl|shheep|doze|calmon)\/(?:[a-z]{2}(?:-[a-zA-Z0-9]+)?\/)?$/;
+const localizedProduct = /^\/(chmate|fondfont|keyhop|yiyan|shheep|doze|calmon)\/(?:[a-z]{2}(?:-[a-zA-Z0-9]+)?\/)?$/;
 const meta = (page, key) => page.metas.find(node => attr(node, 'name') === key || attr(node, 'property') === key);
 const shheepLocales = Object.values(SHHEEP_LOCALES);
 assert.deepEqual(shheepLocales.map(locale => locale.htmlLang).sort(), ['en', 'zh-Hans', 'zh-Hant', 'ja', 'ko', 'es', 'pt-BR', 'de', 'fr', 'it', 'ru'].sort(), 'Shheep must cover all 11 app languages');
 assert.equal(new Set(shheepLocales.map(locale => locale.title)).size, 11, 'Shheep titles must be translated');
 assert.equal(new Set(shheepLocales.map(locale => locale.description)).size, 11, 'Shheep descriptions must be translated');
 for (const locale of shheepLocales) assert(byUrl.has(`${site}${locale.selectedUrl}`), `Missing Shheep locale page: ${locale.htmlLang}`);
-const retiredRedirects = new Map([[`${site}/keyhop/presskit/`, `${site}/keyhop/`]]);
+const retiredRedirects = new Map([
+  [`${site}/keyhop/presskit/`, `${site}/keyhop/`],
+  [`${site}/pane/`, `${site}/calmon/`],
+  [`${site}/pane/en/`, `${site}/calmon/en/`],
+  [`${site}/pane/presskit/`, `${site}/calmon/presskit/`],
+]);
 for (const [url, target] of retiredRedirects) {
   const page = byUrl.get(url);
   assert(page?.redirectTo && new URL(page.redirectTo, url).href === target && page.noindex, `Missing retired page redirect: ${url}`);
@@ -131,6 +139,15 @@ for (const page of pages) {
       check(locale && app.name === locale.name, 'Incorrect Doze localized identity');
       check(app.downloadUrl === (DOZE_RELEASE.status === 'published' ? DOZE_RELEASE.releasesUrl : undefined), 'Doze release metadata drift');
       check(languageLinks.size === 13 && languageLinks.get('x-default') === DOZE_LOCALES.en.canonical, 'Doze must cover 12 languages with English fallback');
+    } else if (page.url.startsWith(`${site}/calmon/`)) {
+      const locale = Object.values(CALMON_LOCALES).find(locale => locale.canonical === page.url);
+      check(locale && app.name === 'Calmon' && app.operatingSystem === 'macOS 26 or later', 'Incorrect calmon identity or platform');
+      check(app.downloadUrl === (CALMON_RELEASE.status === 'published' ? CALMON_RELEASE.releasesUrl : undefined), 'calmon release metadata drift');
+      check(languageLinks.size === 39 && languageLinks.get('x-default') === CALMON_LOCALES.en.canonical, 'Calmon must cover all 38 app languages with English fallback');
+      check(page.nodes.some(node => node.tagName === 'a' && attr(node, 'href') === locale.ctaUrl && text(node).includes(locale.cta)), 'Missing calmon release entry');
+      check(page.html.includes(locale.availability), 'Missing calmon availability');
+      check(page.nodes.some(node => attr(node, 'id') === 'calmon-release-note' && text(node).trim() === locale.releaseNote), 'Missing Calmon beta feedback note');
+      check(page.nodes.some(node => node.tagName === 'a' && attr(node, 'class') === 'calmon-feedback' && attr(node, 'href') === 'https://x.com/lazyapps'), 'Missing Calmon X feedback link');
     } else {
       check(app['@type'] === 'WebApplication' ? app.browserRequirements : app.downloadUrl, 'Missing browser requirements or download URL');
     }

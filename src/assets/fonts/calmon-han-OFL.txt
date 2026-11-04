@@ -1,0 +1,18 @@
+
+The key panel draws the characters that Z Labs RoundPix 12px does not have, such as Korean, Cantonese, Polish and
+Vietnamese ones, with [Fusion Pixel Font](https://github.com/TakWolf/fusion-pixel-font)
+(fusion-pixel-12px-proportional-zh_hans.otf, v2026.10.25), unmodified.
+
+Copyright (c) 2022, TakWolf (https://takwolf.com).
+
+This Font Software is licensed under the SIL Open Font License, Version 1.1. The license text is in the Tiny5 section
+below, and is also available with a FAQ at: https://openfontlicense.org
+
+Fusion Pixel Font 12px includes glyphs from these fonts, each licensed under the SIL Open Font License, Version 1.1:
+
+- Ark Pixel Font (https://github.com/TakWolf/ark-pixel-font). Copyright (c) 2021, TakWolf (https://takwolf.com).
+- Cubic 11 (https://github.com/ACh-K/Cubic-11), based on JF Dot M+H 12 (Copyright (c) 2005 M+ FONTS PROJECT) and
+  M+ BITMAP FONTS (Copyright (C) 2002-2004 COZ). These fonts are free software. Unlimited permission is granted to
+  use, copy, and distribute them, with or without modification, either commercially or noncommercially. THESE FONTS
+  ARE PROVIDED "AS IS" WITHOUT WARRANTY.
+- Galmuri (https://github.com/quiple/galmuri). Copyright (c) 2019–2025 Lee Minseo (quiple@quiple.dev).

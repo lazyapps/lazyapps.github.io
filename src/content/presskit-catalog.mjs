@@ -10,10 +10,19 @@ import { FONDFONT_LOCALES } from '../i18n/fondfont-locales.mjs';
 import { YIYAN_LOCALES } from '../i18n/yiyan-locales.mjs';
 import { DOZE_LOCALES } from '../i18n/doze-locales.mjs';
 import { SHHEEP_LOCALES } from '../i18n/shheep-locales.mjs';
+import { CALMON_LOCALES, CALMON_RELEASE } from '../i18n/calmon-locales.mjs';
+import calmonMedia from '../i18n/calmon-media.json' with { type: 'json' };
 import { computerUseParts } from './computer-use.mjs';
 export const supported = supportedLanguages;
-export const glossary = pressGlossary;
-const translations = { doze: DOZE_LOCALES, chmate: CHMATE_LOCALES, fondfont: FONDFONT_LOCALES, yiyan: YIYAN_LOCALES, shheep: SHHEEP_LOCALES };
+const regionalGlossaries = {'es-419':'es','fr-CA':'fr','pt-PT':'pt','zh-HK':'zh-Hant'};
+export const glossary = {...pressGlossary};
+for (const [tag,parent] of Object.entries(regionalGlossaries)) glossary[tag] = {...glossary[parent], name:CALMON_LOCALES[tag].languageName};
+for (const [tag,media] of Object.entries(calmonMedia)) {
+  const [icon,screenshot,artwork,menubar,flatVector] = media.labels;
+  const t = CALMON_LOCALES[tag];
+  glossary[tag] = {name:t.languageName,headings:media.headings,labels:{icon,screenshot,artwork,menubar,flatVector,logo:flatVector,vector:flatVector},notes:{icon:`${icon} · PNG · 1024 × 1024. ${media.native}`,sharedEnglish:`${screenshot} · en. ${media.native}`,native:media.native,artwork,menubar:`${menubar} · PNG · 44 × 44 · 2×`,flatVector:`SVG · ${flatVector}`,vector:flatVector},usage:media.usage,links:{download:t.download,releases:t.download},availability:{mac:t.available,upcomingMac:t.available}};
+}
+const translations = { calmon: CALMON_LOCALES, doze: DOZE_LOCALES, chmate: CHMATE_LOCALES, fondfont: FONDFONT_LOCALES, yiyan: YIYAN_LOCALES, shheep: SHHEEP_LOCALES };
 const plain = value => value.replace(/<[^>]*>/g, '').replaceAll('&amp;', '&').replaceAll('&nbsp;', ' ').trim();
 function asset(kit, tag, source, filename, kind, note, shared = false) {
   const g = glossary[tag];
@@ -48,6 +57,16 @@ function localeAssets(kit, tag, t) {
       assets.push({ ...asset(kit, tag, item.source, item.filename, item.kind, 'native', true), label: item.label.en });
     }
   }
+  if (kit.slug === 'calmon') {
+    for (const item of kit.assets.filter(item => (item.kind === 'icon' && item !== kit.assets[0]) || item.kind === 'menubar')) {
+      assets.push({ ...asset(kit, tag, item.source, item.filename, item.kind, item.kind, true),
+        label: `${g.labels[item.kind]} · ${item.filename}`, note: item.kind === 'menubar' ? `${g.labels.menubar} · PNG · 44 × 44 · 2×` : g.notes.icon });
+    }
+    for (const item of kit.assets.filter(item => item.kind === 'screenshot')) {
+      const source = tag === 'en' ? item.source : `scripts/assets/presskit/calmon-leader-keys-${tag}.png`;
+      assets.push({ ...asset(kit, tag, source, 'leader-keys.png', 'screenshot', 'native'), label: t.panelCaption, note: g.notes.native });
+    }
+  }
   for (const item of kit.assets.filter(item => item.kind === 'background')) {
     assets.push(asset(kit, tag, item.source, item.filename, 'background', kit.slug === 'yiyan' ? 'background' : 'websiteBackground', true));
   }
@@ -66,6 +85,7 @@ function localeAssets(kit, tag, t) {
 }
 export const pressKits = originals.map(kit => {
   if (kit.slug === 'doze') kit = { ...kit, availability: { en: DOZE_LOCALES.en.availability, zh: DOZE_LOCALES[''].availability }, links: [{ url: DOZE_LOCALES.en.ctaUrl, label: { en: DOZE_LOCALES.en.cta, zh: DOZE_LOCALES[''].cta } }] };
+  if (kit.slug === 'calmon') kit = { ...kit, availability: { en: CALMON_LOCALES.en.availability, zh: CALMON_LOCALES[''].availability }, links: [{ url: CALMON_RELEASE.releasesUrl, label: { en: CALMON_LOCALES.en.cta, zh: CALMON_LOCALES[''].cta } }] };
   const locales = supported[kit.slug].tags.map(tag => {
     const t = Object.values(translations[kit.slug] ?? {}).find(item => item.htmlLang === tag);
     if (!t && translations[kit.slug]) throw Error(`Missing press copy: ${kit.slug}/${tag}`);
@@ -75,6 +95,7 @@ export const pressKits = originals.map(kit => {
     let summary = t ? plain(t.sub ?? t.description) : kit.summary.en;
     let description = t ? plain(t.description) : kit.description.en;
     if (kit.slug === 'doze') description = [t.eyebrow, t.headline.join(' '), t.description, t.compatibility, ...t.features.map(item => item[1]), t.awakeNote, ...t.steps, ...t.faqs.map(item => item[1]), t.license].join('\n\n');
+    if (kit.slug === 'calmon') description = [t.compatibility, t.displayNote, t.availability, t.releaseNote, t.menuBarNote.replace('{icon}', '').replace(/ +([.。])/g, '$1').trim(), ...t.features.map(item => item[1]), t.keyboardBody, ...t.faqs.slice(1).map(item => item[1])].join('\n\n');
     if (kit.slug === 'chmate') description = [t.description, ...t.cards.map(card => card[1]), t.promiseCopy].map(plain).join('\n\n');
     if (kit.slug === 'fondfont') description = [t.description, ...t.features.map(feature => feature[1]), ...t.steps.map(step => step[1]), t.privacyCopy, t.faqs[1][1]].map(plain).join('\n\n');
     if (kit.slug === 'yiyan') { const copy = yiyanCopy[tag.toLowerCase()]; summary = copy.sub; description = [copy.sub, ...copy.cards.map(card => card[1]), ...copy.details.map(detail => detail[1].join(' '))].join('\n\n'); }
@@ -83,9 +104,9 @@ export const pressKits = originals.map(kit => {
       description = [t.description, ...t.cards.map(card => card[1]), t.gameCenterCopy, t.demoNote].join('\n\n');
     }
     const category = ['chmate','fondfont','world-book','shheep'].includes(kit.slug) ? 'store' : kit.slug === 'yiyan' ? 'beta' : 'mac';
-    const links = kit.links.map(link => ({url:link.url, label:kit.slug === 'doze' ? t.cta : link.url.includes('apps.apple.com') ? 'App Store' : link.url.includes('testflight.') ? g.links.beta : link.url.endsWith('/releases') ? g.links.download : link.url.includes('github.com') ? g.links.source : kit.slug === 'shheep' ? g.links.demo : g.links.play}));
-    const references = kit.slug === 'doze' ? computerUseParts('computer use', tag).filter(part => part.href).map(part => ({ label: part.text, url: part.href })) : [];
-    return { tag, displayName: g.name, name, summary, description, website: t?.selectedUrl ?? `/${kit.slug}/`, platform: kit.platform[lang], availability: kit.slug === 'doze' ? t.availability : g.availability[category], links, references, assets: localeAssets(kit, tag, t), headings: g.headings, usage: g.usage };
+    const links = kit.links.map(link => ({url:link.url, label:['doze', 'calmon'].includes(kit.slug) ? t.cta : link.url.includes('apps.apple.com') ? 'App Store' : link.url.includes('testflight.') ? g.links.beta : link.url.endsWith('/releases') ? g.links.download : link.url.includes('github.com') ? g.links.source : kit.slug === 'shheep' ? g.links.demo : g.links.play}));
+    const references = kit.slug === 'doze' ? computerUseParts('computer use', tag).filter(part => part.href).map(part => ({ label: part.text, url: part.href })) : kit.slug === 'calmon' ? [{ label: 'X @lazyapps', url: 'https://x.com/lazyapps' }] : [];
+    return { tag, displayName: g.name, name, summary, description, website: t?.selectedUrl ?? `/${kit.slug}/`, platform: kit.slug === 'calmon' ? t.compatibility : kit.platform[lang], availability: ['doze', 'calmon'].includes(kit.slug) ? t.availability : g.availability[category], links, references, assets: localeAssets(kit, tag, t), headings: g.headings, usage: g.usage };
   });
   // Identity is source bytes, so repeated artwork is stored once even for a subset of languages.
   const identities = new Map();

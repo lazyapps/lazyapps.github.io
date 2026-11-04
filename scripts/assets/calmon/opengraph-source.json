@@ -1,0 +1,27 @@
+{
+  "symbolSource": "scripts/assets/presskit/vectors/calmon-lettering.svg",
+  "symbolSha256": "df99e5a7feb39a0ea0549303449798b76fabc9f2183c263799925cf34ee58b6d",
+  "output": "src/assets/img/calmon-opengraph-shared.png",
+  "sha256": "e05673521e755fdaee783f41f7f83dbc923bbcecc9858376ce5eef956cac9e89",
+  "size": [
+    1200,
+    630
+  ],
+  "safeRect": [
+    285,
+    0,
+    630,
+    630
+  ],
+  "contentBounds": [
+    330,
+    256,
+    540,
+    118
+  ],
+  "languages": [
+    "en",
+    "zh-Hans"
+  ],
+  "method": "Native letter contours plus website Sofia Sans Extra Condensed 900; shared unchanged brand name."
+}

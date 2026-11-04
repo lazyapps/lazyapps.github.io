@@ -1,0 +1,156 @@
+{
+  "hero": [
+    "Gardez votre\ncalme et faites défiler",
+    "Gestionnaire de fenêtres en mosaïque défilante",
+    "Calmon range les fenêtres Mac en colonnes défilantes. Empilez les fenêtres, fixez une colonne et naviguez à la souris ou au clavier."
+  ],
+  "nav": [
+    "Accueil lazyapps",
+    "Choisir la langue",
+    "Aller au contenu"
+  ],
+  "release": [
+    "Télécharger gratuitement",
+    "Gratuit pendant la bêta",
+    "Un problème ou une idée ? Contactez @lazyapps sur X. Merci de nous aider à améliorer Calmon.",
+    "macOS 26 ou ultérieur"
+  ],
+  "display": [
+    "Comment disposer plusieurs écrans ?",
+    "Placez les écrans les uns au-dessus des autres. Côte à côte, leurs bords communs bloquent le défilement : la navigation entre colonnes boucle à ces endroits. Avec des écrans des deux côtés, les fenêtres en arrière-plan se superposent derrière la fenêtre sélectionnée."
+  ],
+  "features": [
+    [
+      "Colonnes défilantes",
+      "Les fenêtres défilent horizontalement. La colonne active occupe presque tout l’écran. Utilisez les flèches en mode commande."
+    ],
+    [
+      "Piles d’apps",
+      "Les fenêtres en mosaïque d’une même app forment une pile. Cliquez sur un repère de pile ou appuyez sur ⌘` pour changer de fenêtre. Une colonne contient jusqu’à trois piles."
+    ],
+    [
+      "Colonne fixe",
+      "Fixez une colonne à gauche ou à droite. Les autres fenêtres défilent à côté. Tab change le focus en mode commande."
+    ],
+    [
+      "Pin Deck",
+      "Épinglez jusqu’à dix apps. Ajoutez-les via le repère Pin Deck, retirez-les via le menu de leur icône. L’ordre est commun à tous les écrans."
+    ],
+    [
+      "Sky Deck et Max Deck",
+      "Sky Deck regroupe les fenêtres flottantes, Max Deck les fenêtres en plein écran natif. Cliquez sur une icône pour retrouver sa fenêtre."
+    ],
+    [
+      "Fenêtres et bureaux",
+      "Cliquez sur un numéro de bureau. En mode commande, saisissez le repère d’une icône. Shift et 1–9 déplacent la fenêtre sélectionnée vers un autre bureau."
+    ]
+  ],
+  "keyboard": [
+    "Utilisez la souris\nApprenez les touches en chemin",
+    "plan de disposition",
+    "Pour masquer le panneau automatique : Réglages → Clavier → Panneau des touches → Afficher après → Jamais. Le plan de disposition l’ouvre toujours.",
+    "Appuyez deux fois sur ⌘ puis relâchez. Tant que la fenêtre est surlignée, enchaînez les commandes. Esc quitte ce mode.",
+    "Panneau des touches",
+    "Touches essentielles"
+  ],
+  "mouse": [
+    "Cliquez sur une icône de la barre d’onglets pour choisir une fenêtre.",
+    "Un clic avec Control ouvre ses actions.",
+    "Cliquez sur le plan de disposition pour ouvrir le panneau des touches.",
+    "Cliquez sur une touche pour exécuter sa commande."
+  ],
+  "actions": [
+    "Choisir une colonne / fenêtre",
+    "Déplacer une fenêtre ou colonne",
+    "Joindre / quitter une colonne",
+    "Joindre / quitter une pile d’app",
+    "Ajouter / retirer une app de Pin Deck",
+    "Changer de bureau / déplacer la fenêtre",
+    "Quitter le mode commande"
+  ],
+  "setup": [
+    "Pour commencer",
+    "Applications",
+    "Accessibilité",
+    "Installer Calmon",
+    "Télécharger Calmon",
+    ". Déplacez-le dans Applications.",
+    "Autoriser l’accessibilité",
+    "Glissez Calmon dans la liste Accessibilité, puis activez-le.",
+    "Ouvrir vos fenêtres",
+    "Choisissez une fenêtre dans la barre d’onglets. Le plan de disposition ouvre le panneau des touches.",
+    "Calmon n’a pas d’icône dans le Dock. Retrouvez-le dans la barre des menus {icon}."
+  ],
+  "faq": [
+    "Questions et réponses",
+    [
+      "Quels Mac sont compatibles ?",
+      "macOS 26 ou ultérieur, sur Mac à puce Apple ou Intel."
+    ],
+    [
+      "Quelle autorisation faut-il ?",
+      "Autorisez l’accessibilité pour déplacer, redimensionner et sélectionner les fenêtres."
+    ],
+    [
+      "Faut-il mémoriser des raccourcis ?",
+      "Non. Toutes les actions fonctionnent à la souris. Le plan de disposition ouvre le panneau des touches à tout moment."
+    ],
+    [
+      "Peut-on balayer sur le trackpad ?",
+      "Les balayages sont désactivés au départ. Activez trois ou quatre doigts dans Réglages → Gestes. Maintenez Shift avant de balayer pour utiliser le geste macOS d’origine."
+    ],
+    [
+      "Toutes les fenêtres sont-elles en mosaïque ?",
+      "Les fenêtres standard le sont. Les dialogues, réglages et fenêtres de taille fixe flottent. Ajoutez des règles dans Réglages → Avancé."
+    ],
+    [
+      "Calmon déplace-t-il les fenêtres entre bureaux ?",
+      "Uniquement si vous le demandez. Changez de bureau avec son numéro ou le mode commande. Calmon restaure les positions enregistrées à sa fermeture."
+    ],
+    [
+      "La bêta est-elle gratuite ?",
+      "Oui, Calmon est gratuit pendant la bêta."
+    ],
+    [
+      "Comment mettre à jour ?",
+      "Choisissez « Rechercher des mises à jour » dans le menu Calmon."
+    ]
+  ],
+  "demo": [
+    "Pause",
+    "Continuer",
+    "Recommencer la démo",
+    "Appuyez deux fois sur ⌘ puis relâchez",
+    "Mode commande · enchaînez les touches",
+    "Raccourci macOS · sans mode commande",
+    "puis",
+    "Activez JavaScript pour lire la démo.",
+    "Mode commande désactivé"
+  ],
+  "menus": [
+    "Fichier",
+    "Édition",
+    "Présentation",
+    "Fenêtre",
+    "Aide"
+  ],
+  "apps": [
+    "Notes",
+    "Finder",
+    "Terminal",
+    "Mail",
+    "Calendrier",
+    "Musique"
+  ],
+  "windows": [
+    "Guide Calmon",
+    "Cette semaine",
+    "Idées",
+    "Projets",
+    "Site web",
+    "Réception",
+    "Planning",
+    "À l’écoute"
+  ],
+  "subtitle": "WM en mosaïque défilante"
+}

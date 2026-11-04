@@ -1,13 +1,13 @@
 ---
 import { Image } from 'astro:assets';
 import type { ImageMetadata } from 'astro';
-interface Props { slug: string; size?: number; class?: string; loading?: 'eager' | 'lazy'; alt?: string; }
-const { slug, size = 72, class: className, loading = 'lazy', alt = '' } = Astro.props;
-const icons = import.meta.glob<{ default: ImageMetadata }>('../assets/img/*-icon.png', { eager: true });
-const icon = icons[`../assets/img/${slug}-icon.png`]?.default;
+interface Props { slug: string; appearance?: 'light' | 'dark'; size?: number; class?: string; loading?: 'eager' | 'lazy'; alt?: string; }
+const { slug, appearance = 'light', size = 72, class: className, loading = 'lazy', alt = '' } = Astro.props;
+const icons = import.meta.glob<{ default: ImageMetadata }>('../assets/img/*-icon*.png', { eager: true });
+const icon = icons[`../assets/img/${slug}-icon${appearance === 'dark' ? '-dark' : ''}.png`]?.default;
 const compactIcons = import.meta.glob<{ default: ImageMetadata }>('../assets/img/*/icon-small-*.png', { eager: true });
 const compact = (size: number, scale: number) => compactIcons[`../assets/img/${slug}/icon-small-${size}-${scale}x.png`]?.default.src;
-const useCompact = compact(size, 1) && compact(size, 2);
+const useCompact = appearance === 'light' && compact(size, 1) && compact(size, 2);
 if (!icon) throw new Error(`Missing native App icon: ${slug}`);
 ---
 {useCompact ? <picture class="native-compact">

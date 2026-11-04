@@ -1,0 +1,16 @@
+{
+  "method": "Native rounded menu bar letters mapped per cell to whole pixels: 2 px outer inset, 2 px gutters at 16 px. Light: original six green diagonal bands behind white letters. Dark: pure black behind the same bands clipped to the letters, matching the App icon. Explicit sRGB PNGs; ICOs contain exact PNG bytes.",
+  "inputs": {
+    "scripts/assets/native-icons/calmon/AppIcon.icon/Assets/ColorBands.svg": "fa34b4292de623261a636bcd78cb50bba60c0a2a4f5a2223737a5392531ef544",
+    "scripts/assets/native-icons/calmon/MenuBarIcon.imageset/MenuBarIcon.png": "b2aebe8c04b717a33a47f700ff7c16baef9fd9833bd78a24dc3d0ef43ae3388a",
+    "scripts/assets/native-icons/calmon/MenuBarIcon.imageset/MenuBarIcon@2x.png": "7b0fd8e527d9c094b1fea3affccb8fc5074902abf73c74b994018f786916035e"
+  },
+  "outputs": {
+    "src/assets/img/calmon-favicon/favicon-16.png": "419820ddf54c2cd7e01015e29192efee41b301b734c756b5a0ab6146ffcbb5bd",
+    "src/assets/img/calmon-favicon/favicon-32.png": "0ccbddbff6363fe7b18cdc34444aa4461d48aefdfa4b37cc38ea671ed45df6da",
+    "src/assets/img/calmon-favicon/favicon.ico": "7aa332ae296aefeb8b8ed7f2b0426e77027b173a24b66c251e18c885921b5123",
+    "src/assets/img/calmon-favicon/favicon-dark-16.png": "6237ce718220b37ceaff15e7afd8f58c4db84ad78cd1f52cb91382e404c2eaba",
+    "src/assets/img/calmon-favicon/favicon-dark-32.png": "418d65af5c27325c18982b21315b0e556c72b7416a24e138dad509dca736e547",
+    "src/assets/img/calmon-favicon/favicon-dark.ico": "9c42e26bc79f43d7f4733a65fda7030357ccf94c9e7cd0a0b0bf5db66cbd7814"
+  }
+}

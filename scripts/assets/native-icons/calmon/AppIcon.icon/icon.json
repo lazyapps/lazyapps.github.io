@@ -1,0 +1,738 @@
+{
+  "features": [
+    "refractivity",
+    "specular-location"
+  ],
+  "fill": {
+    "linear-gradient": [
+      "srgb:0.017987,0.349769,0.335726,1",
+      "srgb:0.017987,0.349769,0.335726,1"
+    ]
+  },
+  "fill-specializations": [
+    {
+      "appearance": "dark",
+      "value": {
+        "linear-gradient": [
+          "srgb:0,0,0,1",
+          "srgb:0,0,0,1"
+        ]
+      }
+    }
+  ],
+  "groups": [
+    {
+      "blur-material": 0.25,
+      "layers": [
+        {
+          "image-name": "LetterC.png",
+          "name": "C \u00b7 glass face",
+          "glass": true,
+          "fill-specializations": [
+            {
+              "value": {
+                "linear-gradient": [
+                  "srgb:1.000000,1.000000,1.000000,0.96",
+                  "srgb:0.964973,0.960071,0.952161,0.94"
+                ]
+              }
+            },
+            {
+              "appearance": "tinted",
+              "value": {
+                "linear-gradient": [
+                  "srgb:1.000000,1.000000,1.000000,0.96",
+                  "srgb:1.000000,1.000000,1.000000,0.94"
+                ]
+              }
+            },
+            {
+              "appearance": "dark",
+              "value": {
+                "linear-gradient": [
+                  "srgb:1.000000,1.000000,1.000000,0.96",
+                  "srgb:0.964973,0.960071,0.952161,0.94"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "image-name": "LetterA.png",
+          "name": "A \u00b7 glass face",
+          "glass": true,
+          "fill-specializations": [
+            {
+              "value": {
+                "linear-gradient": [
+                  "srgb:1.000000,1.000000,1.000000,0.96",
+                  "srgb:0.964973,0.960071,0.952161,0.94"
+                ]
+              }
+            },
+            {
+              "appearance": "tinted",
+              "value": {
+                "linear-gradient": [
+                  "srgb:1.000000,1.000000,1.000000,0.96",
+                  "srgb:1.000000,1.000000,1.000000,0.94"
+                ]
+              }
+            },
+            {
+              "appearance": "dark",
+              "value": {
+                "linear-gradient": [
+                  "srgb:1.000000,1.000000,1.000000,0.96",
+                  "srgb:0.964973,0.960071,0.952161,0.94"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "image-name": "LetterL.png",
+          "name": "L \u00b7 glass face",
+          "glass": true,
+          "fill-specializations": [
+            {
+              "value": {
+                "linear-gradient": [
+                  "srgb:1.000000,1.000000,1.000000,0.96",
+                  "srgb:0.964973,0.960071,0.952161,0.94"
+                ]
+              }
+            },
+            {
+              "appearance": "tinted",
+              "value": {
+                "linear-gradient": [
+                  "srgb:1.000000,1.000000,1.000000,0.96",
+                  "srgb:1.000000,1.000000,1.000000,0.94"
+                ]
+              }
+            },
+            {
+              "appearance": "dark",
+              "value": {
+                "linear-gradient": [
+                  "srgb:1.000000,1.000000,1.000000,0.96",
+                  "srgb:0.964973,0.960071,0.952161,0.94"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "image-name": "LetterM.png",
+          "name": "M \u00b7 glass face",
+          "glass": true,
+          "fill-specializations": [
+            {
+              "value": {
+                "linear-gradient": [
+                  "srgb:1.000000,1.000000,1.000000,0.96",
+                  "srgb:0.964973,0.960071,0.952161,0.94"
+                ]
+              }
+            },
+            {
+              "appearance": "tinted",
+              "value": {
+                "linear-gradient": [
+                  "srgb:1.000000,1.000000,1.000000,0.96",
+                  "srgb:1.000000,1.000000,1.000000,0.94"
+                ]
+              }
+            },
+            {
+              "appearance": "dark",
+              "value": {
+                "linear-gradient": [
+                  "srgb:1.000000,1.000000,1.000000,0.96",
+                  "srgb:0.964973,0.960071,0.952161,0.94"
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "name": "Silk frosted glass faces",
+      "refractivity": {
+        "enabled": true,
+        "depth": 0.08,
+        "strength": 0.002
+      },
+      "shadow": {
+        "kind": "neutral",
+        "opacity": 0.035
+      },
+      "translucency": {
+        "enabled": true,
+        "value": 0.06
+      },
+      "hidden-specializations": [
+        {
+          "appearance": "dark",
+          "value": true
+        },
+        {
+          "appearance": "tinted",
+          "value": false
+        }
+      ]
+    },
+    {
+      "blur-material": 0,
+      "layers": [
+        {
+          "image-name": "LetterC.png",
+          "name": "C \u00b7 contrast core",
+          "glass": false,
+          "fill-specializations": [
+            {
+              "value": {
+                "linear-gradient": [
+                  "srgb:1.000000,1.000000,1.000000,0.92",
+                  "srgb:0.964973,0.960071,0.952161,0.9"
+                ]
+              }
+            },
+            {
+              "appearance": "tinted",
+              "value": {
+                "linear-gradient": [
+                  "srgb:1.000000,1.000000,1.000000,0.92",
+                  "srgb:1.000000,1.000000,1.000000,0.9"
+                ]
+              }
+            },
+            {
+              "appearance": "dark",
+              "value": {
+                "linear-gradient": [
+                  "srgb:1.000000,1.000000,1.000000,0.92",
+                  "srgb:0.964973,0.960071,0.952161,0.9"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "image-name": "LetterA.png",
+          "name": "A \u00b7 contrast core",
+          "glass": false,
+          "fill-specializations": [
+            {
+              "value": {
+                "linear-gradient": [
+                  "srgb:1.000000,1.000000,1.000000,0.92",
+                  "srgb:0.964973,0.960071,0.952161,0.9"
+                ]
+              }
+            },
+            {
+              "appearance": "tinted",
+              "value": {
+                "linear-gradient": [
+                  "srgb:1.000000,1.000000,1.000000,0.92",
+                  "srgb:1.000000,1.000000,1.000000,0.9"
+                ]
+              }
+            },
+            {
+              "appearance": "dark",
+              "value": {
+                "linear-gradient": [
+                  "srgb:1.000000,1.000000,1.000000,0.92",
+                  "srgb:0.964973,0.960071,0.952161,0.9"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "image-name": "LetterL.png",
+          "name": "L \u00b7 contrast core",
+          "glass": false,
+          "fill-specializations": [
+            {
+              "value": {
+                "linear-gradient": [
+                  "srgb:1.000000,1.000000,1.000000,0.92",
+                  "srgb:0.964973,0.960071,0.952161,0.9"
+                ]
+              }
+            },
+            {
+              "appearance": "tinted",
+              "value": {
+                "linear-gradient": [
+                  "srgb:1.000000,1.000000,1.000000,0.92",
+                  "srgb:1.000000,1.000000,1.000000,0.9"
+                ]
+              }
+            },
+            {
+              "appearance": "dark",
+              "value": {
+                "linear-gradient": [
+                  "srgb:1.000000,1.000000,1.000000,0.92",
+                  "srgb:0.964973,0.960071,0.952161,0.9"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "image-name": "LetterM.png",
+          "name": "M \u00b7 contrast core",
+          "glass": false,
+          "fill-specializations": [
+            {
+              "value": {
+                "linear-gradient": [
+                  "srgb:1.000000,1.000000,1.000000,0.92",
+                  "srgb:0.964973,0.960071,0.952161,0.9"
+                ]
+              }
+            },
+            {
+              "appearance": "tinted",
+              "value": {
+                "linear-gradient": [
+                  "srgb:1.000000,1.000000,1.000000,0.92",
+                  "srgb:1.000000,1.000000,1.000000,0.9"
+                ]
+              }
+            },
+            {
+              "appearance": "dark",
+              "value": {
+                "linear-gradient": [
+                  "srgb:1.000000,1.000000,1.000000,0.92",
+                  "srgb:0.964973,0.960071,0.952161,0.9"
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "name": "Quiet contrast cores",
+      "refractivity": {
+        "enabled": false,
+        "depth": 0,
+        "strength": 0
+      },
+      "shadow": {
+        "kind": "neutral",
+        "opacity": 0
+      },
+      "translucency": {
+        "enabled": false,
+        "value": 0
+      },
+      "hidden-specializations": [
+        {
+          "appearance": "dark",
+          "value": true
+        },
+        {
+          "appearance": "tinted",
+          "value": false
+        }
+      ]
+    },
+    {
+      "blur-material": 0.2,
+      "layers": [
+        {
+          "image-name": "SideC.png",
+          "name": "C depth",
+          "glass": true,
+          "fill-specializations": [
+            {
+              "value": {
+                "linear-gradient": [
+                  "srgb:1.000000,1.000000,1.000000,0.1",
+                  "srgb:0.964973,0.960071,0.952161,0.04"
+                ]
+              }
+            },
+            {
+              "appearance": "tinted",
+              "value": {
+                "linear-gradient": [
+                  "srgb:1.000000,1.000000,1.000000,0.1",
+                  "srgb:1.000000,1.000000,1.000000,0.04"
+                ]
+              }
+            },
+            {
+              "appearance": "dark",
+              "value": {
+                "linear-gradient": [
+                  "srgb:1.000000,1.000000,1.000000,0.1",
+                  "srgb:0.964973,0.960071,0.952161,0.04"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "image-name": "SideA.png",
+          "name": "A depth",
+          "glass": true,
+          "fill-specializations": [
+            {
+              "value": {
+                "linear-gradient": [
+                  "srgb:1.000000,1.000000,1.000000,0.1",
+                  "srgb:0.964973,0.960071,0.952161,0.04"
+                ]
+              }
+            },
+            {
+              "appearance": "tinted",
+              "value": {
+                "linear-gradient": [
+                  "srgb:1.000000,1.000000,1.000000,0.1",
+                  "srgb:1.000000,1.000000,1.000000,0.04"
+                ]
+              }
+            },
+            {
+              "appearance": "dark",
+              "value": {
+                "linear-gradient": [
+                  "srgb:1.000000,1.000000,1.000000,0.1",
+                  "srgb:0.964973,0.960071,0.952161,0.04"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "image-name": "SideL.png",
+          "name": "L depth",
+          "glass": true,
+          "fill-specializations": [
+            {
+              "value": {
+                "linear-gradient": [
+                  "srgb:1.000000,1.000000,1.000000,0.1",
+                  "srgb:0.964973,0.960071,0.952161,0.04"
+                ]
+              }
+            },
+            {
+              "appearance": "tinted",
+              "value": {
+                "linear-gradient": [
+                  "srgb:1.000000,1.000000,1.000000,0.1",
+                  "srgb:1.000000,1.000000,1.000000,0.04"
+                ]
+              }
+            },
+            {
+              "appearance": "dark",
+              "value": {
+                "linear-gradient": [
+                  "srgb:1.000000,1.000000,1.000000,0.1",
+                  "srgb:0.964973,0.960071,0.952161,0.04"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "image-name": "SideM.png",
+          "name": "M depth",
+          "glass": true,
+          "fill-specializations": [
+            {
+              "value": {
+                "linear-gradient": [
+                  "srgb:1.000000,1.000000,1.000000,0.1",
+                  "srgb:0.964973,0.960071,0.952161,0.04"
+                ]
+              }
+            },
+            {
+              "appearance": "tinted",
+              "value": {
+                "linear-gradient": [
+                  "srgb:1.000000,1.000000,1.000000,0.1",
+                  "srgb:1.000000,1.000000,1.000000,0.04"
+                ]
+              }
+            },
+            {
+              "appearance": "dark",
+              "value": {
+                "linear-gradient": [
+                  "srgb:1.000000,1.000000,1.000000,0.1",
+                  "srgb:0.964973,0.960071,0.952161,0.04"
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "name": "Thin diffused glass edges",
+      "refractivity": {
+        "enabled": true,
+        "depth": 0.08,
+        "strength": 0.002
+      },
+      "shadow": {
+        "kind": "neutral",
+        "opacity": 0.02
+      },
+      "translucency": {
+        "enabled": true,
+        "value": 0.16
+      },
+      "hidden-specializations": [
+        {
+          "appearance": "dark",
+          "value": true
+        },
+        {
+          "appearance": "tinted",
+          "value": false
+        }
+      ]
+    },
+    {
+      "blur-material": 0.25,
+      "layers": [
+        {
+          "image-name": "DarkLetterC.png",
+          "name": "C \u00b7 striped glass",
+          "glass": true
+        },
+        {
+          "image-name": "DarkLetterA.png",
+          "name": "A \u00b7 striped glass",
+          "glass": true
+        },
+        {
+          "image-name": "DarkLetterL.png",
+          "name": "L \u00b7 striped glass",
+          "glass": true
+        },
+        {
+          "image-name": "DarkLetterM.png",
+          "name": "M \u00b7 striped glass",
+          "glass": true
+        }
+      ],
+      "name": "Dark silk spectrum faces",
+      "refractivity": {
+        "enabled": true,
+        "depth": 0.08,
+        "strength": 0.002
+      },
+      "shadow": {
+        "kind": "neutral",
+        "opacity": 0.035
+      },
+      "translucency": {
+        "enabled": true,
+        "value": 0.06
+      },
+      "hidden-specializations": [
+        {
+          "value": true
+        },
+        {
+          "appearance": "dark",
+          "value": false
+        },
+        {
+          "appearance": "tinted",
+          "value": true
+        }
+      ]
+    },
+    {
+      "blur-material": 0,
+      "layers": [
+        {
+          "image-name": "DarkLetterC.png",
+          "name": "C \u00b7 striped core",
+          "glass": false
+        },
+        {
+          "image-name": "DarkLetterA.png",
+          "name": "A \u00b7 striped core",
+          "glass": false
+        },
+        {
+          "image-name": "DarkLetterL.png",
+          "name": "L \u00b7 striped core",
+          "glass": false
+        },
+        {
+          "image-name": "DarkLetterM.png",
+          "name": "M \u00b7 striped core",
+          "glass": false
+        }
+      ],
+      "name": "Dark spectrum contrast cores",
+      "refractivity": {
+        "enabled": false,
+        "depth": 0,
+        "strength": 0
+      },
+      "shadow": {
+        "kind": "neutral",
+        "opacity": 0
+      },
+      "translucency": {
+        "enabled": false,
+        "value": 0
+      },
+      "hidden-specializations": [
+        {
+          "value": true
+        },
+        {
+          "appearance": "dark",
+          "value": false
+        },
+        {
+          "appearance": "tinted",
+          "value": true
+        }
+      ]
+    },
+    {
+      "blur-material": 0.2,
+      "layers": [
+        {
+          "image-name": "DarkSideC.png",
+          "name": "C \u00b7 striped edge",
+          "glass": true
+        },
+        {
+          "image-name": "DarkSideA.png",
+          "name": "A \u00b7 striped edge",
+          "glass": true
+        },
+        {
+          "image-name": "DarkSideL.png",
+          "name": "L \u00b7 striped edge",
+          "glass": true
+        },
+        {
+          "image-name": "DarkSideM.png",
+          "name": "M \u00b7 striped edge",
+          "glass": true
+        }
+      ],
+      "name": "Dark spectrum thin edges",
+      "refractivity": {
+        "enabled": true,
+        "depth": 0.08,
+        "strength": 0.002
+      },
+      "shadow": {
+        "kind": "neutral",
+        "opacity": 0.02
+      },
+      "translucency": {
+        "enabled": true,
+        "value": 0.16
+      },
+      "hidden-specializations": [
+        {
+          "value": true
+        },
+        {
+          "appearance": "dark",
+          "value": false
+        },
+        {
+          "appearance": "tinted",
+          "value": true
+        }
+      ]
+    },
+    {
+      "blur-material": 0,
+      "layers": [
+        {
+          "image-name": "ColorBands.svg",
+          "name": "Angled color bands",
+          "glass": false
+        }
+      ],
+      "name": "Vivid OKLCH field",
+      "refractivity": {
+        "enabled": false,
+        "depth": 0,
+        "strength": 0
+      },
+      "shadow": {
+        "kind": "neutral",
+        "opacity": 0
+      },
+      "translucency": {
+        "enabled": false,
+        "value": 0
+      },
+      "hidden-specializations": [
+        {
+          "appearance": "dark",
+          "value": true
+        },
+        {
+          "appearance": "tinted",
+          "value": true
+        }
+      ]
+    },
+    {
+      "blur-material": 0,
+      "layers": [
+        {
+          "image-name": "BlackField.svg",
+          "name": "Pure black backing",
+          "glass": false
+        }
+      ],
+      "name": "Pure black dark field",
+      "refractivity": {
+        "enabled": false,
+        "depth": 0,
+        "strength": 0
+      },
+      "shadow": {
+        "kind": "neutral",
+        "opacity": 0
+      },
+      "translucency": {
+        "enabled": false,
+        "value": 0
+      },
+      "hidden-specializations": [
+        {
+          "value": true
+        },
+        {
+          "appearance": "dark",
+          "value": false
+        },
+        {
+          "appearance": "tinted",
+          "value": true
+        }
+      ]
+    }
+  ],
+  "supported-platforms": {
+    "squares": "shared"
+  }
+}

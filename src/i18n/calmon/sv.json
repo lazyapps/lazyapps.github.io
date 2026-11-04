@@ -1,0 +1,156 @@
+{
+  "hero": [
+    "Ta det lugnt\noch rulla vidare",
+    "Rullande fönsterhanterare med sida vid sida-layout",
+    "Calmon ordnar Mac-fönster i rullande kolumner. Stapla fönster, fäst en kolumn och växla med mus eller tangentbord."
+  ],
+  "nav": [
+    "lazyapps startsida",
+    "Välj språk",
+    "Till innehållet"
+  ],
+  "release": [
+    "Ladda ner gratis",
+    "Gratis under betan",
+    "Hittat ett fel eller fått en idé? Skriv till @lazyapps på X. Tack för att du hjälper oss förbättra Calmon.",
+    "macOS 26 eller senare"
+  ],
+  "display": [
+    "Hur placerar jag flera skärmar?",
+    "Placera skärmar ovanför varandra. Bredvid varandra blockerar gemensamma kanter rullningen; kolumnväxlingen börjar då om. Med skärmar på båda sidor överlappar bakgrundsfönstren bakom det valda fönstret."
+  ],
+  "features": [
+    [
+      "Rulla mellan kolumner",
+      "Fönstren rullar vågrätt. Den aktiva kolumnen fyller större delen av skärmen. Använd piltangenterna i kommandoläget."
+    ],
+    [
+      "Appstaplar",
+      "Samma apps sida vid sida-fönster bildar en stapel. Klicka på en stapelmarkering eller tryck ⌘` för att växla. En kolumn rymmer upp till tre staplar."
+    ],
+    [
+      "Fast kolumn",
+      "Fäst en kolumn vid vänster eller höger kant. Andra fönster rullar bredvid. Tab växlar fokus i kommandoläget."
+    ],
+    [
+      "Pin Deck",
+      "Fäst upp till tio appar. Lägg till via Pin Deck-märket, ta bort via symbolens meny. Ordningen gäller på alla skärmar."
+    ],
+    [
+      "Sky Deck och Max Deck",
+      "Sky Deck visar flytande fönster, Max Deck inbyggda helskärmsfönster. Klicka på en symbol för att återgå till fönstret."
+    ],
+    [
+      "Fönster och skrivbord",
+      "Klicka på ett skrivbordsnummer. Skriv en symboletikett i kommandoläget. Shift och 1–9 flyttar det valda fönstret till ett annat skrivbord."
+    ]
+  ],
+  "keyboard": [
+    "Använd musen\nLär dig tangenterna efter hand",
+    "layoutkartan",
+    "Stäng av automatisk panel: Inställningar → Tangentbord → Tangentpanel → Visa efter → Aldrig. Layoutkartan öppnar alltid panelen.",
+    "Tryck två gånger på ⌘ och släpp. Fortsätt med kommandon medan fönstret är markerat. Esc avslutar läget.",
+    "Tangentpanel",
+    "Viktiga tangenter"
+  ],
+  "mouse": [
+    "Klicka på en symbol i flikraden för att välja fönster.",
+    "Control-klicka för fönsteråtgärder.",
+    "Klicka på layoutkartan för att öppna tangentpanelen.",
+    "Klicka på en tangent för att köra kommandot."
+  ],
+  "actions": [
+    "Välj kolumn / fönster",
+    "Flytta fönster eller kolumn",
+    "Anslut till / lämna kolumn",
+    "Anslut till / lämna appstapel",
+    "Lägg till / ta bort Pin Deck-app",
+    "Byt skrivbord / flytta fönster",
+    "Avsluta kommandoläget"
+  ],
+  "setup": [
+    "Kom igång",
+    "Program",
+    "Hjälpmedel",
+    "Installera Calmon",
+    "Hämta Calmon",
+    ". Flytta det till Program.",
+    "Tillåt hjälpmedelsåtkomst",
+    "Dra Calmon till listan Hjälpmedel och slå på det.",
+    "Öppna dina fönster",
+    "Välj fönster i flikraden. Layoutkartan öppnar tangentpanelen.",
+    "Calmon har ingen symbol i Dock. Du hittar den i menyraden {icon}."
+  ],
+  "faq": [
+    "Frågor och svar",
+    [
+      "Vilka Mac-datorer stöds?",
+      "Mac med Apple-chip eller Intel och macOS 26 eller senare."
+    ],
+    [
+      "Vilken behörighet behövs?",
+      "Hjälpmedel för att flytta, ändra storlek på och välja fönster."
+    ],
+    [
+      "Måste jag lära mig kortkommandon?",
+      "Nej. Alla fönsteråtgärder fungerar med musen. Öppna tangentpanelen via layoutkartan."
+    ],
+    [
+      "Kan jag svepa på styrplattan?",
+      "Svep är avstängda från början. Aktivera tre eller fyra fingrar i Inställningar → Gester. Håll Shift före svepet för att använda macOS ursprungliga gest."
+    ],
+    [
+      "Läggs alla fönster sida vid sida?",
+      "Standardfönster gör det. Dialoger, inställningar och fönster med fast storlek flyter. Lägg till regler i Inställningar → Avancerat."
+    ],
+    [
+      "Flyttar Calmon fönster mellan skrivbord?",
+      "Bara när du flyttar dem. Växla med skrivbordsnummer eller kommandoläget. När du avslutar återställer Calmon sparade fönsterpositioner."
+    ],
+    [
+      "Är betan gratis?",
+      "Ja, Calmon är gratis under betan."
+    ],
+    [
+      "Hur uppdaterar jag?",
+      "Välj Sök efter uppdateringar i Calmon-menyn."
+    ]
+  ],
+  "demo": [
+    "Paus",
+    "Fortsätt",
+    "Starta om demo",
+    "Tryck två gånger på ⌘ och släpp",
+    "Kommandoläge · fortsätt använda tangenterna",
+    "macOS-kortkommando · utan kommandoläge",
+    "sedan",
+    "Aktivera JavaScript för att visa demon.",
+    "Kommandoläget avslutat"
+  ],
+  "menus": [
+    "Arkiv",
+    "Redigera",
+    "Innehåll",
+    "Fönster",
+    "Hjälp"
+  ],
+  "apps": [
+    "Anteckningar",
+    "Finder",
+    "Terminal",
+    "Mail",
+    "Kalender",
+    "Musik"
+  ],
+  "windows": [
+    "Calmon-guide",
+    "Denna vecka",
+    "Idéer",
+    "Projekt",
+    "Webbplats",
+    "Inkorg",
+    "Schema",
+    "Spelas nu"
+  ],
+  "subtitle": "Rullande fönsterrutor"
+}

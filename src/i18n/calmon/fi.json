@@ -1,0 +1,156 @@
+{
+  "hero": [
+    "Ota rauhassa\nja vieritä eteenpäin",
+    "Vieritettävä laatoittava ikkunanhallinta",
+    "Calmon järjestää Macin ikkunat vieritettäviin sarakkeisiin. Pinoa ikkunoita, kiinnitä sarake ja vaihda hiirellä tai näppäimistöllä."
+  ],
+  "nav": [
+    "lazyapps-etusivu",
+    "Valitse kieli",
+    "Siirry sisältöön"
+  ],
+  "release": [
+    "Lataa ilmaiseksi",
+    "Maksuton betavaiheessa",
+    "Löysitkö virheen tai keksitkö idean? Kerro @lazyapps-tilille X:ssä. Kiitos avustasi Calmonin kehittämisessä.",
+    "macOS 26 tai uudempi"
+  ],
+  "display": [
+    "Miten useat näytöt kannattaa sijoittaa?",
+    "Sijoita näytöt päällekkäin. Vierekkäisten näyttöjen yhteiset reunat estävät vierityksen, ja sarakkeiden vaihto kiertyy niissä alkuun. Kun näyttöjä on molemmilla puolilla, taustaikkunat menevät päällekkäin valitun ikkunan taakse."
+  ],
+  "features": [
+    [
+      "Vieritä sarakkeita",
+      "Ikkunat vierivät vaakasuunnassa. Aktiivinen sarake täyttää suurimman osan näytöstä. Käytä nuolinäppäimiä komentotilassa."
+    ],
+    [
+      "Appipinot",
+      "Saman apin laatoitetut ikkunat muodostavat pinon. Vaihda pinon merkistä tai painamalla ⌘`. Sarakkeeseen mahtuu kolme pinoa."
+    ],
+    [
+      "Kiinteä sarake",
+      "Kiinnitä sarake vasempaan tai oikeaan reunaan. Muut ikkunat vierivät vieressä. Tab vaihtaa kohdistusta komentotilassa."
+    ],
+    [
+      "Pin Deck",
+      "Kiinnitä enintään kymmenen appia. Lisää Pin Deck -merkistä ja poista kuvakkeen valikosta. Järjestys on sama kaikilla näytöillä."
+    ],
+    [
+      "Sky Deck ja Max Deck",
+      "Sky Deck listaa kelluvat ikkunat ja Max Deck macOS:n koko näytön ikkunat. Palaa ikkunaan klikkaamalla kuvaketta."
+    ],
+    [
+      "Ikkunat ja työpöydät",
+      "Klikkaa työpöydän numeroa. Kirjoita kuvakkeen tunnus komentotilassa. Shift ja 1–9 siirtävät valitun ikkunan toiselle työpöydälle."
+    ]
+  ],
+  "keyboard": [
+    "Käytä hiirtä\nOpi näppäimet vähitellen",
+    "asettelukarttaa",
+    "Piilota automaattinen paneeli: Asetukset → Näppäimistö → Näppäinpaneeli → Näytä viiveellä → Ei koskaan. Asettelukartta avaa paneelin aina.",
+    "Paina ⌘ kahdesti ja vapauta. Voit jatkaa komentojen käyttöä, kun ikkuna on korostettu. Esc poistuu tilasta.",
+    "Näppäinpaneeli",
+    "Tärkeimmät näppäimet"
+  ],
+  "mouse": [
+    "Valitse ikkuna klikkaamalla välilehtipalkin kuvaketta.",
+    "Control-klikkaus avaa ikkunatoiminnot.",
+    "Avaa näppäinpaneeli klikkaamalla asettelukarttaa.",
+    "Suorita komento klikkaamalla näppäintä."
+  ],
+  "actions": [
+    "Valitse sarake / ikkuna",
+    "Siirrä ikkunaa tai saraketta",
+    "Liitä sarakkeeseen / irrota",
+    "Liity appipinoon / poistu",
+    "Lisää / poista Pin Deck -appi",
+    "Vaihda työpöytää / siirrä ikkuna",
+    "Poistu komentotilasta"
+  ],
+  "setup": [
+    "Alkuun pääseminen",
+    "Apit",
+    "Käyttöapu",
+    "Asenna Calmon",
+    "Lataa Calmon",
+    ". Siirrä se Apit-kansioon.",
+    "Salli käyttöapu",
+    "Vedä Calmon Käyttöapu-luetteloon ja ota se käyttöön.",
+    "Avaa ikkunasi",
+    "Valitse ikkuna välilehtipalkista. Asettelukartta avaa näppäinpaneelin.",
+    "Calmonilla ei ole Dock-kuvaketta. Löydät sen valikkoriviltä {icon}."
+  ],
+  "faq": [
+    "Kysymyksiä ja vastauksia",
+    [
+      "Mitkä Macit ovat tuettuja?",
+      "Apple-siru- ja Intel-Macit, joissa on macOS 26 tai uudempi."
+    ],
+    [
+      "Mikä lupa tarvitaan?",
+      "Käyttöapulupa ikkunoiden siirtoon, koon muuttamiseen ja valintaan."
+    ],
+    [
+      "Pitääkö oikotiet opetella?",
+      "Ei. Kaikki ikkunatoiminnot toimivat hiirellä. Avaa näppäinpaneeli asettelukartasta."
+    ],
+    [
+      "Voinko käyttää ohjauslevyn pyyhkäisyjä?",
+      "Ne ovat aluksi pois käytöstä. Ota kolmen tai neljän sormen pyyhkäisyt käyttöön kohdassa Asetukset → Eleet. Pidä Shift pohjassa ennen pyyhkäisyä käyttääksesi macOS:n alkuperäistä elettä."
+    ],
+    [
+      "Laatoitetaanko kaikki ikkunat?",
+      "Tavalliset ikkunat kyllä. Valintaikkunat, asetukset ja kiinteän kokoiset ikkunat kelluvat. Lisää sääntöjä kohdassa Asetukset → Lisäasetukset."
+    ],
+    [
+      "Siirtääkö Calmon ikkunoita työpöytien välillä?",
+      "Vain kun siirrät ne itse. Vaihda työpöytänumeroilla tai komentotilassa. Lopetettaessa Calmon palauttaa tallennetut ikkunasijainnit."
+    ],
+    [
+      "Onko beta maksuton?",
+      "Kyllä, Calmon on maksuton betavaiheessa."
+    ],
+    [
+      "Miten päivitän?",
+      "Valitse Calmon-valikosta Tarkista päivitykset."
+    ]
+  ],
+  "demo": [
+    "Tauko",
+    "Jatka",
+    "Aloita demo alusta",
+    "Paina ⌘ kahdesti ja vapauta",
+    "Komentotila · jatka näppäinten käyttöä",
+    "macOS-oikotie · ei komentotilaa",
+    "sitten",
+    "Ota JavaScript käyttöön nähdäksesi demon.",
+    "Komentotila suljettu"
+  ],
+  "menus": [
+    "Arkisto",
+    "Muokkaa",
+    "Näytä",
+    "Ikkuna",
+    "Ohje"
+  ],
+  "apps": [
+    "Muistiinpanot",
+    "Finder",
+    "Pääte",
+    "Mail",
+    "Kalenteri",
+    "Musiikki"
+  ],
+  "windows": [
+    "Calmon-opas",
+    "Tämä viikko",
+    "Ideat",
+    "Projektit",
+    "Sivusto",
+    "Saapuneet",
+    "Aikataulu",
+    "Nyt toistetaan"
+  ],
+  "subtitle": "Vieritettävä ikkunaruudukko"
+}

@@ -1,0 +1,156 @@
+{
+  "hero": [
+    "Păstrează-ți calmul\nși derulează mai departe",
+    "Manager de ferestre în mozaic cu derulare",
+    "Calmon aranjează ferestrele Mac în coloane derulante. Grupează ferestre, fixează o coloană și comută cu mausul sau tastatura."
+  ],
+  "nav": [
+    "Pagina lazyapps",
+    "Alege limba",
+    "Sari la conținut"
+  ],
+  "release": [
+    "Descarcă gratuit",
+    "Gratuit în perioada beta",
+    "O eroare sau o idee? Scrie-i lui @lazyapps pe X. Mulțumim că ne ajuți să îmbunătățim Calmon.",
+    "macOS 26 sau ulterior"
+  ],
+  "display": [
+    "Cum aranjez mai multe monitoare?",
+    "Așază monitoarele pe verticală. Alăturate, marginile comune blochează derularea, iar comutarea coloanelor revine la început acolo. Cu monitoare pe ambele părți, ferestrele din fundal se suprapun în spatele celei selectate."
+  ],
+  "features": [
+    [
+      "Derulează coloane",
+      "Ferestrele derulează orizontal. Coloana activă ocupă aproape tot ecranul. Folosește săgețile în modul de comenzi."
+    ],
+    [
+      "Stive de aplicații",
+      "Ferestrele în mozaic ale aceleiași aplicații formează o stivă. Apasă un indicator sau ⌘` pentru a comuta. O coloană admite până la trei stive."
+    ],
+    [
+      "Coloană fixă",
+      "Fixează o coloană la stânga sau la dreapta. Celelalte ferestre derulează alături. Tab schimbă focalizarea în modul de comenzi."
+    ],
+    [
+      "Pin Deck",
+      "Fixează până la zece aplicații. Adaugă prin marcajul Pin Deck și elimină din meniul pictogramei. Ordinea este comună tuturor monitoarelor."
+    ],
+    [
+      "Sky Deck și Max Deck",
+      "Sky Deck listează ferestrele flotante, Max Deck pe cele în modul nativ pe tot ecranul. Apasă o pictogramă pentru a reveni la fereastră."
+    ],
+    [
+      "Ferestre și desktopuri",
+      "Apasă numărul unui desktop. În modul de comenzi, scrie eticheta unei pictograme. Shift și 1–9 mută fereastra selectată pe alt desktop."
+    ]
+  ],
+  "keyboard": [
+    "Folosește mausul\nÎnvață tastele din mers",
+    "harta aranjamentului",
+    "Dezactivează panoul automat: Configurări → Tastatură → Panou taste → Afișează după → Niciodată. Harta aranjamentului deschide mereu panoul.",
+    "Apasă ⌘ de două ori și eliberează. Cât timp fereastra este evidențiată, poți continua comenzile. Esc închide modul.",
+    "Panou taste",
+    "Taste esențiale"
+  ],
+  "mouse": [
+    "Apasă o pictogramă din bara de file pentru a selecta fereastra.",
+    "Control-clic deschide acțiunile ferestrei.",
+    "Apasă harta aranjamentului pentru a deschide panoul de taste.",
+    "Apasă o tastă pentru a executa comanda."
+  ],
+  "actions": [
+    "Selectează coloană / fereastră",
+    "Mută fereastra sau coloana",
+    "Unește / separă coloana",
+    "Alătură / părăsește stiva aplicației",
+    "Adaugă / elimină aplicația Pin Deck",
+    "Comută desktopul / mută fereastra",
+    "Ieși din modul de comenzi"
+  ],
+  "setup": [
+    "Primii pași",
+    "Aplicații",
+    "Accesibilitate",
+    "Instalează Calmon",
+    "Descarcă Calmon",
+    ". Mută-l în Aplicații.",
+    "Permite accesibilitatea",
+    "Trage Calmon în lista Accesibilitate și activează-l.",
+    "Deschide ferestrele",
+    "Selectează o fereastră din bara de file. Harta aranjamentului deschide panoul de taste.",
+    "Calmon nu are pictogramă în Dock. Îl găsești în bara de meniu {icon}."
+  ],
+  "faq": [
+    "Întrebări și răspunsuri",
+    [
+      "Ce Mac-uri sunt compatibile?",
+      "Mac-uri cu cip Apple sau Intel și macOS 26 sau ulterior."
+    ],
+    [
+      "Ce permisiune trebuie acordată?",
+      "Accesibilitate pentru mutarea, redimensionarea și selectarea ferestrelor."
+    ],
+    [
+      "Trebuie să memorez scurtături?",
+      "Nu. Toate acțiunile funcționează cu mausul. Harta aranjamentului deschide panoul de taste."
+    ],
+    [
+      "Pot folosi gesturi pe trackpad?",
+      "Sunt dezactivate inițial. Activează trei sau patru degete în Configurări → Gesturi. Ține Shift înainte de gest pentru gestul macOS original."
+    ],
+    [
+      "Toate ferestrele sunt în mozaic?",
+      "Cele standard da. Dialogurile, configurările și ferestrele cu dimensiune fixă plutesc. Adaugă reguli în Configurări → Avansat."
+    ],
+    [
+      "Calmon mută ferestre între desktopuri?",
+      "Doar când le muți tu. Comută cu numerele desktopurilor sau modul de comenzi. La ieșire, Calmon restaurează pozițiile salvate."
+    ],
+    [
+      "Beta este gratuită?",
+      "Da, Calmon este gratuit în perioada beta."
+    ],
+    [
+      "Cum actualizez?",
+      "Alege Caută actualizări din meniul Calmon."
+    ]
+  ],
+  "demo": [
+    "Pauză",
+    "Continuă",
+    "Repornește demonstrația",
+    "Apasă ⌘ de două ori și eliberează",
+    "Mod de comenzi · continuă cu tastele",
+    "Scurtătură macOS · fără mod de comenzi",
+    "apoi",
+    "Activează JavaScript pentru demonstrație.",
+    "Modul de comenzi s-a încheiat"
+  ],
+  "menus": [
+    "Fișier",
+    "Editare",
+    "Vizualizare",
+    "Fereastră",
+    "Ajutor"
+  ],
+  "apps": [
+    "Notițe",
+    "Finder",
+    "Terminal",
+    "Mail",
+    "Calendar",
+    "Muzică"
+  ],
+  "windows": [
+    "Ghid Calmon",
+    "Săptămâna aceasta",
+    "Idei",
+    "Proiecte",
+    "Site web",
+    "Primite",
+    "Program",
+    "În redare"
+  ],
+  "subtitle": "Ferestre în mozaic derulant"
+}

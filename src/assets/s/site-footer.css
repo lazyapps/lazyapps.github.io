@@ -61,6 +61,11 @@ html:not(.no-js) .base{--rise:0}
   font:400 15px/1.45 var(--sans);transition:color .2s ease;
 }
 .base__col a{min-height:30px;align-items:center}
+.base__col .base__icon-link{display:inline-grid;grid-template-columns:16px auto;gap:7px}
+.base__link-icon{display:block;width:16px;height:16px;justify-self:center;overflow:visible;transform:translateY(1px)}
+.base__link-icon--x{width:12px;height:12px}
+.base__link-icon--shield{width:14px;height:14px}
+.base__link-icon path,.base__link-icon rect{vector-effect:non-scaling-stroke}
 .base__col a::before{content:"";position:absolute;inset:-2px -6px}
 
 .base__meta{margin:0;color:var(--footer-soft);font:400 13px/20px var(--sans)}

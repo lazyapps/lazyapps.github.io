@@ -1,0 +1,70 @@
+---
+import { Image } from 'astro:assets';
+import appIcon from '$assets/img/calmon-icon.png';
+import applications from '$assets/img/calmon-setup/applications.png?url';
+import arrow from '$assets/img/calmon-setup/arrow-right.png?url';
+import finder from '$assets/img/calmon-desktop/finder.png?url';
+import safari from '$assets/img/calmon-desktop/safari.png?url';
+import notes from '$assets/img/calmon-desktop/notes.png?url';
+import map from '$assets/img/calmon-onboarding/map-leader.png?url';
+import panels from './calmon-key-panel.json';
+const { index, code, labels } = Astro.props;
+const rows = panels[code || 'zh-Hans'][0].rows.slice(0, 2);
+---
+<div dir="ltr" class:list={['calmon-setup-art', `calmon-setup-art--${index}`]} aria-hidden="true">
+  {index === 0 && <div class="install-scene">
+    <div class="install-item"><Image src={appIcon} width={40} height={40} densities={[1, 2]} alt="" /><span>Calmon</span></div>
+    <span class="flow-arrow" style={`--arrow:url("${arrow}")`}></span>
+    <div class="install-item"><img src={applications} width="48" height="48" alt="" /><span>{labels.applications}</span></div>
+  </div>}
+  {index === 1 && <div class="access-scene">
+    <div class="access-row"><Image src={appIcon} width={32} height={32} densities={[1, 2]} alt="" /><span>Calmon</span><span class="access-toggle"><i></i></span></div>
+  </div>}
+  {index === 2 && <div class="panel-scene">
+    <div class="panel-preview" lang={code || 'zh-Hans'}>
+      {rows.map(row => <div><span>{row.title}</span><span class="panel-keys">{row.keys.map(key => <kbd>{key}</kbd>)}</span></div>)}
+    </div>
+    <span class="map-connector"></span>
+    <div class="tab-preview">
+      {[finder, safari, notes].map(src => <img src={src} width="28" height="28" alt="" />)}
+      <img class="map-preview" src={map} width="36" height="20" alt="" />
+    </div>
+  </div>}
+</div>
+<script>
+  import { observeIllustrationMotion } from '../scripts/calmon-illustration-motion';
+  observeIllustrationMotion('.calmon-setup-art');
+</script>
+<style>
+  .calmon-setup-art{--art-shadow:0 8px 18px -8px #16392935,0 1px 4px #16392912;position:relative;isolation:isolate;display:grid;place-items:center;min-width:0;width:224px;max-width:100%;height:104px;padding:12px;border-radius:12px;background:#e5efe7;box-shadow:inset 0 0 0 1px #0000000d;color:#35463b;font-family:-apple-system,BlinkMacSystemFont,sans-serif;pointer-events:none}
+  .calmon-setup-art img{display:block;object-fit:contain}
+  .install-scene{display:flex;align-items:center;justify-content:flex-start;gap:14px;width:max-content;max-width:100%}
+  .install-item{display:grid;grid-template-rows:48px auto;justify-items:center;align-items:center;align-content:end;gap:6px;min-width:64px;height:72px;font-size:11px;line-height:1.4;white-space:nowrap}
+  .install-item:first-child{min-width:40px}
+  .install-item img{filter:drop-shadow(0 3px 3px #143b2420)}
+  .flow-arrow{width:16px;height:16px;background:#087763;mask:var(--arrow) center/contain no-repeat;margin-top:-18px;flex:none}
+  .access-scene{width:176px;max-width:100%;padding:0}
+  .access-row{display:flex;align-items:center;gap:8px;padding:8px 0;font-size:13px;line-height:1.4}
+  .access-toggle{display:flex;align-items:center;justify-content:flex-end;flex:none;width:30px;height:18px;padding:2px;margin-left:auto;border-radius:999px;background:#14ca3c;box-shadow:inset 0 0 0 1px #00000008}
+  .access-toggle i{width:14px;height:14px;border-radius:50%;background:#fff;box-shadow:0 1px 2px #0002}
+  .panel-scene{position:relative;display:grid;justify-items:start;align-content:center;width:176px;max-width:100%;height:80px;padding:0}
+  .panel-preview{width:100%;padding:6px 10px;border-radius:8px;background:#171b18;color:#e6eee8;box-shadow:var(--art-shadow);font:400 12px/16px 'Calmon Panel',var(--sans);font-synthesis:none}
+  .panel-preview:lang(ar),.panel-preview:lang(he),.panel-preview:lang(hi),.panel-preview:lang(th){font-family:var(--sans)}
+  .panel-preview>div{display:flex;align-items:center;justify-content:space-between;gap:12px}
+  .panel-preview>div+div{margin-top:2px}
+  .panel-keys{display:flex;gap:3px}
+  kbd{display:grid;place-items:center;min-width:18px;height:16px;border-radius:2px;background:#414a43;color:#e9ffec;font:inherit;line-height:16px}
+  .map-connector{height:6px;margin-left:140.5px;border-left:1px solid #08776370}
+  .tab-preview{display:flex;align-items:center;gap:10px}
+  .tab-preview>img:first-child{margin-left:-2.625px}
+  .map-preview{margin-left:8px}
+  .is-active .flow-arrow{animation:setup-arrow 6s cubic-bezier(.4,0,.2,1) infinite}
+  .is-active .access-toggle{animation:setup-toggle 6s .35s cubic-bezier(.4,0,.2,1) infinite both}
+  .is-active .access-toggle i{animation:setup-knob 6s .35s cubic-bezier(.4,0,.2,1) infinite both}
+  .is-active .panel-preview{animation:setup-panel 6s .7s cubic-bezier(.4,0,.2,1) infinite both}
+  @keyframes setup-arrow{0%,12%,100%{transform:translateX(-4px);opacity:.5}28%,86%{transform:translateX(4px);opacity:1}}
+  @keyframes setup-toggle{0%,12%,100%{background:#b9c3bc}28%,86%{background:#14ca3c}}
+  @keyframes setup-knob{0%,12%,100%{transform:translateX(-12px)}28%,86%{transform:translateX(0)}}
+  @keyframes setup-panel{0%,12%,100%{opacity:0;transform:translateY(4px)}28%,86%{opacity:1;transform:translateY(0)}}
+  @media(prefers-reduced-motion:reduce){.calmon-setup-art *{animation:none!important}}
+</style>

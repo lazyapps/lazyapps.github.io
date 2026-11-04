@@ -1,0 +1,53 @@
+{
+  "appSourceCommit": "02f7cfa36ce79177a8b08da05ddfab9d05158ddd",
+  "method": "Semantic HTML key reference, in all 38 app languages, with copy from the app catalog. Original RoundPix outlines subset to WOFF2 and renamed calmon Panel Web; no raster panel artwork.",
+  "inputs": {
+    "Sources/Localizable.xcstrings": "32a3113eb5bc22f1f498dc61f02a76adbce4a59ad99429e76eb149c3db007dcc",
+    "Sources/Fonts/ZLabsRoundPix_12px_M_CN.ttf": "5adc3a83d11edc2e6f5bb3bc009dd9028dc055cbb3fc5f23715fb4de3c4e3eb0"
+  },
+  "websiteInputs": {
+    "src/i18n/calmon-locales.mjs": "c983d1e333308019f11d6dfbf0cfd29371d2f42e2d8e205dfc69851ce1f98763",
+    "src/i18n/calmon-translations.mjs": "b110445ad1da824f4e2020076d3a804c27bffac0ab1956ee43dfa9e8b32e91e4",
+    "src/i18n/calmon/ar.json": "6ce32f7a7e8104c62a3d75843240f14ba9e089469fed2e74482eac27c7ad98d9",
+    "src/i18n/calmon/ca.json": "f4470559b224535f04dc7948609fb3dcd7ba32f7631c524910d770fe729575d9",
+    "src/i18n/calmon/cs.json": "341bc3cf6f82624acae30ebd6ec94aed32e6c4fd5abb3524e11d850a280df7ed",
+    "src/i18n/calmon/da.json": "7fe22820bee4540686978071e8da309c67b485f60b48c590d47ff086f6387b34",
+    "src/i18n/calmon/de.json": "4c9c14646fd146e2a3f3630320d836d634721cc8f549a32ff31e21654b68e477",
+    "src/i18n/calmon/el.json": "1459f56ddd067290eaf2a1dc5ebd664d4a08c8a4713eff62663205d376ae6340",
+    "src/i18n/calmon/es-419.json": "adc357058d040e644c3cce641868365f7735bfac99107710ebb12958c411e4ba",
+    "src/i18n/calmon/es.json": "8390bd6ca10cf649ae0668aed49d454696c0e23d312ff938186c64d786329465",
+    "src/i18n/calmon/fi.json": "d626d1d2ab83fd414280a0bc22b5a3d151a811fea36477281bc1382e25fad022",
+    "src/i18n/calmon/fr-CA.json": "541560af5302e161b64fb102b9909e6e46d32d4920bf976f593f38108bfb38d5",
+    "src/i18n/calmon/fr.json": "8f2078336999e905dd6efacbc9da32305a9e4417444ec151e1f9cf801cb77489",
+    "src/i18n/calmon/he.json": "4290b56131404ee65c5642114a4e03c4ddb8122a2f0990e193ebcdfa5d3437ca",
+    "src/i18n/calmon/hi.json": "c91cb079c10e78425be6f32766524668d55ea7ca309bbe35214208181712636e",
+    "src/i18n/calmon/hr.json": "aa0affeee1c9db5a1f8fb9598b1c7420b4d705e2643fc16f5dd91af308a6ab5c",
+    "src/i18n/calmon/hu.json": "be5d14e00aa5825d851e3d3a66edc0eb16acfd0491db49bae54e4f1470899ac5",
+    "src/i18n/calmon/id.json": "49b04688b6a40f549ebd2bd873169886bd413be7d4065228fe867c039b50972d",
+    "src/i18n/calmon/it.json": "deb11ec7a230c3b4811d2d71aa427cba517bd6347d59f7c3a7544653bbf6d65c",
+    "src/i18n/calmon/ja.json": "23e11d2c980fcf816ffa5f6e9294486a202e30490776b35137d2d28b9413bd51",
+    "src/i18n/calmon/ko.json": "d8142c055d43833120ed29299a2f1a18cf14eeb69ac9a50c6c1e47eeb0a0aa15",
+    "src/i18n/calmon/ms.json": "4477aa67c2224f6a8e924bc2e03a99195046236e012f33534d0802238a0e4b70",
+    "src/i18n/calmon/nb.json": "65455e09b98aec4cd140b9d58d318914892cfccb050785ee83de7977c62bffb2",
+    "src/i18n/calmon/nl.json": "ec76b283c6fc741ca5834dc984c35e975db06af2831f2d42e64e26325626c58d",
+    "src/i18n/calmon/pl.json": "e2dabba3d33ae5c5d398d6ab11ce28511a21d2f40653d74b94fb7a091b200030",
+    "src/i18n/calmon/pt-BR.json": "ed22ee1e82916e0a254d624b6b498dbe6a5a559ebb0e04ef1830a85313598b93",
+    "src/i18n/calmon/pt-PT.json": "aaf0e5eaaa5accf17bc15540f085356c500076e1411b5940c6ec193f90e0c621",
+    "src/i18n/calmon/ro.json": "a9a4791fd493854f543f4b86914ef0b53767a4a64cc818b7c216c583dc6952d6",
+    "src/i18n/calmon/ru.json": "12b3e6c3423173f9af5e27f5390af79a22f32a3217ba0d82a35a2459a2bc8974",
+    "src/i18n/calmon/sk.json": "2d09c6c97a1a4cedc51c50f6a4dd2ff0d9150fc97dea15c7709431309e32cddf",
+    "src/i18n/calmon/sl.json": "cf7b43a335d845382da76016d05830a9d323586bc1ed6fd55c4cf10971c19da3",
+    "src/i18n/calmon/sv.json": "79db658f0d0e1346fa73c1af2506e4b242e7eace9a2151fbc4336b317e3c34eb",
+    "src/i18n/calmon/th.json": "5054f7201113810e2c7d3fc60deaf86940b5228015bd50e7523d301d9c773dc7",
+    "src/i18n/calmon/tr.json": "1e27b7fe6767c29d8aa5b1dee3f738ca0c0df3843853538e558fe3f5675fcaad",
+    "src/i18n/calmon/uk.json": "5c27ebe4850c4fba527f6535f7a959220eff9a02e42b45ab792716bc76b1926a",
+    "src/i18n/calmon/vi.json": "030a9dd2e85885739ba4022cfdc598248a318cb59430d2e0f82e24a874853f0d",
+    "src/i18n/calmon/zh-HK.json": "c27c4b59b22bdadc6b1c833d7fb4670fc6b877fc19711b1207348ed255cf7f51",
+    "src/i18n/calmon/zh-Hant.json": "c27c4b59b22bdadc6b1c833d7fb4670fc6b877fc19711b1207348ed255cf7f51"
+  },
+  "outputs": {
+    "src/components/calmon-key-panel.json": "0991808efcd6ebfbf5126a2ec827e13f45d31e027375ce8250a68cf3197f1c96",
+    "src/components/calmon-key-panel-system.json": "481e1e4ebe94109d446098406bb159003984d58333228e5120d8d19a39829e18",
+    "src/assets/fonts/calmon-panel.woff2": "d682464ae0cbf3d05a7960850a05b993f6dcb4df58b8bf20f7f08d2d155626d7"
+  }
+}

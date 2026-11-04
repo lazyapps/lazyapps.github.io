@@ -1,0 +1,48 @@
+import assert from 'node:assert/strict';
+import { CALMON_LOCALES, CALMON_LANGUAGE_OPTIONS, CALMON_RELEASE } from '../src/i18n/calmon-locales.mjs';
+import { desktopCopy } from '../src/components/calmon-desktop/copy.mjs';
+import panels from '../src/components/calmon-key-panel.json' with { type: 'json' };
+import { supported, pressKits } from '../src/content/presskit-catalog.mjs';
+import { calmonPressOptions, calmonPressUI } from '../src/content/presskit-presentation.mjs';
+
+const expected = supported.calmon.tags.toSorted();
+assert.equal(expected.length, 38);
+assert(['upcoming','published'].includes(CALMON_RELEASE.status), 'Unknown Calmon release status');
+assert.deepEqual(Object.values(CALMON_LOCALES).map(t=>t.htmlLang).toSorted(), expected);
+assert.deepEqual(Object.keys(panels).toSorted(), expected);
+assert.deepEqual(calmonPressOptions.map(t=>t.language).toSorted(), expected);
+assert.deepEqual(CALMON_LANGUAGE_OPTIONS.map(t=>t.language).toSorted(), expected);
+assert.equal(CALMON_LOCALES.en.headline.join(' '), 'Keep calm and scroll on');
+assert.equal(CALMON_LOCALES[''].headline.join(''), '别慌，接着滚');
+for (const [code,t] of Object.entries(CALMON_LOCALES)) {
+  const label = t.htmlLang;
+  assert.equal(t.headline.length, 2, `${label}: hero title must have two lines`);
+  assert(t.headline.every(line => line.trim() && !line.includes('\n')), `${label}: empty or nested hero title line`);
+  for (const key of ['description','heroSubtitle','releaseTitle','releaseNote','setupDownload','menuBarNote','keyboardHelp','shortcutContext','panelCaption','shortcutsTitle','details']) assert(t[key]?.trim(), `${label}: missing ${key}`);
+  assert.equal(t.releaseNote.split('@lazyapps').length,2, `${label}: feedback link placeholder`);
+  assert.equal(t.menuBarNote.split('{icon}').length,2, `${label}: inline icon placeholder`);
+  assert.equal(t.features.length,6);
+  assert.equal(t.shortcuts.length,7);
+  assert.equal(t.keyboardSteps.length,4);
+  assert.equal(t.steps.length,3);
+  assert.equal(t.faqs.length,8);
+  assert(t.steps[0][1].startsWith(t.setupDownload), `${label}: inline download text`);
+  assert(t.keyboardSteps.some(step=>step.includes(t.keyboardMapLabel)),`${label}: inline map label`);
+  assert.equal(t.dir,['ar','he'].includes(label)?'rtl':'ltr');
+  const demo=desktopCopy(code);
+  for(const key of ['label','pause','play','restart','modeEnter','modeActive','modeExited','nativeShortcut','map','spaceKey']) assert(demo[key],`${label}: missing demo ${key}`);
+  assert.notEqual(demo.modeExited, panels[label][4].rows[1].title, `${label}: exited status must not reuse the Exit command`);
+  assert.equal(demo.tour.length,25);
+  assert(calmonPressUI[label]?.downloadZip,`${label}: missing press interface`);
+  for(const key of ['allKits','downloadZip','copyImages','support','privacy','materialLanguage','language','skip','home']) assert(calmonPressUI[label][key]?.trim(),`${label}: missing press interface ${key}`);
+  const media = pressKits.find(kit=>kit.slug==='calmon').locales.find(locale=>locale.tag===label);
+  assert.equal(media.website,t.selectedUrl);
+  assert.equal(media.platform,t.compatibility,`${label}: media system requirements must match the localized product page`);
+  assert.equal(t.ctaUrl,CALMON_RELEASE.releasesUrl,`${label}: product release link differs`);
+  assert(media.links.some(link=>link.url===CALMON_RELEASE.releasesUrl),`${label}: media release link differs`);
+  const capture = media.assets.find(asset=>asset.kind==='screenshot');
+  assert.equal(capture.contentLanguage,label);
+  assert(!/\b(dev|debug|development)\b/i.test(JSON.stringify([t,media])),`${label}: development copy leaked into public content`);
+  if(!['en','zh-Hans'].includes(label)) assert.notEqual(t.features[0][1],CALMON_LOCALES.en.features[0][1],`${label}: English fallback`);
+}
+console.log('Calmon locale checks passed: 38 complete pages, native panels, demo copy, media folders, RTL and inline placeholders.');

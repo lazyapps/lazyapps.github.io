@@ -1,0 +1,17 @@
+{
+  "checkedOn": "2026-11-02",
+  "appSourceCommit": "fe32fd80bf556bcf24613db02cb4211753fa3e3f",
+  "method": "Native system app icons exported through NSWorkspace; Tiny5 subset retains its OFL notice. Context-menu labels, grouping, and availability checked against the current app. Independently implemented web model contains no private app source. Key-panel pixels, hit boxes and tab-bar measurements have separate native capture provenance in onboarding-source.json.",
+  "contextReference": "/Users/realazy/Projects/_vibe/calmon/Sources/DesktopTabBar.swift",
+  "outputs": {
+    "src/assets/img/calmon-desktop/finder.png": "0df80f1130c9618c24a9c9e924870ae97987eae527553795b38787eb90524b2c",
+    "src/assets/img/calmon-desktop/mail.png": "57408819d065fd5e81991bf0fe9c3c1acccd1a9acb6c0fea1842b934ece163af",
+    "src/assets/img/calmon-desktop/safari.png": "5a5aaf3a52c8cc42f33ae18b2b61608ff2b7cee3045a8d0aa8690c593a27ace9",
+    "src/assets/img/calmon-desktop/terminal.png": "7ea29ec2ab88e9c7be163ce7af1f9352be0caf9c3f622a485faceb4567a73267",
+    "src/assets/img/calmon-desktop/music.png": "7e57dab48c277643d6a765e6b2957e8084075a412863df700264d59f426e8568",
+    "src/assets/img/calmon-desktop/notes.png": "ec1760e4d1005e07bfda3da885d085d403963bcd51b3f4dc0a7b7b251a10c265",
+    "src/assets/img/calmon-desktop/calendar.png": "fd97f458d7d34ada49ca40c6880ecae0d8592f0c938ac480ceb62ce3c6291193",
+    "src/assets/fonts/calmon-pixel.woff2": "b2cd48b5a7c2b6441a805f48dfff3eb9ed4df0415d12e35a4fe2557928eefa6e",
+    "src/components/calmon-desktop/context-copy.json": "970e2c7f1349e288142cd0ab570b1d7bc33b56308893e3c4ef16a7a302795cb8"
+  }
+}

@@ -1,0 +1,156 @@
+{
+  "hero": [
+    "Samo mirno\ni nastavi klizati",
+    "Upravitelj prozora s pomičnim pločicama",
+    "Calmon slaže Mac prozore u pomične stupce. Grupiraj prozore, prikvači stupac i prebacuj mišem ili tipkovnicom."
+  ],
+  "nav": [
+    "Početna lazyapps",
+    "Odaberi jezik",
+    "Na sadržaj"
+  ],
+  "release": [
+    "Besplatno preuzmi",
+    "Besplatno tijekom bete",
+    "Greška ili ideja? Piši @lazyapps na X-u. Hvala što pomažeš poboljšati Calmon.",
+    "macOS 26 ili noviji"
+  ],
+  "display": [
+    "Kako rasporediti više zaslona?",
+    "Postavi ih jedan iznad drugog. Bočno postavljeni zasloni zajedničkim rubovima blokiraju pomicanje; prebacivanje stupaca ondje se vraća na početak. Uz zaslone s obje strane pozadinski prozori preklapaju se iza odabranog prozora."
+  ],
+  "features": [
+    [
+      "Pomični stupci",
+      "Prozori se pomiču vodoravno. Aktivni stupac ispunjava većinu zaslona. Koristi strelice u naredbenom načinu."
+    ],
+    [
+      "Stogovi aplikacija",
+      "Popločani prozori iste aplikacije čine stog. Klikni oznaku stoga ili pritisni ⌘` za prebacivanje. Stupac prima do tri stoga."
+    ],
+    [
+      "Fiksni stupac",
+      "Prikvači stupac na lijevi ili desni rub. Drugi prozori pomiču se uz njega. Tab mijenja fokus u naredbenom načinu."
+    ],
+    [
+      "Pin Deck",
+      "Prikvači do deset aplikacija. Dodaj oznakom Pin Deck, ukloni iz izbornika ikone. Redoslijed je isti na svim zaslonima."
+    ],
+    [
+      "Sky Deck i Max Deck",
+      "Sky Deck prikazuje plutajuće, Max Deck izvorne prozore preko cijelog zaslona. Klikni ikonu za povratak u prozor."
+    ],
+    [
+      "Prozori i radne površine",
+      "Klikni broj radne površine. U naredbenom načinu upiši oznaku ikone. Shift i 1–9 premještaju odabrani prozor na drugu radnu površinu."
+    ]
+  ],
+  "keyboard": [
+    "Koristi miš\nTipke uči usput",
+    "kartu rasporeda",
+    "Isključi automatsku ploču: Postavke → Tipkovnica → Ploča tipki → Prikaži nakon → Nikad. Karta rasporeda uvijek otvara ploču.",
+    "Pritisni ⌘ dvaput i otpusti. Dok je prozor istaknut, nastavi s naredbama. Esc izlazi iz načina.",
+    "Ploča tipki",
+    "Osnovne tipke"
+  ],
+  "mouse": [
+    "Klikni ikonu na traci kartica za odabir prozora.",
+    "Control-klik otvara radnje prozora.",
+    "Klikni kartu rasporeda za otvaranje ploče tipki.",
+    "Klikni tipku za izvršavanje naredbe."
+  ],
+  "actions": [
+    "Odaberi stupac / prozor",
+    "Premjesti prozor ili stupac",
+    "Spoji / odvoji stupac",
+    "Pridruži se / napusti stog aplikacije",
+    "Dodaj / ukloni aplikaciju Pin Deck",
+    "Promijeni radnu površinu / premjesti prozor",
+    "Izađi iz naredbenog načina"
+  ],
+  "setup": [
+    "Prvi koraci",
+    "Aplikacije",
+    "Pristupačnost",
+    "Instaliraj Calmon",
+    "Preuzmi Calmon",
+    ". Premjesti ga u Aplikacije.",
+    "Dopusti pristupačnost",
+    "Povuci Calmon na popis Pristupačnost i uključi ga.",
+    "Otvori prozore",
+    "Odaberi prozor na traci kartica. Karta rasporeda otvara ploču tipki.",
+    "Calmon nema ikonu u Docku. Pronađi ga na traci izbornika {icon}."
+  ],
+  "faq": [
+    "Pitanja i odgovori",
+    [
+      "Koji su Macovi podržani?",
+      "Macovi s Apple čipom ili Intelom i sustavom macOS 26 ili novijim."
+    ],
+    [
+      "Koja je dozvola potrebna?",
+      "Pristupačnost za premještanje, promjenu veličine i odabir prozora."
+    ],
+    [
+      "Moram li pamtiti prečace?",
+      "Ne. Sve radnje rade mišem. Karta rasporeda otvara ploču tipki."
+    ],
+    [
+      "Mogu li koristiti geste dodirne površine?",
+      "Početno su isključene. Uključi tri ili četiri prsta u Postavke → Geste. Drži Shift prije geste za izvornu gestu macOS-a."
+    ],
+    [
+      "Popločavaju li se svi prozori?",
+      "Standardni da. Dijalozi, postavke i prozori fiksne veličine plutaju. Dodaj pravila u Postavke → Napredno."
+    ],
+    [
+      "Premješta li Calmon prozore između radnih površina?",
+      "Samo kad ih ti premjestiš. Prebacuj brojevima ili naredbenim načinom. Pri izlasku Calmon vraća spremljene položaje prozora."
+    ],
+    [
+      "Je li beta besplatna?",
+      "Da, Calmon je besplatan tijekom bete."
+    ],
+    [
+      "Kako ažurirati?",
+      "Odaberi Provjeri ažuriranja u izborniku Calmon."
+    ]
+  ],
+  "demo": [
+    "Pauza",
+    "Nastavi",
+    "Ponovi demonstraciju",
+    "Pritisni ⌘ dvaput i otpusti",
+    "Naredbeni način · nastavi s tipkama",
+    "Prečac macOS-a · bez naredbenog načina",
+    "zatim",
+    "Uključi JavaScript za demonstraciju.",
+    "Naredbeni način zatvoren"
+  ],
+  "menus": [
+    "Datoteka",
+    "Uredi",
+    "Prikaz",
+    "Prozor",
+    "Pomoć"
+  ],
+  "apps": [
+    "Bilješke",
+    "Finder",
+    "Terminal",
+    "Mail",
+    "Kalendar",
+    "Glazba"
+  ],
+  "windows": [
+    "Vodič za Calmon",
+    "Ovaj tjedan",
+    "Ideje",
+    "Projekti",
+    "Web-stranica",
+    "Ulazno",
+    "Raspored",
+    "Sad svira"
+  ],
+  "subtitle": "Pomični prozori u pločicama"
+}

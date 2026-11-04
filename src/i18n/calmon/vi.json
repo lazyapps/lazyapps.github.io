@@ -1,0 +1,156 @@
+{
+  "hero": [
+    "Cứ bình tĩnh\nvà cuộn tiếp",
+    "Trình quản lý cửa sổ xếp ô có thể cuộn",
+    "Calmon sắp cửa sổ Mac thành các cột có thể cuộn. Xếp chồng cửa sổ, ghim một cột và chuyển bằng chuột hoặc bàn phím."
+  ],
+  "nav": [
+    "Trang chủ lazyapps",
+    "Chọn ngôn ngữ",
+    "Đến nội dung"
+  ],
+  "release": [
+    "Tải xuống miễn phí",
+    "Miễn phí trong giai đoạn beta",
+    "Gặp lỗi hoặc có ý tưởng? Gửi cho @lazyapps trên X. Cảm ơn bạn đã giúp cải thiện Calmon.",
+    "macOS 26 trở lên"
+  ],
+  "display": [
+    "Nên bố trí nhiều màn hình thế nào?",
+    "Đặt màn hình theo chiều dọc. Khi đặt cạnh nhau, cạnh chung chặn cuộn; chuyển cột sẽ quay về đầu tại đó. Nếu có màn hình ở cả hai bên, các cửa sổ nền chồng lên nhau sau cửa sổ được chọn."
+  ],
+  "features": [
+    [
+      "Cuộn giữa các cột",
+      "Cửa sổ cuộn theo hàng ngang. Cột đang chọn chiếm phần lớn màn hình. Dùng phím mũi tên trong chế độ lệnh."
+    ],
+    [
+      "Chồng cửa sổ",
+      "Các cửa sổ xếp ô của cùng ứng dụng tạo thành chồng. Bấm dấu chồng hoặc ⌘` để chuyển. Mỗi cột chứa tối đa ba chồng."
+    ],
+    [
+      "Cột cố định",
+      "Ghim cột vào mép trái hoặc phải. Cửa sổ khác cuộn bên cạnh. Tab đổi tiêu điểm trong chế độ lệnh."
+    ],
+    [
+      "Pin Deck",
+      "Ghim tối đa mười ứng dụng. Thêm qua dấu Pin Deck, bỏ qua menu biểu tượng. Thứ tự giống nhau trên mọi màn hình."
+    ],
+    [
+      "Sky Deck và Max Deck",
+      "Sky Deck liệt kê cửa sổ nổi, Max Deck liệt kê cửa sổ toàn màn hình gốc của macOS. Bấm biểu tượng để trở lại cửa sổ."
+    ],
+    [
+      "Cửa sổ và màn hình nền",
+      "Bấm số màn hình nền. Trong chế độ lệnh, nhập nhãn biểu tượng. Shift và 1–9 chuyển cửa sổ được chọn sang màn hình nền khác."
+    ]
+  ],
+  "keyboard": [
+    "Dùng chuột trước\nHọc phím trong lúc dùng",
+    "bản đồ bố cục",
+    "Tắt bảng tự động: Cài đặt → Bàn phím → Bảng phím → Hiện sau → Không bao giờ. Bản đồ bố cục luôn mở được bảng.",
+    "Nhấn ⌘ hai lần rồi thả. Khi cửa sổ còn được tô sáng, bạn có thể tiếp tục dùng lệnh. Esc thoát chế độ.",
+    "Bảng phím",
+    "Các phím thiết yếu"
+  ],
+  "mouse": [
+    "Bấm biểu tượng trên thanh tab để chọn cửa sổ.",
+    "Control-bấm mở các thao tác cửa sổ.",
+    "Bấm bản đồ bố cục để mở bảng phím.",
+    "Bấm một phím để chạy lệnh tương ứng."
+  ],
+  "actions": [
+    "Chọn cột / cửa sổ",
+    "Di chuyển cửa sổ hoặc cột",
+    "Gộp / tách cột",
+    "Tham gia / rời chồng ứng dụng",
+    "Thêm / bỏ ứng dụng Pin Deck",
+    "Đổi màn hình nền / chuyển cửa sổ",
+    "Thoát chế độ lệnh"
+  ],
+  "setup": [
+    "Bắt đầu",
+    "Ứng dụng",
+    "Trợ năng",
+    "Cài đặt Calmon",
+    "Tải về Calmon",
+    ". Chuyển vào Ứng dụng.",
+    "Cho phép Trợ năng",
+    "Kéo Calmon vào danh sách Trợ năng rồi bật lên.",
+    "Mở các cửa sổ",
+    "Chọn cửa sổ trên thanh tab. Bản đồ bố cục mở bảng phím.",
+    "Calmon không có biểu tượng trên Dock. Bạn có thể tìm ở thanh menu {icon}."
+  ],
+  "faq": [
+    "Hỏi và đáp",
+    [
+      "Hỗ trợ máy Mac nào?",
+      "Mac dùng chip Apple hoặc Intel với macOS 26 trở lên."
+    ],
+    [
+      "Cần quyền gì?",
+      "Trợ năng để di chuyển, đổi kích thước và chọn cửa sổ."
+    ],
+    [
+      "Có cần nhớ phím tắt không?",
+      "Không. Mọi thao tác đều dùng được bằng chuột. Bản đồ bố cục mở bảng phím."
+    ],
+    [
+      "Có thể vuốt trên bàn di chuột không?",
+      "Ban đầu bị tắt. Bật vuốt ba hoặc bốn ngón trong Cài đặt → Cử chỉ. Giữ Shift trước khi vuốt để dùng cử chỉ macOS gốc."
+    ],
+    [
+      "Mọi cửa sổ đều được xếp ô?",
+      "Cửa sổ tiêu chuẩn được xếp ô. Hộp thoại, cài đặt và cửa sổ kích thước cố định sẽ nổi. Thêm quy tắc ở Cài đặt → Nâng cao."
+    ],
+    [
+      "Calmon tự chuyển cửa sổ sang màn hình nền khác không?",
+      "Chỉ khi bạn chủ động chuyển. Đổi bằng số màn hình nền hoặc chế độ lệnh. Khi thoát, Calmon khôi phục vị trí đã lưu."
+    ],
+    [
+      "Beta có miễn phí không?",
+      "Có, Calmon miễn phí trong giai đoạn beta."
+    ],
+    [
+      "Cập nhật thế nào?",
+      "Chọn Kiểm tra bản cập nhật trong menu Calmon."
+    ]
+  ],
+  "demo": [
+    "Tạm dừng",
+    "Tiếp tục",
+    "Phát lại từ đầu",
+    "Nhấn ⌘ hai lần rồi thả",
+    "Chế độ lệnh · tiếp tục dùng phím",
+    "Phím tắt macOS · không cần chế độ lệnh",
+    "rồi",
+    "Bật JavaScript để xem minh họa.",
+    "Đã thoát chế độ lệnh"
+  ],
+  "menus": [
+    "Tệp",
+    "Sửa",
+    "Xem",
+    "Cửa sổ",
+    "Trợ giúp"
+  ],
+  "apps": [
+    "Ghi chú",
+    "Finder",
+    "Terminal",
+    "Mail",
+    "Lịch",
+    "Nhạc"
+  ],
+  "windows": [
+    "Hướng dẫn Calmon",
+    "Tuần này",
+    "Ý tưởng",
+    "Dự án",
+    "Trang web",
+    "Hộp thư đến",
+    "Lịch trình",
+    "Đang phát"
+  ],
+  "subtitle": "Cửa sổ xếp ô có thể cuộn"
+}

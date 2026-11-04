@@ -1,0 +1,156 @@
+{
+  "hero": [
+    "Ostani miren\nin drsi naprej",
+    "Upravljalnik oken z drsečimi ploščicami",
+    "Calmon razporedi okna Maca v drseče stolpce. Združuj okna, pripni stolpec in preklapljaj z miško ali tipkovnico."
+  ],
+  "nav": [
+    "Domača stran lazyapps",
+    "Izberi jezik",
+    "Na vsebino"
+  ],
+  "release": [
+    "Prenesi brezplačno",
+    "Med beto brezplačno",
+    "Napaka ali zamisel? Piši @lazyapps na X. Hvala za pomoč pri izboljšanju Calmona.",
+    "macOS 26 ali novejši"
+  ],
+  "display": [
+    "Kako razporediti več zaslonov?",
+    "Postavi jih drugega nad drugega. Vzporedni zasloni na skupnih robovih blokirajo drsenje; preklapljanje stolpcev se tam vrne na začetek. Z zaslonoma na obeh straneh se okna v ozadju prekrivajo za izbranim oknom."
+  ],
+  "features": [
+    [
+      "Drseči stolpci",
+      "Okna drsijo vodoravno. Aktivni stolpec zapolni večino zaslona. V ukaznem načinu uporabi puščice."
+    ],
+    [
+      "Skladi aplikacij",
+      "Okna iste aplikacije v ploščicah tvorijo sklad. Klikni oznako sklada ali pritisni ⌘` za preklop. Stolpec sprejme do tri sklade."
+    ],
+    [
+      "Pripet stolpec",
+      "Pripni stolpec na levi ali desni rob. Druga okna drsijo ob njem. Tab preklopi fokus v ukaznem načinu."
+    ],
+    [
+      "Pin Deck",
+      "Pripni do deset aplikacij. Dodaj jih z oznako Pin Deck, odstrani v meniju ikone. Vrstni red je enak na vseh zaslonih."
+    ],
+    [
+      "Sky Deck in Max Deck",
+      "Sky Deck pokaže plavajoča, Max Deck izvorna celozaslonska okna. Klikni ikono za vrnitev v okno."
+    ],
+    [
+      "Okna in namizja",
+      "Klikni številko namizja. V ukaznem načinu vpiši oznako ikone. Shift in 1–9 premakneta izbrano okno na drugo namizje."
+    ]
+  ],
+  "keyboard": [
+    "Uporabi miško\nTipke spoznavaj sproti",
+    "zemljevid razporeditve",
+    "Izklop samodejne plošče: Nastavitve → Tipkovnica → Plošča tipk → Pokaži po → Nikoli. Zemljevid razporeditve ploščo vedno odpre.",
+    "Dvakrat pritisni ⌘ in spusti. Dokler je okno poudarjeno, lahko nadaljuješ z ukazi. Esc konča način.",
+    "Plošča tipk",
+    "Osnovne tipke"
+  ],
+  "mouse": [
+    "Klikni ikono v vrstici zavihkov za izbiro okna.",
+    "Control-klik odpre dejanja okna.",
+    "Klikni zemljevid razporeditve za ploščo tipk.",
+    "Klikni tipko za izvedbo ukaza."
+  ],
+  "actions": [
+    "Izberi stolpec / okno",
+    "Premakni okno ali stolpec",
+    "Združi / loči stolpec",
+    "Pridruži se / zapusti sklad aplikacije",
+    "Dodaj / odstrani aplikacijo Pin Deck",
+    "Zamenjaj namizje / premakni okno",
+    "Zapusti ukazni način"
+  ],
+  "setup": [
+    "Začetek",
+    "Aplikacije",
+    "Dostopnost",
+    "Namesti Calmon",
+    "Prenesi Calmon",
+    ". Premakni ga v Aplikacije.",
+    "Dovoli dostopnost",
+    "Povleci Calmon na seznam Dostopnost in ga vklopi.",
+    "Odpri okna",
+    "Izberi okno v vrstici zavihkov. Zemljevid razporeditve odpre ploščo tipk.",
+    "Calmon nima ikone v vrstici Dock. Najdeš ga v menijski vrstici {icon}."
+  ],
+  "faq": [
+    "Vprašanja in odgovori",
+    [
+      "Kateri Maci so podprti?",
+      "Maci s čipom Apple ali Intel in macOS 26 ali novejšim."
+    ],
+    [
+      "Katero dovoljenje je potrebno?",
+      "Dostopnost za premikanje, spreminjanje velikosti in izbiro oken."
+    ],
+    [
+      "Se moram naučiti bližnjic?",
+      "Ne. Vsa dejanja delujejo z miško. Zemljevid razporeditve odpre ploščo tipk."
+    ],
+    [
+      "Lahko uporabljam poteze sledilne ploščice?",
+      "Sprva so izklopljene. Omogoči tri ali štiri prste v Nastavitve → Poteze. Pred potezo drži Shift za izvorno potezo macOS."
+    ],
+    [
+      "So vsa okna v ploščicah?",
+      "Običajna so. Pogovorna okna, nastavitve in okna stalne velikosti plavajo. Dodaj pravila v Nastavitve → Napredno."
+    ],
+    [
+      "Calmon premika okna med namizji?",
+      "Le ko jih premakneš sam. Preklopi s številkami namizij ali ukaznim načinom. Ob izhodu Calmon obnovi shranjene položaje oken."
+    ],
+    [
+      "Je beta brezplačna?",
+      "Da, Calmon je med beto brezplačen."
+    ],
+    [
+      "Kako posodobim?",
+      "V meniju Calmon izberi Preveri posodobitve."
+    ]
+  ],
+  "demo": [
+    "Premor",
+    "Nadaljuj",
+    "Ponovi prikaz",
+    "Dvakrat pritisni ⌘ in spusti",
+    "Ukazni način · nadaljuj s tipkami",
+    "Bližnjica macOS · brez ukaznega načina",
+    "nato",
+    "Za prikaz omogoči JavaScript.",
+    "Ukazni način je končan"
+  ],
+  "menus": [
+    "Datoteka",
+    "Uredi",
+    "Prikaz",
+    "Okno",
+    "Pomoč"
+  ],
+  "apps": [
+    "Zapiski",
+    "Finder",
+    "Terminal",
+    "Pošta",
+    "Koledar",
+    "Glasba"
+  ],
+  "windows": [
+    "Vodnik Calmon",
+    "Ta teden",
+    "Zamisli",
+    "Projekti",
+    "Spletna stran",
+    "Prejeto",
+    "Urnik",
+    "Zdaj se predvaja"
+  ],
+  "subtitle": "Drseča razporeditev oken"
+}

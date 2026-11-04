@@ -1,0 +1,394 @@
+---
+import { CALMON_LOCALES, CALMON_LANGUAGE_OPTIONS, CALMON_RELEASE } from '../i18n/calmon-locales.mjs';
+import { calmonPressUI } from '../content/presskit-presentation.mjs';
+import { glossary } from '../content/presskit-catalog.mjs';
+import SiteHeader from './SiteHeader.astro';
+import LanguagePicker from './LanguagePicker.astro';
+import SiteGrain from './SiteGrain.astro';
+import SiteFooterBase from './SiteFooterBase.astro';
+import SiteEdges from './SiteEdges.astro';
+import SitePreloader from './SitePreloader.astro';
+import SocialMeta from './SocialMeta.astro';
+import CalmonFavicon from './CalmonFavicon.astro';
+import SoftwareApplication from './SoftwareApplication.astro';
+import CalmonDesktop from './CalmonDesktop.astro';
+import siteCssUrl from '$assets/s/site.css?url';
+import gsapUrl from '$assets/vendor/gsap.min.js?url';
+import scrollTriggerUrl from '$assets/vendor/ScrollTrigger.min.js?url';
+import customEaseUrl from '$assets/vendor/CustomEase.min.js?url';
+import splitTextUrl from '$assets/vendor/SplitText.min.js?url';
+import logoRevealUrl from '$assets/s/logo-reveal-loader.js?url';
+import siteJsUrl from '$assets/s/site.js?url';
+import appIcon from '$assets/img/calmon-icon.png';
+import ogUrl from '$assets/img/calmon-opengraph-shared.png?url';
+import CalmonKeyPanel from './CalmonKeyPanel.astro';
+import CalmonPanelReference from './CalmonPanelReference.astro';
+import layoutMapIcon from '$assets/img/calmon-onboarding/map-normal.png?url';
+import CalmonFeatureArt from './CalmonFeatureArt.astro';
+import CalmonSetupArt from './CalmonSetupArt.astro';
+import CalmonFeedbackArt from './CalmonFeedbackArt.astro';
+import accessibilityIcon from '$assets/img/calmon-setup/accessibility.png?url';
+import menuBarIcon from '../../scripts/assets/native-icons/calmon/MenuBarIcon.imageset/MenuBarIcon@2x.png?url';
+const { code = '' } = Astro.props;
+const t = CALMON_LOCALES[code];
+const cjkHeadline = /^(zh|ja|ko)(-|$)/.test(t.htmlLang);
+const headlineLabel = t.headline.join(/^(zh|ja)(-|$)/.test(t.htmlLang) ? '' : ' ');
+const [feedbackIntro, feedbackOutro] = t.releaseNote.split('@lazyapps');
+const [menuBarIntro, menuBarOutro] = t.menuBarNote.split('{icon}');
+---
+<!doctype html>
+<html lang={t.htmlLang} dir={t.dir} class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <title>{t.title}</title>
+  <meta name="description" content={t.description}>
+  <meta name="theme-color" content="#f8f8f6">
+  {Object.values(CALMON_LOCALES).map(locale => <link rel="alternate" hreflang={locale.htmlLang} href={locale.canonical} />)}
+  <link rel="alternate" hreflang="x-default" href={CALMON_LOCALES.en.canonical}>
+  <SocialMeta title={t.title} description={t.description} url={t.canonical} image={`https://lazyapps.com${ogUrl}`} imageAlt="Calmon" imageWidth={1200} imageHeight={630} locale={t.ogLocale} />
+  <SoftwareApplication name="Calmon" description={t.description} url={t.canonical} language={t.htmlLang} operatingSystem="macOS 26 or later" downloadUrl={CALMON_RELEASE.status === 'published' ? CALMON_RELEASE.releasesUrl : undefined} image={`https://lazyapps.com${appIcon.src}`} applicationCategory="UtilitiesApplication" />
+  <CalmonFavicon />
+  <link rel="stylesheet" href={siteCssUrl}>
+  <script is:inline>
+    document.documentElement.classList.remove('no-js');
+    setTimeout(() => {
+      document.documentElement.classList.add('is-page-theme', 'is-loaded');
+      document.getElementById('loader')?.remove();
+    }, 6000);
+  </script>
+</head>
+<body class="calmon-page">
+  <SiteEdges />
+  <SiteGrain animated />
+  <SitePreloader name="CALMON" />
+  <a class="skip-link" href="#main">{t.skip}</a>
+  <div class="wrap">
+    <SiteHeader name="Calmon" subtitle={t.heroSubtitle} badge="Beta" icon={appIcon.src} homeLabel={t.home}>
+      <LanguagePicker label={t.select} current={t.selectedUrl} options={CALMON_LANGUAGE_OPTIONS} />
+    </SiteHeader>
+    <main id="main">
+      <section class="calmon-hero" aria-labelledby="hero-title">
+        <h1 id="hero-title" class="dsp" dir={t.dir} aria-label={headlineLabel}>{t.headline.map(line => {
+          const punctuation = cjkHeadline ? line.match(/[、。，．！？：；]+$/u)?.[0] : undefined;
+          return <span class="calmon-hero__title-line">{punctuation ? <>{line.slice(0, -punctuation.length)}<span class="calmon-hero__hanging">{punctuation}</span></> : line}</span>;
+        })}</h1>
+        <div class="calmon-hero__demo">
+          <CalmonDesktop code={code}>
+            <div slot="cta" class="calmon-hero__intro">
+              <div class="calmon-cta">
+                <a class="button-023" href={t.ctaUrl} aria-describedby="calmon-release-note">
+                  <span class="button-023__bg"><span style="--index:0" class="button-023__bg-inner is--first"></span><span style="--index:1" class="button-023__bg-inner is--second"></span></span>
+                  <span class="button-023__inner"><span class="button-023__text is--first">{t.cta} ↗</span><span aria-hidden="true" class="button-023__text is--second">{t.cta} ↗</span></span>
+                </a>
+              </div>
+              <p class="calmon-compatibility">{t.availability} · {t.compatibility}</p>
+            </div>
+          </CalmonDesktop>
+        </div>
+      </section>
+      <section class="calmon-features" aria-label={t.positioning}>
+        {t.features.map(([title, description], index) => <article>
+          <CalmonFeatureArt index={index} />
+          <h2>{title}</h2>
+          <p>{description}</p>
+        </article>)}
+      </section>
+      <section class="calmon-setup" aria-labelledby="setup-title">
+        <h2 id="setup-title" class="dsp">{t.setupTitle.split('\n').map(line => <span>{line}</span>)}</h2>
+        <ol role="list">{t.steps.map(([title, description], index) => <li>
+          <div class="calmon-step-heading"><span class="calmon-step-number" aria-hidden="true">{index + 1}</span><h3>{title}{index === 1 && <span class="calmon-accessibility-icon" aria-hidden="true" style={`--access:url("${accessibilityIcon}")`}></span>}</h3></div>
+          <CalmonSetupArt index={index} code={code} labels={t.setupArt} />
+          <p>{index === 0 ? <><a class="calmon-setup-download" href={CALMON_RELEASE.releasesUrl}>{t.setupDownload}<span aria-hidden="true"> ↗</span></a>{description.slice(t.setupDownload.length)}</> : description}</p>
+        </li>)}</ol>
+        <p class="calmon-setup-note">{menuBarIntro}<span class="calmon-inline-menubar" aria-hidden="true"><img src={menuBarIcon} width="44" height="44" alt="" /></span>{menuBarOutro}</p>
+      </section>
+      <section class="calmon-keyboard" aria-labelledby="keyboard-title">
+        <div class="calmon-keyboard__copy">
+          <h2 id="keyboard-title" class="dsp">{t.keyboardTitle.split('\n').map(line => <span>{line}</span>)}</h2>
+          <ul class="calmon-mouse-steps">
+            {t.keyboardSteps.map(step => {
+              const mapLabelIndex = step.indexOf(t.keyboardMapLabel);
+              return <li>{mapLabelIndex < 0 ? step : <>{step.slice(0, mapLabelIndex)}<span class="calmon-inline-map">{t.keyboardMapLabel}<img src={layoutMapIcon} width="36" height="20" alt="" /></span>{step.slice(mapLabelIndex + t.keyboardMapLabel.length)}</>}</li>;
+            })}
+          </ul>
+          <p class="calmon-keyboard-note">{t.keyboardHelp}</p>
+          <p class="calmon-keyboard-note">{t.shortcutContext}</p>
+          <div class="calmon-essential-keys">
+            <h3 id="essential-keys-title" class="calmon-shortcuts-title">{t.shortcutsTitle}</h3>
+            <dl class="calmon-shortcuts" aria-labelledby="essential-keys-title">{t.shortcuts.map(([keys, action]) => <div><dt><kbd dir="ltr">{keys}</kbd></dt><dd>{action}</dd></div>)}</dl>
+          </div>
+        </div>
+        <figure class="calmon-keyboard__panel">
+          <CalmonPanelReference code={t.htmlLang} title={t.panelCaption}>
+            <CalmonKeyPanel code={code} label={t.panelCaption} />
+          </CalmonPanelReference>
+        </figure>
+      </section>
+      <section class="calmon-details" aria-labelledby="details-title">
+        <h2 id="details-title" class="dsp">{t.details}</h2>
+        <div>{[...t.faqs, [t.displayQuestion, t.displayNote]].map(([question, answer]) => <details><summary>{question}<span aria-hidden="true">+</span></summary><p>{answer}</p></details>)}</div>
+      </section>
+      <aside class="calmon-release" aria-labelledby="calmon-feedback-title">
+        <CalmonFeedbackArt />
+        <div class="calmon-release__summary">
+          <h2 id="calmon-feedback-title">{t.releaseTitle}</h2>
+          <p id="calmon-release-note">{feedbackIntro}<a class="calmon-feedback" href="https://x.com/lazyapps" target="_blank" rel="noopener noreferrer">@lazyapps</a>{feedbackOutro}</p>
+        </div>
+        <a href={t.ctaUrl}>{t.cta}<span aria-hidden="true"> ↗</span></a>
+      </aside>
+    </main>
+    <footer><SiteFooterBase locale={t.htmlLang} pressKit="/calmon/presskit/" labels={{support:calmonPressUI[t.htmlLang].support,privacy:calmonPressUI[t.htmlLang].privacy,kit:glossary[t.htmlLang].headings[0]}} /></footer>
+  </div>
+  <script is:inline src={gsapUrl}></script>
+  <script is:inline src={scrollTriggerUrl}></script>
+  <script is:inline src={customEaseUrl}></script>
+  <script is:inline src={splitTextUrl}></script>
+  <script is:inline src={logoRevealUrl}></script>
+  <script is:inline src={siteJsUrl}></script>
+</body>
+</html>
+
+<script>
+  const hero = document.querySelector<HTMLElement>('.calmon-hero');
+  if (hero) {
+    const header = document.querySelector<HTMLElement>('.site-header')!;
+    const title = hero.querySelector<HTMLElement>('h1')!;
+    const titleLines = [...title.querySelectorAll<HTMLElement>('.calmon-hero__title-line')];
+    const demo = hero.querySelector<HTMLElement>('.calmon-hero__demo')!;
+    const toolbar = demo.querySelector<HTMLElement>('.pd-toolbar')!;
+    let frame = 0;
+    let resetPending = false;
+
+    const fitHero = (reset: boolean) => {
+      if (reset) {
+        demo.style.removeProperty('width');
+        title.style.removeProperty('font-size');
+        for (let pass = 0; pass < 3; pass++) {
+          const lineWidth = Math.max(...titleLines.map(line => line.getBoundingClientRect().width));
+          if (lineWidth <= title.clientWidth) break;
+          title.style.fontSize = `${parseFloat(getComputedStyle(title).fontSize) * (title.clientWidth - 1) / lineWidth}px`;
+        }
+      }
+      const heroStyle = getComputedStyle(hero);
+      const availableHeight = innerHeight - header.getBoundingClientRect().height
+        - parseFloat(heroStyle.paddingTop) - parseFloat(heroStyle.paddingBottom)
+        - title.getBoundingClientRect().height - parseFloat(getComputedStyle(demo).marginTop);
+
+      // A narrower desktop may put the CTA on a second row; measure again after fitting.
+      for (let pass = 0; pass < 3; pass++) {
+        const width = demo.getBoundingClientRect().width;
+        const toolbarHeight = toolbar.getBoundingClientRect().height
+          + parseFloat(getComputedStyle(toolbar).marginTop);
+        const fittedWidth = Math.min(width, Math.max(128, Math.floor((availableHeight - toolbarHeight) * 1.6)));
+        if (width - fittedWidth < 1) break;
+        demo.style.width = `${fittedWidth}px`;
+      }
+    };
+
+    const scheduleFit = (reset = false) => {
+      resetPending ||= reset;
+      if (frame) return;
+      frame = requestAnimationFrame(() => {
+        frame = 0;
+        const reset = resetPending;
+        resetPending = false;
+        fitHero(reset);
+      });
+    };
+    const contentObserver = new ResizeObserver(() => scheduleFit(true));
+    contentObserver.observe(title);
+    contentObserver.observe(header);
+    new ResizeObserver(() => scheduleFit()).observe(toolbar);
+    window.addEventListener('resize', () => scheduleFit(true), { passive: true });
+    document.fonts.ready.then(() => scheduleFit(true));
+    scheduleFit(true);
+  }
+</script>
+
+<style>
+  :global(.calmon-page){--accent:#087763;--calmon-header-height:80px}
+  .skip-link{position:fixed;top:8px;left:8px;z-index:1101;padding:12px 20px;border-radius:8px;background:var(--ink);color:var(--paper);transform:translateY(-160%)}
+  .skip-link:focus{transform:translateY(0)}
+  .calmon-hero{direction:ltr;display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:calc(100svh - var(--calmon-header-height));padding-block:clamp(24px,5svh,56px) clamp(24px,3svh,40px);margin-bottom:var(--space-section)}
+  h1{width:100%;font-size:clamp(48px,6.25vw,88px);text-align:center;line-height:.98;margin-inline:auto;text-wrap:balance}
+  h2 span{display:block}
+  h1:lang(zh){font-size:clamp(36px,6.7vw,86px);line-height:1.13;letter-spacing:0}
+  .calmon-hero__title-line{display:block;width:max-content;margin-inline:auto;white-space:nowrap}
+  .calmon-hero__hanging{display:inline-block;width:0;overflow:visible;text-align:start}
+  .calmon-hero__intro{display:grid;justify-items:center;align-content:start;flex:none;gap:8px;max-width:100%}
+  .calmon-intro{font-size:clamp(18px,1.6vw,21px);line-height:1.65;max-width:52ch}
+  .calmon-cta{display:flex;align-items:center;gap:16px;min-width:0}
+  .calmon-availability{font-size:12px;color:var(--muted)}
+  .calmon-cta .button-023{--button-023-color-background:#055956;--button-023-hover-color:#055956;--button-023-between-color-background:#00ff33;--button-023-hover-color-background:#dff3e9;--button-023-color-focus:#087763;--button-023-padding:1em 1.4em;--button-023-click-scale:.96;min-width:160px;min-height:52px;font-size:15px}
+  .calmon-compatibility{font-size:12px;color:var(--muted);margin:0;text-align:center;white-space:normal}
+  @container(min-width:601px){.calmon-hero__intro{justify-items:end}}
+  @container(max-width:600px){
+    .calmon-hero__demo :global(.pd-demo-help){justify-items:center}
+    .calmon-hero__demo :global(.pd-caption),.calmon-hero__demo :global(.pd-input-cue){align-items:center}
+    .calmon-hero__demo :global(.pd-input-cue){align-self:center}
+    .calmon-hero__demo :global(.pd-cue-keys){justify-content:center}
+    .calmon-hero__demo :global(.pd-mode-status){text-align:center}
+  }
+  .calmon-hero__demo{position:relative;z-index:1000;flex-shrink:0;width:min(1440px,calc(100vw - 48px),max(224px,calc((100svh - 500px)*1.6)));margin-top:20px}
+  .calmon-features{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(24px,4vw,52px);padding-bottom:var(--space-section)}
+  .calmon-features article{min-width:0}
+  .calmon-features h2{font:600 19px/1.3 var(--sans);margin-bottom:8px;text-wrap:initial}
+  .calmon-features p{font-size:15px;line-height:1.75;text-wrap:pretty}
+  .calmon-keyboard{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:clamp(32px,5vw,64px);align-items:center;padding-bottom:var(--space-section)}
+  .calmon-keyboard__copy{container-type:inline-size}
+  .calmon-keyboard h2,.calmon-setup h2{font-size:clamp(36px,4.5vw,62px);line-height:1.15;margin-bottom:24px}
+  .calmon-keyboard h2:lang(en){font-size:min(clamp(36px,4.5vw,62px),11.5cqw)}
+  .calmon-keyboard h2:lang(en)>span{white-space:nowrap}
+  .calmon-keyboard h2:lang(zh){font-size:clamp(30px,3.3vw,44px);line-height:1.28}
+  .calmon-mouse-steps{margin:0 0 24px;padding-inline-start:1.1em;font-size:16px;line-height:1.6}
+  .calmon-mouse-steps li+li{margin-top:8px}
+  .calmon-mouse-steps li::marker{color:var(--accent)}
+  .calmon-keyboard__copy>.calmon-keyboard-note{margin:0;padding-inline-start:14px;border-inline-start:2px solid #b6c4bb;font-size:14px;line-height:1.65;color:#536158}
+  .calmon-keyboard__copy>.calmon-keyboard-note+.calmon-keyboard-note{margin-top:16px}
+  .calmon-inline-map{white-space:nowrap}
+  .calmon-inline-map img{display:inline-block;width:36px;height:20px;margin-inline-start:.3em;vertical-align:middle}
+  .calmon-essential-keys{margin-top:28px}
+  .calmon-shortcuts-title{font:600 16px/1.5 var(--sans);margin:0 0 8px}
+  .calmon-shortcuts{margin:0}
+  .calmon-shortcuts>div{display:grid;grid-template-columns:minmax(128px,.9fr) 1fr;gap:12px;align-items:center;padding-block:8px}
+  .calmon-shortcuts>div:first-child{padding-top:0}
+  .calmon-shortcuts>div:last-child{padding-bottom:0}
+  .calmon-shortcuts kbd{font:400 18px/24px 'Calmon Panel',var(--mono);font-synthesis:none;text-transform:uppercase;color:#087763}
+  .calmon-shortcuts dd{font-size:16px;line-height:1.5;color:var(--ink)}
+  .calmon-keyboard__panel{margin:0;min-width:0}
+  .calmon-keyboard figcaption{font-size:12px;color:var(--muted);margin-top:12px}
+  .calmon-setup,.calmon-details{display:grid;gap:28px;padding-bottom:var(--space-section)}
+  .calmon-details{grid-template-columns:minmax(0,1fr);gap:24px}
+  .calmon-details>h2{align-self:start;margin:0;font-size:clamp(30px,3.5vw,48px);line-height:1.1}
+  .calmon-setup{grid-template-columns:minmax(0,1fr);gap:24px}
+  .calmon-setup>h2{align-self:start;margin:0;font-size:clamp(30px,3.5vw,48px);line-height:1.1}
+  .calmon-setup ol{margin:0;padding:0;list-style:none;display:grid;gap:0}
+  .calmon-setup li{position:relative;display:grid;grid-template-columns:28px minmax(0,1fr);justify-items:start;align-items:start;gap:6px 14px;padding-bottom:28px}
+  .calmon-setup li:last-child{padding-bottom:0}
+  .calmon-setup li::after{content:'';position:absolute;inset-inline-start:13.5px;top:40px;bottom:12px;width:1px;background:#b6d2c0}
+  .calmon-setup li:last-child::after{bottom:0}
+  .calmon-step-heading{display:contents}
+  .calmon-step-number{grid-column:1;grid-row:1/4;display:grid;place-items:center;width:28px;height:28px;border:1px solid #98c5aa;border-radius:50%;background:#e2f3e8;color:#055956;font:600 14px/1 var(--sans);font-variant-numeric:tabular-nums}
+  .calmon-setup li h3,.calmon-setup li>p,.calmon-setup li>:global(.calmon-setup-art){grid-column:2}
+  .calmon-setup h3{display:flex;align-items:center;gap:8px;min-height:28px;font:600 16px/1.4 var(--sans);margin:0}
+  .calmon-accessibility-icon{width:16px;height:16px;flex:none;background:#087763;mask:var(--access) center/contain no-repeat}
+  .calmon-setup>.calmon-setup-note{font-size:14px;line-height:1.6;color:#536158}
+  .calmon-inline-menubar{position:relative;display:inline-block;width:1cap;height:1cap;margin-inline:.2em;overflow:hidden;vertical-align:baseline}
+  .calmon-inline-menubar img{position:absolute;left:-18.75%;top:-18.75%;width:137.5%;height:137.5%;max-width:none}
+  .calmon-setup-download{display:inline-flex;align-items:center;gap:4px;padding:3px 10px;border-radius:999px;background:#dff3e9;color:#055956;font-weight:600;white-space:nowrap;box-shadow:inset 0 0 0 1px #0559561a;vertical-align:baseline}
+  .calmon-setup-download:hover{background:#c7ead7}
+  .calmon-setup-download:focus-visible{outline:2px solid #087763;outline-offset:3px}
+  .calmon-setup p{font-size:15px;line-height:1.7;color:var(--muted)}
+  @media(min-width:1024px){
+    .calmon-setup ol{grid-template-columns:repeat(3,minmax(0,1fr));gap:28px}
+    .calmon-setup li{grid-template-columns:28px minmax(0,1fr);grid-template-rows:28px 104px auto;gap:12px 16px;padding-bottom:0}
+    .calmon-step-heading{grid-column:1;grid-row:1/-1;display:flex;flex-direction:column;align-items:center;gap:12px;width:28px}
+    .calmon-setup .calmon-step-number{flex:none}
+    .calmon-setup h3{writing-mode:vertical-rl;text-orientation:mixed;white-space:nowrap;min-width:0;min-height:0;width:20px;font-size:15px;line-height:20px;flex:none}
+    .calmon-setup li>p,.calmon-setup li>:global(.calmon-setup-art){grid-column:2}
+    .calmon-setup li>:global(.calmon-setup-art){grid-row:2;height:104px}
+    .calmon-setup li>p{grid-row:3}
+    .calmon-setup li::after{inset-inline-start:40px;inset-inline-end:-14px;top:13.5px;bottom:auto;width:auto;height:1px}
+    .calmon-setup li:last-child::after{inset-inline-end:0;bottom:auto}
+  }
+  @media(min-width:1240px){
+    .calmon-details{position:relative;display:block}
+    .calmon-details>h2{position:absolute;right:calc(100% + 28px);top:20px;writing-mode:vertical-rl;text-orientation:mixed;white-space:nowrap;line-height:1}
+  }
+  .calmon-details details{border-bottom:1px solid var(--line)}
+  .calmon-details summary{display:flex;justify-content:space-between;gap:20px;align-items:center;list-style:none;min-height:64px;padding-block:16px;font-size:16px;cursor:pointer}
+  .calmon-details summary::-webkit-details-marker{display:none}
+  .calmon-details summary span{font:24px/1 var(--sans);flex:none;transition:transform .2s ease}
+  .calmon-details details[open] summary span{transform:rotate(45deg)}
+  .calmon-details details p{font-size:15px;color:var(--muted);line-height:1.75;padding-bottom:24px}
+  .calmon-details summary:focus-visible,.calmon-release a:focus-visible{outline:2px solid var(--accent);outline-offset:4px}
+  .calmon-release{position:relative;isolation:isolate;overflow:hidden;padding:32px 28px;margin-bottom:var(--space-section);background:#faf3e5;border-radius:24px;display:grid;grid-template-columns:minmax(0,1fr);justify-items:start;gap:16px}
+  .calmon-release__summary{position:relative;z-index:1;min-width:0;width:calc(100% - 170px);max-width:62ch}
+  .calmon-release h2{font:600 20px/1.3 var(--sans);margin:0 0 12px;text-wrap:balance}
+  .calmon-release p{font-size:16px;line-height:1.6;color:#205b4a;margin:0}
+  .calmon-release>a{position:relative;z-index:1;display:inline-flex;justify-content:center;align-items:center;gap:6px;min-width:160px;min-height:44px;padding:10px 22px;border-radius:999px;background:#055956;color:#fff;font-size:15px;font-weight:600;transition:background-color .2s ease,scale .2s ease}
+  .calmon-release>a:hover{background:#087763}
+  .calmon-release>a:active{scale:.96}
+  .calmon-release>a:focus-visible{outline:2px solid #087763;outline-offset:3px}
+  .calmon-feedback{color:inherit;text-decoration:underline;text-underline-offset:.2em;white-space:nowrap}
+  @media(min-width:960px){
+    .calmon-hero{padding-block:12px 16px}
+    h1{font-size:clamp(48px,6vw,88px)}
+    h1:lang(zh){font-size:clamp(40px,6vw,80px)}
+    .calmon-compatibility{font-size:13px}
+    .calmon-hero__demo{width:min(1440px,calc(100vw - 48px),max(224px,calc((100svh - 300px)*1.6)));margin-top:16px}
+    .calmon-hero__demo :global(.pd-mode-status),.calmon-hero__demo :global(.pd-cue-next){font-size:12px}
+    .calmon-hero__demo :global(.pd-input-cue kbd){min-width:28px;height:28px;font-size:14px}
+  }
+  @media(min-width:960px) and (max-height:700px){
+    .calmon-hero__demo{width:min(calc(100vw - 48px),max(224px,calc((100svh - 380px)*1.6)))}
+  }
+  @media(max-width:1100px){
+    .calmon-cta{flex-direction:row;justify-content:center;align-items:center;flex-wrap:wrap;gap:16px}
+    .calmon-features{grid-template-columns:1fr;gap:28px}
+    .calmon-features article{display:grid;grid-template-columns:minmax(224px,.85fr) minmax(0,1.15fr);grid-template-rows:min-content 1fr;gap:8px 28px;align-items:start}
+    .calmon-features article>:global(.calmon-feature-art){grid-column:1;grid-row:1/3;align-self:center;margin-bottom:0}
+    .calmon-features h2,.calmon-features p{grid-column:2}
+    .calmon-features h2{margin:0;text-wrap:initial}
+    .calmon-keyboard{grid-template-columns:1fr;gap:28px}
+    .calmon-keyboard__copy{max-width:60ch}
+    .calmon-keyboard__panel{max-width:640px}
+  }
+  @media(max-width:650px){
+    :global(.calmon-page){--calmon-header-height:112px}
+    .calmon-hero{min-height:min(calc(100svh - var(--calmon-header-height)),640px)}
+    .calmon-hero__demo :global(.pd-toolbar){position:relative;left:50%;transform:translateX(-50%);width:calc(100vw - 24px)}
+  }
+  @media(max-width:600px){
+    h1{font-size:clamp(48px,13vw,78px)}
+    h1:lang(zh){font-size:clamp(32px,10vw,48px)}
+    .calmon-intro{font-size:17px}
+    .calmon-compatibility{font-size:14px}
+    .calmon-availability{font-size:16px}
+    .calmon-hero__demo{width:min(calc(100vw - 24px),max(224px,calc((100svh - 400px)*1.6)));margin-top:20px}
+    .calmon-features article{grid-template-columns:1fr;grid-template-rows:auto;gap:8px}
+    .calmon-features article>:global(.calmon-feature-art){grid-row:auto;margin-bottom:4px}
+    .calmon-features h2,.calmon-features p{grid-column:1}
+    .calmon-features h2{font-size:20px}
+    .calmon-setup,.calmon-details{grid-template-columns:1fr;gap:24px}
+    .calmon-setup>h2,.calmon-details>h2{writing-mode:horizontal-tb;white-space:normal;margin-top:0}
+    .calmon-setup>h2:lang(en),.calmon-details>h2:lang(en){margin-left:0;margin-right:0}
+    .calmon-setup h2{margin:0}
+    .calmon-release{grid-template-columns:1fr;gap:16px;padding:28px 24px}
+    .calmon-release__summary{width:100%}
+    .calmon-release h2{padding-right:0}
+    .calmon-setup>.calmon-setup-note{font-size:16px}
+    .calmon-shortcuts>div{grid-template-columns:minmax(0,.9fr) minmax(0,1fr)}
+    .calmon-features p,.calmon-keyboard__copy>p,.calmon-setup p,.calmon-details details p,.calmon-release p,.calmon-release>a,.calmon-shortcuts dd,.calmon-keyboard figcaption{font-size:16px}
+    .calmon-keyboard__copy>.calmon-keyboard-note{font-size:15px}
+    .calmon-shortcuts kbd{white-space:normal}
+    .calmon-cta .button-023{font-size:16px}
+    .calmon-keyboard h2{font-size:clamp(36px,9vw,48px)}
+  }
+  @media(prefers-reduced-motion:reduce){.calmon-details summary span{transition:none}}
+  @media(max-width:650px) and (max-height:650px){
+    .calmon-hero{padding-top:12px}
+    h1{font-size:36px}
+    .calmon-hero__demo{width:min(calc(100vw - 24px),max(192px,calc((100svh - 460px)*1.6)))}
+  }
+</style>
+
+<style>
+  :global(html[dir=rtl]) .calmon-hero__intro{direction:rtl}
+  :global(html[dir=rtl]) .calmon-inline-map,:global(html[dir=rtl]) .calmon-shortcuts kbd{unicode-bidi:isolate}
+  h1:lang(vi){font-size:clamp(38px,5vw,68px);line-height:1.18}
+  h1:lang(ar),h1:lang(he),h1:lang(hi),h1:lang(th){line-height:1.3;letter-spacing:0}
+  .calmon-keyboard h2:lang(ar),.calmon-keyboard h2:lang(he),.calmon-keyboard h2:lang(hi),.calmon-keyboard h2:lang(th){font-size:clamp(28px,3.3vw,42px);line-height:1.35}
+  @media(min-width:1024px){
+    .calmon-setup h3:lang(ar),.calmon-setup h3:lang(he),.calmon-setup h3:lang(hi),.calmon-setup h3:lang(th){writing-mode:horizontal-tb;white-space:normal;width:auto}
+    .calmon-setup:lang(ar) ol,.calmon-setup:lang(he) ol,.calmon-setup:lang(hi) ol,.calmon-setup:lang(th) ol{grid-template-columns:1fr}
+    .calmon-setup:lang(ar) .calmon-step-heading,.calmon-setup:lang(he) .calmon-step-heading,.calmon-setup:lang(hi) .calmon-step-heading,.calmon-setup:lang(th) .calmon-step-heading{display:contents}
+    .calmon-setup:lang(ar) li,.calmon-setup:lang(he) li,.calmon-setup:lang(hi) li,.calmon-setup:lang(th) li{grid-template-rows:auto 104px auto;padding-bottom:28px}
+    .calmon-setup:lang(ar) li::after,.calmon-setup:lang(he) li::after,.calmon-setup:lang(hi) li::after,.calmon-setup:lang(th) li::after{inset-inline-start:13.5px;inset-inline-end:auto;top:40px;bottom:12px;height:auto;width:1px}
+  }
+  @media(min-width:1240px){
+    .calmon-details>h2:lang(ar),.calmon-details>h2:lang(he),.calmon-details>h2:lang(hi),.calmon-details>h2:lang(th){position:static;writing-mode:horizontal-tb;white-space:normal;margin-bottom:24px}
+  }
+  @media(max-width:600px){h1:lang(vi){font-size:clamp(32px,9vw,48px)}}
+</style>

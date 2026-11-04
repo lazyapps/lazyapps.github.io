@@ -1,0 +1,170 @@
+---
+import { CALMON_LOCALES } from '../i18n/calmon-locales.mjs';
+interface Props { code?: string; compact?: boolean; }
+const { code = 'en', compact = false } = Astro.props;
+const t = CALMON_LOCALES[code];
+---
+<div class:list={['calmon-demo', { 'calmon-demo--compact': compact }]} data-calmon-demo data-mode="0" data-focus="1" data-focus-label={t.focusLabel} data-pin-label={t.pinnedLabel}>
+  <div class="calmon-demo__screen" role="group" aria-label={t.demoLabel}>
+    <div class="calmon-demo__viewport">
+      {t.demoWindows.map((window, index) => <article class:list={['calmon-window', { 'calmon-window--editor': index === 1 }]} data-calmon-window={index}>
+        {index === 1 && <div class="calmon-stack-pages" role="group" aria-label={t.demoModes[1]}>{[1, 2, 3].map(page => <button disabled type="button" data-calmon-page={page} aria-label={`${t.stackWindow} ${page}`} aria-pressed={page === 1}>{page}</button>)}</div>}
+        <button class="calmon-window__surface" disabled type="button" data-calmon-focus={index} aria-label={`${t.focusAction}: ${window.app}`}>
+          <span class="calmon-window__bar"><span>{window.app}</span><span class="calmon-window__state">{t.focusLabel}</span></span>
+          <span class="calmon-window__content">
+            <span class="calmon-window__title" data-calmon-title={index === 1 ? '' : undefined} data-titles={index === 1 ? JSON.stringify(t.stackTitles) : undefined}>{window.title}</span>
+            <span class="calmon-window__detail" data-calmon-detail={index === 1 ? '' : undefined} data-details={index === 1 ? JSON.stringify(t.stackDetails) : undefined}>{window.detail}</span>
+          </span>
+        </button>
+      </article>)}
+    </div>
+  </div>
+  {!compact && <>
+    <div class="calmon-demo__toolbar" data-calmon-controls hidden>
+      <div class="calmon-demo__modes" role="group" aria-label={t.demoLabel}>{t.demoModes.map((name, index) => <button type="button" data-calmon-mode={index} aria-pressed={index === 0}>{name}</button>)}</div>
+      <div class="calmon-demo__arrows"><button type="button" data-calmon-direction="-1" aria-label={t.previous}>←</button><span data-calmon-counter aria-hidden="true">02 / 03</span><button type="button" data-calmon-direction="1" aria-label={t.next}>→</button></div>
+    </div>
+    <p class="calmon-demo__description" data-calmon-description data-descriptions={JSON.stringify(t.demoDescriptions)} aria-live="polite">{t.demoDescriptions[0]}</p>
+    <p class="calmon-demo__note">{t.demoNote}</p>
+  </>}
+</div>
+
+<script>
+  document.querySelectorAll<HTMLElement>('[data-calmon-demo]').forEach(demo => {
+    const viewport = demo.querySelector<HTMLElement>('.calmon-demo__viewport')!;
+    const windows = Array.from(demo.querySelectorAll<HTMLElement>('[data-calmon-window]'));
+    let focus = 1;
+    let mode = 0;
+    function arrange() {
+      const width = viewport.clientWidth;
+      const gap = width < 500 ? 10 : 16;
+      const pinnedWidth = width * .31;
+      const windowWidth = width * (mode === 2 ? .57 : .72);
+      windows.forEach((window, index) => {
+        const pinned = mode === 2 && index === 0;
+        const left = pinned ? gap : mode === 2
+          ? pinnedWidth + gap * 2 + (index - focus) * (windowWidth + gap)
+          : (width - windowWidth) / 2 + (index - focus) * (windowWidth + gap);
+        window.style.width = `${pinned ? pinnedWidth : windowWidth}px`;
+        window.style.transform = `translateX(${left}px)`;
+        window.classList.toggle('is-focused', index === focus);
+        window.classList.toggle('is-pinned', pinned);
+        window.style.zIndex = pinned ? '3' : index === focus ? '2' : '1';
+        window.style.visibility = mode === 2 && index !== focus && !pinned ? 'hidden' : 'visible';
+        const button = window.querySelector<HTMLButtonElement>('button[data-calmon-focus]')!;
+        button.setAttribute('aria-pressed', String(index === focus));
+        button.disabled = pinned;
+        window.querySelector<HTMLElement>('.calmon-window__state')!.textContent = (pinned ? demo.dataset.pinLabel : demo.dataset.focusLabel)!;
+      });
+      demo.dataset.focus = String(focus);
+      const counter = demo.querySelector('[data-calmon-counter]');
+      if (counter) counter.textContent = `0${focus + 1} / 03`;
+    }
+    demo.querySelector<HTMLElement>('[data-calmon-controls]')?.removeAttribute('hidden');
+    demo.querySelectorAll<HTMLButtonElement>('button').forEach(button => button.disabled = false);
+    demo.addEventListener('click', event => {
+      const button = (event.target as HTMLElement).closest<HTMLButtonElement>('button');
+      if (!button) return;
+      if (button.dataset.calmonMode !== undefined) {
+        mode = Number(button.dataset.calmonMode);
+        demo.dataset.mode = String(mode);
+        focus = 1;
+        demo.querySelectorAll<HTMLButtonElement>('[data-calmon-mode]').forEach(control => control.setAttribute('aria-pressed', String(control === button)));
+        const description = demo.querySelector<HTMLElement>('[data-calmon-description]')!;
+        description.textContent = JSON.parse(description.dataset.descriptions!)[mode];
+      } else if (button.dataset.calmonFocus !== undefined) {
+        if (mode === 2 && button.dataset.calmonFocus === '0') return;
+        focus = Number(button.dataset.calmonFocus);
+      } else if (button.dataset.calmonDirection !== undefined) {
+        const minimum = mode === 2 ? 1 : 0;
+        focus = minimum + (focus - minimum + Number(button.dataset.calmonDirection) + 3 - minimum) % (3 - minimum);
+      } else if (button.dataset.calmonPage !== undefined) {
+        demo.querySelectorAll<HTMLButtonElement>('[data-calmon-page]').forEach(control => control.setAttribute('aria-pressed', String(control === button)));
+        const title = demo.querySelector<HTMLElement>('[data-calmon-title]')!;
+        const detail = demo.querySelector<HTMLElement>('[data-calmon-detail]')!;
+        const page = Number(button.dataset.calmonPage) - 1;
+        title.textContent = JSON.parse(title.dataset.titles!)[page];
+        detail.textContent = JSON.parse(detail.dataset.details!)[page];
+      }
+      arrange();
+    });
+    demo.addEventListener('focusin', event => {
+      const button = (event.target as HTMLElement).closest<HTMLButtonElement>('[data-calmon-focus]');
+      if (!button || (mode === 2 && button.dataset.calmonFocus === '0')) return;
+      focus = Number(button.dataset.calmonFocus);
+      arrange();
+      viewport.scrollLeft = 0;
+    });
+    new ResizeObserver(arrange).observe(viewport);
+    arrange();
+    requestAnimationFrame(() => demo.classList.add('is-ready'));
+  });
+</script>
+
+<style>
+  .calmon-demo{--calmon-dark:#055956;min-width:0}
+  .calmon-demo__screen{isolation:isolate;overflow:hidden;background:linear-gradient(135deg,#d6eee6 0%,#def5e7 48%,#ceefda 100%);border-radius:var(--r-card)}
+  .calmon-demo__viewport{height:clamp(290px,32vw,390px);position:relative;overflow:hidden}
+  .calmon-window{position:absolute;top:40px;bottom:40px;width:72%;border-radius:8px;background:#f5f3e9;box-shadow:0 3px 10px #172b2414;transform:translateX(19.4%)}
+  .calmon-window:first-child{transform:translateX(-83%);background:#f5fbf7}
+  .calmon-window:last-child{transform:translateX(122%)}
+  .is-ready .calmon-window{transition:transform .55s cubic-bezier(.22,1,.36,1),width .55s cubic-bezier(.22,1,.36,1)}
+  .calmon-window.is-focused{box-shadow:0 5px 20px #08776324,0 12px 40px #05595618}
+  .calmon-window__surface{display:flex;flex-direction:column;width:100%;height:100%;padding:0;border:0;border-radius:inherit;background:none;color:inherit;text-align:left;cursor:pointer;overflow:hidden}
+  .calmon-window__bar{display:flex;align-items:center;justify-content:space-between;gap:12px;width:100%;padding:16px 22px;font:500 12px/1 var(--sans)}
+  .calmon-window__state{font-size:11px;visibility:hidden;white-space:nowrap}
+  .is-focused .calmon-window__state{visibility:visible}
+  .is-pinned .calmon-window__state{visibility:visible}
+  .calmon-window__content{display:flex;flex-direction:column;justify-content:center;flex:1;width:100%;padding:8px clamp(24px,4vw,48px) 32px;gap:18px}
+  .calmon-window__title{display:block;font:600 clamp(26px,3.6vw,46px)/1.14 var(--sans);white-space:pre-line;text-wrap:balance}
+  .calmon-window__detail{display:block;max-width:32ch;font:13px/1.55 var(--sans);text-wrap:pretty}
+  .calmon-window--editor{background:var(--calmon-dark);color:#f7fcf9}
+  .calmon-stack-pages{display:none;position:absolute;z-index:1;top:-30px;left:8px;gap:4px;height:24px;align-items:center}
+  .calmon-stack-pages button{position:relative;min-width:40px;min-height:24px;border:0;border-radius:3px;font:12px var(--mono);background:#bfe5d1;color:#055956;padding:2px 8px;cursor:pointer}
+  .calmon-stack-pages button::after{content:'';position:absolute;inset:-10px 0}
+  .calmon-stack-pages button[aria-pressed=true]{background:var(--calmon-dark);color:#fff}
+  [data-mode='1'] .calmon-stack-pages{display:flex}
+  [data-mode='1'] .calmon-window--editor::before{content:'';position:absolute;z-index:-1;inset:-7px 10px 0;background:#7cbfa5;border-radius:8px}
+  [data-mode='2'] .calmon-window:first-child .calmon-window__content{padding-inline:20px}
+  [data-mode='2'] .calmon-window:first-child .calmon-window__title{font-size:clamp(20px,2.5vw,32px)}
+  .calmon-demo__toolbar{display:flex;justify-content:space-between;gap:16px;margin-top:18px;align-items:center}
+  .calmon-demo__toolbar[hidden]{display:none}
+  .calmon-demo__modes{display:flex;gap:4px}
+  .calmon-demo__modes button{border:0;background:none;border-radius:6px;padding:10px 18px;min-height:44px;font:500 14px var(--sans);color:var(--ink);cursor:pointer;transition:background .2s ease,color .2s ease}
+  .calmon-demo__modes button:hover{background:#dff3e9}
+  .calmon-demo__modes button[aria-pressed=true]{background:var(--ink);color:var(--paper)}
+  .calmon-demo__arrows{display:flex;align-items:center;gap:12px}
+  .calmon-demo__arrows button{width:44px;height:44px;border:1px solid var(--line);border-radius:50%;font:22px var(--sans);background:none;cursor:pointer;color:var(--ink);transition:background .2s ease,transform .2s ease}
+  .calmon-demo__arrows button:hover{background:#dff3e9}
+  .calmon-demo__arrows span{font:11px var(--mono);font-variant-numeric:tabular-nums;color:var(--muted)}
+  .calmon-demo__description{min-height:2.6em;max-width:58ch;font-size:15px;line-height:1.6;margin-top:14px;color:var(--ink)}
+  .calmon-demo__note{font-size:12px;line-height:1.6;color:var(--muted);margin-top:2px}
+  .calmon-demo button:focus-visible{outline:2px solid var(--accent);outline-offset:5px}
+  .calmon-demo__modes button:active,.calmon-demo__arrows button:active{transform:scale(.96)}
+  .calmon-demo--compact{pointer-events:none;width:100%;align-self:center}
+  .calmon-demo--compact .calmon-demo__screen{border-radius:0}
+  .calmon-demo--compact .calmon-demo__viewport{height:300px}
+  .calmon-demo--compact .calmon-window__title{font-size:28px}
+  .calmon-demo--compact .calmon-window__content{padding-inline:24px}
+  .calmon-demo--compact .calmon-window__state{display:none}
+  @media(max-width:600px){
+    .calmon-demo__viewport{height:274px}
+    .calmon-window{top:44px;bottom:28px}
+    .calmon-window__bar{padding:14px 14px;font-size:11px}
+    .calmon-window__state{display:none}
+    .calmon-window__content{padding:6px 20px 22px;gap:14px}
+    .calmon-window__title{font-size:28px}
+    .calmon-window__detail{font-size:11px}
+    .calmon-demo__toolbar{gap:8px;flex-wrap:wrap}
+    .calmon-demo__modes{gap:0}
+    .calmon-demo__modes button{padding:8px 14px}
+    .calmon-demo__arrows{gap:8px}
+    .calmon-demo__arrows span{display:none}
+    .calmon-demo__description{min-height:3.2em;font-size:14px}
+    [data-mode='2'] .calmon-window:first-child .calmon-window__content{padding-inline:10px}
+    [data-mode='2'] .calmon-window:first-child .calmon-window__title{font-size:21px}
+    [data-mode='2'] .calmon-window:first-child .calmon-window__detail{display:none}
+    .calmon-demo--compact .calmon-demo__viewport{height:260px}
+  }
+  @media(prefers-reduced-motion:reduce){.is-ready .calmon-window,.calmon-demo button{transition:none}}
+</style>

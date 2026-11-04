@@ -1,0 +1,62 @@
+---
+import { CALMON_LANGUAGE_OPTIONS, CALMON_LOCALES } from '../i18n/calmon-locales.mjs';
+interface Props { code: string; title: string; variants?: {tag:string;src:string;width:number;height:number}[]; }
+const { code, title, variants = [] } = Astro.props;
+const locale = Object.values(CALMON_LOCALES).find(t=>t.htmlLang === code)!;
+---
+<div class="calmon-panel-reference" data-panel-reference data-native={variants.length > 0 ? '' : undefined}>
+  <div class="calmon-panel-reference__heading" dir="ltr">
+    <h3 dir="auto">{title}</h3>
+    <select aria-label={`${title} · ${locale.select}`} data-panel-language dir="ltr">
+      {CALMON_LANGUAGE_OPTIONS.map(option => {
+        const image = variants.find(item=>item.tag === option.language);
+        return <option value={option.language} lang={option.language} selected={option.language === code} data-src={image?.src} data-width={image?.width} data-height={image?.height}>{option.label}</option>;
+      })}
+    </select>
+  </div>
+  <slot />
+</div>
+<script>
+  import panels from './calmon-key-panel.json';
+  import systemLanguages from './calmon-key-panel-system.json';
+  document.querySelectorAll<HTMLElement>('[data-panel-reference]').forEach(reference => {
+    const select = reference.querySelector<HTMLSelectElement>('[data-panel-language]')!;
+    select.addEventListener('change', () => {
+      const language = select.value as keyof typeof panels;
+      const direction = ['ar','he'].includes(language) ? 'rtl' : 'ltr';
+      if (reference.hasAttribute('data-native')) {
+        const option = select.selectedOptions[0];
+        const image = reference.querySelector<HTMLImageElement>('.asset-preview img')!;
+        image.src = option.dataset.src!;
+        const width = Number(option.dataset.width), height = Number(option.dataset.height);
+        image.width = width;
+        image.height = height;
+        image.lang = language;
+        reference.querySelectorAll<HTMLAnchorElement>('.asset-preview a').forEach(link=>{
+          link.href = image.src;
+          link.setAttribute('aria-label', `${reference.querySelector('h3')!.textContent} · ${option.textContent}${link.hasAttribute('download') ? ' ↓' : ''}`);
+        });
+        const dimensions = reference.querySelector<HTMLElement>('.dimensions')!;
+        dimensions.textContent = `${width} × ${height} · ${new URL(image.src).pathname.split('/presskit/calmon/')[1]}`;
+      } else {
+        const panel = reference.querySelector<HTMLElement>('.calmon-key-panel')!;
+        panel.lang = language;
+        panel.dir = direction;
+        panel.classList.toggle('is-system-text', systemLanguages.includes(language));
+        panel.querySelectorAll('section').forEach((section,index) => {
+          const copy = panels[language][index];
+          section.querySelector('h3 span')!.textContent = copy.title;
+          section.querySelectorAll('dt').forEach((row,i)=>row.textContent = copy.rows[i].title);
+        });
+      }
+    });
+  });
+</script>
+<style>
+  .calmon-panel-reference{min-width:0}
+  .calmon-panel-reference__heading{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:14px}
+  .calmon-panel-reference__heading h3{margin:0;font:600 16px/1.35 var(--sans);color:var(--ink)}
+  select{width:auto;max-width:52%;min-height:36px;margin:0;padding:6px 28px 6px 10px;border:1px solid var(--line);border-radius:8px;background:var(--paper);color:var(--ink);font:400 13px/1.4 var(--sans);cursor:pointer}
+  select:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+  [data-native] :global(.asset-caption h3){display:none}
+</style>

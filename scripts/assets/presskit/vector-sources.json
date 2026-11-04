@@ -138,5 +138,34 @@
       },
       "method": "Lossless pixel-to-vector conversion: each original horizontal run becomes a filled vector path; all RGBA values, transparency, canvas and pixel edges are preserved. No tracing, smoothing or embedded raster image."
     }
+  ],
+  "calmon": [
+    {
+      "output": "scripts/assets/presskit/vectors/calmon-lettering.svg",
+      "sha256": "df99e5a7feb39a0ea0549303449798b76fabc9f2183c263799925cf34ee58b6d",
+      "inputs": {
+        "scripts/assets/native-icons/calmon/lettering.svg": "df99e5a7feb39a0ea0549303449798b76fabc9f2183c263799925cf34ee58b6d",
+        "scripts/assets/native-icons/calmon/AppIcon.icon/Assets/BlackField.svg": "a38ef0970ae4197416a496c992b31d2ee07dca6819d5658acfb9267c341ac60e",
+        "scripts/assets/native-icons/calmon/AppIcon.icon/Assets/ColorBands.svg": "fa34b4292de623261a636bcd78cb50bba60c0a2a4f5a2223737a5392531ef544",
+        "scripts/assets/native-icons/calmon/AppIcon.icon/Assets/DarkLetterA.png": "439383f7ff60acf550455a8746e572c6ba71bff89f1c1e64b38b16ce0e0dd769",
+        "scripts/assets/native-icons/calmon/AppIcon.icon/Assets/DarkLetterC.png": "54936afbfb919c878781be98c71b2c7c68d34984e8beffb88155deccd9518e4b",
+        "scripts/assets/native-icons/calmon/AppIcon.icon/Assets/DarkLetterL.png": "5ace27365637e5b846d67154888bfb3753c304efd7c9d1e12b5c0c00ed20083a",
+        "scripts/assets/native-icons/calmon/AppIcon.icon/Assets/DarkLetterM.png": "530d409895399ea865fceb9542471e6b457e04ccf2d452f0be9a693e70152e32",
+        "scripts/assets/native-icons/calmon/AppIcon.icon/Assets/DarkSideA.png": "398f0e0eda7d3a6a79190a5c7699ec79f21d3a2aa72bdaa2d54bb447368157a5",
+        "scripts/assets/native-icons/calmon/AppIcon.icon/Assets/DarkSideC.png": "9bb2c6b57809bea8db8470c45b435a1367d5fcda4a3d01a9fc37026b38d1daa9",
+        "scripts/assets/native-icons/calmon/AppIcon.icon/Assets/DarkSideL.png": "ba184b88699ffe7331c6c80ce6c31a5713c691749349945c1a0943edb7bd0158",
+        "scripts/assets/native-icons/calmon/AppIcon.icon/Assets/DarkSideM.png": "6c7f813a29132e5a25516e6e147740462d92cfdb26f1606ab3fcf581c132f5a6",
+        "scripts/assets/native-icons/calmon/AppIcon.icon/Assets/LetterA.png": "39d1fef7f07a3c76214a4f814d75a7d89f9e4453c8b8bb71f6d479af6984b50c",
+        "scripts/assets/native-icons/calmon/AppIcon.icon/Assets/LetterC.png": "3b3ee818a3b56500278146bc90a6e82e5f4a500c4cdb4174effa3c4b82c8eb46",
+        "scripts/assets/native-icons/calmon/AppIcon.icon/Assets/LetterL.png": "e3fcaeac1cc6c18c749d7b0660d212f7599818e0c98117628e6a5dc6827a9040",
+        "scripts/assets/native-icons/calmon/AppIcon.icon/Assets/LetterM.png": "7351ef3f9b87839e9e7a9f0e6f027ded4e10c62675220e0718736819d9735a24",
+        "scripts/assets/native-icons/calmon/AppIcon.icon/Assets/SideA.png": "6f262e3128757e803b4de31962b62c8ea56ca007ef72d54c25af6c37677f555c",
+        "scripts/assets/native-icons/calmon/AppIcon.icon/Assets/SideC.png": "879444b3eb563ee6c8fa3201c1e37e6f93abb5b2d2a9e43f7d523df17f84b068",
+        "scripts/assets/native-icons/calmon/AppIcon.icon/Assets/SideL.png": "8c166427cafe853a4fa064263cf50790e31166c395c26e58e80f8544b89c8210",
+        "scripts/assets/native-icons/calmon/AppIcon.icon/Assets/SideM.png": "9fcb3f45e298989f883c6c488c90f626e887c15018af125183b588a38d853b83",
+        "scripts/assets/native-icons/calmon/AppIcon.icon/icon.json": "b7aedfc0b4d5313a239258fea9fa6f8c9b4b68be466b0096678767047ccc59c4"
+      },
+      "method": "Exact native rounded CGPath contours exported by render-icon-lettering.swift, with the same six green diagonal bands as the current icon. No raster tracing or embedded bitmap; native glass, lighting and backing omitted."
+    }
   ]
 }

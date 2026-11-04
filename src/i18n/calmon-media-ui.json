@@ -1,0 +1,20 @@
+{
+ "ca":["Tots els dossiers","Descarrega ZIP","Textos i imatges","Suport","Privacitat","Idioma dels materials"],
+ "cs":["Všechny materiály","Stáhnout ZIP","Texty a obrázky","Podpora","Soukromí","Jazyk materiálů"],
+ "da":["Alle pressekits","Hent ZIP","Tekst og billeder","Support","Anonymitet","Materialesprog"],
+ "el":["Όλο το υλικό Τύπου","Λήψη ZIP","Κείμενα και εικόνες","Υποστήριξη","Απόρρητο","Γλώσσα υλικού"],
+ "fi":["Kaikki lehdistöpaketit","Lataa ZIP","Tekstit ja kuvat","Tuki","Tietosuoja","Aineiston kieli"],
+ "he":["כל ערכות העיתונות","הורדת ZIP","טקסט ותמונות","תמיכה","פרטיות","שפת החומרים"],
+ "hr":["Svi medijski paketi","Preuzmi ZIP","Tekst i slike","Podrška","Privatnost","Jezik materijala"],
+ "hu":["Összes sajtócsomag","ZIP letöltése","Szöveg és képek","Támogatás","Adatvédelem","Anyagok nyelve"],
+ "ms":["Semua kit media","Muat turun ZIP","Teks dan imej","Sokongan","Privasi","Bahasa bahan"],
+ "nb":["Alle pressepakker","Last ned ZIP","Tekst og bilder","Brukerstøtte","Personvern","Materialspråk"],
+ "pl":["Wszystkie materiały","Pobierz ZIP","Teksty i obrazy","Wsparcie","Prywatność","Język materiałów"],
+ "ro":["Toate kiturile","Descarcă ZIP","Texte și imagini","Asistență","Confidențialitate","Limba materialelor"],
+ "sk":["Všetky materiály","Stiahnuť ZIP","Texty a obrázky","Podpora","Súkromie","Jazyk materiálov"],
+ "sl":["Vsa gradiva","Prenesi ZIP","Besedilo in slike","Podpora","Zasebnost","Jezik gradiva"],
+ "sv":["Allt pressmaterial","Hämta ZIP","Text och bilder","Support","Integritet","Materialets språk"],
+ "th":["ชุดสื่อทั้งหมด","ดาวน์โหลด ZIP","ข้อความและรูปภาพ","ช่วยเหลือ","ความเป็นส่วนตัว","ภาษาของสื่อ"],
+ "uk":["Усі прескіти","Завантажити ZIP","Тексти та зображення","Підтримка","Приватність","Мова матеріалів"],
+ "vi":["Tất cả bộ tài liệu","Tải ZIP","Nội dung và hình ảnh","Hỗ trợ","Quyền riêng tư","Ngôn ngữ tài liệu"]
+}

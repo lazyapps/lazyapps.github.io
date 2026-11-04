@@ -8,6 +8,7 @@ npm-debug.log*
 
 # Temporary LLVM output from native app previews.
 /default.profraw
+/.build/
 
 # Local production sources and experiments; publish reviewed web derivatives.
 __pycache__/

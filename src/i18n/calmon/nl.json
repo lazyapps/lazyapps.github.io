@@ -1,0 +1,156 @@
+{
+  "hero": [
+    "Blijf kalm\nen scroll verder",
+    "Scrollende tegelvensterbeheerder",
+    "Calmon zet Mac-vensters in scrollende kolommen. Stapel vensters, zet een kolom vast en wissel met muis of toetsenbord."
+  ],
+  "nav": [
+    "lazyapps-homepagina",
+    "Kies taal",
+    "Naar inhoud"
+  ],
+  "release": [
+    "Gratis downloaden",
+    "Gratis tijdens de bèta",
+    "Een fout gevonden of een idee? Laat het @lazyapps weten op X. Bedankt dat je Calmon helpt verbeteren.",
+    "macOS 26 of nieuwer"
+  ],
+  "display": [
+    "Hoe plaats ik meerdere beeldschermen?",
+    "Plaats ze boven elkaar. Naast elkaar blokkeren gedeelde randen het scrollen; kolomnavigatie springt daar terug naar het begin. Met schermen aan beide kanten overlappen achtergrondvensters achter het geselecteerde venster."
+  ],
+  "features": [
+    [
+      "Scroll door kolommen",
+      "Vensters scrollen horizontaal. De actieve kolom vult bijna het hele scherm. Gebruik de pijltjestoetsen in de opdrachtmodus."
+    ],
+    [
+      "Appstapels",
+      "Tegelvensters van dezelfde app vormen een stapel. Klik op een stapelmarkering of druk op ⌘` om te wisselen. Een kolom bevat maximaal drie stapels."
+    ],
+    [
+      "Vaste kolom",
+      "Zet een kolom links of rechts vast. Andere vensters scrollen ernaast. Tab wisselt de focus in de opdrachtmodus."
+    ],
+    [
+      "Pin Deck",
+      "Zet maximaal tien apps vast. Voeg ze toe via de Pin Deck-markering en verwijder ze via het pictogrammenu. De volgorde geldt voor alle schermen."
+    ],
+    [
+      "Sky Deck & Max Deck",
+      "Sky Deck toont zwevende vensters, Max Deck de eigen schermvullende vensters van macOS. Klik op een pictogram om terug te keren."
+    ],
+    [
+      "Vensters & bureaubladen",
+      "Klik op een bureaubladnummer. Typ in de opdrachtmodus een pictogramlabel. Shift met 1–9 verplaatst het geselecteerde venster naar een ander bureaublad."
+    ]
+  ],
+  "keyboard": [
+    "Gebruik de muis\nLeer de toetsen gaandeweg",
+    "lay-outkaart",
+    "Automatisch paneel verbergen: Instellingen → Toetsenbord → Toetsenpaneel → Toon na → Nooit. De lay-outkaart opent het paneel altijd.",
+    "Druk tweemaal op ⌘ en laat los. Blijf opdrachten gebruiken zolang het venster gemarkeerd is. Esc sluit de modus.",
+    "Toetsenpaneel",
+    "Belangrijkste toetsen"
+  ],
+  "mouse": [
+    "Klik op een pictogram in de tabbladbalk om een venster te kiezen.",
+    "Control-klik opent de vensteracties.",
+    "Klik op de lay-outkaart om het toetsenpaneel te openen.",
+    "Klik op een toets om de opdracht uit te voeren."
+  ],
+  "actions": [
+    "Kolom / venster kiezen",
+    "Venster of kolom verplaatsen",
+    "Kolom samenvoegen / splitsen",
+    "App-stapel samenvoegen / verlaten",
+    "Pin Deck-app toevoegen / verwijderen",
+    "Bureaublad wisselen / venster verplaatsen",
+    "Opdrachtmodus sluiten"
+  ],
+  "setup": [
+    "Aan de slag",
+    "Apps",
+    "Toegankelijkheid",
+    "Calmon installeren",
+    "Download Calmon",
+    ". Verplaats het naar Apps.",
+    "Toegankelijkheid toestaan",
+    "Sleep Calmon naar de lijst Toegankelijkheid en schakel het in.",
+    "Open je vensters",
+    "Kies een venster in de tabbladbalk. De lay-outkaart opent het toetsenpaneel.",
+    "Calmon heeft geen Dock-symbool. Je vindt het in de menubalk {icon}."
+  ],
+  "faq": [
+    "Vragen en antwoorden",
+    [
+      "Welke Macs worden ondersteund?",
+      "Macs met een Apple chip of Intel en macOS 26 of nieuwer."
+    ],
+    [
+      "Welke toestemming is nodig?",
+      "Toegankelijkheid om vensters te verplaatsen, vergroten, verkleinen en selecteren."
+    ],
+    [
+      "Moet ik sneltoetsen onthouden?",
+      "Nee. Alle vensteracties werken met de muis. De lay-outkaart opent het toetsenpaneel."
+    ],
+    [
+      "Kan ik trackpadveeggebaren gebruiken?",
+      "Die staan eerst uit. Schakel drie of vier vingers in via Instellingen → Gebaren. Houd Shift vast vóór het vegen voor het oorspronkelijke macOS-gebaar."
+    ],
+    [
+      "Worden alle vensters betegeld?",
+      "Standaardvensters wel. Dialogen, instellingen en vensters met vaste afmetingen zweven. Voeg regels toe in Instellingen → Geavanceerd."
+    ],
+    [
+      "Verplaatst Calmon vensters tussen bureaubladen?",
+      "Alleen als je ze zelf verplaatst. Wissel met bureaubladnummers of de opdrachtmodus. Bij afsluiten herstelt Calmon opgeslagen vensterposities."
+    ],
+    [
+      "Is de bèta gratis?",
+      "Ja, Calmon is gratis tijdens de bèta."
+    ],
+    [
+      "Hoe werk ik Calmon bij?",
+      "Kies Zoek naar updates in het Calmon-menu."
+    ]
+  ],
+  "demo": [
+    "Pauze",
+    "Doorgaan",
+    "Demo opnieuw starten",
+    "Druk tweemaal op ⌘ en laat los",
+    "Opdrachtmodus · blijf toetsen gebruiken",
+    "macOS-sneltoets · geen opdrachtmodus nodig",
+    "dan",
+    "Schakel JavaScript in voor de demo.",
+    "Opdrachtmodus afgesloten"
+  ],
+  "menus": [
+    "Archief",
+    "Wijzig",
+    "Weergave",
+    "Venster",
+    "Help"
+  ],
+  "apps": [
+    "Notities",
+    "Finder",
+    "Terminal",
+    "Mail",
+    "Agenda",
+    "Muziek"
+  ],
+  "windows": [
+    "Calmon-handleiding",
+    "Deze week",
+    "Ideeën",
+    "Projecten",
+    "Website",
+    "Inkomend",
+    "Planning",
+    "Huidig nummer"
+  ],
+  "subtitle": "Scrollende tegelvensters"
+}

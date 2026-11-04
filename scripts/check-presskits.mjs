@@ -43,7 +43,7 @@ for (const path of ['/presskit/', ...kits.map(kit => `/${kit.slug}/presskit/`)])
   const pickers = page.nodes.filter(node => node.tagName === 'select' && attr(node, 'data-locale-mode') === 'hash');
   assert.equal(pickers.length, 1, `${path}: expected one shared language picker`);
   const options = pickers[0].childNodes.filter(node => node.tagName === 'option');
-  assert.deepEqual(options.map(option => attr(option, 'value')), presentationLanguages.map(tag => `#${tag}`));
+  assert.deepEqual(options.map(option => attr(option, 'value')).toSorted(), (path === '/calmon/presskit/' ? supported.calmon.tags : presentationLanguages).map(tag => `#${tag}`).toSorted());
   assert(!page.nodes.some(node => attr(node, 'id')?.startsWith('language-') || presentationLanguages.includes(attr(node, 'id'))), `${path}: language state must not cause native fragment scrolling`);
   const data = JSON.parse(text(page.nodes.find(node => attr(node, 'id') === 'press-page-data')));
   assert.deepEqual(data.products, path === '/presskit/' ? pressPresentations : pressPresentations.filter(item => path === `/${item.slug}/presskit/`));
@@ -149,10 +149,27 @@ for (const kit of kits) {
     check(hash(await readFile(sourcePath)) === checksum, `Native icon source changed: ${name}; export and update provenance`);
   }
   const iconAssets = kit.files.filter(asset => asset.kind === 'icon');
-  check(iconAssets.length === 1, 'Expected one original App icon');
+  check(iconAssets.length === (kit.slug === 'calmon' ? 2 : 1), 'Unexpected original App icon appearances');
   check(iconAssets[0].source === originalIcon.output && iconAssets[0].path === 'icon.png', 'Icon must use the recorded native PNG at archive root');
   check(hash(await readFile(originalIcon.output)) === originalIcon.outputSha256, 'Native icon export changed without provenance update');
   assert.deepEqual(imageSize(await readFile(originalIcon.output)), [1024, 1024], `${kit.slug}: native icon must be 1024 × 1024`);
+  if (kit.slug === 'calmon') {
+    const previews = page.nodes.filter(node=>node.tagName === 'figure' && attr(node,'data-kind') === 'icon');
+    for (const figure of previews) {
+      const image = descendants(figure).find(node=>node.tagName === 'img');
+      const dark = descendants(figure).some(node=>attr(node,'href') === base + 'icon-dark.png');
+      check(attr(image,'src').includes(dark ? 'calmon-icon-dark.' : 'calmon-icon.'), 'Icon preview must use the same light/dark appearance as its download');
+    }
+    const panelPickers = page.nodes.filter(node=>node.tagName === 'select' && attr(node,'data-panel-language') !== undefined);
+    check(panelPickers.length === kit.locales.length, 'Each localized screenshot needs its own language control');
+    for (const picker of panelPickers) assert.deepEqual(picker.childNodes.filter(node=>node.tagName === 'option').map(node=>attr(node,'value')).toSorted(), supported.calmon.tags.toSorted());
+    const dark = originalIcon.webRenditions.find(item => item.rendition === 'Dark');
+    check(dark && iconAssets[1].source === dark.output && iconAssets[1].path === 'icon-dark.png', 'Dark icon must use the recorded native Dark rendition');
+    const menu = originalIcon.menuBar;
+    check(menu && hash(await readFile(menu.source)) === menu.sha256 && hash(await readFile(menu.output)) === menu.sha256,
+      'Menu bar artwork must match its native template snapshot');
+    assert.deepEqual(imageSize(await readFile(menu.output)), [44, 44], 'Menu bar template must retain native 2× pixels');
+  }
   for (const asset of kit.files) {
     const bytes = await readFile(join(directory, asset.path));
     const source = await readFile(new URL('../' + asset.source, import.meta.url));

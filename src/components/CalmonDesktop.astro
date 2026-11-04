@@ -1,0 +1,56 @@
+---
+import wallpaper from '$assets/img/calmon-onboarding/desktop.jpg?url';
+import symbols from '$assets/img/calmon-onboarding/symbols.png?url';
+import calmon from '$assets/img/calmon-icon.png?url';
+import mark from '../../scripts/assets/native-icons/calmon/MenuBarIcon.imageset/MenuBarIcon@2x.png?url';
+import safari from '$assets/img/calmon-desktop/safari.png?url';
+import notes from '$assets/img/calmon-desktop/notes.png?url';
+import finder from '$assets/img/calmon-desktop/finder.png?url';
+import terminal from '$assets/img/calmon-desktop/terminal.png?url';
+import mail from '$assets/img/calmon-desktop/mail.png?url';
+import calendar from '$assets/img/calmon-desktop/calendar.png?url';
+import music from '$assets/img/calmon-desktop/music.png?url';
+import tabMetrics from '$assets/img/calmon-onboarding/tab-metrics.json';
+import { desktopCopy } from './calmon-desktop/copy.mjs';
+import './calmon-desktop/desktop.css';
+const { code = 'en' } = Astro.props;
+const copy = desktopCopy(code);
+const art = { calmon, mark, safari, notes, finder, terminal, mail, calendar, music, tabMetrics };
+---
+<div class="calmon-desktop" data-calmon-desktop data-copy={JSON.stringify(copy)} data-art={JSON.stringify(art)} data-language={code || 'zh-Hans'}>
+  <div class="pd-demo-visual" role="group" aria-label={copy.label} style={`--pd-symbols:url("${symbols}");--pd-mark:url("${mark}")`}>
+    <div class="pd-screen" inert aria-hidden="true" style={`--pd-wallpaper:url("${wallpaper}")`}>
+      <div class="pd-menubar">
+        <span class="pd-system-symbol" style="--symbol:6" aria-hidden="true"></span>
+        <strong data-menu-app>{copy.appNames.notes}</strong>
+        {copy.menuTitles.map(title => <span class="pd-menubar-label">{title}</span>)}
+        <span class="pd-menubar-spacer"></span>
+
+      </div>
+      <div class="pd-windows"></div>
+      <div class="pd-tabbar" data-desktop-tabs></div>
+    </div>
+    <div class="pd-menubar-items">
+      <div class="pd-status-items" inert aria-hidden="true">
+        <span class="pd-calmon-symbol"></span>
+        <span class="pd-system-symbol" style="--symbol:7"></span>
+        <span class="pd-system-symbol" style="--symbol:8"></span>
+        <span class="pd-menubar-time">9:41</span>
+      </div>
+      <div class="pd-tools">
+        <div class="pd-tour-controls"><button type="button" data-tour="toggle" aria-label={copy.pause} title={copy.pause}><span data-tour-glyph aria-hidden="true">Ⅱ</span><span data-tour-text>{copy.pause}</span></button><button type="button" data-tour="replay" aria-label={copy.restart} title={copy.restart}>↻</button></div>
+      </div>
+    </div>
+  </div>
+  <div class="pd-toolbar">
+    <div class="pd-demo-help">
+      <span class="pd-caption"><span class="pd-input-cue" hidden></span><span data-desktop-caption aria-live="polite">{copy.ready}</span></span>
+    </div>
+    <slot name="cta" />
+  </div>
+  <noscript><p class="pd-noscript">{copy.noScript}</p></noscript>
+</div>
+<script>
+  import { initDesktop } from './calmon-desktop/controller';
+  document.querySelectorAll<HTMLElement>('[data-calmon-desktop]').forEach(initDesktop);
+</script>

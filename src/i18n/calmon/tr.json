@@ -1,0 +1,156 @@
+{
+  "hero": [
+    "Sakin kal\nve kaydırmaya devam et",
+    "Kaydırılabilir döşeme pencere yöneticisi",
+    "Calmon, Mac pencerelerini kaydırılabilir sütunlara dizer. Pencereleri grupla, bir sütunu sabitle, fare veya klavyeyle geçiş yap."
+  ],
+  "nav": [
+    "lazyapps ana sayfa",
+    "Dil seç",
+    "İçeriğe geç"
+  ],
+  "release": [
+    "Ücretsiz indir",
+    "Beta boyunca ücretsiz",
+    "Hata mı buldun, fikrin mi var? X’te @lazyapps’e yaz. Calmon’u geliştirmemize yardım ettiğin için teşekkürler.",
+    "macOS 26 veya üstü"
+  ],
+  "display": [
+    "Birden fazla ekranı nasıl yerleştirmeliyim?",
+    "Ekranları üst üste yerleştir. Yan yana ekranların ortak kenarları kaydırmayı engeller; sütun geçişi bu kenarlarda başa döner. Her iki yanda ekran varsa arka plan pencereleri seçili pencerenin arkasında üst üste biner."
+  ],
+  "features": [
+    [
+      "Sütunları kaydır",
+      "Pencereler yatay kayar. Etkin sütun ekranın çoğunu kaplar. Komut modunda ok tuşlarını kullan."
+    ],
+    [
+      "Uygulama yığınları",
+      "Aynı uygulamanın döşenmiş pencereleri bir yığın oluşturur. Geçiş için yığın işaretine tıkla veya ⌘` tuşlarına bas. Bir sütun en çok üç yığın alır."
+    ],
+    [
+      "Sabit sütun",
+      "Sütunu sol veya sağ kenara sabitle. Diğer pencereler yanında kayar. Komut modunda Tab odağı değiştirir."
+    ],
+    [
+      "Pin Deck",
+      "En çok on uygulama sabitle. Pin Deck işaretinden ekle, simge menüsünden kaldır. Sıralama tüm ekranlarda aynıdır."
+    ],
+    [
+      "Sky Deck ve Max Deck",
+      "Sky Deck yüzen, Max Deck yerel tam ekran pencereleri listeler. Pencereye dönmek için simgesine tıkla."
+    ],
+    [
+      "Pencere ve masaüstü",
+      "Masaüstü numarasına tıkla. Komut modunda simge etiketini yaz. Shift ve 1–9 seçili pencereyi başka masaüstüne taşır."
+    ]
+  ],
+  "keyboard": [
+    "Fareyi kullan\nTuşları kullandıkça öğren",
+    "yerleşim haritasına",
+    "Otomatik paneli kapat: Ayarlar → Klavye → Tuş Paneli → Gösterme gecikmesi → Asla. Yerleşim haritası paneli her zaman açar.",
+    "⌘ tuşuna iki kez basıp bırak. Pencere vurgulandığı sürece komutlara devam et. Esc moddan çıkar.",
+    "Tuş paneli",
+    "Temel tuşlar"
+  ],
+  "mouse": [
+    "Pencere seçmek için sekme çubuğundaki simgeye tıkla.",
+    "Control-tıklama pencere işlemlerini açar.",
+    "Tuş panelini açmak için yerleşim haritasına tıkla.",
+    "Komutu çalıştırmak için bir tuşa tıkla."
+  ],
+  "actions": [
+    "Sütun / pencere seç",
+    "Pencere veya sütun taşı",
+    "Sütuna katıl / ayır",
+    "Uygulama yığınına katıl / ayrıl",
+    "Pin Deck uygulaması ekle / kaldır",
+    "Masaüstü değiştir / pencere taşı",
+    "Komut modundan çık"
+  ],
+  "setup": [
+    "Başlarken",
+    "Uygulamalar",
+    "Erişilebilirlik",
+    "Calmon’u yükle",
+    "Calmon’u indir",
+    ". Uygulamalar’a taşı.",
+    "Erişilebilirliğe izin ver",
+    "Calmon’u Erişilebilirlik listesine sürükle ve aç.",
+    "Pencerelerini aç",
+    "Sekme çubuğundan pencere seç. Yerleşim haritası tuş panelini açar.",
+    "Calmon’un Dock simgesi yoktur. Menü çubuğunda bulabilirsin {icon}."
+  ],
+  "faq": [
+    "Sorular ve yanıtlar",
+    [
+      "Hangi Mac’ler destekleniyor?",
+      "Apple çipli veya Intel Mac, macOS 26 veya üstü."
+    ],
+    [
+      "Hangi izin gerekiyor?",
+      "Pencereleri taşımak, boyutlandırmak ve seçmek için Erişilebilirlik."
+    ],
+    [
+      "Kestirmeleri ezberlemeli miyim?",
+      "Hayır. Tüm işlemler fareyle yapılabilir. Yerleşim haritası tuş panelini açar."
+    ],
+    [
+      "İzleme dörtgeni kaydırmaları var mı?",
+      "Başlangıçta kapalıdır. Ayarlar → Hareketler’den üç veya dört parmağı aç. Özgün macOS hareketi için kaydırmadan önce Shift’i basılı tut."
+    ],
+    [
+      "Tüm pencereler döşenir mi?",
+      "Standart pencereler döşenir. İletişim kutuları, ayarlar ve sabit boyutlu pencereler yüzer. Ayarlar → İleri Düzey’den kural ekle."
+    ],
+    [
+      "Calmon pencereleri masaüstleri arasında taşır mı?",
+      "Yalnızca sen taşıdığında. Numaralarla veya komut modunda masaüstü değiştir. Çıkışta Calmon kayıtlı pencere konumlarını geri yükler."
+    ],
+    [
+      "Beta ücretsiz mi?",
+      "Evet, Calmon beta boyunca ücretsiz."
+    ],
+    [
+      "Nasıl güncellerim?",
+      "Calmon menüsünden Güncellemeleri Denetle’yi seç."
+    ]
+  ],
+  "demo": [
+    "Duraklat",
+    "Sürdür",
+    "Demoyu yeniden başlat",
+    "⌘ tuşuna iki kez basıp bırak",
+    "Komut modu · tuşlarla devam et",
+    "macOS kestirmesi · komut modu gerekmez",
+    "sonra",
+    "Demo için JavaScript’i etkinleştir.",
+    "Komut modundan çıkıldı"
+  ],
+  "menus": [
+    "Dosya",
+    "Düzen",
+    "Görüntü",
+    "Pencere",
+    "Yardım"
+  ],
+  "apps": [
+    "Notlar",
+    "Finder",
+    "Terminal",
+    "Mail",
+    "Takvim",
+    "Müzik"
+  ],
+  "windows": [
+    "Calmon kılavuzu",
+    "Bu hafta",
+    "Fikirler",
+    "Projeler",
+    "Web sitesi",
+    "Gelen Kutusu",
+    "Program",
+    "Şimdi çalıyor"
+  ],
+  "subtitle": "Kaydırılabilir döşeme pencereler"
+}
