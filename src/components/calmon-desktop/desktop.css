@@ -192,3 +192,22 @@
 .pd-window:lang(ar) .pd-titlebar-name,.pd-window:lang(he) .pd-titlebar-name{direction:rtl}
 
 .calmon-desktop{direction:ltr}
+
+.calmon-desktop--compact{width:100%;height:100%;align-self:stretch}
+.calmon-desktop--compact .pd-demo-visual{height:100%;aspect-ratio:auto;border-radius:0;box-shadow:none}
+.calmon-desktop--compact .pd-screen{width:100%;height:100%;transform:none;border-radius:0}
+.calmon-desktop--compact .pd-toolbar,.calmon-desktop--compact .pd-tools,.calmon-desktop--compact .pd-noscript,.calmon-desktop--compact .pd-menubar-label{display:none}
+.calmon-desktop--compact .pd-menubar{height:28px;font-size:10px;gap:8px;padding-inline:12px}
+.calmon-desktop--compact .pd-menubar .pd-system-symbol{--pd-symbol-size:18px}
+.calmon-desktop--compact .pd-menubar-items{height:28px;right:12px}
+.calmon-desktop--compact .pd-status-items{gap:6px}
+.calmon-desktop--compact .pd-calmon-symbol{width:16px;height:16px}
+.calmon-desktop--compact .pd-status-items .pd-system-symbol{--pd-symbol-size:16px}
+.calmon-desktop--compact .pd-menubar-time{font-size:10px}
+.calmon-desktop--compact .pd-titlebar{height:24px;font-size:10px;--pd-titlebar-inset:8px}
+.calmon-desktop--compact .pd-traffic{gap:4px}
+.calmon-desktop--compact .pd-traffic button{width:8px;height:8px}
+.calmon-desktop--compact .pd-titlebar-name{left:44px;right:20px}
+.calmon-desktop--compact .pd-app-preview{height:100%;min-height:0;padding:4px;gap:0}
+.calmon-desktop--compact .pd-app-preview img{width:48px;height:48px;max-width:100%;max-height:100%;object-fit:contain}
+.calmon-desktop--compact .pd-app-preview>span{display:none}

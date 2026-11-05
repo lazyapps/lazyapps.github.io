@@ -351,8 +351,12 @@ export class Desktop {
     const lw = pinnedWidth(left), rw = pinnedWidth(right);
     const viewport = { x: area.x + (left ? lw + gap : 0), w: Math.max(80, area.w - (left ? lw + gap : 0) - (right ? rw + gap : 0)) };
     const normal = columns.filter(c => !c.pin);
-    const widths = normal.map((c, i) => Math.max(60, viewport.w *
-      (c.width === 1 && normal.length > 1 && (i === 0 || i === normal.length - 1) ? .95 : WIDTHS[c.width])));
+    const widths = normal.map((c, i) => {
+      const edge = (left && !right && i === normal.length - 1) || (right && !left && i === 0);
+      const fraction = c.width === 1 && edge ? 1 :
+        c.width === 1 && normal.length > 1 && (i === 0 || i === normal.length - 1) ? .95 : WIDTHS[c.width];
+      return Math.max(60, viewport.w * fraction);
+    });
     const selectedColumn = this.column();
     const focusColumn = selectedColumn && !selectedColumn.pin ? selectedColumn : this.column(this.stack(this.tiledFocus[this.current]));
     const index = Math.max(0, normal.indexOf(focusColumn));

@@ -6,6 +6,7 @@ export function initDesktop(root: HTMLElement) {
   const t = JSON.parse(root.dataset.copy!);
   const art = JSON.parse(root.dataset.art!);
   const language = root.dataset.language!;
+  const compact = root.hasAttribute('data-compact');
   const model = new Desktop();
   const screen = root.querySelector<HTMLElement>('.pd-screen')!;
   const visual = root.querySelector<HTMLElement>('.pd-demo-visual')!;
@@ -201,7 +202,7 @@ export function initDesktop(root: HTMLElement) {
     catch { return; }
     if (version === presentationVersion) finishPresentation();
   }
-  let tour = createDesktopTour(model);
+  let tour = createDesktopTour(model, compact);
   function prepareTourStep() {
     const step=tour[tourIndex];
     tourApplied=false;tourElapsed=0;tourStarted=true;tourLeaderActivated=false;
@@ -272,7 +273,7 @@ export function initDesktop(root: HTMLElement) {
     tourRestarting=true;
     cancelAnimationFrame(animation);animation=0;lastFrame=0;render();
     void dissolve(()=>{
-      reset();tour=createDesktopTour(model);tourIndex=0;prepareTourStep();
+      reset();tour=createDesktopTour(model, compact);tourIndex=0;prepareTourStep();
     }).then(()=>{
       if(revision!==restartRevision)return;
       tourRestarting=false;syncTour();
@@ -292,7 +293,7 @@ export function initDesktop(root: HTMLElement) {
     screen.style.setProperty('--pd-scale', String(visual.clientWidth / screen.clientWidth));
   };
   fitDesktop();
-  new ResizeObserver(fitDesktop).observe(visual);
+  new ResizeObserver(() => { fitDesktop(); if (compact) render(); }).observe(visual);
   new IntersectionObserver(entries => {
     visible = entries[0].isIntersecting && entries[0].intersectionRatio >= .35;
     syncTour();

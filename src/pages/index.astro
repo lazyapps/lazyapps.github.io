@@ -4,7 +4,7 @@ const title = 'lazyapps — Apps for Mac, iPhone & iPad';
 const description = 'Mac, iPhone and iPad apps for scrolling window management, screen dimming during AI computer use, English practice, X video downloads, EPUB and CHM reading, country facts and fonts. Shheep is a sheep-counting game for iPhone and iPad.';
 import { DOZE_LOCALES } from '../i18n/doze-locales.mjs';
 import { CALMON_LOCALES } from '../i18n/calmon-locales.mjs';
-import CalmonDemo from '../components/CalmonDemo.astro';
+import CalmonDesktop from '../components/CalmonDesktop.astro';
 import ComputerUseText from '../components/ComputerUseText.astro';
 const doze = DOZE_LOCALES.en;
 const calmon = CALMON_LOCALES.en;
@@ -101,7 +101,7 @@ setTimeout(function(){
 .card--doze{--fill:var(--app-doze)}
 .card--calmon{--fill:var(--app-calmon)}
 .card--calmon .card__title{text-transform:none}
-.card--calmon .card__shots{padding:0;background:var(--app-calmon)}
+.card--calmon .card__shots{padding:0;min-height:360px;background:var(--app-calmon)}
 .card--yiyan{--fill:var(--app-yiyan)}
 .card--xvdl{--fill:var(--app-xvdl);--icon-optical-scale:1.34214}
 .card--chmate{--fill:var(--app-chmate)}
@@ -142,7 +142,6 @@ setTimeout(function(){
 .card--yifan .card__title{text-box:normal}
 .card--yifan .card__heading{--icon-title-height:1em}
 .card__p{margin-top:clamp(24px,2.6vw,32px);max-width:34em;font-size:1rem;line-height:1.7}
-.card__availability{margin-top:14px;font-size:12px;color:#48694c}
 .card__foot{margin-top:auto;padding-top:clamp(28px,3vw,40px)}
 .card .card__icon{width:var(--icon-size);height:var(--icon-size);object-fit:contain;flex:none;scale:var(--icon-optical-scale,1.08)}
 .card:has(.card__go:focus-visible){outline:2px solid var(--accent);outline-offset:4px}
@@ -157,7 +156,7 @@ setTimeout(function(){
   justify-self:stretch;
   margin:calc(-1 * var(--space-card)) calc(-1 * var(--space-card)) calc(-1 * var(--space-card)) 0;
 }
-.card__shots img{
+.card__shots>img{
   width:100%;height:100%;max-height:clamp(190px,22vw,320px);object-fit:cover;object-position:top;
   border-radius:8px;outline:1px solid rgba(0,0,0,.1);outline-offset:-1px;
 }
@@ -199,6 +198,7 @@ setTimeout(function(){
   .card__grid{grid-template-columns:minmax(0,1fr)}
   .card__shots{aspect-ratio:16/9}
   .card--featured .card__shots{margin:0 calc(-1 * var(--space-card)) calc(-1 * var(--space-card))}
+  .card--calmon .card__shots{height:clamp(260px,64vw,360px);min-height:0;aspect-ratio:auto}
 }
 @media (max-width:560px){
   .deck{--space-card:28px;--r-card:24px}
@@ -245,6 +245,29 @@ setTimeout(function(){
   <section class="deck wrap" id="deck">
     <div data-reveal-group data-stagger="140" data-distance="2.1em" data-start="top 88%">
 
+      <article class="card card--featured card--calmon" id="calmon">
+        <div class="card__grid">
+          <div class="card__copy">
+            <div class="card__heading">
+              <NativeAppIcon slug="calmon" size={80} class="card__icon" />
+              <div class="card__identity">
+                <h2 class="card__title dsp">Calmon</h2>
+                <div class="card__meta">
+                  <p class="card__tag">macOS 26+</p>
+                  <CardAction href="/calmon/presskit/#en" aria-label="Calmon Press Kit" class="card__press" secondary arrow={false}>Press Kit</CardAction>
+                </div>
+              </div>
+            </div>
+            <p class="card__p">Arrange Mac windows in scrolling columns. Split a column top to bottom, stack windows from the same app, and switch with the mouse or keyboard.</p>
+            <div class="card__foot">
+              <CardAction href={calmon.selectedUrl} class="card__go" stretched>Explore Calmon</CardAction>
+            </div>
+          </div>
+          <div class="card__shots" aria-hidden="true" inert><CalmonDesktop compact /></div>
+        </div>
+      </article>
+
+
       <article class="card card--featured card--doze" id="doze">
         <div class="card__grid">
           <div class="card__copy">
@@ -266,30 +289,6 @@ setTimeout(function(){
           <div class="card__shots" style={{ backgroundImage: `url("${dozeLandscape.src}")` }}>
             <Image src={dozePanel} width={384} densities={[1, 2]} format="webp" quality={90} alt="Doze’s Mac settings for screen dimming and keeping computer use running" />
           </div>
-        </div>
-      </article>
-
-
-      <article class="card card--featured card--calmon" id="calmon">
-        <div class="card__grid">
-          <div class="card__copy">
-            <div class="card__heading">
-              <NativeAppIcon slug="calmon" size={80} class="card__icon" />
-              <div class="card__identity">
-                <h2 class="card__title dsp">Calmon</h2>
-                <div class="card__meta">
-                  <p class="card__tag">macOS 26+</p>
-                  <CardAction href="/calmon/presskit/#en" aria-label="Calmon Press Kit" class="card__press" secondary arrow={false}>Press Kit</CardAction>
-                </div>
-              </div>
-            </div>
-            <p class="card__p">{calmon.description}</p>
-            <p class="card__availability">{calmon.availability}</p>
-            <div class="card__foot">
-              <CardAction href={calmon.selectedUrl} class="card__go" stretched>Calmon details</CardAction>
-            </div>
-          </div>
-          <div class="card__shots" aria-hidden="true" inert><CalmonDemo compact /></div>
         </div>
       </article>
 

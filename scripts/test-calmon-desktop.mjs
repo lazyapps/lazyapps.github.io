@@ -34,6 +34,26 @@ test('pin stays at the edge when focus and viewport move', () => {
   assert.deepEqual([after.x, after.y, after.w, after.h], [before.x, before.y, before.w, before.h]);
   d.focus('notes-week'); d.execute('pin'); assert.equal(d.column().pin, 'right'); valid(d);
 });
+test('end columns beside a pinned reference retain only the desktop margin', () => {
+  for (const width of [390, 1280]) for (const side of ['left', 'right']) for (const single of [false, true]) {
+    const d = new Desktop(); d.execute('pin'); d.column().pin = side;
+    const working = d.tiled().filter(c => !c.pin);
+    const end = side === 'left' ? working.at(-1) : working[0];
+    if (single) for (const c of working.filter(c => c !== end)) d.stack(c.stacks[0]).mode = 'float';
+    const id = d.stack(end.stacks[0]).active;
+    d.clean(); d.focus(id);
+    const frames = d.layout(width, 600), focused = frames.get(d.focused), pin = frames.get('notes-week');
+    if (side === 'left') {
+      assert(Math.abs(focused.x + focused.w - (width - 12)) < .001, `${width}px: excess right padding`);
+      assert(Math.abs(focused.x - pin.x - pin.w - d.gap) < .001);
+    } else {
+      assert(Math.abs(focused.x - 12) < .001, `${width}px: excess left padding`);
+      assert(Math.abs(pin.x - focused.x - focused.w - d.gap) < .001);
+    }
+    d.focus('notes-week');
+    assert.equal(d.layout(width, 600).get(id).w, focused.w);
+  }
+});
 test('floating one member leaves the app stack and tiles back without duplication', () => {
   const d = new Desktop(); d.execute('float'); valid(d); assert.equal(d.stack().mode, 'float'); assert.equal(d.stack('notes-ideas').mode, 'tile');
   d.execute('float'); valid(d); assert.equal(d.stack().mode, 'tile');
@@ -69,6 +89,32 @@ test('close, minimize and relaunch leave a valid usable desktop', () => {
   d.execute('close'); valid(d); d.focus('music-player'); d.execute('close'); d.launch('music'); valid(d);
 });
 
+test('homepage tour preserves stacked windows through splits, scrolling, and pinning', async () => {
+  const { createDesktopTour } = await import('../src/components/calmon-desktop/tour.mjs');
+  for (const [width, height] of [[320, 260], [480, 360]]) {
+    const d = new Desktop(), stops = createDesktopTour(d, true);
+    const notes = d.stack('notes-week'), members = notes.members.slice();
+    assert.equal(d.column(notes).stacks.length, 2, 'The opening already shows a vertical split');
+    assert(!d.stacks.some(stack => stack.mode === 'float'));
+    const opening = JSON.stringify(d);
+    for (const [index, step] of stops.entries()) {
+      step.run(); d.clean(); valid(d);
+      assert.deepEqual(d.stack('notes-week').members, members, 'The whole app stack moves together');
+      if (index === 0) assert.equal(d.column(notes).stacks.length, 1);
+      if (index === 3) assert.equal(d.focused, 'notes-ideas', 'Cycling shows the other Notes window');
+      if (index === 4) {
+        const frames = d.layout(width, height);
+        const upper = frames.get('safari-home'), lower = frames.get('notes-ideas');
+        assert.equal(upper.x, lower.x);
+        assert(Math.abs(lower.y - upper.y - upper.h - d.gap) < .001);
+      }
+      if (index === 6) assert(d.column(notes).pin);
+      assert([...d.layout(width, height).values()].some(frame => frame.x < width && frame.x + frame.w > 0 && frame.w > 0 && frame.h > 0), 'Every step keeps windows visible');
+    }
+    d.reset(); createDesktopTour(d, true);
+    assert.equal(JSON.stringify(d), opening, 'A repeat restores the opening split');
+  }
+});
 test('entire tour stays valid and demonstrates scrolling with keyboard cues', async () => {
   const { createDesktopTour, keysForTourStep } = await import('../src/components/calmon-desktop/tour.mjs');
   const { tourCopy } = await import('../src/components/calmon-desktop/tour-copy.mjs');

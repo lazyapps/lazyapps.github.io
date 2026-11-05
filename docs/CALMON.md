@@ -118,6 +118,12 @@ FAQ 内容左缘与其他区块一致；1240px 起，标题竖排放在内容左
 
 验证：`node scripts/check-calmon-locales.mjs`、`node --test scripts/test-calmon-desktop.mjs`、`npm run build`。
 
+## 首页演示
+
+首页 Calmon 卡片复用 `CalmonDesktop` 的 compact 模式和相同窗口模型，不再维护独立静态插图。画面按卡片实际宽高布局，初始展示上下分屏，八步循环依次演示拆列、横向切换、App 堆叠切换、合并与固定参考列。演示在进入可视区域时播放，离开或切换标签页时暂停；减少动态效果时保留静态分屏。卡片预览为不可交互的装饰内容，主要入口与 Press Kit 链接保持独立。
+
+插图桌面铺满卡片右侧，手机上移到下方并保留足够高度。窗口、原生图标和底栏按实际尺寸适配，不将产品页整幅桌面缩成难以辨认的小图。它属于网页模拟演示，不作为原生截图加入 Press Kit。
+
 ## Localized panel previews
 
 The product page keeps semantic text and provides a language selector beside the panel title. Press Kit uses original native PNGs for all 38 app languages, with matching preview and download links. Rebuild only these PNGs with `python3 scripts/prepare-calmon-assets.py --app-source /path/to/calmon-src --panels-only`, then regenerate the press kits. Byte-identical regional images share an archive file. Native Dark icon previews use the Dark export, independently of the current website theme.

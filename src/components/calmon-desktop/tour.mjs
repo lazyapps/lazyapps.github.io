@@ -1,9 +1,22 @@
 // The keys appear before their action; every action continues the same desktop.
-export function createDesktopTour(model) {
+export function createDesktopTour(model, compact = false) {
   const destinationDesktop = 2;
   model.focus('music-player');
   model.execute('close');
   model.focus('notes-week');
+  if (compact) {
+    model.execute('consume-left');
+    return [
+      { caption:21,keys:['⌘','⌘','.'],leaderAfter:true,run:()=>model.execute('consume-right') },
+      { caption:5,keys:['→'],leaderAfter:true,run:()=>model.navigate(1) },
+      { caption:22,keys:['←'],leaderAfter:true,run:()=>model.navigate(-1) },
+      { caption:7,keys:['⌘','`'],leaderBefore:false,leaderAfter:false,run:()=>model.execute('cycle-stack') },
+      { caption:20,keys:['⌘','⌘',','],leaderAfter:true,run:()=>model.execute('consume-left') },
+      { caption:21,keys:['.'],leaderAfter:true,run:()=>model.execute('consume-right') },
+      { caption:9,keys:['SPACE','P'],leaderAfter:true,run:()=>model.execute('pin') },
+      { caption:10,keys:['→'],leaderAfter:true,run:()=>model.navigate(1) },
+    ];
+  }
   const jump = (id, caption = 6, dissolve = false) => ({
     caption, dissolve, labelJump: true,
     keys: () => ['⌘', '⌘', ...model.labels().find(x => x.type === 'window' && x.id === model.stack(id)?.id).key],

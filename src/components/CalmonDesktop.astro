@@ -13,11 +13,12 @@ import music from '$assets/img/calmon-desktop/music.png?url';
 import tabMetrics from '$assets/img/calmon-onboarding/tab-metrics.json';
 import { desktopCopy } from './calmon-desktop/copy.mjs';
 import './calmon-desktop/desktop.css';
-const { code = 'en' } = Astro.props;
+interface Props { code?: string; compact?: boolean; }
+const { code = 'en', compact = false } = Astro.props;
 const copy = desktopCopy(code);
 const art = { calmon, mark, safari, notes, finder, terminal, mail, calendar, music, tabMetrics };
 ---
-<div class="calmon-desktop" data-calmon-desktop data-copy={JSON.stringify(copy)} data-art={JSON.stringify(art)} data-language={code || 'zh-Hans'}>
+<div class:list={['calmon-desktop', { 'calmon-desktop--compact': compact }]} data-calmon-desktop data-compact={compact ? '' : undefined} data-copy={JSON.stringify(copy)} data-art={JSON.stringify(art)} data-language={code || 'zh-Hans'}>
   <div class="pd-demo-visual" role="group" aria-label={copy.label} style={`--pd-symbols:url("${symbols}");--pd-mark:url("${mark}")`}>
     <div class="pd-screen" inert aria-hidden="true" style={`--pd-wallpaper:url("${wallpaper}")`}>
       <div class="pd-menubar">
