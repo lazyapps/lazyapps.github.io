@@ -1,6 +1,6 @@
 # Calmon — 媒体资料
 
-- 产品网站: [https://lazyapps.com/calmon/](https://lazyapps.com/calmon/)
+- 产品网站: [https://lazyapps.com/calmon/zh-Hans/](https://lazyapps.com/calmon/zh-Hans/)
 - 媒体资料页: [https://lazyapps.com/calmon/presskit/#zh-Hans](https://lazyapps.com/calmon/presskit/#zh-Hans)
 - 平台: macOS 26 或更新版本
 - 发布状态: Beta 期间免费

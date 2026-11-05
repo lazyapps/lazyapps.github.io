@@ -15,6 +15,8 @@ assert.deepEqual(Object.keys(appTerms).toSorted(), expected);
 assert.deepEqual(calmonPressOptions.map(t=>t.language).toSorted(), expected);
 assert.deepEqual(CALMON_LANGUAGE_OPTIONS.map(t=>t.language).toSorted(), expected);
 assert.equal(CALMON_LOCALES.en.headline.join(' '), 'Keep calm and scroll on');
+assert.equal(CALMON_LOCALES.en.selectedUrl, '/calmon/');
+assert.equal(CALMON_LOCALES[''].selectedUrl, '/calmon/zh-Hans/');
 assert.equal(CALMON_LOCALES[''].headline.join(''), '别慌，接着滚');
 for (const [code,t] of Object.entries(CALMON_LOCALES)) {
   const label = t.htmlLang;

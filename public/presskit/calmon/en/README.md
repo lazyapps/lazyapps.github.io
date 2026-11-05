@@ -1,6 +1,6 @@
 # Calmon — Press Kit
 
-- Website: [https://lazyapps.com/calmon/en/](https://lazyapps.com/calmon/en/)
+- Website: [https://lazyapps.com/calmon/](https://lazyapps.com/calmon/)
 - Press Kit: [https://lazyapps.com/calmon/presskit/#en](https://lazyapps.com/calmon/presskit/#en)
 - Platform: macOS 26 or later
 - Availability: Free during beta

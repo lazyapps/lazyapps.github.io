@@ -2,7 +2,7 @@
 import { CALMON_LOCALES } from '../../i18n/calmon-locales.mjs';
 import CalmonPage from '../../components/CalmonPage.astro';
 export function getStaticPaths() {
-  return Object.keys(CALMON_LOCALES).filter(Boolean).map(locale => ({ params: { locale } }));
+  return Object.values(CALMON_LOCALES).filter(t => t.htmlLang !== 'en').map(t => ({ params: { locale: t.htmlLang }, props: { code: t.code } }));
 }
 ---
-<CalmonPage code={Astro.params.locale} />
+<CalmonPage code={Astro.props.code} />

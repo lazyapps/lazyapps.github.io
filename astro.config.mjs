@@ -8,8 +8,9 @@ export default defineConfig({
   trailingSlash: 'ignore',
   image: { service: { entrypoint: './src/image-service.mjs' } },
   redirects: {
+    '/calmon/en': '/calmon/',
     '/pane': '/calmon/',
-    '/pane/en': '/calmon/en/',
+    '/pane/en': '/calmon/',
     '/pane/presskit': '/calmon/presskit/',
     '/keyhop/presskit': '/keyhop/',
   },

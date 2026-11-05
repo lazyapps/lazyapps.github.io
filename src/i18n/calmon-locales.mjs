@@ -143,7 +143,7 @@ const copy = {
 };
 
 export const CALMON_LOCALES = Object.fromEntries(Object.entries({ ...copy, ...calmonTranslations }).map(([code, t]) => {
-  const selectedUrl = `/calmon/${code ? `${code}/` : ''}`;
+  const selectedUrl = `/calmon/${t.htmlLang === 'en' ? '' : `${t.htmlLang}/`}`;
   const permissionPanes = [['macOS 26', t.setupArt.accessibility], ['macOS 27+', appTerms[t.htmlLang]['Device Control and Data Access']]];
   const faqs = t.faqs.map(([question, answer], index) => [question, index === 3 ? `${answer} ${appTerms[t.htmlLang]['Keep the three- or four-finger gestures enabled in System Settings > Trackpad > More Gestures.']}` : answer]);
   return [code, { ...t, faqs, permissionPanes, dir: ['ar', 'he'].includes(t.htmlLang) ? 'rtl' : 'ltr', keyboardBody: t.keyboardSteps.join(t.htmlLang.startsWith('zh') ? '' : ' '), code, name: 'Calmon', brand: 'Calmon', title: `Calmon — ${t.positioning}`,

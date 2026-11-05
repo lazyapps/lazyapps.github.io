@@ -27,9 +27,10 @@ assert.equal(new Set(shheepLocales.map(locale => locale.title)).size, 11, 'Shhee
 assert.equal(new Set(shheepLocales.map(locale => locale.description)).size, 11, 'Shheep descriptions must be translated');
 for (const locale of shheepLocales) assert(byUrl.has(`${site}${locale.selectedUrl}`), `Missing Shheep locale page: ${locale.htmlLang}`);
 const retiredRedirects = new Map([
+  [`${site}/calmon/en/`, `${site}/calmon/`],
   [`${site}/keyhop/presskit/`, `${site}/keyhop/`],
   [`${site}/pane/`, `${site}/calmon/`],
-  [`${site}/pane/en/`, `${site}/calmon/en/`],
+  [`${site}/pane/en/`, `${site}/calmon/`],
   [`${site}/pane/presskit/`, `${site}/calmon/presskit/`],
 ]);
 for (const [url, target] of retiredRedirects) {

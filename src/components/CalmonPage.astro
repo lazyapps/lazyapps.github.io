@@ -29,7 +29,7 @@ import CalmonSetupArt from './CalmonSetupArt.astro';
 import CalmonFeedbackArt from './CalmonFeedbackArt.astro';
 import accessibilityIcon from '$assets/img/calmon-setup/accessibility.png?url';
 import menuBarIcon from '../../scripts/assets/native-icons/calmon/MenuBarIcon.imageset/MenuBarIcon@2x.png?url';
-const { code = '' } = Astro.props;
+const { code = 'en' } = Astro.props;
 const t = CALMON_LOCALES[code];
 const cjkHeadline = /^(zh|ja|ko)(-|$)/.test(t.htmlLang);
 const headlineLabel = t.headline.join(/^(zh|ja)(-|$)/.test(t.htmlLang) ? '' : ' ');
