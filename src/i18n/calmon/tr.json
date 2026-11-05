@@ -21,16 +21,16 @@
   ],
   "features": [
     [
-      "Sütunları kaydır",
-      "Pencereler yatay kayar. Etkin sütun ekranın çoğunu kaplar. Komut modunda ok tuşlarını kullan."
+      "Sütunlar ve dikey bölme",
+      "Pencereler yatay kayar. Etkin sütun ekranın çoğunu kaplar. Lider modunda ok tuşlarını kullan.\n\nBir sütun, yukarıdan aşağıya dizilen ve aynı anda görünen en fazla üç alana bölünebilir. Her alan tek bir pencereyi veya aynı uygulamanın pencere yığınını barındırabilir."
     ],
     [
-      "Uygulama yığınları",
-      "Aynı uygulamanın döşenmiş pencereleri bir yığın oluşturur. Geçiş için yığın işaretine tıkla veya ⌘` tuşlarına bas. Bir sütun en çok üç yığın alır."
+      "Aynı uygulamanın pencere yığınları",
+      "Aynı uygulamanın pencereleri tek bir alanda üst üste durur; her seferinde yalnızca biri görünür. Geçiş için pencerenin üstündeki yığın işaretlerine tıkla veya ⌘` tuşlarına bas.\n\nLider Modu: Space → J / X — Seçili pencereyi uygulamasının yığınına ekle / yığından çıkar."
     ],
     [
       "Sabit sütun",
-      "Sütunu sol veya sağ kenara sabitle. Diğer pencereler yanında kayar. Komut modunda Tab odağı değiştirir."
+      "Sütunu sol veya sağ kenara sabitle. Diğer pencereler yanında kayar. Lider modunda Tab odağı değiştirir."
     ],
     [
       "Pin Deck",
@@ -42,15 +42,15 @@
     ],
     [
       "Pencere ve masaüstü",
-      "Masaüstü numarasına tıkla. Komut modunda simge etiketini yaz. Shift ve 1–9 seçili pencereyi başka masaüstüne taşır."
+      "Masaüstü numarasına tıkla. Lider modunda simge etiketini yaz. Shift ve 1–9 seçili pencereyi başka masaüstüne taşır."
     ]
   ],
   "keyboard": [
     "Fareyi kullan\nTuşları kullandıkça öğren",
     "yerleşim haritasına",
-    "Otomatik paneli kapat: Ayarlar → Klavye → Tuş Paneli → Gösterme gecikmesi → Asla. Yerleşim haritası paneli her zaman açar.",
+    "Otomatik paneli kapat: Ayarlar → Klavye → Tuş Paneli → Gösterme gecikmesi → Hiçbir Zaman. Yerleşim haritası paneli her zaman açar.",
     "⌘ tuşuna iki kez basıp bırak. Pencere vurgulandığı sürece komutlara devam et. Esc moddan çıkar.",
-    "Tuş paneli",
+    "Tuş Paneli",
     "Temel tuşlar"
   ],
   "mouse": [
@@ -62,11 +62,11 @@
   "actions": [
     "Sütun / pencere seç",
     "Pencere veya sütun taşı",
-    "Sütuna katıl / ayır",
-    "Uygulama yığınına katıl / ayrıl",
+    "Alan sütunda tek başınaysa soldaki / sağdaki sütuna katılır. Bölünmüş sütunda etkin alan solda / sağda ayrı bir sütuna çıkarılır. Pencere yığınının tamamı birlikte taşınır.",
+    "Seçili pencereyi uygulamasının yığınına ekle / yığından çıkar",
     "Pin Deck uygulaması ekle / kaldır",
     "Masaüstü değiştir / pencere taşı",
-    "Komut modundan çık"
+    "Lider modundan çık"
   ],
   "setup": [
     "Başlarken",
@@ -75,8 +75,8 @@
     "Calmon’u yükle",
     "Calmon’u indir",
     ". Uygulamalar’a taşı.",
-    "Erişilebilirliğe izin ver",
-    "Calmon’u Erişilebilirlik listesine sürükle ve aç.",
+    "Erişilebilirlik İzni Ver",
+    "Calmon öğesini yukarıdaki listeye sürükleyin, ardından yanındaki anahtarı açarak Erişilebilirlik izni verin.",
     "Pencerelerini aç",
     "Sekme çubuğundan pencere seç. Yerleşim haritası tuş panelini açar.",
     "Calmon’un Dock simgesi yoktur. Menü çubuğunda bulabilirsin {icon}."
@@ -101,11 +101,11 @@
     ],
     [
       "Tüm pencereler döşenir mi?",
-      "Standart pencereler döşenir. İletişim kutuları, ayarlar ve sabit boyutlu pencereler yüzer. Ayarlar → İleri Düzey’den kural ekle."
+      "Standart pencereler döşenir. İletişim kutuları, ayarlar ve sabit boyutlu pencereler yüzer. Ayarlar → Gelişmiş bölümünden kural ekle."
     ],
     [
       "Calmon pencereleri masaüstleri arasında taşır mı?",
-      "Yalnızca sen taşıdığında. Numaralarla veya komut modunda masaüstü değiştir. Çıkışta Calmon kayıtlı pencere konumlarını geri yükler."
+      "Yalnızca sen taşıdığında. Numaralarla veya lider modunda masaüstü değiştir. Çıkışta Calmon kayıtlı pencere konumlarını geri yükler."
     ],
     [
       "Beta ücretsiz mi?",
@@ -113,7 +113,7 @@
     ],
     [
       "Nasıl güncellerim?",
-      "Calmon menüsünden Güncellemeleri Denetle’yi seç."
+      "Calmon menüsünden Güncellemeleri Denetle…’yi seç."
     ]
   ],
   "demo": [
@@ -121,11 +121,11 @@
     "Sürdür",
     "Demoyu yeniden başlat",
     "⌘ tuşuna iki kez basıp bırak",
-    "Komut modu · tuşlarla devam et",
-    "macOS kestirmesi · komut modu gerekmez",
+    "Lider Modu · tuşlarla devam et",
+    "macOS kestirmesi · lider modu gerekmez",
     "sonra",
     "Demo için JavaScript’i etkinleştir.",
-    "Komut modundan çıkıldı"
+    "Lider modundan çıkıldı"
   ],
   "menus": [
     "Dosya",

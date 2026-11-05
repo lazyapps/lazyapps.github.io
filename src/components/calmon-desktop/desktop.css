@@ -111,7 +111,9 @@
 .pd-tabbar .pd-deck-mark{position:relative;display:flex;align-items:flex-end;justify-content:center;width:var(--native-markWidth);height:var(--native-height);padding:0;background:transparent;overflow:visible}
 .pd-deck-mark>span{display:grid;place-items:center;position:absolute;bottom:var(--native-baseline);left:1px;right:1px;height:var(--native-markHeight);background:#000;border-radius:2px;font-size:calc(var(--native-markPixel) * 8);line-height:.69;letter-spacing:0}
 .pd-tabbar .pd-desktop-number{position:relative;display:block;width:var(--native-itemWidth);height:var(--native-height);background:transparent;font-size:calc(var(--native-numberPixel) * 8);padding:0}
-.pd-desktop-number>span{position:absolute;display:grid;place-items:center;left:var(--native-numberX);top:var(--native-numberY);width:var(--native-numberSide);height:var(--native-numberSide);border-radius:22.5%;background:#000}
+/* Tiny5 digits have a trailing pixel column; 1 has two. Center the visible glyph. */
+.pd-desktop-number>span{position:absolute;display:grid;place-items:center;left:var(--native-numberX);top:var(--native-numberY);width:var(--native-numberSide);height:var(--native-numberSide);border-radius:22.5%;background:#000;letter-spacing:-.125em}
+.pd-desktop-number[data-value="1"]>span{letter-spacing:-.25em}
 .pd-tabbar .pd-map{height:var(--native-height)}
 .pd-tabbar .pd-label{bottom:var(--native-baseline);font-size:16px;min-height:12px}
 .pd-tabbar .pd-pin-app .pd-label{font-size:14px;min-height:10px;left:3px;right:3px}

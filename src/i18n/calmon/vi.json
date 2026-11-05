@@ -21,16 +21,16 @@
   ],
   "features": [
     [
-      "Cuộn giữa các cột",
-      "Cửa sổ cuộn theo hàng ngang. Cột đang chọn chiếm phần lớn màn hình. Dùng phím mũi tên trong chế độ lệnh."
+      "Cột và chia trên dưới",
+      "Cửa sổ cuộn theo hàng ngang. Cột đang chọn chiếm phần lớn màn hình. Dùng phím mũi tên trong chế độ leader.\n\nMột cột có thể chia thành tối đa ba vùng từ trên xuống dưới, cùng hiển thị một lúc. Mỗi vùng chứa một cửa sổ hoặc một chồng cửa sổ của cùng ứng dụng."
     ],
     [
-      "Chồng cửa sổ",
-      "Các cửa sổ xếp ô của cùng ứng dụng tạo thành chồng. Bấm dấu chồng hoặc ⌘` để chuyển. Mỗi cột chứa tối đa ba chồng."
+      "Chồng cửa sổ cùng ứng dụng",
+      "Các cửa sổ cùng ứng dụng chồng lên nhau trong một vùng, mỗi lần chỉ hiện một cửa sổ. Bấm dấu chồng ở đầu cửa sổ hoặc nhấn ⌘` để chuyển.\n\nChế độ leader: Space → J / X — Thêm / đưa cửa sổ đang chọn ra khỏi chồng cửa sổ của ứng dụng."
     ],
     [
       "Cột cố định",
-      "Ghim cột vào mép trái hoặc phải. Cửa sổ khác cuộn bên cạnh. Tab đổi tiêu điểm trong chế độ lệnh."
+      "Ghim cột vào mép trái hoặc phải. Cửa sổ khác cuộn bên cạnh. Tab đổi tiêu điểm trong chế độ leader."
     ],
     [
       "Pin Deck",
@@ -42,7 +42,7 @@
     ],
     [
       "Cửa sổ và màn hình nền",
-      "Bấm số màn hình nền. Trong chế độ lệnh, nhập nhãn biểu tượng. Shift và 1–9 chuyển cửa sổ được chọn sang màn hình nền khác."
+      "Bấm số màn hình nền. Trong chế độ leader, nhập nhãn biểu tượng. Shift và 1–9 chuyển cửa sổ được chọn sang màn hình nền khác."
     ]
   ],
   "keyboard": [
@@ -62,11 +62,11 @@
   "actions": [
     "Chọn cột / cửa sổ",
     "Di chuyển cửa sổ hoặc cột",
-    "Gộp / tách cột",
-    "Tham gia / rời chồng ứng dụng",
+    "Khi vùng ở một mình trong cột, ghép vào cột bên trái / phải. Trong cột đã chia, tách vùng đang chọn thành cột riêng bên trái / phải. Cả chồng cửa sổ di chuyển cùng nhau.",
+    "Thêm / đưa cửa sổ đang chọn ra khỏi chồng cửa sổ của ứng dụng",
     "Thêm / bỏ ứng dụng Pin Deck",
     "Đổi màn hình nền / chuyển cửa sổ",
-    "Thoát chế độ lệnh"
+    "Thoát chế độ leader"
   ],
   "setup": [
     "Bắt đầu",
@@ -75,8 +75,8 @@
     "Cài đặt Calmon",
     "Tải về Calmon",
     ". Chuyển vào Ứng dụng.",
-    "Cho phép Trợ năng",
-    "Kéo Calmon vào danh sách Trợ năng rồi bật lên.",
+    "Cho phép quyền truy cập Trợ năng",
+    "Hãy kéo Calmon vào danh sách bên trên, sau đó bật công tắc bên cạnh ứng dụng để cho phép quyền truy cập Trợ năng.",
     "Mở các cửa sổ",
     "Chọn cửa sổ trên thanh tab. Bản đồ bố cục mở bảng phím.",
     "Calmon không có biểu tượng trên Dock. Bạn có thể tìm ở thanh menu {icon}."
@@ -105,7 +105,7 @@
     ],
     [
       "Calmon tự chuyển cửa sổ sang màn hình nền khác không?",
-      "Chỉ khi bạn chủ động chuyển. Đổi bằng số màn hình nền hoặc chế độ lệnh. Khi thoát, Calmon khôi phục vị trí đã lưu."
+      "Chỉ khi bạn chủ động chuyển. Đổi bằng số màn hình nền hoặc chế độ leader. Khi thoát, Calmon khôi phục vị trí đã lưu."
     ],
     [
       "Beta có miễn phí không?",
@@ -113,7 +113,7 @@
     ],
     [
       "Cập nhật thế nào?",
-      "Chọn Kiểm tra bản cập nhật trong menu Calmon."
+      "Chọn Kiểm tra bản cập nhật… trong menu Calmon."
     ]
   ],
   "demo": [
@@ -121,11 +121,11 @@
     "Tiếp tục",
     "Phát lại từ đầu",
     "Nhấn ⌘ hai lần rồi thả",
-    "Chế độ lệnh · tiếp tục dùng phím",
-    "Phím tắt macOS · không cần chế độ lệnh",
+    "Chế độ leader · tiếp tục dùng phím",
+    "Phím tắt macOS · không cần chế độ leader",
     "rồi",
     "Bật JavaScript để xem minh họa.",
-    "Đã thoát chế độ lệnh"
+    "Đã thoát chế độ leader"
   ],
   "menus": [
     "Tệp",

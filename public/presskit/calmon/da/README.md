@@ -18,35 +18,47 @@ Gratis under betaen
 
 En fejl eller en idé? Skriv til @lazyapps på X. Tak, fordi du hjælper os med at forbedre Calmon.
 
-Calmon har ikke et Dock-symbol. Find det på menulinjen.
+Vinduer ruller vandret. Den aktive kolonne fylder det meste af skærmen. Brug piletaster i leader-tilstand.
 
-Vinduer ruller vandret. Den aktive kolonne fylder det meste af skærmen. Brug piletaster i kommandotilstand.
+En kolonne kan deles i op til tre områder oven på hinanden, som er synlige samtidig. Hvert område kan rumme ét vindue eller en stak vinduer fra samme app.
 
-Flisevinduer fra samme app danner en stak. Klik på en stakmarkør, eller tryk ⌘` for at skifte. En kolonne rummer op til tre stakke.
+Vinduer fra samme app ligger oven på hinanden i ét område, og kun ét vises ad gangen. Klik på stakmarkeringerne øverst i vinduet, eller tryk ⌘` for at skifte.
 
-Fastgør en kolonne til venstre eller højre. Andre vinduer ruller ved siden af. Tab skifter fokus i kommandotilstand.
+Leader-tilstand: Space → J / X — Føj det valgte vindue til / fjern det fra appens vinduesstak.
+
+Fastgør en kolonne til venstre eller højre. Andre vinduer ruller ved siden af. Tab skifter fokus i leader-tilstand.
 
 Fastgør op til ti apps. Tilføj via Pin Deck-mærket, og fjern via ikonets menu. Rækkefølgen er ens på alle skærme.
 
 Sky Deck viser flydende vinduer, Max Deck vinduer i macOS’ fuldskærmstilstand. Klik på et ikon for at vende tilbage.
 
-Klik på et skrivebordsnummer. Skriv en ikonetiket i kommandotilstand. Shift og 1–9 flytter det valgte vindue til et andet skrivebord.
+Klik på et skrivebordsnummer. Skriv en ikonetiket i leader-tilstand. Shift og 1–9 flytter det valgte vindue til et andet skrivebord.
 
-Klik på et ikon i fanelinjen for at vælge et vindue. Control-klik åbner vindueshandlinger. Klik på layoutkortet for at åbne tastepanelet. Klik på en tast for at udføre kommandoen.
+Klik på et ikon i fanelinjen for at vælge et vindue. Control-klik åbner vindueshandlinger. Klik på layoutkortet for at åbne tastpanelet. Klik på en tast for at udføre kommandoen.
+
+Skjul det automatiske panel: Indstillinger → Tastatur → Tastpanel → Vis efter → Aldrig. Layoutkortet åbner altid panelet.
+
+Tryk to gange på ⌘, og slip. Fortsæt med kommandoer, mens vinduet er fremhævet. Esc afslutter tilstanden.
+
+, / . — Alene i kolonnen: føj området til kolonnen til venstre / højre. I en opdelt kolonne: flyt det aktive område til sin egen kolonne til venstre / højre. Hele vinduesstakken flyttes samlet.
+
+Space → J / X — Føj det valgte vindue til / fjern det fra appens vinduesstak
+
+macOS 26: Tilgængelighed; macOS 27+: Styring af enhed og adgang til data
 
 Tilgængelighed til at flytte, ændre størrelse på og vælge vinduer.
 
-Nej. Alle vindueshandlinger virker med musen. Layoutkortet åbner tastepanelet.
+Nej. Alle vindueshandlinger virker med musen. Layoutkortet åbner tastpanelet.
 
-De er slået fra som standard. Aktivér tre eller fire fingre i Indstillinger → Bevægelser. Hold Shift før bevægelsen for at bruge macOS’ oprindelige bevægelse.
+De er slået fra som standard. Aktivér tre eller fire fingre i Indstillinger → Bevægelser. Hold Shift før bevægelsen for at bruge macOS’ oprindelige bevægelse. Behold bevægelser med tre eller fire fingre slået til i Systemindstillinger > Pegefelt > Flere bevægelser.
 
 Standardvinduer gør. Dialoger, indstillinger og vinduer med fast størrelse flyder. Tilføj regler i Indstillinger → Avanceret.
 
-Kun når du flytter dem. Skift med skrivebordsnumre eller kommandotilstand. Når Calmon afsluttes, gendannes gemte vinduespositioner.
+Kun når du flytter dem. Skift med skrivebordsnumre eller leader-tilstand. Når Calmon afsluttes, gendannes gemte vinduespositioner.
 
 Ja, Calmon er gratis under betaen.
 
-Vælg Søg efter opdateringer i Calmon-menuen.
+Vælg Søg efter opdateringer… i Calmon-menuen.
 
 [X @lazyapps](https://x.com/lazyapps)
 
@@ -80,11 +92,11 @@ Appikon · PNG · 1024 × 1024. Originale pixels uden ændringer.
 
 Menulinjeikon · PNG · 44 × 44 · 2×
 
-### Tastepanel
+### Tastpanel
 
 [leader-keys.png](leader-keys.png)
 
-1616 × 732 · PNG
+1664 × 780 · PNG
 
 Originale pixels uden ændringer.
 

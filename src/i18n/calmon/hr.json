@@ -21,16 +21,16 @@
   ],
   "features": [
     [
-      "Pomični stupci",
-      "Prozori se pomiču vodoravno. Aktivni stupac ispunjava većinu zaslona. Koristi strelice u naredbenom načinu."
+      "Stupci i okomita podjela",
+      "Prozori se pomiču vodoravno. Aktivni stupac ispunjava većinu zaslona. Koristi strelice u načinu vodeće tipke.\n\nStupac se može podijeliti na najviše tri područja, jedno ispod drugoga, vidljiva istodobno. Svako područje sadrži jedan prozor ili stog prozora iste aplikacije."
     ],
     [
-      "Stogovi aplikacija",
-      "Popločani prozori iste aplikacije čine stog. Klikni oznaku stoga ili pritisni ⌘` za prebacivanje. Stupac prima do tri stoga."
+      "Stogovi prozora iste aplikacije",
+      "Prozori iste aplikacije preklapaju se u jednom području, a vidljiv je samo jedan. Klikni oznake stoga pri vrhu prozora ili pritisni ⌘` za prebacivanje.\n\nNačin vodeće tipke: Space → J / X — Dodaj odabrani prozor u stog njegove aplikacije / izdvoji ga iz stoga."
     ],
     [
       "Fiksni stupac",
-      "Prikvači stupac na lijevi ili desni rub. Drugi prozori pomiču se uz njega. Tab mijenja fokus u naredbenom načinu."
+      "Prikvači stupac na lijevi ili desni rub. Drugi prozori pomiču se uz njega. Tab mijenja fokus u načinu vodeće tipke."
     ],
     [
       "Pin Deck",
@@ -42,7 +42,7 @@
     ],
     [
       "Prozori i radne površine",
-      "Klikni broj radne površine. U naredbenom načinu upiši oznaku ikone. Shift i 1–9 premještaju odabrani prozor na drugu radnu površinu."
+      "Klikni broj radne površine. U načinu vodeće tipke upiši oznaku ikone. Shift i 1–9 premještaju odabrani prozor na drugu radnu površinu."
     ]
   ],
   "keyboard": [
@@ -62,11 +62,11 @@
   "actions": [
     "Odaberi stupac / prozor",
     "Premjesti prozor ili stupac",
-    "Spoji / odvoji stupac",
-    "Pridruži se / napusti stog aplikacije",
+    "Ako je područje samo u stupcu, pridruži ga lijevom / desnom stupcu. U podijeljenom stupcu izdvoji aktivno područje u novi stupac lijevo / desno. Cijeli stog premješta se zajedno.",
+    "Dodaj odabrani prozor u stog njegove aplikacije / izdvoji ga iz stoga",
     "Dodaj / ukloni aplikaciju Pin Deck",
     "Promijeni radnu površinu / premjesti prozor",
-    "Izađi iz naredbenog načina"
+    "Izađi iz načina vodeće tipke"
   ],
   "setup": [
     "Prvi koraci",
@@ -75,8 +75,8 @@
     "Instaliraj Calmon",
     "Preuzmi Calmon",
     ". Premjesti ga u Aplikacije.",
-    "Dopusti pristupačnost",
-    "Povuci Calmon na popis Pristupačnost i uključi ga.",
+    "Dopusti pristup za pristupačnost",
+    "Povucite Calmon na gornji popis, a zatim uključite prekidač pokraj aplikacije kako biste dopustili pristup za pristupačnost.",
     "Otvori prozore",
     "Odaberi prozor na traci kartica. Karta rasporeda otvara ploču tipki.",
     "Calmon nema ikonu u Docku. Pronađi ga na traci izbornika {icon}."
@@ -113,7 +113,7 @@
     ],
     [
       "Kako ažurirati?",
-      "Odaberi Provjeri ažuriranja u izborniku Calmon."
+      "Odaberi Provjeri ažuriranja… u izborniku Calmon."
     ]
   ],
   "demo": [
@@ -121,11 +121,11 @@
     "Nastavi",
     "Ponovi demonstraciju",
     "Pritisni ⌘ dvaput i otpusti",
-    "Naredbeni način · nastavi s tipkama",
-    "Prečac macOS-a · bez naredbenog načina",
+    "Način vodeće tipke · nastavi s tipkama",
+    "Prečac macOS-a · bez načina vodeće tipke",
     "zatim",
     "Uključi JavaScript za demonstraciju.",
-    "Naredbeni način zatvoren"
+    "Način vodeće tipke zatvoren"
   ],
   "menus": [
     "Datoteka",

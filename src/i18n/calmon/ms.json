@@ -21,16 +21,16 @@
   ],
   "features": [
     [
-      "Tatal lajur",
-      "Tetingkap menatal secara mendatar. Lajur aktif memenuhi kebanyakan skrin. Gunakan kekunci anak panah dalam mod perintah."
+      "Lajur dan pembahagian menegak",
+      "Tetingkap menatal secara mendatar. Lajur aktif memenuhi kebanyakan skrin. Gunakan kekunci anak panah dalam mod leader.\n\nLajur boleh dibahagi kepada sehingga tiga ruang dari atas ke bawah yang kelihatan serentak. Setiap ruang boleh mengandungi satu tetingkap atau tindanan tetingkap app yang sama."
     ],
     [
-      "Tindanan app",
-      "Tetingkap jubin daripada app sama membentuk tindanan. Klik penanda tindanan atau tekan ⌘` untuk beralih. Satu lajur memuatkan hingga tiga tindanan."
+      "Tindanan tetingkap app",
+      "Tetingkap app yang sama bertindih dalam satu ruang, dengan satu sahaja kelihatan pada satu-satu masa. Klik penanda tindanan di bahagian atas tetingkap atau tekan ⌘` untuk bertukar.\n\nMod Leader: Space → J / X — Tambah / alih keluar tetingkap yang dipilih daripada tindanan appnya."
     ],
     [
       "Lajur tetap",
-      "Pin lajur pada tepi kiri atau kanan. Tetingkap lain menatal di sebelahnya. Tab menukar fokus dalam mod perintah."
+      "Pin lajur pada tepi kiri atau kanan. Tetingkap lain menatal di sebelahnya. Tab menukar fokus dalam mod leader."
     ],
     [
       "Pin Deck",
@@ -42,15 +42,15 @@
     ],
     [
       "Tetingkap & desktop",
-      "Klik nombor desktop. Dalam mod perintah, taip label ikon. Shift dan 1–9 mengalihkan tetingkap dipilih ke desktop lain."
+      "Klik nombor desktop. Dalam mod leader, taip label ikon. Shift dan 1–9 mengalihkan tetingkap dipilih ke desktop lain."
     ]
   ],
   "keyboard": [
     "Gunakan tetikus\nPelajari kekunci sambil menggunakan",
     "peta susun atur",
-    "Matikan panel automatik: Seting → Papan Kekunci → Panel Kekunci → Tunjukkan selepas → Jangan. Peta susun atur sentiasa membuka panel.",
+    "Matikan panel automatik: Seting → Papan Kekunci → Panel Kekunci → Tunjuk selepas → Jangan. Peta susun atur sentiasa membuka panel.",
     "Tekan ⌘ dua kali dan lepaskan. Semasa tetingkap diserlahkan, teruskan menggunakan perintah. Esc keluar daripada mod.",
-    "Panel kekunci",
+    "Panel Kekunci",
     "Kekunci penting"
   ],
   "mouse": [
@@ -62,11 +62,11 @@
   "actions": [
     "Pilih lajur / tetingkap",
     "Alih tetingkap atau lajur",
-    "Gabung / pisahkan lajur",
-    "Sertai / tinggalkan tindanan app",
+    "Jika ruang bersendirian dalam lajurnya, gabungkan ke lajur kiri / kanan. Dalam lajur terbahagi, asingkan ruang aktif ke lajur baharu di kiri / kanan. Seluruh tindanan bergerak bersama.",
+    "Tambah / alih keluar tetingkap yang dipilih daripada tindanan appnya",
     "Tambah / alih keluar app Pin Deck",
     "Tukar desktop / alih tetingkap",
-    "Keluar daripada mod perintah"
+    "Keluar daripada mod leader"
   ],
   "setup": [
     "Bermula",
@@ -75,8 +75,8 @@
     "Pasang Calmon",
     "Muat turun Calmon",
     ". Alihkan ke Aplikasi.",
-    "Benarkan kebolehcapaian",
-    "Seret Calmon ke senarai Kebolehcapaian, kemudian aktifkannya.",
+    "Benarkan Akses Kebolehcapaian",
+    "Seret Calmon ke senarai di atas, kemudian hidupkan suisnya untuk membenarkan akses Kebolehcapaian.",
     "Buka tetingkap anda",
     "Pilih tetingkap pada bar tab. Peta susun atur membuka panel kekunci.",
     "Calmon tiada ikon dalam Dock. Carinya pada bar menu {icon}."
@@ -105,7 +105,7 @@
     ],
     [
       "Adakah Calmon mengalih tetingkap antara desktop?",
-      "Hanya apabila anda mengalihkannya. Tukar melalui nombor desktop atau mod perintah. Apabila keluar, Calmon memulihkan kedudukan tersimpan."
+      "Hanya apabila anda mengalihkannya. Tukar melalui nombor desktop atau mod leader. Apabila keluar, Calmon memulihkan kedudukan tersimpan."
     ],
     [
       "Adakah beta percuma?",
@@ -113,7 +113,7 @@
     ],
     [
       "Bagaimana mengemas kini?",
-      "Pilih Semak Kemas Kini dalam menu Calmon."
+      "Pilih Semak Kemas Kini… dalam menu Calmon."
     ]
   ],
   "demo": [
@@ -121,11 +121,11 @@
     "Teruskan",
     "Mulakan semula demo",
     "Tekan ⌘ dua kali dan lepaskan",
-    "Mod perintah · teruskan dengan kekunci",
-    "Pintasan macOS · tanpa mod perintah",
+    "Mod Leader · teruskan dengan kekunci",
+    "Pintasan macOS · tanpa mod leader",
     "kemudian",
     "Aktifkan JavaScript untuk memainkan demo.",
-    "Mod perintah ditamatkan"
+    "Mod leader ditamatkan"
   ],
   "menus": [
     "Fail",

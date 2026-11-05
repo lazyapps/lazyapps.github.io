@@ -21,16 +21,16 @@
   ],
   "features": [
     [
-      "Scorri le colonne",
-      "Le finestre scorrono in orizzontale. La colonna attiva occupa quasi tutto lo schermo. Usa le frecce in modalità comandi."
+      "Colonne e divisione verticale",
+      "Le finestre scorrono in orizzontale. La colonna attiva occupa quasi tutto lo schermo. Usa le frecce in modalità leader.\n\nUna colonna può essere divisa in un massimo di tre aree, una sopra l’altra e visibili insieme. Ogni area contiene una finestra o una pila di finestre di un’app."
     ],
     [
-      "Pile di app",
-      "Le finestre affiancate della stessa app formano una pila. Fai clic sull’indicatore o premi ⌘` per cambiare finestra. Ogni colonna contiene fino a tre pile."
+      "Pile di finestre di un’app",
+      "Le finestre della stessa app si sovrappongono in un’unica area: ne è visibile una alla volta. Fai clic sugli indicatori in cima alla finestra o premi ⌘` per cambiare finestra.\n\nModalità leader: Space → J / X — Aggiungi / rimuovi la finestra selezionata dalla pila della sua app."
     ],
     [
       "Colonna fissa",
-      "Fissa una colonna a sinistra o a destra. Le altre finestre scorrono accanto. Tab cambia il focus in modalità comandi."
+      "Fissa una colonna a sinistra o a destra. Le altre finestre scorrono accanto. Tab cambia il focus in modalità leader."
     ],
     [
       "Pin Deck",
@@ -42,31 +42,31 @@
     ],
     [
       "Finestre e scrivanie",
-      "Fai clic sul numero di una scrivania. In modalità comandi, digita l’etichetta di un’icona. Shift e 1–9 spostano la finestra selezionata su un’altra scrivania."
+      "Fai clic sul numero di una scrivania. In modalità leader, digita l’etichetta di un’icona. Shift e 1–9 spostano la finestra selezionata su un’altra scrivania."
     ]
   ],
   "keyboard": [
     "Usa il mouse\nImpara i tasti strada facendo",
     "mappa del layout",
-    "Per nascondere il pannello automatico: Impostazioni → Tastiera → Pannello tasti → Mostra dopo → Mai. La mappa del layout apre sempre il pannello.",
+    "Per nascondere il pannello automatico: Impostazioni → Tastiera → Riquadro dei tasti → Mostra dopo → Mai. La mappa del layout apre sempre il pannello.",
     "Premi ⌘ due volte e rilascialo. Finché la finestra è evidenziata, puoi continuare a eseguire comandi. Esc esce dalla modalità.",
-    "Pannello tasti",
+    "Riquadro dei tasti",
     "Tasti essenziali"
   ],
   "mouse": [
     "Fai clic su un’icona nella barra delle schede per scegliere la finestra.",
     "Control-clic apre le azioni della finestra.",
-    "Fai clic sulla mappa del layout per aprire il pannello tasti.",
+    "Fai clic sulla mappa del layout per aprire il riquadro dei tasti.",
     "Fai clic su un tasto per eseguire il comando."
   ],
   "actions": [
     "Scegli colonna / finestra",
     "Sposta finestra o colonna",
-    "Unisci / separa colonna",
-    "Entra / esci dalla pila dell’app",
+    "Se l’area è sola nella colonna, uniscila alla colonna a sinistra / destra. In una colonna divisa, separa l’area attiva in una nuova colonna a sinistra / destra. La pila si sposta interamente.",
+    "Aggiungi / rimuovi la finestra selezionata dalla pila della sua app",
     "Aggiungi / rimuovi app da Pin Deck",
     "Cambia scrivania / sposta finestra",
-    "Esci dalla modalità comandi"
+    "Esci dalla modalità leader"
   ],
   "setup": [
     "Per iniziare",
@@ -75,10 +75,10 @@
     "Installa Calmon",
     "Scarica Calmon",
     ". Spostalo in Applicazioni.",
-    "Consenti l’accessibilità",
-    "Trascina Calmon nell’elenco Accessibilità e attivalo.",
+    "Consenti accesso ad Accessibilità",
+    "Trascina Calmon nell’elenco qui sopra, poi attiva il relativo interruttore per consentire l’accesso ad Accessibilità.",
     "Apri le finestre",
-    "Scegli una finestra dalla barra delle schede. La mappa del layout apre il pannello tasti.",
+    "Scegli una finestra dalla barra delle schede. La mappa del layout apre il riquadro dei tasti.",
     "Calmon non ha un’icona nel Dock. Lo trovi nella barra dei menu {icon}."
   ],
   "faq": [
@@ -93,7 +93,7 @@
     ],
     [
       "Devo ricordare le scorciatoie?",
-      "No. Tutte le azioni funzionano con il mouse. Apri il pannello tasti dalla mappa del layout."
+      "No. Tutte le azioni funzionano con il mouse. Apri il riquadro dei tasti dalla mappa del layout."
     ],
     [
       "Posso usare i gesti del trackpad?",
@@ -105,7 +105,7 @@
     ],
     [
       "Calmon sposta le finestre tra scrivanie?",
-      "Solo quando le sposti tu. Cambia scrivania con i numeri o la modalità comandi. All’uscita, Calmon ripristina le posizioni salvate."
+      "Solo quando le sposti tu. Cambia scrivania con i numeri o la modalità leader. All’uscita, Calmon ripristina le posizioni salvate."
     ],
     [
       "La beta è gratis?",
@@ -113,7 +113,7 @@
     ],
     [
       "Come si aggiorna?",
-      "Scegli Cerca aggiornamenti nel menu Calmon."
+      "Scegli Cerca aggiornamenti… nel menu Calmon."
     ]
   ],
   "demo": [
@@ -121,11 +121,11 @@
     "Continua",
     "Riavvia demo",
     "Premi ⌘ due volte e rilascialo",
-    "Modalità comandi · continua con i tasti",
-    "Scorciatoia macOS · senza modalità comandi",
+    "Modalità leader · continua con i tasti",
+    "Scorciatoia macOS · senza modalità leader",
     "poi",
     "Abilita JavaScript per vedere la demo.",
-    "Modalità comandi disattivata"
+    "Modalità leader disattivata"
   ],
   "menus": [
     "File",

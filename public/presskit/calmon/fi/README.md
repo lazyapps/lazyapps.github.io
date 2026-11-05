@@ -18,35 +18,47 @@ Maksuton betavaiheessa
 
 Löysitkö virheen tai keksitkö idean? Kerro @lazyapps-tilille X:ssä. Kiitos avustasi Calmonin kehittämisessä.
 
-Calmonilla ei ole Dock-kuvaketta. Löydät sen valikkoriviltä.
+Ikkunat vierivät vaakasuunnassa. Aktiivinen sarake täyttää suurimman osan näytöstä. Käytä nuolinäppäimiä leader-tilassa.
 
-Ikkunat vierivät vaakasuunnassa. Aktiivinen sarake täyttää suurimman osan näytöstä. Käytä nuolinäppäimiä komentotilassa.
+Sarakkeen voi jakaa enintään kolmeen allekkain olevaan alueeseen, jotka näkyvät yhtä aikaa. Kukin alue sisältää yhden ikkunan tai saman apin ikkunapinon.
 
-Saman apin laatoitetut ikkunat muodostavat pinon. Vaihda pinon merkistä tai painamalla ⌘`. Sarakkeeseen mahtuu kolme pinoa.
+Saman apin ikkunat ovat päällekkäin yhdellä alueella, ja vain yksi näkyy kerrallaan. Vaihda ikkunaa klikkaamalla ikkunan yläreunan pinomerkkejä tai painamalla ⌘`.
 
-Kiinnitä sarake vasempaan tai oikeaan reunaan. Muut ikkunat vierivät vieressä. Tab vaihtaa kohdistusta komentotilassa.
+Leader-tila: Space → J / X — Lisää valittu ikkuna apin pinoon / poista se pinosta.
+
+Kiinnitä sarake vasempaan tai oikeaan reunaan. Muut ikkunat vierivät vieressä. Tab vaihtaa kohdistusta leader-tilassa.
 
 Kiinnitä enintään kymmenen appia. Lisää Pin Deck -merkistä ja poista kuvakkeen valikosta. Järjestys on sama kaikilla näytöillä.
 
 Sky Deck listaa kelluvat ikkunat ja Max Deck macOS:n koko näytön ikkunat. Palaa ikkunaan klikkaamalla kuvaketta.
 
-Klikkaa työpöydän numeroa. Kirjoita kuvakkeen tunnus komentotilassa. Shift ja 1–9 siirtävät valitun ikkunan toiselle työpöydälle.
+Klikkaa työpöydän numeroa. Kirjoita kuvakkeen tunnus leader-tilassa. Shift ja 1–9 siirtävät valitun ikkunan toiselle työpöydälle.
 
 Valitse ikkuna klikkaamalla välilehtipalkin kuvaketta. Control-klikkaus avaa ikkunatoiminnot. Avaa näppäinpaneeli klikkaamalla asettelukarttaa. Suorita komento klikkaamalla näppäintä.
+
+Piilota automaattinen paneeli: Asetukset → Näppäimistö → Näppäinpaneeli → Näytä viiveellä → Ei koskaan. Asettelukartta avaa paneelin aina.
+
+Paina ⌘ kahdesti ja vapauta. Voit jatkaa komentojen käyttöä, kun ikkuna on korostettu. Esc poistuu tilasta.
+
+, / . — Yksin sarakkeessa: liitä alue vasempaan / oikeaan sarakkeeseen. Jaetussa sarakkeessa: irrota aktiivinen alue omaksi sarakkeekseen vasemmalle / oikealle. Ikkunapino siirtyy kokonaisena.
+
+Space → J / X — Lisää valittu ikkuna apin pinoon / poista se pinosta
+
+macOS 26: Käyttöapu; macOS 27+: Laitehallinta ja tietojen käyttö
 
 Käyttöapulupa ikkunoiden siirtoon, koon muuttamiseen ja valintaan.
 
 Ei. Kaikki ikkunatoiminnot toimivat hiirellä. Avaa näppäinpaneeli asettelukartasta.
 
-Ne ovat aluksi pois käytöstä. Ota kolmen tai neljän sormen pyyhkäisyt käyttöön kohdassa Asetukset → Eleet. Pidä Shift pohjassa ennen pyyhkäisyä käyttääksesi macOS:n alkuperäistä elettä.
+Ne ovat aluksi pois käytöstä. Ota kolmen tai neljän sormen pyyhkäisyt käyttöön kohdassa Asetukset → Eleet. Pidä Shift pohjassa ennen pyyhkäisyä käyttääksesi macOS:n alkuperäistä elettä. Pidä kolmen tai neljän sormen eleet käytössä kohdassa Järjestelmäasetukset > Ohjauslevy > Lisää eleitä.
 
-Tavalliset ikkunat kyllä. Valintaikkunat, asetukset ja kiinteän kokoiset ikkunat kelluvat. Lisää sääntöjä kohdassa Asetukset → Lisäasetukset.
+Tavalliset ikkunat kyllä. Valintaikkunat, asetukset ja kiinteän kokoiset ikkunat kelluvat. Lisää sääntöjä kohdassa Asetukset → Lisävalinnat.
 
-Vain kun siirrät ne itse. Vaihda työpöytänumeroilla tai komentotilassa. Lopetettaessa Calmon palauttaa tallennetut ikkunasijainnit.
+Vain kun siirrät ne itse. Vaihda työpöytänumeroilla tai leader-tilassa. Lopetettaessa Calmon palauttaa tallennetut ikkunasijainnit.
 
 Kyllä, Calmon on maksuton betavaiheessa.
 
-Valitse Calmon-valikosta Tarkista päivitykset.
+Valitse Calmon-valikosta Tarkista päivitykset….
 
 [X @lazyapps](https://x.com/lazyapps)
 
@@ -84,7 +96,7 @@ Valikkorivikuvake · PNG · 44 × 44 · 2×
 
 [leader-keys.png](leader-keys.png)
 
-1688 × 732 · PNG
+1736 × 780 · PNG
 
 Alkuperäiset pikselit muuttamattomina.
 

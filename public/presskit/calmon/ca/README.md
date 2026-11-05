@@ -18,35 +18,47 @@ Gratuït durant la beta
 
 Un error o una idea? Escriu a @lazyapps a X. Gràcies per ajudar-nos a millorar Calmon.
 
-Calmon no mostra cap icona al Dock. És a la barra de menús.
+Les finestres es desplacen horitzontalment. La columna activa ocupa gairebé tota la pantalla. Fes servir les fletxes en mode líder.
 
-Les finestres es desplacen horitzontalment. La columna activa ocupa gairebé tota la pantalla. Fes servir les fletxes en mode d’ordres.
+Una columna es pot dividir en fins a tres regions, una damunt de l’altra i visibles alhora. Cada regió pot contenir una finestra o una pila de finestres d’una app.
 
-Les finestres en mosaic d’una mateixa app formen una pila. Prem l’indicador o ⌘` per canviar. Cada columna admet fins a tres piles.
+Les finestres d’una mateixa app se superposen en una regió i només se’n mostra una cada vegada. Fes clic als indicadors de la part superior de la finestra o prem ⌘` per canviar de finestra.
 
-Fixa una columna a una vora. Les altres finestres es desplacen al costat. Tab canvia el focus en mode d’ordres.
+Mode líder: Space → J / X — Afegir / treure la finestra seleccionada de la pila de la seva app.
+
+Fixa una columna a una vora. Les altres finestres es desplacen al costat. Tab canvia el focus en mode líder.
 
 Fixa fins a deu apps. Afegeix-les amb la marca de Pin Deck i elimina-les des del menú de la icona. L’ordre és igual a tots els monitors.
 
 Sky Deck mostra finestres flotants i Max Deck les de pantalla completa nativa. Prem una icona per tornar a la seva finestra.
 
-Prem un número d’escriptori. En mode d’ordres, escriu l’etiqueta d’una icona. Shift i 1–9 mouen la finestra seleccionada a un altre escriptori.
+Prem un número d’escriptori. En mode líder, escriu l’etiqueta d’una icona. Shift i 1–9 mouen la finestra seleccionada a un altre escriptori.
 
 Prem una icona de la barra de pestanyes per triar una finestra. Control-clic obre les accions de finestra. Prem el mapa de disposició per obrir el tauler de tecles. Prem una tecla per executar l’ordre.
+
+Amaga el tauler automàtic: Configuració → Teclat → Tauler de tecles → Mostrar després de → Mai. El mapa de disposició sempre l’obre.
+
+Prem ⌘ dos cops i deixa anar. Mentre la finestra estigui ressaltada, pots encadenar ordres. Esc surt del mode.
+
+, / . — Si ocupa tota la columna, s’uneix a la columna de l’esquerra / dreta. En una columna dividida, la regió activa se separa en una columna nova a l’esquerra / dreta. La pila es mou sencera.
+
+Space → J / X — Afegir / treure la finestra seleccionada de la pila de la seva app
+
+macOS 26: Accessibilitat; macOS 27+: Control de dispositius i accés a les dades
 
 Accessibilitat per moure, redimensionar i seleccionar finestres.
 
 No. Totes les accions funcionen amb el ratolí. El mapa de disposició obre el tauler de tecles.
 
-Estan desactivats inicialment. Activa tres o quatre dits a Configuració → Gestos. Mantén Shift abans del gest per fer servir l’original de macOS.
+Estan desactivats inicialment. Activa tres o quatre dits a Configuració → Gestos. Mantén Shift abans del gest per fer servir l’original de macOS. Mantén activats els gestos de tres o quatre dits a Configuració del Sistema > Trackpad > Més gestos.
 
 Les estàndard sí. Diàlegs, configuració i finestres de mida fixa floten. Afegeix regles a Configuració → Avançat.
 
-Només quan les mous tu. Canvia amb números o amb el mode d’ordres. En sortir, Calmon restaura les posicions desades.
+Només quan les mous tu. Canvia amb números o amb el mode líder. En sortir, Calmon restaura les posicions desades.
 
 Sí, Calmon és gratuït durant la beta.
 
-Tria Cerca actualitzacions al menú de Calmon.
+Tria Comprova si hi ha actualitzacions… al menú de Calmon.
 
 [X @lazyapps](https://x.com/lazyapps)
 
@@ -84,7 +96,7 @@ Icona de la barra de menús · PNG · 44 × 44 · 2×
 
 [leader-keys.png](leader-keys.png)
 
-1472 × 732 · PNG
+1520 × 780 · PNG
 
 Píxels originals sense modificar.
 

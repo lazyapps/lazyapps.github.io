@@ -18,27 +18,39 @@ Besplatno tijekom bete
 
 Greška ili ideja? Piši @lazyapps na X-u. Hvala što pomažeš poboljšati Calmon.
 
-Calmon nema ikonu u Docku. Pronađi ga na traci izbornika.
+Prozori se pomiču vodoravno. Aktivni stupac ispunjava većinu zaslona. Koristi strelice u načinu vodeće tipke.
 
-Prozori se pomiču vodoravno. Aktivni stupac ispunjava većinu zaslona. Koristi strelice u naredbenom načinu.
+Stupac se može podijeliti na najviše tri područja, jedno ispod drugoga, vidljiva istodobno. Svako područje sadrži jedan prozor ili stog prozora iste aplikacije.
 
-Popločani prozori iste aplikacije čine stog. Klikni oznaku stoga ili pritisni ⌘` za prebacivanje. Stupac prima do tri stoga.
+Prozori iste aplikacije preklapaju se u jednom području, a vidljiv je samo jedan. Klikni oznake stoga pri vrhu prozora ili pritisni ⌘` za prebacivanje.
 
-Prikvači stupac na lijevi ili desni rub. Drugi prozori pomiču se uz njega. Tab mijenja fokus u naredbenom načinu.
+Način vodeće tipke: Space → J / X — Dodaj odabrani prozor u stog njegove aplikacije / izdvoji ga iz stoga.
+
+Prikvači stupac na lijevi ili desni rub. Drugi prozori pomiču se uz njega. Tab mijenja fokus u načinu vodeće tipke.
 
 Prikvači do deset aplikacija. Dodaj oznakom Pin Deck, ukloni iz izbornika ikone. Redoslijed je isti na svim zaslonima.
 
 Sky Deck prikazuje plutajuće, Max Deck izvorne prozore preko cijelog zaslona. Klikni ikonu za povratak u prozor.
 
-Klikni broj radne površine. U naredbenom načinu upiši oznaku ikone. Shift i 1–9 premještaju odabrani prozor na drugu radnu površinu.
+Klikni broj radne površine. U načinu vodeće tipke upiši oznaku ikone. Shift i 1–9 premještaju odabrani prozor na drugu radnu površinu.
 
 Klikni ikonu na traci kartica za odabir prozora. Control-klik otvara radnje prozora. Klikni kartu rasporeda za otvaranje ploče tipki. Klikni tipku za izvršavanje naredbe.
+
+Isključi automatsku ploču: Postavke → Tipkovnica → Ploča tipki → Prikaži nakon → Nikad. Karta rasporeda uvijek otvara ploču.
+
+Pritisni ⌘ dvaput i otpusti. Dok je prozor istaknut, nastavi s naredbama. Esc izlazi iz načina.
+
+, / . — Ako je područje samo u stupcu, pridruži ga lijevom / desnom stupcu. U podijeljenom stupcu izdvoji aktivno područje u novi stupac lijevo / desno. Cijeli stog premješta se zajedno.
+
+Space → J / X — Dodaj odabrani prozor u stog njegove aplikacije / izdvoji ga iz stoga
+
+macOS 26: Pristupačnost; macOS 27+: Upravljanje uređajem i pristup podacima
 
 Pristupačnost za premještanje, promjenu veličine i odabir prozora.
 
 Ne. Sve radnje rade mišem. Karta rasporeda otvara ploču tipki.
 
-Početno su isključene. Uključi tri ili četiri prsta u Postavke → Geste. Drži Shift prije geste za izvornu gestu macOS-a.
+Početno su isključene. Uključi tri ili četiri prsta u Postavke → Geste. Drži Shift prije geste za izvornu gestu macOS-a. Ostavite uključene geste s tri ili četiri prsta u Postavkama sustava > Dodirna površina > Ostale geste.
 
 Standardni da. Dijalozi, postavke i prozori fiksne veličine plutaju. Dodaj pravila u Postavke → Napredno.
 
@@ -46,7 +58,7 @@ Samo kad ih ti premjestiš. Prebacuj brojevima ili naredbenim načinom. Pri izla
 
 Da, Calmon je besplatan tijekom bete.
 
-Odaberi Provjeri ažuriranja u izborniku Calmon.
+Odaberi Provjeri ažuriranja… u izborniku Calmon.
 
 [X @lazyapps](https://x.com/lazyapps)
 
@@ -84,7 +96,7 @@ Ikona trake izbornika · PNG · 44 × 44 · 2×
 
 [leader-keys.png](leader-keys.png)
 
-1688 × 732 · PNG
+1736 × 780 · PNG
 
 Izvorni pikseli bez izmjena.
 

@@ -95,7 +95,7 @@ export const pressKits = originals.map(kit => {
     let summary = t ? plain(t.sub ?? t.description) : kit.summary.en;
     let description = t ? plain(t.description) : kit.description.en;
     if (kit.slug === 'doze') description = [t.eyebrow, t.headline.join(' '), t.description, t.compatibility, ...t.features.map(item => item[1]), t.awakeNote, ...t.steps, ...t.faqs.map(item => item[1]), t.license].join('\n\n');
-    if (kit.slug === 'calmon') description = [t.compatibility, t.displayNote, t.availability, t.releaseNote, t.menuBarNote.replace('{icon}', '').replace(/ +([.。])/g, '$1').trim(), ...t.features.map(item => item[1]), t.keyboardBody, ...t.faqs.slice(1).map(item => item[1])].join('\n\n');
+    if (kit.slug === 'calmon') description = [t.compatibility, t.displayNote, t.availability, t.releaseNote, ...t.features.map(item => item[1]), t.keyboardBody, t.keyboardHelp, t.shortcutContext, ...t.shortcuts.slice(2,4).map(([keys, action]) => `${keys} — ${action}`), t.permissionPanes.map(([system, pane]) => `${system}: ${pane}`).join('; '), ...t.faqs.slice(1).map(item => item[1])].join('\n\n');
     if (kit.slug === 'chmate') description = [t.description, ...t.cards.map(card => card[1]), t.promiseCopy].map(plain).join('\n\n');
     if (kit.slug === 'fondfont') description = [t.description, ...t.features.map(feature => feature[1]), ...t.steps.map(step => step[1]), t.privacyCopy, t.faqs[1][1]].map(plain).join('\n\n');
     if (kit.slug === 'yiyan') { const copy = yiyanCopy[tag.toLowerCase()]; summary = copy.sub; description = [copy.sub, ...copy.cards.map(card => card[1]), ...copy.details.map(detail => detail[1].join(' '))].join('\n\n'); }

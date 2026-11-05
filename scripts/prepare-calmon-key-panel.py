@@ -36,6 +36,16 @@ def main(source):
     ] for language in ['en'] + sorted({language for entry in catalog.values() for language in entry.get('localizations', {})} - {'en'})}
     data_path = ROOT / 'src/components/calmon-key-panel.json'
     data_path.write_text(json.dumps(data, ensure_ascii=False, indent=2) + '\n')
+    terms = [
+        'Leader Mode', 'Key Panel', 'Settings', 'Keyboard', 'Gestures', 'Advanced',
+        'Show after', 'Never', 'Check for Updates…', 'Layout map', 'Accessibility',
+        'Device Control and Data Access', 'Allow Accessibility Access…',
+        'Drag %@ to the list above, then turn on its switch to allow Accessibility access.',
+        'Keep the three- or four-finger gestures enabled in System Settings > Trackpad > More Gestures.',
+    ]
+    terms_path = ROOT / 'src/i18n/calmon-app-terms.json'
+    terms_path.write_text(json.dumps({language: {term: localized(term, language) for term in terms}
+                                     for language in data}, ensure_ascii=False, indent=2) + '\n')
 
     text = ''.join(section['title'].upper() + ''.join(row['title'] + ''.join(row['keys']) for row in section['rows'])
                    for language in data.values() for section in language)
@@ -81,10 +91,10 @@ def main(source):
     font.save(output)
     record = {
         'appSourceCommit': subprocess.check_output(['git', '-C', str(source), 'rev-parse', 'HEAD'], text=True).strip(),
-        'method': 'Semantic HTML key reference, in all 38 app languages, with copy from the app catalog. Original RoundPix outlines subset to WOFF2 and renamed calmon Panel Web; no raster panel artwork.',
+        'method': 'Native key reference and website UI terminology in all 38 app languages, copied from the app catalog. Original RoundPix outlines subset to WOFF2 and renamed calmon Panel Web; no raster panel artwork.',
         'inputs': {str(path.relative_to(source)): digest(path) for path in [catalog_path, font_path]},
         'websiteInputs': {str(path.relative_to(ROOT)): digest(path) for path in [shortcuts_path, ROOT / 'src/i18n/calmon-translations.mjs', *sorted((ROOT / 'src/i18n/calmon').glob('*.json'))]},
-        'outputs': {str(path.relative_to(ROOT)): digest(path) for path in [data_path, system_path, output]},
+        'outputs': {str(path.relative_to(ROOT)): digest(path) for path in [data_path, system_path, output, terms_path]},
     }
     (ROOT / 'scripts/assets/calmon/key-panel-text-source.json').write_text(json.dumps(record, indent=2) + '\n')
     print(f'Key panel: {len(characters)} characters, {output.stat().st_size:,} font bytes, {len(data)} languages.')

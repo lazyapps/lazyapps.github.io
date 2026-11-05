@@ -21,16 +21,16 @@
   ],
   "features": [
     [
-      "Przewijanie kolumn",
-      "Okna przewijają się poziomo. Aktywna kolumna zajmuje większość ekranu. Używaj strzałek w trybie poleceń."
+      "Kolumny i podział w pionie",
+      "Okna przewijają się poziomo. Aktywna kolumna zajmuje większość ekranu. Używaj strzałek w trybie lidera.\n\nKolumnę można podzielić na maksymalnie trzy obszary, jeden nad drugim, widoczne jednocześnie. Każdy obszar mieści jedno okno lub stos okien tej samej aplikacji."
     ],
     [
-      "Stosy aplikacji",
-      "Kafelkowe okna tej samej aplikacji tworzą stos. Kliknij znacznik stosu lub naciśnij ⌘`, aby przełączyć okno. Kolumna mieści do trzech stosów."
+      "Stosy okien tej samej aplikacji",
+      "Okna tej samej aplikacji nakładają się w jednym obszarze. Widać tylko jedno naraz. Kliknij znaczniki stosu u góry okna lub naciśnij ⌘`, aby je przełączać.\n\nTryb lidera: Space → J / X — Dodaj / usuń wybrane okno ze stosu jego aplikacji."
     ],
     [
       "Stała kolumna",
-      "Przypnij kolumnę do lewej lub prawej krawędzi. Inne okna przewijają się obok. Tab zmienia fokus w trybie poleceń."
+      "Przypnij kolumnę do lewej lub prawej krawędzi. Inne okna przewijają się obok. Tab zmienia fokus w trybie lidera."
     ],
     [
       "Pin Deck",
@@ -42,7 +42,7 @@
     ],
     [
       "Okna i biurka",
-      "Kliknij numer biurka. W trybie poleceń wpisz etykietę ikony. Shift i 1–9 przenoszą wybrane okno na inne biurko."
+      "Kliknij numer biurka. W trybie lidera wpisz etykietę ikony. Shift i 1–9 przenoszą wybrane okno na inne biurko."
     ]
   ],
   "keyboard": [
@@ -62,11 +62,11 @@
   "actions": [
     "Wybierz kolumnę / okno",
     "Przenieś okno lub kolumnę",
-    "Dołącz / oddziel kolumnę",
-    "Dołącz / opuść stos aplikacji",
+    "Obszar sam w kolumnie: dołącz go do kolumny po lewej / prawej. W podzielonej kolumnie: wydziel aktywny obszar do osobnej kolumny po lewej / prawej. Cały stos przenosi się razem.",
+    "Dodaj / usuń wybrane okno ze stosu jego aplikacji",
     "Dodaj / usuń aplikację Pin Deck",
     "Przełącz biurko / przenieś okno",
-    "Zakończ tryb poleceń"
+    "Zakończ tryb lidera"
   ],
   "setup": [
     "Pierwsze kroki",
@@ -75,8 +75,8 @@
     "Zainstaluj Calmon",
     "Pobierz Calmon",
     ". Przenieś do Aplikacji.",
-    "Zezwól na dostępność",
-    "Przeciągnij Calmon na listę Dostępność i włącz go.",
+    "Zezwól na dostęp w ustawieniach Dostępność",
+    "Przeciągnij Calmon na powyższą listę, a następnie włącz przełącznik obok aplikacji, aby przyznać uprawnienia dostępności.",
     "Otwórz okna",
     "Wybierz okno na pasku kart. Mapa układu otwiera panel klawiszy.",
     "Calmon nie ma ikony w Docku. Znajdziesz go na pasku menu {icon}."
@@ -113,7 +113,7 @@
     ],
     [
       "Jak aktualizować?",
-      "Wybierz Sprawdź uaktualnienia w menu Calmon."
+      "Wybierz Sprawdź uaktualnienia… w menu Calmon."
     ]
   ],
   "demo": [
@@ -121,11 +121,11 @@
     "Kontynuuj",
     "Uruchom pokaz od nowa",
     "Naciśnij dwukrotnie ⌘ i puść",
-    "Tryb poleceń · używaj kolejnych klawiszy",
-    "Skrót macOS · bez trybu poleceń",
+    "Tryb lidera · używaj kolejnych klawiszy",
+    "Skrót macOS · bez trybu lidera",
     "potem",
     "Włącz JavaScript, aby obejrzeć pokaz.",
-    "Tryb poleceń zakończony"
+    "Tryb lidera zakończony"
   ],
   "menus": [
     "Plik",

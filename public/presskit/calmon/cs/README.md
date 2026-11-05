@@ -18,27 +18,39 @@ Během bety zdarma
 
 Chyba nebo nápad? Napište @lazyapps na X. Děkujeme, že pomáháte zlepšovat Calmon.
 
-Calmon nemá ikonu v Docku. Najdete jej v řádku nabídek.
+Okna se posouvají vodorovně. Aktivní sloupec zabírá většinu obrazovky. V režimu lídra používejte šipky.
 
-Okna se posouvají vodorovně. Aktivní sloupec zabírá většinu obrazovky. V příkazovém režimu používejte šipky.
+Sloupec lze rozdělit až na tři oblasti nad sebou, které jsou viditelné současně. Každá oblast může obsahovat jedno okno nebo sadu oken stejné aplikace.
 
-Dlaždicová okna stejné aplikace tvoří skupinu. Přepínejte kliknutím na značku nebo ⌘`. Sloupec pojme až tři skupiny.
+Okna stejné aplikace se překrývají v jedné oblasti a vždy je vidět jen jedno. Přepínejte kliknutím na značky nahoře v okně nebo stisknutím ⌘`.
 
-Připněte sloupec k levému nebo pravému okraji. Ostatní okna se posouvají vedle. Tab přepíná zaměření v příkazovém režimu.
+Režim lídra: Space → J / X — Přidat / odebrat vybrané okno ze sady jeho aplikace.
+
+Připněte sloupec k levému nebo pravému okraji. Ostatní okna se posouvají vedle. Tab přepíná zaměření v režimu lídra.
 
 Připněte až deset aplikací. Přidávejte značkou Pin Deck, odebírejte nabídkou ikony. Pořadí je stejné na všech monitorech.
 
 Sky Deck uvádí plovoucí okna, Max Deck nativní celoobrazovková okna. Kliknutím na ikonu se vrátíte do okna.
 
-Klikněte na číslo plochy. V příkazovém režimu napište štítek ikony. Shift a 1–9 přesunou vybrané okno na jinou plochu.
+Klikněte na číslo plochy. V režimu lídra napište štítek ikony. Shift a 1–9 přesunou vybrané okno na jinou plochu.
 
 Kliknutím na ikonu v pruhu karet vyberte okno. Control-kliknutí otevře akce okna. Kliknutím na mapu rozložení otevřete panel kláves. Kliknutím na klávesu spustíte příkaz.
+
+Vypnutí automatického panelu: Nastavení → Klávesnice → Panel kláves → Zobrazit po → Nikdy. Mapa rozložení panel otevře vždy.
+
+Dvakrát stiskněte ⌘ a uvolněte. Dokud je okno zvýrazněné, můžete zadávat další příkazy. Esc režim ukončí.
+
+, / . — Je-li oblast ve sloupci sama, připojí se ke sloupci vlevo / vpravo. V rozděleném sloupci se aktivní oblast oddělí do nového sloupce vlevo / vpravo. Sada oken se přesune celá.
+
+Space → J / X — Přidat / odebrat vybrané okno ze sady jeho aplikace
+
+macOS 26: Zpřístupnění; macOS 27+: Ovládání zařízení a přístup k datům
 
 Zpřístupnění pro přesun, změnu velikosti a výběr oken.
 
 Ne. Všechny akce fungují myší. Mapa rozložení otevře panel kláves.
 
-Zpočátku jsou vypnutá. Zapněte tři nebo čtyři prsty v Nastavení → Gesta. Před gestem držte Shift pro původní gesto macOS.
+Zpočátku jsou vypnutá. Zapněte tři nebo čtyři prsty v Nastavení → Gesta. Před gestem držte Shift pro původní gesto macOS. Ponechte zapnutá gesta třemi nebo čtyřmi prsty v Nastavení systému > Trackpad > Další gesta.
 
 Standardní ano. Dialogy, nastavení a okna pevné velikosti plavou. Pravidla přidejte v Nastavení → Pokročilé.
 
@@ -46,7 +58,7 @@ Jen když je přesunete vy. Přepínejte čísly ploch nebo příkazovým režim
 
 Ano, během bety je Calmon zdarma.
 
-V nabídce Calmon vyberte Vyhledat aktualizace.
+V nabídce Calmon vyberte Vyhledat aktualizace….
 
 [X @lazyapps](https://x.com/lazyapps)
 
@@ -84,7 +96,7 @@ Ikona řádku nabídek · PNG · 44 × 44 · 2×
 
 [leader-keys.png](leader-keys.png)
 
-1430 × 732 · PNG
+1478 × 780 · PNG
 
 Původní pixely beze změn.
 

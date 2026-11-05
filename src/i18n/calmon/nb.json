@@ -21,16 +21,16 @@
   ],
   "features": [
     [
-      "Rull mellom kolonner",
-      "Vinduer ruller vannrett. Den aktive kolonnen fyller det meste av skjermen. Bruk piltastene i kommandomodus."
+      "Kolonner og loddrett deling",
+      "Vinduer ruller vannrett. Den aktive kolonnen fyller det meste av skjermen. Bruk piltastene i leader-modus.\n\nEn kolonne kan deles i opptil tre områder over hverandre som vises samtidig. Hvert område kan inneholde ett vindu eller en stabel vinduer fra samme app."
     ],
     [
-      "Appstabler",
-      "Flislagte vinduer fra samme app danner en stabel. Klikk på en stabelmarkør eller trykk ⌘` for å bytte. En kolonne rommer opptil tre stabler."
+      "Vindusstabler fra samme app",
+      "Vinduer fra samme app ligger oppå hverandre i ett område, og bare ett vises om gangen. Klikk på stabelmerkene øverst i vinduet, eller trykk ⌘` for å bytte.\n\nLeader-modus: Space → J / X — Legg det valgte vinduet til / fjern det fra appens vindusstabel."
     ],
     [
       "Fast kolonne",
-      "Fest en kolonne til venstre eller høyre. Andre vinduer ruller ved siden av. Tab bytter fokus i kommandomodus."
+      "Fest en kolonne til venstre eller høyre. Andre vinduer ruller ved siden av. Tab bytter fokus i leader-modus."
     ],
     [
       "Pin Deck",
@@ -42,7 +42,7 @@
     ],
     [
       "Vinduer og skrivebord",
-      "Klikk på et skrivebordsnummer. Skriv en symboletikett i kommandomodus. Shift og 1–9 flytter det valgte vinduet til et annet skrivebord."
+      "Klikk på et skrivebordsnummer. Skriv en symboletikett i leader-modus. Shift og 1–9 flytter det valgte vinduet til et annet skrivebord."
     ]
   ],
   "keyboard": [
@@ -62,11 +62,11 @@
   "actions": [
     "Velg kolonne / vindu",
     "Flytt vindu eller kolonne",
-    "Slå sammen / skill kolonne",
-    "Bli med i / forlat appstabel",
+    "Alene i kolonnen: legg området til kolonnen til venstre / høyre. I en delt kolonne: skill det aktive området ut i en egen kolonne til venstre / høyre. Hele stabelen flyttes samlet.",
+    "Legg det valgte vinduet til / fjern det fra appens vindusstabel",
     "Legg til / fjern Pin Deck-app",
     "Bytt skrivebord / flytt vindu",
-    "Avslutt kommandomodus"
+    "Avslutt leader-modus"
   ],
   "setup": [
     "Kom i gang",
@@ -75,8 +75,8 @@
     "Installer Calmon",
     "Last ned Calmon",
     ". Flytt det til Programmer.",
-    "Tillat tilgjengelighet",
-    "Dra Calmon til Tilgjengelighet-listen og slå det på.",
+    "Gi tilgang til Tilgjengelighet",
+    "Dra Calmon til listen over, og slå deretter på bryteren ved appen for å gi tilgang til Tilgjengelighet.",
     "Åpne vinduene dine",
     "Velg et vindu i fanelinjen. Layoutkartet åpner tastepanelet.",
     "Calmon har ikke et Dock-symbol. Du finner det i menylinjen {icon}."
@@ -105,7 +105,7 @@
     ],
     [
       "Flytter Calmon vinduer mellom skrivebord?",
-      "Bare når du flytter dem. Bytt med skrivebordsnumre eller kommandomodus. Når du avslutter, gjenoppretter Calmon lagrede vindusposisjoner."
+      "Bare når du flytter dem. Bytt med skrivebordsnumre eller leader-modus. Når du avslutter, gjenoppretter Calmon lagrede vindusposisjoner."
     ],
     [
       "Er betaen gratis?",
@@ -113,7 +113,7 @@
     ],
     [
       "Hvordan oppdaterer jeg?",
-      "Velg Søk etter oppdateringer i Calmon-menyen."
+      "Velg Se etter oppdateringer… i Calmon-menyen."
     ]
   ],
   "demo": [
@@ -121,11 +121,11 @@
     "Fortsett",
     "Start demo på nytt",
     "Trykk to ganger på ⌘ og slipp",
-    "Kommandomodus · fortsett med tastene",
-    "macOS-snarvei · uten kommandomodus",
+    "Leader-modus · fortsett med tastene",
+    "macOS-snarvei · uten leader-modus",
     "deretter",
     "Slå på JavaScript for å se demoen.",
-    "Kommandomodus avsluttet"
+    "Leader-modus avsluttet"
   ],
   "menus": [
     "Arkiv",

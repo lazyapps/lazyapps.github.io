@@ -18,35 +18,47 @@ Gratis tijdens de bèta
 
 Een fout gevonden of een idee? Laat het @lazyapps weten op X. Bedankt dat je Calmon helpt verbeteren.
 
-Calmon heeft geen Dock-symbool. Je vindt het in de menubalk.
+Vensters scrollen horizontaal. De actieve kolom vult bijna het hele scherm. Gebruik de pijltjestoetsen in de leadermodus.
 
-Vensters scrollen horizontaal. De actieve kolom vult bijna het hele scherm. Gebruik de pijltjestoetsen in de opdrachtmodus.
+Een kolom kan in maximaal drie gebieden boven elkaar worden verdeeld, die tegelijk zichtbaar zijn. Elk gebied bevat één venster of een stapel vensters van dezelfde app.
 
-Tegelvensters van dezelfde app vormen een stapel. Klik op een stapelmarkering of druk op ⌘` om te wisselen. Een kolom bevat maximaal drie stapels.
+Vensters van dezelfde app liggen over elkaar in één gebied. Er is telkens één zichtbaar. Klik op de stapelmarkeringen bovenaan het venster of druk op ⌘` om te wisselen.
 
-Zet een kolom links of rechts vast. Andere vensters scrollen ernaast. Tab wisselt de focus in de opdrachtmodus.
+Leadermodus: Space → J / X — Het geselecteerde venster toevoegen aan / verwijderen uit de stapel van de app.
+
+Zet een kolom links of rechts vast. Andere vensters scrollen ernaast. Tab wisselt de focus in de leadermodus.
 
 Zet maximaal tien apps vast. Voeg ze toe via de Pin Deck-markering en verwijder ze via het pictogrammenu. De volgorde geldt voor alle schermen.
 
 Sky Deck toont zwevende vensters, Max Deck de eigen schermvullende vensters van macOS. Klik op een pictogram om terug te keren.
 
-Klik op een bureaubladnummer. Typ in de opdrachtmodus een pictogramlabel. Shift met 1–9 verplaatst het geselecteerde venster naar een ander bureaublad.
+Klik op een bureaubladnummer. Typ in de leadermodus een pictogramlabel. Shift met 1–9 verplaatst het geselecteerde venster naar een ander bureaublad.
 
 Klik op een pictogram in de tabbladbalk om een venster te kiezen. Control-klik opent de vensteracties. Klik op de lay-outkaart om het toetsenpaneel te openen. Klik op een toets om de opdracht uit te voeren.
+
+Automatisch paneel verbergen: Instellingen → Toetsenbord → Toetsenpaneel → Toon na → Nooit. De lay-outkaart opent het paneel altijd.
+
+Druk tweemaal op ⌘ en laat los. Blijf opdrachten gebruiken zolang het venster gemarkeerd is. Esc sluit de modus.
+
+, / . — Alleen in de kolom: voeg het gebied toe aan de kolom links / rechts. In een verdeelde kolom: plaats het actieve gebied in een eigen kolom links / rechts. De hele stapel verhuist mee.
+
+Space → J / X — Het geselecteerde venster toevoegen aan / verwijderen uit de stapel van de app
+
+macOS 26: Toegankelijkheid; macOS 27+: Apparaatbeheer en gegevenstoegang
 
 Toegankelijkheid om vensters te verplaatsen, vergroten, verkleinen en selecteren.
 
 Nee. Alle vensteracties werken met de muis. De lay-outkaart opent het toetsenpaneel.
 
-Die staan eerst uit. Schakel drie of vier vingers in via Instellingen → Gebaren. Houd Shift vast vóór het vegen voor het oorspronkelijke macOS-gebaar.
+Die staan eerst uit. Schakel drie of vier vingers in via Instellingen → Gebaren. Houd Shift vast vóór het vegen voor het oorspronkelijke macOS-gebaar. Laat gebaren met drie of vier vingers ingeschakeld in Systeeminstellingen > Trackpad > Meer gebaren.
 
 Standaardvensters wel. Dialogen, instellingen en vensters met vaste afmetingen zweven. Voeg regels toe in Instellingen → Geavanceerd.
 
-Alleen als je ze zelf verplaatst. Wissel met bureaubladnummers of de opdrachtmodus. Bij afsluiten herstelt Calmon opgeslagen vensterposities.
+Alleen als je ze zelf verplaatst. Wissel met bureaubladnummers of de leadermodus. Bij afsluiten herstelt Calmon opgeslagen vensterposities.
 
 Ja, Calmon is gratis tijdens de bèta.
 
-Kies Zoek naar updates in het Calmon-menu.
+Kies Zoek naar updates… in het Calmon-menu.
 
 [X @lazyapps](https://x.com/lazyapps)
 
@@ -84,7 +96,7 @@ undefined · PNG · 44 × 44 · 2×
 
 [leader-keys.png](leader-keys.png)
 
-1652 × 732 · PNG
+1700 × 780 · PNG
 
 Voorbeeld van de native interface in deze taal; pixels ongewijzigd.
 

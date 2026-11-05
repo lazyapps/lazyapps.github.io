@@ -18,35 +18,47 @@ A béta alatt ingyenes
 
 Hibát találtál vagy ötleted van? Írj az X-en: @lazyapps. Köszönjük, hogy segítesz jobbá tenni a Calmont.
 
-A Calmonnak nincs Dock-ikonja. A menüsoron találod.
+Az ablakok vízszintesen görgethetők. Az aktív oszlop a képernyő nagy részét kitölti. Vezérbillentyű-módban használd a nyilakat.
 
-Az ablakok vízszintesen görgethetők. Az aktív oszlop a képernyő nagy részét kitölti. Parancsmódban használd a nyilakat.
+Egy oszlop legfeljebb három, egymás alatti, egyszerre látható területre osztható. Minden terület egy ablakot vagy egy app ablakainak csoportját tartalmazhatja.
 
-Azonos app csempézett ablakai csoportot alkotnak. Kattints a jelölőre vagy nyomj ⌘`-t a váltáshoz. Egy oszlopba három csoport fér.
+Azonos app ablakai egy területen fedik egymást; egyszerre csak egy látszik. Váltáshoz kattints az ablak tetején lévő csoportjelölőkre, vagy nyomd meg a ⌘` billentyűket.
 
-Rögzíts egy oszlopot bal vagy jobb oldalon. A többi ablak mellette görgethető. Parancsmódban a Tab vált fókuszt.
+Vezérbillentyű-mód: Space → J / X — A kijelölt ablak hozzáadása az app ablakcsoportjához / eltávolítása onnan.
+
+Rögzíts egy oszlopot bal vagy jobb oldalon. A többi ablak mellette görgethető. Vezérbillentyű-módban a Tab vált fókuszt.
 
 Legfeljebb tíz appot rögzíthetsz. A Pin Deck jelével adhatsz hozzá, az ikonmenüvel távolíthatsz el. A sorrend minden kijelzőn azonos.
 
 A Sky Deck a lebegő, a Max Deck a natív teljes képernyős ablakokat mutatja. Kattints az ikonra a visszatéréshez.
 
-Kattints az íróasztal számára. Parancsmódban írd be az ikon címkéjét. A Shift és 1–9 másik íróasztalra helyezi a kijelölt ablakot.
+Kattints az íróasztal számára. Vezérbillentyű-módban írd be az ikon címkéjét. A Shift és 1–9 másik íróasztalra helyezi a kijelölt ablakot.
 
 Kattints a lapsáv ikonjára az ablak kijelöléséhez. Control-kattintással nyílnak meg az ablakműveletek. Kattints az elrendezéstérképre a billentyűpanel megnyitásához. Kattints egy billentyűre a parancs végrehajtásához.
+
+Automatikus panel kikapcsolása: Beállítások → Billentyűzet → Billentyűpanel → Megjelenés ennyi után → Soha. Az elrendezéstérkép mindig megnyitja a panelt.
+
+Nyomd meg kétszer a ⌘ billentyűt, majd engedd fel. Amíg az ablak kiemelt, folytathatod a parancsokat. Esc: kilépés.
+
+, / . — Ha a terület egyedül van az oszlopban, csatlakozik a bal / jobb oldali oszlophoz. Felosztott oszlopban az aktív terület külön oszlopba kerül balra / jobbra. Az ablakcsoport egyben mozog.
+
+Space → J / X — A kijelölt ablak hozzáadása az app ablakcsoportjához / eltávolítása onnan
+
+macOS 26: Kisegítő lehetőségek; macOS 27+: Eszközvezérlés és adathozzáférés
 
 Kisegítő hozzáférés az ablakok mozgatásához, átméretezéséhez és kijelöléséhez.
 
 Nem. Minden ablakművelet elvégezhető egérrel. Az elrendezéstérkép megnyitja a billentyűpanelt.
 
-Alapból ki vannak kapcsolva. Engedélyezd a három- vagy négyujjas gesztusokat: Beállítások → Gesztusok. Tartsd a Shiftet a gesztus előtt az eredeti macOS-gesztushoz.
+Alapból ki vannak kapcsolva. Engedélyezd a három- vagy négyujjas gesztusokat: Beállítások → Kézmozdulatok. Tartsd a Shiftet a gesztus előtt az eredeti macOS-gesztushoz. Hagyja engedélyezve a három- vagy négyujjas kézmozdulatokat itt: Rendszerbeállítások > Trackpad > További kézmozdulatok.
 
 A normál ablakok igen. A párbeszédek, beállítások és rögzített méretű ablakok lebegnek. Szabályok: Beállítások → Haladó.
 
-Csak ha te mozgatod őket. Válts az íróasztalszámokkal vagy parancsmódban. Kilépéskor a Calmon visszaállítja a mentett ablakpozíciókat.
+Csak ha te mozgatod őket. Válts az íróasztalszámokkal vagy vezérbillentyű-módban. Kilépéskor a Calmon visszaállítja a mentett ablakpozíciókat.
 
 Igen, a béta alatt a Calmon ingyenes.
 
-Válaszd a Frissítések keresése pontot a Calmon menüben.
+Válaszd a Frissítések keresése… pontot a Calmon menüben.
 
 [X @lazyapps](https://x.com/lazyapps)
 
@@ -84,7 +96,7 @@ Menüsorikon · PNG · 44 × 44 · 2×
 
 [leader-keys.png](leader-keys.png)
 
-1688 × 732 · PNG
+1736 × 780 · PNG
 
 Változatlan eredeti képpontok.
 

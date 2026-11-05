@@ -21,16 +21,16 @@
   ],
   "features": [
     [
-      "Görgethető oszlopok",
-      "Az ablakok vízszintesen görgethetők. Az aktív oszlop a képernyő nagy részét kitölti. Parancsmódban használd a nyilakat."
+      "Oszlopok és függőleges felosztás",
+      "Az ablakok vízszintesen görgethetők. Az aktív oszlop a képernyő nagy részét kitölti. Vezérbillentyű-módban használd a nyilakat.\n\nEgy oszlop legfeljebb három, egymás alatti, egyszerre látható területre osztható. Minden terület egy ablakot vagy egy app ablakainak csoportját tartalmazhatja."
     ],
     [
-      "Appcsoportok",
-      "Azonos app csempézett ablakai csoportot alkotnak. Kattints a jelölőre vagy nyomj ⌘`-t a váltáshoz. Egy oszlopba három csoport fér."
+      "Azonos app ablakcsoportjai",
+      "Azonos app ablakai egy területen fedik egymást; egyszerre csak egy látszik. Váltáshoz kattints az ablak tetején lévő csoportjelölőkre, vagy nyomd meg a ⌘` billentyűket.\n\nVezérbillentyű-mód: Space → J / X — A kijelölt ablak hozzáadása az app ablakcsoportjához / eltávolítása onnan."
     ],
     [
       "Rögzített oszlop",
-      "Rögzíts egy oszlopot bal vagy jobb oldalon. A többi ablak mellette görgethető. Parancsmódban a Tab vált fókuszt."
+      "Rögzíts egy oszlopot bal vagy jobb oldalon. A többi ablak mellette görgethető. Vezérbillentyű-módban a Tab vált fókuszt."
     ],
     [
       "Pin Deck",
@@ -42,13 +42,13 @@
     ],
     [
       "Ablakok és íróasztalok",
-      "Kattints az íróasztal számára. Parancsmódban írd be az ikon címkéjét. A Shift és 1–9 másik íróasztalra helyezi a kijelölt ablakot."
+      "Kattints az íróasztal számára. Vezérbillentyű-módban írd be az ikon címkéjét. A Shift és 1–9 másik íróasztalra helyezi a kijelölt ablakot."
     ]
   ],
   "keyboard": [
     "Használd az egeret\nA billentyűket útközben megtanulod",
     "elrendezéstérképre",
-    "Automatikus panel kikapcsolása: Beállítások → Billentyűzet → Billentyűpanel → Megjelenítés késleltetése → Soha. Az elrendezéstérkép mindig megnyitja a panelt.",
+    "Automatikus panel kikapcsolása: Beállítások → Billentyűzet → Billentyűpanel → Megjelenés ennyi után → Soha. Az elrendezéstérkép mindig megnyitja a panelt.",
     "Nyomd meg kétszer a ⌘ billentyűt, majd engedd fel. Amíg az ablak kiemelt, folytathatod a parancsokat. Esc: kilépés.",
     "Billentyűpanel",
     "Alapvető billentyűk"
@@ -62,11 +62,11 @@
   "actions": [
     "Oszlop / ablak kijelölése",
     "Ablak vagy oszlop mozgatása",
-    "Oszlop összevonása / szétválasztása",
-    "Csatlakozás / kilépés appcsoportból",
+    "Ha a terület egyedül van az oszlopban, csatlakozik a bal / jobb oldali oszlophoz. Felosztott oszlopban az aktív terület külön oszlopba kerül balra / jobbra. Az ablakcsoport egyben mozog.",
+    "A kijelölt ablak hozzáadása az app ablakcsoportjához / eltávolítása onnan",
     "Pin Deck-app hozzáadása / eltávolítása",
     "Íróasztalváltás / ablakmozgatás",
-    "Kilépés a parancsmódból"
+    "Kilépés a vezérbillentyű-módból"
   ],
   "setup": [
     "Első lépések",
@@ -76,7 +76,7 @@
     "Calmon letöltése",
     ". Helyezd az Alkalmazások mappába.",
     "Kisegítő hozzáférés engedélyezése",
-    "Húzd a Calmont a Kisegítő lehetőségek listájára, és kapcsold be.",
+    "Húzza a(z) Calmon appot a fenti listába, majd kapcsolja be a mellette lévő kapcsolót a kisegítő hozzáférés engedélyezéséhez.",
     "Ablakok megnyitása",
     "Válassz ablakot a lapsávon. Az elrendezéstérkép megnyitja a billentyűpanelt.",
     "A Calmonnak nincs Dock-ikonja. A menüsoron találod {icon}."
@@ -97,7 +97,7 @@
     ],
     [
       "Használhatok trackpadgesztusokat?",
-      "Alapból ki vannak kapcsolva. Engedélyezd a három- vagy négyujjas gesztusokat: Beállítások → Gesztusok. Tartsd a Shiftet a gesztus előtt az eredeti macOS-gesztushoz."
+      "Alapból ki vannak kapcsolva. Engedélyezd a három- vagy négyujjas gesztusokat: Beállítások → Kézmozdulatok. Tartsd a Shiftet a gesztus előtt az eredeti macOS-gesztushoz."
     ],
     [
       "Minden ablak csempézett lesz?",
@@ -105,7 +105,7 @@
     ],
     [
       "Áthelyez ablakokat a Calmon más íróasztalra?",
-      "Csak ha te mozgatod őket. Válts az íróasztalszámokkal vagy parancsmódban. Kilépéskor a Calmon visszaállítja a mentett ablakpozíciókat."
+      "Csak ha te mozgatod őket. Válts az íróasztalszámokkal vagy vezérbillentyű-módban. Kilépéskor a Calmon visszaállítja a mentett ablakpozíciókat."
     ],
     [
       "Ingyenes a béta?",
@@ -113,7 +113,7 @@
     ],
     [
       "Hogyan frissítsek?",
-      "Válaszd a Frissítések keresése pontot a Calmon menüben."
+      "Válaszd a Frissítések keresése… pontot a Calmon menüben."
     ]
   ],
   "demo": [
@@ -121,11 +121,11 @@
     "Folytatás",
     "Bemutató újraindítása",
     "Nyomd meg kétszer a ⌘ billentyűt, majd engedd fel",
-    "Parancsmód · folytasd a billentyűkkel",
-    "macOS-gyorsbillentyű · parancsmód nélkül",
+    "Vezérbillentyű-mód · folytasd a billentyűkkel",
+    "macOS-gyorsbillentyű · vezérbillentyű-mód nélkül",
     "majd",
     "Engedélyezd a JavaScriptet a bemutatóhoz.",
-    "Parancsmód bezárva"
+    "Vezérbillentyű-mód bezárva"
   ],
   "menus": [
     "Fájl",

@@ -21,16 +21,16 @@
   ],
   "features": [
     [
-      "Desplazar columnas",
-      "Las ventanas se desplazan en horizontal. La columna activa ocupa casi toda la pantalla. Usa las flechas en el modo de comandos."
+      "Columnas y división vertical",
+      "Las ventanas se desplazan en horizontal. La columna activa ocupa casi toda la pantalla. Usa las flechas en el modo líder.\n\nUna columna puede dividirse en hasta tres regiones, una encima de otra y visibles a la vez. Cada región contiene una ventana o una pila de ventanas de una app."
     ],
     [
-      "Pilas de apps",
-      "Las ventanas en mosaico de una misma app forman una pila. Pulsa su indicador o ⌘` para cambiar. Cada columna admite hasta tres pilas."
+      "Pilas de ventanas de una app",
+      "Las ventanas de una misma app se superponen en una región y solo se muestra una a la vez. Haz clic en las marcas de la parte superior de la ventana o presiona ⌘` para cambiar.\n\nModo líder: Space → J / X — Agregar / sacar la ventana seleccionada de la pila de su app."
     ],
     [
       "Columna fija",
-      "Fija una columna a un lado. Las otras ventanas se desplazan junto a ella. Tab cambia el foco en el modo de comandos."
+      "Fija una columna a un lado. Las otras ventanas se desplazan junto a ella. Tab cambia el foco en el modo líder."
     ],
     [
       "Pin Deck",
@@ -42,13 +42,13 @@
     ],
     [
       "Ventanas y escritorios",
-      "Pulsa un número de escritorio. En el modo de comandos, escribe la etiqueta de un icono. Shift y 1–9 mueven la ventana seleccionada a otro escritorio."
+      "Pulsa un número de escritorio. En el modo líder, escribe la etiqueta de un icono. Shift y 1–9 mueven la ventana seleccionada a otro escritorio."
     ]
   ],
   "keyboard": [
     "Usa el mouse\nAprende las teclas sobre la marcha",
     "mapa de distribución",
-    "Para ocultar el panel automático: Configuración → Teclado → Panel de teclas → Mostrar tras → Nunca. El mapa de distribución siempre lo abre.",
+    "Para ocultar el panel automático: Configuración → Teclado → Panel de teclas → Mostrar después de → Nunca. El mapa de distribución siempre lo abre.",
     "Pulsa ⌘ dos veces y suelta. Mientras la ventana esté resaltada, puedes encadenar comandos. Esc sale del modo.",
     "Panel de teclas",
     "Teclas esenciales"
@@ -62,11 +62,11 @@
   "actions": [
     "Elegir columna / ventana",
     "Mover ventana o columna",
-    "Unir / separar columna",
-    "Unir / salir de pila de app",
+    "Si la región ocupa toda la columna, se une a la columna izquierda / derecha. En una columna dividida, la región activa pasa a una columna independiente a la izquierda / derecha. La pila se mueve completa.",
+    "Agregar / sacar la ventana seleccionada de la pila de su app",
     "Añadir / quitar app de Pin Deck",
     "Cambiar escritorio / mover ventana",
-    "Salir del modo de comandos"
+    "Salir del modo líder"
   ],
   "setup": [
     "Primeros pasos",
@@ -76,7 +76,7 @@
     "Descargar Calmon",
     ". Muévelo a Aplicaciones.",
     "Permitir acceso de accesibilidad",
-    "Arrastra Calmon a la lista de Accesibilidad y actívalo.",
+    "Arrastra Calmon a la lista de arriba y, después, activa su interruptor para permitir el acceso de accesibilidad.",
     "Abrir ventanas",
     "Elige una ventana en la barra de pestañas. El mapa de distribución abre el panel de teclas.",
     "Calmon no muestra un icono en el Dock. Está en la barra de menús {icon}."
@@ -105,7 +105,7 @@
     ],
     [
       "¿Calmon cambia las ventanas de escritorio?",
-      "Solo cuando tú las mueves. Cambia de escritorio con sus números o el modo de comandos. Al salir, Calmon restaura las posiciones guardadas."
+      "Solo cuando tú las mueves. Cambia de escritorio con sus números o el modo líder. Al salir, Calmon restaura las posiciones guardadas."
     ],
     [
       "¿La beta es gratis?",
@@ -113,7 +113,7 @@
     ],
     [
       "¿Cómo se actualiza?",
-      "Elige «Buscar actualizaciones» en el menú de Calmon."
+      "Elige «Buscar actualizaciones…» en el menú de Calmon."
     ]
   ],
   "demo": [
@@ -121,11 +121,11 @@
     "Continuar",
     "Reiniciar demo",
     "Pulsa ⌘ dos veces y suelta",
-    "Modo de comandos · sigue usando las teclas",
-    "Atajo de macOS · sin modo de comandos",
+    "Modo líder · sigue usando las teclas",
+    "Atajo de macOS · sin modo líder",
     "luego",
     "Activa JavaScript para ver la demo.",
-    "Modo de comandos desactivado"
+    "Modo líder desactivado"
   ],
   "menus": [
     "Archivo",

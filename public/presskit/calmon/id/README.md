@@ -18,35 +18,47 @@ Gratis selama beta
 
 Menemukan bug atau punya ide? Hubungi @lazyapps di X. Terima kasih sudah membantu menyempurnakan Calmon.
 
-Calmon tidak memiliki ikon di Dock. Temukan di bar menu.
+Jendela bergulir mendatar. Kolom aktif mengisi sebagian besar layar. Gunakan tombol panah dalam mode leader.
 
-Jendela bergulir mendatar. Kolom aktif mengisi sebagian besar layar. Gunakan tombol panah dalam mode perintah.
+Kolom dapat dibagi menjadi hingga tiga area dari atas ke bawah yang terlihat bersamaan. Tiap area dapat berisi satu jendela atau tumpukan jendela dari satu app.
 
-Jendela ubin dari app yang sama membentuk tumpukan. Klik penanda tumpukan atau tekan ⌘` untuk beralih. Satu kolom menampung hingga tiga tumpukan.
+Jendela dari app yang sama saling menutupi dalam satu area; hanya satu yang terlihat setiap saat. Klik penanda tumpukan di bagian atas jendela atau tekan ⌘` untuk beralih.
 
-Sematkan kolom di tepi kiri atau kanan. Jendela lain bergulir di sampingnya. Tab mengganti fokus dalam mode perintah.
+Mode Leader: Space → J / X — Tambahkan / keluarkan jendela yang dipilih dari tumpukan app-nya.
+
+Sematkan kolom di tepi kiri atau kanan. Jendela lain bergulir di sampingnya. Tab mengganti fokus dalam mode leader.
 
 Sematkan hingga sepuluh app. Tambahkan lewat tanda Pin Deck, hapus lewat menu ikon. Urutannya sama di semua layar.
 
 Sky Deck memuat jendela mengambang, Max Deck jendela layar penuh bawaan macOS. Klik ikon untuk kembali ke jendelanya.
 
-Klik nomor desktop. Dalam mode perintah, ketik label ikon. Shift dan 1–9 memindahkan jendela terpilih ke desktop lain.
+Klik nomor desktop. Dalam mode leader, ketik label ikon. Shift dan 1–9 memindahkan jendela terpilih ke desktop lain.
 
 Klik ikon di bar tab untuk memilih jendela. Control-klik membuka tindakan jendela. Klik peta tata letak untuk membuka panel tombol. Klik tombol untuk menjalankan perintahnya.
+
+Matikan panel otomatis: Pengaturan → Papan Ketik → Panel Tombol → Tampilkan setelah → Jangan Pernah. Peta tata letak selalu membuka panel.
+
+Tekan ⌘ dua kali lalu lepaskan. Selama jendela disorot, lanjutkan perintah tanpa memicu ulang. Esc keluar dari mode.
+
+, / . — Jika area sendirian dalam kolom, gabungkan ke kolom kiri / kanan. Dalam kolom terbagi, pisahkan area aktif menjadi kolom baru di kiri / kanan. Seluruh tumpukan berpindah bersama.
+
+Space → J / X — Tambahkan / keluarkan jendela yang dipilih dari tumpukan app-nya
+
+macOS 26: Aksesibilitas; macOS 27+: Kontrol Perangkat dan Akses Data
 
 Aksesibilitas untuk memindahkan, mengubah ukuran, dan memilih jendela.
 
 Tidak. Semua tindakan dapat dilakukan dengan tetikus. Peta tata letak membuka panel tombol.
 
-Awalnya nonaktif. Aktifkan tiga atau empat jari di Pengaturan → Gestur. Tahan Shift sebelum mengusap untuk memakai gestur asli macOS.
+Awalnya nonaktif. Aktifkan tiga atau empat jari di Pengaturan → Gerakan. Tahan Shift sebelum mengusap untuk memakai gestur asli macOS. Biarkan gerakan tiga atau empat jari aktif di Pengaturan Sistem > Trackpad > Gerakan Lainnya.
 
 Jendela standar menjadi ubin. Dialog, pengaturan, dan jendela berukuran tetap mengambang. Tambahkan aturan di Pengaturan → Lanjutan.
 
-Hanya saat Anda memindahkannya. Beralih dengan nomor desktop atau mode perintah. Saat keluar, Calmon memulihkan posisi jendela tersimpan.
+Hanya saat Anda memindahkannya. Beralih dengan nomor desktop atau mode leader. Saat keluar, Calmon memulihkan posisi jendela tersimpan.
 
 Ya, Calmon gratis selama beta.
 
-Pilih Periksa Pembaruan di menu Calmon.
+Pilih Periksa Pembaruan… di menu Calmon.
 
 [X @lazyapps](https://x.com/lazyapps)
 
@@ -80,11 +92,11 @@ Ikon aplikasi asli, PNG 1024 × 1024. Gambar, proporsi, dan transparansi diperta
 
 undefined · PNG · 44 × 44 · 2×
 
-### Panel tombol
+### Panel Tombol
 
 [leader-keys.png](leader-keys.png)
 
-1544 × 732 · PNG
+1592 × 780 · PNG
 
 Pratinjau antarmuka asli dalam bahasa ini; piksel tidak diubah.
 

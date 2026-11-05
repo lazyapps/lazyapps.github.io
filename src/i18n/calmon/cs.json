@@ -21,16 +21,16 @@
   ],
   "features": [
     [
-      "Posuvné sloupce",
-      "Okna se posouvají vodorovně. Aktivní sloupec zabírá většinu obrazovky. V příkazovém režimu používejte šipky."
+      "Sloupce a svislé dělení",
+      "Okna se posouvají vodorovně. Aktivní sloupec zabírá většinu obrazovky. V režimu lídra používejte šipky.\n\nSloupec lze rozdělit až na tři oblasti nad sebou, které jsou viditelné současně. Každá oblast může obsahovat jedno okno nebo sadu oken stejné aplikace."
     ],
     [
-      "Skupiny aplikací",
-      "Dlaždicová okna stejné aplikace tvoří skupinu. Přepínejte kliknutím na značku nebo ⌘`. Sloupec pojme až tři skupiny."
+      "Sady oken aplikace",
+      "Okna stejné aplikace se překrývají v jedné oblasti a vždy je vidět jen jedno. Přepínejte kliknutím na značky nahoře v okně nebo stisknutím ⌘`.\n\nRežim lídra: Space → J / X — Přidat / odebrat vybrané okno ze sady jeho aplikace."
     ],
     [
       "Pevný sloupec",
-      "Připněte sloupec k levému nebo pravému okraji. Ostatní okna se posouvají vedle. Tab přepíná zaměření v příkazovém režimu."
+      "Připněte sloupec k levému nebo pravému okraji. Ostatní okna se posouvají vedle. Tab přepíná zaměření v režimu lídra."
     ],
     [
       "Pin Deck",
@@ -42,7 +42,7 @@
     ],
     [
       "Okna a plochy",
-      "Klikněte na číslo plochy. V příkazovém režimu napište štítek ikony. Shift a 1–9 přesunou vybrané okno na jinou plochu."
+      "Klikněte na číslo plochy. V režimu lídra napište štítek ikony. Shift a 1–9 přesunou vybrané okno na jinou plochu."
     ]
   ],
   "keyboard": [
@@ -62,11 +62,11 @@
   "actions": [
     "Vybrat sloupec / okno",
     "Přesunout okno nebo sloupec",
-    "Připojit / oddělit sloupec",
-    "Připojit / opustit skupinu aplikace",
+    "Je-li oblast ve sloupci sama, připojí se ke sloupci vlevo / vpravo. V rozděleném sloupci se aktivní oblast oddělí do nového sloupce vlevo / vpravo. Sada oken se přesune celá.",
+    "Přidat / odebrat vybrané okno ze sady jeho aplikace",
     "Přidat / odebrat aplikaci Pin Deck",
     "Přepnout plochu / přesunout okno",
-    "Ukončit příkazový režim"
+    "Ukončit režim lídra"
   ],
   "setup": [
     "Začínáme",
@@ -75,8 +75,8 @@
     "Nainstalujte Calmon",
     "Stáhnout Calmon",
     ". Přesuňte jej do Aplikací.",
-    "Povolte zpřístupnění",
-    "Přetáhněte Calmon do seznamu Zpřístupnění a zapněte jej.",
+    "Povolit přístup ke Zpřístupnění",
+    "Přetáhněte Calmon do seznamu výše a pak zapněte jeho přepínač, abyste povolili přístup ke Zpřístupnění.",
     "Otevřete svá okna",
     "Vyberte okno v pruhu karet. Mapa rozložení otevře panel kláves.",
     "Calmon nemá ikonu v Docku. Najdete jej v řádku nabídek {icon}."
@@ -113,7 +113,7 @@
     ],
     [
       "Jak aktualizovat?",
-      "V nabídce Calmon vyberte Vyhledat aktualizace."
+      "V nabídce Calmon vyberte Vyhledat aktualizace…."
     ]
   ],
   "demo": [
@@ -121,11 +121,11 @@
     "Pokračovat",
     "Spustit ukázku znovu",
     "Dvakrát stiskněte ⌘ a uvolněte",
-    "Příkazový režim · zadávejte další příkazy",
-    "Zkratka macOS · bez příkazového režimu",
+    "Režim lídra · zadávejte další příkazy",
+    "Zkratka macOS · bez režimu lídra",
     "pak",
     "Pro ukázku zapněte JavaScript.",
-    "Příkazový režim ukončen"
+    "Režim lídra ukončen"
   ],
   "menus": [
     "Soubor",

@@ -21,16 +21,16 @@
   ],
   "features": [
     [
-      "Rulla mellan kolumner",
-      "Fönstren rullar vågrätt. Den aktiva kolumnen fyller större delen av skärmen. Använd piltangenterna i kommandoläget."
+      "Kolumner och lodrät delning",
+      "Fönstren rullar vågrätt. Den aktiva kolumnen fyller större delen av skärmen. Använd piltangenterna i leader-läget.\n\nEn kolumn kan delas i upp till tre områden ovanför varandra som visas samtidigt. Varje område kan innehålla ett fönster eller en stapel fönster från samma app."
     ],
     [
-      "Appstaplar",
-      "Samma apps sida vid sida-fönster bildar en stapel. Klicka på en stapelmarkering eller tryck ⌘` för att växla. En kolumn rymmer upp till tre staplar."
+      "Fönsterstaplar från samma app",
+      "Fönster från samma app ligger ovanpå varandra i ett område, och bara ett visas åt gången. Klicka på stapelmarkeringarna högst upp i fönstret eller tryck ⌘` för att växla.\n\nLeader-läge: Space → J / X — Lägg till / ta bort det valda fönstret från appens fönsterstapel."
     ],
     [
       "Fast kolumn",
-      "Fäst en kolumn vid vänster eller höger kant. Andra fönster rullar bredvid. Tab växlar fokus i kommandoläget."
+      "Fäst en kolumn vid vänster eller höger kant. Andra fönster rullar bredvid. Tab växlar fokus i leader-läget."
     ],
     [
       "Pin Deck",
@@ -42,7 +42,7 @@
     ],
     [
       "Fönster och skrivbord",
-      "Klicka på ett skrivbordsnummer. Skriv en symboletikett i kommandoläget. Shift och 1–9 flyttar det valda fönstret till ett annat skrivbord."
+      "Klicka på ett skrivbordsnummer. Skriv en symboletikett i leader-läget. Shift och 1–9 flyttar det valda fönstret till ett annat skrivbord."
     ]
   ],
   "keyboard": [
@@ -62,11 +62,11 @@
   "actions": [
     "Välj kolumn / fönster",
     "Flytta fönster eller kolumn",
-    "Anslut till / lämna kolumn",
-    "Anslut till / lämna appstapel",
+    "Ensam i kolumnen: lägg till området i kolumnen till vänster / höger. I en delad kolumn: flytta det aktiva området till en egen kolumn till vänster / höger. Hela stapeln flyttas tillsammans.",
+    "Lägg till / ta bort det valda fönstret från appens fönsterstapel",
     "Lägg till / ta bort Pin Deck-app",
     "Byt skrivbord / flytta fönster",
-    "Avsluta kommandoläget"
+    "Avsluta leader-läget"
   ],
   "setup": [
     "Kom igång",
@@ -76,7 +76,7 @@
     "Hämta Calmon",
     ". Flytta det till Program.",
     "Tillåt hjälpmedelsåtkomst",
-    "Dra Calmon till listan Hjälpmedel och slå på det.",
+    "Dra Calmon till listan ovan och slå sedan på reglaget bredvid appen för att tillåta hjälpmedelsåtkomst.",
     "Öppna dina fönster",
     "Välj fönster i flikraden. Layoutkartan öppnar tangentpanelen.",
     "Calmon har ingen symbol i Dock. Du hittar den i menyraden {icon}."
@@ -105,7 +105,7 @@
     ],
     [
       "Flyttar Calmon fönster mellan skrivbord?",
-      "Bara när du flyttar dem. Växla med skrivbordsnummer eller kommandoläget. När du avslutar återställer Calmon sparade fönsterpositioner."
+      "Bara när du flyttar dem. Växla med skrivbordsnummer eller leader-läget. När du avslutar återställer Calmon sparade fönsterpositioner."
     ],
     [
       "Är betan gratis?",
@@ -113,7 +113,7 @@
     ],
     [
       "Hur uppdaterar jag?",
-      "Välj Sök efter uppdateringar i Calmon-menyn."
+      "Välj Sök efter uppdateringar… i Calmon-menyn."
     ]
   ],
   "demo": [
@@ -121,11 +121,11 @@
     "Fortsätt",
     "Starta om demo",
     "Tryck två gånger på ⌘ och släpp",
-    "Kommandoläge · fortsätt använda tangenterna",
-    "macOS-kortkommando · utan kommandoläge",
+    "Leader-läge · fortsätt använda tangenterna",
+    "macOS-kortkommando · utan leader-läge",
     "sedan",
     "Aktivera JavaScript för att visa demon.",
-    "Kommandoläget avslutat"
+    "Leader-läget avslutat"
   ],
   "menus": [
     "Arkiv",

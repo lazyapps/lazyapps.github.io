@@ -18,35 +18,47 @@ Während der Beta kostenlos
 
 Fehler gefunden oder eine Idee? Schreib @lazyapps auf X. Danke, dass du Calmon besser machst.
 
-Calmon hat kein Dock-Symbol. Du findest es in der Menüleiste.
+Fenster scrollen horizontal. Die aktive Spalte füllt den Großteil des Bildschirms. Im Leader-Modus mit den Pfeiltasten wechseln.
 
-Fenster scrollen horizontal. Die aktive Spalte füllt den Großteil des Bildschirms. Im Befehlsmodus mit den Pfeiltasten wechseln.
+Eine Spalte lässt sich in bis zu drei Bereiche untereinander aufteilen, die gleichzeitig sichtbar sind. Jeder Bereich enthält ein Fenster oder einen App-Stapel.
 
-Gekachelte Fenster derselben App bilden einen Stapel. Mit Stapelmarkierung oder ⌘` wechseln. Eine Spalte fasst bis zu drei Stapel.
+Fenster derselben App liegen in einem Bereich übereinander. Jeweils nur eines ist sichtbar. Über die Stapelmarkierungen oben am Fenster oder mit ⌘` wechselst du zwischen ihnen.
 
-Eine Spalte am linken oder rechten Rand festhalten. Andere Fenster scrollen daneben. Im Befehlsmodus wechselt Tab den Fokus.
+Leader-Modus: Space → J / X — Das ausgewählte Fenster zum App-Stapel hinzufügen / daraus entfernen.
+
+Eine Spalte am linken oder rechten Rand festhalten. Andere Fenster scrollen daneben. Im Leader-Modus wechselt Tab den Fokus.
 
 Bis zu zehn Apps anheften. Über die Pin Deck-Markierung hinzufügen, über das Symbolmenü entfernen. Die Reihenfolge gilt für alle Bildschirme.
 
 Sky Deck zeigt schwebende Fenster, Max Deck native Vollbildfenster. Ein Klick auf das Symbol öffnet das Fenster.
 
-Auf eine Schreibtischnummer klicken. Im Befehlsmodus ein Symbolkürzel eingeben. Mit Shift und 1–9 das gewählte Fenster auf einen anderen Schreibtisch verschieben.
+Auf eine Schreibtischnummer klicken. Im Leader-Modus ein Symbolkürzel eingeben. Mit Shift und 1–9 das gewählte Fenster auf einen anderen Schreibtisch verschieben.
 
 Ein Symbol in der Tableiste wählt das Fenster. Control-Klick öffnet die Fensteraktionen. Die Layoutübersicht öffnet die Tastenübersicht. Ein Klick auf eine Taste führt den Befehl aus.
+
+Automatische Anzeige ausschalten: Einstellungen → Tastatur → Tastenübersicht → Anzeigen nach → Nie. Die Layoutübersicht öffnet das Panel weiterhin.
+
+⌘ zweimal antippen und loslassen. Solange das Fenster hervorgehoben ist, kannst du weitere Befehle ausführen. Esc beendet den Modus.
+
+, / . — Allein in der Spalte: der linken / rechten Nachbarspalte beitreten. In einer geteilten Spalte: den aktiven Bereich als eigene Spalte links / rechts herauslösen. Ein App-Stapel wird dabei vollständig verschoben.
+
+Space → J / X — Das ausgewählte Fenster zum App-Stapel hinzufügen / daraus entfernen
+
+macOS 26: Bedienungshilfen; macOS 27+: Gerätesteuerung und Datenzugriff
 
 Bedienungshilfen erlauben, damit Calmon Fenster bewegen, skalieren und auswählen kann.
 
 Nein. Alle Fensteraktionen funktionieren mit der Maus. Die Layoutübersicht öffnet jederzeit die Tastenübersicht.
 
-In Einstellungen → Gesten Drei- oder Vier-Finger-Wischen aktivieren. Standardmäßig aus. Vor dem Wischen Shift halten, um die ursprüngliche macOS-Geste zu nutzen.
+In Einstellungen → Gesten Drei- oder Vier-Finger-Wischen aktivieren. Standardmäßig aus. Vor dem Wischen Shift halten, um die ursprüngliche macOS-Geste zu nutzen. Lass die Gesten mit drei oder vier Fingern unter Systemeinstellungen > Trackpad > Weitere Gesten aktiviert.
 
 Standardfenster werden gekachelt. Dialoge, Einstellungen und Fenster mit fester Größe schweben. Regeln unter Einstellungen → Erweitert hinzufügen.
 
-Nur wenn du es verschiebst. Über Schreibtischnummern oder den Befehlsmodus wechseln. Beim Beenden stellt Calmon gespeicherte Fensterpositionen wieder her.
+Nur wenn du es verschiebst. Über Schreibtischnummern oder den Leader-Modus wechseln. Beim Beenden stellt Calmon gespeicherte Fensterpositionen wieder her.
 
 Ja, während der Beta ist Calmon kostenlos.
 
-Im Calmon-Menü „Nach Updates suchen“ wählen.
+Im Calmon-Menü „Nach Updates suchen …“ wählen.
 
 [X @lazyapps](https://x.com/lazyapps)
 
@@ -84,7 +96,7 @@ Menüleistensymbol · PNG · 44 × 44 · 2×
 
 [leader-keys.png](leader-keys.png)
 
-1724 × 732 · PNG
+1772 × 780 · PNG
 
 Native Vorschau der Oberfläche in dieser Sprache; unveränderte Pixel.
 

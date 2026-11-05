@@ -18,27 +18,39 @@ Bezpłatnie w wersji beta
 
 Błąd lub pomysł? Napisz do @lazyapps na X. Dziękujemy za pomoc w ulepszaniu Calmon.
 
-Calmon nie ma ikony w Docku. Znajdziesz go na pasku menu.
+Okna przewijają się poziomo. Aktywna kolumna zajmuje większość ekranu. Używaj strzałek w trybie lidera.
 
-Okna przewijają się poziomo. Aktywna kolumna zajmuje większość ekranu. Używaj strzałek w trybie poleceń.
+Kolumnę można podzielić na maksymalnie trzy obszary, jeden nad drugim, widoczne jednocześnie. Każdy obszar mieści jedno okno lub stos okien tej samej aplikacji.
 
-Kafelkowe okna tej samej aplikacji tworzą stos. Kliknij znacznik stosu lub naciśnij ⌘`, aby przełączyć okno. Kolumna mieści do trzech stosów.
+Okna tej samej aplikacji nakładają się w jednym obszarze. Widać tylko jedno naraz. Kliknij znaczniki stosu u góry okna lub naciśnij ⌘`, aby je przełączać.
 
-Przypnij kolumnę do lewej lub prawej krawędzi. Inne okna przewijają się obok. Tab zmienia fokus w trybie poleceń.
+Tryb lidera: Space → J / X — Dodaj / usuń wybrane okno ze stosu jego aplikacji.
+
+Przypnij kolumnę do lewej lub prawej krawędzi. Inne okna przewijają się obok. Tab zmienia fokus w trybie lidera.
 
 Przypnij do dziesięciu aplikacji. Dodawaj znacznikiem Pin Deck, usuwaj z menu ikony. Kolejność jest wspólna dla wszystkich monitorów.
 
 Sky Deck pokazuje okna swobodne, a Max Deck natywne okna pełnoekranowe. Kliknij ikonę, aby wrócić do okna.
 
-Kliknij numer biurka. W trybie poleceń wpisz etykietę ikony. Shift i 1–9 przenoszą wybrane okno na inne biurko.
+Kliknij numer biurka. W trybie lidera wpisz etykietę ikony. Shift i 1–9 przenoszą wybrane okno na inne biurko.
 
 Kliknij ikonę na pasku kart, aby wybrać okno. Control-kliknięcie otwiera działania okna. Kliknij mapę układu, aby otworzyć panel klawiszy. Kliknij klawisz, aby wykonać polecenie.
+
+Wyłącz panel automatyczny: Ustawienia → Klawiatura → Panel klawiszy → Pokaż po → Nigdy. Mapa układu zawsze otwiera panel.
+
+Naciśnij dwukrotnie ⌘ i puść. Gdy okno jest podświetlone, możesz wykonywać kolejne polecenia. Esc kończy tryb.
+
+, / . — Obszar sam w kolumnie: dołącz go do kolumny po lewej / prawej. W podzielonej kolumnie: wydziel aktywny obszar do osobnej kolumny po lewej / prawej. Cały stos przenosi się razem.
+
+Space → J / X — Dodaj / usuń wybrane okno ze stosu jego aplikacji
+
+macOS 26: Dostępność; macOS 27+: Sterowanie urządzeniami i dostęp do danych
 
 Dostępność do przenoszenia, zmiany rozmiaru i wybierania okien.
 
 Nie. Wszystkie działania wykonasz myszą. Mapa układu otwiera panel klawiszy.
 
-Początkowo są wyłączone. Włącz gesty trzema lub czterema palcami w Ustawienia → Gesty. Przytrzymaj Shift przed gestem, aby użyć oryginalnego gestu macOS.
+Początkowo są wyłączone. Włącz gesty trzema lub czterema palcami w Ustawienia → Gesty. Przytrzymaj Shift przed gestem, aby użyć oryginalnego gestu macOS. Pozostaw włączone gesty trzema lub czterema palcami w Ustawieniach systemowych > Gładzik > Więcej gestów.
 
 Standardowe tak. Dialogi, ustawienia i okna o stałym rozmiarze są swobodne. Dodaj reguły w Ustawienia → Zaawansowane.
 
@@ -46,7 +58,7 @@ Tylko gdy je przeniesiesz. Przełączaj biurka numerami lub trybem poleceń. Prz
 
 Tak, Calmon jest bezpłatny w okresie beta.
 
-Wybierz Sprawdź uaktualnienia w menu Calmon.
+Wybierz Sprawdź uaktualnienia… w menu Calmon.
 
 [X @lazyapps](https://x.com/lazyapps)
 
@@ -84,7 +96,7 @@ Ikona paska menu · PNG · 44 × 44 · 2×
 
 [leader-keys.png](leader-keys.png)
 
-1220 × 732 · PNG
+1844 × 780 · PNG
 
 Oryginalne piksele bez zmian.
 

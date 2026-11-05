@@ -21,16 +21,16 @@
   ],
   "features": [
     [
-      "Rul mellem kolonner",
-      "Vinduer ruller vandret. Den aktive kolonne fylder det meste af skærmen. Brug piletaster i kommandotilstand."
+      "Kolonner og lodret opdeling",
+      "Vinduer ruller vandret. Den aktive kolonne fylder det meste af skærmen. Brug piletaster i leader-tilstand.\n\nEn kolonne kan deles i op til tre områder oven på hinanden, som er synlige samtidig. Hvert område kan rumme ét vindue eller en stak vinduer fra samme app."
     ],
     [
-      "Appstakke",
-      "Flisevinduer fra samme app danner en stak. Klik på en stakmarkør, eller tryk ⌘` for at skifte. En kolonne rummer op til tre stakke."
+      "Vinduesstakke fra samme app",
+      "Vinduer fra samme app ligger oven på hinanden i ét område, og kun ét vises ad gangen. Klik på stakmarkeringerne øverst i vinduet, eller tryk ⌘` for at skifte.\n\nLeader-tilstand: Space → J / X — Føj det valgte vindue til / fjern det fra appens vinduesstak."
     ],
     [
       "Fast kolonne",
-      "Fastgør en kolonne til venstre eller højre. Andre vinduer ruller ved siden af. Tab skifter fokus i kommandotilstand."
+      "Fastgør en kolonne til venstre eller højre. Andre vinduer ruller ved siden af. Tab skifter fokus i leader-tilstand."
     ],
     [
       "Pin Deck",
@@ -42,31 +42,31 @@
     ],
     [
       "Vinduer og skriveborde",
-      "Klik på et skrivebordsnummer. Skriv en ikonetiket i kommandotilstand. Shift og 1–9 flytter det valgte vindue til et andet skrivebord."
+      "Klik på et skrivebordsnummer. Skriv en ikonetiket i leader-tilstand. Shift og 1–9 flytter det valgte vindue til et andet skrivebord."
     ]
   ],
   "keyboard": [
     "Brug musen\nLær tasterne undervejs",
     "layoutkortet",
-    "Skjul det automatiske panel: Indstillinger → Tastatur → Tastepanel → Vis efter → Aldrig. Layoutkortet åbner altid panelet.",
+    "Skjul det automatiske panel: Indstillinger → Tastatur → Tastpanel → Vis efter → Aldrig. Layoutkortet åbner altid panelet.",
     "Tryk to gange på ⌘, og slip. Fortsæt med kommandoer, mens vinduet er fremhævet. Esc afslutter tilstanden.",
-    "Tastepanel",
+    "Tastpanel",
     "Vigtige taster"
   ],
   "mouse": [
     "Klik på et ikon i fanelinjen for at vælge et vindue.",
     "Control-klik åbner vindueshandlinger.",
-    "Klik på layoutkortet for at åbne tastepanelet.",
+    "Klik på layoutkortet for at åbne tastpanelet.",
     "Klik på en tast for at udføre kommandoen."
   ],
   "actions": [
     "Vælg kolonne / vindue",
     "Flyt vindue eller kolonne",
-    "Saml / adskil kolonne",
-    "Tilslut / forlad appstak",
+    "Alene i kolonnen: føj området til kolonnen til venstre / højre. I en opdelt kolonne: flyt det aktive område til sin egen kolonne til venstre / højre. Hele vinduesstakken flyttes samlet.",
+    "Føj det valgte vindue til / fjern det fra appens vinduesstak",
     "Tilføj / fjern Pin Deck-app",
     "Skift skrivebord / flyt vindue",
-    "Afslut kommandotilstand"
+    "Afslut leader-tilstand"
   ],
   "setup": [
     "Kom i gang",
@@ -75,10 +75,10 @@
     "Installer Calmon",
     "Hent Calmon",
     ". Flyt det til Programmer.",
-    "Tillad tilgængelighed",
-    "Træk Calmon til listen Tilgængelighed, og slå det til.",
+    "Tillad adgang til tilgængelighed",
+    "Træk Calmon til listen ovenfor, og slå derefter kontakten ved appen til for at tillade adgang til tilgængelighed.",
     "Åbn dine vinduer",
-    "Vælg et vindue i fanelinjen. Layoutkortet åbner tastepanelet.",
+    "Vælg et vindue i fanelinjen. Layoutkortet åbner tastpanelet.",
     "Calmon har ikke et Dock-symbol. Find det på menulinjen {icon}."
   ],
   "faq": [
@@ -93,7 +93,7 @@
     ],
     [
       "Skal jeg huske genveje?",
-      "Nej. Alle vindueshandlinger virker med musen. Layoutkortet åbner tastepanelet."
+      "Nej. Alle vindueshandlinger virker med musen. Layoutkortet åbner tastpanelet."
     ],
     [
       "Kan jeg bruge pegefeltbevægelser?",
@@ -105,7 +105,7 @@
     ],
     [
       "Flytter Calmon vinduer mellem skriveborde?",
-      "Kun når du flytter dem. Skift med skrivebordsnumre eller kommandotilstand. Når Calmon afsluttes, gendannes gemte vinduespositioner."
+      "Kun når du flytter dem. Skift med skrivebordsnumre eller leader-tilstand. Når Calmon afsluttes, gendannes gemte vinduespositioner."
     ],
     [
       "Er betaen gratis?",
@@ -113,7 +113,7 @@
     ],
     [
       "Hvordan opdaterer jeg?",
-      "Vælg Søg efter opdateringer i Calmon-menuen."
+      "Vælg Søg efter opdateringer… i Calmon-menuen."
     ]
   ],
   "demo": [
@@ -121,11 +121,11 @@
     "Fortsæt",
     "Start demo forfra",
     "Tryk to gange på ⌘, og slip",
-    "Kommandotilstand · fortsæt med tasterne",
-    "macOS-genvej · uden kommandotilstand",
+    "Leader-tilstand · fortsæt med tasterne",
+    "macOS-genvej · uden leader-tilstand",
     "derefter",
     "Slå JavaScript til for at se demoen.",
-    "Kommandotilstand afsluttet"
+    "Leader-tilstand afsluttet"
   ],
   "menus": [
     "Arkiv",

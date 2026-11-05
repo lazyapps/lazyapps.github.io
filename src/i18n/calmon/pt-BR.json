@@ -21,16 +21,16 @@
   ],
   "features": [
     [
-      "Rolar colunas",
-      "As janelas rolam na horizontal. A coluna ativa ocupa quase toda a tela. Use as setas no modo de comandos."
+      "Colunas e divisão vertical",
+      "As janelas rolam na horizontal. A coluna ativa ocupa quase toda a tela. Use as setas no modo líder.\n\nUma coluna pode ser dividida em até três áreas, uma acima da outra e visíveis ao mesmo tempo. Cada área contém uma janela ou uma pilha de janelas de um app."
     ],
     [
-      "Pilhas de apps",
-      "Janelas em mosaico do mesmo app formam uma pilha. Clique no indicador ou use ⌘` para alternar. Cada coluna comporta até três pilhas."
+      "Pilhas de janelas do mesmo app",
+      "As janelas do mesmo app ficam sobrepostas em uma área, com apenas uma visível por vez. Clique nos indicadores no topo da janela ou pressione ⌘` para alternar.\n\nModo Líder: Space → J / X — Adicionar / remover a janela selecionada da pilha do seu app."
     ],
     [
       "Coluna fixa",
-      "Fixe uma coluna em uma das bordas. As outras janelas rolam ao lado. Tab alterna o foco no modo de comandos."
+      "Fixe uma coluna em uma das bordas. As outras janelas rolam ao lado. Tab alterna o foco no modo líder."
     ],
     [
       "Pin Deck",
@@ -42,15 +42,15 @@
     ],
     [
       "Janelas e mesas",
-      "Clique no número de uma mesa. No modo de comandos, digite a etiqueta de um ícone. Shift e 1–9 movem a janela selecionada para outra mesa."
+      "Clique no número de uma mesa. No modo líder, digite a etiqueta de um ícone. Shift e 1–9 movem a janela selecionada para outra mesa."
     ]
   ],
   "keyboard": [
     "Use o mouse\nAprenda as teclas aos poucos",
     "mapa de layout",
-    "Para ocultar o painel automático: Ajustes → Teclado → Painel de teclas → Mostrar após → Nunca. O mapa de layout sempre abre o painel.",
+    "Para ocultar o painel automático: Ajustes → Teclado → Painel de Teclas → Mostrar após → Nunca. O mapa de layout sempre abre o painel.",
     "Pressione ⌘ duas vezes e solte. Enquanto a janela estiver destacada, continue usando os comandos. Esc sai do modo.",
-    "Painel de teclas",
+    "Painel de Teclas",
     "Teclas essenciais"
   ],
   "mouse": [
@@ -62,11 +62,11 @@
   "actions": [
     "Selecionar coluna / janela",
     "Mover janela ou coluna",
-    "Unir / separar coluna",
-    "Entrar / sair de pilha de app",
+    "Se a área estiver sozinha na coluna, junte-a à coluna à esquerda / direita. Em uma coluna dividida, separe a área ativa em uma coluna própria à esquerda / direita. A pilha inteira se move junto.",
+    "Adicionar / remover a janela selecionada da pilha do seu app",
     "Adicionar / remover app do Pin Deck",
     "Trocar de mesa / mover janela",
-    "Sair do modo de comandos"
+    "Sair do modo líder"
   ],
   "setup": [
     "Primeiros passos",
@@ -75,8 +75,8 @@
     "Instalar o Calmon",
     "Baixar Calmon",
     ". Mova-o para Aplicativos.",
-    "Permitir acessibilidade",
-    "Arraste o Calmon para a lista de Acessibilidade e ative-o.",
+    "Permitir Acesso à Acessibilidade",
+    "Arraste Calmon para a lista acima e, depois, ative o interruptor ao lado para permitir o acesso à Acessibilidade.",
     "Abrir suas janelas",
     "Selecione uma janela na barra de abas. O mapa de layout abre o painel de teclas.",
     "O Calmon não tem ícone no Dock. Encontre-o na barra de menus {icon}."
@@ -105,7 +105,7 @@
     ],
     [
       "O Calmon move janelas entre mesas?",
-      "Só quando você as move. Use os números ou o modo de comandos para trocar de mesa. Ao sair, o Calmon restaura as posições salvas."
+      "Só quando você as move. Use os números ou o modo líder para trocar de mesa. Ao sair, o Calmon restaura as posições salvas."
     ],
     [
       "O beta é grátis?",
@@ -113,7 +113,7 @@
     ],
     [
       "Como atualizar?",
-      "Escolha Buscar Atualizações no menu do Calmon."
+      "Escolha Buscar Atualizações… no menu do Calmon."
     ]
   ],
   "demo": [
@@ -121,11 +121,11 @@
     "Continuar",
     "Reiniciar demonstração",
     "Pressione ⌘ duas vezes e solte",
-    "Modo de comandos · continue usando as teclas",
-    "Atalho do macOS · sem modo de comandos",
+    "Modo Líder · continue usando as teclas",
+    "Atalho do macOS · sem modo líder",
     "depois",
     "Ative JavaScript para ver a demonstração.",
-    "Modo de comandos encerrado"
+    "Modo líder encerrado"
   ],
   "menus": [
     "Arquivo",

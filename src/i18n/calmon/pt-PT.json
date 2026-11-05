@@ -11,62 +11,62 @@
   ],
   "release": [
     "Transferir grátis",
-    "Grátis durante o beta",
+    "Grátis durante a versão beta",
     "Encontrou um erro ou tem uma ideia? Fale com @lazyapps no X. Obrigado por ajudar a melhorar o Calmon.",
     "macOS 26 ou posterior"
   ],
   "display": [
     "Como organizar vários monitores?",
-    "Coloque os monitores na vertical. Lado a lado, as bordas partilhadas bloqueiam a deslocação; a navegação entre colunas retorna ao início nesses pontos. Com monitores nos dois lados, as janelas de fundo se sobrepõem atrás da selecionada."
+    "Coloque os monitores na vertical para obter melhores resultados. Lado a lado, as margens partilhadas interrompem a deslocação; a mudança de coluna passa a ser cíclica. Com monitores de ambos os lados, as janelas em segundo plano sobrepõem-se atrás da janela selecionada."
   ],
   "features": [
     [
-      "Deslocar colunas",
-      "As janelas deslocam-se na horizontal. A coluna ativa ocupa quase toda a ecrã. Use as setas no modo de comandos."
+      "Colunas e divisão vertical",
+      "As janelas deslocam-se na horizontal. A coluna ativa ocupa a maior parte do ecrã. Use as teclas de seta no modo líder.\n\nUma coluna pode ser dividida em até três áreas, uma por cima da outra e visíveis ao mesmo tempo. Cada área contém uma janela ou uma pilha de janelas de uma app."
     ],
     [
-      "Pilhas de apps",
-      "Janelas em mosaico do mesmo app formam uma pilha. Clique no indicador ou use ⌘` para alternar. Cada coluna comporta até três pilhas."
+      "Pilhas de janelas da mesma app",
+      "As janelas da mesma app sobrepõem-se numa área, com apenas uma visível de cada vez. Clique nos indicadores no topo da janela ou prima ⌘` para alternar.\n\nModo líder: Space → J / X — Adicionar / remover a janela selecionada da pilha da sua app."
     ],
     [
       "Coluna fixa",
-      "Fixe uma coluna em uma das bordas. As outras janelas deslocam-se ao lado. Tab alterna o foco no modo de comandos."
+      "Fixe uma coluna numa das margens. As outras janelas deslocam-se ao lado. No modo líder, prima Tab para mudar o foco."
     ],
     [
       "Pin Deck",
-      "Fixe até dez apps. Adicione pela marca do Pin Deck e remova pelo menu do ícone. A ordem é igual em todos os monitores."
+      "Fixe até dez apps. Clique na marca do Pin Deck para adicionar uma app e use o menu do ícone para a remover. A ordem é igual em todos os monitores."
     ],
     [
       "Sky Deck e Max Deck",
-      "Sky Deck lista janelas flutuantes. Max Deck lista janelas em ecrã cheia nativa. Clique em um ícone para voltar à janela."
+      "Sky Deck apresenta as janelas flutuantes. Max Deck apresenta as janelas em ecrã completo nativo. Clique num ícone para voltar à respetiva janela."
     ],
     [
       "Janelas e secretárias",
-      "Clique no número de uma mesa. No modo de comandos, digite a etiqueta de um ícone. Shift e 1–9 movem a janela selecionada para outra mesa."
+      "Clique no número de uma secretária para mudar de secretária. No modo líder, escreva a etiqueta de um ícone para selecionar a janela. Prima Shift e 1–9 para mover a janela selecionada para outra secretária."
     ]
   ],
   "keyboard": [
     "Use o rato\nAprenda as teclas aos poucos",
-    "mapa de layout",
-    "Para ocultar o painel automático: Definições → Teclado → Painel de teclas → Mostrar após → Nunca. O mapa de layout sempre abre o painel.",
-    "Pressione ⌘ duas vezes e solte. Enquanto a janela estiver destacada, continue usando os comandos. Esc sai do modo.",
+    "mapa da disposição",
+    "Para impedir a abertura automática do painel: Definições → Teclado → Painel de teclas → Mostrar após → Nunca. O mapa da disposição abre sempre o painel.",
+    "Prima ⌘ duas vezes e solte a tecla para entrar no modo líder. Enquanto a janela estiver realçada, pode continuar a executar comandos. Prima Esc para sair.",
     "Painel de teclas",
     "Teclas essenciais"
   ],
   "mouse": [
-    "Clique em um ícone da barra de abas para selecionar a janela.",
-    "Control-clique abre as ações da janela.",
-    "Clique no mapa de layout para abrir o painel de teclas.",
-    "Clique em uma tecla para executar o comando."
+    "Clique num ícone da barra de separadores para selecionar a janela.",
+    "Faça Controlo-clique no ícone para ver as ações da janela.",
+    "Clique no mapa da disposição para abrir o painel de teclas.",
+    "Clique numa tecla para executar o comando."
   ],
   "actions": [
     "Selecionar coluna / janela",
     "Mover janela ou coluna",
-    "Unir / separar coluna",
-    "Entrar / sair de pilha de app",
+    "Se a área estiver sozinha na coluna, junte-a à coluna à esquerda / direita. Numa coluna dividida, separe a área ativa numa coluna própria à esquerda / direita. A pilha inteira move-se em conjunto.",
+    "Adicionar / remover a janela selecionada da pilha da sua app",
     "Adicionar / remover app do Pin Deck",
-    "Trocar de mesa / mover janela",
-    "Sair do modo de comandos"
+    "Mudar de secretária / mover janela",
+    "Sair do modo líder"
   ],
   "setup": [
     "Primeiros passos",
@@ -75,10 +75,10 @@
     "Instalar o Calmon",
     "Descarregar Calmon",
     ". Mova-o para Aplicações.",
-    "Permitir acessibilidade",
-    "Arraste o Calmon para a lista de Acessibilidade e ative-o.",
-    "Abrir suas janelas",
-    "Selecione uma janela na barra de abas. O mapa de layout abre o painel de teclas.",
+    "Permitir acesso à Acessibilidade",
+    "Arraste Calmon para a lista acima e, depois, ative o interruptor ao lado para permitir o acesso à Acessibilidade.",
+    "Abrir as janelas",
+    "Selecione uma janela na barra de separadores. Clique no mapa da disposição para abrir o painel de teclas.",
     "O Calmon não tem ícone no Dock. Encontre-o na barra de menus {icon}."
   ],
   "faq": [
@@ -88,49 +88,49 @@
       "Macs com chip da Apple ou Intel e macOS 26 ou posterior."
     ],
     [
-      "Qual permissão é necessária?",
+      "De que permissão precisa?",
       "Acessibilidade para mover, redimensionar e selecionar janelas."
     ],
     [
-      "Preciso decorar atalhos?",
-      "Não. Todas as ações funcionam com o rato. Abra o painel de teclas pelo mapa de layout."
+      "Tenho de memorizar os atalhos?",
+      "Não. Pode usar o rato para todas as ações das janelas. Clique no mapa da disposição para abrir o painel de teclas."
     ],
     [
       "Posso usar gestos do trackpad?",
-      "Estão desativados de início. Ative três ou quatro dedos em Definições → Gestos. Segure Shift antes de deslizar para usar o gesto original do macOS."
+      "Os gestos estão desativados por predefinição. Ative os gestos de três ou quatro dedos em Definições → Gestos. Mantenha premida a tecla Shift antes de passar os dedos para usar o gesto original do macOS."
     ],
     [
       "Todas as janelas ficam em mosaico?",
-      "As padrão sim. Diálogos, ajustes e janelas de tamanho fixo flutuam. Adicione regras em Definições → Avançado."
+      "As janelas normais são dispostas em mosaico por predefinição. As caixas de diálogo, as janelas de definições e as janelas de tamanho fixo são flutuantes. Adicione regras por app ou título em Definições → Avançado."
     ],
     [
-      "O Calmon move janelas entre mesas?",
-      "Só quando você as move. Use os números ou o modo de comandos para trocar de mesa. Ao sair, o Calmon restaura as posições salvas."
+      "O Calmon move janelas entre secretárias?",
+      "As janelas ficam na secretária atual até as mover. Use os números das secretárias ou o modo líder para mudar de secretária. Ao sair, o Calmon repõe as posições guardadas das janelas."
     ],
     [
-      "O beta é grátis?",
-      "Sim, o Calmon é grátis durante o beta."
+      "A versão beta é grátis?",
+      "Sim, o Calmon é grátis durante a versão beta."
     ],
     [
       "Como atualizar?",
-      "Escolha Procurar atualizações no menu do Calmon."
+      "Escolha Procurar atualizações… no menu do Calmon."
     ]
   ],
   "demo": [
     "Pausar",
     "Continuar",
     "Reiniciar demonstração",
-    "Pressione ⌘ duas vezes e solte",
-    "Modo de comandos · continue usando as teclas",
-    "Atalho do macOS · sem modo de comandos",
+    "Prima ⌘ duas vezes e solte a tecla",
+    "Modo líder · continue a usar as teclas",
+    "Atalho do macOS · sem modo líder",
     "depois",
     "Ative JavaScript para ver a demonstração.",
-    "Modo de comandos terminado"
+    "Modo líder terminado"
   ],
   "menus": [
     "Ficheiro",
     "Editar",
-    "Visualizar",
+    "Visualização",
     "Janela",
     "Ajuda"
   ],
@@ -150,7 +150,7 @@
     "Site",
     "Entrada",
     "Agenda",
-    "Reproduzindo"
+    "A reproduzir"
   ],
   "subtitle": "WM de mosaico deslocável"
 }

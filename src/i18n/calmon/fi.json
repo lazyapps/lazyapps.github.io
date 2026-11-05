@@ -21,16 +21,16 @@
   ],
   "features": [
     [
-      "Vieritä sarakkeita",
-      "Ikkunat vierivät vaakasuunnassa. Aktiivinen sarake täyttää suurimman osan näytöstä. Käytä nuolinäppäimiä komentotilassa."
+      "Sarakkeet ja pystysuuntainen jako",
+      "Ikkunat vierivät vaakasuunnassa. Aktiivinen sarake täyttää suurimman osan näytöstä. Käytä nuolinäppäimiä leader-tilassa.\n\nSarakkeen voi jakaa enintään kolmeen allekkain olevaan alueeseen, jotka näkyvät yhtä aikaa. Kukin alue sisältää yhden ikkunan tai saman apin ikkunapinon."
     ],
     [
-      "Appipinot",
-      "Saman apin laatoitetut ikkunat muodostavat pinon. Vaihda pinon merkistä tai painamalla ⌘`. Sarakkeeseen mahtuu kolme pinoa."
+      "Saman apin ikkunapinot",
+      "Saman apin ikkunat ovat päällekkäin yhdellä alueella, ja vain yksi näkyy kerrallaan. Vaihda ikkunaa klikkaamalla ikkunan yläreunan pinomerkkejä tai painamalla ⌘`.\n\nLeader-tila: Space → J / X — Lisää valittu ikkuna apin pinoon / poista se pinosta."
     ],
     [
       "Kiinteä sarake",
-      "Kiinnitä sarake vasempaan tai oikeaan reunaan. Muut ikkunat vierivät vieressä. Tab vaihtaa kohdistusta komentotilassa."
+      "Kiinnitä sarake vasempaan tai oikeaan reunaan. Muut ikkunat vierivät vieressä. Tab vaihtaa kohdistusta leader-tilassa."
     ],
     [
       "Pin Deck",
@@ -42,7 +42,7 @@
     ],
     [
       "Ikkunat ja työpöydät",
-      "Klikkaa työpöydän numeroa. Kirjoita kuvakkeen tunnus komentotilassa. Shift ja 1–9 siirtävät valitun ikkunan toiselle työpöydälle."
+      "Klikkaa työpöydän numeroa. Kirjoita kuvakkeen tunnus leader-tilassa. Shift ja 1–9 siirtävät valitun ikkunan toiselle työpöydälle."
     ]
   ],
   "keyboard": [
@@ -62,11 +62,11 @@
   "actions": [
     "Valitse sarake / ikkuna",
     "Siirrä ikkunaa tai saraketta",
-    "Liitä sarakkeeseen / irrota",
-    "Liity appipinoon / poistu",
+    "Yksin sarakkeessa: liitä alue vasempaan / oikeaan sarakkeeseen. Jaetussa sarakkeessa: irrota aktiivinen alue omaksi sarakkeekseen vasemmalle / oikealle. Ikkunapino siirtyy kokonaisena.",
+    "Lisää valittu ikkuna apin pinoon / poista se pinosta",
     "Lisää / poista Pin Deck -appi",
     "Vaihda työpöytää / siirrä ikkuna",
-    "Poistu komentotilasta"
+    "Poistu leader-tilasta"
   ],
   "setup": [
     "Alkuun pääseminen",
@@ -75,8 +75,8 @@
     "Asenna Calmon",
     "Lataa Calmon",
     ". Siirrä se Apit-kansioon.",
-    "Salli käyttöapu",
-    "Vedä Calmon Käyttöapu-luetteloon ja ota se käyttöön.",
+    "Salli Käyttöapu-oikeus",
+    "Vedä Calmon yllä olevaan luetteloon ja laita sitten sen kytkin päälle salliaksesi Käyttöapu-oikeuden.",
     "Avaa ikkunasi",
     "Valitse ikkuna välilehtipalkista. Asettelukartta avaa näppäinpaneelin.",
     "Calmonilla ei ole Dock-kuvaketta. Löydät sen valikkoriviltä {icon}."
@@ -101,11 +101,11 @@
     ],
     [
       "Laatoitetaanko kaikki ikkunat?",
-      "Tavalliset ikkunat kyllä. Valintaikkunat, asetukset ja kiinteän kokoiset ikkunat kelluvat. Lisää sääntöjä kohdassa Asetukset → Lisäasetukset."
+      "Tavalliset ikkunat kyllä. Valintaikkunat, asetukset ja kiinteän kokoiset ikkunat kelluvat. Lisää sääntöjä kohdassa Asetukset → Lisävalinnat."
     ],
     [
       "Siirtääkö Calmon ikkunoita työpöytien välillä?",
-      "Vain kun siirrät ne itse. Vaihda työpöytänumeroilla tai komentotilassa. Lopetettaessa Calmon palauttaa tallennetut ikkunasijainnit."
+      "Vain kun siirrät ne itse. Vaihda työpöytänumeroilla tai leader-tilassa. Lopetettaessa Calmon palauttaa tallennetut ikkunasijainnit."
     ],
     [
       "Onko beta maksuton?",
@@ -113,7 +113,7 @@
     ],
     [
       "Miten päivitän?",
-      "Valitse Calmon-valikosta Tarkista päivitykset."
+      "Valitse Calmon-valikosta Tarkista päivitykset…."
     ]
   ],
   "demo": [
@@ -121,11 +121,11 @@
     "Jatka",
     "Aloita demo alusta",
     "Paina ⌘ kahdesti ja vapauta",
-    "Komentotila · jatka näppäinten käyttöä",
-    "macOS-oikotie · ei komentotilaa",
+    "Leader-tila · jatka näppäinten käyttöä",
+    "macOS-oikotie · ei leader-tilaa",
     "sitten",
     "Ota JavaScript käyttöön nähdäksesi demon.",
-    "Komentotila suljettu"
+    "Leader-tila suljettu"
   ],
   "menus": [
     "Arkisto",

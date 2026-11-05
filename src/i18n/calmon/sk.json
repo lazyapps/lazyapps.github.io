@@ -21,16 +21,16 @@
   ],
   "features": [
     [
-      "Posuvné stĺpce",
-      "Okná sa posúvajú vodorovne. Aktívny stĺpec vypĺňa väčšinu obrazovky. V režime príkazov používajte šípky."
+      "Stĺpce a zvislé delenie",
+      "Okná sa posúvajú vodorovne. Aktívny stĺpec vypĺňa väčšinu obrazovky. V režime lídra používajte šípky.\n\nStĺpec možno rozdeliť až na tri oblasti nad sebou, ktoré sú viditeľné súčasne. Každá oblasť obsahuje jedno okno alebo stoh okien rovnakej apky."
     ],
     [
-      "Skupiny apiek",
-      "Dlaždicové okná rovnakej apky tvoria skupinu. Prepínajte značkou skupiny alebo ⌘`. Stĺpec pojme až tri skupiny."
+      "Stohy okien rovnakej apky",
+      "Okná rovnakej apky sa prekrývajú v jednej oblasti a vždy je viditeľné len jedno. Prepínajte kliknutím na značky stohu hore v okne alebo stlačením ⌘`.\n\nRežim lídra: Space → J / X — Pridať / odobrať vybrané okno zo stohu jeho apky."
     ],
     [
       "Pevný stĺpec",
-      "Pripnite stĺpec na ľavý alebo pravý okraj. Ostatné okná sa posúvajú vedľa. Tab prepína zameranie v režime príkazov."
+      "Pripnite stĺpec na ľavý alebo pravý okraj. Ostatné okná sa posúvajú vedľa. Tab prepína zameranie v režime lídra."
     ],
     [
       "Pin Deck",
@@ -42,7 +42,7 @@
     ],
     [
       "Okná a plochy",
-      "Kliknite na číslo plochy. V režime príkazov napíšte štítok ikony. Shift a 1–9 presunú vybrané okno na inú plochu."
+      "Kliknite na číslo plochy. V režime lídra napíšte štítok ikony. Shift a 1–9 presunú vybrané okno na inú plochu."
     ]
   ],
   "keyboard": [
@@ -62,11 +62,11 @@
   "actions": [
     "Vybrať stĺpec / okno",
     "Presunúť okno alebo stĺpec",
-    "Pripojiť / oddeliť stĺpec",
-    "Pripojiť / opustiť skupinu apky",
+    "Ak je oblasť v stĺpci sama, pripojí sa k stĺpcu vľavo / vpravo. V rozdelenom stĺpci sa aktívna oblasť oddelí do vlastného stĺpca vľavo / vpravo. Celý stoh sa presúva spolu.",
+    "Pridať / odobrať vybrané okno zo stohu jeho apky",
     "Pridať / odobrať apku Pin Deck",
     "Prepnúť plochu / presunúť okno",
-    "Ukončiť režim príkazov"
+    "Ukončiť režim lídra"
   ],
   "setup": [
     "Začíname",
@@ -75,8 +75,8 @@
     "Nainštalujte Calmon",
     "Stiahnuť Calmon",
     ". Presuňte ho do Aplikácií.",
-    "Povoľte prístupnosť",
-    "Potiahnite Calmon do zoznamu Prístupnosť a zapnite ho.",
+    "Povoliť prístup k Prístupnosti",
+    "Potiahnite Calmon do zoznamu vyššie a potom zapnite prepínač pri apke, aby ste povolili prístup k Prístupnosti.",
     "Otvorte svoje okná",
     "Vyberte okno v lište tabov. Mapa rozloženia otvorí panel klávesov.",
     "Calmon nemá ikonu v Docku. Nájdete ho v lište {icon}."
@@ -101,7 +101,7 @@
     ],
     [
       "Dlaždicujú sa všetky okná?",
-      "Štandardné áno. Dialógy, nastavenia a okná pevnej veľkosti plávajú. Pravidlá pridajte v Nastavenia → Rozšírené."
+      "Štandardné áno. Dialógy, nastavenia a okná pevnej veľkosti plávajú. Pravidlá pridajte v Nastavenia → Pokročilé."
     ],
     [
       "Presúva Calmon okná medzi plochami?",
@@ -113,7 +113,7 @@
     ],
     [
       "Ako aktualizovať?",
-      "V menu Calmon vyberte Vyhľadať aktualizácie."
+      "V menu Calmon vyberte Vyhľadať aktualizácie…."
     ]
   ],
   "demo": [
@@ -121,11 +121,11 @@
     "Pokračovať",
     "Spustiť ukážku znova",
     "Dvakrát stlačte ⌘ a uvoľnite",
-    "Režim príkazov · pokračujte klávesmi",
-    "Skratka macOS · bez režimu príkazov",
+    "Režim lídra · pokračujte klávesmi",
+    "Skratka macOS · bez režimu lídra",
     "potom",
     "Na ukážku zapnite JavaScript.",
-    "Režim príkazov ukončený"
+    "Režim lídra ukončený"
   ],
   "menus": [
     "Súbor",

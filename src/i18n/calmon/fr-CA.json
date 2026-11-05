@@ -21,16 +21,16 @@
   ],
   "features": [
     [
-      "Colonnes défilantes",
-      "Les fenêtres défilent horizontalement. La colonne active occupe presque tout l’écran. Utilisez les flèches en mode commande."
+      "Colonnes et partage en hauteur",
+      "Les fenêtres défilent horizontalement. La colonne active occupe presque tout l’écran. Utilisez les flèches en mode leader.\n\nUne colonne peut contenir jusqu’à trois zones disposées de haut en bas et visibles en même temps. Chaque zone accueille une fenêtre ou une pile de fenêtres d’une app."
     ],
     [
-      "Piles d’apps",
-      "Les fenêtres en mosaïque d’une même app forment une pile. Cliquez sur un repère de pile ou appuyez sur ⌘` pour changer de fenêtre. Une colonne contient jusqu’à trois piles."
+      "Piles de fenêtres d’une app",
+      "Les fenêtres d’une même app se superposent dans une seule zone : une seule est visible à la fois. Cliquez sur les repères en haut de la fenêtre ou appuyez sur ⌘` pour changer de fenêtre.\n\nMode leader: Space → J / X — Ajouter / retirer la fenêtre sélectionnée de la pile de son app."
     ],
     [
       "Colonne fixe",
-      "Fixez une colonne à gauche ou à droite. Les autres fenêtres défilent à côté. Tab change le focus en mode commande."
+      "Fixez une colonne à gauche ou à droite. Les autres fenêtres défilent à côté. Tab change le focus en mode leader."
     ],
     [
       "Pin Deck",
@@ -42,7 +42,7 @@
     ],
     [
       "Fenêtres et bureaux",
-      "Cliquez sur un numéro de bureau. En mode commande, saisissez le repère d’une icône. Shift et 1–9 déplacent la fenêtre sélectionnée vers un autre bureau."
+      "Cliquez sur un numéro de bureau. En mode leader, saisissez le repère d’une icône. Shift et 1–9 déplacent la fenêtre sélectionnée vers un autre bureau."
     ]
   ],
   "keyboard": [
@@ -62,11 +62,11 @@
   "actions": [
     "Choisir une colonne / fenêtre",
     "Déplacer une fenêtre ou colonne",
-    "Joindre / quitter une colonne",
-    "Joindre / quitter une pile d’app",
+    "Seule dans sa colonne : la zone rejoint la colonne de gauche / droite. Dans une colonne partagée : la zone active devient une colonne indépendante à gauche / droite. Toute la pile se déplace ensemble.",
+    "Ajouter / retirer la fenêtre sélectionnée de la pile de son app",
     "Ajouter / retirer une app de Pin Deck",
     "Changer de bureau / déplacer la fenêtre",
-    "Quitter le mode commande"
+    "Quitter le mode leader"
   ],
   "setup": [
     "Pour commencer",
@@ -75,8 +75,8 @@
     "Installer Calmon",
     "Télécharger Calmon",
     ". Déplacez-le dans Applications.",
-    "Autoriser l’accessibilité",
-    "Glissez Calmon dans la liste Accessibilité, puis activez-le.",
+    "Autoriser l’accès à l’accessibilité",
+    "Faites glisser Calmon dans la liste ci-dessus, puis activez son interrupteur pour autoriser l’accès à l’accessibilité.",
     "Ouvrir vos fenêtres",
     "Choisissez une fenêtre dans la barre d’onglets. Le plan de disposition ouvre le panneau des touches.",
     "Calmon n’a pas d’icône dans le Dock. Retrouvez-le dans la barre des menus {icon}."
@@ -105,7 +105,7 @@
     ],
     [
       "Calmon déplace-t-il les fenêtres entre bureaux ?",
-      "Uniquement si vous le demandez. Changez de bureau avec son numéro ou le mode commande. Calmon restaure les positions enregistrées à sa fermeture."
+      "Uniquement si vous le demandez. Changez de bureau avec son numéro ou le mode leader. Calmon restaure les positions enregistrées à sa fermeture."
     ],
     [
       "La bêta est-elle gratuite ?",
@@ -113,7 +113,7 @@
     ],
     [
       "Comment mettre à jour ?",
-      "Choisissez « Rechercher des mises à jour » dans le menu Calmon."
+      "Choisissez « Rechercher des mises à jour… » dans le menu Calmon."
     ]
   ],
   "demo": [
@@ -121,11 +121,11 @@
     "Continuer",
     "Recommencer la démo",
     "Appuyez deux fois sur ⌘ puis relâchez",
-    "Mode commande · enchaînez les touches",
-    "Raccourci macOS · sans mode commande",
+    "Mode leader · enchaînez les touches",
+    "Raccourci macOS · sans mode leader",
     "puis",
     "Activez JavaScript pour lire la démo.",
-    "Mode commande désactivé"
+    "Mode leader désactivé"
   ],
   "menus": [
     "Fichier",

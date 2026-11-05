@@ -18,35 +18,47 @@ Gratis durante la beta
 
 ¿Un error o una idea? Cuéntaselo a @lazyapps en X. Gracias por ayudarnos a mejorar Calmon.
 
-Calmon no muestra un icono en el Dock. Está en la barra de menús.
+Las ventanas se desplazan en horizontal. La columna activa ocupa casi toda la pantalla. Usa las flechas en el modo líder.
 
-Las ventanas se desplazan en horizontal. La columna activa ocupa casi toda la pantalla. Usa las flechas en el modo de comandos.
+Una columna puede dividirse en hasta tres regiones, una encima de otra y visibles a la vez. Cada región contiene una ventana o una pila de ventanas de una app.
 
-Las ventanas en mosaico de una misma app forman una pila. Pulsa su indicador o ⌘` para cambiar. Cada columna admite hasta tres pilas.
+Las ventanas de una misma app se superponen en una región y solo se muestra una cada vez. Haz clic en las marcas de la parte superior de la ventana o pulsa ⌘` para cambiar.
 
-Fija una columna a un lado. Las otras ventanas se desplazan junto a ella. Tab cambia el foco en el modo de comandos.
+Modo líder: Space → J / X — Añadir / sacar la ventana seleccionada de la pila de su app.
+
+Fija una columna a un lado. Las otras ventanas se desplazan junto a ella. Tab cambia el foco en el modo líder.
 
 Fija hasta diez apps. Añádelas con el marcador de Pin Deck y quítalas desde el menú del icono. El orden es igual en todos los monitores.
 
 Sky Deck muestra ventanas flotantes y Max Deck las de pantalla completa nativa. Pulsa un icono para volver a su ventana.
 
-Pulsa un número de escritorio. En el modo de comandos, escribe la etiqueta de un icono. Shift y 1–9 mueven la ventana seleccionada a otro escritorio.
+Pulsa un número de escritorio. En el modo líder, escribe la etiqueta de un icono. Shift y 1–9 mueven la ventana seleccionada a otro escritorio.
 
 Pulsa un icono de la barra de pestañas para elegir una ventana. Control-clic abre las acciones de ventana. Pulsa el mapa de distribución para abrir el panel de teclas. Pulsa una tecla del panel para ejecutar su comando.
+
+Para ocultar el panel automático: Ajustes → Teclado → Panel de teclas → Mostrar tras → Nunca. El mapa de distribución siempre lo abre.
+
+Pulsa ⌘ dos veces y suelta. Mientras la ventana esté resaltada, puedes encadenar comandos. Esc sale del modo.
+
+, / . — Si la región ocupa toda la columna, se une a la columna izquierda / derecha. En una columna dividida, la región activa pasa a una columna independiente a la izquierda / derecha. La pila se mueve completa.
+
+Space → J / X — Añadir / sacar la ventana seleccionada de la pila de su app
+
+macOS 26: Accesibilidad; macOS 27+: Control de dispositivos y acceso a datos
 
 Accesibilidad para mover, redimensionar y seleccionar ventanas.
 
 No. Puedes hacer todas las operaciones con el ratón. Abre el panel de teclas desde el mapa de distribución.
 
-Están desactivados de inicio. Activa gestos de tres o cuatro dedos en Ajustes → Gestos. Mantén Shift antes del gesto para usar el original de macOS.
+Están desactivados de inicio. Activa gestos de tres o cuatro dedos en Ajustes → Gestos. Mantén Shift antes del gesto para usar el original de macOS. Mantén activados los gestos de tres o cuatro dedos en Ajustes del Sistema > Trackpad > Más gestos.
 
 Las estándar sí. Los diálogos, ajustes y ventanas de tamaño fijo flotan. Añade reglas en Ajustes → Avanzado.
 
-Solo cuando tú las mueves. Cambia de escritorio con sus números o el modo de comandos. Al salir, Calmon restaura las posiciones guardadas.
+Solo cuando tú las mueves. Cambia de escritorio con sus números o el modo líder. Al salir, Calmon restaura las posiciones guardadas.
 
 Sí, Calmon es gratis durante la beta.
 
-Elige «Buscar actualizaciones» en el menú de Calmon.
+Elige «Buscar actualizaciones…» en el menú de Calmon.
 
 [X @lazyapps](https://x.com/lazyapps)
 
@@ -84,7 +96,7 @@ Icono de la barra de menús · PNG · 44 × 44 · 2×
 
 [leader-keys.png](leader-keys.png)
 
-1508 × 732 · PNG
+1556 × 780 · PNG
 
 Vista previa de la interfaz nativa en este idioma; píxeles sin modificar.
 

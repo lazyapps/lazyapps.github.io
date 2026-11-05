@@ -21,16 +21,16 @@
   ],
   "features": [
     [
-      "Spalten scrollen",
-      "Fenster scrollen horizontal. Die aktive Spalte füllt den Großteil des Bildschirms. Im Befehlsmodus mit den Pfeiltasten wechseln."
+      "Spalten und vertikale Teilung",
+      "Fenster scrollen horizontal. Die aktive Spalte füllt den Großteil des Bildschirms. Im Leader-Modus mit den Pfeiltasten wechseln.\n\nEine Spalte lässt sich in bis zu drei Bereiche untereinander aufteilen, die gleichzeitig sichtbar sind. Jeder Bereich enthält ein Fenster oder einen App-Stapel."
     ],
     [
-      "App-Stapel",
-      "Gekachelte Fenster derselben App bilden einen Stapel. Mit Stapelmarkierung oder ⌘` wechseln. Eine Spalte fasst bis zu drei Stapel."
+      "Fenster derselben App stapeln",
+      "Fenster derselben App liegen in einem Bereich übereinander. Jeweils nur eines ist sichtbar. Über die Stapelmarkierungen oben am Fenster oder mit ⌘` wechselst du zwischen ihnen.\n\nLeader-Modus: Space → J / X — Das ausgewählte Fenster zum App-Stapel hinzufügen / daraus entfernen."
     ],
     [
       "Feste Spalte",
-      "Eine Spalte am linken oder rechten Rand festhalten. Andere Fenster scrollen daneben. Im Befehlsmodus wechselt Tab den Fokus."
+      "Eine Spalte am linken oder rechten Rand festhalten. Andere Fenster scrollen daneben. Im Leader-Modus wechselt Tab den Fokus."
     ],
     [
       "Pin Deck",
@@ -42,7 +42,7 @@
     ],
     [
       "Fenster & Schreibtische",
-      "Auf eine Schreibtischnummer klicken. Im Befehlsmodus ein Symbolkürzel eingeben. Mit Shift und 1–9 das gewählte Fenster auf einen anderen Schreibtisch verschieben."
+      "Auf eine Schreibtischnummer klicken. Im Leader-Modus ein Symbolkürzel eingeben. Mit Shift und 1–9 das gewählte Fenster auf einen anderen Schreibtisch verschieben."
     ]
   ],
   "keyboard": [
@@ -62,11 +62,11 @@
   "actions": [
     "Spalte / Fenster wählen",
     "Fenster oder Spalte verschieben",
-    "Spalte verbinden / trennen",
-    "App-Stapel beitreten / verlassen",
+    "Allein in der Spalte: der linken / rechten Nachbarspalte beitreten. In einer geteilten Spalte: den aktiven Bereich als eigene Spalte links / rechts herauslösen. Ein App-Stapel wird dabei vollständig verschoben.",
+    "Das ausgewählte Fenster zum App-Stapel hinzufügen / daraus entfernen",
     "Pin Deck-App hinzufügen / entfernen",
     "Schreibtisch wechseln / Fenster verschieben",
-    "Befehlsmodus beenden"
+    "Leader-Modus beenden"
   ],
   "setup": [
     "Erste Schritte",
@@ -75,8 +75,8 @@
     "Calmon installieren",
     "Calmon laden",
     ". In „Programme“ verschieben.",
-    "Bedienungshilfen erlauben",
-    "Calmon in die Bedienungshilfen-Liste ziehen und einschalten.",
+    "Zugriff auf Bedienungshilfen erlauben",
+    "Ziehe Calmon in die Liste oben und schalte danach den zugehörigen Schalter ein, um den Zugriff auf Bedienungshilfen zu erlauben.",
     "Fenster öffnen",
     "Fenster über die Tableiste wählen. Die Layoutübersicht öffnet die Tastenübersicht.",
     "Calmon hat kein Dock-Symbol. Du findest es in der Menüleiste {icon}."
@@ -105,7 +105,7 @@
     ],
     [
       "Wechselt Calmon den Schreibtisch eines Fensters?",
-      "Nur wenn du es verschiebst. Über Schreibtischnummern oder den Befehlsmodus wechseln. Beim Beenden stellt Calmon gespeicherte Fensterpositionen wieder her."
+      "Nur wenn du es verschiebst. Über Schreibtischnummern oder den Leader-Modus wechseln. Beim Beenden stellt Calmon gespeicherte Fensterpositionen wieder her."
     ],
     [
       "Ist die Beta kostenlos?",
@@ -113,7 +113,7 @@
     ],
     [
       "Wie aktualisiere ich Calmon?",
-      "Im Calmon-Menü „Nach Updates suchen“ wählen."
+      "Im Calmon-Menü „Nach Updates suchen …“ wählen."
     ]
   ],
   "demo": [
@@ -121,11 +121,11 @@
     "Weiter",
     "Demo neu starten",
     "⌘ zweimal antippen und loslassen",
-    "Befehlsmodus · weitere Tasten verwenden",
-    "macOS-Kürzel · ohne Befehlsmodus",
+    "Leader-Modus · weitere Tasten verwenden",
+    "macOS-Kürzel · ohne Leader-Modus",
     "dann",
     "JavaScript aktivieren, um die Demo abzuspielen.",
-    "Befehlsmodus beendet"
+    "Leader-Modus beendet"
   ],
   "menus": [
     "Ablage",

@@ -18,11 +18,13 @@ Free during beta
 
 Found a bug or have an idea? Tell @lazyapps on X. Thanks for helping us improve Calmon.
 
-Calmon has no Dock icon. Find it in the menu bar.
+Windows scroll in a horizontal row of columns. Use arrow keys in leader mode to switch columns.
 
-Windows scroll in a horizontal row. The focused column fills most of the screen. Use arrow keys in leader mode.
+Split a column into up to three regions, arranged top to bottom and visible at once. Each region can hold one window or an app stack.
 
-Tiled windows from the same app form a stack. Click a stack indicator or press ⌘` to switch windows. A column holds up to three stacks.
+Tiled windows from the same app overlap in one region, with one visible at a time. Click a stack indicator at the top of the window or press ⌘` to switch.
+
+In leader mode, press Space, then J to add the selected window to its app’s stack, or X to remove that window from the stack.
 
 Pin a column at either edge. Other windows scroll beside it. Use Tab in leader mode to switch focus.
 
@@ -34,11 +36,21 @@ Click a desktop number to switch desktops. In leader mode, type an icon label to
 
 Click a tab bar icon to select a window. Control-click it for window actions. Click the layout map to open the key panel. Click a key to run its command.
 
+Stop the key panel from opening automatically: Settings → Keyboard → Key Panel → Show after → Never. The layout map always opens the panel.
+
+Double-tap and release ⌘ to enter leader mode. Keep using command keys while the window is highlighted. Press Esc to exit.
+
+, / . — Alone in its column: join the column on the left / right. In a split column: move the focused region into a new column on the left / right. An app stack moves as a group.
+
+Space → J / X — Add / remove the selected window from its app stack
+
+macOS 26: Accessibility; macOS 27+: Device Control and Data Access
+
 Allow Accessibility access so Calmon can move, resize, and select windows.
 
 No. You can use the mouse for all window actions. Click the layout map to open the key panel.
 
-Swipes are off by default. Enable three- or four-finger swipes in Settings → Gestures. Hold Shift before a swipe to use the original macOS gesture.
+Swipes are off by default. Enable three- or four-finger swipes in Settings → Gestures. Hold Shift before a swipe to use the original macOS gesture. Keep the three- or four-finger gestures enabled in System Settings > Trackpad > More Gestures.
 
 Standard windows tile by default. Dialogs, settings windows, and windows with a fixed size float by default. Add app or title rules in Settings → Advanced.
 
@@ -46,7 +58,7 @@ Windows stay on their current desktop until you move them. Use desktop numbers o
 
 Yes. Calmon is free during beta.
 
-Choose Check for Updates in the Calmon menu.
+Choose Check for Updates… in the Calmon menu.
 
 [X @lazyapps](https://x.com/lazyapps)
 
@@ -84,7 +96,7 @@ Menu bar icon · PNG · 44 × 44 · 2×
 
 [leader-keys.png](leader-keys.png)
 
-1292 × 732 · PNG
+1340 × 780 · PNG
 
 Native interface preview in this language; unchanged pixels.
 

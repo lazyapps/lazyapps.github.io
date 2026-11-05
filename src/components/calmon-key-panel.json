@@ -419,7 +419,7 @@
           ]
         },
         {
-          "title": "Uneix-te a la pila/surt-ne",
+          "title": "Pila: afegeix/treu",
           "keys": [
             "J",
             "/",
@@ -600,7 +600,7 @@
           ]
         },
         {
-          "title": "Nová/smazat plochu",
+          "title": "Vytvořit/smazat plochu",
           "keys": [
             "N",
             "/",
@@ -1991,7 +1991,7 @@
       "title": "אחרי רווח",
       "rows": [
         {
-          "title": "צף או הצבה",
+          "title": "ציפה או פריסה",
           "keys": [
             "F"
           ]
@@ -2025,7 +2025,7 @@
           ]
         },
         {
-          "title": "הצבת הכל",
+          "title": "פריסת כל החלונות",
           "keys": [
             "T"
           ]
@@ -2117,7 +2117,7 @@
           ]
         },
         {
-          "title": "पिन किए गए कॉलम पर फ़ोकस",
+          "title": "पिन किए गए कॉलम पर फ़ोकस करें",
           "keys": [
             "TAB"
           ]
@@ -2150,7 +2150,7 @@
       "title": "स्पेस के बाद",
       "rows": [
         {
-          "title": "फ़्लोट या टाइल",
+          "title": "फ़्लोट या टाइल करें",
           "keys": [
             "F"
           ]
@@ -2468,7 +2468,7 @@
       "title": "Szóköz után",
       "rows": [
         {
-          "title": "Lebegő vagy mozaik",
+          "title": "Lebegtetés vagy mozaikba rendezés",
           "keys": [
             "F"
           ]
@@ -2605,7 +2605,7 @@
       "title": "Label",
       "rows": [
         {
-          "title": "Buka Jendela",
+          "title": "Beralih ke Jendela",
           "keys": [
             "A",
             "S",
@@ -2912,7 +2912,7 @@
           ]
         },
         {
-          "title": "固定列へ",
+          "title": "固定列にフォーカス",
           "keys": [
             "TAB"
           ]
@@ -2963,7 +2963,7 @@
           ]
         },
         {
-          "title": "スタックに追加/スタックから外す",
+          "title": "App スタックに追加/App スタックから外す",
           "keys": [
             "J",
             "/",
@@ -2993,7 +2993,7 @@
           ]
         },
         {
-          "title": "全部移動",
+          "title": "すべてをデスクトップへ移動",
           "keys": [
             "M",
             "1–9"
@@ -3050,7 +3050,7 @@
       "title": "열",
       "rows": [
         {
-          "title": "열 넣기/빼기",
+          "title": "열에 넣기/열에서 빼기",
           "keys": [
             ",",
             "."
@@ -3071,7 +3071,7 @@
           ]
         },
         {
-          "title": "고정 열로",
+          "title": "고정 열로 포커스 이동",
           "keys": [
             "TAB"
           ]
@@ -3122,7 +3122,7 @@
           ]
         },
         {
-          "title": "스택에 합치기/스택에서 빼기",
+          "title": "앱 스택에 합치기/앱 스택에서 빼기",
           "keys": [
             "J",
             "/",
@@ -3152,7 +3152,7 @@
           ]
         },
         {
-          "title": "모두 이동",
+          "title": "모두 데스크탑으로 이동",
           "keys": [
             "M",
             "1–9"
@@ -3230,7 +3230,7 @@
           ]
         },
         {
-          "title": "Fokus Lajur Dipin",
+          "title": "Fokuskan Lajur Dipin",
           "keys": [
             "TAB"
           ]
@@ -3263,7 +3263,7 @@
       "title": "Space Lalu",
       "rows": [
         {
-          "title": "Apungkan atau Jubin",
+          "title": "Apungkan atau Jubinkan",
           "keys": [
             "F"
           ]
@@ -3297,7 +3297,7 @@
           ]
         },
         {
-          "title": "Jubin Semua",
+          "title": "Jubinkan Semua",
           "keys": [
             "T"
           ]
@@ -3686,7 +3686,7 @@
       "title": "Kolumna",
       "rows": [
         {
-          "title": "Wejdź/wyjdź",
+          "title": "Przenieś do kolumny lub z niej",
           "keys": [
             ",",
             "."
@@ -3788,7 +3788,7 @@
           ]
         },
         {
-          "title": "Całe biurko",
+          "title": "Wszystkie okna na biurko",
           "keys": [
             "M",
             "1–9"
@@ -4217,7 +4217,7 @@
       "title": "După Space",
       "rows": [
         {
-          "title": "Flotant/aranjat",
+          "title": "Flotare sau dispunere în mozaic",
           "keys": [
             "F"
           ]
@@ -4229,7 +4229,7 @@
           ]
         },
         {
-          "title": "Fixați/anulați",
+          "title": "Fixați/anulați fixarea",
           "keys": [
             "P"
           ]
@@ -4251,7 +4251,7 @@
           ]
         },
         {
-          "title": "Aranjați tot",
+          "title": "Dispuneți tot în mozaic",
           "keys": [
             "T"
           ]
@@ -4265,7 +4265,7 @@
           ]
         },
         {
-          "title": "Mutați toate",
+          "title": "Mutați toate pe desktop",
           "keys": [
             "M",
             "1–9"
@@ -4376,7 +4376,7 @@
       "title": "После пробела",
       "rows": [
         {
-          "title": "Плавающее или плитка",
+          "title": "Переключить плавающий режим",
           "keys": [
             "F"
           ]
@@ -4575,7 +4575,7 @@
           ]
         },
         {
-          "title": "Nová/zmazať plochu",
+          "title": "Vytvoriť/zmazať plochu",
           "keys": [
             "N",
             "/",
@@ -4583,7 +4583,7 @@
           ]
         },
         {
-          "title": "Celá plocha",
+          "title": "Všetko na plochu",
           "keys": [
             "M",
             "1–9"

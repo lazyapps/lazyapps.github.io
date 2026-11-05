@@ -21,16 +21,16 @@
   ],
   "features": [
     [
-      "Derulează coloane",
-      "Ferestrele derulează orizontal. Coloana activă ocupă aproape tot ecranul. Folosește săgețile în modul de comenzi."
+      "Coloane și împărțire verticală",
+      "Ferestrele derulează orizontal. Coloana activă ocupă aproape tot ecranul. Folosește săgețile în modul lider.\n\nO coloană poate fi împărțită în cel mult trei zone, una sub alta, vizibile simultan. Fiecare zonă conține o fereastră sau o stivă de ferestre ale aceleiași aplicații."
     ],
     [
-      "Stive de aplicații",
-      "Ferestrele în mozaic ale aceleiași aplicații formează o stivă. Apasă un indicator sau ⌘` pentru a comuta. O coloană admite până la trei stive."
+      "Stive de ferestre ale aplicației",
+      "Ferestrele aceleiași aplicații se suprapun într-o singură zonă; este vizibilă doar una odată. Apasă marcajele stivei din partea de sus a ferestrei sau ⌘` pentru a comuta.\n\nModul lider: Space → J / X — Adaugă / elimină fereastra selectată din stiva aplicației sale."
     ],
     [
       "Coloană fixă",
-      "Fixează o coloană la stânga sau la dreapta. Celelalte ferestre derulează alături. Tab schimbă focalizarea în modul de comenzi."
+      "Fixează o coloană la stânga sau la dreapta. Celelalte ferestre derulează alături. Tab schimbă focalizarea în modul lider."
     ],
     [
       "Pin Deck",
@@ -42,15 +42,15 @@
     ],
     [
       "Ferestre și desktopuri",
-      "Apasă numărul unui desktop. În modul de comenzi, scrie eticheta unei pictograme. Shift și 1–9 mută fereastra selectată pe alt desktop."
+      "Apasă numărul unui desktop. În modul lider, scrie eticheta unei pictograme. Shift și 1–9 mută fereastra selectată pe alt desktop."
     ]
   ],
   "keyboard": [
     "Folosește mausul\nÎnvață tastele din mers",
     "harta aranjamentului",
-    "Dezactivează panoul automat: Configurări → Tastatură → Panou taste → Afișează după → Niciodată. Harta aranjamentului deschide mereu panoul.",
+    "Dezactivează panoul automat: Configurări → Tastatură → Panoul de taste → Afișare după → Niciodată. Harta aranjamentului deschide mereu panoul.",
     "Apasă ⌘ de două ori și eliberează. Cât timp fereastra este evidențiată, poți continua comenzile. Esc închide modul.",
-    "Panou taste",
+    "Panoul de taste",
     "Taste esențiale"
   ],
   "mouse": [
@@ -62,11 +62,11 @@
   "actions": [
     "Selectează coloană / fereastră",
     "Mută fereastra sau coloana",
-    "Unește / separă coloana",
-    "Alătură / părăsește stiva aplicației",
+    "Dacă zona este singură în coloană, alătur-o coloanei din stânga / dreapta. Într-o coloană împărțită, separă zona activă într-o coloană proprie la stânga / dreapta. Stiva se mută în întregime.",
+    "Adaugă / elimină fereastra selectată din stiva aplicației sale",
     "Adaugă / elimină aplicația Pin Deck",
     "Comută desktopul / mută fereastra",
-    "Ieși din modul de comenzi"
+    "Ieși din modul lider"
   ],
   "setup": [
     "Primii pași",
@@ -75,8 +75,8 @@
     "Instalează Calmon",
     "Descarcă Calmon",
     ". Mută-l în Aplicații.",
-    "Permite accesibilitatea",
-    "Trage Calmon în lista Accesibilitate și activează-l.",
+    "Permiteți accesul la Accesibilitate",
+    "Trageți Calmon în lista de mai sus, apoi activați comutatorul din dreptul aplicației pentru a permite accesul la Accesibilitate.",
     "Deschide ferestrele",
     "Selectează o fereastră din bara de file. Harta aranjamentului deschide panoul de taste.",
     "Calmon nu are pictogramă în Dock. Îl găsești în bara de meniu {icon}."
@@ -101,11 +101,11 @@
     ],
     [
       "Toate ferestrele sunt în mozaic?",
-      "Cele standard da. Dialogurile, configurările și ferestrele cu dimensiune fixă plutesc. Adaugă reguli în Configurări → Avansat."
+      "Cele standard da. Dialogurile, configurările și ferestrele cu dimensiune fixă plutesc. Adaugă reguli în Configurări → Avansate."
     ],
     [
       "Calmon mută ferestre între desktopuri?",
-      "Doar când le muți tu. Comută cu numerele desktopurilor sau modul de comenzi. La ieșire, Calmon restaurează pozițiile salvate."
+      "Doar când le muți tu. Comută cu numerele desktopurilor sau modul lider. La ieșire, Calmon restaurează pozițiile salvate."
     ],
     [
       "Beta este gratuită?",
@@ -113,7 +113,7 @@
     ],
     [
       "Cum actualizez?",
-      "Alege Caută actualizări din meniul Calmon."
+      "Alege Căutare actualizări… din meniul Calmon."
     ]
   ],
   "demo": [
@@ -121,11 +121,11 @@
     "Continuă",
     "Repornește demonstrația",
     "Apasă ⌘ de două ori și eliberează",
-    "Mod de comenzi · continuă cu tastele",
-    "Scurtătură macOS · fără mod de comenzi",
+    "Modul lider · continuă cu tastele",
+    "Scurtătură macOS · fără modul lider",
     "apoi",
     "Activează JavaScript pentru demonstrație.",
-    "Modul de comenzi s-a încheiat"
+    "Modul lider s-a încheiat"
   ],
   "menus": [
     "Fișier",

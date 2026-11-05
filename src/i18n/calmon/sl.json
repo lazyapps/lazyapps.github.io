@@ -21,16 +21,16 @@
   ],
   "features": [
     [
-      "Drseči stolpci",
-      "Okna drsijo vodoravno. Aktivni stolpec zapolni večino zaslona. V ukaznem načinu uporabi puščice."
+      "Stolpci in navpična delitev",
+      "Okna drsijo vodoravno. Aktivni stolpec zapolni večino zaslona. V načinu vodilne tipke uporabi puščice.\n\nStolpec lahko razdeliš na največ tri območja drugo nad drugim, ki so vidna hkrati. Vsako območje vsebuje eno okno ali sklad oken iste aplikacije."
     ],
     [
-      "Skladi aplikacij",
-      "Okna iste aplikacije v ploščicah tvorijo sklad. Klikni oznako sklada ali pritisni ⌘` za preklop. Stolpec sprejme do tri sklade."
+      "Skladi oken iste aplikacije",
+      "Okna iste aplikacije se prekrivajo v enem območju, vidno pa je le eno naenkrat. Za preklop klikni oznake sklada na vrhu okna ali pritisni ⌘`.\n\nNačin vodilne tipke: Space → J / X — Dodaj / odstrani izbrano okno iz sklada njegove aplikacije."
     ],
     [
       "Pripet stolpec",
-      "Pripni stolpec na levi ali desni rob. Druga okna drsijo ob njem. Tab preklopi fokus v ukaznem načinu."
+      "Pripni stolpec na levi ali desni rob. Druga okna drsijo ob njem. Tab preklopi fokus v načinu vodilne tipke."
     ],
     [
       "Pin Deck",
@@ -42,13 +42,13 @@
     ],
     [
       "Okna in namizja",
-      "Klikni številko namizja. V ukaznem načinu vpiši oznako ikone. Shift in 1–9 premakneta izbrano okno na drugo namizje."
+      "Klikni številko namizja. V načinu vodilne tipke vpiši oznako ikone. Shift in 1–9 premakneta izbrano okno na drugo namizje."
     ]
   ],
   "keyboard": [
     "Uporabi miško\nTipke spoznavaj sproti",
     "zemljevid razporeditve",
-    "Izklop samodejne plošče: Nastavitve → Tipkovnica → Plošča tipk → Pokaži po → Nikoli. Zemljevid razporeditve ploščo vedno odpre.",
+    "Izklop samodejne plošče: Nastavitve → Tipkovnica → Plošča tipk → Prikaži po → Nikoli. Zemljevid razporeditve ploščo vedno odpre.",
     "Dvakrat pritisni ⌘ in spusti. Dokler je okno poudarjeno, lahko nadaljuješ z ukazi. Esc konča način.",
     "Plošča tipk",
     "Osnovne tipke"
@@ -62,11 +62,11 @@
   "actions": [
     "Izberi stolpec / okno",
     "Premakni okno ali stolpec",
-    "Združi / loči stolpec",
-    "Pridruži se / zapusti sklad aplikacije",
+    "Če je območje samo v stolpcu, ga pridruži levemu / desnemu stolpcu. V razdeljenem stolpcu aktivno območje izloči v samostojen stolpec levo / desno. Celoten sklad se premakne skupaj.",
+    "Dodaj / odstrani izbrano okno iz sklada njegove aplikacije",
     "Dodaj / odstrani aplikacijo Pin Deck",
     "Zamenjaj namizje / premakni okno",
-    "Zapusti ukazni način"
+    "Zapusti način vodilne tipke"
   ],
   "setup": [
     "Začetek",
@@ -75,8 +75,8 @@
     "Namesti Calmon",
     "Prenesi Calmon",
     ". Premakni ga v Aplikacije.",
-    "Dovoli dostopnost",
-    "Povleci Calmon na seznam Dostopnost in ga vklopi.",
+    "Dovoli dostop za dostopnost",
+    "Povlecite Calmon na zgornji seznam, nato vklopite stikalo ob aplikaciji, da dovolite dostop za dostopnost.",
     "Odpri okna",
     "Izberi okno v vrstici zavihkov. Zemljevid razporeditve odpre ploščo tipk.",
     "Calmon nima ikone v vrstici Dock. Najdeš ga v menijski vrstici {icon}."
@@ -113,7 +113,7 @@
     ],
     [
       "Kako posodobim?",
-      "V meniju Calmon izberi Preveri posodobitve."
+      "V meniju Calmon izberi Preveri posodobitve …."
     ]
   ],
   "demo": [
@@ -121,11 +121,11 @@
     "Nadaljuj",
     "Ponovi prikaz",
     "Dvakrat pritisni ⌘ in spusti",
-    "Ukazni način · nadaljuj s tipkami",
-    "Bližnjica macOS · brez ukaznega načina",
+    "Način vodilne tipke · nadaljuj s tipkami",
+    "Bližnjica macOS · brez načina vodilne tipke",
     "nato",
     "Za prikaz omogoči JavaScript.",
-    "Ukazni način je končan"
+    "Način vodilne tipke je končan"
   ],
   "menus": [
     "Datoteka",

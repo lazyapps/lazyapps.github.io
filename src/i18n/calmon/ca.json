@@ -21,16 +21,16 @@
   ],
   "features": [
     [
-      "Columnes desplaçables",
-      "Les finestres es desplacen horitzontalment. La columna activa ocupa gairebé tota la pantalla. Fes servir les fletxes en mode d’ordres."
+      "Columnes i divisió vertical",
+      "Les finestres es desplacen horitzontalment. La columna activa ocupa gairebé tota la pantalla. Fes servir les fletxes en mode líder.\n\nUna columna es pot dividir en fins a tres regions, una damunt de l’altra i visibles alhora. Cada regió pot contenir una finestra o una pila de finestres d’una app."
     ],
     [
-      "Piles d’apps",
-      "Les finestres en mosaic d’una mateixa app formen una pila. Prem l’indicador o ⌘` per canviar. Cada columna admet fins a tres piles."
+      "Piles de finestres d’una app",
+      "Les finestres d’una mateixa app se superposen en una regió i només se’n mostra una cada vegada. Fes clic als indicadors de la part superior de la finestra o prem ⌘` per canviar de finestra.\n\nMode líder: Space → J / X — Afegir / treure la finestra seleccionada de la pila de la seva app."
     ],
     [
       "Columna fixa",
-      "Fixa una columna a una vora. Les altres finestres es desplacen al costat. Tab canvia el focus en mode d’ordres."
+      "Fixa una columna a una vora. Les altres finestres es desplacen al costat. Tab canvia el focus en mode líder."
     ],
     [
       "Pin Deck",
@@ -42,13 +42,13 @@
     ],
     [
       "Finestres i escriptoris",
-      "Prem un número d’escriptori. En mode d’ordres, escriu l’etiqueta d’una icona. Shift i 1–9 mouen la finestra seleccionada a un altre escriptori."
+      "Prem un número d’escriptori. En mode líder, escriu l’etiqueta d’una icona. Shift i 1–9 mouen la finestra seleccionada a un altre escriptori."
     ]
   ],
   "keyboard": [
     "Fes servir el ratolí\nAprèn les tecles sobre la marxa",
     "mapa de disposició",
-    "Amaga el tauler automàtic: Configuració → Teclat → Tauler de tecles → Mostra després de → Mai. El mapa de disposició sempre l’obre.",
+    "Amaga el tauler automàtic: Configuració → Teclat → Tauler de tecles → Mostrar després de → Mai. El mapa de disposició sempre l’obre.",
     "Prem ⌘ dos cops i deixa anar. Mentre la finestra estigui ressaltada, pots encadenar ordres. Esc surt del mode.",
     "Tauler de tecles",
     "Tecles essencials"
@@ -62,11 +62,11 @@
   "actions": [
     "Tria columna / finestra",
     "Mou finestra o columna",
-    "Uneix / separa columna",
-    "Entra / surt d’una pila d’app",
+    "Si ocupa tota la columna, s’uneix a la columna de l’esquerra / dreta. En una columna dividida, la regió activa se separa en una columna nova a l’esquerra / dreta. La pila es mou sencera.",
+    "Afegir / treure la finestra seleccionada de la pila de la seva app",
     "Afegeix / elimina app de Pin Deck",
     "Canvia escriptori / mou finestra",
-    "Surt del mode d’ordres"
+    "Surt del mode líder"
   ],
   "setup": [
     "Primers passos",
@@ -75,8 +75,8 @@
     "Instal·la Calmon",
     "Descarrega Calmon",
     ". Mou-lo a Aplicacions.",
-    "Permet l’accessibilitat",
-    "Arrossega Calmon a la llista d’Accessibilitat i activa’l.",
+    "Permetre l’accés d’accessibilitat",
+    "Arrossega l’app Calmon a la llista de dalt i, després, activa’n l’interruptor per permetre-li l’accés d’accessibilitat.",
     "Obre finestres",
     "Tria una finestra a la barra de pestanyes. El mapa de disposició obre el tauler de tecles.",
     "Calmon no mostra cap icona al Dock. És a la barra de menús {icon}."
@@ -105,7 +105,7 @@
     ],
     [
       "Calmon mou finestres entre escriptoris?",
-      "Només quan les mous tu. Canvia amb números o amb el mode d’ordres. En sortir, Calmon restaura les posicions desades."
+      "Només quan les mous tu. Canvia amb números o amb el mode líder. En sortir, Calmon restaura les posicions desades."
     ],
     [
       "La beta és gratuïta?",
@@ -113,7 +113,7 @@
     ],
     [
       "Com s’actualitza?",
-      "Tria Cerca actualitzacions al menú de Calmon."
+      "Tria Comprova si hi ha actualitzacions… al menú de Calmon."
     ]
   ],
   "demo": [
@@ -121,11 +121,11 @@
     "Continua",
     "Reinicia la demostració",
     "Prem ⌘ dos cops i deixa anar",
-    "Mode d’ordres · continua amb les tecles",
-    "Drecera de macOS · sense mode d’ordres",
+    "Mode líder · continua amb les tecles",
+    "Drecera de macOS · sense mode líder",
     "després",
     "Activa JavaScript per veure la demostració.",
-    "S’ha sortit del mode d’ordres"
+    "S’ha sortit del mode líder"
   ],
   "menus": [
     "Arxiu",

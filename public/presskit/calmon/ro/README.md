@@ -18,35 +18,47 @@ Gratuit în perioada beta
 
 O eroare sau o idee? Scrie-i lui @lazyapps pe X. Mulțumim că ne ajuți să îmbunătățim Calmon.
 
-Calmon nu are pictogramă în Dock. Îl găsești în bara de meniu.
+Ferestrele derulează orizontal. Coloana activă ocupă aproape tot ecranul. Folosește săgețile în modul lider.
 
-Ferestrele derulează orizontal. Coloana activă ocupă aproape tot ecranul. Folosește săgețile în modul de comenzi.
+O coloană poate fi împărțită în cel mult trei zone, una sub alta, vizibile simultan. Fiecare zonă conține o fereastră sau o stivă de ferestre ale aceleiași aplicații.
 
-Ferestrele în mozaic ale aceleiași aplicații formează o stivă. Apasă un indicator sau ⌘` pentru a comuta. O coloană admite până la trei stive.
+Ferestrele aceleiași aplicații se suprapun într-o singură zonă; este vizibilă doar una odată. Apasă marcajele stivei din partea de sus a ferestrei sau ⌘` pentru a comuta.
 
-Fixează o coloană la stânga sau la dreapta. Celelalte ferestre derulează alături. Tab schimbă focalizarea în modul de comenzi.
+Modul lider: Space → J / X — Adaugă / elimină fereastra selectată din stiva aplicației sale.
+
+Fixează o coloană la stânga sau la dreapta. Celelalte ferestre derulează alături. Tab schimbă focalizarea în modul lider.
 
 Fixează până la zece aplicații. Adaugă prin marcajul Pin Deck și elimină din meniul pictogramei. Ordinea este comună tuturor monitoarelor.
 
 Sky Deck listează ferestrele flotante, Max Deck pe cele în modul nativ pe tot ecranul. Apasă o pictogramă pentru a reveni la fereastră.
 
-Apasă numărul unui desktop. În modul de comenzi, scrie eticheta unei pictograme. Shift și 1–9 mută fereastra selectată pe alt desktop.
+Apasă numărul unui desktop. În modul lider, scrie eticheta unei pictograme. Shift și 1–9 mută fereastra selectată pe alt desktop.
 
 Apasă o pictogramă din bara de file pentru a selecta fereastra. Control-clic deschide acțiunile ferestrei. Apasă harta aranjamentului pentru a deschide panoul de taste. Apasă o tastă pentru a executa comanda.
+
+Dezactivează panoul automat: Configurări → Tastatură → Panoul de taste → Afișare după → Niciodată. Harta aranjamentului deschide mereu panoul.
+
+Apasă ⌘ de două ori și eliberează. Cât timp fereastra este evidențiată, poți continua comenzile. Esc închide modul.
+
+, / . — Dacă zona este singură în coloană, alătur-o coloanei din stânga / dreapta. Într-o coloană împărțită, separă zona activă într-o coloană proprie la stânga / dreapta. Stiva se mută în întregime.
+
+Space → J / X — Adaugă / elimină fereastra selectată din stiva aplicației sale
+
+macOS 26: Accesibilitate; macOS 27+: Control al dispozitivului și acces la date
 
 Accesibilitate pentru mutarea, redimensionarea și selectarea ferestrelor.
 
 Nu. Toate acțiunile funcționează cu mausul. Harta aranjamentului deschide panoul de taste.
 
-Sunt dezactivate inițial. Activează trei sau patru degete în Configurări → Gesturi. Ține Shift înainte de gest pentru gestul macOS original.
+Sunt dezactivate inițial. Activează trei sau patru degete în Configurări → Gesturi. Ține Shift înainte de gest pentru gestul macOS original. Păstrați activate gesturile cu trei sau patru degete în Configurări sistem > Trackpad > Mai multe gesturi.
 
-Cele standard da. Dialogurile, configurările și ferestrele cu dimensiune fixă plutesc. Adaugă reguli în Configurări → Avansat.
+Cele standard da. Dialogurile, configurările și ferestrele cu dimensiune fixă plutesc. Adaugă reguli în Configurări → Avansate.
 
-Doar când le muți tu. Comută cu numerele desktopurilor sau modul de comenzi. La ieșire, Calmon restaurează pozițiile salvate.
+Doar când le muți tu. Comută cu numerele desktopurilor sau modul lider. La ieșire, Calmon restaurează pozițiile salvate.
 
 Da, Calmon este gratuit în perioada beta.
 
-Alege Caută actualizări din meniul Calmon.
+Alege Căutare actualizări… din meniul Calmon.
 
 [X @lazyapps](https://x.com/lazyapps)
 
@@ -80,11 +92,11 @@ Pictograma aplicației · PNG · 1024 × 1024. Pixeli originali, nemodificați.
 
 Pictograma barei de meniu · PNG · 44 × 44 · 2×
 
-### Panou taste
+### Panoul de taste
 
 [leader-keys.png](leader-keys.png)
 
-1508 × 732 · PNG
+1664 × 780 · PNG
 
 Pixeli originali, nemodificați.
 

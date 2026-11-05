@@ -18,35 +18,47 @@ Beta boyunca ücretsiz
 
 Hata mı buldun, fikrin mi var? X’te @lazyapps’e yaz. Calmon’u geliştirmemize yardım ettiğin için teşekkürler.
 
-Calmon’un Dock simgesi yoktur. Menü çubuğunda bulabilirsin.
+Pencereler yatay kayar. Etkin sütun ekranın çoğunu kaplar. Lider modunda ok tuşlarını kullan.
 
-Pencereler yatay kayar. Etkin sütun ekranın çoğunu kaplar. Komut modunda ok tuşlarını kullan.
+Bir sütun, yukarıdan aşağıya dizilen ve aynı anda görünen en fazla üç alana bölünebilir. Her alan tek bir pencereyi veya aynı uygulamanın pencere yığınını barındırabilir.
 
-Aynı uygulamanın döşenmiş pencereleri bir yığın oluşturur. Geçiş için yığın işaretine tıkla veya ⌘` tuşlarına bas. Bir sütun en çok üç yığın alır.
+Aynı uygulamanın pencereleri tek bir alanda üst üste durur; her seferinde yalnızca biri görünür. Geçiş için pencerenin üstündeki yığın işaretlerine tıkla veya ⌘` tuşlarına bas.
 
-Sütunu sol veya sağ kenara sabitle. Diğer pencereler yanında kayar. Komut modunda Tab odağı değiştirir.
+Lider Modu: Space → J / X — Seçili pencereyi uygulamasının yığınına ekle / yığından çıkar.
+
+Sütunu sol veya sağ kenara sabitle. Diğer pencereler yanında kayar. Lider modunda Tab odağı değiştirir.
 
 En çok on uygulama sabitle. Pin Deck işaretinden ekle, simge menüsünden kaldır. Sıralama tüm ekranlarda aynıdır.
 
 Sky Deck yüzen, Max Deck yerel tam ekran pencereleri listeler. Pencereye dönmek için simgesine tıkla.
 
-Masaüstü numarasına tıkla. Komut modunda simge etiketini yaz. Shift ve 1–9 seçili pencereyi başka masaüstüne taşır.
+Masaüstü numarasına tıkla. Lider modunda simge etiketini yaz. Shift ve 1–9 seçili pencereyi başka masaüstüne taşır.
 
 Pencere seçmek için sekme çubuğundaki simgeye tıkla. Control-tıklama pencere işlemlerini açar. Tuş panelini açmak için yerleşim haritasına tıkla. Komutu çalıştırmak için bir tuşa tıkla.
+
+Otomatik paneli kapat: Ayarlar → Klavye → Tuş Paneli → Gösterme gecikmesi → Hiçbir Zaman. Yerleşim haritası paneli her zaman açar.
+
+⌘ tuşuna iki kez basıp bırak. Pencere vurgulandığı sürece komutlara devam et. Esc moddan çıkar.
+
+, / . — Alan sütunda tek başınaysa soldaki / sağdaki sütuna katılır. Bölünmüş sütunda etkin alan solda / sağda ayrı bir sütuna çıkarılır. Pencere yığınının tamamı birlikte taşınır.
+
+Space → J / X — Seçili pencereyi uygulamasının yığınına ekle / yığından çıkar
+
+macOS 26: Erişilebilirlik; macOS 27+: Aygıt Denetimi ve Veri Erişimi
 
 Pencereleri taşımak, boyutlandırmak ve seçmek için Erişilebilirlik.
 
 Hayır. Tüm işlemler fareyle yapılabilir. Yerleşim haritası tuş panelini açar.
 
-Başlangıçta kapalıdır. Ayarlar → Hareketler’den üç veya dört parmağı aç. Özgün macOS hareketi için kaydırmadan önce Shift’i basılı tut.
+Başlangıçta kapalıdır. Ayarlar → Hareketler’den üç veya dört parmağı aç. Özgün macOS hareketi için kaydırmadan önce Shift’i basılı tut. Sistem Ayarları > İzleme Dörtgeni > Diğer Hareketler bölümünde üç veya dört parmak hareketlerini açık tutun.
 
-Standart pencereler döşenir. İletişim kutuları, ayarlar ve sabit boyutlu pencereler yüzer. Ayarlar → İleri Düzey’den kural ekle.
+Standart pencereler döşenir. İletişim kutuları, ayarlar ve sabit boyutlu pencereler yüzer. Ayarlar → Gelişmiş bölümünden kural ekle.
 
-Yalnızca sen taşıdığında. Numaralarla veya komut modunda masaüstü değiştir. Çıkışta Calmon kayıtlı pencere konumlarını geri yükler.
+Yalnızca sen taşıdığında. Numaralarla veya lider modunda masaüstü değiştir. Çıkışta Calmon kayıtlı pencere konumlarını geri yükler.
 
 Evet, Calmon beta boyunca ücretsiz.
 
-Calmon menüsünden Güncellemeleri Denetle’yi seç.
+Calmon menüsünden Güncellemeleri Denetle…’yi seç.
 
 [X @lazyapps](https://x.com/lazyapps)
 
@@ -80,11 +92,11 @@ Orijinal uygulama simgesi, 1024 × 1024 PNG. Görsel, oranlar ve saydamlık koru
 
 undefined · PNG · 44 × 44 · 2×
 
-### Tuş paneli
+### Tuş Paneli
 
 [leader-keys.png](leader-keys.png)
 
-1616 × 732 · PNG
+1664 × 780 · PNG
 
 Bu dildeki özgün arayüz önizlemesi; pikseller değiştirilmemiştir.
 

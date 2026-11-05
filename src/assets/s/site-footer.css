@@ -62,7 +62,7 @@ html:not(.no-js) .base{--rise:0}
 }
 .base__col a{min-height:30px;align-items:center}
 .base__col .base__icon-link{display:inline-grid;grid-template-columns:16px auto;gap:7px}
-.base__link-icon{display:block;width:16px;height:16px;justify-self:center;overflow:visible;transform:translateY(1px)}
+.base__link-icon{display:block;width:16px;height:16px;justify-self:center;overflow:visible}
 .base__link-icon--x{width:12px;height:12px}
 .base__link-icon--shield{width:14px;height:14px}
 .base__link-icon path,.base__link-icon rect{vector-effect:non-scaling-stroke}

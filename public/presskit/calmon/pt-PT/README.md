@@ -3,7 +3,7 @@
 - Site do produto: [https://lazyapps.com/calmon/pt-PT/](https://lazyapps.com/calmon/pt-PT/)
 - Kit de imprensa: [https://lazyapps.com/calmon/presskit/#pt-PT](https://lazyapps.com/calmon/presskit/#pt-PT)
 - Plataforma: macOS 26 ou posterior
-- Disponibilidade: Grátis durante o beta
+- Disponibilidade: Grátis durante a versão beta
 - Contacto de imprensa: [lazyapps.feedback@gmail.com](mailto:lazyapps.feedback@gmail.com)
 
 ## Sobre a aplicação
@@ -12,41 +12,53 @@ O Calmon organiza janelas do Mac em colunas com deslocação. Empilhe janelas, f
 
 macOS 26 ou posterior
 
-Coloque os monitores na vertical. Lado a lado, as bordas partilhadas bloqueiam a deslocação; a navegação entre colunas retorna ao início nesses pontos. Com monitores nos dois lados, as janelas de fundo se sobrepõem atrás da selecionada.
+Coloque os monitores na vertical para obter melhores resultados. Lado a lado, as margens partilhadas interrompem a deslocação; a mudança de coluna passa a ser cíclica. Com monitores de ambos os lados, as janelas em segundo plano sobrepõem-se atrás da janela selecionada.
 
-Grátis durante o beta
+Grátis durante a versão beta
 
 Encontrou um erro ou tem uma ideia? Fale com @lazyapps no X. Obrigado por ajudar a melhorar o Calmon.
 
-O Calmon não tem ícone no Dock. Encontre-o na barra de menus.
+As janelas deslocam-se na horizontal. A coluna ativa ocupa a maior parte do ecrã. Use as teclas de seta no modo líder.
 
-As janelas deslocam-se na horizontal. A coluna ativa ocupa quase toda a ecrã. Use as setas no modo de comandos.
+Uma coluna pode ser dividida em até três áreas, uma por cima da outra e visíveis ao mesmo tempo. Cada área contém uma janela ou uma pilha de janelas de uma app.
 
-Janelas em mosaico do mesmo app formam uma pilha. Clique no indicador ou use ⌘` para alternar. Cada coluna comporta até três pilhas.
+As janelas da mesma app sobrepõem-se numa área, com apenas uma visível de cada vez. Clique nos indicadores no topo da janela ou prima ⌘` para alternar.
 
-Fixe uma coluna em uma das bordas. As outras janelas deslocam-se ao lado. Tab alterna o foco no modo de comandos.
+Modo líder: Space → J / X — Adicionar / remover a janela selecionada da pilha da sua app.
 
-Fixe até dez apps. Adicione pela marca do Pin Deck e remova pelo menu do ícone. A ordem é igual em todos os monitores.
+Fixe uma coluna numa das margens. As outras janelas deslocam-se ao lado. No modo líder, prima Tab para mudar o foco.
 
-Sky Deck lista janelas flutuantes. Max Deck lista janelas em ecrã cheia nativa. Clique em um ícone para voltar à janela.
+Fixe até dez apps. Clique na marca do Pin Deck para adicionar uma app e use o menu do ícone para a remover. A ordem é igual em todos os monitores.
 
-Clique no número de uma mesa. No modo de comandos, digite a etiqueta de um ícone. Shift e 1–9 movem a janela selecionada para outra mesa.
+Sky Deck apresenta as janelas flutuantes. Max Deck apresenta as janelas em ecrã completo nativo. Clique num ícone para voltar à respetiva janela.
 
-Clique em um ícone da barra de abas para selecionar a janela. Control-clique abre as ações da janela. Clique no mapa de layout para abrir o painel de teclas. Clique em uma tecla para executar o comando.
+Clique no número de uma secretária para mudar de secretária. No modo líder, escreva a etiqueta de um ícone para selecionar a janela. Prima Shift e 1–9 para mover a janela selecionada para outra secretária.
+
+Clique num ícone da barra de separadores para selecionar a janela. Faça Controlo-clique no ícone para ver as ações da janela. Clique no mapa da disposição para abrir o painel de teclas. Clique numa tecla para executar o comando.
+
+Para impedir a abertura automática do painel: Definições → Teclado → Painel de teclas → Mostrar após → Nunca. O mapa da disposição abre sempre o painel.
+
+Prima ⌘ duas vezes e solte a tecla para entrar no modo líder. Enquanto a janela estiver realçada, pode continuar a executar comandos. Prima Esc para sair.
+
+, / . — Se a área estiver sozinha na coluna, junte-a à coluna à esquerda / direita. Numa coluna dividida, separe a área ativa numa coluna própria à esquerda / direita. A pilha inteira move-se em conjunto.
+
+Space → J / X — Adicionar / remover a janela selecionada da pilha da sua app
+
+macOS 26: Acessibilidade; macOS 27+: Controlo do dispositivo e acesso a dados
 
 Acessibilidade para mover, redimensionar e selecionar janelas.
 
-Não. Todas as ações funcionam com o rato. Abra o painel de teclas pelo mapa de layout.
+Não. Pode usar o rato para todas as ações das janelas. Clique no mapa da disposição para abrir o painel de teclas.
 
-Estão desativados de início. Ative três ou quatro dedos em Definições → Gestos. Segure Shift antes de deslizar para usar o gesto original do macOS.
+Os gestos estão desativados por predefinição. Ative os gestos de três ou quatro dedos em Definições → Gestos. Mantenha premida a tecla Shift antes de passar os dedos para usar o gesto original do macOS. Mantenha os gestos de três ou quatro dedos ativos em Definições do Sistema > Trackpad > Mais gestos.
 
-As padrão sim. Diálogos, ajustes e janelas de tamanho fixo flutuam. Adicione regras em Definições → Avançado.
+As janelas normais são dispostas em mosaico por predefinição. As caixas de diálogo, as janelas de definições e as janelas de tamanho fixo são flutuantes. Adicione regras por app ou título em Definições → Avançado.
 
-Só quando você as move. Use os números ou o modo de comandos para trocar de mesa. Ao sair, o Calmon restaura as posições salvas.
+As janelas ficam na secretária atual até as mover. Use os números das secretárias ou o modo líder para mudar de secretária. Ao sair, o Calmon repõe as posições guardadas das janelas.
 
-Sim, o Calmon é grátis durante o beta.
+Sim, o Calmon é grátis durante a versão beta.
 
-Escolha Procurar atualizações no menu do Calmon.
+Escolha Procurar atualizações… no menu do Calmon.
 
 [X @lazyapps](https://x.com/lazyapps)
 
@@ -84,7 +96,7 @@ undefined · PNG · 44 × 44 · 2×
 
 [leader-keys.png](leader-keys.png)
 
-1472 × 732 · PNG
+1520 × 780 · PNG
 
 Pré-visualização da interface nativa neste idioma; píxeis inalterados.
 

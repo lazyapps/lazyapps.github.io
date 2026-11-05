@@ -12,7 +12,7 @@ const { index } = Astro.props;
 <div dir="ltr" class:list={['calmon-feature-art', `calmon-feature-art--${index}`]} aria-hidden="true">
   {index === 0 && <div class="scroll-scene">
     <div class="scroll-track">
-      {[notes, finder, safari].map((src, column) => <div class:list={['mini-window', {'is-focused': column === 1}]} style={`--column:${column - 1}`}><span class="traffic-lights"><i></i><i></i><i></i></span><img src={src} alt="" /></div>)}
+      {[notes, finder, safari].map((src, column) => <div class:list={['mini-window', {'is-focused': column === 1}]} data-column={column - 1} style={`--column:${column - 1}`}><span class="traffic-lights"><i></i><i></i><i></i></span><img src={src} alt="" /></div>)}
     </div>
     <span class="scroll-arrows">←<span></span>→</span>
   </div>}
@@ -53,7 +53,8 @@ const { index } = Astro.props;
   .scroll-track{position:relative;width:100%;height:124px}
   .mini-window{position:absolute;left:calc(36px + var(--column)*(100% - 64px));display:grid;place-items:center;width:calc(100% - 72px);height:124px;background:linear-gradient(#f0f3f1 20px,#fff 20px);border:1px solid #c7d0ca;border-radius:12px;box-shadow:var(--window-shadow)}
   .mini-window img{width:44px;height:44px;margin-top:16px}
-  .mini-window.is-focused{border-color:#00cb29;box-shadow:0 0 0 1px var(--green),var(--window-shadow)}
+  .mini-window::after{content:'';position:absolute;inset:-1px;border:2px solid var(--green);border-radius:12px;opacity:0;pointer-events:none}
+  .mini-window.is-focused::after{opacity:1}
   .traffic-lights{position:absolute;left:9px;top:8px;display:flex;gap:3px}
   .traffic-lights i{width:5px;height:5px;border-radius:50%;background:#ff6259}.traffic-lights i:nth-child(2){background:#ffbe2f}.traffic-lights i:nth-child(3){background:#28c840}
   .scroll-arrows{position:absolute;z-index:1;bottom:10px;pointer-events:none;left:0;right:0;display:flex;justify-content:center;align-items:center;gap:8px;color:#087763;font-size:20px;line-height:20px}
@@ -90,7 +91,14 @@ const { index } = Astro.props;
   .labeled-app{position:relative;display:block;padding-bottom:9px}
   .labeled-app>img{width:40px;height:40px;filter:drop-shadow(0 4px 3px #143b2420)}
   .labeled-app>span{position:absolute;bottom:0;left:2px;right:2px;text-align:center;background:#050505;color:var(--green);border-radius:3px;font:18px/16px 'calmon Pixel',monospace}
-  .calmon-feature-art.is-active .scroll-track{animation:feature-scroll 8s var(--motion-ease) infinite}
+  .calmon-feature-art.is-active .scroll-track{animation:feature-layout-scroll 16s var(--motion-ease) infinite}
+  .calmon-feature-art.is-active .mini-window[data-column="0"]{animation:feature-layout-join 16s var(--motion-ease) infinite}
+  .calmon-feature-art.is-active .mini-window[data-column="-1"]{animation:feature-layout-upper 16s var(--motion-ease) infinite}
+  .calmon-feature-art.is-active .mini-window[data-column="1"]{animation:feature-layout-neighbor 16s var(--motion-ease) infinite}
+  .calmon-feature-art.is-active .mini-window:not([data-column="1"]) img{animation:feature-layout-icon 16s var(--motion-ease) infinite}
+  .calmon-feature-art.is-active .mini-window[data-column="0"]::after{animation:feature-layout-center-focus 16s var(--motion-ease) infinite}
+  .calmon-feature-art.is-active .mini-window[data-column="1"]::after{animation:feature-layout-right-focus 16s var(--motion-ease) infinite}
+  .calmon-feature-art.is-active .scroll-arrows{animation:feature-layout-arrows 16s var(--motion-ease) infinite}
   .calmon-feature-art.is-active .pin-track{animation:feature-pinned-scroll 8s var(--motion-ease) infinite}
   .calmon-feature-art.is-active .stack-pages i{animation:feature-stack-tab 9s linear infinite;animation-delay:calc(var(--page)*3s - 6s)}
   .calmon-feature-art.is-active .note-pages>span{animation:feature-stack-page 9s linear infinite;animation-delay:calc(var(--page)*3s - 6s)}
@@ -98,7 +106,14 @@ const { index } = Astro.props;
   .calmon-feature-art.is-active .decks-scene .deck-app{animation:feature-deck-entry 8s var(--motion-ease) infinite}
   .calmon-feature-art.is-active .decks-scene>div:last-child .deck-app{animation-delay:.6s;animation-fill-mode:both}
   .calmon-feature-art.is-active .labeled-app>span{animation:feature-label 9s linear infinite;animation-delay:calc(var(--target)*3s)}
-  @keyframes feature-scroll{0%,12%,100%{transform:translateX(0)}30%,45%{transform:translateX(-12px)}63%,78%{transform:translateX(12px)}}
+  @keyframes feature-layout-scroll{0%,10%,44%,50%,88%,100%{transform:translateX(0)}22%,32%{transform:translateX(calc(-100% + 64px))}62%,76%{transform:translateX(calc(100% - 64px))}}
+  @keyframes feature-layout-join{0%,50%,88%,100%{height:124px;transform:translate(0,0)}62%,76%{height:58px;transform:translate(calc(-100% - 8px),66px)}}
+  @keyframes feature-layout-upper{0%,50%,88%,100%{height:124px}62%,76%{height:58px}}
+  @keyframes feature-layout-neighbor{0%,50%,88%,100%{transform:translateX(0)}62%,76%{transform:translateX(calc(-100% - 8px))}}
+  @keyframes feature-layout-icon{0%,50%,88%,100%{transform:scale(1)}62%,76%{transform:scale(.55)}}
+  @keyframes feature-layout-center-focus{0%,10%,44%,100%{opacity:1}22%,32%{opacity:0}}
+  @keyframes feature-layout-right-focus{0%,10%,44%,100%{opacity:0}22%,32%{opacity:1}}
+  @keyframes feature-layout-arrows{0%,44%,88%,100%{opacity:1}56%,80%{opacity:0}}
   @keyframes feature-pinned-scroll{0%,12%,100%{transform:translateX(0)}32%,72%{transform:translateX(-12px)}}
   @keyframes feature-stack-tab{0%,29%{background:var(--green)}34%,100%{background:#a6b4ac}}
   @keyframes feature-stack-page{0%,27%{opacity:1;transform:translateY(0)}32%,96%{opacity:0;transform:translateY(2px)}100%{opacity:1;transform:translateY(0)}}
@@ -108,5 +123,13 @@ const { index } = Astro.props;
   @media(max-width:800px){
     .calmon-feature-art{margin-bottom:16px}
   }
-  @media(prefers-reduced-motion:reduce){.calmon-feature-art *{animation:none!important}}
+  @media(prefers-reduced-motion:reduce){
+    .calmon-feature-art *,.mini-window::after{animation:none!important}
+    .scroll-track{transform:translateX(calc(100% - 64px))}
+    .mini-window:not([data-column="1"]){height:58px}
+    .mini-window[data-column="0"]{transform:translate(calc(-100% - 8px),66px)}
+    .mini-window[data-column="1"]{transform:translateX(calc(-100% - 8px))}
+    .mini-window:not([data-column="1"]) img{transform:scale(.55)}
+    .scroll-arrows{opacity:0}
+  }
 </style>

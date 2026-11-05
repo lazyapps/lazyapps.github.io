@@ -21,16 +21,16 @@
   ],
   "features": [
     [
-      "Scroll door kolommen",
-      "Vensters scrollen horizontaal. De actieve kolom vult bijna het hele scherm. Gebruik de pijltjestoetsen in de opdrachtmodus."
+      "Kolommen en verticale verdeling",
+      "Vensters scrollen horizontaal. De actieve kolom vult bijna het hele scherm. Gebruik de pijltjestoetsen in de leadermodus.\n\nEen kolom kan in maximaal drie gebieden boven elkaar worden verdeeld, die tegelijk zichtbaar zijn. Elk gebied bevat één venster of een stapel vensters van dezelfde app."
     ],
     [
-      "Appstapels",
-      "Tegelvensters van dezelfde app vormen een stapel. Klik op een stapelmarkering of druk op ⌘` om te wisselen. Een kolom bevat maximaal drie stapels."
+      "Vensterstapels van dezelfde app",
+      "Vensters van dezelfde app liggen over elkaar in één gebied. Er is telkens één zichtbaar. Klik op de stapelmarkeringen bovenaan het venster of druk op ⌘` om te wisselen.\n\nLeadermodus: Space → J / X — Het geselecteerde venster toevoegen aan / verwijderen uit de stapel van de app."
     ],
     [
       "Vaste kolom",
-      "Zet een kolom links of rechts vast. Andere vensters scrollen ernaast. Tab wisselt de focus in de opdrachtmodus."
+      "Zet een kolom links of rechts vast. Andere vensters scrollen ernaast. Tab wisselt de focus in de leadermodus."
     ],
     [
       "Pin Deck",
@@ -42,7 +42,7 @@
     ],
     [
       "Vensters & bureaubladen",
-      "Klik op een bureaubladnummer. Typ in de opdrachtmodus een pictogramlabel. Shift met 1–9 verplaatst het geselecteerde venster naar een ander bureaublad."
+      "Klik op een bureaubladnummer. Typ in de leadermodus een pictogramlabel. Shift met 1–9 verplaatst het geselecteerde venster naar een ander bureaublad."
     ]
   ],
   "keyboard": [
@@ -62,11 +62,11 @@
   "actions": [
     "Kolom / venster kiezen",
     "Venster of kolom verplaatsen",
-    "Kolom samenvoegen / splitsen",
-    "App-stapel samenvoegen / verlaten",
+    "Alleen in de kolom: voeg het gebied toe aan de kolom links / rechts. In een verdeelde kolom: plaats het actieve gebied in een eigen kolom links / rechts. De hele stapel verhuist mee.",
+    "Het geselecteerde venster toevoegen aan / verwijderen uit de stapel van de app",
     "Pin Deck-app toevoegen / verwijderen",
     "Bureaublad wisselen / venster verplaatsen",
-    "Opdrachtmodus sluiten"
+    "Leadermodus sluiten"
   ],
   "setup": [
     "Aan de slag",
@@ -75,8 +75,8 @@
     "Calmon installeren",
     "Download Calmon",
     ". Verplaats het naar Apps.",
-    "Toegankelijkheid toestaan",
-    "Sleep Calmon naar de lijst Toegankelijkheid en schakel het in.",
+    "Sta toegang tot Toegankelijkheid toe",
+    "Sleep Calmon naar de lijst hierboven en zet daarna de schakelaar ernaast aan om toegang tot Toegankelijkheid toe te staan.",
     "Open je vensters",
     "Kies een venster in de tabbladbalk. De lay-outkaart opent het toetsenpaneel.",
     "Calmon heeft geen Dock-symbool. Je vindt het in de menubalk {icon}."
@@ -105,7 +105,7 @@
     ],
     [
       "Verplaatst Calmon vensters tussen bureaubladen?",
-      "Alleen als je ze zelf verplaatst. Wissel met bureaubladnummers of de opdrachtmodus. Bij afsluiten herstelt Calmon opgeslagen vensterposities."
+      "Alleen als je ze zelf verplaatst. Wissel met bureaubladnummers of de leadermodus. Bij afsluiten herstelt Calmon opgeslagen vensterposities."
     ],
     [
       "Is de bèta gratis?",
@@ -113,7 +113,7 @@
     ],
     [
       "Hoe werk ik Calmon bij?",
-      "Kies Zoek naar updates in het Calmon-menu."
+      "Kies Zoek naar updates… in het Calmon-menu."
     ]
   ],
   "demo": [
@@ -121,11 +121,11 @@
     "Doorgaan",
     "Demo opnieuw starten",
     "Druk tweemaal op ⌘ en laat los",
-    "Opdrachtmodus · blijf toetsen gebruiken",
-    "macOS-sneltoets · geen opdrachtmodus nodig",
+    "Leadermodus · blijf toetsen gebruiken",
+    "macOS-sneltoets · geen leadermodus nodig",
     "dan",
     "Schakel JavaScript in voor de demo.",
-    "Opdrachtmodus afgesloten"
+    "Leadermodus afgesloten"
   ],
   "menus": [
     "Archief",

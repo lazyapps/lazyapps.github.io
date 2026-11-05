@@ -1,5 +1,6 @@
 import { calmonTranslations } from './calmon-translations.mjs';
 import release from './calmon-release.json' with { type: 'json' };
+import appTerms from './calmon-app-terms.json' with { type: 'json' };
 export { release as CALMON_RELEASE };
 
 const copy = {
@@ -31,28 +32,28 @@ const copy = {
     stackTitles: ['Calmon\n产品页', '功能\n说明', '发布\n说明'],
     stackDetails: ['介绍滚动布局、堆叠和固定列', '列宽、窗口规则和浮动', '系统要求与安装步骤'],
     features: [
-      ["横向滚动", "窗口横向排列，随焦点滚动。当前列占据大部分屏幕。在前导模式中用方向键切换。"],
-      ["同应用堆叠", "同一 App 的平铺窗口自动堆叠。点击堆叠标记或按 ⌘` 切换窗口。每列最多上下摆放三叠窗口。"],
-      ["固定一列", "将一列固定在左侧或右侧，其他窗口在旁边滚动。在前导模式中按 Tab 切换焦点。"],
+      ["横向滚动与上下分屏", "窗口按列横向排列，随焦点滚动。在前导键模式中用方向键切换列。\n\n一列可分成最多三个上下排列的区域，同时显示多个窗口。每个区域既可放一个窗口，也可放一组 App 堆叠。"],
+      ["同 App 窗口堆叠", "同一 App 的平铺窗口默认重叠在同一区域，一次显示一个。点击窗口顶部的堆叠标记，或按 ⌘` 切换。\n\n在前导键模式中，先按空格，再按 J 将当前窗口加入同 App 堆叠，或按 X 将当前窗口移出堆叠。"],
+      ["固定一列", "将一列固定在左侧或右侧，其他窗口在旁边滚动。在前导键模式中按 Tab 切换焦点。"],
       ["Pin Deck", "最多固定十个 App，各显示器共用顺序。点击 Pin Deck 标记添加 App。通过图标菜单移出 App。"],
       ["浮动与全屏", "Sky Deck 显示浮动窗口，Max Deck 显示原生全屏窗口。点击图标返回对应窗口。"],
-      ["窗口与桌面", "点击桌面编号切换桌面。在前导模式中按图标标签选择窗口。按 Shift 和 1–9 将窗口移到其他桌面。"],
+      ["窗口与桌面", "点击桌面编号切换桌面。在前导键模式中按图标标签选择窗口。按 Shift 和 1–9 将窗口移到其他桌面。"],
     ],
     keyboardTitle: "鼠标就能操作\n也能使用快捷键",
     keyboardMapLabel: '布局图',
-    keyboardSteps: ["点击标签栏图标选择窗口。", "右键点击图标打开窗口菜单。", "点击布局图打开按键面板。", "点击面板上的按键执行操作。"],
+    keyboardSteps: ["点击标签栏图标选择窗口。", "按住 Control 点击图标打开窗口菜单。", "点击布局图打开按键面板。", "点击面板上的按键执行操作。"],
     keyboardHelp: "不想自动显示面板，可在「设置 → 键盘 → 按键面板 → 延迟显示」中选择「永不」。点击布局图仍会立即打开。",
-    shortcutContext: "双击并松开 ⌘ 进入前导模式。窗口有高亮框时，可连续执行命令。按 Esc 退出。",
+    shortcutContext: "双击并松开 ⌘ 进入前导键模式。窗口有高亮框时，可连续执行命令。按 Esc 退出。",
     panelCaption: '按键面板',
     shortcutsTitle: "常用按键",
-    shortcuts: [['← → / ↑ ↓', '切换列／上下窗口'], ['⇧ + 方向键', '移动窗口或列'], [', / .', '并入／拆出相邻列'], ['空格 → J / X', '加入／离开 App 堆叠'], ['空格 → A / R', '加入／移出 Pin Deck'], ['1–9 / ⇧1–9', '切换桌面／移至桌面'], ['Esc', '退出前导模式']],
+    shortcuts: [['← → / ↑ ↓', '切换列／上下区域'], ['⇧ + 方向键', '移动窗口或列'], [', / .', '独占一列时，并入左／右相邻列；同列有多个区域时，将当前区域拆成左／右独立列。区域中的整组堆叠会一起移动。'], ['空格 → J / X', '将当前窗口加入／移出同 App 堆叠'], ['空格 → A / R', '加入／移出 Pin Deck'], ['1–9 / ⇧1–9', '切换桌面／移至桌面'], ['Esc', '退出前导键模式']],
     setupDownload: "下载 Calmon",
     menuBarNote: "Calmon 不在 Dock 显示图标。可在菜单栏 {icon} 找到它。",
     setupTitle: '开始使用',
     setupArt: { applications: '应用程序', accessibility: '辅助功能' },
     steps: [
       ["安装 Calmon", "下载 Calmon，将它移入「应用程序」。"],
-      ["允许辅助功能访问", "将 Calmon 拖入辅助功能列表，再打开开关。"],
+      ["允许辅助功能访问", "将 Calmon 拖入上方列表，再打开旁边的开关，允许辅助功能访问。"],
       ["打开窗口", "点击标签栏图标选择窗口。点击布局图打开按键面板。"],
     ],
     details: '常见问题',
@@ -62,9 +63,9 @@ const copy = {
       ["需要记住快捷键吗？", "不用。鼠标可完成全部窗口操作。点击布局图可随时打开按键面板。"],
       ["可以用触控板轻扫吗？", "轻扫默认关闭。可在「设置 → 手势」中启用三指或四指轻扫。轻扫前按住 Shift，可使用原有的 macOS 手势。"],
       ["所有窗口都会平铺吗？", "标准窗口默认平铺。对话框、设置窗口和固定大小的窗口默认浮动。可在「设置 → 高级」中按 App 或标题添加规则。"],
-      ["窗口会被移到其他桌面吗？", "只有主动移动时，窗口才会改变所属桌面。可用桌面编号或前导模式切换桌面。退出 Calmon 时会恢复保存的窗口位置。"],
+      ["窗口会被移到其他桌面吗？", "只有主动移动时，窗口才会改变所属桌面。可用桌面编号或前导键模式切换桌面。退出 Calmon 时会恢复保存的窗口位置。"],
       ["Beta 免费吗？", "是的，Beta 期间免费。"],
-      ["如何更新？", "在 Calmon 菜单中选择「检查更新」。"],
+      ["如何更新？", "在 Calmon 菜单中选择「检查更新…」。"],
     ],
   },
   en: {
@@ -95,8 +96,8 @@ const copy = {
     stackTitles: ['Calmon\nproduct page', 'Feature\nnotes', 'Release\nnotes'],
     stackDetails: ['Scrolling, stacking, and pinned columns', 'Column widths, rules, and floating windows', 'System requirements and installation'],
     features: [
-      ["Scroll columns", "Windows scroll in a horizontal row. The focused column fills most of the screen. Use arrow keys in leader mode."],
-      ["App stacks", "Tiled windows from the same app form a stack. Click a stack indicator or press ⌘` to switch windows. A column holds up to three stacks."],
+      ["Scrolling & split columns", "Windows scroll in a horizontal row of columns. Use arrow keys in leader mode to switch columns.\n\nSplit a column into up to three regions, arranged top to bottom and visible at once. Each region can hold one window or an app stack."],
+      ["App window stacks", "Tiled windows from the same app overlap in one region, with one visible at a time. Click a stack indicator at the top of the window or press ⌘` to switch.\n\nIn leader mode, press Space, then J to add the selected window to its app’s stack, or X to remove that window from the stack."],
       ["Fixed column", "Pin a column at either edge. Other windows scroll beside it. Use Tab in leader mode to switch focus."],
       ["Pin Deck", "Pin up to ten apps. Click the Pin Deck mark to add an app. Use an icon’s menu to remove it. The order is the same on all displays."],
       ["Sky Deck & Max Deck", "Sky Deck lists floating windows. Max Deck lists native full-screen windows. Click an icon to return to its window."],
@@ -110,10 +111,10 @@ const copy = {
     panelCaption: 'Key panel',
     shortcutsTitle: "Essential keys",
     shortcuts: [
-      ["← → / ↑ ↓", "Select a column / window"],
+      ["← → / ↑ ↓", "Select a column / vertical region"],
       ["⇧ + arrows", "Move a window or column"],
-      [", / .", "Join / leave a column"],
-      ["Space → J / X", "Join / leave an app stack"],
+      [", / .", "Alone in its column: join the column on the left / right. In a split column: move the focused region into a new column on the left / right. An app stack moves as a group."],
+      ["Space → J / X", "Add / remove the selected window from its app stack"],
       ["Space → A / R", "Add / remove a Pin Deck app"],
       ["1–9 / ⇧1–9", "Switch desktop / move window"],
       ["Esc", "Exit leader mode"],
@@ -124,7 +125,7 @@ const copy = {
     setupArt: { applications: 'Applications', accessibility: 'Accessibility' },
     steps: [
       ["Install Calmon", "Download Calmon. Move it to Applications."],
-      ["Allow Accessibility access", "Drag Calmon into the Accessibility list, then turn it on."],
+      ["Allow Accessibility Access", "Drag Calmon to the list above, then turn on its switch to allow Accessibility access."],
       ["Open your windows", "Use the tab bar to select a window. Click the layout map to show the key panel."],
     ],
     details: 'Questions, answered',
@@ -136,14 +137,16 @@ const copy = {
       ["Do all windows tile?", "Standard windows tile by default. Dialogs, settings windows, and windows with a fixed size float by default. Add app or title rules in Settings → Advanced."],
       ["Does Calmon move windows between desktops?", "Windows stay on their current desktop until you move them. Use desktop numbers or leader mode to change desktops. Calmon restores saved window positions when you quit."],
       ["Is the beta free?", "Yes. Calmon is free during beta."],
-      ["How do I update?", "Choose Check for Updates in the Calmon menu."],
+      ["How do I update?", "Choose Check for Updates… in the Calmon menu."],
     ],
   },
 };
 
 export const CALMON_LOCALES = Object.fromEntries(Object.entries({ ...copy, ...calmonTranslations }).map(([code, t]) => {
   const selectedUrl = `/calmon/${code ? `${code}/` : ''}`;
-  return [code, { ...t, dir: ['ar', 'he'].includes(t.htmlLang) ? 'rtl' : 'ltr', keyboardBody: t.keyboardSteps.join(t.htmlLang.startsWith('zh') ? '' : ' '), code, name: 'Calmon', brand: 'Calmon', title: `Calmon — ${t.positioning}`,
+  const permissionPanes = [['macOS 26', t.setupArt.accessibility], ['macOS 27+', appTerms[t.htmlLang]['Device Control and Data Access']]];
+  const faqs = t.faqs.map(([question, answer], index) => [question, index === 3 ? `${answer} ${appTerms[t.htmlLang]['Keep the three- or four-finger gestures enabled in System Settings > Trackpad > More Gestures.']}` : answer]);
+  return [code, { ...t, faqs, permissionPanes, dir: ['ar', 'he'].includes(t.htmlLang) ? 'rtl' : 'ltr', keyboardBody: t.keyboardSteps.join(t.htmlLang.startsWith('zh') ? '' : ' '), code, name: 'Calmon', brand: 'Calmon', title: `Calmon — ${t.positioning}`,
     selectedUrl, canonical: `https://lazyapps.com${selectedUrl}`,
     availability: release.status === 'published' ? t.available : t.upcoming,
     cta: t.download, ctaUrl: release.releasesUrl }];

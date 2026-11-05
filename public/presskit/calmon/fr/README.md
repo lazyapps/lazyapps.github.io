@@ -18,35 +18,47 @@ Gratuit pendant la bêta
 
 Un problème ou une idée ? Contactez @lazyapps sur X. Merci de nous aider à améliorer Calmon.
 
-Calmon n’a pas d’icône dans le Dock. Retrouvez-le dans la barre des menus.
+Les fenêtres défilent horizontalement. La colonne active occupe presque tout l’écran. Utilisez les flèches en mode leader.
 
-Les fenêtres défilent horizontalement. La colonne active occupe presque tout l’écran. Utilisez les flèches en mode commande.
+Une colonne peut contenir jusqu’à trois zones disposées de haut en bas et visibles en même temps. Chaque zone accueille une fenêtre ou une pile de fenêtres d’une app.
 
-Les fenêtres en mosaïque d’une même app forment une pile. Cliquez sur un repère de pile ou appuyez sur ⌘` pour changer de fenêtre. Une colonne contient jusqu’à trois piles.
+Les fenêtres d’une même app se superposent dans une seule zone : une seule est visible à la fois. Cliquez sur les repères en haut de la fenêtre ou appuyez sur ⌘` pour changer de fenêtre.
 
-Fixez une colonne à gauche ou à droite. Les autres fenêtres défilent à côté. Tab change le focus en mode commande.
+Mode leader: Space → J / X — Ajouter / retirer la fenêtre sélectionnée de la pile de son app.
+
+Fixez une colonne à gauche ou à droite. Les autres fenêtres défilent à côté. Tab change le focus en mode leader.
 
 Épinglez jusqu’à dix apps. Ajoutez-les via le repère Pin Deck, retirez-les via le menu de leur icône. L’ordre est commun à tous les écrans.
 
 Sky Deck regroupe les fenêtres flottantes, Max Deck les fenêtres en plein écran natif. Cliquez sur une icône pour retrouver sa fenêtre.
 
-Cliquez sur un numéro de bureau. En mode commande, saisissez le repère d’une icône. Shift et 1–9 déplacent la fenêtre sélectionnée vers un autre bureau.
+Cliquez sur un numéro de bureau. En mode leader, saisissez le repère d’une icône. Shift et 1–9 déplacent la fenêtre sélectionnée vers un autre bureau.
 
 Cliquez sur une icône de la barre d’onglets pour choisir une fenêtre. Un clic avec Control ouvre ses actions. Cliquez sur le plan de disposition pour ouvrir le panneau des touches. Cliquez sur une touche pour exécuter sa commande.
+
+Pour masquer le panneau automatique : Réglages → Clavier → Panneau des touches → Afficher après → Jamais. Le plan de disposition l’ouvre toujours.
+
+Appuyez deux fois sur ⌘ puis relâchez. Tant que la fenêtre est surlignée, enchaînez les commandes. Esc quitte ce mode.
+
+, / . — Seule dans sa colonne : la zone rejoint la colonne de gauche / droite. Dans une colonne partagée : la zone active devient une colonne indépendante à gauche / droite. Toute la pile se déplace ensemble.
+
+Space → J / X — Ajouter / retirer la fenêtre sélectionnée de la pile de son app
+
+macOS 26: Accessibilité; macOS 27+: Contrôle de l’appareil et accès aux données
 
 Autorisez l’accessibilité pour déplacer, redimensionner et sélectionner les fenêtres.
 
 Non. Toutes les actions fonctionnent à la souris. Le plan de disposition ouvre le panneau des touches à tout moment.
 
-Les balayages sont désactivés au départ. Activez trois ou quatre doigts dans Réglages → Gestes. Maintenez Shift avant de balayer pour utiliser le geste macOS d’origine.
+Les balayages sont désactivés au départ. Activez trois ou quatre doigts dans Réglages → Gestes. Maintenez Shift avant de balayer pour utiliser le geste macOS d’origine. Laissez les gestes à trois ou quatre doigts activés dans Réglages Système > Trackpad > Gestes supplémentaires.
 
 Les fenêtres standard le sont. Les dialogues, réglages et fenêtres de taille fixe flottent. Ajoutez des règles dans Réglages → Avancé.
 
-Uniquement si vous le demandez. Changez de bureau avec son numéro ou le mode commande. Calmon restaure les positions enregistrées à sa fermeture.
+Uniquement si vous le demandez. Changez de bureau avec son numéro ou le mode leader. Calmon restaure les positions enregistrées à sa fermeture.
 
 Oui, Calmon est gratuit pendant la bêta.
 
-Choisissez « Rechercher des mises à jour » dans le menu Calmon.
+Choisissez « Rechercher des mises à jour… » dans le menu Calmon.
 
 [X @lazyapps](https://x.com/lazyapps)
 
@@ -84,7 +96,7 @@ Icône de barre des menus · PNG · 44 × 44 · 2×
 
 [leader-keys.png](../leader-keys.png)
 
-1652 × 732 · PNG
+1700 × 780 · PNG
 
 Aperçu de l’interface native dans cette langue ; pixels inchangés.
 

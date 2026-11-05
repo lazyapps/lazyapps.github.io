@@ -21,16 +21,16 @@
   ],
   "features": [
     [
-      "Gulir kolom",
-      "Jendela bergulir mendatar. Kolom aktif mengisi sebagian besar layar. Gunakan tombol panah dalam mode perintah."
+      "Kolom dan pembagian vertikal",
+      "Jendela bergulir mendatar. Kolom aktif mengisi sebagian besar layar. Gunakan tombol panah dalam mode leader.\n\nKolom dapat dibagi menjadi hingga tiga area dari atas ke bawah yang terlihat bersamaan. Tiap area dapat berisi satu jendela atau tumpukan jendela dari satu app."
     ],
     [
-      "Tumpukan app",
-      "Jendela ubin dari app yang sama membentuk tumpukan. Klik penanda tumpukan atau tekan ⌘` untuk beralih. Satu kolom menampung hingga tiga tumpukan."
+      "Tumpukan jendela satu app",
+      "Jendela dari app yang sama saling menutupi dalam satu area; hanya satu yang terlihat setiap saat. Klik penanda tumpukan di bagian atas jendela atau tekan ⌘` untuk beralih.\n\nMode Leader: Space → J / X — Tambahkan / keluarkan jendela yang dipilih dari tumpukan app-nya."
     ],
     [
       "Kolom tetap",
-      "Sematkan kolom di tepi kiri atau kanan. Jendela lain bergulir di sampingnya. Tab mengganti fokus dalam mode perintah."
+      "Sematkan kolom di tepi kiri atau kanan. Jendela lain bergulir di sampingnya. Tab mengganti fokus dalam mode leader."
     ],
     [
       "Pin Deck",
@@ -42,15 +42,15 @@
     ],
     [
       "Jendela & desktop",
-      "Klik nomor desktop. Dalam mode perintah, ketik label ikon. Shift dan 1–9 memindahkan jendela terpilih ke desktop lain."
+      "Klik nomor desktop. Dalam mode leader, ketik label ikon. Shift dan 1–9 memindahkan jendela terpilih ke desktop lain."
     ]
   ],
   "keyboard": [
     "Gunakan tetikus\nPelajari tombol sambil berjalan",
     "peta tata letak",
-    "Matikan panel otomatis: Pengaturan → Papan Ketik → Panel Tombol → Tampilkan setelah → Tidak Pernah. Peta tata letak selalu membuka panel.",
+    "Matikan panel otomatis: Pengaturan → Papan Ketik → Panel Tombol → Tampilkan setelah → Jangan Pernah. Peta tata letak selalu membuka panel.",
     "Tekan ⌘ dua kali lalu lepaskan. Selama jendela disorot, lanjutkan perintah tanpa memicu ulang. Esc keluar dari mode.",
-    "Panel tombol",
+    "Panel Tombol",
     "Tombol penting"
   ],
   "mouse": [
@@ -62,11 +62,11 @@
   "actions": [
     "Pilih kolom / jendela",
     "Pindahkan jendela atau kolom",
-    "Gabung / pisahkan kolom",
-    "Gabung / keluar dari tumpukan app",
+    "Jika area sendirian dalam kolom, gabungkan ke kolom kiri / kanan. Dalam kolom terbagi, pisahkan area aktif menjadi kolom baru di kiri / kanan. Seluruh tumpukan berpindah bersama.",
+    "Tambahkan / keluarkan jendela yang dipilih dari tumpukan app-nya",
     "Tambah / hapus app Pin Deck",
     "Ganti desktop / pindahkan jendela",
-    "Keluar dari mode perintah"
+    "Keluar dari mode leader"
   ],
   "setup": [
     "Mulai menggunakan",
@@ -75,8 +75,8 @@
     "Instal Calmon",
     "Unduh Calmon",
     ". Pindahkan ke Aplikasi.",
-    "Izinkan aksesibilitas",
-    "Seret Calmon ke daftar Aksesibilitas, lalu aktifkan.",
+    "Izinkan Akses Aksesibilitas",
+    "Seret Calmon ke daftar di atas, lalu nyalakan sakelarnya untuk mengizinkan akses Aksesibilitas.",
     "Buka jendela Anda",
     "Pilih jendela di bar tab. Peta tata letak membuka panel tombol.",
     "Calmon tidak memiliki ikon di Dock. Temukan di bar menu {icon}."
@@ -97,7 +97,7 @@
     ],
     [
       "Bisakah memakai usapan trackpad?",
-      "Awalnya nonaktif. Aktifkan tiga atau empat jari di Pengaturan → Gestur. Tahan Shift sebelum mengusap untuk memakai gestur asli macOS."
+      "Awalnya nonaktif. Aktifkan tiga atau empat jari di Pengaturan → Gerakan. Tahan Shift sebelum mengusap untuk memakai gestur asli macOS."
     ],
     [
       "Apakah semua jendela menjadi ubin?",
@@ -105,7 +105,7 @@
     ],
     [
       "Apakah Calmon memindahkan jendela antar desktop?",
-      "Hanya saat Anda memindahkannya. Beralih dengan nomor desktop atau mode perintah. Saat keluar, Calmon memulihkan posisi jendela tersimpan."
+      "Hanya saat Anda memindahkannya. Beralih dengan nomor desktop atau mode leader. Saat keluar, Calmon memulihkan posisi jendela tersimpan."
     ],
     [
       "Apakah beta gratis?",
@@ -113,7 +113,7 @@
     ],
     [
       "Bagaimana memperbarui?",
-      "Pilih Periksa Pembaruan di menu Calmon."
+      "Pilih Periksa Pembaruan… di menu Calmon."
     ]
   ],
   "demo": [
@@ -121,11 +121,11 @@
     "Lanjutkan",
     "Ulangi demo",
     "Tekan ⌘ dua kali lalu lepaskan",
-    "Mode perintah · lanjutkan dengan tombol",
-    "Pintasan macOS · tanpa mode perintah",
+    "Mode Leader · lanjutkan dengan tombol",
+    "Pintasan macOS · tanpa mode leader",
     "lalu",
     "Aktifkan JavaScript untuk memutar demo.",
-    "Mode perintah ditutup"
+    "Mode leader ditutup"
   ],
   "menus": [
     "File",
