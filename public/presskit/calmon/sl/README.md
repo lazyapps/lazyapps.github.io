@@ -14,6 +14,8 @@ macOS 26 ali novejši
 
 Postavi jih drugega nad drugega. Vzporedni zasloni na skupnih robovih blokirajo drsenje; preklapljanje stolpcev se tam vrne na začetek. Z zaslonoma na obeh straneh se okna v ozadju prekrivajo za izbranim oknom.
 
+\` premakne fokus na naslednji zaslon. Shift + \` premakne fokusirano okno na trenutno namizje tega zaslona in sledi oknu.
+
 Med beto brezplačno
 
 Napaka ali zamisel? Piši @lazyapps na X. Hvala za pomoč pri izboljšanju Calmona.
@@ -22,7 +24,7 @@ Okna drsijo vodoravno. Aktivni stolpec zapolni večino zaslona. V načinu vodiln
 
 Stolpec lahko razdeliš na največ tri območja drugo nad drugim, ki so vidna hkrati. Vsako območje vsebuje eno okno ali sklad oken iste aplikacije.
 
-Okna iste aplikacije se prekrivajo v enem območju, vidno pa je le eno naenkrat. Za preklop klikni oznake sklada na vrhu okna ali pritisni ⌘`.
+Okna iste aplikacije se prekrivajo v enem območju, vidno pa je le eno naenkrat. Za preklop klikni oznake sklada na vrhu okna ali pritisni ⌘\`.
 
 Način vodilne tipke: Space → J / X — Dodaj / odstrani izbrano okno iz sklada njegove aplikacije.
 
@@ -43,6 +45,10 @@ Dvakrat pritisni ⌘ in spusti. Dokler je okno poudarjeno, lahko nadaljuješ z u
 , / . — Če je območje samo v stolpcu, ga pridruži levemu / desnemu stolpcu. V razdeljenem stolpcu aktivno območje izloči v samostojen stolpec levo / desno. Celoten sklad se premakne skupaj.
 
 Space → J / X — Dodaj / odstrani izbrano okno iz sklada njegove aplikacije
+
+1–9 / ⇧1–9 — Zamenjaj namizje / premakni okno
+
+0 → 10–99 / ⇧0 — V načinu vodilne tipke pritisnite 0, nato vnesite dve števki za prehod na namizja 10–99.
 
 macOS 26: Dostopnost; macOS 27+: Upravljanje naprave in dostop do podatkov
 
@@ -96,7 +102,7 @@ Ikona menijske vrstice · PNG · 44 × 44 · 2×
 
 [leader-keys.png](leader-keys.png)
 
-1664 × 780 · PNG
+1820 × 840 · PNG
 
 Izvirne slikovne pike brez sprememb.
 

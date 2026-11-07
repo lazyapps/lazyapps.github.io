@@ -14,6 +14,8 @@ macOS 26 ou posterior
 
 Coloque os monitores na vertical para obter melhores resultados. Lado a lado, as margens partilhadas interrompem a deslocação; a mudança de coluna passa a ser cíclica. Com monitores de ambos os lados, as janelas em segundo plano sobrepõem-se atrás da janela selecionada.
 
+\` muda o foco para o monitor seguinte. Shift + \` move a janela em foco para a secretária atual desse monitor e segue a janela.
+
 Grátis durante a versão beta
 
 Encontrou um erro ou tem uma ideia? Fale com @lazyapps no X. Obrigado por ajudar a melhorar o Calmon.
@@ -22,7 +24,7 @@ As janelas deslocam-se na horizontal. A coluna ativa ocupa a maior parte do ecr�
 
 Uma coluna pode ser dividida em até três áreas, uma por cima da outra e visíveis ao mesmo tempo. Cada área contém uma janela ou uma pilha de janelas de uma app.
 
-As janelas da mesma app sobrepõem-se numa área, com apenas uma visível de cada vez. Clique nos indicadores no topo da janela ou prima ⌘` para alternar.
+As janelas da mesma app sobrepõem-se numa área, com apenas uma visível de cada vez. Clique nos indicadores no topo da janela ou prima ⌘\` para alternar.
 
 Modo líder: Space → J / X — Adicionar / remover a janela selecionada da pilha da sua app.
 
@@ -43,6 +45,10 @@ Prima ⌘ duas vezes e solte a tecla para entrar no modo líder. Enquanto a jane
 , / . — Se a área estiver sozinha na coluna, junte-a à coluna à esquerda / direita. Numa coluna dividida, separe a área ativa numa coluna própria à esquerda / direita. A pilha inteira move-se em conjunto.
 
 Space → J / X — Adicionar / remover a janela selecionada da pilha da sua app
+
+1–9 / ⇧1–9 — Mudar de secretária / mover janela
+
+0 → 10–99 / ⇧0 — No modo líder, prima 0 e depois introduza dois dígitos para ir para as secretárias 10–99.
 
 macOS 26: Acessibilidade; macOS 27+: Controlo do dispositivo e acesso a dados
 
@@ -96,7 +102,7 @@ undefined · PNG · 44 × 44 · 2×
 
 [leader-keys.png](leader-keys.png)
 
-1520 × 780 · PNG
+1676 × 840 · PNG
 
 Pré-visualização da interface nativa neste idioma; píxeis inalterados.
 

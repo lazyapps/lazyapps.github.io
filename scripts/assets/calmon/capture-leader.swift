@@ -8,7 +8,17 @@ CTFontManagerRegisterFontsForURL(URL(fileURLWithPath: CommandLine.arguments[2]) 
 precondition(PixelFace.tiny5.fontCount == 1 && PixelFace.panel.fontCount == 2, "All native pixel fonts must load before capture")
 Ink.accent = Accent.green.color
 let help = LeaderHelpView()
-help.sections = LeaderCommand.help(labels: JumpSettings.defaults.keys(layout: [:]), layout: [:])
+help.sections = LeaderCommand.help(labels: JumpSettings.defaults.keys(layout: [:]).filter { $0.code != 50 }, layout: [:],
+                                   extendedDesktops: true, canSwitchDisplay: true)
+let sections: [[String: Any]] = help.sections.map { section in
+    ["title": section.title, "rows": section.rows.map { row -> [String: Any] in
+        var keys = row.keys.map(LeaderHelpView.legend)
+        if let separator = row.separator, keys.count > 1 { keys.insert(separator, at: keys.count - 1) }
+        return ["title": row.title, "keys": keys]
+    }]
+}
+try JSONSerialization.data(withJSONObject: sections, options: [.prettyPrinted, .sortedKeys])
+    .write(to: URL(fileURLWithPath: CommandLine.arguments[1]).deletingPathExtension().appendingPathExtension("panel.json"))
 help.frame = CGRect(origin: .zero, size: help.intrinsicContentSize)
 let panel = NSView(frame: help.bounds.insetBy(dx: -24, dy: -24))
 panel.wantsLayer = true

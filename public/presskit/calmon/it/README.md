@@ -14,6 +14,8 @@ macOS 26 o successivo
 
 Disponili in verticale. Affiancati, i bordi condivisi bloccano lo scorrimento e il cambio di colonna torna all’inizio. Con schermi su entrambi i lati, le finestre sullo sfondo si sovrappongono dietro quella selezionata.
 
+\` passa al monitor successivo. Shift + \` sposta la finestra attiva sulla scrivania attuale di quel monitor e la segue.
+
 Gratis durante la beta
 
 Un errore o un’idea? Scrivi a @lazyapps su X. Grazie per aiutarci a migliorare Calmon.
@@ -22,7 +24,7 @@ Le finestre scorrono in orizzontale. La colonna attiva occupa quasi tutto lo sch
 
 Una colonna può essere divisa in un massimo di tre aree, una sopra l’altra e visibili insieme. Ogni area contiene una finestra o una pila di finestre di un’app.
 
-Le finestre della stessa app si sovrappongono in un’unica area: ne è visibile una alla volta. Fai clic sugli indicatori in cima alla finestra o premi ⌘` per cambiare finestra.
+Le finestre della stessa app si sovrappongono in un’unica area: ne è visibile una alla volta. Fai clic sugli indicatori in cima alla finestra o premi ⌘\` per cambiare finestra.
 
 Modalità leader: Space → J / X — Aggiungi / rimuovi la finestra selezionata dalla pila della sua app.
 
@@ -43,6 +45,10 @@ Premi ⌘ due volte e rilascialo. Finché la finestra è evidenziata, puoi conti
 , / . — Se l’area è sola nella colonna, uniscila alla colonna a sinistra / destra. In una colonna divisa, separa l’area attiva in una nuova colonna a sinistra / destra. La pila si sposta interamente.
 
 Space → J / X — Aggiungi / rimuovi la finestra selezionata dalla pila della sua app
+
+1–9 / ⇧1–9 — Cambia scrivania / sposta finestra
+
+0 → 10–99 / ⇧0 — In modalità leader, premi 0, poi digita due cifre per passare alle scrivanie 10–99.
 
 macOS 26: Accessibilità; macOS 27+: Controllo del dispositivo e accesso ai dati
 
@@ -96,7 +102,7 @@ undefined · PNG · 44 × 44 · 2×
 
 [leader-keys.png](leader-keys.png)
 
-1484 × 780 · PNG
+1640 × 840 · PNG
 
 Anteprima dell’interfaccia nativa in questa lingua; pixel invariati.
 

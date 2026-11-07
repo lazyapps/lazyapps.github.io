@@ -14,7 +14,9 @@
     "Device Control and Data Access": "Device Control and Data Access",
     "Allow Accessibility Access…": "Allow Accessibility Access…",
     "Drag %@ to the list above, then turn on its switch to allow Accessibility access.": "Drag %@ to the list above, then turn on its switch to allow Accessibility access.",
-    "Keep the three- or four-finger gestures enabled in System Settings > Trackpad > More Gestures.": "Keep the three- or four-finger gestures enabled in System Settings > Trackpad > More Gestures."
+    "Keep the three- or four-finger gestures enabled in System Settings > Trackpad > More Gestures.": "Keep the three- or four-finger gestures enabled in System Settings > Trackpad > More Gestures.",
+    "In leader mode, press 0, then two digits for desktops 10–99.": "In leader mode, press 0, then two digits for desktops 10–99.",
+    "` focuses the next display. Shift-` moves the focused window to that display’s current desktop and follows it.": "` focuses the next display. Shift-` moves the focused window to that display’s current desktop and follows it."
   },
   "ar": {
     "Leader Mode": "وضع القائد",
@@ -31,7 +33,9 @@
     "Device Control and Data Access": "التحكم في الأجهزة والوصول إلى البيانات",
     "Allow Accessibility Access…": "السماح بالوصول إلى تسهيلات الاستخدام…",
     "Drag %@ to the list above, then turn on its switch to allow Accessibility access.": "اسحب %@ إلى القائمة أعلاه، ثم شغّل مفتاح التبديل بجانبه للسماح بالوصول إلى تسهيلات الاستخدام.",
-    "Keep the three- or four-finger gestures enabled in System Settings > Trackpad > More Gestures.": "أبقِ إيماءات الثلاثة أو الأربعة أصابع مفعلة في إعدادات النظام > لوحة التعقب > مزيد من الإيماءات."
+    "Keep the three- or four-finger gestures enabled in System Settings > Trackpad > More Gestures.": "أبقِ إيماءات الثلاثة أو الأربعة أصابع مفعلة في إعدادات النظام > لوحة التعقب > مزيد من الإيماءات.",
+    "In leader mode, press 0, then two digits for desktops 10–99.": "في وضع القائد، اضغط على 0، ثم اكتب رقمين للانتقال إلى أسطح المكتب 10–99.",
+    "` focuses the next display. Shift-` moves the focused window to that display’s current desktop and follows it.": "ينقل المفتاح ⁦`⁩ التركيز إلى شاشة العرض التالية. وينقل ⁦Shift + `⁩ النافذة النشطة إلى سطح المكتب الحالي على تلك الشاشة وينتقل معها."
   },
   "ca": {
     "Leader Mode": "Mode líder",
@@ -48,7 +52,9 @@
     "Device Control and Data Access": "Control de dispositius i accés a les dades",
     "Allow Accessibility Access…": "Permetre l’accés d’accessibilitat…",
     "Drag %@ to the list above, then turn on its switch to allow Accessibility access.": "Arrossega l’app %@ a la llista de dalt i, després, activa’n l’interruptor per permetre-li l’accés d’accessibilitat.",
-    "Keep the three- or four-finger gestures enabled in System Settings > Trackpad > More Gestures.": "Mantén activats els gestos de tres o quatre dits a Configuració del Sistema > Trackpad > Més gestos."
+    "Keep the three- or four-finger gestures enabled in System Settings > Trackpad > More Gestures.": "Mantén activats els gestos de tres o quatre dits a Configuració del Sistema > Trackpad > Més gestos.",
+    "In leader mode, press 0, then two digits for desktops 10–99.": "En el mode líder, prem 0 i després introdueix dues xifres per anar als escriptoris 10–99.",
+    "` focuses the next display. Shift-` moves the focused window to that display’s current desktop and follows it.": "` passa a la pantalla següent. Shift + ` mou la finestra activa a l’escriptori actual d’aquella pantalla i la segueix."
   },
   "cs": {
     "Leader Mode": "Režim lídra",
@@ -65,7 +71,9 @@
     "Device Control and Data Access": "Ovládání zařízení a přístup k datům",
     "Allow Accessibility Access…": "Povolit přístup ke Zpřístupnění…",
     "Drag %@ to the list above, then turn on its switch to allow Accessibility access.": "Přetáhněte %@ do seznamu výše a pak zapněte jeho přepínač, abyste povolili přístup ke Zpřístupnění.",
-    "Keep the three- or four-finger gestures enabled in System Settings > Trackpad > More Gestures.": "Ponechte zapnutá gesta třemi nebo čtyřmi prsty v Nastavení systému > Trackpad > Další gesta."
+    "Keep the three- or four-finger gestures enabled in System Settings > Trackpad > More Gestures.": "Ponechte zapnutá gesta třemi nebo čtyřmi prsty v Nastavení systému > Trackpad > Další gesta.",
+    "In leader mode, press 0, then two digits for desktops 10–99.": "V režimu lídra stiskněte 0 a pak zadejte dvě číslice pro přechod na plochy 10–99.",
+    "` focuses the next display. Shift-` moves the focused window to that display’s current desktop and follows it.": "Klávesa ` přepne na následující monitor. Shift + ` přesune aktivní okno na aktuální plochu tohoto monitoru a přejde za ním."
   },
   "da": {
     "Leader Mode": "Leader-tilstand",
@@ -82,7 +90,9 @@
     "Device Control and Data Access": "Styring af enhed og adgang til data",
     "Allow Accessibility Access…": "Tillad adgang til tilgængelighed…",
     "Drag %@ to the list above, then turn on its switch to allow Accessibility access.": "Træk %@ til listen ovenfor, og slå derefter kontakten ved appen til for at tillade adgang til tilgængelighed.",
-    "Keep the three- or four-finger gestures enabled in System Settings > Trackpad > More Gestures.": "Behold bevægelser med tre eller fire fingre slået til i Systemindstillinger > Pegefelt > Flere bevægelser."
+    "Keep the three- or four-finger gestures enabled in System Settings > Trackpad > More Gestures.": "Behold bevægelser med tre eller fire fingre slået til i Systemindstillinger > Pegefelt > Flere bevægelser.",
+    "In leader mode, press 0, then two digits for desktops 10–99.": "I leader-tilstand skal du trykke på 0 og derefter indtaste to cifre for at skifte til skrivebord 10–99.",
+    "` focuses the next display. Shift-` moves the focused window to that display’s current desktop and follows it.": "` flytter fokus til den næste skærm. Shift + ` flytter det fokuserede vindue til den skærms aktuelle skrivebord og følger vinduet."
   },
   "de": {
     "Leader Mode": "Leader-Modus",
@@ -99,7 +109,9 @@
     "Device Control and Data Access": "Gerätesteuerung und Datenzugriff",
     "Allow Accessibility Access…": "Zugriff auf Bedienungshilfen erlauben …",
     "Drag %@ to the list above, then turn on its switch to allow Accessibility access.": "Ziehe %@ in die Liste oben und schalte danach den zugehörigen Schalter ein, um den Zugriff auf Bedienungshilfen zu erlauben.",
-    "Keep the three- or four-finger gestures enabled in System Settings > Trackpad > More Gestures.": "Lass die Gesten mit drei oder vier Fingern unter Systemeinstellungen > Trackpad > Weitere Gesten aktiviert."
+    "Keep the three- or four-finger gestures enabled in System Settings > Trackpad > More Gestures.": "Lass die Gesten mit drei oder vier Fingern unter Systemeinstellungen > Trackpad > Weitere Gesten aktiviert.",
+    "In leader mode, press 0, then two digits for desktops 10–99.": "Drücke im Leader-Modus 0 und gib dann zwei Ziffern ein, um zu den Schreibtischen 10–99 zu wechseln.",
+    "` focuses the next display. Shift-` moves the focused window to that display’s current desktop and follows it.": "` wechselt den Fokus zum nächsten Display. Shift + ` bewegt das fokussierte Fenster auf den aktuellen Schreibtisch dieses Displays und folgt dem Fenster."
   },
   "el": {
     "Leader Mode": "Λειτουργία πλήκτρου-οδηγού",
@@ -116,7 +128,9 @@
     "Device Control and Data Access": "Έλεγχος συσκευής και πρόσβαση σε δεδομένα",
     "Allow Accessibility Access…": "Παραχώρηση πρόσβασης Προσβασιμότητας…",
     "Drag %@ to the list above, then turn on its switch to allow Accessibility access.": "Σύρετε το %@ στην παραπάνω λίστα και μετά ενεργοποιήστε τον διακόπτη του για να επιτρέψετε την πρόσβαση Προσβασιμότητας.",
-    "Keep the three- or four-finger gestures enabled in System Settings > Trackpad > More Gestures.": "Διατηρήστε ενεργές τις χειρονομίες τριών ή τεσσάρων δαχτύλων στις Ρυθμίσεις συστήματος > Επιφάνεια αφής > Περισσότερες χειρονομίες."
+    "Keep the three- or four-finger gestures enabled in System Settings > Trackpad > More Gestures.": "Διατηρήστε ενεργές τις χειρονομίες τριών ή τεσσάρων δαχτύλων στις Ρυθμίσεις συστήματος > Επιφάνεια αφής > Περισσότερες χειρονομίες.",
+    "In leader mode, press 0, then two digits for desktops 10–99.": "Στη λειτουργία πλήκτρου-οδηγού, πατήστε 0 και μετά πληκτρολογήστε δύο ψηφία για μετάβαση στα γραφεία εργασίας 10–99.",
+    "` focuses the next display. Shift-` moves the focused window to that display’s current desktop and follows it.": "Το ` μεταφέρει την εστίαση στην επόμενη οθόνη. Το Shift + ` μετακινεί το εστιασμένο παράθυρο στο τρέχον γραφείο εργασίας αυτής της οθόνης και το ακολουθεί."
   },
   "es": {
     "Leader Mode": "Modo líder",
@@ -133,7 +147,9 @@
     "Device Control and Data Access": "Control de dispositivos y acceso a datos",
     "Allow Accessibility Access…": "Permitir acceso de accesibilidad…",
     "Drag %@ to the list above, then turn on its switch to allow Accessibility access.": "Arrastra %@ a la lista de arriba y, después, activa su interruptor para permitir el acceso de accesibilidad.",
-    "Keep the three- or four-finger gestures enabled in System Settings > Trackpad > More Gestures.": "Mantén activados los gestos de tres o cuatro dedos en Ajustes del Sistema > Trackpad > Más gestos."
+    "Keep the three- or four-finger gestures enabled in System Settings > Trackpad > More Gestures.": "Mantén activados los gestos de tres o cuatro dedos en Ajustes del Sistema > Trackpad > Más gestos.",
+    "In leader mode, press 0, then two digits for desktops 10–99.": "En el modo líder, pulsa 0 y luego introduce dos dígitos para ir a los escritorios 10–99.",
+    "` focuses the next display. Shift-` moves the focused window to that display’s current desktop and follows it.": "` pasa a la pantalla siguiente. Shift + ` mueve la ventana activa al escritorio actual de esa pantalla y la sigue."
   },
   "es-419": {
     "Leader Mode": "Modo líder",
@@ -150,7 +166,9 @@
     "Device Control and Data Access": "Control de dispositivos y acceso a los datos",
     "Allow Accessibility Access…": "Permitir acceso de accesibilidad…",
     "Drag %@ to the list above, then turn on its switch to allow Accessibility access.": "Arrastra %@ a la lista de arriba y, después, activa su interruptor para permitir el acceso de accesibilidad.",
-    "Keep the three- or four-finger gestures enabled in System Settings > Trackpad > More Gestures.": "Mantén activados los gestos de tres o cuatro dedos en Configuración del Sistema > Trackpad > Más gestos."
+    "Keep the three- or four-finger gestures enabled in System Settings > Trackpad > More Gestures.": "Mantén activados los gestos de tres o cuatro dedos en Configuración del Sistema > Trackpad > Más gestos.",
+    "In leader mode, press 0, then two digits for desktops 10–99.": "En el modo líder, presiona 0 y luego ingresa dos dígitos para ir a los escritorios 10–99.",
+    "` focuses the next display. Shift-` moves the focused window to that display’s current desktop and follows it.": "` pasa a la pantalla siguiente. Shift + ` mueve la ventana activa al escritorio actual de esa pantalla y la sigue."
   },
   "fi": {
     "Leader Mode": "Leader-tila",
@@ -167,7 +185,9 @@
     "Device Control and Data Access": "Laitehallinta ja tietojen käyttö",
     "Allow Accessibility Access…": "Salli Käyttöapu-oikeus…",
     "Drag %@ to the list above, then turn on its switch to allow Accessibility access.": "Vedä %@ yllä olevaan luetteloon ja laita sitten sen kytkin päälle salliaksesi Käyttöapu-oikeuden.",
-    "Keep the three- or four-finger gestures enabled in System Settings > Trackpad > More Gestures.": "Pidä kolmen tai neljän sormen eleet käytössä kohdassa Järjestelmäasetukset > Ohjauslevy > Lisää eleitä."
+    "Keep the three- or four-finger gestures enabled in System Settings > Trackpad > More Gestures.": "Pidä kolmen tai neljän sormen eleet käytössä kohdassa Järjestelmäasetukset > Ohjauslevy > Lisää eleitä.",
+    "In leader mode, press 0, then two digits for desktops 10–99.": "Paina leader-tilassa 0 ja kirjoita sitten kaksi numeroa siirtyäksesi työpöydille 10–99.",
+    "` focuses the next display. Shift-` moves the focused window to that display’s current desktop and follows it.": "` siirtää kohdistuksen seuraavalle näytölle. Shift + ` siirtää aktiivisen ikkunan kyseisen näytön nykyiselle työpöydälle ja seuraa ikkunaa."
   },
   "fr": {
     "Leader Mode": "Mode leader",
@@ -184,7 +204,9 @@
     "Device Control and Data Access": "Contrôle de l’appareil et accès aux données",
     "Allow Accessibility Access…": "Autoriser l’accès à l’accessibilité…",
     "Drag %@ to the list above, then turn on its switch to allow Accessibility access.": "Faites glisser %@ dans la liste ci-dessus, puis activez son interrupteur pour autoriser l’accès à l’accessibilité.",
-    "Keep the three- or four-finger gestures enabled in System Settings > Trackpad > More Gestures.": "Laissez les gestes à trois ou quatre doigts activés dans Réglages Système > Trackpad > Gestes supplémentaires."
+    "Keep the three- or four-finger gestures enabled in System Settings > Trackpad > More Gestures.": "Laissez les gestes à trois ou quatre doigts activés dans Réglages Système > Trackpad > Gestes supplémentaires.",
+    "In leader mode, press 0, then two digits for desktops 10–99.": "En mode leader, appuyez sur 0, puis saisissez deux chiffres pour accéder aux bureaux 10–99.",
+    "` focuses the next display. Shift-` moves the focused window to that display’s current desktop and follows it.": "` passe à l’écran suivant. Shift + ` déplace la fenêtre active vers le bureau actuel de cet écran et la suit."
   },
   "fr-CA": {
     "Leader Mode": "Mode leader",
@@ -201,7 +223,9 @@
     "Device Control and Data Access": "Contrôle de l’appareil et accès aux données",
     "Allow Accessibility Access…": "Autoriser l’accès à l’accessibilité…",
     "Drag %@ to the list above, then turn on its switch to allow Accessibility access.": "Faites glisser %@ dans la liste ci-dessus, puis activez son interrupteur pour autoriser l’accès à l’accessibilité.",
-    "Keep the three- or four-finger gestures enabled in System Settings > Trackpad > More Gestures.": "Laissez les gestes à trois ou quatre doigts activés dans Réglages système > Pavé tactile > Gestes supplémentaires."
+    "Keep the three- or four-finger gestures enabled in System Settings > Trackpad > More Gestures.": "Laissez les gestes à trois ou quatre doigts activés dans Réglages système > Pavé tactile > Gestes supplémentaires.",
+    "In leader mode, press 0, then two digits for desktops 10–99.": "En mode leader, appuyez sur 0, puis saisissez deux chiffres pour accéder aux bureaux 10–99.",
+    "` focuses the next display. Shift-` moves the focused window to that display’s current desktop and follows it.": "` passe à l’écran suivant. Shift + ` déplace la fenêtre active vers le bureau actuel de cet écran et la suit."
   },
   "he": {
     "Leader Mode": "מצב המוביל",
@@ -218,7 +242,9 @@
     "Device Control and Data Access": "שליטה במכשיר וגישה לנתונים",
     "Allow Accessibility Access…": "מתן גישת נגישות…",
     "Drag %@ to the list above, then turn on its switch to allow Accessibility access.": "יש לגרור את %@ לרשימה שלמעלה ואז להפעיל את המתג שלצידו כדי לאפשר גישת נגישות.",
-    "Keep the three- or four-finger gestures enabled in System Settings > Trackpad > More Gestures.": "יש להשאיר מחוות בשלוש או ארבע אצבעות פעילות בהגדרות המערכת > משטח מגע > מחוות נוספות."
+    "Keep the three- or four-finger gestures enabled in System Settings > Trackpad > More Gestures.": "יש להשאיר מחוות בשלוש או ארבע אצבעות פעילות בהגדרות המערכת > משטח מגע > מחוות נוספות.",
+    "In leader mode, press 0, then two digits for desktops 10–99.": "במצב המוביל, יש להקיש 0 ואז להקליד שתי ספרות כדי לעבור למכתבות 10–99.",
+    "` focuses the next display. Shift-` moves the focused window to that display’s current desktop and follows it.": "המקש ⁦`⁩ מעביר את הפוקוס למסך הבא. ⁦Shift + `⁩ מעביר את החלון שבפוקוס למכתבה הנוכחית של אותו מסך ועובר יחד איתו."
   },
   "hi": {
     "Leader Mode": "लीडर मोड",
@@ -235,7 +261,9 @@
     "Device Control and Data Access": "डिवाइस नियंत्रण और डेटा ऐक्सेस",
     "Allow Accessibility Access…": "ऐक्सेसिबिलिटी ऐक्सेस की अनुमति दें…",
     "Drag %@ to the list above, then turn on its switch to allow Accessibility access.": "ऐक्सेसिबिलिटी ऐक्सेस की अनुमति देने के लिए %@ को ऊपर दी गई सूची में ड्रैग करें, फिर उसके स्विच को चालू करें।",
-    "Keep the three- or four-finger gestures enabled in System Settings > Trackpad > More Gestures.": "सिस्टम सेटिंग्ज़ > ट्रैकपैड > अधिक जेस्चर में तीन या चार उँगलियों वाले जेस्चर चालू रखें।"
+    "Keep the three- or four-finger gestures enabled in System Settings > Trackpad > More Gestures.": "सिस्टम सेटिंग्ज़ > ट्रैकपैड > अधिक जेस्चर में तीन या चार उँगलियों वाले जेस्चर चालू रखें।",
+    "In leader mode, press 0, then two digits for desktops 10–99.": "लीडर मोड में 0 दबाएँ, फिर डेस्कटॉप 10–99 पर जाने के लिए दो अंक टाइप करें।",
+    "` focuses the next display. Shift-` moves the focused window to that display’s current desktop and follows it.": "` अगले डिस्प्ले पर फ़ोकस करता है। Shift + ` फ़ोकस वाली विंडो को उस डिस्प्ले के मौजूदा डेस्कटॉप पर ले जाता है और उसके साथ वहाँ जाता है।"
   },
   "hr": {
     "Leader Mode": "Način vodeće tipke",
@@ -252,7 +280,9 @@
     "Device Control and Data Access": "Upravljanje uređajem i pristup podacima",
     "Allow Accessibility Access…": "Dopusti pristup za pristupačnost…",
     "Drag %@ to the list above, then turn on its switch to allow Accessibility access.": "Povucite %@ na gornji popis, a zatim uključite prekidač pokraj aplikacije kako biste dopustili pristup za pristupačnost.",
-    "Keep the three- or four-finger gestures enabled in System Settings > Trackpad > More Gestures.": "Ostavite uključene geste s tri ili četiri prsta u Postavkama sustava > Dodirna površina > Ostale geste."
+    "Keep the three- or four-finger gestures enabled in System Settings > Trackpad > More Gestures.": "Ostavite uključene geste s tri ili četiri prsta u Postavkama sustava > Dodirna površina > Ostale geste.",
+    "In leader mode, press 0, then two digits for desktops 10–99.": "U načinu vodeće tipke pritisnite 0, a zatim upišite dvije znamenke za prelazak na radne površine 10–99.",
+    "` focuses the next display. Shift-` moves the focused window to that display’s current desktop and follows it.": "` prebacuje fokus na sljedeći zaslon. Shift + ` premješta fokusirani prozor na trenutačnu radnu površinu tog zaslona i slijedi ga."
   },
   "hu": {
     "Leader Mode": "Vezérbillentyű-mód",
@@ -269,7 +299,9 @@
     "Device Control and Data Access": "Eszközvezérlés és adathozzáférés",
     "Allow Accessibility Access…": "Kisegítő hozzáférés engedélyezése…",
     "Drag %@ to the list above, then turn on its switch to allow Accessibility access.": "Húzza a(z) %@ appot a fenti listába, majd kapcsolja be a mellette lévő kapcsolót a kisegítő hozzáférés engedélyezéséhez.",
-    "Keep the three- or four-finger gestures enabled in System Settings > Trackpad > More Gestures.": "Hagyja engedélyezve a három- vagy négyujjas kézmozdulatokat itt: Rendszerbeállítások > Trackpad > További kézmozdulatok."
+    "Keep the three- or four-finger gestures enabled in System Settings > Trackpad > More Gestures.": "Hagyja engedélyezve a három- vagy négyujjas kézmozdulatokat itt: Rendszerbeállítások > Trackpad > További kézmozdulatok.",
+    "In leader mode, press 0, then two digits for desktops 10–99.": "Vezérbillentyű-módban nyomja meg a 0 billentyűt, majd írjon be két számjegyet a 10–99 számú íróasztalok eléréséhez.",
+    "` focuses the next display. Shift-` moves the focused window to that display’s current desktop and follows it.": "A ` a következő kijelzőre helyezi a fókuszt. A Shift + ` áthelyezi a fókuszban lévő ablakot annak a kijelzőnek az aktuális íróasztalára, és követi az ablakot."
   },
   "id": {
     "Leader Mode": "Mode Leader",
@@ -286,7 +318,9 @@
     "Device Control and Data Access": "Kontrol Perangkat dan Akses Data",
     "Allow Accessibility Access…": "Izinkan Akses Aksesibilitas…",
     "Drag %@ to the list above, then turn on its switch to allow Accessibility access.": "Seret %@ ke daftar di atas, lalu nyalakan sakelarnya untuk mengizinkan akses Aksesibilitas.",
-    "Keep the three- or four-finger gestures enabled in System Settings > Trackpad > More Gestures.": "Biarkan gerakan tiga atau empat jari aktif di Pengaturan Sistem > Trackpad > Gerakan Lainnya."
+    "Keep the three- or four-finger gestures enabled in System Settings > Trackpad > More Gestures.": "Biarkan gerakan tiga atau empat jari aktif di Pengaturan Sistem > Trackpad > Gerakan Lainnya.",
+    "In leader mode, press 0, then two digits for desktops 10–99.": "Dalam mode leader, tekan 0, lalu ketik dua digit untuk beralih ke Desktop 10–99.",
+    "` focuses the next display. Shift-` moves the focused window to that display’s current desktop and follows it.": "` memindahkan fokus ke layar berikutnya. Shift + ` memindahkan jendela yang difokuskan ke Desktop saat ini di layar tersebut dan mengikuti jendela itu."
   },
   "it": {
     "Leader Mode": "Modalità leader",
@@ -303,7 +337,9 @@
     "Device Control and Data Access": "Controllo del dispositivo e accesso ai dati",
     "Allow Accessibility Access…": "Consenti accesso ad Accessibilità…",
     "Drag %@ to the list above, then turn on its switch to allow Accessibility access.": "Trascina %@ nell’elenco qui sopra, poi attiva il relativo interruttore per consentire l’accesso ad Accessibilità.",
-    "Keep the three- or four-finger gestures enabled in System Settings > Trackpad > More Gestures.": "Mantieni attivi i gesti con tre o quattro dita in Impostazioni di Sistema > Trackpad > Altre azioni."
+    "Keep the three- or four-finger gestures enabled in System Settings > Trackpad > More Gestures.": "Mantieni attivi i gesti con tre o quattro dita in Impostazioni di Sistema > Trackpad > Altre azioni.",
+    "In leader mode, press 0, then two digits for desktops 10–99.": "In modalità leader, premi 0, poi digita due cifre per passare alle scrivanie 10–99.",
+    "` focuses the next display. Shift-` moves the focused window to that display’s current desktop and follows it.": "` passa al monitor successivo. Shift + ` sposta la finestra attiva sulla scrivania attuale di quel monitor e la segue."
   },
   "ja": {
     "Leader Mode": "リーダーモード",
@@ -320,7 +356,9 @@
     "Device Control and Data Access": "デバイスの制御とデータへのアクセス",
     "Allow Accessibility Access…": "アクセシビリティへのアクセスを許可…",
     "Drag %@ to the list above, then turn on its switch to allow Accessibility access.": "%@を上のリストにドラッグしてから、横のスイッチをオンにしてアクセシビリティへのアクセスを許可してください。",
-    "Keep the three- or four-finger gestures enabled in System Settings > Trackpad > More Gestures.": "「システム設定」>「トラックパッド」>「その他のジェスチャ」で、3本指または4本指のジェスチャを有効にしたままにしてください。"
+    "Keep the three- or four-finger gestures enabled in System Settings > Trackpad > More Gestures.": "「システム設定」>「トラックパッド」>「その他のジェスチャ」で、3本指または4本指のジェスチャを有効にしたままにしてください。",
+    "In leader mode, press 0, then two digits for desktops 10–99.": "リーダーモードで 0 を押してから2桁の数字を入力すると、デスクトップ 10–99 に切り替わります。",
+    "` focuses the next display. Shift-` moves the focused window to that display’s current desktop and follows it.": "` で次のディスプレイにフォーカスします。Shift + ` でフォーカス中のウインドウをそのディスプレイの現在のデスクトップに移動し、そのウインドウに追従します。"
   },
   "ko": {
     "Leader Mode": "리더 모드",
@@ -337,7 +375,9 @@
     "Device Control and Data Access": "기기 제어 및 데이터 접근",
     "Allow Accessibility Access…": "손쉬운 사용 접근 허용…",
     "Drag %@ to the list above, then turn on its switch to allow Accessibility access.": "%@을(를) 위 목록으로 드래그한 다음 해당 스위치를 켜서 손쉬운 사용 접근을 허용하세요.",
-    "Keep the three- or four-finger gestures enabled in System Settings > Trackpad > More Gestures.": "시스템 설정 > 트랙패드 > 추가 제스처에서 세 손가락 또는 네 손가락 제스처를 켜 두십시오."
+    "Keep the three- or four-finger gestures enabled in System Settings > Trackpad > More Gestures.": "시스템 설정 > 트랙패드 > 추가 제스처에서 세 손가락 또는 네 손가락 제스처를 켜 두십시오.",
+    "In leader mode, press 0, then two digits for desktops 10–99.": "리더 모드에서 0 키를 누른 다음 두 자리 숫자를 입력하면 데스크탑 10–99로 이동합니다.",
+    "` focuses the next display. Shift-` moves the focused window to that display’s current desktop and follows it.": "` 키를 누르면 다음 디스플레이로 포커스가 이동합니다. Shift + ` 키를 누르면 포커스된 윈도우가 해당 디스플레이의 현재 데스크탑으로 이동하며, 그 윈도우를 따라갑니다."
   },
   "ms": {
     "Leader Mode": "Mod Leader",
@@ -354,7 +394,9 @@
     "Device Control and Data Access": "Kawalan Peranti dan Akses Data",
     "Allow Accessibility Access…": "Benarkan Akses Kebolehcapaian…",
     "Drag %@ to the list above, then turn on its switch to allow Accessibility access.": "Seret %@ ke senarai di atas, kemudian hidupkan suisnya untuk membenarkan akses Kebolehcapaian.",
-    "Keep the three- or four-finger gestures enabled in System Settings > Trackpad > More Gestures.": "Kekalkan gerak isyarat tiga atau empat jari diaktifkan dalam Seting Sistem > Trackpad > Lebih Gerak Isyarat."
+    "Keep the three- or four-finger gestures enabled in System Settings > Trackpad > More Gestures.": "Kekalkan gerak isyarat tiga atau empat jari diaktifkan dalam Seting Sistem > Trackpad > Lebih Gerak Isyarat.",
+    "In leader mode, press 0, then two digits for desktops 10–99.": "Dalam mod leader, tekan 0, kemudian taip dua digit untuk beralih ke Desktop 10–99.",
+    "` focuses the next display. Shift-` moves the focused window to that display’s current desktop and follows it.": "` mengalihkan fokus ke paparan seterusnya. Shift + ` mengalihkan tetingkap yang difokus ke Desktop semasa pada paparan itu dan mengikutinya."
   },
   "nb": {
     "Leader Mode": "Leader-modus",
@@ -371,7 +413,9 @@
     "Device Control and Data Access": "Enhetskontroll og datatilgang",
     "Allow Accessibility Access…": "Gi tilgang til Tilgjengelighet…",
     "Drag %@ to the list above, then turn on its switch to allow Accessibility access.": "Dra %@ til listen over, og slå deretter på bryteren ved appen for å gi tilgang til Tilgjengelighet.",
-    "Keep the three- or four-finger gestures enabled in System Settings > Trackpad > More Gestures.": "Behold bevegelser med tre eller fire fingre aktivert i Systeminnstillinger > Styreflate > Flere bevegelser."
+    "Keep the three- or four-finger gestures enabled in System Settings > Trackpad > More Gestures.": "Behold bevegelser med tre eller fire fingre aktivert i Systeminnstillinger > Styreflate > Flere bevegelser.",
+    "In leader mode, press 0, then two digits for desktops 10–99.": "Trykk på 0 i leader-modus, og skriv deretter inn to sifre for å gå til skrivebord 10–99.",
+    "` focuses the next display. Shift-` moves the focused window to that display’s current desktop and follows it.": "` flytter fokus til neste skjerm. Shift + ` flytter det fokuserte vinduet til skrivebordet som er aktivt på den skjermen, og følger vinduet."
   },
   "nl": {
     "Leader Mode": "Leadermodus",
@@ -388,7 +432,9 @@
     "Device Control and Data Access": "Apparaatbeheer en gegevenstoegang",
     "Allow Accessibility Access…": "Sta toegang tot Toegankelijkheid toe…",
     "Drag %@ to the list above, then turn on its switch to allow Accessibility access.": "Sleep %@ naar de lijst hierboven en zet daarna de schakelaar ernaast aan om toegang tot Toegankelijkheid toe te staan.",
-    "Keep the three- or four-finger gestures enabled in System Settings > Trackpad > More Gestures.": "Laat gebaren met drie of vier vingers ingeschakeld in Systeeminstellingen > Trackpad > Meer gebaren."
+    "Keep the three- or four-finger gestures enabled in System Settings > Trackpad > More Gestures.": "Laat gebaren met drie of vier vingers ingeschakeld in Systeeminstellingen > Trackpad > Meer gebaren.",
+    "In leader mode, press 0, then two digits for desktops 10–99.": "Druk in de leadermodus op 0 en typ daarna twee cijfers om naar bureaublad 10–99 te gaan.",
+    "` focuses the next display. Shift-` moves the focused window to that display’s current desktop and follows it.": "` verplaatst de focus naar het volgende beeldscherm. Shift + ` verplaatst het gefocuste venster naar het huidige bureaublad van dat beeldscherm en volgt het venster."
   },
   "pl": {
     "Leader Mode": "Tryb lidera",
@@ -405,7 +451,9 @@
     "Device Control and Data Access": "Sterowanie urządzeniami i dostęp do danych",
     "Allow Accessibility Access…": "Zezwól na dostęp w ustawieniach Dostępność…",
     "Drag %@ to the list above, then turn on its switch to allow Accessibility access.": "Przeciągnij %@ na powyższą listę, a następnie włącz przełącznik obok aplikacji, aby przyznać uprawnienia dostępności.",
-    "Keep the three- or four-finger gestures enabled in System Settings > Trackpad > More Gestures.": "Pozostaw włączone gesty trzema lub czterema palcami w Ustawieniach systemowych > Gładzik > Więcej gestów."
+    "Keep the three- or four-finger gestures enabled in System Settings > Trackpad > More Gestures.": "Pozostaw włączone gesty trzema lub czterema palcami w Ustawieniach systemowych > Gładzik > Więcej gestów.",
+    "In leader mode, press 0, then two digits for desktops 10–99.": "W trybie lidera naciśnij 0, a następnie wpisz dwie cyfry, aby przejść do biurek 10–99.",
+    "` focuses the next display. Shift-` moves the focused window to that display’s current desktop and follows it.": "` przenosi fokus na następny wyświetlacz. Shift + ` przenosi aktywne okno na bieżące biurko tego wyświetlacza i podąża za oknem."
   },
   "pt-BR": {
     "Leader Mode": "Modo Líder",
@@ -422,7 +470,9 @@
     "Device Control and Data Access": "Controle do Dispositivo e Acesso a Dados",
     "Allow Accessibility Access…": "Permitir Acesso à Acessibilidade…",
     "Drag %@ to the list above, then turn on its switch to allow Accessibility access.": "Arraste %@ para a lista acima e, depois, ative o interruptor ao lado para permitir o acesso à Acessibilidade.",
-    "Keep the three- or four-finger gestures enabled in System Settings > Trackpad > More Gestures.": "Mantenha os gestos de três ou quatro dedos ativados em Ajustes do Sistema > Trackpad > Mais Gestos."
+    "Keep the three- or four-finger gestures enabled in System Settings > Trackpad > More Gestures.": "Mantenha os gestos de três ou quatro dedos ativados em Ajustes do Sistema > Trackpad > Mais Gestos.",
+    "In leader mode, press 0, then two digits for desktops 10–99.": "No modo líder, pressione 0 e digite dois dígitos para ir às mesas 10–99.",
+    "` focuses the next display. Shift-` moves the focused window to that display’s current desktop and follows it.": "` muda o foco para a próxima tela. Shift + ` move a janela em foco para a mesa atual dessa tela e acompanha a janela."
   },
   "pt-PT": {
     "Leader Mode": "Modo líder",
@@ -439,7 +489,9 @@
     "Device Control and Data Access": "Controlo do dispositivo e acesso a dados",
     "Allow Accessibility Access…": "Permitir acesso à Acessibilidade…",
     "Drag %@ to the list above, then turn on its switch to allow Accessibility access.": "Arraste %@ para a lista acima e, depois, ative o interruptor ao lado para permitir o acesso à Acessibilidade.",
-    "Keep the three- or four-finger gestures enabled in System Settings > Trackpad > More Gestures.": "Mantenha os gestos de três ou quatro dedos ativos em Definições do Sistema > Trackpad > Mais gestos."
+    "Keep the three- or four-finger gestures enabled in System Settings > Trackpad > More Gestures.": "Mantenha os gestos de três ou quatro dedos ativos em Definições do Sistema > Trackpad > Mais gestos.",
+    "In leader mode, press 0, then two digits for desktops 10–99.": "No modo líder, prima 0 e depois introduza dois dígitos para ir para as secretárias 10–99.",
+    "` focuses the next display. Shift-` moves the focused window to that display’s current desktop and follows it.": "` muda o foco para o monitor seguinte. Shift + ` move a janela em foco para a secretária atual desse monitor e segue a janela."
   },
   "ro": {
     "Leader Mode": "Modul lider",
@@ -456,7 +508,9 @@
     "Device Control and Data Access": "Control al dispozitivului și acces la date",
     "Allow Accessibility Access…": "Permiteți accesul la Accesibilitate…",
     "Drag %@ to the list above, then turn on its switch to allow Accessibility access.": "Trageți %@ în lista de mai sus, apoi activați comutatorul din dreptul aplicației pentru a permite accesul la Accesibilitate.",
-    "Keep the three- or four-finger gestures enabled in System Settings > Trackpad > More Gestures.": "Păstrați activate gesturile cu trei sau patru degete în Configurări sistem > Trackpad > Mai multe gesturi."
+    "Keep the three- or four-finger gestures enabled in System Settings > Trackpad > More Gestures.": "Păstrați activate gesturile cu trei sau patru degete în Configurări sistem > Trackpad > Mai multe gesturi.",
+    "In leader mode, press 0, then two digits for desktops 10–99.": "În modul lider, apăsați 0, apoi introduceți două cifre pentru a trece la desktopurile 10–99.",
+    "` focuses the next display. Shift-` moves the focused window to that display’s current desktop and follows it.": "` mută focalizarea pe afișajul următor. Shift + ` mută fereastra activă pe desktopul curent al acelui afișaj și o urmează."
   },
   "ru": {
     "Leader Mode": "Режим лидер-клавиши",
@@ -473,7 +527,9 @@
     "Device Control and Data Access": "Управление устройством и доступ к данным",
     "Allow Accessibility Access…": "Разрешить универсальный доступ…",
     "Drag %@ to the list above, then turn on its switch to allow Accessibility access.": "Перетащите %@ в список выше, затем включите переключатель рядом с приложением, чтобы разрешить универсальный доступ.",
-    "Keep the three- or four-finger gestures enabled in System Settings > Trackpad > More Gestures.": "Оставьте жесты тремя или четырьмя пальцами включёнными в разделе «Системные настройки» > «Трекпад» > «Другие жесты»."
+    "Keep the three- or four-finger gestures enabled in System Settings > Trackpad > More Gestures.": "Оставьте жесты тремя или четырьмя пальцами включёнными в разделе «Системные настройки» > «Трекпад» > «Другие жесты».",
+    "In leader mode, press 0, then two digits for desktops 10–99.": "В режиме лидер-клавиши нажмите 0, затем введите две цифры для перехода к рабочим столам 10–99.",
+    "` focuses the next display. Shift-` moves the focused window to that display’s current desktop and follows it.": "` переводит фокус на следующий дисплей. Shift + ` перемещает активное окно на текущий рабочий стол этого дисплея и переходит вслед за окном."
   },
   "sk": {
     "Leader Mode": "Režim lídra",
@@ -490,7 +546,9 @@
     "Device Control and Data Access": "Ovládanie zariadenia a prístup k dátam",
     "Allow Accessibility Access…": "Povoliť prístup k Prístupnosti…",
     "Drag %@ to the list above, then turn on its switch to allow Accessibility access.": "Potiahnite %@ do zoznamu vyššie a potom zapnite prepínač pri apke, aby ste povolili prístup k Prístupnosti.",
-    "Keep the three- or four-finger gestures enabled in System Settings > Trackpad > More Gestures.": "Ponechajte zapnuté gestá tromi alebo štyrmi prstami v časti Systémové nastavenia > Trackpad > Ďalšie gestá."
+    "Keep the three- or four-finger gestures enabled in System Settings > Trackpad > More Gestures.": "Ponechajte zapnuté gestá tromi alebo štyrmi prstami v časti Systémové nastavenia > Trackpad > Ďalšie gestá.",
+    "In leader mode, press 0, then two digits for desktops 10–99.": "V režime lídra stlačte 0 a potom zadajte dve číslice na prechod na plochy 10–99.",
+    "` focuses the next display. Shift-` moves the focused window to that display’s current desktop and follows it.": "Kláves ` prepne na nasledujúci displej. Shift + ` presunie aktívne okno na aktuálnu plochu tohto displeja a prejde za ním."
   },
   "sl": {
     "Leader Mode": "Način vodilne tipke",
@@ -507,7 +565,9 @@
     "Device Control and Data Access": "Upravljanje naprave in dostop do podatkov",
     "Allow Accessibility Access…": "Dovoli dostop za dostopnost …",
     "Drag %@ to the list above, then turn on its switch to allow Accessibility access.": "Povlecite %@ na zgornji seznam, nato vklopite stikalo ob aplikaciji, da dovolite dostop za dostopnost.",
-    "Keep the three- or four-finger gestures enabled in System Settings > Trackpad > More Gestures.": "Ohranite vklopljene poteze s tremi ali štirimi prsti v Nastavitvah sistema > Sledilna ploščica > Več kretenj."
+    "Keep the three- or four-finger gestures enabled in System Settings > Trackpad > More Gestures.": "Ohranite vklopljene poteze s tremi ali štirimi prsti v Nastavitvah sistema > Sledilna ploščica > Več kretenj.",
+    "In leader mode, press 0, then two digits for desktops 10–99.": "V načinu vodilne tipke pritisnite 0, nato vnesite dve števki za prehod na namizja 10–99.",
+    "` focuses the next display. Shift-` moves the focused window to that display’s current desktop and follows it.": "` premakne fokus na naslednji zaslon. Shift + ` premakne fokusirano okno na trenutno namizje tega zaslona in sledi oknu."
   },
   "sv": {
     "Leader Mode": "Leader-läge",
@@ -524,7 +584,9 @@
     "Device Control and Data Access": "Enhetskontroll och dataåtkomst",
     "Allow Accessibility Access…": "Tillåt hjälpmedelsåtkomst…",
     "Drag %@ to the list above, then turn on its switch to allow Accessibility access.": "Dra %@ till listan ovan och slå sedan på reglaget bredvid appen för att tillåta hjälpmedelsåtkomst.",
-    "Keep the three- or four-finger gestures enabled in System Settings > Trackpad > More Gestures.": "Låt gester med tre eller fyra fingrar vara på i Systeminställningar > Styrplatta > Fler gester."
+    "Keep the three- or four-finger gestures enabled in System Settings > Trackpad > More Gestures.": "Låt gester med tre eller fyra fingrar vara på i Systeminställningar > Styrplatta > Fler gester.",
+    "In leader mode, press 0, then two digits for desktops 10–99.": "Tryck på 0 i leader-läget och skriv sedan två siffror för att gå till skrivbord 10–99.",
+    "` focuses the next display. Shift-` moves the focused window to that display’s current desktop and follows it.": "` flyttar fokus till nästa skärm. Shift + ` flyttar det fokuserade fönstret till den skärmens aktuella skrivbord och följer fönstret."
   },
   "th": {
     "Leader Mode": "โหมดลีดเดอร์",
@@ -541,7 +603,9 @@
     "Device Control and Data Access": "การควบคุมอุปกรณ์และการเข้าถึงข้อมูล",
     "Allow Accessibility Access…": "อนุญาตการเข้าถึงการช่วยการเข้าถึง…",
     "Drag %@ to the list above, then turn on its switch to allow Accessibility access.": "ลาก %@ ไปยังรายการด้านบน จากนั้นเปิดสวิตช์ข้างแอปเพื่ออนุญาตการเข้าถึงการช่วยการเข้าถึง",
-    "Keep the three- or four-finger gestures enabled in System Settings > Trackpad > More Gestures.": "เปิดคำสั่งนิ้วสามหรือสี่นิ้วไว้ในการตั้งค่าระบบ > แทร็คแพด > คำสั่งนิ้วเพิ่มเติม"
+    "Keep the three- or four-finger gestures enabled in System Settings > Trackpad > More Gestures.": "เปิดคำสั่งนิ้วสามหรือสี่นิ้วไว้ในการตั้งค่าระบบ > แทร็คแพด > คำสั่งนิ้วเพิ่มเติม",
+    "In leader mode, press 0, then two digits for desktops 10–99.": "ในโหมดลีดเดอร์ กด 0 แล้วป้อนตัวเลขสองหลักเพื่อไปยังเดสก์ท็อป 10–99",
+    "` focuses the next display. Shift-` moves the focused window to that display’s current desktop and follows it.": "ปุ่ม ` จะย้ายโฟกัสไปยังจอภาพถัดไป ส่วน Shift + ` จะย้ายหน้าต่างที่โฟกัสไปยังเดสก์ท็อปปัจจุบันของจอภาพนั้นและตามหน้าต่างไปด้วย"
   },
   "tr": {
     "Leader Mode": "Lider Modu",
@@ -558,7 +622,9 @@
     "Device Control and Data Access": "Aygıt Denetimi ve Veri Erişimi",
     "Allow Accessibility Access…": "Erişilebilirlik İzni Ver…",
     "Drag %@ to the list above, then turn on its switch to allow Accessibility access.": "%@ öğesini yukarıdaki listeye sürükleyin, ardından yanındaki anahtarı açarak Erişilebilirlik izni verin.",
-    "Keep the three- or four-finger gestures enabled in System Settings > Trackpad > More Gestures.": "Sistem Ayarları > İzleme Dörtgeni > Diğer Hareketler bölümünde üç veya dört parmak hareketlerini açık tutun."
+    "Keep the three- or four-finger gestures enabled in System Settings > Trackpad > More Gestures.": "Sistem Ayarları > İzleme Dörtgeni > Diğer Hareketler bölümünde üç veya dört parmak hareketlerini açık tutun.",
+    "In leader mode, press 0, then two digits for desktops 10–99.": "Lider modunda 0 tuşuna basın, ardından 10–99 numaralı masaüstlerine gitmek için iki rakam yazın.",
+    "` focuses the next display. Shift-` moves the focused window to that display’s current desktop and follows it.": "` odağı sonraki ekrana taşır. Shift + ` odaklanılan pencereyi o ekranın geçerli masaüstüne taşır ve pencereyi takip eder."
   },
   "uk": {
     "Leader Mode": "Режим лідер-клавіші",
@@ -575,7 +641,9 @@
     "Device Control and Data Access": "Керування пристроями й доступ до даних",
     "Allow Accessibility Access…": "Дозволити доступ до функцій доступності…",
     "Drag %@ to the list above, then turn on its switch to allow Accessibility access.": "Перетягніть %@ до списку вище, а потім увімкніть перемикач біля програми, щоб дозволити доступ до функцій доступності.",
-    "Keep the three- or four-finger gestures enabled in System Settings > Trackpad > More Gestures.": "Залиште ввімкненими жести трьома або чотирма пальцями в Системні параметри > Трекпед > Інші жести."
+    "Keep the three- or four-finger gestures enabled in System Settings > Trackpad > More Gestures.": "Залиште ввімкненими жести трьома або чотирма пальцями в Системні параметри > Трекпед > Інші жести.",
+    "In leader mode, press 0, then two digits for desktops 10–99.": "У режимі лідер-клавіші натисніть 0, а потім введіть дві цифри для переходу до робочих столів 10–99.",
+    "` focuses the next display. Shift-` moves the focused window to that display’s current desktop and follows it.": "` переводить фокус на наступний дисплей. Shift + ` переміщує активне вікно на поточний робочий стіл цього дисплея й переходить слідом за вікном."
   },
   "vi": {
     "Leader Mode": "Chế độ leader",
@@ -592,7 +660,9 @@
     "Device Control and Data Access": "Điều khiển thiết bị và truy cập dữ liệu",
     "Allow Accessibility Access…": "Cho phép quyền truy cập Trợ năng…",
     "Drag %@ to the list above, then turn on its switch to allow Accessibility access.": "Hãy kéo %@ vào danh sách bên trên, sau đó bật công tắc bên cạnh ứng dụng để cho phép quyền truy cập Trợ năng.",
-    "Keep the three- or four-finger gestures enabled in System Settings > Trackpad > More Gestures.": "Giữ cử chỉ ba hoặc bốn ngón tay được bật trong Cài đặt hệ thống > Bàn di chuột > Cử chỉ khác."
+    "Keep the three- or four-finger gestures enabled in System Settings > Trackpad > More Gestures.": "Giữ cử chỉ ba hoặc bốn ngón tay được bật trong Cài đặt hệ thống > Bàn di chuột > Cử chỉ khác.",
+    "In leader mode, press 0, then two digits for desktops 10–99.": "Trong chế độ leader, nhấn 0, rồi nhập hai chữ số để chuyển đến các màn hình nền 10–99.",
+    "` focuses the next display. Shift-` moves the focused window to that display’s current desktop and follows it.": "` chuyển sang màn hình tiếp theo. Shift + ` di chuyển cửa sổ đang được chọn đến màn hình nền hiện tại của màn hình đó rồi chuyển theo cửa sổ."
   },
   "zh-HK": {
     "Leader Mode": "前導鍵模式",
@@ -609,7 +679,9 @@
     "Device Control and Data Access": "裝置控制和資料取用權限",
     "Allow Accessibility Access…": "允許輔助使用權限…",
     "Drag %@ to the list above, then turn on its switch to allow Accessibility access.": "請將 %@ 拖移到上方列表，再開啟旁邊的開關，允許輔助使用權限。",
-    "Keep the three- or four-finger gestures enabled in System Settings > Trackpad > More Gestures.": "請在「系統設定」>「觸控板」>「更多手勢」中保持三指或四指手勢開啟。"
+    "Keep the three- or four-finger gestures enabled in System Settings > Trackpad > More Gestures.": "請在「系統設定」>「觸控板」>「更多手勢」中保持三指或四指手勢開啟。",
+    "In leader mode, press 0, then two digits for desktops 10–99.": "在前導鍵模式下，先按 0，再輸入兩位數字，即可切換至桌面 10–99。",
+    "` focuses the next display. Shift-` moves the focused window to that display’s current desktop and follows it.": "按 ` 可聚焦下一部顯示器。按 Shift + ` 可將聚焦的視窗移到該顯示器的目前桌面，並跟隨視窗切換過去。"
   },
   "zh-Hans": {
     "Leader Mode": "前导键模式",
@@ -626,7 +698,9 @@
     "Device Control and Data Access": "设备控制和数据访问",
     "Allow Accessibility Access…": "允许辅助功能访问…",
     "Drag %@ to the list above, then turn on its switch to allow Accessibility access.": "将 %@ 拖入上方列表，再打开旁边的开关，允许辅助功能访问。",
-    "Keep the three- or four-finger gestures enabled in System Settings > Trackpad > More Gestures.": "请在“系统设置”>“触控板”>“更多手势”中保持三指或四指手势开启。"
+    "Keep the three- or four-finger gestures enabled in System Settings > Trackpad > More Gestures.": "请在“系统设置”>“触控板”>“更多手势”中保持三指或四指手势开启。",
+    "In leader mode, press 0, then two digits for desktops 10–99.": "在前导键模式中，先按 0，再输入两位数字，即可切换到桌面 10–99。",
+    "` focuses the next display. Shift-` moves the focused window to that display’s current desktop and follows it.": "按 ` 可聚焦下一台显示器。按 Shift + ` 可将聚焦窗口移到该显示器的当前桌面，并跟随窗口切换过去。"
   },
   "zh-Hant": {
     "Leader Mode": "前導鍵模式",
@@ -643,6 +717,8 @@
     "Device Control and Data Access": "裝置控制和資料取用",
     "Allow Accessibility Access…": "允許輔助使用權限…",
     "Drag %@ to the list above, then turn on its switch to allow Accessibility access.": "將 %@ 拖移到上方列表，再開啟旁邊的開關，允許輔助使用權限。",
-    "Keep the three- or four-finger gestures enabled in System Settings > Trackpad > More Gestures.": "請在「系統設定」>「觸控式軌跡板」>「更多手勢」中保持三指或四指手勢開啟。"
+    "Keep the three- or four-finger gestures enabled in System Settings > Trackpad > More Gestures.": "請在「系統設定」>「觸控式軌跡板」>「更多手勢」中保持三指或四指手勢開啟。",
+    "In leader mode, press 0, then two digits for desktops 10–99.": "在前導鍵模式下，先按 0，再輸入兩位數字，即可切換到桌面 10–99。",
+    "` focuses the next display. Shift-` moves the focused window to that display’s current desktop and follows it.": "按 ` 可聚焦下一台顯示器。按 Shift + ` 可將聚焦的視窗移到該顯示器的目前桌面，並跟隨視窗切換過去。"
   }
 }

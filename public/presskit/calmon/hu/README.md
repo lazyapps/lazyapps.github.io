@@ -14,6 +14,8 @@ macOS 26 vagy újabb
 
 Helyezd őket egymás fölé. Egymás mellett a közös szélek blokkolják a görgetést; az oszlopváltás itt visszaugrik az elejére. Ha mindkét oldalon van kijelző, a háttérablakok egymásra kerülnek a kijelölt ablak mögött.
 
+A \` a következő kijelzőre helyezi a fókuszt. A Shift + \` áthelyezi a fókuszban lévő ablakot annak a kijelzőnek az aktuális íróasztalára, és követi az ablakot.
+
 A béta alatt ingyenes
 
 Hibát találtál vagy ötleted van? Írj az X-en: @lazyapps. Köszönjük, hogy segítesz jobbá tenni a Calmont.
@@ -22,7 +24,7 @@ Az ablakok vízszintesen görgethetők. Az aktív oszlop a képernyő nagy rész
 
 Egy oszlop legfeljebb három, egymás alatti, egyszerre látható területre osztható. Minden terület egy ablakot vagy egy app ablakainak csoportját tartalmazhatja.
 
-Azonos app ablakai egy területen fedik egymást; egyszerre csak egy látszik. Váltáshoz kattints az ablak tetején lévő csoportjelölőkre, vagy nyomd meg a ⌘` billentyűket.
+Azonos app ablakai egy területen fedik egymást; egyszerre csak egy látszik. Váltáshoz kattints az ablak tetején lévő csoportjelölőkre, vagy nyomd meg a ⌘\` billentyűket.
 
 Vezérbillentyű-mód: Space → J / X — A kijelölt ablak hozzáadása az app ablakcsoportjához / eltávolítása onnan.
 
@@ -43,6 +45,10 @@ Nyomd meg kétszer a ⌘ billentyűt, majd engedd fel. Amíg az ablak kiemelt, f
 , / . — Ha a terület egyedül van az oszlopban, csatlakozik a bal / jobb oldali oszlophoz. Felosztott oszlopban az aktív terület külön oszlopba kerül balra / jobbra. Az ablakcsoport egyben mozog.
 
 Space → J / X — A kijelölt ablak hozzáadása az app ablakcsoportjához / eltávolítása onnan
+
+1–9 / ⇧1–9 — Íróasztalváltás / ablakmozgatás
+
+0 → 10–99 / ⇧0 — Vezérbillentyű-módban nyomja meg a 0 billentyűt, majd írjon be két számjegyet a 10–99 számú íróasztalok eléréséhez.
 
 macOS 26: Kisegítő lehetőségek; macOS 27+: Eszközvezérlés és adathozzáférés
 
@@ -96,7 +102,7 @@ Menüsorikon · PNG · 44 × 44 · 2×
 
 [leader-keys.png](leader-keys.png)
 
-1736 × 780 · PNG
+1892 × 840 · PNG
 
 Változatlan eredeti képpontok.
 

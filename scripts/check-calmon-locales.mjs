@@ -37,7 +37,11 @@ for (const [code,t] of Object.entries(CALMON_LOCALES)) {
   assert.equal(t.releaseNote.split('@lazyapps').length,2, `${label}: feedback link placeholder`);
   assert.equal(t.menuBarNote.split('{icon}').length,2, `${label}: inline icon placeholder`);
   assert.equal(t.features.length,6);
-  assert.equal(t.shortcuts.length,7);
+  assert.equal(t.shortcuts.length,9);
+  assert.equal(t.shortcuts[6][1], native['In leader mode, press 0, then two digits for desktops 10–99.']);
+  assert.equal(t.shortcuts[7][1], native['` focuses the next display. Shift-` moves the focused window to that display’s current desktop and follows it.']);
+  assert(panels[label][0].rows.some(row => row.keys.includes('`')), `${label}: missing display command`);
+  assert(panels[label][0].rows.some(row => row.keys.includes('0')), `${label}: missing extended desktop command`);
   assert.equal(t.keyboardSteps.length,4);
   assert.equal(t.steps.length,3);
   assert.equal(t.faqs.length,8);

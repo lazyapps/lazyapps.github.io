@@ -196,7 +196,7 @@ for (const kit of kits) {
     const panel = page.nodes.find(node => attr(node, 'data-kit-panel') === locale.tag);
     check(panel, `Missing language panel: ${locale.tag}`);
     const copy = descendants(panel).find(node => attr(node, 'class') === 'kit-copy__text');
-    check(copy && text(copy).includes(locale.summary) && text(copy).replace(/\s/g, '').includes(locale.description.replace(/\s/g, '')), `Missing localized material copy: ${locale.tag}`);
+    check(copy && text(copy).includes(locale.summary) && text(copy).replace(/\s/g, '').includes(locale.description.replaceAll('\\`', '`').replace(/\s/g, '')), `Missing localized material copy: ${locale.tag}`);
     const readme = descendants(panel).find(node => node.tagName === 'details' && attr(node, 'class') === 'kit-readme');
     check(readme && attr(readme, 'open') === undefined, `README preview must start collapsed: ${locale.tag}`);
     const documentNodes = descendants(readme);

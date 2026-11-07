@@ -14,6 +14,8 @@ macOS 26 lub nowszy
 
 Ustaw monitory jeden nad drugim. Obok siebie wspólne krawędzie blokują przewijanie, a przełączanie kolumn wraca tam do początku. Przy monitorach po obu stronach okna w tle nakładają się za wybranym oknem.
 
+\` przenosi fokus na następny wyświetlacz. Shift + \` przenosi aktywne okno na bieżące biurko tego wyświetlacza i podąża za oknem.
+
 Bezpłatnie w wersji beta
 
 Błąd lub pomysł? Napisz do @lazyapps na X. Dziękujemy za pomoc w ulepszaniu Calmon.
@@ -22,7 +24,7 @@ Okna przewijają się poziomo. Aktywna kolumna zajmuje większość ekranu. Uży
 
 Kolumnę można podzielić na maksymalnie trzy obszary, jeden nad drugim, widoczne jednocześnie. Każdy obszar mieści jedno okno lub stos okien tej samej aplikacji.
 
-Okna tej samej aplikacji nakładają się w jednym obszarze. Widać tylko jedno naraz. Kliknij znaczniki stosu u góry okna lub naciśnij ⌘`, aby je przełączać.
+Okna tej samej aplikacji nakładają się w jednym obszarze. Widać tylko jedno naraz. Kliknij znaczniki stosu u góry okna lub naciśnij ⌘\`, aby je przełączać.
 
 Tryb lidera: Space → J / X — Dodaj / usuń wybrane okno ze stosu jego aplikacji.
 
@@ -43,6 +45,10 @@ Naciśnij dwukrotnie ⌘ i puść. Gdy okno jest podświetlone, możesz wykonywa
 , / . — Obszar sam w kolumnie: dołącz go do kolumny po lewej / prawej. W podzielonej kolumnie: wydziel aktywny obszar do osobnej kolumny po lewej / prawej. Cały stos przenosi się razem.
 
 Space → J / X — Dodaj / usuń wybrane okno ze stosu jego aplikacji
+
+1–9 / ⇧1–9 — Przełącz biurko / przenieś okno
+
+0 → 10–99 / ⇧0 — W trybie lidera naciśnij 0, a następnie wpisz dwie cyfry, aby przejść do biurek 10–99.
 
 macOS 26: Dostępność; macOS 27+: Sterowanie urządzeniami i dostęp do danych
 
@@ -96,7 +102,7 @@ Ikona paska menu · PNG · 44 × 44 · 2×
 
 [leader-keys.png](leader-keys.png)
 
-1844 × 780 · PNG
+1796 × 840 · PNG
 
 Oryginalne piksele bez zmian.
 

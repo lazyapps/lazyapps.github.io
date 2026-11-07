@@ -14,6 +14,8 @@ macOS 26 oder neuer
 
 Bildschirme am besten übereinander anordnen. Nebeneinander blockieren gemeinsame Ränder das Scrollen; der Spaltenwechsel springt dort zum Anfang. Bei Bildschirmen auf beiden Seiten liegen Hintergrundfenster hinter dem gewählten Fenster übereinander.
 
+\` wechselt den Fokus zum nächsten Display. Shift + \` bewegt das fokussierte Fenster auf den aktuellen Schreibtisch dieses Displays und folgt dem Fenster.
+
 Während der Beta kostenlos
 
 Fehler gefunden oder eine Idee? Schreib @lazyapps auf X. Danke, dass du Calmon besser machst.
@@ -22,7 +24,7 @@ Fenster scrollen horizontal. Die aktive Spalte füllt den Großteil des Bildschi
 
 Eine Spalte lässt sich in bis zu drei Bereiche untereinander aufteilen, die gleichzeitig sichtbar sind. Jeder Bereich enthält ein Fenster oder einen App-Stapel.
 
-Fenster derselben App liegen in einem Bereich übereinander. Jeweils nur eines ist sichtbar. Über die Stapelmarkierungen oben am Fenster oder mit ⌘` wechselst du zwischen ihnen.
+Fenster derselben App liegen in einem Bereich übereinander. Jeweils nur eines ist sichtbar. Über die Stapelmarkierungen oben am Fenster oder mit ⌘\` wechselst du zwischen ihnen.
 
 Leader-Modus: Space → J / X — Das ausgewählte Fenster zum App-Stapel hinzufügen / daraus entfernen.
 
@@ -43,6 +45,10 @@ Automatische Anzeige ausschalten: Einstellungen → Tastatur → Tastenübersich
 , / . — Allein in der Spalte: der linken / rechten Nachbarspalte beitreten. In einer geteilten Spalte: den aktiven Bereich als eigene Spalte links / rechts herauslösen. Ein App-Stapel wird dabei vollständig verschoben.
 
 Space → J / X — Das ausgewählte Fenster zum App-Stapel hinzufügen / daraus entfernen
+
+1–9 / ⇧1–9 — Schreibtisch wechseln / Fenster verschieben
+
+0 → 10–99 / ⇧0 — Drücke im Leader-Modus 0 und gib dann zwei Ziffern ein, um zu den Schreibtischen 10–99 zu wechseln.
 
 macOS 26: Bedienungshilfen; macOS 27+: Gerätesteuerung und Datenzugriff
 
@@ -96,7 +102,7 @@ Menüleistensymbol · PNG · 44 × 44 · 2×
 
 [leader-keys.png](leader-keys.png)
 
-1772 × 780 · PNG
+1832 × 840 · PNG
 
 Native Vorschau der Oberfläche in dieser Sprache; unveränderte Pixel.
 

@@ -14,6 +14,8 @@ macOS 26 eller nyere
 
 Placer skærmene over hinanden. Ved siden af hinanden blokerer fælles kanter rulning, og kolonneskift starter forfra dér. Med skærme på begge sider overlapper baggrundsvinduer bag det valgte vindue.
 
+\` flytter fokus til den næste skærm. Shift + \` flytter det fokuserede vindue til den skærms aktuelle skrivebord og følger vinduet.
+
 Gratis under betaen
 
 En fejl eller en idé? Skriv til @lazyapps på X. Tak, fordi du hjælper os med at forbedre Calmon.
@@ -22,7 +24,7 @@ Vinduer ruller vandret. Den aktive kolonne fylder det meste af skærmen. Brug pi
 
 En kolonne kan deles i op til tre områder oven på hinanden, som er synlige samtidig. Hvert område kan rumme ét vindue eller en stak vinduer fra samme app.
 
-Vinduer fra samme app ligger oven på hinanden i ét område, og kun ét vises ad gangen. Klik på stakmarkeringerne øverst i vinduet, eller tryk ⌘` for at skifte.
+Vinduer fra samme app ligger oven på hinanden i ét område, og kun ét vises ad gangen. Klik på stakmarkeringerne øverst i vinduet, eller tryk ⌘\` for at skifte.
 
 Leader-tilstand: Space → J / X — Føj det valgte vindue til / fjern det fra appens vinduesstak.
 
@@ -43,6 +45,10 @@ Tryk to gange på ⌘, og slip. Fortsæt med kommandoer, mens vinduet er fremhæ
 , / . — Alene i kolonnen: føj området til kolonnen til venstre / højre. I en opdelt kolonne: flyt det aktive område til sin egen kolonne til venstre / højre. Hele vinduesstakken flyttes samlet.
 
 Space → J / X — Føj det valgte vindue til / fjern det fra appens vinduesstak
+
+1–9 / ⇧1–9 — Skift skrivebord / flyt vindue
+
+0 → 10–99 / ⇧0 — I leader-tilstand skal du trykke på 0 og derefter indtaste to cifre for at skifte til skrivebord 10–99.
 
 macOS 26: Tilgængelighed; macOS 27+: Styring af enhed og adgang til data
 
@@ -96,7 +102,7 @@ Menulinjeikon · PNG · 44 × 44 · 2×
 
 [leader-keys.png](leader-keys.png)
 
-1664 × 780 · PNG
+1652 × 840 · PNG
 
 Originale pixels uden ændringer.
 

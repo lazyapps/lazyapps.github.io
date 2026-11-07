@@ -1,355 +1,338 @@
 {
-  "checkedOn": "2026-11-05",
-  "appSourceCommit": "02f7cfa36ce79177a8b08da05ddfab9d05158ddd",
+  "checkedOn": "2026-11-07",
+  "appSourceCommit": "c61337949d88b7c2b8d31b31ef77ecd2d6499e7a",
   "captures": [
     {
       "source": "scripts/assets/presskit/calmon-leader-keys.png",
-      "sha256": "b954fa8054b1332d5fe89e0887ba860b9a10de7cb03d4fbee015b9454a8465fd",
+      "sha256": "012ed0ac6c1cb3feb7a30810b83da13f78b3522eda22c8d934866c6cadd04dc3",
       "contentLanguage": "en",
       "type": "native",
-      "operation": "Native testLeaderHUDSnapshot rendered in the Tart macOS VM, using the app language and default commands. Original PNG pixels retained.",
-      "originalSource": "/Users/realazy/Projects/_vibe/pane/build/i18n-interface-audit/en/leader-keys.png",
-      "snapshotFingerprint": "c42c7bd19a95730abbcac6a481efa24b8a8d6b4e1eaebd14e442fcaf491a1f75"
+      "operation": "Native LeaderHelpView rendered with the app localization, multiple displays and at least ten desktops. Original PNG pixels retained.",
+      "originalSource": "/Users/realazy/Projects/_vibe/calmon/Sources/AppJump.swift"
     },
     {
       "source": "scripts/assets/presskit/calmon-leader-keys-ar.png",
-      "sha256": "4112c235d8aaf2662b335688fe8c026415ffe3663d7d60348575ee2789812e2f",
+      "sha256": "56ce824856f68297a98bf2f8257f8a9eedcd53b9cdbf1f6ea82f607b4cecf24c",
       "contentLanguage": "ar",
       "type": "native",
-      "operation": "Native testLeaderHUDSnapshot rendered in the Tart macOS VM, using the app language and default commands. Original PNG pixels retained.",
-      "originalSource": "/Users/realazy/Projects/_vibe/pane/build/i18n-interface-audit/ar/leader-keys.png",
-      "snapshotFingerprint": "c42c7bd19a95730abbcac6a481efa24b8a8d6b4e1eaebd14e442fcaf491a1f75"
+      "operation": "Native LeaderHelpView rendered with the app localization, multiple displays and at least ten desktops. Original PNG pixels retained.",
+      "originalSource": "/Users/realazy/Projects/_vibe/calmon/Sources/AppJump.swift"
     },
     {
       "source": "scripts/assets/presskit/calmon-leader-keys-ca.png",
-      "sha256": "8f5cf194a949b402d54bd55d7b8f454dab43d2cabd50856ad47135b339abb6a2",
+      "sha256": "97f51d57f6f9a8957c197fa6c583f8af2f6a863b9f4304ce929bd6a78fac9c60",
       "contentLanguage": "ca",
       "type": "native",
-      "operation": "Native testLeaderHUDSnapshot rendered in the Tart macOS VM, using the app language and default commands. Original PNG pixels retained.",
-      "originalSource": "/Users/realazy/Projects/_vibe/pane/build/i18n-interface-audit/ca/leader-keys.png",
-      "snapshotFingerprint": "0727c37daf0b2dea0bedcda57a8ddba934910d519ea2da5f2cdc0d7b26ea8839"
+      "operation": "Native LeaderHelpView rendered with the app localization, multiple displays and at least ten desktops. Original PNG pixels retained.",
+      "originalSource": "/Users/realazy/Projects/_vibe/calmon/Sources/AppJump.swift"
     },
     {
       "source": "scripts/assets/presskit/calmon-leader-keys-cs.png",
-      "sha256": "531fb9978c8ac843a925b9c922526e1724ea0348ffc582ae50ca97a15d5fa036",
+      "sha256": "52afca77aa7d211ab25126df11ba2fd44aeefc020c9354bf1a9b30bfcc236e49",
       "contentLanguage": "cs",
       "type": "native",
-      "operation": "Native testLeaderHUDSnapshot rendered in the Tart macOS VM, using the app language and default commands. Original PNG pixels retained.",
-      "originalSource": "/Users/realazy/Projects/_vibe/pane/build/i18n-interface-audit/cs/leader-keys.png",
-      "snapshotFingerprint": "0727c37daf0b2dea0bedcda57a8ddba934910d519ea2da5f2cdc0d7b26ea8839"
+      "operation": "Native LeaderHelpView rendered with the app localization, multiple displays and at least ten desktops. Original PNG pixels retained.",
+      "originalSource": "/Users/realazy/Projects/_vibe/calmon/Sources/AppJump.swift"
     },
     {
       "source": "scripts/assets/presskit/calmon-leader-keys-da.png",
-      "sha256": "51e6fca02806934f415c11c9c368e7e1b05076d17213d9d92f281f68a897ce53",
+      "sha256": "4fcd85e42fe7390f83b039d6320fe24ebedb84b5e0cdeda44cde40366c878e7b",
       "contentLanguage": "da",
       "type": "native",
-      "operation": "Native testLeaderHUDSnapshot rendered in the Tart macOS VM, using the app language and default commands. Original PNG pixels retained.",
-      "originalSource": "/Users/realazy/Projects/_vibe/pane/build/i18n-interface-audit/da/leader-keys.png",
-      "snapshotFingerprint": "0727c37daf0b2dea0bedcda57a8ddba934910d519ea2da5f2cdc0d7b26ea8839"
+      "operation": "Native LeaderHelpView rendered with the app localization, multiple displays and at least ten desktops. Original PNG pixels retained.",
+      "originalSource": "/Users/realazy/Projects/_vibe/calmon/Sources/AppJump.swift"
     },
     {
       "source": "scripts/assets/presskit/calmon-leader-keys-de.png",
-      "sha256": "4f94dc1ab881a9c66fcc05901370cf7a99597e57320b9d8d297f4b11a437f440",
+      "sha256": "edf667fb77481a96a6fc611a1b92c4bca1515c9c0997d520fd2932d4565696dc",
       "contentLanguage": "de",
       "type": "native",
-      "operation": "Native testLeaderHUDSnapshot rendered in the Tart macOS VM, using the app language and default commands. Original PNG pixels retained.",
-      "originalSource": "/Users/realazy/Projects/_vibe/pane/build/i18n-interface-audit/de/leader-keys.png",
-      "snapshotFingerprint": "c42c7bd19a95730abbcac6a481efa24b8a8d6b4e1eaebd14e442fcaf491a1f75"
+      "operation": "Native LeaderHelpView rendered with the app localization, multiple displays and at least ten desktops. Original PNG pixels retained.",
+      "originalSource": "/Users/realazy/Projects/_vibe/calmon/Sources/AppJump.swift"
     },
     {
       "source": "scripts/assets/presskit/calmon-leader-keys-el.png",
-      "sha256": "cec396d853bd9599ab85c66c8826642267253b9cf37726209b22b5b8dce8fa11",
+      "sha256": "5e37ed5933c81aed55a19f26ba16fcfdd5004aead702e7c0c067d508adbce03e",
       "contentLanguage": "el",
       "type": "native",
-      "operation": "Native testLeaderHUDSnapshot rendered in the Tart macOS VM, using the app language and default commands. Original PNG pixels retained.",
-      "originalSource": "/Users/realazy/Projects/_vibe/pane/build/i18n-interface-audit/el/leader-keys.png",
-      "snapshotFingerprint": "0727c37daf0b2dea0bedcda57a8ddba934910d519ea2da5f2cdc0d7b26ea8839"
+      "operation": "Native LeaderHelpView rendered with the app localization, multiple displays and at least ten desktops. Original PNG pixels retained.",
+      "originalSource": "/Users/realazy/Projects/_vibe/calmon/Sources/AppJump.swift"
     },
     {
       "source": "scripts/assets/presskit/calmon-leader-keys-es.png",
-      "sha256": "8c863a1dfebb0f7235503210fb30b08e7f41c6169fb9a1deba39a90993a5ad4e",
+      "sha256": "be40b00dd576b3a4d57981eab931bbf6e0778dbb925ca8c605e73f324d9ddfa7",
       "contentLanguage": "es",
       "type": "native",
-      "operation": "Native testLeaderHUDSnapshot rendered in the Tart macOS VM, using the app language and default commands. Original PNG pixels retained.",
-      "originalSource": "/Users/realazy/Projects/_vibe/pane/build/i18n-interface-audit/es/leader-keys.png",
-      "snapshotFingerprint": "0727c37daf0b2dea0bedcda57a8ddba934910d519ea2da5f2cdc0d7b26ea8839"
+      "operation": "Native LeaderHelpView rendered with the app localization, multiple displays and at least ten desktops. Original PNG pixels retained.",
+      "originalSource": "/Users/realazy/Projects/_vibe/calmon/Sources/AppJump.swift"
     },
     {
       "source": "scripts/assets/presskit/calmon-leader-keys-es-419.png",
-      "sha256": "be87b7d8c9bb560f4d8ac0b753b95ac9978cd828cfb41bf30481a60c0a1d063c",
+      "sha256": "e5c7e34d326f4d63e75ce628a128f054070b3f2b1e0d997c41369bcee341861e",
       "contentLanguage": "es-419",
       "type": "native",
-      "operation": "Native testLeaderHUDSnapshot rendered in the Tart macOS VM, using the app language and default commands. Original PNG pixels retained.",
-      "originalSource": "/Users/realazy/Projects/_vibe/pane/build/i18n-interface-audit/es-419/leader-keys.png",
-      "snapshotFingerprint": "0727c37daf0b2dea0bedcda57a8ddba934910d519ea2da5f2cdc0d7b26ea8839"
+      "operation": "Native LeaderHelpView rendered with the app localization, multiple displays and at least ten desktops. Original PNG pixels retained.",
+      "originalSource": "/Users/realazy/Projects/_vibe/calmon/Sources/AppJump.swift"
     },
     {
       "source": "scripts/assets/presskit/calmon-leader-keys-fi.png",
-      "sha256": "23747f2baa0286d2b13d9406b4d401cb71f6f64504caa23b6e8fe829a293ffe3",
+      "sha256": "46c67c9cf6508c47b797cc3bb8674da5a5aa31e5bbad98cd2f58e883b3a5b3ad",
       "contentLanguage": "fi",
       "type": "native",
-      "operation": "Native testLeaderHUDSnapshot rendered in the Tart macOS VM, using the app language and default commands. Original PNG pixels retained.",
-      "originalSource": "/Users/realazy/Projects/_vibe/pane/build/i18n-interface-audit/fi/leader-keys.png",
-      "snapshotFingerprint": "0727c37daf0b2dea0bedcda57a8ddba934910d519ea2da5f2cdc0d7b26ea8839"
+      "operation": "Native LeaderHelpView rendered with the app localization, multiple displays and at least ten desktops. Original PNG pixels retained.",
+      "originalSource": "/Users/realazy/Projects/_vibe/calmon/Sources/AppJump.swift"
     },
     {
       "source": "scripts/assets/presskit/calmon-leader-keys-fr.png",
-      "sha256": "df409045ba966f0127994b144ffc81131f41cb8c0db8890bb49682339d4eb440",
+      "sha256": "08b9a2702543874f3a60a4c29cc7106c724b90ddd732e7a7a84f4c7e90924fff",
       "contentLanguage": "fr",
       "type": "native",
-      "operation": "Native testLeaderHUDSnapshot rendered in the Tart macOS VM, using the app language and default commands. Original PNG pixels retained.",
-      "originalSource": "/Users/realazy/Projects/_vibe/pane/build/i18n-interface-audit/fr/leader-keys.png",
-      "snapshotFingerprint": "0727c37daf0b2dea0bedcda57a8ddba934910d519ea2da5f2cdc0d7b26ea8839"
+      "operation": "Native LeaderHelpView rendered with the app localization, multiple displays and at least ten desktops. Original PNG pixels retained.",
+      "originalSource": "/Users/realazy/Projects/_vibe/calmon/Sources/AppJump.swift"
     },
     {
       "source": "scripts/assets/presskit/calmon-leader-keys-fr-CA.png",
-      "sha256": "df409045ba966f0127994b144ffc81131f41cb8c0db8890bb49682339d4eb440",
+      "sha256": "08b9a2702543874f3a60a4c29cc7106c724b90ddd732e7a7a84f4c7e90924fff",
       "contentLanguage": "fr-CA",
       "type": "native",
-      "operation": "Native testLeaderHUDSnapshot rendered in the Tart macOS VM, using the app language and default commands. Original PNG pixels retained.",
-      "originalSource": "/Users/realazy/Projects/_vibe/pane/build/i18n-interface-audit/fr-CA/leader-keys.png",
-      "snapshotFingerprint": "0727c37daf0b2dea0bedcda57a8ddba934910d519ea2da5f2cdc0d7b26ea8839"
+      "operation": "Native LeaderHelpView rendered with the app localization, multiple displays and at least ten desktops. Original PNG pixels retained.",
+      "originalSource": "/Users/realazy/Projects/_vibe/calmon/Sources/AppJump.swift"
     },
     {
       "source": "scripts/assets/presskit/calmon-leader-keys-he.png",
-      "sha256": "520b5d9c705153ba949997a9bc9055c8a14ab8bb9fbd2c5f2c3bd3bcacf02dce",
+      "sha256": "f5ca31fa714d775c72db5dc18e7a42c174f51c371614818a972ce33c24796543",
       "contentLanguage": "he",
       "type": "native",
-      "operation": "Native testLeaderHUDSnapshot rendered in the Tart macOS VM, using the app language and default commands. Original PNG pixels retained.",
-      "originalSource": "/Users/realazy/Projects/_vibe/pane/build/i18n-interface-audit/he/leader-keys.png",
-      "snapshotFingerprint": "c42c7bd19a95730abbcac6a481efa24b8a8d6b4e1eaebd14e442fcaf491a1f75"
+      "operation": "Native LeaderHelpView rendered with the app localization, multiple displays and at least ten desktops. Original PNG pixels retained.",
+      "originalSource": "/Users/realazy/Projects/_vibe/calmon/Sources/AppJump.swift"
     },
     {
       "source": "scripts/assets/presskit/calmon-leader-keys-hi.png",
-      "sha256": "beeae389b0609dfd495c555fdae46a5454fb76e8e017c07825a844013323ae71",
+      "sha256": "6feb439304f1bbef9301c545a32096ff85c60162cc64492a40e438632ae6e226",
       "contentLanguage": "hi",
       "type": "native",
-      "operation": "Native testLeaderHUDSnapshot rendered in the Tart macOS VM, using the app language and default commands. Original PNG pixels retained.",
-      "originalSource": "/Users/realazy/Projects/_vibe/pane/build/i18n-interface-audit/hi/leader-keys.png",
-      "snapshotFingerprint": "0727c37daf0b2dea0bedcda57a8ddba934910d519ea2da5f2cdc0d7b26ea8839"
+      "operation": "Native LeaderHelpView rendered with the app localization, multiple displays and at least ten desktops. Original PNG pixels retained.",
+      "originalSource": "/Users/realazy/Projects/_vibe/calmon/Sources/AppJump.swift"
     },
     {
       "source": "scripts/assets/presskit/calmon-leader-keys-hr.png",
-      "sha256": "bd49e2e9fc617405eca207bf06bf68336da1c12f6f31ee03838e21a8928b2540",
+      "sha256": "3ff60473752ac0c08c664516dca693e13a540ea49c527d6d19576b32483d4ea8",
       "contentLanguage": "hr",
       "type": "native",
-      "operation": "Native testLeaderHUDSnapshot rendered in the Tart macOS VM, using the app language and default commands. Original PNG pixels retained.",
-      "originalSource": "/Users/realazy/Projects/_vibe/pane/build/i18n-interface-audit/hr/leader-keys.png",
-      "snapshotFingerprint": "0727c37daf0b2dea0bedcda57a8ddba934910d519ea2da5f2cdc0d7b26ea8839"
+      "operation": "Native LeaderHelpView rendered with the app localization, multiple displays and at least ten desktops. Original PNG pixels retained.",
+      "originalSource": "/Users/realazy/Projects/_vibe/calmon/Sources/AppJump.swift"
     },
     {
       "source": "scripts/assets/presskit/calmon-leader-keys-hu.png",
-      "sha256": "3eea611e6acb12cf521c9b0dedb49085477e02923f2dd3d880668ac69053b2a7",
+      "sha256": "d39bbce26f3b6106ba12c516d79dc6f75a543788ca6959e20a86b12247506c2b",
       "contentLanguage": "hu",
       "type": "native",
-      "operation": "Native testLeaderHUDSnapshot rendered in the Tart macOS VM, using the app language and default commands. Original PNG pixels retained.",
-      "originalSource": "/Users/realazy/Projects/_vibe/pane/build/i18n-interface-audit/hu/leader-keys.png",
-      "snapshotFingerprint": "0727c37daf0b2dea0bedcda57a8ddba934910d519ea2da5f2cdc0d7b26ea8839"
+      "operation": "Native LeaderHelpView rendered with the app localization, multiple displays and at least ten desktops. Original PNG pixels retained.",
+      "originalSource": "/Users/realazy/Projects/_vibe/calmon/Sources/AppJump.swift"
     },
     {
       "source": "scripts/assets/presskit/calmon-leader-keys-id.png",
-      "sha256": "2e24cff7d8feeff20668cd4fe5497c9d7c02cf011d35e413f0226e05932f9c3f",
+      "sha256": "1005c75404b0d9fad14925a1612618689a127c0597cb30c13a9d579d4c37d553",
       "contentLanguage": "id",
       "type": "native",
-      "operation": "Native testLeaderHUDSnapshot rendered in the Tart macOS VM, using the app language and default commands. Original PNG pixels retained.",
-      "originalSource": "/Users/realazy/Projects/_vibe/pane/build/i18n-interface-audit/id/leader-keys.png",
-      "snapshotFingerprint": "c42c7bd19a95730abbcac6a481efa24b8a8d6b4e1eaebd14e442fcaf491a1f75"
+      "operation": "Native LeaderHelpView rendered with the app localization, multiple displays and at least ten desktops. Original PNG pixels retained.",
+      "originalSource": "/Users/realazy/Projects/_vibe/calmon/Sources/AppJump.swift"
     },
     {
       "source": "scripts/assets/presskit/calmon-leader-keys-it.png",
-      "sha256": "4d3576be906692b8f7d157c9de36cca8d81772eb258dbb02245944df63f21c95",
+      "sha256": "7773983245ab312d7f697ddb4d6b1ec576b768451b72a1750cf9a0aa521968fe",
       "contentLanguage": "it",
       "type": "native",
-      "operation": "Native testLeaderHUDSnapshot rendered in the Tart macOS VM, using the app language and default commands. Original PNG pixels retained.",
-      "originalSource": "/Users/realazy/Projects/_vibe/pane/build/i18n-interface-audit/it/leader-keys.png",
-      "snapshotFingerprint": "0727c37daf0b2dea0bedcda57a8ddba934910d519ea2da5f2cdc0d7b26ea8839"
+      "operation": "Native LeaderHelpView rendered with the app localization, multiple displays and at least ten desktops. Original PNG pixels retained.",
+      "originalSource": "/Users/realazy/Projects/_vibe/calmon/Sources/AppJump.swift"
     },
     {
       "source": "scripts/assets/presskit/calmon-leader-keys-ja.png",
-      "sha256": "53a41e81ee1c250a921bc97af1c0ae3e8340ce369cec11fcadc9c7857bff4a62",
+      "sha256": "cbe91b7a8c07de5d23bf9be94fd0762ce7dd1288f18084abe80860f632a550c3",
       "contentLanguage": "ja",
       "type": "native",
-      "operation": "Native testLeaderHUDSnapshot rendered in the Tart macOS VM, using the app language and default commands. Original PNG pixels retained.",
-      "originalSource": "/Users/realazy/Projects/_vibe/pane/build/i18n-interface-audit/ja/leader-keys.png",
-      "snapshotFingerprint": "0727c37daf0b2dea0bedcda57a8ddba934910d519ea2da5f2cdc0d7b26ea8839"
+      "operation": "Native LeaderHelpView rendered with the app localization, multiple displays and at least ten desktops. Original PNG pixels retained.",
+      "originalSource": "/Users/realazy/Projects/_vibe/calmon/Sources/AppJump.swift"
     },
     {
       "source": "scripts/assets/presskit/calmon-leader-keys-ko.png",
-      "sha256": "9af6080fa0c8c9ec700d60fa7001d4c908e974245993bbe5b8acb8425fd8d26f",
+      "sha256": "601471670c4ba4541263f89f502a1866051c0d42a4a1d961ab5e0b56b861f4ed",
       "contentLanguage": "ko",
       "type": "native",
-      "operation": "Native testLeaderHUDSnapshot rendered in the Tart macOS VM, using the app language and default commands. Original PNG pixels retained.",
-      "originalSource": "/Users/realazy/Projects/_vibe/pane/build/i18n-interface-audit/ko/leader-keys.png",
-      "snapshotFingerprint": "0727c37daf0b2dea0bedcda57a8ddba934910d519ea2da5f2cdc0d7b26ea8839"
+      "operation": "Native LeaderHelpView rendered with the app localization, multiple displays and at least ten desktops. Original PNG pixels retained.",
+      "originalSource": "/Users/realazy/Projects/_vibe/calmon/Sources/AppJump.swift"
     },
     {
       "source": "scripts/assets/presskit/calmon-leader-keys-ms.png",
-      "sha256": "39c638ff64b6e25afcc95ff2a5a1d31d15fe4c8802f0797bd3460d8a322d9393",
+      "sha256": "0efc79379bec44464152b500be7101c919cf68ece39b7d75b3d8b1b83dedbad6",
       "contentLanguage": "ms",
       "type": "native",
-      "operation": "Native testLeaderHUDSnapshot rendered in the Tart macOS VM, using the app language and default commands. Original PNG pixels retained.",
-      "originalSource": "/Users/realazy/Projects/_vibe/pane/build/i18n-interface-audit/ms/leader-keys.png",
-      "snapshotFingerprint": "0727c37daf0b2dea0bedcda57a8ddba934910d519ea2da5f2cdc0d7b26ea8839"
+      "operation": "Native LeaderHelpView rendered with the app localization, multiple displays and at least ten desktops. Original PNG pixels retained.",
+      "originalSource": "/Users/realazy/Projects/_vibe/calmon/Sources/AppJump.swift"
     },
     {
       "source": "scripts/assets/presskit/calmon-leader-keys-nb.png",
-      "sha256": "a61f6467943ad8039a196c79c60a3ab4055d3320fa3e2a55629a0e226e5f849c",
+      "sha256": "79d9f4fd6e424c0d1e869dc077908613e4e52164830e712a1e3473cf5bd1c0c2",
       "contentLanguage": "nb",
       "type": "native",
-      "operation": "Native testLeaderHUDSnapshot rendered in the Tart macOS VM, using the app language and default commands. Original PNG pixels retained.",
-      "originalSource": "/Users/realazy/Projects/_vibe/pane/build/i18n-interface-audit/nb/leader-keys.png",
-      "snapshotFingerprint": "0727c37daf0b2dea0bedcda57a8ddba934910d519ea2da5f2cdc0d7b26ea8839"
+      "operation": "Native LeaderHelpView rendered with the app localization, multiple displays and at least ten desktops. Original PNG pixels retained.",
+      "originalSource": "/Users/realazy/Projects/_vibe/calmon/Sources/AppJump.swift"
     },
     {
       "source": "scripts/assets/presskit/calmon-leader-keys-nl.png",
-      "sha256": "e3708c1c683dbc004bbc0eb3db9446666c36616e3f5c2df4c46e3b90e025caf7",
+      "sha256": "a76707fc94d51049f2b52bfc0fae017d39d7d716e5c799e130403efb5e9f8eaa",
       "contentLanguage": "nl",
       "type": "native",
-      "operation": "Native testLeaderHUDSnapshot rendered in the Tart macOS VM, using the app language and default commands. Original PNG pixels retained.",
-      "originalSource": "/Users/realazy/Projects/_vibe/pane/build/i18n-interface-audit/nl/leader-keys.png",
-      "snapshotFingerprint": "0727c37daf0b2dea0bedcda57a8ddba934910d519ea2da5f2cdc0d7b26ea8839"
+      "operation": "Native LeaderHelpView rendered with the app localization, multiple displays and at least ten desktops. Original PNG pixels retained.",
+      "originalSource": "/Users/realazy/Projects/_vibe/calmon/Sources/AppJump.swift"
     },
     {
       "source": "scripts/assets/presskit/calmon-leader-keys-pl.png",
-      "sha256": "48503e19340f25c2da418abd1461d792e8b37122f3d70404391ae18705d34fbc",
+      "sha256": "dd3e0684f4a28545b5c6011a3e505d0ad5e5340bd4664dfb936e9b4f302ebc6e",
       "contentLanguage": "pl",
       "type": "native",
-      "operation": "Native testLeaderHUDSnapshot rendered in the Tart macOS VM, using the app language and default commands. Original PNG pixels retained.",
-      "originalSource": "/Users/realazy/Projects/_vibe/pane/build/i18n-interface-audit/pl/leader-keys.png",
-      "snapshotFingerprint": "0727c37daf0b2dea0bedcda57a8ddba934910d519ea2da5f2cdc0d7b26ea8839"
+      "operation": "Native LeaderHelpView rendered with the app localization, multiple displays and at least ten desktops. Original PNG pixels retained.",
+      "originalSource": "/Users/realazy/Projects/_vibe/calmon/Sources/AppJump.swift"
     },
     {
       "source": "scripts/assets/presskit/calmon-leader-keys-pt-BR.png",
-      "sha256": "317fbacd918f17453693a43de3c0701faf6dc37b55fd4bab7931c35050b9c8a7",
+      "sha256": "643a48e7b3f945fbc43105523d70b4b69ab727660162707c13aeba6d4412c4cc",
       "contentLanguage": "pt-BR",
       "type": "native",
-      "operation": "Native testLeaderHUDSnapshot rendered in the Tart macOS VM, using the app language and default commands. Original PNG pixels retained.",
-      "originalSource": "/Users/realazy/Projects/_vibe/pane/build/i18n-interface-audit/pt-BR/leader-keys.png",
-      "snapshotFingerprint": "0727c37daf0b2dea0bedcda57a8ddba934910d519ea2da5f2cdc0d7b26ea8839"
+      "operation": "Native LeaderHelpView rendered with the app localization, multiple displays and at least ten desktops. Original PNG pixels retained.",
+      "originalSource": "/Users/realazy/Projects/_vibe/calmon/Sources/AppJump.swift"
     },
     {
       "source": "scripts/assets/presskit/calmon-leader-keys-pt-PT.png",
-      "sha256": "c2761c6a91119b72eeb9797da8abf8229d763ef29e82859b95a6438b710008d3",
+      "sha256": "e24e9d5b75e87659c4d015166992e8e7c158ae97b5799562a3be670ac4af21d8",
       "contentLanguage": "pt-PT",
       "type": "native",
-      "operation": "Native testLeaderHUDSnapshot rendered in the Tart macOS VM, using the app language and default commands. Original PNG pixels retained.",
-      "originalSource": "/Users/realazy/Projects/_vibe/pane/build/i18n-interface-audit/pt-PT/leader-keys.png",
-      "snapshotFingerprint": "0727c37daf0b2dea0bedcda57a8ddba934910d519ea2da5f2cdc0d7b26ea8839"
+      "operation": "Native LeaderHelpView rendered with the app localization, multiple displays and at least ten desktops. Original PNG pixels retained.",
+      "originalSource": "/Users/realazy/Projects/_vibe/calmon/Sources/AppJump.swift"
     },
     {
       "source": "scripts/assets/presskit/calmon-leader-keys-ro.png",
-      "sha256": "42a1af543fa8f7346f4e1ad458378ddeec2f74d591968cdfd6786c0680702dcf",
+      "sha256": "b6f776714c52d7562de5291336a6315fd34bf1d919392b26b76c0850f33d9352",
       "contentLanguage": "ro",
       "type": "native",
-      "operation": "Native testLeaderHUDSnapshot rendered in the Tart macOS VM, using the app language and default commands. Original PNG pixels retained.",
-      "originalSource": "/Users/realazy/Projects/_vibe/pane/build/i18n-interface-audit/ro/leader-keys.png",
-      "snapshotFingerprint": "0727c37daf0b2dea0bedcda57a8ddba934910d519ea2da5f2cdc0d7b26ea8839"
+      "operation": "Native LeaderHelpView rendered with the app localization, multiple displays and at least ten desktops. Original PNG pixels retained.",
+      "originalSource": "/Users/realazy/Projects/_vibe/calmon/Sources/AppJump.swift"
     },
     {
       "source": "scripts/assets/presskit/calmon-leader-keys-ru.png",
-      "sha256": "ea5e0a70cf64c4a03d4ed15b73a513da264215a6656aa2835fac5fd50b681002",
+      "sha256": "0e0c46af7d56f6ff69157a1a8acb8817f1089496d0ef02b7af7e66878209c8ca",
       "contentLanguage": "ru",
       "type": "native",
-      "operation": "Native testLeaderHUDSnapshot rendered in the Tart macOS VM, using the app language and default commands. Original PNG pixels retained.",
-      "originalSource": "/Users/realazy/Projects/_vibe/pane/build/i18n-interface-audit/ru/leader-keys.png",
-      "snapshotFingerprint": "c42c7bd19a95730abbcac6a481efa24b8a8d6b4e1eaebd14e442fcaf491a1f75"
+      "operation": "Native LeaderHelpView rendered with the app localization, multiple displays and at least ten desktops. Original PNG pixels retained.",
+      "originalSource": "/Users/realazy/Projects/_vibe/calmon/Sources/AppJump.swift"
     },
     {
       "source": "scripts/assets/presskit/calmon-leader-keys-sk.png",
-      "sha256": "0c964f8b392fd65084e73e1b82cb075c9f6c301d7666ccfca8918843d81d0b7e",
+      "sha256": "123456dc45c0113a2722c930512826b3969333dda4e5663b2b3d8c7821e070f7",
       "contentLanguage": "sk",
       "type": "native",
-      "operation": "Native testLeaderHUDSnapshot rendered in the Tart macOS VM, using the app language and default commands. Original PNG pixels retained.",
-      "originalSource": "/Users/realazy/Projects/_vibe/pane/build/i18n-interface-audit/sk/leader-keys.png",
-      "snapshotFingerprint": "0727c37daf0b2dea0bedcda57a8ddba934910d519ea2da5f2cdc0d7b26ea8839"
+      "operation": "Native LeaderHelpView rendered with the app localization, multiple displays and at least ten desktops. Original PNG pixels retained.",
+      "originalSource": "/Users/realazy/Projects/_vibe/calmon/Sources/AppJump.swift"
     },
     {
       "source": "scripts/assets/presskit/calmon-leader-keys-sl.png",
-      "sha256": "eff231a630cd6eb3ed57aac5e5847983aecb6fa0abd5b1e6ea6c6eb614686d60",
+      "sha256": "96a8e7022dab72d4bca02b00537374428ed45e706185c749037fa7fb4918d8e7",
       "contentLanguage": "sl",
       "type": "native",
-      "operation": "Native testLeaderHUDSnapshot rendered in the Tart macOS VM, using the app language and default commands. Original PNG pixels retained.",
-      "originalSource": "/Users/realazy/Projects/_vibe/pane/build/i18n-interface-audit/sl/leader-keys.png",
-      "snapshotFingerprint": "0727c37daf0b2dea0bedcda57a8ddba934910d519ea2da5f2cdc0d7b26ea8839"
+      "operation": "Native LeaderHelpView rendered with the app localization, multiple displays and at least ten desktops. Original PNG pixels retained.",
+      "originalSource": "/Users/realazy/Projects/_vibe/calmon/Sources/AppJump.swift"
     },
     {
       "source": "scripts/assets/presskit/calmon-leader-keys-sv.png",
-      "sha256": "65e3e2e2666d70da6f4b536fe326ce87d394b1241aadb5f8d55e2cbab1f456c8",
+      "sha256": "51fe02630df1f73aa995e71051e7f4679fa6392d0aa938d54e3657e692a69b18",
       "contentLanguage": "sv",
       "type": "native",
-      "operation": "Native testLeaderHUDSnapshot rendered in the Tart macOS VM, using the app language and default commands. Original PNG pixels retained.",
-      "originalSource": "/Users/realazy/Projects/_vibe/pane/build/i18n-interface-audit/sv/leader-keys.png",
-      "snapshotFingerprint": "0727c37daf0b2dea0bedcda57a8ddba934910d519ea2da5f2cdc0d7b26ea8839"
+      "operation": "Native LeaderHelpView rendered with the app localization, multiple displays and at least ten desktops. Original PNG pixels retained.",
+      "originalSource": "/Users/realazy/Projects/_vibe/calmon/Sources/AppJump.swift"
     },
     {
       "source": "scripts/assets/presskit/calmon-leader-keys-th.png",
-      "sha256": "d59c07a0afc7969c1c8a118ece2f8ee6c87bf9e703a1671c3349e7cfc75d1f24",
+      "sha256": "b7f08dc040a37d2ae3b1db1be73a79e038ec8ebdbeab569cd8f1b7d99c7af1b1",
       "contentLanguage": "th",
       "type": "native",
-      "operation": "Native testLeaderHUDSnapshot rendered in the Tart macOS VM, using the app language and default commands. Original PNG pixels retained.",
-      "originalSource": "/Users/realazy/Projects/_vibe/pane/build/i18n-interface-audit/th/leader-keys.png",
-      "snapshotFingerprint": "0727c37daf0b2dea0bedcda57a8ddba934910d519ea2da5f2cdc0d7b26ea8839"
+      "operation": "Native LeaderHelpView rendered with the app localization, multiple displays and at least ten desktops. Original PNG pixels retained.",
+      "originalSource": "/Users/realazy/Projects/_vibe/calmon/Sources/AppJump.swift"
     },
     {
       "source": "scripts/assets/presskit/calmon-leader-keys-tr.png",
-      "sha256": "e275f0d12044adda044729b8acb66625d67fd59635a50d30634df00ec71098ec",
+      "sha256": "388e589a910ff283195548db105dc53eabd63376ad9d2cb9a81b9d1f823fa4ed",
       "contentLanguage": "tr",
       "type": "native",
-      "operation": "Native testLeaderHUDSnapshot rendered in the Tart macOS VM, using the app language and default commands. Original PNG pixels retained.",
-      "originalSource": "/Users/realazy/Projects/_vibe/pane/build/i18n-interface-audit/tr/leader-keys.png",
-      "snapshotFingerprint": "c42c7bd19a95730abbcac6a481efa24b8a8d6b4e1eaebd14e442fcaf491a1f75"
+      "operation": "Native LeaderHelpView rendered with the app localization, multiple displays and at least ten desktops. Original PNG pixels retained.",
+      "originalSource": "/Users/realazy/Projects/_vibe/calmon/Sources/AppJump.swift"
     },
     {
       "source": "scripts/assets/presskit/calmon-leader-keys-uk.png",
-      "sha256": "9842b56e2ae751ea3d0261f517ef3a89ca2b1cea73b8a8f22a94db047755f22b",
+      "sha256": "14328d015528b045e1ada395bf9ab583b143ae3c7a6cc0eb5b76b3b44c4fd3df",
       "contentLanguage": "uk",
       "type": "native",
-      "operation": "Native testLeaderHUDSnapshot rendered in the Tart macOS VM, using the app language and default commands. Original PNG pixels retained.",
-      "originalSource": "/Users/realazy/Projects/_vibe/pane/build/i18n-interface-audit/uk/leader-keys.png",
-      "snapshotFingerprint": "0727c37daf0b2dea0bedcda57a8ddba934910d519ea2da5f2cdc0d7b26ea8839"
+      "operation": "Native LeaderHelpView rendered with the app localization, multiple displays and at least ten desktops. Original PNG pixels retained.",
+      "originalSource": "/Users/realazy/Projects/_vibe/calmon/Sources/AppJump.swift"
     },
     {
       "source": "scripts/assets/presskit/calmon-leader-keys-vi.png",
-      "sha256": "555bffab3c4ea04954a9aedd181b58f46b04f9bdaaaeb66598794ba0b437469b",
+      "sha256": "925c1a4fd2fa36e7b6a50e674bfc247b933f3ee20e04ff82e98f2f4bfc1e60c3",
       "contentLanguage": "vi",
       "type": "native",
-      "operation": "Native testLeaderHUDSnapshot rendered in the Tart macOS VM, using the app language and default commands. Original PNG pixels retained.",
-      "originalSource": "/Users/realazy/Projects/_vibe/pane/build/i18n-interface-audit/vi/leader-keys.png",
-      "snapshotFingerprint": "c42c7bd19a95730abbcac6a481efa24b8a8d6b4e1eaebd14e442fcaf491a1f75"
+      "operation": "Native LeaderHelpView rendered with the app localization, multiple displays and at least ten desktops. Original PNG pixels retained.",
+      "originalSource": "/Users/realazy/Projects/_vibe/calmon/Sources/AppJump.swift"
     },
     {
       "source": "scripts/assets/presskit/calmon-leader-keys-zh-HK.png",
-      "sha256": "47439bda5cf0f7e92c348da7e2f1efb589aae9b471e08116c0ec1140d381f101",
+      "sha256": "0217705d1cdf45cc33b604c25a4a5cdd8d90d7e37775bef7fed1baf87f0afaac",
       "contentLanguage": "zh-HK",
       "type": "native",
-      "operation": "Native testLeaderHUDSnapshot rendered in the Tart macOS VM, using the app language and default commands. Original PNG pixels retained.",
-      "originalSource": "/Users/realazy/Projects/_vibe/pane/build/i18n-interface-audit/zh-HK/leader-keys.png",
-      "snapshotFingerprint": "0727c37daf0b2dea0bedcda57a8ddba934910d519ea2da5f2cdc0d7b26ea8839"
+      "operation": "Native LeaderHelpView rendered with the app localization, multiple displays and at least ten desktops. Original PNG pixels retained.",
+      "originalSource": "/Users/realazy/Projects/_vibe/calmon/Sources/AppJump.swift"
     },
     {
       "source": "scripts/assets/presskit/calmon-leader-keys-zh-Hans.png",
-      "sha256": "c02d44493674433c44831bd00f384c64cf568d9ca14faaf1b7ae615675fbb7a0",
+      "sha256": "8d2b7be197fbbb33c2841b260051e2df12be9a64771adc7737bf9f504d482036",
       "contentLanguage": "zh-Hans",
       "type": "native",
-      "operation": "Native testLeaderHUDSnapshot rendered in the Tart macOS VM, using the app language and default commands. Original PNG pixels retained.",
-      "originalSource": "/Users/realazy/Projects/_vibe/pane/build/i18n-interface-audit/zh-Hans/leader-keys.png",
-      "snapshotFingerprint": "0727c37daf0b2dea0bedcda57a8ddba934910d519ea2da5f2cdc0d7b26ea8839"
+      "operation": "Native LeaderHelpView rendered with the app localization, multiple displays and at least ten desktops. Original PNG pixels retained.",
+      "originalSource": "/Users/realazy/Projects/_vibe/calmon/Sources/AppJump.swift"
     },
     {
       "source": "scripts/assets/presskit/calmon-leader-keys-zh-Hant.png",
-      "sha256": "0785791fdedb4398535a2fa7bb7a14953bdd4057faca8ef417e9aca40a6d38c6",
+      "sha256": "6bc8ef906c3a51270e6ac4155d965e51fb4879ac8b8809c7b3c3ca60cc83ea45",
       "contentLanguage": "zh-Hant",
       "type": "native",
-      "operation": "Native testLeaderHUDSnapshot rendered in the Tart macOS VM, using the app language and default commands. Original PNG pixels retained.",
-      "originalSource": "/Users/realazy/Projects/_vibe/pane/build/i18n-interface-audit/zh-Hant/leader-keys.png",
-      "snapshotFingerprint": "0727c37daf0b2dea0bedcda57a8ddba934910d519ea2da5f2cdc0d7b26ea8839"
+      "operation": "Native LeaderHelpView rendered with the app localization, multiple displays and at least ten desktops. Original PNG pixels retained.",
+      "originalSource": "/Users/realazy/Projects/_vibe/calmon/Sources/AppJump.swift"
     }
   ],
   "inputHashes": {
-    "Sources/AppJump.swift": "80267b012f7a8bab845f681f4a379d40e2e4baad1f03779f6b7a0e3fc24adce0",
-    "Sources/Localizable.xcstrings": "94ffe0d7288e82a0d25399ecf139649f523ad85c5997090b3713b629e44db6c1",
-    "Tests/CalmonTests.swift": "cbf933e92cdc26318f33bf82848b63a97c3df8614121431bdb78d82f828ef66f"
+    "Sources/AppIdentityMigration.swift": "769a9f3751be085a05c8b426e273e335c1437c3aa1a983e3856228f2ac83aca0",
+    "Sources/AppJump.swift": "58f56931f99f305e45f733300dbfc8e98603c169fd535fd242901beab7038db8",
+    "Sources/AppUpdater.swift": "7c9a6666a44a250683d5959991a590929f34f8b229b7865383289af66a5dc789",
+    "Sources/CalmonApp.swift": "ae55d5857c5659922ab5b6d427e7b07f1e962ee27db61cd373a2168371aaccfe",
+    "Sources/DesktopSwitch.swift": "c1feef02971ca9171268886d8bf3369a22cb658e3d1f475a3e269964ee241462",
+    "Sources/DesktopTabBar.swift": "622994c17568651fe5646799249c6bc6986f8e69e110c4f89d5a7c06b855990f",
+    "Sources/DockHint.swift": "c7f0001cb96501a859c65f87c5768d09d61da4ff675d28623b93c2d4f7774757",
+    "Sources/FavoriteApps.swift": "4c495acf1b263d8bf3fa7f913412d344bc78a9bf9f10f400bad792e902163ad3",
+    "Sources/LayoutTrace.swift": "e51408500740e8433e9006bf95fd7757bf1e30794666696f02f5d0c64758c18d",
+    "Sources/LoginItem.swift": "3fa7f8fb9f2554ce062eb2b168d94782f64da3caa4d28ae24a6d103f3727310a",
+    "Sources/OnboardingView.swift": "6ccc56b6f2176bb6872a5911c16083df61b31b056459c82c7599ee4f5a0c5d26",
+    "Sources/ProcessObserver.swift": "f2708f6a386db3cb8469b2c7e6d33fb782c981863bd32d491995562d1eb11876",
+    "Sources/SignalIPC.swift": "97fdfccb190b6274e50eaa787e057551c0d326ff1ab8c56bf85bf5a8c11627bd",
+    "Sources/Signals.swift": "1d609b6c8efef26a6961d5a073f0a8a38dc72d84a9281839875b1350eb8c051f",
+    "Sources/StackTabIndicator.swift": "223bf9909eae6c5c41dc6e7c095be3a0acedcdeacf35ae80891660958d76f695",
+    "Sources/SystemWindow.swift": "785847477faeb05f9b72838b6df22bc4c45c9f7ecfb1262898e670e339636d4f",
+    "Sources/WindowGeometry.swift": "eebfbbf6fe02a31cdeb44cc9019ac143947c165d400d3ece1480657f9c3c5a9e",
+    "Sources/WindowInputMonitor.swift": "2e4f8df5bebe6c54eb58507f59b2be0beca391c80a217ab94118121678fb26ed",
+    "Sources/WindowLayoutAnimation.swift": "66812da32bfab674b2c16c327dd6ee2b7e842797685e3fbdeb7354b06e8f6ca0",
+    "Sources/WindowManager.swift": "924d00f99baa756ac5b43be5a8404c93bfecb0f9ed0f2e8a2c3064ffe4eb57c1",
+    "Sources/WindowStack.swift": "46e16fe043e5eb8b0b82b572321a244d3ebedc192ef2d84703a7b9fc3f0b6ca1",
+    "Sources/Fonts/Tiny5.ttf": "588626f2c1b164f55927c0d8123f4bc134651aad7d257da68fc19b0824b0d8fa",
+    "Sources/Fonts/ZLabsRoundPix_12px_M_CN.ttf": "5adc3a83d11edc2e6f5bb3bc009dd9028dc055cbb3fc5f23715fb4de3c4e3eb0",
+    "Sources/Fonts/fusion-pixel-12px-proportional-zh_hans.otf": "2972782f05d7dd5f8414bc0215f69c181561172286b1f9823b5c279d9e5e6674",
+    "Sources/Localizable.xcstrings": "ae984dfe218fe492a5aaa91a38f2e42f69b566fb522a4cfeadcfcc86446d84ec"
   },
-  "method": "Existing native i18n-interface-audit screenshots from the app snapshot tests; English Settings and Leader Mode screenshots reviewed as website translation context.",
-  "snapshotRunnerSha256": "b78e651e2742e69b869d4d6854b5c504554eb2cf2d192ed0c25613613b3f5c27"
+  "captureScriptSha256": "d3b6031dec6c0f0302ce041868c3f1f9f158d6d8a293a66dde40c58f604f8819"
 }

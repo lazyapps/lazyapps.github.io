@@ -14,6 +14,8 @@ macOS 26 o posterior
 
 Col·loca’ls l’un damunt de l’altre. De costat, les vores compartides bloquegen el desplaçament i el canvi de columna torna a l’inici. Amb monitors a tots dos costats, les finestres del fons se superposen darrere de la seleccionada.
 
+\` passa a la pantalla següent. Shift + \` mou la finestra activa a l’escriptori actual d’aquella pantalla i la segueix.
+
 Gratuït durant la beta
 
 Un error o una idea? Escriu a @lazyapps a X. Gràcies per ajudar-nos a millorar Calmon.
@@ -22,7 +24,7 @@ Les finestres es desplacen horitzontalment. La columna activa ocupa gairebé tot
 
 Una columna es pot dividir en fins a tres regions, una damunt de l’altra i visibles alhora. Cada regió pot contenir una finestra o una pila de finestres d’una app.
 
-Les finestres d’una mateixa app se superposen en una regió i només se’n mostra una cada vegada. Fes clic als indicadors de la part superior de la finestra o prem ⌘` per canviar de finestra.
+Les finestres d’una mateixa app se superposen en una regió i només se’n mostra una cada vegada. Fes clic als indicadors de la part superior de la finestra o prem ⌘\` per canviar de finestra.
 
 Mode líder: Space → J / X — Afegir / treure la finestra seleccionada de la pila de la seva app.
 
@@ -43,6 +45,10 @@ Prem ⌘ dos cops i deixa anar. Mentre la finestra estigui ressaltada, pots enca
 , / . — Si ocupa tota la columna, s’uneix a la columna de l’esquerra / dreta. En una columna dividida, la regió activa se separa en una columna nova a l’esquerra / dreta. La pila es mou sencera.
 
 Space → J / X — Afegir / treure la finestra seleccionada de la pila de la seva app
+
+1–9 / ⇧1–9 — Canvia escriptori / mou finestra
+
+0 → 10–99 / ⇧0 — En el mode líder, prem 0 i després introdueix dues xifres per anar als escriptoris 10–99.
 
 macOS 26: Accessibilitat; macOS 27+: Control de dispositius i accés a les dades
 
@@ -96,7 +102,7 @@ Icona de la barra de menús · PNG · 44 × 44 · 2×
 
 [leader-keys.png](leader-keys.png)
 
-1520 × 780 · PNG
+1676 × 840 · PNG
 
 Píxels originals sense modificar.
 

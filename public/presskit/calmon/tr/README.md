@@ -14,6 +14,8 @@ macOS 26 veya üstü
 
 Ekranları üst üste yerleştir. Yan yana ekranların ortak kenarları kaydırmayı engeller; sütun geçişi bu kenarlarda başa döner. Her iki yanda ekran varsa arka plan pencereleri seçili pencerenin arkasında üst üste biner.
 
+\` odağı sonraki ekrana taşır. Shift + \` odaklanılan pencereyi o ekranın geçerli masaüstüne taşır ve pencereyi takip eder.
+
 Beta boyunca ücretsiz
 
 Hata mı buldun, fikrin mi var? X’te @lazyapps’e yaz. Calmon’u geliştirmemize yardım ettiğin için teşekkürler.
@@ -22,7 +24,7 @@ Pencereler yatay kayar. Etkin sütun ekranın çoğunu kaplar. Lider modunda ok 
 
 Bir sütun, yukarıdan aşağıya dizilen ve aynı anda görünen en fazla üç alana bölünebilir. Her alan tek bir pencereyi veya aynı uygulamanın pencere yığınını barındırabilir.
 
-Aynı uygulamanın pencereleri tek bir alanda üst üste durur; her seferinde yalnızca biri görünür. Geçiş için pencerenin üstündeki yığın işaretlerine tıkla veya ⌘` tuşlarına bas.
+Aynı uygulamanın pencereleri tek bir alanda üst üste durur; her seferinde yalnızca biri görünür. Geçiş için pencerenin üstündeki yığın işaretlerine tıkla veya ⌘\` tuşlarına bas.
 
 Lider Modu: Space → J / X — Seçili pencereyi uygulamasının yığınına ekle / yığından çıkar.
 
@@ -43,6 +45,10 @@ Otomatik paneli kapat: Ayarlar → Klavye → Tuş Paneli → Gösterme gecikmes
 , / . — Alan sütunda tek başınaysa soldaki / sağdaki sütuna katılır. Bölünmüş sütunda etkin alan solda / sağda ayrı bir sütuna çıkarılır. Pencere yığınının tamamı birlikte taşınır.
 
 Space → J / X — Seçili pencereyi uygulamasının yığınına ekle / yığından çıkar
+
+1–9 / ⇧1–9 — Masaüstü değiştir / pencere taşı
+
+0 → 10–99 / ⇧0 — Lider modunda 0 tuşuna basın, ardından 10–99 numaralı masaüstlerine gitmek için iki rakam yazın.
 
 macOS 26: Erişilebilirlik; macOS 27+: Aygıt Denetimi ve Veri Erişimi
 
@@ -96,7 +102,7 @@ undefined · PNG · 44 × 44 · 2×
 
 [leader-keys.png](leader-keys.png)
 
-1664 × 780 · PNG
+1820 × 840 · PNG
 
 Bu dildeki özgün arayüz önizlemesi; pikseller değiştirilmemiştir.
 

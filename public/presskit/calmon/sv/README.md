@@ -14,6 +14,8 @@ macOS 26 eller senare
 
 Placera skärmar ovanför varandra. Bredvid varandra blockerar gemensamma kanter rullningen; kolumnväxlingen börjar då om. Med skärmar på båda sidor överlappar bakgrundsfönstren bakom det valda fönstret.
 
+\` flyttar fokus till nästa skärm. Shift + \` flyttar det fokuserade fönstret till den skärmens aktuella skrivbord och följer fönstret.
+
 Gratis under betan
 
 Hittat ett fel eller fått en idé? Skriv till @lazyapps på X. Tack för att du hjälper oss förbättra Calmon.
@@ -22,7 +24,7 @@ Fönstren rullar vågrätt. Den aktiva kolumnen fyller större delen av skärmen
 
 En kolumn kan delas i upp till tre områden ovanför varandra som visas samtidigt. Varje område kan innehålla ett fönster eller en stapel fönster från samma app.
 
-Fönster från samma app ligger ovanpå varandra i ett område, och bara ett visas åt gången. Klicka på stapelmarkeringarna högst upp i fönstret eller tryck ⌘` för att växla.
+Fönster från samma app ligger ovanpå varandra i ett område, och bara ett visas åt gången. Klicka på stapelmarkeringarna högst upp i fönstret eller tryck ⌘\` för att växla.
 
 Leader-läge: Space → J / X — Lägg till / ta bort det valda fönstret från appens fönsterstapel.
 
@@ -43,6 +45,10 @@ Tryck två gånger på ⌘ och släpp. Fortsätt med kommandon medan fönstret �
 , / . — Ensam i kolumnen: lägg till området i kolumnen till vänster / höger. I en delad kolumn: flytta det aktiva området till en egen kolumn till vänster / höger. Hela stapeln flyttas tillsammans.
 
 Space → J / X — Lägg till / ta bort det valda fönstret från appens fönsterstapel
+
+1–9 / ⇧1–9 — Byt skrivbord / flytta fönster
+
+0 → 10–99 / ⇧0 — Tryck på 0 i leader-läget och skriv sedan två siffror för att gå till skrivbord 10–99.
 
 macOS 26: Hjälpmedel; macOS 27+: Enhetskontroll och dataåtkomst
 
@@ -96,7 +102,7 @@ Menyradssymbol · PNG · 44 × 44 · 2×
 
 [leader-keys.png](leader-keys.png)
 
-1592 × 780 · PNG
+1724 × 840 · PNG
 
 Oförändrade originalpixlar.
 

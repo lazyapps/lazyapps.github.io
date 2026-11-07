@@ -14,6 +14,8 @@ macOS 26 nebo novější
 
 Umístěte je nad sebe. Vedle sebe společné hrany blokují posouvání a přepínání sloupců na nich skočí na začátek. S monitory po obou stranách se okna na pozadí překrývají za vybraným oknem.
 
+Klávesa \` přepne na následující monitor. Shift + \` přesune aktivní okno na aktuální plochu tohoto monitoru a přejde za ním.
+
 Během bety zdarma
 
 Chyba nebo nápad? Napište @lazyapps na X. Děkujeme, že pomáháte zlepšovat Calmon.
@@ -22,7 +24,7 @@ Okna se posouvají vodorovně. Aktivní sloupec zabírá většinu obrazovky. V 
 
 Sloupec lze rozdělit až na tři oblasti nad sebou, které jsou viditelné současně. Každá oblast může obsahovat jedno okno nebo sadu oken stejné aplikace.
 
-Okna stejné aplikace se překrývají v jedné oblasti a vždy je vidět jen jedno. Přepínejte kliknutím na značky nahoře v okně nebo stisknutím ⌘`.
+Okna stejné aplikace se překrývají v jedné oblasti a vždy je vidět jen jedno. Přepínejte kliknutím na značky nahoře v okně nebo stisknutím ⌘\`.
 
 Režim lídra: Space → J / X — Přidat / odebrat vybrané okno ze sady jeho aplikace.
 
@@ -43,6 +45,10 @@ Dvakrát stiskněte ⌘ a uvolněte. Dokud je okno zvýrazněné, můžete zadá
 , / . — Je-li oblast ve sloupci sama, připojí se ke sloupci vlevo / vpravo. V rozděleném sloupci se aktivní oblast oddělí do nového sloupce vlevo / vpravo. Sada oken se přesune celá.
 
 Space → J / X — Přidat / odebrat vybrané okno ze sady jeho aplikace
+
+1–9 / ⇧1–9 — Přepnout plochu / přesunout okno
+
+0 → 10–99 / ⇧0 — V režimu lídra stiskněte 0 a pak zadejte dvě číslice pro přechod na plochy 10–99.
 
 macOS 26: Zpřístupnění; macOS 27+: Ovládání zařízení a přístup k datům
 
@@ -96,7 +102,7 @@ Ikona řádku nabídek · PNG · 44 × 44 · 2×
 
 [leader-keys.png](leader-keys.png)
 
-1478 × 780 · PNG
+1634 × 840 · PNG
 
 Původní pixely beze změn.
 

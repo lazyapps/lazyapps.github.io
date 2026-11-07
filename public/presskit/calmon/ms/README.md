@@ -14,6 +14,8 @@ macOS 26 atau lebih baharu
 
 Susun paparan secara menegak. Apabila bersebelahan, tepi bersama menyekat tatalan dan pertukaran lajur berulang dari awal di situ. Dengan paparan di kedua-dua sisi, tetingkap latar bertindih di belakang tetingkap dipilih.
 
+\` mengalihkan fokus ke paparan seterusnya. Shift + \` mengalihkan tetingkap yang difokus ke Desktop semasa pada paparan itu dan mengikutinya.
+
 Percuma sepanjang beta
 
 Menemui pepijat atau ada idea? Hubungi @lazyapps di X. Terima kasih kerana membantu menambah baik Calmon.
@@ -22,7 +24,7 @@ Tetingkap menatal secara mendatar. Lajur aktif memenuhi kebanyakan skrin. Gunaka
 
 Lajur boleh dibahagi kepada sehingga tiga ruang dari atas ke bawah yang kelihatan serentak. Setiap ruang boleh mengandungi satu tetingkap atau tindanan tetingkap app yang sama.
 
-Tetingkap app yang sama bertindih dalam satu ruang, dengan satu sahaja kelihatan pada satu-satu masa. Klik penanda tindanan di bahagian atas tetingkap atau tekan ⌘` untuk bertukar.
+Tetingkap app yang sama bertindih dalam satu ruang, dengan satu sahaja kelihatan pada satu-satu masa. Klik penanda tindanan di bahagian atas tetingkap atau tekan ⌘\` untuk bertukar.
 
 Mod Leader: Space → J / X — Tambah / alih keluar tetingkap yang dipilih daripada tindanan appnya.
 
@@ -43,6 +45,10 @@ Tekan ⌘ dua kali dan lepaskan. Semasa tetingkap diserlahkan, teruskan mengguna
 , / . — Jika ruang bersendirian dalam lajurnya, gabungkan ke lajur kiri / kanan. Dalam lajur terbahagi, asingkan ruang aktif ke lajur baharu di kiri / kanan. Seluruh tindanan bergerak bersama.
 
 Space → J / X — Tambah / alih keluar tetingkap yang dipilih daripada tindanan appnya
+
+1–9 / ⇧1–9 — Tukar desktop / alih tetingkap
+
+0 → 10–99 / ⇧0 — Dalam mod leader, tekan 0, kemudian taip dua digit untuk beralih ke Desktop 10–99.
 
 macOS 26: Kebolehcapaian; macOS 27+: Kawalan Peranti dan Akses Data
 
@@ -96,7 +102,7 @@ Ikon bar menu · PNG · 44 × 44 · 2×
 
 [leader-keys.png](leader-keys.png)
 
-1520 × 780 · PNG
+1676 × 840 · PNG
 
 Piksel asal tanpa perubahan.
 

@@ -14,6 +14,8 @@ macOS 26 of nieuwer
 
 Plaats ze boven elkaar. Naast elkaar blokkeren gedeelde randen het scrollen; kolomnavigatie springt daar terug naar het begin. Met schermen aan beide kanten overlappen achtergrondvensters achter het geselecteerde venster.
 
+\` verplaatst de focus naar het volgende beeldscherm. Shift + \` verplaatst het gefocuste venster naar het huidige bureaublad van dat beeldscherm en volgt het venster.
+
 Gratis tijdens de bèta
 
 Een fout gevonden of een idee? Laat het @lazyapps weten op X. Bedankt dat je Calmon helpt verbeteren.
@@ -22,7 +24,7 @@ Vensters scrollen horizontaal. De actieve kolom vult bijna het hele scherm. Gebr
 
 Een kolom kan in maximaal drie gebieden boven elkaar worden verdeeld, die tegelijk zichtbaar zijn. Elk gebied bevat één venster of een stapel vensters van dezelfde app.
 
-Vensters van dezelfde app liggen over elkaar in één gebied. Er is telkens één zichtbaar. Klik op de stapelmarkeringen bovenaan het venster of druk op ⌘` om te wisselen.
+Vensters van dezelfde app liggen over elkaar in één gebied. Er is telkens één zichtbaar. Klik op de stapelmarkeringen bovenaan het venster of druk op ⌘\` om te wisselen.
 
 Leadermodus: Space → J / X — Het geselecteerde venster toevoegen aan / verwijderen uit de stapel van de app.
 
@@ -43,6 +45,10 @@ Druk tweemaal op ⌘ en laat los. Blijf opdrachten gebruiken zolang het venster 
 , / . — Alleen in de kolom: voeg het gebied toe aan de kolom links / rechts. In een verdeelde kolom: plaats het actieve gebied in een eigen kolom links / rechts. De hele stapel verhuist mee.
 
 Space → J / X — Het geselecteerde venster toevoegen aan / verwijderen uit de stapel van de app
+
+1–9 / ⇧1–9 — Bureaublad wisselen / venster verplaatsen
+
+0 → 10–99 / ⇧0 — Druk in de leadermodus op 0 en typ daarna twee cijfers om naar bureaublad 10–99 te gaan.
 
 macOS 26: Toegankelijkheid; macOS 27+: Apparaatbeheer en gegevenstoegang
 
@@ -96,7 +102,7 @@ undefined · PNG · 44 × 44 · 2×
 
 [leader-keys.png](leader-keys.png)
 
-1700 × 780 · PNG
+1856 × 840 · PNG
 
 Voorbeeld van de native interface in deze taal; pixels ongewijzigd.
 

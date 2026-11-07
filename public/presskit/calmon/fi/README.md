@@ -14,6 +14,8 @@ macOS 26 tai uudempi
 
 Sijoita näytöt päällekkäin. Vierekkäisten näyttöjen yhteiset reunat estävät vierityksen, ja sarakkeiden vaihto kiertyy niissä alkuun. Kun näyttöjä on molemmilla puolilla, taustaikkunat menevät päällekkäin valitun ikkunan taakse.
 
+\` siirtää kohdistuksen seuraavalle näytölle. Shift + \` siirtää aktiivisen ikkunan kyseisen näytön nykyiselle työpöydälle ja seuraa ikkunaa.
+
 Maksuton betavaiheessa
 
 Löysitkö virheen tai keksitkö idean? Kerro @lazyapps-tilille X:ssä. Kiitos avustasi Calmonin kehittämisessä.
@@ -22,7 +24,7 @@ Ikkunat vierivät vaakasuunnassa. Aktiivinen sarake täyttää suurimman osan n�
 
 Sarakkeen voi jakaa enintään kolmeen allekkain olevaan alueeseen, jotka näkyvät yhtä aikaa. Kukin alue sisältää yhden ikkunan tai saman apin ikkunapinon.
 
-Saman apin ikkunat ovat päällekkäin yhdellä alueella, ja vain yksi näkyy kerrallaan. Vaihda ikkunaa klikkaamalla ikkunan yläreunan pinomerkkejä tai painamalla ⌘`.
+Saman apin ikkunat ovat päällekkäin yhdellä alueella, ja vain yksi näkyy kerrallaan. Vaihda ikkunaa klikkaamalla ikkunan yläreunan pinomerkkejä tai painamalla ⌘\`.
 
 Leader-tila: Space → J / X — Lisää valittu ikkuna apin pinoon / poista se pinosta.
 
@@ -43,6 +45,10 @@ Paina ⌘ kahdesti ja vapauta. Voit jatkaa komentojen käyttöä, kun ikkuna on 
 , / . — Yksin sarakkeessa: liitä alue vasempaan / oikeaan sarakkeeseen. Jaetussa sarakkeessa: irrota aktiivinen alue omaksi sarakkeekseen vasemmalle / oikealle. Ikkunapino siirtyy kokonaisena.
 
 Space → J / X — Lisää valittu ikkuna apin pinoon / poista se pinosta
+
+1–9 / ⇧1–9 — Vaihda työpöytää / siirrä ikkuna
+
+0 → 10–99 / ⇧0 — Paina leader-tilassa 0 ja kirjoita sitten kaksi numeroa siirtyäksesi työpöydille 10–99.
 
 macOS 26: Käyttöapu; macOS 27+: Laitehallinta ja tietojen käyttö
 
@@ -96,7 +102,7 @@ Valikkorivikuvake · PNG · 44 × 44 · 2×
 
 [leader-keys.png](leader-keys.png)
 
-1736 × 780 · PNG
+1688 × 840 · PNG
 
 Alkuperäiset pikselit muuttamattomina.
 

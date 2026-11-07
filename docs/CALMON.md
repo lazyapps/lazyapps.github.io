@@ -1,8 +1,8 @@
 # Calmon 产品页与媒体素材
 
 - 默认英语页面 `/calmon/`，简体中文页面 `/calmon/zh-Hans/`，其余语言为 `/calmon/<BCP47>/`；旧 `/calmon/en/` 跳转到 `/calmon/`。复用站点导航、语言选择器、预加载、纸纹、字体、按钮和页脚。
-- 功能、系统要求和英语界面以本地 `_vibe/pane` 的 README、`project.yml`、`Sources/CalmonApp.swift` 和 `Sources/AppJump.swift` 为依据。当前要求 macOS 26+。App 使用 String Catalog，语言集合为英语及 37 种翻译；网站和媒体文案覆盖全部 38 种语言，媒体资料中的原生面板截图逐语言对应 App 的真实本地化；页面内的按键面板以原版字体和真实文字排版，随各语言页面本地化。
-- `src/i18n/calmon-release.json` 统一配置发布状态和下载入口。按照 Doze 使用稳定 Releases 页面 `https://github.com/cxa/calmon/releases`，不猜测版本号、安装包文件名或价格。当前 `upcoming`，产品页、入门步骤和底部下载指向稳定 Releases 页面；应用结构化数据不提供 `downloadUrl`。公开发布时同时核对下载、FAQ 与安装说明。
+- 功能、系统要求和英语界面以本地 `_vibe/calmon` 的 README、`project.yml`、`Sources/CalmonApp.swift` 和 `Sources/AppJump.swift` 为依据。当前要求 macOS 26+。App 使用 String Catalog，语言集合为英语及 37 种翻译；网站和媒体文案覆盖全部 38 种语言，媒体资料中的原生面板截图逐语言对应 App 的真实本地化；页面内的按键面板以原版字体和真实文字排版，随各语言页面本地化。
+- `src/i18n/calmon-release.json` 统一配置发布状态和下载入口。按照 Doze 使用稳定 Releases 页面 `https://github.com/cxa/calmon/releases`，不猜测版本号、安装包文件名或价格。当前 `published`，产品页、入门步骤和底部下载指向稳定 Releases 页面；应用结构化数据提供已验证的 `downloadUrl`。公开发布时同时核对下载、FAQ 与安装说明。
 - 首屏标题在全部语言中固定为两行，优先让第二行更长；CJK 行末标点悬挂，不参与居中宽度。定位语位于顶部导航的 Calmon 字标下方。演示说明和免费下载入口位于画面下方，Beta 期间免费与系统要求保留在按钮下方。演示外侧桌面留 24px、手机留 12px；裁切区域固定在真实屏幕／固定列边界上，窗口以完整形态滑入滑出，不能按动画终点提前裁切；单侧固定时工作列贴齐固定边界，另一侧继续滚动，不在固定列旁保留邻窗窄条；双侧固定时工作列在剩余区域完整叠放；首尾完整窗口仍保留默认的 12pt 边距。
 - `CalmonDesktop.astro` 与 `calmon-desktop/` 构成独立的网页桌面模型，不引用或分发 App 源码。默认 90% 滚动列；覆盖 App 堆叠、三单元纵向列、尺寸步进、固定列、浮动窗口、全屏、跨桌面移动、Pin Deck、Sky Deck 和 Max Deck。堆叠标记采用等长圆角短刻度（8 × 2 px、间隔 4 px），当前页为强调色，其余为中性灰；整组左端对齐红灯中心，切换只变颜色、不改尺寸和位置。焦点边框为连续 2 px 纯强调色，与短刻度留 2 px 间隙，不加黑色描边。原生窗口只保留标准控制，不添加窗口内操作按钮；演示操作来自前导键模式、原生 ⌘` 和菜单栏右侧的播放控制。
 - 自动演示先显示按键顺序，再执行同一模型的操作，说明都在桌面外。演示不包含鼠标点击、右键菜单、拖动或模拟指针；窗口跳转使用标签，浮动使用 Space F，全屏使用 Space S。堆叠切换后紧接 , / . 演示：先把 Notes 堆叠并入 Safari 列的下方，再向右拆出，恢复两列；保持焦点和成员不变，触发键在两步间持续绿色。开场移除背景 Music 浮动窗口；仅在 Sky Deck 的浮动／恢复平铺片段出现浮动窗口，其他演示保持纯平铺。以横向滚动为主，不演示默认关闭的轻扫；开场双击 ⌘ 后，先连续三次 → 向右切换，再连续三次 ← 沿原路返回起始窗口；正反方向均保持尺寸和前导键模式，每个按键按演示顺序以绿色高亮，末键在功能执行与结果停留期间保持高亮。输入提示明确区分“先双击并松开 ⌘ 进入前导键模式”和“前导键模式已开启”；状态与窗口边框、标签共用状态，并明确提示窗口有高亮框时可连续操作，无需重复触发；中英文使用说明与开场演示均说明这一点。模式开启后，两枚 ⌘ 触发键持续绿色，跨命令步骤保留，与当前操作键同时显示；它们表示当前模式，不重复播放触发动作。演示不显示 Esc 按钮；命令后需要标签时，以新的进入模式演示开始，标签跳转后触发键熄灭。⌘` 单独标明为 macOS 快捷键。功能文案保留轻扫默认关闭、可在 Settings → Gestures 启用的说明。画面不显示“功能演示／自动播放”标题行或“无需实际操作键盘或触控板”提示；只保留模式状态、按键线索和播放控制，逐步说明仅供辅助技术读取，不在按键下显示，所有桌面输入均禁用，不监听快捷键、手势、拖动或右键。仅提供播放／暂停和从头重播控制；演示结束后通过淡出、复位、淡入自动循环，始终保留从头重播入口。手动重播会从第一步重新播放；循环过渡期间的暂停、离屏和减少动态效果设置仍有效，快速重播不能让旧过渡重启播放。方向键到头轮换复用图标／标签跳转的窗口移动动画，普通轻扫到边只回弹。导航不改变窗口宽度；窗口移动期间绿色焦点边框跟随窗口，直到实际动画结束，再按前导键模式状态保留或隐藏；重新演示时先淡出，隐藏重置位移后再淡入。快速输入立即接管过渡。演示屏幕至少 35% 进入视野后播放；页面隐藏／演示离屏时暂停；减少动态效果时默认不自动播放。Hero 桌面固定为 1280 × 800，以容器宽度计算 transform scale 整体缩小，保持菜单栏、窗口、标签栏和地图的桌面排布；不做手机竖屏或标签栏换行布局。外层按 16:10 预留空间，按键提示保留页面字号；菜单栏右侧的 Calmon 图标、Wi-Fi、电池、时间与两个 pill 播放控件共用同一行，按桌面尺寸同比缩放，状态项目和播放控制之间使用固定比例的间距。窄屏正文至少 16px。
@@ -127,3 +127,7 @@ FAQ 内容左缘与其他区块一致；1240px 起，标题竖排放在内容左
 ## Localized panel previews
 
 The product page keeps semantic text and provides a language selector beside the panel title. Press Kit uses original native PNGs for all 38 app languages, with matching preview and download links. Rebuild only these PNGs with `python3 scripts/prepare-calmon-assets.py --app-source /path/to/calmon-src --panels-only`, then regenerate the press kits. Byte-identical regional images share an archive file. Native Dark icon previews use the Dark export, independently of the current website theme.
+
+## beta.20261107.0
+
+38 种语言的快捷键说明和原生按键面板已同步：1–9 直接切换桌面；0 后输入两位数字选择 10–99，Shift+0 开始移动窗口。反引号聚焦下一块显示器，Shift+反引号移动窗口并跟随。截图采用多显示器且至少十个桌面的原生预览配置；实际 App 只有超过九个桌面时才显示 0，只有多显示器时才显示 Display。产品页说明直接复用 App 已审核的本地化字符串；Press Kit 的文案、逐语言 PNG、来源记录和 ZIP 同步更新。

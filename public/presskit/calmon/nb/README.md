@@ -14,6 +14,8 @@ macOS 26 eller nyere
 
 Plasser skjermene over hverandre. Side ved side blokkerer felles kanter rulling, og kolonnebytte starter på nytt der. Med skjermer på begge sider overlapper bakgrunnsvinduer bak det valgte vinduet.
 
+\` flytter fokus til neste skjerm. Shift + \` flytter det fokuserte vinduet til skrivebordet som er aktivt på den skjermen, og følger vinduet.
+
 Gratis i betaperioden
 
 En feil eller en idé? Skriv til @lazyapps på X. Takk for at du hjelper oss å forbedre Calmon.
@@ -22,7 +24,7 @@ Vinduer ruller vannrett. Den aktive kolonnen fyller det meste av skjermen. Bruk 
 
 En kolonne kan deles i opptil tre områder over hverandre som vises samtidig. Hvert område kan inneholde ett vindu eller en stabel vinduer fra samme app.
 
-Vinduer fra samme app ligger oppå hverandre i ett område, og bare ett vises om gangen. Klikk på stabelmerkene øverst i vinduet, eller trykk ⌘` for å bytte.
+Vinduer fra samme app ligger oppå hverandre i ett område, og bare ett vises om gangen. Klikk på stabelmerkene øverst i vinduet, eller trykk ⌘\` for å bytte.
 
 Leader-modus: Space → J / X — Legg det valgte vinduet til / fjern det fra appens vindusstabel.
 
@@ -43,6 +45,10 @@ Trykk to ganger på ⌘ og slipp. Fortsett med kommandoer mens vinduet er utheve
 , / . — Alene i kolonnen: legg området til kolonnen til venstre / høyre. I en delt kolonne: skill det aktive området ut i en egen kolonne til venstre / høyre. Hele stabelen flyttes samlet.
 
 Space → J / X — Legg det valgte vinduet til / fjern det fra appens vindusstabel
+
+1–9 / ⇧1–9 — Bytt skrivebord / flytt vindu
+
+0 → 10–99 / ⇧0 — Trykk på 0 i leader-modus, og skriv deretter inn to sifre for å gå til skrivebord 10–99.
 
 macOS 26: Tilgjengelighet; macOS 27+: Enhetskontroll og datatilgang
 
@@ -96,7 +102,7 @@ Menylinjesymbol · PNG · 44 × 44 · 2×
 
 [leader-keys.png](leader-keys.png)
 
-1664 × 780 · PNG
+1652 × 840 · PNG
 
 Opprinnelige piksler uten endringer.
 

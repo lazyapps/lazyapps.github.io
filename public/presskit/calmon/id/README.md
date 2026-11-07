@@ -14,6 +14,8 @@ macOS 26 atau lebih baru
 
 Letakkan layar secara vertikal. Jika berdampingan, tepi bersama menghalangi gulir dan perpindahan kolom berputar ke awal di tepi itu. Dengan layar di kedua sisi, jendela latar bertumpuk di belakang jendela terpilih.
 
+\` memindahkan fokus ke layar berikutnya. Shift + \` memindahkan jendela yang difokuskan ke Desktop saat ini di layar tersebut dan mengikuti jendela itu.
+
 Gratis selama beta
 
 Menemukan bug atau punya ide? Hubungi @lazyapps di X. Terima kasih sudah membantu menyempurnakan Calmon.
@@ -22,7 +24,7 @@ Jendela bergulir mendatar. Kolom aktif mengisi sebagian besar layar. Gunakan tom
 
 Kolom dapat dibagi menjadi hingga tiga area dari atas ke bawah yang terlihat bersamaan. Tiap area dapat berisi satu jendela atau tumpukan jendela dari satu app.
 
-Jendela dari app yang sama saling menutupi dalam satu area; hanya satu yang terlihat setiap saat. Klik penanda tumpukan di bagian atas jendela atau tekan ⌘` untuk beralih.
+Jendela dari app yang sama saling menutupi dalam satu area; hanya satu yang terlihat setiap saat. Klik penanda tumpukan di bagian atas jendela atau tekan ⌘\` untuk beralih.
 
 Mode Leader: Space → J / X — Tambahkan / keluarkan jendela yang dipilih dari tumpukan app-nya.
 
@@ -43,6 +45,10 @@ Tekan ⌘ dua kali lalu lepaskan. Selama jendela disorot, lanjutkan perintah tan
 , / . — Jika area sendirian dalam kolom, gabungkan ke kolom kiri / kanan. Dalam kolom terbagi, pisahkan area aktif menjadi kolom baru di kiri / kanan. Seluruh tumpukan berpindah bersama.
 
 Space → J / X — Tambahkan / keluarkan jendela yang dipilih dari tumpukan app-nya
+
+1–9 / ⇧1–9 — Ganti desktop / pindahkan jendela
+
+0 → 10–99 / ⇧0 — Dalam mode leader, tekan 0, lalu ketik dua digit untuk beralih ke Desktop 10–99.
 
 macOS 26: Aksesibilitas; macOS 27+: Kontrol Perangkat dan Akses Data
 
@@ -96,7 +102,7 @@ undefined · PNG · 44 × 44 · 2×
 
 [leader-keys.png](leader-keys.png)
 
-1592 × 780 · PNG
+1676 × 840 · PNG
 
 Pratinjau antarmuka asli dalam bahasa ini; piksel tidak diubah.
 

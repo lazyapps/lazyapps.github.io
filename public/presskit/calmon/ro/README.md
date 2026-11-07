@@ -14,6 +14,8 @@ macOS 26 sau ulterior
 
 Așază monitoarele pe verticală. Alăturate, marginile comune blochează derularea, iar comutarea coloanelor revine la început acolo. Cu monitoare pe ambele părți, ferestrele din fundal se suprapun în spatele celei selectate.
 
+\` mută focalizarea pe afișajul următor. Shift + \` mută fereastra activă pe desktopul curent al acelui afișaj și o urmează.
+
 Gratuit în perioada beta
 
 O eroare sau o idee? Scrie-i lui @lazyapps pe X. Mulțumim că ne ajuți să îmbunătățim Calmon.
@@ -22,7 +24,7 @@ Ferestrele derulează orizontal. Coloana activă ocupă aproape tot ecranul. Fol
 
 O coloană poate fi împărțită în cel mult trei zone, una sub alta, vizibile simultan. Fiecare zonă conține o fereastră sau o stivă de ferestre ale aceleiași aplicații.
 
-Ferestrele aceleiași aplicații se suprapun într-o singură zonă; este vizibilă doar una odată. Apasă marcajele stivei din partea de sus a ferestrei sau ⌘` pentru a comuta.
+Ferestrele aceleiași aplicații se suprapun într-o singură zonă; este vizibilă doar una odată. Apasă marcajele stivei din partea de sus a ferestrei sau ⌘\` pentru a comuta.
 
 Modul lider: Space → J / X — Adaugă / elimină fereastra selectată din stiva aplicației sale.
 
@@ -43,6 +45,10 @@ Apasă ⌘ de două ori și eliberează. Cât timp fereastra este evidențiată,
 , / . — Dacă zona este singură în coloană, alătur-o coloanei din stânga / dreapta. Într-o coloană împărțită, separă zona activă într-o coloană proprie la stânga / dreapta. Stiva se mută în întregime.
 
 Space → J / X — Adaugă / elimină fereastra selectată din stiva aplicației sale
+
+1–9 / ⇧1–9 — Comută desktopul / mută fereastra
+
+0 → 10–99 / ⇧0 — În modul lider, apăsați 0, apoi introduceți două cifre pentru a trece la desktopurile 10–99.
 
 macOS 26: Accesibilitate; macOS 27+: Control al dispozitivului și acces la date
 
@@ -96,7 +102,7 @@ Pictograma barei de meniu · PNG · 44 × 44 · 2×
 
 [leader-keys.png](leader-keys.png)
 
-1664 × 780 · PNG
+1832 × 840 · PNG
 
 Pixeli originali, nemodificați.
 

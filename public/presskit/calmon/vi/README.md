@@ -14,6 +14,8 @@ macOS 26 trở lên
 
 Đặt màn hình theo chiều dọc. Khi đặt cạnh nhau, cạnh chung chặn cuộn; chuyển cột sẽ quay về đầu tại đó. Nếu có màn hình ở cả hai bên, các cửa sổ nền chồng lên nhau sau cửa sổ được chọn.
 
+\` chuyển sang màn hình tiếp theo. Shift + \` di chuyển cửa sổ đang được chọn đến màn hình nền hiện tại của màn hình đó rồi chuyển theo cửa sổ.
+
 Miễn phí trong giai đoạn beta
 
 Gặp lỗi hoặc có ý tưởng? Gửi cho @lazyapps trên X. Cảm ơn bạn đã giúp cải thiện Calmon.
@@ -22,7 +24,7 @@ Cửa sổ cuộn theo hàng ngang. Cột đang chọn chiếm phần lớn màn
 
 Một cột có thể chia thành tối đa ba vùng từ trên xuống dưới, cùng hiển thị một lúc. Mỗi vùng chứa một cửa sổ hoặc một chồng cửa sổ của cùng ứng dụng.
 
-Các cửa sổ cùng ứng dụng chồng lên nhau trong một vùng, mỗi lần chỉ hiện một cửa sổ. Bấm dấu chồng ở đầu cửa sổ hoặc nhấn ⌘` để chuyển.
+Các cửa sổ cùng ứng dụng chồng lên nhau trong một vùng, mỗi lần chỉ hiện một cửa sổ. Bấm dấu chồng ở đầu cửa sổ hoặc nhấn ⌘\` để chuyển.
 
 Chế độ leader: Space → J / X — Thêm / đưa cửa sổ đang chọn ra khỏi chồng cửa sổ của ứng dụng.
 
@@ -43,6 +45,10 @@ Nhấn ⌘ hai lần rồi thả. Khi cửa sổ còn được tô sáng, bạn 
 , / . — Khi vùng ở một mình trong cột, ghép vào cột bên trái / phải. Trong cột đã chia, tách vùng đang chọn thành cột riêng bên trái / phải. Cả chồng cửa sổ di chuyển cùng nhau.
 
 Space → J / X — Thêm / đưa cửa sổ đang chọn ra khỏi chồng cửa sổ của ứng dụng
+
+1–9 / ⇧1–9 — Đổi màn hình nền / chuyển cửa sổ
+
+0 → 10–99 / ⇧0 — Trong chế độ leader, nhấn 0, rồi nhập hai chữ số để chuyển đến các màn hình nền 10–99.
 
 macOS 26: Trợ năng; macOS 27+: Điều khiển thiết bị và truy cập dữ liệu
 
@@ -96,7 +102,7 @@ Biểu tượng thanh menu · PNG · 44 × 44 · 2×
 
 [leader-keys.png](leader-keys.png)
 
-1484 × 780 · PNG
+1838 × 840 · PNG
 
 Điểm ảnh gốc không thay đổi.
 

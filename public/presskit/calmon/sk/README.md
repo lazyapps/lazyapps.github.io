@@ -14,6 +14,8 @@ macOS 26 alebo novší
 
 Umiestnite ich nad seba. Vedľa seba spoločné okraje blokujú posúvanie a prepínanie stĺpcov sa tam vráti na začiatok. Pri monitoroch na oboch stranách sa okná na pozadí prekrývajú za vybraným oknom.
 
+Kláves \` prepne na nasledujúci displej. Shift + \` presunie aktívne okno na aktuálnu plochu tohto displeja a prejde za ním.
+
 Počas bety zadarmo
 
 Chyba alebo nápad? Napíšte @lazyapps na X. Ďakujeme, že pomáhate zlepšovať Calmon.
@@ -22,7 +24,7 @@ Okná sa posúvajú vodorovne. Aktívny stĺpec vypĺňa väčšinu obrazovky. V
 
 Stĺpec možno rozdeliť až na tri oblasti nad sebou, ktoré sú viditeľné súčasne. Každá oblasť obsahuje jedno okno alebo stoh okien rovnakej apky.
 
-Okná rovnakej apky sa prekrývajú v jednej oblasti a vždy je viditeľné len jedno. Prepínajte kliknutím na značky stohu hore v okne alebo stlačením ⌘`.
+Okná rovnakej apky sa prekrývajú v jednej oblasti a vždy je viditeľné len jedno. Prepínajte kliknutím na značky stohu hore v okne alebo stlačením ⌘\`.
 
 Režim lídra: Space → J / X — Pridať / odobrať vybrané okno zo stohu jeho apky.
 
@@ -43,6 +45,10 @@ Dvakrát stlačte ⌘ a uvoľnite. Kým je okno zvýraznené, zadávajte ďalši
 , / . — Ak je oblasť v stĺpci sama, pripojí sa k stĺpcu vľavo / vpravo. V rozdelenom stĺpci sa aktívna oblasť oddelí do vlastného stĺpca vľavo / vpravo. Celý stoh sa presúva spolu.
 
 Space → J / X — Pridať / odobrať vybrané okno zo stohu jeho apky
+
+1–9 / ⇧1–9 — Prepnúť plochu / presunúť okno
+
+0 → 10–99 / ⇧0 — V režime lídra stlačte 0 a potom zadajte dve číslice na prechod na plochy 10–99.
 
 macOS 26: Prístupnosť; macOS 27+: Ovládanie zariadenia a prístup k dátam
 
@@ -96,7 +102,7 @@ Ikona lišty · PNG · 44 × 44 · 2×
 
 [leader-keys.png](leader-keys.png)
 
-1472 × 780 · PNG
+1628 × 840 · PNG
 
 Pôvodné pixely bez zmien.
 

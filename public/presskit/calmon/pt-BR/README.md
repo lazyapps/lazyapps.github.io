@@ -14,6 +14,8 @@ macOS 26 ou posterior
 
 Coloque os monitores na vertical. Lado a lado, as bordas compartilhadas bloqueiam a rolagem; a navegação entre colunas retorna ao início nesses pontos. Com monitores nos dois lados, as janelas de fundo se sobrepõem atrás da selecionada.
 
+\` muda o foco para a próxima tela. Shift + \` move a janela em foco para a mesa atual dessa tela e acompanha a janela.
+
 Grátis durante o beta
 
 Encontrou um erro ou tem uma ideia? Fale com @lazyapps no X. Obrigado por ajudar a melhorar o Calmon.
@@ -22,7 +24,7 @@ As janelas rolam na horizontal. A coluna ativa ocupa quase toda a tela. Use as s
 
 Uma coluna pode ser dividida em até três áreas, uma acima da outra e visíveis ao mesmo tempo. Cada área contém uma janela ou uma pilha de janelas de um app.
 
-As janelas do mesmo app ficam sobrepostas em uma área, com apenas uma visível por vez. Clique nos indicadores no topo da janela ou pressione ⌘` para alternar.
+As janelas do mesmo app ficam sobrepostas em uma área, com apenas uma visível por vez. Clique nos indicadores no topo da janela ou pressione ⌘\` para alternar.
 
 Modo Líder: Space → J / X — Adicionar / remover a janela selecionada da pilha do seu app.
 
@@ -43,6 +45,10 @@ Pressione ⌘ duas vezes e solte. Enquanto a janela estiver destacada, continue 
 , / . — Se a área estiver sozinha na coluna, junte-a à coluna à esquerda / direita. Em uma coluna dividida, separe a área ativa em uma coluna própria à esquerda / direita. A pilha inteira se move junto.
 
 Space → J / X — Adicionar / remover a janela selecionada da pilha do seu app
+
+1–9 / ⇧1–9 — Trocar de mesa / mover janela
+
+0 → 10–99 / ⇧0 — No modo líder, pressione 0 e digite dois dígitos para ir às mesas 10–99.
 
 macOS 26: Acessibilidade; macOS 27+: Controle do Dispositivo e Acesso a Dados
 
@@ -96,7 +102,7 @@ Escolha Buscar Atualizações… no menu do Calmon.
 
 [leader-keys.png](leader-keys.png)
 
-1520 × 780 · PNG
+1676 × 840 · PNG
 
 Prévia da interface nativa neste idioma; pixels sem alterações.
 

@@ -157,8 +157,8 @@
       "zh-Hant"
     ],
     "source": "Sources/Localizable.xcstrings",
-    "project": "_vibe/pane",
-    "commit": "02f7cfa36ce79177a8b08da05ddfab9d05158ddd",
-    "note": "Website and media copy cover all 38 app languages. Shared native screenshots retain their actual English language."
+    "project": "_vibe/calmon",
+    "commit": "c61337949d88b7c2b8d31b31ef77ecd2d6499e7a",
+    "note": "Website and media copy cover all 38 app languages. Native key panels use each app language, multiple displays and at least ten desktops."
   }
 }

@@ -14,6 +14,8 @@ macOS 26 ili noviji
 
 Postavi ih jedan iznad drugog. Bočno postavljeni zasloni zajedničkim rubovima blokiraju pomicanje; prebacivanje stupaca ondje se vraća na početak. Uz zaslone s obje strane pozadinski prozori preklapaju se iza odabranog prozora.
 
+\` prebacuje fokus na sljedeći zaslon. Shift + \` premješta fokusirani prozor na trenutačnu radnu površinu tog zaslona i slijedi ga.
+
 Besplatno tijekom bete
 
 Greška ili ideja? Piši @lazyapps na X-u. Hvala što pomažeš poboljšati Calmon.
@@ -22,7 +24,7 @@ Prozori se pomiču vodoravno. Aktivni stupac ispunjava većinu zaslona. Koristi 
 
 Stupac se može podijeliti na najviše tri područja, jedno ispod drugoga, vidljiva istodobno. Svako područje sadrži jedan prozor ili stog prozora iste aplikacije.
 
-Prozori iste aplikacije preklapaju se u jednom području, a vidljiv je samo jedan. Klikni oznake stoga pri vrhu prozora ili pritisni ⌘` za prebacivanje.
+Prozori iste aplikacije preklapaju se u jednom području, a vidljiv je samo jedan. Klikni oznake stoga pri vrhu prozora ili pritisni ⌘\` za prebacivanje.
 
 Način vodeće tipke: Space → J / X — Dodaj odabrani prozor u stog njegove aplikacije / izdvoji ga iz stoga.
 
@@ -43,6 +45,10 @@ Pritisni ⌘ dvaput i otpusti. Dok je prozor istaknut, nastavi s naredbama. Esc 
 , / . — Ako je područje samo u stupcu, pridruži ga lijevom / desnom stupcu. U podijeljenom stupcu izdvoji aktivno područje u novi stupac lijevo / desno. Cijeli stog premješta se zajedno.
 
 Space → J / X — Dodaj odabrani prozor u stog njegove aplikacije / izdvoji ga iz stoga
+
+1–9 / ⇧1–9 — Promijeni radnu površinu / premjesti prozor
+
+0 → 10–99 / ⇧0 — U načinu vodeće tipke pritisnite 0, a zatim upišite dvije znamenke za prelazak na radne površine 10–99.
 
 macOS 26: Pristupačnost; macOS 27+: Upravljanje uređajem i pristup podacima
 
@@ -96,7 +102,7 @@ Ikona trake izbornika · PNG · 44 × 44 · 2×
 
 [leader-keys.png](leader-keys.png)
 
-1736 × 780 · PNG
+1940 × 840 · PNG
 
 Izvorni pikseli bez izmjena.
 

@@ -14,6 +14,8 @@ macOS 26 ou ultérieur
 
 Placez les écrans les uns au-dessus des autres. Côte à côte, leurs bords communs bloquent le défilement : la navigation entre colonnes boucle à ces endroits. Avec des écrans des deux côtés, les fenêtres en arrière-plan se superposent derrière la fenêtre sélectionnée.
 
+\` passe à l’écran suivant. Shift + \` déplace la fenêtre active vers le bureau actuel de cet écran et la suit.
+
 Gratuit pendant la bêta
 
 Un problème ou une idée ? Contactez @lazyapps sur X. Merci de nous aider à améliorer Calmon.
@@ -22,7 +24,7 @@ Les fenêtres défilent horizontalement. La colonne active occupe presque tout l
 
 Une colonne peut contenir jusqu’à trois zones disposées de haut en bas et visibles en même temps. Chaque zone accueille une fenêtre ou une pile de fenêtres d’une app.
 
-Les fenêtres d’une même app se superposent dans une seule zone : une seule est visible à la fois. Cliquez sur les repères en haut de la fenêtre ou appuyez sur ⌘` pour changer de fenêtre.
+Les fenêtres d’une même app se superposent dans une seule zone : une seule est visible à la fois. Cliquez sur les repères en haut de la fenêtre ou appuyez sur ⌘\` pour changer de fenêtre.
 
 Mode leader: Space → J / X — Ajouter / retirer la fenêtre sélectionnée de la pile de son app.
 
@@ -43,6 +45,10 @@ Appuyez deux fois sur ⌘ puis relâchez. Tant que la fenêtre est surlignée, e
 , / . — Seule dans sa colonne : la zone rejoint la colonne de gauche / droite. Dans une colonne partagée : la zone active devient une colonne indépendante à gauche / droite. Toute la pile se déplace ensemble.
 
 Space → J / X — Ajouter / retirer la fenêtre sélectionnée de la pile de son app
+
+1–9 / ⇧1–9 — Changer de bureau / déplacer la fenêtre
+
+0 → 10–99 / ⇧0 — En mode leader, appuyez sur 0, puis saisissez deux chiffres pour accéder aux bureaux 10–99.
 
 macOS 26: Accessibilité; macOS 27+: Contrôle de l’appareil et accès aux données
 
@@ -96,7 +102,7 @@ Icône de barre des menus · PNG · 44 × 44 · 2×
 
 [leader-keys.png](../leader-keys.png)
 
-1700 × 780 · PNG
+1856 × 840 · PNG
 
 Aperçu de l’interface native dans cette langue ; pixels inchangés.
 

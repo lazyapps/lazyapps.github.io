@@ -56,14 +56,29 @@ def capture_native(source, panels_only=False):
         output = ROOT / 'scripts/assets/presskit/calmon-leader-keys.png'
         languages = json.loads((ROOT / 'src/content/presskit-supported-languages.json').read_text())['calmon']['tags']
         captures = []
+        panels = {}
         for language in languages:
             target = output if language == 'en' else ROOT / f'scripts/assets/presskit/calmon-leader-keys-{language}.png'
             subprocess.run([str(executable), str(target), str(resources / 'Tiny5.ttf'),
                             '-AppleLanguages', f'({language})'], check=True)
+            panel = target.with_suffix('.panel.json')
+            panels[language] = [{'title': section['title'],
+                                 'rows': [{'title': row['title'], 'keys': row['keys']} for row in section['rows']]}
+                                for section in json.loads(panel.read_text())]
+            panel.unlink()
             captures.append({'source': str(target.relative_to(ROOT)), 'sha256': digest(target),
                              'contentLanguage': language, 'type': 'native',
-                             'operation': 'Native LeaderHelpView rendered with the app localization and default commands. Original PNG pixels retained.',
+                             'operation': 'Native LeaderHelpView rendered with the app localization, multiple displays and at least ten desktops. Original PNG pixels retained.',
                              'originalSource': str(source / 'Sources/AppJump.swift')})
+        (ROOT / 'src/components/calmon-key-panel.json').write_text(json.dumps(panels, ensure_ascii=False, indent=2) + '\n')
+        terms_path = ROOT / 'src/i18n/calmon-app-terms.json'
+        terms = json.loads(terms_path.read_text())
+        catalog = json.loads((source / 'Sources/Localizable.xcstrings').read_text())['strings']
+        for language in languages:
+            for key in ['In leader mode, press 0, then two digits for desktops 10–99.',
+                        '` focuses the next display. Shift-` moves the focused window to that display’s current desktop and follows it.']:
+                terms[language][key] = key if language == 'en' else catalog[key]['localizations'][language]['stringUnit']['value']
+        terms_path.write_text(json.dumps(terms, ensure_ascii=False, indent=2) + '\n')
         record = {'checkedOn': datetime.now(ZoneInfo("Asia/Shanghai")).date().isoformat(),
                   'appSourceCommit': subprocess.check_output(['git', '-C', str(source), 'rev-parse', 'HEAD'], text=True).strip(),
                   'captures': captures,

@@ -143,10 +143,14 @@ const copy = {
 };
 
 export const CALMON_LOCALES = Object.fromEntries(Object.entries({ ...copy, ...calmonTranslations }).map(([code, t]) => {
+  const native = appTerms[t.htmlLang];
+  const extendedDesktopHint = native['In leader mode, press 0, then two digits for desktops 10–99.'];
+  const displayHint = native['` focuses the next display. Shift-` moves the focused window to that display’s current desktop and follows it.'];
+  const shortcuts = [...t.shortcuts.slice(0, 6), ['0 → 10–99 / ⇧0', extendedDesktopHint], ['` / ⇧`', displayHint], t.shortcuts.at(-1)];
   const selectedUrl = `/calmon/${t.htmlLang === 'en' ? '' : `${t.htmlLang}/`}`;
   const permissionPanes = [['macOS 26', t.setupArt.accessibility], ['macOS 27+', appTerms[t.htmlLang]['Device Control and Data Access']]];
   const faqs = t.faqs.map(([question, answer], index) => [question, index === 3 ? `${answer} ${appTerms[t.htmlLang]['Keep the three- or four-finger gestures enabled in System Settings > Trackpad > More Gestures.']}` : answer]);
-  return [code, { ...t, faqs, permissionPanes, dir: ['ar', 'he'].includes(t.htmlLang) ? 'rtl' : 'ltr', keyboardBody: t.keyboardSteps.join(t.htmlLang.startsWith('zh') ? '' : ' '), code, name: 'Calmon', brand: 'Calmon', title: `Calmon — ${t.positioning}`,
+  return [code, { ...t, shortcuts, displayNote: `${t.displayNote}\n\n${displayHint}`, faqs, permissionPanes, dir: ['ar', 'he'].includes(t.htmlLang) ? 'rtl' : 'ltr', keyboardBody: t.keyboardSteps.join(t.htmlLang.startsWith('zh') ? '' : ' '), code, name: 'Calmon', brand: 'Calmon', title: `Calmon — ${t.positioning}`,
     selectedUrl, canonical: `https://lazyapps.com${selectedUrl}`,
     availability: release.status === 'published' ? t.available : t.upcoming,
     cta: t.download, ctaUrl: release.releasesUrl }];

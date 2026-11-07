@@ -14,6 +14,8 @@ macOS 26 o posterior
 
 Colócalos uno encima del otro. En paralelo, los bordes compartidos bloquean el desplazamiento y el cambio de columnas vuelve al inicio. Con monitores a ambos lados, las ventanas del fondo se superponen detrás de la seleccionada.
 
+\` pasa a la pantalla siguiente. Shift + \` mueve la ventana activa al escritorio actual de esa pantalla y la sigue.
+
 Gratis durante la beta
 
 ¿Un error o una idea? Cuéntaselo a @lazyapps en X. Gracias por ayudarnos a mejorar Calmon.
@@ -22,7 +24,7 @@ Las ventanas se desplazan en horizontal. La columna activa ocupa casi toda la pa
 
 Una columna puede dividirse en hasta tres regiones, una encima de otra y visibles a la vez. Cada región contiene una ventana o una pila de ventanas de una app.
 
-Las ventanas de una misma app se superponen en una región y solo se muestra una a la vez. Haz clic en las marcas de la parte superior de la ventana o presiona ⌘` para cambiar.
+Las ventanas de una misma app se superponen en una región y solo se muestra una a la vez. Haz clic en las marcas de la parte superior de la ventana o presiona ⌘\` para cambiar.
 
 Modo líder: Space → J / X — Agregar / sacar la ventana seleccionada de la pila de su app.
 
@@ -43,6 +45,10 @@ Pulsa ⌘ dos veces y suelta. Mientras la ventana esté resaltada, puedes encade
 , / . — Si la región ocupa toda la columna, se une a la columna izquierda / derecha. En una columna dividida, la región activa pasa a una columna independiente a la izquierda / derecha. La pila se mueve completa.
 
 Space → J / X — Agregar / sacar la ventana seleccionada de la pila de su app
+
+1–9 / ⇧1–9 — Cambiar escritorio / mover ventana
+
+0 → 10–99 / ⇧0 — En el modo líder, presiona 0 y luego ingresa dos dígitos para ir a los escritorios 10–99.
 
 macOS 26: Accesibilidad; macOS 27+: Control de dispositivos y acceso a los datos
 
@@ -96,7 +102,7 @@ Icono de la barra de menús · PNG · 44 × 44 · 2×
 
 [leader-keys.png](leader-keys.png)
 
-1556 × 780 · PNG
+1712 × 840 · PNG
 
 Vista previa de la interfaz nativa en este idioma; píxeles sin modificar.
 

@@ -14,6 +14,8 @@ macOS 26 or later
 
 Place displays vertically for best results. Side-by-side displays block scrolling at shared edges. Column switching loops at these edges. With displays on both sides, background windows stack behind the selected window.
 
+\` focuses the next display. Shift-\` moves the focused window to that display’s current desktop and follows it.
+
 Free during beta
 
 Found a bug or have an idea? Tell @lazyapps on X. Thanks for helping us improve Calmon.
@@ -22,7 +24,7 @@ Windows scroll in a horizontal row of columns. Use arrow keys in leader mode to 
 
 Split a column into up to three regions, arranged top to bottom and visible at once. Each region can hold one window or an app stack.
 
-Tiled windows from the same app overlap in one region, with one visible at a time. Click a stack indicator at the top of the window or press ⌘` to switch.
+Tiled windows from the same app overlap in one region, with one visible at a time. Click a stack indicator at the top of the window or press ⌘\` to switch.
 
 In leader mode, press Space, then J to add the selected window to its app’s stack, or X to remove that window from the stack.
 
@@ -43,6 +45,10 @@ Double-tap and release ⌘ to enter leader mode. Keep using command keys while t
 , / . — Alone in its column: join the column on the left / right. In a split column: move the focused region into a new column on the left / right. An app stack moves as a group.
 
 Space → J / X — Add / remove the selected window from its app stack
+
+1–9 / ⇧1–9 — Switch desktop / move window
+
+0 → 10–99 / ⇧0 — In leader mode, press 0, then two digits for desktops 10–99.
 
 macOS 26: Accessibility; macOS 27+: Device Control and Data Access
 
@@ -96,7 +102,7 @@ Menu bar icon · PNG · 44 × 44 · 2×
 
 [leader-keys.png](leader-keys.png)
 
-1340 × 780 · PNG
+1424 × 840 · PNG
 
 Native interface preview in this language; unchanged pixels.
 

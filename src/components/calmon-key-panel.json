@@ -22,6 +22,18 @@
           "keys": [
             "1–9"
           ]
+        },
+        {
+          "title": "Two-Digit Desktop",
+          "keys": [
+            "0"
+          ]
+        },
+        {
+          "title": "Display",
+          "keys": [
+            "`"
+          ]
         }
       ]
     },
@@ -134,7 +146,9 @@
           "title": "All to Desktop",
           "keys": [
             "M",
-            "1–9"
+            "1–9",
+            "/",
+            "0…"
           ]
         }
       ]
@@ -180,6 +194,18 @@
           "title": "سطح المكتب",
           "keys": [
             "1–9"
+          ]
+        },
+        {
+          "title": "رقم سطح المكتب من خانتين",
+          "keys": [
+            "0"
+          ]
+        },
+        {
+          "title": "شاشة العرض",
+          "keys": [
+            "`"
           ]
         }
       ]
@@ -293,7 +319,9 @@
           "title": "نقل الكل إلى سطح مكتب",
           "keys": [
             "M",
-            "1–9"
+            "1–9",
+            "/",
+            "0…"
           ]
         }
       ]
@@ -339,6 +367,18 @@
           "title": "Escriptori",
           "keys": [
             "1–9"
+          ]
+        },
+        {
+          "title": "Escriptori de dues xifres",
+          "keys": [
+            "0"
+          ]
+        },
+        {
+          "title": "Pantalla",
+          "keys": [
+            "`"
           ]
         }
       ]
@@ -452,7 +492,9 @@
           "title": "Tot a l’escriptori",
           "keys": [
             "M",
-            "1–9"
+            "1–9",
+            "/",
+            "0…"
           ]
         }
       ]
@@ -498,6 +540,18 @@
           "title": "Plocha",
           "keys": [
             "1–9"
+          ]
+        },
+        {
+          "title": "Dvouciferné číslo plochy",
+          "keys": [
+            "0"
+          ]
+        },
+        {
+          "title": "Monitor",
+          "keys": [
+            "`"
           ]
         }
       ]
@@ -611,7 +665,9 @@
           "title": "Vše na plochu",
           "keys": [
             "M",
-            "1–9"
+            "1–9",
+            "/",
+            "0…"
           ]
         }
       ]
@@ -657,6 +713,18 @@
           "title": "Skrivebord",
           "keys": [
             "1–9"
+          ]
+        },
+        {
+          "title": "Tocifret skrivebordsnummer",
+          "keys": [
+            "0"
+          ]
+        },
+        {
+          "title": "Skærm",
+          "keys": [
+            "`"
           ]
         }
       ]
@@ -770,7 +838,9 @@
           "title": "Alle til skrivebord",
           "keys": [
             "M",
-            "1–9"
+            "1–9",
+            "/",
+            "0…"
           ]
         }
       ]
@@ -816,6 +886,18 @@
           "title": "Schreibtisch",
           "keys": [
             "1–9"
+          ]
+        },
+        {
+          "title": "Zweistellige Schreibtischnummer",
+          "keys": [
+            "0"
+          ]
+        },
+        {
+          "title": "Display",
+          "keys": [
+            "`"
           ]
         }
       ]
@@ -929,7 +1011,9 @@
           "title": "Alle auf Schreibtisch",
           "keys": [
             "M",
-            "1–9"
+            "1–9",
+            "/",
+            "0…"
           ]
         }
       ]
@@ -975,6 +1059,18 @@
           "title": "Γραφείο εργασίας",
           "keys": [
             "1–9"
+          ]
+        },
+        {
+          "title": "Διψήφιος αριθμός γραφείου εργασίας",
+          "keys": [
+            "0"
+          ]
+        },
+        {
+          "title": "Οθόνη",
+          "keys": [
+            "`"
           ]
         }
       ]
@@ -1088,7 +1184,9 @@
           "title": "Όλα σε γραφείο εργασίας",
           "keys": [
             "M",
-            "1–9"
+            "1–9",
+            "/",
+            "0…"
           ]
         }
       ]
@@ -1134,6 +1232,18 @@
           "title": "Escritorio",
           "keys": [
             "1–9"
+          ]
+        },
+        {
+          "title": "Escritorio de dos dígitos",
+          "keys": [
+            "0"
+          ]
+        },
+        {
+          "title": "Pantalla",
+          "keys": [
+            "`"
           ]
         }
       ]
@@ -1247,7 +1357,9 @@
           "title": "Todo al escritorio",
           "keys": [
             "M",
-            "1–9"
+            "1–9",
+            "/",
+            "0…"
           ]
         }
       ]
@@ -1293,6 +1405,18 @@
           "title": "Escritorio",
           "keys": [
             "1–9"
+          ]
+        },
+        {
+          "title": "Escritorio de dos dígitos",
+          "keys": [
+            "0"
+          ]
+        },
+        {
+          "title": "Pantalla",
+          "keys": [
+            "`"
           ]
         }
       ]
@@ -1406,7 +1530,9 @@
           "title": "Todo al escritorio",
           "keys": [
             "M",
-            "1–9"
+            "1–9",
+            "/",
+            "0…"
           ]
         }
       ]
@@ -1452,6 +1578,18 @@
           "title": "Työpöytä",
           "keys": [
             "1–9"
+          ]
+        },
+        {
+          "title": "Kaksinumeroinen työpöytä",
+          "keys": [
+            "0"
+          ]
+        },
+        {
+          "title": "Näyttö",
+          "keys": [
+            "`"
           ]
         }
       ]
@@ -1565,7 +1703,9 @@
           "title": "Kaikki työpöydälle",
           "keys": [
             "M",
-            "1–9"
+            "1–9",
+            "/",
+            "0…"
           ]
         }
       ]
@@ -1612,6 +1752,18 @@
           "keys": [
             "1–9"
           ]
+        },
+        {
+          "title": "Bureau à deux chiffres",
+          "keys": [
+            "0"
+          ]
+        },
+        {
+          "title": "Écran",
+          "keys": [
+            "`"
+          ]
         }
       ]
     },
@@ -1724,7 +1876,9 @@
           "title": "Tout vers le bureau",
           "keys": [
             "M",
-            "1–9"
+            "1–9",
+            "/",
+            "0…"
           ]
         }
       ]
@@ -1771,6 +1925,18 @@
           "keys": [
             "1–9"
           ]
+        },
+        {
+          "title": "Bureau à deux chiffres",
+          "keys": [
+            "0"
+          ]
+        },
+        {
+          "title": "Écran",
+          "keys": [
+            "`"
+          ]
         }
       ]
     },
@@ -1883,7 +2049,9 @@
           "title": "Tout vers le bureau",
           "keys": [
             "M",
-            "1–9"
+            "1–9",
+            "/",
+            "0…"
           ]
         }
       ]
@@ -1929,6 +2097,18 @@
           "title": "מכתבה",
           "keys": [
             "1–9"
+          ]
+        },
+        {
+          "title": "מספר מכתבה דו־ספרתי",
+          "keys": [
+            "0"
+          ]
+        },
+        {
+          "title": "מסך",
+          "keys": [
+            "`"
           ]
         }
       ]
@@ -2042,7 +2222,9 @@
           "title": "הכל למכתבה",
           "keys": [
             "M",
-            "1–9"
+            "1–9",
+            "/",
+            "0…"
           ]
         }
       ]
@@ -2088,6 +2270,18 @@
           "title": "डेस्कटॉप",
           "keys": [
             "1–9"
+          ]
+        },
+        {
+          "title": "दो अंकों वाला डेस्कटॉप",
+          "keys": [
+            "0"
+          ]
+        },
+        {
+          "title": "डिस्प्ले",
+          "keys": [
+            "`"
           ]
         }
       ]
@@ -2201,7 +2395,9 @@
           "title": "सभी को डेस्कटॉप पर ले जाएँ",
           "keys": [
             "M",
-            "1–9"
+            "1–9",
+            "/",
+            "0…"
           ]
         }
       ]
@@ -2247,6 +2443,18 @@
           "title": "Radna površina",
           "keys": [
             "1–9"
+          ]
+        },
+        {
+          "title": "Dvoznamenkasti broj radne površine",
+          "keys": [
+            "0"
+          ]
+        },
+        {
+          "title": "Zaslon",
+          "keys": [
+            "`"
           ]
         }
       ]
@@ -2360,7 +2568,9 @@
           "title": "Sve na radnu površinu",
           "keys": [
             "M",
-            "1–9"
+            "1–9",
+            "/",
+            "0…"
           ]
         }
       ]
@@ -2406,6 +2616,18 @@
           "title": "Íróasztal",
           "keys": [
             "1–9"
+          ]
+        },
+        {
+          "title": "Kétjegyű íróasztalszám",
+          "keys": [
+            "0"
+          ]
+        },
+        {
+          "title": "Kijelző",
+          "keys": [
+            "`"
           ]
         }
       ]
@@ -2519,7 +2741,9 @@
           "title": "Összes ablak íróasztalra",
           "keys": [
             "M",
-            "1–9"
+            "1–9",
+            "/",
+            "0…"
           ]
         }
       ]
@@ -2565,6 +2789,18 @@
           "title": "Desktop",
           "keys": [
             "1–9"
+          ]
+        },
+        {
+          "title": "Desktop Dua Digit",
+          "keys": [
+            "0"
+          ]
+        },
+        {
+          "title": "Layar",
+          "keys": [
+            "`"
           ]
         }
       ]
@@ -2678,7 +2914,9 @@
           "title": "Semua ke Desktop",
           "keys": [
             "M",
-            "1–9"
+            "1–9",
+            "/",
+            "0…"
           ]
         }
       ]
@@ -2724,6 +2962,18 @@
           "title": "Scrivania",
           "keys": [
             "1–9"
+          ]
+        },
+        {
+          "title": "Scrivania a due cifre",
+          "keys": [
+            "0"
+          ]
+        },
+        {
+          "title": "Monitor",
+          "keys": [
+            "`"
           ]
         }
       ]
@@ -2837,7 +3087,9 @@
           "title": "Tutte sulla scrivania",
           "keys": [
             "M",
-            "1–9"
+            "1–9",
+            "/",
+            "0…"
           ]
         }
       ]
@@ -2883,6 +3135,18 @@
           "title": "デスクトップ",
           "keys": [
             "1–9"
+          ]
+        },
+        {
+          "title": "2桁のデスクトップ",
+          "keys": [
+            "0"
+          ]
+        },
+        {
+          "title": "ディスプレイ",
+          "keys": [
+            "`"
           ]
         }
       ]
@@ -2996,7 +3260,9 @@
           "title": "すべてをデスクトップへ移動",
           "keys": [
             "M",
-            "1–9"
+            "1–9",
+            "/",
+            "0…"
           ]
         }
       ]
@@ -3042,6 +3308,18 @@
           "title": "데스크탑",
           "keys": [
             "1–9"
+          ]
+        },
+        {
+          "title": "두 자리 데스크탑",
+          "keys": [
+            "0"
+          ]
+        },
+        {
+          "title": "디스플레이",
+          "keys": [
+            "`"
           ]
         }
       ]
@@ -3155,7 +3433,9 @@
           "title": "모두 데스크탑으로 이동",
           "keys": [
             "M",
-            "1–9"
+            "1–9",
+            "/",
+            "0…"
           ]
         }
       ]
@@ -3201,6 +3481,18 @@
           "title": "Desktop",
           "keys": [
             "1–9"
+          ]
+        },
+        {
+          "title": "Desktop dua digit",
+          "keys": [
+            "0"
+          ]
+        },
+        {
+          "title": "Paparan",
+          "keys": [
+            "`"
           ]
         }
       ]
@@ -3314,7 +3606,9 @@
           "title": "Semua ke Desktop",
           "keys": [
             "M",
-            "1–9"
+            "1–9",
+            "/",
+            "0…"
           ]
         }
       ]
@@ -3360,6 +3654,18 @@
           "title": "Skrivebord",
           "keys": [
             "1–9"
+          ]
+        },
+        {
+          "title": "Tosifret skrivebordsnummer",
+          "keys": [
+            "0"
+          ]
+        },
+        {
+          "title": "Skjerm",
+          "keys": [
+            "`"
           ]
         }
       ]
@@ -3473,7 +3779,9 @@
           "title": "Alle til skrivebord",
           "keys": [
             "M",
-            "1–9"
+            "1–9",
+            "/",
+            "0…"
           ]
         }
       ]
@@ -3519,6 +3827,18 @@
           "title": "Bureaublad",
           "keys": [
             "1–9"
+          ]
+        },
+        {
+          "title": "Bureaublad met twee cijfers",
+          "keys": [
+            "0"
+          ]
+        },
+        {
+          "title": "Beeldscherm",
+          "keys": [
+            "`"
           ]
         }
       ]
@@ -3632,7 +3952,9 @@
           "title": "Alle naar bureaublad",
           "keys": [
             "M",
-            "1–9"
+            "1–9",
+            "/",
+            "0…"
           ]
         }
       ]
@@ -3678,6 +4000,18 @@
           "title": "Biurko",
           "keys": [
             "1–9"
+          ]
+        },
+        {
+          "title": "Dwucyfrowy numer biurka",
+          "keys": [
+            "0"
+          ]
+        },
+        {
+          "title": "Wyświetlacz",
+          "keys": [
+            "`"
           ]
         }
       ]
@@ -3791,7 +4125,9 @@
           "title": "Wszystkie okna na biurko",
           "keys": [
             "M",
-            "1–9"
+            "1–9",
+            "/",
+            "0…"
           ]
         }
       ]
@@ -3837,6 +4173,18 @@
           "title": "Mesa",
           "keys": [
             "1–9"
+          ]
+        },
+        {
+          "title": "Mesa de dois dígitos",
+          "keys": [
+            "0"
+          ]
+        },
+        {
+          "title": "Tela",
+          "keys": [
+            "`"
           ]
         }
       ]
@@ -3950,7 +4298,9 @@
           "title": "Mover Todas",
           "keys": [
             "M",
-            "1–9"
+            "1–9",
+            "/",
+            "0…"
           ]
         }
       ]
@@ -3996,6 +4346,18 @@
           "title": "Secretária",
           "keys": [
             "1–9"
+          ]
+        },
+        {
+          "title": "Secretária de dois dígitos",
+          "keys": [
+            "0"
+          ]
+        },
+        {
+          "title": "Monitor",
+          "keys": [
+            "`"
           ]
         }
       ]
@@ -4109,7 +4471,9 @@
           "title": "Mover todas",
           "keys": [
             "M",
-            "1–9"
+            "1–9",
+            "/",
+            "0…"
           ]
         }
       ]
@@ -4155,6 +4519,18 @@
           "title": "Desktop",
           "keys": [
             "1–9"
+          ]
+        },
+        {
+          "title": "Număr de desktop din două cifre",
+          "keys": [
+            "0"
+          ]
+        },
+        {
+          "title": "Afișaj",
+          "keys": [
+            "`"
           ]
         }
       ]
@@ -4268,7 +4644,9 @@
           "title": "Mutați toate pe desktop",
           "keys": [
             "M",
-            "1–9"
+            "1–9",
+            "/",
+            "0…"
           ]
         }
       ]
@@ -4314,6 +4692,18 @@
           "title": "Рабочий стол",
           "keys": [
             "1–9"
+          ]
+        },
+        {
+          "title": "Двузначный номер рабочего стола",
+          "keys": [
+            "0"
+          ]
+        },
+        {
+          "title": "Дисплей",
+          "keys": [
+            "`"
           ]
         }
       ]
@@ -4427,7 +4817,9 @@
           "title": "Все окна на рабочий стол",
           "keys": [
             "M",
-            "1–9"
+            "1–9",
+            "/",
+            "0…"
           ]
         }
       ]
@@ -4473,6 +4865,18 @@
           "title": "Plocha",
           "keys": [
             "1–9"
+          ]
+        },
+        {
+          "title": "Dvojciferné číslo plochy",
+          "keys": [
+            "0"
+          ]
+        },
+        {
+          "title": "Displej",
+          "keys": [
+            "`"
           ]
         }
       ]
@@ -4586,7 +4990,9 @@
           "title": "Všetko na plochu",
           "keys": [
             "M",
-            "1–9"
+            "1–9",
+            "/",
+            "0…"
           ]
         }
       ]
@@ -4632,6 +5038,18 @@
           "title": "Namizje",
           "keys": [
             "1–9"
+          ]
+        },
+        {
+          "title": "Dvomestna številka namizja",
+          "keys": [
+            "0"
+          ]
+        },
+        {
+          "title": "Zaslon",
+          "keys": [
+            "`"
           ]
         }
       ]
@@ -4745,7 +5163,9 @@
           "title": "Vsa okna na namizje",
           "keys": [
             "M",
-            "1–9"
+            "1–9",
+            "/",
+            "0…"
           ]
         }
       ]
@@ -4791,6 +5211,18 @@
           "title": "Skrivbord",
           "keys": [
             "1–9"
+          ]
+        },
+        {
+          "title": "Tvåsiffrigt skrivbordsnummer",
+          "keys": [
+            "0"
+          ]
+        },
+        {
+          "title": "Skärm",
+          "keys": [
+            "`"
           ]
         }
       ]
@@ -4904,7 +5336,9 @@
           "title": "Alla till skrivbord",
           "keys": [
             "M",
-            "1–9"
+            "1–9",
+            "/",
+            "0…"
           ]
         }
       ]
@@ -4950,6 +5384,18 @@
           "title": "เดสก์ท็อป",
           "keys": [
             "1–9"
+          ]
+        },
+        {
+          "title": "เดสก์ท็อปเลขสองหลัก",
+          "keys": [
+            "0"
+          ]
+        },
+        {
+          "title": "จอภาพ",
+          "keys": [
+            "`"
           ]
         }
       ]
@@ -5063,7 +5509,9 @@
           "title": "ย้ายทั้งหมดไปยังเดสก์ท็อป",
           "keys": [
             "M",
-            "1–9"
+            "1–9",
+            "/",
+            "0…"
           ]
         }
       ]
@@ -5109,6 +5557,18 @@
           "title": "Masaüstü",
           "keys": [
             "1–9"
+          ]
+        },
+        {
+          "title": "İki Basamaklı Masaüstü",
+          "keys": [
+            "0"
+          ]
+        },
+        {
+          "title": "Ekran",
+          "keys": [
+            "`"
           ]
         }
       ]
@@ -5222,7 +5682,9 @@
           "title": "Tümünü Masaüstüne Taşı",
           "keys": [
             "M",
-            "1–9"
+            "1–9",
+            "/",
+            "0…"
           ]
         }
       ]
@@ -5268,6 +5730,18 @@
           "title": "Робочий стіл",
           "keys": [
             "1–9"
+          ]
+        },
+        {
+          "title": "Двозначний номер робочого столу",
+          "keys": [
+            "0"
+          ]
+        },
+        {
+          "title": "Дисплей",
+          "keys": [
+            "`"
           ]
         }
       ]
@@ -5381,7 +5855,9 @@
           "title": "Усі вікна на робочий стіл",
           "keys": [
             "M",
-            "1–9"
+            "1–9",
+            "/",
+            "0…"
           ]
         }
       ]
@@ -5427,6 +5903,18 @@
           "title": "Màn hình nền",
           "keys": [
             "1–9"
+          ]
+        },
+        {
+          "title": "Số hiệu màn hình nền hai chữ số",
+          "keys": [
+            "0"
+          ]
+        },
+        {
+          "title": "Màn hình",
+          "keys": [
+            "`"
           ]
         }
       ]
@@ -5540,7 +6028,9 @@
           "title": "Tất cả sang màn hình nền",
           "keys": [
             "M",
-            "1–9"
+            "1–9",
+            "/",
+            "0…"
           ]
         }
       ]
@@ -5586,6 +6076,18 @@
           "title": "桌面",
           "keys": [
             "1–9"
+          ]
+        },
+        {
+          "title": "兩位數桌面編號",
+          "keys": [
+            "0"
+          ]
+        },
+        {
+          "title": "顯示器",
+          "keys": [
+            "`"
           ]
         }
       ]
@@ -5699,7 +6201,9 @@
           "title": "全部移到桌面",
           "keys": [
             "M",
-            "1–9"
+            "1–9",
+            "/",
+            "0…"
           ]
         }
       ]
@@ -5745,6 +6249,18 @@
           "title": "桌面",
           "keys": [
             "1–9"
+          ]
+        },
+        {
+          "title": "两位数桌面编号",
+          "keys": [
+            "0"
+          ]
+        },
+        {
+          "title": "显示器",
+          "keys": [
+            "`"
           ]
         }
       ]
@@ -5858,7 +6374,9 @@
           "title": "全部移到桌面",
           "keys": [
             "M",
-            "1–9"
+            "1–9",
+            "/",
+            "0…"
           ]
         }
       ]
@@ -5904,6 +6422,18 @@
           "title": "桌面",
           "keys": [
             "1–9"
+          ]
+        },
+        {
+          "title": "兩位數桌面編號",
+          "keys": [
+            "0"
+          ]
+        },
+        {
+          "title": "顯示器",
+          "keys": [
+            "`"
           ]
         }
       ]
@@ -6017,7 +6547,9 @@
           "title": "全部移到桌面",
           "keys": [
             "M",
-            "1–9"
+            "1–9",
+            "/",
+            "0…"
           ]
         }
       ]
