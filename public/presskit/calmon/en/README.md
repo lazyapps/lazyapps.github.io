@@ -12,6 +12,8 @@ Calmon arranges Mac windows in scrolling columns. Stack windows, pin a column, a
 
 macOS 26 or later
 
+When displays share Spaces, they share desktop numbers and switch desktops together. With separate Spaces, numbering continues across displays.
+
 Place displays vertically for best results. Side-by-side displays block scrolling at shared edges. Column switching loops at these edges. With displays on both sides, background windows stack behind the selected window.
 
 \` focuses the next display. Shift-\` moves the focused window to that display’s current desktop and follows it.

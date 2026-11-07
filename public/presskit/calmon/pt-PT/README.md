@@ -14,6 +14,8 @@ macOS 26 ou posterior
 
 Coloque os monitores na vertical para obter melhores resultados. Lado a lado, as margens partilhadas interrompem a deslocação; a mudança de coluna passa a ser cíclica. Com monitores de ambos os lados, as janelas em segundo plano sobrepõem-se atrás da janela selecionada.
 
+Quando os ecrãs partilham espaços, usam os mesmos números de secretária e mudam de secretária em conjunto. Com espaços separados, a numeração continua entre os ecrãs.
+
 \` muda o foco para o monitor seguinte. Shift + \` move a janela em foco para a secretária atual desse monitor e segue a janela.
 
 Grátis durante a versão beta

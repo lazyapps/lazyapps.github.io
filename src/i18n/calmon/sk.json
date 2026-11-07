@@ -17,7 +17,8 @@
   ],
   "display": [
     "Ako usporiadať viac monitorov?",
-    "Umiestnite ich nad seba. Vedľa seba spoločné okraje blokujú posúvanie a prepínanie stĺpcov sa tam vráti na začiatok. Pri monitoroch na oboch stranách sa okná na pozadí prekrývajú za vybraným oknom."
+    "Umiestnite ich nad seba. Vedľa seba spoločné okraje blokujú posúvanie a prepínanie stĺpcov sa tam vráti na začiatok. Pri monitoroch na oboch stranách sa okná na pozadí prekrývajú za vybraným oknom.",
+    "Keď monitory zdieľajú plochy, majú rovnaké čísla plôch a prepínajú ich spoločne. Pri samostatných plochách číslovanie pokračuje naprieč monitormi."
   ],
   "features": [
     [

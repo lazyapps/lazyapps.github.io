@@ -14,6 +14,8 @@ macOS 26 o posterior
 
 Col·loca’ls l’un damunt de l’altre. De costat, les vores compartides bloquegen el desplaçament i el canvi de columna torna a l’inici. Amb monitors a tots dos costats, les finestres del fons se superposen darrere de la seleccionada.
 
+Quan les pantalles comparteixen espais, comparteixen els números d’escriptori i canvien d’escriptori alhora. Amb espais separats, la numeració continua entre pantalles.
+
 \` passa a la pantalla següent. Shift + \` mou la finestra activa a l’escriptori actual d’aquella pantalla i la segueix.
 
 Gratuït durant la beta

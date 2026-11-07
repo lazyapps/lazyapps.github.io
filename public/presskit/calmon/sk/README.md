@@ -14,6 +14,8 @@ macOS 26 alebo novší
 
 Umiestnite ich nad seba. Vedľa seba spoločné okraje blokujú posúvanie a prepínanie stĺpcov sa tam vráti na začiatok. Pri monitoroch na oboch stranách sa okná na pozadí prekrývajú za vybraným oknom.
 
+Keď monitory zdieľajú plochy, majú rovnaké čísla plôch a prepínajú ich spoločne. Pri samostatných plochách číslovanie pokračuje naprieč monitormi.
+
 Kláves \` prepne na nasledujúci displej. Shift + \` presunie aktívne okno na aktuálnu plochu tohto displeja a prejde za ním.
 
 Počas bety zadarmo

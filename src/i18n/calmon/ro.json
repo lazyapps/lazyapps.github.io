@@ -17,7 +17,8 @@
   ],
   "display": [
     "Cum aranjez mai multe monitoare?",
-    "Așază monitoarele pe verticală. Alăturate, marginile comune blochează derularea, iar comutarea coloanelor revine la început acolo. Cu monitoare pe ambele părți, ferestrele din fundal se suprapun în spatele celei selectate."
+    "Așază monitoarele pe verticală. Alăturate, marginile comune blochează derularea, iar comutarea coloanelor revine la început acolo. Cu monitoare pe ambele părți, ferestrele din fundal se suprapun în spatele celei selectate.",
+    "Când ecranele partajează spații, folosesc aceleași numere de desktop și schimbă desktopul împreună. Cu spații separate, numerotarea continuă de la un ecran la altul."
   ],
   "features": [
     [

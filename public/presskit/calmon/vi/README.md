@@ -14,6 +14,8 @@ macOS 26 trở lên
 
 Đặt màn hình theo chiều dọc. Khi đặt cạnh nhau, cạnh chung chặn cuộn; chuyển cột sẽ quay về đầu tại đó. Nếu có màn hình ở cả hai bên, các cửa sổ nền chồng lên nhau sau cửa sổ được chọn.
 
+Khi các màn hình dùng chung Spaces, số màn hình nền giống nhau và tất cả cùng chuyển màn hình nền. Với Spaces riêng biệt, số thứ tự tiếp nối giữa các màn hình.
+
 \` chuyển sang màn hình tiếp theo. Shift + \` di chuyển cửa sổ đang được chọn đến màn hình nền hiện tại của màn hình đó rồi chuyển theo cửa sổ.
 
 Miễn phí trong giai đoạn beta

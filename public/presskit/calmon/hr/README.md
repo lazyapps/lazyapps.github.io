@@ -14,6 +14,8 @@ macOS 26 ili noviji
 
 Postavi ih jedan iznad drugog. Bočno postavljeni zasloni zajedničkim rubovima blokiraju pomicanje; prebacivanje stupaca ondje se vraća na početak. Uz zaslone s obje strane pozadinski prozori preklapaju se iza odabranog prozora.
 
+Kada zasloni dijele prostore, dijele brojeve radnih površina i zajedno mijenjaju radnu površinu. Uz odvojene prostore numeriranje se nastavlja s jednog zaslona na drugi.
+
 \` prebacuje fokus na sljedeći zaslon. Shift + \` premješta fokusirani prozor na trenutačnu radnu površinu tog zaslona i slijedi ga.
 
 Besplatno tijekom bete

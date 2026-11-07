@@ -14,6 +14,8 @@ macOS 26 vagy újabb
 
 Helyezd őket egymás fölé. Egymás mellett a közös szélek blokkolják a görgetést; az oszlopváltás itt visszaugrik az elejére. Ha mindkét oldalon van kijelző, a háttérablakok egymásra kerülnek a kijelölt ablak mögött.
 
+Ha a kijelzők közös Spaces-területeket használnak, az íróasztalok számozása közös, és minden kijelző együtt vált íróasztalt. Külön területeknél a számozás a kijelzőkön át folytatódik.
+
 A \` a következő kijelzőre helyezi a fókuszt. A Shift + \` áthelyezi a fókuszban lévő ablakot annak a kijelzőnek az aktuális íróasztalára, és követi az ablakot.
 
 A béta alatt ingyenes

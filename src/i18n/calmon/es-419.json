@@ -17,7 +17,8 @@
   ],
   "display": [
     "¿Cómo coloco varios monitores?",
-    "Colócalos uno encima del otro. En paralelo, los bordes compartidos bloquean el desplazamiento y el cambio de columnas vuelve al inicio. Con monitores a ambos lados, las ventanas del fondo se superponen detrás de la seleccionada."
+    "Colócalos uno encima del otro. En paralelo, los bordes compartidos bloquean el desplazamiento y el cambio de columnas vuelve al inicio. Con monitores a ambos lados, las ventanas del fondo se superponen detrás de la seleccionada.",
+    "Cuando las pantallas comparten espacios, usan los mismos números de escritorio y cambian de escritorio al mismo tiempo. Con espacios separados, la numeración continúa entre pantallas."
   ],
   "features": [
     [

@@ -14,6 +14,8 @@ macOS 26 atau lebih baru
 
 Letakkan layar secara vertikal. Jika berdampingan, tepi bersama menghalangi gulir dan perpindahan kolom berputar ke awal di tepi itu. Dengan layar di kedua sisi, jendela latar bertumpuk di belakang jendela terpilih.
 
+Saat layar berbagi Spaces, nomor desktop sama dan semua layar berpindah desktop bersama. Dengan Spaces terpisah, penomoran berlanjut antarlayar.
+
 \` memindahkan fokus ke layar berikutnya. Shift + \` memindahkan jendela yang difokuskan ke Desktop saat ini di layar tersebut dan mengikuti jendela itu.
 
 Gratis selama beta

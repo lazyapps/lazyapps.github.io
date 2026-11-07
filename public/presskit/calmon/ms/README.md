@@ -14,6 +14,8 @@ macOS 26 atau lebih baharu
 
 Susun paparan secara menegak. Apabila bersebelahan, tepi bersama menyekat tatalan dan pertukaran lajur berulang dari awal di situ. Dengan paparan di kedua-dua sisi, tetingkap latar bertindih di belakang tetingkap dipilih.
 
+Apabila paparan berkongsi Spaces, nombor desktop adalah sama dan semua paparan bertukar desktop bersama. Dengan Spaces berasingan, penomboran diteruskan merentas paparan.
+
 \` mengalihkan fokus ke paparan seterusnya. Shift + \` mengalihkan tetingkap yang difokus ke Desktop semasa pada paparan itu dan mengikutinya.
 
 Percuma sepanjang beta

@@ -14,6 +14,8 @@ macOS 26 tai uudempi
 
 Sijoita näytöt päällekkäin. Vierekkäisten näyttöjen yhteiset reunat estävät vierityksen, ja sarakkeiden vaihto kiertyy niissä alkuun. Kun näyttöjä on molemmilla puolilla, taustaikkunat menevät päällekkäin valitun ikkunan taakse.
 
+Kun näytöt jakavat työtilat, niillä on samat työpöytänumerot ja työpöydät vaihtuvat yhdessä. Erillisissä työtiloissa numerointi jatkuu näytöltä toiselle.
+
 \` siirtää kohdistuksen seuraavalle näytölle. Shift + \` siirtää aktiivisen ikkunan kyseisen näytön nykyiselle työpöydälle ja seuraa ikkunaa.
 
 Maksuton betavaiheessa

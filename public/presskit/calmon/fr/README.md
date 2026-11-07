@@ -14,6 +14,8 @@ macOS 26 ou ultérieur
 
 Placez les écrans les uns au-dessus des autres. Côte à côte, leurs bords communs bloquent le défilement : la navigation entre colonnes boucle à ces endroits. Avec des écrans des deux côtés, les fenêtres en arrière-plan se superposent derrière la fenêtre sélectionnée.
 
+Quand les écrans partagent les espaces, ils partagent les numéros de bureau et changent de bureau ensemble. Avec des espaces distincts, la numérotation se poursuit d’un écran à l’autre.
+
 \` passe à l’écran suivant. Shift + \` déplace la fenêtre active vers le bureau actuel de cet écran et la suit.
 
 Gratuit pendant la bêta

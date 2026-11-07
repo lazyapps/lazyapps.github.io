@@ -17,7 +17,8 @@
   ],
   "display": [
     "Hur placerar jag flera skärmar?",
-    "Placera skärmar ovanför varandra. Bredvid varandra blockerar gemensamma kanter rullningen; kolumnväxlingen börjar då om. Med skärmar på båda sidor överlappar bakgrundsfönstren bakom det valda fönstret."
+    "Placera skärmar ovanför varandra. Bredvid varandra blockerar gemensamma kanter rullningen; kolumnväxlingen börjar då om. Med skärmar på båda sidor överlappar bakgrundsfönstren bakom det valda fönstret.",
+    "När skärmar delar Spaces delar de skrivbordsnummer och byter skrivbord samtidigt. Med separata Spaces fortsätter numreringen över skärmarna."
   ],
   "features": [
     [

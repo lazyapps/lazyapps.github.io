@@ -14,6 +14,8 @@ macOS 26 ou posterior
 
 Coloque os monitores na vertical. Lado a lado, as bordas compartilhadas bloqueiam a rolagem; a navegação entre colunas retorna ao início nesses pontos. Com monitores nos dois lados, as janelas de fundo se sobrepõem atrás da selecionada.
 
+Quando as telas compartilham espaços, usam os mesmos números de mesa e mudam de mesa juntas. Com espaços separados, a numeração continua entre as telas.
+
 \` muda o foco para a próxima tela. Shift + \` move a janela em foco para a mesa atual dessa tela e acompanha a janela.
 
 Grátis durante o beta

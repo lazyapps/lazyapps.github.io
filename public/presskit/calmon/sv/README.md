@@ -14,6 +14,8 @@ macOS 26 eller senare
 
 Placera skärmar ovanför varandra. Bredvid varandra blockerar gemensamma kanter rullningen; kolumnväxlingen börjar då om. Med skärmar på båda sidor överlappar bakgrundsfönstren bakom det valda fönstret.
 
+När skärmar delar Spaces delar de skrivbordsnummer och byter skrivbord samtidigt. Med separata Spaces fortsätter numreringen över skärmarna.
+
 \` flyttar fokus till nästa skärm. Shift + \` flyttar det fokuserade fönstret till den skärmens aktuella skrivbord och följer fönstret.
 
 Gratis under betan

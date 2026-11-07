@@ -14,6 +14,8 @@ macOS 26 veya üstü
 
 Ekranları üst üste yerleştir. Yan yana ekranların ortak kenarları kaydırmayı engeller; sütun geçişi bu kenarlarda başa döner. Her iki yanda ekran varsa arka plan pencereleri seçili pencerenin arkasında üst üste biner.
 
+Ekranlar Spaces alanlarını paylaştığında masaüstü numaraları ortaktır ve tüm ekranlar birlikte masaüstü değiştirir. Ayrı Spaces alanlarında numaralandırma ekranlar arasında devam eder.
+
 \` odağı sonraki ekrana taşır. Shift + \` odaklanılan pencereyi o ekranın geçerli masaüstüne taşır ve pencereyi takip eder.
 
 Beta boyunca ücretsiz

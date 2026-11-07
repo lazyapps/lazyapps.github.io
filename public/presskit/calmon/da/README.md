@@ -14,6 +14,8 @@ macOS 26 eller nyere
 
 Placer skærmene over hinanden. Ved siden af hinanden blokerer fælles kanter rulning, og kolonneskift starter forfra dér. Med skærme på begge sider overlapper baggrundsvinduer bag det valgte vindue.
 
+Når skærme deler Spaces, deler de skrivebordsnumre og skifter skrivebord samtidig. Med separate Spaces fortsætter nummereringen på tværs af skærmene.
+
 \` flytter fokus til den næste skærm. Shift + \` flytter det fokuserede vindue til den skærms aktuelle skrivebord og følger vinduet.
 
 Gratis under betaen

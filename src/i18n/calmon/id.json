@@ -17,7 +17,8 @@
   ],
   "display": [
     "Bagaimana menata beberapa layar?",
-    "Letakkan layar secara vertikal. Jika berdampingan, tepi bersama menghalangi gulir dan perpindahan kolom berputar ke awal di tepi itu. Dengan layar di kedua sisi, jendela latar bertumpuk di belakang jendela terpilih."
+    "Letakkan layar secara vertikal. Jika berdampingan, tepi bersama menghalangi gulir dan perpindahan kolom berputar ke awal di tepi itu. Dengan layar di kedua sisi, jendela latar bertumpuk di belakang jendela terpilih.",
+    "Saat layar berbagi Spaces, nomor desktop sama dan semua layar berpindah desktop bersama. Dengan Spaces terpisah, penomoran berlanjut antarlayar."
   ],
   "features": [
     [

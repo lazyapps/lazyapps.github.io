@@ -14,6 +14,8 @@ macOS 26 o posterior
 
 Colócalos uno encima del otro. En paralelo, los bordes compartidos bloquean el desplazamiento y el cambio de columnas vuelve al inicio. Con monitores a ambos lados, las ventanas del fondo se superponen detrás de la seleccionada.
 
+Cuando las pantallas comparten espacios, usan los mismos números de escritorio y cambian de escritorio a la vez. Con espacios separados, la numeración continúa entre pantallas.
+
 \` pasa a la pantalla siguiente. Shift + \` mueve la ventana activa al escritorio actual de esa pantalla y la sigue.
 
 Gratis durante la beta

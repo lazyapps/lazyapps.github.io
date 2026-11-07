@@ -14,6 +14,8 @@ macOS 26 sau ulterior
 
 Așază monitoarele pe verticală. Alăturate, marginile comune blochează derularea, iar comutarea coloanelor revine la început acolo. Cu monitoare pe ambele părți, ferestrele din fundal se suprapun în spatele celei selectate.
 
+Când ecranele partajează spații, folosesc aceleași numere de desktop și schimbă desktopul împreună. Cu spații separate, numerotarea continuă de la un ecran la altul.
+
 \` mută focalizarea pe afișajul următor. Shift + \` mută fereastra activă pe desktopul curent al acelui afișaj și o urmează.
 
 Gratuit în perioada beta

@@ -17,7 +17,8 @@
   ],
   "display": [
     "Hvordan placerer jeg flere skærme?",
-    "Placer skærmene over hinanden. Ved siden af hinanden blokerer fælles kanter rulning, og kolonneskift starter forfra dér. Med skærme på begge sider overlapper baggrundsvinduer bag det valgte vindue."
+    "Placer skærmene over hinanden. Ved siden af hinanden blokerer fælles kanter rulning, og kolonneskift starter forfra dér. Med skærme på begge sider overlapper baggrundsvinduer bag det valgte vindue.",
+    "Når skærme deler Spaces, deler de skrivebordsnumre og skifter skrivebord samtidig. Med separate Spaces fortsætter nummereringen på tværs af skærmene."
   ],
   "features": [
     [

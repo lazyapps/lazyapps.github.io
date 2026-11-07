@@ -14,6 +14,8 @@ macOS 26 lub nowszy
 
 Ustaw monitory jeden nad drugim. Obok siebie wspólne krawędzie blokują przewijanie, a przełączanie kolumn wraca tam do początku. Przy monitorach po obu stronach okna w tle nakładają się za wybranym oknem.
 
+Gdy monitory współdzielą przestrzenie, mają wspólne numery biurek i przełączają biurka jednocześnie. Przy osobnych przestrzeniach numeracja jest ciągła na kolejnych monitorach.
+
 \` przenosi fokus na następny wyświetlacz. Shift + \` przenosi aktywne okno na bieżące biurko tego wyświetlacza i podąża za oknem.
 
 Bezpłatnie w wersji beta

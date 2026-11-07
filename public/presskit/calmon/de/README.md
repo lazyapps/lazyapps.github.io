@@ -14,6 +14,8 @@ macOS 26 oder neuer
 
 Bildschirme am besten übereinander anordnen. Nebeneinander blockieren gemeinsame Ränder das Scrollen; der Spaltenwechsel springt dort zum Anfang. Bei Bildschirmen auf beiden Seiten liegen Hintergrundfenster hinter dem gewählten Fenster übereinander.
 
+Wenn Bildschirme Spaces gemeinsam nutzen, teilen sie sich die Schreibtischnummern und wechseln die Schreibtische gemeinsam. Bei separaten Spaces läuft die Nummerierung über die Bildschirme hinweg weiter.
+
 \` wechselt den Fokus zum nächsten Display. Shift + \` bewegt das fokussierte Fenster auf den aktuellen Schreibtisch dieses Displays und folgt dem Fenster.
 
 Während der Beta kostenlos

@@ -14,6 +14,8 @@ macOS 26 ali novejši
 
 Postavi jih drugega nad drugega. Vzporedni zasloni na skupnih robovih blokirajo drsenje; preklapljanje stolpcev se tam vrne na začetek. Z zaslonoma na obeh straneh se okna v ozadju prekrivajo za izbranim oknom.
 
+Ko zasloni delijo prostore, uporabljajo iste številke namizij in namizja preklapljajo skupaj. Pri ločenih prostorih se številčenje nadaljuje med zasloni.
+
 \` premakne fokus na naslednji zaslon. Shift + \` premakne fokusirano okno na trenutno namizje tega zaslona in sledi oknu.
 
 Med beto brezplačno

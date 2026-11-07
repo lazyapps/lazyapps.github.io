@@ -14,6 +14,8 @@ macOS 26 o successivo
 
 Disponili in verticale. Affiancati, i bordi condivisi bloccano lo scorrimento e il cambio di colonna torna all’inizio. Con schermi su entrambi i lati, le finestre sullo sfondo si sovrappongono dietro quella selezionata.
 
+Quando gli schermi condividono gli spazi, condividono i numeri delle scrivanie e cambiano scrivania insieme. Con spazi separati, la numerazione continua tra gli schermi.
+
 \` passa al monitor successivo. Shift + \` sposta la finestra attiva sulla scrivania attuale di quel monitor e la segue.
 
 Gratis durante la beta

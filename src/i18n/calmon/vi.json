@@ -17,7 +17,8 @@
   ],
   "display": [
     "Nên bố trí nhiều màn hình thế nào?",
-    "Đặt màn hình theo chiều dọc. Khi đặt cạnh nhau, cạnh chung chặn cuộn; chuyển cột sẽ quay về đầu tại đó. Nếu có màn hình ở cả hai bên, các cửa sổ nền chồng lên nhau sau cửa sổ được chọn."
+    "Đặt màn hình theo chiều dọc. Khi đặt cạnh nhau, cạnh chung chặn cuộn; chuyển cột sẽ quay về đầu tại đó. Nếu có màn hình ở cả hai bên, các cửa sổ nền chồng lên nhau sau cửa sổ được chọn.",
+    "Khi các màn hình dùng chung Spaces, số màn hình nền giống nhau và tất cả cùng chuyển màn hình nền. Với Spaces riêng biệt, số thứ tự tiếp nối giữa các màn hình."
   ],
   "features": [
     [

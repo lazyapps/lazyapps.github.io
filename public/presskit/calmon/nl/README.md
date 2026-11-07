@@ -14,6 +14,8 @@ macOS 26 of nieuwer
 
 Plaats ze boven elkaar. Naast elkaar blokkeren gedeelde randen het scrollen; kolomnavigatie springt daar terug naar het begin. Met schermen aan beide kanten overlappen achtergrondvensters achter het geselecteerde venster.
 
+Als beeldschermen Spaces delen, delen ze bureaubladnummers en wisselen ze tegelijk van bureaublad. Met afzonderlijke Spaces loopt de nummering door over de beeldschermen.
+
 \` verplaatst de focus naar het volgende beeldscherm. Shift + \` verplaatst het gefocuste venster naar het huidige bureaublad van dat beeldscherm en volgt het venster.
 
 Gratis tijdens de bèta

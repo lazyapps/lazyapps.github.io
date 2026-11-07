@@ -17,7 +17,8 @@
   ],
   "display": [
     "Com col·loco diversos monitors?",
-    "Col·loca’ls l’un damunt de l’altre. De costat, les vores compartides bloquegen el desplaçament i el canvi de columna torna a l’inici. Amb monitors a tots dos costats, les finestres del fons se superposen darrere de la seleccionada."
+    "Col·loca’ls l’un damunt de l’altre. De costat, les vores compartides bloquegen el desplaçament i el canvi de columna torna a l’inici. Amb monitors a tots dos costats, les finestres del fons se superposen darrere de la seleccionada.",
+    "Quan les pantalles comparteixen espais, comparteixen els números d’escriptori i canvien d’escriptori alhora. Amb espais separats, la numeració continua entre pantalles."
   ],
   "features": [
     [
