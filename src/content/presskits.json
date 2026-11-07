@@ -381,19 +381,6 @@
         }
       },
       {
-        "source": "src/assets/img/yilo-desert-desktop.png",
-        "filename": "desktop-wallpaper.png",
-        "kind": "background",
-        "label": {
-          "en": "Desktop wallpaper",
-          "zh": "桌面背景"
-        },
-        "note": {
-          "en": "AI-generated desert wallpaper for the website presentation; not an app screenshot or built-in app feature.",
-          "zh": "AI 生成的沙丘壁纸，用于网站展示；不是 App 截图或内置功能。"
-        }
-      },
-      {
         "source": "scripts/assets/presskit/vectors/yilo-flat.svg",
         "filename": "artwork-flat.svg",
         "kind": "vector",

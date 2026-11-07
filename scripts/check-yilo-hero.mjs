@@ -7,6 +7,7 @@ import examples from '../src/i18n/yilo-examples.json' with { type: 'json' };
 import source from './assets/yilo/hero-video-source.json' with { type: 'json' };
 import webMusic from './assets/yilo/web-music-source.json' with { type: 'json' };
 import demoCopy from '../src/i18n/yilo-demo-copy.json' with { type: 'json' };
+import artCopy from '../src/i18n/yilo-art-copy.json' with { type: 'json' };
 import { YILO_LOCALES } from '../src/i18n/yilo-locales.mjs';
 import { attr, readPages, site, dist, text } from './lib/seo.mjs';
 
@@ -24,6 +25,7 @@ const locales = Object.keys(YILO_LOCALES).map(code => code || 'zh-hans').sort();
 assert.deepEqual(source.outputs.map(item => item.locale).sort(), locales);
 assert.deepEqual(Object.keys(hero).sort(), locales);
 assert.deepEqual(Object.keys(demoCopy).sort(), locales);
+assert.deepEqual(Object.keys(artCopy).sort(), locales);
 assert.equal(hash(await readFile(webMusic.source)), webMusic.sourceSHA256);
 assert.equal(hash(await readFile(webMusic.output)), webMusic.sha256);
 assert.equal(hash(await readFile(dist + webMusic.output.replace(/^public\//, ''))), webMusic.sha256);
@@ -53,10 +55,15 @@ for (const capture of nativeSource.captures) {
   assert.equal(capture.nativeLocale, capture.contentLanguage);
   assert.equal(capture.nativeTextSize, 'extraLarge');
   const record = JSON.parse(await readFile(capture.recordSource, 'utf8'));
-  assert.equal(record.originalText, examples.source[capture.contentLanguage === 'en' ? 'en' : 'zh-hans']);
+  assert.equal(record.originalText, examples.source[capture.contentLanguage.toLowerCase()]);
+  assert.equal(record.configuration.sourceLanguage, capture.contentLanguage);
+  assert.equal(record.configuration.learningNotesLanguage, capture.contentLanguage);
+  assert.equal(capture.recordSource, `scripts/assets/yilo/capture/hero-records/${capture.contentLanguage}.json`);
+  assert.equal(capture.sourceLanguage, capture.contentLanguage);
   assert.equal(record.translations[0].text, examples.agent[capture.contentLanguage === 'en' ? 'zh-hans' : 'en']);
-  assert.equal(record.translations[1].text, examples.agent.ja);
-  assert.deepEqual(record.translations.map(item => item.language), capture.contentLanguage === 'en' ? ['zh-Hans', 'ja'] : ['en', 'ja']);
+  assert.equal(record.translations[1].text, examples.agent[capture.contentLanguage === 'ja' ? 'zh-hans' : 'ja']);
+  assert.deepEqual(record.translations.map(item => item.language), capture.contentLanguage === 'en' ? ['zh-Hans', 'ja'] : capture.contentLanguage === 'ja' ? ['en', 'zh-Hans'] : ['en', 'ja']);
+  assert.deepEqual(capture.targetLanguages, record.translations.map(item => item.language));
 }
 const music = JSON.parse(await readFile(source.musicSource, 'utf8'));
 assert.equal(music.outputSHA256, hash(await readFile(music.output)));
@@ -72,7 +79,14 @@ for (const [code, locale] of Object.entries(YILO_LOCALES)) {
   assert(demo, `${tag}: missing native web animation`);
   assert.equal(attr(demo, 'data-locale'), tag);
   assert.equal(attr(demo, 'aria-label'), hero[tag].alt);
-  assert.equal(JSON.parse(attr(demo, 'data-input')).join(' '), examples.source[tag === 'en' ? 'en' : 'zh-hans']);
+  assert.equal(JSON.parse(attr(demo, 'data-input')).join(' '), examples.source[tag]);
+  assert.equal(text(page.nodes.find(node => attr(node, 'data-source-word') !== undefined)), artCopy[tag].word, `${tag}: pelican must think in its own language`);
+  const illustrations = page.nodes.filter(node => attr(node, 'data-yilo-art') !== undefined);
+  assert.equal(illustrations.length, 10);
+  for (const illustration of illustrations) {
+    assert.equal(attr(illustration, 'data-source-locale'), tag, `${tag}: illustration locale mismatch`);
+    assert([artCopy[tag].word, artCopy[tag].glyph, artCopy[tag].refine].some(value => text(illustration).includes(value)), `${tag}: show this language as the illustration source`);
+  }
   assert(!page.nodes.some(node => node.tagName === 'video'), `${tag}: web hero must not embed a movie`);
   const capture = nativeSource.captures.find(item => item.contentLanguage.toLowerCase() === tag);
   const record = page.nodes.find(node => node.tagName === 'image' && attr(node, 'data-layer') === 'learn');

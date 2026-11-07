@@ -12,5 +12,10 @@
   },
   "nativeLocale" : "ar",
   "operatingSystem" : "‫الإصدار 27.0.1 ‏(البنية 26A434)‏‬",
-  "requestedLocale" : "ar"
+  "requestedLocale" : "ar",
+  "sourceLanguage" : "ar",
+  "targetLanguages" : [
+    "en",
+    "ja"
+  ]
 }

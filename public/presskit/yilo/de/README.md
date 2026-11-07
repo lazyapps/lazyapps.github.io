@@ -58,7 +58,7 @@ Chinesische Übersetzungen können Pinyin oder Zhuyin anzeigen. Vereinfachtes Ch
 
 Japanische Übersetzungen können Hiragana oder Romaji anzeigen. Dies ist standardmäßig aus. Hiragana steht über Kanji, Romaji über Wortgruppen. Kopierter Text, Notizen und Überarbeitungen bleiben unverändert.
 
-[Animation zum Sprachenlernen · MP4](https://lazyapps.com/v/yilo/hero-de-v21.mp4)
+[Animation zum Sprachenlernen · MP4](https://lazyapps.com/v/yilo/hero-de-v22.mp4)
 
 [Kevin MacLeod · Fluffing a Duck · CC BY 4.0](https://lazyapps.com/v/yilo/music-credits.txt)
 
@@ -81,9 +81,9 @@ Originales App-Symbol, 1024 × 1024 PNG. Grafik, Proportionen und Transparenz un
 
 [learning-record.png](learning-record.png)
 
-1488 × 956 · PNG
+1488 × 981 · PNG
 
-Lerneintrag mit chinesischem Original, englischer und japanischer Übersetzung, Notizen und Romaji. Deutsche Oberfläche mit unverändertem echtem Eintrag.
+Lerneintrag: deutsche Eingabe, englische und japanische Übersetzung, Lernnotizen.
 
 ### Lernsprachen einstellen
 
@@ -91,7 +91,7 @@ Lerneintrag mit chinesischem Original, englischer und japanischer Übersetzung, 
 
 1240 × 880 · PNG
 
-Spracheinstellungen: chinesische Eingabe; Englisch, Japanisch und Französisch als Lernsprachen. Deutsche Oberfläche mit Beispieleinstellungen.
+Spracheinstellungen: Deutsch als Ausgangssprache, Englisch und Japanisch zum Lernen.
 
 ### Lernsprachen auswählen
 
@@ -99,15 +99,7 @@ Spracheinstellungen: chinesische Eingabe; Englisch, Japanisch und Französisch a
 
 1080 × 1120 · PNG
 
-Sprachauswahl mit Englisch, Japanisch und Französisch. Deutsche Oberfläche mit Beispieleinstellungen.
-
-### Desktophintergrund
-
-[desktop-wallpaper.png](../desktop-wallpaper.png)
-
-1536 × 1024 · PNG
-
-KI-generiertes Dünenmotiv für die Website-Präsentation; kein App-Screenshot und keine integrierte App-Funktion.
+Sprachauswahl: Englisch und Japanisch. Beispieleinstellungen.
 
 ### Flache Vektorgrafik
 
@@ -129,9 +121,9 @@ Werbegrafik, kein App-Screenshot.
 
 [hero-record.png](hero-record.png)
 
-1040 × 564 · PNG
+1040 × 603 · PNG
 
-Beispieleintrag aus Yilo in der größten einstellbaren Schriftgröße: eine kurze chinesische Eingabe mit englischer und japanischer Übersetzung. Über dem japanischen Text steht die Lesung in Romaji.
+Native Lernkarte mit deutscher Eingabe und englischer sowie japanischer Übersetzung. Größte Textgröße. Beispielinhalt.
 
 ### Animation zum Sprachenlernen
 

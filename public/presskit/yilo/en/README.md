@@ -58,7 +58,7 @@ Chinese translations can show Pinyin or Zhuyin. Simplified Chinese defaults to P
 
 Japanese translations can show Hiragana or Romaji readings. This is off by default. Hiragana appears above kanji; Romaji appears above word groups. Readings do not change copied text, notes or refinement results.
 
-[Language-learning animation · MP4](https://lazyapps.com/v/yilo/hero-en-v21.mp4)
+[Language-learning animation · MP4](https://lazyapps.com/v/yilo/hero-en-v22.mp4)
 
 [Kevin MacLeod · Fluffing a Duck · CC BY 4.0](https://lazyapps.com/v/yilo/music-credits.txt)
 
@@ -81,9 +81,9 @@ Original native App icon, 1024 × 1024 PNG. Preserves the app’s artwork, propo
 
 [learning-record.png](learning-record.png)
 
-1488 × 1008 · PNG
+1488 × 1033 · PNG
 
-English example: English input, Simplified Chinese with Pinyin, Japanese with Romaji, and English learning notes.
+English input, Simplified Chinese with Pinyin, Japanese with Romaji, and English learning notes.
 
 ### Learning language settings
 
@@ -91,7 +91,7 @@ English example: English input, Simplified Chinese with Pinyin, Japanese with Ro
 
 1240 × 880 · PNG
 
-English settings: English input, Simplified Chinese and Japanese learning languages, with Pinyin and Romaji enabled. Sample preferences.
+English source with Simplified Chinese and Japanese selected for learning. Sample settings.
 
 ### Choose learning languages
 
@@ -99,15 +99,7 @@ English settings: English input, Simplified Chinese and Japanese learning langua
 
 1080 × 1120 · PNG
 
-English language picker with Simplified Chinese and Japanese selected. Sample preferences.
-
-### Desktop wallpaper
-
-[desktop-wallpaper.png](../desktop-wallpaper.png)
-
-1536 × 1024 · PNG
-
-AI-generated desert wallpaper for the website presentation; not an app screenshot or built-in app feature.
+Simplified Chinese and Japanese selected. Sample settings.
 
 ### Flat vector artwork
 
@@ -129,9 +121,9 @@ Existing 1200 × 630 promotional artwork, not an app screenshot.
 
 [hero-record.png](hero-record.png)
 
-1040 × 622 · PNG
+1040 × 661 · PNG
 
-Native record with short input and the largest app text size. English input, Simplified Chinese with Pinyin, and Japanese with Romaji. Sample record.
+Native learning card: English input, Simplified Chinese with Pinyin and Japanese with Romaji. Largest text size. Sample content.
 
 ### Language-learning animation
 

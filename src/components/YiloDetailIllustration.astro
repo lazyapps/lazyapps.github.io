@@ -1,39 +1,49 @@
 ---
-import examples from '../i18n/yilo-examples.json';
-interface Props { kind: number; english?: boolean }
-const { kind, english = false } = Astro.props;
+import artCopy from '../i18n/yilo-art-copy.json';
+import heroCopy from '../i18n/yilo-hero-copy.json';
+interface Props { kind: number; locale: keyof typeof artCopy }
+const { kind, locale } = Astro.props;
+const art = artCopy[locale], rtl = locale === 'ar';
+const target = locale === 'en' ? 'zh-hans' : 'en';
+const readings = locale === 'en' ? [{word:'余地',reading:'yú dì'}, {word:'余地',reading:'よち'}]
+  : locale === 'ja' ? [{word:'room',reading:heroCopy[locale].firstLanguage}, {word:'余地',reading:'yú dì'}]
+  : [{word:'room',reading:heroCopy[locale].firstLanguage}, {word:'余地',reading:'よち'}];
 const hatch = (color: string) => `url(#yilo-detail-${kind}-${color})`;
 ---
-<div class="detail-art" data-yilo-art aria-hidden="true" dir="ltr">
+<div class="detail-art" data-yilo-art data-source-locale={locale} aria-hidden="true" dir="ltr">
   <svg viewBox="0 0 360 150" fill="none" focusable="false">
     <defs>
       {Object.entries({teal:'#70a59e',blue:'#5c6995',green:'#84995c',coral:'#b76450'}).map(([name,color]) => <pattern id={`yilo-detail-${kind}-${name}`} width="7" height="7" patternUnits="userSpaceOnUse" patternTransform={`rotate(${name === 'green' ? 0 : name === 'coral' ? 35 : -42})`}><path d="M0 2h7" stroke={color} stroke-width="1"/></pattern>)}
       <pattern id={`yilo-detail-${kind}-cross`} width="10" height="10" patternUnits="userSpaceOnUse"><path d="m-2 10 12-12M0 12 12 0m-14 0 12 12M0-2l12 12" stroke="#70a59e" stroke-width=".7"/></pattern>
     </defs>
     {kind === 0 && <>
-      <g class="tool-window"><path d="M18 37h145v77H18z" class="paper"/><path d="M18 37h145v19H18z" fill={hatch("teal")} opacity=".4"/><path d="M18 56h145"/><circle cx="29" cy="47" r="2" class="fill-accent"/><text x="42" y="51" class="small">Codex</text><path d="m36 75 8 6-8 6" class="accent"/><path d="M54 86h36" class="typed-line"/></g>
+      <g class="tool-window"><path d="M18 37h145v77H18z" class="paper"/><path d="M18 37h145v19H18z" fill={hatch("teal")} opacity=".4"/><path d="M18 56h145"/><circle cx="29" cy="47" r="2" class="fill-accent"/><text x="42" y="51" class="small">Codex</text><path d="m36 75 8 6-8 6" class="accent"/><text x="99" y="86" text-anchor="middle" direction={rtl?'rtl':'ltr'} class="small">{art.word}</text><path d="M54 98h68" class="typed-line"/></g>
       <g class="record-sheet"><path d="M242 35h83l19 19v79H242z" fill={hatch("coral")} stroke="none"/><path d="M237 28h83l19 19v79H237z" class="paper"/><path d="M320 28v19h19"/><path d="M253 62h46M253 77h66M253 92h51" class="accent"/><path d="M253 110h26"/></g>
       <path d="M177 81h44m-8-8 8 8-8 8" class="accent transfer"/>
       <circle cx="286" cy="112" r="20" class="paper"/><path d="m277 112 7 7 13-15" class="accent record-check"/>
     </>}
     {kind === 1 && <>
-      <path d="M18 49h105v67H18z" class="paper"/><path d="M24 55h93v55H24z" fill={hatch("blue")} opacity=".22" stroke="none"/><path d="M7 124h127l-7 7H14z" fill={hatch("green")}/><text x="70" y="87" text-anchor="middle">Mac</text>
+      <path d="M18 49h105v67H18z" class="paper"/><path d="M24 55h93v55H24z" fill={hatch("blue")} opacity=".22" stroke="none"/><path d="M7 124h127l-7 7H14z" fill={hatch("green")}/><text x="70" y="94" text-anchor="middle" class="characters">{art.glyph}</text>
       <g class="optional-cloud"><path d="M158 78c-10-2-12-15-5-21 3-15 24-17 32-6 14-3 22 11 16 22-2 4-7 6-13 6h-30" fill={hatch("cross")}/><text x="177" y="103" text-anchor="middle" class="small">iCloud</text></g>
       <path d="M135 81h15M210 81h36" class="accent optional-path" stroke-dasharray="3 7"/>
-      <g class="sync-phone"><rect x="262" y="34" width="65" height="99" rx="8" class="paper"/><path d="M267 48h55v69h-55z" fill={hatch("teal")} opacity=".3" stroke="none"/><path d="M286 42h17M289 125h11"/><path d="m278 83 9 9 24-27" class="accent sync-check"/></g>
+      <g class="sync-phone"><rect x="262" y="34" width="65" height="99" rx="8" class="paper"/><path d="M267 48h55v69h-55z" fill={hatch("teal")} opacity=".3" stroke="none"/><text x="294" y="84" text-anchor="middle" class="characters">{art.glyph}</text><path d="M286 42h17M289 125h11"/><path d="m286 103 6 6 14-16" class="accent sync-check"/></g>
     </>}
     {kind === 2 && <>
       <path d="M17 36h138v88H17z" class="paper"/><path d="M17 36h138v19H17z" fill={hatch("teal")} opacity=".4"/><path d="M17 55h138M30 45h6"/>
       <path d="M30 72h92v32H30z" fill={hatch("coral")} opacity=".35" stroke="none"/>
-      <text x="76" y="94" text-anchor="middle">{examples.refine[english ? 'en' : 'zh-hans']}</text>
+      <text x="76" y="94" text-anchor="middle" class="refine-input" direction={rtl?'rtl':'ltr'}>{art.refine}</text>
       <path d="M127 94v23l7-6 6 10 5-3-6-10h10z" class="paper cursor"/>
       <path d="M171 81h42m-8-8 8 8-8 8" class="accent transfer"/>
-      <g class="refined-text"><path d="M237 60h112v57H237z" fill={hatch("green")} stroke="none"/><path d="M231 54h112v57H231z" class="paper"/><text x="287" y="89" text-anchor="middle">{examples.refine[english ? 'zh-hans' : 'en']}</text><path d="M250 99h73" class="accent"/></g>
+      <g class="refined-text"><path d="M237 60h112v57H237z" fill={hatch("green")} stroke="none"/><path d="M231 54h112v57H231z" class="paper"/><text x="287" y="89" text-anchor="middle" class="small">{artCopy[target].refine}</text><path d="M250 99h73" class="accent"/></g>
     </>}
     {kind === 3 && <>
-      <g class="reading-pinyin"><text x="87" y="47" text-anchor="middle" class="small accent">hàn zì</text><text x="87" y="82" text-anchor="middle" class="characters">汉字</text><path d="M49 96h76v6H49z" fill={hatch("coral")} stroke="none"/></g>
-      <path d="M170 32v77" stroke-dasharray="2 8" opacity=".3"/>
-      <g class="reading-kana"><text x="262" y="47" text-anchor="middle" class="small accent">ことば</text><text x="262" y="82" text-anchor="middle" class="characters">言葉</text><path d="M225 96h76v6h-76z" fill={hatch("teal")} stroke="none"/></g>
+      <path d="M119 8h122v34H119z" class="paper"/><text x="180" y="31" text-anchor="middle" direction={rtl?'rtl':'ltr'}>{art.word}</text>
+      <path d="M180 42v12M87 64V54h175v10" class="accent"/>
+      {readings.map(({word,reading},i)=><g class={i?'reading-kana':'reading-pinyin'}>
+        <text x={87+i*175} y="83" text-anchor="middle" class="small accent">{reading}</text>
+        <text x={87+i*175} y="119" text-anchor="middle" class="characters">{word}</text>
+        <path d={`M${49+i*175} 132h76v6h-76z`} fill={hatch(i?'teal':'coral')} stroke="none"/>
+      </g>)}
     </>}
   </svg>
 </div>
@@ -41,7 +51,7 @@ const hatch = (color: string) => `url(#yilo-detail-${kind}-${color})`;
   .detail-art{max-width:360px;width:100%;color:#333d51;margin-bottom:22px}
   svg{display:block;width:100%;height:auto;overflow:visible;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
   text{stroke:none;fill:currentColor;font:400 18px var(--sans);letter-spacing:0}
-  .small{font-size:13px}.characters{font-size:32px}
+  .small{font-size:13px}.characters{font-size:32px}.refine-input{font-size:12px}
   .accent{color:#b76450;stroke:#b76450}text.accent{fill:#b76450;stroke:none}
   .fill-accent{fill:#b76450;stroke:none}
   .paper{fill:#f6f2e7}

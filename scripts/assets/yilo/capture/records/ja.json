@@ -1,0 +1,63 @@
+{
+  "id": "090A0E00-7A45-51DB-B0A6-E1A539F690B4",
+  "originalText": "機能が変わったので、スクリーンショットを撮り直して。",
+  "sourceHost": "codex",
+  "hostVersion": "0.166.0-alpha.6",
+  "capturedAt": 1793967080.949,
+  "status": "succeeded",
+  "configuration": {
+    "preservesOriginalTone": true,
+    "sourceLanguage": "ja",
+    "englishInputExplanationLanguage": "ja",
+    "learningNotesLanguage": "ja",
+    "dialect": "american",
+    "targetLanguages": [
+      "en",
+      "zh-Hans"
+    ],
+    "targetStyle": "natural"
+  },
+  "naturalEnglish": null,
+  "translations": [
+    {
+      "language": "en",
+      "learningAdvice": [
+        {
+          "kind": "learning_point",
+          "category": "collocation",
+          "sourceExcerpt": "機能が変わったので、スクリーンショットを撮り直して。",
+          "recommendation": "スクリーンショットを撮り直すときは「retake the screenshots」。",
+          "explanation": "take a screenshot が基本の表現です。retake は同じ作業をやり直すことを表します。",
+          "exampleEnglish": "We need to retake the screenshots after the update."
+        }
+      ],
+      "text": "The features have been updated, so we need to retake the screenshots."
+    },
+    {
+      "language": "zh-Hans",
+      "text": "功能更新了，需要重新截图。",
+      "learningAdvice": [
+        {
+          "kind": "learning_point",
+          "category": "translation_pattern",
+          "sourceExcerpt": "機能が変わったので、スクリーンショットを撮り直して。",
+          "recommendation": "「重新截图」でスクリーンショットの撮り直しを表します。",
+          "explanation": "重新 は「もう一度」の意味で、動詞 截图 の前に置きます。",
+          "exampleEnglish": "功能更新后，我们需要重新截图。"
+        }
+      ]
+    }
+  ],
+  "learningAdvice": [
+    {
+      "kind": "learning_point",
+      "category": "collocation",
+      "sourceExcerpt": "機能が変わったので、スクリーンショットを撮り直して。",
+      "recommendation": "スクリーンショットを撮り直すときは「retake the screenshots」。",
+      "explanation": "take a screenshot が基本の表現です。retake は同じ作業をやり直すことを表します。",
+      "exampleEnglish": "We need to retake the screenshots after the update."
+    }
+  ],
+  "isBookmarked": false,
+  "origin": "captured"
+}

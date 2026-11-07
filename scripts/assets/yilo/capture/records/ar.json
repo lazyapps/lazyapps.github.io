@@ -1,0 +1,63 @@
+{
+  "id": "A5E41840-7B63-5ADE-A210-6FD94E3D1209",
+  "originalText": "تغيّرت الميزات. أعد التقاط صور الشاشة.",
+  "sourceHost": "codex",
+  "hostVersion": "0.166.0-alpha.6",
+  "capturedAt": 1793967080.949,
+  "status": "succeeded",
+  "configuration": {
+    "preservesOriginalTone": true,
+    "sourceLanguage": "ar",
+    "englishInputExplanationLanguage": "ar",
+    "learningNotesLanguage": "ar",
+    "dialect": "american",
+    "targetLanguages": [
+      "en",
+      "ja"
+    ],
+    "targetStyle": "natural"
+  },
+  "naturalEnglish": null,
+  "translations": [
+    {
+      "language": "en",
+      "learningAdvice": [
+        {
+          "kind": "learning_point",
+          "category": "collocation",
+          "sourceExcerpt": "تغيّرت الميزات. أعد التقاط صور الشاشة.",
+          "recommendation": "استخدم «retake the screenshots» للتعبير عن إعادة التقاط صور الشاشة.",
+          "explanation": "التعبير الشائع هو take a screenshot. وتعني retake التقاط الصورة مرة أخرى.",
+          "exampleEnglish": "We need to retake the screenshots after the update."
+        }
+      ],
+      "text": "The features have been updated, so we need to retake the screenshots."
+    },
+    {
+      "language": "ja",
+      "learningAdvice": [
+        {
+          "kind": "learning_point",
+          "category": "translation_pattern",
+          "sourceExcerpt": "تغيّرت الميزات. أعد التقاط صور الشاشة.",
+          "recommendation": "استخدم 「撮り直す」 للتعبير عن إعادة التقاط الصورة.",
+          "explanation": "تُضاف 直す إلى جذر الفعل للدلالة على تكرار العمل.",
+          "exampleEnglish": "更新後にスクリーンショットを撮り直してください。"
+        }
+      ],
+      "text": "機能が更新されたため、スクリーンショットを撮り直す必要があります。"
+    }
+  ],
+  "learningAdvice": [
+    {
+      "kind": "learning_point",
+      "category": "collocation",
+      "sourceExcerpt": "تغيّرت الميزات. أعد التقاط صور الشاشة.",
+      "recommendation": "استخدم «retake the screenshots» للتعبير عن إعادة التقاط صور الشاشة.",
+      "explanation": "التعبير الشائع هو take a screenshot. وتعني retake التقاط الصورة مرة أخرى.",
+      "exampleEnglish": "We need to retake the screenshots after the update."
+    }
+  ],
+  "isBookmarked": false,
+  "origin": "captured"
+}

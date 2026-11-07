@@ -11,10 +11,10 @@ from lib.yilo_wheel_supports import wheel_support_filter
 ROOT = Path(__file__).resolve().parents[1]
 PROJECT = ROOT / 'video/yilo-hero'
 PUBLIC = ROOT / 'public/v/yilo'
-CACHE = ROOT / '.build/yilo-hero-v21'
+CACHE = ROOT / '.build/yilo-hero-v22'
 MANIFEST = ROOT / 'scripts/assets/yilo/hero-video-source.json'
 COPY = json.loads((ROOT / 'src/i18n/yilo-hero-copy.json').read_text())
-VERSION = 'v21'
+VERSION = 'v22'
 END_HOLD_FRAME = json.loads((PROJECT/'src/timing.json').read_text())['endHoldStartFrame']
 TITLE = 'Yilo — 边蹬边学 / ' + COPY['en']['lineTitle']
 COMMENT = 'Native Yilo RecordCardView captures with short AI-agent input, the largest app text setting, Pinyin and Romaji. Original pelican line art animated locally with MiniMax H3. Learning helps more natural conversations with people. Formerly YiYan. Isolated native component samples, not a live app recording.'
@@ -42,9 +42,10 @@ if previous and previous.get('version') != VERSION:
 outputs = {item['locale']: item for item in previous.get('outputs', [])}
 postprocess_inputs = [ROOT/path for path in previous.get('wheelSupportRemoval', {}).get('inputs', [])] if previous.get('version') == VERSION and args.retitle_only else []
 def publish():
-    source_files = [ROOT/'src/i18n/yilo-examples.json',ROOT/'scripts/generate-yilo-h3-hero.py',ROOT/'src/i18n/yilo-hero-copy.json',Path(__file__),ROOT/'scripts/assets/yilo/hero-music-credits.txt',ROOT/'scripts/prepare-yilo-hero-music.py',ROOT/'scripts/assets/yilo/audio/source.json',ROOT/'scripts/assets/yilo/audio/fluffing-a-duck.mp3']
+    source_files = [ROOT/'src/i18n/yilo-art-copy.json',ROOT/'src/i18n/yilo-examples.json',ROOT/'scripts/generate-yilo-h3-hero.py',ROOT/'src/i18n/yilo-hero-copy.json',Path(__file__),ROOT/'scripts/assets/yilo/hero-music-credits.txt',ROOT/'scripts/prepare-yilo-hero-music.py',ROOT/'scripts/assets/yilo/audio/source.json',ROOT/'scripts/assets/yilo/audio/fluffing-a-duck.mp3']
     source_files += [ROOT/'scripts/assets/yilo/hero-native-source.json',ROOT/'scripts/capture-yilo-hero-screenshots.py',ROOT/'scripts/assets/yilo/capture/YiloHeroCapture.swift',ROOT/'scripts/assets/yilo/capture/hero-record-en.json',ROOT/'scripts/assets/yilo/capture/hero-record-zh.json']
     source_files += [ROOT/item['source'] for item in json.loads((ROOT/'scripts/assets/yilo/hero-native-source.json').read_text())['captures']]
+    source_files += list((ROOT/'scripts/assets/yilo/capture/hero-records').glob('*.json'))
     source_files += [path for path in PROJECT.rglob('*') if path.is_file() and 'node_modules' not in path.parts and '.git' not in path.parts and path.suffix in ('.tsx','.ts','.json','.yaml','.png','.wav','.mp4')]
     source_files += [path for path in (ROOT/'scripts/assets/yilo/marketing-v16').iterdir() if path.is_file() and path.suffix in ('.png','.mp4','.json','.txt')]
     source_files += [ROOT/'scripts/lib/yilo_wheel_supports.py', *postprocess_inputs]
@@ -112,13 +113,10 @@ for locale in args.locales:
     props = CACHE / f'{locale}.json'
     props.write_text(json.dumps({'locale': locale}))
     raw = CACHE / f'{locale}-silent.mp4'
-    video = PUBLIC / f'hero-{locale}-{VERSION}.mp4'
-    poster = PUBLIC / f'hero-{locale}-{VERSION}.jpg'
-    if video.exists() or poster.exists():
-        archive = CACHE / 'revisions' / datetime.now().strftime('%Y%m%d-%H%M%S')
-        archive.mkdir(parents=True, exist_ok=True)
-        for path in (video, poster):
-            if path.exists(): shutil.move(path, archive / path.name)
+    published_video = PUBLIC / f'hero-{locale}-{VERSION}.mp4'
+    published_poster = published_video.with_suffix('.jpg')
+    video = CACHE / f'{locale}-final.mp4'
+    poster = CACHE / f'{locale}-final.jpg'
     run(['pnpm', 'exec', 'remotion', 'render', 'src/index.ts', 'YiloLineHero', raw,
          '--props', props, '--codec', 'h264', '--crf', '18', '--pixel-format', 'yuv420p',
          '--concurrency', '4', '--port', str(3400+list(COPY).index(locale)), '--browser-executable', BROWSER])
@@ -134,6 +132,14 @@ for locale in args.locales:
     v = next(stream for stream in probe['streams'] if stream['codec_type']=='video')
     a = next(stream for stream in probe['streams'] if stream['codec_type']=='audio')
     assert [v['width'],v['height'],v['codec_name'],v['pix_fmt'],int(v['nb_frames'])] == [1280,608,'h264','yuv420p',336]
+    if published_video.exists() or published_poster.exists():
+        archive = CACHE / 'revisions' / datetime.now().strftime('%Y%m%d-%H%M%S')
+        archive.mkdir(parents=True, exist_ok=True)
+        for path in (published_video, published_poster):
+            if path.exists(): shutil.copy2(path, archive / path.name)
+    video.replace(published_video)
+    poster.replace(published_poster)
+    video, poster = published_video, published_poster
     outputs[locale] = dict(locale=locale,width=1280,height=608,fps=24,frames=336,seconds=14,codec='h264',pixelFormat='yuv420p',
         audio=dict(codec=a['codec_name'],sampleRate=a['sample_rate'],channels=a['channels']),
         video=dict(path=str(video.relative_to(ROOT)),sha256=sha(video)),poster=dict(path=str(poster.relative_to(ROOT)),sha256=sha(poster)))

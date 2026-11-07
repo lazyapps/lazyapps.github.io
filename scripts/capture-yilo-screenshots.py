@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Capture localized native Yilo views using the selected real learning record."""
+"""Capture localized native Yilo views using samples in the matching source language."""
 import argparse
 import hashlib
 import json
@@ -26,7 +26,6 @@ args = parser.parse_args()
 app = args.app_source.resolve()
 output = ROOT / "scripts/assets/presskit/yilo"
 fixture = ROOT / "scripts/assets/yilo/capture/YiloWebsiteCapture.swift"
-selected_record = fixture.with_name("selected-record.json")
 commit = subprocess.check_output(["git", "-C", str(app), "rev-parse", "HEAD"], text=True).strip()
 receipt_path = ROOT / "scripts/assets/presskit/screenshot-sources.json"
 receipts = json.loads(receipt_path.read_text())
@@ -66,21 +65,25 @@ with tempfile.TemporaryDirectory(prefix="yilo-website-capture-") as temporary:
     for tag in args.locales:
         folder = output / tag
         folder.mkdir(parents=True, exist_ok=True)
-        record = fixture.with_name("english-learning-record.json") if tag == "en" else selected_record
+        record = fixture.parent / "records" / f"{tag}.json"
+        sample = json.loads(record.read_text())
+        assert sample["configuration"]["sourceLanguage"] == tag
+        assert tag not in sample["configuration"]["targetLanguages"]
         capture_env = {**env, "YILO_CAPTURE_DIR": str(folder), "YILO_CAPTURE_LOCALE": tag, "YILO_CAPTURE_RECORD": str(record), "TZ": "Asia/Shanghai"}
         subprocess.run([str(capture_app / "MacOS/YiloWebsiteCapture"), "-AppleLanguages", f"({tag})", "-AppleLocale", tag], env=capture_env, check=True)
         native = json.loads((folder / "locale.json").read_text())
         assert native["nativeLocale"] == tag, f"Native locale mismatch: {tag}"
-        source_files = ["Sources/YiYanUI/Views/RecordCardView.swift", "Sources/YiYanUI/Views/TargetTranslationSection.swift", "Sources/YiYanUI/Views/LearningLanguageSettingsView.swift", "Sources/YiYanUI/ViewModels/AppLocalization.swift", "Sources/YiYanUI/Views/TargetTranslationText.swift", "Sources/YiYanCore/Presentation/ChineseReading.swift"]
-        source_files += [str(path.relative_to(package)) for path in (package / "Sources").rglob("*Japanese*.swift")]
+        source_files = ["Sources/YiYanUI/Views/RecordCardView.swift", "Sources/YiYanUI/Views/TargetTranslationSection.swift", "Sources/YiYanUI/Views/LearningLanguageSettingsView.swift", "Sources/YiYanUI/ViewModels/AppLocalization.swift", "Sources/YiYanCore/Presentation/ChineseReading.swift"]
+        source_files += [str(path.relative_to(package)) for pattern in ("*Japanese*.swift", "TargetTranslationText.swift") for path in (package / "Sources").rglob(pattern)]
         for name in NAMES:
             captures.append({
                 "source": str((folder / name).relative_to(ROOT)), "sha256": sha(folder / name),
                 "contentLanguage": tag, "type": "native", "capturedOn": today, "appSourceCommit": commit,
                 "originalSource": str(fixture.relative_to(ROOT)),
-                "operation": "Unmodified native AppKit/SwiftUI component export using the app's own localization resources. " + ("English uses the user-requested example: English input, Simplified Chinese/Japanese outputs, native Pinyin above Simplified Chinese words, and English explanations. " if tag == "en" else "Learning card uses the exact user-selected real record. ") + "Settings use isolated sample preferences. No image text replacement, resizing or UI reconstruction. Not a full app window.",
+                "operation": "Unmodified native AppKit/SwiftUI component export using the app's own localization resources. Sample input, source setting and learning explanations match the UI language. English learns Simplified Chinese/Japanese; Japanese learns English/Simplified Chinese; other locales learn English/Japanese. Settings use isolated sample preferences. No image text replacement, resizing or UI reconstruction. Not a full app window.",
                 "appearance": "dark" if name == "learning-record.png" else "light",
                 "captureFixtureSha256": sha(fixture), "nativeLocale": native["nativeLocale"], "nativeLabels": native["labels"],
+                "sourceLanguage": native["sourceLanguage"], "targetLanguages": native["targetLanguages"],
                 "localizationSha256": sha(package / f"Sources/YiYanUI/Resources/{tag}.lproj/Localizable.strings"),
                 "sourceFiles": {file: sha(package / file) for file in sorted(source_files)},
                 **({"recordSource": str(record.relative_to(ROOT)), "recordSha256": sha(record)} if name == "learning-record.png" else {})
@@ -88,6 +91,6 @@ with tempfile.TemporaryDirectory(prefix="yilo-website-capture-") as temporary:
         print("Native captures exported:", tag, flush=True)
 
 receipts["yilo"] = {"checkedOn": today, "appSourceCommit": commit,
-    "sourceState": "Localized native components from a source snapshot. Exact user-selected record retained in 11 UI languages; English uses the explicitly requested English-input, Simplified-Chinese/Japanese-output example. Settings use disposable sample preferences.",
+    "sourceState": "Localized native components from a source snapshot. Every example input, source setting and explanation matches its UI locale. English learns Simplified Chinese/Japanese; Japanese learns English/Simplified Chinese; other locales learn English/Japanese. Settings use disposable sample preferences.",
     "captures": sorted(captures, key=lambda capture: capture["source"])}
 receipt_path.write_text(json.dumps(receipts, ensure_ascii=False, indent=2) + "\n")

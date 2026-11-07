@@ -18,6 +18,7 @@ import SiteEdges from './SiteEdges.astro';
 import SiteFooterBase from './SiteFooterBase.astro';
 import siteCssUrl from '$assets/s/site.css?url';
 import yiloHandCssUrl from '$assets/s/yilo-hand.css?url';
+import yiloHandCjkCssUrl from '$assets/s/yilo-hand-cjk.css?url';
 import gsapUrl from '$assets/vendor/gsap.min.js?url';
 import scrollTriggerUrl from '$assets/vendor/ScrollTrigger.min.js?url';
 import customEaseUrl from '$assets/vendor/CustomEase.min.js?url';
@@ -130,7 +131,7 @@ const ctaButtons = t.cta.slice(0, 2).map((label, i) => {
 <SoftwareApplication name={t.title.split(' — ')[0]} description={t.description} url={t.canonical} language={t.htmlLang} operatingSystem="macOS, iOS" downloadUrl="https://github.com/cxa/yilo/releases" image={`${SITE}${yiloIconUrl}`} />
 <link rel="icon" type="image/png" href={yiloIconUrl}>
 <link rel="stylesheet" href={siteCssUrl}>
-<link rel="stylesheet" href={yiloHandCssUrl}>
+<link rel="stylesheet" href={/^(zh|ja)/.test(t.htmlLang) ? yiloHandCjkCssUrl : yiloHandCssUrl}>
 <script is:inline>
 document.documentElement.classList.remove('no-js');
 setTimeout(()=> {
@@ -268,7 +269,7 @@ body .deck .card:nth-child(n){position:relative;background:none;border:0;border-
 
       {copy.cards.map((card, i) => <article class={`card card--c${i + 1}`}>
         <div class="card__grid">
-          <YiloFeatureIllustration kind={i} english={code === 'en'} />
+          <YiloFeatureIllustration kind={i} locale={code || 'zh-hans'} />
           <h3 class="card__title">{card[0]}</h3>
           <p class="card__p">{card[1]}</p>
         </div>
@@ -287,7 +288,7 @@ body .deck .card:nth-child(n){position:relative;background:none;border:0;border-
   <section class="bounds wrap">
     <div class="bounds__grid">
       {copy.details.map(([title, paragraphs], index) => <article class="bounds__item">
-        <YiloDetailIllustration kind={index} english={code === 'en'} />
+        <YiloDetailIllustration kind={index} locale={code || 'zh-hans'} />
         <h3>{title}</h3>
         <p class="bounds__brief">{paragraphs[0]}</p>
         <details class="bounds__more">

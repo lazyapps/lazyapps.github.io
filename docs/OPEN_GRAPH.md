@@ -24,4 +24,4 @@ Calmon 使用原生 `CGPath` 直接导出的方格字标，保留与 App 图标�
 
 ## Yilo · 亦言
 
-从当前 `AppIcon.icon` 的原版矢量层生成无底壳 symbol，保留默认柠檬金颜色与透明度；不从旧图标或位图描摹。排版以除圆点外的主体可见高度对齐。简繁中文共用 `yilo-opengraph.png`（亦言），其他语言共用 `yilo-opengraph-shared.png`（Yilo）。运行 `scripts/prepare-yilo-brand-web.py` 与 `scripts/render-yilo-opengraph.py`；原始 symbol、输出哈希和几何记录见 `scripts/assets/yilo/brand-source.json`，方形裁切由脚本输出到本地审核目录；最终审核记录见 `docs/reviews/yilo-20261107/`。
+从当前 `AppIcon.icon` 的原版矢量层生成无底壳 symbol，保留默认柠檬金颜色与透明度；不从旧图标或位图描摹。背景按用户要求复用 App 图标默认外观中的珊瑚红线性渐变，颜色和方向直接读取 `icon.json`，替代默认纸色和纸纹，让金色 symbol 清晰可辨；不添加图标圆角方形容器。排版以除圆点外的主体可见高度对齐。简繁中文共用 `yilo-opengraph.png`（亦言），其他语言共用 `yilo-opengraph-shared.png`（Yilo）。运行 `scripts/prepare-yilo-brand-web.py` 与 `scripts/render-yilo-opengraph.py`；原始 symbol、输出哈希和几何记录见 `scripts/assets/yilo/brand-source.json`，OG 来源、背景定义、安全区和输出哈希见 `scripts/assets/yilo/opengraph-source.json`。方形裁切由脚本输出到本地审核目录；最终审核记录见 `docs/reviews/yilo-20261107/`。

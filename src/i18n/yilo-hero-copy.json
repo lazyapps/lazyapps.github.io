@@ -22,7 +22,7 @@
     "lineTitle": "边蹬边学",
     "lineLesson": "wiggle room = 回旋余地",
     "screenshotLabel": "短句输入示例",
-    "screenshotNote": "原生学习记录，使用短句和 App 最大字号。中文输入，英语及日语输出，日语显示 Romaji。示例记录。"
+    "screenshotNote": "原生学习卡片：中文输入，英语和日语译文。使用最大字号和示例内容。"
   },
   "zh-hant": {
     "brand": "亦言",
@@ -40,14 +40,14 @@
     "sourceLabel": "日常輸入",
     "targetLabel": "你想學的語言",
     "reuse": "學道地表達，下次跟人聊得更自然。",
-    "sourceLanguage": "中文",
+    "sourceLanguage": "繁體中文",
     "firstLanguage": "英語",
     "secondLanguage": "日語",
     "illustration": "排線插畫 · 功能示意",
     "lineTitle": "邊蹬邊學",
     "lineLesson": "wiggle room = 迴旋餘地",
     "screenshotLabel": "短句輸入範例",
-    "screenshotNote": "原生學習記錄，使用短句和 App 最大字級。中文輸入，英語及日語輸出，日語顯示 Romaji。範例記錄。"
+    "screenshotNote": "原生學習卡片：繁體中文輸入，英語和日語譯文。使用最大字級及範例內容。"
   },
   "en": {
     "brand": "Yilo",
@@ -72,7 +72,7 @@
     "lineTitle": "Pick up a language while you’re vibe coding",
     "lineLesson": "留点余地 = leave some wiggle room",
     "screenshotLabel": "Short input example",
-    "screenshotNote": "Native record with short input and the largest app text size. English input, Simplified Chinese with Pinyin, and Japanese with Romaji. Sample record."
+    "screenshotNote": "Native learning card: English input, Simplified Chinese with Pinyin and Japanese with Romaji. Largest text size. Sample content."
   },
   "ja": {
     "brand": "Yilo",
@@ -90,14 +90,14 @@
     "sourceLabel": "日々の入力",
     "targetLabel": "学びたい言語",
     "reuse": "自然な表現を学び、人との会話でも自然に。",
-    "sourceLanguage": "中国語",
+    "sourceLanguage": "日本語",
     "firstLanguage": "英語",
-    "secondLanguage": "日本語",
+    "secondLanguage": "簡体字中国語",
     "illustration": "線画アニメーション · 機能の例",
     "lineTitle": "バイブコーディングしながら、 新しい言語も身につけていこう",
     "lineLesson": "wiggle room = 調整の余地",
     "screenshotLabel": "短い入力の例",
-    "screenshotNote": "アプリの文字サイズを最大にした学習記録の例。中国語の短い入力と英語・日本語の訳を表示しています。日本語の訳にはローマ字の読みが付いています。"
+    "screenshotNote": "ネイティブの学習カード。日本語の入力、英語とピンイン付き簡体字中国語の訳。最大の文字サイズを使った例です。"
   },
   "ko": {
     "brand": "Yilo",
@@ -115,14 +115,14 @@
     "sourceLabel": "일상 입력",
     "targetLabel": "배우고 싶은 언어",
     "reuse": "자연스러운 표현을 배우고, 사람들과 더 자연스럽게 대화하세요.",
-    "sourceLanguage": "중국어",
+    "sourceLanguage": "한국어",
     "firstLanguage": "영어",
     "secondLanguage": "일본어",
     "illustration": "선화 애니메이션 · 기능 예시",
     "lineTitle": "바이브 코딩을 하면서 새로운 언어도 익혀 보세요",
     "lineLesson": "wiggle room = 조정할 여지",
     "screenshotLabel": "짧은 입력 예시",
-    "screenshotNote": "앱의 글자 크기를 최대로 설정한 학습 기록 예시입니다. 짧은 중국어 원문과 영어·일본어 번역이 보이며, 일본어에는 로마자 표기가 있습니다."
+    "screenshotNote": "네이티브 학습 카드: 한국어 입력과 영어·일본어 번역. 가장 큰 글자 크기를 사용한 예시입니다."
   },
   "de": {
     "brand": "Yilo",
@@ -140,14 +140,14 @@
     "sourceLabel": "Deine Eingabe",
     "targetLabel": "Deine Lernsprachen",
     "reuse": "Lerne natürliche Formulierungen. Sprich natürlicher mit anderen.",
-    "sourceLanguage": "Chinesisch",
+    "sourceLanguage": "Deutsch",
     "firstLanguage": "Englisch",
     "secondLanguage": "Japanisch",
     "illustration": "Strichanimation · Funktionsbeispiel",
     "lineTitle": "Lerne beim Vibe Coding ganz nebenbei eine Sprache",
     "lineLesson": "wiggle room = Spielraum",
     "screenshotLabel": "Beispiel mit kurzer Eingabe",
-    "screenshotNote": "Beispieleintrag aus Yilo in der größten einstellbaren Schriftgröße: eine kurze chinesische Eingabe mit englischer und japanischer Übersetzung. Über dem japanischen Text steht die Lesung in Romaji."
+    "screenshotNote": "Native Lernkarte mit deutscher Eingabe und englischer sowie japanischer Übersetzung. Größte Textgröße. Beispielinhalt."
   },
   "fr": {
     "brand": "Yilo",
@@ -165,14 +165,14 @@
     "sourceLabel": "Votre saisie",
     "targetLabel": "Vos langues à apprendre",
     "reuse": "Apprenez des formulations naturelles. Parlez plus naturellement avec les autres.",
-    "sourceLanguage": "Chinois",
+    "sourceLanguage": "Français",
     "firstLanguage": "Anglais",
     "secondLanguage": "Japonais",
     "illustration": "Animation au trait · Exemple",
     "lineTitle": "Apprenez une langue en faisant du vibe coding",
     "lineLesson": "wiggle room = marge de manœuvre",
     "screenshotLabel": "Exemple de saisie courte",
-    "screenshotNote": "Fiche native avec une saisie courte et la plus grande taille de texte. Chinois en entrée, anglais et japonais en sortie, avec Romaji. Exemple."
+    "screenshotNote": "Fiche native : saisie en français, traductions en anglais et en japonais. Taille de texte maximale. Exemple."
   },
   "es": {
     "brand": "Yilo",
@@ -190,14 +190,14 @@
     "sourceLabel": "Tu entrada",
     "targetLabel": "Tus idiomas para aprender",
     "reuse": "Aprende expresiones naturales para conversar con otras personas.",
-    "sourceLanguage": "Chino",
+    "sourceLanguage": "Español",
     "firstLanguage": "Inglés",
     "secondLanguage": "Japonés",
     "illustration": "Animación de líneas · Ejemplo",
     "lineTitle": "Aprende un idioma mientras haces vibe coding",
     "lineLesson": "wiggle room = margen de maniobra",
     "screenshotLabel": "Ejemplo de entrada breve",
-    "screenshotNote": "Registro nativo con entrada breve y el mayor tamaño de texto. Entrada en chino, salida en inglés y japonés, con Romaji. Datos de ejemplo."
+    "screenshotNote": "Tarjeta nativa: entrada en español y traducciones al inglés y al japonés. Tamaño de texto máximo. Ejemplo."
   },
   "pt-br": {
     "brand": "Yilo",
@@ -215,14 +215,14 @@
     "sourceLabel": "Sua entrada",
     "targetLabel": "Seus idiomas de estudo",
     "reuse": "Aprenda expressões naturais para conversar com outras pessoas.",
-    "sourceLanguage": "Chinês",
+    "sourceLanguage": "Português",
     "firstLanguage": "Inglês",
     "secondLanguage": "Japonês",
     "illustration": "Animação em linhas · Exemplo",
     "lineTitle": "Aprenda um idioma enquanto faz vibe coding",
     "lineLesson": "wiggle room = margem de manobra",
     "screenshotLabel": "Exemplo de entrada curta",
-    "screenshotNote": "Registro nativo com entrada curta e o maior tamanho de texto. Entrada em chinês, saída em inglês e japonês, com Romaji. Dados de exemplo."
+    "screenshotNote": "Cartão nativo: entrada em português e traduções em inglês e japonês. Maior tamanho de texto. Exemplo."
   },
   "ru": {
     "brand": "Yilo",
@@ -240,14 +240,14 @@
     "sourceLabel": "Ваше сообщение",
     "targetLabel": "Изучаемые языки",
     "reuse": "Учите естественные выражения и говорите с людьми естественнее.",
-    "sourceLanguage": "Китайский",
+    "sourceLanguage": "Русский",
     "firstLanguage": "Английский",
     "secondLanguage": "Японский",
     "illustration": "Штриховая анимация · Пример",
     "lineTitle": "Осваивайте язык, пока занимаетесь вайб-кодингом",
     "lineLesson": "wiggle room = простор для манёвра",
     "screenshotLabel": "Пример короткого запроса",
-    "screenshotNote": "Пример записи в Yilo при максимальном размере шрифта: короткий запрос на китайском и его переводы на английский и японский. Над японским текстом показано чтение ромадзи."
+    "screenshotNote": "Карточка из приложения: русский текст и переводы на английский и японский. Максимальный размер шрифта. Пример."
   },
   "hi": {
     "brand": "Yilo",
@@ -265,14 +265,14 @@
     "sourceLabel": "आपका इनपुट",
     "targetLabel": "सीखने की भाषाएँ",
     "reuse": "स्वाभाविक अभिव्यक्तियाँ सीखें। लोगों से अधिक सहज बातचीत करें।",
-    "sourceLanguage": "चीनी",
+    "sourceLanguage": "हिन्दी",
     "firstLanguage": "अंग्रेज़ी",
     "secondLanguage": "जापानी",
     "illustration": "रेखाचित्र ऐनिमेशन · सुविधा का उदाहरण",
     "lineTitle": "वाइब कोडिंग करते हुए एक नई भाषा भी सीखते जाएँ",
     "lineLesson": "wiggle room = बदलाव की गुंजाइश",
     "screenshotLabel": "छोटे संदेश का उदाहरण",
-    "screenshotNote": "Yilo का एक नमूना रिकॉर्ड, ऐप के सबसे बड़े फ़ॉन्ट आकार में। चीनी में एक छोटा संदेश और उसके अंग्रेज़ी और जापानी अनुवाद दिखते हैं। जापानी पाठ के ऊपर रोमाजी भी है।"
+    "screenshotNote": "ऐप का मूल लर्निंग कार्ड: हिन्दी इनपुट, अंग्रेज़ी और जापानी अनुवाद। सबसे बड़ा फ़ॉन्ट आकार। उदाहरण सामग्री।"
   },
   "ar": {
     "brand": "Yilo",
@@ -290,13 +290,13 @@
     "sourceLabel": "مدخلاتك",
     "targetLabel": "لغات التعلّم",
     "reuse": "تعلّم تعبيرات طبيعية وتحدّث مع الآخرين بأسلوب أكثر طبيعية.",
-    "sourceLanguage": "الصينية",
+    "sourceLanguage": "العربية",
     "firstLanguage": "الإنجليزية",
     "secondLanguage": "اليابانية",
     "illustration": "رسوم خطية متحركة · مثال للميزة",
     "lineTitle": "تعلّم لغة جديدة وأنت تبرمج بأسلوب Vibe Coding",
     "lineLesson": "wiggle room = هامش للمناورة",
     "screenshotLabel": "مثال لإدخال قصير",
-    "screenshotNote": "سجل تعلّم من الواجهة الأصلية بأكبر حجم نص في التطبيق. إدخال صيني ومخرجات إنجليزية ويابانية مع Romaji. سجل تجريبي."
+    "screenshotNote": "بطاقة من واجهة التطبيق: إدخال عربي وترجمات إنجليزية ويابانية. أكبر حجم للنص. محتوى تجريبي."
   }
 }

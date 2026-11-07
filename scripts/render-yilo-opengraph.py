@@ -1,5 +1,7 @@
 """Render Yilo's two shared Open Graph assets from current genuine artwork."""
 import json
+import hashlib
+from io import BytesIO
 from pathlib import Path
 import subprocess
 import tempfile
@@ -13,19 +15,25 @@ ASSETS = ROOT / 'src/assets'
 SCALE = 3
 
 
-def background():
-    canvas = Image.new('RGB', (1200 * SCALE, 630 * SCALE), '#f8f8f6')
-    noise = Image.open(ASSETS / 'img/noise.png').convert('L').resize((125 * SCALE, 125 * SCALE), Image.Resampling.BICUBIC)
-    noise = noise.point(lambda v: round(max(0, min(255, (v - 127.5) * 1.25 + 127.5)) * .6))
-    tile = noise.convert('RGBA')
-    tile.putalpha(round(255 * .09))
-    for y in range(0, canvas.height, tile.height):
-        for x in range(0, canvas.width, tile.width):
-            canvas.paste(tile, (x, y), tile)
-    return canvas
+def background(fill):
+    start, stop = fill['orientation']['start'], fill['orientation']['stop']
+    stops = []
+    for index, value in enumerate(fill['linear-gradient']):
+        assert value.startswith('srgb:')
+        red, green, blue, alpha = map(float, value.removeprefix('srgb:').split(','))
+        color = f'rgb({red * 100}%,{green * 100}%,{blue * 100}%)'
+        stops.append(f'<stop offset="{index}" stop-color="{color}" stop-opacity="{alpha}"/>')
+    svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="{1200 * SCALE}" height="{630 * SCALE}" viewBox="0 0 1200 630">
+      <defs><linearGradient id="app-background" x1="{start['x'] * 1200}" y1="{start['y'] * 630}" x2="{stop['x'] * 1200}" y2="{stop['y'] * 630}" gradientUnits="userSpaceOnUse">{''.join(stops)}</linearGradient></defs>
+      <rect width="1200" height="630" fill="url(#app-background)"/>
+    </svg>'''
+    return Image.open(BytesIO(subprocess.check_output(['rsvg-convert'], input=svg.encode()))).convert('RGB')
 
 
 def main():
+    icon_source = ROOT / 'scripts/assets/yilo/AppIcon.icon/icon.json'
+    icon = json.loads(icon_source.read_text())
+    fill = next(item['value'] for item in icon['fill-specializations'] if 'appearance' not in item)
     symbol = Image.open(ASSETS / 'img/yilo-symbol.png').convert('RGBA')
     geometry = json.loads((ROOT / 'scripts/assets/yilo/brand-source.json').read_text())
     body = geometry['bodyBounds']
@@ -60,6 +68,7 @@ def main():
                 x += font.getlength(char + following) - font.getlength(char) - font.getlength(following)
         titles['shared'] = title.crop(title.getchannel('A').getbbox())
 
+        cards = []
         for code, title in titles.items():
             # Native visible boundaries, equal visual heights, central square safe.
             symbol_ratio = symbol.width / body_height
@@ -70,18 +79,27 @@ def main():
             mark = symbol.resize((round(height * symbol_ratio), mark_height), Image.Resampling.LANCZOS)
             title = title.resize((round(height * title_ratio), height), Image.Resampling.LANCZOS)
             total = mark.width + gap + title.width
-            canvas = background()
+            canvas = background(fill)
             x, y = round((canvas.width - total) / 2), round((canvas.height - mark_height) / 2)
             canvas.paste(mark, (x, y), mark)
             title_y = y + round(height * (body[1] - visible[1]) / body_height)
             canvas.paste(title, (x + mark.width + gap, title_y), title)
             suffix = '' if code == 'zh-hans' else '-' + code
             result = canvas.resize((1200, 630), Image.Resampling.LANCZOS)
-            result.save(ASSETS / f'img/yilo-opengraph{suffix}.png', optimize=True)
+            output = ASSETS / f'img/yilo-opengraph{suffix}.png'
+            result.save(output, optimize=True)
+            cards.append(dict(language='zh-Hans' if code == 'zh-hans' else 'shared',
+                output=str(output.relative_to(ROOT)), sha256=hashlib.sha256(output.read_bytes()).hexdigest(),
+                contentBounds=[x / SCALE, y / SCALE, total / SCALE, max(mark_height, title_y - y + title.height) / SCALE]))
             review = ROOT / '.build/yilo-opengraph-review'
             review.mkdir(parents=True, exist_ok=True)
             result.crop((285, 0, 915, 630)).save(review / f'og-square-{code}.png')
             print(f'Updated Yilo OG {code}: centered visible brand width {total / SCALE:.1f}px')
+        sources = [icon_source, ROOT / 'scripts/assets/yilo/brand-source.json', ASSETS / 'img/yilo-symbol.png',
+            ASSETS / 'fonts/sofia-sans-xcond-latin.woff2', ROOT / 'scripts/render-yiyan-text.swift', Path(__file__)]
+        receipt = dict(size=[1200, 630], safeRect=[285, 0, 630, 630], background=fill,
+            sources={str(path.relative_to(ROOT)): hashlib.sha256(path.read_bytes()).hexdigest() for path in sources}, cards=cards)
+        (ROOT / 'scripts/assets/yilo/opengraph-source.json').write_text(json.dumps(receipt, indent=2) + '\n')
 
 
 if __name__ == '__main__':

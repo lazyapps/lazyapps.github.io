@@ -27,7 +27,6 @@ args = parser.parse_args()
 app = args.app_source.resolve()
 output = ROOT / "scripts/assets/presskit/yilo"
 fixture = ROOT / "scripts/assets/yilo/capture/YiloHeroCapture.swift"
-selected_record = fixture.with_name("hero-record-zh.json")
 commit = subprocess.check_output(["git", "-C", str(app), "rev-parse", "HEAD"], text=True).strip()
 receipt_path = ROOT / "scripts/assets/presskit/screenshot-sources.json"
 receipts = json.loads(receipt_path.read_text())
@@ -67,13 +66,16 @@ with tempfile.TemporaryDirectory(prefix="yilo-hero-capture-") as temporary:
     for tag in args.locales:
         folder = output / tag
         folder.mkdir(parents=True, exist_ok=True)
-        record = fixture.with_name("hero-record-en.json") if tag == "en" else selected_record
+        record = fixture.parent / "hero-records" / f"{tag}.json"
+        sample = json.loads(record.read_text())
+        assert sample["configuration"]["sourceLanguage"] == tag
+        assert tag not in sample["configuration"]["targetLanguages"]
         capture_env = {**env, "YILO_CAPTURE_DIR": str(folder), "YILO_CAPTURE_LOCALE": tag, "YILO_CAPTURE_RECORD": str(record), "TZ": "Asia/Shanghai"}
         subprocess.run([str(capture_app / "MacOS/YiloHeroCapture"), "-AppleLanguages", f"({tag})", "-AppleLocale", tag], env=capture_env, check=True)
         native = json.loads((folder / "hero-locale.json").read_text())
         assert native["nativeLocale"] == tag, f"Native locale mismatch: {tag}"
-        source_files = ["Sources/YiYanUI/Views/RecordCardView.swift", "Sources/YiYanUI/Views/TargetTranslationSection.swift", "Sources/YiYanUI/Views/LearningLanguageSettingsView.swift", "Sources/YiYanUI/ViewModels/AppLocalization.swift", "Sources/YiYanUI/Views/TargetTranslationText.swift", "Sources/YiYanUI/Views/MainWindowTypography.swift", "Sources/YiYanCore/Presentation/ChineseReading.swift"]
-        source_files += [str(path.relative_to(package)) for path in (package / "Sources").rglob("*Japanese*.swift")]
+        source_files = ["Sources/YiYanUI/Views/RecordCardView.swift", "Sources/YiYanUI/Views/TargetTranslationSection.swift", "Sources/YiYanUI/Views/LearningLanguageSettingsView.swift", "Sources/YiYanUI/ViewModels/AppLocalization.swift", "Sources/YiYanUI/Views/MainWindowTypography.swift", "Sources/YiYanCore/Presentation/ChineseReading.swift"]
+        source_files += [str(path.relative_to(package)) for pattern in ("*Japanese*.swift", "TargetTranslationText.swift") for path in (package / "Sources").rglob(pattern)]
         for name in NAMES:
             captures.append({
                 "source": str((folder / name).relative_to(ROOT)), "sha256": sha(folder / name),
@@ -82,6 +84,7 @@ with tempfile.TemporaryDirectory(prefix="yilo-hero-capture-") as temporary:
                 "operation": "Unmodified native RecordCardView export with a short isolated sample record, the app's extraLarge text preference, native Pinyin/Romaji and collapsed learning notes. No image text replacement, resizing or UI reconstruction. Not a full app window.",
                 "appearance": "light",
                 "captureFixtureSha256": sha(fixture), "nativeLocale": native["nativeLocale"], "nativeLabels": native["labels"],
+                "sourceLanguage": native["sourceLanguage"], "targetLanguages": native["targetLanguages"],
                 "localizationSha256": sha(package / f"Sources/YiYanUI/Resources/{tag}.lproj/Localizable.strings"),
                 "sourceFiles": {file: sha(package / file) for file in sorted(source_files)},
                 **({"recordSource": str(record.relative_to(ROOT)), "recordSha256": sha(record)} if name == "hero-record.png" else {})
@@ -89,7 +92,7 @@ with tempfile.TemporaryDirectory(prefix="yilo-hero-capture-") as temporary:
         print("Native captures exported:", tag, flush=True)
 
 receipts["yilo"] = {"checkedOn": today, "appSourceCommit": commit,
-    "sourceState": "Localized native component exports from isolated source snapshots. Original product-page records and settings are retained. Short hero samples use the native extraLarge text preference, with English-input and Chinese-input variants.",
+    "sourceState": "Localized native component exports from isolated source snapshots. Every product and hero example uses input and source settings matching its UI locale. Short hero samples use the native extraLarge text preference. Settings use disposable sample preferences.",
     "captures": sorted(captures, key=lambda capture: capture["source"])}
 receipt_path.write_text(json.dumps(receipts, ensure_ascii=False, indent=2) + "\n")
 

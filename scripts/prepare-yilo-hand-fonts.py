@@ -8,7 +8,7 @@ ROOT=Path(__file__).resolve().parents[1]
 CACHE=ROOT/'.build/yilo-fonts';CACHE.mkdir(parents=True,exist_ok=True)
 OUT=ROOT/'src/assets/fonts/yilo';OUT.mkdir(parents=True,exist_ok=True)
 text='Yilo 亦言 Lazyapps Taking it easy since 2009 Mac iPhone iPad Studio Support Privacy Press Kit Homebrew Download '
-for p in ['src/i18n/yilo-short-copy.json','src/i18n/yilo-hero-copy.json','src/i18n/yilo-locales.mjs','src/i18n/yilo-examples.json','src/i18n/yilo-demo-copy.json','src/content/presskit-glossary.json','src/components/YiloDemo.astro','src/components/YiloFeatureIllustration.astro','src/components/YiloDetailIllustration.astro']:
+for p in ['src/i18n/yilo-art-copy.json','src/i18n/yilo-short-copy.json','src/i18n/yilo-hero-copy.json','src/i18n/yilo-locales.mjs','src/i18n/yilo-examples.json','src/i18n/yilo-demo-copy.json','src/content/presskit-glossary.json','src/components/YiloDemo.astro','src/components/YiloFeatureIllustration.astro','src/components/YiloDetailIllustration.astro']:
  text+=(ROOT/p).read_text()
 requested=set(map(ord,text))
 FONTS=[
@@ -25,9 +25,11 @@ def download(item):
  if not src.exists():src.write_bytes(urllib.request.urlopen(url,timeout=60).read())
  license=(OUT/f'{key}-OFL.txt')
  if not license.exists():license.write_bytes(urllib.request.urlopen(license_url,timeout=30).read())
- font=TTFont(src)
+ font=TTFont(src,recalcTimestamp=False)
  coverage=set(font.getBestCmap())
- chars=requested&coverage
+ target=OUT/f'{key}.woff2'
+ previous=set(TTFont(target).getBestCmap()) if target.exists() else set()
+ chars=(requested|previous)&coverage
  options=subset.Options();options.name_IDs=['*'];options.name_legacy=True;options.name_languages=['*'];options.layout_features=['*']
  sub=subset.Subsetter(options=options);sub.populate(unicodes=chars);sub.subset(font)
  family='Yilo Hand '+key.title()

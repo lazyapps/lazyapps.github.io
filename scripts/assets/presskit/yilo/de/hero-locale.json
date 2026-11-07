@@ -4,7 +4,7 @@
     "advice.category.translation_pattern" : "Übersetzungsmuster",
     "advice.kind.learning_point" : "Lernpunkt",
     "language.japanese_reading.help" : "Hiragana steht über den Kanji; Romaji wird über dem jeweiligen japanischen Wort ausgerichtet.",
-    "language.notes" : "Lernnotizen",
+    "language.notes" : "Lernhinweise",
     "language.search" : "Sprachen suchen",
     "language.section" : "Lernsprachen",
     "language.targets" : "Zielsprachen",
@@ -12,5 +12,10 @@
   },
   "nativeLocale" : "de",
   "operatingSystem" : "Version 27.0.1 (Build 26A434)",
-  "requestedLocale" : "de"
+  "requestedLocale" : "de",
+  "sourceLanguage" : "de",
+  "targetLanguages" : [
+    "en",
+    "ja"
+  ]
 }

@@ -14,12 +14,23 @@ const sitemap = await readFile(`${dist}sitemap.xml`, 'utf8');
 const screenshotReview = JSON.parse(await readFile('scripts/assets/presskit/screenshot-sources.json', 'utf8')).yilo;
 const screenshotFiles = ['learning-record.png', 'learning-settings.png', 'language-selection.png'];
 const hash = bytes => createHash('sha256').update(bytes).digest('hex');
+const opengraph = JSON.parse(await readFile('scripts/assets/yilo/opengraph-source.json', 'utf8'));
+const icon = JSON.parse(await readFile('scripts/assets/yilo/AppIcon.icon/icon.json', 'utf8'));
+assert.deepEqual(opengraph.background, icon['fill-specializations'].find(item => !item.appearance).value, 'Yilo OG must reuse the native app background');
+assert.deepEqual(opengraph.size, [1200, 630]);
+assert.deepEqual(opengraph.safeRect, [285, 0, 630, 630]);
+for (const [source, sha256] of Object.entries(opengraph.sources)) assert.equal(hash(await readFile(source)), sha256, `Yilo OG source changed: ${source}`);
+for (const card of opengraph.cards) {
+  const image = await readFile(card.output);
+  assert.equal(hash(image), card.sha256, 'Yilo OG must match its source receipt');
+  assert.deepEqual([image.readUInt32BE(16), image.readUInt32BE(20)], opengraph.size);
+  const [x, y, width, height] = card.contentBounds;
+  assert(x >= 285 && y >= 0 && x + width <= 915 && y + height <= 630, 'Yilo OG brand content must fit the central square');
+}
+const presskit = JSON.parse(await readFile('public/presskit/yilo/manifest.json', 'utf8'));
+assert(!presskit.files.some(file => file.path === 'desktop-wallpaper.png'), 'Do not distribute the retired Yilo wallpaper');
+assert(!byUrl.get(`${site}/yilo/presskit/`).html.includes('desktop-wallpaper.png'), 'Do not show the retired wallpaper in the Press Kit');
 const fixtureHash = hash(await readFile('scripts/assets/yilo/capture/YiloWebsiteCapture.swift'));
-const recordHash = hash(await readFile('scripts/assets/yilo/capture/selected-record.json'));
-const englishRecord = JSON.parse(await readFile('scripts/assets/yilo/capture/english-learning-record.json', 'utf8'));
-const englishRecordHash = hash(await readFile('scripts/assets/yilo/capture/english-learning-record.json'));
-assert.equal(englishRecord.configuration.sourceLanguage, 'en');
-assert.deepEqual(englishRecord.translations.map(translation => translation.language), ['zh-Hans', 'ja']);
 assert.equal(screenshotReview.captures.length, 48, 'Yilo needs three product captures and one hero capture for each of its 12 languages');
 assert(!sitemap.includes('/yiyan/'), 'Legacy product URLs must leave the sitemap');
 for (const [from, to] of Object.entries(yiloLegacyRoutes)) {
@@ -47,7 +58,17 @@ for (const [code, locale] of Object.entries(YILO_LOCALES)) {
     const capture = screenshotReview.captures.find(capture => capture.source === source);
     assert(capture && capture.contentLanguage === page.language && capture.nativeLocale === page.language, `${code}: screenshot must use the actual matching native UI language`);
     assert.equal(capture.captureFixtureSha256, fixtureHash, 'Capture fixture changed; recapture the native screenshots');
-    if (index === 0) assert.equal(capture.recordSha256, page.language === 'en' ? englishRecordHash : recordHash, 'Use the selected record, with the requested English-page variant');
+    const samplePath = `scripts/assets/yilo/capture/records/${page.language}.json`;
+    const sample = JSON.parse(await readFile(samplePath, 'utf8'));
+    assert.equal(sample.configuration.sourceLanguage, page.language, 'Sample source must match the page language');
+    assert.equal(sample.configuration.learningNotesLanguage, page.language, 'Learning explanations must match the page language');
+    assert.equal(capture.sourceLanguage, page.language, 'Native source setting must match the page language');
+    assert.deepEqual(capture.targetLanguages, sample.translations.map(translation => translation.language), 'Settings and record targets must agree');
+    assert(!capture.targetLanguages.includes(page.language), 'Learning targets must differ from the source language');
+    if (index === 0) {
+      assert.equal(capture.recordSource, samplePath);
+      assert.equal(capture.recordSha256, hash(await readFile(samplePath)), 'Recapture localized sample content');
+    }
     const image = page.nodes.find(node => node.tagName === 'img' && attr(node, 'alt') === c.screenshots[index]);
     assert(image, `${code}: missing localized screenshot ${filename}`);
     const native = await readFile(source);

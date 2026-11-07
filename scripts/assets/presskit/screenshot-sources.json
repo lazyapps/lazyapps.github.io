@@ -935,20 +935,20 @@
   },
   "yilo": {
     "checkedOn": "2026-11-07",
-    "appSourceCommit": "473a8fac19ac6b55b9604de50d851848854be133",
-    "sourceState": "Localized native component exports from isolated source snapshots. Original product-page records and settings are retained. Short hero samples use the native extraLarge text preference, with English-input and Chinese-input variants.",
+    "appSourceCommit": "197ac0e3371e25694b1fb12a89ecb5e29f5924c5",
+    "sourceState": "Localized native component exports from isolated source snapshots. Every product and hero example uses input and source settings matching its UI locale. Short hero samples use the native extraLarge text preference. Settings use disposable sample preferences.",
     "captures": [
       {
         "source": "scripts/assets/presskit/yilo/ar/hero-record.png",
-        "sha256": "e30e9e5497b5ba96e5dd70f2c2111e5b6b8aa1c7867d23230fefb4f941f4597a",
+        "sha256": "30e4fb6ab4c8a0cc903c96d3f6ad7daaab7c5ccbdeb3e976f6a0d73c9328e318",
         "contentLanguage": "ar",
         "type": "native",
         "capturedOn": "2026-11-07",
-        "appSourceCommit": "473a8fac19ac6b55b9604de50d851848854be133",
+        "appSourceCommit": "197ac0e3371e25694b1fb12a89ecb5e29f5924c5",
         "originalSource": "scripts/assets/yilo/capture/YiloHeroCapture.swift",
         "operation": "Unmodified native RecordCardView export with a short isolated sample record, the app's extraLarge text preference, native Pinyin/Romaji and collapsed learning notes. No image text replacement, resizing or UI reconstruction. Not a full app window.",
         "appearance": "light",
-        "captureFixtureSha256": "e9fec5ac2728e71af0b2ca93742f372700d9ee4644dbfda51d21874e0cadba4c",
+        "captureFixtureSha256": "be1102272a66d16cd4647f7791ccc3198e1e2a7cc2f0adaf3d144a65b215746e",
         "nativeLocale": "ar",
         "nativeLabels": {
           "advice.category.collocation": "التلازم اللفظي",
@@ -961,35 +961,40 @@
           "language.targets": "اللغات المستهدفة",
           "record.example": "مثال"
         },
-        "localizationSha256": "2583e455cdb96e180d678096800cddf631f55bdb27e3edc421a99e51344dd86c",
+        "sourceLanguage": "ar",
+        "targetLanguages": [
+          "en",
+          "ja"
+        ],
+        "localizationSha256": "92f8f8ac8cf4e4b60b01e7c7b8f9d95394a824a129f3a7a8b0acbb399540619e",
         "sourceFiles": {
           "Sources/YiYanCore/Presentation/ChineseReading.swift": "9434540ee0608bc11e1f34b1f8cd927ad50d2fe6c80a7e79649f2cfbd2badee0",
           "Sources/YiYanCore/Presentation/JapaneseReading.swift": "a69369592104f8160a1a0f10146de68510c0e405a0946119f4335d10c0e37446",
+          "Sources/YiYanReading/TargetTranslationText.swift": "90f1725562ff8b42ec2174c00c18b8628ce1c3936dc05e8de585a55ea5fa1efb",
           "Sources/YiYanUI/ViewModels/AppLocalization.swift": "e85390f4b1e0c146d4c31b950ce2094a4514465b16ebe9ed60469baaab60f5fa",
           "Sources/YiYanUI/Views/LearningLanguageSettingsView.swift": "73dbe84f58ac61f94a0af16f0f82d02fcbc4681340f1c54dbd200942ab21f23e",
           "Sources/YiYanUI/Views/MainWindowTypography.swift": "42bc78028c1a83a6b8b3925b0afad4ec97e54056270fb654236ea26f1357a04c",
-          "Sources/YiYanUI/Views/RecordCardView.swift": "6a3aec0cf9309d5cdeffd02ab9b3d86660cc34ad269c8759af5a63a920f3ab02",
-          "Sources/YiYanUI/Views/TargetTranslationSection.swift": "a9769ee0c1929b086f7bfd9768e0f3a214d0469fb7b1fdcd9b4c3bf61b7f8cbc",
-          "Sources/YiYanUI/Views/TargetTranslationText.swift": "d0a65f1d98a4aca4ee6554aa6854765871f1e71a0b635d0d8220c4b86aaf9fe5"
+          "Sources/YiYanUI/Views/RecordCardView.swift": "aff3af1e9170132bee6483fe20024704629dfdb9a5e3a632db5ba5fb883603bd",
+          "Sources/YiYanUI/Views/TargetTranslationSection.swift": "7e262b7a6957c5270f85536db4761fbc15ad6f4417a359a479f0f91d0e0c665c"
         },
-        "recordSource": "scripts/assets/yilo/capture/hero-record-zh.json",
-        "recordSha256": "c1be5c91774667c0198a245cafdc0a6eec281f2114402972a3e102eb5f1d3d79",
+        "recordSource": "scripts/assets/yilo/capture/hero-records/ar.json",
+        "recordSha256": "3c43755d58e49ed81abfbcbd62192d6d58a36ddf6030e67dca7510964df07bec",
         "nativeTextSize": "extraLarge",
         "nativeFrameWidthPoints": 520,
         "pixelWidth": 1040,
-        "pixelHeight": 564
+        "pixelHeight": 603
       },
       {
         "source": "scripts/assets/presskit/yilo/ar/language-selection.png",
-        "sha256": "9d941c8a6fcaadc5e49dac3f1b477fd56a19838bf6a2f1635e9383b6c62a859f",
+        "sha256": "42ea38508b6da052a0a41488798bf99083ac4e3995d3539e1603c493474ba726",
         "contentLanguage": "ar",
         "type": "native",
-        "capturedOn": "2026-11-06",
-        "appSourceCommit": "473a8fac19ac6b55b9604de50d851848854be133",
+        "capturedOn": "2026-11-07",
+        "appSourceCommit": "197ac0e3371e25694b1fb12a89ecb5e29f5924c5",
         "originalSource": "scripts/assets/yilo/capture/YiloWebsiteCapture.swift",
-        "operation": "Unmodified native AppKit/SwiftUI component export using the app's own localization resources. Learning card uses the exact user-selected real record. Settings use isolated sample preferences. No image text replacement, resizing or UI reconstruction. Not a full app window.",
+        "operation": "Unmodified native AppKit/SwiftUI component export using the app's own localization resources. Sample input, source setting and learning explanations match the UI language. English learns Simplified Chinese/Japanese; Japanese learns English/Simplified Chinese; other locales learn English/Japanese. Settings use isolated sample preferences. No image text replacement, resizing or UI reconstruction. Not a full app window.",
         "appearance": "light",
-        "captureFixtureSha256": "66c5feed117a082d3b243abc765874ed4d4a64b89059e56ed7faed9e919664c7",
+        "captureFixtureSha256": "54f9461926a306a4484ba9ab8c5186517d74728a3d536d86889d7ef2c202c0fa",
         "nativeLocale": "ar",
         "nativeLabels": {
           "advice.category.collocation": "التلازم اللفظي",
@@ -1002,28 +1007,33 @@
           "language.targets": "اللغات المستهدفة",
           "record.example": "مثال"
         },
-        "localizationSha256": "2583e455cdb96e180d678096800cddf631f55bdb27e3edc421a99e51344dd86c",
+        "sourceLanguage": "ar",
+        "targetLanguages": [
+          "en",
+          "ja"
+        ],
+        "localizationSha256": "92f8f8ac8cf4e4b60b01e7c7b8f9d95394a824a129f3a7a8b0acbb399540619e",
         "sourceFiles": {
           "Sources/YiYanCore/Presentation/ChineseReading.swift": "9434540ee0608bc11e1f34b1f8cd927ad50d2fe6c80a7e79649f2cfbd2badee0",
           "Sources/YiYanCore/Presentation/JapaneseReading.swift": "a69369592104f8160a1a0f10146de68510c0e405a0946119f4335d10c0e37446",
+          "Sources/YiYanReading/TargetTranslationText.swift": "90f1725562ff8b42ec2174c00c18b8628ce1c3936dc05e8de585a55ea5fa1efb",
           "Sources/YiYanUI/ViewModels/AppLocalization.swift": "e85390f4b1e0c146d4c31b950ce2094a4514465b16ebe9ed60469baaab60f5fa",
           "Sources/YiYanUI/Views/LearningLanguageSettingsView.swift": "73dbe84f58ac61f94a0af16f0f82d02fcbc4681340f1c54dbd200942ab21f23e",
-          "Sources/YiYanUI/Views/RecordCardView.swift": "6a3aec0cf9309d5cdeffd02ab9b3d86660cc34ad269c8759af5a63a920f3ab02",
-          "Sources/YiYanUI/Views/TargetTranslationSection.swift": "a9769ee0c1929b086f7bfd9768e0f3a214d0469fb7b1fdcd9b4c3bf61b7f8cbc",
-          "Sources/YiYanUI/Views/TargetTranslationText.swift": "d0a65f1d98a4aca4ee6554aa6854765871f1e71a0b635d0d8220c4b86aaf9fe5"
+          "Sources/YiYanUI/Views/RecordCardView.swift": "aff3af1e9170132bee6483fe20024704629dfdb9a5e3a632db5ba5fb883603bd",
+          "Sources/YiYanUI/Views/TargetTranslationSection.swift": "7e262b7a6957c5270f85536db4761fbc15ad6f4417a359a479f0f91d0e0c665c"
         }
       },
       {
         "source": "scripts/assets/presskit/yilo/ar/learning-record.png",
-        "sha256": "db5c3f564f59aaf34613f8dfa7e3eb80e95487dc0800eef5d48ab402154e4ae4",
+        "sha256": "9301103218fbb9e2df8824640f397c33c04d9e1474b1940065f5b09f7f0978bd",
         "contentLanguage": "ar",
         "type": "native",
-        "capturedOn": "2026-11-06",
-        "appSourceCommit": "473a8fac19ac6b55b9604de50d851848854be133",
+        "capturedOn": "2026-11-07",
+        "appSourceCommit": "197ac0e3371e25694b1fb12a89ecb5e29f5924c5",
         "originalSource": "scripts/assets/yilo/capture/YiloWebsiteCapture.swift",
-        "operation": "Unmodified native AppKit/SwiftUI component export using the app's own localization resources. Learning card uses the exact user-selected real record. Settings use isolated sample preferences. No image text replacement, resizing or UI reconstruction. Not a full app window.",
+        "operation": "Unmodified native AppKit/SwiftUI component export using the app's own localization resources. Sample input, source setting and learning explanations match the UI language. English learns Simplified Chinese/Japanese; Japanese learns English/Simplified Chinese; other locales learn English/Japanese. Settings use isolated sample preferences. No image text replacement, resizing or UI reconstruction. Not a full app window.",
         "appearance": "dark",
-        "captureFixtureSha256": "66c5feed117a082d3b243abc765874ed4d4a64b89059e56ed7faed9e919664c7",
+        "captureFixtureSha256": "54f9461926a306a4484ba9ab8c5186517d74728a3d536d86889d7ef2c202c0fa",
         "nativeLocale": "ar",
         "nativeLabels": {
           "advice.category.collocation": "التلازم اللفظي",
@@ -1036,30 +1046,35 @@
           "language.targets": "اللغات المستهدفة",
           "record.example": "مثال"
         },
-        "localizationSha256": "2583e455cdb96e180d678096800cddf631f55bdb27e3edc421a99e51344dd86c",
+        "sourceLanguage": "ar",
+        "targetLanguages": [
+          "en",
+          "ja"
+        ],
+        "localizationSha256": "92f8f8ac8cf4e4b60b01e7c7b8f9d95394a824a129f3a7a8b0acbb399540619e",
         "sourceFiles": {
           "Sources/YiYanCore/Presentation/ChineseReading.swift": "9434540ee0608bc11e1f34b1f8cd927ad50d2fe6c80a7e79649f2cfbd2badee0",
           "Sources/YiYanCore/Presentation/JapaneseReading.swift": "a69369592104f8160a1a0f10146de68510c0e405a0946119f4335d10c0e37446",
+          "Sources/YiYanReading/TargetTranslationText.swift": "90f1725562ff8b42ec2174c00c18b8628ce1c3936dc05e8de585a55ea5fa1efb",
           "Sources/YiYanUI/ViewModels/AppLocalization.swift": "e85390f4b1e0c146d4c31b950ce2094a4514465b16ebe9ed60469baaab60f5fa",
           "Sources/YiYanUI/Views/LearningLanguageSettingsView.swift": "73dbe84f58ac61f94a0af16f0f82d02fcbc4681340f1c54dbd200942ab21f23e",
-          "Sources/YiYanUI/Views/RecordCardView.swift": "6a3aec0cf9309d5cdeffd02ab9b3d86660cc34ad269c8759af5a63a920f3ab02",
-          "Sources/YiYanUI/Views/TargetTranslationSection.swift": "a9769ee0c1929b086f7bfd9768e0f3a214d0469fb7b1fdcd9b4c3bf61b7f8cbc",
-          "Sources/YiYanUI/Views/TargetTranslationText.swift": "d0a65f1d98a4aca4ee6554aa6854765871f1e71a0b635d0d8220c4b86aaf9fe5"
+          "Sources/YiYanUI/Views/RecordCardView.swift": "aff3af1e9170132bee6483fe20024704629dfdb9a5e3a632db5ba5fb883603bd",
+          "Sources/YiYanUI/Views/TargetTranslationSection.swift": "7e262b7a6957c5270f85536db4761fbc15ad6f4417a359a479f0f91d0e0c665c"
         },
-        "recordSource": "scripts/assets/yilo/capture/selected-record.json",
-        "recordSha256": "50387fe82ecfeb5511011bd702ce14af8fd9ac90e92762ee1de5b05087097852"
+        "recordSource": "scripts/assets/yilo/capture/records/ar.json",
+        "recordSha256": "77b155e2fcba4fdcb0b5833773156b38b961b410b333da4bbf975fbe4e03c6e1"
       },
       {
         "source": "scripts/assets/presskit/yilo/ar/learning-settings.png",
-        "sha256": "de2be54a73a3d4d7a4fb8a2c086c9e73e3d9b6cecd714e0293567fbb9dd07b9b",
+        "sha256": "89daa16e560ec89fadfd78f3b03943630d4ded53ceb33857604f75faa7800730",
         "contentLanguage": "ar",
         "type": "native",
-        "capturedOn": "2026-11-06",
-        "appSourceCommit": "473a8fac19ac6b55b9604de50d851848854be133",
+        "capturedOn": "2026-11-07",
+        "appSourceCommit": "197ac0e3371e25694b1fb12a89ecb5e29f5924c5",
         "originalSource": "scripts/assets/yilo/capture/YiloWebsiteCapture.swift",
-        "operation": "Unmodified native AppKit/SwiftUI component export using the app's own localization resources. Learning card uses the exact user-selected real record. Settings use isolated sample preferences. No image text replacement, resizing or UI reconstruction. Not a full app window.",
+        "operation": "Unmodified native AppKit/SwiftUI component export using the app's own localization resources. Sample input, source setting and learning explanations match the UI language. English learns Simplified Chinese/Japanese; Japanese learns English/Simplified Chinese; other locales learn English/Japanese. Settings use isolated sample preferences. No image text replacement, resizing or UI reconstruction. Not a full app window.",
         "appearance": "light",
-        "captureFixtureSha256": "66c5feed117a082d3b243abc765874ed4d4a64b89059e56ed7faed9e919664c7",
+        "captureFixtureSha256": "54f9461926a306a4484ba9ab8c5186517d74728a3d536d86889d7ef2c202c0fa",
         "nativeLocale": "ar",
         "nativeLabels": {
           "advice.category.collocation": "التلازم اللفظي",
@@ -1072,173 +1087,198 @@
           "language.targets": "اللغات المستهدفة",
           "record.example": "مثال"
         },
-        "localizationSha256": "2583e455cdb96e180d678096800cddf631f55bdb27e3edc421a99e51344dd86c",
+        "sourceLanguage": "ar",
+        "targetLanguages": [
+          "en",
+          "ja"
+        ],
+        "localizationSha256": "92f8f8ac8cf4e4b60b01e7c7b8f9d95394a824a129f3a7a8b0acbb399540619e",
         "sourceFiles": {
           "Sources/YiYanCore/Presentation/ChineseReading.swift": "9434540ee0608bc11e1f34b1f8cd927ad50d2fe6c80a7e79649f2cfbd2badee0",
           "Sources/YiYanCore/Presentation/JapaneseReading.swift": "a69369592104f8160a1a0f10146de68510c0e405a0946119f4335d10c0e37446",
+          "Sources/YiYanReading/TargetTranslationText.swift": "90f1725562ff8b42ec2174c00c18b8628ce1c3936dc05e8de585a55ea5fa1efb",
           "Sources/YiYanUI/ViewModels/AppLocalization.swift": "e85390f4b1e0c146d4c31b950ce2094a4514465b16ebe9ed60469baaab60f5fa",
           "Sources/YiYanUI/Views/LearningLanguageSettingsView.swift": "73dbe84f58ac61f94a0af16f0f82d02fcbc4681340f1c54dbd200942ab21f23e",
-          "Sources/YiYanUI/Views/RecordCardView.swift": "6a3aec0cf9309d5cdeffd02ab9b3d86660cc34ad269c8759af5a63a920f3ab02",
-          "Sources/YiYanUI/Views/TargetTranslationSection.swift": "a9769ee0c1929b086f7bfd9768e0f3a214d0469fb7b1fdcd9b4c3bf61b7f8cbc",
-          "Sources/YiYanUI/Views/TargetTranslationText.swift": "d0a65f1d98a4aca4ee6554aa6854765871f1e71a0b635d0d8220c4b86aaf9fe5"
+          "Sources/YiYanUI/Views/RecordCardView.swift": "aff3af1e9170132bee6483fe20024704629dfdb9a5e3a632db5ba5fb883603bd",
+          "Sources/YiYanUI/Views/TargetTranslationSection.swift": "7e262b7a6957c5270f85536db4761fbc15ad6f4417a359a479f0f91d0e0c665c"
         }
       },
       {
         "source": "scripts/assets/presskit/yilo/de/hero-record.png",
-        "sha256": "48b249ecd4f2431770f30a37d58e6126c083dafb210ef4748868f10b0aadede4",
+        "sha256": "148b6bd57e091bb8d9def74cbc283900cfe134265580bbb18e0a449711de5c3e",
         "contentLanguage": "de",
         "type": "native",
         "capturedOn": "2026-11-07",
-        "appSourceCommit": "473a8fac19ac6b55b9604de50d851848854be133",
+        "appSourceCommit": "197ac0e3371e25694b1fb12a89ecb5e29f5924c5",
         "originalSource": "scripts/assets/yilo/capture/YiloHeroCapture.swift",
         "operation": "Unmodified native RecordCardView export with a short isolated sample record, the app's extraLarge text preference, native Pinyin/Romaji and collapsed learning notes. No image text replacement, resizing or UI reconstruction. Not a full app window.",
         "appearance": "light",
-        "captureFixtureSha256": "e9fec5ac2728e71af0b2ca93742f372700d9ee4644dbfda51d21874e0cadba4c",
+        "captureFixtureSha256": "be1102272a66d16cd4647f7791ccc3198e1e2a7cc2f0adaf3d144a65b215746e",
         "nativeLocale": "de",
         "nativeLabels": {
           "advice.category.collocation": "Kollokation",
           "advice.category.translation_pattern": "Übersetzungsmuster",
           "advice.kind.learning_point": "Lernpunkt",
           "language.japanese_reading.help": "Hiragana steht über den Kanji; Romaji wird über dem jeweiligen japanischen Wort ausgerichtet.",
-          "language.notes": "Lernnotizen",
+          "language.notes": "Lernhinweise",
           "language.search": "Sprachen suchen",
           "language.section": "Lernsprachen",
           "language.targets": "Zielsprachen",
           "record.example": "Beispiel"
         },
-        "localizationSha256": "18734605a31e3916ebe146545b4620d86ba1088f68c5618d291552d8715c82db",
+        "sourceLanguage": "de",
+        "targetLanguages": [
+          "en",
+          "ja"
+        ],
+        "localizationSha256": "d3377f0af79be259dd6e44fcb3fab020b95eac8d08efd5804e545fb75f20917a",
         "sourceFiles": {
           "Sources/YiYanCore/Presentation/ChineseReading.swift": "9434540ee0608bc11e1f34b1f8cd927ad50d2fe6c80a7e79649f2cfbd2badee0",
           "Sources/YiYanCore/Presentation/JapaneseReading.swift": "a69369592104f8160a1a0f10146de68510c0e405a0946119f4335d10c0e37446",
+          "Sources/YiYanReading/TargetTranslationText.swift": "90f1725562ff8b42ec2174c00c18b8628ce1c3936dc05e8de585a55ea5fa1efb",
           "Sources/YiYanUI/ViewModels/AppLocalization.swift": "e85390f4b1e0c146d4c31b950ce2094a4514465b16ebe9ed60469baaab60f5fa",
           "Sources/YiYanUI/Views/LearningLanguageSettingsView.swift": "73dbe84f58ac61f94a0af16f0f82d02fcbc4681340f1c54dbd200942ab21f23e",
           "Sources/YiYanUI/Views/MainWindowTypography.swift": "42bc78028c1a83a6b8b3925b0afad4ec97e54056270fb654236ea26f1357a04c",
-          "Sources/YiYanUI/Views/RecordCardView.swift": "6a3aec0cf9309d5cdeffd02ab9b3d86660cc34ad269c8759af5a63a920f3ab02",
-          "Sources/YiYanUI/Views/TargetTranslationSection.swift": "a9769ee0c1929b086f7bfd9768e0f3a214d0469fb7b1fdcd9b4c3bf61b7f8cbc",
-          "Sources/YiYanUI/Views/TargetTranslationText.swift": "d0a65f1d98a4aca4ee6554aa6854765871f1e71a0b635d0d8220c4b86aaf9fe5"
+          "Sources/YiYanUI/Views/RecordCardView.swift": "aff3af1e9170132bee6483fe20024704629dfdb9a5e3a632db5ba5fb883603bd",
+          "Sources/YiYanUI/Views/TargetTranslationSection.swift": "7e262b7a6957c5270f85536db4761fbc15ad6f4417a359a479f0f91d0e0c665c"
         },
-        "recordSource": "scripts/assets/yilo/capture/hero-record-zh.json",
-        "recordSha256": "c1be5c91774667c0198a245cafdc0a6eec281f2114402972a3e102eb5f1d3d79",
+        "recordSource": "scripts/assets/yilo/capture/hero-records/de.json",
+        "recordSha256": "aa9693791f893550f19bdf83944c0a988559328f1baa2c049ee1cf8445a7701f",
         "nativeTextSize": "extraLarge",
         "nativeFrameWidthPoints": 520,
         "pixelWidth": 1040,
-        "pixelHeight": 564
+        "pixelHeight": 603
       },
       {
         "source": "scripts/assets/presskit/yilo/de/language-selection.png",
-        "sha256": "7fba7b958c8a8aa258b25d994c942b4e36fa4027ad0dc64541860b0e33c4640f",
+        "sha256": "a5ff708349a8c997c78a723ce66382c5b48afcee3ad5965a864eeae1902baaf3",
         "contentLanguage": "de",
         "type": "native",
-        "capturedOn": "2026-11-06",
-        "appSourceCommit": "473a8fac19ac6b55b9604de50d851848854be133",
+        "capturedOn": "2026-11-07",
+        "appSourceCommit": "197ac0e3371e25694b1fb12a89ecb5e29f5924c5",
         "originalSource": "scripts/assets/yilo/capture/YiloWebsiteCapture.swift",
-        "operation": "Unmodified native AppKit/SwiftUI component export using the app's own localization resources. Learning card uses the exact user-selected real record. Settings use isolated sample preferences. No image text replacement, resizing or UI reconstruction. Not a full app window.",
+        "operation": "Unmodified native AppKit/SwiftUI component export using the app's own localization resources. Sample input, source setting and learning explanations match the UI language. English learns Simplified Chinese/Japanese; Japanese learns English/Simplified Chinese; other locales learn English/Japanese. Settings use isolated sample preferences. No image text replacement, resizing or UI reconstruction. Not a full app window.",
         "appearance": "light",
-        "captureFixtureSha256": "66c5feed117a082d3b243abc765874ed4d4a64b89059e56ed7faed9e919664c7",
+        "captureFixtureSha256": "54f9461926a306a4484ba9ab8c5186517d74728a3d536d86889d7ef2c202c0fa",
         "nativeLocale": "de",
         "nativeLabels": {
           "advice.category.collocation": "Kollokation",
           "advice.category.translation_pattern": "Übersetzungsmuster",
           "advice.kind.learning_point": "Lernpunkt",
           "language.japanese_reading.help": "Hiragana steht über den Kanji; Romaji wird über dem jeweiligen japanischen Wort ausgerichtet.",
-          "language.notes": "Lernnotizen",
+          "language.notes": "Lernhinweise",
           "language.search": "Sprachen suchen",
           "language.section": "Lernsprachen",
           "language.targets": "Zielsprachen",
           "record.example": "Beispiel"
         },
-        "localizationSha256": "18734605a31e3916ebe146545b4620d86ba1088f68c5618d291552d8715c82db",
+        "sourceLanguage": "de",
+        "targetLanguages": [
+          "en",
+          "ja"
+        ],
+        "localizationSha256": "d3377f0af79be259dd6e44fcb3fab020b95eac8d08efd5804e545fb75f20917a",
         "sourceFiles": {
           "Sources/YiYanCore/Presentation/ChineseReading.swift": "9434540ee0608bc11e1f34b1f8cd927ad50d2fe6c80a7e79649f2cfbd2badee0",
           "Sources/YiYanCore/Presentation/JapaneseReading.swift": "a69369592104f8160a1a0f10146de68510c0e405a0946119f4335d10c0e37446",
+          "Sources/YiYanReading/TargetTranslationText.swift": "90f1725562ff8b42ec2174c00c18b8628ce1c3936dc05e8de585a55ea5fa1efb",
           "Sources/YiYanUI/ViewModels/AppLocalization.swift": "e85390f4b1e0c146d4c31b950ce2094a4514465b16ebe9ed60469baaab60f5fa",
           "Sources/YiYanUI/Views/LearningLanguageSettingsView.swift": "73dbe84f58ac61f94a0af16f0f82d02fcbc4681340f1c54dbd200942ab21f23e",
-          "Sources/YiYanUI/Views/RecordCardView.swift": "6a3aec0cf9309d5cdeffd02ab9b3d86660cc34ad269c8759af5a63a920f3ab02",
-          "Sources/YiYanUI/Views/TargetTranslationSection.swift": "a9769ee0c1929b086f7bfd9768e0f3a214d0469fb7b1fdcd9b4c3bf61b7f8cbc",
-          "Sources/YiYanUI/Views/TargetTranslationText.swift": "d0a65f1d98a4aca4ee6554aa6854765871f1e71a0b635d0d8220c4b86aaf9fe5"
+          "Sources/YiYanUI/Views/RecordCardView.swift": "aff3af1e9170132bee6483fe20024704629dfdb9a5e3a632db5ba5fb883603bd",
+          "Sources/YiYanUI/Views/TargetTranslationSection.swift": "7e262b7a6957c5270f85536db4761fbc15ad6f4417a359a479f0f91d0e0c665c"
         }
       },
       {
         "source": "scripts/assets/presskit/yilo/de/learning-record.png",
-        "sha256": "aff5ae09543068acc7b41c393d4972ca966bf4ab3cd1090693fe50735d60baee",
+        "sha256": "778c786566dcedf00d0c59ef618240100d13494ba2053ddb2e8e550e4141da77",
         "contentLanguage": "de",
         "type": "native",
-        "capturedOn": "2026-11-06",
-        "appSourceCommit": "473a8fac19ac6b55b9604de50d851848854be133",
+        "capturedOn": "2026-11-07",
+        "appSourceCommit": "197ac0e3371e25694b1fb12a89ecb5e29f5924c5",
         "originalSource": "scripts/assets/yilo/capture/YiloWebsiteCapture.swift",
-        "operation": "Unmodified native AppKit/SwiftUI component export using the app's own localization resources. Learning card uses the exact user-selected real record. Settings use isolated sample preferences. No image text replacement, resizing or UI reconstruction. Not a full app window.",
+        "operation": "Unmodified native AppKit/SwiftUI component export using the app's own localization resources. Sample input, source setting and learning explanations match the UI language. English learns Simplified Chinese/Japanese; Japanese learns English/Simplified Chinese; other locales learn English/Japanese. Settings use isolated sample preferences. No image text replacement, resizing or UI reconstruction. Not a full app window.",
         "appearance": "dark",
-        "captureFixtureSha256": "66c5feed117a082d3b243abc765874ed4d4a64b89059e56ed7faed9e919664c7",
+        "captureFixtureSha256": "54f9461926a306a4484ba9ab8c5186517d74728a3d536d86889d7ef2c202c0fa",
         "nativeLocale": "de",
         "nativeLabels": {
           "advice.category.collocation": "Kollokation",
           "advice.category.translation_pattern": "Übersetzungsmuster",
           "advice.kind.learning_point": "Lernpunkt",
           "language.japanese_reading.help": "Hiragana steht über den Kanji; Romaji wird über dem jeweiligen japanischen Wort ausgerichtet.",
-          "language.notes": "Lernnotizen",
+          "language.notes": "Lernhinweise",
           "language.search": "Sprachen suchen",
           "language.section": "Lernsprachen",
           "language.targets": "Zielsprachen",
           "record.example": "Beispiel"
         },
-        "localizationSha256": "18734605a31e3916ebe146545b4620d86ba1088f68c5618d291552d8715c82db",
+        "sourceLanguage": "de",
+        "targetLanguages": [
+          "en",
+          "ja"
+        ],
+        "localizationSha256": "d3377f0af79be259dd6e44fcb3fab020b95eac8d08efd5804e545fb75f20917a",
         "sourceFiles": {
           "Sources/YiYanCore/Presentation/ChineseReading.swift": "9434540ee0608bc11e1f34b1f8cd927ad50d2fe6c80a7e79649f2cfbd2badee0",
           "Sources/YiYanCore/Presentation/JapaneseReading.swift": "a69369592104f8160a1a0f10146de68510c0e405a0946119f4335d10c0e37446",
+          "Sources/YiYanReading/TargetTranslationText.swift": "90f1725562ff8b42ec2174c00c18b8628ce1c3936dc05e8de585a55ea5fa1efb",
           "Sources/YiYanUI/ViewModels/AppLocalization.swift": "e85390f4b1e0c146d4c31b950ce2094a4514465b16ebe9ed60469baaab60f5fa",
           "Sources/YiYanUI/Views/LearningLanguageSettingsView.swift": "73dbe84f58ac61f94a0af16f0f82d02fcbc4681340f1c54dbd200942ab21f23e",
-          "Sources/YiYanUI/Views/RecordCardView.swift": "6a3aec0cf9309d5cdeffd02ab9b3d86660cc34ad269c8759af5a63a920f3ab02",
-          "Sources/YiYanUI/Views/TargetTranslationSection.swift": "a9769ee0c1929b086f7bfd9768e0f3a214d0469fb7b1fdcd9b4c3bf61b7f8cbc",
-          "Sources/YiYanUI/Views/TargetTranslationText.swift": "d0a65f1d98a4aca4ee6554aa6854765871f1e71a0b635d0d8220c4b86aaf9fe5"
+          "Sources/YiYanUI/Views/RecordCardView.swift": "aff3af1e9170132bee6483fe20024704629dfdb9a5e3a632db5ba5fb883603bd",
+          "Sources/YiYanUI/Views/TargetTranslationSection.swift": "7e262b7a6957c5270f85536db4761fbc15ad6f4417a359a479f0f91d0e0c665c"
         },
-        "recordSource": "scripts/assets/yilo/capture/selected-record.json",
-        "recordSha256": "50387fe82ecfeb5511011bd702ce14af8fd9ac90e92762ee1de5b05087097852"
+        "recordSource": "scripts/assets/yilo/capture/records/de.json",
+        "recordSha256": "7a4c2e865a4805cb7cbca744127a207f165b657004ebcea39b31248f9c9889f6"
       },
       {
         "source": "scripts/assets/presskit/yilo/de/learning-settings.png",
-        "sha256": "21c8677e2d9702c57840a26a1cc79890e9a22fe1b70dff191e9f473b2acc113c",
+        "sha256": "a528b1b307ba5ae8d95bd1af4203d836a2a9b8ed8ecbb910ae5f598c43fa3fc0",
         "contentLanguage": "de",
         "type": "native",
-        "capturedOn": "2026-11-06",
-        "appSourceCommit": "473a8fac19ac6b55b9604de50d851848854be133",
+        "capturedOn": "2026-11-07",
+        "appSourceCommit": "197ac0e3371e25694b1fb12a89ecb5e29f5924c5",
         "originalSource": "scripts/assets/yilo/capture/YiloWebsiteCapture.swift",
-        "operation": "Unmodified native AppKit/SwiftUI component export using the app's own localization resources. Learning card uses the exact user-selected real record. Settings use isolated sample preferences. No image text replacement, resizing or UI reconstruction. Not a full app window.",
+        "operation": "Unmodified native AppKit/SwiftUI component export using the app's own localization resources. Sample input, source setting and learning explanations match the UI language. English learns Simplified Chinese/Japanese; Japanese learns English/Simplified Chinese; other locales learn English/Japanese. Settings use isolated sample preferences. No image text replacement, resizing or UI reconstruction. Not a full app window.",
         "appearance": "light",
-        "captureFixtureSha256": "66c5feed117a082d3b243abc765874ed4d4a64b89059e56ed7faed9e919664c7",
+        "captureFixtureSha256": "54f9461926a306a4484ba9ab8c5186517d74728a3d536d86889d7ef2c202c0fa",
         "nativeLocale": "de",
         "nativeLabels": {
           "advice.category.collocation": "Kollokation",
           "advice.category.translation_pattern": "Übersetzungsmuster",
           "advice.kind.learning_point": "Lernpunkt",
           "language.japanese_reading.help": "Hiragana steht über den Kanji; Romaji wird über dem jeweiligen japanischen Wort ausgerichtet.",
-          "language.notes": "Lernnotizen",
+          "language.notes": "Lernhinweise",
           "language.search": "Sprachen suchen",
           "language.section": "Lernsprachen",
           "language.targets": "Zielsprachen",
           "record.example": "Beispiel"
         },
-        "localizationSha256": "18734605a31e3916ebe146545b4620d86ba1088f68c5618d291552d8715c82db",
+        "sourceLanguage": "de",
+        "targetLanguages": [
+          "en",
+          "ja"
+        ],
+        "localizationSha256": "d3377f0af79be259dd6e44fcb3fab020b95eac8d08efd5804e545fb75f20917a",
         "sourceFiles": {
           "Sources/YiYanCore/Presentation/ChineseReading.swift": "9434540ee0608bc11e1f34b1f8cd927ad50d2fe6c80a7e79649f2cfbd2badee0",
           "Sources/YiYanCore/Presentation/JapaneseReading.swift": "a69369592104f8160a1a0f10146de68510c0e405a0946119f4335d10c0e37446",
+          "Sources/YiYanReading/TargetTranslationText.swift": "90f1725562ff8b42ec2174c00c18b8628ce1c3936dc05e8de585a55ea5fa1efb",
           "Sources/YiYanUI/ViewModels/AppLocalization.swift": "e85390f4b1e0c146d4c31b950ce2094a4514465b16ebe9ed60469baaab60f5fa",
           "Sources/YiYanUI/Views/LearningLanguageSettingsView.swift": "73dbe84f58ac61f94a0af16f0f82d02fcbc4681340f1c54dbd200942ab21f23e",
-          "Sources/YiYanUI/Views/RecordCardView.swift": "6a3aec0cf9309d5cdeffd02ab9b3d86660cc34ad269c8759af5a63a920f3ab02",
-          "Sources/YiYanUI/Views/TargetTranslationSection.swift": "a9769ee0c1929b086f7bfd9768e0f3a214d0469fb7b1fdcd9b4c3bf61b7f8cbc",
-          "Sources/YiYanUI/Views/TargetTranslationText.swift": "d0a65f1d98a4aca4ee6554aa6854765871f1e71a0b635d0d8220c4b86aaf9fe5"
+          "Sources/YiYanUI/Views/RecordCardView.swift": "aff3af1e9170132bee6483fe20024704629dfdb9a5e3a632db5ba5fb883603bd",
+          "Sources/YiYanUI/Views/TargetTranslationSection.swift": "7e262b7a6957c5270f85536db4761fbc15ad6f4417a359a479f0f91d0e0c665c"
         }
       },
       {
         "source": "scripts/assets/presskit/yilo/en/hero-record.png",
-        "sha256": "9eb09db1ac1dd94a81022ad13614590ff2989ae8e4db2aa0d680e03db5b67f14",
+        "sha256": "d50d35eb348ee2badd4c7e8a345535c681703a46773048d9098edc8d9758bed8",
         "contentLanguage": "en",
         "type": "native",
         "capturedOn": "2026-11-07",
-        "appSourceCommit": "473a8fac19ac6b55b9604de50d851848854be133",
+        "appSourceCommit": "197ac0e3371e25694b1fb12a89ecb5e29f5924c5",
         "originalSource": "scripts/assets/yilo/capture/YiloHeroCapture.swift",
         "operation": "Unmodified native RecordCardView export with a short isolated sample record, the app's extraLarge text preference, native Pinyin/Romaji and collapsed learning notes. No image text replacement, resizing or UI reconstruction. Not a full app window.",
         "appearance": "light",
-        "captureFixtureSha256": "e9fec5ac2728e71af0b2ca93742f372700d9ee4644dbfda51d21874e0cadba4c",
+        "captureFixtureSha256": "be1102272a66d16cd4647f7791ccc3198e1e2a7cc2f0adaf3d144a65b215746e",
         "nativeLocale": "en",
         "nativeLabels": {
           "advice.category.collocation": "Collocation",
@@ -1251,35 +1291,40 @@
           "language.targets": "Target Languages",
           "record.example": "Example"
         },
-        "localizationSha256": "300a231384113add967b7b0c410ebcb20bc461b78be44cc61687b2e4db4b005a",
+        "sourceLanguage": "en",
+        "targetLanguages": [
+          "zh-Hans",
+          "ja"
+        ],
+        "localizationSha256": "f8b157632e8f6b804483de9c99c9c7ba978f8f435bc439c27b619bd9c3b971a1",
         "sourceFiles": {
           "Sources/YiYanCore/Presentation/ChineseReading.swift": "9434540ee0608bc11e1f34b1f8cd927ad50d2fe6c80a7e79649f2cfbd2badee0",
           "Sources/YiYanCore/Presentation/JapaneseReading.swift": "a69369592104f8160a1a0f10146de68510c0e405a0946119f4335d10c0e37446",
+          "Sources/YiYanReading/TargetTranslationText.swift": "90f1725562ff8b42ec2174c00c18b8628ce1c3936dc05e8de585a55ea5fa1efb",
           "Sources/YiYanUI/ViewModels/AppLocalization.swift": "e85390f4b1e0c146d4c31b950ce2094a4514465b16ebe9ed60469baaab60f5fa",
           "Sources/YiYanUI/Views/LearningLanguageSettingsView.swift": "73dbe84f58ac61f94a0af16f0f82d02fcbc4681340f1c54dbd200942ab21f23e",
           "Sources/YiYanUI/Views/MainWindowTypography.swift": "42bc78028c1a83a6b8b3925b0afad4ec97e54056270fb654236ea26f1357a04c",
-          "Sources/YiYanUI/Views/RecordCardView.swift": "6a3aec0cf9309d5cdeffd02ab9b3d86660cc34ad269c8759af5a63a920f3ab02",
-          "Sources/YiYanUI/Views/TargetTranslationSection.swift": "a9769ee0c1929b086f7bfd9768e0f3a214d0469fb7b1fdcd9b4c3bf61b7f8cbc",
-          "Sources/YiYanUI/Views/TargetTranslationText.swift": "d0a65f1d98a4aca4ee6554aa6854765871f1e71a0b635d0d8220c4b86aaf9fe5"
+          "Sources/YiYanUI/Views/RecordCardView.swift": "aff3af1e9170132bee6483fe20024704629dfdb9a5e3a632db5ba5fb883603bd",
+          "Sources/YiYanUI/Views/TargetTranslationSection.swift": "7e262b7a6957c5270f85536db4761fbc15ad6f4417a359a479f0f91d0e0c665c"
         },
-        "recordSource": "scripts/assets/yilo/capture/hero-record-en.json",
-        "recordSha256": "65a661032e206d7387aacc937c3dd277f93a2ab1ab58e65e9d357dd7ad78865a",
+        "recordSource": "scripts/assets/yilo/capture/hero-records/en.json",
+        "recordSha256": "099eaaa1beea113aebb9edc61d041b798c9f26ef1e1ae4033e4a1bc486a1a4b9",
         "nativeTextSize": "extraLarge",
         "nativeFrameWidthPoints": 520,
         "pixelWidth": 1040,
-        "pixelHeight": 622
+        "pixelHeight": 661
       },
       {
         "source": "scripts/assets/presskit/yilo/en/language-selection.png",
         "sha256": "2f95314395103ab1d1418a2acfea6e2c90a4233f711c14836b808457012c5f13",
         "contentLanguage": "en",
         "type": "native",
-        "capturedOn": "2026-11-06",
-        "appSourceCommit": "473a8fac19ac6b55b9604de50d851848854be133",
+        "capturedOn": "2026-11-07",
+        "appSourceCommit": "197ac0e3371e25694b1fb12a89ecb5e29f5924c5",
         "originalSource": "scripts/assets/yilo/capture/YiloWebsiteCapture.swift",
-        "operation": "Unmodified native AppKit/SwiftUI component export using the app's own localization resources. English uses the user-requested example: English input, Simplified Chinese/Japanese outputs, native Pinyin above Simplified Chinese words, and English explanations. Settings use isolated sample preferences. No image text replacement, resizing or UI reconstruction. Not a full app window.",
+        "operation": "Unmodified native AppKit/SwiftUI component export using the app's own localization resources. Sample input, source setting and learning explanations match the UI language. English learns Simplified Chinese/Japanese; Japanese learns English/Simplified Chinese; other locales learn English/Japanese. Settings use isolated sample preferences. No image text replacement, resizing or UI reconstruction. Not a full app window.",
         "appearance": "light",
-        "captureFixtureSha256": "66c5feed117a082d3b243abc765874ed4d4a64b89059e56ed7faed9e919664c7",
+        "captureFixtureSha256": "54f9461926a306a4484ba9ab8c5186517d74728a3d536d86889d7ef2c202c0fa",
         "nativeLocale": "en",
         "nativeLabels": {
           "advice.category.collocation": "Collocation",
@@ -1292,28 +1337,33 @@
           "language.targets": "Target Languages",
           "record.example": "Example"
         },
-        "localizationSha256": "300a231384113add967b7b0c410ebcb20bc461b78be44cc61687b2e4db4b005a",
+        "sourceLanguage": "en",
+        "targetLanguages": [
+          "zh-Hans",
+          "ja"
+        ],
+        "localizationSha256": "f8b157632e8f6b804483de9c99c9c7ba978f8f435bc439c27b619bd9c3b971a1",
         "sourceFiles": {
           "Sources/YiYanCore/Presentation/ChineseReading.swift": "9434540ee0608bc11e1f34b1f8cd927ad50d2fe6c80a7e79649f2cfbd2badee0",
           "Sources/YiYanCore/Presentation/JapaneseReading.swift": "a69369592104f8160a1a0f10146de68510c0e405a0946119f4335d10c0e37446",
+          "Sources/YiYanReading/TargetTranslationText.swift": "90f1725562ff8b42ec2174c00c18b8628ce1c3936dc05e8de585a55ea5fa1efb",
           "Sources/YiYanUI/ViewModels/AppLocalization.swift": "e85390f4b1e0c146d4c31b950ce2094a4514465b16ebe9ed60469baaab60f5fa",
           "Sources/YiYanUI/Views/LearningLanguageSettingsView.swift": "73dbe84f58ac61f94a0af16f0f82d02fcbc4681340f1c54dbd200942ab21f23e",
-          "Sources/YiYanUI/Views/RecordCardView.swift": "6a3aec0cf9309d5cdeffd02ab9b3d86660cc34ad269c8759af5a63a920f3ab02",
-          "Sources/YiYanUI/Views/TargetTranslationSection.swift": "a9769ee0c1929b086f7bfd9768e0f3a214d0469fb7b1fdcd9b4c3bf61b7f8cbc",
-          "Sources/YiYanUI/Views/TargetTranslationText.swift": "d0a65f1d98a4aca4ee6554aa6854765871f1e71a0b635d0d8220c4b86aaf9fe5"
+          "Sources/YiYanUI/Views/RecordCardView.swift": "aff3af1e9170132bee6483fe20024704629dfdb9a5e3a632db5ba5fb883603bd",
+          "Sources/YiYanUI/Views/TargetTranslationSection.swift": "7e262b7a6957c5270f85536db4761fbc15ad6f4417a359a479f0f91d0e0c665c"
         }
       },
       {
         "source": "scripts/assets/presskit/yilo/en/learning-record.png",
-        "sha256": "6965b8e45df33a112a8e4a384bacbc7065e8a9fa487d4cf725a627ff437ef759",
+        "sha256": "dc3421e30dca7c104c7839a9e014953d97f52fbb200bcead13ff0906bfa2193b",
         "contentLanguage": "en",
         "type": "native",
-        "capturedOn": "2026-11-06",
-        "appSourceCommit": "473a8fac19ac6b55b9604de50d851848854be133",
+        "capturedOn": "2026-11-07",
+        "appSourceCommit": "197ac0e3371e25694b1fb12a89ecb5e29f5924c5",
         "originalSource": "scripts/assets/yilo/capture/YiloWebsiteCapture.swift",
-        "operation": "Unmodified native AppKit/SwiftUI component export using the app's own localization resources. English uses the user-requested example: English input, Simplified Chinese/Japanese outputs, native Pinyin above Simplified Chinese words, and English explanations. Settings use isolated sample preferences. No image text replacement, resizing or UI reconstruction. Not a full app window.",
+        "operation": "Unmodified native AppKit/SwiftUI component export using the app's own localization resources. Sample input, source setting and learning explanations match the UI language. English learns Simplified Chinese/Japanese; Japanese learns English/Simplified Chinese; other locales learn English/Japanese. Settings use isolated sample preferences. No image text replacement, resizing or UI reconstruction. Not a full app window.",
         "appearance": "dark",
-        "captureFixtureSha256": "66c5feed117a082d3b243abc765874ed4d4a64b89059e56ed7faed9e919664c7",
+        "captureFixtureSha256": "54f9461926a306a4484ba9ab8c5186517d74728a3d536d86889d7ef2c202c0fa",
         "nativeLocale": "en",
         "nativeLabels": {
           "advice.category.collocation": "Collocation",
@@ -1326,30 +1376,35 @@
           "language.targets": "Target Languages",
           "record.example": "Example"
         },
-        "localizationSha256": "300a231384113add967b7b0c410ebcb20bc461b78be44cc61687b2e4db4b005a",
+        "sourceLanguage": "en",
+        "targetLanguages": [
+          "zh-Hans",
+          "ja"
+        ],
+        "localizationSha256": "f8b157632e8f6b804483de9c99c9c7ba978f8f435bc439c27b619bd9c3b971a1",
         "sourceFiles": {
           "Sources/YiYanCore/Presentation/ChineseReading.swift": "9434540ee0608bc11e1f34b1f8cd927ad50d2fe6c80a7e79649f2cfbd2badee0",
           "Sources/YiYanCore/Presentation/JapaneseReading.swift": "a69369592104f8160a1a0f10146de68510c0e405a0946119f4335d10c0e37446",
+          "Sources/YiYanReading/TargetTranslationText.swift": "90f1725562ff8b42ec2174c00c18b8628ce1c3936dc05e8de585a55ea5fa1efb",
           "Sources/YiYanUI/ViewModels/AppLocalization.swift": "e85390f4b1e0c146d4c31b950ce2094a4514465b16ebe9ed60469baaab60f5fa",
           "Sources/YiYanUI/Views/LearningLanguageSettingsView.swift": "73dbe84f58ac61f94a0af16f0f82d02fcbc4681340f1c54dbd200942ab21f23e",
-          "Sources/YiYanUI/Views/RecordCardView.swift": "6a3aec0cf9309d5cdeffd02ab9b3d86660cc34ad269c8759af5a63a920f3ab02",
-          "Sources/YiYanUI/Views/TargetTranslationSection.swift": "a9769ee0c1929b086f7bfd9768e0f3a214d0469fb7b1fdcd9b4c3bf61b7f8cbc",
-          "Sources/YiYanUI/Views/TargetTranslationText.swift": "d0a65f1d98a4aca4ee6554aa6854765871f1e71a0b635d0d8220c4b86aaf9fe5"
+          "Sources/YiYanUI/Views/RecordCardView.swift": "aff3af1e9170132bee6483fe20024704629dfdb9a5e3a632db5ba5fb883603bd",
+          "Sources/YiYanUI/Views/TargetTranslationSection.swift": "7e262b7a6957c5270f85536db4761fbc15ad6f4417a359a479f0f91d0e0c665c"
         },
-        "recordSource": "scripts/assets/yilo/capture/english-learning-record.json",
-        "recordSha256": "55a4a241c925802bdf0ac61e6d411d13afacbf5bf9cfcd4639e3b5097154d4b2"
+        "recordSource": "scripts/assets/yilo/capture/records/en.json",
+        "recordSha256": "582ddf2175be37bae38c417014adb778bf3641c5f752dfd28d330326db46f01b"
       },
       {
         "source": "scripts/assets/presskit/yilo/en/learning-settings.png",
         "sha256": "f7aad9bc84be9f3a4dadb30c3c41d3db66b8e85011101429f32051e9ff63f1b9",
         "contentLanguage": "en",
         "type": "native",
-        "capturedOn": "2026-11-06",
-        "appSourceCommit": "473a8fac19ac6b55b9604de50d851848854be133",
+        "capturedOn": "2026-11-07",
+        "appSourceCommit": "197ac0e3371e25694b1fb12a89ecb5e29f5924c5",
         "originalSource": "scripts/assets/yilo/capture/YiloWebsiteCapture.swift",
-        "operation": "Unmodified native AppKit/SwiftUI component export using the app's own localization resources. English uses the user-requested example: English input, Simplified Chinese/Japanese outputs, native Pinyin above Simplified Chinese words, and English explanations. Settings use isolated sample preferences. No image text replacement, resizing or UI reconstruction. Not a full app window.",
+        "operation": "Unmodified native AppKit/SwiftUI component export using the app's own localization resources. Sample input, source setting and learning explanations match the UI language. English learns Simplified Chinese/Japanese; Japanese learns English/Simplified Chinese; other locales learn English/Japanese. Settings use isolated sample preferences. No image text replacement, resizing or UI reconstruction. Not a full app window.",
         "appearance": "light",
-        "captureFixtureSha256": "66c5feed117a082d3b243abc765874ed4d4a64b89059e56ed7faed9e919664c7",
+        "captureFixtureSha256": "54f9461926a306a4484ba9ab8c5186517d74728a3d536d86889d7ef2c202c0fa",
         "nativeLocale": "en",
         "nativeLabels": {
           "advice.category.collocation": "Collocation",
@@ -1362,28 +1417,33 @@
           "language.targets": "Target Languages",
           "record.example": "Example"
         },
-        "localizationSha256": "300a231384113add967b7b0c410ebcb20bc461b78be44cc61687b2e4db4b005a",
+        "sourceLanguage": "en",
+        "targetLanguages": [
+          "zh-Hans",
+          "ja"
+        ],
+        "localizationSha256": "f8b157632e8f6b804483de9c99c9c7ba978f8f435bc439c27b619bd9c3b971a1",
         "sourceFiles": {
           "Sources/YiYanCore/Presentation/ChineseReading.swift": "9434540ee0608bc11e1f34b1f8cd927ad50d2fe6c80a7e79649f2cfbd2badee0",
           "Sources/YiYanCore/Presentation/JapaneseReading.swift": "a69369592104f8160a1a0f10146de68510c0e405a0946119f4335d10c0e37446",
+          "Sources/YiYanReading/TargetTranslationText.swift": "90f1725562ff8b42ec2174c00c18b8628ce1c3936dc05e8de585a55ea5fa1efb",
           "Sources/YiYanUI/ViewModels/AppLocalization.swift": "e85390f4b1e0c146d4c31b950ce2094a4514465b16ebe9ed60469baaab60f5fa",
           "Sources/YiYanUI/Views/LearningLanguageSettingsView.swift": "73dbe84f58ac61f94a0af16f0f82d02fcbc4681340f1c54dbd200942ab21f23e",
-          "Sources/YiYanUI/Views/RecordCardView.swift": "6a3aec0cf9309d5cdeffd02ab9b3d86660cc34ad269c8759af5a63a920f3ab02",
-          "Sources/YiYanUI/Views/TargetTranslationSection.swift": "a9769ee0c1929b086f7bfd9768e0f3a214d0469fb7b1fdcd9b4c3bf61b7f8cbc",
-          "Sources/YiYanUI/Views/TargetTranslationText.swift": "d0a65f1d98a4aca4ee6554aa6854765871f1e71a0b635d0d8220c4b86aaf9fe5"
+          "Sources/YiYanUI/Views/RecordCardView.swift": "aff3af1e9170132bee6483fe20024704629dfdb9a5e3a632db5ba5fb883603bd",
+          "Sources/YiYanUI/Views/TargetTranslationSection.swift": "7e262b7a6957c5270f85536db4761fbc15ad6f4417a359a479f0f91d0e0c665c"
         }
       },
       {
         "source": "scripts/assets/presskit/yilo/es/hero-record.png",
-        "sha256": "b5da2038ebfafe21e055cdeca2083f70a4295e5833bfb0722e33b4b42937c49b",
+        "sha256": "631f3371146c7c70ffda00410f6597143e9547d9831e5fa1a63bf73aa554558f",
         "contentLanguage": "es",
         "type": "native",
         "capturedOn": "2026-11-07",
-        "appSourceCommit": "473a8fac19ac6b55b9604de50d851848854be133",
+        "appSourceCommit": "197ac0e3371e25694b1fb12a89ecb5e29f5924c5",
         "originalSource": "scripts/assets/yilo/capture/YiloHeroCapture.swift",
         "operation": "Unmodified native RecordCardView export with a short isolated sample record, the app's extraLarge text preference, native Pinyin/Romaji and collapsed learning notes. No image text replacement, resizing or UI reconstruction. Not a full app window.",
         "appearance": "light",
-        "captureFixtureSha256": "e9fec5ac2728e71af0b2ca93742f372700d9ee4644dbfda51d21874e0cadba4c",
+        "captureFixtureSha256": "be1102272a66d16cd4647f7791ccc3198e1e2a7cc2f0adaf3d144a65b215746e",
         "nativeLocale": "es",
         "nativeLabels": {
           "advice.category.collocation": "Colocación",
@@ -1396,35 +1456,40 @@
           "language.targets": "Idiomas de destino",
           "record.example": "Ejemplo"
         },
-        "localizationSha256": "25f789a75776cdcfdf35c2c6e0a3b857e9be83d712e39e6a8a19bb4adaa62d75",
+        "sourceLanguage": "es",
+        "targetLanguages": [
+          "en",
+          "ja"
+        ],
+        "localizationSha256": "9fbfcd40f4b089267abe5b66a10c9cefb5f99d78580144b6386825ea812cccfb",
         "sourceFiles": {
           "Sources/YiYanCore/Presentation/ChineseReading.swift": "9434540ee0608bc11e1f34b1f8cd927ad50d2fe6c80a7e79649f2cfbd2badee0",
           "Sources/YiYanCore/Presentation/JapaneseReading.swift": "a69369592104f8160a1a0f10146de68510c0e405a0946119f4335d10c0e37446",
+          "Sources/YiYanReading/TargetTranslationText.swift": "90f1725562ff8b42ec2174c00c18b8628ce1c3936dc05e8de585a55ea5fa1efb",
           "Sources/YiYanUI/ViewModels/AppLocalization.swift": "e85390f4b1e0c146d4c31b950ce2094a4514465b16ebe9ed60469baaab60f5fa",
           "Sources/YiYanUI/Views/LearningLanguageSettingsView.swift": "73dbe84f58ac61f94a0af16f0f82d02fcbc4681340f1c54dbd200942ab21f23e",
           "Sources/YiYanUI/Views/MainWindowTypography.swift": "42bc78028c1a83a6b8b3925b0afad4ec97e54056270fb654236ea26f1357a04c",
-          "Sources/YiYanUI/Views/RecordCardView.swift": "6a3aec0cf9309d5cdeffd02ab9b3d86660cc34ad269c8759af5a63a920f3ab02",
-          "Sources/YiYanUI/Views/TargetTranslationSection.swift": "a9769ee0c1929b086f7bfd9768e0f3a214d0469fb7b1fdcd9b4c3bf61b7f8cbc",
-          "Sources/YiYanUI/Views/TargetTranslationText.swift": "d0a65f1d98a4aca4ee6554aa6854765871f1e71a0b635d0d8220c4b86aaf9fe5"
+          "Sources/YiYanUI/Views/RecordCardView.swift": "aff3af1e9170132bee6483fe20024704629dfdb9a5e3a632db5ba5fb883603bd",
+          "Sources/YiYanUI/Views/TargetTranslationSection.swift": "7e262b7a6957c5270f85536db4761fbc15ad6f4417a359a479f0f91d0e0c665c"
         },
-        "recordSource": "scripts/assets/yilo/capture/hero-record-zh.json",
-        "recordSha256": "c1be5c91774667c0198a245cafdc0a6eec281f2114402972a3e102eb5f1d3d79",
+        "recordSource": "scripts/assets/yilo/capture/hero-records/es.json",
+        "recordSha256": "745e1821fe5a8c74f402ce79857772a57041cac1d9dbe1c3cbf20b5005f7f80a",
         "nativeTextSize": "extraLarge",
         "nativeFrameWidthPoints": 520,
         "pixelWidth": 1040,
-        "pixelHeight": 564
+        "pixelHeight": 603
       },
       {
         "source": "scripts/assets/presskit/yilo/es/language-selection.png",
-        "sha256": "1c22ebc1db6e0c25a4b408b0620b80958d09d03656e334a803653cc6d88382ec",
+        "sha256": "a0c98f3a4de8305c3e9d57fe9128044eef6952d1e532082932ff3c59ec2ecffb",
         "contentLanguage": "es",
         "type": "native",
-        "capturedOn": "2026-11-06",
-        "appSourceCommit": "473a8fac19ac6b55b9604de50d851848854be133",
+        "capturedOn": "2026-11-07",
+        "appSourceCommit": "197ac0e3371e25694b1fb12a89ecb5e29f5924c5",
         "originalSource": "scripts/assets/yilo/capture/YiloWebsiteCapture.swift",
-        "operation": "Unmodified native AppKit/SwiftUI component export using the app's own localization resources. Learning card uses the exact user-selected real record. Settings use isolated sample preferences. No image text replacement, resizing or UI reconstruction. Not a full app window.",
+        "operation": "Unmodified native AppKit/SwiftUI component export using the app's own localization resources. Sample input, source setting and learning explanations match the UI language. English learns Simplified Chinese/Japanese; Japanese learns English/Simplified Chinese; other locales learn English/Japanese. Settings use isolated sample preferences. No image text replacement, resizing or UI reconstruction. Not a full app window.",
         "appearance": "light",
-        "captureFixtureSha256": "66c5feed117a082d3b243abc765874ed4d4a64b89059e56ed7faed9e919664c7",
+        "captureFixtureSha256": "54f9461926a306a4484ba9ab8c5186517d74728a3d536d86889d7ef2c202c0fa",
         "nativeLocale": "es",
         "nativeLabels": {
           "advice.category.collocation": "Colocación",
@@ -1437,28 +1502,33 @@
           "language.targets": "Idiomas de destino",
           "record.example": "Ejemplo"
         },
-        "localizationSha256": "25f789a75776cdcfdf35c2c6e0a3b857e9be83d712e39e6a8a19bb4adaa62d75",
+        "sourceLanguage": "es",
+        "targetLanguages": [
+          "en",
+          "ja"
+        ],
+        "localizationSha256": "9fbfcd40f4b089267abe5b66a10c9cefb5f99d78580144b6386825ea812cccfb",
         "sourceFiles": {
           "Sources/YiYanCore/Presentation/ChineseReading.swift": "9434540ee0608bc11e1f34b1f8cd927ad50d2fe6c80a7e79649f2cfbd2badee0",
           "Sources/YiYanCore/Presentation/JapaneseReading.swift": "a69369592104f8160a1a0f10146de68510c0e405a0946119f4335d10c0e37446",
+          "Sources/YiYanReading/TargetTranslationText.swift": "90f1725562ff8b42ec2174c00c18b8628ce1c3936dc05e8de585a55ea5fa1efb",
           "Sources/YiYanUI/ViewModels/AppLocalization.swift": "e85390f4b1e0c146d4c31b950ce2094a4514465b16ebe9ed60469baaab60f5fa",
           "Sources/YiYanUI/Views/LearningLanguageSettingsView.swift": "73dbe84f58ac61f94a0af16f0f82d02fcbc4681340f1c54dbd200942ab21f23e",
-          "Sources/YiYanUI/Views/RecordCardView.swift": "6a3aec0cf9309d5cdeffd02ab9b3d86660cc34ad269c8759af5a63a920f3ab02",
-          "Sources/YiYanUI/Views/TargetTranslationSection.swift": "a9769ee0c1929b086f7bfd9768e0f3a214d0469fb7b1fdcd9b4c3bf61b7f8cbc",
-          "Sources/YiYanUI/Views/TargetTranslationText.swift": "d0a65f1d98a4aca4ee6554aa6854765871f1e71a0b635d0d8220c4b86aaf9fe5"
+          "Sources/YiYanUI/Views/RecordCardView.swift": "aff3af1e9170132bee6483fe20024704629dfdb9a5e3a632db5ba5fb883603bd",
+          "Sources/YiYanUI/Views/TargetTranslationSection.swift": "7e262b7a6957c5270f85536db4761fbc15ad6f4417a359a479f0f91d0e0c665c"
         }
       },
       {
         "source": "scripts/assets/presskit/yilo/es/learning-record.png",
-        "sha256": "09266b2234167e6460771730826a3eb28be59b9b1ecc6354b3d3737984221b65",
+        "sha256": "b30709bb624b64459ea9c1ba32ead70dda5241d5d77c835b8ac42d1d1c623ac8",
         "contentLanguage": "es",
         "type": "native",
-        "capturedOn": "2026-11-06",
-        "appSourceCommit": "473a8fac19ac6b55b9604de50d851848854be133",
+        "capturedOn": "2026-11-07",
+        "appSourceCommit": "197ac0e3371e25694b1fb12a89ecb5e29f5924c5",
         "originalSource": "scripts/assets/yilo/capture/YiloWebsiteCapture.swift",
-        "operation": "Unmodified native AppKit/SwiftUI component export using the app's own localization resources. Learning card uses the exact user-selected real record. Settings use isolated sample preferences. No image text replacement, resizing or UI reconstruction. Not a full app window.",
+        "operation": "Unmodified native AppKit/SwiftUI component export using the app's own localization resources. Sample input, source setting and learning explanations match the UI language. English learns Simplified Chinese/Japanese; Japanese learns English/Simplified Chinese; other locales learn English/Japanese. Settings use isolated sample preferences. No image text replacement, resizing or UI reconstruction. Not a full app window.",
         "appearance": "dark",
-        "captureFixtureSha256": "66c5feed117a082d3b243abc765874ed4d4a64b89059e56ed7faed9e919664c7",
+        "captureFixtureSha256": "54f9461926a306a4484ba9ab8c5186517d74728a3d536d86889d7ef2c202c0fa",
         "nativeLocale": "es",
         "nativeLabels": {
           "advice.category.collocation": "Colocación",
@@ -1471,30 +1541,35 @@
           "language.targets": "Idiomas de destino",
           "record.example": "Ejemplo"
         },
-        "localizationSha256": "25f789a75776cdcfdf35c2c6e0a3b857e9be83d712e39e6a8a19bb4adaa62d75",
+        "sourceLanguage": "es",
+        "targetLanguages": [
+          "en",
+          "ja"
+        ],
+        "localizationSha256": "9fbfcd40f4b089267abe5b66a10c9cefb5f99d78580144b6386825ea812cccfb",
         "sourceFiles": {
           "Sources/YiYanCore/Presentation/ChineseReading.swift": "9434540ee0608bc11e1f34b1f8cd927ad50d2fe6c80a7e79649f2cfbd2badee0",
           "Sources/YiYanCore/Presentation/JapaneseReading.swift": "a69369592104f8160a1a0f10146de68510c0e405a0946119f4335d10c0e37446",
+          "Sources/YiYanReading/TargetTranslationText.swift": "90f1725562ff8b42ec2174c00c18b8628ce1c3936dc05e8de585a55ea5fa1efb",
           "Sources/YiYanUI/ViewModels/AppLocalization.swift": "e85390f4b1e0c146d4c31b950ce2094a4514465b16ebe9ed60469baaab60f5fa",
           "Sources/YiYanUI/Views/LearningLanguageSettingsView.swift": "73dbe84f58ac61f94a0af16f0f82d02fcbc4681340f1c54dbd200942ab21f23e",
-          "Sources/YiYanUI/Views/RecordCardView.swift": "6a3aec0cf9309d5cdeffd02ab9b3d86660cc34ad269c8759af5a63a920f3ab02",
-          "Sources/YiYanUI/Views/TargetTranslationSection.swift": "a9769ee0c1929b086f7bfd9768e0f3a214d0469fb7b1fdcd9b4c3bf61b7f8cbc",
-          "Sources/YiYanUI/Views/TargetTranslationText.swift": "d0a65f1d98a4aca4ee6554aa6854765871f1e71a0b635d0d8220c4b86aaf9fe5"
+          "Sources/YiYanUI/Views/RecordCardView.swift": "aff3af1e9170132bee6483fe20024704629dfdb9a5e3a632db5ba5fb883603bd",
+          "Sources/YiYanUI/Views/TargetTranslationSection.swift": "7e262b7a6957c5270f85536db4761fbc15ad6f4417a359a479f0f91d0e0c665c"
         },
-        "recordSource": "scripts/assets/yilo/capture/selected-record.json",
-        "recordSha256": "50387fe82ecfeb5511011bd702ce14af8fd9ac90e92762ee1de5b05087097852"
+        "recordSource": "scripts/assets/yilo/capture/records/es.json",
+        "recordSha256": "ca26c211cd669f35021218f1200163cd9d8ecadba08aaf48423b803134d76c8e"
       },
       {
         "source": "scripts/assets/presskit/yilo/es/learning-settings.png",
-        "sha256": "566d6c5eaa41bb51eca779bd872b47e18f29f5cd1ae83e94e77238a86a817fb6",
+        "sha256": "2a6694270aa0cbab3706304c9b680fe8a170b891336a7663a9651b9f6ee23b16",
         "contentLanguage": "es",
         "type": "native",
-        "capturedOn": "2026-11-06",
-        "appSourceCommit": "473a8fac19ac6b55b9604de50d851848854be133",
+        "capturedOn": "2026-11-07",
+        "appSourceCommit": "197ac0e3371e25694b1fb12a89ecb5e29f5924c5",
         "originalSource": "scripts/assets/yilo/capture/YiloWebsiteCapture.swift",
-        "operation": "Unmodified native AppKit/SwiftUI component export using the app's own localization resources. Learning card uses the exact user-selected real record. Settings use isolated sample preferences. No image text replacement, resizing or UI reconstruction. Not a full app window.",
+        "operation": "Unmodified native AppKit/SwiftUI component export using the app's own localization resources. Sample input, source setting and learning explanations match the UI language. English learns Simplified Chinese/Japanese; Japanese learns English/Simplified Chinese; other locales learn English/Japanese. Settings use isolated sample preferences. No image text replacement, resizing or UI reconstruction. Not a full app window.",
         "appearance": "light",
-        "captureFixtureSha256": "66c5feed117a082d3b243abc765874ed4d4a64b89059e56ed7faed9e919664c7",
+        "captureFixtureSha256": "54f9461926a306a4484ba9ab8c5186517d74728a3d536d86889d7ef2c202c0fa",
         "nativeLocale": "es",
         "nativeLabels": {
           "advice.category.collocation": "Colocación",
@@ -1507,173 +1582,198 @@
           "language.targets": "Idiomas de destino",
           "record.example": "Ejemplo"
         },
-        "localizationSha256": "25f789a75776cdcfdf35c2c6e0a3b857e9be83d712e39e6a8a19bb4adaa62d75",
+        "sourceLanguage": "es",
+        "targetLanguages": [
+          "en",
+          "ja"
+        ],
+        "localizationSha256": "9fbfcd40f4b089267abe5b66a10c9cefb5f99d78580144b6386825ea812cccfb",
         "sourceFiles": {
           "Sources/YiYanCore/Presentation/ChineseReading.swift": "9434540ee0608bc11e1f34b1f8cd927ad50d2fe6c80a7e79649f2cfbd2badee0",
           "Sources/YiYanCore/Presentation/JapaneseReading.swift": "a69369592104f8160a1a0f10146de68510c0e405a0946119f4335d10c0e37446",
+          "Sources/YiYanReading/TargetTranslationText.swift": "90f1725562ff8b42ec2174c00c18b8628ce1c3936dc05e8de585a55ea5fa1efb",
           "Sources/YiYanUI/ViewModels/AppLocalization.swift": "e85390f4b1e0c146d4c31b950ce2094a4514465b16ebe9ed60469baaab60f5fa",
           "Sources/YiYanUI/Views/LearningLanguageSettingsView.swift": "73dbe84f58ac61f94a0af16f0f82d02fcbc4681340f1c54dbd200942ab21f23e",
-          "Sources/YiYanUI/Views/RecordCardView.swift": "6a3aec0cf9309d5cdeffd02ab9b3d86660cc34ad269c8759af5a63a920f3ab02",
-          "Sources/YiYanUI/Views/TargetTranslationSection.swift": "a9769ee0c1929b086f7bfd9768e0f3a214d0469fb7b1fdcd9b4c3bf61b7f8cbc",
-          "Sources/YiYanUI/Views/TargetTranslationText.swift": "d0a65f1d98a4aca4ee6554aa6854765871f1e71a0b635d0d8220c4b86aaf9fe5"
+          "Sources/YiYanUI/Views/RecordCardView.swift": "aff3af1e9170132bee6483fe20024704629dfdb9a5e3a632db5ba5fb883603bd",
+          "Sources/YiYanUI/Views/TargetTranslationSection.swift": "7e262b7a6957c5270f85536db4761fbc15ad6f4417a359a479f0f91d0e0c665c"
         }
       },
       {
         "source": "scripts/assets/presskit/yilo/fr/hero-record.png",
-        "sha256": "7d1e0d773591d4a910ae7ea1c6e4d3558079c8ddf5e50efe68bb48d98e895bd3",
+        "sha256": "d64e854305374115935cb5f13d0d394fb3fd7c79ceb5b8fc7cd5988a1ba62e68",
         "contentLanguage": "fr",
         "type": "native",
         "capturedOn": "2026-11-07",
-        "appSourceCommit": "473a8fac19ac6b55b9604de50d851848854be133",
+        "appSourceCommit": "197ac0e3371e25694b1fb12a89ecb5e29f5924c5",
         "originalSource": "scripts/assets/yilo/capture/YiloHeroCapture.swift",
         "operation": "Unmodified native RecordCardView export with a short isolated sample record, the app's extraLarge text preference, native Pinyin/Romaji and collapsed learning notes. No image text replacement, resizing or UI reconstruction. Not a full app window.",
         "appearance": "light",
-        "captureFixtureSha256": "e9fec5ac2728e71af0b2ca93742f372700d9ee4644dbfda51d21874e0cadba4c",
+        "captureFixtureSha256": "be1102272a66d16cd4647f7791ccc3198e1e2a7cc2f0adaf3d144a65b215746e",
         "nativeLocale": "fr",
         "nativeLabels": {
           "advice.category.collocation": "Collocation",
           "advice.category.translation_pattern": "Schéma de traduction",
           "advice.kind.learning_point": "Point à retenir",
           "language.japanese_reading.help": "Les hiraganas apparaissent au-dessus des kanjis ; le romaji est aligné au-dessus de chaque mot japonais.",
-          "language.notes": "Notes d’apprentissage",
+          "language.notes": "Conseils d’apprentissage",
           "language.search": "Rechercher une langue",
           "language.section": "Langues d’apprentissage",
           "language.targets": "Langues cibles",
           "record.example": "Exemple"
         },
-        "localizationSha256": "de8f9ac2614e3399443b0ac532687214aa2d464d490faef903aafc98ae39410d",
+        "sourceLanguage": "fr",
+        "targetLanguages": [
+          "en",
+          "ja"
+        ],
+        "localizationSha256": "5c50d1b7f637ca0f42f0e15fa123285c4ca4150a5dce9e69cb36b22ae5e9e427",
         "sourceFiles": {
           "Sources/YiYanCore/Presentation/ChineseReading.swift": "9434540ee0608bc11e1f34b1f8cd927ad50d2fe6c80a7e79649f2cfbd2badee0",
           "Sources/YiYanCore/Presentation/JapaneseReading.swift": "a69369592104f8160a1a0f10146de68510c0e405a0946119f4335d10c0e37446",
+          "Sources/YiYanReading/TargetTranslationText.swift": "90f1725562ff8b42ec2174c00c18b8628ce1c3936dc05e8de585a55ea5fa1efb",
           "Sources/YiYanUI/ViewModels/AppLocalization.swift": "e85390f4b1e0c146d4c31b950ce2094a4514465b16ebe9ed60469baaab60f5fa",
           "Sources/YiYanUI/Views/LearningLanguageSettingsView.swift": "73dbe84f58ac61f94a0af16f0f82d02fcbc4681340f1c54dbd200942ab21f23e",
           "Sources/YiYanUI/Views/MainWindowTypography.swift": "42bc78028c1a83a6b8b3925b0afad4ec97e54056270fb654236ea26f1357a04c",
-          "Sources/YiYanUI/Views/RecordCardView.swift": "6a3aec0cf9309d5cdeffd02ab9b3d86660cc34ad269c8759af5a63a920f3ab02",
-          "Sources/YiYanUI/Views/TargetTranslationSection.swift": "a9769ee0c1929b086f7bfd9768e0f3a214d0469fb7b1fdcd9b4c3bf61b7f8cbc",
-          "Sources/YiYanUI/Views/TargetTranslationText.swift": "d0a65f1d98a4aca4ee6554aa6854765871f1e71a0b635d0d8220c4b86aaf9fe5"
+          "Sources/YiYanUI/Views/RecordCardView.swift": "aff3af1e9170132bee6483fe20024704629dfdb9a5e3a632db5ba5fb883603bd",
+          "Sources/YiYanUI/Views/TargetTranslationSection.swift": "7e262b7a6957c5270f85536db4761fbc15ad6f4417a359a479f0f91d0e0c665c"
         },
-        "recordSource": "scripts/assets/yilo/capture/hero-record-zh.json",
-        "recordSha256": "c1be5c91774667c0198a245cafdc0a6eec281f2114402972a3e102eb5f1d3d79",
+        "recordSource": "scripts/assets/yilo/capture/hero-records/fr.json",
+        "recordSha256": "b9b5f8c67a0ef37f73fe939d27ec8d36726f51b7a75070390d9ff9c2fa118a69",
         "nativeTextSize": "extraLarge",
         "nativeFrameWidthPoints": 520,
         "pixelWidth": 1040,
-        "pixelHeight": 564
+        "pixelHeight": 650
       },
       {
         "source": "scripts/assets/presskit/yilo/fr/language-selection.png",
-        "sha256": "3902421e5a130d544b50bb7bbde111956e60886249f2f2a037e7e618f4127fed",
+        "sha256": "138ef65d0a40c10a09c9c10c120df00132c7a8a1a2abc511e77178827eb4fa41",
         "contentLanguage": "fr",
         "type": "native",
-        "capturedOn": "2026-11-06",
-        "appSourceCommit": "473a8fac19ac6b55b9604de50d851848854be133",
+        "capturedOn": "2026-11-07",
+        "appSourceCommit": "197ac0e3371e25694b1fb12a89ecb5e29f5924c5",
         "originalSource": "scripts/assets/yilo/capture/YiloWebsiteCapture.swift",
-        "operation": "Unmodified native AppKit/SwiftUI component export using the app's own localization resources. Learning card uses the exact user-selected real record. Settings use isolated sample preferences. No image text replacement, resizing or UI reconstruction. Not a full app window.",
+        "operation": "Unmodified native AppKit/SwiftUI component export using the app's own localization resources. Sample input, source setting and learning explanations match the UI language. English learns Simplified Chinese/Japanese; Japanese learns English/Simplified Chinese; other locales learn English/Japanese. Settings use isolated sample preferences. No image text replacement, resizing or UI reconstruction. Not a full app window.",
         "appearance": "light",
-        "captureFixtureSha256": "66c5feed117a082d3b243abc765874ed4d4a64b89059e56ed7faed9e919664c7",
+        "captureFixtureSha256": "54f9461926a306a4484ba9ab8c5186517d74728a3d536d86889d7ef2c202c0fa",
         "nativeLocale": "fr",
         "nativeLabels": {
           "advice.category.collocation": "Collocation",
           "advice.category.translation_pattern": "Schéma de traduction",
           "advice.kind.learning_point": "Point à retenir",
           "language.japanese_reading.help": "Les hiraganas apparaissent au-dessus des kanjis ; le romaji est aligné au-dessus de chaque mot japonais.",
-          "language.notes": "Notes d’apprentissage",
+          "language.notes": "Conseils d’apprentissage",
           "language.search": "Rechercher une langue",
           "language.section": "Langues d’apprentissage",
           "language.targets": "Langues cibles",
           "record.example": "Exemple"
         },
-        "localizationSha256": "de8f9ac2614e3399443b0ac532687214aa2d464d490faef903aafc98ae39410d",
+        "sourceLanguage": "fr",
+        "targetLanguages": [
+          "en",
+          "ja"
+        ],
+        "localizationSha256": "5c50d1b7f637ca0f42f0e15fa123285c4ca4150a5dce9e69cb36b22ae5e9e427",
         "sourceFiles": {
           "Sources/YiYanCore/Presentation/ChineseReading.swift": "9434540ee0608bc11e1f34b1f8cd927ad50d2fe6c80a7e79649f2cfbd2badee0",
           "Sources/YiYanCore/Presentation/JapaneseReading.swift": "a69369592104f8160a1a0f10146de68510c0e405a0946119f4335d10c0e37446",
+          "Sources/YiYanReading/TargetTranslationText.swift": "90f1725562ff8b42ec2174c00c18b8628ce1c3936dc05e8de585a55ea5fa1efb",
           "Sources/YiYanUI/ViewModels/AppLocalization.swift": "e85390f4b1e0c146d4c31b950ce2094a4514465b16ebe9ed60469baaab60f5fa",
           "Sources/YiYanUI/Views/LearningLanguageSettingsView.swift": "73dbe84f58ac61f94a0af16f0f82d02fcbc4681340f1c54dbd200942ab21f23e",
-          "Sources/YiYanUI/Views/RecordCardView.swift": "6a3aec0cf9309d5cdeffd02ab9b3d86660cc34ad269c8759af5a63a920f3ab02",
-          "Sources/YiYanUI/Views/TargetTranslationSection.swift": "a9769ee0c1929b086f7bfd9768e0f3a214d0469fb7b1fdcd9b4c3bf61b7f8cbc",
-          "Sources/YiYanUI/Views/TargetTranslationText.swift": "d0a65f1d98a4aca4ee6554aa6854765871f1e71a0b635d0d8220c4b86aaf9fe5"
+          "Sources/YiYanUI/Views/RecordCardView.swift": "aff3af1e9170132bee6483fe20024704629dfdb9a5e3a632db5ba5fb883603bd",
+          "Sources/YiYanUI/Views/TargetTranslationSection.swift": "7e262b7a6957c5270f85536db4761fbc15ad6f4417a359a479f0f91d0e0c665c"
         }
       },
       {
         "source": "scripts/assets/presskit/yilo/fr/learning-record.png",
-        "sha256": "1849ca13e2d2f271f1751767d9026dd0ca726b2c6f0711e8260853136c1e5d32",
+        "sha256": "51f2078f8ed5be80976485f551f5f863d907b4db86d434f61bed337a859c7288",
         "contentLanguage": "fr",
         "type": "native",
-        "capturedOn": "2026-11-06",
-        "appSourceCommit": "473a8fac19ac6b55b9604de50d851848854be133",
+        "capturedOn": "2026-11-07",
+        "appSourceCommit": "197ac0e3371e25694b1fb12a89ecb5e29f5924c5",
         "originalSource": "scripts/assets/yilo/capture/YiloWebsiteCapture.swift",
-        "operation": "Unmodified native AppKit/SwiftUI component export using the app's own localization resources. Learning card uses the exact user-selected real record. Settings use isolated sample preferences. No image text replacement, resizing or UI reconstruction. Not a full app window.",
+        "operation": "Unmodified native AppKit/SwiftUI component export using the app's own localization resources. Sample input, source setting and learning explanations match the UI language. English learns Simplified Chinese/Japanese; Japanese learns English/Simplified Chinese; other locales learn English/Japanese. Settings use isolated sample preferences. No image text replacement, resizing or UI reconstruction. Not a full app window.",
         "appearance": "dark",
-        "captureFixtureSha256": "66c5feed117a082d3b243abc765874ed4d4a64b89059e56ed7faed9e919664c7",
+        "captureFixtureSha256": "54f9461926a306a4484ba9ab8c5186517d74728a3d536d86889d7ef2c202c0fa",
         "nativeLocale": "fr",
         "nativeLabels": {
           "advice.category.collocation": "Collocation",
           "advice.category.translation_pattern": "Schéma de traduction",
           "advice.kind.learning_point": "Point à retenir",
           "language.japanese_reading.help": "Les hiraganas apparaissent au-dessus des kanjis ; le romaji est aligné au-dessus de chaque mot japonais.",
-          "language.notes": "Notes d’apprentissage",
+          "language.notes": "Conseils d’apprentissage",
           "language.search": "Rechercher une langue",
           "language.section": "Langues d’apprentissage",
           "language.targets": "Langues cibles",
           "record.example": "Exemple"
         },
-        "localizationSha256": "de8f9ac2614e3399443b0ac532687214aa2d464d490faef903aafc98ae39410d",
+        "sourceLanguage": "fr",
+        "targetLanguages": [
+          "en",
+          "ja"
+        ],
+        "localizationSha256": "5c50d1b7f637ca0f42f0e15fa123285c4ca4150a5dce9e69cb36b22ae5e9e427",
         "sourceFiles": {
           "Sources/YiYanCore/Presentation/ChineseReading.swift": "9434540ee0608bc11e1f34b1f8cd927ad50d2fe6c80a7e79649f2cfbd2badee0",
           "Sources/YiYanCore/Presentation/JapaneseReading.swift": "a69369592104f8160a1a0f10146de68510c0e405a0946119f4335d10c0e37446",
+          "Sources/YiYanReading/TargetTranslationText.swift": "90f1725562ff8b42ec2174c00c18b8628ce1c3936dc05e8de585a55ea5fa1efb",
           "Sources/YiYanUI/ViewModels/AppLocalization.swift": "e85390f4b1e0c146d4c31b950ce2094a4514465b16ebe9ed60469baaab60f5fa",
           "Sources/YiYanUI/Views/LearningLanguageSettingsView.swift": "73dbe84f58ac61f94a0af16f0f82d02fcbc4681340f1c54dbd200942ab21f23e",
-          "Sources/YiYanUI/Views/RecordCardView.swift": "6a3aec0cf9309d5cdeffd02ab9b3d86660cc34ad269c8759af5a63a920f3ab02",
-          "Sources/YiYanUI/Views/TargetTranslationSection.swift": "a9769ee0c1929b086f7bfd9768e0f3a214d0469fb7b1fdcd9b4c3bf61b7f8cbc",
-          "Sources/YiYanUI/Views/TargetTranslationText.swift": "d0a65f1d98a4aca4ee6554aa6854765871f1e71a0b635d0d8220c4b86aaf9fe5"
+          "Sources/YiYanUI/Views/RecordCardView.swift": "aff3af1e9170132bee6483fe20024704629dfdb9a5e3a632db5ba5fb883603bd",
+          "Sources/YiYanUI/Views/TargetTranslationSection.swift": "7e262b7a6957c5270f85536db4761fbc15ad6f4417a359a479f0f91d0e0c665c"
         },
-        "recordSource": "scripts/assets/yilo/capture/selected-record.json",
-        "recordSha256": "50387fe82ecfeb5511011bd702ce14af8fd9ac90e92762ee1de5b05087097852"
+        "recordSource": "scripts/assets/yilo/capture/records/fr.json",
+        "recordSha256": "a4a2ac0b99670d859ba2737ccd8ba5b4c235f029e62e6b2fb5a4994297e0e149"
       },
       {
         "source": "scripts/assets/presskit/yilo/fr/learning-settings.png",
-        "sha256": "c84503f6af467d44d36bcd2d70c7c383bf6ee92992469a3a8f0f8459fc75741d",
+        "sha256": "5aefd6cac48fe7ead68a635dcc9a245b2b0c06fba225b488250f52865af44029",
         "contentLanguage": "fr",
         "type": "native",
-        "capturedOn": "2026-11-06",
-        "appSourceCommit": "473a8fac19ac6b55b9604de50d851848854be133",
+        "capturedOn": "2026-11-07",
+        "appSourceCommit": "197ac0e3371e25694b1fb12a89ecb5e29f5924c5",
         "originalSource": "scripts/assets/yilo/capture/YiloWebsiteCapture.swift",
-        "operation": "Unmodified native AppKit/SwiftUI component export using the app's own localization resources. Learning card uses the exact user-selected real record. Settings use isolated sample preferences. No image text replacement, resizing or UI reconstruction. Not a full app window.",
+        "operation": "Unmodified native AppKit/SwiftUI component export using the app's own localization resources. Sample input, source setting and learning explanations match the UI language. English learns Simplified Chinese/Japanese; Japanese learns English/Simplified Chinese; other locales learn English/Japanese. Settings use isolated sample preferences. No image text replacement, resizing or UI reconstruction. Not a full app window.",
         "appearance": "light",
-        "captureFixtureSha256": "66c5feed117a082d3b243abc765874ed4d4a64b89059e56ed7faed9e919664c7",
+        "captureFixtureSha256": "54f9461926a306a4484ba9ab8c5186517d74728a3d536d86889d7ef2c202c0fa",
         "nativeLocale": "fr",
         "nativeLabels": {
           "advice.category.collocation": "Collocation",
           "advice.category.translation_pattern": "Schéma de traduction",
           "advice.kind.learning_point": "Point à retenir",
           "language.japanese_reading.help": "Les hiraganas apparaissent au-dessus des kanjis ; le romaji est aligné au-dessus de chaque mot japonais.",
-          "language.notes": "Notes d’apprentissage",
+          "language.notes": "Conseils d’apprentissage",
           "language.search": "Rechercher une langue",
           "language.section": "Langues d’apprentissage",
           "language.targets": "Langues cibles",
           "record.example": "Exemple"
         },
-        "localizationSha256": "de8f9ac2614e3399443b0ac532687214aa2d464d490faef903aafc98ae39410d",
+        "sourceLanguage": "fr",
+        "targetLanguages": [
+          "en",
+          "ja"
+        ],
+        "localizationSha256": "5c50d1b7f637ca0f42f0e15fa123285c4ca4150a5dce9e69cb36b22ae5e9e427",
         "sourceFiles": {
           "Sources/YiYanCore/Presentation/ChineseReading.swift": "9434540ee0608bc11e1f34b1f8cd927ad50d2fe6c80a7e79649f2cfbd2badee0",
           "Sources/YiYanCore/Presentation/JapaneseReading.swift": "a69369592104f8160a1a0f10146de68510c0e405a0946119f4335d10c0e37446",
+          "Sources/YiYanReading/TargetTranslationText.swift": "90f1725562ff8b42ec2174c00c18b8628ce1c3936dc05e8de585a55ea5fa1efb",
           "Sources/YiYanUI/ViewModels/AppLocalization.swift": "e85390f4b1e0c146d4c31b950ce2094a4514465b16ebe9ed60469baaab60f5fa",
           "Sources/YiYanUI/Views/LearningLanguageSettingsView.swift": "73dbe84f58ac61f94a0af16f0f82d02fcbc4681340f1c54dbd200942ab21f23e",
-          "Sources/YiYanUI/Views/RecordCardView.swift": "6a3aec0cf9309d5cdeffd02ab9b3d86660cc34ad269c8759af5a63a920f3ab02",
-          "Sources/YiYanUI/Views/TargetTranslationSection.swift": "a9769ee0c1929b086f7bfd9768e0f3a214d0469fb7b1fdcd9b4c3bf61b7f8cbc",
-          "Sources/YiYanUI/Views/TargetTranslationText.swift": "d0a65f1d98a4aca4ee6554aa6854765871f1e71a0b635d0d8220c4b86aaf9fe5"
+          "Sources/YiYanUI/Views/RecordCardView.swift": "aff3af1e9170132bee6483fe20024704629dfdb9a5e3a632db5ba5fb883603bd",
+          "Sources/YiYanUI/Views/TargetTranslationSection.swift": "7e262b7a6957c5270f85536db4761fbc15ad6f4417a359a479f0f91d0e0c665c"
         }
       },
       {
         "source": "scripts/assets/presskit/yilo/hi/hero-record.png",
-        "sha256": "19f75b85fbaa7cbc3fe1c66c88262f4d1604c4568cf97a18efd6417429fe43dc",
+        "sha256": "d224d585bc01ba9eb35e7ed74995dc7b07c1c87bccfd84d9807d5c08f301e284",
         "contentLanguage": "hi",
         "type": "native",
         "capturedOn": "2026-11-07",
-        "appSourceCommit": "473a8fac19ac6b55b9604de50d851848854be133",
+        "appSourceCommit": "197ac0e3371e25694b1fb12a89ecb5e29f5924c5",
         "originalSource": "scripts/assets/yilo/capture/YiloHeroCapture.swift",
         "operation": "Unmodified native RecordCardView export with a short isolated sample record, the app's extraLarge text preference, native Pinyin/Romaji and collapsed learning notes. No image text replacement, resizing or UI reconstruction. Not a full app window.",
         "appearance": "light",
-        "captureFixtureSha256": "e9fec5ac2728e71af0b2ca93742f372700d9ee4644dbfda51d21874e0cadba4c",
+        "captureFixtureSha256": "be1102272a66d16cd4647f7791ccc3198e1e2a7cc2f0adaf3d144a65b215746e",
         "nativeLocale": "hi",
         "nativeLabels": {
           "advice.category.collocation": "शब्द संयोजन",
@@ -1686,35 +1786,40 @@
           "language.targets": "लक्ष्य भाषाएँ",
           "record.example": "उदाहरण"
         },
-        "localizationSha256": "d6978b93cac9d1efe506ca33ceca9413c5fa96b7d2a311ec026c9597b08a1ffd",
+        "sourceLanguage": "hi",
+        "targetLanguages": [
+          "en",
+          "ja"
+        ],
+        "localizationSha256": "b762ea7e8d07d44d9d4d121eb54518391c7669e6e61f12d23524c04a7bd02802",
         "sourceFiles": {
           "Sources/YiYanCore/Presentation/ChineseReading.swift": "9434540ee0608bc11e1f34b1f8cd927ad50d2fe6c80a7e79649f2cfbd2badee0",
           "Sources/YiYanCore/Presentation/JapaneseReading.swift": "a69369592104f8160a1a0f10146de68510c0e405a0946119f4335d10c0e37446",
+          "Sources/YiYanReading/TargetTranslationText.swift": "90f1725562ff8b42ec2174c00c18b8628ce1c3936dc05e8de585a55ea5fa1efb",
           "Sources/YiYanUI/ViewModels/AppLocalization.swift": "e85390f4b1e0c146d4c31b950ce2094a4514465b16ebe9ed60469baaab60f5fa",
           "Sources/YiYanUI/Views/LearningLanguageSettingsView.swift": "73dbe84f58ac61f94a0af16f0f82d02fcbc4681340f1c54dbd200942ab21f23e",
           "Sources/YiYanUI/Views/MainWindowTypography.swift": "42bc78028c1a83a6b8b3925b0afad4ec97e54056270fb654236ea26f1357a04c",
-          "Sources/YiYanUI/Views/RecordCardView.swift": "6a3aec0cf9309d5cdeffd02ab9b3d86660cc34ad269c8759af5a63a920f3ab02",
-          "Sources/YiYanUI/Views/TargetTranslationSection.swift": "a9769ee0c1929b086f7bfd9768e0f3a214d0469fb7b1fdcd9b4c3bf61b7f8cbc",
-          "Sources/YiYanUI/Views/TargetTranslationText.swift": "d0a65f1d98a4aca4ee6554aa6854765871f1e71a0b635d0d8220c4b86aaf9fe5"
+          "Sources/YiYanUI/Views/RecordCardView.swift": "aff3af1e9170132bee6483fe20024704629dfdb9a5e3a632db5ba5fb883603bd",
+          "Sources/YiYanUI/Views/TargetTranslationSection.swift": "7e262b7a6957c5270f85536db4761fbc15ad6f4417a359a479f0f91d0e0c665c"
         },
-        "recordSource": "scripts/assets/yilo/capture/hero-record-zh.json",
-        "recordSha256": "c1be5c91774667c0198a245cafdc0a6eec281f2114402972a3e102eb5f1d3d79",
+        "recordSource": "scripts/assets/yilo/capture/hero-records/hi.json",
+        "recordSha256": "9f9430ae5d9af19a79c360a7cd685892669e68a368c89766eead5a7bf1194c38",
         "nativeTextSize": "extraLarge",
         "nativeFrameWidthPoints": 520,
         "pixelWidth": 1040,
-        "pixelHeight": 564
+        "pixelHeight": 603
       },
       {
         "source": "scripts/assets/presskit/yilo/hi/language-selection.png",
-        "sha256": "19408bc587315f321395460d362d89a3521c1185bd7e80f2094a520cdc01d928",
+        "sha256": "e5309f733bc11baaa05ef5864689ed0ff95f4e0fd51c09f597bc1ba621246821",
         "contentLanguage": "hi",
         "type": "native",
-        "capturedOn": "2026-11-06",
-        "appSourceCommit": "473a8fac19ac6b55b9604de50d851848854be133",
+        "capturedOn": "2026-11-07",
+        "appSourceCommit": "197ac0e3371e25694b1fb12a89ecb5e29f5924c5",
         "originalSource": "scripts/assets/yilo/capture/YiloWebsiteCapture.swift",
-        "operation": "Unmodified native AppKit/SwiftUI component export using the app's own localization resources. Learning card uses the exact user-selected real record. Settings use isolated sample preferences. No image text replacement, resizing or UI reconstruction. Not a full app window.",
+        "operation": "Unmodified native AppKit/SwiftUI component export using the app's own localization resources. Sample input, source setting and learning explanations match the UI language. English learns Simplified Chinese/Japanese; Japanese learns English/Simplified Chinese; other locales learn English/Japanese. Settings use isolated sample preferences. No image text replacement, resizing or UI reconstruction. Not a full app window.",
         "appearance": "light",
-        "captureFixtureSha256": "66c5feed117a082d3b243abc765874ed4d4a64b89059e56ed7faed9e919664c7",
+        "captureFixtureSha256": "54f9461926a306a4484ba9ab8c5186517d74728a3d536d86889d7ef2c202c0fa",
         "nativeLocale": "hi",
         "nativeLabels": {
           "advice.category.collocation": "शब्द संयोजन",
@@ -1727,28 +1832,33 @@
           "language.targets": "लक्ष्य भाषाएँ",
           "record.example": "उदाहरण"
         },
-        "localizationSha256": "d6978b93cac9d1efe506ca33ceca9413c5fa96b7d2a311ec026c9597b08a1ffd",
+        "sourceLanguage": "hi",
+        "targetLanguages": [
+          "en",
+          "ja"
+        ],
+        "localizationSha256": "b762ea7e8d07d44d9d4d121eb54518391c7669e6e61f12d23524c04a7bd02802",
         "sourceFiles": {
           "Sources/YiYanCore/Presentation/ChineseReading.swift": "9434540ee0608bc11e1f34b1f8cd927ad50d2fe6c80a7e79649f2cfbd2badee0",
           "Sources/YiYanCore/Presentation/JapaneseReading.swift": "a69369592104f8160a1a0f10146de68510c0e405a0946119f4335d10c0e37446",
+          "Sources/YiYanReading/TargetTranslationText.swift": "90f1725562ff8b42ec2174c00c18b8628ce1c3936dc05e8de585a55ea5fa1efb",
           "Sources/YiYanUI/ViewModels/AppLocalization.swift": "e85390f4b1e0c146d4c31b950ce2094a4514465b16ebe9ed60469baaab60f5fa",
           "Sources/YiYanUI/Views/LearningLanguageSettingsView.swift": "73dbe84f58ac61f94a0af16f0f82d02fcbc4681340f1c54dbd200942ab21f23e",
-          "Sources/YiYanUI/Views/RecordCardView.swift": "6a3aec0cf9309d5cdeffd02ab9b3d86660cc34ad269c8759af5a63a920f3ab02",
-          "Sources/YiYanUI/Views/TargetTranslationSection.swift": "a9769ee0c1929b086f7bfd9768e0f3a214d0469fb7b1fdcd9b4c3bf61b7f8cbc",
-          "Sources/YiYanUI/Views/TargetTranslationText.swift": "d0a65f1d98a4aca4ee6554aa6854765871f1e71a0b635d0d8220c4b86aaf9fe5"
+          "Sources/YiYanUI/Views/RecordCardView.swift": "aff3af1e9170132bee6483fe20024704629dfdb9a5e3a632db5ba5fb883603bd",
+          "Sources/YiYanUI/Views/TargetTranslationSection.swift": "7e262b7a6957c5270f85536db4761fbc15ad6f4417a359a479f0f91d0e0c665c"
         }
       },
       {
         "source": "scripts/assets/presskit/yilo/hi/learning-record.png",
-        "sha256": "5bf88c7ca83bdaa9c6f308c471f5463a8a7e85bb62db774415404108744f41a9",
+        "sha256": "26a4821b31c5a3553ddb5c3bfdf29211c9edaece3f797eb277170af13513e1d3",
         "contentLanguage": "hi",
         "type": "native",
-        "capturedOn": "2026-11-06",
-        "appSourceCommit": "473a8fac19ac6b55b9604de50d851848854be133",
+        "capturedOn": "2026-11-07",
+        "appSourceCommit": "197ac0e3371e25694b1fb12a89ecb5e29f5924c5",
         "originalSource": "scripts/assets/yilo/capture/YiloWebsiteCapture.swift",
-        "operation": "Unmodified native AppKit/SwiftUI component export using the app's own localization resources. Learning card uses the exact user-selected real record. Settings use isolated sample preferences. No image text replacement, resizing or UI reconstruction. Not a full app window.",
+        "operation": "Unmodified native AppKit/SwiftUI component export using the app's own localization resources. Sample input, source setting and learning explanations match the UI language. English learns Simplified Chinese/Japanese; Japanese learns English/Simplified Chinese; other locales learn English/Japanese. Settings use isolated sample preferences. No image text replacement, resizing or UI reconstruction. Not a full app window.",
         "appearance": "dark",
-        "captureFixtureSha256": "66c5feed117a082d3b243abc765874ed4d4a64b89059e56ed7faed9e919664c7",
+        "captureFixtureSha256": "54f9461926a306a4484ba9ab8c5186517d74728a3d536d86889d7ef2c202c0fa",
         "nativeLocale": "hi",
         "nativeLabels": {
           "advice.category.collocation": "शब्द संयोजन",
@@ -1761,30 +1871,35 @@
           "language.targets": "लक्ष्य भाषाएँ",
           "record.example": "उदाहरण"
         },
-        "localizationSha256": "d6978b93cac9d1efe506ca33ceca9413c5fa96b7d2a311ec026c9597b08a1ffd",
+        "sourceLanguage": "hi",
+        "targetLanguages": [
+          "en",
+          "ja"
+        ],
+        "localizationSha256": "b762ea7e8d07d44d9d4d121eb54518391c7669e6e61f12d23524c04a7bd02802",
         "sourceFiles": {
           "Sources/YiYanCore/Presentation/ChineseReading.swift": "9434540ee0608bc11e1f34b1f8cd927ad50d2fe6c80a7e79649f2cfbd2badee0",
           "Sources/YiYanCore/Presentation/JapaneseReading.swift": "a69369592104f8160a1a0f10146de68510c0e405a0946119f4335d10c0e37446",
+          "Sources/YiYanReading/TargetTranslationText.swift": "90f1725562ff8b42ec2174c00c18b8628ce1c3936dc05e8de585a55ea5fa1efb",
           "Sources/YiYanUI/ViewModels/AppLocalization.swift": "e85390f4b1e0c146d4c31b950ce2094a4514465b16ebe9ed60469baaab60f5fa",
           "Sources/YiYanUI/Views/LearningLanguageSettingsView.swift": "73dbe84f58ac61f94a0af16f0f82d02fcbc4681340f1c54dbd200942ab21f23e",
-          "Sources/YiYanUI/Views/RecordCardView.swift": "6a3aec0cf9309d5cdeffd02ab9b3d86660cc34ad269c8759af5a63a920f3ab02",
-          "Sources/YiYanUI/Views/TargetTranslationSection.swift": "a9769ee0c1929b086f7bfd9768e0f3a214d0469fb7b1fdcd9b4c3bf61b7f8cbc",
-          "Sources/YiYanUI/Views/TargetTranslationText.swift": "d0a65f1d98a4aca4ee6554aa6854765871f1e71a0b635d0d8220c4b86aaf9fe5"
+          "Sources/YiYanUI/Views/RecordCardView.swift": "aff3af1e9170132bee6483fe20024704629dfdb9a5e3a632db5ba5fb883603bd",
+          "Sources/YiYanUI/Views/TargetTranslationSection.swift": "7e262b7a6957c5270f85536db4761fbc15ad6f4417a359a479f0f91d0e0c665c"
         },
-        "recordSource": "scripts/assets/yilo/capture/selected-record.json",
-        "recordSha256": "50387fe82ecfeb5511011bd702ce14af8fd9ac90e92762ee1de5b05087097852"
+        "recordSource": "scripts/assets/yilo/capture/records/hi.json",
+        "recordSha256": "c0c427b7562182b45760ce18d37fd58a0ff93f5e102733bb973f99377b9b2e42"
       },
       {
         "source": "scripts/assets/presskit/yilo/hi/learning-settings.png",
-        "sha256": "d4d977cb0609ab8f7f30d92019e6bd036dc6a4985ac2ba252fdef0102e5aed6d",
+        "sha256": "7a983a3ed94f10a4068b63638c7fb64b398d6772ee2aa6cfd1c8bd0d726343ac",
         "contentLanguage": "hi",
         "type": "native",
-        "capturedOn": "2026-11-06",
-        "appSourceCommit": "473a8fac19ac6b55b9604de50d851848854be133",
+        "capturedOn": "2026-11-07",
+        "appSourceCommit": "197ac0e3371e25694b1fb12a89ecb5e29f5924c5",
         "originalSource": "scripts/assets/yilo/capture/YiloWebsiteCapture.swift",
-        "operation": "Unmodified native AppKit/SwiftUI component export using the app's own localization resources. Learning card uses the exact user-selected real record. Settings use isolated sample preferences. No image text replacement, resizing or UI reconstruction. Not a full app window.",
+        "operation": "Unmodified native AppKit/SwiftUI component export using the app's own localization resources. Sample input, source setting and learning explanations match the UI language. English learns Simplified Chinese/Japanese; Japanese learns English/Simplified Chinese; other locales learn English/Japanese. Settings use isolated sample preferences. No image text replacement, resizing or UI reconstruction. Not a full app window.",
         "appearance": "light",
-        "captureFixtureSha256": "66c5feed117a082d3b243abc765874ed4d4a64b89059e56ed7faed9e919664c7",
+        "captureFixtureSha256": "54f9461926a306a4484ba9ab8c5186517d74728a3d536d86889d7ef2c202c0fa",
         "nativeLocale": "hi",
         "nativeLabels": {
           "advice.category.collocation": "शब्द संयोजन",
@@ -1797,173 +1912,198 @@
           "language.targets": "लक्ष्य भाषाएँ",
           "record.example": "उदाहरण"
         },
-        "localizationSha256": "d6978b93cac9d1efe506ca33ceca9413c5fa96b7d2a311ec026c9597b08a1ffd",
+        "sourceLanguage": "hi",
+        "targetLanguages": [
+          "en",
+          "ja"
+        ],
+        "localizationSha256": "b762ea7e8d07d44d9d4d121eb54518391c7669e6e61f12d23524c04a7bd02802",
         "sourceFiles": {
           "Sources/YiYanCore/Presentation/ChineseReading.swift": "9434540ee0608bc11e1f34b1f8cd927ad50d2fe6c80a7e79649f2cfbd2badee0",
           "Sources/YiYanCore/Presentation/JapaneseReading.swift": "a69369592104f8160a1a0f10146de68510c0e405a0946119f4335d10c0e37446",
+          "Sources/YiYanReading/TargetTranslationText.swift": "90f1725562ff8b42ec2174c00c18b8628ce1c3936dc05e8de585a55ea5fa1efb",
           "Sources/YiYanUI/ViewModels/AppLocalization.swift": "e85390f4b1e0c146d4c31b950ce2094a4514465b16ebe9ed60469baaab60f5fa",
           "Sources/YiYanUI/Views/LearningLanguageSettingsView.swift": "73dbe84f58ac61f94a0af16f0f82d02fcbc4681340f1c54dbd200942ab21f23e",
-          "Sources/YiYanUI/Views/RecordCardView.swift": "6a3aec0cf9309d5cdeffd02ab9b3d86660cc34ad269c8759af5a63a920f3ab02",
-          "Sources/YiYanUI/Views/TargetTranslationSection.swift": "a9769ee0c1929b086f7bfd9768e0f3a214d0469fb7b1fdcd9b4c3bf61b7f8cbc",
-          "Sources/YiYanUI/Views/TargetTranslationText.swift": "d0a65f1d98a4aca4ee6554aa6854765871f1e71a0b635d0d8220c4b86aaf9fe5"
+          "Sources/YiYanUI/Views/RecordCardView.swift": "aff3af1e9170132bee6483fe20024704629dfdb9a5e3a632db5ba5fb883603bd",
+          "Sources/YiYanUI/Views/TargetTranslationSection.swift": "7e262b7a6957c5270f85536db4761fbc15ad6f4417a359a479f0f91d0e0c665c"
         }
       },
       {
         "source": "scripts/assets/presskit/yilo/ja/hero-record.png",
-        "sha256": "7ab9db797fa6f7e206eb4607550c3e93a21166b729ca41aa84b9940beaa03ff8",
+        "sha256": "121d0160470815bcd6bfe9afab3a00d2d70e83abf9f82797759ea84cdbbe508c",
         "contentLanguage": "ja",
         "type": "native",
         "capturedOn": "2026-11-07",
-        "appSourceCommit": "473a8fac19ac6b55b9604de50d851848854be133",
+        "appSourceCommit": "197ac0e3371e25694b1fb12a89ecb5e29f5924c5",
         "originalSource": "scripts/assets/yilo/capture/YiloHeroCapture.swift",
         "operation": "Unmodified native RecordCardView export with a short isolated sample record, the app's extraLarge text preference, native Pinyin/Romaji and collapsed learning notes. No image text replacement, resizing or UI reconstruction. Not a full app window.",
         "appearance": "light",
-        "captureFixtureSha256": "e9fec5ac2728e71af0b2ca93742f372700d9ee4644dbfda51d21874e0cadba4c",
+        "captureFixtureSha256": "be1102272a66d16cd4647f7791ccc3198e1e2a7cc2f0adaf3d144a65b215746e",
         "nativeLocale": "ja",
         "nativeLabels": {
           "advice.category.collocation": "コロケーション",
           "advice.category.translation_pattern": "翻訳パターン",
           "advice.kind.learning_point": "学習ポイント",
           "language.japanese_reading.help": "ひらがなは漢字の上、ローマ字は対応する語の上にそろえて表示します。",
-          "language.notes": "学習ノート",
+          "language.notes": "学習メモ",
           "language.search": "言語を検索",
           "language.section": "学習する言語",
           "language.targets": "学習言語",
           "record.example": "例"
         },
-        "localizationSha256": "966a4e66f91701f09a22e8fd09a975071a902f3e5775eff9cafec8cb457f462f",
+        "sourceLanguage": "ja",
+        "targetLanguages": [
+          "en",
+          "zh-Hans"
+        ],
+        "localizationSha256": "74f2b2f6fd47b66bd653a55b70bc546a6acf34a86db0f502a0794de094598259",
         "sourceFiles": {
           "Sources/YiYanCore/Presentation/ChineseReading.swift": "9434540ee0608bc11e1f34b1f8cd927ad50d2fe6c80a7e79649f2cfbd2badee0",
           "Sources/YiYanCore/Presentation/JapaneseReading.swift": "a69369592104f8160a1a0f10146de68510c0e405a0946119f4335d10c0e37446",
+          "Sources/YiYanReading/TargetTranslationText.swift": "90f1725562ff8b42ec2174c00c18b8628ce1c3936dc05e8de585a55ea5fa1efb",
           "Sources/YiYanUI/ViewModels/AppLocalization.swift": "e85390f4b1e0c146d4c31b950ce2094a4514465b16ebe9ed60469baaab60f5fa",
           "Sources/YiYanUI/Views/LearningLanguageSettingsView.swift": "73dbe84f58ac61f94a0af16f0f82d02fcbc4681340f1c54dbd200942ab21f23e",
           "Sources/YiYanUI/Views/MainWindowTypography.swift": "42bc78028c1a83a6b8b3925b0afad4ec97e54056270fb654236ea26f1357a04c",
-          "Sources/YiYanUI/Views/RecordCardView.swift": "6a3aec0cf9309d5cdeffd02ab9b3d86660cc34ad269c8759af5a63a920f3ab02",
-          "Sources/YiYanUI/Views/TargetTranslationSection.swift": "a9769ee0c1929b086f7bfd9768e0f3a214d0469fb7b1fdcd9b4c3bf61b7f8cbc",
-          "Sources/YiYanUI/Views/TargetTranslationText.swift": "d0a65f1d98a4aca4ee6554aa6854765871f1e71a0b635d0d8220c4b86aaf9fe5"
+          "Sources/YiYanUI/Views/RecordCardView.swift": "aff3af1e9170132bee6483fe20024704629dfdb9a5e3a632db5ba5fb883603bd",
+          "Sources/YiYanUI/Views/TargetTranslationSection.swift": "7e262b7a6957c5270f85536db4761fbc15ad6f4417a359a479f0f91d0e0c665c"
         },
-        "recordSource": "scripts/assets/yilo/capture/hero-record-zh.json",
-        "recordSha256": "c1be5c91774667c0198a245cafdc0a6eec281f2114402972a3e102eb5f1d3d79",
+        "recordSource": "scripts/assets/yilo/capture/hero-records/ja.json",
+        "recordSha256": "0787fddf73a2db420896195d07a5504248e879e39e533a2160e552a9a18fe03d",
         "nativeTextSize": "extraLarge",
         "nativeFrameWidthPoints": 520,
         "pixelWidth": 1040,
-        "pixelHeight": 564
+        "pixelHeight": 603
       },
       {
         "source": "scripts/assets/presskit/yilo/ja/language-selection.png",
-        "sha256": "0d4d61c102e99405a1b19226c13ea763d2c03a6021b6e9e0dc511e84b6fa7ba3",
+        "sha256": "fd757d4fab139c249640905e1d0ef054c9947894947abf6d27eccf0d6b977b35",
         "contentLanguage": "ja",
         "type": "native",
-        "capturedOn": "2026-11-06",
-        "appSourceCommit": "473a8fac19ac6b55b9604de50d851848854be133",
+        "capturedOn": "2026-11-07",
+        "appSourceCommit": "197ac0e3371e25694b1fb12a89ecb5e29f5924c5",
         "originalSource": "scripts/assets/yilo/capture/YiloWebsiteCapture.swift",
-        "operation": "Unmodified native AppKit/SwiftUI component export using the app's own localization resources. Learning card uses the exact user-selected real record. Settings use isolated sample preferences. No image text replacement, resizing or UI reconstruction. Not a full app window.",
+        "operation": "Unmodified native AppKit/SwiftUI component export using the app's own localization resources. Sample input, source setting and learning explanations match the UI language. English learns Simplified Chinese/Japanese; Japanese learns English/Simplified Chinese; other locales learn English/Japanese. Settings use isolated sample preferences. No image text replacement, resizing or UI reconstruction. Not a full app window.",
         "appearance": "light",
-        "captureFixtureSha256": "66c5feed117a082d3b243abc765874ed4d4a64b89059e56ed7faed9e919664c7",
+        "captureFixtureSha256": "54f9461926a306a4484ba9ab8c5186517d74728a3d536d86889d7ef2c202c0fa",
         "nativeLocale": "ja",
         "nativeLabels": {
           "advice.category.collocation": "コロケーション",
           "advice.category.translation_pattern": "翻訳パターン",
           "advice.kind.learning_point": "学習ポイント",
           "language.japanese_reading.help": "ひらがなは漢字の上、ローマ字は対応する語の上にそろえて表示します。",
-          "language.notes": "学習ノート",
+          "language.notes": "学習メモ",
           "language.search": "言語を検索",
           "language.section": "学習する言語",
           "language.targets": "学習言語",
           "record.example": "例"
         },
-        "localizationSha256": "966a4e66f91701f09a22e8fd09a975071a902f3e5775eff9cafec8cb457f462f",
+        "sourceLanguage": "ja",
+        "targetLanguages": [
+          "en",
+          "zh-Hans"
+        ],
+        "localizationSha256": "74f2b2f6fd47b66bd653a55b70bc546a6acf34a86db0f502a0794de094598259",
         "sourceFiles": {
           "Sources/YiYanCore/Presentation/ChineseReading.swift": "9434540ee0608bc11e1f34b1f8cd927ad50d2fe6c80a7e79649f2cfbd2badee0",
           "Sources/YiYanCore/Presentation/JapaneseReading.swift": "a69369592104f8160a1a0f10146de68510c0e405a0946119f4335d10c0e37446",
+          "Sources/YiYanReading/TargetTranslationText.swift": "90f1725562ff8b42ec2174c00c18b8628ce1c3936dc05e8de585a55ea5fa1efb",
           "Sources/YiYanUI/ViewModels/AppLocalization.swift": "e85390f4b1e0c146d4c31b950ce2094a4514465b16ebe9ed60469baaab60f5fa",
           "Sources/YiYanUI/Views/LearningLanguageSettingsView.swift": "73dbe84f58ac61f94a0af16f0f82d02fcbc4681340f1c54dbd200942ab21f23e",
-          "Sources/YiYanUI/Views/RecordCardView.swift": "6a3aec0cf9309d5cdeffd02ab9b3d86660cc34ad269c8759af5a63a920f3ab02",
-          "Sources/YiYanUI/Views/TargetTranslationSection.swift": "a9769ee0c1929b086f7bfd9768e0f3a214d0469fb7b1fdcd9b4c3bf61b7f8cbc",
-          "Sources/YiYanUI/Views/TargetTranslationText.swift": "d0a65f1d98a4aca4ee6554aa6854765871f1e71a0b635d0d8220c4b86aaf9fe5"
+          "Sources/YiYanUI/Views/RecordCardView.swift": "aff3af1e9170132bee6483fe20024704629dfdb9a5e3a632db5ba5fb883603bd",
+          "Sources/YiYanUI/Views/TargetTranslationSection.swift": "7e262b7a6957c5270f85536db4761fbc15ad6f4417a359a479f0f91d0e0c665c"
         }
       },
       {
         "source": "scripts/assets/presskit/yilo/ja/learning-record.png",
-        "sha256": "3ae08cf252fa42c37e10150e7735c39fa5dc75a554ead48fc2e0fba2e2a3c19d",
+        "sha256": "8c9d3f425e930aec65b5c43509cdfa5e6b5dce09ccb83041b8062d69d97792c2",
         "contentLanguage": "ja",
         "type": "native",
-        "capturedOn": "2026-11-06",
-        "appSourceCommit": "473a8fac19ac6b55b9604de50d851848854be133",
+        "capturedOn": "2026-11-07",
+        "appSourceCommit": "197ac0e3371e25694b1fb12a89ecb5e29f5924c5",
         "originalSource": "scripts/assets/yilo/capture/YiloWebsiteCapture.swift",
-        "operation": "Unmodified native AppKit/SwiftUI component export using the app's own localization resources. Learning card uses the exact user-selected real record. Settings use isolated sample preferences. No image text replacement, resizing or UI reconstruction. Not a full app window.",
+        "operation": "Unmodified native AppKit/SwiftUI component export using the app's own localization resources. Sample input, source setting and learning explanations match the UI language. English learns Simplified Chinese/Japanese; Japanese learns English/Simplified Chinese; other locales learn English/Japanese. Settings use isolated sample preferences. No image text replacement, resizing or UI reconstruction. Not a full app window.",
         "appearance": "dark",
-        "captureFixtureSha256": "66c5feed117a082d3b243abc765874ed4d4a64b89059e56ed7faed9e919664c7",
+        "captureFixtureSha256": "54f9461926a306a4484ba9ab8c5186517d74728a3d536d86889d7ef2c202c0fa",
         "nativeLocale": "ja",
         "nativeLabels": {
           "advice.category.collocation": "コロケーション",
           "advice.category.translation_pattern": "翻訳パターン",
           "advice.kind.learning_point": "学習ポイント",
           "language.japanese_reading.help": "ひらがなは漢字の上、ローマ字は対応する語の上にそろえて表示します。",
-          "language.notes": "学習ノート",
+          "language.notes": "学習メモ",
           "language.search": "言語を検索",
           "language.section": "学習する言語",
           "language.targets": "学習言語",
           "record.example": "例"
         },
-        "localizationSha256": "966a4e66f91701f09a22e8fd09a975071a902f3e5775eff9cafec8cb457f462f",
+        "sourceLanguage": "ja",
+        "targetLanguages": [
+          "en",
+          "zh-Hans"
+        ],
+        "localizationSha256": "74f2b2f6fd47b66bd653a55b70bc546a6acf34a86db0f502a0794de094598259",
         "sourceFiles": {
           "Sources/YiYanCore/Presentation/ChineseReading.swift": "9434540ee0608bc11e1f34b1f8cd927ad50d2fe6c80a7e79649f2cfbd2badee0",
           "Sources/YiYanCore/Presentation/JapaneseReading.swift": "a69369592104f8160a1a0f10146de68510c0e405a0946119f4335d10c0e37446",
+          "Sources/YiYanReading/TargetTranslationText.swift": "90f1725562ff8b42ec2174c00c18b8628ce1c3936dc05e8de585a55ea5fa1efb",
           "Sources/YiYanUI/ViewModels/AppLocalization.swift": "e85390f4b1e0c146d4c31b950ce2094a4514465b16ebe9ed60469baaab60f5fa",
           "Sources/YiYanUI/Views/LearningLanguageSettingsView.swift": "73dbe84f58ac61f94a0af16f0f82d02fcbc4681340f1c54dbd200942ab21f23e",
-          "Sources/YiYanUI/Views/RecordCardView.swift": "6a3aec0cf9309d5cdeffd02ab9b3d86660cc34ad269c8759af5a63a920f3ab02",
-          "Sources/YiYanUI/Views/TargetTranslationSection.swift": "a9769ee0c1929b086f7bfd9768e0f3a214d0469fb7b1fdcd9b4c3bf61b7f8cbc",
-          "Sources/YiYanUI/Views/TargetTranslationText.swift": "d0a65f1d98a4aca4ee6554aa6854765871f1e71a0b635d0d8220c4b86aaf9fe5"
+          "Sources/YiYanUI/Views/RecordCardView.swift": "aff3af1e9170132bee6483fe20024704629dfdb9a5e3a632db5ba5fb883603bd",
+          "Sources/YiYanUI/Views/TargetTranslationSection.swift": "7e262b7a6957c5270f85536db4761fbc15ad6f4417a359a479f0f91d0e0c665c"
         },
-        "recordSource": "scripts/assets/yilo/capture/selected-record.json",
-        "recordSha256": "50387fe82ecfeb5511011bd702ce14af8fd9ac90e92762ee1de5b05087097852"
+        "recordSource": "scripts/assets/yilo/capture/records/ja.json",
+        "recordSha256": "7412b812a6d3c0ef8cc93298c87579671504085fe12f6b7cea92d3df7ae5173e"
       },
       {
         "source": "scripts/assets/presskit/yilo/ja/learning-settings.png",
-        "sha256": "ba1d3b6f86db2f76dda37a642a2b2e73418711b90178ec2050e1604d492f93f0",
+        "sha256": "60944f16f6406e11223213c4f777f67b0d7c7b38a606de43b341937afd86671d",
         "contentLanguage": "ja",
         "type": "native",
-        "capturedOn": "2026-11-06",
-        "appSourceCommit": "473a8fac19ac6b55b9604de50d851848854be133",
+        "capturedOn": "2026-11-07",
+        "appSourceCommit": "197ac0e3371e25694b1fb12a89ecb5e29f5924c5",
         "originalSource": "scripts/assets/yilo/capture/YiloWebsiteCapture.swift",
-        "operation": "Unmodified native AppKit/SwiftUI component export using the app's own localization resources. Learning card uses the exact user-selected real record. Settings use isolated sample preferences. No image text replacement, resizing or UI reconstruction. Not a full app window.",
+        "operation": "Unmodified native AppKit/SwiftUI component export using the app's own localization resources. Sample input, source setting and learning explanations match the UI language. English learns Simplified Chinese/Japanese; Japanese learns English/Simplified Chinese; other locales learn English/Japanese. Settings use isolated sample preferences. No image text replacement, resizing or UI reconstruction. Not a full app window.",
         "appearance": "light",
-        "captureFixtureSha256": "66c5feed117a082d3b243abc765874ed4d4a64b89059e56ed7faed9e919664c7",
+        "captureFixtureSha256": "54f9461926a306a4484ba9ab8c5186517d74728a3d536d86889d7ef2c202c0fa",
         "nativeLocale": "ja",
         "nativeLabels": {
           "advice.category.collocation": "コロケーション",
           "advice.category.translation_pattern": "翻訳パターン",
           "advice.kind.learning_point": "学習ポイント",
           "language.japanese_reading.help": "ひらがなは漢字の上、ローマ字は対応する語の上にそろえて表示します。",
-          "language.notes": "学習ノート",
+          "language.notes": "学習メモ",
           "language.search": "言語を検索",
           "language.section": "学習する言語",
           "language.targets": "学習言語",
           "record.example": "例"
         },
-        "localizationSha256": "966a4e66f91701f09a22e8fd09a975071a902f3e5775eff9cafec8cb457f462f",
+        "sourceLanguage": "ja",
+        "targetLanguages": [
+          "en",
+          "zh-Hans"
+        ],
+        "localizationSha256": "74f2b2f6fd47b66bd653a55b70bc546a6acf34a86db0f502a0794de094598259",
         "sourceFiles": {
           "Sources/YiYanCore/Presentation/ChineseReading.swift": "9434540ee0608bc11e1f34b1f8cd927ad50d2fe6c80a7e79649f2cfbd2badee0",
           "Sources/YiYanCore/Presentation/JapaneseReading.swift": "a69369592104f8160a1a0f10146de68510c0e405a0946119f4335d10c0e37446",
+          "Sources/YiYanReading/TargetTranslationText.swift": "90f1725562ff8b42ec2174c00c18b8628ce1c3936dc05e8de585a55ea5fa1efb",
           "Sources/YiYanUI/ViewModels/AppLocalization.swift": "e85390f4b1e0c146d4c31b950ce2094a4514465b16ebe9ed60469baaab60f5fa",
           "Sources/YiYanUI/Views/LearningLanguageSettingsView.swift": "73dbe84f58ac61f94a0af16f0f82d02fcbc4681340f1c54dbd200942ab21f23e",
-          "Sources/YiYanUI/Views/RecordCardView.swift": "6a3aec0cf9309d5cdeffd02ab9b3d86660cc34ad269c8759af5a63a920f3ab02",
-          "Sources/YiYanUI/Views/TargetTranslationSection.swift": "a9769ee0c1929b086f7bfd9768e0f3a214d0469fb7b1fdcd9b4c3bf61b7f8cbc",
-          "Sources/YiYanUI/Views/TargetTranslationText.swift": "d0a65f1d98a4aca4ee6554aa6854765871f1e71a0b635d0d8220c4b86aaf9fe5"
+          "Sources/YiYanUI/Views/RecordCardView.swift": "aff3af1e9170132bee6483fe20024704629dfdb9a5e3a632db5ba5fb883603bd",
+          "Sources/YiYanUI/Views/TargetTranslationSection.swift": "7e262b7a6957c5270f85536db4761fbc15ad6f4417a359a479f0f91d0e0c665c"
         }
       },
       {
         "source": "scripts/assets/presskit/yilo/ko/hero-record.png",
-        "sha256": "eb38a749bfb3c3c6440f5bb5a509bafb086037421a2c4f342c970563eb86dc13",
+        "sha256": "f2a168d39ca524f73687fbe2569928d3398f3a13d46ea42331dfaf37f7ae98ee",
         "contentLanguage": "ko",
         "type": "native",
         "capturedOn": "2026-11-07",
-        "appSourceCommit": "473a8fac19ac6b55b9604de50d851848854be133",
+        "appSourceCommit": "197ac0e3371e25694b1fb12a89ecb5e29f5924c5",
         "originalSource": "scripts/assets/yilo/capture/YiloHeroCapture.swift",
         "operation": "Unmodified native RecordCardView export with a short isolated sample record, the app's extraLarge text preference, native Pinyin/Romaji and collapsed learning notes. No image text replacement, resizing or UI reconstruction. Not a full app window.",
         "appearance": "light",
-        "captureFixtureSha256": "e9fec5ac2728e71af0b2ca93742f372700d9ee4644dbfda51d21874e0cadba4c",
+        "captureFixtureSha256": "be1102272a66d16cd4647f7791ccc3198e1e2a7cc2f0adaf3d144a65b215746e",
         "nativeLocale": "ko",
         "nativeLabels": {
           "advice.category.collocation": "연어",
@@ -1976,35 +2116,40 @@
           "language.targets": "목표 언어",
           "record.example": "예시"
         },
-        "localizationSha256": "8b9292fab913c585bc070bda9ddfdf4929457c1e58de02014ca7fa45b1a99a99",
+        "sourceLanguage": "ko",
+        "targetLanguages": [
+          "en",
+          "ja"
+        ],
+        "localizationSha256": "c4af4e26d7f1f49d6be28e274c445d262b335be83cfbb01d6c0f4a0b600ae44c",
         "sourceFiles": {
           "Sources/YiYanCore/Presentation/ChineseReading.swift": "9434540ee0608bc11e1f34b1f8cd927ad50d2fe6c80a7e79649f2cfbd2badee0",
           "Sources/YiYanCore/Presentation/JapaneseReading.swift": "a69369592104f8160a1a0f10146de68510c0e405a0946119f4335d10c0e37446",
+          "Sources/YiYanReading/TargetTranslationText.swift": "90f1725562ff8b42ec2174c00c18b8628ce1c3936dc05e8de585a55ea5fa1efb",
           "Sources/YiYanUI/ViewModels/AppLocalization.swift": "e85390f4b1e0c146d4c31b950ce2094a4514465b16ebe9ed60469baaab60f5fa",
           "Sources/YiYanUI/Views/LearningLanguageSettingsView.swift": "73dbe84f58ac61f94a0af16f0f82d02fcbc4681340f1c54dbd200942ab21f23e",
           "Sources/YiYanUI/Views/MainWindowTypography.swift": "42bc78028c1a83a6b8b3925b0afad4ec97e54056270fb654236ea26f1357a04c",
-          "Sources/YiYanUI/Views/RecordCardView.swift": "6a3aec0cf9309d5cdeffd02ab9b3d86660cc34ad269c8759af5a63a920f3ab02",
-          "Sources/YiYanUI/Views/TargetTranslationSection.swift": "a9769ee0c1929b086f7bfd9768e0f3a214d0469fb7b1fdcd9b4c3bf61b7f8cbc",
-          "Sources/YiYanUI/Views/TargetTranslationText.swift": "d0a65f1d98a4aca4ee6554aa6854765871f1e71a0b635d0d8220c4b86aaf9fe5"
+          "Sources/YiYanUI/Views/RecordCardView.swift": "aff3af1e9170132bee6483fe20024704629dfdb9a5e3a632db5ba5fb883603bd",
+          "Sources/YiYanUI/Views/TargetTranslationSection.swift": "7e262b7a6957c5270f85536db4761fbc15ad6f4417a359a479f0f91d0e0c665c"
         },
-        "recordSource": "scripts/assets/yilo/capture/hero-record-zh.json",
-        "recordSha256": "c1be5c91774667c0198a245cafdc0a6eec281f2114402972a3e102eb5f1d3d79",
+        "recordSource": "scripts/assets/yilo/capture/hero-records/ko.json",
+        "recordSha256": "1a0bde09a5bac6f58e3b77bcae32ef348b2c6704494d0f8312b02358d7e8032f",
         "nativeTextSize": "extraLarge",
         "nativeFrameWidthPoints": 520,
         "pixelWidth": 1040,
-        "pixelHeight": 564
+        "pixelHeight": 603
       },
       {
         "source": "scripts/assets/presskit/yilo/ko/language-selection.png",
-        "sha256": "687cc0c9ad735c996f6a9884788ba37891f76572962e6e22c8e2cc8ad6d37ade",
+        "sha256": "281af280eed9f7e0362010c5e8b9ea282dd217ad5ad63eabd09f580c2564f543",
         "contentLanguage": "ko",
         "type": "native",
-        "capturedOn": "2026-11-06",
-        "appSourceCommit": "473a8fac19ac6b55b9604de50d851848854be133",
+        "capturedOn": "2026-11-07",
+        "appSourceCommit": "197ac0e3371e25694b1fb12a89ecb5e29f5924c5",
         "originalSource": "scripts/assets/yilo/capture/YiloWebsiteCapture.swift",
-        "operation": "Unmodified native AppKit/SwiftUI component export using the app's own localization resources. Learning card uses the exact user-selected real record. Settings use isolated sample preferences. No image text replacement, resizing or UI reconstruction. Not a full app window.",
+        "operation": "Unmodified native AppKit/SwiftUI component export using the app's own localization resources. Sample input, source setting and learning explanations match the UI language. English learns Simplified Chinese/Japanese; Japanese learns English/Simplified Chinese; other locales learn English/Japanese. Settings use isolated sample preferences. No image text replacement, resizing or UI reconstruction. Not a full app window.",
         "appearance": "light",
-        "captureFixtureSha256": "66c5feed117a082d3b243abc765874ed4d4a64b89059e56ed7faed9e919664c7",
+        "captureFixtureSha256": "54f9461926a306a4484ba9ab8c5186517d74728a3d536d86889d7ef2c202c0fa",
         "nativeLocale": "ko",
         "nativeLabels": {
           "advice.category.collocation": "연어",
@@ -2017,28 +2162,33 @@
           "language.targets": "목표 언어",
           "record.example": "예시"
         },
-        "localizationSha256": "8b9292fab913c585bc070bda9ddfdf4929457c1e58de02014ca7fa45b1a99a99",
+        "sourceLanguage": "ko",
+        "targetLanguages": [
+          "en",
+          "ja"
+        ],
+        "localizationSha256": "c4af4e26d7f1f49d6be28e274c445d262b335be83cfbb01d6c0f4a0b600ae44c",
         "sourceFiles": {
           "Sources/YiYanCore/Presentation/ChineseReading.swift": "9434540ee0608bc11e1f34b1f8cd927ad50d2fe6c80a7e79649f2cfbd2badee0",
           "Sources/YiYanCore/Presentation/JapaneseReading.swift": "a69369592104f8160a1a0f10146de68510c0e405a0946119f4335d10c0e37446",
+          "Sources/YiYanReading/TargetTranslationText.swift": "90f1725562ff8b42ec2174c00c18b8628ce1c3936dc05e8de585a55ea5fa1efb",
           "Sources/YiYanUI/ViewModels/AppLocalization.swift": "e85390f4b1e0c146d4c31b950ce2094a4514465b16ebe9ed60469baaab60f5fa",
           "Sources/YiYanUI/Views/LearningLanguageSettingsView.swift": "73dbe84f58ac61f94a0af16f0f82d02fcbc4681340f1c54dbd200942ab21f23e",
-          "Sources/YiYanUI/Views/RecordCardView.swift": "6a3aec0cf9309d5cdeffd02ab9b3d86660cc34ad269c8759af5a63a920f3ab02",
-          "Sources/YiYanUI/Views/TargetTranslationSection.swift": "a9769ee0c1929b086f7bfd9768e0f3a214d0469fb7b1fdcd9b4c3bf61b7f8cbc",
-          "Sources/YiYanUI/Views/TargetTranslationText.swift": "d0a65f1d98a4aca4ee6554aa6854765871f1e71a0b635d0d8220c4b86aaf9fe5"
+          "Sources/YiYanUI/Views/RecordCardView.swift": "aff3af1e9170132bee6483fe20024704629dfdb9a5e3a632db5ba5fb883603bd",
+          "Sources/YiYanUI/Views/TargetTranslationSection.swift": "7e262b7a6957c5270f85536db4761fbc15ad6f4417a359a479f0f91d0e0c665c"
         }
       },
       {
         "source": "scripts/assets/presskit/yilo/ko/learning-record.png",
-        "sha256": "554a0ac5654404a40f307d124a5ce1f427352ff94b82df6a648601a67bee2fda",
+        "sha256": "a5f24718897fb847a0a832cd0868a55e22e315768fe2a05804e4d77605c6da0b",
         "contentLanguage": "ko",
         "type": "native",
-        "capturedOn": "2026-11-06",
-        "appSourceCommit": "473a8fac19ac6b55b9604de50d851848854be133",
+        "capturedOn": "2026-11-07",
+        "appSourceCommit": "197ac0e3371e25694b1fb12a89ecb5e29f5924c5",
         "originalSource": "scripts/assets/yilo/capture/YiloWebsiteCapture.swift",
-        "operation": "Unmodified native AppKit/SwiftUI component export using the app's own localization resources. Learning card uses the exact user-selected real record. Settings use isolated sample preferences. No image text replacement, resizing or UI reconstruction. Not a full app window.",
+        "operation": "Unmodified native AppKit/SwiftUI component export using the app's own localization resources. Sample input, source setting and learning explanations match the UI language. English learns Simplified Chinese/Japanese; Japanese learns English/Simplified Chinese; other locales learn English/Japanese. Settings use isolated sample preferences. No image text replacement, resizing or UI reconstruction. Not a full app window.",
         "appearance": "dark",
-        "captureFixtureSha256": "66c5feed117a082d3b243abc765874ed4d4a64b89059e56ed7faed9e919664c7",
+        "captureFixtureSha256": "54f9461926a306a4484ba9ab8c5186517d74728a3d536d86889d7ef2c202c0fa",
         "nativeLocale": "ko",
         "nativeLabels": {
           "advice.category.collocation": "연어",
@@ -2051,30 +2201,35 @@
           "language.targets": "목표 언어",
           "record.example": "예시"
         },
-        "localizationSha256": "8b9292fab913c585bc070bda9ddfdf4929457c1e58de02014ca7fa45b1a99a99",
+        "sourceLanguage": "ko",
+        "targetLanguages": [
+          "en",
+          "ja"
+        ],
+        "localizationSha256": "c4af4e26d7f1f49d6be28e274c445d262b335be83cfbb01d6c0f4a0b600ae44c",
         "sourceFiles": {
           "Sources/YiYanCore/Presentation/ChineseReading.swift": "9434540ee0608bc11e1f34b1f8cd927ad50d2fe6c80a7e79649f2cfbd2badee0",
           "Sources/YiYanCore/Presentation/JapaneseReading.swift": "a69369592104f8160a1a0f10146de68510c0e405a0946119f4335d10c0e37446",
+          "Sources/YiYanReading/TargetTranslationText.swift": "90f1725562ff8b42ec2174c00c18b8628ce1c3936dc05e8de585a55ea5fa1efb",
           "Sources/YiYanUI/ViewModels/AppLocalization.swift": "e85390f4b1e0c146d4c31b950ce2094a4514465b16ebe9ed60469baaab60f5fa",
           "Sources/YiYanUI/Views/LearningLanguageSettingsView.swift": "73dbe84f58ac61f94a0af16f0f82d02fcbc4681340f1c54dbd200942ab21f23e",
-          "Sources/YiYanUI/Views/RecordCardView.swift": "6a3aec0cf9309d5cdeffd02ab9b3d86660cc34ad269c8759af5a63a920f3ab02",
-          "Sources/YiYanUI/Views/TargetTranslationSection.swift": "a9769ee0c1929b086f7bfd9768e0f3a214d0469fb7b1fdcd9b4c3bf61b7f8cbc",
-          "Sources/YiYanUI/Views/TargetTranslationText.swift": "d0a65f1d98a4aca4ee6554aa6854765871f1e71a0b635d0d8220c4b86aaf9fe5"
+          "Sources/YiYanUI/Views/RecordCardView.swift": "aff3af1e9170132bee6483fe20024704629dfdb9a5e3a632db5ba5fb883603bd",
+          "Sources/YiYanUI/Views/TargetTranslationSection.swift": "7e262b7a6957c5270f85536db4761fbc15ad6f4417a359a479f0f91d0e0c665c"
         },
-        "recordSource": "scripts/assets/yilo/capture/selected-record.json",
-        "recordSha256": "50387fe82ecfeb5511011bd702ce14af8fd9ac90e92762ee1de5b05087097852"
+        "recordSource": "scripts/assets/yilo/capture/records/ko.json",
+        "recordSha256": "bf9c59be81b5a0abf2247621bdaa7adea92e84a666339c6e81c48fbe8881f3ff"
       },
       {
         "source": "scripts/assets/presskit/yilo/ko/learning-settings.png",
-        "sha256": "0e18b35ee6f38af0d8d5128cc87264bcd4a57eebcd3ffa2e0f5bd47a23461be7",
+        "sha256": "155466c6c58f0e523e7a6e43169e1a65d52d6daaa2aa5cd82a102d6630c66379",
         "contentLanguage": "ko",
         "type": "native",
-        "capturedOn": "2026-11-06",
-        "appSourceCommit": "473a8fac19ac6b55b9604de50d851848854be133",
+        "capturedOn": "2026-11-07",
+        "appSourceCommit": "197ac0e3371e25694b1fb12a89ecb5e29f5924c5",
         "originalSource": "scripts/assets/yilo/capture/YiloWebsiteCapture.swift",
-        "operation": "Unmodified native AppKit/SwiftUI component export using the app's own localization resources. Learning card uses the exact user-selected real record. Settings use isolated sample preferences. No image text replacement, resizing or UI reconstruction. Not a full app window.",
+        "operation": "Unmodified native AppKit/SwiftUI component export using the app's own localization resources. Sample input, source setting and learning explanations match the UI language. English learns Simplified Chinese/Japanese; Japanese learns English/Simplified Chinese; other locales learn English/Japanese. Settings use isolated sample preferences. No image text replacement, resizing or UI reconstruction. Not a full app window.",
         "appearance": "light",
-        "captureFixtureSha256": "66c5feed117a082d3b243abc765874ed4d4a64b89059e56ed7faed9e919664c7",
+        "captureFixtureSha256": "54f9461926a306a4484ba9ab8c5186517d74728a3d536d86889d7ef2c202c0fa",
         "nativeLocale": "ko",
         "nativeLabels": {
           "advice.category.collocation": "연어",
@@ -2087,173 +2242,198 @@
           "language.targets": "목표 언어",
           "record.example": "예시"
         },
-        "localizationSha256": "8b9292fab913c585bc070bda9ddfdf4929457c1e58de02014ca7fa45b1a99a99",
+        "sourceLanguage": "ko",
+        "targetLanguages": [
+          "en",
+          "ja"
+        ],
+        "localizationSha256": "c4af4e26d7f1f49d6be28e274c445d262b335be83cfbb01d6c0f4a0b600ae44c",
         "sourceFiles": {
           "Sources/YiYanCore/Presentation/ChineseReading.swift": "9434540ee0608bc11e1f34b1f8cd927ad50d2fe6c80a7e79649f2cfbd2badee0",
           "Sources/YiYanCore/Presentation/JapaneseReading.swift": "a69369592104f8160a1a0f10146de68510c0e405a0946119f4335d10c0e37446",
+          "Sources/YiYanReading/TargetTranslationText.swift": "90f1725562ff8b42ec2174c00c18b8628ce1c3936dc05e8de585a55ea5fa1efb",
           "Sources/YiYanUI/ViewModels/AppLocalization.swift": "e85390f4b1e0c146d4c31b950ce2094a4514465b16ebe9ed60469baaab60f5fa",
           "Sources/YiYanUI/Views/LearningLanguageSettingsView.swift": "73dbe84f58ac61f94a0af16f0f82d02fcbc4681340f1c54dbd200942ab21f23e",
-          "Sources/YiYanUI/Views/RecordCardView.swift": "6a3aec0cf9309d5cdeffd02ab9b3d86660cc34ad269c8759af5a63a920f3ab02",
-          "Sources/YiYanUI/Views/TargetTranslationSection.swift": "a9769ee0c1929b086f7bfd9768e0f3a214d0469fb7b1fdcd9b4c3bf61b7f8cbc",
-          "Sources/YiYanUI/Views/TargetTranslationText.swift": "d0a65f1d98a4aca4ee6554aa6854765871f1e71a0b635d0d8220c4b86aaf9fe5"
+          "Sources/YiYanUI/Views/RecordCardView.swift": "aff3af1e9170132bee6483fe20024704629dfdb9a5e3a632db5ba5fb883603bd",
+          "Sources/YiYanUI/Views/TargetTranslationSection.swift": "7e262b7a6957c5270f85536db4761fbc15ad6f4417a359a479f0f91d0e0c665c"
         }
       },
       {
         "source": "scripts/assets/presskit/yilo/pt-BR/hero-record.png",
-        "sha256": "6f372bb00ea33dd37b844a65d0456a5261b9bbac9c19aa3aa60b665509aed676",
+        "sha256": "06eb5c15f7a96509e57dc98f408b58ea9deed3e6c0522232c0379d38e5ad66c8",
         "contentLanguage": "pt-BR",
         "type": "native",
         "capturedOn": "2026-11-07",
-        "appSourceCommit": "473a8fac19ac6b55b9604de50d851848854be133",
+        "appSourceCommit": "197ac0e3371e25694b1fb12a89ecb5e29f5924c5",
         "originalSource": "scripts/assets/yilo/capture/YiloHeroCapture.swift",
         "operation": "Unmodified native RecordCardView export with a short isolated sample record, the app's extraLarge text preference, native Pinyin/Romaji and collapsed learning notes. No image text replacement, resizing or UI reconstruction. Not a full app window.",
         "appearance": "light",
-        "captureFixtureSha256": "e9fec5ac2728e71af0b2ca93742f372700d9ee4644dbfda51d21874e0cadba4c",
+        "captureFixtureSha256": "be1102272a66d16cd4647f7791ccc3198e1e2a7cc2f0adaf3d144a65b215746e",
         "nativeLocale": "pt-BR",
         "nativeLabels": {
           "advice.category.collocation": "Colocação",
           "advice.category.translation_pattern": "Padrão de tradução",
           "advice.kind.learning_point": "Ponto de aprendizado",
           "language.japanese_reading.help": "O hiragana aparece acima dos kanji e o romaji é alinhado acima de cada palavra japonesa.",
-          "language.notes": "Notas de estudo",
+          "language.notes": "Notas de aprendizado",
           "language.search": "Buscar idiomas",
           "language.section": "Idiomas de estudo",
           "language.targets": "Idiomas de destino",
           "record.example": "Exemplo"
         },
-        "localizationSha256": "b3641b036cec6f51dee90b3b011bbba3a78b7d8e68c708e35a45ad251ce81953",
+        "sourceLanguage": "pt-BR",
+        "targetLanguages": [
+          "en",
+          "ja"
+        ],
+        "localizationSha256": "8e7f580b14fd108f5cecbbdd20861935f544d532876b7b01a87d5ecfe08e78fb",
         "sourceFiles": {
           "Sources/YiYanCore/Presentation/ChineseReading.swift": "9434540ee0608bc11e1f34b1f8cd927ad50d2fe6c80a7e79649f2cfbd2badee0",
           "Sources/YiYanCore/Presentation/JapaneseReading.swift": "a69369592104f8160a1a0f10146de68510c0e405a0946119f4335d10c0e37446",
+          "Sources/YiYanReading/TargetTranslationText.swift": "90f1725562ff8b42ec2174c00c18b8628ce1c3936dc05e8de585a55ea5fa1efb",
           "Sources/YiYanUI/ViewModels/AppLocalization.swift": "e85390f4b1e0c146d4c31b950ce2094a4514465b16ebe9ed60469baaab60f5fa",
           "Sources/YiYanUI/Views/LearningLanguageSettingsView.swift": "73dbe84f58ac61f94a0af16f0f82d02fcbc4681340f1c54dbd200942ab21f23e",
           "Sources/YiYanUI/Views/MainWindowTypography.swift": "42bc78028c1a83a6b8b3925b0afad4ec97e54056270fb654236ea26f1357a04c",
-          "Sources/YiYanUI/Views/RecordCardView.swift": "6a3aec0cf9309d5cdeffd02ab9b3d86660cc34ad269c8759af5a63a920f3ab02",
-          "Sources/YiYanUI/Views/TargetTranslationSection.swift": "a9769ee0c1929b086f7bfd9768e0f3a214d0469fb7b1fdcd9b4c3bf61b7f8cbc",
-          "Sources/YiYanUI/Views/TargetTranslationText.swift": "d0a65f1d98a4aca4ee6554aa6854765871f1e71a0b635d0d8220c4b86aaf9fe5"
+          "Sources/YiYanUI/Views/RecordCardView.swift": "aff3af1e9170132bee6483fe20024704629dfdb9a5e3a632db5ba5fb883603bd",
+          "Sources/YiYanUI/Views/TargetTranslationSection.swift": "7e262b7a6957c5270f85536db4761fbc15ad6f4417a359a479f0f91d0e0c665c"
         },
-        "recordSource": "scripts/assets/yilo/capture/hero-record-zh.json",
-        "recordSha256": "c1be5c91774667c0198a245cafdc0a6eec281f2114402972a3e102eb5f1d3d79",
+        "recordSource": "scripts/assets/yilo/capture/hero-records/pt-BR.json",
+        "recordSha256": "fd887337dc8d51ab5257db311a9f0dd22950521ddc0693d1e407a14c15f60be9",
         "nativeTextSize": "extraLarge",
         "nativeFrameWidthPoints": 520,
         "pixelWidth": 1040,
-        "pixelHeight": 564
+        "pixelHeight": 603
       },
       {
         "source": "scripts/assets/presskit/yilo/pt-BR/language-selection.png",
-        "sha256": "a8c4e28f87a67b2627e835e178f4060daee8fca76189f675a930614fce1e8106",
+        "sha256": "4a8bb472e3a311041703fa22d8de278ccf2647ac0b90d3142eb8db40efbd0603",
         "contentLanguage": "pt-BR",
         "type": "native",
-        "capturedOn": "2026-11-06",
-        "appSourceCommit": "473a8fac19ac6b55b9604de50d851848854be133",
+        "capturedOn": "2026-11-07",
+        "appSourceCommit": "197ac0e3371e25694b1fb12a89ecb5e29f5924c5",
         "originalSource": "scripts/assets/yilo/capture/YiloWebsiteCapture.swift",
-        "operation": "Unmodified native AppKit/SwiftUI component export using the app's own localization resources. Learning card uses the exact user-selected real record. Settings use isolated sample preferences. No image text replacement, resizing or UI reconstruction. Not a full app window.",
+        "operation": "Unmodified native AppKit/SwiftUI component export using the app's own localization resources. Sample input, source setting and learning explanations match the UI language. English learns Simplified Chinese/Japanese; Japanese learns English/Simplified Chinese; other locales learn English/Japanese. Settings use isolated sample preferences. No image text replacement, resizing or UI reconstruction. Not a full app window.",
         "appearance": "light",
-        "captureFixtureSha256": "66c5feed117a082d3b243abc765874ed4d4a64b89059e56ed7faed9e919664c7",
+        "captureFixtureSha256": "54f9461926a306a4484ba9ab8c5186517d74728a3d536d86889d7ef2c202c0fa",
         "nativeLocale": "pt-BR",
         "nativeLabels": {
           "advice.category.collocation": "Colocação",
           "advice.category.translation_pattern": "Padrão de tradução",
           "advice.kind.learning_point": "Ponto de aprendizado",
           "language.japanese_reading.help": "O hiragana aparece acima dos kanji e o romaji é alinhado acima de cada palavra japonesa.",
-          "language.notes": "Notas de estudo",
+          "language.notes": "Notas de aprendizado",
           "language.search": "Buscar idiomas",
           "language.section": "Idiomas de estudo",
           "language.targets": "Idiomas de destino",
           "record.example": "Exemplo"
         },
-        "localizationSha256": "b3641b036cec6f51dee90b3b011bbba3a78b7d8e68c708e35a45ad251ce81953",
+        "sourceLanguage": "pt-BR",
+        "targetLanguages": [
+          "en",
+          "ja"
+        ],
+        "localizationSha256": "8e7f580b14fd108f5cecbbdd20861935f544d532876b7b01a87d5ecfe08e78fb",
         "sourceFiles": {
           "Sources/YiYanCore/Presentation/ChineseReading.swift": "9434540ee0608bc11e1f34b1f8cd927ad50d2fe6c80a7e79649f2cfbd2badee0",
           "Sources/YiYanCore/Presentation/JapaneseReading.swift": "a69369592104f8160a1a0f10146de68510c0e405a0946119f4335d10c0e37446",
+          "Sources/YiYanReading/TargetTranslationText.swift": "90f1725562ff8b42ec2174c00c18b8628ce1c3936dc05e8de585a55ea5fa1efb",
           "Sources/YiYanUI/ViewModels/AppLocalization.swift": "e85390f4b1e0c146d4c31b950ce2094a4514465b16ebe9ed60469baaab60f5fa",
           "Sources/YiYanUI/Views/LearningLanguageSettingsView.swift": "73dbe84f58ac61f94a0af16f0f82d02fcbc4681340f1c54dbd200942ab21f23e",
-          "Sources/YiYanUI/Views/RecordCardView.swift": "6a3aec0cf9309d5cdeffd02ab9b3d86660cc34ad269c8759af5a63a920f3ab02",
-          "Sources/YiYanUI/Views/TargetTranslationSection.swift": "a9769ee0c1929b086f7bfd9768e0f3a214d0469fb7b1fdcd9b4c3bf61b7f8cbc",
-          "Sources/YiYanUI/Views/TargetTranslationText.swift": "d0a65f1d98a4aca4ee6554aa6854765871f1e71a0b635d0d8220c4b86aaf9fe5"
+          "Sources/YiYanUI/Views/RecordCardView.swift": "aff3af1e9170132bee6483fe20024704629dfdb9a5e3a632db5ba5fb883603bd",
+          "Sources/YiYanUI/Views/TargetTranslationSection.swift": "7e262b7a6957c5270f85536db4761fbc15ad6f4417a359a479f0f91d0e0c665c"
         }
       },
       {
         "source": "scripts/assets/presskit/yilo/pt-BR/learning-record.png",
-        "sha256": "5dd6389ac8150f2f398a84b9fd58736af42d6994bd0cabd2dde53489253887f8",
+        "sha256": "7e120522acd5e4a433490a0d22b493ae8249548e33fe3e7151cbcf5ba790dbb1",
         "contentLanguage": "pt-BR",
         "type": "native",
-        "capturedOn": "2026-11-06",
-        "appSourceCommit": "473a8fac19ac6b55b9604de50d851848854be133",
+        "capturedOn": "2026-11-07",
+        "appSourceCommit": "197ac0e3371e25694b1fb12a89ecb5e29f5924c5",
         "originalSource": "scripts/assets/yilo/capture/YiloWebsiteCapture.swift",
-        "operation": "Unmodified native AppKit/SwiftUI component export using the app's own localization resources. Learning card uses the exact user-selected real record. Settings use isolated sample preferences. No image text replacement, resizing or UI reconstruction. Not a full app window.",
+        "operation": "Unmodified native AppKit/SwiftUI component export using the app's own localization resources. Sample input, source setting and learning explanations match the UI language. English learns Simplified Chinese/Japanese; Japanese learns English/Simplified Chinese; other locales learn English/Japanese. Settings use isolated sample preferences. No image text replacement, resizing or UI reconstruction. Not a full app window.",
         "appearance": "dark",
-        "captureFixtureSha256": "66c5feed117a082d3b243abc765874ed4d4a64b89059e56ed7faed9e919664c7",
+        "captureFixtureSha256": "54f9461926a306a4484ba9ab8c5186517d74728a3d536d86889d7ef2c202c0fa",
         "nativeLocale": "pt-BR",
         "nativeLabels": {
           "advice.category.collocation": "Colocação",
           "advice.category.translation_pattern": "Padrão de tradução",
           "advice.kind.learning_point": "Ponto de aprendizado",
           "language.japanese_reading.help": "O hiragana aparece acima dos kanji e o romaji é alinhado acima de cada palavra japonesa.",
-          "language.notes": "Notas de estudo",
+          "language.notes": "Notas de aprendizado",
           "language.search": "Buscar idiomas",
           "language.section": "Idiomas de estudo",
           "language.targets": "Idiomas de destino",
           "record.example": "Exemplo"
         },
-        "localizationSha256": "b3641b036cec6f51dee90b3b011bbba3a78b7d8e68c708e35a45ad251ce81953",
+        "sourceLanguage": "pt-BR",
+        "targetLanguages": [
+          "en",
+          "ja"
+        ],
+        "localizationSha256": "8e7f580b14fd108f5cecbbdd20861935f544d532876b7b01a87d5ecfe08e78fb",
         "sourceFiles": {
           "Sources/YiYanCore/Presentation/ChineseReading.swift": "9434540ee0608bc11e1f34b1f8cd927ad50d2fe6c80a7e79649f2cfbd2badee0",
           "Sources/YiYanCore/Presentation/JapaneseReading.swift": "a69369592104f8160a1a0f10146de68510c0e405a0946119f4335d10c0e37446",
+          "Sources/YiYanReading/TargetTranslationText.swift": "90f1725562ff8b42ec2174c00c18b8628ce1c3936dc05e8de585a55ea5fa1efb",
           "Sources/YiYanUI/ViewModels/AppLocalization.swift": "e85390f4b1e0c146d4c31b950ce2094a4514465b16ebe9ed60469baaab60f5fa",
           "Sources/YiYanUI/Views/LearningLanguageSettingsView.swift": "73dbe84f58ac61f94a0af16f0f82d02fcbc4681340f1c54dbd200942ab21f23e",
-          "Sources/YiYanUI/Views/RecordCardView.swift": "6a3aec0cf9309d5cdeffd02ab9b3d86660cc34ad269c8759af5a63a920f3ab02",
-          "Sources/YiYanUI/Views/TargetTranslationSection.swift": "a9769ee0c1929b086f7bfd9768e0f3a214d0469fb7b1fdcd9b4c3bf61b7f8cbc",
-          "Sources/YiYanUI/Views/TargetTranslationText.swift": "d0a65f1d98a4aca4ee6554aa6854765871f1e71a0b635d0d8220c4b86aaf9fe5"
+          "Sources/YiYanUI/Views/RecordCardView.swift": "aff3af1e9170132bee6483fe20024704629dfdb9a5e3a632db5ba5fb883603bd",
+          "Sources/YiYanUI/Views/TargetTranslationSection.swift": "7e262b7a6957c5270f85536db4761fbc15ad6f4417a359a479f0f91d0e0c665c"
         },
-        "recordSource": "scripts/assets/yilo/capture/selected-record.json",
-        "recordSha256": "50387fe82ecfeb5511011bd702ce14af8fd9ac90e92762ee1de5b05087097852"
+        "recordSource": "scripts/assets/yilo/capture/records/pt-BR.json",
+        "recordSha256": "d369a883687c08b14e8d19bea1eb99716175d0bb7b9d0f75bb2c524776307f63"
       },
       {
         "source": "scripts/assets/presskit/yilo/pt-BR/learning-settings.png",
-        "sha256": "b0ca94e5fdfa1801687ef21a56f6f03b28134bee574462fa37bcac05ea6f058f",
+        "sha256": "f4ecf3252cf32b15d53f9fb3e9b82f1550a70cbcf5cfc5402ad33373b3aab1f3",
         "contentLanguage": "pt-BR",
         "type": "native",
-        "capturedOn": "2026-11-06",
-        "appSourceCommit": "473a8fac19ac6b55b9604de50d851848854be133",
+        "capturedOn": "2026-11-07",
+        "appSourceCommit": "197ac0e3371e25694b1fb12a89ecb5e29f5924c5",
         "originalSource": "scripts/assets/yilo/capture/YiloWebsiteCapture.swift",
-        "operation": "Unmodified native AppKit/SwiftUI component export using the app's own localization resources. Learning card uses the exact user-selected real record. Settings use isolated sample preferences. No image text replacement, resizing or UI reconstruction. Not a full app window.",
+        "operation": "Unmodified native AppKit/SwiftUI component export using the app's own localization resources. Sample input, source setting and learning explanations match the UI language. English learns Simplified Chinese/Japanese; Japanese learns English/Simplified Chinese; other locales learn English/Japanese. Settings use isolated sample preferences. No image text replacement, resizing or UI reconstruction. Not a full app window.",
         "appearance": "light",
-        "captureFixtureSha256": "66c5feed117a082d3b243abc765874ed4d4a64b89059e56ed7faed9e919664c7",
+        "captureFixtureSha256": "54f9461926a306a4484ba9ab8c5186517d74728a3d536d86889d7ef2c202c0fa",
         "nativeLocale": "pt-BR",
         "nativeLabels": {
           "advice.category.collocation": "Colocação",
           "advice.category.translation_pattern": "Padrão de tradução",
           "advice.kind.learning_point": "Ponto de aprendizado",
           "language.japanese_reading.help": "O hiragana aparece acima dos kanji e o romaji é alinhado acima de cada palavra japonesa.",
-          "language.notes": "Notas de estudo",
+          "language.notes": "Notas de aprendizado",
           "language.search": "Buscar idiomas",
           "language.section": "Idiomas de estudo",
           "language.targets": "Idiomas de destino",
           "record.example": "Exemplo"
         },
-        "localizationSha256": "b3641b036cec6f51dee90b3b011bbba3a78b7d8e68c708e35a45ad251ce81953",
+        "sourceLanguage": "pt-BR",
+        "targetLanguages": [
+          "en",
+          "ja"
+        ],
+        "localizationSha256": "8e7f580b14fd108f5cecbbdd20861935f544d532876b7b01a87d5ecfe08e78fb",
         "sourceFiles": {
           "Sources/YiYanCore/Presentation/ChineseReading.swift": "9434540ee0608bc11e1f34b1f8cd927ad50d2fe6c80a7e79649f2cfbd2badee0",
           "Sources/YiYanCore/Presentation/JapaneseReading.swift": "a69369592104f8160a1a0f10146de68510c0e405a0946119f4335d10c0e37446",
+          "Sources/YiYanReading/TargetTranslationText.swift": "90f1725562ff8b42ec2174c00c18b8628ce1c3936dc05e8de585a55ea5fa1efb",
           "Sources/YiYanUI/ViewModels/AppLocalization.swift": "e85390f4b1e0c146d4c31b950ce2094a4514465b16ebe9ed60469baaab60f5fa",
           "Sources/YiYanUI/Views/LearningLanguageSettingsView.swift": "73dbe84f58ac61f94a0af16f0f82d02fcbc4681340f1c54dbd200942ab21f23e",
-          "Sources/YiYanUI/Views/RecordCardView.swift": "6a3aec0cf9309d5cdeffd02ab9b3d86660cc34ad269c8759af5a63a920f3ab02",
-          "Sources/YiYanUI/Views/TargetTranslationSection.swift": "a9769ee0c1929b086f7bfd9768e0f3a214d0469fb7b1fdcd9b4c3bf61b7f8cbc",
-          "Sources/YiYanUI/Views/TargetTranslationText.swift": "d0a65f1d98a4aca4ee6554aa6854765871f1e71a0b635d0d8220c4b86aaf9fe5"
+          "Sources/YiYanUI/Views/RecordCardView.swift": "aff3af1e9170132bee6483fe20024704629dfdb9a5e3a632db5ba5fb883603bd",
+          "Sources/YiYanUI/Views/TargetTranslationSection.swift": "7e262b7a6957c5270f85536db4761fbc15ad6f4417a359a479f0f91d0e0c665c"
         }
       },
       {
         "source": "scripts/assets/presskit/yilo/ru/hero-record.png",
-        "sha256": "c738aae79c0fe3e5ad873a8fed03f874de8b239ded3315845965c38f93d61ad0",
+        "sha256": "3f863663b986685793dffb69b3d7a51169d24fee4bed070c27231de72a543ce9",
         "contentLanguage": "ru",
         "type": "native",
         "capturedOn": "2026-11-07",
-        "appSourceCommit": "473a8fac19ac6b55b9604de50d851848854be133",
+        "appSourceCommit": "197ac0e3371e25694b1fb12a89ecb5e29f5924c5",
         "originalSource": "scripts/assets/yilo/capture/YiloHeroCapture.swift",
         "operation": "Unmodified native RecordCardView export with a short isolated sample record, the app's extraLarge text preference, native Pinyin/Romaji and collapsed learning notes. No image text replacement, resizing or UI reconstruction. Not a full app window.",
         "appearance": "light",
-        "captureFixtureSha256": "e9fec5ac2728e71af0b2ca93742f372700d9ee4644dbfda51d21874e0cadba4c",
+        "captureFixtureSha256": "be1102272a66d16cd4647f7791ccc3198e1e2a7cc2f0adaf3d144a65b215746e",
         "nativeLocale": "ru",
         "nativeLabels": {
           "advice.category.collocation": "Сочетаемость",
@@ -2266,35 +2446,40 @@
           "language.targets": "Изучаемые языки",
           "record.example": "Пример"
         },
-        "localizationSha256": "bb8dae9f2662f18d150f139df9d8040864342f8d93cf6d479029e54b3d4e76b5",
+        "sourceLanguage": "ru",
+        "targetLanguages": [
+          "en",
+          "ja"
+        ],
+        "localizationSha256": "efd0127e8e2d3cdc9a503bafb837097e5b9b8c74a6f3d0f5a4095e9f0007197e",
         "sourceFiles": {
           "Sources/YiYanCore/Presentation/ChineseReading.swift": "9434540ee0608bc11e1f34b1f8cd927ad50d2fe6c80a7e79649f2cfbd2badee0",
           "Sources/YiYanCore/Presentation/JapaneseReading.swift": "a69369592104f8160a1a0f10146de68510c0e405a0946119f4335d10c0e37446",
+          "Sources/YiYanReading/TargetTranslationText.swift": "90f1725562ff8b42ec2174c00c18b8628ce1c3936dc05e8de585a55ea5fa1efb",
           "Sources/YiYanUI/ViewModels/AppLocalization.swift": "e85390f4b1e0c146d4c31b950ce2094a4514465b16ebe9ed60469baaab60f5fa",
           "Sources/YiYanUI/Views/LearningLanguageSettingsView.swift": "73dbe84f58ac61f94a0af16f0f82d02fcbc4681340f1c54dbd200942ab21f23e",
           "Sources/YiYanUI/Views/MainWindowTypography.swift": "42bc78028c1a83a6b8b3925b0afad4ec97e54056270fb654236ea26f1357a04c",
-          "Sources/YiYanUI/Views/RecordCardView.swift": "6a3aec0cf9309d5cdeffd02ab9b3d86660cc34ad269c8759af5a63a920f3ab02",
-          "Sources/YiYanUI/Views/TargetTranslationSection.swift": "a9769ee0c1929b086f7bfd9768e0f3a214d0469fb7b1fdcd9b4c3bf61b7f8cbc",
-          "Sources/YiYanUI/Views/TargetTranslationText.swift": "d0a65f1d98a4aca4ee6554aa6854765871f1e71a0b635d0d8220c4b86aaf9fe5"
+          "Sources/YiYanUI/Views/RecordCardView.swift": "aff3af1e9170132bee6483fe20024704629dfdb9a5e3a632db5ba5fb883603bd",
+          "Sources/YiYanUI/Views/TargetTranslationSection.swift": "7e262b7a6957c5270f85536db4761fbc15ad6f4417a359a479f0f91d0e0c665c"
         },
-        "recordSource": "scripts/assets/yilo/capture/hero-record-zh.json",
-        "recordSha256": "c1be5c91774667c0198a245cafdc0a6eec281f2114402972a3e102eb5f1d3d79",
+        "recordSource": "scripts/assets/yilo/capture/hero-records/ru.json",
+        "recordSha256": "432a7dc22dc3fd5153f93616e39b0e20685cf371ca9b205d31aa249c0be7c789",
         "nativeTextSize": "extraLarge",
         "nativeFrameWidthPoints": 520,
         "pixelWidth": 1040,
-        "pixelHeight": 564
+        "pixelHeight": 650
       },
       {
         "source": "scripts/assets/presskit/yilo/ru/language-selection.png",
-        "sha256": "59194df5a353c47f37ba8b9da0032255d89a1cb9b7b78d99a2e851940e103d5a",
+        "sha256": "e255a1981d9ce3613be5509d6392e3f2e506d0b3dea0ae387d489c01e8dbae35",
         "contentLanguage": "ru",
         "type": "native",
-        "capturedOn": "2026-11-06",
-        "appSourceCommit": "473a8fac19ac6b55b9604de50d851848854be133",
+        "capturedOn": "2026-11-07",
+        "appSourceCommit": "197ac0e3371e25694b1fb12a89ecb5e29f5924c5",
         "originalSource": "scripts/assets/yilo/capture/YiloWebsiteCapture.swift",
-        "operation": "Unmodified native AppKit/SwiftUI component export using the app's own localization resources. Learning card uses the exact user-selected real record. Settings use isolated sample preferences. No image text replacement, resizing or UI reconstruction. Not a full app window.",
+        "operation": "Unmodified native AppKit/SwiftUI component export using the app's own localization resources. Sample input, source setting and learning explanations match the UI language. English learns Simplified Chinese/Japanese; Japanese learns English/Simplified Chinese; other locales learn English/Japanese. Settings use isolated sample preferences. No image text replacement, resizing or UI reconstruction. Not a full app window.",
         "appearance": "light",
-        "captureFixtureSha256": "66c5feed117a082d3b243abc765874ed4d4a64b89059e56ed7faed9e919664c7",
+        "captureFixtureSha256": "54f9461926a306a4484ba9ab8c5186517d74728a3d536d86889d7ef2c202c0fa",
         "nativeLocale": "ru",
         "nativeLabels": {
           "advice.category.collocation": "Сочетаемость",
@@ -2307,28 +2492,33 @@
           "language.targets": "Изучаемые языки",
           "record.example": "Пример"
         },
-        "localizationSha256": "bb8dae9f2662f18d150f139df9d8040864342f8d93cf6d479029e54b3d4e76b5",
+        "sourceLanguage": "ru",
+        "targetLanguages": [
+          "en",
+          "ja"
+        ],
+        "localizationSha256": "efd0127e8e2d3cdc9a503bafb837097e5b9b8c74a6f3d0f5a4095e9f0007197e",
         "sourceFiles": {
           "Sources/YiYanCore/Presentation/ChineseReading.swift": "9434540ee0608bc11e1f34b1f8cd927ad50d2fe6c80a7e79649f2cfbd2badee0",
           "Sources/YiYanCore/Presentation/JapaneseReading.swift": "a69369592104f8160a1a0f10146de68510c0e405a0946119f4335d10c0e37446",
+          "Sources/YiYanReading/TargetTranslationText.swift": "90f1725562ff8b42ec2174c00c18b8628ce1c3936dc05e8de585a55ea5fa1efb",
           "Sources/YiYanUI/ViewModels/AppLocalization.swift": "e85390f4b1e0c146d4c31b950ce2094a4514465b16ebe9ed60469baaab60f5fa",
           "Sources/YiYanUI/Views/LearningLanguageSettingsView.swift": "73dbe84f58ac61f94a0af16f0f82d02fcbc4681340f1c54dbd200942ab21f23e",
-          "Sources/YiYanUI/Views/RecordCardView.swift": "6a3aec0cf9309d5cdeffd02ab9b3d86660cc34ad269c8759af5a63a920f3ab02",
-          "Sources/YiYanUI/Views/TargetTranslationSection.swift": "a9769ee0c1929b086f7bfd9768e0f3a214d0469fb7b1fdcd9b4c3bf61b7f8cbc",
-          "Sources/YiYanUI/Views/TargetTranslationText.swift": "d0a65f1d98a4aca4ee6554aa6854765871f1e71a0b635d0d8220c4b86aaf9fe5"
+          "Sources/YiYanUI/Views/RecordCardView.swift": "aff3af1e9170132bee6483fe20024704629dfdb9a5e3a632db5ba5fb883603bd",
+          "Sources/YiYanUI/Views/TargetTranslationSection.swift": "7e262b7a6957c5270f85536db4761fbc15ad6f4417a359a479f0f91d0e0c665c"
         }
       },
       {
         "source": "scripts/assets/presskit/yilo/ru/learning-record.png",
-        "sha256": "ae7b50c0d3ed61688d0088f978f7d58d9890d1d969d3f74ce954771833527e15",
+        "sha256": "13d39176ba02608dcbf58af5aaf9008dad70aea0b7be5d01c69768c85c4a9f59",
         "contentLanguage": "ru",
         "type": "native",
-        "capturedOn": "2026-11-06",
-        "appSourceCommit": "473a8fac19ac6b55b9604de50d851848854be133",
+        "capturedOn": "2026-11-07",
+        "appSourceCommit": "197ac0e3371e25694b1fb12a89ecb5e29f5924c5",
         "originalSource": "scripts/assets/yilo/capture/YiloWebsiteCapture.swift",
-        "operation": "Unmodified native AppKit/SwiftUI component export using the app's own localization resources. Learning card uses the exact user-selected real record. Settings use isolated sample preferences. No image text replacement, resizing or UI reconstruction. Not a full app window.",
+        "operation": "Unmodified native AppKit/SwiftUI component export using the app's own localization resources. Sample input, source setting and learning explanations match the UI language. English learns Simplified Chinese/Japanese; Japanese learns English/Simplified Chinese; other locales learn English/Japanese. Settings use isolated sample preferences. No image text replacement, resizing or UI reconstruction. Not a full app window.",
         "appearance": "dark",
-        "captureFixtureSha256": "66c5feed117a082d3b243abc765874ed4d4a64b89059e56ed7faed9e919664c7",
+        "captureFixtureSha256": "54f9461926a306a4484ba9ab8c5186517d74728a3d536d86889d7ef2c202c0fa",
         "nativeLocale": "ru",
         "nativeLabels": {
           "advice.category.collocation": "Сочетаемость",
@@ -2341,30 +2531,35 @@
           "language.targets": "Изучаемые языки",
           "record.example": "Пример"
         },
-        "localizationSha256": "bb8dae9f2662f18d150f139df9d8040864342f8d93cf6d479029e54b3d4e76b5",
+        "sourceLanguage": "ru",
+        "targetLanguages": [
+          "en",
+          "ja"
+        ],
+        "localizationSha256": "efd0127e8e2d3cdc9a503bafb837097e5b9b8c74a6f3d0f5a4095e9f0007197e",
         "sourceFiles": {
           "Sources/YiYanCore/Presentation/ChineseReading.swift": "9434540ee0608bc11e1f34b1f8cd927ad50d2fe6c80a7e79649f2cfbd2badee0",
           "Sources/YiYanCore/Presentation/JapaneseReading.swift": "a69369592104f8160a1a0f10146de68510c0e405a0946119f4335d10c0e37446",
+          "Sources/YiYanReading/TargetTranslationText.swift": "90f1725562ff8b42ec2174c00c18b8628ce1c3936dc05e8de585a55ea5fa1efb",
           "Sources/YiYanUI/ViewModels/AppLocalization.swift": "e85390f4b1e0c146d4c31b950ce2094a4514465b16ebe9ed60469baaab60f5fa",
           "Sources/YiYanUI/Views/LearningLanguageSettingsView.swift": "73dbe84f58ac61f94a0af16f0f82d02fcbc4681340f1c54dbd200942ab21f23e",
-          "Sources/YiYanUI/Views/RecordCardView.swift": "6a3aec0cf9309d5cdeffd02ab9b3d86660cc34ad269c8759af5a63a920f3ab02",
-          "Sources/YiYanUI/Views/TargetTranslationSection.swift": "a9769ee0c1929b086f7bfd9768e0f3a214d0469fb7b1fdcd9b4c3bf61b7f8cbc",
-          "Sources/YiYanUI/Views/TargetTranslationText.swift": "d0a65f1d98a4aca4ee6554aa6854765871f1e71a0b635d0d8220c4b86aaf9fe5"
+          "Sources/YiYanUI/Views/RecordCardView.swift": "aff3af1e9170132bee6483fe20024704629dfdb9a5e3a632db5ba5fb883603bd",
+          "Sources/YiYanUI/Views/TargetTranslationSection.swift": "7e262b7a6957c5270f85536db4761fbc15ad6f4417a359a479f0f91d0e0c665c"
         },
-        "recordSource": "scripts/assets/yilo/capture/selected-record.json",
-        "recordSha256": "50387fe82ecfeb5511011bd702ce14af8fd9ac90e92762ee1de5b05087097852"
+        "recordSource": "scripts/assets/yilo/capture/records/ru.json",
+        "recordSha256": "6187d81e5b8414de496890e65fa351be0486b2e8bd63ee53936cd55fe92ac828"
       },
       {
         "source": "scripts/assets/presskit/yilo/ru/learning-settings.png",
-        "sha256": "fa2ca23ada5af24bdda60eb7f0d8bfaf49f64ff240ec7502f52efa9e07621801",
+        "sha256": "29fecf5625efbcdbfc9773f335f6014a454f17a396db569a0ed6fa8d67e1489e",
         "contentLanguage": "ru",
         "type": "native",
-        "capturedOn": "2026-11-06",
-        "appSourceCommit": "473a8fac19ac6b55b9604de50d851848854be133",
+        "capturedOn": "2026-11-07",
+        "appSourceCommit": "197ac0e3371e25694b1fb12a89ecb5e29f5924c5",
         "originalSource": "scripts/assets/yilo/capture/YiloWebsiteCapture.swift",
-        "operation": "Unmodified native AppKit/SwiftUI component export using the app's own localization resources. Learning card uses the exact user-selected real record. Settings use isolated sample preferences. No image text replacement, resizing or UI reconstruction. Not a full app window.",
+        "operation": "Unmodified native AppKit/SwiftUI component export using the app's own localization resources. Sample input, source setting and learning explanations match the UI language. English learns Simplified Chinese/Japanese; Japanese learns English/Simplified Chinese; other locales learn English/Japanese. Settings use isolated sample preferences. No image text replacement, resizing or UI reconstruction. Not a full app window.",
         "appearance": "light",
-        "captureFixtureSha256": "66c5feed117a082d3b243abc765874ed4d4a64b89059e56ed7faed9e919664c7",
+        "captureFixtureSha256": "54f9461926a306a4484ba9ab8c5186517d74728a3d536d86889d7ef2c202c0fa",
         "nativeLocale": "ru",
         "nativeLabels": {
           "advice.category.collocation": "Сочетаемость",
@@ -2377,305 +2572,350 @@
           "language.targets": "Изучаемые языки",
           "record.example": "Пример"
         },
-        "localizationSha256": "bb8dae9f2662f18d150f139df9d8040864342f8d93cf6d479029e54b3d4e76b5",
+        "sourceLanguage": "ru",
+        "targetLanguages": [
+          "en",
+          "ja"
+        ],
+        "localizationSha256": "efd0127e8e2d3cdc9a503bafb837097e5b9b8c74a6f3d0f5a4095e9f0007197e",
         "sourceFiles": {
           "Sources/YiYanCore/Presentation/ChineseReading.swift": "9434540ee0608bc11e1f34b1f8cd927ad50d2fe6c80a7e79649f2cfbd2badee0",
           "Sources/YiYanCore/Presentation/JapaneseReading.swift": "a69369592104f8160a1a0f10146de68510c0e405a0946119f4335d10c0e37446",
+          "Sources/YiYanReading/TargetTranslationText.swift": "90f1725562ff8b42ec2174c00c18b8628ce1c3936dc05e8de585a55ea5fa1efb",
           "Sources/YiYanUI/ViewModels/AppLocalization.swift": "e85390f4b1e0c146d4c31b950ce2094a4514465b16ebe9ed60469baaab60f5fa",
           "Sources/YiYanUI/Views/LearningLanguageSettingsView.swift": "73dbe84f58ac61f94a0af16f0f82d02fcbc4681340f1c54dbd200942ab21f23e",
-          "Sources/YiYanUI/Views/RecordCardView.swift": "6a3aec0cf9309d5cdeffd02ab9b3d86660cc34ad269c8759af5a63a920f3ab02",
-          "Sources/YiYanUI/Views/TargetTranslationSection.swift": "a9769ee0c1929b086f7bfd9768e0f3a214d0469fb7b1fdcd9b4c3bf61b7f8cbc",
-          "Sources/YiYanUI/Views/TargetTranslationText.swift": "d0a65f1d98a4aca4ee6554aa6854765871f1e71a0b635d0d8220c4b86aaf9fe5"
+          "Sources/YiYanUI/Views/RecordCardView.swift": "aff3af1e9170132bee6483fe20024704629dfdb9a5e3a632db5ba5fb883603bd",
+          "Sources/YiYanUI/Views/TargetTranslationSection.swift": "7e262b7a6957c5270f85536db4761fbc15ad6f4417a359a479f0f91d0e0c665c"
         }
       },
       {
         "source": "scripts/assets/presskit/yilo/zh-Hans/hero-record.png",
-        "sha256": "4e237705a2c8c8008ba2ac63c71d8a7d37509429557b2dcb061c406b40b6a855",
+        "sha256": "be12144e5453957366634cd58d51cd22666678093126afd1a2646d4f949d2732",
         "contentLanguage": "zh-Hans",
         "type": "native",
         "capturedOn": "2026-11-07",
-        "appSourceCommit": "473a8fac19ac6b55b9604de50d851848854be133",
+        "appSourceCommit": "197ac0e3371e25694b1fb12a89ecb5e29f5924c5",
         "originalSource": "scripts/assets/yilo/capture/YiloHeroCapture.swift",
         "operation": "Unmodified native RecordCardView export with a short isolated sample record, the app's extraLarge text preference, native Pinyin/Romaji and collapsed learning notes. No image text replacement, resizing or UI reconstruction. Not a full app window.",
         "appearance": "light",
-        "captureFixtureSha256": "e9fec5ac2728e71af0b2ca93742f372700d9ee4644dbfda51d21874e0cadba4c",
+        "captureFixtureSha256": "be1102272a66d16cd4647f7791ccc3198e1e2a7cc2f0adaf3d144a65b215746e",
         "nativeLocale": "zh-Hans",
         "nativeLabels": {
           "advice.category.collocation": "搭配",
           "advice.category.translation_pattern": "翻译句式",
           "advice.kind.learning_point": "学习要点",
           "language.japanese_reading.help": "平假名标在对应汉字上方，罗马字在对应日语词组上方对齐。",
-          "language.notes": "学习笔记",
+          "language.notes": "学习建议",
           "language.search": "搜索语言",
           "language.section": "学习语言",
           "language.targets": "目标语言",
           "record.example": "示例"
         },
-        "localizationSha256": "360d754a8a2199121782f81255d2d5036b19fc9826edaa67261cb2cd3217904b",
+        "sourceLanguage": "zh-Hans",
+        "targetLanguages": [
+          "en",
+          "ja"
+        ],
+        "localizationSha256": "9ec383ea77ce61e19669d43dff859f68227d08d4a3ba10d769e27e91a1bc5f21",
         "sourceFiles": {
           "Sources/YiYanCore/Presentation/ChineseReading.swift": "9434540ee0608bc11e1f34b1f8cd927ad50d2fe6c80a7e79649f2cfbd2badee0",
           "Sources/YiYanCore/Presentation/JapaneseReading.swift": "a69369592104f8160a1a0f10146de68510c0e405a0946119f4335d10c0e37446",
+          "Sources/YiYanReading/TargetTranslationText.swift": "90f1725562ff8b42ec2174c00c18b8628ce1c3936dc05e8de585a55ea5fa1efb",
           "Sources/YiYanUI/ViewModels/AppLocalization.swift": "e85390f4b1e0c146d4c31b950ce2094a4514465b16ebe9ed60469baaab60f5fa",
           "Sources/YiYanUI/Views/LearningLanguageSettingsView.swift": "73dbe84f58ac61f94a0af16f0f82d02fcbc4681340f1c54dbd200942ab21f23e",
           "Sources/YiYanUI/Views/MainWindowTypography.swift": "42bc78028c1a83a6b8b3925b0afad4ec97e54056270fb654236ea26f1357a04c",
-          "Sources/YiYanUI/Views/RecordCardView.swift": "6a3aec0cf9309d5cdeffd02ab9b3d86660cc34ad269c8759af5a63a920f3ab02",
-          "Sources/YiYanUI/Views/TargetTranslationSection.swift": "a9769ee0c1929b086f7bfd9768e0f3a214d0469fb7b1fdcd9b4c3bf61b7f8cbc",
-          "Sources/YiYanUI/Views/TargetTranslationText.swift": "d0a65f1d98a4aca4ee6554aa6854765871f1e71a0b635d0d8220c4b86aaf9fe5"
+          "Sources/YiYanUI/Views/RecordCardView.swift": "aff3af1e9170132bee6483fe20024704629dfdb9a5e3a632db5ba5fb883603bd",
+          "Sources/YiYanUI/Views/TargetTranslationSection.swift": "7e262b7a6957c5270f85536db4761fbc15ad6f4417a359a479f0f91d0e0c665c"
         },
-        "recordSource": "scripts/assets/yilo/capture/hero-record-zh.json",
-        "recordSha256": "c1be5c91774667c0198a245cafdc0a6eec281f2114402972a3e102eb5f1d3d79",
+        "recordSource": "scripts/assets/yilo/capture/hero-records/zh-Hans.json",
+        "recordSha256": "ab664b790e3594ec7d732bdb7f9c4275f951d03a8b0eaf0887875875b6cd51b9",
         "nativeTextSize": "extraLarge",
         "nativeFrameWidthPoints": 520,
         "pixelWidth": 1040,
-        "pixelHeight": 564
+        "pixelHeight": 603
       },
       {
         "source": "scripts/assets/presskit/yilo/zh-Hans/language-selection.png",
-        "sha256": "e8115ac319d4fca4aa5f40152854dbd514fe3d147bdf67949da53071564d0ade",
+        "sha256": "be1b3d3d22c40a29c5244210fec7b2c7e367c095a442238d2cec6b07dd54b2bf",
         "contentLanguage": "zh-Hans",
         "type": "native",
-        "capturedOn": "2026-11-06",
-        "appSourceCommit": "473a8fac19ac6b55b9604de50d851848854be133",
+        "capturedOn": "2026-11-07",
+        "appSourceCommit": "197ac0e3371e25694b1fb12a89ecb5e29f5924c5",
         "originalSource": "scripts/assets/yilo/capture/YiloWebsiteCapture.swift",
-        "operation": "Unmodified native AppKit/SwiftUI component export using the app's own localization resources. Learning card uses the exact user-selected real record. Settings use isolated sample preferences. No image text replacement, resizing or UI reconstruction. Not a full app window.",
+        "operation": "Unmodified native AppKit/SwiftUI component export using the app's own localization resources. Sample input, source setting and learning explanations match the UI language. English learns Simplified Chinese/Japanese; Japanese learns English/Simplified Chinese; other locales learn English/Japanese. Settings use isolated sample preferences. No image text replacement, resizing or UI reconstruction. Not a full app window.",
         "appearance": "light",
-        "captureFixtureSha256": "66c5feed117a082d3b243abc765874ed4d4a64b89059e56ed7faed9e919664c7",
+        "captureFixtureSha256": "54f9461926a306a4484ba9ab8c5186517d74728a3d536d86889d7ef2c202c0fa",
         "nativeLocale": "zh-Hans",
         "nativeLabels": {
           "advice.category.collocation": "搭配",
           "advice.category.translation_pattern": "翻译句式",
           "advice.kind.learning_point": "学习要点",
           "language.japanese_reading.help": "平假名标在对应汉字上方，罗马字在对应日语词组上方对齐。",
-          "language.notes": "学习笔记",
+          "language.notes": "学习建议",
           "language.search": "搜索语言",
           "language.section": "学习语言",
           "language.targets": "目标语言",
           "record.example": "示例"
         },
-        "localizationSha256": "360d754a8a2199121782f81255d2d5036b19fc9826edaa67261cb2cd3217904b",
+        "sourceLanguage": "zh-Hans",
+        "targetLanguages": [
+          "en",
+          "ja"
+        ],
+        "localizationSha256": "9ec383ea77ce61e19669d43dff859f68227d08d4a3ba10d769e27e91a1bc5f21",
         "sourceFiles": {
           "Sources/YiYanCore/Presentation/ChineseReading.swift": "9434540ee0608bc11e1f34b1f8cd927ad50d2fe6c80a7e79649f2cfbd2badee0",
           "Sources/YiYanCore/Presentation/JapaneseReading.swift": "a69369592104f8160a1a0f10146de68510c0e405a0946119f4335d10c0e37446",
+          "Sources/YiYanReading/TargetTranslationText.swift": "90f1725562ff8b42ec2174c00c18b8628ce1c3936dc05e8de585a55ea5fa1efb",
           "Sources/YiYanUI/ViewModels/AppLocalization.swift": "e85390f4b1e0c146d4c31b950ce2094a4514465b16ebe9ed60469baaab60f5fa",
           "Sources/YiYanUI/Views/LearningLanguageSettingsView.swift": "73dbe84f58ac61f94a0af16f0f82d02fcbc4681340f1c54dbd200942ab21f23e",
-          "Sources/YiYanUI/Views/RecordCardView.swift": "6a3aec0cf9309d5cdeffd02ab9b3d86660cc34ad269c8759af5a63a920f3ab02",
-          "Sources/YiYanUI/Views/TargetTranslationSection.swift": "a9769ee0c1929b086f7bfd9768e0f3a214d0469fb7b1fdcd9b4c3bf61b7f8cbc",
-          "Sources/YiYanUI/Views/TargetTranslationText.swift": "d0a65f1d98a4aca4ee6554aa6854765871f1e71a0b635d0d8220c4b86aaf9fe5"
+          "Sources/YiYanUI/Views/RecordCardView.swift": "aff3af1e9170132bee6483fe20024704629dfdb9a5e3a632db5ba5fb883603bd",
+          "Sources/YiYanUI/Views/TargetTranslationSection.swift": "7e262b7a6957c5270f85536db4761fbc15ad6f4417a359a479f0f91d0e0c665c"
         }
       },
       {
         "source": "scripts/assets/presskit/yilo/zh-Hans/learning-record.png",
-        "sha256": "409f24f305904ae6c36c612c22733f39cf035b0e32afddb264513fd767035929",
+        "sha256": "03ca265fb77d3c81feae0755681f537576365639a8898987d4ab5db4da4ebdae",
         "contentLanguage": "zh-Hans",
         "type": "native",
-        "capturedOn": "2026-11-06",
-        "appSourceCommit": "473a8fac19ac6b55b9604de50d851848854be133",
+        "capturedOn": "2026-11-07",
+        "appSourceCommit": "197ac0e3371e25694b1fb12a89ecb5e29f5924c5",
         "originalSource": "scripts/assets/yilo/capture/YiloWebsiteCapture.swift",
-        "operation": "Unmodified native AppKit/SwiftUI component export using the app's own localization resources. Learning card uses the exact user-selected real record. Settings use isolated sample preferences. No image text replacement, resizing or UI reconstruction. Not a full app window.",
+        "operation": "Unmodified native AppKit/SwiftUI component export using the app's own localization resources. Sample input, source setting and learning explanations match the UI language. English learns Simplified Chinese/Japanese; Japanese learns English/Simplified Chinese; other locales learn English/Japanese. Settings use isolated sample preferences. No image text replacement, resizing or UI reconstruction. Not a full app window.",
         "appearance": "dark",
-        "captureFixtureSha256": "66c5feed117a082d3b243abc765874ed4d4a64b89059e56ed7faed9e919664c7",
+        "captureFixtureSha256": "54f9461926a306a4484ba9ab8c5186517d74728a3d536d86889d7ef2c202c0fa",
         "nativeLocale": "zh-Hans",
         "nativeLabels": {
           "advice.category.collocation": "搭配",
           "advice.category.translation_pattern": "翻译句式",
           "advice.kind.learning_point": "学习要点",
           "language.japanese_reading.help": "平假名标在对应汉字上方，罗马字在对应日语词组上方对齐。",
-          "language.notes": "学习笔记",
+          "language.notes": "学习建议",
           "language.search": "搜索语言",
           "language.section": "学习语言",
           "language.targets": "目标语言",
           "record.example": "示例"
         },
-        "localizationSha256": "360d754a8a2199121782f81255d2d5036b19fc9826edaa67261cb2cd3217904b",
+        "sourceLanguage": "zh-Hans",
+        "targetLanguages": [
+          "en",
+          "ja"
+        ],
+        "localizationSha256": "9ec383ea77ce61e19669d43dff859f68227d08d4a3ba10d769e27e91a1bc5f21",
         "sourceFiles": {
           "Sources/YiYanCore/Presentation/ChineseReading.swift": "9434540ee0608bc11e1f34b1f8cd927ad50d2fe6c80a7e79649f2cfbd2badee0",
           "Sources/YiYanCore/Presentation/JapaneseReading.swift": "a69369592104f8160a1a0f10146de68510c0e405a0946119f4335d10c0e37446",
+          "Sources/YiYanReading/TargetTranslationText.swift": "90f1725562ff8b42ec2174c00c18b8628ce1c3936dc05e8de585a55ea5fa1efb",
           "Sources/YiYanUI/ViewModels/AppLocalization.swift": "e85390f4b1e0c146d4c31b950ce2094a4514465b16ebe9ed60469baaab60f5fa",
           "Sources/YiYanUI/Views/LearningLanguageSettingsView.swift": "73dbe84f58ac61f94a0af16f0f82d02fcbc4681340f1c54dbd200942ab21f23e",
-          "Sources/YiYanUI/Views/RecordCardView.swift": "6a3aec0cf9309d5cdeffd02ab9b3d86660cc34ad269c8759af5a63a920f3ab02",
-          "Sources/YiYanUI/Views/TargetTranslationSection.swift": "a9769ee0c1929b086f7bfd9768e0f3a214d0469fb7b1fdcd9b4c3bf61b7f8cbc",
-          "Sources/YiYanUI/Views/TargetTranslationText.swift": "d0a65f1d98a4aca4ee6554aa6854765871f1e71a0b635d0d8220c4b86aaf9fe5"
+          "Sources/YiYanUI/Views/RecordCardView.swift": "aff3af1e9170132bee6483fe20024704629dfdb9a5e3a632db5ba5fb883603bd",
+          "Sources/YiYanUI/Views/TargetTranslationSection.swift": "7e262b7a6957c5270f85536db4761fbc15ad6f4417a359a479f0f91d0e0c665c"
         },
-        "recordSource": "scripts/assets/yilo/capture/selected-record.json",
-        "recordSha256": "50387fe82ecfeb5511011bd702ce14af8fd9ac90e92762ee1de5b05087097852"
+        "recordSource": "scripts/assets/yilo/capture/records/zh-Hans.json",
+        "recordSha256": "f76be713166568e60e931072a95db4667de0ba5c3fd7e38b2a208de3f0062a9e"
       },
       {
         "source": "scripts/assets/presskit/yilo/zh-Hans/learning-settings.png",
-        "sha256": "03ca1fb160c73ffa7193f436269ba062b062952b8be603200632a35adbb8e0d7",
+        "sha256": "4cae736bbef1756478c6bf700b150ddecd62e2276f769e9e654c9ac10b583354",
         "contentLanguage": "zh-Hans",
         "type": "native",
-        "capturedOn": "2026-11-06",
-        "appSourceCommit": "473a8fac19ac6b55b9604de50d851848854be133",
+        "capturedOn": "2026-11-07",
+        "appSourceCommit": "197ac0e3371e25694b1fb12a89ecb5e29f5924c5",
         "originalSource": "scripts/assets/yilo/capture/YiloWebsiteCapture.swift",
-        "operation": "Unmodified native AppKit/SwiftUI component export using the app's own localization resources. Learning card uses the exact user-selected real record. Settings use isolated sample preferences. No image text replacement, resizing or UI reconstruction. Not a full app window.",
+        "operation": "Unmodified native AppKit/SwiftUI component export using the app's own localization resources. Sample input, source setting and learning explanations match the UI language. English learns Simplified Chinese/Japanese; Japanese learns English/Simplified Chinese; other locales learn English/Japanese. Settings use isolated sample preferences. No image text replacement, resizing or UI reconstruction. Not a full app window.",
         "appearance": "light",
-        "captureFixtureSha256": "66c5feed117a082d3b243abc765874ed4d4a64b89059e56ed7faed9e919664c7",
+        "captureFixtureSha256": "54f9461926a306a4484ba9ab8c5186517d74728a3d536d86889d7ef2c202c0fa",
         "nativeLocale": "zh-Hans",
         "nativeLabels": {
           "advice.category.collocation": "搭配",
           "advice.category.translation_pattern": "翻译句式",
           "advice.kind.learning_point": "学习要点",
           "language.japanese_reading.help": "平假名标在对应汉字上方，罗马字在对应日语词组上方对齐。",
-          "language.notes": "学习笔记",
+          "language.notes": "学习建议",
           "language.search": "搜索语言",
           "language.section": "学习语言",
           "language.targets": "目标语言",
           "record.example": "示例"
         },
-        "localizationSha256": "360d754a8a2199121782f81255d2d5036b19fc9826edaa67261cb2cd3217904b",
+        "sourceLanguage": "zh-Hans",
+        "targetLanguages": [
+          "en",
+          "ja"
+        ],
+        "localizationSha256": "9ec383ea77ce61e19669d43dff859f68227d08d4a3ba10d769e27e91a1bc5f21",
         "sourceFiles": {
           "Sources/YiYanCore/Presentation/ChineseReading.swift": "9434540ee0608bc11e1f34b1f8cd927ad50d2fe6c80a7e79649f2cfbd2badee0",
           "Sources/YiYanCore/Presentation/JapaneseReading.swift": "a69369592104f8160a1a0f10146de68510c0e405a0946119f4335d10c0e37446",
+          "Sources/YiYanReading/TargetTranslationText.swift": "90f1725562ff8b42ec2174c00c18b8628ce1c3936dc05e8de585a55ea5fa1efb",
           "Sources/YiYanUI/ViewModels/AppLocalization.swift": "e85390f4b1e0c146d4c31b950ce2094a4514465b16ebe9ed60469baaab60f5fa",
           "Sources/YiYanUI/Views/LearningLanguageSettingsView.swift": "73dbe84f58ac61f94a0af16f0f82d02fcbc4681340f1c54dbd200942ab21f23e",
-          "Sources/YiYanUI/Views/RecordCardView.swift": "6a3aec0cf9309d5cdeffd02ab9b3d86660cc34ad269c8759af5a63a920f3ab02",
-          "Sources/YiYanUI/Views/TargetTranslationSection.swift": "a9769ee0c1929b086f7bfd9768e0f3a214d0469fb7b1fdcd9b4c3bf61b7f8cbc",
-          "Sources/YiYanUI/Views/TargetTranslationText.swift": "d0a65f1d98a4aca4ee6554aa6854765871f1e71a0b635d0d8220c4b86aaf9fe5"
+          "Sources/YiYanUI/Views/RecordCardView.swift": "aff3af1e9170132bee6483fe20024704629dfdb9a5e3a632db5ba5fb883603bd",
+          "Sources/YiYanUI/Views/TargetTranslationSection.swift": "7e262b7a6957c5270f85536db4761fbc15ad6f4417a359a479f0f91d0e0c665c"
         }
       },
       {
         "source": "scripts/assets/presskit/yilo/zh-Hant/hero-record.png",
-        "sha256": "0d292da29015622860c398eb57f388378d73627ed7632898f642906a7d85074e",
+        "sha256": "9915fc70990358e1ffe948a9795fdc4795fb34e55e66778c4fc1a5cf5feb8720",
         "contentLanguage": "zh-Hant",
         "type": "native",
         "capturedOn": "2026-11-07",
-        "appSourceCommit": "473a8fac19ac6b55b9604de50d851848854be133",
+        "appSourceCommit": "197ac0e3371e25694b1fb12a89ecb5e29f5924c5",
         "originalSource": "scripts/assets/yilo/capture/YiloHeroCapture.swift",
         "operation": "Unmodified native RecordCardView export with a short isolated sample record, the app's extraLarge text preference, native Pinyin/Romaji and collapsed learning notes. No image text replacement, resizing or UI reconstruction. Not a full app window.",
         "appearance": "light",
-        "captureFixtureSha256": "e9fec5ac2728e71af0b2ca93742f372700d9ee4644dbfda51d21874e0cadba4c",
+        "captureFixtureSha256": "be1102272a66d16cd4647f7791ccc3198e1e2a7cc2f0adaf3d144a65b215746e",
         "nativeLocale": "zh-Hant",
         "nativeLabels": {
           "advice.category.collocation": "搭配",
           "advice.category.translation_pattern": "翻譯句型",
           "advice.kind.learning_point": "學習重點",
           "language.japanese_reading.help": "平假名標在對應漢字上方，羅馬字在對應日語詞組上方對齊。",
-          "language.notes": "學習筆記",
+          "language.notes": "學習建議",
           "language.search": "搜尋語言",
           "language.section": "學習語言",
           "language.targets": "目標語言",
           "record.example": "範例"
         },
-        "localizationSha256": "584d67200f188416141c8a0068364660a6d1c5811a511728eb29ae0e31cb7355",
+        "sourceLanguage": "zh-Hant",
+        "targetLanguages": [
+          "en",
+          "ja"
+        ],
+        "localizationSha256": "488f452da56e2cab8d70a6838db64c9c66191f9000ef6f2c747b7cf1e159b87f",
         "sourceFiles": {
           "Sources/YiYanCore/Presentation/ChineseReading.swift": "9434540ee0608bc11e1f34b1f8cd927ad50d2fe6c80a7e79649f2cfbd2badee0",
           "Sources/YiYanCore/Presentation/JapaneseReading.swift": "a69369592104f8160a1a0f10146de68510c0e405a0946119f4335d10c0e37446",
+          "Sources/YiYanReading/TargetTranslationText.swift": "90f1725562ff8b42ec2174c00c18b8628ce1c3936dc05e8de585a55ea5fa1efb",
           "Sources/YiYanUI/ViewModels/AppLocalization.swift": "e85390f4b1e0c146d4c31b950ce2094a4514465b16ebe9ed60469baaab60f5fa",
           "Sources/YiYanUI/Views/LearningLanguageSettingsView.swift": "73dbe84f58ac61f94a0af16f0f82d02fcbc4681340f1c54dbd200942ab21f23e",
           "Sources/YiYanUI/Views/MainWindowTypography.swift": "42bc78028c1a83a6b8b3925b0afad4ec97e54056270fb654236ea26f1357a04c",
-          "Sources/YiYanUI/Views/RecordCardView.swift": "6a3aec0cf9309d5cdeffd02ab9b3d86660cc34ad269c8759af5a63a920f3ab02",
-          "Sources/YiYanUI/Views/TargetTranslationSection.swift": "a9769ee0c1929b086f7bfd9768e0f3a214d0469fb7b1fdcd9b4c3bf61b7f8cbc",
-          "Sources/YiYanUI/Views/TargetTranslationText.swift": "d0a65f1d98a4aca4ee6554aa6854765871f1e71a0b635d0d8220c4b86aaf9fe5"
+          "Sources/YiYanUI/Views/RecordCardView.swift": "aff3af1e9170132bee6483fe20024704629dfdb9a5e3a632db5ba5fb883603bd",
+          "Sources/YiYanUI/Views/TargetTranslationSection.swift": "7e262b7a6957c5270f85536db4761fbc15ad6f4417a359a479f0f91d0e0c665c"
         },
-        "recordSource": "scripts/assets/yilo/capture/hero-record-zh.json",
-        "recordSha256": "c1be5c91774667c0198a245cafdc0a6eec281f2114402972a3e102eb5f1d3d79",
+        "recordSource": "scripts/assets/yilo/capture/hero-records/zh-Hant.json",
+        "recordSha256": "1ad5c244d727ecdf7f7987ce988c75e575b4270262a3c325522294354781ff4a",
         "nativeTextSize": "extraLarge",
         "nativeFrameWidthPoints": 520,
         "pixelWidth": 1040,
-        "pixelHeight": 564
+        "pixelHeight": 603
       },
       {
         "source": "scripts/assets/presskit/yilo/zh-Hant/language-selection.png",
-        "sha256": "ff67405d7c7f2c1370c2d95519b600c8b5ef18443542b18ee6af6111566d44f5",
+        "sha256": "b440a79c5a14b370b2455f8bccacec8bf03b586c9a2fd8a8698f410f91663a5f",
         "contentLanguage": "zh-Hant",
         "type": "native",
-        "capturedOn": "2026-11-06",
-        "appSourceCommit": "473a8fac19ac6b55b9604de50d851848854be133",
+        "capturedOn": "2026-11-07",
+        "appSourceCommit": "197ac0e3371e25694b1fb12a89ecb5e29f5924c5",
         "originalSource": "scripts/assets/yilo/capture/YiloWebsiteCapture.swift",
-        "operation": "Unmodified native AppKit/SwiftUI component export using the app's own localization resources. Learning card uses the exact user-selected real record. Settings use isolated sample preferences. No image text replacement, resizing or UI reconstruction. Not a full app window.",
+        "operation": "Unmodified native AppKit/SwiftUI component export using the app's own localization resources. Sample input, source setting and learning explanations match the UI language. English learns Simplified Chinese/Japanese; Japanese learns English/Simplified Chinese; other locales learn English/Japanese. Settings use isolated sample preferences. No image text replacement, resizing or UI reconstruction. Not a full app window.",
         "appearance": "light",
-        "captureFixtureSha256": "66c5feed117a082d3b243abc765874ed4d4a64b89059e56ed7faed9e919664c7",
+        "captureFixtureSha256": "54f9461926a306a4484ba9ab8c5186517d74728a3d536d86889d7ef2c202c0fa",
         "nativeLocale": "zh-Hant",
         "nativeLabels": {
           "advice.category.collocation": "搭配",
           "advice.category.translation_pattern": "翻譯句型",
           "advice.kind.learning_point": "學習重點",
           "language.japanese_reading.help": "平假名標在對應漢字上方，羅馬字在對應日語詞組上方對齊。",
-          "language.notes": "學習筆記",
+          "language.notes": "學習建議",
           "language.search": "搜尋語言",
           "language.section": "學習語言",
           "language.targets": "目標語言",
           "record.example": "範例"
         },
-        "localizationSha256": "584d67200f188416141c8a0068364660a6d1c5811a511728eb29ae0e31cb7355",
+        "sourceLanguage": "zh-Hant",
+        "targetLanguages": [
+          "en",
+          "ja"
+        ],
+        "localizationSha256": "488f452da56e2cab8d70a6838db64c9c66191f9000ef6f2c747b7cf1e159b87f",
         "sourceFiles": {
           "Sources/YiYanCore/Presentation/ChineseReading.swift": "9434540ee0608bc11e1f34b1f8cd927ad50d2fe6c80a7e79649f2cfbd2badee0",
           "Sources/YiYanCore/Presentation/JapaneseReading.swift": "a69369592104f8160a1a0f10146de68510c0e405a0946119f4335d10c0e37446",
+          "Sources/YiYanReading/TargetTranslationText.swift": "90f1725562ff8b42ec2174c00c18b8628ce1c3936dc05e8de585a55ea5fa1efb",
           "Sources/YiYanUI/ViewModels/AppLocalization.swift": "e85390f4b1e0c146d4c31b950ce2094a4514465b16ebe9ed60469baaab60f5fa",
           "Sources/YiYanUI/Views/LearningLanguageSettingsView.swift": "73dbe84f58ac61f94a0af16f0f82d02fcbc4681340f1c54dbd200942ab21f23e",
-          "Sources/YiYanUI/Views/RecordCardView.swift": "6a3aec0cf9309d5cdeffd02ab9b3d86660cc34ad269c8759af5a63a920f3ab02",
-          "Sources/YiYanUI/Views/TargetTranslationSection.swift": "a9769ee0c1929b086f7bfd9768e0f3a214d0469fb7b1fdcd9b4c3bf61b7f8cbc",
-          "Sources/YiYanUI/Views/TargetTranslationText.swift": "d0a65f1d98a4aca4ee6554aa6854765871f1e71a0b635d0d8220c4b86aaf9fe5"
+          "Sources/YiYanUI/Views/RecordCardView.swift": "aff3af1e9170132bee6483fe20024704629dfdb9a5e3a632db5ba5fb883603bd",
+          "Sources/YiYanUI/Views/TargetTranslationSection.swift": "7e262b7a6957c5270f85536db4761fbc15ad6f4417a359a479f0f91d0e0c665c"
         }
       },
       {
         "source": "scripts/assets/presskit/yilo/zh-Hant/learning-record.png",
-        "sha256": "a76e5402be55458a2072a650160313667635a8d197575cd739034bbc5227b29d",
+        "sha256": "d35149bb0f6b33e52ffc555bb6d403908ffac88828fc586417f6cc8cd8ddb05d",
         "contentLanguage": "zh-Hant",
         "type": "native",
-        "capturedOn": "2026-11-06",
-        "appSourceCommit": "473a8fac19ac6b55b9604de50d851848854be133",
+        "capturedOn": "2026-11-07",
+        "appSourceCommit": "197ac0e3371e25694b1fb12a89ecb5e29f5924c5",
         "originalSource": "scripts/assets/yilo/capture/YiloWebsiteCapture.swift",
-        "operation": "Unmodified native AppKit/SwiftUI component export using the app's own localization resources. Learning card uses the exact user-selected real record. Settings use isolated sample preferences. No image text replacement, resizing or UI reconstruction. Not a full app window.",
+        "operation": "Unmodified native AppKit/SwiftUI component export using the app's own localization resources. Sample input, source setting and learning explanations match the UI language. English learns Simplified Chinese/Japanese; Japanese learns English/Simplified Chinese; other locales learn English/Japanese. Settings use isolated sample preferences. No image text replacement, resizing or UI reconstruction. Not a full app window.",
         "appearance": "dark",
-        "captureFixtureSha256": "66c5feed117a082d3b243abc765874ed4d4a64b89059e56ed7faed9e919664c7",
+        "captureFixtureSha256": "54f9461926a306a4484ba9ab8c5186517d74728a3d536d86889d7ef2c202c0fa",
         "nativeLocale": "zh-Hant",
         "nativeLabels": {
           "advice.category.collocation": "搭配",
           "advice.category.translation_pattern": "翻譯句型",
           "advice.kind.learning_point": "學習重點",
           "language.japanese_reading.help": "平假名標在對應漢字上方，羅馬字在對應日語詞組上方對齊。",
-          "language.notes": "學習筆記",
+          "language.notes": "學習建議",
           "language.search": "搜尋語言",
           "language.section": "學習語言",
           "language.targets": "目標語言",
           "record.example": "範例"
         },
-        "localizationSha256": "584d67200f188416141c8a0068364660a6d1c5811a511728eb29ae0e31cb7355",
+        "sourceLanguage": "zh-Hant",
+        "targetLanguages": [
+          "en",
+          "ja"
+        ],
+        "localizationSha256": "488f452da56e2cab8d70a6838db64c9c66191f9000ef6f2c747b7cf1e159b87f",
         "sourceFiles": {
           "Sources/YiYanCore/Presentation/ChineseReading.swift": "9434540ee0608bc11e1f34b1f8cd927ad50d2fe6c80a7e79649f2cfbd2badee0",
           "Sources/YiYanCore/Presentation/JapaneseReading.swift": "a69369592104f8160a1a0f10146de68510c0e405a0946119f4335d10c0e37446",
+          "Sources/YiYanReading/TargetTranslationText.swift": "90f1725562ff8b42ec2174c00c18b8628ce1c3936dc05e8de585a55ea5fa1efb",
           "Sources/YiYanUI/ViewModels/AppLocalization.swift": "e85390f4b1e0c146d4c31b950ce2094a4514465b16ebe9ed60469baaab60f5fa",
           "Sources/YiYanUI/Views/LearningLanguageSettingsView.swift": "73dbe84f58ac61f94a0af16f0f82d02fcbc4681340f1c54dbd200942ab21f23e",
-          "Sources/YiYanUI/Views/RecordCardView.swift": "6a3aec0cf9309d5cdeffd02ab9b3d86660cc34ad269c8759af5a63a920f3ab02",
-          "Sources/YiYanUI/Views/TargetTranslationSection.swift": "a9769ee0c1929b086f7bfd9768e0f3a214d0469fb7b1fdcd9b4c3bf61b7f8cbc",
-          "Sources/YiYanUI/Views/TargetTranslationText.swift": "d0a65f1d98a4aca4ee6554aa6854765871f1e71a0b635d0d8220c4b86aaf9fe5"
+          "Sources/YiYanUI/Views/RecordCardView.swift": "aff3af1e9170132bee6483fe20024704629dfdb9a5e3a632db5ba5fb883603bd",
+          "Sources/YiYanUI/Views/TargetTranslationSection.swift": "7e262b7a6957c5270f85536db4761fbc15ad6f4417a359a479f0f91d0e0c665c"
         },
-        "recordSource": "scripts/assets/yilo/capture/selected-record.json",
-        "recordSha256": "50387fe82ecfeb5511011bd702ce14af8fd9ac90e92762ee1de5b05087097852"
+        "recordSource": "scripts/assets/yilo/capture/records/zh-Hant.json",
+        "recordSha256": "4c518db200ac5953945a93b62f88a72adc127a30be4ff1e4f966e2b722dd0e8d"
       },
       {
         "source": "scripts/assets/presskit/yilo/zh-Hant/learning-settings.png",
-        "sha256": "4cf38c058507e4932e0eb35a205674b03c5af9a3e9751b0f430d55d9fe091793",
+        "sha256": "f06c6422691ba570471c771c5b69b5810b544f6323fed6ea737c31130b822abb",
         "contentLanguage": "zh-Hant",
         "type": "native",
-        "capturedOn": "2026-11-06",
-        "appSourceCommit": "473a8fac19ac6b55b9604de50d851848854be133",
+        "capturedOn": "2026-11-07",
+        "appSourceCommit": "197ac0e3371e25694b1fb12a89ecb5e29f5924c5",
         "originalSource": "scripts/assets/yilo/capture/YiloWebsiteCapture.swift",
-        "operation": "Unmodified native AppKit/SwiftUI component export using the app's own localization resources. Learning card uses the exact user-selected real record. Settings use isolated sample preferences. No image text replacement, resizing or UI reconstruction. Not a full app window.",
+        "operation": "Unmodified native AppKit/SwiftUI component export using the app's own localization resources. Sample input, source setting and learning explanations match the UI language. English learns Simplified Chinese/Japanese; Japanese learns English/Simplified Chinese; other locales learn English/Japanese. Settings use isolated sample preferences. No image text replacement, resizing or UI reconstruction. Not a full app window.",
         "appearance": "light",
-        "captureFixtureSha256": "66c5feed117a082d3b243abc765874ed4d4a64b89059e56ed7faed9e919664c7",
+        "captureFixtureSha256": "54f9461926a306a4484ba9ab8c5186517d74728a3d536d86889d7ef2c202c0fa",
         "nativeLocale": "zh-Hant",
         "nativeLabels": {
           "advice.category.collocation": "搭配",
           "advice.category.translation_pattern": "翻譯句型",
           "advice.kind.learning_point": "學習重點",
           "language.japanese_reading.help": "平假名標在對應漢字上方，羅馬字在對應日語詞組上方對齊。",
-          "language.notes": "學習筆記",
+          "language.notes": "學習建議",
           "language.search": "搜尋語言",
           "language.section": "學習語言",
           "language.targets": "目標語言",
           "record.example": "範例"
         },
-        "localizationSha256": "584d67200f188416141c8a0068364660a6d1c5811a511728eb29ae0e31cb7355",
+        "sourceLanguage": "zh-Hant",
+        "targetLanguages": [
+          "en",
+          "ja"
+        ],
+        "localizationSha256": "488f452da56e2cab8d70a6838db64c9c66191f9000ef6f2c747b7cf1e159b87f",
         "sourceFiles": {
           "Sources/YiYanCore/Presentation/ChineseReading.swift": "9434540ee0608bc11e1f34b1f8cd927ad50d2fe6c80a7e79649f2cfbd2badee0",
           "Sources/YiYanCore/Presentation/JapaneseReading.swift": "a69369592104f8160a1a0f10146de68510c0e405a0946119f4335d10c0e37446",
+          "Sources/YiYanReading/TargetTranslationText.swift": "90f1725562ff8b42ec2174c00c18b8628ce1c3936dc05e8de585a55ea5fa1efb",
           "Sources/YiYanUI/ViewModels/AppLocalization.swift": "e85390f4b1e0c146d4c31b950ce2094a4514465b16ebe9ed60469baaab60f5fa",
           "Sources/YiYanUI/Views/LearningLanguageSettingsView.swift": "73dbe84f58ac61f94a0af16f0f82d02fcbc4681340f1c54dbd200942ab21f23e",
-          "Sources/YiYanUI/Views/RecordCardView.swift": "6a3aec0cf9309d5cdeffd02ab9b3d86660cc34ad269c8759af5a63a920f3ab02",
-          "Sources/YiYanUI/Views/TargetTranslationSection.swift": "a9769ee0c1929b086f7bfd9768e0f3a214d0469fb7b1fdcd9b4c3bf61b7f8cbc",
-          "Sources/YiYanUI/Views/TargetTranslationText.swift": "d0a65f1d98a4aca4ee6554aa6854765871f1e71a0b635d0d8220c4b86aaf9fe5"
+          "Sources/YiYanUI/Views/RecordCardView.swift": "aff3af1e9170132bee6483fe20024704629dfdb9a5e3a632db5ba5fb883603bd",
+          "Sources/YiYanUI/Views/TargetTranslationSection.swift": "7e262b7a6957c5270f85536db4761fbc15ad6f4417a359a479f0f91d0e0c665c"
         }
       }
     ]

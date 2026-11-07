@@ -12,5 +12,10 @@
   },
   "nativeLocale" : "ru",
   "operatingSystem" : "Версия 27.0.1 (Выпуск 26A434)",
-  "requestedLocale" : "ru"
+  "requestedLocale" : "ru",
+  "sourceLanguage" : "ru",
+  "targetLanguages" : [
+    "en",
+    "ja"
+  ]
 }

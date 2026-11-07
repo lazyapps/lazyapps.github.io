@@ -1,0 +1,63 @@
+{
+  "id": "FF6AEB7F-1DD5-5654-826F-A8DD9B23A349",
+  "originalText": "Функции изменились. Сделай скриншоты заново.",
+  "sourceHost": "codex",
+  "hostVersion": "0.166.0-alpha.6",
+  "capturedAt": 1793967080.949,
+  "status": "succeeded",
+  "configuration": {
+    "preservesOriginalTone": true,
+    "sourceLanguage": "ru",
+    "englishInputExplanationLanguage": "ru",
+    "learningNotesLanguage": "ru",
+    "dialect": "american",
+    "targetLanguages": [
+      "en",
+      "ja"
+    ],
+    "targetStyle": "natural"
+  },
+  "naturalEnglish": null,
+  "translations": [
+    {
+      "language": "en",
+      "learningAdvice": [
+        {
+          "kind": "learning_point",
+          "category": "collocation",
+          "sourceExcerpt": "Функции изменились. Сделай скриншоты заново.",
+          "recommendation": "Чтобы сказать «сделать скриншоты заново», используйте retake the screenshots.",
+          "explanation": "Обычное сочетание — take a screenshot. Retake означает повторную съёмку.",
+          "exampleEnglish": "We need to retake the screenshots after the update."
+        }
+      ],
+      "text": "The features have been updated, so we need to retake the screenshots."
+    },
+    {
+      "language": "ja",
+      "learningAdvice": [
+        {
+          "kind": "learning_point",
+          "category": "translation_pattern",
+          "sourceExcerpt": "Функции изменились. Сделай скриншоты заново.",
+          "recommendation": "Используйте 「撮り直す」, когда нужно снять что-либо заново.",
+          "explanation": "直す после основы глагола означает повторное выполнение действия.",
+          "exampleEnglish": "更新後にスクリーンショットを撮り直してください。"
+        }
+      ],
+      "text": "機能が更新されたため、スクリーンショットを撮り直す必要があります。"
+    }
+  ],
+  "learningAdvice": [
+    {
+      "kind": "learning_point",
+      "category": "collocation",
+      "sourceExcerpt": "Функции изменились. Сделай скриншоты заново.",
+      "recommendation": "Чтобы сказать «сделать скриншоты заново», используйте retake the screenshots.",
+      "explanation": "Обычное сочетание — take a screenshot. Retake означает повторную съёмку.",
+      "exampleEnglish": "We need to retake the screenshots after the update."
+    }
+  ],
+  "isBookmarked": false,
+  "origin": "captured"
+}

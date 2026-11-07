@@ -1,0 +1,54 @@
+{
+  "id": "7795EAE1-695D-5536-AB9A-DF9DE765ABD1",
+  "originalText": "先别大改，留点余地。",
+  "sourceHost": "codex",
+  "hostVersion": "0.166.0-alpha.6",
+  "capturedAt": 1793967080.949,
+  "status": "succeeded",
+  "configuration": {
+    "preservesOriginalTone": true,
+    "sourceLanguage": "zh-Hans",
+    "englishInputExplanationLanguage": "zh-Hans",
+    "learningNotesLanguage": "zh-Hans",
+    "dialect": "american",
+    "targetLanguages": [
+      "en",
+      "ja"
+    ],
+    "targetStyle": "natural"
+  },
+  "naturalEnglish": null,
+  "translations": [
+    {
+      "language": "en",
+      "text": "Hold off on a sweeping rewrite; leave us some wiggle room.",
+      "learningAdvice": [
+        {
+          "kind": "learning_point",
+          "category": "collocation",
+          "sourceExcerpt": "留点余地",
+          "recommendation": "Use “wiggle room” for room to adjust.",
+          "explanation": "wiggle room 指可以调整或变通的余地，常用于范围、时间或预算安排。",
+          "exampleEnglish": "Let's leave some wiggle room."
+        }
+      ]
+    },
+    {
+      "language": "ja",
+      "text": "大幅な書き直しは控え、調整の余地を残して。",
+      "learningAdvice": []
+    }
+  ],
+  "learningAdvice": [
+    {
+      "kind": "learning_point",
+      "category": "collocation",
+      "sourceExcerpt": "留点余地",
+      "recommendation": "Use “wiggle room” for room to adjust.",
+      "explanation": "wiggle room 指可以调整或变通的余地，常用于范围、时间或预算安排。",
+      "exampleEnglish": "Let's leave some wiggle room."
+    }
+  ],
+  "isBookmarked": false,
+  "origin": "captured"
+}

@@ -28,6 +28,6 @@
   "observedPublicRelease": "https://github.com/cxa/yiyan/releases/tag/v261023.0",
   "sourceRepository": "cxa/yilo-src",
   "distributionRepository": "cxa/yilo",
-  "screenshotSourceCommit": "473a8fac19ac6b55b9604de50d851848854be133",
-  "screenshotState": "36 native component captures, three per supported App UI language. Eleven retain the selected real record. The explicitly requested English variant uses English input, Simplified Chinese/Japanese outputs and English learning explanations, with matching sample preferences."
+  "screenshotSourceCommit": "197ac0e3371e25694b1fb12a89ecb5e29f5924c5",
+  "screenshotState": "48 current native component captures: three product images and one hero card for each UI language. Sample input, configured source and explanations match each UI locale. English learns Simplified Chinese/Japanese; Japanese learns English/Simplified Chinese; other locales learn English/Japanese. Source snapshot and native labels are verified in screenshot receipts."
 }

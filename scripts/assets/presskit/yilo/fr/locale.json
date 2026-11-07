@@ -4,7 +4,7 @@
     "advice.category.translation_pattern" : "Schéma de traduction",
     "advice.kind.learning_point" : "Point à retenir",
     "language.japanese_reading.help" : "Les hiraganas apparaissent au-dessus des kanjis ; le romaji est aligné au-dessus de chaque mot japonais.",
-    "language.notes" : "Notes d’apprentissage",
+    "language.notes" : "Conseils d’apprentissage",
     "language.search" : "Rechercher une langue",
     "language.section" : "Langues d’apprentissage",
     "language.targets" : "Langues cibles",
@@ -12,5 +12,10 @@
   },
   "nativeLocale" : "fr",
   "operatingSystem" : "Version 27.0.1 (assemblage 26A434)",
-  "requestedLocale" : "fr"
+  "requestedLocale" : "fr",
+  "sourceLanguage" : "fr",
+  "targetLanguages" : [
+    "en",
+    "ja"
+  ]
 }

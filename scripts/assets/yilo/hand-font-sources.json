@@ -9,7 +9,7 @@
       "licenseUrl": "https://raw.githubusercontent.com/google/fonts/main/ofl/patrickhand/OFL.txt",
       "license": "src/assets/fonts/yilo/latin-OFL.txt",
       "output": "src/assets/fonts/yilo/latin.woff2",
-      "sha256": "7b48ed9c995238cceec88ee0128c4af4e1ca389cd3c2388c2732080d286e27b3",
+      "sha256": "2f1d270892f899388d666da26a48f72b17e92b4ca3e24d8ecf34a2efc93c497e",
       "glyphs": 137,
       "method": "Original outlines retained; subset to Yilo page characters, renamed to avoid reserved font names, WOFF2 for local web delivery only."
     },
@@ -21,7 +21,7 @@
       "licenseUrl": "https://raw.githubusercontent.com/google/fonts/main/ofl/neucha/OFL.txt",
       "license": "src/assets/fonts/yilo/cyrillic-OFL.txt",
       "output": "src/assets/fonts/yilo/cyrillic.woff2",
-      "sha256": "5033feae90cd4c84b549fbb96cb3aebdebc7b66f46883371678ced4df3db1488",
+      "sha256": "69ba5247ae064cc85280061a1f719e90284e19d8ecd68c102fc76efc325696c5",
       "glyphs": 184,
       "method": "Original outlines retained; subset to Yilo page characters, renamed to avoid reserved font names, WOFF2 for local web delivery only."
     },
@@ -33,8 +33,8 @@
       "licenseUrl": "https://raw.githubusercontent.com/lxgw/LxgwWenKai/main/OFL.txt",
       "license": "src/assets/fonts/yilo/han-OFL.txt",
       "output": "src/assets/fonts/yilo/han.woff2",
-      "sha256": "9150b408e419eb375948fd6815426bf5f65eba24d3d99313ad43e0c8b919ca87",
-      "glyphs": 1372,
+      "sha256": "551aa4cb4bde59d50d27130c9d2452d868cd8f7da1ee5926d2914d82818210b6",
+      "glyphs": 1383,
       "method": "Original outlines retained; subset to Yilo page characters, renamed to avoid reserved font names, WOFF2 for local web delivery only."
     },
     {
@@ -45,7 +45,7 @@
       "licenseUrl": "https://raw.githubusercontent.com/google/fonts/main/ofl/kalam/OFL.txt",
       "license": "src/assets/fonts/yilo/deva-OFL.txt",
       "output": "src/assets/fonts/yilo/deva.woff2",
-      "sha256": "ef5a38f6dfb4c5e636891d170dd4994fd0660471af5ffbe0e47e5408b4b702e3",
+      "sha256": "38564e48e2b47c492ce9a4147fa218d3ce7c602f97d6f6d71b84c1170d5a9593",
       "glyphs": 193,
       "method": "Original outlines retained; subset to Yilo page characters, renamed to avoid reserved font names, WOFF2 for local web delivery only."
     },
@@ -57,8 +57,8 @@
       "licenseUrl": "https://raw.githubusercontent.com/google/fonts/main/ofl/nanumpenscript/OFL.txt",
       "license": "src/assets/fonts/yilo/hangul-OFL.txt",
       "output": "src/assets/fonts/yilo/hangul.woff2",
-      "sha256": "4faf5f19de89db75436dd113be1e41fbcb2d0a59921a9d2b9dec958e2a786cb2",
-      "glyphs": 426,
+      "sha256": "306c6387a51f10419dff12d3a82dca2e383dcd0d1f2a2e20c7d534abb3d7f2e0",
+      "glyphs": 431,
       "method": "Original outlines retained; subset to Yilo page characters, renamed to avoid reserved font names, WOFF2 for local web delivery only."
     },
     {
@@ -69,8 +69,8 @@
       "licenseUrl": "https://raw.githubusercontent.com/google/fonts/main/ofl/arefruqaa/OFL.txt",
       "license": "src/assets/fonts/yilo/arabic-OFL.txt",
       "output": "src/assets/fonts/yilo/arabic.woff2",
-      "sha256": "e83fed7818654949099796a1c7ae5ffbb193384ebbd9fb27f586a5d27cb4555f",
-      "glyphs": 174,
+      "sha256": "c0c47657ee7c06832a254e22421689f5871e536c6a65e8577b501f0ff1e7b9ca",
+      "glyphs": 175,
       "method": "Original outlines retained; subset to Yilo page characters, renamed to avoid reserved font names, WOFF2 for local web delivery only."
     }
   ]

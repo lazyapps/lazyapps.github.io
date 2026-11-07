@@ -1,0 +1,14 @@
+{
+  "zh-hans": {"glyph":"言","word":"余地","refine":"别扩大范围"},
+  "zh-hant": {"glyph":"言","word":"餘地","refine":"別擴大範圍"},
+  "en": {"glyph":"A","word":"room","refine":"No scope creep"},
+  "ja": {"glyph":"あ","word":"余地","refine":"範囲を広げないで"},
+  "ko": {"glyph":"한","word":"여지","refine":"범위는 그대로"},
+  "de": {"glyph":"ß","word":"Spielraum","refine":"Umfang halten"},
+  "fr": {"glyph":"é","word":"marge","refine":"Pas de dérive"},
+  "es": {"glyph":"ñ","word":"margen","refine":"Sin ampliar"},
+  "pt-br": {"glyph":"ã","word":"margem","refine":"Sem ampliar"},
+  "ru": {"glyph":"Я","word":"манёвр","refine":"Не расширяй"},
+  "hi": {"glyph":"अ","word":"गुंजाइश","refine":"दायरा मत बढ़ाओ"},
+  "ar": {"glyph":"ع","word":"مجال","refine":"لا توسّع النطاق"}
+}

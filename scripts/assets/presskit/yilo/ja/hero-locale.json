@@ -4,7 +4,7 @@
     "advice.category.translation_pattern" : "翻訳パターン",
     "advice.kind.learning_point" : "学習ポイント",
     "language.japanese_reading.help" : "ひらがなは漢字の上、ローマ字は対応する語の上にそろえて表示します。",
-    "language.notes" : "学習ノート",
+    "language.notes" : "学習メモ",
     "language.search" : "言語を検索",
     "language.section" : "学習する言語",
     "language.targets" : "学習言語",
@@ -12,5 +12,10 @@
   },
   "nativeLocale" : "ja",
   "operatingSystem" : "バージョン27.0.1（ビルド26A434）",
-  "requestedLocale" : "ja"
+  "requestedLocale" : "ja",
+  "sourceLanguage" : "ja",
+  "targetLanguages" : [
+    "en",
+    "zh-Hans"
+  ]
 }

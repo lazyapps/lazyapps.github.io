@@ -1,0 +1,63 @@
+{
+  "id": "FD7B37E4-41EF-5BCA-ABCE-9CB61530441C",
+  "originalText": "फ़ीचर बदल गए हैं। स्क्रीनशॉट दोबारा ले लो।",
+  "sourceHost": "codex",
+  "hostVersion": "0.166.0-alpha.6",
+  "capturedAt": 1793967080.949,
+  "status": "succeeded",
+  "configuration": {
+    "preservesOriginalTone": true,
+    "sourceLanguage": "hi",
+    "englishInputExplanationLanguage": "hi",
+    "learningNotesLanguage": "hi",
+    "dialect": "american",
+    "targetLanguages": [
+      "en",
+      "ja"
+    ],
+    "targetStyle": "natural"
+  },
+  "naturalEnglish": null,
+  "translations": [
+    {
+      "language": "en",
+      "learningAdvice": [
+        {
+          "kind": "learning_point",
+          "category": "collocation",
+          "sourceExcerpt": "फ़ीचर बदल गए हैं। स्क्रीनशॉट दोबारा ले लो।",
+          "recommendation": "स्क्रीनशॉट फिर से लेने के लिए “retake the screenshots” कहें।",
+          "explanation": "आम प्रयोग take a screenshot है। Retake का अर्थ है उसे दोबारा लेना।",
+          "exampleEnglish": "We need to retake the screenshots after the update."
+        }
+      ],
+      "text": "The features have been updated, so we need to retake the screenshots."
+    },
+    {
+      "language": "ja",
+      "learningAdvice": [
+        {
+          "kind": "learning_point",
+          "category": "translation_pattern",
+          "sourceExcerpt": "फ़ीचर बदल गए हैं। स्क्रीनशॉट दोबारा ले लो।",
+          "recommendation": "दोबारा तस्वीर लेने के लिए 「撮り直す」 का प्रयोग करें।",
+          "explanation": "क्रिया के मूल रूप के बाद 直す जोड़ने से काम दोबारा करने का अर्थ मिलता है।",
+          "exampleEnglish": "更新後にスクリーンショットを撮り直してください。"
+        }
+      ],
+      "text": "機能が更新されたため、スクリーンショットを撮り直す必要があります。"
+    }
+  ],
+  "learningAdvice": [
+    {
+      "kind": "learning_point",
+      "category": "collocation",
+      "sourceExcerpt": "फ़ीचर बदल गए हैं। स्क्रीनशॉट दोबारा ले लो।",
+      "recommendation": "स्क्रीनशॉट फिर से लेने के लिए “retake the screenshots” कहें।",
+      "explanation": "आम प्रयोग take a screenshot है। Retake का अर्थ है उसे दोबारा लेना।",
+      "exampleEnglish": "We need to retake the screenshots after the update."
+    }
+  ],
+  "isBookmarked": false,
+  "origin": "captured"
+}

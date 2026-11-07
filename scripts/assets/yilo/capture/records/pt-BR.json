@@ -1,0 +1,63 @@
+{
+  "id": "ADD6980E-2C9B-58D5-9F5E-80F356FCBA7E",
+  "originalText": "As funções mudaram. Tire novas capturas de tela.",
+  "sourceHost": "codex",
+  "hostVersion": "0.166.0-alpha.6",
+  "capturedAt": 1793967080.949,
+  "status": "succeeded",
+  "configuration": {
+    "preservesOriginalTone": true,
+    "sourceLanguage": "pt-BR",
+    "englishInputExplanationLanguage": "pt-BR",
+    "learningNotesLanguage": "pt-BR",
+    "dialect": "american",
+    "targetLanguages": [
+      "en",
+      "ja"
+    ],
+    "targetStyle": "natural"
+  },
+  "naturalEnglish": null,
+  "translations": [
+    {
+      "language": "en",
+      "learningAdvice": [
+        {
+          "kind": "learning_point",
+          "category": "collocation",
+          "sourceExcerpt": "As funções mudaram. Tire novas capturas de tela.",
+          "recommendation": "Para refazer as capturas, use “retake the screenshots”.",
+          "explanation": "A expressão comum é take a screenshot. Retake indica que a captura será feita de novo.",
+          "exampleEnglish": "We need to retake the screenshots after the update."
+        }
+      ],
+      "text": "The features have been updated, so we need to retake the screenshots."
+    },
+    {
+      "language": "ja",
+      "learningAdvice": [
+        {
+          "kind": "learning_point",
+          "category": "translation_pattern",
+          "sourceExcerpt": "As funções mudaram. Tire novas capturas de tela.",
+          "recommendation": "Use 「撮り直す」 para indicar que vai refazer uma captura.",
+          "explanation": "直す depois do radical do verbo indica que a ação será refeita.",
+          "exampleEnglish": "更新後にスクリーンショットを撮り直してください。"
+        }
+      ],
+      "text": "機能が更新されたため、スクリーンショットを撮り直す必要があります。"
+    }
+  ],
+  "learningAdvice": [
+    {
+      "kind": "learning_point",
+      "category": "collocation",
+      "sourceExcerpt": "As funções mudaram. Tire novas capturas de tela.",
+      "recommendation": "Para refazer as capturas, use “retake the screenshots”.",
+      "explanation": "A expressão comum é take a screenshot. Retake indica que a captura será feita de novo.",
+      "exampleEnglish": "We need to retake the screenshots after the update."
+    }
+  ],
+  "isBookmarked": false,
+  "origin": "captured"
+}

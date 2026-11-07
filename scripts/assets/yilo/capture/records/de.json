@@ -1,0 +1,63 @@
+{
+  "id": "B79C07A4-E039-52B8-A140-7C2259C504EF",
+  "originalText": "Die Funktionen wurden aktualisiert. Mach bitte neue Screenshots.",
+  "sourceHost": "codex",
+  "hostVersion": "0.166.0-alpha.6",
+  "capturedAt": 1793967080.949,
+  "status": "succeeded",
+  "configuration": {
+    "preservesOriginalTone": true,
+    "sourceLanguage": "de",
+    "englishInputExplanationLanguage": "de",
+    "learningNotesLanguage": "de",
+    "dialect": "american",
+    "targetLanguages": [
+      "en",
+      "ja"
+    ],
+    "targetStyle": "natural"
+  },
+  "naturalEnglish": null,
+  "translations": [
+    {
+      "language": "en",
+      "learningAdvice": [
+        {
+          "kind": "learning_point",
+          "category": "collocation",
+          "sourceExcerpt": "Die Funktionen wurden aktualisiert. Mach bitte neue Screenshots.",
+          "recommendation": "Für neue Aufnahmen heißt es „retake the screenshots“.",
+          "explanation": "Die übliche Verbindung ist take a screenshot. Retake bedeutet, die Aufnahme zu wiederholen.",
+          "exampleEnglish": "We need to retake the screenshots after the update."
+        }
+      ],
+      "text": "The features have been updated, so we need to retake the screenshots."
+    },
+    {
+      "language": "ja",
+      "learningAdvice": [
+        {
+          "kind": "learning_point",
+          "category": "translation_pattern",
+          "sourceExcerpt": "Die Funktionen wurden aktualisiert. Mach bitte neue Screenshots.",
+          "recommendation": "Mit 「撮り直す」 drückst du aus, dass du etwas erneut aufnimmst.",
+          "explanation": "直す nach dem Verbstamm bedeutet, eine Handlung zu wiederholen.",
+          "exampleEnglish": "更新後にスクリーンショットを撮り直してください。"
+        }
+      ],
+      "text": "機能が更新されたため、スクリーンショットを撮り直す必要があります。"
+    }
+  ],
+  "learningAdvice": [
+    {
+      "kind": "learning_point",
+      "category": "collocation",
+      "sourceExcerpt": "Die Funktionen wurden aktualisiert. Mach bitte neue Screenshots.",
+      "recommendation": "Für neue Aufnahmen heißt es „retake the screenshots“.",
+      "explanation": "Die übliche Verbindung ist take a screenshot. Retake bedeutet, die Aufnahme zu wiederholen.",
+      "exampleEnglish": "We need to retake the screenshots after the update."
+    }
+  ],
+  "isBookmarked": false,
+  "origin": "captured"
+}

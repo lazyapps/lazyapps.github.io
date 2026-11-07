@@ -12,5 +12,10 @@
   },
   "nativeLocale" : "en",
   "operatingSystem" : "Version 27.0.1 (Build 26A434)",
-  "requestedLocale" : "en"
+  "requestedLocale" : "en",
+  "sourceLanguage" : "en",
+  "targetLanguages" : [
+    "zh-Hans",
+    "ja"
+  ]
 }

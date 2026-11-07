@@ -12,5 +12,10 @@
   },
   "nativeLocale" : "hi",
   "operatingSystem" : "संस्करण 27.0.1 (बिल्ड 26A434)",
-  "requestedLocale" : "hi"
+  "requestedLocale" : "hi",
+  "sourceLanguage" : "hi",
+  "targetLanguages" : [
+    "en",
+    "ja"
+  ]
 }

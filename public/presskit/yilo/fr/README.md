@@ -58,7 +58,7 @@ Les traductions chinoises peuvent afficher le pinyin ou le zhuyin. Le chinois si
 
 Dans les traductions en japonais, vous pouvez afficher les hiragana au-dessus des kanji ou les romaji au-dessus des groupes de mots. Cette option est désactivée par défaut. Elle ne modifie ni le texte copié, ni les notes, ni les reformulations.
 
-[Animation d’apprentissage des langues · MP4](https://lazyapps.com/v/yilo/hero-fr-v21.mp4)
+[Animation d’apprentissage des langues · MP4](https://lazyapps.com/v/yilo/hero-fr-v22.mp4)
 
 [Kevin MacLeod · Fluffing a Duck · CC BY 4.0](https://lazyapps.com/v/yilo/music-credits.txt)
 
@@ -81,9 +81,9 @@ Icône native originale, PNG 1024 × 1024. Dessin, proportions et transparence p
 
 [learning-record.png](learning-record.png)
 
-1488 × 956 · PNG
+1488 × 981 · PNG
 
-Fiche réelle avec texte chinois, traductions anglaise et japonaise, notes et romaji. Interface française ; contenu conservé.
+Fiche : saisie en français, traductions en anglais et en japonais, notes.
 
 ### Réglages des langues à apprendre
 
@@ -91,7 +91,7 @@ Fiche réelle avec texte chinois, traductions anglaise et japonaise, notes et ro
 
 1240 × 880 · PNG
 
-Réglages : texte chinois, apprentissage de l’anglais, du japonais et du français. Interface française avec exemples de préférences.
+Réglages : français en entrée, anglais et japonais à apprendre.
 
 ### Choisir les langues à apprendre
 
@@ -99,15 +99,7 @@ Réglages : texte chinois, apprentissage de l’anglais, du japonais et du fran�
 
 1080 × 1120 · PNG
 
-Sélecteur avec anglais, japonais et français. Interface française avec exemples de préférences.
-
-### Fond d’écran du bureau
-
-[desktop-wallpaper.png](../desktop-wallpaper.png)
-
-1536 × 1024 · PNG
-
-Paysage de dunes généré par IA pour la présentation du site ; ce n’est ni une capture d’écran ni une fonction intégrée de l’app.
+Sélection de l’anglais et du japonais. Exemple de réglages.
 
 ### Illustration vectorielle à plat
 
@@ -129,9 +121,9 @@ Visuel promotionnel, pas une capture d’écran de l’app.
 
 [hero-record.png](hero-record.png)
 
-1040 × 564 · PNG
+1040 × 650 · PNG
 
-Fiche native avec une saisie courte et la plus grande taille de texte. Chinois en entrée, anglais et japonais en sortie, avec Romaji. Exemple.
+Fiche native : saisie en français, traductions en anglais et en japonais. Taille de texte maximale. Exemple.
 
 ### Animation d’apprentissage des langues
 

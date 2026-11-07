@@ -1,0 +1,54 @@
+{
+  "id": "B60D7FBE-90B3-586B-8457-A42A42CD6DB7",
+  "originalText": "大幅な書き直しはまだせず、調整の余地を残して。",
+  "sourceHost": "codex",
+  "hostVersion": "0.166.0-alpha.6",
+  "capturedAt": 1793967080.949,
+  "status": "succeeded",
+  "configuration": {
+    "preservesOriginalTone": true,
+    "sourceLanguage": "ja",
+    "englishInputExplanationLanguage": "ja",
+    "learningNotesLanguage": "ja",
+    "dialect": "american",
+    "targetLanguages": [
+      "en",
+      "zh-Hans"
+    ],
+    "targetStyle": "natural"
+  },
+  "naturalEnglish": null,
+  "translations": [
+    {
+      "language": "en",
+      "text": "Hold off on a sweeping rewrite; leave us some wiggle room.",
+      "learningAdvice": [
+        {
+          "kind": "learning_point",
+          "category": "collocation",
+          "sourceExcerpt": "大幅な書き直しはまだせず、調整の余地を残して。",
+          "recommendation": "wiggle room は、計画などを調整できる余地のことです。",
+          "explanation": "wiggle room は、計画などを調整できる余地のことです。",
+          "exampleEnglish": "Let's leave some wiggle room."
+        }
+      ]
+    },
+    {
+      "language": "zh-Hans",
+      "text": "先别大改，留点余地。",
+      "learningAdvice": []
+    }
+  ],
+  "learningAdvice": [
+    {
+      "kind": "learning_point",
+      "category": "collocation",
+      "sourceExcerpt": "大幅な書き直しはまだせず、調整の余地を残して。",
+      "recommendation": "wiggle room は、計画などを調整できる余地のことです。",
+      "explanation": "wiggle room は、計画などを調整できる余地のことです。",
+      "exampleEnglish": "Let's leave some wiggle room."
+    }
+  ],
+  "isBookmarked": false,
+  "origin": "captured"
+}

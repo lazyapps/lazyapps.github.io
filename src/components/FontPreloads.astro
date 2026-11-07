@@ -1,0 +1,24 @@
+---
+import greek from '../assets/fonts/sofia-sans-xcond-greek-900.woff2?url';
+import vietnamese from '../assets/fonts/oswald-vietnamese-700.woff2?url';
+import panel from '../assets/fonts/calmon-panel.woff2?url';
+import sofia from '../assets/fonts/sofia-sans-xcond-latin.woff2?url&no-inline';
+import geist from '../assets/fonts/geist-mono-regular.woff2?url&no-inline';
+
+const generated = import.meta.glob<string>('../assets/fonts/optimized/*.woff2', {
+  eager: true, query: '?url&no-inline', import: 'default',
+});
+const core = (name: string) => generated[`../assets/fonts/optimized/${name}-core.woff2`];
+const path = Astro.url.pathname;
+const product = (name: string) => path.startsWith(`/${name}/`) && !path.includes('/presskit/');
+const fonts = [sofia];
+const mergedHan = path === '/yilo/' || /^\/yilo\/(zh-hant|ja|presskit)(\/|$)/.test(path);
+if (path === '/' || path.startsWith('/yilo/')) fonts.push(core('yilo-latin'), mergedHan ? generated['../assets/fonts/optimized/yilo-han-merged.woff2'] : core('yilo-han'));
+if (product('calmon')) {
+  fonts.push(panel);
+  if (path.startsWith('/calmon/el/')) fonts.push(greek);
+  if (path.startsWith('/calmon/vi/')) fonts.push(vietnamese);
+}
+if (product('fondfont')) fonts.push(geist);
+---
+{fonts.map(href => <link rel="preload" as="font" type="font/woff2" href={href} crossorigin="anonymous" />)}

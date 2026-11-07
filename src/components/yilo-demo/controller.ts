@@ -20,8 +20,8 @@ export function initYiloDemo(root: HTMLElement) {
   const wheels = all<SVGGElement>('[data-wheel]');
   const thoughts = all<SVGCircleElement>('[data-thought]');
   const laptopLines = all<SVGPathElement>('[data-laptop-line]');
-  const inputLines = all<SVGTSpanElement>('[data-input-line]');
-  const carets = all<SVGTSpanElement>('[data-typing-caret]');
+  const inputLines = [...root.querySelectorAll<HTMLElement>('[data-input-line]')];
+  const carets = [...root.querySelectorAll<HTMLElement>('[data-typing-caret]')];
   const frontLeg = get<SVGPathElement>('[data-leg="front"]');
   const backLeg = get<SVGPathElement>('[data-leg="back"]');
   const frontFoot = get<SVGPathElement>('[data-foot="front"]');
@@ -97,7 +97,7 @@ export function initYiloDemo(root: HTMLElement) {
       const next=lines[i].slice(0,Math.max(0,characters));
       if(line.textContent!==next)line.textContent=next;
       const active=characters>=0&&characters<lines[i].length;
-      opacity(carets[i],active&&time%600<340?1:0);
+      carets[i].style.opacity=String(active&&time%600<340?1:0);
       characters-=lines[i].length;
     });
     attr(root,'data-scene',time<2300?'input':time<9650?'learn':'conversation');
@@ -116,10 +116,12 @@ export function initYiloDemo(root: HTMLElement) {
     const label=get<SVGTextElement>('[data-input-label]');
     attr(label,'x',stacked?(rtl?718:432):(rtl?1202:508));attr(label,'y',stacked?99:292);
     label.style.fontSize=stacked?'24px':'28px';
-    all<SVGTextElement>('[data-input-text]').forEach((line,i)=>{
-      attr(line,'x',stacked?432:508);attr(line,'y',stacked?(lines.length===1?165:140+i*40):344+i*49);
-      line.style.fontSize=stacked?(lines.length===1?'28px':'30px'):'38px';
-    });
+    const inputText=get<SVGForeignObjectElement>('[data-input-text]');
+    attr(inputText,'x',stacked?432:508);attr(inputText,'y',stacked?119:314);
+    attr(inputText,'width',stacked?286:694);attr(inputText,'height',stacked?105:106);
+    const inputCopy=root.querySelector<HTMLElement>('.input')!;
+    inputCopy.style.fontSize=stacked?'28px':'38px';
+    inputCopy.style.lineHeight=stacked?'1.2':'1.25';
     attr(get('[data-people-layout]'),'transform',stacked?'translate(-710 -41) scale(1.18)':'translate(0 0)');
     attr(get('[data-ending-bubble]'),'d',stacked?'M30 300H730V458H627L608 478L600 458H30Z':'M533 240H1189V403H1128L1107 433L1101 403H533Z');
     const text=get<SVGForeignObjectElement>('[data-ending-text]');

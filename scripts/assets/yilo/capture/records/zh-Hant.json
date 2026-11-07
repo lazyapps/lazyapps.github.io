@@ -1,0 +1,63 @@
+{
+  "id": "3A697519-E4E0-5E29-A43B-B9A70E414E55",
+  "originalText": "功能有更新，需重新截圖",
+  "sourceHost": "codex",
+  "hostVersion": "0.166.0-alpha.6",
+  "capturedAt": 1793967080.949,
+  "status": "succeeded",
+  "configuration": {
+    "preservesOriginalTone": true,
+    "sourceLanguage": "zh-Hant",
+    "englishInputExplanationLanguage": "zh-Hant",
+    "learningNotesLanguage": "zh-Hant",
+    "dialect": "american",
+    "targetLanguages": [
+      "en",
+      "ja"
+    ],
+    "targetStyle": "natural"
+  },
+  "naturalEnglish": null,
+  "translations": [
+    {
+      "language": "en",
+      "learningAdvice": [
+        {
+          "kind": "learning_point",
+          "category": "collocation",
+          "sourceExcerpt": "功能有更新，需重新截圖",
+          "recommendation": "用「retake the screenshots」表達重新擷取畫面。",
+          "explanation": "take a screenshot 是常用搭配；retake 表示重新做一次。",
+          "exampleEnglish": "We need to retake the screenshots after the update."
+        }
+      ],
+      "text": "The features have been updated, so we need to retake the screenshots."
+    },
+    {
+      "language": "ja",
+      "learningAdvice": [
+        {
+          "kind": "learning_point",
+          "category": "translation_pattern",
+          "sourceExcerpt": "功能有更新，需重新截圖",
+          "recommendation": "用「撮り直す」表達重新拍攝。",
+          "explanation": "動詞連用形加「直す」表示重新做某事。",
+          "exampleEnglish": "更新後にスクリーンショットを撮り直してください。"
+        }
+      ],
+      "text": "機能が更新されたため、スクリーンショットを撮り直す必要があります。"
+    }
+  ],
+  "learningAdvice": [
+    {
+      "kind": "learning_point",
+      "category": "collocation",
+      "sourceExcerpt": "功能有更新，需重新截圖",
+      "recommendation": "用「retake the screenshots」表達重新擷取畫面。",
+      "explanation": "take a screenshot 是常用搭配；retake 表示重新做一次。",
+      "exampleEnglish": "We need to retake the screenshots after the update."
+    }
+  ],
+  "isBookmarked": false,
+  "origin": "captured"
+}

@@ -1,18 +1,18 @@
 {
   "checkedOn": "2026-11-07",
-  "appSourceCommit": "473a8fac19ac6b55b9604de50d851848854be133",
+  "appSourceCommit": "197ac0e3371e25694b1fb12a89ecb5e29f5924c5",
   "captures": [
     {
       "source": "scripts/assets/presskit/yilo/ar/hero-record.png",
-      "sha256": "e30e9e5497b5ba96e5dd70f2c2111e5b6b8aa1c7867d23230fefb4f941f4597a",
+      "sha256": "30e4fb6ab4c8a0cc903c96d3f6ad7daaab7c5ccbdeb3e976f6a0d73c9328e318",
       "contentLanguage": "ar",
       "type": "native",
       "capturedOn": "2026-11-07",
-      "appSourceCommit": "473a8fac19ac6b55b9604de50d851848854be133",
+      "appSourceCommit": "197ac0e3371e25694b1fb12a89ecb5e29f5924c5",
       "originalSource": "scripts/assets/yilo/capture/YiloHeroCapture.swift",
       "operation": "Unmodified native RecordCardView export with a short isolated sample record, the app's extraLarge text preference, native Pinyin/Romaji and collapsed learning notes. No image text replacement, resizing or UI reconstruction. Not a full app window.",
       "appearance": "light",
-      "captureFixtureSha256": "e9fec5ac2728e71af0b2ca93742f372700d9ee4644dbfda51d21874e0cadba4c",
+      "captureFixtureSha256": "be1102272a66d16cd4647f7791ccc3198e1e2a7cc2f0adaf3d144a65b215746e",
       "nativeLocale": "ar",
       "nativeLabels": {
         "advice.category.collocation": "التلازم اللفظي",
@@ -25,76 +25,86 @@
         "language.targets": "اللغات المستهدفة",
         "record.example": "مثال"
       },
-      "localizationSha256": "2583e455cdb96e180d678096800cddf631f55bdb27e3edc421a99e51344dd86c",
+      "sourceLanguage": "ar",
+      "targetLanguages": [
+        "en",
+        "ja"
+      ],
+      "localizationSha256": "92f8f8ac8cf4e4b60b01e7c7b8f9d95394a824a129f3a7a8b0acbb399540619e",
       "sourceFiles": {
         "Sources/YiYanCore/Presentation/ChineseReading.swift": "9434540ee0608bc11e1f34b1f8cd927ad50d2fe6c80a7e79649f2cfbd2badee0",
         "Sources/YiYanCore/Presentation/JapaneseReading.swift": "a69369592104f8160a1a0f10146de68510c0e405a0946119f4335d10c0e37446",
+        "Sources/YiYanReading/TargetTranslationText.swift": "90f1725562ff8b42ec2174c00c18b8628ce1c3936dc05e8de585a55ea5fa1efb",
         "Sources/YiYanUI/ViewModels/AppLocalization.swift": "e85390f4b1e0c146d4c31b950ce2094a4514465b16ebe9ed60469baaab60f5fa",
         "Sources/YiYanUI/Views/LearningLanguageSettingsView.swift": "73dbe84f58ac61f94a0af16f0f82d02fcbc4681340f1c54dbd200942ab21f23e",
         "Sources/YiYanUI/Views/MainWindowTypography.swift": "42bc78028c1a83a6b8b3925b0afad4ec97e54056270fb654236ea26f1357a04c",
-        "Sources/YiYanUI/Views/RecordCardView.swift": "6a3aec0cf9309d5cdeffd02ab9b3d86660cc34ad269c8759af5a63a920f3ab02",
-        "Sources/YiYanUI/Views/TargetTranslationSection.swift": "a9769ee0c1929b086f7bfd9768e0f3a214d0469fb7b1fdcd9b4c3bf61b7f8cbc",
-        "Sources/YiYanUI/Views/TargetTranslationText.swift": "d0a65f1d98a4aca4ee6554aa6854765871f1e71a0b635d0d8220c4b86aaf9fe5"
+        "Sources/YiYanUI/Views/RecordCardView.swift": "aff3af1e9170132bee6483fe20024704629dfdb9a5e3a632db5ba5fb883603bd",
+        "Sources/YiYanUI/Views/TargetTranslationSection.swift": "7e262b7a6957c5270f85536db4761fbc15ad6f4417a359a479f0f91d0e0c665c"
       },
-      "recordSource": "scripts/assets/yilo/capture/hero-record-zh.json",
-      "recordSha256": "c1be5c91774667c0198a245cafdc0a6eec281f2114402972a3e102eb5f1d3d79",
+      "recordSource": "scripts/assets/yilo/capture/hero-records/ar.json",
+      "recordSha256": "3c43755d58e49ed81abfbcbd62192d6d58a36ddf6030e67dca7510964df07bec",
       "nativeTextSize": "extraLarge",
       "nativeFrameWidthPoints": 520,
       "pixelWidth": 1040,
-      "pixelHeight": 564
+      "pixelHeight": 603
     },
     {
       "source": "scripts/assets/presskit/yilo/de/hero-record.png",
-      "sha256": "48b249ecd4f2431770f30a37d58e6126c083dafb210ef4748868f10b0aadede4",
+      "sha256": "148b6bd57e091bb8d9def74cbc283900cfe134265580bbb18e0a449711de5c3e",
       "contentLanguage": "de",
       "type": "native",
       "capturedOn": "2026-11-07",
-      "appSourceCommit": "473a8fac19ac6b55b9604de50d851848854be133",
+      "appSourceCommit": "197ac0e3371e25694b1fb12a89ecb5e29f5924c5",
       "originalSource": "scripts/assets/yilo/capture/YiloHeroCapture.swift",
       "operation": "Unmodified native RecordCardView export with a short isolated sample record, the app's extraLarge text preference, native Pinyin/Romaji and collapsed learning notes. No image text replacement, resizing or UI reconstruction. Not a full app window.",
       "appearance": "light",
-      "captureFixtureSha256": "e9fec5ac2728e71af0b2ca93742f372700d9ee4644dbfda51d21874e0cadba4c",
+      "captureFixtureSha256": "be1102272a66d16cd4647f7791ccc3198e1e2a7cc2f0adaf3d144a65b215746e",
       "nativeLocale": "de",
       "nativeLabels": {
         "advice.category.collocation": "Kollokation",
         "advice.category.translation_pattern": "Übersetzungsmuster",
         "advice.kind.learning_point": "Lernpunkt",
         "language.japanese_reading.help": "Hiragana steht über den Kanji; Romaji wird über dem jeweiligen japanischen Wort ausgerichtet.",
-        "language.notes": "Lernnotizen",
+        "language.notes": "Lernhinweise",
         "language.search": "Sprachen suchen",
         "language.section": "Lernsprachen",
         "language.targets": "Zielsprachen",
         "record.example": "Beispiel"
       },
-      "localizationSha256": "18734605a31e3916ebe146545b4620d86ba1088f68c5618d291552d8715c82db",
+      "sourceLanguage": "de",
+      "targetLanguages": [
+        "en",
+        "ja"
+      ],
+      "localizationSha256": "d3377f0af79be259dd6e44fcb3fab020b95eac8d08efd5804e545fb75f20917a",
       "sourceFiles": {
         "Sources/YiYanCore/Presentation/ChineseReading.swift": "9434540ee0608bc11e1f34b1f8cd927ad50d2fe6c80a7e79649f2cfbd2badee0",
         "Sources/YiYanCore/Presentation/JapaneseReading.swift": "a69369592104f8160a1a0f10146de68510c0e405a0946119f4335d10c0e37446",
+        "Sources/YiYanReading/TargetTranslationText.swift": "90f1725562ff8b42ec2174c00c18b8628ce1c3936dc05e8de585a55ea5fa1efb",
         "Sources/YiYanUI/ViewModels/AppLocalization.swift": "e85390f4b1e0c146d4c31b950ce2094a4514465b16ebe9ed60469baaab60f5fa",
         "Sources/YiYanUI/Views/LearningLanguageSettingsView.swift": "73dbe84f58ac61f94a0af16f0f82d02fcbc4681340f1c54dbd200942ab21f23e",
         "Sources/YiYanUI/Views/MainWindowTypography.swift": "42bc78028c1a83a6b8b3925b0afad4ec97e54056270fb654236ea26f1357a04c",
-        "Sources/YiYanUI/Views/RecordCardView.swift": "6a3aec0cf9309d5cdeffd02ab9b3d86660cc34ad269c8759af5a63a920f3ab02",
-        "Sources/YiYanUI/Views/TargetTranslationSection.swift": "a9769ee0c1929b086f7bfd9768e0f3a214d0469fb7b1fdcd9b4c3bf61b7f8cbc",
-        "Sources/YiYanUI/Views/TargetTranslationText.swift": "d0a65f1d98a4aca4ee6554aa6854765871f1e71a0b635d0d8220c4b86aaf9fe5"
+        "Sources/YiYanUI/Views/RecordCardView.swift": "aff3af1e9170132bee6483fe20024704629dfdb9a5e3a632db5ba5fb883603bd",
+        "Sources/YiYanUI/Views/TargetTranslationSection.swift": "7e262b7a6957c5270f85536db4761fbc15ad6f4417a359a479f0f91d0e0c665c"
       },
-      "recordSource": "scripts/assets/yilo/capture/hero-record-zh.json",
-      "recordSha256": "c1be5c91774667c0198a245cafdc0a6eec281f2114402972a3e102eb5f1d3d79",
+      "recordSource": "scripts/assets/yilo/capture/hero-records/de.json",
+      "recordSha256": "aa9693791f893550f19bdf83944c0a988559328f1baa2c049ee1cf8445a7701f",
       "nativeTextSize": "extraLarge",
       "nativeFrameWidthPoints": 520,
       "pixelWidth": 1040,
-      "pixelHeight": 564
+      "pixelHeight": 603
     },
     {
       "source": "scripts/assets/presskit/yilo/en/hero-record.png",
-      "sha256": "9eb09db1ac1dd94a81022ad13614590ff2989ae8e4db2aa0d680e03db5b67f14",
+      "sha256": "d50d35eb348ee2badd4c7e8a345535c681703a46773048d9098edc8d9758bed8",
       "contentLanguage": "en",
       "type": "native",
       "capturedOn": "2026-11-07",
-      "appSourceCommit": "473a8fac19ac6b55b9604de50d851848854be133",
+      "appSourceCommit": "197ac0e3371e25694b1fb12a89ecb5e29f5924c5",
       "originalSource": "scripts/assets/yilo/capture/YiloHeroCapture.swift",
       "operation": "Unmodified native RecordCardView export with a short isolated sample record, the app's extraLarge text preference, native Pinyin/Romaji and collapsed learning notes. No image text replacement, resizing or UI reconstruction. Not a full app window.",
       "appearance": "light",
-      "captureFixtureSha256": "e9fec5ac2728e71af0b2ca93742f372700d9ee4644dbfda51d21874e0cadba4c",
+      "captureFixtureSha256": "be1102272a66d16cd4647f7791ccc3198e1e2a7cc2f0adaf3d144a65b215746e",
       "nativeLocale": "en",
       "nativeLabels": {
         "advice.category.collocation": "Collocation",
@@ -107,35 +117,40 @@
         "language.targets": "Target Languages",
         "record.example": "Example"
       },
-      "localizationSha256": "300a231384113add967b7b0c410ebcb20bc461b78be44cc61687b2e4db4b005a",
+      "sourceLanguage": "en",
+      "targetLanguages": [
+        "zh-Hans",
+        "ja"
+      ],
+      "localizationSha256": "f8b157632e8f6b804483de9c99c9c7ba978f8f435bc439c27b619bd9c3b971a1",
       "sourceFiles": {
         "Sources/YiYanCore/Presentation/ChineseReading.swift": "9434540ee0608bc11e1f34b1f8cd927ad50d2fe6c80a7e79649f2cfbd2badee0",
         "Sources/YiYanCore/Presentation/JapaneseReading.swift": "a69369592104f8160a1a0f10146de68510c0e405a0946119f4335d10c0e37446",
+        "Sources/YiYanReading/TargetTranslationText.swift": "90f1725562ff8b42ec2174c00c18b8628ce1c3936dc05e8de585a55ea5fa1efb",
         "Sources/YiYanUI/ViewModels/AppLocalization.swift": "e85390f4b1e0c146d4c31b950ce2094a4514465b16ebe9ed60469baaab60f5fa",
         "Sources/YiYanUI/Views/LearningLanguageSettingsView.swift": "73dbe84f58ac61f94a0af16f0f82d02fcbc4681340f1c54dbd200942ab21f23e",
         "Sources/YiYanUI/Views/MainWindowTypography.swift": "42bc78028c1a83a6b8b3925b0afad4ec97e54056270fb654236ea26f1357a04c",
-        "Sources/YiYanUI/Views/RecordCardView.swift": "6a3aec0cf9309d5cdeffd02ab9b3d86660cc34ad269c8759af5a63a920f3ab02",
-        "Sources/YiYanUI/Views/TargetTranslationSection.swift": "a9769ee0c1929b086f7bfd9768e0f3a214d0469fb7b1fdcd9b4c3bf61b7f8cbc",
-        "Sources/YiYanUI/Views/TargetTranslationText.swift": "d0a65f1d98a4aca4ee6554aa6854765871f1e71a0b635d0d8220c4b86aaf9fe5"
+        "Sources/YiYanUI/Views/RecordCardView.swift": "aff3af1e9170132bee6483fe20024704629dfdb9a5e3a632db5ba5fb883603bd",
+        "Sources/YiYanUI/Views/TargetTranslationSection.swift": "7e262b7a6957c5270f85536db4761fbc15ad6f4417a359a479f0f91d0e0c665c"
       },
-      "recordSource": "scripts/assets/yilo/capture/hero-record-en.json",
-      "recordSha256": "65a661032e206d7387aacc937c3dd277f93a2ab1ab58e65e9d357dd7ad78865a",
+      "recordSource": "scripts/assets/yilo/capture/hero-records/en.json",
+      "recordSha256": "099eaaa1beea113aebb9edc61d041b798c9f26ef1e1ae4033e4a1bc486a1a4b9",
       "nativeTextSize": "extraLarge",
       "nativeFrameWidthPoints": 520,
       "pixelWidth": 1040,
-      "pixelHeight": 622
+      "pixelHeight": 661
     },
     {
       "source": "scripts/assets/presskit/yilo/es/hero-record.png",
-      "sha256": "b5da2038ebfafe21e055cdeca2083f70a4295e5833bfb0722e33b4b42937c49b",
+      "sha256": "631f3371146c7c70ffda00410f6597143e9547d9831e5fa1a63bf73aa554558f",
       "contentLanguage": "es",
       "type": "native",
       "capturedOn": "2026-11-07",
-      "appSourceCommit": "473a8fac19ac6b55b9604de50d851848854be133",
+      "appSourceCommit": "197ac0e3371e25694b1fb12a89ecb5e29f5924c5",
       "originalSource": "scripts/assets/yilo/capture/YiloHeroCapture.swift",
       "operation": "Unmodified native RecordCardView export with a short isolated sample record, the app's extraLarge text preference, native Pinyin/Romaji and collapsed learning notes. No image text replacement, resizing or UI reconstruction. Not a full app window.",
       "appearance": "light",
-      "captureFixtureSha256": "e9fec5ac2728e71af0b2ca93742f372700d9ee4644dbfda51d21874e0cadba4c",
+      "captureFixtureSha256": "be1102272a66d16cd4647f7791ccc3198e1e2a7cc2f0adaf3d144a65b215746e",
       "nativeLocale": "es",
       "nativeLabels": {
         "advice.category.collocation": "Colocación",
@@ -148,76 +163,86 @@
         "language.targets": "Idiomas de destino",
         "record.example": "Ejemplo"
       },
-      "localizationSha256": "25f789a75776cdcfdf35c2c6e0a3b857e9be83d712e39e6a8a19bb4adaa62d75",
+      "sourceLanguage": "es",
+      "targetLanguages": [
+        "en",
+        "ja"
+      ],
+      "localizationSha256": "9fbfcd40f4b089267abe5b66a10c9cefb5f99d78580144b6386825ea812cccfb",
       "sourceFiles": {
         "Sources/YiYanCore/Presentation/ChineseReading.swift": "9434540ee0608bc11e1f34b1f8cd927ad50d2fe6c80a7e79649f2cfbd2badee0",
         "Sources/YiYanCore/Presentation/JapaneseReading.swift": "a69369592104f8160a1a0f10146de68510c0e405a0946119f4335d10c0e37446",
+        "Sources/YiYanReading/TargetTranslationText.swift": "90f1725562ff8b42ec2174c00c18b8628ce1c3936dc05e8de585a55ea5fa1efb",
         "Sources/YiYanUI/ViewModels/AppLocalization.swift": "e85390f4b1e0c146d4c31b950ce2094a4514465b16ebe9ed60469baaab60f5fa",
         "Sources/YiYanUI/Views/LearningLanguageSettingsView.swift": "73dbe84f58ac61f94a0af16f0f82d02fcbc4681340f1c54dbd200942ab21f23e",
         "Sources/YiYanUI/Views/MainWindowTypography.swift": "42bc78028c1a83a6b8b3925b0afad4ec97e54056270fb654236ea26f1357a04c",
-        "Sources/YiYanUI/Views/RecordCardView.swift": "6a3aec0cf9309d5cdeffd02ab9b3d86660cc34ad269c8759af5a63a920f3ab02",
-        "Sources/YiYanUI/Views/TargetTranslationSection.swift": "a9769ee0c1929b086f7bfd9768e0f3a214d0469fb7b1fdcd9b4c3bf61b7f8cbc",
-        "Sources/YiYanUI/Views/TargetTranslationText.swift": "d0a65f1d98a4aca4ee6554aa6854765871f1e71a0b635d0d8220c4b86aaf9fe5"
+        "Sources/YiYanUI/Views/RecordCardView.swift": "aff3af1e9170132bee6483fe20024704629dfdb9a5e3a632db5ba5fb883603bd",
+        "Sources/YiYanUI/Views/TargetTranslationSection.swift": "7e262b7a6957c5270f85536db4761fbc15ad6f4417a359a479f0f91d0e0c665c"
       },
-      "recordSource": "scripts/assets/yilo/capture/hero-record-zh.json",
-      "recordSha256": "c1be5c91774667c0198a245cafdc0a6eec281f2114402972a3e102eb5f1d3d79",
+      "recordSource": "scripts/assets/yilo/capture/hero-records/es.json",
+      "recordSha256": "745e1821fe5a8c74f402ce79857772a57041cac1d9dbe1c3cbf20b5005f7f80a",
       "nativeTextSize": "extraLarge",
       "nativeFrameWidthPoints": 520,
       "pixelWidth": 1040,
-      "pixelHeight": 564
+      "pixelHeight": 603
     },
     {
       "source": "scripts/assets/presskit/yilo/fr/hero-record.png",
-      "sha256": "7d1e0d773591d4a910ae7ea1c6e4d3558079c8ddf5e50efe68bb48d98e895bd3",
+      "sha256": "d64e854305374115935cb5f13d0d394fb3fd7c79ceb5b8fc7cd5988a1ba62e68",
       "contentLanguage": "fr",
       "type": "native",
       "capturedOn": "2026-11-07",
-      "appSourceCommit": "473a8fac19ac6b55b9604de50d851848854be133",
+      "appSourceCommit": "197ac0e3371e25694b1fb12a89ecb5e29f5924c5",
       "originalSource": "scripts/assets/yilo/capture/YiloHeroCapture.swift",
       "operation": "Unmodified native RecordCardView export with a short isolated sample record, the app's extraLarge text preference, native Pinyin/Romaji and collapsed learning notes. No image text replacement, resizing or UI reconstruction. Not a full app window.",
       "appearance": "light",
-      "captureFixtureSha256": "e9fec5ac2728e71af0b2ca93742f372700d9ee4644dbfda51d21874e0cadba4c",
+      "captureFixtureSha256": "be1102272a66d16cd4647f7791ccc3198e1e2a7cc2f0adaf3d144a65b215746e",
       "nativeLocale": "fr",
       "nativeLabels": {
         "advice.category.collocation": "Collocation",
         "advice.category.translation_pattern": "Schéma de traduction",
         "advice.kind.learning_point": "Point à retenir",
         "language.japanese_reading.help": "Les hiraganas apparaissent au-dessus des kanjis ; le romaji est aligné au-dessus de chaque mot japonais.",
-        "language.notes": "Notes d’apprentissage",
+        "language.notes": "Conseils d’apprentissage",
         "language.search": "Rechercher une langue",
         "language.section": "Langues d’apprentissage",
         "language.targets": "Langues cibles",
         "record.example": "Exemple"
       },
-      "localizationSha256": "de8f9ac2614e3399443b0ac532687214aa2d464d490faef903aafc98ae39410d",
+      "sourceLanguage": "fr",
+      "targetLanguages": [
+        "en",
+        "ja"
+      ],
+      "localizationSha256": "5c50d1b7f637ca0f42f0e15fa123285c4ca4150a5dce9e69cb36b22ae5e9e427",
       "sourceFiles": {
         "Sources/YiYanCore/Presentation/ChineseReading.swift": "9434540ee0608bc11e1f34b1f8cd927ad50d2fe6c80a7e79649f2cfbd2badee0",
         "Sources/YiYanCore/Presentation/JapaneseReading.swift": "a69369592104f8160a1a0f10146de68510c0e405a0946119f4335d10c0e37446",
+        "Sources/YiYanReading/TargetTranslationText.swift": "90f1725562ff8b42ec2174c00c18b8628ce1c3936dc05e8de585a55ea5fa1efb",
         "Sources/YiYanUI/ViewModels/AppLocalization.swift": "e85390f4b1e0c146d4c31b950ce2094a4514465b16ebe9ed60469baaab60f5fa",
         "Sources/YiYanUI/Views/LearningLanguageSettingsView.swift": "73dbe84f58ac61f94a0af16f0f82d02fcbc4681340f1c54dbd200942ab21f23e",
         "Sources/YiYanUI/Views/MainWindowTypography.swift": "42bc78028c1a83a6b8b3925b0afad4ec97e54056270fb654236ea26f1357a04c",
-        "Sources/YiYanUI/Views/RecordCardView.swift": "6a3aec0cf9309d5cdeffd02ab9b3d86660cc34ad269c8759af5a63a920f3ab02",
-        "Sources/YiYanUI/Views/TargetTranslationSection.swift": "a9769ee0c1929b086f7bfd9768e0f3a214d0469fb7b1fdcd9b4c3bf61b7f8cbc",
-        "Sources/YiYanUI/Views/TargetTranslationText.swift": "d0a65f1d98a4aca4ee6554aa6854765871f1e71a0b635d0d8220c4b86aaf9fe5"
+        "Sources/YiYanUI/Views/RecordCardView.swift": "aff3af1e9170132bee6483fe20024704629dfdb9a5e3a632db5ba5fb883603bd",
+        "Sources/YiYanUI/Views/TargetTranslationSection.swift": "7e262b7a6957c5270f85536db4761fbc15ad6f4417a359a479f0f91d0e0c665c"
       },
-      "recordSource": "scripts/assets/yilo/capture/hero-record-zh.json",
-      "recordSha256": "c1be5c91774667c0198a245cafdc0a6eec281f2114402972a3e102eb5f1d3d79",
+      "recordSource": "scripts/assets/yilo/capture/hero-records/fr.json",
+      "recordSha256": "b9b5f8c67a0ef37f73fe939d27ec8d36726f51b7a75070390d9ff9c2fa118a69",
       "nativeTextSize": "extraLarge",
       "nativeFrameWidthPoints": 520,
       "pixelWidth": 1040,
-      "pixelHeight": 564
+      "pixelHeight": 650
     },
     {
       "source": "scripts/assets/presskit/yilo/hi/hero-record.png",
-      "sha256": "19f75b85fbaa7cbc3fe1c66c88262f4d1604c4568cf97a18efd6417429fe43dc",
+      "sha256": "d224d585bc01ba9eb35e7ed74995dc7b07c1c87bccfd84d9807d5c08f301e284",
       "contentLanguage": "hi",
       "type": "native",
       "capturedOn": "2026-11-07",
-      "appSourceCommit": "473a8fac19ac6b55b9604de50d851848854be133",
+      "appSourceCommit": "197ac0e3371e25694b1fb12a89ecb5e29f5924c5",
       "originalSource": "scripts/assets/yilo/capture/YiloHeroCapture.swift",
       "operation": "Unmodified native RecordCardView export with a short isolated sample record, the app's extraLarge text preference, native Pinyin/Romaji and collapsed learning notes. No image text replacement, resizing or UI reconstruction. Not a full app window.",
       "appearance": "light",
-      "captureFixtureSha256": "e9fec5ac2728e71af0b2ca93742f372700d9ee4644dbfda51d21874e0cadba4c",
+      "captureFixtureSha256": "be1102272a66d16cd4647f7791ccc3198e1e2a7cc2f0adaf3d144a65b215746e",
       "nativeLocale": "hi",
       "nativeLabels": {
         "advice.category.collocation": "शब्द संयोजन",
@@ -230,76 +255,86 @@
         "language.targets": "लक्ष्य भाषाएँ",
         "record.example": "उदाहरण"
       },
-      "localizationSha256": "d6978b93cac9d1efe506ca33ceca9413c5fa96b7d2a311ec026c9597b08a1ffd",
+      "sourceLanguage": "hi",
+      "targetLanguages": [
+        "en",
+        "ja"
+      ],
+      "localizationSha256": "b762ea7e8d07d44d9d4d121eb54518391c7669e6e61f12d23524c04a7bd02802",
       "sourceFiles": {
         "Sources/YiYanCore/Presentation/ChineseReading.swift": "9434540ee0608bc11e1f34b1f8cd927ad50d2fe6c80a7e79649f2cfbd2badee0",
         "Sources/YiYanCore/Presentation/JapaneseReading.swift": "a69369592104f8160a1a0f10146de68510c0e405a0946119f4335d10c0e37446",
+        "Sources/YiYanReading/TargetTranslationText.swift": "90f1725562ff8b42ec2174c00c18b8628ce1c3936dc05e8de585a55ea5fa1efb",
         "Sources/YiYanUI/ViewModels/AppLocalization.swift": "e85390f4b1e0c146d4c31b950ce2094a4514465b16ebe9ed60469baaab60f5fa",
         "Sources/YiYanUI/Views/LearningLanguageSettingsView.swift": "73dbe84f58ac61f94a0af16f0f82d02fcbc4681340f1c54dbd200942ab21f23e",
         "Sources/YiYanUI/Views/MainWindowTypography.swift": "42bc78028c1a83a6b8b3925b0afad4ec97e54056270fb654236ea26f1357a04c",
-        "Sources/YiYanUI/Views/RecordCardView.swift": "6a3aec0cf9309d5cdeffd02ab9b3d86660cc34ad269c8759af5a63a920f3ab02",
-        "Sources/YiYanUI/Views/TargetTranslationSection.swift": "a9769ee0c1929b086f7bfd9768e0f3a214d0469fb7b1fdcd9b4c3bf61b7f8cbc",
-        "Sources/YiYanUI/Views/TargetTranslationText.swift": "d0a65f1d98a4aca4ee6554aa6854765871f1e71a0b635d0d8220c4b86aaf9fe5"
+        "Sources/YiYanUI/Views/RecordCardView.swift": "aff3af1e9170132bee6483fe20024704629dfdb9a5e3a632db5ba5fb883603bd",
+        "Sources/YiYanUI/Views/TargetTranslationSection.swift": "7e262b7a6957c5270f85536db4761fbc15ad6f4417a359a479f0f91d0e0c665c"
       },
-      "recordSource": "scripts/assets/yilo/capture/hero-record-zh.json",
-      "recordSha256": "c1be5c91774667c0198a245cafdc0a6eec281f2114402972a3e102eb5f1d3d79",
+      "recordSource": "scripts/assets/yilo/capture/hero-records/hi.json",
+      "recordSha256": "9f9430ae5d9af19a79c360a7cd685892669e68a368c89766eead5a7bf1194c38",
       "nativeTextSize": "extraLarge",
       "nativeFrameWidthPoints": 520,
       "pixelWidth": 1040,
-      "pixelHeight": 564
+      "pixelHeight": 603
     },
     {
       "source": "scripts/assets/presskit/yilo/ja/hero-record.png",
-      "sha256": "7ab9db797fa6f7e206eb4607550c3e93a21166b729ca41aa84b9940beaa03ff8",
+      "sha256": "121d0160470815bcd6bfe9afab3a00d2d70e83abf9f82797759ea84cdbbe508c",
       "contentLanguage": "ja",
       "type": "native",
       "capturedOn": "2026-11-07",
-      "appSourceCommit": "473a8fac19ac6b55b9604de50d851848854be133",
+      "appSourceCommit": "197ac0e3371e25694b1fb12a89ecb5e29f5924c5",
       "originalSource": "scripts/assets/yilo/capture/YiloHeroCapture.swift",
       "operation": "Unmodified native RecordCardView export with a short isolated sample record, the app's extraLarge text preference, native Pinyin/Romaji and collapsed learning notes. No image text replacement, resizing or UI reconstruction. Not a full app window.",
       "appearance": "light",
-      "captureFixtureSha256": "e9fec5ac2728e71af0b2ca93742f372700d9ee4644dbfda51d21874e0cadba4c",
+      "captureFixtureSha256": "be1102272a66d16cd4647f7791ccc3198e1e2a7cc2f0adaf3d144a65b215746e",
       "nativeLocale": "ja",
       "nativeLabels": {
         "advice.category.collocation": "コロケーション",
         "advice.category.translation_pattern": "翻訳パターン",
         "advice.kind.learning_point": "学習ポイント",
         "language.japanese_reading.help": "ひらがなは漢字の上、ローマ字は対応する語の上にそろえて表示します。",
-        "language.notes": "学習ノート",
+        "language.notes": "学習メモ",
         "language.search": "言語を検索",
         "language.section": "学習する言語",
         "language.targets": "学習言語",
         "record.example": "例"
       },
-      "localizationSha256": "966a4e66f91701f09a22e8fd09a975071a902f3e5775eff9cafec8cb457f462f",
+      "sourceLanguage": "ja",
+      "targetLanguages": [
+        "en",
+        "zh-Hans"
+      ],
+      "localizationSha256": "74f2b2f6fd47b66bd653a55b70bc546a6acf34a86db0f502a0794de094598259",
       "sourceFiles": {
         "Sources/YiYanCore/Presentation/ChineseReading.swift": "9434540ee0608bc11e1f34b1f8cd927ad50d2fe6c80a7e79649f2cfbd2badee0",
         "Sources/YiYanCore/Presentation/JapaneseReading.swift": "a69369592104f8160a1a0f10146de68510c0e405a0946119f4335d10c0e37446",
+        "Sources/YiYanReading/TargetTranslationText.swift": "90f1725562ff8b42ec2174c00c18b8628ce1c3936dc05e8de585a55ea5fa1efb",
         "Sources/YiYanUI/ViewModels/AppLocalization.swift": "e85390f4b1e0c146d4c31b950ce2094a4514465b16ebe9ed60469baaab60f5fa",
         "Sources/YiYanUI/Views/LearningLanguageSettingsView.swift": "73dbe84f58ac61f94a0af16f0f82d02fcbc4681340f1c54dbd200942ab21f23e",
         "Sources/YiYanUI/Views/MainWindowTypography.swift": "42bc78028c1a83a6b8b3925b0afad4ec97e54056270fb654236ea26f1357a04c",
-        "Sources/YiYanUI/Views/RecordCardView.swift": "6a3aec0cf9309d5cdeffd02ab9b3d86660cc34ad269c8759af5a63a920f3ab02",
-        "Sources/YiYanUI/Views/TargetTranslationSection.swift": "a9769ee0c1929b086f7bfd9768e0f3a214d0469fb7b1fdcd9b4c3bf61b7f8cbc",
-        "Sources/YiYanUI/Views/TargetTranslationText.swift": "d0a65f1d98a4aca4ee6554aa6854765871f1e71a0b635d0d8220c4b86aaf9fe5"
+        "Sources/YiYanUI/Views/RecordCardView.swift": "aff3af1e9170132bee6483fe20024704629dfdb9a5e3a632db5ba5fb883603bd",
+        "Sources/YiYanUI/Views/TargetTranslationSection.swift": "7e262b7a6957c5270f85536db4761fbc15ad6f4417a359a479f0f91d0e0c665c"
       },
-      "recordSource": "scripts/assets/yilo/capture/hero-record-zh.json",
-      "recordSha256": "c1be5c91774667c0198a245cafdc0a6eec281f2114402972a3e102eb5f1d3d79",
+      "recordSource": "scripts/assets/yilo/capture/hero-records/ja.json",
+      "recordSha256": "0787fddf73a2db420896195d07a5504248e879e39e533a2160e552a9a18fe03d",
       "nativeTextSize": "extraLarge",
       "nativeFrameWidthPoints": 520,
       "pixelWidth": 1040,
-      "pixelHeight": 564
+      "pixelHeight": 603
     },
     {
       "source": "scripts/assets/presskit/yilo/ko/hero-record.png",
-      "sha256": "eb38a749bfb3c3c6440f5bb5a509bafb086037421a2c4f342c970563eb86dc13",
+      "sha256": "f2a168d39ca524f73687fbe2569928d3398f3a13d46ea42331dfaf37f7ae98ee",
       "contentLanguage": "ko",
       "type": "native",
       "capturedOn": "2026-11-07",
-      "appSourceCommit": "473a8fac19ac6b55b9604de50d851848854be133",
+      "appSourceCommit": "197ac0e3371e25694b1fb12a89ecb5e29f5924c5",
       "originalSource": "scripts/assets/yilo/capture/YiloHeroCapture.swift",
       "operation": "Unmodified native RecordCardView export with a short isolated sample record, the app's extraLarge text preference, native Pinyin/Romaji and collapsed learning notes. No image text replacement, resizing or UI reconstruction. Not a full app window.",
       "appearance": "light",
-      "captureFixtureSha256": "e9fec5ac2728e71af0b2ca93742f372700d9ee4644dbfda51d21874e0cadba4c",
+      "captureFixtureSha256": "be1102272a66d16cd4647f7791ccc3198e1e2a7cc2f0adaf3d144a65b215746e",
       "nativeLocale": "ko",
       "nativeLabels": {
         "advice.category.collocation": "연어",
@@ -312,76 +347,86 @@
         "language.targets": "목표 언어",
         "record.example": "예시"
       },
-      "localizationSha256": "8b9292fab913c585bc070bda9ddfdf4929457c1e58de02014ca7fa45b1a99a99",
+      "sourceLanguage": "ko",
+      "targetLanguages": [
+        "en",
+        "ja"
+      ],
+      "localizationSha256": "c4af4e26d7f1f49d6be28e274c445d262b335be83cfbb01d6c0f4a0b600ae44c",
       "sourceFiles": {
         "Sources/YiYanCore/Presentation/ChineseReading.swift": "9434540ee0608bc11e1f34b1f8cd927ad50d2fe6c80a7e79649f2cfbd2badee0",
         "Sources/YiYanCore/Presentation/JapaneseReading.swift": "a69369592104f8160a1a0f10146de68510c0e405a0946119f4335d10c0e37446",
+        "Sources/YiYanReading/TargetTranslationText.swift": "90f1725562ff8b42ec2174c00c18b8628ce1c3936dc05e8de585a55ea5fa1efb",
         "Sources/YiYanUI/ViewModels/AppLocalization.swift": "e85390f4b1e0c146d4c31b950ce2094a4514465b16ebe9ed60469baaab60f5fa",
         "Sources/YiYanUI/Views/LearningLanguageSettingsView.swift": "73dbe84f58ac61f94a0af16f0f82d02fcbc4681340f1c54dbd200942ab21f23e",
         "Sources/YiYanUI/Views/MainWindowTypography.swift": "42bc78028c1a83a6b8b3925b0afad4ec97e54056270fb654236ea26f1357a04c",
-        "Sources/YiYanUI/Views/RecordCardView.swift": "6a3aec0cf9309d5cdeffd02ab9b3d86660cc34ad269c8759af5a63a920f3ab02",
-        "Sources/YiYanUI/Views/TargetTranslationSection.swift": "a9769ee0c1929b086f7bfd9768e0f3a214d0469fb7b1fdcd9b4c3bf61b7f8cbc",
-        "Sources/YiYanUI/Views/TargetTranslationText.swift": "d0a65f1d98a4aca4ee6554aa6854765871f1e71a0b635d0d8220c4b86aaf9fe5"
+        "Sources/YiYanUI/Views/RecordCardView.swift": "aff3af1e9170132bee6483fe20024704629dfdb9a5e3a632db5ba5fb883603bd",
+        "Sources/YiYanUI/Views/TargetTranslationSection.swift": "7e262b7a6957c5270f85536db4761fbc15ad6f4417a359a479f0f91d0e0c665c"
       },
-      "recordSource": "scripts/assets/yilo/capture/hero-record-zh.json",
-      "recordSha256": "c1be5c91774667c0198a245cafdc0a6eec281f2114402972a3e102eb5f1d3d79",
+      "recordSource": "scripts/assets/yilo/capture/hero-records/ko.json",
+      "recordSha256": "1a0bde09a5bac6f58e3b77bcae32ef348b2c6704494d0f8312b02358d7e8032f",
       "nativeTextSize": "extraLarge",
       "nativeFrameWidthPoints": 520,
       "pixelWidth": 1040,
-      "pixelHeight": 564
+      "pixelHeight": 603
     },
     {
       "source": "scripts/assets/presskit/yilo/pt-BR/hero-record.png",
-      "sha256": "6f372bb00ea33dd37b844a65d0456a5261b9bbac9c19aa3aa60b665509aed676",
+      "sha256": "06eb5c15f7a96509e57dc98f408b58ea9deed3e6c0522232c0379d38e5ad66c8",
       "contentLanguage": "pt-BR",
       "type": "native",
       "capturedOn": "2026-11-07",
-      "appSourceCommit": "473a8fac19ac6b55b9604de50d851848854be133",
+      "appSourceCommit": "197ac0e3371e25694b1fb12a89ecb5e29f5924c5",
       "originalSource": "scripts/assets/yilo/capture/YiloHeroCapture.swift",
       "operation": "Unmodified native RecordCardView export with a short isolated sample record, the app's extraLarge text preference, native Pinyin/Romaji and collapsed learning notes. No image text replacement, resizing or UI reconstruction. Not a full app window.",
       "appearance": "light",
-      "captureFixtureSha256": "e9fec5ac2728e71af0b2ca93742f372700d9ee4644dbfda51d21874e0cadba4c",
+      "captureFixtureSha256": "be1102272a66d16cd4647f7791ccc3198e1e2a7cc2f0adaf3d144a65b215746e",
       "nativeLocale": "pt-BR",
       "nativeLabels": {
         "advice.category.collocation": "Colocação",
         "advice.category.translation_pattern": "Padrão de tradução",
         "advice.kind.learning_point": "Ponto de aprendizado",
         "language.japanese_reading.help": "O hiragana aparece acima dos kanji e o romaji é alinhado acima de cada palavra japonesa.",
-        "language.notes": "Notas de estudo",
+        "language.notes": "Notas de aprendizado",
         "language.search": "Buscar idiomas",
         "language.section": "Idiomas de estudo",
         "language.targets": "Idiomas de destino",
         "record.example": "Exemplo"
       },
-      "localizationSha256": "b3641b036cec6f51dee90b3b011bbba3a78b7d8e68c708e35a45ad251ce81953",
+      "sourceLanguage": "pt-BR",
+      "targetLanguages": [
+        "en",
+        "ja"
+      ],
+      "localizationSha256": "8e7f580b14fd108f5cecbbdd20861935f544d532876b7b01a87d5ecfe08e78fb",
       "sourceFiles": {
         "Sources/YiYanCore/Presentation/ChineseReading.swift": "9434540ee0608bc11e1f34b1f8cd927ad50d2fe6c80a7e79649f2cfbd2badee0",
         "Sources/YiYanCore/Presentation/JapaneseReading.swift": "a69369592104f8160a1a0f10146de68510c0e405a0946119f4335d10c0e37446",
+        "Sources/YiYanReading/TargetTranslationText.swift": "90f1725562ff8b42ec2174c00c18b8628ce1c3936dc05e8de585a55ea5fa1efb",
         "Sources/YiYanUI/ViewModels/AppLocalization.swift": "e85390f4b1e0c146d4c31b950ce2094a4514465b16ebe9ed60469baaab60f5fa",
         "Sources/YiYanUI/Views/LearningLanguageSettingsView.swift": "73dbe84f58ac61f94a0af16f0f82d02fcbc4681340f1c54dbd200942ab21f23e",
         "Sources/YiYanUI/Views/MainWindowTypography.swift": "42bc78028c1a83a6b8b3925b0afad4ec97e54056270fb654236ea26f1357a04c",
-        "Sources/YiYanUI/Views/RecordCardView.swift": "6a3aec0cf9309d5cdeffd02ab9b3d86660cc34ad269c8759af5a63a920f3ab02",
-        "Sources/YiYanUI/Views/TargetTranslationSection.swift": "a9769ee0c1929b086f7bfd9768e0f3a214d0469fb7b1fdcd9b4c3bf61b7f8cbc",
-        "Sources/YiYanUI/Views/TargetTranslationText.swift": "d0a65f1d98a4aca4ee6554aa6854765871f1e71a0b635d0d8220c4b86aaf9fe5"
+        "Sources/YiYanUI/Views/RecordCardView.swift": "aff3af1e9170132bee6483fe20024704629dfdb9a5e3a632db5ba5fb883603bd",
+        "Sources/YiYanUI/Views/TargetTranslationSection.swift": "7e262b7a6957c5270f85536db4761fbc15ad6f4417a359a479f0f91d0e0c665c"
       },
-      "recordSource": "scripts/assets/yilo/capture/hero-record-zh.json",
-      "recordSha256": "c1be5c91774667c0198a245cafdc0a6eec281f2114402972a3e102eb5f1d3d79",
+      "recordSource": "scripts/assets/yilo/capture/hero-records/pt-BR.json",
+      "recordSha256": "fd887337dc8d51ab5257db311a9f0dd22950521ddc0693d1e407a14c15f60be9",
       "nativeTextSize": "extraLarge",
       "nativeFrameWidthPoints": 520,
       "pixelWidth": 1040,
-      "pixelHeight": 564
+      "pixelHeight": 603
     },
     {
       "source": "scripts/assets/presskit/yilo/ru/hero-record.png",
-      "sha256": "c738aae79c0fe3e5ad873a8fed03f874de8b239ded3315845965c38f93d61ad0",
+      "sha256": "3f863663b986685793dffb69b3d7a51169d24fee4bed070c27231de72a543ce9",
       "contentLanguage": "ru",
       "type": "native",
       "capturedOn": "2026-11-07",
-      "appSourceCommit": "473a8fac19ac6b55b9604de50d851848854be133",
+      "appSourceCommit": "197ac0e3371e25694b1fb12a89ecb5e29f5924c5",
       "originalSource": "scripts/assets/yilo/capture/YiloHeroCapture.swift",
       "operation": "Unmodified native RecordCardView export with a short isolated sample record, the app's extraLarge text preference, native Pinyin/Romaji and collapsed learning notes. No image text replacement, resizing or UI reconstruction. Not a full app window.",
       "appearance": "light",
-      "captureFixtureSha256": "e9fec5ac2728e71af0b2ca93742f372700d9ee4644dbfda51d21874e0cadba4c",
+      "captureFixtureSha256": "be1102272a66d16cd4647f7791ccc3198e1e2a7cc2f0adaf3d144a65b215746e",
       "nativeLocale": "ru",
       "nativeLabels": {
         "advice.category.collocation": "Сочетаемость",
@@ -394,105 +439,120 @@
         "language.targets": "Изучаемые языки",
         "record.example": "Пример"
       },
-      "localizationSha256": "bb8dae9f2662f18d150f139df9d8040864342f8d93cf6d479029e54b3d4e76b5",
+      "sourceLanguage": "ru",
+      "targetLanguages": [
+        "en",
+        "ja"
+      ],
+      "localizationSha256": "efd0127e8e2d3cdc9a503bafb837097e5b9b8c74a6f3d0f5a4095e9f0007197e",
       "sourceFiles": {
         "Sources/YiYanCore/Presentation/ChineseReading.swift": "9434540ee0608bc11e1f34b1f8cd927ad50d2fe6c80a7e79649f2cfbd2badee0",
         "Sources/YiYanCore/Presentation/JapaneseReading.swift": "a69369592104f8160a1a0f10146de68510c0e405a0946119f4335d10c0e37446",
+        "Sources/YiYanReading/TargetTranslationText.swift": "90f1725562ff8b42ec2174c00c18b8628ce1c3936dc05e8de585a55ea5fa1efb",
         "Sources/YiYanUI/ViewModels/AppLocalization.swift": "e85390f4b1e0c146d4c31b950ce2094a4514465b16ebe9ed60469baaab60f5fa",
         "Sources/YiYanUI/Views/LearningLanguageSettingsView.swift": "73dbe84f58ac61f94a0af16f0f82d02fcbc4681340f1c54dbd200942ab21f23e",
         "Sources/YiYanUI/Views/MainWindowTypography.swift": "42bc78028c1a83a6b8b3925b0afad4ec97e54056270fb654236ea26f1357a04c",
-        "Sources/YiYanUI/Views/RecordCardView.swift": "6a3aec0cf9309d5cdeffd02ab9b3d86660cc34ad269c8759af5a63a920f3ab02",
-        "Sources/YiYanUI/Views/TargetTranslationSection.swift": "a9769ee0c1929b086f7bfd9768e0f3a214d0469fb7b1fdcd9b4c3bf61b7f8cbc",
-        "Sources/YiYanUI/Views/TargetTranslationText.swift": "d0a65f1d98a4aca4ee6554aa6854765871f1e71a0b635d0d8220c4b86aaf9fe5"
+        "Sources/YiYanUI/Views/RecordCardView.swift": "aff3af1e9170132bee6483fe20024704629dfdb9a5e3a632db5ba5fb883603bd",
+        "Sources/YiYanUI/Views/TargetTranslationSection.swift": "7e262b7a6957c5270f85536db4761fbc15ad6f4417a359a479f0f91d0e0c665c"
       },
-      "recordSource": "scripts/assets/yilo/capture/hero-record-zh.json",
-      "recordSha256": "c1be5c91774667c0198a245cafdc0a6eec281f2114402972a3e102eb5f1d3d79",
+      "recordSource": "scripts/assets/yilo/capture/hero-records/ru.json",
+      "recordSha256": "432a7dc22dc3fd5153f93616e39b0e20685cf371ca9b205d31aa249c0be7c789",
       "nativeTextSize": "extraLarge",
       "nativeFrameWidthPoints": 520,
       "pixelWidth": 1040,
-      "pixelHeight": 564
+      "pixelHeight": 650
     },
     {
       "source": "scripts/assets/presskit/yilo/zh-Hans/hero-record.png",
-      "sha256": "4e237705a2c8c8008ba2ac63c71d8a7d37509429557b2dcb061c406b40b6a855",
+      "sha256": "be12144e5453957366634cd58d51cd22666678093126afd1a2646d4f949d2732",
       "contentLanguage": "zh-Hans",
       "type": "native",
       "capturedOn": "2026-11-07",
-      "appSourceCommit": "473a8fac19ac6b55b9604de50d851848854be133",
+      "appSourceCommit": "197ac0e3371e25694b1fb12a89ecb5e29f5924c5",
       "originalSource": "scripts/assets/yilo/capture/YiloHeroCapture.swift",
       "operation": "Unmodified native RecordCardView export with a short isolated sample record, the app's extraLarge text preference, native Pinyin/Romaji and collapsed learning notes. No image text replacement, resizing or UI reconstruction. Not a full app window.",
       "appearance": "light",
-      "captureFixtureSha256": "e9fec5ac2728e71af0b2ca93742f372700d9ee4644dbfda51d21874e0cadba4c",
+      "captureFixtureSha256": "be1102272a66d16cd4647f7791ccc3198e1e2a7cc2f0adaf3d144a65b215746e",
       "nativeLocale": "zh-Hans",
       "nativeLabels": {
         "advice.category.collocation": "搭配",
         "advice.category.translation_pattern": "翻译句式",
         "advice.kind.learning_point": "学习要点",
         "language.japanese_reading.help": "平假名标在对应汉字上方，罗马字在对应日语词组上方对齐。",
-        "language.notes": "学习笔记",
+        "language.notes": "学习建议",
         "language.search": "搜索语言",
         "language.section": "学习语言",
         "language.targets": "目标语言",
         "record.example": "示例"
       },
-      "localizationSha256": "360d754a8a2199121782f81255d2d5036b19fc9826edaa67261cb2cd3217904b",
+      "sourceLanguage": "zh-Hans",
+      "targetLanguages": [
+        "en",
+        "ja"
+      ],
+      "localizationSha256": "9ec383ea77ce61e19669d43dff859f68227d08d4a3ba10d769e27e91a1bc5f21",
       "sourceFiles": {
         "Sources/YiYanCore/Presentation/ChineseReading.swift": "9434540ee0608bc11e1f34b1f8cd927ad50d2fe6c80a7e79649f2cfbd2badee0",
         "Sources/YiYanCore/Presentation/JapaneseReading.swift": "a69369592104f8160a1a0f10146de68510c0e405a0946119f4335d10c0e37446",
+        "Sources/YiYanReading/TargetTranslationText.swift": "90f1725562ff8b42ec2174c00c18b8628ce1c3936dc05e8de585a55ea5fa1efb",
         "Sources/YiYanUI/ViewModels/AppLocalization.swift": "e85390f4b1e0c146d4c31b950ce2094a4514465b16ebe9ed60469baaab60f5fa",
         "Sources/YiYanUI/Views/LearningLanguageSettingsView.swift": "73dbe84f58ac61f94a0af16f0f82d02fcbc4681340f1c54dbd200942ab21f23e",
         "Sources/YiYanUI/Views/MainWindowTypography.swift": "42bc78028c1a83a6b8b3925b0afad4ec97e54056270fb654236ea26f1357a04c",
-        "Sources/YiYanUI/Views/RecordCardView.swift": "6a3aec0cf9309d5cdeffd02ab9b3d86660cc34ad269c8759af5a63a920f3ab02",
-        "Sources/YiYanUI/Views/TargetTranslationSection.swift": "a9769ee0c1929b086f7bfd9768e0f3a214d0469fb7b1fdcd9b4c3bf61b7f8cbc",
-        "Sources/YiYanUI/Views/TargetTranslationText.swift": "d0a65f1d98a4aca4ee6554aa6854765871f1e71a0b635d0d8220c4b86aaf9fe5"
+        "Sources/YiYanUI/Views/RecordCardView.swift": "aff3af1e9170132bee6483fe20024704629dfdb9a5e3a632db5ba5fb883603bd",
+        "Sources/YiYanUI/Views/TargetTranslationSection.swift": "7e262b7a6957c5270f85536db4761fbc15ad6f4417a359a479f0f91d0e0c665c"
       },
-      "recordSource": "scripts/assets/yilo/capture/hero-record-zh.json",
-      "recordSha256": "c1be5c91774667c0198a245cafdc0a6eec281f2114402972a3e102eb5f1d3d79",
+      "recordSource": "scripts/assets/yilo/capture/hero-records/zh-Hans.json",
+      "recordSha256": "ab664b790e3594ec7d732bdb7f9c4275f951d03a8b0eaf0887875875b6cd51b9",
       "nativeTextSize": "extraLarge",
       "nativeFrameWidthPoints": 520,
       "pixelWidth": 1040,
-      "pixelHeight": 564
+      "pixelHeight": 603
     },
     {
       "source": "scripts/assets/presskit/yilo/zh-Hant/hero-record.png",
-      "sha256": "0d292da29015622860c398eb57f388378d73627ed7632898f642906a7d85074e",
+      "sha256": "9915fc70990358e1ffe948a9795fdc4795fb34e55e66778c4fc1a5cf5feb8720",
       "contentLanguage": "zh-Hant",
       "type": "native",
       "capturedOn": "2026-11-07",
-      "appSourceCommit": "473a8fac19ac6b55b9604de50d851848854be133",
+      "appSourceCommit": "197ac0e3371e25694b1fb12a89ecb5e29f5924c5",
       "originalSource": "scripts/assets/yilo/capture/YiloHeroCapture.swift",
       "operation": "Unmodified native RecordCardView export with a short isolated sample record, the app's extraLarge text preference, native Pinyin/Romaji and collapsed learning notes. No image text replacement, resizing or UI reconstruction. Not a full app window.",
       "appearance": "light",
-      "captureFixtureSha256": "e9fec5ac2728e71af0b2ca93742f372700d9ee4644dbfda51d21874e0cadba4c",
+      "captureFixtureSha256": "be1102272a66d16cd4647f7791ccc3198e1e2a7cc2f0adaf3d144a65b215746e",
       "nativeLocale": "zh-Hant",
       "nativeLabels": {
         "advice.category.collocation": "搭配",
         "advice.category.translation_pattern": "翻譯句型",
         "advice.kind.learning_point": "學習重點",
         "language.japanese_reading.help": "平假名標在對應漢字上方，羅馬字在對應日語詞組上方對齊。",
-        "language.notes": "學習筆記",
+        "language.notes": "學習建議",
         "language.search": "搜尋語言",
         "language.section": "學習語言",
         "language.targets": "目標語言",
         "record.example": "範例"
       },
-      "localizationSha256": "584d67200f188416141c8a0068364660a6d1c5811a511728eb29ae0e31cb7355",
+      "sourceLanguage": "zh-Hant",
+      "targetLanguages": [
+        "en",
+        "ja"
+      ],
+      "localizationSha256": "488f452da56e2cab8d70a6838db64c9c66191f9000ef6f2c747b7cf1e159b87f",
       "sourceFiles": {
         "Sources/YiYanCore/Presentation/ChineseReading.swift": "9434540ee0608bc11e1f34b1f8cd927ad50d2fe6c80a7e79649f2cfbd2badee0",
         "Sources/YiYanCore/Presentation/JapaneseReading.swift": "a69369592104f8160a1a0f10146de68510c0e405a0946119f4335d10c0e37446",
+        "Sources/YiYanReading/TargetTranslationText.swift": "90f1725562ff8b42ec2174c00c18b8628ce1c3936dc05e8de585a55ea5fa1efb",
         "Sources/YiYanUI/ViewModels/AppLocalization.swift": "e85390f4b1e0c146d4c31b950ce2094a4514465b16ebe9ed60469baaab60f5fa",
         "Sources/YiYanUI/Views/LearningLanguageSettingsView.swift": "73dbe84f58ac61f94a0af16f0f82d02fcbc4681340f1c54dbd200942ab21f23e",
         "Sources/YiYanUI/Views/MainWindowTypography.swift": "42bc78028c1a83a6b8b3925b0afad4ec97e54056270fb654236ea26f1357a04c",
-        "Sources/YiYanUI/Views/RecordCardView.swift": "6a3aec0cf9309d5cdeffd02ab9b3d86660cc34ad269c8759af5a63a920f3ab02",
-        "Sources/YiYanUI/Views/TargetTranslationSection.swift": "a9769ee0c1929b086f7bfd9768e0f3a214d0469fb7b1fdcd9b4c3bf61b7f8cbc",
-        "Sources/YiYanUI/Views/TargetTranslationText.swift": "d0a65f1d98a4aca4ee6554aa6854765871f1e71a0b635d0d8220c4b86aaf9fe5"
+        "Sources/YiYanUI/Views/RecordCardView.swift": "aff3af1e9170132bee6483fe20024704629dfdb9a5e3a632db5ba5fb883603bd",
+        "Sources/YiYanUI/Views/TargetTranslationSection.swift": "7e262b7a6957c5270f85536db4761fbc15ad6f4417a359a479f0f91d0e0c665c"
       },
-      "recordSource": "scripts/assets/yilo/capture/hero-record-zh.json",
-      "recordSha256": "c1be5c91774667c0198a245cafdc0a6eec281f2114402972a3e102eb5f1d3d79",
+      "recordSource": "scripts/assets/yilo/capture/hero-records/zh-Hant.json",
+      "recordSha256": "1ad5c244d727ecdf7f7987ce988c75e575b4270262a3c325522294354781ff4a",
       "nativeTextSize": "extraLarge",
       "nativeFrameWidthPoints": 520,
       "pixelWidth": 1040,
-      "pixelHeight": 564
+      "pixelHeight": 603
     }
   ]
 }

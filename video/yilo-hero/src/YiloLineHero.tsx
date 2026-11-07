@@ -5,6 +5,7 @@ import examples from '../../../src/i18n/yilo-examples.json';
 import plate from '../public/pedaling-plate.json';
 import nativeRecords from '../../../scripts/assets/yilo/hero-native-source.json';
 import timing from './timing.json';
+import artCopy from '../../../src/i18n/yilo-art-copy.json';
 
 const C={paper:'#f6f2e7',ink:'#333d51',teal:'#70a59e',blue:'#5c6995',green:'#84995c',coral:'#b76450',muted:'#70766b'};
 const ease=Easing.bezier(.22,1,.36,1);
@@ -75,6 +76,7 @@ type HeroProps={locale:string;artOnly?:boolean;useH3?:boolean};
 const YiloLineScene:React.FC<HeroProps>=({locale,artOnly=false,useH3=true})=>{
  const frame=useCurrentFrame();
  const c=copy[locale as keyof typeof copy];
+ const art=artCopy[locale as keyof typeof artCopy];
  const model=useH3&&!artOnly;
  const en=locale==='en';const rtl=locale==='ar';
  const world=artOnly?1:smooth(frame,8,62);
@@ -99,7 +101,8 @@ const YiloLineScene:React.FC<HeroProps>=({locale,artOnly=false,useH3=true})=>{
    {!artOnly&&<path d="M0 634Q320 638 640 634T1280 634V768H0Z" fill="url(#green)" opacity={world*.8}/>}
    {!artOnly&&<g opacity={world}>
     <path d="M207 211Q188 211 188 232V251Q188 270 208 270H307Q326 270 326 250V232Q326 211 307 211Z" fill={C.paper} stroke={C.blue} strokeWidth="1.7"/>
-    {[232,257,282].map((x,i)=><circle key={x} cx={x} cy="241" r="3.5" fill={C.coral} opacity={.35+.65*(.5+.5*Math.sin(frame/7-i*1.1))}/>)}
+    <text x="257" y="245" textAnchor="middle" fill={C.ink} fontFamily={font} fontSize="24" direction={rtl?'rtl':'ltr'}>{art.word}</text>
+    {[245,257,269].map((x,i)=><circle key={x} cx={x} cy="259" r="1.7" fill={C.coral} opacity={.35+.65*(.5+.5*Math.sin(frame/7-i*1.1))}/>)}
     <circle cx="242" cy="282" r="4" fill={C.paper} stroke={C.blue} strokeWidth="1.3"/>
     <circle cx="247" cy="294" r="2.3" fill={C.blue}/>
    </g>}

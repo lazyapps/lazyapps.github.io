@@ -58,7 +58,7 @@ Las traducciones chinas pueden mostrar pinyin o zhuyin. El chino simplificado us
 
 En las traducciones al japonés puedes mostrar el hiragana sobre los kanji o el romaji sobre los grupos de palabras. La opción está desactivada por defecto. El texto copiado, las notas y las reformulaciones no cambian.
 
-[Animación de aprendizaje de idiomas · MP4](https://lazyapps.com/v/yilo/hero-es-v21.mp4)
+[Animación de aprendizaje de idiomas · MP4](https://lazyapps.com/v/yilo/hero-es-v22.mp4)
 
 [Kevin MacLeod · Fluffing a Duck · CC BY 4.0](https://lazyapps.com/v/yilo/music-credits.txt)
 
@@ -81,9 +81,9 @@ Icono nativo original, PNG de 1024 × 1024. Conserva el diseño, las proporcione
 
 [learning-record.png](learning-record.png)
 
-1488 × 956 · PNG
+1488 × 981 · PNG
 
-Registro real con texto chino, traducciones al inglés y japonés, notas y romaji. Interfaz en español; contenido conservado.
+Registro: entrada en español, traducciones al inglés y al japonés, y notas.
 
 ### Ajustes de idiomas para aprender
 
@@ -91,7 +91,7 @@ Registro real con texto chino, traducciones al inglés y japonés, notas y romaj
 
 1240 × 880 · PNG
 
-Ajustes: entrada en chino e idiomas de aprendizaje inglés, japonés y francés. Interfaz en español con preferencias de ejemplo.
+Ajustes: español como idioma de entrada; inglés y japonés para aprender.
 
 ### Elegir idiomas para aprender
 
@@ -99,15 +99,7 @@ Ajustes: entrada en chino e idiomas de aprendizaje inglés, japonés y francés.
 
 1080 × 1120 · PNG
 
-Selector con inglés, japonés y francés. Interfaz en español con preferencias de ejemplo.
-
-### Fondo de escritorio
-
-[desktop-wallpaper.png](../desktop-wallpaper.png)
-
-1536 × 1024 · PNG
-
-Fondo de dunas generado con IA para la presentación del sitio web; no es una captura ni una función integrada de la app.
+Inglés y japonés seleccionados. Ajustes de ejemplo.
 
 ### Ilustración vectorial plana
 
@@ -129,9 +121,9 @@ Imagen promocional, no una captura de la app.
 
 [hero-record.png](hero-record.png)
 
-1040 × 564 · PNG
+1040 × 603 · PNG
 
-Registro nativo con entrada breve y el mayor tamaño de texto. Entrada en chino, salida en inglés y japonés, con Romaji. Datos de ejemplo.
+Tarjeta nativa: entrada en español y traducciones al inglés y al japonés. Tamaño de texto máximo. Ejemplo.
 
 ### Animación de aprendizaje de idiomas
 

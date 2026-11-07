@@ -1,0 +1,60 @@
+{
+  "size": [
+    1200,
+    630
+  ],
+  "safeRect": [
+    285,
+    0,
+    630,
+    630
+  ],
+  "background": {
+    "linear-gradient": [
+      "srgb:0.98621,0.34972,0.30029,1.00000",
+      "srgb:0.98432,0.12503,0.12829,1.00000"
+    ],
+    "orientation": {
+      "start": {
+        "x": 0.4,
+        "y": 0
+      },
+      "stop": {
+        "x": 0.6,
+        "y": 1
+      }
+    }
+  },
+  "sources": {
+    "scripts/assets/yilo/AppIcon.icon/icon.json": "89610bb2598744864cccc207b48696d3e7b22940ea5b1f6d42908375387cd893",
+    "scripts/assets/yilo/brand-source.json": "77ca9d84633aa1b42d3d4cf8b267aa25c5cc545eebbbb149c8a02e1db7600a39",
+    "src/assets/img/yilo-symbol.png": "9fe382ba3723aa6e064343e03dac5d357b4c59d84c0ddd7105c8e22f8ea02c24",
+    "src/assets/fonts/sofia-sans-xcond-latin.woff2": "1194eac07dcf5226d6c8906fffc2ba644274ff89b44d1d842b2e135e479c2ced",
+    "scripts/render-yiyan-text.swift": "8acad236307d896e19304571a5033888ed80755f678a33f16c3de77ef8a650c7",
+    "scripts/render-yilo-opengraph.py": "fa0160332afc1eb19bfd2a935523e240cc8dc493cd06e04428b990de5c4c1e61"
+  },
+  "cards": [
+    {
+      "language": "zh-Hans",
+      "output": "src/assets/img/yilo-opengraph.png",
+      "sha256": "9abdf6ccb269576269f5a19a50e4b224cbb915ed1592441ad3b7ef5281f7cd01",
+      "contentBounds": [
+        330.0,
+        211.33333333333334,
+        539.6666666666666,
+        207.0
+      ]
+    },
+    {
+      "language": "shared",
+      "output": "src/assets/img/yilo-opengraph-shared.png",
+      "sha256": "77826372279f7b7be3d3426e31011a64aa288b9da2aa34f4f696ed4d7a8d7acd",
+      "contentBounds": [
+        330.0,
+        196.66666666666666,
+        539.6666666666666,
+        236.66666666666666
+      ]
+    }
+  ]
+}

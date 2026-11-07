@@ -1,0 +1,54 @@
+{
+  "id": "3CC88661-6DD6-51CA-8422-8256AF558D32",
+  "originalText": "لا تُعِد كتابة كل شيء الآن؛ اترك مجالًا للتعديل.",
+  "sourceHost": "codex",
+  "hostVersion": "0.166.0-alpha.6",
+  "capturedAt": 1793967080.949,
+  "status": "succeeded",
+  "configuration": {
+    "preservesOriginalTone": true,
+    "sourceLanguage": "ar",
+    "englishInputExplanationLanguage": "ar",
+    "learningNotesLanguage": "ar",
+    "dialect": "american",
+    "targetLanguages": [
+      "en",
+      "ja"
+    ],
+    "targetStyle": "natural"
+  },
+  "naturalEnglish": null,
+  "translations": [
+    {
+      "language": "en",
+      "text": "Hold off on a sweeping rewrite; leave us some wiggle room.",
+      "learningAdvice": [
+        {
+          "kind": "learning_point",
+          "category": "collocation",
+          "sourceExcerpt": "لا تُعِد كتابة كل شيء الآن؛ اترك مجالًا للتعديل.",
+          "recommendation": "تعني wiggle room وجود مجال لتعديل الخطة.",
+          "explanation": "تعني wiggle room وجود مجال لتعديل الخطة.",
+          "exampleEnglish": "Let's leave some wiggle room."
+        }
+      ]
+    },
+    {
+      "language": "ja",
+      "text": "大幅な書き直しは控え、調整の余地を残して。",
+      "learningAdvice": []
+    }
+  ],
+  "learningAdvice": [
+    {
+      "kind": "learning_point",
+      "category": "collocation",
+      "sourceExcerpt": "لا تُعِد كتابة كل شيء الآن؛ اترك مجالًا للتعديل.",
+      "recommendation": "تعني wiggle room وجود مجال لتعديل الخطة.",
+      "explanation": "تعني wiggle room وجود مجال لتعديل الخطة.",
+      "exampleEnglish": "Let's leave some wiggle room."
+    }
+  ],
+  "isBookmarked": false,
+  "origin": "captured"
+}

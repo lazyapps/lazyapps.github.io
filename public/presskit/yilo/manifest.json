@@ -27,10 +27,10 @@
       "path": "ar/learning-record.png",
       "contentLanguage": "ar",
       "width": 1488,
-      "height": 956,
+      "height": 981,
       "format": "PNG",
-      "bytes": 195744,
-      "sha256": "db5c3f564f59aaf34613f8dfa7e3eb80e95487dc0800eef5d48ab402154e4ae4"
+      "bytes": 174362,
+      "sha256": "9301103218fbb9e2df8824640f397c33c04d9e1474b1940065f5b09f7f0978bd"
     },
     {
       "path": "ar/learning-settings.png",
@@ -38,8 +38,8 @@
       "width": 1240,
       "height": 880,
       "format": "PNG",
-      "bytes": 78549,
-      "sha256": "de2be54a73a3d4d7a4fb8a2c086c9e73e3d9b6cecd714e0293567fbb9dd07b9b"
+      "bytes": 71330,
+      "sha256": "89daa16e560ec89fadfd78f3b03943630d4ded53ceb33857604f75faa7800730"
     },
     {
       "path": "ar/language-selection.png",
@@ -47,17 +47,8 @@
       "width": 1080,
       "height": 1120,
       "format": "PNG",
-      "bytes": 122762,
-      "sha256": "9d941c8a6fcaadc5e49dac3f1b477fd56a19838bf6a2f1635e9383b6c62a859f"
-    },
-    {
-      "path": "desktop-wallpaper.png",
-      "contentLanguage": "und",
-      "width": 1536,
-      "height": 1024,
-      "format": "PNG",
-      "bytes": 1958653,
-      "sha256": "01e359546c88d48ae98f04d04ca7a3f33403d9477ee9c42ef54740fe16757604"
+      "bytes": 126476,
+      "sha256": "42ea38508b6da052a0a41488798bf99083ac4e3995d3539e1603c493474ba726"
     },
     {
       "path": "artwork-flat.svg",
@@ -74,17 +65,17 @@
       "width": 1200,
       "height": 630,
       "format": "PNG",
-      "bytes": 151170,
-      "sha256": "2c9e527d03a9880b1c948f69230a7f4f3a678345f73f46d10292ddf417973dd6"
+      "bytes": 46208,
+      "sha256": "77826372279f7b7be3d3426e31011a64aa288b9da2aa34f4f696ed4d7a8d7acd"
     },
     {
       "path": "ar/hero-record.png",
       "contentLanguage": "ar",
       "width": 1040,
-      "height": 564,
+      "height": 603,
       "format": "PNG",
-      "bytes": 80476,
-      "sha256": "e30e9e5497b5ba96e5dd70f2c2111e5b6b8aa1c7867d23230fefb4f941f4597a"
+      "bytes": 85111,
+      "sha256": "30e4fb6ab4c8a0cc903c96d3f6ad7daaab7c5ccbdeb3e976f6a0d73c9328e318"
     },
     {
       "path": "ar/hero-animation.jpg",
@@ -92,17 +83,17 @@
       "width": 1280,
       "height": 608,
       "format": "JPEG",
-      "bytes": 104844,
-      "sha256": "397c2773536e1478de1d011f87f220ff2658cb8b4f59e42d9682e114ed050f3e"
+      "bytes": 101257,
+      "sha256": "f62b1a6d31fce71aa9d529914b53faa1b009535bb8b3121177c29e2bc3431ced"
     },
     {
       "path": "de/learning-record.png",
       "contentLanguage": "de",
       "width": 1488,
-      "height": 956,
+      "height": 981,
       "format": "PNG",
-      "bytes": 194140,
-      "sha256": "aff5ae09543068acc7b41c393d4972ca966bf4ab3cd1090693fe50735d60baee"
+      "bytes": 178852,
+      "sha256": "778c786566dcedf00d0c59ef618240100d13494ba2053ddb2e8e550e4141da77"
     },
     {
       "path": "de/learning-settings.png",
@@ -110,8 +101,8 @@
       "width": 1240,
       "height": 880,
       "format": "PNG",
-      "bytes": 87608,
-      "sha256": "21c8677e2d9702c57840a26a1cc79890e9a22fe1b70dff191e9f473b2acc113c"
+      "bytes": 78404,
+      "sha256": "a528b1b307ba5ae8d95bd1af4203d836a2a9b8ed8ecbb910ae5f598c43fa3fc0"
     },
     {
       "path": "de/language-selection.png",
@@ -119,17 +110,17 @@
       "width": 1080,
       "height": 1120,
       "format": "PNG",
-      "bytes": 133943,
-      "sha256": "7fba7b958c8a8aa258b25d994c942b4e36fa4027ad0dc64541860b0e33c4640f"
+      "bytes": 136839,
+      "sha256": "a5ff708349a8c997c78a723ce66382c5b48afcee3ad5965a864eeae1902baaf3"
     },
     {
       "path": "de/hero-record.png",
       "contentLanguage": "de",
       "width": 1040,
-      "height": 564,
+      "height": 603,
       "format": "PNG",
-      "bytes": 79752,
-      "sha256": "48b249ecd4f2431770f30a37d58e6126c083dafb210ef4748868f10b0aadede4"
+      "bytes": 85591,
+      "sha256": "148b6bd57e091bb8d9def74cbc283900cfe134265580bbb18e0a449711de5c3e"
     },
     {
       "path": "de/hero-animation.jpg",
@@ -137,17 +128,17 @@
       "width": 1280,
       "height": 608,
       "format": "JPEG",
-      "bytes": 104687,
-      "sha256": "d2843e6cc7328c7eeb3ebbd37928ecbca4aa3eaf60409f1ed8961f8169c952be"
+      "bytes": 105353,
+      "sha256": "87d7f962f8564bbf327a2627b2e6e87be6a98073f5e57ddc0faff03720cffe09"
     },
     {
       "path": "en/learning-record.png",
       "contentLanguage": "en",
       "width": 1488,
-      "height": 1008,
+      "height": 1033,
       "format": "PNG",
-      "bytes": 196855,
-      "sha256": "6965b8e45df33a112a8e4a384bacbc7065e8a9fa487d4cf725a627ff437ef759"
+      "bytes": 199067,
+      "sha256": "dc3421e30dca7c104c7839a9e014953d97f52fbb200bcead13ff0906bfa2193b"
     },
     {
       "path": "en/learning-settings.png",
@@ -171,10 +162,10 @@
       "path": "en/hero-record.png",
       "contentLanguage": "en",
       "width": 1040,
-      "height": 622,
+      "height": 661,
       "format": "PNG",
-      "bytes": 91666,
-      "sha256": "9eb09db1ac1dd94a81022ad13614590ff2989ae8e4db2aa0d680e03db5b67f14"
+      "bytes": 93881,
+      "sha256": "d50d35eb348ee2badd4c7e8a345535c681703a46773048d9098edc8d9758bed8"
     },
     {
       "path": "en/hero-animation.jpg",
@@ -182,17 +173,17 @@
       "width": 1280,
       "height": 608,
       "format": "JPEG",
-      "bytes": 104906,
-      "sha256": "f23a0e31f3faf75f99e67b4c594dd821c45bc4a6caa4ebdaa5c525107fa9c931"
+      "bytes": 100780,
+      "sha256": "2f95539a76563a1e9399f612805aeb1e28b8096bb141c5339d33c161447e33a9"
     },
     {
       "path": "es/learning-record.png",
       "contentLanguage": "es",
       "width": 1488,
-      "height": 956,
+      "height": 981,
       "format": "PNG",
-      "bytes": 201507,
-      "sha256": "09266b2234167e6460771730826a3eb28be59b9b1ecc6354b3d3737984221b65"
+      "bytes": 180416,
+      "sha256": "b30709bb624b64459ea9c1ba32ead70dda5241d5d77c835b8ac42d1d1c623ac8"
     },
     {
       "path": "es/learning-settings.png",
@@ -200,8 +191,8 @@
       "width": 1240,
       "height": 880,
       "format": "PNG",
-      "bytes": 86025,
-      "sha256": "566d6c5eaa41bb51eca779bd872b47e18f29f5cd1ae83e94e77238a86a817fb6"
+      "bytes": 78588,
+      "sha256": "2a6694270aa0cbab3706304c9b680fe8a170b891336a7663a9651b9f6ee23b16"
     },
     {
       "path": "es/language-selection.png",
@@ -209,17 +200,17 @@
       "width": 1080,
       "height": 1120,
       "format": "PNG",
-      "bytes": 127513,
-      "sha256": "1c22ebc1db6e0c25a4b408b0620b80958d09d03656e334a803653cc6d88382ec"
+      "bytes": 130214,
+      "sha256": "a0c98f3a4de8305c3e9d57fe9128044eef6952d1e532082932ff3c59ec2ecffb"
     },
     {
       "path": "es/hero-record.png",
       "contentLanguage": "es",
       "width": 1040,
-      "height": 564,
+      "height": 603,
       "format": "PNG",
-      "bytes": 81818,
-      "sha256": "b5da2038ebfafe21e055cdeca2083f70a4295e5833bfb0722e33b4b42937c49b"
+      "bytes": 86482,
+      "sha256": "631f3371146c7c70ffda00410f6597143e9547d9831e5fa1a63bf73aa554558f"
     },
     {
       "path": "es/hero-animation.jpg",
@@ -227,17 +218,17 @@
       "width": 1280,
       "height": 608,
       "format": "JPEG",
-      "bytes": 105449,
-      "sha256": "3dd38ce98e204a19f6064ebd9df07407ce346739b8a57e89162e20a6ce4905e6"
+      "bytes": 105130,
+      "sha256": "31e6d06fb3cd28e4f91117c0cc6746d5ea28c90a313a163659a7f01c4e5c20a8"
     },
     {
       "path": "fr/learning-record.png",
       "contentLanguage": "fr",
       "width": 1488,
-      "height": 956,
+      "height": 981,
       "format": "PNG",
-      "bytes": 199445,
-      "sha256": "1849ca13e2d2f271f1751767d9026dd0ca726b2c6f0711e8260853136c1e5d32"
+      "bytes": 181065,
+      "sha256": "51f2078f8ed5be80976485f551f5f863d907b4db86d434f61bed337a859c7288"
     },
     {
       "path": "fr/learning-settings.png",
@@ -245,8 +236,8 @@
       "width": 1240,
       "height": 880,
       "format": "PNG",
-      "bytes": 85625,
-      "sha256": "c84503f6af467d44d36bcd2d70c7c383bf6ee92992469a3a8f0f8459fc75741d"
+      "bytes": 79862,
+      "sha256": "5aefd6cac48fe7ead68a635dcc9a245b2b0c06fba225b488250f52865af44029"
     },
     {
       "path": "fr/language-selection.png",
@@ -254,17 +245,17 @@
       "width": 1080,
       "height": 1120,
       "format": "PNG",
-      "bytes": 127931,
-      "sha256": "3902421e5a130d544b50bb7bbde111956e60886249f2f2a037e7e618f4127fed"
+      "bytes": 132509,
+      "sha256": "138ef65d0a40c10a09c9c10c120df00132c7a8a1a2abc511e77178827eb4fa41"
     },
     {
       "path": "fr/hero-record.png",
       "contentLanguage": "fr",
       "width": 1040,
-      "height": 564,
+      "height": 650,
       "format": "PNG",
-      "bytes": 81362,
-      "sha256": "7d1e0d773591d4a910ae7ea1c6e4d3558079c8ddf5e50efe68bb48d98e895bd3"
+      "bytes": 89660,
+      "sha256": "d64e854305374115935cb5f13d0d394fb3fd7c79ceb5b8fc7cd5988a1ba62e68"
     },
     {
       "path": "fr/hero-animation.jpg",
@@ -272,17 +263,17 @@
       "width": 1280,
       "height": 608,
       "format": "JPEG",
-      "bytes": 105910,
-      "sha256": "06264595af4d6e1797cf616b65900564c920b224a687d056889771044ee19dc2"
+      "bytes": 102419,
+      "sha256": "59d595c5265fc218f368abb5f3ac14ae43f35c1bec7890089ec4ff455b41b15a"
     },
     {
       "path": "hi/learning-record.png",
       "contentLanguage": "hi",
       "width": 1488,
-      "height": 956,
+      "height": 981,
       "format": "PNG",
-      "bytes": 194527,
-      "sha256": "5bf88c7ca83bdaa9c6f308c471f5463a8a7e85bb62db774415404108744f41a9"
+      "bytes": 175568,
+      "sha256": "26a4821b31c5a3553ddb5c3bfdf29211c9edaece3f797eb277170af13513e1d3"
     },
     {
       "path": "hi/learning-settings.png",
@@ -290,8 +281,8 @@
       "width": 1240,
       "height": 880,
       "format": "PNG",
-      "bytes": 77255,
-      "sha256": "d4d977cb0609ab8f7f30d92019e6bd036dc6a4985ac2ba252fdef0102e5aed6d"
+      "bytes": 70766,
+      "sha256": "7a983a3ed94f10a4068b63638c7fb64b398d6772ee2aa6cfd1c8bd0d726343ac"
     },
     {
       "path": "hi/language-selection.png",
@@ -299,17 +290,17 @@
       "width": 1080,
       "height": 1120,
       "format": "PNG",
-      "bytes": 118962,
-      "sha256": "19408bc587315f321395460d362d89a3521c1185bd7e80f2094a520cdc01d928"
+      "bytes": 122740,
+      "sha256": "e5309f733bc11baaa05ef5864689ed0ff95f4e0fd51c09f597bc1ba621246821"
     },
     {
       "path": "hi/hero-record.png",
       "contentLanguage": "hi",
       "width": 1040,
-      "height": 564,
+      "height": 603,
       "format": "PNG",
-      "bytes": 78618,
-      "sha256": "19f75b85fbaa7cbc3fe1c66c88262f4d1604c4568cf97a18efd6417429fe43dc"
+      "bytes": 83365,
+      "sha256": "d224d585bc01ba9eb35e7ed74995dc7b07c1c87bccfd84d9807d5c08f301e284"
     },
     {
       "path": "hi/hero-animation.jpg",
@@ -317,17 +308,17 @@
       "width": 1280,
       "height": 608,
       "format": "JPEG",
-      "bytes": 104336,
-      "sha256": "7c40da84b9e3d90d5cc54f64b5895d4ddf332ace832f4b167bb14fd8644e18d4"
+      "bytes": 102615,
+      "sha256": "6a6e8456f2c484520e69521551c2a5fd8a02acfe6dc746fd215e802a83f9f6b5"
     },
     {
       "path": "ja/learning-record.png",
       "contentLanguage": "ja",
       "width": 1488,
-      "height": 956,
+      "height": 981,
       "format": "PNG",
-      "bytes": 193496,
-      "sha256": "3ae08cf252fa42c37e10150e7735c39fa5dc75a554ead48fc2e0fba2e2a3c19d"
+      "bytes": 173479,
+      "sha256": "8c9d3f425e930aec65b5c43509cdfa5e6b5dce09ccb83041b8062d69d97792c2"
     },
     {
       "path": "ja/learning-settings.png",
@@ -335,8 +326,8 @@
       "width": 1240,
       "height": 880,
       "format": "PNG",
-      "bytes": 88986,
-      "sha256": "ba1d3b6f86db2f76dda37a642a2b2e73418711b90178ec2050e1604d492f93f0"
+      "bytes": 80550,
+      "sha256": "60944f16f6406e11223213c4f777f67b0d7c7b38a606de43b341937afd86671d"
     },
     {
       "path": "ja/language-selection.png",
@@ -344,17 +335,17 @@
       "width": 1080,
       "height": 1120,
       "format": "PNG",
-      "bytes": 133793,
-      "sha256": "0d4d61c102e99405a1b19226c13ea763d2c03a6021b6e9e0dc511e84b6fa7ba3"
+      "bytes": 139090,
+      "sha256": "fd757d4fab139c249640905e1d0ef054c9947894947abf6d27eccf0d6b977b35"
     },
     {
       "path": "ja/hero-record.png",
       "contentLanguage": "ja",
       "width": 1040,
-      "height": 564,
+      "height": 603,
       "format": "PNG",
-      "bytes": 78983,
-      "sha256": "7ab9db797fa6f7e206eb4607550c3e93a21166b729ca41aa84b9940beaa03ff8"
+      "bytes": 79489,
+      "sha256": "121d0160470815bcd6bfe9afab3a00d2d70e83abf9f82797759ea84cdbbe508c"
     },
     {
       "path": "ja/hero-animation.jpg",
@@ -362,17 +353,17 @@
       "width": 1280,
       "height": 608,
       "format": "JPEG",
-      "bytes": 103662,
-      "sha256": "5d95ec50cf278f3e3d873439a135480fe83fcb9dd77ba33765a5bd4995f44232"
+      "bytes": 94787,
+      "sha256": "b69b5355cbb8a7466623b0ceaa027faf6832b073b6a3c6535160c37ea33310d3"
     },
     {
       "path": "ko/learning-record.png",
       "contentLanguage": "ko",
       "width": 1488,
-      "height": 956,
+      "height": 981,
       "format": "PNG",
-      "bytes": 183590,
-      "sha256": "554a0ac5654404a40f307d124a5ce1f427352ff94b82df6a648601a67bee2fda"
+      "bytes": 169562,
+      "sha256": "a5f24718897fb847a0a832cd0868a55e22e315768fe2a05804e4d77605c6da0b"
     },
     {
       "path": "ko/learning-settings.png",
@@ -380,8 +371,8 @@
       "width": 1240,
       "height": 880,
       "format": "PNG",
-      "bytes": 76066,
-      "sha256": "0e18b35ee6f38af0d8d5128cc87264bcd4a57eebcd3ffa2e0f5bd47a23461be7"
+      "bytes": 68930,
+      "sha256": "155466c6c58f0e523e7a6e43169e1a65d52d6daaa2aa5cd82a102d6630c66379"
     },
     {
       "path": "ko/language-selection.png",
@@ -389,17 +380,17 @@
       "width": 1080,
       "height": 1120,
       "format": "PNG",
-      "bytes": 118689,
-      "sha256": "687cc0c9ad735c996f6a9884788ba37891f76572962e6e22c8e2cc8ad6d37ade"
+      "bytes": 121791,
+      "sha256": "281af280eed9f7e0362010c5e8b9ea282dd217ad5ad63eabd09f580c2564f543"
     },
     {
       "path": "ko/hero-record.png",
       "contentLanguage": "ko",
       "width": 1040,
-      "height": 564,
+      "height": 603,
       "format": "PNG",
-      "bytes": 77320,
-      "sha256": "eb38a749bfb3c3c6440f5bb5a509bafb086037421a2c4f342c970563eb86dc13"
+      "bytes": 82202,
+      "sha256": "f2a168d39ca524f73687fbe2569928d3398f3a13d46ea42331dfaf37f7ae98ee"
     },
     {
       "path": "ko/hero-animation.jpg",
@@ -407,17 +398,17 @@
       "width": 1280,
       "height": 608,
       "format": "JPEG",
-      "bytes": 103582,
-      "sha256": "873a6807ec7c96fef495991c29cc0a8dc1f196ca44a7c8ccefb747bd59ae78d1"
+      "bytes": 101263,
+      "sha256": "942263eae9fe31b994bbefbdb56bbbc91cddfed7958bfe9975259b1838658bc7"
     },
     {
       "path": "pt-BR/learning-record.png",
       "contentLanguage": "pt-BR",
       "width": 1488,
-      "height": 956,
+      "height": 981,
       "format": "PNG",
-      "bytes": 198314,
-      "sha256": "5dd6389ac8150f2f398a84b9fd58736af42d6994bd0cabd2dde53489253887f8"
+      "bytes": 180529,
+      "sha256": "7e120522acd5e4a433490a0d22b493ae8249548e33fe3e7151cbcf5ba790dbb1"
     },
     {
       "path": "pt-BR/learning-settings.png",
@@ -425,8 +416,8 @@
       "width": 1240,
       "height": 880,
       "format": "PNG",
-      "bytes": 85744,
-      "sha256": "b0ca94e5fdfa1801687ef21a56f6f03b28134bee574462fa37bcac05ea6f058f"
+      "bytes": 81355,
+      "sha256": "f4ecf3252cf32b15d53f9fb3e9b82f1550a70cbcf5cfc5402ad33373b3aab1f3"
     },
     {
       "path": "pt-BR/language-selection.png",
@@ -434,17 +425,17 @@
       "width": 1080,
       "height": 1120,
       "format": "PNG",
-      "bytes": 127728,
-      "sha256": "a8c4e28f87a67b2627e835e178f4060daee8fca76189f675a930614fce1e8106"
+      "bytes": 129983,
+      "sha256": "4a8bb472e3a311041703fa22d8de278ccf2647ac0b90d3142eb8db40efbd0603"
     },
     {
       "path": "pt-BR/hero-record.png",
       "contentLanguage": "pt-BR",
       "width": 1040,
-      "height": 564,
+      "height": 603,
       "format": "PNG",
-      "bytes": 80514,
-      "sha256": "6f372bb00ea33dd37b844a65d0456a5261b9bbac9c19aa3aa60b665509aed676"
+      "bytes": 86032,
+      "sha256": "06eb5c15f7a96509e57dc98f408b58ea9deed3e6c0522232c0379d38e5ad66c8"
     },
     {
       "path": "pt-BR/hero-animation.jpg",
@@ -452,17 +443,17 @@
       "width": 1280,
       "height": 608,
       "format": "JPEG",
-      "bytes": 105023,
-      "sha256": "58e70d9c69839c01c57bdcbaef4c33760c834d5154120d8887c7da05a8f066d0"
+      "bytes": 104896,
+      "sha256": "80e54ec8edf61b7981557818356016cb51f0ffcc3c2b161528336d2db3982b14"
     },
     {
       "path": "ru/learning-record.png",
       "contentLanguage": "ru",
       "width": 1488,
-      "height": 956,
+      "height": 981,
       "format": "PNG",
-      "bytes": 199004,
-      "sha256": "ae7b50c0d3ed61688d0088f978f7d58d9890d1d969d3f74ce954771833527e15"
+      "bytes": 185964,
+      "sha256": "13d39176ba02608dcbf58af5aaf9008dad70aea0b7be5d01c69768c85c4a9f59"
     },
     {
       "path": "ru/learning-settings.png",
@@ -470,8 +461,8 @@
       "width": 1240,
       "height": 880,
       "format": "PNG",
-      "bytes": 87890,
-      "sha256": "fa2ca23ada5af24bdda60eb7f0d8bfaf49f64ff240ec7502f52efa9e07621801"
+      "bytes": 77932,
+      "sha256": "29fecf5625efbcdbfc9773f335f6014a454f17a396db569a0ed6fa8d67e1489e"
     },
     {
       "path": "ru/language-selection.png",
@@ -479,17 +470,17 @@
       "width": 1080,
       "height": 1120,
       "format": "PNG",
-      "bytes": 134126,
-      "sha256": "59194df5a353c47f37ba8b9da0032255d89a1cb9b7b78d99a2e851940e103d5a"
+      "bytes": 137675,
+      "sha256": "e255a1981d9ce3613be5509d6392e3f2e506d0b3dea0ae387d489c01e8dbae35"
     },
     {
       "path": "ru/hero-record.png",
       "contentLanguage": "ru",
       "width": 1040,
-      "height": 564,
+      "height": 650,
       "format": "PNG",
-      "bytes": 81298,
-      "sha256": "c738aae79c0fe3e5ad873a8fed03f874de8b239ded3315845965c38f93d61ad0"
+      "bytes": 88241,
+      "sha256": "3f863663b986685793dffb69b3d7a51169d24fee4bed070c27231de72a543ce9"
     },
     {
       "path": "ru/hero-animation.jpg",
@@ -497,17 +488,17 @@
       "width": 1280,
       "height": 608,
       "format": "JPEG",
-      "bytes": 105890,
-      "sha256": "87e9168a4da632d3b8b59d43575231806ff565ec5804c2e3bc4bb4a6c7c632f7"
+      "bytes": 102948,
+      "sha256": "ddfe03b0e5b5647aca39b4e32b18d45449f3f881a913612863d167470ff69238"
     },
     {
       "path": "zh-Hans/learning-record.png",
       "contentLanguage": "zh-Hans",
       "width": 1488,
-      "height": 956,
+      "height": 981,
       "format": "PNG",
-      "bytes": 193168,
-      "sha256": "409f24f305904ae6c36c612c22733f39cf035b0e32afddb264513fd767035929"
+      "bytes": 196284,
+      "sha256": "03ca265fb77d3c81feae0755681f537576365639a8898987d4ab5db4da4ebdae"
     },
     {
       "path": "zh-Hans/learning-settings.png",
@@ -515,8 +506,8 @@
       "width": 1240,
       "height": 880,
       "format": "PNG",
-      "bytes": 75961,
-      "sha256": "03ca1fb160c73ffa7193f436269ba062b062952b8be603200632a35adbb8e0d7"
+      "bytes": 70021,
+      "sha256": "4cae736bbef1756478c6bf700b150ddecd62e2276f769e9e654c9ac10b583354"
     },
     {
       "path": "zh-Hans/language-selection.png",
@@ -524,8 +515,8 @@
       "width": 1080,
       "height": 1120,
       "format": "PNG",
-      "bytes": 124532,
-      "sha256": "e8115ac319d4fca4aa5f40152854dbd514fe3d147bdf67949da53071564d0ade"
+      "bytes": 129889,
+      "sha256": "be1b3d3d22c40a29c5244210fec7b2c7e367c095a442238d2cec6b07dd54b2bf"
     },
     {
       "path": "social-card-zh.png",
@@ -533,17 +524,17 @@
       "width": 1200,
       "height": 630,
       "format": "PNG",
-      "bytes": 161598,
-      "sha256": "965abf26fb0d49e2143ef1269178206df9c7590f6d860cd55fe51bc5474f2d49"
+      "bytes": 55426,
+      "sha256": "9abdf6ccb269576269f5a19a50e4b224cbb915ed1592441ad3b7ef5281f7cd01"
     },
     {
       "path": "zh-Hans/hero-record.png",
       "contentLanguage": "zh-Hans",
       "width": 1040,
-      "height": 564,
+      "height": 603,
       "format": "PNG",
-      "bytes": 78154,
-      "sha256": "4e237705a2c8c8008ba2ac63c71d8a7d37509429557b2dcb061c406b40b6a855"
+      "bytes": 80915,
+      "sha256": "be12144e5453957366634cd58d51cd22666678093126afd1a2646d4f949d2732"
     },
     {
       "path": "zh-Hans/hero-animation.jpg",
@@ -551,17 +542,17 @@
       "width": 1280,
       "height": 608,
       "format": "JPEG",
-      "bytes": 104028,
-      "sha256": "debfe5a1edf165a3b02bad840389f3f84f546a3d89e63b7a6a86f71ffb81f41c"
+      "bytes": 99340,
+      "sha256": "f5854f3b037b3a43fd84336e29b7a2ec29aab362509c87e3b2f091f88fd97fca"
     },
     {
       "path": "zh-Hant/learning-record.png",
       "contentLanguage": "zh-Hant",
       "width": 1488,
-      "height": 956,
+      "height": 981,
       "format": "PNG",
-      "bytes": 195156,
-      "sha256": "a76e5402be55458a2072a650160313667635a8d197575cd739034bbc5227b29d"
+      "bytes": 174943,
+      "sha256": "d35149bb0f6b33e52ffc555bb6d403908ffac88828fc586417f6cc8cd8ddb05d"
     },
     {
       "path": "zh-Hant/learning-settings.png",
@@ -569,8 +560,8 @@
       "width": 1240,
       "height": 880,
       "format": "PNG",
-      "bytes": 78950,
-      "sha256": "4cf38c058507e4932e0eb35a205674b03c5af9a3e9751b0f430d55d9fe091793"
+      "bytes": 74150,
+      "sha256": "f06c6422691ba570471c771c5b69b5810b544f6323fed6ea737c31130b822abb"
     },
     {
       "path": "zh-Hant/language-selection.png",
@@ -578,17 +569,17 @@
       "width": 1080,
       "height": 1120,
       "format": "PNG",
-      "bytes": 125728,
-      "sha256": "ff67405d7c7f2c1370c2d95519b600c8b5ef18443542b18ee6af6111566d44f5"
+      "bytes": 131030,
+      "sha256": "b440a79c5a14b370b2455f8bccacec8bf03b586c9a2fd8a8698f410f91663a5f"
     },
     {
       "path": "zh-Hant/hero-record.png",
       "contentLanguage": "zh-Hant",
       "width": 1040,
-      "height": 564,
+      "height": 603,
       "format": "PNG",
-      "bytes": 79111,
-      "sha256": "0d292da29015622860c398eb57f388378d73627ed7632898f642906a7d85074e"
+      "bytes": 82617,
+      "sha256": "9915fc70990358e1ffe948a9795fdc4795fb34e55e66778c4fc1a5cf5feb8720"
     },
     {
       "path": "zh-Hant/hero-animation.jpg",
@@ -596,8 +587,8 @@
       "width": 1280,
       "height": 608,
       "format": "JPEG",
-      "bytes": 104028,
-      "sha256": "90c84ec4dca67a1b25891352983cb5f4e5f718d70af5eeea6119639b1660bae0"
+      "bytes": 99589,
+      "sha256": "890000c7bf1c0f1da54d5200045f13a1c82328d3f83fece2e16a63da96deaaa3"
     }
   ]
 }

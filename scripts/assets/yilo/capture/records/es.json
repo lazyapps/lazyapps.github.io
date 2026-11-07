@@ -1,0 +1,63 @@
+{
+  "id": "237BFFF6-D90C-51B5-89B2-DE9B1B96667F",
+  "originalText": "Las funciones han cambiado. Vuelve a hacer las capturas de pantalla.",
+  "sourceHost": "codex",
+  "hostVersion": "0.166.0-alpha.6",
+  "capturedAt": 1793967080.949,
+  "status": "succeeded",
+  "configuration": {
+    "preservesOriginalTone": true,
+    "sourceLanguage": "es",
+    "englishInputExplanationLanguage": "es",
+    "learningNotesLanguage": "es",
+    "dialect": "american",
+    "targetLanguages": [
+      "en",
+      "ja"
+    ],
+    "targetStyle": "natural"
+  },
+  "naturalEnglish": null,
+  "translations": [
+    {
+      "language": "en",
+      "learningAdvice": [
+        {
+          "kind": "learning_point",
+          "category": "collocation",
+          "sourceExcerpt": "Las funciones han cambiado. Vuelve a hacer las capturas de pantalla.",
+          "recommendation": "Para repetir las capturas, usa «retake the screenshots».",
+          "explanation": "La expresión habitual es take a screenshot. Retake indica que se hace de nuevo.",
+          "exampleEnglish": "We need to retake the screenshots after the update."
+        }
+      ],
+      "text": "The features have been updated, so we need to retake the screenshots."
+    },
+    {
+      "language": "ja",
+      "learningAdvice": [
+        {
+          "kind": "learning_point",
+          "category": "translation_pattern",
+          "sourceExcerpt": "Las funciones han cambiado. Vuelve a hacer las capturas de pantalla.",
+          "recommendation": "Usa 「撮り直す」 para decir que repites una toma.",
+          "explanation": "直す después de la raíz verbal indica que se repite la acción.",
+          "exampleEnglish": "更新後にスクリーンショットを撮り直してください。"
+        }
+      ],
+      "text": "機能が更新されたため、スクリーンショットを撮り直す必要があります。"
+    }
+  ],
+  "learningAdvice": [
+    {
+      "kind": "learning_point",
+      "category": "collocation",
+      "sourceExcerpt": "Las funciones han cambiado. Vuelve a hacer las capturas de pantalla.",
+      "recommendation": "Para repetir las capturas, usa «retake the screenshots».",
+      "explanation": "La expresión habitual es take a screenshot. Retake indica que se hace de nuevo.",
+      "exampleEnglish": "We need to retake the screenshots after the update."
+    }
+  ],
+  "isBookmarked": false,
+  "origin": "captured"
+}

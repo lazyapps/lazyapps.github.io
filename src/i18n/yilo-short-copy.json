@@ -67,14 +67,14 @@
       ]
     ],
     "screenshots": [
-      "学习记录：中文原话、英语和日语译文、学习笔记及罗马字。简体中文界面，保留真实记录内容。",
-      "学习语言设置：中文输入，学习英语、日语和法语。简体中文界面，使用示例设置。",
-      "语言选择：已选英语、日语和法语。简体中文界面，使用示例设置。"
+      "学习记录：中文输入、英语和日语译文及学习笔记。",
+      "学习语言设置：中文输入，学习英语和日语。",
+      "语言选择：已选英语和日语。"
     ],
     "sync": "可选 iCloud 同步 · iPhone TestFlight 测试版",
     "headline": "边蹬边学",
     "title": "亦言 · Yilo — 用日常输入，学你想学的语言",
-    "screenshotNote": "学习记录：中文原话、英语和日语译文、学习笔记及罗马字。简体中文界面，保留真实记录内容。",
+    "screenshotNote": "学习记录：中文输入、英语和日语译文及学习笔记。",
     "formerName": "原名《绎言》（YiYan）。",
     "screenshotLabels": [
       "学习记录 · 罗马字",
@@ -165,14 +165,14 @@
       ]
     ],
     "screenshots": [
-      "學習紀錄：中文原話、英語和日語譯文、學習筆記及羅馬字。繁體中文介面，保留真實紀錄內容。",
-      "學習語言設定：中文輸入，學習英語、日語和法語。繁體中文介面，使用範例設定。",
-      "語言選擇：已選英語、日語和法語。繁體中文介面，使用範例設定。"
+      "學習紀錄：繁體中文輸入、英語和日語譯文及學習筆記。",
+      "學習語言設定：繁體中文輸入，學習英語和日語。",
+      "語言選擇：已選英語和日語。"
     ],
     "sync": "可選 iCloud 同步 · iPhone TestFlight 測試版",
     "headline": "邊蹬邊學",
     "title": "亦言 · Yilo — 用日常輸入，學你想學的語言",
-    "screenshotNote": "學習紀錄：中文原話、英語和日語譯文、學習筆記及羅馬字。繁體中文介面，保留真實紀錄內容。",
+    "screenshotNote": "學習紀錄：繁體中文輸入、英語和日語譯文及學習筆記。",
     "formerName": "原名《繹言》（YiYan）。",
     "screenshotLabels": [
       "學習紀錄 · 羅馬字",
@@ -263,14 +263,14 @@
       ]
     ],
     "screenshots": [
-      "English example: English input, Simplified Chinese with Pinyin, Japanese with Romaji, and English learning notes.",
-      "English settings: English input, Simplified Chinese and Japanese learning languages, with Pinyin and Romaji enabled. Sample preferences.",
-      "English language picker with Simplified Chinese and Japanese selected. Sample preferences."
+      "English input, Simplified Chinese with Pinyin, Japanese with Romaji, and English learning notes.",
+      "English source with Simplified Chinese and Japanese selected for learning. Sample settings.",
+      "Simplified Chinese and Japanese selected. Sample settings."
     ],
     "sync": "Optional iCloud sync · iPhone TestFlight beta",
     "headline": "Pick up a language while you’re vibe coding",
     "title": "Yilo — Learn languages from your daily input",
-    "screenshotNote": "English example: English input, Simplified Chinese with Pinyin, Japanese with Romaji, and English learning notes.",
+    "screenshotNote": "English input, Simplified Chinese with Pinyin, Japanese with Romaji, and English learning notes.",
     "formerName": "Formerly YiYan.",
     "screenshotLabels": [
       "Learning record · Pinyin and Romaji",
@@ -362,14 +362,14 @@
       ]
     ],
     "screenshots": [
-      "学習記録：中国語の原文、英語と日本語の訳、学習ノート、ローマ字の読み。日本語UIで実際の記録内容を保持しています。",
-      "学習言語設定：中国語を入力し、英語、日本語、フランス語を学ぶ例。日本語UI。",
-      "言語選択：英語、日本語、フランス語を選んだ例。日本語UI。"
+      "学習記録：日本語の入力、英語と簡体字中国語の訳、学習ノート。",
+      "学習言語設定：日本語から英語と簡体字中国語を学ぶ例。",
+      "言語選択：英語と簡体字中国語を選択。"
     ],
     "sync": "任意のiCloud同期 · iPhone TestFlightベータ版",
     "headline": "バイブコーディングしながら、 新しい言語も身につけていこう",
     "title": "Yilo — 日々の入力で、学びたい言語を学ぶ",
-    "screenshotNote": "学習記録：中国語の原文、英語と日本語の訳、学習ノート、ローマ字の読み。日本語UIで実際の記録内容を保持しています。",
+    "screenshotNote": "学習記録：日本語の入力、英語と簡体字中国語の訳、学習ノート。",
     "formerName": "旧称：YiYan。",
     "screenshotLabels": [
       "学習記録 · ローマ字",
@@ -461,14 +461,14 @@
       ]
     ],
     "screenshots": [
-      "학습 기록: 중국어 원문, 영어·일본어 번역, 학습 노트와 로마자 읽기. 한국어 UI에서 실제 기록 내용을 유지합니다.",
-      "학습 언어 설정: 중국어 입력으로 영어·일본어·프랑스어를 배우는 예시입니다. 한국어 UI입니다.",
-      "언어 선택: 영어·일본어·프랑스어를 선택한 예시입니다. 한국어 UI입니다."
+      "학습 기록: 한국어 입력, 영어·일본어 번역과 학습 노트.",
+      "학습 언어 설정: 한국어 입력으로 영어와 일본어를 배우는 예시.",
+      "언어 선택: 영어와 일본어를 선택한 예시."
     ],
     "sync": "선택적 iCloud 동기화 · iPhone TestFlight 베타",
     "headline": "바이브 코딩을 하면서 새로운 언어도 익혀 보세요",
     "title": "Yilo — 일상 입력으로 원하는 언어 배우기",
-    "screenshotNote": "학습 기록: 중국어 원문, 영어·일본어 번역, 학습 노트와 로마자 읽기. 한국어 UI에서 실제 기록 내용을 유지합니다.",
+    "screenshotNote": "학습 기록: 한국어 입력, 영어·일본어 번역과 학습 노트.",
     "formerName": "이전 이름: YiYan.",
     "screenshotLabels": [
       "학습 기록 · 로마자",
@@ -560,14 +560,14 @@
       ]
     ],
     "screenshots": [
-      "Lerneintrag mit chinesischem Original, englischer und japanischer Übersetzung, Notizen und Romaji. Deutsche Oberfläche mit unverändertem echtem Eintrag.",
-      "Spracheinstellungen: chinesische Eingabe; Englisch, Japanisch und Französisch als Lernsprachen. Deutsche Oberfläche mit Beispieleinstellungen.",
-      "Sprachauswahl mit Englisch, Japanisch und Französisch. Deutsche Oberfläche mit Beispieleinstellungen."
+      "Lerneintrag: deutsche Eingabe, englische und japanische Übersetzung, Lernnotizen.",
+      "Spracheinstellungen: Deutsch als Ausgangssprache, Englisch und Japanisch zum Lernen.",
+      "Sprachauswahl: Englisch und Japanisch. Beispieleinstellungen."
     ],
     "sync": "Optionaler iCloud-Abgleich · iPhone-TestFlight-Beta",
     "headline": "Lerne beim Vibe Coding ganz nebenbei eine Sprache",
     "title": "Yilo — Sprachen mit eigenen Eingaben lernen",
-    "screenshotNote": "Lerneintrag mit chinesischem Original, englischer und japanischer Übersetzung, Notizen und Romaji. Deutsche Oberfläche mit unverändertem echtem Eintrag.",
+    "screenshotNote": "Lerneintrag: deutsche Eingabe, englische und japanische Übersetzung, Lernnotizen.",
     "formerName": "Früher YiYan.",
     "screenshotLabels": [
       "Lerneintrag · Romaji",
@@ -659,14 +659,14 @@
       ]
     ],
     "screenshots": [
-      "Fiche réelle avec texte chinois, traductions anglaise et japonaise, notes et romaji. Interface française ; contenu conservé.",
-      "Réglages : texte chinois, apprentissage de l’anglais, du japonais et du français. Interface française avec exemples de préférences.",
-      "Sélecteur avec anglais, japonais et français. Interface française avec exemples de préférences."
+      "Fiche : saisie en français, traductions en anglais et en japonais, notes.",
+      "Réglages : français en entrée, anglais et japonais à apprendre.",
+      "Sélection de l’anglais et du japonais. Exemple de réglages."
     ],
     "sync": "Synchro iCloud facultative · bêta iPhone TestFlight",
     "headline": "Apprenez une langue en faisant du vibe coding",
     "title": "Yilo — Apprendre des langues avec vos propres mots",
-    "screenshotNote": "Fiche réelle avec texte chinois, traductions anglaise et japonaise, notes et romaji. Interface française ; contenu conservé.",
+    "screenshotNote": "Fiche : saisie en français, traductions en anglais et en japonais, notes.",
     "formerName": "Anciennement YiYan.",
     "screenshotLabels": [
       "Fiche d’apprentissage · Romaji",
@@ -758,14 +758,14 @@
       ]
     ],
     "screenshots": [
-      "Registro real con texto chino, traducciones al inglés y japonés, notas y romaji. Interfaz en español; contenido conservado.",
-      "Ajustes: entrada en chino e idiomas de aprendizaje inglés, japonés y francés. Interfaz en español con preferencias de ejemplo.",
-      "Selector con inglés, japonés y francés. Interfaz en español con preferencias de ejemplo."
+      "Registro: entrada en español, traducciones al inglés y al japonés, y notas.",
+      "Ajustes: español como idioma de entrada; inglés y japonés para aprender.",
+      "Inglés y japonés seleccionados. Ajustes de ejemplo."
     ],
     "sync": "Sincronización opcional con iCloud · beta para iPhone en TestFlight",
     "headline": "Aprende un idioma mientras haces vibe coding",
     "title": "Yilo — Aprende idiomas con tus propias palabras",
-    "screenshotNote": "Registro real con texto chino, traducciones al inglés y japonés, notas y romaji. Interfaz en español; contenido conservado.",
+    "screenshotNote": "Registro: entrada en español, traducciones al inglés y al japonés, y notas.",
     "formerName": "Antes YiYan.",
     "screenshotLabels": [
       "Registro de aprendizaje · Romaji",
@@ -857,14 +857,14 @@
       ]
     ],
     "screenshots": [
-      "Registro real com texto em chinês, traduções em inglês e japonês, notas e romaji. Interface em português do Brasil; conteúdo preservado.",
-      "Configurações: entrada em chinês e estudo de inglês, japonês e francês. Interface em português do Brasil com preferências de exemplo.",
-      "Seletor com inglês, japonês e francês. Interface em português do Brasil com preferências de exemplo."
+      "Registro: entrada em português, traduções em inglês e japonês e notas.",
+      "Configurações: entrada em português; inglês e japonês para aprender.",
+      "Inglês e japonês selecionados. Configurações de exemplo."
     ],
     "sync": "Sincronização opcional pelo iCloud · beta para iPhone no TestFlight",
     "headline": "Aprenda um idioma enquanto faz vibe coding",
     "title": "Yilo — Aprenda idiomas com suas próprias palavras",
-    "screenshotNote": "Registro real com texto em chinês, traduções em inglês e japonês, notas e romaji. Interface em português do Brasil; conteúdo preservado.",
+    "screenshotNote": "Registro: entrada em português, traduções em inglês e japonês e notas.",
     "formerName": "Antes, YiYan.",
     "screenshotLabels": [
       "Registro de estudo · Romaji",
@@ -956,14 +956,14 @@
       ]
     ],
     "screenshots": [
-      "Реальная запись: китайский оригинал, английский и японский переводы, заметки и ромадзи. Русский интерфейс; содержание сохранено.",
-      "Настройки: китайский оригинал, изучаемые языки — английский, японский и французский. Русский интерфейс, пример настроек.",
-      "Выбор английского, японского и французского. Русский интерфейс, пример настроек."
+      "Учебная запись: русский текст, переводы на английский и японский, заметки.",
+      "Настройки: исходный язык — русский, изучаемые — английский и японский.",
+      "Выбраны английский и японский. Пример настроек."
     ],
     "sync": "Синхронизация через iCloud по желанию · бета-версия для iPhone в TestFlight",
     "headline": "Осваивайте язык, пока занимаетесь вайб-кодингом",
     "title": "Yilo — Учите языки на собственных фразах",
-    "screenshotNote": "Реальная запись: китайский оригинал, английский и японский переводы, заметки и ромадзи. Русский интерфейс; содержание сохранено.",
+    "screenshotNote": "Учебная запись: русский текст, переводы на английский и японский, заметки.",
     "formerName": "Прежнее название — YiYan.",
     "screenshotLabels": [
       "Учебная запись · ромадзи",
@@ -1055,14 +1055,14 @@
       ]
     ],
     "screenshots": [
-      "वास्तविक रिकॉर्ड: चीनी मूल, अंग्रेज़ी और जापानी अनुवाद, नोट्स और रोमाजी। हिन्दी इंटरफ़ेस; सामग्री यथावत है।",
-      "सेटिंग: चीनी इनपुट से अंग्रेज़ी, जापानी और फ़्रेंच सीखने का उदाहरण। हिन्दी इंटरफ़ेस।",
-      "अंग्रेज़ी, जापानी और फ़्रेंच का चयन। हिन्दी इंटरफ़ेस और उदाहरण सेटिंग।"
+      "सीखने का रिकॉर्ड: हिन्दी इनपुट, अंग्रेज़ी और जापानी अनुवाद और नोट्स।",
+      "सेटिंग: हिन्दी इनपुट से अंग्रेज़ी और जापानी सीखने का उदाहरण।",
+      "अंग्रेज़ी और जापानी का चयन। उदाहरण सेटिंग।"
     ],
     "sync": "वैकल्पिक iCloud सिंक · iPhone TestFlight बीटा",
     "headline": "वाइब कोडिंग करते हुए एक नई भाषा भी सीखते जाएँ",
     "title": "Yilo — अपने रोज़ के शब्दों से भाषाएँ सीखें",
-    "screenshotNote": "वास्तविक रिकॉर्ड: चीनी मूल, अंग्रेज़ी और जापानी अनुवाद, नोट्स और रोमाजी। हिन्दी इंटरफ़ेस; सामग्री यथावत है।",
+    "screenshotNote": "सीखने का रिकॉर्ड: हिन्दी इनपुट, अंग्रेज़ी और जापानी अनुवाद और नोट्स।",
     "formerName": "इसका पुराना नाम YiYan था।",
     "screenshotLabels": [
       "सीखने का रिकॉर्ड · रोमाजी",
@@ -1154,14 +1154,14 @@
       ]
     ],
     "screenshots": [
-      "سجل فعلي: نص صيني وترجمات إنجليزية ويابانية وملاحظات وروماجي. واجهة عربية؛ المحتوى محفوظ كما هو.",
-      "إعدادات: نص صيني لتعلّم الإنجليزية واليابانية والفرنسية. واجهة عربية وإعدادات نموذجية.",
-      "اختيار الإنجليزية واليابانية والفرنسية. واجهة عربية وإعدادات نموذجية."
+      "سجل تعلّم: إدخال عربي وترجمات إنجليزية ويابانية وملاحظات.",
+      "الإعدادات: العربية لغة الإدخال، والإنجليزية واليابانية للتعلّم.",
+      "اختيار الإنجليزية واليابانية. إعدادات نموذجية."
     ],
     "sync": "مزامنة iCloud اختيارية · نسخة iPhone التجريبية عبر TestFlight",
     "headline": "تعلّم لغة جديدة وأنت تبرمج بأسلوب Vibe Coding",
     "title": "Yilo — تعلّم اللغات من كلماتك اليومية",
-    "screenshotNote": "سجل فعلي: نص صيني وترجمات إنجليزية ويابانية وملاحظات وروماجي. واجهة عربية؛ المحتوى محفوظ كما هو.",
+    "screenshotNote": "سجل تعلّم: إدخال عربي وترجمات إنجليزية ويابانية وملاحظات.",
     "formerName": "الاسم السابق: YiYan.",
     "screenshotLabels": [
       "سجل التعلّم · روماجي",

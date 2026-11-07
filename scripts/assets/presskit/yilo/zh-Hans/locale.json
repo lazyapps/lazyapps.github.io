@@ -4,7 +4,7 @@
     "advice.category.translation_pattern" : "翻译句式",
     "advice.kind.learning_point" : "学习要点",
     "language.japanese_reading.help" : "平假名标在对应汉字上方，罗马字在对应日语词组上方对齐。",
-    "language.notes" : "学习笔记",
+    "language.notes" : "学习建议",
     "language.search" : "搜索语言",
     "language.section" : "学习语言",
     "language.targets" : "目标语言",
@@ -12,5 +12,10 @@
   },
   "nativeLocale" : "zh-Hans",
   "operatingSystem" : "版本27.0.1（版号26A434）",
-  "requestedLocale" : "zh-Hans"
+  "requestedLocale" : "zh-Hans",
+  "sourceLanguage" : "zh-Hans",
+  "targetLanguages" : [
+    "en",
+    "ja"
+  ]
 }

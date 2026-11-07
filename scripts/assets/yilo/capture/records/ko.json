@@ -1,0 +1,63 @@
+{
+  "id": "D92F5340-FBEB-54E7-8437-3C17BB36C6D5",
+  "originalText": "기능이 바뀌었으니 스크린샷을 다시 찍어 줘.",
+  "sourceHost": "codex",
+  "hostVersion": "0.166.0-alpha.6",
+  "capturedAt": 1793967080.949,
+  "status": "succeeded",
+  "configuration": {
+    "preservesOriginalTone": true,
+    "sourceLanguage": "ko",
+    "englishInputExplanationLanguage": "ko",
+    "learningNotesLanguage": "ko",
+    "dialect": "american",
+    "targetLanguages": [
+      "en",
+      "ja"
+    ],
+    "targetStyle": "natural"
+  },
+  "naturalEnglish": null,
+  "translations": [
+    {
+      "language": "en",
+      "learningAdvice": [
+        {
+          "kind": "learning_point",
+          "category": "collocation",
+          "sourceExcerpt": "기능이 바뀌었으니 스크린샷을 다시 찍어 줘.",
+          "recommendation": "스크린샷을 다시 찍을 때는 “retake the screenshots”를 써요.",
+          "explanation": "take a screenshot이 기본 표현이에요. retake는 같은 작업을 다시 한다는 뜻이에요.",
+          "exampleEnglish": "We need to retake the screenshots after the update."
+        }
+      ],
+      "text": "The features have been updated, so we need to retake the screenshots."
+    },
+    {
+      "language": "ja",
+      "learningAdvice": [
+        {
+          "kind": "learning_point",
+          "category": "translation_pattern",
+          "sourceExcerpt": "기능이 바뀌었으니 스크린샷을 다시 찍어 줘.",
+          "recommendation": "다시 촬영한다는 뜻으로 「撮り直す」를 써요.",
+          "explanation": "동사의 연결형에 直す를 붙이면 같은 행동을 다시 한다는 뜻이에요.",
+          "exampleEnglish": "更新後にスクリーンショットを撮り直してください。"
+        }
+      ],
+      "text": "機能が更新されたため、スクリーンショットを撮り直す必要があります。"
+    }
+  ],
+  "learningAdvice": [
+    {
+      "kind": "learning_point",
+      "category": "collocation",
+      "sourceExcerpt": "기능이 바뀌었으니 스크린샷을 다시 찍어 줘.",
+      "recommendation": "스크린샷을 다시 찍을 때는 “retake the screenshots”를 써요.",
+      "explanation": "take a screenshot이 기본 표현이에요. retake는 같은 작업을 다시 한다는 뜻이에요.",
+      "exampleEnglish": "We need to retake the screenshots after the update."
+    }
+  ],
+  "isBookmarked": false,
+  "origin": "captured"
+}

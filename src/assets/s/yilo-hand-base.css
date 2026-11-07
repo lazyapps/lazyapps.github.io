@@ -1,0 +1,18 @@
+:root[data-yilo]{--yilo-hand:'Yilo Hand Latin','Yilo Hand Cyrillic','Yilo Hand Han','Yilo Hand Hangul','Yilo Hand Deva','Yilo Hand Arabic',var(--sans-default);--yilo-heading-leading:1.08;--yilo-reading-size:21px}
+:root[data-yilo]:lang(zh),:root[data-yilo]:lang(ja){--yilo-heading-leading:1.15;--yilo-reading-size:20px}
+:root[data-yilo]:lang(ko){--yilo-heading-leading:1.15;--yilo-reading-size:24px}
+:root[data-yilo]:lang(hi){--yilo-heading-leading:1.25;--yilo-reading-size:21px}
+:root[data-yilo]:lang(ar){--yilo-heading-leading:1.4;--yilo-reading-size:24px}
+:root[data-yilo] main,:root[data-yilo] main [lang],:root[data-yilo] .phero__cta,:root[data-yilo] .site-header__product,:root[data-yilo] .site-header__controls,:root[data-yilo] .yilo-footer-base{--sans:var(--yilo-hand);font-family:var(--yilo-hand)}
+:root[data-yilo] .site-header__product .dsp{font-family:var(--yilo-hand);font-size:32px;line-height:1;letter-spacing:0;text-transform:none;font-weight:400}
+:root[data-yilo] .locale__now,:root[data-yilo] .locale__short{font-family:var(--yilo-hand);font-size:20px;line-height:1.2}
+:root[data-yilo] .button-023{font-family:var(--yilo-hand);font-size:21px}
+:root[data-yilo] .base__col a,:root[data-yilo] .base__meta{font-family:var(--yilo-hand);font-size:20px}
+:root[data-yilo] body{font-family:var(--yilo-hand)}
+:root[data-yilo] main *,:root[data-yilo] .site-header__controls *,:root[data-yilo] .site-header__product *,:root[data-yilo] .yilo-footer-base *{--sans:var(--yilo-hand)}
+:root[data-yilo] main{font-weight:500}
+:root[data-yilo] .phero__h1:lang(zh),:root[data-yilo] .phero__h1:lang(ja),:root[data-yilo] .phero__h1:lang(ko),:root[data-yilo] .phero__h1:lang(hi),:root[data-yilo] .phero__h1:lang(ar){font-weight:400}
+:root[data-yilo] .presskit *,:root[data-yilo] .base *{--sans:var(--yilo-hand)}
+:root[data-yilo] .presskit :is(h1,h2,.kit-name){font-family:var(--yilo-hand);font-weight:400;letter-spacing:0;text-transform:none}
+:root[data-yilo] .presskit .press-markdown{font-size:20px;line-height:1.7}
+:root[data-yilo] .presskit :is(.kit-facts dd,.press-usage>div,.press-back,.asset-caption .note){font-size:18px}

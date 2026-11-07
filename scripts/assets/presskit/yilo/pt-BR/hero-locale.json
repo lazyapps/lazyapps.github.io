@@ -4,7 +4,7 @@
     "advice.category.translation_pattern" : "Padrão de tradução",
     "advice.kind.learning_point" : "Ponto de aprendizado",
     "language.japanese_reading.help" : "O hiragana aparece acima dos kanji e o romaji é alinhado acima de cada palavra japonesa.",
-    "language.notes" : "Notas de estudo",
+    "language.notes" : "Notas de aprendizado",
     "language.search" : "Buscar idiomas",
     "language.section" : "Idiomas de estudo",
     "language.targets" : "Idiomas de destino",
@@ -12,5 +12,10 @@
   },
   "nativeLocale" : "pt-BR",
   "operatingSystem" : "Versão 27.0.1 (Compilação 26A434)",
-  "requestedLocale" : "pt-BR"
+  "requestedLocale" : "pt-BR",
+  "sourceLanguage" : "pt-BR",
+  "targetLanguages" : [
+    "en",
+    "ja"
+  ]
 }

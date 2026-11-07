@@ -20,13 +20,13 @@ struct YiloWebsiteCapture {
     let decoder = JSONDecoder()
     decoder.dateDecodingStrategy = .secondsSince1970
     let record = try decoder.decode(LearningRecord.self, from: Data(contentsOf: recordURL))
-    precondition(record.originalText == (tag == "en" ? "The features have been updated, so we need to retake the screenshots." : "功能有更新，需重新截图"))
+    precondition(record.configuration.sourceLanguage.rawValue == tag)
     let data = FileManager.default.temporaryDirectory.appending(path: UUID().uuidString)
     defer { try? FileManager.default.removeItem(at: data) }
     let settings = AppSettingsViewModel(repository: SettingsRepository(fileURL: data.appending(path: "settings.json")))
-    settings.setSourceLanguage(.init(rawValue: tag == "en" ? "en" : "zh-Hans"))
-    settings.setTargetLanguages((tag == "en" ? ["zh-Hans", "ja"] : ["en", "ja", "fr"]).map(LearningNotesLanguage.init(rawValue:)))
-    settings.setJapaneseReadingStyle(tag == "en" ? .romaji : .hiragana)
+    settings.setSourceLanguage(.init(rawValue: tag))
+    settings.setTargetLanguages(record.configuration.targetLanguages)
+    settings.setJapaneseReadingStyle(.romaji)
     settings.setChineseReadingStyle(.pinyin, for: .simplified)
     func capture<V: View>(_ view: V, name: String, dark: Bool = false) async throws {
         NSApp.appearance = NSAppearance(named: dark ? .darkAqua : .aqua)
@@ -56,6 +56,8 @@ struct YiloWebsiteCapture {
     }.formStyle(.grouped).frame(width: 620, height: 440), name: "learning-settings.png")
     try await capture(LanguageSelectionView(settings: settings, multiple: true), name: "language-selection.png")
     let receipt: [String: Any] = ["requestedLocale": tag, "nativeLocale": AppLocalization.currentLocale.identifier,
+        "sourceLanguage": settings.settings.translation.sourceLanguage.rawValue,
+        "targetLanguages": settings.settings.translation.targetLanguages.map(\.rawValue),
         "labels": Dictionary(uniqueKeysWithValues: labels.map { ($0, AppLocalization.string($0)) }),
         "operatingSystem": ProcessInfo.processInfo.operatingSystemVersionString]
     try JSONSerialization.data(withJSONObject: receipt, options: [.prettyPrinted, .sortedKeys]).write(to: output.appending(path: "locale.json"))

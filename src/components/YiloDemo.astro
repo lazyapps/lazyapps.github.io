@@ -5,17 +5,17 @@ import copy from '../i18n/yilo-hero-copy.json';
 import controls from '../i18n/yilo-demo-copy.json';
 import music from '../../scripts/assets/yilo/web-music-source.json';
 import shortCopy from '../i18n/yilo-short-copy.json';
-import englishRecord from '../../scripts/assets/yilo/capture/hero-record-en.json';
-import chineseRecord from '../../scripts/assets/yilo/capture/hero-record-zh.json';
+import artCopy from '../i18n/yilo-art-copy.json';
 interface Props { locale?: keyof typeof copy; compact?: boolean }
 const { locale='en', compact=true }=Astro.props;
 const c=copy[locale], ui=controls[locale], english=locale==='en', rtl=locale==='ar';
+const art=artCopy[locale];
 const tag=({'zh-hans':'zh-Hans','zh-hant':'zh-Hant','pt-br':'pt-BR'} as Record<string,string>)[locale]??locale;
 const captures=import.meta.glob<{default:ImageMetadata}>('../../scripts/assets/presskit/yilo/*/hero-record.png',{eager:true});
 const record=captures[`../../scripts/assets/presskit/yilo/${tag}/hero-record.png`].default;
-const inputLines = english?examples.source.en.split('; '):[examples.source['zh-hans']];
-if(english)inputLines[0]+=';';
-const lesson=english?englishRecord:chineseRecord;
+const lessons=import.meta.glob<{default:{originalText:string;translations:{language:string;text:string}[]}}>('../../scripts/assets/yilo/capture/hero-records/*.json',{eager:true});
+const lesson=lessons[`../../scripts/assets/yilo/capture/hero-records/${tag}.json`].default;
+const inputLines = [lesson.originalText];
 const readings=['xiān bié dà gǎi, liú diǎn yú dì.', 'oohaba na kakinaoshi ha hikae chousei no yochi wo nokoshi te'];
 const colors = {teal:'#70a59e',blue:'#5c6995',green:'#84995c',coral:'#b76450'};
 ---
@@ -57,14 +57,17 @@ const colors = {teal:'#70a59e',blue:'#5c6995',green:'#84995c',coral:'#b76450'};
     </g>
     <g transform="translate(0 -15)" stroke="#5c6995" fill="#f6f2e7">
       <path d="M207 211Q188 211 188 232V251Q188 270 208 270H307Q326 270 326 250V232Q326 211 307 211Z" stroke-width="1.7"/>
-      {[232,257,282].map(x=><circle data-thought cx={x} cy="241" r="3.5" fill="#b76450" stroke="none"/>)}
+      <text data-source-word x="257" y="245" text-anchor="middle" stroke="none" fill="#333d51" font-size="24" lang={tag} direction={rtl?'rtl':'ltr'}>{art.word}</text>
+      {[245,257,269].map(x=><circle data-thought cx={x} cy="259" r="1.7" fill="#b76450" stroke="none"/>)}
       <circle cx="242" cy="282" r="4" stroke-width="1.3"/><circle cx="247" cy="294" r="2.3" fill="#5c6995" stroke="none"/>
     </g>
     </g>
     <g data-layer="input" opacity="0">
       <path data-input-bubble d="M480 254H1230V426H1169L1148 452L1142 426H480Z" fill="#f6f2e7" stroke="#70a59e" stroke-width="2"/>
       <text data-input-label x={rtl?1202:508} y="292" class="label" direction={rtl?'rtl':'ltr'}>Codex · {c.sourceLabel}</text>
-      {inputLines.map((line,i)=><text data-input-text x="508" y={344+i*49} class="input"><tspan data-input-line>{line}</tspan><tspan data-typing-caret opacity="0">_</tspan></text>)}
+      <foreignObject data-input-text x="508" y="314" width="694" height="106">
+        <div class="input" lang={tag} dir={rtl?'rtl':'ltr'}><span data-input-line>{lesson.originalText}</span><span data-typing-caret style="opacity:0">_</span></div>
+      </foreignObject>
     </g>
     <image data-layer="learn" href={record.src} x="480" y="214" width="780" height={780*record.height/record.width} preserveAspectRatio="xMidYMin meet"/>
     <g data-layer="conversation" opacity="0">
@@ -89,7 +92,7 @@ const colors = {teal:'#70a59e',blue:'#5c6995',green:'#84995c',coral:'#b76450'};
     </g>
   </svg>
   <div class="sr-only" data-description>
-    <p>Codex · {c.sourceLabel} · <span lang={english?'en':'zh-Hans'}>{lesson.originalText}</span></p>
+    <p>Codex · {c.sourceLabel} · <span lang={tag}>{lesson.originalText}</span></p>
     <p>{c.targetLabel}</p>
     {lesson.translations.map((translation,i)=><p>{i===0?c.firstLanguage:c.secondLanguage}: <span lang={translation.language}>{translation.text}</span> <span lang={translation.language==='ja'?'ja-Latn':'zh-Latn'}>{translation.language==='ja'?readings[1]:translation.language==='zh-Hans'?readings[0]:''}</span></p>)}
     <p>{examples.reusePhrase[english?'zh-hans':'en']} {c.reuse}</p>
@@ -104,7 +107,7 @@ const colors = {teal:'#70a59e',blue:'#5c6995',green:'#84995c',coral:'#b76450'};
   .yilo-demo{width:100%;height:100%;min-width:0;display:flex;flex-direction:column;justify-content:center;position:relative;color:#333d51}
   .yilo-demo__scene{display:block;width:100%;height:auto;aspect-ratio:var(--demo-aspect,1376/704);max-height:var(--demo-max-height,var(--yilo-scene-max-height,none));background:#f6f2e7;flex:none;pointer-events:none}
   text,.conversation{font-family:'Yilo Hand Latin','Yilo Hand Han',var(--sans);font-weight:400;fill:currentColor}
-  .label{font-size:28px;fill:#47736d}.input{font-size:38px}
+  .label{font-size:28px;fill:#47736d}.input{font-size:38px;line-height:1.25;overflow-wrap:anywhere}
   .conversation{line-height:1.4}.conversation p{margin:0}.phrase{font-size:40px;text-wrap:balance}.outcome{font-size:24px;color:#9d5141;margin-top:12px!important;text-wrap:pretty}
   .conversation[dir=rtl] .phrase{text-align:right}
   .yilo-demo__controls{display:flex;align-items:center;justify-content:flex-end;gap:10px;position:absolute;right:var(--demo-control-inset,24px);bottom:clamp(8px,1.6vw,16px);max-width:calc(100% - var(--demo-control-inset,24px) - 24px);direction:ltr;z-index:3;pointer-events:auto}

@@ -1,0 +1,54 @@
+{
+  "id": "0F171804-E25D-5D31-9A19-C38BABA96ED8",
+  "originalText": "아직 크게 뜯어고치지 말고, 조정할 여지를 남겨 둬.",
+  "sourceHost": "codex",
+  "hostVersion": "0.166.0-alpha.6",
+  "capturedAt": 1793967080.949,
+  "status": "succeeded",
+  "configuration": {
+    "preservesOriginalTone": true,
+    "sourceLanguage": "ko",
+    "englishInputExplanationLanguage": "ko",
+    "learningNotesLanguage": "ko",
+    "dialect": "american",
+    "targetLanguages": [
+      "en",
+      "ja"
+    ],
+    "targetStyle": "natural"
+  },
+  "naturalEnglish": null,
+  "translations": [
+    {
+      "language": "en",
+      "text": "Hold off on a sweeping rewrite; leave us some wiggle room.",
+      "learningAdvice": [
+        {
+          "kind": "learning_point",
+          "category": "collocation",
+          "sourceExcerpt": "아직 크게 뜯어고치지 말고, 조정할 여지를 남겨 둬.",
+          "recommendation": "wiggle room은 계획 등을 조정할 수 있는 여지를 뜻해요.",
+          "explanation": "wiggle room은 계획 등을 조정할 수 있는 여지를 뜻해요.",
+          "exampleEnglish": "Let's leave some wiggle room."
+        }
+      ]
+    },
+    {
+      "language": "ja",
+      "text": "大幅な書き直しは控え、調整の余地を残して。",
+      "learningAdvice": []
+    }
+  ],
+  "learningAdvice": [
+    {
+      "kind": "learning_point",
+      "category": "collocation",
+      "sourceExcerpt": "아직 크게 뜯어고치지 말고, 조정할 여지를 남겨 둬.",
+      "recommendation": "wiggle room은 계획 등을 조정할 수 있는 여지를 뜻해요.",
+      "explanation": "wiggle room은 계획 등을 조정할 수 있는 여지를 뜻해요.",
+      "exampleEnglish": "Let's leave some wiggle room."
+    }
+  ],
+  "isBookmarked": false,
+  "origin": "captured"
+}

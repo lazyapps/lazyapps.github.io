@@ -12,5 +12,10 @@
   },
   "nativeLocale" : "ko",
   "operatingSystem" : "버전 27.0.1(빌드 26A434)",
-  "requestedLocale" : "ko"
+  "requestedLocale" : "ko",
+  "sourceLanguage" : "ko",
+  "targetLanguages" : [
+    "en",
+    "ja"
+  ]
 }

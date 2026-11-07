@@ -1,58 +1,62 @@
 ---
-import examples from '../i18n/yilo-examples.json';
-interface Props { kind: number; english?: boolean }
-const { kind, english = false } = Astro.props;
+import artCopy from '../i18n/yilo-art-copy.json';
+interface Props { kind: number; locale: keyof typeof artCopy }
+const { kind, locale } = Astro.props;
+const art = artCopy[locale], rtl = locale === 'ar';
+const target = locale === 'en' ? 'zh-hans' : 'en';
+const targets = locale === 'en' ? ['zh-hans', 'ja'] : locale === 'ja' ? ['en', 'zh-hans'] : ['en', 'ja'];
+const targetCards = targets.map((tag,i) => ({ glyph: artCopy[tag as keyof typeof artCopy].glyph, x:55+i*140, color:i?'blue':'teal' }));
 const hatch = (color: string) => `url(#yilo-feature-${kind}-${color})`;
 ---
-<div class="feature-art" data-yilo-art aria-hidden="true" dir="ltr">
+<div class="feature-art" data-yilo-art data-source-locale={locale} aria-hidden="true" dir="ltr">
   <svg viewBox="0 0 320 160" fill="none" focusable="false">
     <defs>
       {Object.entries({teal:'#70a59e',blue:'#5c6995',green:'#84995c',coral:'#b76450'}).map(([name,color]) => <pattern id={`yilo-feature-${kind}-${name}`} width="7" height="7" patternUnits="userSpaceOnUse" patternTransform={`rotate(${name === 'green' ? 0 : name === 'coral' ? 35 : -42})`}><path d="M0 2h7" stroke={color} stroke-width="1"/></pattern>)}
     </defs>
     {kind === 0 && <>
       <path d="M18 37h134v90H18z" class="paper"/><path d="M18 37h134v20H18z" fill={hatch('teal')} opacity=".4"/><path d="M18 57h134"/><circle cx="30" cy="47" r="2" class="coral-fill"/>
-      <path d="m34 77 9 7-9 7" class="coral"/><path d="M54 87h67M34 105h57" class="type-lines"/>
+      <path d="m34 77 9 7-9 7" class="coral"/><text x="87" y="91" text-anchor="middle" direction={rtl?'rtl':'ltr'} class="source-word">{art.word}</text><path d="M34 109h70" class="type-lines"/>
       <path d="M169 84h35m-7-6 7 6-7 6" class="handoff"/>
       <g class="arrive"><path d="M225 32h68v103h-68z" fill={hatch('coral')} stroke="none"/><path d="M217 26h68v103h-68z" class="paper"/><path d="M230 48h41M230 65h30M230 82h41"/><path d="m234 107 9 8 17-18" class="coral"/></g>
     </>}
     {kind === 1 && <>
-      <path d="M55 46h210M55 46v28m105-28v28m105-28v28" class="branches"/>
-      <path d="M139 19h42v29h-42z" class="paper"/><path d="m150 29 5 5-5 5m12 0h9" class="coral"/>
-      {[{x:20,label:'A',color:'teal'},{x:125,label:'汉',color:'coral'},{x:230,label:'あ',color:'blue'}].map(({x,label,color},i) => <g class="language" style={`--i:${i}`}>
+      <path d="M160 60v11M90 80v-9h140v9" class="branches"/>
+      <path d="M124 16h80v47h-80z" fill={hatch('coral')} stroke="none"/><path d="M118 10h80v47h-80z" class="paper"/><text x="158" y="44" text-anchor="middle" class="glyph source-glyph">{art.glyph}</text>
+      {targetCards.map(({glyph,x,color},i) => <g class="language" style={`--i:${i}`}>
         <path d={`M${x+5} 82h70v57h-70z`} fill={hatch(color)} stroke="none"/><path d={`M${x} 75h70v57h-70z`} class="paper"/>
-        <text x={x+35} y="113" text-anchor="middle" class="glyph">{label}</text>
+        <text x={x+35} y="113" text-anchor="middle" class="glyph">{glyph}</text>
       </g>)}
     </>}
     {kind === 2 && <>
       <path d="M54 26h138v111H54z" fill={hatch('teal')} stroke="none"/><path d="M47 19h138v111H47z" class="paper"/>
-      <path d="M65 43h99M65 60h78M65 77h99M65 94h66M65 111h86"/>
-      <path d="M65 47h55M97 81h67" class="coral underlines"/>
-      <g class="note"><path d="M209 57h89v68h-89v-25l-13-9h13z" fill={hatch('coral')} stroke="none"/><path d="M203 50h89v68h-89V93l-13-9h13z" class="paper"/><path d="M218 68h58M218 84h41M218 100h52" class="coral"/></g>
+      <path d="M65 43h99M65 94h66M65 111h86"/><text x="115" y="75" text-anchor="middle" direction={rtl?'rtl':'ltr'}>{art.word}</text>
+      <path d="M65 81h99" class="coral underlines"/>
+      <g class="note"><path d="M209 57h89v68h-89v-25l-13-9h13z" fill={hatch('coral')} stroke="none"/><path d="M203 50h89v68h-89V93l-13-9h13z" class="paper"/><text x="248" y="82" text-anchor="middle" class="source-word">{artCopy[target].word}</text><path d="M218 100h52" class="coral"/></g>
     </>}
     {kind === 3 && <>
       <path d="M20 29h280v104H20z" class="paper"/><path d="M20 29h280v19H20z" fill={hatch('teal')} opacity=".4"/><path d="M20 48h280"/>
-      <text x="37" y="78">{examples.refine[english ? 'en' : 'zh-hans']}</text><path d="M160 61v20" class="caret coral"/>
+      <text x="103" y="78" text-anchor="middle" direction={rtl?'rtl':'ltr'} class="refine-input">{art.refine}</text><path d="M172 61v20" class="caret coral"/>
       <path d="M37 91h136" class="coral underlines"/>
-      <g class="refinement"><path d="M193 64h90v49h-90z" fill={hatch('green')} stroke="none"/><path d="M187 58h90v49h-90z" class="paper"/><text x="232" y="88" text-anchor="middle">{examples.refine[english ? 'zh-hans' : 'en']}</text></g>
+      <g class="refinement"><path d="M193 64h90v49h-90z" fill={hatch('green')} stroke="none"/><path d="M187 58h90v49h-90z" class="paper"/><text x="232" y="88" text-anchor="middle">{artCopy[target].refine}</text></g>
     </>}
     {kind === 4 && <>
       <path d="M40 42h119v91H40z" fill={hatch('blue')} stroke="none"/><path d="M33 35h119v91H33z" class="paper"/><path d="M33 59h119m-94-32v17m69-17v17"/>
       {[62,91,120].map(x => <path d={`M${x} 73v3m0 18v3m0 18v3`}/>)}
       <path d="M81 83h21v21H81z" fill={hatch('coral')} class="day"/>
-      <g class="saved-record"><path d="M179 28h98v110h-98z" class="paper"/><path d="M193 73h69M193 90h53M193 107h64"/><path d="M239 28v34l10-7 10 7V28" fill={hatch('coral')} class="bookmark"/></g>
+      <g class="saved-record"><path d="M179 28h98v110h-98z" class="paper"/><text x="228" y="86" text-anchor="middle" direction={rtl?'rtl':'ltr'} class="source-word">{art.word}</text><path d="M193 107h64"/><path d="M239 28v34l10-7 10 7V28" fill={hatch('coral')} class="bookmark"/></g>
     </>}
     {kind === 5 && <>
-      <path d="M13 55h83v58H13z" class="paper"/><path d="M19 61h71v45H19z" fill={hatch('blue')} opacity=".3" stroke="none"/><path d="M5 119h100l-6 7H11z" fill={hatch('green')}/>
+      <path d="M13 55h83v58H13z" class="paper"/><path d="M19 61h71v45H19z" fill={hatch('blue')} opacity=".3" stroke="none"/><text x="55" y="95" text-anchor="middle" class="glyph">{art.glyph}</text><path d="M5 119h100l-6 7H11z" fill={hatch('green')}/>
       <path d="M133 61c-13 0-15-17-5-23 4-17 27-19 36-6 16-3 25 10 19 23-3 5-9 7-16 7h-34" fill={hatch('teal')}/>
       <path d="M111 88h90m-7-6 7 6-7 6" opacity=".5"/><circle cx="119" cy="88" r="3" class="coral-fill sync-dot"/>
-      <g class="phone"><rect x="222" y="24" width="73" height="117" rx="8" class="paper"/><path d="M229 42h59v79h-59z" fill={hatch('teal')} opacity=".3" stroke="none"/><path d="M248 33h20m-17 99h14"/><path d="m241 81 10 10 23-26" class="coral check"/></g>
+      <g class="phone"><rect x="222" y="24" width="73" height="117" rx="8" class="paper"/><path d="M229 42h59v79h-59z" fill={hatch('teal')} opacity=".3" stroke="none"/><text x="259" y="82" text-anchor="middle" class="glyph">{art.glyph}</text><path d="M248 33h20m-17 99h14"/><path d="m249 104 6 6 14-16" class="coral check"/></g>
     </>}
   </svg>
 </div>
 <style>
 .feature-art{width:100%;max-width:310px;margin-bottom:6px;color:#333d51}
 svg{display:block;width:100%;height:auto;overflow:visible;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
-text{stroke:none;fill:currentColor;font:400 18px var(--sans);letter-spacing:0}.glyph{font-size:30px}.refinement text{font-size:15px}
+text{stroke:none;fill:currentColor;font:400 18px var(--sans);letter-spacing:0}.glyph{font-size:30px}.source-glyph{fill:#b76450;font-size:34px}.source-word{font-size:14px}.refine-input{font-size:16px}.refinement text{font-size:12px}
 .paper{fill:#f6f2e7}.coral{stroke:#b76450}.coral-fill{fill:#b76450;stroke:none}
 @media(prefers-reduced-motion:no-preference){
  .is-seen .type-lines{animation:type-in 1.5s ease-out both;transform-origin:34px 87px}

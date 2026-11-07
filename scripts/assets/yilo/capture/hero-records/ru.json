@@ -1,0 +1,54 @@
+{
+  "id": "A6A91EFD-0282-5198-998F-F3AC58B64E65",
+  "originalText": "Пока не переписывай всё; оставь пространство для манёвра.",
+  "sourceHost": "codex",
+  "hostVersion": "0.166.0-alpha.6",
+  "capturedAt": 1793967080.949,
+  "status": "succeeded",
+  "configuration": {
+    "preservesOriginalTone": true,
+    "sourceLanguage": "ru",
+    "englishInputExplanationLanguage": "ru",
+    "learningNotesLanguage": "ru",
+    "dialect": "american",
+    "targetLanguages": [
+      "en",
+      "ja"
+    ],
+    "targetStyle": "natural"
+  },
+  "naturalEnglish": null,
+  "translations": [
+    {
+      "language": "en",
+      "text": "Hold off on a sweeping rewrite; leave us some wiggle room.",
+      "learningAdvice": [
+        {
+          "kind": "learning_point",
+          "category": "collocation",
+          "sourceExcerpt": "Пока не переписывай всё; оставь пространство для манёвра.",
+          "recommendation": "Wiggle room — это запас свободы для корректировки плана.",
+          "explanation": "Wiggle room — это запас свободы для корректировки плана.",
+          "exampleEnglish": "Let's leave some wiggle room."
+        }
+      ]
+    },
+    {
+      "language": "ja",
+      "text": "大幅な書き直しは控え、調整の余地を残して。",
+      "learningAdvice": []
+    }
+  ],
+  "learningAdvice": [
+    {
+      "kind": "learning_point",
+      "category": "collocation",
+      "sourceExcerpt": "Пока не переписывай всё; оставь пространство для манёвра.",
+      "recommendation": "Wiggle room — это запас свободы для корректировки плана.",
+      "explanation": "Wiggle room — это запас свободы для корректировки плана.",
+      "exampleEnglish": "Let's leave some wiggle room."
+    }
+  ],
+  "isBookmarked": false,
+  "origin": "captured"
+}

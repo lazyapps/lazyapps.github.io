@@ -10,8 +10,9 @@ The November 6 sessions **更新亦言应用图标** and **支持多目标语言
 app working tree, establish the new identity and multilingual features.
 `scripts/assets/yilo/product-source.json` records source hashes and the base
 commit. The identity and multilingual changes are now committed at `db2ec57`;
-the selected record was captured from the running app, then exported in all
-12 native UI languages from source `473a8fa`. The website
+the selected record was initially captured from the running app. Current
+localized source-language samples are exported in all 12 native UI languages
+from source `197ac0e`. The website
 does not read that project at build time.
 
 Public copy presents Yilo and its multilingual learning features as current.
@@ -49,19 +50,22 @@ iPhone remains TestFlight.
 - Flat SVG and transparent symbol: original contours, native positions and
   default fills. These do not reproduce native glass or lighting.
 - Open Graph: `1200 × 630`; shared Chinese 亦言 and shared Latin Yilo images.
+  The background directly reuses the native app icon's coral-red gradient,
+  keeping the original gold symbol clearly visible. Gradient, source hashes
+  and output receipts are in `scripts/assets/yilo/opengraph-source.json`.
   Both keep all brand content within the center `630 × 630`. Full and square
   outputs reviewed under `docs/reviews/yilo-20261107/`.
+- Press Kit excludes the retired Desktop wallpaper from the page, localized
+  READMEs, manifest and ZIP. Its unused source is archived locally.
 - App imagery: 36 native component captures, three for each of the 12 app UI
-  languages. Eleven learning cards use the exact user-selected real record
-  beginning “功能有更新，需重新截图”: original Chinese input, English/Japanese
-  translations and learning notes remain unchanged, with Romaji readings.
-  The English version uses the explicitly requested variant: English input,
-  Simplified Chinese/Japanese outputs, and English learning explanations.
-  The updated English card shows native Pinyin above Simplified Chinese words
-  and Romaji above Japanese words. Its settings enable both reading aids.
-  Its settings and language picker likewise select English as the source and
-  Simplified Chinese/Japanese as learning targets. Other settings show
-  English/Japanese/French targets. All preferences are isolated samples. Each
+  languages. Each learning card's input, configured source language and
+  explanations match its UI locale, including Traditional Chinese. Localized
+  examples preserve the selected record's meaning: features changed, so retake
+  the screenshots. English learns Simplified Chinese/Japanese; Japanese learns
+  English/Simplified Chinese; other locales learn English/Japanese. Settings
+  and language selection use exactly the same targets as the learning card.
+  Simplified Chinese outputs show native Pinyin; Japanese outputs use Romaji.
+  All preferences are isolated samples. Each
   capture uses the app's actual localization resources and native components;
   Arabic uses right-to-left layout. No raster text replacement, UI recreation
   or image resizing. Receipts include native-language checks, selected-record
@@ -99,8 +103,9 @@ with the original language resources. It runs one process per UI language,
 using process-local language arguments, and checks that native labels and the
 resolved locale match the requested language. It does not change system or
 user app preferences. Sample settings use a disposable directory; the real
-learning record is read from the checked-in, user-selected record snapshot
-(or the requested English example), not the user's database. The 2× PNGs keep their native pixels. Inspect exports
+learning record is read from the checked-in `capture/records/<locale>.json`
+sample, not the user's database. The original selected-record snapshot is
+retained as historical input. The 2× PNGs keep their native pixels. Inspect exports
 before regenerating the media packages. The build verifies per-language
 images, dimensions, source receipts and ZIP contents. Historical English
 media addresses continue to serve the current English capture.
@@ -143,7 +148,7 @@ to the home card, all twelve product locales, SEO, Press Kit summaries and
 READMEs, and the hero film. User-facing Chinese calls the selection “你想学的语言”
 or “学习语言”; multiple selection is “同时学习多种语言”.
 
-The current v21 downloadable film is fourteen seconds at 1280 × 608. Local MiniMax H3
+The current v22 downloadable film is fourteen seconds at 1280 × 608. Local MiniMax H3
 animates the original pelican/bicycle anchor on clean paper. Its long bill,
 throat pouch, fixed-length leg rig and webbed feet remain recognizable. No
 reference illustration is copied. Model prompt, first/last anchor and receipt
@@ -162,8 +167,12 @@ retyped; the video scales each complete image to fit, without cropping or paper
 texture over the UI. The final scene shows two people reusing an expression.
 Source phrases live in `src/i18n/yilo-examples.json`.
 
-The separate 12 short native captures augment the existing 36 product-page
-screenshots; the user's original selected record and English variant remain.
+The separate 12 short native captures augment the 36 product-page screenshots.
+Current web animations and v22 films use localized inputs from
+`capture/hero-records/<locale>.json`, with the same per-locale source and target
+rules as the product screenshots. The original Chinese and English fixtures
+remain historical inputs. `yilo-examples.json` and build checks keep native
+cards, animated input, accessible text and settings aligned.
 Capture with:
 
 ```sh
@@ -213,7 +222,7 @@ feature names, adapted from ASD-STE100. English descriptive sentences use at
 most 25 words. Other languages follow natural local phrasing. Optional notes,
 AI service calls, capture scope and platform conditions remain explicit.
 Press Kit keeps the same paragraphs and shows its introduction once. The hero title is an explicit playful exception to the plain-language style.
-Native record content is preserved. Validation summary: `docs/reviews/yilo-20261107/`.
+Native exports retain their pixels in website delivery. Validation summary: `docs/reviews/yilo-20261107/`.
 
 ## Illustrated detail section
 
@@ -229,6 +238,26 @@ heights or line clamps. Language-picker contents have equal 10px horizontal
 padding, a 44px target and a rounded keyboard-focus outline.
 
 
+## Per-locale illustration content
+
+`src/i18n/yilo-art-copy.json` makes the current language the source of each
+illustration: a distinctive glyph, an input keyword, and a short refinement
+request. The pelican thinks of that language's keyword (for example German
+“Spielraum”, French “marge” or Japanese “余地”). The ten feature/detail diagrams
+use its glyph and words for the input, saved record and cross-device review.
+The language tree gives the source the centered coral node, above its two
+learning targets. Refinement and reading diagrams follow the same target rules
+as the native captures; the Japanese version shows English and Pinyin-enabled
+Simplified Chinese. Existing hatched art, subtle motion and reduced-motion
+behavior remain shared. Every figure records `data-source-locale`, and builds
+verify its native-language content. The web and downloadable film share the
+pelican's localized thought word.
+
+The animated input uses a wrapping HTML text block inside SVG, with explicit
+source `lang` and RTL direction. Wide layouts allow two lines; portrait layouts
+allow three. All 12 locales were checked at 1280×900 and 390×844 without input
+clipping. Native screenshots remain complete and retain their aspect ratios.
+
 ## Page illustration style and typography
 
 The product pages and Yilo Press Kit retain the shared site navigation, paper,
@@ -239,7 +268,7 @@ introduction and download buttons; its former two-person illustration is
 removed. All six feature groups have original hatched diagrams for capture,
 multiple languages, learning notes, refinement, saved records and iPhone sync.
 The ten page diagrams share one viewport observer, play a brief motion once
-and remain static with reduced motion. Actual app screenshots remain byte-identical.
+and remain static with reduced motion. Website styling does not retouch the native exports.
 
 Yilo uses locally hosted handwritten web fonts: upright Patrick Hand for Latin, Neucha for Cyrillic,
 LXGW WenKai for Chinese/Japanese, Kalam for Devanagari, Nanum Pen Script for
@@ -252,6 +281,12 @@ venv's Python and `scripts/prepare-yilo-hand-fonts.py`. Complete notices are
 served at `/v/yilo/fonts/credits.txt`. Production builds use the checked-in
 WOFF2 files and do not fetch fonts. The checked copy has complete letter/mark
 coverage across all 12 locales.
+
+Web delivery uses a second, manual optimization stage documented in
+[`FONTS.md`](FONTS.md). After rebuilding these source WOFF2s, rebuild Astro,
+run `scripts/optimize-web-fonts.py`, and run the complete build again. Source
+fonts and notices remain intact; generated subsets live in
+`src/assets/fonts/optimized/`.
 
 For an English HTML heading-only revision, `python3 scripts/render-yilo-line-hero.py --retitle-only` updates all movie title metadata and receipts without re-encoding picture or audio.
 
@@ -320,7 +355,7 @@ checks: `docs/reviews/yilo-20261107/`.
 
 ## Repository hygiene
 
-Keep current product assets, the v21 downloadable films, reproducible render inputs,
+Keep current product assets, the v22 downloadable films, reproducible render inputs,
 licenses and source receipts in Git. Unpublished v6–v20 films, obsolete generation
 inputs, logs and iterative review captures are archived locally under `.build/`
 and excluded from Git. The concise release review is `docs/reviews/yilo-20261107/`.
