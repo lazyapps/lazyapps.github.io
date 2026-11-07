@@ -280,8 +280,8 @@
     }
   },
   {
-    "slug": "yiyan",
-    "name": "YiYan · 绎言",
+    "slug": "yilo",
+    "name": "Yilo",
     "platform": {
       "en": "Mac · iPhone",
       "zh": "Mac · iPhone"
@@ -291,12 +291,12 @@
       "zh": "Mac 下载 · iPhone TestFlight 测试版"
     },
     "summary": {
-      "en": "English text refinement on Mac, with explanations, examples and optional iPhone review.",
-      "zh": "Mac 英语润色工具，提供解释与例句，可选在 iPhone 上复习。"
+      "en": "Yilo helps you learn languages from your input in AI tools on Mac. It offers natural rewrites or translations, with notes and examples when useful. Study several languages at once.",
+      "zh": "在 Mac 上，用 AI 工具里的日常输入学语言。《亦言》提供更地道的改写或译文，按需附上解释和例句。可同时学多种语言。"
     },
     "description": {
-      "en": "Capture new input from AI coding tools without interrupting your work. Type Chinese, English or both. Refine a selection or the current text field in another app. Focused notes and examples. Ask follow-up questions about a record on your Mac. US or UK English; natural, casual or professional. Choose the explanation language and keep your tone. Browse by date, bookmark, copy and reuse. Retry failures or delete records you no longer need. Optional iCloud sync · iPhone TestFlight beta. Read aloud, practise recall, set daily reminders or continue in an AI app.\n\nLocal records by default; you opt into iCloud. English generation still uses the selected AI service. Filters low-value input and redacts high-confidence secrets. Preserves code, paths and URLs. Mac follow-up chats stay local and are neither synced nor exported. Delete cloud data separately while keeping Mac records.",
-      "zh": "自动捕捉 AI 编程工具中的新输入，不打断手头的事。 直接写中文、英文或混合句；也能快捷润色其他 App 的选区或输入框。 重点笔记配例句。在 Mac 上围绕这条记录继续追问。 美式或英式，自然、轻松或专业；自选讲解语言，也可保留原有语气。 日历找回、收藏重点、复制复用；失败可重试，不需要的记录随时删。 可选 iCloud 同步 · iPhone TestFlight 测试版。朗读、记忆复习、每日提醒，也能转交 AI 继续问。\n\n记录默认本地保存；iCloud 同步由你开启。生成英语仍会使用所选 AI 服务。 过滤低价值输入，识别并遮盖高置信度密钥；代码、路径和网址保留原样。 Mac 追问仅存在本机，不同步、不导出。可单独删除云端数据，保留 Mac 记录。"
+      "en": "Formerly YiYan.\n\nYilo saves your useful new input from supported AI tools as learning records. Your original request goes through as usual.\n\nChoose the languages you want to learn. Each language gets a natural rewrite or translation.\n\nEach learning language can have up to three notes. You can ask follow-up questions about a record on Mac.\n\nEnter text directly or refine text in another app. Refinement uses the first language on your learning list.\n\nFind records by date, bookmark them and copy expressions. You can retry failed records or delete records.\n\nEnable iCloud to read, listen to and review records on iPhone. Daily reminders are available. The iPhone app uses TestFlight.",
+      "zh": "原名《绎言》（YiYan）。\n\n《亦言》把你在 AI 工具中的有价值新输入整理成记录。原请求照常发送。\n\n选择你想学的语言。每种语言都有地道的改写或译文。\n\n每种学习语言可附最多 3 条笔记。你可在 Mac 上围绕记录继续追问。\n\n直接输入一句话，或润色其他 App 的文字。润色使用列表中的第一种学习语言。\n\n按日期找记录，收藏重点，复制表达。失败可重试，记录可删除。\n\n开启 iCloud 后，可在 iPhone 上查看记录、朗读和记忆复习。支持每日提醒。iPhone 版通过 TestFlight 提供。"
     },
     "links": [
       {
@@ -304,7 +304,7 @@
           "en": "Mac download / releases",
           "zh": "Mac 下载 / 发行版本"
         },
-        "url": "https://github.com/cxa/yiyan/releases"
+        "url": "https://github.com/cxa/yilo/releases"
       },
       {
         "label": {
@@ -312,18 +312,11 @@
           "zh": "iPhone TestFlight 测试版"
         },
         "url": "https://testflight.apple.com/join/cbnauaKB"
-      },
-      {
-        "label": {
-          "en": "Source code",
-          "zh": "源代码"
-        },
-        "url": "https://github.com/cxa/yiyan"
       }
     ],
     "assets": [
       {
-        "source": "src/assets/img/yiyan-icon.png",
+        "source": "src/assets/img/yilo-icon.png",
         "filename": "icon.png",
         "kind": "icon",
         "label": {
@@ -336,33 +329,46 @@
         }
       },
       {
-        "source": "src/assets/img/yiyan-showcase.png",
-        "filename": "learning-notes-en.png",
+        "source": "scripts/assets/presskit/yilo/en/learning-record.png",
+        "filename": "learning-record.png",
         "kind": "screenshot",
         "label": {
-          "en": "Learning notes · English",
-          "zh": "学习笔记 · 英语"
+          "en": "Learning record · Pinyin and Romaji",
+          "zh": "学习记录 · 罗马字"
         },
         "note": {
-          "en": "Original native capture supplied by the developer on 2026-10-08, verified against the current app on 2026-10-10. Shared English interface with example Chinese writing and English learning notes; pixels are unchanged.",
-          "zh": "开发者于 2026-10-08 提供的原始原生截图，于 2026-10-10 核对当前 App。共享英语界面，展示中文示例文字与英语学习笔记，保留原始像素。"
+          "en": "English example: English input, Simplified Chinese with Pinyin, Japanese with Romaji, and English learning notes.",
+          "zh": "学习记录：中文原话、英语和日语译文、学习笔记及罗马字。简体中文界面，保留真实记录内容。"
         }
       },
       {
-        "source": "src/assets/img/yiyan-showcase-detail.png",
-        "filename": "follow-up-en.png",
+        "source": "scripts/assets/presskit/yilo/en/learning-settings.png",
+        "filename": "learning-settings.png",
         "kind": "screenshot",
         "label": {
-          "en": "Learning notes · English",
-          "zh": "学习笔记 · 英语"
+          "en": "Learning language settings",
+          "zh": "学习语言设置"
         },
         "note": {
-          "en": "Original native capture supplied by the developer on 2026-10-08, verified against the current app on 2026-10-10. Shared English interface with example Chinese writing and English learning notes; pixels are unchanged.",
-          "zh": "开发者于 2026-10-08 提供的原始原生截图，于 2026-10-10 核对当前 App。共享英语界面，展示中文示例文字与英语学习笔记，保留原始像素。"
+          "en": "English settings: English input, Simplified Chinese and Japanese learning languages, with Pinyin and Romaji enabled. Sample preferences.",
+          "zh": "学习语言设置：中文输入，学习英语、日语和法语。简体中文界面，使用示例设置。"
         }
       },
       {
-        "source": "src/assets/img/yiyan-opengraph-shared.png",
+        "source": "scripts/assets/presskit/yilo/en/language-selection.png",
+        "filename": "language-selection.png",
+        "kind": "screenshot",
+        "label": {
+          "en": "Choose learning languages",
+          "zh": "选择学习语言"
+        },
+        "note": {
+          "en": "English language picker with Simplified Chinese and Japanese selected. Sample preferences.",
+          "zh": "语言选择：已选英语、日语和法语。简体中文界面，使用示例设置。"
+        }
+      },
+      {
+        "source": "src/assets/img/yilo-opengraph-shared.png",
         "filename": "social-card.png",
         "kind": "artwork",
         "label": {
@@ -375,7 +381,7 @@
         }
       },
       {
-        "source": "src/assets/img/yiyan-desert-desktop.png",
+        "source": "src/assets/img/yilo-desert-desktop.png",
         "filename": "desktop-wallpaper.png",
         "kind": "background",
         "label": {
@@ -388,7 +394,7 @@
         }
       },
       {
-        "source": "scripts/assets/presskit/vectors/yiyan-flat.svg",
+        "source": "scripts/assets/presskit/vectors/yilo-flat.svg",
         "filename": "artwork-flat.svg",
         "kind": "vector",
         "labelKey": "flatVector",
@@ -404,8 +410,8 @@
       }
     ],
     "names": {
-      "en": "YiYan",
-      "zh": "绎言 · YiYan"
+      "en": "Yilo",
+      "zh": "亦言 · Yilo"
     }
   },
   {

@@ -1,0 +1,33 @@
+{
+  "checkedOn": "2026-11-06",
+  "project": "_vibe/_yiyan",
+  "baseCommit": "db2ec573c2bafc1966a80933c5172e497d63955e",
+  "sourceState": "Rename and multilingual learning changes committed in db2ec57. On 2026-11-06, the user-selected actual learning card was captured from the current app window and native settings components were exported separately with sample data.",
+  "sourceHashes": {
+    "CONTEXT.md": "5f0f4813d6835ad354d28b12d2f36f423ca76cc5d4cebad2ffa8e2bb6e35f1f9",
+    "Sources/YiYanCore/Domain/Models.swift": "1c5448ea40c06641d815564ca4138cad88e79f02e07c0da69b0f362c7fc65539",
+    "Sources/YiYanCore/Configuration/AppSettings.swift": "9b56af5d82e0f70aa568c5f0c85a9c23ae111adfed374e1828e2946f4778da4f",
+    "Sources/YiYanUI/SystemIntegration/FocusedTextRefinement.swift": "ad722c7f5fd7521d2b8081fff745bf2b9bbd282fb17c7d6be7ebbffa095ec9b5",
+    "Sources/YiYanUI/SystemIntegration/MenuBarController.swift": "7105be894ad183bbe68abc2843978f757c936a3e63507888be8ac9d59d9c220d",
+    "Sources/YiYanCore/Observation/TranscriptLogObserver.swift": "249f3f4d6c54900b77e246d79299b7608ff531c7dc84b2b3b21517b44e0156b9"
+  },
+  "sessions": [
+    "支持多目标语言学习设置",
+    "更新亦言应用图标"
+  ],
+  "publicRelease": "https://github.com/cxa/yilo/releases/tag/v261023.0",
+  "facts": {
+    "name": "Yilo; 亦言 in both Chinese scripts; 《亦言》 in Chinese prose",
+    "capture": "Pi, Claude Code, Codex, OpenCode, Antigravity; new user input while running only",
+    "targets": "Ordered nonempty selection, no selection cap; source initially system; target English unless source English, then Simplified Chinese",
+    "refinement": "First selected target language",
+    "japanese": "Optional Hiragana above kanji or Romaji above Japanese word groups; readings off by default. Verified against current native views and sample captures.",
+    "sync": "Local by default; iCloud opt-in; iPhone TestFlight beta",
+    "distribution": "Public releases: cxa/yilo. Private source: cxa/yilo-src. Homebrew tap: cxa/yilo; existing Cask token: yiyan."
+  },
+  "observedPublicRelease": "https://github.com/cxa/yiyan/releases/tag/v261023.0",
+  "sourceRepository": "cxa/yilo-src",
+  "distributionRepository": "cxa/yilo",
+  "screenshotSourceCommit": "473a8fac19ac6b55b9604de50d851848854be133",
+  "screenshotState": "36 native component captures, three per supported App UI language. Eleven retain the selected real record. The explicitly requested English variant uses English input, Simplified Chinese/Japanese outputs and English learning explanations, with matching sample preferences."
+}

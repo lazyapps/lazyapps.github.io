@@ -1,0 +1,16 @@
+{
+  "labels" : {
+    "advice.category.collocation" : "शब्द संयोजन",
+    "advice.category.translation_pattern" : "अनुवाद पैटर्न",
+    "advice.kind.learning_point" : "सीखने का बिंदु",
+    "language.japanese_reading.help" : "हिरागाना संबंधित कांजी के ऊपर और रोमाजी हर जापानी शब्द के ऊपर उससे मिलाकर दिखता है।",
+    "language.notes" : "सीखने के नोट्स",
+    "language.search" : "भाषाएँ खोजें",
+    "language.section" : "सीखने की भाषाएँ",
+    "language.targets" : "लक्ष्य भाषाएँ",
+    "record.example" : "उदाहरण"
+  },
+  "nativeLocale" : "hi",
+  "operatingSystem" : "संस्करण 27.0.1 (बिल्ड 26A434)",
+  "requestedLocale" : "hi"
+}

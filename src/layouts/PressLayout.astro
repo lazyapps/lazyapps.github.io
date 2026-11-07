@@ -11,6 +11,7 @@ import SitePreloader from '../components/SitePreloader.astro';
 import { languageOptions, pressPresentations, calmonPressOptions, calmonPressUI } from '../content/presskit-presentation.mjs';
 import { glossary } from '../content/presskit-catalog.mjs';
 import siteCssUrl from '$assets/s/site.css?url';
+import yiloHandCssUrl from '$assets/s/yilo-hand.css?url';
 import gsapUrl from '$assets/vendor/gsap.min.js?url';
 import scrollTriggerUrl from '$assets/vendor/ScrollTrigger.min.js?url';
 import customEaseUrl from '$assets/vendor/CustomEase.min.js?url';
@@ -26,7 +27,7 @@ const presentation = { product: slug, products: slug ? pressPresentations.filter
 const loaderName = slug ? presentation.products[0].locales.en.name.toUpperCase() : 'LAZYAPPS';
 ---
 <!doctype html>
-<html lang="en" class="no-js">
+<html lang="en" class="no-js" data-yilo={slug === 'yilo' ? '' : undefined}>
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
@@ -36,6 +37,7 @@ const loaderName = slug ? presentation.products[0].locales.en.name.toUpperCase()
     <SocialMeta title={title} description={description} url={url} image={new URL(image, Astro.site).href} imageAlt={title} imageWidth={1200} imageHeight={630} locale="en_US" />
     {slug === 'calmon' && <CalmonFavicon />}
     <link rel="stylesheet" href={siteCssUrl}>
+    {slug === 'yilo' && <link rel="stylesheet" href={yiloHandCssUrl}>}
     <script is:inline>
       document.documentElement.classList.remove('no-js');
       setTimeout(function () {

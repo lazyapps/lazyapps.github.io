@@ -1,0 +1,603 @@
+{
+  "languages": [
+    "ar",
+    "de",
+    "en",
+    "es",
+    "fr",
+    "hi",
+    "ja",
+    "ko",
+    "pt-BR",
+    "ru",
+    "zh-Hans",
+    "zh-Hant"
+  ],
+  "files": [
+    {
+      "path": "icon.png",
+      "contentLanguage": "und",
+      "width": 1024,
+      "height": 1024,
+      "format": "PNG",
+      "bytes": 1846294,
+      "sha256": "d22c7b5e44bf0489e19309cd50835ef69f8a5cb0c11140272ac6d1b737d59987"
+    },
+    {
+      "path": "ar/learning-record.png",
+      "contentLanguage": "ar",
+      "width": 1488,
+      "height": 956,
+      "format": "PNG",
+      "bytes": 195744,
+      "sha256": "db5c3f564f59aaf34613f8dfa7e3eb80e95487dc0800eef5d48ab402154e4ae4"
+    },
+    {
+      "path": "ar/learning-settings.png",
+      "contentLanguage": "ar",
+      "width": 1240,
+      "height": 880,
+      "format": "PNG",
+      "bytes": 78549,
+      "sha256": "de2be54a73a3d4d7a4fb8a2c086c9e73e3d9b6cecd714e0293567fbb9dd07b9b"
+    },
+    {
+      "path": "ar/language-selection.png",
+      "contentLanguage": "ar",
+      "width": 1080,
+      "height": 1120,
+      "format": "PNG",
+      "bytes": 122762,
+      "sha256": "9d941c8a6fcaadc5e49dac3f1b477fd56a19838bf6a2f1635e9383b6c62a859f"
+    },
+    {
+      "path": "desktop-wallpaper.png",
+      "contentLanguage": "und",
+      "width": 1536,
+      "height": 1024,
+      "format": "PNG",
+      "bytes": 1958653,
+      "sha256": "01e359546c88d48ae98f04d04ca7a3f33403d9477ee9c42ef54740fe16757604"
+    },
+    {
+      "path": "artwork-flat.svg",
+      "contentLanguage": "und",
+      "width": 1024.0,
+      "height": 1024.0,
+      "format": "SVG",
+      "bytes": 3030,
+      "sha256": "28ed156d18c406c8ca1d42eb085590f5f9abb9981f724e2b61cf4dd1580250b2"
+    },
+    {
+      "path": "social-card.png",
+      "contentLanguage": "und",
+      "width": 1200,
+      "height": 630,
+      "format": "PNG",
+      "bytes": 151170,
+      "sha256": "2c9e527d03a9880b1c948f69230a7f4f3a678345f73f46d10292ddf417973dd6"
+    },
+    {
+      "path": "ar/hero-record.png",
+      "contentLanguage": "ar",
+      "width": 1040,
+      "height": 564,
+      "format": "PNG",
+      "bytes": 80476,
+      "sha256": "e30e9e5497b5ba96e5dd70f2c2111e5b6b8aa1c7867d23230fefb4f941f4597a"
+    },
+    {
+      "path": "ar/hero-animation.jpg",
+      "contentLanguage": "ar",
+      "width": 1280,
+      "height": 608,
+      "format": "JPEG",
+      "bytes": 104844,
+      "sha256": "397c2773536e1478de1d011f87f220ff2658cb8b4f59e42d9682e114ed050f3e"
+    },
+    {
+      "path": "de/learning-record.png",
+      "contentLanguage": "de",
+      "width": 1488,
+      "height": 956,
+      "format": "PNG",
+      "bytes": 194140,
+      "sha256": "aff5ae09543068acc7b41c393d4972ca966bf4ab3cd1090693fe50735d60baee"
+    },
+    {
+      "path": "de/learning-settings.png",
+      "contentLanguage": "de",
+      "width": 1240,
+      "height": 880,
+      "format": "PNG",
+      "bytes": 87608,
+      "sha256": "21c8677e2d9702c57840a26a1cc79890e9a22fe1b70dff191e9f473b2acc113c"
+    },
+    {
+      "path": "de/language-selection.png",
+      "contentLanguage": "de",
+      "width": 1080,
+      "height": 1120,
+      "format": "PNG",
+      "bytes": 133943,
+      "sha256": "7fba7b958c8a8aa258b25d994c942b4e36fa4027ad0dc64541860b0e33c4640f"
+    },
+    {
+      "path": "de/hero-record.png",
+      "contentLanguage": "de",
+      "width": 1040,
+      "height": 564,
+      "format": "PNG",
+      "bytes": 79752,
+      "sha256": "48b249ecd4f2431770f30a37d58e6126c083dafb210ef4748868f10b0aadede4"
+    },
+    {
+      "path": "de/hero-animation.jpg",
+      "contentLanguage": "de",
+      "width": 1280,
+      "height": 608,
+      "format": "JPEG",
+      "bytes": 104687,
+      "sha256": "d2843e6cc7328c7eeb3ebbd37928ecbca4aa3eaf60409f1ed8961f8169c952be"
+    },
+    {
+      "path": "en/learning-record.png",
+      "contentLanguage": "en",
+      "width": 1488,
+      "height": 1008,
+      "format": "PNG",
+      "bytes": 196855,
+      "sha256": "6965b8e45df33a112a8e4a384bacbc7065e8a9fa487d4cf725a627ff437ef759"
+    },
+    {
+      "path": "en/learning-settings.png",
+      "contentLanguage": "en",
+      "width": 1240,
+      "height": 880,
+      "format": "PNG",
+      "bytes": 95111,
+      "sha256": "f7aad9bc84be9f3a4dadb30c3c41d3db66b8e85011101429f32051e9ff63f1b9"
+    },
+    {
+      "path": "en/language-selection.png",
+      "contentLanguage": "en",
+      "width": 1080,
+      "height": 1120,
+      "format": "PNG",
+      "bytes": 132138,
+      "sha256": "2f95314395103ab1d1418a2acfea6e2c90a4233f711c14836b808457012c5f13"
+    },
+    {
+      "path": "en/hero-record.png",
+      "contentLanguage": "en",
+      "width": 1040,
+      "height": 622,
+      "format": "PNG",
+      "bytes": 91666,
+      "sha256": "9eb09db1ac1dd94a81022ad13614590ff2989ae8e4db2aa0d680e03db5b67f14"
+    },
+    {
+      "path": "en/hero-animation.jpg",
+      "contentLanguage": "en",
+      "width": 1280,
+      "height": 608,
+      "format": "JPEG",
+      "bytes": 104906,
+      "sha256": "f23a0e31f3faf75f99e67b4c594dd821c45bc4a6caa4ebdaa5c525107fa9c931"
+    },
+    {
+      "path": "es/learning-record.png",
+      "contentLanguage": "es",
+      "width": 1488,
+      "height": 956,
+      "format": "PNG",
+      "bytes": 201507,
+      "sha256": "09266b2234167e6460771730826a3eb28be59b9b1ecc6354b3d3737984221b65"
+    },
+    {
+      "path": "es/learning-settings.png",
+      "contentLanguage": "es",
+      "width": 1240,
+      "height": 880,
+      "format": "PNG",
+      "bytes": 86025,
+      "sha256": "566d6c5eaa41bb51eca779bd872b47e18f29f5cd1ae83e94e77238a86a817fb6"
+    },
+    {
+      "path": "es/language-selection.png",
+      "contentLanguage": "es",
+      "width": 1080,
+      "height": 1120,
+      "format": "PNG",
+      "bytes": 127513,
+      "sha256": "1c22ebc1db6e0c25a4b408b0620b80958d09d03656e334a803653cc6d88382ec"
+    },
+    {
+      "path": "es/hero-record.png",
+      "contentLanguage": "es",
+      "width": 1040,
+      "height": 564,
+      "format": "PNG",
+      "bytes": 81818,
+      "sha256": "b5da2038ebfafe21e055cdeca2083f70a4295e5833bfb0722e33b4b42937c49b"
+    },
+    {
+      "path": "es/hero-animation.jpg",
+      "contentLanguage": "es",
+      "width": 1280,
+      "height": 608,
+      "format": "JPEG",
+      "bytes": 105449,
+      "sha256": "3dd38ce98e204a19f6064ebd9df07407ce346739b8a57e89162e20a6ce4905e6"
+    },
+    {
+      "path": "fr/learning-record.png",
+      "contentLanguage": "fr",
+      "width": 1488,
+      "height": 956,
+      "format": "PNG",
+      "bytes": 199445,
+      "sha256": "1849ca13e2d2f271f1751767d9026dd0ca726b2c6f0711e8260853136c1e5d32"
+    },
+    {
+      "path": "fr/learning-settings.png",
+      "contentLanguage": "fr",
+      "width": 1240,
+      "height": 880,
+      "format": "PNG",
+      "bytes": 85625,
+      "sha256": "c84503f6af467d44d36bcd2d70c7c383bf6ee92992469a3a8f0f8459fc75741d"
+    },
+    {
+      "path": "fr/language-selection.png",
+      "contentLanguage": "fr",
+      "width": 1080,
+      "height": 1120,
+      "format": "PNG",
+      "bytes": 127931,
+      "sha256": "3902421e5a130d544b50bb7bbde111956e60886249f2f2a037e7e618f4127fed"
+    },
+    {
+      "path": "fr/hero-record.png",
+      "contentLanguage": "fr",
+      "width": 1040,
+      "height": 564,
+      "format": "PNG",
+      "bytes": 81362,
+      "sha256": "7d1e0d773591d4a910ae7ea1c6e4d3558079c8ddf5e50efe68bb48d98e895bd3"
+    },
+    {
+      "path": "fr/hero-animation.jpg",
+      "contentLanguage": "fr",
+      "width": 1280,
+      "height": 608,
+      "format": "JPEG",
+      "bytes": 105910,
+      "sha256": "06264595af4d6e1797cf616b65900564c920b224a687d056889771044ee19dc2"
+    },
+    {
+      "path": "hi/learning-record.png",
+      "contentLanguage": "hi",
+      "width": 1488,
+      "height": 956,
+      "format": "PNG",
+      "bytes": 194527,
+      "sha256": "5bf88c7ca83bdaa9c6f308c471f5463a8a7e85bb62db774415404108744f41a9"
+    },
+    {
+      "path": "hi/learning-settings.png",
+      "contentLanguage": "hi",
+      "width": 1240,
+      "height": 880,
+      "format": "PNG",
+      "bytes": 77255,
+      "sha256": "d4d977cb0609ab8f7f30d92019e6bd036dc6a4985ac2ba252fdef0102e5aed6d"
+    },
+    {
+      "path": "hi/language-selection.png",
+      "contentLanguage": "hi",
+      "width": 1080,
+      "height": 1120,
+      "format": "PNG",
+      "bytes": 118962,
+      "sha256": "19408bc587315f321395460d362d89a3521c1185bd7e80f2094a520cdc01d928"
+    },
+    {
+      "path": "hi/hero-record.png",
+      "contentLanguage": "hi",
+      "width": 1040,
+      "height": 564,
+      "format": "PNG",
+      "bytes": 78618,
+      "sha256": "19f75b85fbaa7cbc3fe1c66c88262f4d1604c4568cf97a18efd6417429fe43dc"
+    },
+    {
+      "path": "hi/hero-animation.jpg",
+      "contentLanguage": "hi",
+      "width": 1280,
+      "height": 608,
+      "format": "JPEG",
+      "bytes": 104336,
+      "sha256": "7c40da84b9e3d90d5cc54f64b5895d4ddf332ace832f4b167bb14fd8644e18d4"
+    },
+    {
+      "path": "ja/learning-record.png",
+      "contentLanguage": "ja",
+      "width": 1488,
+      "height": 956,
+      "format": "PNG",
+      "bytes": 193496,
+      "sha256": "3ae08cf252fa42c37e10150e7735c39fa5dc75a554ead48fc2e0fba2e2a3c19d"
+    },
+    {
+      "path": "ja/learning-settings.png",
+      "contentLanguage": "ja",
+      "width": 1240,
+      "height": 880,
+      "format": "PNG",
+      "bytes": 88986,
+      "sha256": "ba1d3b6f86db2f76dda37a642a2b2e73418711b90178ec2050e1604d492f93f0"
+    },
+    {
+      "path": "ja/language-selection.png",
+      "contentLanguage": "ja",
+      "width": 1080,
+      "height": 1120,
+      "format": "PNG",
+      "bytes": 133793,
+      "sha256": "0d4d61c102e99405a1b19226c13ea763d2c03a6021b6e9e0dc511e84b6fa7ba3"
+    },
+    {
+      "path": "ja/hero-record.png",
+      "contentLanguage": "ja",
+      "width": 1040,
+      "height": 564,
+      "format": "PNG",
+      "bytes": 78983,
+      "sha256": "7ab9db797fa6f7e206eb4607550c3e93a21166b729ca41aa84b9940beaa03ff8"
+    },
+    {
+      "path": "ja/hero-animation.jpg",
+      "contentLanguage": "ja",
+      "width": 1280,
+      "height": 608,
+      "format": "JPEG",
+      "bytes": 103662,
+      "sha256": "5d95ec50cf278f3e3d873439a135480fe83fcb9dd77ba33765a5bd4995f44232"
+    },
+    {
+      "path": "ko/learning-record.png",
+      "contentLanguage": "ko",
+      "width": 1488,
+      "height": 956,
+      "format": "PNG",
+      "bytes": 183590,
+      "sha256": "554a0ac5654404a40f307d124a5ce1f427352ff94b82df6a648601a67bee2fda"
+    },
+    {
+      "path": "ko/learning-settings.png",
+      "contentLanguage": "ko",
+      "width": 1240,
+      "height": 880,
+      "format": "PNG",
+      "bytes": 76066,
+      "sha256": "0e18b35ee6f38af0d8d5128cc87264bcd4a57eebcd3ffa2e0f5bd47a23461be7"
+    },
+    {
+      "path": "ko/language-selection.png",
+      "contentLanguage": "ko",
+      "width": 1080,
+      "height": 1120,
+      "format": "PNG",
+      "bytes": 118689,
+      "sha256": "687cc0c9ad735c996f6a9884788ba37891f76572962e6e22c8e2cc8ad6d37ade"
+    },
+    {
+      "path": "ko/hero-record.png",
+      "contentLanguage": "ko",
+      "width": 1040,
+      "height": 564,
+      "format": "PNG",
+      "bytes": 77320,
+      "sha256": "eb38a749bfb3c3c6440f5bb5a509bafb086037421a2c4f342c970563eb86dc13"
+    },
+    {
+      "path": "ko/hero-animation.jpg",
+      "contentLanguage": "ko",
+      "width": 1280,
+      "height": 608,
+      "format": "JPEG",
+      "bytes": 103582,
+      "sha256": "873a6807ec7c96fef495991c29cc0a8dc1f196ca44a7c8ccefb747bd59ae78d1"
+    },
+    {
+      "path": "pt-BR/learning-record.png",
+      "contentLanguage": "pt-BR",
+      "width": 1488,
+      "height": 956,
+      "format": "PNG",
+      "bytes": 198314,
+      "sha256": "5dd6389ac8150f2f398a84b9fd58736af42d6994bd0cabd2dde53489253887f8"
+    },
+    {
+      "path": "pt-BR/learning-settings.png",
+      "contentLanguage": "pt-BR",
+      "width": 1240,
+      "height": 880,
+      "format": "PNG",
+      "bytes": 85744,
+      "sha256": "b0ca94e5fdfa1801687ef21a56f6f03b28134bee574462fa37bcac05ea6f058f"
+    },
+    {
+      "path": "pt-BR/language-selection.png",
+      "contentLanguage": "pt-BR",
+      "width": 1080,
+      "height": 1120,
+      "format": "PNG",
+      "bytes": 127728,
+      "sha256": "a8c4e28f87a67b2627e835e178f4060daee8fca76189f675a930614fce1e8106"
+    },
+    {
+      "path": "pt-BR/hero-record.png",
+      "contentLanguage": "pt-BR",
+      "width": 1040,
+      "height": 564,
+      "format": "PNG",
+      "bytes": 80514,
+      "sha256": "6f372bb00ea33dd37b844a65d0456a5261b9bbac9c19aa3aa60b665509aed676"
+    },
+    {
+      "path": "pt-BR/hero-animation.jpg",
+      "contentLanguage": "pt-BR",
+      "width": 1280,
+      "height": 608,
+      "format": "JPEG",
+      "bytes": 105023,
+      "sha256": "58e70d9c69839c01c57bdcbaef4c33760c834d5154120d8887c7da05a8f066d0"
+    },
+    {
+      "path": "ru/learning-record.png",
+      "contentLanguage": "ru",
+      "width": 1488,
+      "height": 956,
+      "format": "PNG",
+      "bytes": 199004,
+      "sha256": "ae7b50c0d3ed61688d0088f978f7d58d9890d1d969d3f74ce954771833527e15"
+    },
+    {
+      "path": "ru/learning-settings.png",
+      "contentLanguage": "ru",
+      "width": 1240,
+      "height": 880,
+      "format": "PNG",
+      "bytes": 87890,
+      "sha256": "fa2ca23ada5af24bdda60eb7f0d8bfaf49f64ff240ec7502f52efa9e07621801"
+    },
+    {
+      "path": "ru/language-selection.png",
+      "contentLanguage": "ru",
+      "width": 1080,
+      "height": 1120,
+      "format": "PNG",
+      "bytes": 134126,
+      "sha256": "59194df5a353c47f37ba8b9da0032255d89a1cb9b7b78d99a2e851940e103d5a"
+    },
+    {
+      "path": "ru/hero-record.png",
+      "contentLanguage": "ru",
+      "width": 1040,
+      "height": 564,
+      "format": "PNG",
+      "bytes": 81298,
+      "sha256": "c738aae79c0fe3e5ad873a8fed03f874de8b239ded3315845965c38f93d61ad0"
+    },
+    {
+      "path": "ru/hero-animation.jpg",
+      "contentLanguage": "ru",
+      "width": 1280,
+      "height": 608,
+      "format": "JPEG",
+      "bytes": 105890,
+      "sha256": "87e9168a4da632d3b8b59d43575231806ff565ec5804c2e3bc4bb4a6c7c632f7"
+    },
+    {
+      "path": "zh-Hans/learning-record.png",
+      "contentLanguage": "zh-Hans",
+      "width": 1488,
+      "height": 956,
+      "format": "PNG",
+      "bytes": 193168,
+      "sha256": "409f24f305904ae6c36c612c22733f39cf035b0e32afddb264513fd767035929"
+    },
+    {
+      "path": "zh-Hans/learning-settings.png",
+      "contentLanguage": "zh-Hans",
+      "width": 1240,
+      "height": 880,
+      "format": "PNG",
+      "bytes": 75961,
+      "sha256": "03ca1fb160c73ffa7193f436269ba062b062952b8be603200632a35adbb8e0d7"
+    },
+    {
+      "path": "zh-Hans/language-selection.png",
+      "contentLanguage": "zh-Hans",
+      "width": 1080,
+      "height": 1120,
+      "format": "PNG",
+      "bytes": 124532,
+      "sha256": "e8115ac319d4fca4aa5f40152854dbd514fe3d147bdf67949da53071564d0ade"
+    },
+    {
+      "path": "social-card-zh.png",
+      "contentLanguage": "zh-Hant",
+      "width": 1200,
+      "height": 630,
+      "format": "PNG",
+      "bytes": 161598,
+      "sha256": "965abf26fb0d49e2143ef1269178206df9c7590f6d860cd55fe51bc5474f2d49"
+    },
+    {
+      "path": "zh-Hans/hero-record.png",
+      "contentLanguage": "zh-Hans",
+      "width": 1040,
+      "height": 564,
+      "format": "PNG",
+      "bytes": 78154,
+      "sha256": "4e237705a2c8c8008ba2ac63c71d8a7d37509429557b2dcb061c406b40b6a855"
+    },
+    {
+      "path": "zh-Hans/hero-animation.jpg",
+      "contentLanguage": "zh-Hans",
+      "width": 1280,
+      "height": 608,
+      "format": "JPEG",
+      "bytes": 104028,
+      "sha256": "debfe5a1edf165a3b02bad840389f3f84f546a3d89e63b7a6a86f71ffb81f41c"
+    },
+    {
+      "path": "zh-Hant/learning-record.png",
+      "contentLanguage": "zh-Hant",
+      "width": 1488,
+      "height": 956,
+      "format": "PNG",
+      "bytes": 195156,
+      "sha256": "a76e5402be55458a2072a650160313667635a8d197575cd739034bbc5227b29d"
+    },
+    {
+      "path": "zh-Hant/learning-settings.png",
+      "contentLanguage": "zh-Hant",
+      "width": 1240,
+      "height": 880,
+      "format": "PNG",
+      "bytes": 78950,
+      "sha256": "4cf38c058507e4932e0eb35a205674b03c5af9a3e9751b0f430d55d9fe091793"
+    },
+    {
+      "path": "zh-Hant/language-selection.png",
+      "contentLanguage": "zh-Hant",
+      "width": 1080,
+      "height": 1120,
+      "format": "PNG",
+      "bytes": 125728,
+      "sha256": "ff67405d7c7f2c1370c2d95519b600c8b5ef18443542b18ee6af6111566d44f5"
+    },
+    {
+      "path": "zh-Hant/hero-record.png",
+      "contentLanguage": "zh-Hant",
+      "width": 1040,
+      "height": 564,
+      "format": "PNG",
+      "bytes": 79111,
+      "sha256": "0d292da29015622860c398eb57f388378d73627ed7632898f642906a7d85074e"
+    },
+    {
+      "path": "zh-Hant/hero-animation.jpg",
+      "contentLanguage": "zh-Hant",
+      "width": 1280,
+      "height": 608,
+      "format": "JPEG",
+      "bytes": 104028,
+      "sha256": "90c84ec4dca67a1b25891352983cb5f4e5f718d70af5eeea6119639b1660bae0"
+    }
+  ]
+}

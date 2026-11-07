@@ -1,0 +1,16 @@
+{
+  "labels" : {
+    "advice.category.collocation" : "연어",
+    "advice.category.translation_pattern" : "번역 패턴",
+    "advice.kind.learning_point" : "학습 포인트",
+    "language.japanese_reading.help" : "히라가나는 해당 한자 위에, 로마자는 해당 일본어 단어 위에 맞춰 표시합니다.",
+    "language.notes" : "학습 노트",
+    "language.search" : "언어 검색",
+    "language.section" : "학습 언어",
+    "language.targets" : "목표 언어",
+    "record.example" : "예시"
+  },
+  "nativeLocale" : "ko",
+  "operatingSystem" : "버전 27.0.1(빌드 26A434)",
+  "requestedLocale" : "ko"
+}

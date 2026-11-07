@@ -1,0 +1,63 @@
+{
+  "id": "A8912292-1C83-46DA-BDCC-DA7D16C46673",
+  "originalText": "功能有更新，需重新截图",
+  "sourceHost": "codex",
+  "hostVersion": "0.166.0-alpha.6",
+  "capturedAt": 1793967080.949,
+  "status": "succeeded",
+  "configuration": {
+    "preservesOriginalTone": true,
+    "sourceLanguage": "automatic",
+    "englishInputExplanationLanguage": "zh-Hans-US",
+    "learningNotesLanguage": "automatic",
+    "dialect": "american",
+    "targetLanguages": [
+      "en",
+      "ja"
+    ],
+    "targetStyle": "natural"
+  },
+  "naturalEnglish": "The features have been updated, so we need to retake the screenshots.",
+  "translations": [
+    {
+      "language": "en",
+      "learningAdvice": [
+        {
+          "kind": "learning_point",
+          "category": "collocation",
+          "sourceExcerpt": "需重新截图",
+          "explanation": "“截图”作动词通常说 take a screenshot；“重新截图”可以用 retake the screenshots，简洁地表达需要重新拍摄已有截图。",
+          "recommendation": "Use “retake the screenshots” to express taking replacement screenshots.",
+          "exampleEnglish": "We need to retake the screenshots after the update."
+        }
+      ],
+      "text": "The features have been updated, so we need to retake the screenshots."
+    },
+    {
+      "language": "ja",
+      "learningAdvice": [
+        {
+          "exampleEnglish": "更新後にスクリーンショットを撮り直してください。",
+          "kind": "learning_point",
+          "category": "translation_pattern",
+          "sourceExcerpt": "重新截图",
+          "recommendation": "「重新截图」は「スクリーンショットを撮り直す」と表現します。",
+          "explanation": "日语可以用动词连用形加「直す」表达重新做某事。「撮り直す」就是重新拍摄，适合表达因功能更新而重新截图。"
+        }
+      ],
+      "text": "機能が更新されたため、スクリーンショットを撮り直す必要があります。"
+    }
+  ],
+  "learningAdvice": [
+    {
+      "category": "collocation",
+      "exampleEnglish": "We need to retake the screenshots after the update.",
+      "kind": "learning_point",
+      "sourceExcerpt": "需重新截图",
+      "recommendation": "Use “retake the screenshots” to express taking replacement screenshots.",
+      "explanation": "“截图”作动词通常说 take a screenshot；“重新截图”可以用 retake the screenshots，简洁地表达需要重新拍摄已有截图。"
+    }
+  ],
+  "isBookmarked": false,
+  "origin": "captured"
+}

@@ -1,0 +1,8 @@
+{
+  "source": "video/yilo-hero/public/music.wav",
+  "sourceSHA256": "e58c45a469f5d2f752f491e7c9272d2413857718a6802200240a649c7fdfdffb",
+  "output": "public/v/yilo/web-demo-music-v1.m4a",
+  "sha256": "d2d9ea4f0e36cfd43387fdaba6f9e3aba7a9194b09931f581ae10b9508809a8a",
+  "seconds": 14,
+  "credits": "/v/yilo/music-credits.txt"
+}

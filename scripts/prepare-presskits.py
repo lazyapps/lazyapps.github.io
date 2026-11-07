@@ -94,6 +94,9 @@ for kit in KITS:
         readmes.append(filename)
     manifest = dict(languages=[locale['tag'] for locale in kit['locales']], files=files)
     (out / 'manifest.json').write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + '\n')
+    if kit['slug'] == 'yilo':
+        for current, legacy in [('learning-record.png', 'learning-record-preview-en.png'), ('learning-settings.png', 'learning-languages-en.png'), ('language-selection.png', 'language-selection-en.png')]:
+            shutil.copyfile(out / 'en' / current, out / legacy)
     archive = out / (kit['slug'] + '-presskit.zip')
     with zipfile.ZipFile(archive, 'w', zipfile.ZIP_DEFLATED, compresslevel=9) as z:
         for filename in ['manifest.json'] + sorted(readmes + [f['path'] for f in files]):

@@ -21,3 +21,7 @@ Doze 使用当前 AppIcon.icon 中的原版 `Monogram.svg`，保留纯金色轮�
 ## Calmon
 
 Calmon 使用原生 `CGPath` 直接导出的方格字标，保留与 App 图标一致的六色绿色斜向光谱，不包含玻璃、光照或图标底壳。字形和位置不从位图描摹。两种网站语言共用 Calmon 字标和 `calmon-opengraph-shared.png`；名称首字母大写。运行 `python3 scripts/prepare-calmon-assets.py` 可重建，来源及安全区见 `scripts/assets/calmon/opengraph-source.json`。
+
+## Yilo · 亦言
+
+从当前 `AppIcon.icon` 的原版矢量层生成无底壳 symbol，保留默认柠檬金颜色与透明度；不从旧图标或位图描摹。排版以除圆点外的主体可见高度对齐。简繁中文共用 `yilo-opengraph.png`（亦言），其他语言共用 `yilo-opengraph-shared.png`（Yilo）。运行 `scripts/prepare-yilo-brand-web.py` 与 `scripts/render-yilo-opengraph.py`；原始 symbol、输出哈希和几何记录见 `scripts/assets/yilo/brand-source.json`，方形裁切由脚本输出到本地审核目录；最终审核记录见 `docs/reviews/yilo-20261107/`。

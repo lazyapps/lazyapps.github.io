@@ -1,0 +1,16 @@
+{
+  "labels" : {
+    "advice.category.collocation" : "التلازم اللفظي",
+    "advice.category.translation_pattern" : "نمط الترجمة",
+    "advice.kind.learning_point" : "نقطة تعليمية",
+    "language.japanese_reading.help" : "تظهر الهيراغانا فوق الكانجي، وتُحاذى الروماجي فوق كل كلمة يابانية.",
+    "language.notes" : "ملاحظات التعلم",
+    "language.search" : "البحث عن لغة",
+    "language.section" : "لغات التعلم",
+    "language.targets" : "اللغات المستهدفة",
+    "record.example" : "مثال"
+  },
+  "nativeLocale" : "ar",
+  "operatingSystem" : "‫الإصدار 27.0.1 ‏(البنية 26A434)‏‬",
+  "requestedLocale" : "ar"
+}

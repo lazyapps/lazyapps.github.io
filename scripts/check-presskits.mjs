@@ -6,6 +6,7 @@ import { join, posix } from 'node:path';
 import { pressKits as kits, supported } from '../src/content/presskit-catalog.mjs';
 import { presentationLanguages, pressPresentations } from '../src/content/presskit-presentation.mjs';
 import './check-presskit-language.mjs';
+import yiloHeroSource from './assets/yilo/hero-video-source.json' with { type: 'json' };
 import { attr, text, readPages, dist, site } from './lib/seo.mjs';
 
 const pages = await readPages();
@@ -182,7 +183,11 @@ for (const kit of kits) {
     check(asset.shared === !asset.path.includes('/'), 'Shared asset must be at archive root');
     check(!identityPaths.has(metadata.sha256), 'Identical asset duplicated instead of shared');
     identityPaths.set(metadata.sha256, asset.path);
-    if (asset.kind === 'artwork') assert.deepEqual(imageSize(bytes), [1200, 630], 'Social card size differs');
+    if (asset.kind === 'artwork') {
+      const movie = asset.videoUrl && kit.slug === 'yilo' ? yiloHeroSource.outputs.find(item => asset.videoUrl === item.video.path.replace(/^public/, '')) : undefined;
+      assert.deepEqual(imageSize(bytes), asset.videoUrl ? movie ? [movie.width, movie.height] : [1280, 720] : [1200, 630], asset.videoUrl ? 'Video poster size differs' : 'Social card size differs');
+      if (asset.videoUrl) check(linksTo(page, asset.videoUrl), 'Video poster must link to its movie');
+    }
   }
   for (const locale of kit.locales) {
     const readmePath = `${locale.tag}/README.md`;

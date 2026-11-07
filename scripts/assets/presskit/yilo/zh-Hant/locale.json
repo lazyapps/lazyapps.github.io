@@ -1,0 +1,16 @@
+{
+  "labels" : {
+    "advice.category.collocation" : "搭配",
+    "advice.category.translation_pattern" : "翻譯句型",
+    "advice.kind.learning_point" : "學習重點",
+    "language.japanese_reading.help" : "平假名標在對應漢字上方，羅馬字在對應日語詞組上方對齊。",
+    "language.notes" : "學習筆記",
+    "language.search" : "搜尋語言",
+    "language.section" : "學習語言",
+    "language.targets" : "目標語言",
+    "record.example" : "範例"
+  },
+  "nativeLocale" : "zh-Hant",
+  "operatingSystem" : "版本27.0.1（版號26A434）",
+  "requestedLocale" : "zh-Hant"
+}

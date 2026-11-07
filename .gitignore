@@ -47,3 +47,16 @@ __pycache__/
 /scripts/assets/keyhop/story-v1/*
 !/scripts/assets/keyhop/story-v1/README.md
 /public/v/keyhop/hero-*-v3.*
+
+# Unpublished Yilo iterations and local review output. Keep current source receipts.
+/public/v/yilo/hero-*-v[6-9].*
+/public/v/yilo/hero-*-v1[0-9].*
+/public/v/yilo/hero-*-v20.*
+/scripts/assets/yilo/marketing-v9/
+/scripts/assets/yilo/marketing-v14/
+/scripts/assets/yilo/**/*.log
+/scripts/compose-yilo-hero.py
+/scripts/reframe-yilo-hero.py
+/scripts/remove-yilo-film-footnotes.py
+/docs/reviews/yilo-*/
+!/docs/reviews/yilo-20261107/

@@ -1,0 +1,16 @@
+Yilo hero — music attribution
+
+“Fluffing a Duck” — Kevin MacLeod (incompetech.com).
+Author: https://incompetech.com/
+Track: https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1100768
+Licensed under Creative Commons: By Attribution 4.0 License
+https://creativecommons.org/licenses/by/4.0/
+ISRC: USUAN1100768.
+
+Changes: original seconds 0–14, background loudness adjustment,
+0.15-second fade in and 0.8-second fade out. Tempo unchanged (122 BPM).
+Keep this attribution with shared video, in the description or accompanying page.
+The license covers the music, not the Yilo brand or the complete film.
+
+Earlier v7–v16 films retain their original soundtrack and attribution:
+https://lazyapps.com/v/yilo/music-credits-v16.txt

@@ -1,0 +1,405 @@
+{
+  "version": "v21",
+  "checkedOn": "2026-11-07",
+  "style": "original-straight-hatched-line-illustration-local-h3",
+  "generation": {
+    "model": "MiniMax-H3",
+    "mode": "local Apple Silicon first/last-frame inference",
+    "receipt": "scripts/assets/yilo/marketing-v16/pedaling-h3.generation.json"
+  },
+  "reference": "https://x.com/pmamtraveller/status/2118294851431092442",
+  "referenceUse": "Visual style study only; no reference illustration copied into the film.",
+  "nativeRecordSource": "scripts/assets/yilo/hero-native-source.json",
+  "musicSource": "scripts/assets/yilo/audio/source.json",
+  "metadata": {
+    "title": "Yilo — 边蹬边学 / Pick up a language while you’re vibe coding",
+    "comment": "Native Yilo RecordCardView captures with short AI-agent input, the largest app text setting, Pinyin and Romaji. Original pelican line art animated locally with MiniMax H3. Learning helps more natural conversations with people. Formerly YiYan. Isolated native component samples, not a live app recording."
+  },
+  "sources": {
+    "scripts/assets/presskit/yilo/ar/hero-record.png": "e30e9e5497b5ba96e5dd70f2c2111e5b6b8aa1c7867d23230fefb4f941f4597a",
+    "scripts/assets/presskit/yilo/de/hero-record.png": "48b249ecd4f2431770f30a37d58e6126c083dafb210ef4748868f10b0aadede4",
+    "scripts/assets/presskit/yilo/en/hero-record.png": "9eb09db1ac1dd94a81022ad13614590ff2989ae8e4db2aa0d680e03db5b67f14",
+    "scripts/assets/presskit/yilo/es/hero-record.png": "b5da2038ebfafe21e055cdeca2083f70a4295e5833bfb0722e33b4b42937c49b",
+    "scripts/assets/presskit/yilo/fr/hero-record.png": "7d1e0d773591d4a910ae7ea1c6e4d3558079c8ddf5e50efe68bb48d98e895bd3",
+    "scripts/assets/presskit/yilo/hi/hero-record.png": "19f75b85fbaa7cbc3fe1c66c88262f4d1604c4568cf97a18efd6417429fe43dc",
+    "scripts/assets/presskit/yilo/ja/hero-record.png": "7ab9db797fa6f7e206eb4607550c3e93a21166b729ca41aa84b9940beaa03ff8",
+    "scripts/assets/presskit/yilo/ko/hero-record.png": "eb38a749bfb3c3c6440f5bb5a509bafb086037421a2c4f342c970563eb86dc13",
+    "scripts/assets/presskit/yilo/pt-BR/hero-record.png": "6f372bb00ea33dd37b844a65d0456a5261b9bbac9c19aa3aa60b665509aed676",
+    "scripts/assets/presskit/yilo/ru/hero-record.png": "c738aae79c0fe3e5ad873a8fed03f874de8b239ded3315845965c38f93d61ad0",
+    "scripts/assets/presskit/yilo/zh-Hans/hero-record.png": "4e237705a2c8c8008ba2ac63c71d8a7d37509429557b2dcb061c406b40b6a855",
+    "scripts/assets/presskit/yilo/zh-Hant/hero-record.png": "0d292da29015622860c398eb57f388378d73627ed7632898f642906a7d85074e",
+    "scripts/assets/yilo/audio/fluffing-a-duck.mp3": "cb23b1833c35e391de10d998d6a40cfc760565ce31d23014c86025523ca8239b",
+    "scripts/assets/yilo/audio/source.json": "b041d02442c4898846f17dbf54829a87e76edfa1fe9c83007553b9881651f722",
+    "scripts/assets/yilo/capture/YiloHeroCapture.swift": "e9fec5ac2728e71af0b2ca93742f372700d9ee4644dbfda51d21874e0cadba4c",
+    "scripts/assets/yilo/capture/hero-record-en.json": "65a661032e206d7387aacc937c3dd277f93a2ab1ab58e65e9d357dd7ad78865a",
+    "scripts/assets/yilo/capture/hero-record-zh.json": "c1be5c91774667c0198a245cafdc0a6eec281f2114402972a3e102eb5f1d3d79",
+    "scripts/assets/yilo/hero-music-credits.txt": "bd715fd4eacff1b7368be65ccf392d8bc9e98b5a3acad3920f62a13f2dbb4918",
+    "scripts/assets/yilo/hero-native-source.json": "2e1b12605995a49afbdb23fab05272f1f229da253f14f4cd00ff874a6f3e277d",
+    "scripts/assets/yilo/marketing-v16/pedaling-anchor-full.png": "16b4d74074705c93604ce95efe80b073efaca860063f71486cc33566fb6b9420",
+    "scripts/assets/yilo/marketing-v16/pedaling-anchor.png": "32942a35d40a40ae19d8ea42e4b27c6d935f97ddf8d4ce02350caac219ba3658",
+    "scripts/assets/yilo/marketing-v16/pedaling-h3.generation.json": "0185b379f3173ae2fc1e084940c5183683fa277c66ea955012426b106901bbb8",
+    "scripts/assets/yilo/marketing-v16/pedaling-h3.mp4": "1cfc25d52c14cd83c07956e7adef7a4cfd6fc335e454635b03d48ee401a1ca79",
+    "scripts/assets/yilo/marketing-v16/pedaling-h3.prompt.txt": "eb5f55b400188694ca9a56cf772fa370477a76f374a56f4c740ac8d062870620",
+    "scripts/capture-yilo-hero-screenshots.py": "3b58a522f96eca19810140203c737d8ddfa2a161443fa80a2d341cf16f3abe85",
+    "scripts/generate-yilo-h3-hero.py": "197b68a6184eeab559da87b6dce89450dcdfe4fc614387c42c2e636dd96e5bbd",
+    "scripts/lib/yilo_wheel_supports.py": "53c4c340acebe066b2b2f61ce32940216fad731f135a1d0e1c73523c72cf3a2a",
+    "scripts/prepare-yilo-hero-music.py": "c2132da8884591d7bae72b6589615875c2a703021469f8bf377dc6537ab9c490",
+    "scripts/render-yilo-line-hero.py": "66dcf39bac0b8a6acc4a868e2b28db0a4c5d2a2824c1bc3875ed3050cce2b236",
+    "src/i18n/yilo-examples.json": "ddfbd008c3ec22a6d6d8c1936664a0ccfdd26311162f6e95b3d0c74640ea1881",
+    "src/i18n/yilo-hero-copy.json": "20d4daf5cfdd7028cb53eddb73d0ce2c1036221913baea2778abf5e656743402",
+    "video/yilo-hero/package.json": "e5c716bdc8e01d6029956363d83a0ba3f4c4da236c5402b22a81080d596008e0",
+    "video/yilo-hero/pnpm-lock.yaml": "112c257f05f34157ff23b625548690cc6922b2ba97f30de8282138a64a3cd2d8",
+    "video/yilo-hero/pnpm-workspace.yaml": "ac02d96368617c760f093cfe61fdec64b6244007ab3553e0d6621f706f54a353",
+    "video/yilo-hero/public/icon.png": "d22c7b5e44bf0489e19309cd50835ef69f8a5cb0c11140272ac6d1b737d59987",
+    "video/yilo-hero/public/music.wav": "e58c45a469f5d2f752f491e7c9272d2413857718a6802200240a649c7fdfdffb",
+    "video/yilo-hero/public/paper-grain.png": "4c20fd485a00af8de96721b27d806d91fe043ddfdf32495bf7e551fda105b993",
+    "video/yilo-hero/public/pedaling-h3.mp4": "1cfc25d52c14cd83c07956e7adef7a4cfd6fc335e454635b03d48ee401a1ca79",
+    "video/yilo-hero/public/pedaling-plate.json": "026e3014191ca3f430ecdeb7916a0a658326d6ccf0173c38453e1aaeb7edd01b",
+    "video/yilo-hero/public/records/ar.png": "e30e9e5497b5ba96e5dd70f2c2111e5b6b8aa1c7867d23230fefb4f941f4597a",
+    "video/yilo-hero/public/records/de.png": "48b249ecd4f2431770f30a37d58e6126c083dafb210ef4748868f10b0aadede4",
+    "video/yilo-hero/public/records/en.png": "9eb09db1ac1dd94a81022ad13614590ff2989ae8e4db2aa0d680e03db5b67f14",
+    "video/yilo-hero/public/records/es.png": "b5da2038ebfafe21e055cdeca2083f70a4295e5833bfb0722e33b4b42937c49b",
+    "video/yilo-hero/public/records/fr.png": "7d1e0d773591d4a910ae7ea1c6e4d3558079c8ddf5e50efe68bb48d98e895bd3",
+    "video/yilo-hero/public/records/hi.png": "19f75b85fbaa7cbc3fe1c66c88262f4d1604c4568cf97a18efd6417429fe43dc",
+    "video/yilo-hero/public/records/ja.png": "7ab9db797fa6f7e206eb4607550c3e93a21166b729ca41aa84b9940beaa03ff8",
+    "video/yilo-hero/public/records/ko.png": "eb38a749bfb3c3c6440f5bb5a509bafb086037421a2c4f342c970563eb86dc13",
+    "video/yilo-hero/public/records/pt-br.png": "6f372bb00ea33dd37b844a65d0456a5261b9bbac9c19aa3aa60b665509aed676",
+    "video/yilo-hero/public/records/ru.png": "c738aae79c0fe3e5ad873a8fed03f874de8b239ded3315845965c38f93d61ad0",
+    "video/yilo-hero/public/records/zh-hans.png": "4e237705a2c8c8008ba2ac63c71d8a7d37509429557b2dcb061c406b40b6a855",
+    "video/yilo-hero/public/records/zh-hant.png": "0d292da29015622860c398eb57f388378d73627ed7632898f642906a7d85074e",
+    "video/yilo-hero/remotion.config.ts": "af5ce97f98b2c91a7891f2bef4801f7dc700843f010fd81e1566d9eebf6f5ad1",
+    "video/yilo-hero/src/Root.tsx": "1688608942ddc08c50f466ee33bfa211f1082c9f21b07c5d9b8af2d2bfba67dc",
+    "video/yilo-hero/src/YiloLineHero.tsx": "05656a3c1d569ac343038cc9f4cfc67ef3a1b4e6511d483cdf706e623ed9ae37",
+    "video/yilo-hero/src/index.ts": "957e481dd33a29b4a55ae0e95dbf763b7e48c37c427ca4bd1275faf34bc07a74",
+    "video/yilo-hero/src/timing.json": "97551e8f01f2052e8057e429cb679ad4b25170147d6a5ea5e8001ee47574abf6",
+    "video/yilo-hero/tsconfig.json": "340b928ab829d8eb9872c9b4a9390862f9641f76e459023375a1f168559b11bc"
+  },
+  "wheelSupportRemoval": {
+    "filter": "[0:v]split=3[base][left][right];[left]crop=40:32:80:448,format=yuv444p,geq=lum='if(gt((X+80-139)^2+(Y+54)^2,69^2)*lt(abs(X+80-(106+(Y-4)*-16/22)),7)*between(Y,3,29),p(mod(X,5),Y),p(X,Y))':cb='if(gt((X+80-139)^2+(Y+54)^2,69^2)*lt(abs(X+80-(106+(Y-4)*-16/22)),7)*between(Y,3,29),p(mod(X,5),Y),p(X,Y))':cr='if(gt((X+80-139)^2+(Y+54)^2,69^2)*lt(abs(X+80-(106+(Y-4)*-16/22)),7)*between(Y,3,29),p(mod(X,5),Y),p(X,Y))'[leftfix];[right]crop=40:32:360:448,format=yuv444p,geq=lum='if(gt((X+360-342)^2+(Y+54)^2,69^2)*lt(abs(X+360-(370+(Y-4)*13/22)),7)*between(Y,3,29),p(W-1-mod(X,5),Y),p(X,Y))':cb='if(gt((X+360-342)^2+(Y+54)^2,69^2)*lt(abs(X+360-(370+(Y-4)*13/22)),7)*between(Y,3,29),p(W-1-mod(X,5),Y),p(X,Y))':cr='if(gt((X+360-342)^2+(Y+54)^2,69^2)*lt(abs(X+360-(370+(Y-4)*13/22)),7)*between(Y,3,29),p(W-1-mod(X,5),Y),p(X,Y))'[rightfix];[base][leftfix]overlay=80:448:format=auto[mid];[mid][rightfix]overlay=360:448:format=auto,format=yuv420p[clean]",
+    "mode": "composed-exports",
+    "inputs": []
+  },
+  "ending": {
+    "holdStartFrame": 300,
+    "holdFrames": 36,
+    "seconds": 1.5,
+    "fadeToBlank": false
+  },
+  "renderedCopy": {
+    "zh-hans": {
+      "reuse": "学地道表达，下次跟人聊得更自然。"
+    },
+    "zh-hant": {
+      "reuse": "學道地表達，下次跟人聊得更自然。"
+    },
+    "en": {
+      "reuse": "Learn natural phrasing. Speak more naturally with others."
+    },
+    "ja": {
+      "reuse": "自然な表現を学び、人との会話でも自然に。"
+    },
+    "ko": {
+      "reuse": "자연스러운 표현을 배우고, 사람들과 더 자연스럽게 대화하세요."
+    },
+    "de": {
+      "reuse": "Lerne natürliche Formulierungen. Sprich natürlicher mit anderen."
+    },
+    "fr": {
+      "reuse": "Apprenez des formulations naturelles. Parlez plus naturellement avec les autres."
+    },
+    "es": {
+      "reuse": "Aprende expresiones naturales para conversar con otras personas."
+    },
+    "pt-br": {
+      "reuse": "Aprenda expressões naturais para conversar com outras pessoas."
+    },
+    "ru": {
+      "reuse": "Учите естественные выражения и говорите с людьми естественнее."
+    },
+    "hi": {
+      "reuse": "स्वाभाविक अभिव्यक्तियाँ सीखें। लोगों से अधिक सहज बातचीत करें।"
+    },
+    "ar": {
+      "reuse": "تعلّم تعبيرات طبيعية وتحدّث مع الآخرين بأسلوب أكثر طبيعية."
+    }
+  },
+  "outputs": [
+    {
+      "locale": "zh-hans",
+      "width": 1280,
+      "height": 608,
+      "fps": 24,
+      "frames": 336,
+      "seconds": 14,
+      "codec": "h264",
+      "pixelFormat": "yuv420p",
+      "audio": {
+        "codec": "aac",
+        "sampleRate": "48000",
+        "channels": 2
+      },
+      "video": {
+        "path": "public/v/yilo/hero-zh-hans-v21.mp4",
+        "sha256": "5aebacbe4dcacc6549c057564fd59146038e6ea76b4f0e476008422028a22871"
+      },
+      "poster": {
+        "path": "public/v/yilo/hero-zh-hans-v21.jpg",
+        "sha256": "debfe5a1edf165a3b02bad840389f3f84f546a3d89e63b7a6a86f71ffb81f41c"
+      }
+    },
+    {
+      "locale": "zh-hant",
+      "width": 1280,
+      "height": 608,
+      "fps": 24,
+      "frames": 336,
+      "seconds": 14,
+      "codec": "h264",
+      "pixelFormat": "yuv420p",
+      "audio": {
+        "codec": "aac",
+        "sampleRate": "48000",
+        "channels": 2
+      },
+      "video": {
+        "path": "public/v/yilo/hero-zh-hant-v21.mp4",
+        "sha256": "ae781581186bb98e887071bd724f0cd687ca1a5dc209a7db47207afda691f580"
+      },
+      "poster": {
+        "path": "public/v/yilo/hero-zh-hant-v21.jpg",
+        "sha256": "90c84ec4dca67a1b25891352983cb5f4e5f718d70af5eeea6119639b1660bae0"
+      }
+    },
+    {
+      "locale": "en",
+      "width": 1280,
+      "height": 608,
+      "fps": 24,
+      "frames": 336,
+      "seconds": 14,
+      "codec": "h264",
+      "pixelFormat": "yuv420p",
+      "audio": {
+        "codec": "aac",
+        "sampleRate": "48000",
+        "channels": 2
+      },
+      "video": {
+        "path": "public/v/yilo/hero-en-v21.mp4",
+        "sha256": "ae953068750a6af08b7633aab3cd7ee32bd7b63a98e16ee8bbdb50bb8c5de84c"
+      },
+      "poster": {
+        "path": "public/v/yilo/hero-en-v21.jpg",
+        "sha256": "f23a0e31f3faf75f99e67b4c594dd821c45bc4a6caa4ebdaa5c525107fa9c931"
+      }
+    },
+    {
+      "locale": "ja",
+      "width": 1280,
+      "height": 608,
+      "fps": 24,
+      "frames": 336,
+      "seconds": 14,
+      "codec": "h264",
+      "pixelFormat": "yuv420p",
+      "audio": {
+        "codec": "aac",
+        "sampleRate": "48000",
+        "channels": 2
+      },
+      "video": {
+        "path": "public/v/yilo/hero-ja-v21.mp4",
+        "sha256": "a5f0e4fb5d82da8db78869023620b7049d8bdf979d02d3ee57391b9135757acd"
+      },
+      "poster": {
+        "path": "public/v/yilo/hero-ja-v21.jpg",
+        "sha256": "5d95ec50cf278f3e3d873439a135480fe83fcb9dd77ba33765a5bd4995f44232"
+      }
+    },
+    {
+      "locale": "ko",
+      "width": 1280,
+      "height": 608,
+      "fps": 24,
+      "frames": 336,
+      "seconds": 14,
+      "codec": "h264",
+      "pixelFormat": "yuv420p",
+      "audio": {
+        "codec": "aac",
+        "sampleRate": "48000",
+        "channels": 2
+      },
+      "video": {
+        "path": "public/v/yilo/hero-ko-v21.mp4",
+        "sha256": "1b7665cec781d94f8719e77a4ab3b67764cfd5497ccd6a7b2463dadbcfb0412c"
+      },
+      "poster": {
+        "path": "public/v/yilo/hero-ko-v21.jpg",
+        "sha256": "873a6807ec7c96fef495991c29cc0a8dc1f196ca44a7c8ccefb747bd59ae78d1"
+      }
+    },
+    {
+      "locale": "de",
+      "width": 1280,
+      "height": 608,
+      "fps": 24,
+      "frames": 336,
+      "seconds": 14,
+      "codec": "h264",
+      "pixelFormat": "yuv420p",
+      "audio": {
+        "codec": "aac",
+        "sampleRate": "48000",
+        "channels": 2
+      },
+      "video": {
+        "path": "public/v/yilo/hero-de-v21.mp4",
+        "sha256": "0b6a31da3775245998c3b449dc71544cdba90a372f340b71da5810774d33e434"
+      },
+      "poster": {
+        "path": "public/v/yilo/hero-de-v21.jpg",
+        "sha256": "d2843e6cc7328c7eeb3ebbd37928ecbca4aa3eaf60409f1ed8961f8169c952be"
+      }
+    },
+    {
+      "locale": "fr",
+      "width": 1280,
+      "height": 608,
+      "fps": 24,
+      "frames": 336,
+      "seconds": 14,
+      "codec": "h264",
+      "pixelFormat": "yuv420p",
+      "audio": {
+        "codec": "aac",
+        "sampleRate": "48000",
+        "channels": 2
+      },
+      "video": {
+        "path": "public/v/yilo/hero-fr-v21.mp4",
+        "sha256": "b69262c15069a2cfb7ddb14a03755888124f19d338896b6d7a836a5a8df13edb"
+      },
+      "poster": {
+        "path": "public/v/yilo/hero-fr-v21.jpg",
+        "sha256": "06264595af4d6e1797cf616b65900564c920b224a687d056889771044ee19dc2"
+      }
+    },
+    {
+      "locale": "es",
+      "width": 1280,
+      "height": 608,
+      "fps": 24,
+      "frames": 336,
+      "seconds": 14,
+      "codec": "h264",
+      "pixelFormat": "yuv420p",
+      "audio": {
+        "codec": "aac",
+        "sampleRate": "48000",
+        "channels": 2
+      },
+      "video": {
+        "path": "public/v/yilo/hero-es-v21.mp4",
+        "sha256": "63e3635bc704ce25235ba7aa5881c43a936cfc6ff80dc26358d1192751f3a667"
+      },
+      "poster": {
+        "path": "public/v/yilo/hero-es-v21.jpg",
+        "sha256": "3dd38ce98e204a19f6064ebd9df07407ce346739b8a57e89162e20a6ce4905e6"
+      }
+    },
+    {
+      "locale": "pt-br",
+      "width": 1280,
+      "height": 608,
+      "fps": 24,
+      "frames": 336,
+      "seconds": 14,
+      "codec": "h264",
+      "pixelFormat": "yuv420p",
+      "audio": {
+        "codec": "aac",
+        "sampleRate": "48000",
+        "channels": 2
+      },
+      "video": {
+        "path": "public/v/yilo/hero-pt-br-v21.mp4",
+        "sha256": "ea9d82549f9be0c81b5adffed210b72674e249084d970e3c857fa9cc5cd53716"
+      },
+      "poster": {
+        "path": "public/v/yilo/hero-pt-br-v21.jpg",
+        "sha256": "58e70d9c69839c01c57bdcbaef4c33760c834d5154120d8887c7da05a8f066d0"
+      }
+    },
+    {
+      "locale": "ru",
+      "width": 1280,
+      "height": 608,
+      "fps": 24,
+      "frames": 336,
+      "seconds": 14,
+      "codec": "h264",
+      "pixelFormat": "yuv420p",
+      "audio": {
+        "codec": "aac",
+        "sampleRate": "48000",
+        "channels": 2
+      },
+      "video": {
+        "path": "public/v/yilo/hero-ru-v21.mp4",
+        "sha256": "c936935050eae05cfd353cd427fe1939bab80464c558003f0d7f640cb959e821"
+      },
+      "poster": {
+        "path": "public/v/yilo/hero-ru-v21.jpg",
+        "sha256": "87e9168a4da632d3b8b59d43575231806ff565ec5804c2e3bc4bb4a6c7c632f7"
+      }
+    },
+    {
+      "locale": "hi",
+      "width": 1280,
+      "height": 608,
+      "fps": 24,
+      "frames": 336,
+      "seconds": 14,
+      "codec": "h264",
+      "pixelFormat": "yuv420p",
+      "audio": {
+        "codec": "aac",
+        "sampleRate": "48000",
+        "channels": 2
+      },
+      "video": {
+        "path": "public/v/yilo/hero-hi-v21.mp4",
+        "sha256": "97fc8002c516eaaaa38648c7de2b5d0b89b9bbc36e9f28a00ad11c15209fd86c"
+      },
+      "poster": {
+        "path": "public/v/yilo/hero-hi-v21.jpg",
+        "sha256": "7c40da84b9e3d90d5cc54f64b5895d4ddf332ace832f4b167bb14fd8644e18d4"
+      }
+    },
+    {
+      "locale": "ar",
+      "width": 1280,
+      "height": 608,
+      "fps": 24,
+      "frames": 336,
+      "seconds": 14,
+      "codec": "h264",
+      "pixelFormat": "yuv420p",
+      "audio": {
+        "codec": "aac",
+        "sampleRate": "48000",
+        "channels": 2
+      },
+      "video": {
+        "path": "public/v/yilo/hero-ar-v21.mp4",
+        "sha256": "705beab960201baf368aa7e32ad0f19e79d1342c4b2fe18b086557b2659422ae"
+      },
+      "poster": {
+        "path": "public/v/yilo/hero-ar-v21.jpg",
+        "sha256": "397c2773536e1478de1d011f87f220ff2658cb8b4f59e42d9682e114ed050f3e"
+      }
+    }
+  ],
+  "sourceMaintenance": "Renderer archive destination moved to ignored .build storage. Film content, source imagery and output hashes are unchanged."
+}

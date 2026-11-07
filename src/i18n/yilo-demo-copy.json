@@ -1,0 +1,38 @@
+{
+  "zh-hans": {
+    "sound": "声音"
+  },
+  "zh-hant": {
+    "sound": "聲音"
+  },
+  "en": {
+    "sound": "Sound"
+  },
+  "ja": {
+    "sound": "音声"
+  },
+  "ko": {
+    "sound": "소리"
+  },
+  "de": {
+    "sound": "Ton"
+  },
+  "fr": {
+    "sound": "Son"
+  },
+  "es": {
+    "sound": "Sonido"
+  },
+  "pt-br": {
+    "sound": "Som"
+  },
+  "ru": {
+    "sound": "Звук"
+  },
+  "hi": {
+    "sound": "आवाज़"
+  },
+  "ar": {
+    "sound": "الصوت"
+  }
+}

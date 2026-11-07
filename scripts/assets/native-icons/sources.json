@@ -95,31 +95,6 @@
     "rendition": "Default",
     "designGeneration": 27
   },
-  "yiyan": {
-    "project": "_vibe/_yiyan",
-    "original": "AppIcon.icon",
-    "commit": "def94f50e048a6954bf466eecb934c2ccba5fe25",
-    "source": "scripts/assets/yiyan/AppIcon.icon",
-    "platform": "macOS",
-    "method": "Icon Composer Default export",
-    "output": "src/assets/img/yiyan-icon.png",
-    "sourceHashes": {
-      "Assets/05-sun-glow-dark.svg": "a30304b42abbfd24e38a673dd68d5b8ea8c9a01f41bd1c00b2208e7cfafd6ba4",
-      "Assets/05-sun-glow.svg": "8adcc4cafbd31cd24d4021433a051931880da975240e404451a67561a60ecf63",
-      "Assets/10-sun.svg": "a6bf04fbc90f2e8d4101ebd54291b1fbe683d045e81104146f72b18f206163ee",
-      "Assets/20-long-stroke.svg": "f7e112fba7a975328ac94157bc590948e07848bc5cd79810f439574b809f7cdc",
-      "Assets/30-short-stroke.svg": "e48997d2a2355ee1d5bd38e28d0725ceca1fce1b367c566f31c741f27b1593f3",
-      "Assets/40-mouth.svg": "25e27f68333adb04933b68b9c632973c7b214a784aeca8f9f0e5911f819f9f61",
-      "icon.json": "983fe66969c3495cb12219c9644ce3e7859c85f8d40821fa4c0e021d26bc2ea3"
-    },
-    "outputSha256": "00229f263d4823d0381f8e426a12a208cb847c515304527ac4d5fa17ad0a3e13",
-    "size": [
-      1024,
-      1024
-    ],
-    "rendition": "Default",
-    "designGeneration": 27
-  },
   "shheep": {
     "project": "_vibe/shheep",
     "original": "Shheep/Resources/AppIcon.icon",
@@ -368,5 +343,29 @@
       ],
       "sha256": "7b0fd8e527d9c094b1fea3affccb8fc5074902abf73c74b994018f786916035e"
     }
+  },
+  "yilo": {
+    "project": "_vibe/_yiyan",
+    "original": "AppIcon.icon",
+    "commit": "1f573caeceda267be97ec791ad09dd2cb0281889",
+    "source": "scripts/assets/yilo/AppIcon.icon",
+    "platform": "macOS",
+    "method": "Icon Composer Default export",
+    "output": "src/assets/img/yilo-icon.png",
+    "sourceHashes": {
+      "Assets/01-head.svg": "8dfecd21f25a4e17b974ed0fe18fff5d87c2d7657dae80f45dd93e5e12b53deb",
+      "Assets/02-main.svg": "3b7ef391fa1328c0cb70dc68f8a1e6393dddf3e8b000d1121269e8d628094437",
+      "Assets/03-right.svg": "97fa63795f019c003f07ab95074721077d2d57de2e3e0a51e0d164e15441274f",
+      "Assets/04-left.svg": "ee6a8df7b3cf83b79463823f8dfbade61ddfb544fb4f0ef91ec42d1b480679f9",
+      "icon.json": "89610bb2598744864cccc207b48696d3e7b22940ea5b1f6d42908375387cd893"
+    },
+    "outputSha256": "d22c7b5e44bf0489e19309cd50835ef69f8a5cb0c11140272ac6d1b737d59987",
+    "size": [
+      1024,
+      1024
+    ],
+    "rendition": "Default",
+    "designGeneration": 27,
+    "sourceState": "Working tree snapshot 2026-11-06; Yilo rename and multilingual changes are uncommitted in the app repository."
   }
 }

@@ -37,7 +37,7 @@
     "commit": "763cc3500ee101236e03ddbd7846dac1e0dcb2ad",
     "note": "Main app UI languages; Base and widget-only localizations excluded."
   },
-  "yiyan": {
+  "yilo": {
     "tags": [
       "ar",
       "de",
@@ -54,8 +54,9 @@
     ],
     "source": "Sources/YiYanUI/Resources",
     "project": "_yiyan",
-    "commit": "def94f50e048a6954bf466eecb934c2ccba5fe25",
-    "note": "Main app UI languages; Base and widget-only localizations excluded."
+    "commit": "473a8fac19ac6b55b9604de50d851848854be133",
+    "note": "All 12 native UI languages have learning-record, settings and language-picker captures. Eleven preserve the selected real record; English uses the user-requested English-input, Simplified-Chinese/Japanese-output example.",
+    "sourceState": "Native UI resource and screenshot locales checked on 2026-11-06; 3 original-language native captures per supported locale."
   },
   "shheep": {
     "tags": [

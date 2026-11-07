@@ -14,7 +14,9 @@
 
 全站页面用 `SiteGrain` 挂载磨砂纸纹，包括产品页、资料页、首页及隐私页。页面底色统一为 `var(--paper)`。纸纹与滚动后的 header 共用 `site.css` 中的纹理、尺寸、强度与滤镜；尺寸按全站 `--size-font` 缩放，不受某个页面正文字号影响。`SiteGrain` 的 `animated` 只控制已有纸纹动效，不另写纹理样式；系统开启减少动态效果时统一关闭纸纹动画。FondFont 保留静态纸纹、太阳与场景动画。
 
-首页 YiYan 的截图展示区使用独立的沙丘桌面背景，原生窗口截图保持原样。背景由 imagegen 生成，源图为 `src/assets/img/yiyan-desert-desktop.png`，提示词与来源哈希见 `scripts/assets/yiyan/desktop-background-source.json`。Press Kit 将其作为语言中立的 `desktop-wallpaper.png` 单独提供，各语言说明明确标注为 AI 生成的网页布景，不作为 App 截图或内置功能。
+首页与亦言 12 种语言的题图共用 `YiloDemo.astro` 原生 SVG 演示：鹈鹕与踩踏动作、输入、学习记录和人物对话由网页时间轴驱动，自动呈现，不显示暂停或重播按钮。学习记录使用对应语言的真实原生 PNG；英语界面保留英文输入、带拼音的简体中文和带 Romaji 的日语。进入视口运行，离开暂停；减少动态效果时显示完整静态学习画面；配乐通过本地化声音按钮按需开启。网页示意不作为原生 App 截图收录，资料包继续提供真实截图和可分享的影片。沙丘背景作为语言中立的 `desktop-wallpaper.png` 独立保留，来源见 `scripts/assets/yilo/desktop-background-source.json`。
+
+亦言网页题图在竖屏改为上下构图，完整展示并放大学习记录；横屏保留左右构图。画面四边保留留白，路面仍铺满底部，声音控制位于画面内右下角的路面区域，与学习卡片右沿对齐。鹈鹕眨眼、输入光标、人物点头与手势均保持轻微，人物、对话框和文案分步出现。每轮末尾保留完整交流画面，再柔和衔接下一轮，踩踏角度不重置。辅助技术读取一份稳定的本地化文字，包含原文、译文、拼音和 Romaji，不随循环重复播报。网页调整不改变资料包中的原生 PNG 或可分享影片。
 
 首页所有插图背景容器使用直角，在桌面铺满卡片插图一侧并延伸至上、右、下边缘，在手机上铺满卡片下半区；仅由外卡片的圆角统一裁切。Shheep 配像素夜空背景 `src/assets/img/shheep-pixel-night-background.png`，XVDL 配蓝调海岸背景 `src/assets/img/xvdl-blue-hour-background.png`；均由 imagegen 生成，提示词与来源哈希分别见 `scripts/assets/shheep/website-background-source.json` 与 `scripts/assets/xvdl/website-background-source.json`。两张背景作为各产品 Press Kit 的语言中立素材 `website-background.png` 独立提供，明确标注为网页展示布景；原始游戏标题画面和操作截图保持原样。
 
@@ -40,7 +42,7 @@ Press Kit 保持现有路径，不创建语言子路径或自动重定向。所�
 
 页面语言与资料包语言分别维护：`presskit-ui.json` 与 `presskit-presentation.mjs` 定义页面显示，`presskit-supported-languages.json` 与 `presskit-catalog.mjs` 定义 App 下载语言。网站有而 App 不支持的语言可以显示对应网站介绍，但只展示已有英语资料，并标明实际资料语言。World Book 与 XVDL 的资料仍只有英语；从其他语言的汇总页进入时保留页面界面语言，缺少的产品文案用英语并标明 lang/dir。不要为页面翻译虚构 App 支持语言、README 文件夹或截图。SEO 使用静态默认元数据即可，不建立语言 hreflang 组。
 
-中英文并列产品名统一用间隔点，例如「爱装字体 · FondFont」「飞键 · KeyHop」「绎言 · YiYan」，简繁体保持同一规则。汇总卡片、产品资料页标题、资料文案和 README 共用名称来源；页面上的名称保持一行，窄屏适当缩小字号，不裁切或省略名称。
+中英文并列产品名统一用间隔点，例如「爱装字体 · FondFont」「飞键 · KeyHop」「亦言 · Yilo」，简繁体保持同一规则。汇总卡片、产品资料页标题、资料文案和 README 共用名称来源；页面上的名称保持一行，窄屏适当缩小字号，不裁切或省略名称。
 
 汇总页和各 App 资料页的标题末尾装饰点必须与前面的文字保持同行，所有页面语言遵循同一规则。汇总标题末行使用不可换行组合；App 标题通过 word joiner（U+2060）绑定末词与圆点，并使用正常单词换行，允许较长标题在前面的词间分行。不要用 `overflow-wrap:anywhere` 强行拆开这个组合；检查各语言及窄屏，防止孤立圆点和标题溢出。
 
@@ -54,7 +56,7 @@ Doze 的菜单栏图标使用独立的 `menubar` 素材类型，不混作 App �
 
 ## SVG 素材
 
-全部 8 个 Press Kit 提供可用的 SVG。原版 App 图标 PNG、截图与照片继续按原格式分发，不将位图嵌入 SVG 冒充矢量图。CHMate、World Book、YiYan 从原版 Icon Composer 的 SVG 图层按原生位置、比例和默认填色组合平面矢量图；FondFont 使用已有的原版轮廓平面印刷版本；均明确说明不重现原生玻璃、光照与系统图标裁切，不作为完整原生图标替代品。XVDL 使用原版扩展 SVG。Doze 提供原版金色符号与 6 个菜单栏状态的精确路径 SVG。Shheep 的像素文字标志逐行转换为矢量路径，保留原始 RGBA 像素，不描摹、平滑或嵌入位图。
+全部 8 个 Press Kit 提供可用的 SVG。原版 App 图标 PNG、截图与照片继续按原格式分发，不将位图嵌入 SVG 冒充矢量图。CHMate、World Book、Yilo 从原版 Icon Composer 的 SVG 图层按原生位置、比例和默认填色组合平面矢量图；FondFont 使用已有的原版轮廓平面印刷版本；均明确说明不重现原生玻璃、光照与系统图标裁切，不作为完整原生图标替代品。XVDL 使用原版扩展 SVG。Doze 提供原版金色符号与 6 个菜单栏状态的精确路径 SVG。Shheep 的像素文字标志逐行转换为矢量路径，保留原始 RGBA 像素，不描摹、平滑或嵌入位图。
 
 源文件、生成方法与输入／输出哈希见 `scripts/assets/presskit/vector-sources.json`；可复现的生成命令为 `python3 scripts/prepare-presskit-vectors.py`（需要 Pillow，菜单栏 SVG 先运行 `python3 scripts/export-doze-menubar-icons.py`）。SVG 保存在 `scripts/assets/presskit/vectors/`，构建与分发不读取私有项目。`prepare-presskits.py`、清单和构建检查支持 SVG 的 viewBox 尺寸与 `SVG` 格式标记。图片的同一视觉版本通过 `alternateFor` 对应，共用预览并提供 PNG／SVG 独立下载；独立平面图单独展示。所有素材的下载按钮统一放在预览框右上角，距上、右边缘各 12px，按钮之间保留 10px；采用至少 52 × 32px 的小号按钮和 11px 文字，以不透明底色保证图片上的可读性，并通过上下各 6px 的透明区域保留 44px 高的点击范围。图片预览链接与下载链接分别独立。README 列出所有格式，ZIP 根目录按内容哈希去重。
 
@@ -106,3 +108,29 @@ Calmon 的 38 种产品页使用共用页脚入口。媒体目录提供原生 10
 ## 图像色彩管理
 
 Icon Composer 导出的 16 位 Display P3 PNG 经共用 `src/image-service.mjs` 显式按 ICC 转换为 8 位 sRGB，再交给 Astro 生成网页缩略图，避免移除配置却保留 P3 数值造成偏灰。8 位图像仍走原有流程。下载文件与 ZIP 保留原版 PNG、位深及 Display P3 配置；网页预览不叠加纸纹，纸纹仍用于页面背景。`node --test scripts/test-image-service.mjs` 对全部媒体包图标比较原图色彩管理结果与实际缩略图。
+
+## Yilo · 亦言
+
+产品路径为 `/yilo/`，保留原来的 12 种网站语言；资料页为 `/yilo/presskit/`，下载目录为 `/presskit/yilo/`。名称、图标与多语言学习功能按已更新的语境介绍；只简短注明“原名《绎言》（YiYan）”，不再添加“即将推出”“尚未发布”或“开发预览”等状态说明。GitHub `cxa/yilo` 与 Homebrew `cxa/yilo/yiyan` 是当前分发标识；Cask 名称仍为 `yiyan`，不能仅因仓库更名而改成尚未提供的名称。私有源码仓库为 `cxa/yilo-src`，不作为公开下载或源码链接。公开仓库是发行仓库，不称为 App 源代码。
+
+旧视频和 10 月窗口截图不再用于当前页面或资料包。当前按 App 支持的 12 种界面语言分别提供学习记录、学习语言设置、语言选择三张原生画面，共 36 张，产品页与 Press Kit 使用对应语言版本。其中 11 种界面的学习卡片使用用户指定的「功能有更新，需重新截图」真实记录，保留中文原话、英语／日语表达、学习笔记与罗马字。英语版按用户要求单独提供英文输入、简体中文／日语输出及英语学习讲解的示例；简体中文词语上方显示原生拼音，日语显示 Romaji。英语设置和语言选择也对应英文来源、简体中文与日语学习语言。其他版本的设置使用英语、日语和法语。所有设置均为隔离示例偏好。画面由当前 App 的 SwiftUI／AppKit 组件与原版本地化资源直接导出，不替换图片文字、不重建 UI、不缩放；属于原生组件截图而非完整 App 窗口。阿拉伯语使用原生从右到左排版。来源、语言验证、记录与素材哈希见 `scripts/assets/presskit/screenshot-sources.json`，复现命令见 `docs/YILO.md`。早先的英语窗口裁图仅作历史来源保留，不再作为各语言通用素材。
+
+新图标使用 `scripts/assets/yilo/AppIcon.icon` 的原生 Default 1024px 导出。平面 SVG 与透明 symbol 来自同一工程的原版轮廓、位置和默认颜色，不模拟原生玻璃。简繁中文名称均为「亦言」，共用一张中文分享图；其他语言共用 Yilo 分享图。重建见 `docs/YILO.md`。
+
+旧产品页、各语言页与 Press Kit 页均有即时跳转，保留查询参数和锚点；旧资料直接下载地址分发更新后的内容。GitHub Pages 仅支持静态跳转页，不能返回 HTTP 301；`_redirects` 中的 301 规则只供支持该格式的托管服务使用，不代表目前的部署已具备 HTTP 301。
+
+Yilo 的首页卡片、产品页、SEO 与媒体文案统一先说明“用日常输入学习你想学的语言”，强调理解表达、积累和复用；捕捉输入、翻译与润色作为学习方式介绍。面向用户称“你想学的语言”或“学习语言”，多选称“同时学习多种语言”。不以笼统的“你选择的语言”替代学习目的。
+
+Yilo v21 Hero 将本地 MiniMax H3 鹈鹕动作与原生 RecordCardView 截屏结合。12 种界面语言分别截图，使用 App 自带的最大字号，展示简短输入和更丰富的地道输出。中文输入“先别大改，留点余地。”，英语输出“Hold off on a sweeping rewrite; leave us some wiggle room.”；英语版使用英文输入、带拼音的简体中文及带 Romaji 的日语输出。截屏完整显示，不重建界面或替换文字；12 张短句截图另行分发，原来的 36 张产品页截图保留。
+
+电影为 1280 × 608、14 秒。大标题在视频上方；底部路面铺满，不再有左下角图标名称、头后大背景或右侧虚线。头顶保留轻动的思考气泡。学习成果强调从地道的改写或译文中学习，并在人与人的对话中运用。结尾为双人交流插画，页面成果区移除原来的双人插图，标题、介绍与下载按钮上下居中。配乐改为 Kevin MacLeod 的《Fluffing a Duck》（122 BPM，CC BY 4.0），保留署名、来源及修改说明。ZIP 收录原生截屏与海报，README 链接各语言影片和配乐署名。来源、截屏、音乐与输出哈希共用 `scripts/assets/yilo/hero-video-source.json`。
+
+Yilo 的 12 种资料语言使用短句和统一术语。简介不在长介绍中重复；功能条件按独立段落保留。截图说明与视频说明共用产品页来源，正文与媒体包同步生成。英语按每句最多 25 词检查；其他语言采用自然短句。此规则用于文案风格，不改写原生截图中的记录内容。
+
+Yilo 的六个功能各有一幅彩色排线动态示意图，学习成果区使用标题、简介与下载按钮，移除原来的双人插图。使用条件区使用四组精简说明与同风格示意图，次要操作说明可展开。AI 服务处理数据与辅助功能权限直接显示。图文覆盖 12 种语言；资料包保留相同简述与完整条件。示意图只在进入视野时轻动一次，并支持减少动态效果。
+
+亦言产品页与 Yilo Press Kit 使用本地手写字体，保留全站共用组件和版式。Latin 使用直立的 Patrick Hand，Cyrillic 使用 Neucha，中文／日文使用霞鹜文楷，其他文字使用对应的 OFL 字体。字体来源、子集、原始许可和哈希见 `scripts/assets/yilo/hand-font-sources.json`；完整许可在 `/v/yilo/fonts/credits.txt`。原生截图、图标和代码不改写为手写样式。
+
+Yilo v20 移除两只车轮下方的支撑斜线，保留圆形轮廓与横向路面排线。12 种语言的影片、海报和资料包共用更新后的输出。视频上下的 HTML 标题去掉句末标点，影片内例句保留原有标点。
+
+Yilo v21 在最后 1.5 秒定格完整收尾画面，保留鹈鹕、路面、人物对话和本地化学习成果文案。结尾不再淡出为空白，停止播放时可直接作为分享画面。影片仍为 14 秒，原有配乐淡出不变。

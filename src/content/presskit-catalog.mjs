@@ -4,10 +4,12 @@ import { resolve } from 'node:path';
 import originals from './presskits.json' with { type: 'json' };
 import supportedLanguages from './presskit-supported-languages.json' with { type: 'json' };
 import pressGlossary from './presskit-glossary.json' with { type: 'json' };
-import yiyanCopy from '../i18n/yiyan-short-copy.json' with { type: 'json' };
+import yiloCopy from '../i18n/yilo-short-copy.json' with { type: 'json' };
+import yiloHero from '../i18n/yilo-hero-copy.json' with { type: 'json' };
+import yiloHeroSource from '../../scripts/assets/yilo/hero-video-source.json' with { type: 'json' };
 import { CHMATE_LOCALES } from '../i18n/chmate-locales.mjs';
 import { FONDFONT_LOCALES } from '../i18n/fondfont-locales.mjs';
-import { YIYAN_LOCALES } from '../i18n/yiyan-locales.mjs';
+import { YILO_LOCALES } from '../i18n/yilo-locales.mjs';
 import { DOZE_LOCALES } from '../i18n/doze-locales.mjs';
 import { SHHEEP_LOCALES } from '../i18n/shheep-locales.mjs';
 import { CALMON_LOCALES, CALMON_RELEASE } from '../i18n/calmon-locales.mjs';
@@ -22,13 +24,13 @@ for (const [tag,media] of Object.entries(calmonMedia)) {
   const t = CALMON_LOCALES[tag];
   glossary[tag] = {name:t.languageName,headings:media.headings,labels:{icon,screenshot,artwork,menubar,flatVector,logo:flatVector,vector:flatVector},notes:{icon:`${icon} · PNG · 1024 × 1024. ${media.native}`,sharedEnglish:`${screenshot} · en. ${media.native}`,native:media.native,artwork,menubar:`${menubar} · PNG · 44 × 44 · 2×`,flatVector:`SVG · ${flatVector}`,vector:flatVector},usage:media.usage,links:{download:t.download,releases:t.download},availability:{mac:t.available,upcomingMac:t.available}};
 }
-const translations = { calmon: CALMON_LOCALES, doze: DOZE_LOCALES, chmate: CHMATE_LOCALES, fondfont: FONDFONT_LOCALES, yiyan: YIYAN_LOCALES, shheep: SHHEEP_LOCALES };
+const translations = { calmon: CALMON_LOCALES, doze: DOZE_LOCALES, chmate: CHMATE_LOCALES, fondfont: FONDFONT_LOCALES, yilo: YILO_LOCALES, shheep: SHHEEP_LOCALES };
 const plain = value => value.replace(/<[^>]*>/g, '').replaceAll('&amp;', '&').replaceAll('&nbsp;', ' ').trim();
 function asset(kit, tag, source, filename, kind, note, shared = false) {
   const g = glossary[tag];
   const original = kit.assets.find(item => item.source === source);
   const lang = tag === 'en' ? 'en' : tag === 'zh-Hans' ? 'zh' : null;
-  return { source, filename, kind, label: g.labels[kind], note: lang && original ? original.note[lang] : g.notes[note], shared, contentLanguage: ['icon', 'logo', 'background', 'menubar', 'vector'].includes(kind) || (kind === 'artwork' && shared) ? 'und' : ['world-book', 'xvdl', 'shheep', 'yiyan'].includes(kit.slug) && kind === 'screenshot' ? 'en' : tag };
+  return { source, filename, kind, label: g.labels[kind], note: lang && original ? original.note[lang] : g.notes[note], shared, contentLanguage: ['icon', 'logo', 'background', 'menubar', 'vector'].includes(kind) || (kind === 'artwork' && shared) ? 'und' : ['world-book', 'xvdl', 'shheep'].includes(kit.slug) && kind === 'screenshot' ? 'en' : tag };
 }
 function localeAssets(kit, tag, t) {
   const g = glossary[tag];
@@ -46,9 +48,12 @@ function localeAssets(kit, tag, t) {
   if (kit.slug === 'shheep') { const logo = kit.assets.find(item => item.kind === 'logo'); assets.push(asset(kit, tag, logo.source, logo.filename, 'logo', 'logo', true)); }
   if (kit.slug === 'chmate') assets.push(asset(kit, tag, `scripts/assets/presskit/chmate-reading-${tag.toLowerCase()}.png`, 'reading-ipad.png', 'screenshot', 'native'));
   if (kit.slug === 'fondfont') assets.push(asset(kit, tag, `scripts/assets/presskit/fondfont-select-${tag.toLowerCase()}.png`, 'font-selection.png', 'screenshot', 'native'));
-  if (kit.slug === 'yiyan') {
-    assets.push(asset(kit, tag, 'src/assets/img/yiyan-showcase.png', 'learning-notes-en.png', 'screenshot', 'sharedEnglishCapture', true));
-    assets.push(asset(kit, tag, 'src/assets/img/yiyan-showcase-detail.png', 'follow-up-en.png', 'screenshot', 'sharedEnglishCapture', true));
+  if (kit.slug === 'yilo') {
+    const copy = yiloCopy[tag.toLowerCase()];
+    kit.assets.filter(item => item.kind === 'screenshot').forEach((preview, index) => {
+      const source = preview.source.replace('/en/', `/${tag}/`);
+      assets.push({ ...asset(kit, tag, source, preview.filename, 'screenshot', 'native'), label: copy.screenshotLabels[index], note: copy.screenshots[index] });
+    });
   }
   if (kit.slug === 'shheep') assets.push(asset(kit, tag, 'public/shheep/preview.png', 'bedroom-preview.png', 'screenshot', 'title', true));
   if (kit.slug === 'world-book') assets.push(asset(kit, tag, 'scripts/assets/presskit/world-book-globe.png', 'globe-ipad.png', 'screenshot', 'globe'));
@@ -68,7 +73,7 @@ function localeAssets(kit, tag, t) {
     }
   }
   for (const item of kit.assets.filter(item => item.kind === 'background')) {
-    assets.push(asset(kit, tag, item.source, item.filename, 'background', kit.slug === 'yiyan' ? 'background' : 'websiteBackground', true));
+    assets.push(asset(kit, tag, item.source, item.filename, 'background', kit.slug === 'yilo' ? 'background' : 'websiteBackground', true));
   }
   for (const item of kit.assets.filter(item => item.kind === 'vector')) {
     const primary = assets.find(candidate => candidate.filename === item.alternateFor);
@@ -78,9 +83,15 @@ function localeAssets(kit, tag, t) {
   let card = kit.assets.find(item => item.kind === 'artwork').source;
   let shared = true;
   if (kit.slug === 'doze') { card = `src/assets/img/${t.ogAsset}`; shared = false; }
-  if (kit.slug === 'yiyan' && tag.startsWith('zh-')) { card = `src/assets/img/${kit.slug}-opengraph${tag === 'zh-Hant' ? '-zh-hant' : ''}.png`; shared = false; }
+  if (kit.slug === 'yilo' && tag.startsWith('zh-')) { card = `src/assets/img/${kit.slug}-opengraph.png`; shared = false; }
   if (kit.slug === 'fondfont' && t.ogAsset !== 'shared') { card = `src/assets/img/fondfont-opengraph-${t.ogAsset}.png`; shared = false; }
-  assets.push(asset(kit, tag, card, 'social-card.png', 'artwork', 'artwork', shared));
+  assets.push(asset(kit, tag, card, kit.slug === 'yilo' && tag.startsWith('zh-') ? 'social-card-zh.png' : 'social-card.png', 'artwork', 'artwork', shared));
+  if (kit.slug === 'yilo') {
+    const hero = yiloHero[tag.toLowerCase()];
+    const output = yiloHeroSource.outputs.find(item => item.locale === tag.toLowerCase());
+    assets.push({ ...asset(kit, tag, `scripts/assets/presskit/yilo/${tag}/hero-record.png`, 'hero-record.png', 'screenshot', 'native'), label: hero.screenshotLabel, note: hero.screenshotNote });
+    assets.push({ ...asset(kit, tag, output.poster.path, 'hero-animation.jpg', 'artwork', 'artwork'), label: hero.posterLabel, note: hero.posterNote, videoUrl: output.video.path.replace(/^public/, '') });
+  }
   return assets;
 }
 export const pressKits = originals.map(kit => {
@@ -91,22 +102,22 @@ export const pressKits = originals.map(kit => {
     if (!t && translations[kit.slug]) throw Error(`Missing press copy: ${kit.slug}/${tag}`);
     const lang = tag === 'zh-Hans' ? 'zh' : 'en';
     const g = glossary[tag];
-    const name = kit.slug === 'doze' ? t.brand : tag === 'zh-Hans' ? kit.names.zh : tag === 'zh-Hant' ? kit.names.zh.replaceAll('飞键','飛鍵').replaceAll('绎言','繹言').replaceAll('爱装字体','愛裝字體') : kit.names.en;
+    const name = kit.slug === 'doze' ? t.brand : tag === 'zh-Hans' ? kit.names.zh : tag === 'zh-Hant' ? kit.names.zh.replaceAll('飞键','飛鍵').replaceAll('亦言','亦言').replaceAll('爱装字体','愛裝字體') : kit.names.en;
     let summary = t ? plain(t.sub ?? t.description) : kit.summary.en;
     let description = t ? plain(t.description) : kit.description.en;
     if (kit.slug === 'doze') description = [t.eyebrow, t.headline.join(' '), t.description, t.compatibility, ...t.features.map(item => item[1]), t.awakeNote, ...t.steps, ...t.faqs.map(item => item[1]), t.license].join('\n\n');
     if (kit.slug === 'calmon') description = [t.compatibility, t.displayNote, t.availability, t.releaseNote, ...t.features.map(item => item[1]), t.keyboardBody, t.keyboardHelp, t.shortcutContext, ...t.shortcuts.slice(2,4).map(([keys, action]) => `${keys} — ${action}`), t.permissionPanes.map(([system, pane]) => `${system}: ${pane}`).join('; '), ...t.faqs.slice(1).map(item => item[1])].join('\n\n');
     if (kit.slug === 'chmate') description = [t.description, ...t.cards.map(card => card[1]), t.promiseCopy].map(plain).join('\n\n');
     if (kit.slug === 'fondfont') description = [t.description, ...t.features.map(feature => feature[1]), ...t.steps.map(step => step[1]), t.privacyCopy, t.faqs[1][1]].map(plain).join('\n\n');
-    if (kit.slug === 'yiyan') { const copy = yiyanCopy[tag.toLowerCase()]; summary = copy.sub; description = [copy.sub, ...copy.cards.map(card => card[1]), ...copy.details.map(detail => detail[1].join(' '))].join('\n\n'); }
+    if (kit.slug === 'yilo') { const copy = yiloCopy[tag.toLowerCase()]; summary = copy.sub; description = [copy.formerName, ...copy.cards.map(card => card[1]), ...copy.details.flatMap(detail => detail[1])].join('\n\n'); }
     if (kit.slug === 'shheep') {
       summary = plain(t.title.split(' — ')[1]);
       description = [t.description, ...t.cards.map(card => card[1]), t.gameCenterCopy, t.demoNote].join('\n\n');
     }
-    const category = ['chmate','fondfont','world-book','shheep'].includes(kit.slug) ? 'store' : kit.slug === 'yiyan' ? 'beta' : 'mac';
+    const category = ['chmate','fondfont','world-book','shheep'].includes(kit.slug) ? 'store' : kit.slug === 'yilo' ? 'beta' : 'mac';
     const links = kit.links.map(link => ({url:link.url, label:['doze', 'calmon'].includes(kit.slug) ? t.cta : link.url.includes('apps.apple.com') ? 'App Store' : link.url.includes('testflight.') ? g.links.beta : link.url.endsWith('/releases') ? g.links.download : link.url.includes('github.com') ? g.links.source : kit.slug === 'shheep' ? g.links.demo : g.links.play}));
-    const references = kit.slug === 'doze' ? computerUseParts('computer use', tag).filter(part => part.href).map(part => ({ label: part.text, url: part.href })) : kit.slug === 'calmon' ? [{ label: 'X @lazyapps', url: 'https://x.com/lazyapps' }] : [];
-    return { tag, displayName: g.name, name, summary, description, website: t?.selectedUrl ?? `/${kit.slug}/`, platform: kit.slug === 'calmon' ? t.compatibility : kit.platform[lang], availability: ['doze', 'calmon'].includes(kit.slug) ? t.availability : g.availability[category], links, references, assets: localeAssets(kit, tag, t), headings: g.headings, usage: g.usage };
+    const references = kit.slug === 'yilo' ? [{ label: yiloHero[tag.toLowerCase()].posterLabel + ' · MP4', url: `https://lazyapps.com${yiloHeroSource.outputs.find(item => item.locale === tag.toLowerCase()).video.path.replace(/^public/, '')}` }, { label: 'Kevin MacLeod · Fluffing a Duck · CC BY 4.0', url: 'https://lazyapps.com/v/yilo/music-credits.txt' }] : kit.slug === 'doze' ? computerUseParts('computer use', tag).filter(part => part.href).map(part => ({ label: part.text, url: part.href })) : kit.slug === 'calmon' ? [{ label: 'X @lazyapps', url: 'https://x.com/lazyapps' }] : [];
+    return { tag, displayName: g.name, name, summary, description, website: t?.selectedUrl ?? `/${kit.slug}/`, platform: kit.slug === 'calmon' ? t.compatibility : kit.platform[lang], availability: kit.slug === 'yilo' ? g.availability.beta : ['doze', 'calmon'].includes(kit.slug) ? t.availability : g.availability[category], links, references, assets: localeAssets(kit, tag, t), headings: g.headings, usage: g.usage };
   });
   // Identity is source bytes, so repeated artwork is stored once even for a subset of languages.
   const identities = new Map();

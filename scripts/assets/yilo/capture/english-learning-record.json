@@ -1,0 +1,63 @@
+{
+  "id": "D790B4DB-3159-5329-8F75-98B2001F53AE",
+  "originalText": "The features have been updated, so we need to retake the screenshots.",
+  "sourceHost": "codex",
+  "hostVersion": "0.166.0-alpha.6",
+  "capturedAt": 1793967080.949,
+  "status": "succeeded",
+  "configuration": {
+    "preservesOriginalTone": true,
+    "sourceLanguage": "en",
+    "englishInputExplanationLanguage": "en",
+    "learningNotesLanguage": "en",
+    "dialect": "american",
+    "targetLanguages": [
+      "zh-Hans",
+      "ja"
+    ],
+    "targetStyle": "natural"
+  },
+  "naturalEnglish": null,
+  "translations": [
+    {
+      "language": "zh-Hans",
+      "text": "功能更新了，需要重新截图。",
+      "learningAdvice": [
+        {
+          "kind": "learning_point",
+          "category": "vocabulary",
+          "sourceExcerpt": "retake the screenshots",
+          "recommendation": "Use “重新截图” for taking replacement screenshots.",
+          "explanation": "重新 means “again” or “anew.” Put it before 截图 to say that screenshots need to be taken again after an update.",
+          "exampleEnglish": "功能更新后，我们需要重新截图。"
+        }
+      ]
+    },
+    {
+      "language": "ja",
+      "text": "機能が更新されたため、スクリーンショットを撮り直す必要があります。",
+      "learningAdvice": [
+        {
+          "kind": "learning_point",
+          "category": "translation_pattern",
+          "sourceExcerpt": "retake the screenshots",
+          "recommendation": "Use 「撮り直す」 to say “retake.”",
+          "explanation": "Attach 直す to the verb stem 撮り to express doing the action again. Here, 撮り直す means retaking a photo or screenshot.",
+          "exampleEnglish": "更新後にスクリーンショットを撮り直してください。"
+        }
+      ]
+    }
+  ],
+  "learningAdvice": [
+    {
+      "kind": "learning_point",
+      "category": "vocabulary",
+      "sourceExcerpt": "retake the screenshots",
+      "recommendation": "Use “重新截图” for taking replacement screenshots.",
+      "explanation": "重新 means “again” or “anew.” Put it before 截图 to say that screenshots need to be taken again after an update.",
+      "exampleEnglish": "功能更新后，我们需要重新截图。"
+    }
+  ],
+  "isBookmarked": false,
+  "origin": "captured"
+}

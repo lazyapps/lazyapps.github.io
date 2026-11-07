@@ -1,0 +1,16 @@
+{
+  "labels" : {
+    "advice.category.collocation" : "Сочетаемость",
+    "advice.category.translation_pattern" : "Шаблон перевода",
+    "advice.kind.learning_point" : "Учебный момент",
+    "language.japanese_reading.help" : "Хирагана отображается над кандзи, а ромадзи выравнивается над каждым японским словом.",
+    "language.notes" : "Учебные заметки",
+    "language.search" : "Поиск языков",
+    "language.section" : "Языки изучения",
+    "language.targets" : "Изучаемые языки",
+    "record.example" : "Пример"
+  },
+  "nativeLocale" : "ru",
+  "operatingSystem" : "Версия 27.0.1 (Выпуск 26A434)",
+  "requestedLocale" : "ru"
+}

@@ -2,3 +2,14 @@
 /keyhop/presskit/ /keyhop/ 301
 /presskit/keyhop /keyhop/ 301
 /presskit/keyhop/* /keyhop/ 301
+
+# HTTP 301 rules for hosts supporting _redirects. GitHub Pages uses HTML fallbacks.
+/yiyan /yilo/ 301
+/yiyan/ /yilo/ 301
+/yiyan/* /yilo/:splat 301
+/presskit/yiyan/yiyan-presskit.zip /presskit/yilo/yilo-presskit.zip 301
+/presskit/yiyan/learning-notes-en.png /presskit/yilo/learning-record-preview-en.png 301
+/presskit/yiyan/follow-up-en.png /presskit/yilo/learning-record-preview-en.png 301
+/presskit/yiyan/zh-Hans/social-card.png /presskit/yilo/social-card-zh.png 301
+/presskit/yiyan/zh-Hant/social-card.png /presskit/yilo/social-card-zh.png 301
+/presskit/yiyan/* /presskit/yilo/:splat 301

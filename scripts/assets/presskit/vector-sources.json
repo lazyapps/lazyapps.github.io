@@ -30,17 +30,16 @@
       "method": "Flat SVG composition of the original vector layers, native positions, scales and default fills. Native glass, refraction, lighting, shadows and platform icon masks are not reproduced. The native PNG remains the complete rendered app icon."
     }
   ],
-  "yiyan": [
+  "yilo": [
     {
-      "output": "scripts/assets/presskit/vectors/yiyan-flat.svg",
-      "sha256": "6ac7dbc88f91ab3bee9a82eb7f98a0292d162a1812946525cc8c272a84287cfa",
+      "output": "scripts/assets/presskit/vectors/yilo-flat.svg",
+      "sha256": "28ed156d18c406c8ca1d42eb085590f5f9abb9981f724e2b61cf4dd1580250b2",
       "inputs": {
-        "scripts/assets/yiyan/AppIcon.icon/icon.json": "983fe66969c3495cb12219c9644ce3e7859c85f8d40821fa4c0e021d26bc2ea3",
-        "scripts/assets/yiyan/AppIcon.icon/Assets/05-sun-glow.svg": "8adcc4cafbd31cd24d4021433a051931880da975240e404451a67561a60ecf63",
-        "scripts/assets/yiyan/AppIcon.icon/Assets/40-mouth.svg": "25e27f68333adb04933b68b9c632973c7b214a784aeca8f9f0e5911f819f9f61",
-        "scripts/assets/yiyan/AppIcon.icon/Assets/30-short-stroke.svg": "e48997d2a2355ee1d5bd38e28d0725ceca1fce1b367c566f31c741f27b1593f3",
-        "scripts/assets/yiyan/AppIcon.icon/Assets/20-long-stroke.svg": "f7e112fba7a975328ac94157bc590948e07848bc5cd79810f439574b809f7cdc",
-        "scripts/assets/yiyan/AppIcon.icon/Assets/10-sun.svg": "a6bf04fbc90f2e8d4101ebd54291b1fbe683d045e81104146f72b18f206163ee"
+        "scripts/assets/yilo/AppIcon.icon/icon.json": "89610bb2598744864cccc207b48696d3e7b22940ea5b1f6d42908375387cd893",
+        "scripts/assets/yilo/AppIcon.icon/Assets/04-left.svg": "ee6a8df7b3cf83b79463823f8dfbade61ddfb544fb4f0ef91ec42d1b480679f9",
+        "scripts/assets/yilo/AppIcon.icon/Assets/03-right.svg": "97fa63795f019c003f07ab95074721077d2d57de2e3e0a51e0d164e15441274f",
+        "scripts/assets/yilo/AppIcon.icon/Assets/02-main.svg": "3b7ef391fa1328c0cb70dc68f8a1e6393dddf3e8b000d1121269e8d628094437",
+        "scripts/assets/yilo/AppIcon.icon/Assets/01-head.svg": "8dfecd21f25a4e17b974ed0fe18fff5d87c2d7657dae80f45dd93e5e12b53deb"
       },
       "method": "Flat SVG composition of the original vector layers, native positions, scales and default fills. Native glass, refraction, lighting, shadows and platform icon masks are not reproduced. The native PNG remains the complete rendered app icon."
     }
@@ -137,35 +136,6 @@
         "public/shheep/assets/sprites/title.png": "151f12b04c70ad013f3aee794df2ae49659a9b34168c6bad85e85a48503a84cf"
       },
       "method": "Lossless pixel-to-vector conversion: each original horizontal run becomes a filled vector path; all RGBA values, transparency, canvas and pixel edges are preserved. No tracing, smoothing or embedded raster image."
-    }
-  ],
-  "calmon": [
-    {
-      "output": "scripts/assets/presskit/vectors/calmon-lettering.svg",
-      "sha256": "df99e5a7feb39a0ea0549303449798b76fabc9f2183c263799925cf34ee58b6d",
-      "inputs": {
-        "scripts/assets/native-icons/calmon/lettering.svg": "df99e5a7feb39a0ea0549303449798b76fabc9f2183c263799925cf34ee58b6d",
-        "scripts/assets/native-icons/calmon/AppIcon.icon/Assets/BlackField.svg": "a38ef0970ae4197416a496c992b31d2ee07dca6819d5658acfb9267c341ac60e",
-        "scripts/assets/native-icons/calmon/AppIcon.icon/Assets/ColorBands.svg": "fa34b4292de623261a636bcd78cb50bba60c0a2a4f5a2223737a5392531ef544",
-        "scripts/assets/native-icons/calmon/AppIcon.icon/Assets/DarkLetterA.png": "439383f7ff60acf550455a8746e572c6ba71bff89f1c1e64b38b16ce0e0dd769",
-        "scripts/assets/native-icons/calmon/AppIcon.icon/Assets/DarkLetterC.png": "54936afbfb919c878781be98c71b2c7c68d34984e8beffb88155deccd9518e4b",
-        "scripts/assets/native-icons/calmon/AppIcon.icon/Assets/DarkLetterL.png": "5ace27365637e5b846d67154888bfb3753c304efd7c9d1e12b5c0c00ed20083a",
-        "scripts/assets/native-icons/calmon/AppIcon.icon/Assets/DarkLetterM.png": "530d409895399ea865fceb9542471e6b457e04ccf2d452f0be9a693e70152e32",
-        "scripts/assets/native-icons/calmon/AppIcon.icon/Assets/DarkSideA.png": "398f0e0eda7d3a6a79190a5c7699ec79f21d3a2aa72bdaa2d54bb447368157a5",
-        "scripts/assets/native-icons/calmon/AppIcon.icon/Assets/DarkSideC.png": "9bb2c6b57809bea8db8470c45b435a1367d5fcda4a3d01a9fc37026b38d1daa9",
-        "scripts/assets/native-icons/calmon/AppIcon.icon/Assets/DarkSideL.png": "ba184b88699ffe7331c6c80ce6c31a5713c691749349945c1a0943edb7bd0158",
-        "scripts/assets/native-icons/calmon/AppIcon.icon/Assets/DarkSideM.png": "6c7f813a29132e5a25516e6e147740462d92cfdb26f1606ab3fcf581c132f5a6",
-        "scripts/assets/native-icons/calmon/AppIcon.icon/Assets/LetterA.png": "39d1fef7f07a3c76214a4f814d75a7d89f9e4453c8b8bb71f6d479af6984b50c",
-        "scripts/assets/native-icons/calmon/AppIcon.icon/Assets/LetterC.png": "3b3ee818a3b56500278146bc90a6e82e5f4a500c4cdb4174effa3c4b82c8eb46",
-        "scripts/assets/native-icons/calmon/AppIcon.icon/Assets/LetterL.png": "e3fcaeac1cc6c18c749d7b0660d212f7599818e0c98117628e6a5dc6827a9040",
-        "scripts/assets/native-icons/calmon/AppIcon.icon/Assets/LetterM.png": "7351ef3f9b87839e9e7a9f0e6f027ded4e10c62675220e0718736819d9735a24",
-        "scripts/assets/native-icons/calmon/AppIcon.icon/Assets/SideA.png": "6f262e3128757e803b4de31962b62c8ea56ca007ef72d54c25af6c37677f555c",
-        "scripts/assets/native-icons/calmon/AppIcon.icon/Assets/SideC.png": "879444b3eb563ee6c8fa3201c1e37e6f93abb5b2d2a9e43f7d523df17f84b068",
-        "scripts/assets/native-icons/calmon/AppIcon.icon/Assets/SideL.png": "8c166427cafe853a4fa064263cf50790e31166c395c26e58e80f8544b89c8210",
-        "scripts/assets/native-icons/calmon/AppIcon.icon/Assets/SideM.png": "9fcb3f45e298989f883c6c488c90f626e887c15018af125183b588a38d853b83",
-        "scripts/assets/native-icons/calmon/AppIcon.icon/icon.json": "b7aedfc0b4d5313a239258fea9fa6f8c9b4b68be466b0096678767047ccc59c4"
-      },
-      "method": "Exact native rounded CGPath contours exported by render-icon-lettering.swift, with the same six green diagonal bands as the current icon. No raster tracing or embedded bitmap; native glass, lighting and backing omitted."
     }
   ]
 }

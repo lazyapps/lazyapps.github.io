@@ -6,7 +6,7 @@ const { base, asset, metadata, lang = 'en', formats = [] } = Astro.props;
 <figure class="asset" data-kind={asset.kind} lang={lang}>
   <div class="asset-preview">
     <a class="asset-preview__image" href={base + asset.path} aria-label={asset.label}>{asset.kind === 'icon' ? <NativeAppIcon slug={base.split('/')[2]} size={180} appearance={asset.filename === 'icon-dark.png' ? 'dark' : 'light'} alt={asset.label} /> : <img src={base + asset.path} alt={asset.label} width={metadata.width} height={metadata.height} loading="lazy" decoding="async" />}</a>
-    <div class="asset-downloads" dir="ltr">{[{ asset, metadata }, ...formats].map(item => <a href={base + item.asset.path} download aria-label={`${item.asset.label} · ${item.asset.path} ↓`}><span aria-hidden="true">↓</span> <span>{item.metadata.format}</span></a>)}</div>
+    <div class="asset-downloads" dir="ltr">{[{ asset, metadata }, ...formats].map(item => <a href={base + item.asset.path} download aria-label={`${item.asset.label} · ${item.asset.path} ↓`}><span aria-hidden="true">↓</span> <span>{item.metadata.format}</span></a>)}{asset.videoUrl && <a href={asset.videoUrl} download aria-label={`${asset.label} · MP4 ↓`}><span aria-hidden="true">↓</span> <span>MP4</span></a>}</div>
   </div>
   <figcaption class="asset-caption"><h3>{asset.label}</h3><p class="dimensions" dir="ltr">{metadata.width} × {metadata.height} · {asset.path}</p><p class="note">{asset.note}</p></figcaption>
 </figure>

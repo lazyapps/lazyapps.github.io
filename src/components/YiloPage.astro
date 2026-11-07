@@ -1,0 +1,357 @@
+---
+interface Props {
+  t: any;
+  code: string;
+}
+
+const { t: original, code = '' } = Astro.props;
+
+const SITE = 'https://lazyapps.com';
+import SocialMeta from './SocialMeta.astro';
+import SoftwareApplication from './SoftwareApplication.astro';
+import LanguagePicker from './LanguagePicker.astro';
+import YiloDetailIllustration from './YiloDetailIllustration.astro';
+import YiloFeatureIllustration from './YiloFeatureIllustration.astro';
+import SiteHeader from './SiteHeader.astro';
+import SiteGrain from './SiteGrain.astro';
+import SiteEdges from './SiteEdges.astro';
+import SiteFooterBase from './SiteFooterBase.astro';
+import siteCssUrl from '$assets/s/site.css?url';
+import yiloHandCssUrl from '$assets/s/yilo-hand.css?url';
+import gsapUrl from '$assets/vendor/gsap.min.js?url';
+import scrollTriggerUrl from '$assets/vendor/ScrollTrigger.min.js?url';
+import customEaseUrl from '$assets/vendor/CustomEase.min.js?url';
+import splitTextUrl from '$assets/vendor/SplitText.min.js?url';
+import logoRevealUrl from '$assets/s/logo-reveal-loader.js?url';
+import siteJsUrl from '$assets/s/site.js?url';
+import yiloIconUrl from '$assets/img/yilo-icon.png?url';
+import yiloOpengraphUrl from '$assets/img/yilo-opengraph.png?url';
+import yiloOpengraphSharedUrl from '$assets/img/yilo-opengraph-shared.png?url';
+import type { ImageMetadata } from 'astro';
+import shortCopy from '../i18n/yilo-short-copy.json';
+import heroCopy from '../i18n/yilo-hero-copy.json';
+import YiloDemo from './YiloDemo.astro';
+
+const OPENGRAPH_MAP = {
+  '': yiloOpengraphUrl,
+  'zh-hant': yiloOpengraphUrl,
+};
+const opengraphUrl = OPENGRAPH_MAP[code] ?? yiloOpengraphSharedUrl;
+const OG_LOCALE_MAP = {
+  '': 'zh_CN',
+  ar: 'ar_AR',
+  de: 'de_DE',
+  en: 'en_US',
+  es: 'es_ES',
+  fr: 'fr_FR',
+  hi: 'hi_IN',
+  ja: 'ja_JP',
+  ko: 'ko_KR',
+  'pt-br': 'pt_BR',
+  ru: 'ru_RU',
+  'zh-hant': 'zh_TW',
+};
+const ogLocale = OG_LOCALE_MAP[code] ?? 'en_US';
+const copy = shortCopy[code || 'zh-hans'];
+const screenshotTag = ({ '': 'zh-Hans', 'zh-hant': 'zh-Hant', 'pt-br': 'pt-BR' })[code] ?? code;
+const nativeScreenshots = import.meta.glob<{ default: ImageMetadata }>('../../scripts/assets/presskit/yilo/*/*.png', { eager: true });
+const screenshots = ['learning-record.png', 'learning-settings.png', 'language-selection.png'].map(filename => nativeScreenshots[`../../scripts/assets/presskit/yilo/${screenshotTag}/${filename}`].default);
+const t = original;
+const film = heroCopy[code || 'zh-hans'];
+const ALTS = [
+  ['zh-Hans', 'yilo/'],
+  ['en', 'yilo/en/'],
+  ['zh-Hant', 'yilo/zh-hant/'],
+  ['es', 'yilo/es/'],
+  ['pt-BR', 'yilo/pt-br/'],
+  ['fr', 'yilo/fr/'],
+  ['de', 'yilo/de/'],
+  ['ja', 'yilo/ja/'],
+  ['ko', 'yilo/ko/'],
+  ['ru', 'yilo/ru/'],
+  ['ar', 'yilo/ar/'],
+  ['hi', 'yilo/hi/'],
+  ['x-default', 'yilo/en/'],
+];
+
+const OPTIONS = [
+  ['zh-Hans', '/yilo/', 'zh-Hans', '简体中文'],
+  ['en', '/yilo/en/', 'en', 'English'],
+  ['zh-Hant', '/yilo/zh-hant/', 'zh-Hant', '繁體中文'],
+  ['es', '/yilo/es/', 'es', 'Español'],
+  ['pt-BR', '/yilo/pt-br/', 'pt-BR', 'Português'],
+  ['fr', '/yilo/fr/', 'fr', 'Français'],
+  ['de', '/yilo/de/', 'de', 'Deutsch'],
+  ['ja', '/yilo/ja/', 'ja', '日本語'],
+  ['ko', '/yilo/ko/', 'ko', '한국어'],
+  ['ru', '/yilo/ru/', 'ru', 'Русский'],
+  ['ar', '/yilo/ar/', 'ar', 'العربية'],
+  ['hi', '/yilo/hi/', 'hi', 'हिन्दी'],
+];
+
+
+
+const ctaButtons = t.cta.slice(0, 2).map((label, i) => {
+  if (!label) return '';
+  const cls = i === 0 ? 'button-023' : i === 1 ? 'button-023 button-023--ghost' : 'button-023 button-023--square';
+  const href = i === 0 ? 'https://github.com/cxa/yilo/releases' : i === 1 ? 'https://testflight.apple.com/join/cbnauaKB' : 'https://github.com/cxa/yilo';
+  return `<a data-hover href="${href}" class="${cls}">
+              <span class="button-023__bg">
+                <span style="--index: 0;" class="button-023__bg-inner is--first"></span>
+                <span style="--index: 1;" class="button-023__bg-inner is--second"></span>
+              </span>
+              <span class="button-023__inner">
+                <span class="button-023__text is--first">${label}</span>
+                <span aria-hidden="true" class="button-023__text is--second">${label}</span>
+              </span>
+            </a>`;
+}).join('\n');
+---
+
+<!doctype html>
+<html lang={t.htmlLang} dir={t.htmlDir} class="no-js" data-yilo>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>{t.title}</title>
+<meta name="description" content={t.description}>
+<meta name="theme-color" content="#f6f2e7">
+{ALTS.map(([hreflang, path]) => <link rel="alternate" hreflang={hreflang} href={`${SITE}/${path}`} />)}
+<SocialMeta
+  title={t.ogTitle}
+  description={t.ogDesc}
+  url={t.canonical}
+  image={`${SITE}${opengraphUrl}`}
+  imageAlt={t.ogTitle}
+  imageWidth={1200}
+  imageHeight={630}
+  locale={ogLocale}
+/>
+<SoftwareApplication name={t.title.split(' — ')[0]} description={t.description} url={t.canonical} language={t.htmlLang} operatingSystem="macOS, iOS" downloadUrl="https://github.com/cxa/yilo/releases" image={`${SITE}${yiloIconUrl}`} />
+<link rel="icon" type="image/png" href={yiloIconUrl}>
+<link rel="stylesheet" href={siteCssUrl}>
+<link rel="stylesheet" href={yiloHandCssUrl}>
+<script is:inline>
+document.documentElement.classList.remove('no-js');
+setTimeout(()=> {
+  document.documentElement.classList.add('is-page-theme');
+  document.documentElement.classList.add('is-loaded');
+  var l = document.getElementById('loader');
+  if (l) l.remove();
+}, 6000);
+</script>
+<style is:inline>
+section.phero.wrap{
+ --yilo-header-height:max(80px,calc(68px + var(--safe-top,0px)));
+ --hero-video-height:calc((min(100vw,var(--wrap)) - 2 * var(--pad)) * 704 / 1376);
+ --hero-gap:clamp(10px,1.5svh,18px);--hero-inset:8px;
+ --hero-following:clamp(48px,12svh,96px);
+ display:flex;flex-direction:column;gap:var(--hero-gap);min-height:0;
+ padding-top:var(--hero-inset);padding-bottom:8px;
+}
+.phero__h1{
+ margin:0;text-align:center;font-family:var(--yilo-hand);font-weight:400;letter-spacing:0;
+ line-height:var(--yilo-heading-leading);text-transform:none;
+ font-size:min(72px,calc((min(100vw,var(--wrap)) - 2 * var(--pad)) / var(--headline-em)),max(28px,calc((100svh - var(--yilo-header-height) - var(--hero-video-height) - var(--hero-gap) - var(--hero-inset) - 8px - var(--hero-following)) / (var(--hero-lines) * var(--yilo-heading-leading)))));
+}
+.phero__h1 span{display:block;width:max-content;max-width:100%;margin-inline:auto;white-space:nowrap}
+.phero__copy{min-width:0}
+.phero__sub{margin:20px 0 0;font-size:var(--yilo-reading-size);line-height:1.7;color:var(--muted);max-width:55ch;text-wrap:pretty}
+.phero__cta{margin-top:28px;display:flex;gap:18px;flex-wrap:wrap}
+.former-name{margin:20px 0 0;font-size:19px;line-height:1.6;color:var(--muted)}
+.yilo-hero{margin:0;min-width:0;--yilo-scene-max-height:calc(100svh - var(--yilo-header-height) - var(--hero-gap) - var(--hero-inset) - 8px - var(--hero-lines) * 28px * var(--yilo-heading-leading))}
+.yilo-outcome{display:flex;flex-direction:column;align-items:center;gap:20px;text-align:center;padding-top:clamp(24px,3vw,40px)}
+.yilo-outcome .phero__copy{width:100%;max-width:780px}
+.yilo-outcome .phero__sub{margin:0 auto;max-width:62ch}
+.yilo-outcome .phero__cta{justify-content:center}
+.yilo-outcome h2{font-size:clamp(28px,2.6vw,36px);font-weight:500;line-height:1.25;text-wrap:balance}
+
+.deck{padding-top:clamp(56px,7vw,96px)}
+.deck__grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));column-gap:clamp(30px,4vw,60px);row-gap:44px}
+body .deck .card:nth-child(n){position:relative;background:none;border:0;border-radius:0;padding:0;margin:0;transform:none;color:var(--ink);min-width:0}
+.card__grid{display:grid;gap:14px;align-content:start}
+.card__title{font-size:clamp(22px,2.1vw,28px);font-weight:500;line-height:1.3;text-wrap:balance}
+.card__p{font-size:var(--yilo-reading-size);line-height:1.75;color:var(--muted)}
+.yilo-preview{max-width:900px;margin:clamp(48px,7vw,88px) auto 0}
+.yilo-preview img{display:block;width:100%;height:auto}
+.yilo-preview figcaption{max-width:68ch;margin:20px auto 0;font-size:20px;line-height:1.65;color:var(--muted)}
+.bounds{padding-top:clamp(56px,7vw,96px);scroll-margin-top:80px}
+.bounds__grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:clamp(40px,7vw,104px);row-gap:clamp(48px,6vw,88px)}
+.bounds__item{min-width:0}
+.bounds__item h3{font-size:clamp(25px,2.8vw,34px);font-weight:500;line-height:1.3;text-wrap:balance}
+.bounds__brief{margin-top:16px;max-width:48ch;font-size:var(--yilo-reading-size);line-height:1.7}
+.bounds__more{margin-top:8px;max-width:48ch;font-size:20px;line-height:1.7}
+.bounds__more summary{display:flex;align-items:center;gap:10px;min-height:44px;width:fit-content;cursor:pointer;color:var(--muted);list-style:none}
+.bounds__more summary span{text-decoration:underline;text-underline-offset:.25em}
+.bounds__more summary::-webkit-details-marker{display:none}
+.bounds__more summary::after{content:"+";font-size:20px;line-height:1}
+.bounds__more[open] summary::after{content:"−"}
+.bounds__more summary:focus-visible{outline:2px solid var(--accent);outline-offset:4px;border-radius:3px}
+.bounds__more p{margin-top:14px;color:var(--muted)}
+.next__plate.next__plate--icon{max-width:96px;border:none}
+.brew{margin-top:32px;border:1px solid var(--line);border-radius:var(--r-card);background:var(--ink);color:var(--paper);padding:clamp(24px,3vw,40px);display:grid;gap:20px}
+.brew__head{display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap}
+.brew__head h3{font-size:clamp(22px,2.5vw,30px);font-weight:500;line-height:1.3}
+.brew__head>span{font:400 .6875rem/1.4 var(--mono);color:var(--muted)}
+.brew pre{margin:0;font:400 .8125rem/1.9 var(--mono);white-space:pre-wrap;overflow-wrap:anywhere}
+.brew pre .p{color:var(--muted)}
+.yilo-music{margin-top:24px;font-size:18px;line-height:1.7;color:var(--muted)}
+.yilo-music a{text-decoration:underline;text-underline-offset:.2em}
+.yilo-footer{margin-top:clamp(56px,6vw,88px);padding-top:28px;border-top:1px solid var(--line)}
+@media(max-aspect-ratio:3/4){section.phero.wrap{min-height:0}.phero__h1{font-size:min(64px,calc((100vw - 2 * var(--pad)) / var(--headline-em)))}.yilo-hero{--yilo-scene-max-height:none}}
+@media(max-width:980px){.deck__grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:680px){
+  .yilo-outcome{grid-template-columns:1fr;gap:24px;justify-items:center;text-align:center}
+  .yilo-outcome h2{max-width:20ch;margin-inline:auto}.phero__sub{margin-inline:auto}.phero__cta{justify-content:center}
+  .bounds__grid{grid-template-columns:1fr}.bounds__item .detail-art{max-width:300px;margin-bottom:18px}
+}
+@media(max-width:650px){section.phero.wrap{--yilo-header-height:max(72px,calc(68px + var(--safe-top,0px)))}}
+@media(max-width:560px){
+  body .phero__cta{gap:16px}.phero__sub{line-height:1.7}
+  .deck__grid{grid-template-columns:1fr;row-gap:32px}
+  .card__grid{gap:10px}
+}
+</style>
+</head>
+
+<body>
+
+
+<SiteEdges />
+<SiteGrain />
+
+
+<div data-load-wrap class="loader" id="loader" aria-hidden="true">
+  <div data-load-bg class="loader__bg">
+    <div data-load-progress class="loader__bg-bar"></div>
+  </div>
+  <div data-load-container class="loader__container">
+    <div class="loader__logo-wrap">
+      <div class="loader__logo-item is--base">
+        <span class="loader__logo-img" lang="en">{t.loaderLogo}</span>
+      </div>
+      <div data-load-logo class="loader__logo-item is--top">
+        <span class="loader__logo-img" lang="en">{t.loaderLogo}</span>
+      </div>
+    </div>
+    <div class="loader__text-wrap">
+      <span data-load-text data-load-reset class="loader__text-el" lang="en">Independent software</span>
+      <span data-load-text data-load-reset class="loader__text-el" lang="en">Since 2009</span>
+    </div>
+  </div>
+</div>
+
+<SiteHeader class="wrap yilo-nav" name={t.appTitle} icon={yiloIconUrl} homeLabel={t.homeAria}>
+        <LanguagePicker label={t.selectAria} current={t.selectedUrl} storageKey="yilo.locale" options={OPTIONS.map(([language, url, , label]) => ({ language, url, label }))} />
+      </SiteHeader>
+
+<main>
+
+  <section class="phero wrap" style={`--hero-lines:${copy.headlineLines.length};--headline-em:${copy.headlineEm}`}>
+    <h1 class="phero__h1">{copy.headlineLines.map((line,index) => <Fragment><span>{line}</span>{index < copy.headlineLines.length - 1 ? ' ' : ''}</Fragment>)}</h1>
+    <figure class="yilo-hero">
+      <YiloDemo locale={(code || 'zh-hans') as keyof typeof heroCopy} compact={false} />
+    </figure>
+  </section>
+
+  <section class="yilo-outcome wrap" aria-labelledby="yilo-learning-result">
+    <h2 id="yilo-learning-result">{film.reuse.replace(/[.。।]$/u, '')}</h2>
+    <div class="phero__copy">
+      <p class="phero__sub"><Fragment set:html={t.sub} /></p>
+      {t.cta[0] && <div class="phero__cta"><Fragment set:html={ctaButtons} /></div>}
+      <p class="former-name">{copy.formerName}</p>
+    </div>
+  </section>
+
+  <section class="deck wrap">
+    <div class="deck__grid">
+
+      {copy.cards.map((card, i) => <article class={`card card--c${i + 1}`}>
+        <div class="card__grid">
+          <YiloFeatureIllustration kind={i} english={code === 'en'} />
+          <h3 class="card__title">{card[0]}</h3>
+          <p class="card__p">{card[1]}</p>
+        </div>
+      </article>)}
+
+    </div>
+  </section>
+
+  <section class="wrap">
+    {screenshots.map((image, index) => <figure class="yilo-preview">
+      <img src={image.src} alt={copy.screenshots[index]} width={image.width} height={image.height} loading="lazy">
+      <figcaption>{copy.screenshots[index]}</figcaption>
+    </figure>)}
+  </section>
+
+  <section class="bounds wrap">
+    <div class="bounds__grid">
+      {copy.details.map(([title, paragraphs], index) => <article class="bounds__item">
+        <YiloDetailIllustration kind={index} english={code === 'en'} />
+        <h3>{title}</h3>
+        <p class="bounds__brief">{paragraphs[0]}</p>
+        <details class="bounds__more">
+          <summary><span>{copy.detailMore[index]}</span></summary>
+          {paragraphs.slice(1).map(text => <p>{text}</p>)}
+        </details>
+      </article>)}
+    </div>
+  </section>
+
+</main>
+
+<footer class="wrap">
+
+  <section class="next" id="brew">
+    <img class="next__plate next__plate--icon" src={yiloIconUrl} alt={t.next.imgAlt}>
+    <div class="next__act">
+      <a data-hover href="https://github.com/cxa/yilo/releases" class="button-023 button-023--square">
+        <span class="button-023__bg">
+          <span style="--index: 0;" class="button-023__bg-inner is--first"></span>
+          <span style="--index: 1;" class="button-023__bg-inner is--second"></span>
+        </span>
+        <span class="button-023__inner">
+          <span class="button-023__text is--first">{t.cta[2]}</span>
+          <span aria-hidden="true" class="button-023__text is--second">{t.cta[2]}</span>
+        </span>
+      </a>
+    </div>
+  </section>
+
+  <div class="brew">
+    <div class="brew__head">
+      <h3><Fragment set:html={t.brew.h3} /></h3>
+      <span><Fragment set:html={t.brew.label} /></span>
+    </div>
+    <pre dir="ltr"><Fragment set:html={t.brew.install} /></pre>
+  </div>
+
+  <p class="yilo-music">{copy.music.label}: <a href="https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1100768"><bdi>“Fluffing a Duck” · Kevin MacLeod</bdi></a> · <a href="https://creativecommons.org/licenses/by/4.0/"><bdi>CC BY 4.0</bdi></a> · {copy.music.note} <a href="/v/yilo/music-credits.txt">{copy.music.credits}</a></p>
+  <div class="yilo-footer">
+    <SiteFooterBase class="yilo-footer-base" locale={t.htmlLang} pressKit="/yilo/presskit/" />
+  </div>
+
+</footer>
+
+<script is:inline src={gsapUrl}>
+
+</script>
+<script is:inline src={scrollTriggerUrl}>
+
+</script>
+<script is:inline src={customEaseUrl}>
+
+</script>
+<script is:inline src={splitTextUrl}>
+
+</script>
+
+<script is:inline src={logoRevealUrl}>
+
+</script>
+<script is:inline src={siteJsUrl}>
+
+</script>
+
+</body>
+</html>

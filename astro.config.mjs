@@ -1,4 +1,5 @@
 import { defineConfig } from 'astro/config';
+import { yiloLegacyRoutes } from './src/content/yilo-routes.mjs';
 import { fileURLToPath } from 'node:url';
 import { shheepRecordingDev } from './scripts/shheep-recording-dev.mjs';
 import { googleAnalytics } from './scripts/google-analytics.mjs';
@@ -8,6 +9,7 @@ export default defineConfig({
   trailingSlash: 'ignore',
   image: { service: { entrypoint: './src/image-service.mjs' } },
   redirects: {
+    ...Object.fromEntries(Object.entries(yiloLegacyRoutes).map(([from, destination]) => [from, { destination, status: 301 }])),
     '/calmon/en': '/calmon/',
     '/pane': '/calmon/',
     '/pane/en': '/calmon/',

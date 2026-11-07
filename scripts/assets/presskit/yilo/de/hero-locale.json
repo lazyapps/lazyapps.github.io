@@ -1,0 +1,16 @@
+{
+  "labels" : {
+    "advice.category.collocation" : "Kollokation",
+    "advice.category.translation_pattern" : "Übersetzungsmuster",
+    "advice.kind.learning_point" : "Lernpunkt",
+    "language.japanese_reading.help" : "Hiragana steht über den Kanji; Romaji wird über dem jeweiligen japanischen Wort ausgerichtet.",
+    "language.notes" : "Lernnotizen",
+    "language.search" : "Sprachen suchen",
+    "language.section" : "Lernsprachen",
+    "language.targets" : "Zielsprachen",
+    "record.example" : "Beispiel"
+  },
+  "nativeLocale" : "de",
+  "operatingSystem" : "Version 27.0.1 (Build 26A434)",
+  "requestedLocale" : "de"
+}

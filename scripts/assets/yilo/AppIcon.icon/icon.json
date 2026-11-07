@@ -1,0 +1,193 @@
+{
+  "features": [
+    "refractivity",
+    "specular-location"
+  ],
+  "fill-specializations": [
+    {
+      "value": {
+        "linear-gradient": [
+          "srgb:0.98621,0.34972,0.30029,1.00000",
+          "srgb:0.98432,0.12503,0.12829,1.00000"
+        ],
+        "orientation": {
+          "start": {
+            "x": 0.4,
+            "y": 0
+          },
+          "stop": {
+            "x": 0.6,
+            "y": 1
+          }
+        }
+      }
+    },
+    {
+      "appearance": "dark",
+      "value": {
+        "linear-gradient": [
+          "srgb:0.64804,0.06016,0.06520,1.00000",
+          "srgb:0.46267,0.02980,0.03336,1.00000"
+        ],
+        "orientation": {
+          "start": {
+            "x": 0.4,
+            "y": 0
+          },
+          "stop": {
+            "x": 0.6,
+            "y": 1
+          }
+        }
+      }
+    }
+  ],
+  "groups": [
+    {
+      "name": "Head lens · 圆点透镜",
+      "layers": [
+        {
+          "name": "Head · 圆点",
+          "image-name": "01-head.svg",
+          "glass": true,
+          "fill-specializations": [
+            {
+              "value": {
+                "automatic-gradient": "srgb:0.98600,0.98967,0.10556,1.00000"
+              }
+            },
+            {
+              "appearance": "dark",
+              "value": {
+                "automatic-gradient": "srgb:0.99302,0.99656,0.08765,1.00000"
+              }
+            },
+            {
+              "appearance": "tinted",
+              "value": {
+                "solid": "extended-gray:0.8,1.00000"
+              }
+            }
+          ]
+        }
+      ],
+      "lighting": "individual",
+      "blend-mode": "normal",
+      "specular": "outside",
+      "blur-material": 0.0,
+      "refractivity": {
+        "enabled": true,
+        "depth": 0.65,
+        "strength": 0.82
+      },
+      "translucency": {
+        "enabled": true,
+        "value": 0.12
+      },
+      "shadow": {
+        "kind": "neutral",
+        "opacity": 0.22
+      }
+    },
+    {
+      "name": "Yi · 亦",
+      "layers": [
+        {
+          "name": "Main · 横撇竖",
+          "image-name": "02-main.svg",
+          "glass": true,
+          "fill-specializations": [
+            {
+              "value": {
+                "automatic-gradient": "srgb:0.99093,0.96896,0.08999,1.00000"
+              }
+            },
+            {
+              "appearance": "dark",
+              "value": {
+                "automatic-gradient": "srgb:0.98600,0.98967,0.10556,1.00000"
+              }
+            },
+            {
+              "appearance": "tinted",
+              "value": {
+                "solid": "extended-gray:1,1.00000"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Right · 右短画",
+          "image-name": "03-right.svg",
+          "glass": true,
+          "fill-specializations": [
+            {
+              "value": {
+                "automatic-gradient": "srgb:0.99093,0.96896,0.08999,1.00000"
+              }
+            },
+            {
+              "appearance": "dark",
+              "value": {
+                "automatic-gradient": "srgb:0.98600,0.98967,0.10556,1.00000"
+              }
+            },
+            {
+              "appearance": "tinted",
+              "value": {
+                "solid": "extended-gray:1,1.00000"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Left · 左短画",
+          "image-name": "04-left.svg",
+          "glass": true,
+          "fill-specializations": [
+            {
+              "value": {
+                "automatic-gradient": "srgb:0.99093,0.96896,0.08999,1.00000"
+              }
+            },
+            {
+              "appearance": "dark",
+              "value": {
+                "automatic-gradient": "srgb:0.98600,0.98967,0.10556,1.00000"
+              }
+            },
+            {
+              "appearance": "tinted",
+              "value": {
+                "solid": "extended-gray:1,1.00000"
+              }
+            }
+          ]
+        }
+      ],
+      "lighting": "individual",
+      "blend-mode": "normal",
+      "specular": "outside",
+      "blur-material": 0.0,
+      "refractivity": {
+        "enabled": true,
+        "depth": 0.48,
+        "strength": 0.72
+      },
+      "translucency": {
+        "enabled": true,
+        "value": 0.18
+      },
+      "shadow": {
+        "kind": "neutral",
+        "opacity": 0.24
+      }
+    }
+  ],
+  "supported-platforms": {
+    "circles": [
+      "watchOS"
+    ],
+    "squares": "shared"
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "checkedOn": "2026-11-07",
+  "fonts": [
+    {
+      "family": "Patrick Hand",
+      "cssFamily": "Yilo Hand Latin",
+      "sourceUrl": "https://raw.githubusercontent.com/google/fonts/main/ofl/patrickhand/PatrickHand-Regular.ttf",
+      "sourceSHA256": "0f173b3e6cb6d1af25babf7f0057c5ac4ee11f9992b0469bb817e967ef4ad0fc",
+      "licenseUrl": "https://raw.githubusercontent.com/google/fonts/main/ofl/patrickhand/OFL.txt",
+      "license": "src/assets/fonts/yilo/latin-OFL.txt",
+      "output": "src/assets/fonts/yilo/latin.woff2",
+      "sha256": "7b48ed9c995238cceec88ee0128c4af4e1ca389cd3c2388c2732080d286e27b3",
+      "glyphs": 137,
+      "method": "Original outlines retained; subset to Yilo page characters, renamed to avoid reserved font names, WOFF2 for local web delivery only."
+    },
+    {
+      "family": "Neucha",
+      "cssFamily": "Yilo Hand Cyrillic",
+      "sourceUrl": "https://raw.githubusercontent.com/google/fonts/main/ofl/neucha/Neucha.ttf",
+      "sourceSHA256": "7927bd6ce090fa032857dcbc3ad0e8b765c462d0a72a8779068132496b4e087d",
+      "licenseUrl": "https://raw.githubusercontent.com/google/fonts/main/ofl/neucha/OFL.txt",
+      "license": "src/assets/fonts/yilo/cyrillic-OFL.txt",
+      "output": "src/assets/fonts/yilo/cyrillic.woff2",
+      "sha256": "5033feae90cd4c84b549fbb96cb3aebdebc7b66f46883371678ced4df3db1488",
+      "glyphs": 184,
+      "method": "Original outlines retained; subset to Yilo page characters, renamed to avoid reserved font names, WOFF2 for local web delivery only."
+    },
+    {
+      "family": "LXGW WenKai",
+      "cssFamily": "Yilo Hand Han",
+      "sourceUrl": "https://github.com/lxgw/LxgwWenKai/releases/download/v1.530/LXGWWenKai-Medium.ttf",
+      "sourceSHA256": "f4b8a34d1f838fe411540cb7c97b1c384ac9738a876c4104500bc42508b2312a",
+      "licenseUrl": "https://raw.githubusercontent.com/lxgw/LxgwWenKai/main/OFL.txt",
+      "license": "src/assets/fonts/yilo/han-OFL.txt",
+      "output": "src/assets/fonts/yilo/han.woff2",
+      "sha256": "9150b408e419eb375948fd6815426bf5f65eba24d3d99313ad43e0c8b919ca87",
+      "glyphs": 1372,
+      "method": "Original outlines retained; subset to Yilo page characters, renamed to avoid reserved font names, WOFF2 for local web delivery only."
+    },
+    {
+      "family": "Kalam",
+      "cssFamily": "Yilo Hand Deva",
+      "sourceUrl": "https://raw.githubusercontent.com/google/fonts/main/ofl/kalam/Kalam-Regular.ttf",
+      "sourceSHA256": "57cecb63d4608019371954274ae1d8c397764debd5b19d4a33c1efa4dc923c0b",
+      "licenseUrl": "https://raw.githubusercontent.com/google/fonts/main/ofl/kalam/OFL.txt",
+      "license": "src/assets/fonts/yilo/deva-OFL.txt",
+      "output": "src/assets/fonts/yilo/deva.woff2",
+      "sha256": "ef5a38f6dfb4c5e636891d170dd4994fd0660471af5ffbe0e47e5408b4b702e3",
+      "glyphs": 193,
+      "method": "Original outlines retained; subset to Yilo page characters, renamed to avoid reserved font names, WOFF2 for local web delivery only."
+    },
+    {
+      "family": "Nanum Pen Script",
+      "cssFamily": "Yilo Hand Hangul",
+      "sourceUrl": "https://raw.githubusercontent.com/google/fonts/main/ofl/nanumpenscript/NanumPenScript-Regular.ttf",
+      "sourceSHA256": "6f0d1ab29c7894010dc88831fb7a0a51edb79136e450344183de5b1a8b52bd43",
+      "licenseUrl": "https://raw.githubusercontent.com/google/fonts/main/ofl/nanumpenscript/OFL.txt",
+      "license": "src/assets/fonts/yilo/hangul-OFL.txt",
+      "output": "src/assets/fonts/yilo/hangul.woff2",
+      "sha256": "4faf5f19de89db75436dd113be1e41fbcb2d0a59921a9d2b9dec958e2a786cb2",
+      "glyphs": 426,
+      "method": "Original outlines retained; subset to Yilo page characters, renamed to avoid reserved font names, WOFF2 for local web delivery only."
+    },
+    {
+      "family": "Aref Ruqaa",
+      "cssFamily": "Yilo Hand Arabic",
+      "sourceUrl": "https://raw.githubusercontent.com/google/fonts/main/ofl/arefruqaa/ArefRuqaa-Regular.ttf",
+      "sourceSHA256": "ceb786d83ba92f35e96efcd8623c2858d288e0c543c8761ba35b1020989464f9",
+      "licenseUrl": "https://raw.githubusercontent.com/google/fonts/main/ofl/arefruqaa/OFL.txt",
+      "license": "src/assets/fonts/yilo/arabic-OFL.txt",
+      "output": "src/assets/fonts/yilo/arabic.woff2",
+      "sha256": "e83fed7818654949099796a1c7ae5ffbb193384ebbd9fb27f586a5d27cb4555f",
+      "glyphs": 174,
+      "method": "Original outlines retained; subset to Yilo page characters, renamed to avoid reserved font names, WOFF2 for local web delivery only."
+    }
+  ]
+}

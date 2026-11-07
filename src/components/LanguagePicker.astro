@@ -33,14 +33,14 @@ const short = shortLabels[active.language] ?? active.language.split('-')[0].toUp
   });
 </script>
 <style>
-  .locale{position:relative;justify-self:end;display:flex;align-items:center;justify-content:flex-end;gap:.4em;min-width:48px;padding-inline-end:16px;color:var(--muted)}
+  .locale{position:relative;justify-self:end;display:flex;align-items:center;justify-content:center;gap:.4em;min-width:48px;min-height:44px;padding:0 10px;border-radius:10px;color:var(--muted)}
   .locale[hidden]{display:none}
   .locale__globe{width:17px;height:17px;color:var(--ink);flex:none}
   .locale__chev{width:12px;height:12px;flex:none;opacity:.65}
   .locale__now,.locale__short{color:var(--ink);font:400 .75rem/1.4 var(--sans);letter-spacing:0;white-space:nowrap}
   .locale__short{display:none}
-  select{position:absolute;top:50%;left:50%;width:max(100%,48px);height:48px;transform:translate(-50%,-50%);opacity:0;overflow:hidden;appearance:none;-webkit-appearance:none;background:none;border:0;margin:0;padding:0;color:var(--ink);font:400 .75rem/1.4 var(--sans);letter-spacing:0;cursor:pointer}
-  .locale:has(select:focus-visible){outline:2px solid var(--accent);outline-offset:3px;border-radius:2px}
+  select{position:absolute;inset:0;width:100%;height:100%;opacity:0;overflow:hidden;appearance:none;-webkit-appearance:none;background:none;border:0;margin:0;padding:0;color:var(--ink);font:400 .75rem/1.4 var(--sans);letter-spacing:0;cursor:pointer}
+  .locale:has(select:focus-visible){outline:2px solid var(--accent);outline-offset:2px}
   select:focus-visible{outline:none}
   @media(max-width:560px){.locale{gap:.25em}.locale__globe,.locale__now{display:none}.locale__short{display:inline}}
 </style>

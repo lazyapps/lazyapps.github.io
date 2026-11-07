@@ -1,0 +1,20 @@
+{
+  "source": "scripts/assets/yilo/AppIcon.icon",
+  "vector": "scripts/assets/yilo/symbol.svg",
+  "vectorSha256": "2ce5f92fd5814c2bd971b6dda24fb7266f52a3f6f7a06105486e8bfc7b90686d",
+  "output": "src/assets/img/yilo-symbol.png",
+  "outputSha256": "9fe382ba3723aa6e064343e03dac5d357b4c59d84c0ddd7105c8e22f8ea02c24",
+  "visibleBounds": [
+    160,
+    129,
+    862,
+    893
+  ],
+  "bodyBounds": [
+    160,
+    301,
+    862,
+    893
+  ],
+  "note": "Original native SVG contours, layer positions and default fills; no native glass, lighting or icon container. Detached circular head excluded from title-height alignment."
+}

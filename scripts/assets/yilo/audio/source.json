@@ -1,0 +1,16 @@
+{
+  "checkedOn": "2026-11-07",
+  "title": "Fluffing a Duck",
+  "author": "Kevin MacLeod",
+  "trackUrl": "https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1100768",
+  "downloadUrl": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Fluffing%20a%20Duck.mp3",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "isrc": "USUAN1100768",
+  "originalTempoBPM": 122,
+  "source": "scripts/assets/yilo/audio/fluffing-a-duck.mp3",
+  "sourceSHA256": "cb23b1833c35e391de10d998d6a40cfc760565ce31d23014c86025523ca8239b",
+  "output": "video/yilo-hero/public/music.wav",
+  "outputSHA256": "e58c45a469f5d2f752f491e7c9272d2413857718a6802200240a649c7fdfdffb",
+  "changes": "Original seconds 0\u201314, background loudness adjustment, 0.15-second fade in and 0.8-second fade out. Tempo unchanged."
+}

@@ -1,0 +1,16 @@
+{
+  "labels" : {
+    "advice.category.collocation" : "Colocación",
+    "advice.category.translation_pattern" : "Patrón de traducción",
+    "advice.kind.learning_point" : "Punto de aprendizaje",
+    "language.japanese_reading.help" : "El hiragana aparece sobre los kanji y el romaji se alinea encima de cada palabra japonesa.",
+    "language.notes" : "Notas de aprendizaje",
+    "language.search" : "Buscar idiomas",
+    "language.section" : "Idiomas de aprendizaje",
+    "language.targets" : "Idiomas de destino",
+    "record.example" : "Ejemplo"
+  },
+  "nativeLocale" : "es",
+  "operatingSystem" : "Versión 27.0.1 (Compilación 26A434)",
+  "requestedLocale" : "es"
+}

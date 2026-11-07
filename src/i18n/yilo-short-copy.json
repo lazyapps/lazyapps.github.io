@@ -1,0 +1,1188 @@
+{
+  "zh-hans": {
+    "sub": "在 Mac 上，用 AI 工具里的日常输入学语言。《亦言》提供更地道的改写或译文，按需附上解释和例句。可同时学多种语言。",
+    "cards": [
+      [
+        "自动记录新输入",
+        "《亦言》把你在 AI 工具中的有价值新输入整理成记录。原请求照常发送。"
+      ],
+      [
+        "同时学多种语言",
+        "选择你想学的语言。每种语言都有地道的改写或译文。"
+      ],
+      [
+        "查看解释和例句",
+        "每种学习语言可附最多 3 条笔记。你可在 Mac 上围绕记录继续追问。"
+      ],
+      [
+        "在输入中练习",
+        "直接输入一句话，或润色其他 App 的文字。润色使用列表中的第一种学习语言。"
+      ],
+      [
+        "保存与复习",
+        "按日期找记录，收藏重点，复制表达。失败可重试，记录可删除。"
+      ],
+      [
+        "在 iPhone 上复习",
+        "开启 iCloud 后，可在 iPhone 上查看记录、朗读和记忆复习。支持每日提醒。iPhone 版通过 TestFlight 提供。"
+      ]
+    ],
+    "details": [
+      [
+        "接着用你的 AI 工具",
+        [
+          "支持 Pi、Claude Code、Codex、OpenCode 和 Antigravity。运行时记录新输入，无需另配模型或 API。",
+          "支持 Pi、Claude Code、Codex、OpenCode 和 Antigravity。只收集运行期间的新输入，不导入历史对话。",
+          "相关 AI 工具须已安装、登录且可用。无需另配模型或 API。",
+          "Mac 与 iPhone 须登录同一 Apple 账户。开启 iCloud 后，iPhone 可搜索、收藏、按日期浏览和离线查看已同步记录。"
+        ]
+      ],
+      [
+        "记录留在 Mac，按需同步",
+        [
+          "记录默认保存在 Mac，可选 iCloud 同步。改写、翻译、笔记和追问由相关 AI 服务处理。",
+          "记录默认保存在本机。iCloud 同步需手动开启。翻译、学习笔记和追问仍会调用相应的 AI 服务。",
+          "可过滤低价值输入，并遮盖有较高把握识别出的密钥。代码、路径和网址保留原样。",
+          "Mac 追问记录只保存在本机，不同步、不导出。可单独删除云端记录，保留本机副本。"
+        ]
+      ],
+      [
+        "打字时，也能练习",
+        [
+          "直接输入，或润色其他 App 的文字。润色使用第一种学习语言，需要辅助功能权限。",
+          "在其他 App 润色时，结果会替换选区文字。无选区则追加在原文后。此功能需要辅助功能权限，也支持系统服务菜单。",
+          "可设置快捷键、置顶、透明度、主题和字号。支持登录启动和自动更新。",
+          "附带只读 CLI，可导出记录。iPhone 可复制记录上下文，或打开 ChatGPT、Claude、Gemini。内容由你确认发送。"
+        ]
+      ],
+      [
+        "按自己的方式学",
+        [
+          "同时学习多种语言。可用拼音、注音、平假名或罗马字辅助阅读。",
+          "原文语言默认跟随系统。学习语言默认为英语；原文语言为英语时，默认为简体中文。可在首次设置或设置中更改，数量不限。",
+          "可设置讲解语言、表达风格和语气。学习英语时，可选美式或英式。",
+          "中文译文可显示拼音或注音。简体中文默认显示拼音，繁体中文默认显示注音。拼音标在词语上方，注音排在汉字右侧。可在设置中关闭。",
+          "日语译文可显示平假名或罗马字，默认关闭。平假名在汉字上方，罗马字在词组上方。注音不改变复制文本、学习笔记或润色结果。"
+        ]
+      ]
+    ],
+    "screenshots": [
+      "学习记录：中文原话、英语和日语译文、学习笔记及罗马字。简体中文界面，保留真实记录内容。",
+      "学习语言设置：中文输入，学习英语、日语和法语。简体中文界面，使用示例设置。",
+      "语言选择：已选英语、日语和法语。简体中文界面，使用示例设置。"
+    ],
+    "sync": "可选 iCloud 同步 · iPhone TestFlight 测试版",
+    "headline": "边蹬边学",
+    "title": "亦言 · Yilo — 用日常输入，学你想学的语言",
+    "screenshotNote": "学习记录：中文原话、英语和日语译文、学习笔记及罗马字。简体中文界面，保留真实记录内容。",
+    "formerName": "原名《绎言》（YiYan）。",
+    "screenshotLabels": [
+      "学习记录 · 罗马字",
+      "学习语言设置",
+      "选择学习语言"
+    ],
+    "detailMore": [
+      "使用条件",
+      "数据与同步",
+      "输入与导出",
+      "语言与读音设置"
+    ],
+    "headlineLines": [
+      "边蹬边学"
+    ],
+    "headlineEm": 4.2,
+    "music": {
+      "label": "配乐",
+      "note": "14 秒节选，已调整背景音量和淡入淡出。",
+      "credits": "署名与来源"
+    }
+  },
+  "zh-hant": {
+    "sub": "在 Mac 上，用 AI 工具裡的日常輸入學語言。《亦言》提供更道地的改寫或譯文，按需附上解釋和例句。可同時學多種語言。",
+    "cards": [
+      [
+        "自動記錄新輸入",
+        "《亦言》把你在 AI 工具中的有價值新輸入整理成紀錄。原請求照常送出。"
+      ],
+      [
+        "同時學多種語言",
+        "選擇你想學的語言。每種語言都有道地的改寫或譯文。"
+      ],
+      [
+        "查看解釋和例句",
+        "每種學習語言可附最多 3 則筆記。你可在 Mac 上針對紀錄繼續追問。"
+      ],
+      [
+        "在輸入中練習",
+        "直接輸入一句話，或潤飾其他 App 的文字。潤飾使用清單中的第一種學習語言。"
+      ],
+      [
+        "儲存與複習",
+        "按日期找紀錄，收藏重點，複製表達。失敗可重試，紀錄可刪除。"
+      ],
+      [
+        "在 iPhone 上複習",
+        "開啟 iCloud 後，可在 iPhone 上查看紀錄、朗讀和記憶複習。支援每日提醒。iPhone 版透過 TestFlight 提供。"
+      ]
+    ],
+    "details": [
+      [
+        "繼續用你的 AI 工具",
+        [
+          "支援 Pi、Claude Code、Codex、OpenCode 和 Antigravity。執行時記錄新輸入，無須另設模型或 API。",
+          "支援 Pi、Claude Code、Codex、OpenCode 和 Antigravity。只收集執行期間的新輸入，不匯入歷史對話。",
+          "相關 AI 工具須已安裝、登入且可用。無需另設模型或 API。",
+          "Mac 與 iPhone 須登入同一 Apple 帳號。開啟 iCloud 後，iPhone 可搜尋、收藏、按日期瀏覽及離線查看已同步紀錄。"
+        ]
+      ],
+      [
+        "記錄留在 Mac，按需同步",
+        [
+          "記錄預設保存在 Mac，可選 iCloud 同步。改寫、翻譯、筆記和追問由相關 AI 服務處理。",
+          "紀錄預設保存在本機。iCloud 同步須手動開啟。翻譯、學習筆記和追問仍會呼叫對應的 AI 服務。",
+          "可過濾低價值輸入，並遮蓋有較高把握識別出的金鑰。程式碼、路徑和網址保留原樣。",
+          "Mac 追問紀錄只保存在本機，不同步、不匯出。可單獨刪除雲端紀錄，保留本機副本。"
+        ]
+      ],
+      [
+        "打字時，也能練習",
+        [
+          "直接輸入，或潤飾其他 App 的文字。潤飾使用第一種學習語言，需要輔助使用權限。",
+          "在其他 App 潤飾時，結果會取代選取文字。未選取時則附加在原文後。此功能需要輔助使用權限，也支援系統服務選單。",
+          "可設定快捷鍵、置頂、透明度、主題和字級。支援登入啟動和自動更新。",
+          "附帶唯讀 CLI，可匯出紀錄。iPhone 可複製紀錄內容，或開啟 ChatGPT、Claude、Gemini。內容由你確認送出。"
+        ]
+      ],
+      [
+        "按自己的方式學",
+        [
+          "同時學習多種語言。可用拼音、注音、平假名或羅馬字輔助閱讀。",
+          "原文語言預設跟隨系統。學習語言預設為英語；原文為英語時，則為簡體中文。可在首次設定或設定中更改，數量不限。",
+          "可設定講解語言、表達風格和語氣。學習英語時，可選美式或英式。",
+          "中文譯文可顯示拼音或注音。簡體中文預設顯示拼音，繁體中文預設顯示注音。拼音標在詞語上方，注音排在漢字右側。可在設定中關閉。",
+          "日語譯文可顯示平假名或羅馬字，預設關閉。平假名在漢字上方，羅馬字在詞組上方。注音不改變複製文字、學習筆記或潤飾結果。"
+        ]
+      ]
+    ],
+    "screenshots": [
+      "學習紀錄：中文原話、英語和日語譯文、學習筆記及羅馬字。繁體中文介面，保留真實紀錄內容。",
+      "學習語言設定：中文輸入，學習英語、日語和法語。繁體中文介面，使用範例設定。",
+      "語言選擇：已選英語、日語和法語。繁體中文介面，使用範例設定。"
+    ],
+    "sync": "可選 iCloud 同步 · iPhone TestFlight 測試版",
+    "headline": "邊蹬邊學",
+    "title": "亦言 · Yilo — 用日常輸入，學你想學的語言",
+    "screenshotNote": "學習紀錄：中文原話、英語和日語譯文、學習筆記及羅馬字。繁體中文介面，保留真實紀錄內容。",
+    "formerName": "原名《繹言》（YiYan）。",
+    "screenshotLabels": [
+      "學習紀錄 · 羅馬字",
+      "學習語言設定",
+      "選擇學習語言"
+    ],
+    "detailMore": [
+      "使用條件",
+      "資料與同步",
+      "輸入與匯出",
+      "語言與讀音設定"
+    ],
+    "headlineLines": [
+      "邊蹬邊學"
+    ],
+    "headlineEm": 4.2,
+    "music": {
+      "label": "配樂",
+      "note": "14 秒節選，已調整背景音量和淡入淡出。",
+      "credits": "署名與來源"
+    }
+  },
+  "en": {
+    "sub": "Yilo helps you learn languages from your input in AI tools on Mac. It offers natural rewrites or translations, with notes and examples when useful. Study several languages at once.",
+    "cards": [
+      [
+        "Record new input",
+        "Yilo saves your useful new input from supported AI tools as learning records. Your original request goes through as usual."
+      ],
+      [
+        "Study several languages",
+        "Choose the languages you want to learn. Each language gets a natural rewrite or translation."
+      ],
+      [
+        "Read notes and examples",
+        "Each learning language can have up to three notes. You can ask follow-up questions about a record on Mac."
+      ],
+      [
+        "Practise as you type",
+        "Enter text directly or refine text in another app. Refinement uses the first language on your learning list."
+      ],
+      [
+        "Save and review",
+        "Find records by date, bookmark them and copy expressions. You can retry failed records or delete records."
+      ],
+      [
+        "Review on iPhone",
+        "Enable iCloud to read, listen to and review records on iPhone. Daily reminders are available. The iPhone app uses TestFlight."
+      ]
+    ],
+    "details": [
+      [
+        "Use your AI tools",
+        [
+          "Use Pi, Claude Code, Codex, OpenCode or Antigravity. Capture new input while Yilo runs, with no extra model or API setup.",
+          "Supports Pi, Claude Code, Codex, OpenCode and Antigravity. Captures new input only while running. It does not import old conversations.",
+          "The related AI tool must be installed, signed in and available. No extra model or API setup is needed.",
+          "Use the same Apple Account on Mac and iPhone. Enable iCloud to search, bookmark and browse synced records on iPhone, including offline."
+        ]
+      ],
+      [
+        "Keep records on Mac",
+        [
+          "Records stay on your Mac by default; iCloud sync is optional. Rewrites, translations, notes and follow-up questions use the related AI service.",
+          "Records stay on your Mac by default. You choose whether to enable iCloud. Translations, notes and follow-up questions use the related AI service.",
+          "Yilo filters low-value input and hides secrets it can identify with high confidence. Code, paths and URLs stay unchanged.",
+          "Mac follow-up chat history stays on your Mac. It is not synced or exported. You can delete cloud records and keep the Mac copies."
+        ]
+      ],
+      [
+        "Practise as you type",
+        [
+          "Type directly or refine text in other apps. Refinement uses your first learning language and needs Accessibility permission.",
+          "In other apps, refinement replaces selected text. Without a selection, it adds the result after the original. This requires Accessibility permission and supports Services.",
+          "Adjust shortcuts, pinning, opacity, themes and text size. Launch at login and automatic updates are available.",
+          "The read-only CLI exports records. On iPhone, copy record context or open ChatGPT, Claude or Gemini. You decide when to send it."
+        ]
+      ],
+      [
+        "Choose how you learn",
+        [
+          "Study several languages at once. Use Pinyin, Zhuyin, Hiragana or Romaji to help you read.",
+          "The source language starts with your system language. The first learning language is English, or Simplified Chinese for an English source. Change these settings at setup or later. There is no target-language limit.",
+          "Choose the explanation language, writing style and tone. English learners can choose US or UK English.",
+          "Chinese translations can show Pinyin or Zhuyin. Simplified Chinese defaults to Pinyin; Traditional Chinese defaults to Zhuyin. Pinyin appears above words; Zhuyin appears beside characters. You can turn readings off in settings.",
+          "Japanese translations can show Hiragana or Romaji readings. This is off by default. Hiragana appears above kanji; Romaji appears above word groups. Readings do not change copied text, notes or refinement results."
+        ]
+      ]
+    ],
+    "screenshots": [
+      "English example: English input, Simplified Chinese with Pinyin, Japanese with Romaji, and English learning notes.",
+      "English settings: English input, Simplified Chinese and Japanese learning languages, with Pinyin and Romaji enabled. Sample preferences.",
+      "English language picker with Simplified Chinese and Japanese selected. Sample preferences."
+    ],
+    "sync": "Optional iCloud sync · iPhone TestFlight beta",
+    "headline": "Pick up a language while you’re vibe coding",
+    "title": "Yilo — Learn languages from your daily input",
+    "screenshotNote": "English example: English input, Simplified Chinese with Pinyin, Japanese with Romaji, and English learning notes.",
+    "formerName": "Formerly YiYan.",
+    "screenshotLabels": [
+      "Learning record · Pinyin and Romaji",
+      "Learning language settings",
+      "Choose learning languages"
+    ],
+    "detailMore": [
+      "Requirements",
+      "Data and sync",
+      "Input and export",
+      "Languages and readings"
+    ],
+    "headlineLines": [
+      "Pick up a language",
+      "while you’re vibe coding"
+    ],
+    "headlineEm": 9.088,
+    "music": {
+      "label": "Music",
+      "note": "14-second excerpt, background loudness and fades adjusted.",
+      "credits": "Credits"
+    }
+  },
+  "ja": {
+    "sub": "MacのAIツールへの日々の入力で言語を学べます。Yiloは自然な言い換えや訳文を示し、必要に応じて解説と例文を添えます。複数の言語を同時に学べます。",
+    "cards": [
+      [
+        "新しい入力を記録",
+        "Yiloは、対応するAIツールへの新しい入力のうち、学習に役立つものを記録します。元の依頼は通常どおり送信されます。"
+      ],
+      [
+        "複数の言語を学ぶ",
+        "学びたい言語を選びます。言語ごとに自然な言い換えや訳文を表示します。"
+      ],
+      [
+        "解説と例文を読む",
+        "各学習言語には最大3件のノートが付きます。ノートがない場合もあります。Macでは記録について追加で質問できます。"
+      ],
+      [
+        "入力しながら練習",
+        "直接入力するか、ほかのアプリの文章を推敲できます。推敲には学習言語リストの先頭を使います。"
+      ],
+      [
+        "保存して復習",
+        "日付で探し、お気に入りに保存し、表現をコピーできます。失敗した記録は再試行でき、不要な記録は削除できます。"
+      ],
+      [
+        "iPhoneで復習",
+        "iCloudを有効にすると、iPhoneで記録を読んだり、読み上げを聞いたりして復習できます。毎日のリマインダーも設定できます。iPhone版はTestFlightで提供しています。"
+      ]
+    ],
+    "details": [
+      [
+        "いつものAIツールで",
+        [
+          "Pi、Claude Code、Codex、OpenCode、Antigravityに対応。Yiloの起動中に新しい入力を記録します。モデルやAPIの追加設定は不要です。",
+          "Pi、Claude Code、Codex、OpenCode、Antigravityに対応しています。記録するのは、Yiloの起動中に入力した内容だけです。過去の会話は取り込みません。",
+          "利用するAIツールがインストール済みで、ログインして使える状態であることが必要です。モデルやAPIの追加設定は不要です。",
+          "MacとiPhoneで同じApple Accountを使います。iCloudを有効にすると、iPhoneで同期済み記録を検索、日付表示、お気に入り登録できます。オフラインでも閲覧できます。"
+        ]
+      ],
+      [
+        "記録はMacに、同期は任意",
+        [
+          "記録は初期設定ではMacに保存します。iCloud同期は任意です。言い換え、翻訳、ノート、追加の質問は関連AIサービスで処理します。",
+          "記録は標準でMacに保存します。iCloud同期は任意です。翻訳、ノート、追加質問には対応するAIサービスを使います。",
+          "Yiloは学習に役立ちにくい入力を除外し、秘密情報だと高い確度で判別できたものを隠します。コード、パス、URLは変更しません。",
+          "記録について質問したときのやり取りは、Macにのみ保存されます。同期や書き出しの対象にはなりません。Macの記録を残したまま、クラウドの記録を削除できます。"
+        ]
+      ],
+      [
+        "入力しながら練習",
+        [
+          "直接入力するか、ほかのアプリの文章を推敲します。推敲には最初の学習言語を使い、アクセシビリティ権限が必要です。",
+          "ほかのアプリでは、推敲結果で選択範囲を置き換えます。選択がなければ原文の後ろに追加します。アクセシビリティ権限が必要です。サービスメニューからも使えます。",
+          "ショートカット、最前面表示、透明度、テーマ、文字サイズを設定できます。ログイン時の起動と自動更新に対応します。",
+          "読み取り専用CLIで記録を書き出せます。iPhoneでは文脈をコピーするか、ChatGPT、Claude、Geminiを開けます。送信は自分で行います。"
+        ]
+      ],
+      [
+        "自分に合う学び方で",
+        [
+          "複数の言語を同時に学べます。ピンイン、注音、ひらがな、ローマ字で読み方を確認できます。",
+          "原文の言語は最初にシステム言語を使います。学習言語の初期値は英語です。原文が英語の場合は簡体字中国語です。初期設定や設定画面で変更でき、選択数に上限はありません。",
+          "解説の言語、文体、口調を選べます。英語は米国式と英国式から選べます。",
+          "中国語訳にはピンインや注音を表示できます。簡体字はピンイン、繁体字は注音が初期設定です。ピンインは語の上、注音は漢字の右に表示します。設定で非表示にできます。",
+          "日本語訳にはひらがなかローマ字の読みを表示できます。初期設定はオフです。ひらがなは漢字の上、ローマ字は語句の上に表示します。コピーした文章、ノート、推敲結果は変わりません。"
+        ]
+      ]
+    ],
+    "screenshots": [
+      "学習記録：中国語の原文、英語と日本語の訳、学習ノート、ローマ字の読み。日本語UIで実際の記録内容を保持しています。",
+      "学習言語設定：中国語を入力し、英語、日本語、フランス語を学ぶ例。日本語UI。",
+      "言語選択：英語、日本語、フランス語を選んだ例。日本語UI。"
+    ],
+    "sync": "任意のiCloud同期 · iPhone TestFlightベータ版",
+    "headline": "バイブコーディングしながら、 新しい言語も身につけていこう",
+    "title": "Yilo — 日々の入力で、学びたい言語を学ぶ",
+    "screenshotNote": "学習記録：中国語の原文、英語と日本語の訳、学習ノート、ローマ字の読み。日本語UIで実際の記録内容を保持しています。",
+    "formerName": "旧称：YiYan。",
+    "screenshotLabels": [
+      "学習記録 · ローマ字",
+      "学習言語の設定",
+      "学習言語を選ぶ"
+    ],
+    "detailMore": [
+      "利用条件",
+      "データと同期",
+      "入力と書き出し",
+      "言語と読み方の設定"
+    ],
+    "headlineLines": [
+      "バイブコーディングしながら、",
+      "新しい言語も身につけていこう"
+    ],
+    "headlineEm": 15.75,
+    "music": {
+      "label": "音楽",
+      "note": "14秒の抜粋。BGMの音量とフェードを調整しています。",
+      "credits": "クレジット"
+    }
+  },
+  "ko": {
+    "sub": "Mac의 AI 도구에 입력한 말로 언어를 배우세요. Yilo는 자연스럽게 다듬은 문장이나 번역을 제공하고, 필요할 때 설명과 예문을 덧붙입니다. 여러 언어를 함께 배울 수 있습니다.",
+    "cards": [
+      [
+        "새 입력 기록",
+        "Yilo는 지원하는 AI 도구에 새로 입력한 내용 중 학습에 도움이 되는 내용을 기록합니다. 원래 요청은 그대로 처리됩니다."
+      ],
+      [
+        "여러 언어 학습",
+        "배우고 싶은 언어를 고르세요. 언어마다 자연스럽게 다듬은 문장이나 번역을 볼 수 있습니다."
+      ],
+      [
+        "설명과 예문 확인",
+        "학습 언어마다 노트가 최대 3개 제공됩니다. 노트가 없는 경우도 있습니다. Mac에서는 기록에 대해 이어서 질문할 수 있습니다."
+      ],
+      [
+        "입력하며 연습",
+        "직접 입력하거나 다른 앱의 글을 다듬습니다. 다듬기는 학습 언어 목록의 첫 번째 언어를 사용합니다."
+      ],
+      [
+        "저장하고 복습",
+        "날짜로 찾고, 즐겨찾기에 넣고, 표현을 복사합니다. 실패한 기록은 다시 시도할 수 있고 기록을 삭제할 수도 있습니다."
+      ],
+      [
+        "iPhone에서 복습",
+        "iCloud를 켜면 iPhone에서 기록을 읽고 들으며 복습할 수 있습니다. 매일 알림을 받을 수도 있습니다. iPhone 앱은 TestFlight에서 이용할 수 있습니다."
+      ]
+    ],
+    "details": [
+      [
+        "쓰던 AI 도구 그대로",
+        [
+          "Pi, Claude Code, Codex, OpenCode, Antigravity를 지원합니다. Yilo가 실행 중일 때 새 입력을 기록합니다. 모델이나 API를 따로 설정할 필요는 없습니다.",
+          "Pi, Claude Code, Codex, OpenCode, Antigravity를 지원합니다. Yilo가 실행 중일 때 새로 입력한 내용만 기록합니다. 이전 대화는 가져오지 않습니다.",
+          "사용할 AI 도구가 설치되어 있어야 하며, 해당 도구에 로그인한 상태로 이용할 수 있어야 합니다. 모델이나 API를 따로 설정할 필요는 없습니다.",
+          "Mac과 iPhone에서 같은 Apple 계정을 사용합니다. iCloud를 켜면 iPhone에서 동기화된 기록을 검색하고 즐겨찾기에 넣거나 날짜별로 볼 수 있습니다. 오프라인에서도 볼 수 있습니다."
+        ]
+      ],
+      [
+        "기록은 Mac에, 동기화는 선택",
+        [
+          "기록은 기본적으로 Mac에 저장됩니다. iCloud 동기화는 선택 사항입니다. 문장 다듬기, 번역, 노트, 후속 질문은 해당 AI 서비스가 처리합니다.",
+          "기록은 기본적으로 Mac에 저장됩니다. iCloud 동기화는 선택 사항입니다. 번역, 학습 노트와 후속 질문은 해당 AI 서비스를 사용합니다.",
+          "Yilo는 학습 가치가 낮은 입력을 걸러내고, 높은 확신으로 식별한 비밀 정보를 가립니다. 코드, 경로, URL은 그대로 둡니다.",
+          "Mac의 후속 대화는 로컬에만 저장됩니다. 동기화하거나 내보내지 않습니다. Mac 기록을 남기고 클라우드 기록만 삭제할 수 있습니다."
+        ]
+      ],
+      [
+        "입력하면서 연습",
+        [
+          "직접 입력하거나 다른 앱의 글을 다듬으세요. 다듬기는 첫 번째 학습 언어를 사용하며 손쉬운 사용 권한이 필요합니다.",
+          "다른 앱에서는 다듬기 결과가 선택한 글을 대체합니다. 선택이 없으면 원문 뒤에 추가합니다. 손쉬운 사용 권한이 필요하며 서비스 메뉴도 지원합니다.",
+          "단축키, 항상 위에 표시, 투명도, 테마, 글자 크기를 설정합니다. 로그인 시 실행과 자동 업데이트를 지원합니다.",
+          "읽기 전용 CLI로 기록을 내보낼 수 있습니다. iPhone에서는 기록의 맥락을 복사하거나 ChatGPT, Claude, Gemini를 열 수 있습니다. 내용을 언제 보낼지는 사용자가 정합니다."
+        ]
+      ],
+      [
+        "나에게 맞게 학습",
+        [
+          "여러 언어를 동시에 배우세요. 병음, 주음, 히라가나, 로마자로 읽는 법을 확인할 수 있습니다.",
+          "원문 언어는 처음에 시스템 언어를 따릅니다. 기본 학습 언어는 영어이며, 원문이 영어이면 중국어 간체입니다. 초기 설정이나 설정 화면에서 바꿀 수 있습니다. 학습 언어 수에는 제한이 없습니다.",
+          "설명 언어, 문체, 어조를 선택합니다. 영어는 미국식과 영국식 중에서 고를 수 있습니다.",
+          "중국어 번역에 병음이나 주음을 표시할 수 있습니다. 간체는 병음, 번체는 주음이 기본값입니다. 병음은 단어 위에, 주음은 글자 오른쪽에 표시합니다. 설정에서 끌 수 있습니다.",
+          "일본어 번역에 히라가나 또는 로마자 읽기를 표시할 수 있습니다. 기본값은 꺼짐입니다. 히라가나는 한자 위에, 로마자는 어구 위에 표시합니다. 복사한 글, 노트, 다듬기 결과는 바뀌지 않습니다."
+        ]
+      ]
+    ],
+    "screenshots": [
+      "학습 기록: 중국어 원문, 영어·일본어 번역, 학습 노트와 로마자 읽기. 한국어 UI에서 실제 기록 내용을 유지합니다.",
+      "학습 언어 설정: 중국어 입력으로 영어·일본어·프랑스어를 배우는 예시입니다. 한국어 UI입니다.",
+      "언어 선택: 영어·일본어·프랑스어를 선택한 예시입니다. 한국어 UI입니다."
+    ],
+    "sync": "선택적 iCloud 동기화 · iPhone TestFlight 베타",
+    "headline": "바이브 코딩을 하면서 새로운 언어도 익혀 보세요",
+    "title": "Yilo — 일상 입력으로 원하는 언어 배우기",
+    "screenshotNote": "학습 기록: 중국어 원문, 영어·일본어 번역, 학습 노트와 로마자 읽기. 한국어 UI에서 실제 기록 내용을 유지합니다.",
+    "formerName": "이전 이름: YiYan.",
+    "screenshotLabels": [
+      "학습 기록 · 로마자",
+      "학습 언어 설정",
+      "학습 언어 선택"
+    ],
+    "detailMore": [
+      "사용 조건",
+      "데이터와 동기화",
+      "입력과 내보내기",
+      "언어와 읽기 설정"
+    ],
+    "headlineLines": [
+      "바이브 코딩을 하면서",
+      "새로운 언어도 익혀 보세요"
+    ],
+    "headlineEm": 7.334,
+    "music": {
+      "label": "음악",
+      "note": "14초 발췌. 배경음의 크기와 페이드 효과를 조정했습니다.",
+      "credits": "출처 및 저작자 표시"
+    }
+  },
+  "de": {
+    "sub": "Lerne Sprachen mit deinen Eingaben in KI-Tools auf dem Mac. Yilo liefert natürliche Überarbeitungen oder Übersetzungen, bei Bedarf mit Erklärungen und Beispielen. Lerne mehrere Sprachen gleichzeitig.",
+    "cards": [
+      [
+        "Neue Eingaben erfassen",
+        "Yilo speichert neue, nützliche Eingaben aus unterstützten KI-Tools als Lerneinträge. Deine ursprüngliche Anfrage wird wie gewohnt gesendet."
+      ],
+      [
+        "Mehrere Sprachen lernen",
+        "Wähle deine Lernsprachen. Für jede bekommst du eine natürliche Umformulierung oder Übersetzung deiner Eingabe."
+      ],
+      [
+        "Erklärungen und Beispiele lesen",
+        "Pro Lernsprache sind bis zu drei Notizen möglich. Auf dem Mac kannst du Rückfragen zu einem Eintrag stellen."
+      ],
+      [
+        "Beim Schreiben üben",
+        "Gib Text direkt ein oder überarbeite ihn in einer anderen App. Für die Überarbeitung verwendet Yilo die erste Lernsprache auf deiner Liste."
+      ],
+      [
+        "Speichern und wiederholen",
+        "Finde Einträge nach Datum, setze Lesezeichen und kopiere Ausdrücke. Du kannst fehlgeschlagene Einträge erneut verarbeiten lassen oder Einträge löschen."
+      ],
+      [
+        "Auf dem iPhone wiederholen",
+        "Aktiviere iCloud, um Einträge auf dem iPhone zu lesen, anzuhören und zu wiederholen. Du kannst dich täglich erinnern lassen. Die iPhone-App gibt es über TestFlight."
+      ]
+    ],
+    "details": [
+      [
+        "Mit deinen KI-Tools",
+        [
+          "Nutze Pi, Claude Code, Codex, OpenCode oder Antigravity. Yilo erfasst neue Eingaben, solange es läuft, ohne zusätzliche Modell- oder API-Einrichtung.",
+          "Unterstützt Pi, Claude Code, Codex, OpenCode und Antigravity. Erfasst nur neue Eingaben während der Laufzeit. Alte Gespräche werden nicht importiert.",
+          "Das jeweilige KI-Tool muss installiert und verfügbar sein, und du musst darin angemeldet sein. Eine zusätzliche Modell- oder API-Einrichtung ist nicht nötig.",
+          "Verwende auf Mac und iPhone denselben Apple Account. Aktiviere iCloud, um synchronisierte Einträge auf dem iPhone zu durchsuchen, nach Datum anzusehen und mit Lesezeichen zu versehen. Du kannst sie auch offline lesen."
+        ]
+      ],
+      [
+        "Einträge bleiben auf dem Mac",
+        [
+          "Einträge bleiben standardmäßig auf deinem Mac; iCloud ist optional. Überarbeitungen, Übersetzungen, Notizen und Rückfragen nutzen den zugehörigen KI-Dienst.",
+          "Einträge bleiben standardmäßig auf dem Mac. iCloud ist optional. Übersetzungen, Notizen und Nachfragen verwenden den jeweiligen KI-Dienst.",
+          "Yilo filtert Eingaben mit geringem Lernwert und verdeckt mit hoher Sicherheit erkannte Geheimnisse. Code, Pfade und URLs bleiben erhalten.",
+          "Der Chatverlauf zu deinen Rückfragen bleibt auf deinem Mac. Er wird weder synchronisiert noch exportiert. Du kannst die Einträge in der Cloud löschen und die Kopien auf dem Mac behalten."
+        ]
+      ],
+      [
+        "Beim Tippen üben",
+        [
+          "Gib Text direkt ein oder überarbeite Text in anderen Apps. Überarbeiten nutzt deine erste Lernsprache und benötigt die Bedienungshilfen-Berechtigung.",
+          "In anderen Apps ersetzt die Überarbeitung den markierten Text. Ohne Auswahl wird das Ergebnis angehängt. Dafür ist die Bedienungshilfen-Berechtigung erforderlich. Das Dienste-Menü wird unterstützt.",
+          "Passe Kurzbefehle, Deckkraft, Darstellung und Textgröße an. Du kannst das Fenster im Vordergrund halten, Yilo bei der Anmeldung starten und automatische Updates nutzen.",
+          "Mit der schreibgeschützten CLI kannst du Einträge exportieren. Auf dem iPhone kannst du den Kontext eines Eintrags kopieren oder ChatGPT, Claude oder Gemini öffnen. Du entscheidest, wann du den Kontext sendest."
+        ]
+      ],
+      [
+        "Lerne auf deine Art",
+        [
+          "Lerne mehrere Sprachen gleichzeitig. Pinyin, Zhuyin, Hiragana oder Romaji helfen beim Lesen.",
+          "Die Ausgangssprache folgt anfangs der Systemsprache. Die erste Lernsprache ist Englisch, bei englischer Ausgangssprache vereinfachtes Chinesisch. Beides lässt sich bei der Einrichtung oder später ändern. Die Zahl der Lernsprachen ist unbegrenzt.",
+          "Wähle die Sprache der Erklärungen, den Schreibstil und den Ton. Für Englisch kannst du amerikanisches oder britisches Englisch wählen.",
+          "Chinesische Übersetzungen können Pinyin oder Zhuyin anzeigen. Vereinfachtes Chinesisch nutzt standardmäßig Pinyin, traditionelles Chinesisch Zhuyin. Pinyin steht über Wörtern, Zhuyin rechts neben Zeichen. In den Einstellungen lassen sich die Lesehilfen ausschalten.",
+          "Japanische Übersetzungen können Hiragana oder Romaji anzeigen. Dies ist standardmäßig aus. Hiragana steht über Kanji, Romaji über Wortgruppen. Kopierter Text, Notizen und Überarbeitungen bleiben unverändert."
+        ]
+      ]
+    ],
+    "screenshots": [
+      "Lerneintrag mit chinesischem Original, englischer und japanischer Übersetzung, Notizen und Romaji. Deutsche Oberfläche mit unverändertem echtem Eintrag.",
+      "Spracheinstellungen: chinesische Eingabe; Englisch, Japanisch und Französisch als Lernsprachen. Deutsche Oberfläche mit Beispieleinstellungen.",
+      "Sprachauswahl mit Englisch, Japanisch und Französisch. Deutsche Oberfläche mit Beispieleinstellungen."
+    ],
+    "sync": "Optionaler iCloud-Abgleich · iPhone-TestFlight-Beta",
+    "headline": "Lerne beim Vibe Coding ganz nebenbei eine Sprache",
+    "title": "Yilo — Sprachen mit eigenen Eingaben lernen",
+    "screenshotNote": "Lerneintrag mit chinesischem Original, englischer und japanischer Übersetzung, Notizen und Romaji. Deutsche Oberfläche mit unverändertem echtem Eintrag.",
+    "formerName": "Früher YiYan.",
+    "screenshotLabels": [
+      "Lerneintrag · Romaji",
+      "Lernsprachen einstellen",
+      "Lernsprachen auswählen"
+    ],
+    "detailMore": [
+      "Voraussetzungen",
+      "Daten und Synchronisierung",
+      "Eingabe und Export",
+      "Sprachen und Lesehilfen"
+    ],
+    "headlineLines": [
+      "Lerne beim Vibe Coding",
+      "ganz nebenbei eine Sprache"
+    ],
+    "headlineEm": 10.621,
+    "music": {
+      "label": "Musik",
+      "note": "14-sekündiger Ausschnitt; Hintergrundlautstärke und Ein- und Ausblenden angepasst.",
+      "credits": "Quellen und Urheber"
+    }
+  },
+  "fr": {
+    "sub": "Apprenez des langues à partir de ce que vous écrivez dans vos outils d’IA sur Mac. Yilo propose des reformulations ou des traductions naturelles, accompagnées d’explications et d’exemples si besoin. Vous pouvez étudier plusieurs langues à la fois.",
+    "cards": [
+      [
+        "Enregistrer les nouvelles saisies",
+        "Yilo crée des fiches à partir de vos nouvelles saisies utiles dans les outils d’IA compatibles. Votre demande initiale est envoyée comme d’habitude."
+      ],
+      [
+        "Apprendre plusieurs langues",
+        "Choisissez les langues que vous souhaitez apprendre. Pour chacune, Yilo vous propose une reformulation ou une traduction naturelle de votre texte."
+      ],
+      [
+        "Lire les explications et les exemples",
+        "Chaque langue peut avoir jusqu’à trois notes. Sur Mac, vous pouvez poser des questions sur une fiche."
+      ],
+      [
+        "Pratiquer en écrivant",
+        "Saisissez du texte ou reformulez celui d’une autre app. La reformulation utilise la première langue de votre liste."
+      ],
+      [
+        "Enregistrer et réviser",
+        "Retrouvez vos fiches par date, ajoutez-les aux favoris et copiez des expressions. Vous pouvez relancer le traitement d’une fiche en cas d’échec ou supprimer des fiches."
+      ],
+      [
+        "Réviser sur iPhone",
+        "Activez iCloud pour lire, écouter et réviser les fiches sur iPhone. Des rappels quotidiens sont disponibles. L’app iPhone est proposée sur TestFlight."
+      ]
+    ],
+    "details": [
+      [
+        "Gardez vos outils IA",
+        [
+          "Utilisez Pi, Claude Code, Codex, OpenCode ou Antigravity. Yilo enregistre les nouvelles saisies quand il fonctionne, sans configuration supplémentaire de modèle ou d’API.",
+          "Compatible avec Pi, Claude Code, Codex, OpenCode et Antigravity. Enregistre uniquement les nouvelles saisies pendant son exécution. N’importe pas les anciens échanges.",
+          "L’outil d’IA concerné doit être installé et disponible, et vous devez y avoir ouvert une session. Aucun modèle ni aucune API supplémentaire à configurer.",
+          "Utilisez le même compte Apple sur Mac et iPhone. Avec iCloud, recherchez les fiches synchronisées, parcourez-les par date et ajoutez des favoris. La lecture hors ligne est disponible."
+        ]
+      ],
+      [
+        "Vos fiches restent sur Mac",
+        [
+          "Les fiches restent sur votre Mac par défaut ; iCloud est facultatif. Reformulations, traductions, notes et questions utilisent le service IA associé.",
+          "Les fiches restent sur le Mac par défaut. iCloud est facultatif. Les traductions, notes et questions utilisent le service IA concerné.",
+          "Yilo filtre les saisies peu utiles et masque les secrets reconnus avec forte certitude. Le code, les chemins et les URL sont conservés.",
+          "L’historique des échanges autour d’une fiche reste sur votre Mac. Il n’est ni synchronisé ni exporté. Vous pouvez supprimer les fiches d’iCloud et conserver les copies sur votre Mac."
+        ]
+      ],
+      [
+        "Pratiquez en écrivant",
+        [
+          "Saisissez du texte ou reformulez dans d’autres apps. La reformulation utilise votre première langue d’apprentissage et nécessite l’autorisation Accessibilité.",
+          "Dans les autres apps, la reformulation remplace la sélection. Sans sélection, elle s’ajoute après l’original. L’autorisation Accessibilité est requise. Le menu Services est pris en charge.",
+          "Réglez les raccourcis, la fenêtre au premier plan, l’opacité, le thème et la taille du texte. Le lancement à la connexion et les mises à jour automatiques sont disponibles.",
+          "La CLI en lecture seule exporte les fiches. Sur iPhone, copiez le contexte ou ouvrez ChatGPT, Claude ou Gemini. Vous décidez de l’envoi."
+        ]
+      ],
+      [
+        "Apprenez à votre façon",
+        [
+          "Étudiez plusieurs langues à la fois. Le pinyin, le zhuyin, les hiragana ou les romaji facilitent la lecture.",
+          "Par défaut, la langue source est celle du système. La première langue à apprendre est l’anglais, ou le chinois simplifié si la langue source est l’anglais. Vous pouvez modifier ces choix lors de la configuration initiale ou plus tard. Le nombre de langues à apprendre est illimité.",
+          "Choisissez la langue des explications, le style et le ton. Pour l’anglais, choisissez l’usage américain ou britannique.",
+          "Les traductions chinoises peuvent afficher le pinyin ou le zhuyin. Le chinois simplifié utilise le pinyin par défaut, le chinois traditionnel le zhuyin. Le pinyin apparaît au-dessus des mots, le zhuyin à droite des caractères. Vous pouvez désactiver ces aides dans les réglages.",
+          "Dans les traductions en japonais, vous pouvez afficher les hiragana au-dessus des kanji ou les romaji au-dessus des groupes de mots. Cette option est désactivée par défaut. Elle ne modifie ni le texte copié, ni les notes, ni les reformulations."
+        ]
+      ]
+    ],
+    "screenshots": [
+      "Fiche réelle avec texte chinois, traductions anglaise et japonaise, notes et romaji. Interface française ; contenu conservé.",
+      "Réglages : texte chinois, apprentissage de l’anglais, du japonais et du français. Interface française avec exemples de préférences.",
+      "Sélecteur avec anglais, japonais et français. Interface française avec exemples de préférences."
+    ],
+    "sync": "Synchro iCloud facultative · bêta iPhone TestFlight",
+    "headline": "Apprenez une langue en faisant du vibe coding",
+    "title": "Yilo — Apprendre des langues avec vos propres mots",
+    "screenshotNote": "Fiche réelle avec texte chinois, traductions anglaise et japonaise, notes et romaji. Interface française ; contenu conservé.",
+    "formerName": "Anciennement YiYan.",
+    "screenshotLabels": [
+      "Fiche d’apprentissage · Romaji",
+      "Réglages des langues à apprendre",
+      "Choisir les langues à apprendre"
+    ],
+    "detailMore": [
+      "Conditions requises",
+      "Données et synchronisation",
+      "Saisie et export",
+      "Langues et aides à la lecture"
+    ],
+    "headlineLines": [
+      "Apprenez une langue",
+      "en faisant du vibe coding"
+    ],
+    "headlineEm": 9.513,
+    "music": {
+      "label": "Musique",
+      "note": "Extrait de 14 secondes ; volume de fond et fondus ajustés.",
+      "credits": "Crédits"
+    }
+  },
+  "es": {
+    "sub": "Aprende idiomas con lo que escribes en herramientas de IA en Mac. Yilo ofrece reformulaciones o traducciones naturales, con explicaciones y ejemplos cuando ayudan. Estudia varios idiomas a la vez.",
+    "cards": [
+      [
+        "Guarda nuevas entradas",
+        "Yilo guarda lo que escribes en las herramientas de IA compatibles cuando es nuevo y útil para aprender. Tu petición original se envía con normalidad."
+      ],
+      [
+        "Aprende varios idiomas",
+        "Elige los idiomas que quieres aprender. Cada uno recibe una reformulación o traducción natural."
+      ],
+      [
+        "Lee explicaciones y ejemplos",
+        "Cada idioma puede incluir hasta tres notas. En Mac puedes hacer preguntas sobre un registro."
+      ],
+      [
+        "Practica mientras escribes",
+        "Escribe directamente o reformula texto de otra app. La reformulación usa el primer idioma de tu lista de aprendizaje."
+      ],
+      [
+        "Guarda y repasa",
+        "Busca por fecha, añade favoritos y copia expresiones. Puedes reintentar los registros fallidos o eliminar registros."
+      ],
+      [
+        "Repasa en iPhone",
+        "Activa iCloud para leer, escuchar y repasar registros en iPhone. Hay recordatorios diarios. La app para iPhone se ofrece en TestFlight."
+      ]
+    ],
+    "details": [
+      [
+        "Usa tus herramientas de IA",
+        [
+          "Usa Pi, Claude Code, Codex, OpenCode o Antigravity. Yilo registra entradas nuevas mientras se ejecuta, sin configurar otro modelo ni una API.",
+          "Compatible con Pi, Claude Code, Codex, OpenCode y Antigravity. Solo recoge nuevas entradas mientras está en ejecución. No importa conversaciones anteriores.",
+          "La herramienta de IA correspondiente debe estar instalada y disponible, y debes haber iniciado sesión en ella. No necesitas configurar otro modelo ni otra API.",
+          "Usa la misma cuenta de Apple en Mac y iPhone. Con iCloud puedes buscar, marcar favoritos y ver por fecha los registros sincronizados. También puedes verlos sin conexión."
+        ]
+      ],
+      [
+        "Los registros, en tu Mac",
+        [
+          "Los registros se guardan en tu Mac por defecto; iCloud es opcional. Las reformulaciones, traducciones, notas y preguntas usan el servicio de IA correspondiente.",
+          "Los registros se guardan en el Mac por defecto. iCloud es opcional. Las traducciones, notas y preguntas usan el servicio de IA correspondiente.",
+          "Yilo filtra entradas poco útiles y oculta secretos que identifica con alta confianza. Conserva código, rutas y URL.",
+          "El historial de conversaciones sobre tus registros se guarda solo en tu Mac. No se sincroniza ni se exporta. Puedes eliminar los registros de la nube y conservar las copias en tu Mac."
+        ]
+      ],
+      [
+        "Practica mientras escribes",
+        [
+          "Escribe directamente o mejora textos en otras apps. La mejora usa tu primer idioma de aprendizaje y necesita permiso de Accesibilidad.",
+          "En otras apps, la reformulación sustituye el texto seleccionado. Si no seleccionas nada, el resultado se añade justo después del texto original. Esta función requiere permiso de Accesibilidad y también se puede usar desde el menú Servicios.",
+          "Configura atajos, ventana fija, opacidad, tema y tamaño del texto. Admite inicio automático al iniciar sesión y actualizaciones automáticas.",
+          "La CLI de solo lectura exporta registros. En iPhone, copia el contexto o abre ChatGPT, Claude o Gemini. Tú decides cuándo enviarlo."
+        ]
+      ],
+      [
+        "Aprende a tu manera",
+        [
+          "Estudia varios idiomas a la vez. Usa pinyin, zhuyin, hiragana o romaji como ayuda para leer.",
+          "El idioma de origen sigue inicialmente al sistema. El idioma de aprendizaje es inglés, o chino simplificado si el origen es inglés. Puedes cambiarlo al configurar la app o después. No hay límite de idiomas.",
+          "Elige el idioma de las explicaciones, el estilo y el tono. Para inglés puedes elegir la variante estadounidense o británica.",
+          "Las traducciones chinas pueden mostrar pinyin o zhuyin. El chino simplificado usa pinyin por defecto; el tradicional, zhuyin. El pinyin aparece sobre las palabras; el zhuyin, a la derecha de los caracteres. Puedes desactivarlos en los ajustes.",
+          "En las traducciones al japonés puedes mostrar el hiragana sobre los kanji o el romaji sobre los grupos de palabras. La opción está desactivada por defecto. El texto copiado, las notas y las reformulaciones no cambian."
+        ]
+      ]
+    ],
+    "screenshots": [
+      "Registro real con texto chino, traducciones al inglés y japonés, notas y romaji. Interfaz en español; contenido conservado.",
+      "Ajustes: entrada en chino e idiomas de aprendizaje inglés, japonés y francés. Interfaz en español con preferencias de ejemplo.",
+      "Selector con inglés, japonés y francés. Interfaz en español con preferencias de ejemplo."
+    ],
+    "sync": "Sincronización opcional con iCloud · beta para iPhone en TestFlight",
+    "headline": "Aprende un idioma mientras haces vibe coding",
+    "title": "Yilo — Aprende idiomas con tus propias palabras",
+    "screenshotNote": "Registro real con texto chino, traducciones al inglés y japonés, notas y romaji. Interfaz en español; contenido conservado.",
+    "formerName": "Antes YiYan.",
+    "screenshotLabels": [
+      "Registro de aprendizaje · Romaji",
+      "Ajustes de idiomas para aprender",
+      "Elegir idiomas para aprender"
+    ],
+    "detailMore": [
+      "Requisitos",
+      "Datos y sincronización",
+      "Entrada y exportación",
+      "Idiomas y ayudas de lectura"
+    ],
+    "headlineLines": [
+      "Aprende un idioma",
+      "mientras haces vibe coding"
+    ],
+    "headlineEm": 10.385,
+    "music": {
+      "label": "Música",
+      "note": "Fragmento de 14 segundos, con volumen de fondo y fundidos ajustados.",
+      "credits": "Créditos"
+    }
+  },
+  "pt-br": {
+    "sub": "Aprenda idiomas com o que você escreve em ferramentas de IA no Mac. O Yilo oferece reformulações ou traduções naturais, com explicações e exemplos quando ajudam. Estude vários idiomas ao mesmo tempo.",
+    "cards": [
+      [
+        "Registre novas entradas",
+        "O Yilo salva registros de estudo a partir do que você escreve de novo nas ferramentas de IA compatíveis, quando o conteúdo é útil para aprender. Seu pedido original é enviado normalmente."
+      ],
+      [
+        "Estude vários idiomas",
+        "Escolha os idiomas que quer aprender. Cada um recebe uma reformulação ou tradução natural."
+      ],
+      [
+        "Leia explicações e exemplos",
+        "Cada idioma pode ter até três notas. No Mac, você pode fazer perguntas sobre um registro."
+      ],
+      [
+        "Pratique enquanto escreve",
+        "Digite diretamente ou reformule o texto de outro app. A reformulação usa o primeiro idioma da sua lista de estudo."
+      ],
+      [
+        "Salve e revise",
+        "Busque registros por data, adicione-os aos favoritos e copie expressões. Se o processamento falhar, você pode tentar de novo. Também pode excluir registros."
+      ],
+      [
+        "Revise no iPhone",
+        "Ative o iCloud para ler, ouvir e revisar registros no iPhone. Há lembretes diários. O app para iPhone está disponível pelo TestFlight."
+      ]
+    ],
+    "details": [
+      [
+        "Use suas ferramentas de IA",
+        [
+          "Use Pi, Claude Code, Codex, OpenCode ou Antigravity. O Yilo registra novas entradas enquanto está aberto, sem configurar outro modelo ou API.",
+          "Compatível com Pi, Claude Code, Codex, OpenCode e Antigravity. Coleta apenas novas entradas enquanto está aberto. Não importa conversas antigas.",
+          "A ferramenta de IA precisa estar instalada e disponível, e você precisa ter feito login nela. Não é preciso configurar outro modelo nem outra API.",
+          "Use a mesma Conta Apple no Mac e no iPhone. Com o iCloud, busque registros sincronizados, marque favoritos e navegue por data. Também é possível ler sem conexão."
+        ]
+      ],
+      [
+        "Registros no seu Mac",
+        [
+          "Os registros ficam no Mac por padrão; o iCloud é opcional. Reformulações, traduções, notas e perguntas usam o serviço de IA relacionado.",
+          "Os registros ficam no Mac por padrão. O iCloud é opcional. Traduções, notas e perguntas usam o serviço de IA correspondente.",
+          "Yilo filtra entradas pouco úteis e oculta segredos identificados com alta confiança. Código, caminhos e URLs são preservados.",
+          "O histórico das conversas sobre os registros fica só no seu Mac. Ele não é sincronizado nem exportado. Você pode excluir os registros da nuvem e manter as cópias no Mac."
+        ]
+      ],
+      [
+        "Pratique enquanto digita",
+        [
+          "Digite diretamente ou reformule textos em outros apps. A reformulação usa o primeiro idioma da sua lista de estudo e requer permissão de Acessibilidade.",
+          "Em outros apps, a reformulação substitui o texto selecionado. Se você não selecionar nada, o resultado é inserido logo após o texto original. O recurso exige permissão de Acessibilidade e também funciona pelo menu Serviços.",
+          "Ajuste atalhos, janela fixa, opacidade, tema e tamanho do texto. Oferece abertura ao iniciar a sessão e atualizações automáticas.",
+          "A CLI somente leitura exporta registros. No iPhone, copie o contexto ou abra ChatGPT, Claude ou Gemini. Você decide quando enviar."
+        ]
+      ],
+      [
+        "Aprenda do seu jeito",
+        [
+          "Estude vários idiomas ao mesmo tempo. Use pinyin, zhuyin, hiragana ou romaji para ajudar na leitura.",
+          "O idioma de origem segue o sistema no início. O idioma de estudo é inglês, ou chinês simplificado quando a origem é inglês. Altere as opções na configuração inicial ou depois. Não há limite de idiomas.",
+          "Escolha o idioma das explicações, o estilo e o tom. Para inglês, escolha a variante americana ou britânica.",
+          "As traduções em chinês podem mostrar pinyin ou zhuyin. O chinês simplificado usa pinyin por padrão; o tradicional usa zhuyin. O pinyin aparece acima das palavras; o zhuyin, à direita dos caracteres. Você pode desativar essas leituras nos ajustes.",
+          "Nas traduções para o japonês, você pode exibir hiragana acima dos kanji ou romaji acima dos grupos de palavras. A opção vem desativada por padrão e não altera o texto copiado, as notas nem as reformulações."
+        ]
+      ]
+    ],
+    "screenshots": [
+      "Registro real com texto em chinês, traduções em inglês e japonês, notas e romaji. Interface em português do Brasil; conteúdo preservado.",
+      "Configurações: entrada em chinês e estudo de inglês, japonês e francês. Interface em português do Brasil com preferências de exemplo.",
+      "Seletor com inglês, japonês e francês. Interface em português do Brasil com preferências de exemplo."
+    ],
+    "sync": "Sincronização opcional pelo iCloud · beta para iPhone no TestFlight",
+    "headline": "Aprenda um idioma enquanto faz vibe coding",
+    "title": "Yilo — Aprenda idiomas com suas próprias palavras",
+    "screenshotNote": "Registro real com texto em chinês, traduções em inglês e japonês, notas e romaji. Interface em português do Brasil; conteúdo preservado.",
+    "formerName": "Antes, YiYan.",
+    "screenshotLabels": [
+      "Registro de estudo · Romaji",
+      "Configurações dos idiomas de estudo",
+      "Escolher idiomas para estudar"
+    ],
+    "detailMore": [
+      "Requisitos",
+      "Dados e sincronização",
+      "Entrada e exportação",
+      "Idiomas e ajudas de leitura"
+    ],
+    "headlineLines": [
+      "Aprenda um idioma",
+      "enquanto faz vibe coding"
+    ],
+    "headlineEm": 9.587,
+    "music": {
+      "label": "Música",
+      "note": "Trecho de 14 segundos, com volume de fundo e fades ajustados.",
+      "credits": "Créditos"
+    }
+  },
+  "ru": {
+    "sub": "Учите языки на своих запросах к ИИ на Mac. Yilo предлагает естественные формулировки или переводы и при необходимости добавляет объяснения и примеры. Можно учить несколько языков одновременно.",
+    "cards": [
+      [
+        "Сохраняйте новые сообщения",
+        "Yilo сохраняет ваши новые запросы к поддерживаемым ИИ-инструментам, если они полезны для изучения языка. Исходный запрос отправляется как обычно."
+      ],
+      [
+        "Учите несколько языков",
+        "Выберите языки для изучения. Для каждого языка есть естественная формулировка или перевод."
+      ],
+      [
+        "Читайте объяснения и примеры",
+        "Для каждого языка может быть до трёх заметок. На Mac можно задать вопросы по записи."
+      ],
+      [
+        "Практикуйтесь при вводе",
+        "Введите текст или переформулируйте его в другом приложении. Переформулирование использует первый язык в учебном списке."
+      ],
+      [
+        "Сохраняйте и повторяйте",
+        "Ищите записи по дате, добавляйте в избранное и копируйте выражения. Неудачные записи можно обработать повторно, а ненужные — удалить."
+      ],
+      [
+        "Повторяйте на iPhone",
+        "Включите iCloud для чтения, озвучивания и повторения записей на iPhone. Есть ежедневные напоминания. Приложение для iPhone доступно через TestFlight."
+      ]
+    ],
+    "details": [
+      [
+        "Работайте в своих ИИ-инструментах",
+        [
+          "Поддерживаются Pi, Claude Code, Codex, OpenCode и Antigravity. Yilo сохраняет новые запросы, пока запущен. Дополнительно настраивать модель или API не нужно.",
+          "Поддерживаются Pi, Claude Code, Codex, OpenCode и Antigravity. Yilo сохраняет только ваши новые запросы, пока программа запущена. Старые переписки не импортируются.",
+          "ИИ-инструмент должен быть установлен и доступен. Вам нужно войти в свою учётную запись в этом инструменте. Дополнительно настраивать модель или API не требуется.",
+          "Используйте один Аккаунт Apple на Mac и iPhone. С iCloud на iPhone доступны поиск, избранное и просмотр синхронизированных записей по дате. Читать можно и без сети."
+        ]
+      ],
+      [
+        "Записи остаются на Mac",
+        [
+          "По умолчанию записи хранятся на Mac; iCloud можно включить по желанию. Новые формулировки, переводы, заметки и уточняющие вопросы обрабатывает соответствующий ИИ-сервис.",
+          "По умолчанию записи остаются на Mac. iCloud включается по желанию. Переводы, заметки и уточняющие вопросы используют соответствующий ИИ-сервис.",
+          "Yilo отфильтровывает малополезные сообщения и скрывает секреты, распознанные с высокой уверенностью. Код, пути и URL сохраняются.",
+          "История переписки по учебным записям остаётся на Mac. Она не синхронизируется и не экспортируется. Можно удалить записи из облака, сохранив копии на Mac."
+        ]
+      ],
+      [
+        "Практикуйтесь при вводе",
+        [
+          "Вводите текст напрямую или редактируйте его в других приложениях. Для редактирования используется первый изучаемый язык и требуется разрешение универсального доступа.",
+          "В других приложениях результат заменяет выделенный текст. Если ничего не выделено, он добавляется сразу после исходного текста. Для этого нужно дать Yilo разрешение в разделе «Универсальный доступ». Функция также доступна через меню «Службы».",
+          "Настройте сочетания клавиш, закрепление окна, прозрачность, тему и размер текста. Есть запуск при входе и автоматические обновления.",
+          "Интерфейс командной строки работает в режиме чтения и позволяет экспортировать записи. На iPhone можно скопировать контекст записи или открыть ChatGPT, Claude или Gemini. Вы сами решаете, когда его отправить."
+        ]
+      ],
+      [
+        "Учитесь по-своему",
+        [
+          "Изучайте несколько языков одновременно. Пиньинь, чжуинь, хирагана и ромадзи помогают читать.",
+          "Исходный язык сначала следует языку системы. Учебный язык по умолчанию — английский, а для английского оригинала — упрощённый китайский. Настройки можно изменить при первом запуске или позже. Число языков не ограничено.",
+          "Выберите язык объяснений, стиль и тон. Для английского доступны американский и британский варианты.",
+          "Китайские переводы могут показывать пиньинь или чжуинь. Для упрощённого китайского по умолчанию включён пиньинь, для традиционного — чжуинь. Пиньинь расположен над словами, чжуинь — справа от иероглифов. Подсказки можно отключить в настройках.",
+          "Японские переводы могут показывать хирагану или ромадзи. По умолчанию чтение выключено. Хирагана стоит над кандзи, ромадзи — над группами слов. Копируемый текст, заметки и результат переформулирования не меняются."
+        ]
+      ]
+    ],
+    "screenshots": [
+      "Реальная запись: китайский оригинал, английский и японский переводы, заметки и ромадзи. Русский интерфейс; содержание сохранено.",
+      "Настройки: китайский оригинал, изучаемые языки — английский, японский и французский. Русский интерфейс, пример настроек.",
+      "Выбор английского, японского и французского. Русский интерфейс, пример настроек."
+    ],
+    "sync": "Синхронизация через iCloud по желанию · бета-версия для iPhone в TestFlight",
+    "headline": "Осваивайте язык, пока занимаетесь вайб-кодингом",
+    "title": "Yilo — Учите языки на собственных фразах",
+    "screenshotNote": "Реальная запись: китайский оригинал, английский и японский переводы, заметки и ромадзи. Русский интерфейс; содержание сохранено.",
+    "formerName": "Прежнее название — YiYan.",
+    "screenshotLabels": [
+      "Учебная запись · ромадзи",
+      "Настройки изучаемых языков",
+      "Выбор изучаемых языков"
+    ],
+    "detailMore": [
+      "Требования",
+      "Данные и синхронизация",
+      "Ввод и экспорт",
+      "Языки и подсказки чтения"
+    ],
+    "headlineLines": [
+      "Осваивайте язык,",
+      "пока занимаетесь вайб-кодингом"
+    ],
+    "headlineEm": 13.659,
+    "music": {
+      "label": "Музыка",
+      "note": "14-секундный фрагмент; громкость фона, плавное появление и затухание настроены.",
+      "credits": "Авторство и источники"
+    }
+  },
+  "hi": {
+    "sub": "Mac पर AI टूल में लिखे अपने संदेशों से भाषाएँ सीखें। Yilo स्वाभाविक ढंग से सुधारा गया पाठ या अनुवाद देता है। ज़रूरत होने पर व्याख्या और उदाहरण भी मिलते हैं। कई भाषाएँ साथ सीखें।",
+    "cards": [
+      [
+        "नया इनपुट सहेजें",
+        "Yilo समर्थित AI टूल में आपके लिखे नए संदेशों में से वे संदेश सहेजता है जो भाषा सीखने में काम आते हैं। आपका मूल अनुरोध हमेशा की तरह भेजा जाता है।"
+      ],
+      [
+        "कई भाषाएँ सीखें",
+        "सीखने की भाषाएँ चुनें। हर भाषा में स्वाभाविक ढंग से सुधारा गया पाठ या अनुवाद मिलेगा।"
+      ],
+      [
+        "व्याख्या और उदाहरण पढ़ें",
+        "हर सीखने की भाषा के लिए अधिकतम तीन नोट्स मिल सकते हैं। Mac पर रिकॉर्ड के बारे में आगे सवाल पूछ सकते हैं।"
+      ],
+      [
+        "लिखते समय अभ्यास करें",
+        "सीधे लिखें या दूसरे ऐप का टेक्स्ट सुधारें। सुधार में सीखने की सूची की पहली भाषा इस्तेमाल होती है।"
+      ],
+      [
+        "सहेजें और दोहराएँ",
+        "तारीख के हिसाब से रिकॉर्ड खोजें, उन्हें पसंदीदा में जोड़ें और अभिव्यक्तियाँ कॉपी करें। कोई रिकॉर्ड तैयार न हो पाए तो फिर कोशिश कर सकते हैं। रिकॉर्ड हटा भी सकते हैं।"
+      ],
+      [
+        "iPhone पर दोहराएँ",
+        "iCloud चालू करके iPhone पर रिकॉर्ड पढ़ें, सुनें और याद करने का अभ्यास करें। रोज़ के रिमाइंडर उपलब्ध हैं। iPhone ऐप TestFlight पर मिलता है।"
+      ]
+    ],
+    "details": [
+      [
+        "अपने AI टूल इस्तेमाल करें",
+        [
+          "Pi, Claude Code, Codex, OpenCode या Antigravity इस्तेमाल करें। Yilo चलते समय नया इनपुट सहेजता है। अलग मॉडल या API सेटअप नहीं चाहिए।",
+          "Pi, Claude Code, Codex, OpenCode और Antigravity समर्थित हैं। ऐप चलते समय का नया इनपुट ही लिया जाता है। पुरानी बातचीत आयात नहीं होती।",
+          "संबंधित AI टूल इंस्टॉल और इस्तेमाल के लिए उपलब्ध होना चाहिए। उसमें आपका लॉग इन होना भी ज़रूरी है। अलग से मॉडल या API सेट अप करने की ज़रूरत नहीं है।",
+          "Mac और iPhone पर एक ही Apple खाते का उपयोग करें। iCloud से सिंक किए रिकॉर्ड iPhone पर खोजें, पसंदीदा बनाएँ और तारीख से देखें। ऑफलाइन पढ़ना भी उपलब्ध है।"
+        ]
+      ],
+      [
+        "रिकॉर्ड आपके Mac पर",
+        [
+          "रिकॉर्ड डिफ़ॉल्ट रूप से Mac पर रहते हैं; iCloud सिंक वैकल्पिक है। पाठ सुधार, अनुवाद, नोट और आगे के सवाल संबंधित AI सेवा से संसाधित होते हैं।",
+          "डिफ़ॉल्ट रूप से रिकॉर्ड आपके Mac पर रहते हैं। iCloud सिंक चालू करना आपके हाथ में है। अनुवाद, नोट्स और किसी रिकॉर्ड पर पूछे गए आगे के सवालों के लिए Yilo संबंधित AI सेवा इस्तेमाल करता है।",
+          "Yilo कम उपयोगी इनपुट छाँट देता है और जिस जानकारी के गोपनीय होने की पहचान भरोसे के साथ कर पाता है, उसे छिपा देता है। कोड, पाथ और URL जस के तस रहते हैं।",
+          "Mac की आगे की बातचीत केवल वहीं रहती है। वह सिंक या निर्यात नहीं होती। Mac की कॉपी रखकर क्लाउड रिकॉर्ड हटा सकते हैं।"
+        ]
+      ],
+      [
+        "लिखते समय अभ्यास करें",
+        [
+          "सीधे लिखें या दूसरे ऐप में टेक्स्ट सुधारें। सुधार पहली सीखने की भाषा का उपयोग करता है और इसके लिए Accessibility की अनुमति चाहिए।",
+          "दूसरे ऐप में सुधार चुने हुए टेक्स्ट को बदलता है। चयन न होने पर परिणाम मूल टेक्स्ट के बाद जुड़ता है। इसके लिए Accessibility अनुमति चाहिए। Services मेनू भी समर्थित है।",
+          "शॉर्टकट, विंडो को ऊपर रखना, पारदर्शिता, थीम और टेक्स्ट आकार बदलें। लॉग इन पर खुलना और अपने आप अपडेट उपलब्ध हैं।",
+          "केवल पढ़ने वाला CLI रिकॉर्ड निर्यात करता है। iPhone पर रिकॉर्ड का संदर्भ कॉपी करें या ChatGPT, Claude अथवा Gemini खोलें। भेजने का निर्णय आपका है।"
+        ]
+      ],
+      [
+        "अपने तरीके से सीखें",
+        [
+          "एक साथ कई भाषाएँ सीखें। पढ़ने में मदद के लिए पिनयिन, झुयिन, हिरागाना या रोमाजी इस्तेमाल करें।",
+          "शुरुआत में स्रोत भाषा आपके सिस्टम की भाषा होती है। सीखने की सूची में पहली भाषा अंग्रेज़ी होती है। अगर स्रोत भाषा अंग्रेज़ी है, तो पहली भाषा सरलीकृत चीनी होती है। आप ये सेटिंग शुरुआती सेटअप में या बाद में बदल सकते हैं। सीखने के लिए जितनी चाहें उतनी भाषाएँ चुन सकते हैं।",
+          "व्याख्या की भाषा, लेखन शैली और लहजा चुनें। अंग्रेज़ी के लिए अमेरिकी या ब्रिटिश रूप चुन सकते हैं।",
+          "चीनी अनुवाद में पिनयिन या झुयिन दिखा सकते हैं। सरलीकृत चीनी में पिनयिन और पारंपरिक चीनी में झुयिन डिफ़ॉल्ट है। पिनयिन शब्दों के ऊपर और झुयिन अक्षरों के दाईं ओर दिखता है। इन्हें सेटिंग में बंद कर सकते हैं।",
+          "जापानी अनुवाद में पढ़ने के लिए हिरागाना या रोमाजी दिखा सकते हैं। यह विकल्प डिफ़ॉल्ट रूप से बंद है। हिरागाना कांजी के ऊपर और रोमाजी शब्द समूहों के ऊपर दिखता है। इससे कॉपी किए गए टेक्स्ट, नोट्स या सुधार के नतीजे पर कोई असर नहीं पड़ता।"
+        ]
+      ]
+    ],
+    "screenshots": [
+      "वास्तविक रिकॉर्ड: चीनी मूल, अंग्रेज़ी और जापानी अनुवाद, नोट्स और रोमाजी। हिन्दी इंटरफ़ेस; सामग्री यथावत है।",
+      "सेटिंग: चीनी इनपुट से अंग्रेज़ी, जापानी और फ़्रेंच सीखने का उदाहरण। हिन्दी इंटरफ़ेस।",
+      "अंग्रेज़ी, जापानी और फ़्रेंच का चयन। हिन्दी इंटरफ़ेस और उदाहरण सेटिंग।"
+    ],
+    "sync": "वैकल्पिक iCloud सिंक · iPhone TestFlight बीटा",
+    "headline": "वाइब कोडिंग करते हुए एक नई भाषा भी सीखते जाएँ",
+    "title": "Yilo — अपने रोज़ के शब्दों से भाषाएँ सीखें",
+    "screenshotNote": "वास्तविक रिकॉर्ड: चीनी मूल, अंग्रेज़ी और जापानी अनुवाद, नोट्स और रोमाजी। हिन्दी इंटरफ़ेस; सामग्री यथावत है।",
+    "formerName": "इसका पुराना नाम YiYan था।",
+    "screenshotLabels": [
+      "सीखने का रिकॉर्ड · रोमाजी",
+      "सीखने की भाषाओं की सेटिंग",
+      "सीखने की भाषाएँ चुनें"
+    ],
+    "detailMore": [
+      "ज़रूरी शर्तें",
+      "डेटा और सिंक",
+      "इनपुट और निर्यात",
+      "भाषाएँ और उच्चारण सहायता"
+    ],
+    "headlineLines": [
+      "वाइब कोडिंग करते हुए",
+      "एक नई भाषा भी सीखते जाएँ"
+    ],
+    "headlineEm": 12.122,
+    "music": {
+      "label": "संगीत",
+      "note": "14 सेकंड का अंश; पृष्ठभूमि की आवाज़ और फ़ेड समायोजित किए गए हैं।",
+      "credits": "श्रेय और स्रोत"
+    }
+  },
+  "ar": {
+    "sub": "تعلّم اللغات من رسائلك في أدوات الذكاء الاصطناعي على Mac. يقدّم Yilo صياغات محسّنة أو ترجمات طبيعية، مع شروح وأمثلة عند الحاجة. يمكنك تعلّم عدة لغات معًا.",
+    "cards": [
+      [
+        "حفظ المدخلات الجديدة",
+        "يحفظ Yilo ما يفيدك في التعلّم من رسائلك الجديدة في أدوات الذكاء الاصطناعي المدعومة. ويُرسل طلبك الأصلي كالمعتاد."
+      ],
+      [
+        "تعلّم عدة لغات",
+        "اختر اللغات التي تريد تعلّمها. تحصل لكل لغة على صياغة محسّنة أو ترجمة طبيعية."
+      ],
+      [
+        "قراءة الشرح والأمثلة",
+        "قد تتضمن كل لغة تعلّم ثلاث ملاحظات كحد أقصى. يمكنك طرح أسئلة عن السجل على Mac."
+      ],
+      [
+        "التدرب أثناء الكتابة",
+        "اكتب مباشرة أو أعد صياغة نص في تطبيق آخر. تستخدم إعادة الصياغة أول لغة في قائمة التعلّم."
+      ],
+      [
+        "الحفظ والمراجعة",
+        "ابحث عن السجلات حسب التاريخ، وأضفها إلى المفضلة، وانسخ التعبيرات. إذا تعذّرت معالجة سجل، يمكنك المحاولة مجددًا. ويمكنك أيضًا حذف السجلات."
+      ],
+      [
+        "المراجعة على iPhone",
+        "فعّل iCloud لقراءة السجلات والاستماع إليها ومراجعتها على iPhone. تتوفر تذكيرات يومية. يتوفر تطبيق iPhone عبر TestFlight."
+      ]
+    ],
+    "details": [
+      [
+        "استخدم أدواتك للذكاء الاصطناعي",
+        [
+          "استخدم Pi أو Claude Code أو Codex أو OpenCode أو Antigravity. يسجّل Yilo المدخلات الجديدة أثناء تشغيله، دون إعداد نموذج أو API إضافي.",
+          "يدعم Pi وClaude Code وCodex وOpenCode وAntigravity. يجمع المدخلات الجديدة أثناء تشغيله فقط. لا يستورد المحادثات القديمة.",
+          "يجب أن تكون أداة الذكاء الاصطناعي المعنية مثبّتة ومتاحة للاستخدام، وأن تكون قد سجّلت الدخول إليها. لا يلزم إعداد نموذج أو واجهة API إضافية.",
+          "استخدم حساب Apple نفسه على Mac وiPhone. يتيح iCloud البحث في السجلات المتزامنة وتصفحها بالتاريخ وإضافتها للمفضلة على iPhone. يمكن قراءتها دون اتصال."
+        ]
+      ],
+      [
+        "السجلات على Mac",
+        [
+          "تُحفظ السجلات على Mac افتراضيًا؛ ومزامنة iCloud اختيارية. تعالج خدمة الذكاء الاصطناعي المرتبطة الصياغات المحسّنة والترجمات والملاحظات والأسئلة اللاحقة.",
+          "تبقى السجلات على Mac افتراضيًا. مزامنة iCloud اختيارية. تستخدم الترجمات والملاحظات وأسئلة المتابعة خدمة الذكاء الاصطناعي المعنية.",
+          "يصفّي Yilo المدخلات قليلة الفائدة ويخفي الأسرار التي يتعرّف عليها بثقة عالية. يحتفظ بالشيفرة والمسارات وعناوين URL.",
+          "يبقى سجلّ محادثات المتابعة على جهاز Mac فقط، ولا تشمله المزامنة أو التصدير. يمكنك حذف السجلات من السحابة والاحتفاظ بنسخها على Mac."
+        ]
+      ],
+      [
+        "تدرّب أثناء الكتابة",
+        [
+          "اكتب مباشرةً أو أعد صياغة النص في تطبيقات أخرى. يستخدم Yilo لإعادة الصياغة اللغة الأولى في قائمة اللغات التي تتعلّمها. ويتطلّب ذلك إذن تسهيلات الاستخدام.",
+          "في التطبيقات الأخرى، تستبدل إعادة الصياغة النص المحدد. دون تحديد، تُضاف النتيجة بعد الأصل. يتطلب ذلك إذن تسهيلات الاستخدام ويدعم قائمة الخدمات.",
+          "اضبط الاختصارات وتثبيت النافذة والشفافية والمظهر وحجم النص. يتوفر التشغيل عند تسجيل الدخول والتحديث التلقائي.",
+          "تصدّر CLI للقراءة فقط السجلات. على iPhone، انسخ السياق أو افتح ChatGPT أو Claude أو Gemini. أنت تقرر متى ترسل المحتوى."
+        ]
+      ],
+      [
+        "تعلّم بطريقتك",
+        [
+          "ادرس عدة لغات معًا. استخدم بينيين أو تشويين أو هيراغانا أو روماجي للمساعدة في القراءة.",
+          "تتبع لغة المصدر لغة النظام في البداية. لغة التعلّم الافتراضية هي الإنجليزية، أو الصينية المبسطة إذا كان المصدر إنجليزيًا. يمكنك تغيير ذلك عند الإعداد أو لاحقًا. لا يوجد حد لعدد اللغات.",
+          "اختر لغة الشرح وأسلوب الكتابة والنبرة. للإنجليزية، يمكنك اختيار الاستخدام الأمريكي أو البريطاني.",
+          "يمكن عرض بينيين أو تشويين مع الترجمات إلى الصينية. الإعداد الافتراضي هو بينيين للصينية المبسطة وتشويين للصينية التقليدية. يظهر بينيين فوق الكلمات وتشويين إلى يمين الرموز الصينية. ويمكنك إخفاء علامات القراءة هذه من الإعدادات.",
+          "يمكن إظهار الهيراغانا أو الروماجي في الترجمات اليابانية. الخيار معطّل افتراضيًا. تظهر الهيراغانا فوق الكانجي والروماجي فوق مجموعات الكلمات. لا يتغير النص المنسوخ أو الملاحظات أو نتائج إعادة الصياغة."
+        ]
+      ]
+    ],
+    "screenshots": [
+      "سجل فعلي: نص صيني وترجمات إنجليزية ويابانية وملاحظات وروماجي. واجهة عربية؛ المحتوى محفوظ كما هو.",
+      "إعدادات: نص صيني لتعلّم الإنجليزية واليابانية والفرنسية. واجهة عربية وإعدادات نموذجية.",
+      "اختيار الإنجليزية واليابانية والفرنسية. واجهة عربية وإعدادات نموذجية."
+    ],
+    "sync": "مزامنة iCloud اختيارية · نسخة iPhone التجريبية عبر TestFlight",
+    "headline": "تعلّم لغة جديدة وأنت تبرمج بأسلوب Vibe Coding",
+    "title": "Yilo — تعلّم اللغات من كلماتك اليومية",
+    "screenshotNote": "سجل فعلي: نص صيني وترجمات إنجليزية ويابانية وملاحظات وروماجي. واجهة عربية؛ المحتوى محفوظ كما هو.",
+    "formerName": "الاسم السابق: YiYan.",
+    "screenshotLabels": [
+      "سجل التعلّم · روماجي",
+      "إعدادات لغات التعلّم",
+      "اختيار لغات التعلّم"
+    ],
+    "detailMore": [
+      "متطلبات الاستخدام",
+      "البيانات والمزامنة",
+      "الإدخال والتصدير",
+      "اللغات وعلامات القراءة"
+    ],
+    "headlineLines": [
+      "تعلّم لغة جديدة",
+      "وأنت تبرمج بأسلوب Vibe Coding"
+    ],
+    "headlineEm": 14.889,
+    "music": {
+      "label": "الموسيقى",
+      "note": "مقطع مدته 14 ثانية، مع تعديل مستوى صوت الخلفية والتدرّج في بدايته ونهايته.",
+      "credits": "نسب العمل والمصدر"
+    }
+  }
+}

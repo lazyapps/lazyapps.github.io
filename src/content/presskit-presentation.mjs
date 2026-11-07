@@ -5,12 +5,12 @@ import calmonUI from '../i18n/calmon-media-ui.json' with { type: 'json' };
 import { materialLanguage, languageHash } from '../i18n/presskit-language.mjs';
 import { CHMATE_LOCALES } from '../i18n/chmate-locales.mjs';
 import { FONDFONT_LOCALES } from '../i18n/fondfont-locales.mjs';
-import { YIYAN_LOCALES } from '../i18n/yiyan-locales.mjs';
+import { YILO_LOCALES } from '../i18n/yilo-locales.mjs';
 import { DOZE_LOCALES, DOZE_RELEASE } from '../i18n/doze-locales.mjs';
 import { SHHEEP_LOCALES } from '../i18n/shheep-locales.mjs';
 import { CALMON_LOCALES, CALMON_RELEASE } from '../i18n/calmon-locales.mjs';
 
-const translations = { calmon: CALMON_LOCALES, doze: DOZE_LOCALES, chmate: CHMATE_LOCALES, fondfont: FONDFONT_LOCALES, yiyan: YIYAN_LOCALES, shheep: SHHEEP_LOCALES };
+const translations = { calmon: CALMON_LOCALES, doze: DOZE_LOCALES, chmate: CHMATE_LOCALES, fondfont: FONDFONT_LOCALES, yilo: YILO_LOCALES, shheep: SHHEEP_LOCALES };
 const traditionalSummaries = {
   'world-book': 'iPhone 與 iPad 離線世界地圖集，可查國家資料、瀏覽 3D 地球和比較排名。',
   xvdl: 'Mac Safari 的影片下載擴充功能，可從支援的網頁下載影片。',
@@ -35,7 +35,7 @@ export const pressPresentations = pressKits.map(kit => ({
     const copy = kit.locales.find(locale => locale.tag === productTag);
     const marketing = Object.values(translations[kit.slug] ?? {}).find(locale => locale.htmlLang === productTag);
     const chinese = tag === 'zh-Hans' ? kit.summary.zh : tag === 'zh-Hant' ? traditionalSummaries[kit.slug] : undefined;
-    const category = ['chmate', 'fondfont', 'world-book', 'shheep'].includes(kit.slug) ? 'store' : kit.slug === 'yiyan' ? 'beta' : 'mac';
+    const category = ['chmate', 'fondfont', 'world-book', 'shheep'].includes(kit.slug) ? 'store' : kit.slug === 'yilo' ? 'beta' : 'mac';
     const g = glossary[tag];
     const release = kit.slug === 'calmon' ? CALMON_RELEASE : kit.slug === 'doze' ? DOZE_RELEASE : undefined;
     return [tag, {
@@ -44,7 +44,7 @@ export const pressPresentations = pressKits.map(kit => ({
       summaryLang: copy || marketing || chinese ? tag : 'en',
       website: copy?.website ?? marketing?.selectedUrl ?? (kit.slug === 'calmon' ? CALMON_LOCALES.en.selectedUrl : kit.slug === 'doze' ? DOZE_LOCALES.en.selectedUrl : `/${kit.slug}/`),
       platform: copy?.platform ?? kit.platform.en,
-      availability: kit.slug === 'calmon' ? marketing.availability : release ? (release.status === 'published' ? g.availability.mac : g.availability.upcomingMac) : g.availability[category],
+      availability: kit.slug === 'yilo' ? (copy?.availability ?? kit.availability.en) : kit.slug === 'calmon' ? marketing.availability : release ? (release.status === 'published' ? g.availability.mac : g.availability.upcomingMac) : g.availability[category],
       materialTag: materialLanguage(productTag, kit.locales.map(locale => locale.tag)),
       links: kit.links.map(link => ({ url: link.url, label: release ? (release.status === 'published' ? g.links.download : g.links.releases) : link.url.includes('apps.apple.com') ? 'App Store' : link.url.includes('testflight.') ? g.links.beta : link.url.endsWith('/releases') ? g.links.download : link.url.includes('github.com') ? g.links.source : kit.slug === 'shheep' ? g.links.demo : g.links.play })),
     }];

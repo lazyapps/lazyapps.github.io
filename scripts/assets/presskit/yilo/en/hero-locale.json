@@ -1,0 +1,16 @@
+{
+  "labels" : {
+    "advice.category.collocation" : "Collocation",
+    "advice.category.translation_pattern" : "Translation Pattern",
+    "advice.kind.learning_point" : "Learning point",
+    "language.japanese_reading.help" : "Hiragana appears above kanji; Romaji aligns above each Japanese word.",
+    "language.notes" : "Learning Notes",
+    "language.search" : "Search languages",
+    "language.section" : "Learning Languages",
+    "language.targets" : "Target Languages",
+    "record.example" : "Example"
+  },
+  "nativeLocale" : "en",
+  "operatingSystem" : "Version 27.0.1 (Build 26A434)",
+  "requestedLocale" : "en"
+}

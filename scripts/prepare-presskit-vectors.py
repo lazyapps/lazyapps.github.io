@@ -134,7 +134,7 @@ def pixel_wordmark():
 
 
 OUT.mkdir(parents=True, exist_ok=True)
-for slug in ['chmate', 'world-book', 'yiyan']:
+for slug in ['chmate', 'world-book', 'yilo']:
     flat_icon(slug)
 for slug, source, filename, method in [
     ('fondfont', 'src/assets/img/fondfont-web-icon.svg', 'fondfont-flat.svg', 'Existing flat artwork using the original Bodoni vector masks, authored transforms and documented flat print colors; native glass effects are not reproduced.'),

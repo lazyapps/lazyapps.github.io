@@ -1,0 +1,19 @@
+{
+  "agent": {
+    "en": "Hold off on a sweeping rewrite; leave us some wiggle room.",
+    "zh-hans": "先别大改，留点余地。",
+    "ja": "大幅な書き直しは控え、調整の余地を残して。"
+  },
+  "refine": {
+    "en": "No scope creep",
+    "zh-hans": "别扩大范围"
+  },
+  "source": {
+    "en": "No big rewrite yet; leave room to adjust.",
+    "zh-hans": "先别大改，留点余地。"
+  },
+  "reusePhrase": {
+    "en": "Let's leave some wiggle room.",
+    "zh-hans": "留点余地。"
+  }
+}

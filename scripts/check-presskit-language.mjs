@@ -30,7 +30,7 @@ for (const product of pressPresentations) {
     assert(appLanguages[product.slug].tags.includes(copy.materialTag), 'Presentation must not invent downloadable languages');
   }
 }
-for (const slug of ['fondfont', 'yiyan']) {
+for (const slug of ['fondfont', 'yilo']) {
   const product = pressPresentations.find(item => item.slug === slug);
   for (const tag of ['zh-Hans', 'zh-Hant']) {
     assert(product.locales[tag].name.includes(' · '), 'Bilingual names must share the middle-dot separator');

@@ -1,0 +1,126 @@
+---
+import type { ImageMetadata } from 'astro';
+import examples from '../i18n/yilo-examples.json';
+import copy from '../i18n/yilo-hero-copy.json';
+import controls from '../i18n/yilo-demo-copy.json';
+import music from '../../scripts/assets/yilo/web-music-source.json';
+import shortCopy from '../i18n/yilo-short-copy.json';
+import englishRecord from '../../scripts/assets/yilo/capture/hero-record-en.json';
+import chineseRecord from '../../scripts/assets/yilo/capture/hero-record-zh.json';
+interface Props { locale?: keyof typeof copy; compact?: boolean }
+const { locale='en', compact=true }=Astro.props;
+const c=copy[locale], ui=controls[locale], english=locale==='en', rtl=locale==='ar';
+const tag=({'zh-hans':'zh-Hans','zh-hant':'zh-Hant','pt-br':'pt-BR'} as Record<string,string>)[locale]??locale;
+const captures=import.meta.glob<{default:ImageMetadata}>('../../scripts/assets/presskit/yilo/*/hero-record.png',{eager:true});
+const record=captures[`../../scripts/assets/presskit/yilo/${tag}/hero-record.png`].default;
+const inputLines = english?examples.source.en.split('; '):[examples.source['zh-hans']];
+if(english)inputLines[0]+=';';
+const lesson=english?englishRecord:chineseRecord;
+const readings=['xiān bié dà gǎi, liú diǎn yú dì.', 'oohaba na kakinaoshi ha hikae chousei no yochi wo nokoshi te'];
+const colors = {teal:'#70a59e',blue:'#5c6995',green:'#84995c',coral:'#b76450'};
+---
+<div class:list={['yilo-demo',{'yilo-demo--compact':compact}]} data-yilo-demo data-locale={locale} data-input={JSON.stringify(inputLines)} data-record-ratio={record.height/record.width} data-scene="learn" role="group" aria-label={c.alt} dir={rtl?'rtl':'ltr'}>
+  <svg class="yilo-demo__scene" viewBox="-48 112 1376 704" fill="none" aria-hidden="true" focusable="false" direction="ltr">
+    <defs>
+      {Object.entries(colors).map(([name,color]) => <pattern id={`yilo-demo-${name}`} width="8" height="8" patternUnits="userSpaceOnUse" patternTransform={`rotate(${name==='green'?0:name==='coral'?35:-42})`}><path d="M0 2H8" stroke={color} stroke-width="1.5"/></pattern>)}
+    </defs>
+    <path data-road d="M-2000 621H3000V816H-2000Z" fill="url(#yilo-demo-green)" opacity=".65"/>
+    <g data-pelican-layout>
+    <path data-small-road d="M60 621H450V637H60Z" fill="url(#yilo-demo-green)" opacity="0"/>
+    <g data-pelican-scale transform="translate(250 621) scale(1.08) translate(-250 -621)">
+    <g transform="translate(-70 75)" stroke="#5c6995" stroke-linejoin="round">
+      {[220,418].map(x => <g transform={`translate(${x} 480)`}>
+        <circle r="66" fill="#f6f2e7" stroke-width="2.4"/>
+        <circle r="59" fill="url(#yilo-demo-blue)" opacity=".2" stroke="none"/>
+        <g data-wheel>{Array.from({length:12},(_,i)=><path d={`M0 0L${63*Math.cos(i*Math.PI/6)} ${63*Math.sin(i*Math.PI/6)}`} stroke-width="1.05"/>)}</g>
+        <circle r="5" fill="#b76450" stroke="none"/>
+      </g>)}
+      <path d="M220 480L288 389L335 458L220 480M288 389L385 377L335 458M385 377L418 480M379 359L401 352M269 384H305" stroke-width="3"/>
+      <path data-leg="back" d="M288 386L310 413L308 458" stroke="#70a59e" stroke-width="6" stroke-linecap="round"/>
+      <path d="M250 367L221 349L238 383L265 392Z" fill="url(#yilo-demo-blue)" stroke-width="1.8"/>
+      <path d="M270 310C245 315 239 344 252 370C261 390 291 401 314 389C334 379 337 351 324 328C315 314 296 307 270 310Z" fill="#f6f2e7" stroke-width="2.2"/>
+      <path d="M256 335C264 350 281 371 310 378L316 368C296 360 282 342 276 324Z" fill="url(#yilo-demo-teal)" stroke="none"/>
+      <path d="M306 337Q326 361 347 369L387 359L388 365L347 378Q319 370 298 349" fill="url(#yilo-demo-teal)" stroke-width="2"/>
+      <path d="M307 330C310 310 292 293 290 272C287 249 302 232 320 237C338 242 337 262 326 273C314 286 333 301 332 324" fill="#f6f2e7" stroke-width="2.2"/>
+      <path d="M303 257L337 257L408 271L335 279L304 267Z" fill="url(#yilo-demo-coral)" stroke="#b76450" stroke-width="2"/>
+      <path d="M308 267Q329 307 367 281L408 271L335 278Z" fill="url(#yilo-demo-coral)" stroke="#b76450" stroke-width="1.8"/>
+      <g data-eye transform="translate(320 250)"><ellipse rx="3.3" ry="3.3" fill="#333d51" stroke="none"/></g>
+      <path d="M299 243L292 237M302 239L300 230" stroke-width="1.5"/>
+      <path data-leg="front" d="M288 386L349 405L362 458" stroke="#b76450" stroke-width="5" stroke-linecap="round"/>
+      <path data-foot="front" d="M0-5l17 9-8 2-4-3-6 3-8-3Z" transform="translate(362 458)" fill="url(#yilo-demo-coral)" stroke="#b76450" stroke-width="1.8"/>
+      <path data-foot="back" d="M0-5l17 9-8 2-4-3-6 3-8-3Z" transform="translate(308 458)" fill="url(#yilo-demo-coral)" stroke="#b76450" stroke-width="1.8"/>
+      <circle cx="335" cy="458" r="14" fill="#f6f2e7" stroke="#b76450" stroke-width="2"/>
+      <path data-crank d="M308 458H362" stroke="#b76450" stroke-width="2"/>
+      <path d="M409 356L448 356L470 309L411 309Z" fill="#f6f2e7" stroke-width="1.6"/>
+      {['M416 316H459','M415 322H455','M414 328H450'].map(d=><path data-laptop-line d={d} stroke="#70a59e" stroke-width="1.1"/>)}
+    </g>
+    </g>
+    <g transform="translate(0 -15)" stroke="#5c6995" fill="#f6f2e7">
+      <path d="M207 211Q188 211 188 232V251Q188 270 208 270H307Q326 270 326 250V232Q326 211 307 211Z" stroke-width="1.7"/>
+      {[232,257,282].map(x=><circle data-thought cx={x} cy="241" r="3.5" fill="#b76450" stroke="none"/>)}
+      <circle cx="242" cy="282" r="4" stroke-width="1.3"/><circle cx="247" cy="294" r="2.3" fill="#5c6995" stroke="none"/>
+    </g>
+    </g>
+    <g data-layer="input" opacity="0">
+      <path data-input-bubble d="M480 254H1230V426H1169L1148 452L1142 426H480Z" fill="#f6f2e7" stroke="#70a59e" stroke-width="2"/>
+      <text data-input-label x={rtl?1202:508} y="292" class="label" direction={rtl?'rtl':'ltr'}>Codex · {c.sourceLabel}</text>
+      {inputLines.map((line,i)=><text data-input-text x="508" y={344+i*49} class="input"><tspan data-input-line>{line}</tspan><tspan data-typing-caret opacity="0">_</tspan></text>)}
+    </g>
+    <image data-layer="learn" href={record.src} x="480" y="214" width="780" height={780*record.height/record.width} preserveAspectRatio="xMidYMin meet"/>
+    <g data-layer="conversation" opacity="0">
+      <g data-people-layout>
+      {[true,false].map(listener=><g data-person-reveal><g transform={listener?'translate(760 350)':'translate(1150 350) scale(-1 1)'}>
+        <path d="M20 174L92 162L128 210L161 302L-30 302L-5 224Z" fill={`url(#yilo-demo-${listener?'teal':'coral'})`}/>
+        <g data-person-head>
+        <ellipse cx="63" cy="124" rx="42" ry="49" fill="#f6f2e7" stroke="#b76450" stroke-width="1.8"/>
+        <path d="M23 126L17 88L40 66L80 71L107 91L105 128L93 99L60 94L39 113Z" fill="url(#yilo-demo-blue)"/>
+        {!listener&&<path d="M21 128L11 110L6 148L25 155" fill="url(#yilo-demo-blue)"/>}
+        <path d="M77 127L88 127M70 152L83 154L89 150" stroke="#5c6995" stroke-width="2"/>
+        </g>
+        <path d="M87 188L132 224L184 206" stroke="#b76450" stroke-width="3"/>
+        <path data-person-hand d="M12 194L-5 237L66 251" stroke="#b76450" stroke-width="3"/>
+        {!listener&&<><path d="M130 205L178 186L211 219L163 237Z" fill="#f6f2e7" stroke="#5c6995" stroke-width="1.7"/><path d="M141 206L181 215M146 211L174 220" stroke="#70a59e" stroke-width="1.3"/></>}
+      </g></g>)}
+      </g>
+      <g data-conversation-bubble><path data-ending-bubble d="M533 240H1189V403H1128L1107 433L1101 403H533Z" fill="#f6f2e7" stroke="#5c6995" stroke-width="1.7"/></g>
+      <foreignObject data-ending-text x="555" y="263" width="612" height="140">
+        <div class="conversation" dir={rtl?'rtl':'ltr'}><p data-ending-phrase class="phrase" lang={english?'zh-Hans':'en'} dir="ltr">{examples.reusePhrase[english?'zh-hans':'en']}</p><p data-ending-outcome class="outcome">{c.reuse}</p></div>
+      </foreignObject>
+    </g>
+  </svg>
+  <div class="sr-only" data-description>
+    <p>Codex · {c.sourceLabel} · <span lang={english?'en':'zh-Hans'}>{lesson.originalText}</span></p>
+    <p>{c.targetLabel}</p>
+    {lesson.translations.map((translation,i)=><p>{i===0?c.firstLanguage:c.secondLanguage}: <span lang={translation.language}>{translation.text}</span> <span lang={translation.language==='ja'?'ja-Latn':'zh-Latn'}>{translation.language==='ja'?readings[1]:translation.language==='zh-Hans'?readings[0]:''}</span></p>)}
+    <p>{examples.reusePhrase[english?'zh-hans':'en']} {c.reuse}</p>
+  </div>
+  <audio data-demo-audio src={music.output.replace(/^public/,'')} preload="none" loop></audio>
+  <div class="yilo-demo__controls" data-controls hidden>
+    {compact&&<a class="music-credit" href={music.credits} aria-label={shortCopy[locale].music.credits}>“Fluffing a Duck” · Kevin MacLeod · CC BY 4.0</a>}
+    <button type="button" data-action="sound" aria-label={ui.sound} aria-pressed="false"><svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="M2 5h3l3-3v10l-3-3H2Z" stroke="currentColor" stroke-width="1.4" fill="none"/><path data-sound-off d="m10 5 3 4m0-4-3 4" stroke="currentColor" stroke-width="1.3"/><path data-sound-on d="M10 4q4 3 0 6" stroke="currentColor" stroke-width="1.3" fill="none"/></svg>{ui.sound}</button>
+  </div>
+</div>
+<style>
+  .yilo-demo{width:100%;height:100%;min-width:0;display:flex;flex-direction:column;justify-content:center;position:relative;color:#333d51}
+  .yilo-demo__scene{display:block;width:100%;height:auto;aspect-ratio:var(--demo-aspect,1376/704);max-height:var(--demo-max-height,var(--yilo-scene-max-height,none));background:#f6f2e7;flex:none;pointer-events:none}
+  text,.conversation{font-family:'Yilo Hand Latin','Yilo Hand Han',var(--sans);font-weight:400;fill:currentColor}
+  .label{font-size:28px;fill:#47736d}.input{font-size:38px}
+  .conversation{line-height:1.4}.conversation p{margin:0}.phrase{font-size:40px;text-wrap:balance}.outcome{font-size:24px;color:#9d5141;margin-top:12px!important;text-wrap:pretty}
+  .conversation[dir=rtl] .phrase{text-align:right}
+  .yilo-demo__controls{display:flex;align-items:center;justify-content:flex-end;gap:10px;position:absolute;right:var(--demo-control-inset,24px);bottom:clamp(8px,1.6vw,16px);max-width:calc(100% - var(--demo-control-inset,24px) - 24px);direction:ltr;z-index:3;pointer-events:auto}
+  .yilo-demo__controls[hidden]{display:none}
+  button{display:inline-flex;align-items:center;justify-content:center;gap:6px;min-height:44px;padding:0 14px;border:0;background:transparent;color:inherit;cursor:pointer;font:500 18px/1.2 var(--sans);transition:scale .15s ease-out}
+  button:active{scale:.96}
+  .yilo-demo--compact button{font-size:12px}
+  .music-credit{visibility:hidden;opacity:0;flex:1;min-width:0;font:400 11px/1.4 var(--sans);text-decoration:underline;text-underline-offset:2px;align-self:center;transition:opacity .2s ease-out,visibility .2s}.yilo-demo[data-sound=true] .music-credit{visibility:visible;opacity:1}
+  [data-sound-on],[data-sound-off]{transform-box:fill-box;transform-origin:center;transition:scale .3s cubic-bezier(.2,0,0,1),opacity .3s cubic-bezier(.2,0,0,1),filter .3s cubic-bezier(.2,0,0,1)}
+  [data-sound-on],.yilo-demo[data-sound=true] [data-sound-off]{scale:.25;opacity:0;filter:blur(4px)}
+  [data-sound-off],.yilo-demo[data-sound=true] [data-sound-on]{scale:1;opacity:1;filter:blur(0)}
+  button{flex:none}button svg{flex:none}button:focus-visible{outline:2px solid var(--accent);outline-offset:-2px}
+  @media(prefers-reduced-motion:reduce){button,[data-sound-on],[data-sound-off],.music-credit{transition:none}button:active{scale:1}}
+  .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap;border:0}
+</style>
+<script>
+  import { initYiloDemo } from './yilo-demo/controller';
+  document.querySelectorAll<HTMLElement>('[data-yilo-demo]').forEach(initYiloDemo);
+</script>

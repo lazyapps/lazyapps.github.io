@@ -1,10 +1,11 @@
 ---
 const SITE = 'https://lazyapps.com';
 const title = 'lazyapps — Apps for Mac, iPhone & iPad';
-const description = 'Mac, iPhone and iPad apps for scrolling window management, screen dimming during AI computer use, English practice, X video downloads, EPUB and CHM reading, country facts and fonts. Shheep is a sheep-counting game for iPhone and iPad.';
+const description = 'Mac, iPhone and iPad apps for scrolling window management, screen dimming during AI computer use, language learning, X video downloads, EPUB and CHM reading, country facts and fonts. Shheep is a sheep-counting game for iPhone and iPad.';
 import { DOZE_LOCALES } from '../i18n/doze-locales.mjs';
 import { CALMON_LOCALES } from '../i18n/calmon-locales.mjs';
 import CalmonDesktop from '../components/CalmonDesktop.astro';
+import YiloDemo from '../components/YiloDemo.astro';
 import ComputerUseText from '../components/ComputerUseText.astro';
 const doze = DOZE_LOCALES.en;
 const calmon = CALMON_LOCALES.en;
@@ -24,17 +25,15 @@ import splitTextUrl from '$assets/vendor/SplitText.min.js?url';
 import logoRevealUrl from '$assets/s/logo-reveal-loader.js?url';
 import siteJsUrl from '$assets/s/site.js?url';
 import opengraphUrl from '$assets/img/opengraph.png?url';
-import showcaseUrl from '$assets/img/yiyan-learning-log.png?url';
+import yiloHandCssUrl from '$assets/s/yilo-hand.css?url';
 import inUseUrl from '$assets/img/xvdl-in-use.png?url';
 import { Image, getImage } from 'astro:assets';
 import dozePanel from '../../scripts/assets/presskit/doze-panel-en-light.png';
 import dozeDayLandscape from '$assets/img/doze-landscape-day-cozy-doodle.png';
-import yiyanDesktopArtwork from '$assets/img/yiyan-desert-desktop.png';
 import shheepNightArtwork from '$assets/img/shheep-pixel-night-background.png';
 import xvdlBlueHourArtwork from '$assets/img/xvdl-blue-hour-background.png';
-const [dozeLandscape, yiyanDesktop, shheepNight, xvdlBlueHour] = await Promise.all([
+const [dozeLandscape, shheepNight, xvdlBlueHour] = await Promise.all([
   getImage({ src: dozeDayLandscape, width: 1200, format: 'webp', quality: 90 }),
-  getImage({ src: yiyanDesktopArtwork, width: 1200, format: 'webp', quality: 85 }),
   getImage({ src: shheepNightArtwork, width: 1200, format: 'webp', quality: 90 }),
   getImage({ src: xvdlBlueHourArtwork, width: 1200, format: 'webp', quality: 85 }),
 ]);
@@ -66,6 +65,7 @@ const [dozeLandscape, yiyanDesktop, shheepNight, xvdlBlueHour] = await Promise.a
 }} />
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2064%2064%22%3E%3Crect%20width%3D%2264%22%20height%3D%2264%22%20rx%3D%2215%22%20fill%3D%22%23171717%22%2F%3E%3Cpath%20fill%3D%22%23f8f8f6%22%20d%3D%22M20%2013h12v33h17v10H20z%22%2F%3E%3Ccircle%20cx%3D%2245%22%20cy%3D%2219%22%20r%3D%225%22%20fill%3D%22%23ff6846%22%2F%3E%3C%2Fsvg%3E">
 <link rel="stylesheet" href={siteCssUrl}>
+<link rel="stylesheet" href={yiloHandCssUrl}>
 
 <script is:inline>
 document.documentElement.classList.remove('no-js');
@@ -102,7 +102,7 @@ setTimeout(function(){
 .card--calmon{--fill:var(--app-calmon)}
 .card--calmon .card__title{text-transform:none}
 .card--calmon .card__shots{padding:0;min-height:360px;background:var(--app-calmon)}
-.card--yiyan{--fill:var(--app-yiyan)}
+.card--yilo{--fill:var(--app-yilo)}
 .card--xvdl{--fill:var(--app-xvdl);--icon-optical-scale:1.34214}
 .card--chmate{--fill:var(--app-chmate)}
 .card--cia{--fill:var(--app-world-book)}
@@ -170,12 +170,8 @@ setTimeout(function(){
   width:auto;height:auto;max-width:100%;object-fit:contain;
   box-shadow:0 12px 28px -8px #0000004d;
 }
-.card--yiyan .card__shots{
-  aspect-ratio:auto;background-color:#d6baa0;background-position:center;background-size:cover;
-}
-.card--yiyan .card__shots img{
-  height:auto;max-height:none;object-fit:contain;outline:none;
-  filter:drop-shadow(0 14px 20px #31271940) drop-shadow(0 2px 4px #31271926);
+.card--yilo .card__shots{
+  position:relative;z-index:3;padding:0;aspect-ratio:auto;background:#f6f2e7;box-shadow:none;pointer-events:none;
 }
 .card--doze .card__shots{
   --shot-padding:clamp(28px,3vw,40px);
@@ -199,6 +195,7 @@ setTimeout(function(){
   .card__shots{aspect-ratio:16/9}
   .card--featured .card__shots{margin:0 calc(-1 * var(--space-card)) calc(-1 * var(--space-card))}
   .card--calmon .card__shots{height:clamp(260px,64vw,360px);min-height:0;aspect-ratio:auto}
+  .card--yilo .card__shots{aspect-ratio:auto}
 }
 @media (max-width:560px){
   .deck{--space-card:28px;--r-card:24px}
@@ -317,26 +314,26 @@ setTimeout(function(){
         </div>
       </article>
 
-      <article class="card card--featured card--yiyan" id="yiyan">
+      <article class="card card--featured card--yilo" id="yilo">
         <div class="card__grid">
           <div class="card__copy">
             <div class="card__heading">
-              <NativeAppIcon slug="yiyan" size={96} class="card__icon" />
+              <NativeAppIcon slug="yilo" size={96} class="card__icon" />
               <div class="card__identity">
-                <h2 class="card__title dsp">YiYan</h2>
+                <h2 class="card__title dsp">Yilo</h2>
                 <div class="card__meta">
                   <p class="card__tag">macOS · iPhone</p>
-                  <CardAction href="/yiyan/presskit/#en" aria-label="YiYan Press Kit" class="card__press" secondary arrow={false}>Press Kit</CardAction>
+                  <CardAction href="/yilo/presskit/#en" aria-label="Yilo Press Kit" class="card__press" secondary arrow={false}>Press Kit</CardAction>
                 </div>
               </div>
             </div>
-            <p class="card__p">Turn input from AI coding tools such as Claude Code and Codex into natural English, with explanations and examples. Polish selected text or the current input field on Mac.</p>
+            <p class="card__p">Learn languages from natural rewrites or translations of your input in Claude Code, Codex and other AI tools. Yilo adds notes when useful. Formerly YiYan.</p>
             <div class="card__foot">
-              <CardAction href="/yiyan/en/" class="card__go" stretched>YiYan details</CardAction>
+              <CardAction href="/yilo/en/" class="card__go" stretched>Yilo details</CardAction>
             </div>
           </div>
-          <div class="card__shots" style={{ backgroundImage: `url("${yiyanDesktop.src}")` }}>
-            <img src={showcaseUrl} alt="YiYan learning log on macOS" width="1616" height="1388">
+          <div class="card__shots">
+            <YiloDemo />
           </div>
         </div>
       </article>
