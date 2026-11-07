@@ -1,5 +1,6 @@
 ---
 import panels from './calmon-key-panel.json';
+import '../assets/s/calmon-panel-fonts.css';
 import systemLanguages from './calmon-key-panel-system.json';
 const { code = '', label } = Astro.props;
 const sections = panels[code || 'zh-Hans'];
@@ -19,7 +20,6 @@ const columns = [sections.slice(0, 3), sections.slice(3)];
   </div>
 </div>
 <style>
-  @font-face{font-family:'calmon Panel';src:url('../assets/fonts/calmon-panel.woff2') format('woff2');font-weight:400;font-display:swap}
   .calmon-key-panel{container-type:inline-size;padding:12px;border-radius:8px;background:#111;color:#ddd;font:400 18px/24px 'calmon Panel',monospace;font-synthesis:none;letter-spacing:0;text-align:start}
   .is-system-text{font-family:var(--sans);font-size:16px;line-height:1.5;text-align:start}
   .calmon-key-panel kbd{font-family:'calmon Panel',monospace}

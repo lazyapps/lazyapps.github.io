@@ -205,3 +205,96 @@ adding characters, so regeneration does not drop earlier supported glyphs.
 Source and optimized receipts were regenerated; the font manifest contains the
 current sizes. The earlier zero-diff comparisons concern identical content,
 not the deliberately changed examples.
+
+## Calmon key-panel refresh after shortcut changes
+
+The later 2026-11-07 panel refresh replaces the obsolete hard-coded exporter with
+an optimizer that reads the current checked-in `calmon-key-panel.json`. It never
+rewrites panel rows or app terminology. The old subset lacked characters in the
+new Display and Two-Digit Desktop rows: Japanese `ィレ桁`, Simplified Chinese
+`两位号器数显示编`, and Traditional Chinese `位兩器數示編號顯`.
+These now use the intended original pixel glyphs rather than per-character system
+fallback. No copy, font size, spacing, weight, fallback stack or display policy
+changed. Native app fonts and Press Kit screenshots are unaffected.
+
+Regenerate manually after exporting current native panel content, or after
+changing panel translations, shortcut legends, fonts, matching CSS or tool versions:
+
+```sh
+python3 -m venv .build/calmon-assets-venv
+.build/calmon-assets-venv/bin/pip install -r scripts/requirements-web-fonts.txt
+.build/calmon-assets-venv/bin/python scripts/prepare-calmon-key-panel.py --app-source /path/to/calmon
+npm run build
+```
+
+The licensed original remains in the app's `Sources/Fonts/` with its notices.
+The website retains the renamed font's OFL notice alongside its generated files.
+`scripts/assets/calmon/key-panel-text-source.json` records original/output bytes,
+glyphs, exact cmaps, axes, features, hinting, metrics, names, outline verification
+and input/output hashes. The original RoundPix source has 13,302 glyphs / 13,301
+characters, no variable axes, no GSUB/GPOS features and no hint tables. All output
+outlines, advances and available hinting match that source. Supported Latin-1 and
+Latin Extended-A remain available. Arabic, Hebrew, Hindi, Thai and other existing
+system-text languages keep their previous rendering. Repeated generation produces
+identical bytes and leaves panel data and app terminology intact.
+
+Only the ASCII/keycap/punctuation core is preloaded. Other subsets have exact,
+non-overlapping `unicode-range` rules and load only for matching characters;
+separating Cyrillic from CJK avoids making Russian readers download Han glyphs.
+The generated stylesheet contains all panel faces with no intervening fallback
+face. Font requests stay external, fingerprinted and use matching anonymous CORS.
+Build checks reject stale panel/translation inputs, changed font bytes, overlapping
+ranges or preloaded extensions. Builds do not run the generator.
+
+| Panel face | WOFF2 bytes | Glyphs / characters | Loading |
+| --- | ---: | ---: | --- |
+| Old combined subset | 11,344 | 344 / 343 | Every product page |
+| Core | 5,264 | 162 / 161 | Preloaded |
+| Latin extension | 4,664 | 111 / 110 | On demand |
+| Cyrillic extension | 3,604 | 51 / 50 | On demand |
+| CJK extension | 8,716 | 122 / 121 | On demand |
+
+The English panel saves 6,080 bytes (53.6%); German saves 1,416 bytes and Russian
+saves 2,476 bytes. Japanese and Chinese now cost 13,980 panel bytes, 2,636 bytes
+more than the incomplete old subset, with one extra request. A single corrected
+all-coverage reference is 11,312 bytes; splitting costs CJK pages 2,668 bytes versus
+that reference in exchange for smaller downloads on the other 34 languages.
+Averaging one panel visit per supported language gives 8,089 bytes, versus 11,344
+before. This is an illustrative equal-locale average, not a traffic-weighted claim.
+
+Cold-cache measurements below include **all page fonts**, in Chromium
+153.0.8010.12, macOS, 1280 × 900, DPR 1. `encodedBodySize` is payload;
+`transferSize` is measured transfer including local response overhead.
+
+| Page | Payload before → after (B) | Transfer before → after (B) | Requests | Preloads |
+| --- | ---: | ---: | ---: | ---: |
+| `/calmon/` | 68,188 → 62,108 | 69,388 → 63,308 | 4 → 4 | 2 → 2 |
+| `/calmon/de/` | 68,188 → 66,772 | 69,388 → 68,272 | 4 → 5 | 2 → 2 |
+| `/calmon/ru/` | 93,520 → 91,044 | 95,020 → 92,844 | 5 → 6 | 2 → 2 |
+| `/calmon/ja/` | 68,188 → 70,824 | 69,388 → 72,324 | 4 → 5 | 2 → 2 |
+| `/calmon/zh-Hans/` | 68,188 → 70,824 | 69,388 → 72,324 | 4 → 5 | 2 → 2 |
+| `/calmon/ar/` | 57,200 → 51,120 | 58,100 → 52,020 | 3 → 3 | 2 → 2 |
+| `/calmon/vi/` | 84,588 → 78,508 | 86,088 → 80,008 | 5 → 5 | 3 → 3 |
+
+All 38 cold-cache pages requested each font URL once; extension loading followed
+actual characters, and no panel extension was preloaded. Warm visits to English,
+Simplified Chinese and Russian transferred zero font bytes while retaining their
+encoded resource sizes. Production cache/CDN headers can differ.
+
+Visual coverage includes all 38 panels, plus whole keyboard sections and
+390 × 844 mobile views for English, German, Polish, Vietnamese, Arabic, Japanese,
+Simplified Chinese and Traditional Chinese: 54 matched frames. Comparing with the
+old font gives 44 unchanged frames; the other 10 differ only at the four languages'
+newly covered panel glyphs. With the corrected single-file reference, all 38
+panels match exactly. Four wider/mobile comparison frames initially differed due
+to sticky headers/skip links and their composited noise backdrop during scrolling;
+recapturing the affected English, Traditional Chinese and Arabic views with fixed
+and sticky overlays hidden in both review copies produced zero changed pixels.
+All 54 frame comparisons are therefore accounted for, including nine clean
+recaptures. This verifies this browser/environment, not every platform.
+
+Full `npm run build`, font checks, locale checks and deterministic regeneration
+passed. Local evidence, capture scripts, exact rerun parameters, cold/warm request
+records, original font inventory and lossless screenshots remain under ignored
+`.build/calmon-panel-font-review/`. Use the existing
+`scripts/compare-font-screenshots.py` for matched capture sets.

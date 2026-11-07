@@ -49,9 +49,24 @@ for (const face of manifest.fonts) {
     allowedPreloads.add(face.merged.sha256);
   }
 }
-allowedPreloads.add(hash(await readFile('src/assets/fonts/calmon-panel.woff2')));
+const panel = JSON.parse(await readFile('scripts/assets/calmon/key-panel-text-source.json', 'utf8'));
+for (const [file, checksum] of Object.entries({...panel.websiteInputs, ...panel.outputs})) {
+  assert.equal(hash(await readFile(file)), checksum, `${file}: rerun prepare-calmon-key-panel.py after changing panel content`);
+}
+for (const output of panel.fonts) {
+  const face = {id: 'calmon-panel', family: 'calmon Panel', style: 'normal', weight: '400', display: 'swap'};
+  const coverage = points(output.unicodeRange);
+  assert.equal(hash(await readFile(output.file)), output.sha256);
+  assert.deepEqual(output.metrics, panel.source.metrics);
+  assert.deepEqual(output.hintTables, panel.source.hintTables);
+  assert(output.verification.globalHintTablesUnchanged);
+  assert.equal(output.verification.outlines, output.characters);
+  assert(output.familyNames.every(name => /^(calmon Panel Web|CalmonPanelWeb)/.test(name)));
+  fonts.set(resolve(output.file), {face, output, coverage});
+  if (output.kind === 'core') allowedPreloads.add(output.sha256);
+}
 
-for (const sheet of ['src/assets/s/site.css', 'src/assets/s/yilo-hand.css', 'src/assets/s/yilo-hand-cjk.css', 'src/assets/s/fondfont-fonts.css', 'src/components/calmon-desktop/desktop.css']) {
+for (const sheet of ['src/assets/s/calmon-panel-fonts.css', 'src/assets/s/site.css', 'src/assets/s/yilo-hand.css', 'src/assets/s/yilo-hand-cjk.css', 'src/assets/s/fondfont-fonts.css', 'src/components/calmon-desktop/desktop.css']) {
   const families = new Map();
   const css = await readFile(sheet, 'utf8');
   for (const match of css.matchAll(/@font-face\s*\{([^}]+)\}/g)) {

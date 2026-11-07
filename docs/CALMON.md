@@ -54,11 +54,13 @@ Hero 的下载按钮统一使用「免费下载」及对应 38 种语言译文�
 
 ## 面板文字与字体
 
-`CalmonKeyPanel.astro` 用原生五个分组、行标题和键帽组成真实 HTML；38 种语言文案从 App 的 String Catalog 提取，原生 Z Labs RoundPix 12px 字体按实际字符生成按需 WOFF2 子集，并按 OFL 要求改名为 calmon Panel Web。字体与许可证放在 `src/assets/fonts/calmon-panel*`，来源及哈希位于 `scripts/assets/calmon/key-panel-text-source.json`。面板不使用 img、canvas、截图背景或整体缩放；文本可选择和由辅助技术读取。快捷键列表的键位也使用同一字体、18px 字号及键帽大写形式；字体子集覆盖支持的字符；缺少完整字形或需要连写的语言整段使用系统字体，键帽保留原版像素字体。常规宽度双列，窄屏单列，保持字号。媒体下载中的原生截图继续独立保留，网页面板不冒充原生截图。
+`CalmonKeyPanel.astro` 用原生五个分组、行标题和键帽组成真实 HTML；38 种语言文案从 App 的 String Catalog 提取，原生 Z Labs RoundPix 12px 字体按实际字符生成按需 WOFF2 子集，并按 OFL 要求改名为 calmon Panel Web。字体拆成预加载的 core 和按需加载的拉丁字母、西里尔字母及中日文扩展，字符范围直接来自输出 cmap；保持原有字形、字宽、系统字体回退和 `font-display: swap`。字体与许可证放在 `src/assets/fonts/calmon-panel*`，来源及哈希位于 `scripts/assets/calmon/key-panel-text-source.json`。面板不使用 img、canvas、截图背景或整体缩放；文本可选择和由辅助技术读取。快捷键列表的键位也使用同一字体、18px 字号及键帽大写形式；字体子集覆盖支持的字符；缺少完整字形或需要连写的语言整段使用系统字体，键帽保留原版像素字体。常规宽度双列，窄屏单列，保持字号。媒体下载中的原生截图继续独立保留，网页面板不冒充原生截图。
 
 ```sh
-python3 scripts/prepare-calmon-key-panel.py --app-source /path/to/calmon
+.build/calmon-assets-venv/bin/python scripts/prepare-calmon-key-panel.py --app-source /path/to/calmon
 ```
+
+字体更新使用 `scripts/requirements-web-fonts.txt` 中固定版本的 fontTools/Brotli。先通过 `prepare-calmon-assets.py` 导出当前原生面板数据，再手动运行上述命令；字体脚本读取已导出的 `calmon-key-panel.json`，不会重写按键列表或网站文案。面板条目、翻译、键帽、字体或 CSS 字体用法改变后需重新生成并对比；构建只检查来源哈希，不自动生成字体。详见 [FONTS.md](FONTS.md)。
 
 ### 网站翻译与原生界面对照
 
