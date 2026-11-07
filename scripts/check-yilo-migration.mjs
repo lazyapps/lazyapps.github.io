@@ -3,7 +3,7 @@ import { readFile } from 'node:fs/promises';
 import { runInNewContext } from 'node:vm';
 import { createHash } from 'node:crypto';
 import config from '../astro.config.mjs';
-import { yiloLegacyRoutes } from '../src/content/yilo-routes.mjs';
+import { yiloRedirects } from '../src/content/yilo-routes.mjs';
 import { YILO_LOCALES } from '../src/i18n/yilo-locales.mjs';
 import copy from '../src/i18n/yilo-short-copy.json' with { type: 'json' };
 import { attr, readPages, site, dist, text } from './lib/seo.mjs';
@@ -31,10 +31,15 @@ for (const card of opengraph.cards) {
 const presskit = JSON.parse(await readFile('public/presskit/yilo/manifest.json', 'utf8'));
 assert(!presskit.files.some(file => file.path === 'desktop-wallpaper.png'), 'Do not distribute the retired Yilo wallpaper');
 assert(!byUrl.get(`${site}/yilo/presskit/`).html.includes('desktop-wallpaper.png'), 'Do not show the retired wallpaper in the Press Kit');
+assert.equal(YILO_LOCALES.en.selectedUrl, '/yilo/');
+assert.equal(YILO_LOCALES['zh-hans'].selectedUrl, '/yilo/zh-hans/');
+assert.equal(byUrl.get(`${site}/yilo/`).language, 'en');
+assert.equal(byUrl.get(`${site}/yilo/zh-hans/`).language, 'zh-Hans');
+assert(!sitemap.includes('<loc>https://lazyapps.com/yilo/en/</loc>'), 'English alias must leave the sitemap');
 const fixtureHash = hash(await readFile('scripts/assets/yilo/capture/YiloWebsiteCapture.swift'));
 assert.equal(screenshotReview.captures.length, 48, 'Yilo needs three product captures and one hero capture for each of its 12 languages');
 assert(!sitemap.includes('/yiyan/'), 'Legacy product URLs must leave the sitemap');
-for (const [from, to] of Object.entries(yiloLegacyRoutes)) {
+for (const [from, to] of Object.entries(yiloRedirects)) {
   assert.deepEqual(config.redirects[from], { destination: to, status: 301 });
   const page = byUrl.get(`${site}${from}/`);
   assert(page?.noindex && page.canonical === `${site}${to}`, `${from}: legacy fallback must canonicalize to Yilo`);
@@ -49,7 +54,7 @@ for (const [from, to] of Object.entries(yiloLegacyRoutes)) {
 }
 for (const [code, locale] of Object.entries(YILO_LOCALES)) {
   const page = byUrl.get(`${site}${locale.selectedUrl}`);
-  const c = copy[code || 'zh-hans'];
+  const c = copy[code];
   assert(page && page.canonical === locale.canonical, `${code}: missing new canonical page`);
   assert.equal(text(page.nodes.find(node => node.tagName === 'h1')), c.headline);
   const visible = text(page.nodes.find(node => node.tagName === 'body'));
@@ -100,4 +105,4 @@ for (const [oldName, newName] of [
   ['learning-notes-en.png', 'learning-record-preview-en.png'], ['follow-up-en.png', 'learning-record-preview-en.png'],
   ['zh-Hans/social-card.png', 'social-card-zh.png'], ['zh-Hant/social-card.png', 'social-card-zh.png'],
 ]) assert((await readFile(`${dist}presskit/yiyan/${oldName}`)).equals(await readFile(`${dist}presskit/yilo/${newName}`)), `Legacy download must contain current bytes: ${oldName}`);
-console.log('Yilo migration verified: 12 locales, 13 legacy fallbacks, query/fragment preservation, current download aliases and no active old-brand links. HTTP 301 still requires a supporting host; GitHub Pages serves HTML fallbacks.');
+console.log('Yilo migration verified: 12 locales, 14 redirect fallbacks, query/fragment preservation, current download aliases and no active old-brand links. HTTP 301 still requires a supporting host; GitHub Pages serves HTML fallbacks.');

@@ -12,7 +12,7 @@ const core = (name: string) => generated[`../assets/fonts/optimized/${name}-core
 const path = Astro.url.pathname;
 const product = (name: string) => path.startsWith(`/${name}/`) && !path.includes('/presskit/');
 const fonts = [sofia];
-const mergedHan = path === '/yilo/' || /^\/yilo\/(zh-hant|ja|presskit)(\/|$)/.test(path);
+const mergedHan = /^\/yilo\/(zh-hans|zh-hant|ja|presskit)(\/|$)/.test(path);
 if (path === '/' || path.startsWith('/yilo/')) fonts.push(core('yilo-latin'), mergedHan ? generated['../assets/fonts/optimized/yilo-han-merged.woff2'] : core('yilo-han'));
 if (product('calmon')) {
   fonts.push(panel);

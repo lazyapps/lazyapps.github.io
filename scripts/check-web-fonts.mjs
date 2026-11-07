@@ -107,7 +107,7 @@ for (const page of pages) {
     assert(hashes.includes(siteCore), `${page.url}: shared logo core preload missing`);
     checked++;
   }
-  if (/\/yilo\/(?:en|de|es|fr|pt-br|ru|ar|hi|ko)\/$/.test(page.url)) {
+  if (/\/yilo\/(?:(?:de|es|fr|pt-br|ru|ar|hi|ko)\/)?$/.test(page.url)) {
     const han = manifest.fonts.find(face => face.id === 'yilo-han');
     const covered = fonts.get(resolve(han.outputs.find(output => output.kind === 'core').file)).coverage;
     const supported = points(han.effectiveUnicodeRange);

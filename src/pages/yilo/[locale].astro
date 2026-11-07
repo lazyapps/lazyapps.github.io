@@ -4,7 +4,7 @@ import YiloPage from '../../components/YiloPage.astro';
 
 export function getStaticPaths() {
   return Object.keys(YILO_LOCALES)
-    .filter((code) => code !== '')
+    .filter((code) => code !== 'en')
     .map((code) => ({ params: { locale: code } }));
 }
 

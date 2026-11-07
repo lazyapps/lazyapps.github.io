@@ -1,6 +1,6 @@
 # 亦言 · Yilo — 媒体资料
 
-- 产品网站: [https://lazyapps.com/yilo/](https://lazyapps.com/yilo/)
+- 产品网站: [https://lazyapps.com/yilo/zh-hans/](https://lazyapps.com/yilo/zh-hans/)
 - 媒体资料页: [https://lazyapps.com/yilo/presskit/#zh-Hans](https://lazyapps.com/yilo/presskit/#zh-Hans)
 - 平台: Mac · iPhone
 - 发布状态: Mac 下载 · iPhone TestFlight 测试版

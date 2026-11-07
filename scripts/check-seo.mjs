@@ -7,7 +7,7 @@ import { DOZE_LOCALES, DOZE_RELEASE } from '../src/i18n/doze-locales.mjs';
 import { CALMON_LOCALES, CALMON_RELEASE } from '../src/i18n/calmon-locales.mjs';
 import { SHHEEP_LOCALES } from '../src/i18n/shheep-locales.mjs';
 import { KEYHOP_LOCALES } from '../src/i18n/keyhop-locales.mjs';
-import { yiloLegacyRoutes } from '../src/content/yilo-routes.mjs';
+import { yiloRedirects } from '../src/content/yilo-routes.mjs';
 import { KEYHOP_STATUS } from '../src/i18n/keyhop-status.mjs';
 
 assert(['upcoming', 'published'].includes(DOZE_RELEASE.status), 'Unknown Doze release status');
@@ -28,7 +28,7 @@ assert.equal(new Set(shheepLocales.map(locale => locale.title)).size, 11, 'Shhee
 assert.equal(new Set(shheepLocales.map(locale => locale.description)).size, 11, 'Shheep descriptions must be translated');
 for (const locale of shheepLocales) assert(byUrl.has(`${site}${locale.selectedUrl}`), `Missing Shheep locale page: ${locale.htmlLang}`);
 const retiredRedirects = new Map([
-  ...Object.entries(yiloLegacyRoutes).map(([from, to]) => [`${site}${from}/`, `${site}${to}`]),
+  ...Object.entries(yiloRedirects).map(([from, to]) => [`${site}${from}/`, `${site}${to}`]),
   [`${site}/calmon/en/`, `${site}/calmon/`],
   [`${site}/keyhop/presskit/`, `${site}/keyhop/`],
   [`${site}/pane/`, `${site}/calmon/`],

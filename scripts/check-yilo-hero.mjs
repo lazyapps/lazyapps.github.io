@@ -21,7 +21,7 @@ if (source.renderedCopy) {
     for (const [key, value] of Object.entries(fields)) assert.equal(hero[tag][key], value, `${tag}/${key}: movie copy changed; update the film and poster`);
   }
 }
-const locales = Object.keys(YILO_LOCALES).map(code => code || 'zh-hans').sort();
+const locales = Object.keys(YILO_LOCALES).map(code => code).sort();
 assert.deepEqual(source.outputs.map(item => item.locale).sort(), locales);
 assert.deepEqual(Object.keys(hero).sort(), locales);
 assert.deepEqual(Object.keys(demoCopy).sort(), locales);
@@ -72,7 +72,7 @@ assert.equal(music.title, 'Fluffing a Duck');
 assert.equal(music.license, 'CC BY 4.0');
 const pages = await readPages();
 for (const [code, locale] of Object.entries(YILO_LOCALES)) {
-  const tag = code || 'zh-hans';
+  const tag = code;
   assert.equal(hero[tag].lineTitle, copy[tag].headline, `${tag}: preserve the playful page title`);
   const page = pages.find(page => page.url === site + locale.selectedUrl);
   const demo = page.nodes.find(node => attr(node, 'data-yilo-demo') !== undefined);

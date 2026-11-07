@@ -4,7 +4,7 @@ interface Props {
   code: string;
 }
 
-const { t: original, code = '' } = Astro.props;
+const { t: original, code = 'en' } = Astro.props;
 
 const SITE = 'https://lazyapps.com';
 import SocialMeta from './SocialMeta.astro';
@@ -35,12 +35,12 @@ import YiloDemo from './YiloDemo.astro';
 import screenshotCrops from '../../scripts/assets/yilo/screenshot-crops.json';
 
 const OPENGRAPH_MAP = {
-  '': yiloOpengraphUrl,
+  'zh-hans': yiloOpengraphUrl,
   'zh-hant': yiloOpengraphUrl,
 };
 const opengraphUrl = OPENGRAPH_MAP[code] ?? yiloOpengraphSharedUrl;
 const OG_LOCALE_MAP = {
-  '': 'zh_CN',
+  'zh-hans': 'zh_CN',
   ar: 'ar_AR',
   de: 'de_DE',
   en: 'en_US',
@@ -54,8 +54,8 @@ const OG_LOCALE_MAP = {
   'zh-hant': 'zh_TW',
 };
 const ogLocale = OG_LOCALE_MAP[code] ?? 'en_US';
-const copy = shortCopy[code || 'zh-hans'];
-const screenshotTag = ({ '': 'zh-Hans', 'zh-hant': 'zh-Hant', 'pt-br': 'pt-BR' })[code] ?? code;
+const copy = shortCopy[code];
+const screenshotTag = ({ 'zh-hans': 'zh-Hans', 'zh-hant': 'zh-Hant', 'pt-br': 'pt-BR' })[code] ?? code;
 const nativeScreenshots = import.meta.glob<{ default: ImageMetadata }>('../../scripts/assets/presskit/yilo/*/*.png', { eager: true });
 const screenshots = ['learning-record.png', 'learning-settings.png', 'language-selection.png'].map(filename => ({
   image: nativeScreenshots[`../../scripts/assets/presskit/yilo/${screenshotTag}/${filename}`].default,
@@ -63,10 +63,10 @@ const screenshots = ['learning-record.png', 'learning-settings.png', 'language-s
 }));
 const screenshotColumns = screenshots.map(({crop}) => `${crop.width/crop.height}fr`).join(' ');
 const t = original;
-const film = heroCopy[code || 'zh-hans'];
+const film = heroCopy[code];
 const ALTS = [
-  ['zh-Hans', 'yilo/'],
-  ['en', 'yilo/en/'],
+  ['zh-Hans', 'yilo/zh-hans/'],
+  ['en', 'yilo/'],
   ['zh-Hant', 'yilo/zh-hant/'],
   ['es', 'yilo/es/'],
   ['pt-BR', 'yilo/pt-br/'],
@@ -77,12 +77,12 @@ const ALTS = [
   ['ru', 'yilo/ru/'],
   ['ar', 'yilo/ar/'],
   ['hi', 'yilo/hi/'],
-  ['x-default', 'yilo/en/'],
+  ['x-default', 'yilo/'],
 ];
 
 const OPTIONS = [
-  ['zh-Hans', '/yilo/', 'zh-Hans', '简体中文'],
-  ['en', '/yilo/en/', 'en', 'English'],
+  ['zh-Hans', '/yilo/zh-hans/', 'zh-Hans', '简体中文'],
+  ['en', '/yilo/', 'en', 'English'],
   ['zh-Hant', '/yilo/zh-hant/', 'zh-Hant', '繁體中文'],
   ['es', '/yilo/es/', 'es', 'Español'],
   ['pt-BR', '/yilo/pt-br/', 'pt-BR', 'Português'],
@@ -262,7 +262,7 @@ body .deck .card:nth-child(n){position:relative;background:none;border:0;border-
   <section class="phero wrap" style={`--hero-lines:${copy.headlineLines.length};--headline-em:${copy.headlineEm}`}>
     <h1 class="phero__h1">{copy.headlineLines.map((line,index) => <Fragment><span>{line}</span>{index < copy.headlineLines.length - 1 ? ' ' : ''}</Fragment>)}</h1>
     <figure class="yilo-hero">
-      <YiloDemo locale={(code || 'zh-hans') as keyof typeof heroCopy} compact={false} />
+      <YiloDemo locale={code as keyof typeof heroCopy} compact={false} />
     </figure>
   </section>
 
@@ -280,7 +280,7 @@ body .deck .card:nth-child(n){position:relative;background:none;border:0;border-
 
       {copy.cards.map((card, i) => <article class={`card card--c${i + 1}`}>
         <div class="card__grid">
-          <YiloFeatureIllustration kind={i} locale={code || 'zh-hans'} />
+          <YiloFeatureIllustration kind={i} locale={code} />
           <h3 class="card__title">{card[0]}</h3>
           <p class="card__p">{card[1]}</p>
         </div>
@@ -301,7 +301,7 @@ body .deck .card:nth-child(n){position:relative;background:none;border:0;border-
   <section class="bounds wrap">
     <div class="bounds__grid">
       {copy.details.map(([title, paragraphs], index) => <article class="bounds__item">
-        <YiloDetailIllustration kind={index} locale={code || 'zh-hans'} />
+        <YiloDetailIllustration kind={index} locale={code} />
         <h3>{title}</h3>
         <p class="bounds__brief">{paragraphs[0]}</p>
         <details class="bounds__more">

@@ -1,6 +1,6 @@
 # Yilo — Press Kit
 
-- Website: [https://lazyapps.com/yilo/en/](https://lazyapps.com/yilo/en/)
+- Website: [https://lazyapps.com/yilo/](https://lazyapps.com/yilo/)
 - Press Kit: [https://lazyapps.com/yilo/presskit/#en](https://lazyapps.com/yilo/presskit/#en)
 - Platform: Mac · iPhone
 - Availability: Mac download · iPhone TestFlight beta

@@ -1,7 +1,8 @@
 # Yilo · 亦言
 
-Canonical product root: `/yilo/` (Simplified Chinese). The existing eleven other
-locale suffixes are unchanged. Press Kit: `/yilo/presskit/`; downloads:
+Canonical product root: `/yilo/` (English). Simplified Chinese uses
+`/yilo/zh-hans/`; `/yilo/en/` redirects to the root. Other locale suffixes are unchanged.
+Legacy `/yiyan/` redirects to Simplified Chinese, and `/yiyan/en/` to English. Press Kit: `/yilo/presskit/`; downloads:
 `/presskit/yilo/`. Chinese standalone name: 亦言; prose: 《亦言》. Non-Chinese: Yilo.
 
 ## Product and release evidence

@@ -2,7 +2,7 @@ import copy from './yilo-short-copy.json' with { type: 'json' };
 
 // Shared page labels. Product descriptions also feed the Press Kit catalog.
 const labels = {
-  "": {
+  "zh-hans": {
     "htmlLang": "zh-Hans",
     "navAria": "主导航",
     "homeAria": "首页",
@@ -257,10 +257,10 @@ const labels = {
   }
 };
 export const YILO_LOCALES = Object.fromEntries(Object.entries(labels).map(([code, labels]) => {
-  const text = copy[code || 'zh-hans'];
-  const url = '/yilo/' + (code ? code + '/' : '');
+  const text = copy[code];
+  const url = '/yilo/' + (code === 'en' ? '' : code + '/');
   return [code, { ...labels, title: text.title, description: text.sub, sub: text.sub,
     ogTitle: text.title, ogDesc: text.sub, canonical: 'https://lazyapps.com' + url,
-    selectedUrl: url, appTitle: code === '' || code === 'zh-hant' ? '亦言' : 'Yilo',
+    selectedUrl: url, appTitle: code === 'zh-hans' || code === 'zh-hant' ? '亦言' : 'Yilo',
     loaderLogo: 'YILO', h1: text.headline, formerName: text.formerName }];
 }));

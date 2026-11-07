@@ -1,7 +1,7 @@
 import { rename, rm, writeFile, cp, copyFile } from 'node:fs/promises';
 import { existsSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
-import { yiloLegacyRoutes } from '../src/content/yilo-routes.mjs';
+import { yiloRedirects } from '../src/content/yilo-routes.mjs';
 import { readPages, escapeXml } from './lib/seo.mjs';
 
 const dist = fileURLToPath(new URL('../dist/', import.meta.url));
@@ -18,7 +18,7 @@ console.log('postbuild: flattened /privacy.*.html');
 
 // GitHub Pages serves static HTML. A 301 requires a supporting host/CDN;
 // preserve search and fragment in the browser fallback without a history entry.
-for (const [from, destination] of Object.entries(yiloLegacyRoutes)) {
+for (const [from, destination] of Object.entries(yiloRedirects)) {
   const path = `${dist}${from.slice(1)}/index.html`;
   const html = `<!doctype html>
 <html lang="en"><head><meta charset="utf-8">
