@@ -1,0 +1,329 @@
+{
+  "method": "Website CSS viewport only; native PNG pixels unchanged. Light-image margins use >8 RGB difference from the corner background, plus 16 source pixels of padding.",
+  "crops": {
+    "ar/learning-record.png": {
+      "sourceSHA256": "9301103218fbb9e2df8824640f397c33c04d9e1474b1940065f5b09f7f0978bd",
+      "originalWidth": 1488,
+      "originalHeight": 981,
+      "x": 0,
+      "y": 0,
+      "width": 1488,
+      "height": 981
+    },
+    "ar/learning-settings.png": {
+      "sourceSHA256": "89daa16e560ec89fadfd78f3b03943630d4ded53ceb33857604f75faa7800730",
+      "originalWidth": 1240,
+      "originalHeight": 880,
+      "x": 24,
+      "y": 29,
+      "width": 1192,
+      "height": 544
+    },
+    "ar/language-selection.png": {
+      "sourceSHA256": "42ea38508b6da052a0a41488798bf99083ac4e3995d3539e1603c493474ba726",
+      "originalWidth": 1080,
+      "originalHeight": 1120,
+      "x": 0,
+      "y": 15,
+      "width": 1080,
+      "height": 1092
+    },
+    "de/learning-record.png": {
+      "sourceSHA256": "778c786566dcedf00d0c59ef618240100d13494ba2053ddb2e8e550e4141da77",
+      "originalWidth": 1488,
+      "originalHeight": 981,
+      "x": 0,
+      "y": 0,
+      "width": 1488,
+      "height": 981
+    },
+    "de/learning-settings.png": {
+      "sourceSHA256": "a528b1b307ba5ae8d95bd1af4203d836a2a9b8ed8ecbb910ae5f598c43fa3fc0",
+      "originalWidth": 1240,
+      "originalHeight": 880,
+      "x": 24,
+      "y": 30,
+      "width": 1192,
+      "height": 530
+    },
+    "de/language-selection.png": {
+      "sourceSHA256": "a5ff708349a8c997c78a723ce66382c5b48afcee3ad5965a864eeae1902baaf3",
+      "originalWidth": 1080,
+      "originalHeight": 1120,
+      "x": 0,
+      "y": 15,
+      "width": 1080,
+      "height": 1092
+    },
+    "en/learning-record.png": {
+      "sourceSHA256": "dc3421e30dca7c104c7839a9e014953d97f52fbb200bcead13ff0906bfa2193b",
+      "originalWidth": 1488,
+      "originalHeight": 1033,
+      "x": 0,
+      "y": 0,
+      "width": 1488,
+      "height": 1033
+    },
+    "en/learning-settings.png": {
+      "sourceSHA256": "f7aad9bc84be9f3a4dadb30c3c41d3db66b8e85011101429f32051e9ff63f1b9",
+      "originalWidth": 1240,
+      "originalHeight": 880,
+      "x": 24,
+      "y": 29,
+      "width": 1192,
+      "height": 633
+    },
+    "en/language-selection.png": {
+      "sourceSHA256": "2f95314395103ab1d1418a2acfea6e2c90a4233f711c14836b808457012c5f13",
+      "originalWidth": 1080,
+      "originalHeight": 1120,
+      "x": 0,
+      "y": 15,
+      "width": 1080,
+      "height": 1092
+    },
+    "es/learning-record.png": {
+      "sourceSHA256": "b30709bb624b64459ea9c1ba32ead70dda5241d5d77c835b8ac42d1d1c623ac8",
+      "originalWidth": 1488,
+      "originalHeight": 981,
+      "x": 0,
+      "y": 0,
+      "width": 1488,
+      "height": 981
+    },
+    "es/learning-settings.png": {
+      "sourceSHA256": "2a6694270aa0cbab3706304c9b680fe8a170b891336a7663a9651b9f6ee23b16",
+      "originalWidth": 1240,
+      "originalHeight": 880,
+      "x": 24,
+      "y": 29,
+      "width": 1192,
+      "height": 531
+    },
+    "es/language-selection.png": {
+      "sourceSHA256": "a0c98f3a4de8305c3e9d57fe9128044eef6952d1e532082932ff3c59ec2ecffb",
+      "originalWidth": 1080,
+      "originalHeight": 1120,
+      "x": 0,
+      "y": 15,
+      "width": 1080,
+      "height": 1092
+    },
+    "fr/learning-record.png": {
+      "sourceSHA256": "51f2078f8ed5be80976485f551f5f863d907b4db86d434f61bed337a859c7288",
+      "originalWidth": 1488,
+      "originalHeight": 981,
+      "x": 0,
+      "y": 0,
+      "width": 1488,
+      "height": 981
+    },
+    "fr/learning-settings.png": {
+      "sourceSHA256": "5aefd6cac48fe7ead68a635dcc9a245b2b0c06fba225b488250f52865af44029",
+      "originalWidth": 1240,
+      "originalHeight": 880,
+      "x": 24,
+      "y": 29,
+      "width": 1192,
+      "height": 531
+    },
+    "fr/language-selection.png": {
+      "sourceSHA256": "138ef65d0a40c10a09c9c10c120df00132c7a8a1a2abc511e77178827eb4fa41",
+      "originalWidth": 1080,
+      "originalHeight": 1120,
+      "x": 0,
+      "y": 15,
+      "width": 1080,
+      "height": 1092
+    },
+    "hi/learning-record.png": {
+      "sourceSHA256": "26a4821b31c5a3553ddb5c3bfdf29211c9edaece3f797eb277170af13513e1d3",
+      "originalWidth": 1488,
+      "originalHeight": 981,
+      "x": 0,
+      "y": 0,
+      "width": 1488,
+      "height": 981
+    },
+    "hi/learning-settings.png": {
+      "sourceSHA256": "7a983a3ed94f10a4068b63638c7fb64b398d6772ee2aa6cfd1c8bd0d726343ac",
+      "originalWidth": 1240,
+      "originalHeight": 880,
+      "x": 24,
+      "y": 27,
+      "width": 1192,
+      "height": 554
+    },
+    "hi/language-selection.png": {
+      "sourceSHA256": "e5309f733bc11baaa05ef5864689ed0ff95f4e0fd51c09f597bc1ba621246821",
+      "originalWidth": 1080,
+      "originalHeight": 1120,
+      "x": 0,
+      "y": 15,
+      "width": 1080,
+      "height": 1092
+    },
+    "ja/learning-record.png": {
+      "sourceSHA256": "8c9d3f425e930aec65b5c43509cdfa5e6b5dce09ccb83041b8062d69d97792c2",
+      "originalWidth": 1488,
+      "originalHeight": 981,
+      "x": 0,
+      "y": 0,
+      "width": 1488,
+      "height": 981
+    },
+    "ja/learning-settings.png": {
+      "sourceSHA256": "60944f16f6406e11223213c4f777f67b0d7c7b38a606de43b341937afd86671d",
+      "originalWidth": 1240,
+      "originalHeight": 880,
+      "x": 24,
+      "y": 29,
+      "width": 1192,
+      "height": 531
+    },
+    "ja/language-selection.png": {
+      "sourceSHA256": "fd757d4fab139c249640905e1d0ef054c9947894947abf6d27eccf0d6b977b35",
+      "originalWidth": 1080,
+      "originalHeight": 1120,
+      "x": 0,
+      "y": 15,
+      "width": 1080,
+      "height": 1092
+    },
+    "ko/learning-record.png": {
+      "sourceSHA256": "a5f24718897fb847a0a832cd0868a55e22e315768fe2a05804e4d77605c6da0b",
+      "originalWidth": 1488,
+      "originalHeight": 981,
+      "x": 0,
+      "y": 0,
+      "width": 1488,
+      "height": 981
+    },
+    "ko/learning-settings.png": {
+      "sourceSHA256": "155466c6c58f0e523e7a6e43169e1a65d52d6daaa2aa5cd82a102d6630c66379",
+      "originalWidth": 1240,
+      "originalHeight": 880,
+      "x": 24,
+      "y": 28,
+      "width": 1192,
+      "height": 532
+    },
+    "ko/language-selection.png": {
+      "sourceSHA256": "281af280eed9f7e0362010c5e8b9ea282dd217ad5ad63eabd09f580c2564f543",
+      "originalWidth": 1080,
+      "originalHeight": 1120,
+      "x": 0,
+      "y": 15,
+      "width": 1080,
+      "height": 1092
+    },
+    "pt-BR/learning-record.png": {
+      "sourceSHA256": "7e120522acd5e4a433490a0d22b493ae8249548e33fe3e7151cbcf5ba790dbb1",
+      "originalWidth": 1488,
+      "originalHeight": 981,
+      "x": 0,
+      "y": 0,
+      "width": 1488,
+      "height": 981
+    },
+    "pt-BR/learning-settings.png": {
+      "sourceSHA256": "f4ecf3252cf32b15d53f9fb3e9b82f1550a70cbcf5cfc5402ad33373b3aab1f3",
+      "originalWidth": 1240,
+      "originalHeight": 880,
+      "x": 24,
+      "y": 29,
+      "width": 1192,
+      "height": 531
+    },
+    "pt-BR/language-selection.png": {
+      "sourceSHA256": "4a8bb472e3a311041703fa22d8de278ccf2647ac0b90d3142eb8db40efbd0603",
+      "originalWidth": 1080,
+      "originalHeight": 1120,
+      "x": 0,
+      "y": 15,
+      "width": 1080,
+      "height": 1092
+    },
+    "ru/learning-record.png": {
+      "sourceSHA256": "13d39176ba02608dcbf58af5aaf9008dad70aea0b7be5d01c69768c85c4a9f59",
+      "originalWidth": 1488,
+      "originalHeight": 981,
+      "x": 0,
+      "y": 0,
+      "width": 1488,
+      "height": 981
+    },
+    "ru/learning-settings.png": {
+      "sourceSHA256": "29fecf5625efbcdbfc9773f335f6014a454f17a396db569a0ed6fa8d67e1489e",
+      "originalWidth": 1240,
+      "originalHeight": 880,
+      "x": 24,
+      "y": 31,
+      "width": 1192,
+      "height": 529
+    },
+    "ru/language-selection.png": {
+      "sourceSHA256": "e255a1981d9ce3613be5509d6392e3f2e506d0b3dea0ae387d489c01e8dbae35",
+      "originalWidth": 1080,
+      "originalHeight": 1120,
+      "x": 0,
+      "y": 15,
+      "width": 1080,
+      "height": 1092
+    },
+    "zh-Hans/learning-record.png": {
+      "sourceSHA256": "03ca265fb77d3c81feae0755681f537576365639a8898987d4ab5db4da4ebdae",
+      "originalWidth": 1488,
+      "originalHeight": 981,
+      "x": 0,
+      "y": 0,
+      "width": 1488,
+      "height": 981
+    },
+    "zh-Hans/learning-settings.png": {
+      "sourceSHA256": "4cae736bbef1756478c6bf700b150ddecd62e2276f769e9e654c9ac10b583354",
+      "originalWidth": 1240,
+      "originalHeight": 880,
+      "x": 24,
+      "y": 28,
+      "width": 1192,
+      "height": 532
+    },
+    "zh-Hans/language-selection.png": {
+      "sourceSHA256": "be1b3d3d22c40a29c5244210fec7b2c7e367c095a442238d2cec6b07dd54b2bf",
+      "originalWidth": 1080,
+      "originalHeight": 1120,
+      "x": 0,
+      "y": 15,
+      "width": 1080,
+      "height": 1092
+    },
+    "zh-Hant/learning-record.png": {
+      "sourceSHA256": "d35149bb0f6b33e52ffc555bb6d403908ffac88828fc586417f6cc8cd8ddb05d",
+      "originalWidth": 1488,
+      "originalHeight": 981,
+      "x": 0,
+      "y": 0,
+      "width": 1488,
+      "height": 981
+    },
+    "zh-Hant/learning-settings.png": {
+      "sourceSHA256": "f06c6422691ba570471c771c5b69b5810b544f6323fed6ea737c31130b822abb",
+      "originalWidth": 1240,
+      "originalHeight": 880,
+      "x": 24,
+      "y": 28,
+      "width": 1192,
+      "height": 532
+    },
+    "zh-Hant/language-selection.png": {
+      "sourceSHA256": "b440a79c5a14b370b2455f8bccacec8bf03b586c9a2fd8a8698f410f91663a5f",
+      "originalWidth": 1080,
+      "originalHeight": 1120,
+      "x": 0,
+      "y": 15,
+      "width": 1080,
+      "height": 1092
+    }
+  }
+}

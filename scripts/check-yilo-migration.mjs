@@ -13,6 +13,7 @@ const byUrl = new Map(pages.map(page => [page.url, page]));
 const sitemap = await readFile(`${dist}sitemap.xml`, 'utf8');
 const screenshotReview = JSON.parse(await readFile('scripts/assets/presskit/screenshot-sources.json', 'utf8')).yilo;
 const screenshotFiles = ['learning-record.png', 'learning-settings.png', 'language-selection.png'];
+const screenshotCrops = JSON.parse(await readFile('scripts/assets/yilo/screenshot-crops.json', 'utf8')).crops;
 const hash = bytes => createHash('sha256').update(bytes).digest('hex');
 const opengraph = JSON.parse(await readFile('scripts/assets/yilo/opengraph-source.json', 'utf8'));
 const icon = JSON.parse(await readFile('scripts/assets/yilo/AppIcon.icon/icon.json', 'utf8'));
@@ -72,6 +73,11 @@ for (const [code, locale] of Object.entries(YILO_LOCALES)) {
     const image = page.nodes.find(node => node.tagName === 'img' && attr(node, 'alt') === c.screenshots[index]);
     assert(image, `${code}: missing localized screenshot ${filename}`);
     const native = await readFile(source);
+    const crop = screenshotCrops[`${page.language}/${filename}`];
+    assert(crop, 'Missing screenshot viewport; run prepare-yilo-screenshot-crops.py');
+    assert.equal(crop.sourceSHA256, hash(native), 'Native screenshot changed; rerun prepare-yilo-screenshot-crops.py');
+    assert.deepEqual([crop.originalWidth, crop.originalHeight], [native.readUInt32BE(16), native.readUInt32BE(20)]);
+    assert(crop.x >= 0 && crop.y >= 0 && crop.width > 0 && crop.height > 0 && crop.x + crop.width <= crop.originalWidth && crop.y + crop.height <= crop.originalHeight, 'Screenshot viewport must stay inside its native source');
     assert.equal(hash(await readFile(`${dist}${attr(image, 'src').replace(/^\//, '')}`)), hash(native), `${code}: product image must preserve the localized native export`);
     assert.deepEqual([Number(attr(image, 'width')), Number(attr(image, 'height'))], [native.readUInt32BE(16), native.readUInt32BE(20)], `${code}: image dimensions must match the native capture`);
   }

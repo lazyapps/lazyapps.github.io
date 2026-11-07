@@ -110,6 +110,25 @@ before regenerating the media packages. The build verifies per-language
 images, dimensions, source receipts and ZIP contents. Historical English
 media addresses continue to serve the current English capture.
 
+### Product screenshot strip
+
+The three middle product screenshots share one equal-height row on desktop;
+column widths follow each visible crop's aspect ratio. At 900px and below,
+they stack with 28px between figures. Captions sit 12px below the image and the
+following section uses 32–56px of space.
+Each preview has the same inset 1px, 10% black border, drawn above the image
+without changing its crop or layout dimensions.
+
+`scripts/prepare-yilo-screenshot-crops.py` measures empty light-background
+margins, retaining 16 source pixels around content. Run it manually with Pillow
+after recapturing product images. Checked-in coordinates and source hashes are
+in `scripts/assets/yilo/screenshot-crops.json`; the build rejects stale crops.
+The learning record keeps its entire frame. Light settings/selection screenshots
+use a CSS viewport to hide empty edges, including the settings form's unused
+bottom area. All image pixels, native dimensions and full-resolution source
+files remain intact. Each preview links to that full original in a new tab.
+Press Kit continues to distribute the full native images.
+
 ## Legacy URLs and hosting limit
 
 `src/content/yilo-routes.mjs` inventories all 13 legacy product pages. Astro
